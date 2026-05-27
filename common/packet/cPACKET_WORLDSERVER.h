@@ -498,6 +498,7 @@ struct SERVERStoWORLD_CREATEAVA
 	char		strName[dNAME_LENGTH];
 	char		strIP[dIP_SIZE];
 	WORD		wJob;	//	流緛E};
+};
 
 struct SERVERStoWORLD_DELETEAVA
 {
@@ -2671,6 +2672,7 @@ struct	SERVERStoWORLD_MOVE_FIELD_PARTY_MEMBER
 	WORD	bf4InstanceFieldFloor	:	4;
 
 	WORD	wDestFieldSerial;	//	格利羴E};
+};
 
 #define	dJOINPARTY_RESULT_SUCCESS		0x01
 #define	dJOINPARTY_RESULT_FAIL			0x02
@@ -2809,6 +2811,7 @@ struct	WORLDtoSERVERS_MOVE_FIELD_PARTY_MEMBER
 	WORD	bf4IFFloor			:	4;
 
 	WORD	wDestFieldSerial;	//	格利羴E};
+};
 
 //Ν	PACKET Party
 //ΡΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜΜ
