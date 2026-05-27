@@ -53,7 +53,7 @@ cANM				g_aAnmMagicCarpet[dMAX_MAGIC_CARPET_SHAPE_COUNT];
 cANM				g_aJobIcon[dPLAYER_JOB_COUNT];	//	직업 에니 아이콘
 cANM				g_anmGameManager;
 cANM				g_anmLongRain, g_anmShortRain, g_anmBombRain;				// 10.02.10 추가
-CPalette			g_aPalette[dJOB_IMAGE_DATA_COUNT];
+CImagePalette		g_aPalette[dJOB_IMAGE_DATA_COUNT];
 CGuildMarkPalette	g_guildMarkPalette;
 CGuildMarkImage		g_guildMark;
 cANM				g_aGuildPet[dGUILD_PET_TYPE_COUNT];

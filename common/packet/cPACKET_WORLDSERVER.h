@@ -3640,5 +3640,4 @@ struct	WORLDtoSERVERS_ALL_MSG
 
 
 #pragma pack()
-}
 #endif	//	_classPACKET_WORLDSERVER_H

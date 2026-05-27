@@ -16,20 +16,20 @@
 #define	dMAX_MAGIC_CARPET_SHAPE_COUNT			32
 #define	dMONSTER_VARIATION_COUNT				4
 
-class	CPalette
+class	CImagePalette
 {
 public:
 	WORD	m_wCount;
 	WORD	*m_apPalette[dPALETTE_VARITION_COUNT];
 
-			CPalette()
+			CImagePalette()
 			{
 				m_wCount	=	0;
 
 				for (int i=0;i<dPALETTE_VARITION_COUNT;i++)	m_apPalette[i]	=	NULL;
 			}
 
-			~CPalette()
+			~CImagePalette()
 			{
 				m_wCount	=	0;
 
@@ -85,7 +85,7 @@ public:
 
 extern	CGuildMarkImage		g_guildMark;
 extern	CGuildMarkPalette	g_guildMarkPalette;
-extern	CPalette			g_aPalette[dJOB_IMAGE_DATA_COUNT];
+extern	CImagePalette		g_aPalette[dJOB_IMAGE_DATA_COUNT];
 
 extern	cANM_BASE			*g_apBody[dJOB_IMAGE_DATA_COUNT];
 extern	cANM_BASE			*g_apMonsterVariation[dJOB_IMAGE_DATA_COUNT][dMONSTER_VARIATION_COUNT];

@@ -226,7 +226,7 @@ enum
 	eSKILL_TYPE_MISSILE						,	//	πÃªÁ¿œ
 	eSKILL_TYPE_CONTINUOUS_SHOOT			,	//	ø¨º” πﬂªÅE	
 	eSKILL_TYPE_EXPLOSION_MISSILE			,	//	∆¯πﬂπÃªÁ¿œ
-	eSKILL_TYPE_PIERCING_MISSILE			,	//	∞ÅEÅEÃªÁ¿œ
+	eSKILL_TYPE_PIERCING_MISSILE			,
 	eSKILL_TYPE_ILLUSION_MISSILE			,	//	»ØªÛπÃªÁ¿œ
 	eSKILL_TYPE_SPREAD_ARROW				,	//	Ω∫«¡∑πµÅEæ÷∑ŒøÅE	
 	eSKILL_TYPE_BIT_GLIDER					,	//	∫Ò∆Æ ±€∂Û¿Ã¥ÅE	
@@ -250,8 +250,8 @@ enum
 	eSKILL_TYPE_DOUBLE_TARGET				,	//	¥ı∫ÅE≈∏∞Ÿ
 	eSKILL_TYPE_GAS							,	//	∞°Ω∫
 	eSKILL_TYPE_FLORENCE_SPECIAL			,	//	«√∑Œ∑ªΩ∫ Ω∫∆‰º» ≈∏¿‘
-	eSKILL_TYPE_ROLLING_LOG					,	//	µ•±ºµ•±º≈ÅE™π´
-	eSKILL_TYPE_BIG_BULLET					,	//	∞≈¥ÅE∫»Ø
+	eSKILL_TYPE_ROLLING_LOG					,
+	eSKILL_TYPE_BIG_BULLET					,
 	eSKILL_TYPE_THROW_ITEM					,	//	æ∆¿Ã≈€ ¥¯¡ˆ±ÅE	
 	eSKILL_TYPE_LIGHTNING_WINDER			,	//	∂Û¿Ã∆Æ¥◊ øÕ¿Œ¥ÅE	
 	eSKILL_TYPE_MIRROR_IMAGE				,	//	"πÃ∑Ø¿ÃπÃ¡ÅE			,
@@ -265,8 +265,8 @@ enum
 //	¿ÅEı¿˚¿Œ Ω∫≈≥ ∞Ê∞ÅE	
 	eSKILL_TYPE_AGRESSIVE_SKILL_BORDER		,	//	¿ÅEı¿˚¿Œ Ω∫≈≥ ∞Ê∞ÅE//	¿ÅEı¿˚¿Œ Ω∫≈≥ ∞Ê∞ÅE//////////////////////////////////////////////////////
 	eSKILL_TYPE_JUMP						,	//	¡°«¡
-	eSKILL_TYPE_PASSIVE_REACTION			,	//	¡ˆº”«ÅEÆæ◊º«
-	eSKILL_TYPE_ACTIVITY_REACTION			,	//	πﬂµø«ÅEÆæ◊º«
+	eSKILL_TYPE_PASSIVE_REACTION			,
+	eSKILL_TYPE_ACTIVITY_REACTION			,
 	eSKILL_TYPE_ICY_STALAGMITE				,	//	æ∆¿ÃΩ√Ω∫≈ª∂Û±◊∏∂¿Ã∆Æ
 	eSKILL_TYPE_CHARGE						,	//	√Ê¿ÅE	
 	eSKILL_TYPE_HEAL						,	//	ƒ°∑ÅE	
@@ -1099,7 +1099,7 @@ typedef union _union_skill_enchanted_image
 		DWORD	m_bf1IsRageSoul:1;					//6 ≈∏ø¿∏£¥¬øµ»•.
 		DWORD	m_bf1IsBindingWords:1;				// 7	ææ˚Õ∏º”.
 		DWORD	m_bf1IsFlee		:1	;				// 8	∞¯∆ÅE.
-		DWORD	m_bf1IsAddAbsoluteAttackPower				:	1;				//	9	¿˝¥ÅE™∞¯∞›∑¬√ﬂ∞°
+		DWORD	m_bf1IsAddAbsoluteAttackPower				:	1;
 		DWORD	m_bf1IsIncreaseAttackCount					:	1;				//	10	∞¯∞›»Ωºˆ¡ı∞°
 		DWORD	m_bf1IsIncreaseGetCP						:	1;				//	11	»πµÊCP¡ı∞°
 		DWORD	m_bf1IsIncreaseAbsoluteCriticalPercent		:	1;				//	12	¿˝¥ÅE™≈©∏Æ∆ºƒ√%¡ı∞°
@@ -1107,13 +1107,13 @@ typedef union _union_skill_enchanted_image
 		DWORD	m_bf1IsRushTime								:	1;				//	14	µπ¡ÅE		
 		DWORD	m_bf1IsFightingSpirit						:	1;				//	15	≈ı¡ÅE		
 		DWORD	m_bf1IsIgnoreBlocking						:	1;				//	16	∫˙”∞≈∑π´Ω√
-		DWORD	m_bf1IsReturnMissileDamage					:	1;				//	17	πÃªÁ¿œ¥ÅEÃ¡ˆ∏Æ≈œ
-		DWORD	m_bf1IsIncreaseHardBlow						:	1;				//	18	∞≠≈∏»Æ∑ÅEı∞°
+		DWORD	m_bf1IsReturnMissileDamage					:	1;
+		DWORD	m_bf1IsIncreaseHardBlow						:	1;
 		DWORD	m_bf1IsTransformationHunter					:	1;				//	19	ªÁ≥…≤€ ∏ÛΩ∫≈Õ ∫ØΩ≈
 		DWORD	m_bf1IsTransformationThief					:	1;				//	20	¡ªµµµœ ∏ÛΩ∫≈Õ∫ØΩ≈
 		DWORD	m_bf1IsTransformationMagician				:	1;				//	21	∏∂π˝ªÅE∏ÛΩ∫≈Õ∫ØΩ≈
 		DWORD	m_bf1IsTransformationReptile				:	1;				//	22	∆€π–∏ÆæÅE∏ÛΩ∫≈Õ∫ØΩ≈
-		DWORD	m_bf1IsImmunePhysicalDamage					:	1;				//	23	π∞∏Æ¥ÅEÃ¡ˆ¿Ãπ√
+		DWORD	m_bf1IsImmunePhysicalDamage					:	1;
 		DWORD	m_bf1IsGreamTant							:	1;				//	24	∫˚¿«¿Â∏∑
 		DWORD	m_bf1IsPowerOfVitalization					:	1;				//	25	»∞º∫»≠¿«±«¥…
 		DWORD	m_bf1IsMakeTypeUndead						:	1;					//	26	æµ•µÂ»≠

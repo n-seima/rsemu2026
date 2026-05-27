@@ -8,7 +8,7 @@
 #define	dFRIEND_GROUP_NAME_LENGTH	18
 #define	dACTIVE_REACTION_COUNT		4
 
-#define	dINCREASE_FRIEND_COUNT		// 친구목록 증가할 경우 주석을 푼다.
+#define	dINCREASE_FRIEND_COUNT
 
 #ifdef	dINCREASE_FRIEND_COUNT
 
@@ -24,8 +24,8 @@
 
 #pragma pack(2)
 
-//
-//	Bottom Slot Type
+
+
 enum
 {
 	eBST_SKILL,
@@ -58,9 +58,9 @@ public:
 class	cFriendInfoDefine
 {
 public:
-	WORD	m_bf1IsOnline		:	1;	//	온라인이냐?
-	WORD	m_bf4Group			:	4;	//	친구 그룹
-	WORD	m_bf8Job			:	8;	//	직업
+	WORD	m_bf1IsOnline		:	1;
+	WORD	m_bf4Group			:	4;
+	WORD	m_bf8Job			:	8;
 
 	char	m_strName[dNAME_LENGTH];
 
@@ -78,7 +78,7 @@ public:
 
 class	cFriendListOnlineInfoBase
 {
-	BYTE	m_abBuffer[dMAX_IS_ONLINE_FRIEND];	//	dMAX_FRIEND_COUNT+1 (4바이트 정렬을 위해 1바이트 추가)
+	BYTE	m_abBuffer[dMAX_IS_ONLINE_FRIEND];
 
 public:
 					cFriendListOnlineInfoBase()
@@ -86,12 +86,12 @@ public:
 						reset();
 					}
 
-	inline	void	reset()	//	초기화
+	inline	void	reset()
 	{
 		memset(this,0,sizeof(cFriendListOnlineInfoBase));
 	}
 
-	inline	bool	isOnlineFriend(int _iIndex)	//	_iIndex번째 친구녀석은 현재 온라인이냐?
+	inline	bool	isOnlineFriend(int _iIndex)
 	{
 		if	(m_abBuffer[_iIndex/8]&(1<<(_iIndex%8)))
 			return	true;
@@ -99,7 +99,7 @@ public:
 		return	false;
 	}
 
-	inline	void	setOnlineStatus(int _iIndex)	//	온라인 상태로 설정
+	inline	void	setOnlineStatus(int _iIndex)
 	{
 		int	iCheckValue	=	(1<<(_iIndex%8));
 
@@ -111,8 +111,8 @@ public:
 class	cUserCustomDataDefine
 {
 public:
-	//
-	//	
+
+
 	enum	eUSER_SKILL_SET
 	{
 		eUSS_LEFT_ABILITY,
@@ -122,12 +122,12 @@ public:
 		eUSS_QUICK_SKILL,
 	};
 
-	WORD				m_aLeftAbility[2],m_aSubAbility[2],m_aRightAbility[2],m_aSupportAbility[2];//선택된 어빌러티
+	WORD				m_aLeftAbility[2],m_aSubAbility[2],m_aRightAbility[2],m_aSupportAbility[2];
 	WORD				m_aQuickSkill[10][10][2];
 	WORD				m_aActivePassiveSkill[2][dACTIVE_REACTION_COUNT];
 
-	DWORD				m_bf1IsSaveAllDataByClient			:	1;	//	클라이언트에 의해 모든 정보가 한번 업데이트 됐다.
-	DWORD				m_bf1IsChangeFriendListOnlineStatus	:	1;	//	친구 리스트의 온라인 상태가 갱신됐다.(변동이 있었다.)
+	DWORD				m_bf1IsSaveAllDataByClient			:	1;
+	DWORD				m_bf1IsChangeFriendListOnlineStatus	:	1;
 
 	char				m_strGroupName[dFRIEND_GROUP_COUNT][dFRIEND_GROUP_NAME_LENGTH];
 	cFriendInfoDefine	m_aFriendList[dMAX_FRIEND_COUNT];
@@ -162,9 +162,9 @@ public:
 	void			changeFriendGroup(int _iGroup,char *_lpstrName);
 	int				getFriendCount();
 
-	void			resetCurrentFriendListOnlineStatus();	//	현재 친구들의 온라인 상태 전부 오프라인으로 초기화
-	void			updateFriendOnlineStatus(int _iIndex,bool _bIsOnline);	//	현재 친구들의 온라인 상태 변경(이전과 변동이 있다면 유저한테 전송한다.)
-	bool			isChangedFriendListOnlineStatus();	//	친구들 온라인 상태에 변화가 있냐?
+	void			resetCurrentFriendListOnlineStatus();
+	void			updateFriendOnlineStatus(int _iIndex,bool _bIsOnline);
+	bool			isChangedFriendListOnlineStatus();
 	void			getFriendListOnlineStatus(cFriendListOnlineInfoBase *_lpInfo);
 };
 

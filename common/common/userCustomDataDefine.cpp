@@ -21,13 +21,13 @@ cUserCustomDataDefine::copy(cUserCustomDataDefine *_lpData)
 class	cFriendInfoDefine_old
 {
 public:
-	WORD	m_bf1IsOnline		:	1;	//	온라인이냐?
-	WORD	m_bf4Group			:	4;	//	친구 그룹
-	WORD	m_bf4Job			:	4;	//	직업
+	WORD	m_bf1IsOnline		:	1;
+	WORD	m_bf4Group			:	4;
+	WORD	m_bf4Job			:	4;
 };
 
 #pragma pack()
-//	현재 친구들의 온라인 상태 전부 오프라인으로 초기화
+
 void
 cUserCustomDataDefine::resetCurrentFriendListOnlineStatus()
 {
@@ -55,7 +55,7 @@ cUserCustomDataDefine::resetCurrentFriendListOnlineStatus()
 			sprintf(m_strGroupName[i],"Group #%.2d",i+1);
 }
 
-//	현재 친구들의 온라인 상태 변경(이전과 변동이 있다면 유저한테 전송한다.)
+
 void
 cUserCustomDataDefine::updateFriendOnlineStatus(int _iIndex,bool _bIsOnline)
 {
@@ -83,7 +83,7 @@ cUserCustomDataDefine::getFriendListOnlineStatus(cFriendListOnlineInfoBase *_lpI
 	}
 }
 
-//	친구 목록의 온라인 상태 업데이트가 끝났다.
+
 bool
 cUserCustomDataDefine::isChangedFriendListOnlineStatus()
 {
@@ -242,8 +242,8 @@ cUserCustomDataDefine::changeFriendGroup(int _iGroup,char *_lpstrName)
 	}
 }
 
-//
-//	등록된 친구의 수
+
+
 int
 cUserCustomDataDefine::getFriendCount()
 {

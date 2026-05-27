@@ -11,7 +11,7 @@
 #define	dITEM_NAME_LENGTH				50
 #define	dNAME_LENGTH					18
 
-#define	dITEM_UNIQUE_DATA_COUNT			6			//	유니크 데이터 수
+#define	dITEM_UNIQUE_DATA_COUNT			6
 #define	dITEM_UNIQUE_DATA_VALUE_COUNT	8
 #define	dGENERATE_ITEM_DATA_COUNT		4
 #define	dGENERATE_ITEM_DATA_VALUE_COUNT	4
@@ -84,11 +84,11 @@ const	int	c_iFireWorkKindCount	=	10;
 
 #define	dVALID_ITEM						0xffffffff
 
-#define	dEQUIP_WEAPON					0			//	무기
+#define	dEQUIP_WEAPON					0
 #define	dEQUIP_SHIELD_BULLET			1			//	방패/탄환
 #define	dEQUIP_ARMOR					2			//	갑옷
 #define	dEQUIP_GLOVE					3			//	장갑
-#define	dEQUIP_HELM						4			//	헬멧 종류
+#define	dEQUIP_HELM						4
 #define	dEQUIP_EARING					5			//	귀거리
 #define	dEQUIP_NECKLACE					6			//	목걸이
 #define	dEQUIP_BELT						7			//	벨트
@@ -329,8 +329,8 @@ eIK_ENCHANT_ITEM				,//"인챈트 아이템",
 eIK_ITEM_PACK					,//"아이템팩",
 
 eIK_ALL_WEAPON					,//"모든 무기",
-eIK_SCYTHE						,	// 낫
-eIK_ARM_WEAPON					,		// 암웨폰
+eIK_SCYTHE						,
+eIK_ARM_WEAPON					,
 eIK_BOOK						,		// 책
 eIK_END,							// 마지막..
 
@@ -480,7 +480,7 @@ public:
 	char					m_strName[dITEM_NAME_LENGTH];		//	이름
 	char					m_strOwnerGuild[dNAME_LENGTH];	//	소유길드
 	DWORD					m_dwCommentAddress;					//	아이템 설명의 주소(텍스트는 따로 모아서 보관한다. 너무 많다. --)
-	WORD					m_wKind;							//	종류
+	WORD					m_wKind;
 	BYTE					m_aEnableJob[18];					//	착용 가능한 직업
 
 	DWORD					m_dwPrice;							//	가격
@@ -497,18 +497,18 @@ public:
 	WORD					m_wEquipUseLimitContents;
 	WORD					m_wEquipUseLimitMethod;
 	WORD					m_wRequireLevel;					//	사용/장비를 위한 최소 레벨
-	WORD					m_wRequireStrength;					//	사용/장비를 위한 최소 힘
+	WORD					m_wRequireStrength;
 	WORD					m_wRequireDexterity;				//	사용/장비를 위한 최소 민첩성
-	WORD					m_wRequireConstitution;				//	사용/장비를 위한 최소 체질
+	WORD					m_wRequireConstitution;
 	WORD					m_wRequireWisdom;					//	사용/장비를 위한 최소 지혜
 	WORD					m_wRequireIntelligence;				//	사용/장비를 위한 최소 지식
 	WORD					m_wRequireCharisma;					//	사용/장비를 위한 최소 카리스마
-	WORD					m_wRequireLuck;						//	사용/장비를 위한 최소 운
+	WORD					m_wRequireLuck;
 	WORD					m_wRequireAllignment;				//	사용/장비를 위한 성향
 
-	WORD					m_wIconShape;						//	상태창에서의 모양
-	WORD					m_wFieldShape;						//	필드에서의 모양
-	WORD					m_wEquippedShape;					//	착용 했을때의 모양
+	WORD					m_wIconShape;
+	WORD					m_wFieldShape;
+	WORD					m_wEquippedShape;
 	WORD					m_questKind : 2;
 	WORD					m_questIndex: 14;
 	WORD					m_wStackLimit;						//	특정 퀘스트에 필요한 아이템이다.
@@ -540,12 +540,12 @@ public:
 	DWORD					m_bf1IsUseAbleByThrowCandySkill	:	1;
 	DWORD					m_bf1IsUltimate					:	1;
 	DWORD					m_bf1IsBlockToEnchant			:	1;
-	DWORD					m_bf1IsBlockToFeedPet			:	1;	//	펫에게 먹이기 금지
+	DWORD					m_bf1IsBlockToFeedPet			:	1;
 	DWORD					m_bf1IsFreeTeleport				:	1;	//	무료 타운 포탈.
 	DWORD					m_bf1IsRequestSummonCarpet		:	1;	//	양탄자 소환 의뢰.
 	DWORD					m_bf1IsCanSummonMagicCarpet		:	1;	//	양탄자 소환 가능하게 하는 아이템.
-	DWORD					m_bf1RemeberPlace0				:	1;	//	0번 슬롯에 장소 기억
-	DWORD					m_bf1RemeberPlace1				:	1;	//	1번 슬롯에 장소 기억
+	DWORD					m_bf1RemeberPlace0				:	1;
+	DWORD					m_bf1RemeberPlace1				:	1;
 	DWORD					m_bf1RemeberPlace2				:	1;	//	2번 슬롯에 장소 기억	16
 	DWORD					m_bf1AddEntryGuildDungeon		:	1;	//	17
 	DWORD					m_bf1IsAddGetMysticStone		:	1;	//	신비석 추가 획득 18
@@ -586,12 +586,12 @@ public:
 	WORD					m_bf1IsNotConsume						:	1;		//15	 사용시 소모안됨.
 	WORD					m_bf1IsUseItemAfterTransformation		:	1;		//16	몬스터 변신후 사용
 
-	WORD					m_bf4ItemRebirthCount					:	4;		//4 아이템 전생회차
+	WORD					m_bf4ItemRebirthCount					:	4;
 	WORD					m_bf5LimitUpgradeRingOfInfinity			:	5;		//9 무한의 반지 업그레이드 제한 수치
 	WORD					m_bf1IsRingOfInfinity					:	1;		//10	무한의반지?
-	WORD					m_bf1IsUseToEnemy						:	1;		//11	 적에게 사용
-	WORD					m_bf1IsUseAfterWear						:	1;		//12	착용후에 기능 사용
-	WORD					m_bf1IsUsePremiumInventory				:	1;		//13	유료아이템 전용 인벤토리 사용
+	WORD					m_bf1IsUseToEnemy						:	1;
+	WORD					m_bf1IsUseAfterWear						:	1;
+	WORD					m_bf1IsUsePremiumInventory				:	1;
 	WORD					m_bf1IsNotApplyCopyEffect				:	1;		//14	복사 효과 적용안됨
 	WORD					m_bf1IsNotApplyReversionEffect			:	1;		//15	거래불가해제 효과 적용안됨
 	WORD					m_bf1IsNotGetUsedSkill					:	1;		//16	스킬로 줍기 불가
@@ -1192,14 +1192,14 @@ public:
 	WORD		m_wPieceItem	;
 
 	WORD		m_bf4ItemPiece		:	4;
-	WORD		m_bf8Count			:	10;	//	갯수
+	WORD		m_bf8Count			:	10;
 	WORD		m_bf1IsCustomItem	:	1;
 	WORD		m_bf1IsSetItem		:	1;
 
 	WORD		m_bf1IsItemPiece	:	1;
 	WORD		m_bf1IsUnknown		:	1;
 
-	DWORD		m_dwDroppingRate;	//	떨어뜨릴 확률
+	DWORD		m_dwDroppingRate;
 };
 
 class	cDroppingItemForSetItem
@@ -1208,14 +1208,14 @@ public:
 	WORD		wItemSet;
 
 	WORD		m_bf4SetItemIndex	:	4;
-	WORD		m_bf8Count			:	10;	//	갯수
+	WORD		m_bf8Count			:	10;
 	WORD		m_bf1IsCustomItem	:	1;
 	WORD		m_bf1IsSetItem		:	1;
 
 	WORD		m_bf1IsItemPiece	:	1;
 	WORD		m_bf1IsUnknown		:	1;
 
-	DWORD		m_dwDroppingRate;	//	떨어뜨릴 확률
+	DWORD		m_dwDroppingRate;
 };
 
 class	cDroppingItem
@@ -1223,13 +1223,13 @@ class	cDroppingItem
 public:
 	WORD		m_wItemType	;			//	아이템
 
-	WORD		m_bf8Count			:	10;	//	갯수
+	WORD		m_bf8Count			:	10;
 	WORD		m_bf1IsCustomItem	:	1;
 	WORD		m_bf1IsSetItem		:	1;
 	WORD		m_bf1IsItemPiece	:	1;
 	WORD		m_bf1IsUnknown		:	1;
 
-	DWORD		m_dwDroppingRate;	//	떨어뜨릴 확률
+	DWORD		m_dwDroppingRate;
 
 				cDroppingItem()	{reset();}
 

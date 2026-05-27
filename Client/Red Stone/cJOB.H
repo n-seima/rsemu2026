@@ -113,8 +113,8 @@ public:
 
 	WORD				m_wSerial;
 	int					m_iBody;			//	몸통
-	int					m_iVariation;			//	몸통
-	WORD				m_wPalette;			//	두개의 몸통에 팔레트 넘버
+	int					m_iVariation;
+	WORD				m_wPalette;
 	WORD				m_wPortrait;		//	포트릿
 	WORD				m_wType;			//	영웅,NPC,몬스터
 	WORD				m_wRank,m_wKind;

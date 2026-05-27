@@ -625,8 +625,10 @@ public:
 //¶≤¶¨¿œπ/∞‘¿” ∞E√ ∂¿E€
 	BOOL			sendClientType(int _iClientType);	//	¨∂¿æÆ ∏¿‘ ¿E€
 	BOOL			sendLogIn(char *_strId,char *_strPass,char *_strSelectServer,DWORD _dwClientVersion,BOOL _isDisconnectExistID,BOOL _isPortal,BOOL _bIsUseTokken);//∑Œ±¿Œ
-	BOOL			sendRemoveAvatar(char *_strName);//æπ∏ ¡øEE	BOOL			sendCreateAvatar(char *_strName,int _iJob);//æπ∏ ª˝º∫œ±E	
-	OOL			sendSelectAvatar(char *_strName);//æπ∏ º±√œ±E	BOOL			sendCopySelectAvatarDataToTestServer(cAVATAR_INFO *_lpInfo);
+	BOOL			sendRemoveAvatar(char *_strName);//æπ∏ ¡øE
+	BOOL			sendCreateAvatar(char *_strName,int _iJob);//æπ∏ ª˝º∫œ±E	
+	BOOL			sendSelectAvatar(char *_strName);//æπ∏ º±√œ±E
+	BOOL			sendCopySelectAvatarDataToTestServer(cAVATAR_INFO *_lpInfo);
 	BOOL			sendCopySelectAvatarDataToDuelServer(cAVATAR_INFO *_lpInfo,int _iWorld);
 	BOOL			sendConnectGame(char *_strID,char *_strAvatarName,int _iType);//∞‘¿” ø¨∞E	
 	BOOL			sendJoinGame();//∞‘¿” E°

@@ -579,7 +579,7 @@
       <SDLCheck>false</SDLCheck>
       <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
       <DisableSpecificWarnings>4996;4430;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <AdditionalOptions>/FI"stdafx.h" /Zc:forScope- /source-charset:.949 /execution-charset:.949 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/FI"stdafx.h" /Zc:forScope- /source-charset:.932 /execution-charset:.932 %(AdditionalOptions)</AdditionalOptions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <StringPooling>true</StringPooling>
       <ConformanceMode>Default</ConformanceMode>
