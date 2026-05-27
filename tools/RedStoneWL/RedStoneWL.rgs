@@ -1,0 +1,55 @@
+HKCR
+{
+	RedStoneWL.RedStoneWL.1 = s 'RedStoneWL Class'
+	{
+		CLSID = s '{BCF37AD2-F141-4B0F-9E56-A1E968E2559E}'
+	}
+	RedStoneWL.RedStoneWL = s 'RedStoneWL Class'
+	{
+		CLSID = s '{BCF37AD2-F141-4B0F-9E56-A1E968E2559E}'
+		CurVer = s 'RedStoneWL.RedStoneWL.1'
+	}
+	NoRemove CLSID
+	{
+		NoRemove 'Component Categories'
+		{
+			'{7DD95801-9882-11CF-9FA9-F1AA006C42C4}' = s '0'
+			{
+				'800' = s 'Safe for scripting'
+			}
+			'{7DD95801-9882-11CF-9FA9-F1AA006C42C4}' = s '0'
+			{
+				'800' = s 'Safe for initializing'
+			}
+		}
+
+		ForceRemove {BCF37AD2-F141-4B0F-9E56-A1E968E2559E} = s 'RedStoneWL Class'
+		{
+			'Implemented Categories'
+			{
+				'{7DD95801-9882-11CF-9FA9-F1AA006C42C4}'
+			}
+			'Implemented Categories'
+			{
+				'{7DD95801-9882-11CF-9FA9-F1AA006C42C4}'
+			}
+
+			ProgID = s 'RedStoneWL.RedStoneWL.1'
+			VersionIndependentProgID = s 'RedStoneWL.RedStoneWL'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{3DC591A7-F4F9-498F-8C68-9C8F3B5F0F1C}'
+			'Version' = s '1.0'
+		}
+	}
+}

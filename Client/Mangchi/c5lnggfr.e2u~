@@ -1,0 +1,93 @@
+#include "cKARMA.H"
+#include "cTEXT.H"
+#include "cAREA.H"
+#include "cJOB.H"
+#include "cVALUE.H"
+#include "cMAP.H"
+#include "cQUEST.H"
+#include "cPROJECT.H"
+#include "cACTOR.H"
+#include "cMESSAGE.H"
+#include "resource.h"
+#include "CShop.h"
+#include "CImageData.h"
+#include "CTitle.h"
+#include "setItem.h"
+#include "pieceItem.h"
+#include "secretDungeon.h"
+#include "mainQuest.h"
+#include "book.h"
+#include "cSkill.h"
+#include "cJOB.h"
+#include "eventDefine.h"
+
+BOOL	l_isEditPower	=	FALSE;
+
+cKEYWORD_ITEM	g_aKarmaText[200]	=
+{
+	"spin"									,	eKARMA_KW_SPIN							,
+	"equal"									,	eKARMA_KW_EQUAL							,		//	이상이다. 이하이다. 이다.
+	"skill"									,	eKARMA_KW_SKILL							,		//	마법 리스트
+	"power"									,	eKARMA_KW_POWER							,		//	캐릭터의 능력치
+	"item"									,	eKARMA_KW_ITEM							,
+	"string"								,	eKARMA_KW_STRING						,
+	"number"								,	eKARMA_KW_NUMBER						,
+	"hero_job"								,	eKARMA_KW_HERO_JOB						,
+	"allignment"							,	eKARMA_KW_ALLIGNMENT					,
+	"quest_own"								,	eKARMA_KW_QUEST_OWN						,
+	"quest_complete"						,	eKARMA_KW_QUEST_COMPLETE				,
+	"item_own"								,	eKARMA_KW_ITEM_OWN						,
+	"guild_member"							,	eKARMA_KW_GUILD_MEMBER					,
+	"item_equip"							,	eKARMA_KW_ITEM_EQUIP					,
+	"hero_job_own"							,	eKARMA_KW_JOB_OWN						,
+	"exist_not_exist"						,	eKARMA_KW_PARTY_GUILD_MEMBER_EXIST		,
+	"all_party_member_in_same_guild"		,	eKARMA_KW_ALL_PARTY_MEMBER_IN_SAME_GUILD,
+	"specific_item_own_member_exist"		,	eKARMA_KW_SPECIFIC_ITEM_OWN_MEMBER_EXIST,
+	"exist"									,	eKARMA_KW_EXIST							,
+	"own"									,	eKARMA_KW_OWN							,
+	"speech"								,	eKARMA_KW_SPEECH						,
+	"shop"									,	eKARMA_KW_SHOP							,
+	"quest"									,	eKARMA_KW_QUEST							,
+	"quest_process_level"					,	eKARMA_KW_QUEST_PROCESS_LEVEL			,
+	"special_item"							,	eKARMA_KW_SPECIAL_ITEM					,
+	"add_remove"							,	eKARMA_KW_ADD_REMOVE					,
+	"area"									,	eKARMA_KW_AREA							,
+	"all_area"								,	eKARMA_KW_ALL_AREA						,
+	"target_player"							,	eKARMA_KW_TARGET_PLAYER					,
+	"target"								,	eKARMA_KW_TARGET						,
+	"character"								,	eKARMA_KW_CHARACTER						,
+	"all_character"							,	eKARMA_KW_ALL_CHARACTER					,
+	"all_character_target_player"			,	eKARMA_KW_ALL_CHARACTER_TARGET_PLAYER	,
+	"all_character_target_player2"			,	eKARMA_KW_ALL_CHARACTER_TARGET_PLAYER2	,
+	"notice_range"							,	eKARMA_KW_NOTICE_RANGE					,
+	"notice_type"							,	eKARMA_KW_NOTICE_TYPE					,
+	"text_box"								,	eKARMA_KW_TEXT_BOX						,
+	"field"									,	eKARMA_KW_FIELD							,
+	"bi"									,	eKARMA_KW_BATTLE_INCLINATION			,
+	"physical_magic"						,	eKARMA_KW_PHYSICAL_MAGIC				,
+	"equipment"								,	eKARMA_KW_EQUIPMENT						,
+	"specific_item"							,	eKARMA_KW_SPECIFIC_ITEM					,
+	"quest_arbeit"							,	eKARMA_KW_QUEST_ARBEIT					,
+	"plus_minus"							,	eKARMA_KW_PLUS_MINUS					,
+	"quest_item"							,	eKARMA_KW_QUEST_ITEM					,
+	"title"									,	eKARMA_KW_TITLE							,
+	"party_member_location"					,	eKARMA_KW_PARTY_MEMBER_LOCATION			,
+	"player_job"							,	eKARMA_KW_PLAYER_JOB					,
+	"include_transformation_job"			,	eKARMA_KW_INCLUDE_TRANSFORMATION_JOB	,
+	"ida_anida"								,	eKARMA_KW_IDA_ANIDA						,
+	"is_party_leader"						,	eKARMA_KW_IS_PARTY_LEADER				,
+	"party_member_equal"					,	eKARMA_KW_PARTY_MEMBER_EQUAL			,
+	"only_equal"							,	eKARMA_KW_ONLY_EQUAL					,
+	"in_out"								,	eKARMA_KW_IN_OUT						,
+	"check_operator"						,	eKARMA_KW_CHECK_OPERATOR				,
+	"quest_target"							,	eKARMA_KW_QUEST_TARGET					,
+	"time_check"							,	eKARMA_KW_TIME_CHECK					,
+	"quest_complete_checkr"					,	eKARMA_KW_QUEST_COMPLETE_CHECKER		,
+	"check_quest_complete_checker"			,	eKARMA_KW_CHECK_QUEST_COMPLETE_CHECKER	,
+	"dungeon_value"							,	eKARMA_KW_DUNGEON_VALUE					,
+	"area_in_out"							,	eKARMA_KW_AREA_IN_OUT					,
+	"add_remove_set"						,	eKARMA_KW_ADD_SET_REMOVE				,
+	"move_patrol"							,	eKARMA_KW_MOVE_PATROL			,
+	"arca_door_trap_status"					,	eKARMA_KW_ARCA_DOOR_TRAP_STATUS			,
+	"arca_door_trap"						,	eKARMA_KW_ARCA_DOOR_TRAP				,
+	"mo

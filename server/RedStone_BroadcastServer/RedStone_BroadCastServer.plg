@@ -1,0 +1,160 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RedStone_BroadCastServer - Win32 Debug FOR JAPAN--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN/RedStone_BroadCastServer.res" /d "_DEBUG" "Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\RedStone_BroadCastServer.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP62B.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "../../Common/common" /I "../../common/packet" /D "_FOR_JAPAN" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "dIS_REDSTONE_ONE" /FR"RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN/" /Fp"RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN/RedStone_BroadCastServer.pch" /YX /Fo"RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN/" /Fd"RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN/" /FD /GZ /c 
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\DlgFindUserInfo.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\backup.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\ChattingDataBase.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\ChattingProcess.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\Client.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\cServerStatus.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\DebuggingDialog.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\FriendsListUpdater.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\HardwareInfo.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\lnk_util.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\ProcessThread.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\RedStone_BroadCastServer.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\RedStone_BroadCastServerDlg.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\TemporaryListForEntry.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\userCustomDataDefine.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\cADO_BASE.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\cScript.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\cSOCKET.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\cSRVUTIL.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\exceptionhandler.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\PacketBuffer.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\SFC.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\Tracer.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\party.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\partyDefine.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\operate_packet.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\guild.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\field.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\life_code.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\life_code_common.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\reg_common.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\server_type_define.cpp"
+"Z:\20110518\japan_110322_0.0538_1220\common\common\version.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP62B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP62C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "../../Common/common" /I "../../common/packet" /D "_FOR_JAPAN" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "dIS_REDSTONE_ONE" /FR"RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN/" /Fp"RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN/RedStone_BroadCastServer.pch" /Yc"stdafx.h" /Fo"RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN/" /Fd"RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN/" /FD /GZ /c 
+"Z:\20110518\japan_110322_0.0538_1220\server\RedStone_BroadcastServer\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP62C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP62D.tmp" with contents
+[
+winmm.lib ws2_32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Z:\540_Server_JPN\COMMUNITY_SERVER\CommunityServer(forJapan).pdb" /map:"Z:\540_Server_JPN\COMMUNITY_SERVER\CommunityServer(forJapan).map" /debug /debugtype:both /machine:I386 /out:"Z:\540_Server_JPN\COMMUNITY_SERVER\CommunityServer(forJapan).exe" /pdbtype:sept 
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\DlgFindUserInfo.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\backup.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\ChattingDataBase.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\ChattingProcess.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\Client.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\cServerStatus.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\DebuggingDialog.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\FriendsListUpdater.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\HardwareInfo.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\lnk_util.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\ProcessThread.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\RedStone_BroadCastServer.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\RedStone_BroadCastServerDlg.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\StdAfx.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\TemporaryListForEntry.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\userCustomDataDefine.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\cADO_BASE.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\cScript.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\cSOCKET.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\cSRVUTIL.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\exceptionhandler.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\PacketBuffer.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\SFC.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\Tracer.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\party.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\partyDefine.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\operate_packet.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\guild.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\field.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\life_code.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\life_code_common.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\reg_common.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\server_type_define.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\version.obj
+.\RedStone_BroadCastServer___Win32_Debug_FOR_JAPAN\RedStone_BroadCastServer.res
+.\zdll.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP62D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgFindUserInfo.cpp
+backup.cpp
+ChattingDataBase.cpp
+ChattingProcess.cpp
+Client.cpp
+cServerStatus.cpp
+DebuggingDialog.cpp
+FriendsListUpdater.cpp
+HardwareInfo.cpp
+lnk_util.cpp
+ProcessThread.cpp
+RedStone_BroadCastServer.cpp
+RedStone_BroadCastServerDlg.cpp
+TemporaryListForEntry.cpp
+userCustomDataDefine.cpp
+cADO_BASE.cpp
+cScript.cpp
+cSOCKET.cpp
+cSRVUTIL.cpp
+c:\program files\microsoft visual studio\vc98\include\vector(48) : warning C4786: '??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QAE@IABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@ABV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        z:\20110518\japan_110322_0.0538_1220\common\common\csrvutil.cpp(866) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+c:\program files\microsoft visual studio\vc98\include\vector(61) : warning C4786: '??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QAE@PBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0ABV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        z:\20110518\japan_110322_0.0538_1220\common\common\csrvutil.cpp(866) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+c:\program files\microsoft visual studio\vc98\include\vector(103) : warning C4786: '?rbegin@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QAE?AV?$reverse_iterator@PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@AAV12@PAV12@H@2@XZ' : identifier was truncated to '255' characters in the browser information
+        z:\20110518\japan_110322_0.0538_1220\common\common\csrvutil.cpp(866) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+c:\program files\microsoft visual studio\vc98\include\vector(105) : warning C4786: '?rbegin@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QBE?AV?$reverse_iterator@PBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@ABV12@PBV12@H@2@XZ' : identifier was truncated to '255' characters in the browser information
+        z:\20110518\japan_110322_0.0538_1220\common\common\csrvutil.cpp(866) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+c:\program files\microsoft visual studio\vc98\include\vector(107) : warning C4786: '?rend@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QAE?AV?$reverse_iterator@PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@AAV12@PAV12@H@2@XZ' : identifier was truncated to '255' characters in the browser information
+        z:\20110518\japan_110322_0.0538_1220\common\common\csrvutil.cpp(866) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+c:\program files\microsoft visual studio\vc98\include\vector(108) : warning C4786: '?rend@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QBE?AV?$reverse_iterator@PBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@ABV12@PBV12@H@2@XZ' : identifier was truncated to '255' characters in the browser information
+        z:\20110518\japan_110322_0.0538_1220\common\common\csrvutil.cpp(866) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+z:\20110518\japan_110322_0.0538_1220\common\common\csrvutil.cpp(895) : warning C4786: 'std::reverse_iterator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &,std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *,int>' : identifier was truncated to '255' characters in the debug information
+z:\20110518\japan_110322_0.0538_1220\common\common\csrvutil.cpp(895) : warning C4786: 'std::reverse_iterator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > *,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> > &,std::basic_string<char,std::char_traits<char>,std::allocator<char> > *,int>' : identifier was truncated to '255' characters in the debug information
+exceptionhandler.cpp
+c:\program files\microsoft visual studio\vc98\include\vector(39) : warning C4786: 'std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\vector(52) : warning C4786: 'std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >' : identifier was truncated to '255' characters in the debug information
+c:\program files\microsoft visual studio\vc98\include\vector(60) : warning C4786: 'std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >' : identifier was truncated to '255' characters in the debug information
+PacketBuffer.cpp
+SFC.cpp
+Tracer.cpp
+party.cpp
+partyDefine.cpp
+operate_packet.cpp
+z:\20110518\japan_110322_0.0538_1220\server\redstone_broadcastserver\operate_packet.cpp(580) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+guild.cpp
+field.cpp
+life_code.cpp
+life_code_common.cpp
+reg_common.cpp
+server_type_define.cpp
+version.cpp
+Linking...
+LINK : warning LNK4075: ignoring /INCREMENTAL due to /DEBUGTYPE specification
+
+
+
+<h3>Results</h3>
+CommunityServer(forJapan).exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

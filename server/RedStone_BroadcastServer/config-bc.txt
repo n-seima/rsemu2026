@@ -1,0 +1,4 @@
+AVATARDBCINFO = 58.150.56.170;
+WORLDINFO = 58.150.56.170;
+isWriteUserConnectionInfo = 0;
+END;

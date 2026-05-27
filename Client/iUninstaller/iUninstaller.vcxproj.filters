@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d3ebc8cb-a56f-4ec4-a46a-b0d9fcf4e1fb}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{cfc46359-c3ae-41cd-baf3-1696fb9e5b24}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{068bd529-c393-4aa8-9ed9-9621ed66073c}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="message">
+      <UniqueIdentifier>{442045bf-e71b-4cce-b808-fa74a692380e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{037cd37a-0b44-45b0-81c4-88e0ed9196ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frame">
+      <UniqueIdentifier>{967280ae-0ef0-43d0-82cf-de7a1b35485a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image">
+      <UniqueIdentifier>{223d2d3e-4521-4a42-94c7-e1904e315b40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{dcc440ab-6a6a-460c-9d5e-e68760589846}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Red Stone\CMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uninstall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForJapan.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForKorea.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForThai.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForUSA.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="bar_menu.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="c16BITSPRITE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="c8BITSPRITE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cBMP.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cDIB.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cDRAW.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cIMAGE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cNUX.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cPCX.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTEXT.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTGA.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTRANS.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cWINDOW.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="image_scroll_bar.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="SFC.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="uninstallData.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="welcome.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource.sd.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_jp.sd.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_kor.sd.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_THAI.sd.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_USA.sd.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="iUninstaller.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="bar_menu.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cDIB.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cDRAW.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cIMAGE.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cNUX.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cTEXT.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cWINDOW.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="image_scroll_bar.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="SFC.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="STDAFX.H">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="uninstallData.h">
+      <Filter>frame</Filter>
+    </ClInclude>
+    <ClInclude Include="welcome.h">
+      <Filter>frame</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource.sd.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_jp.sd.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_kor.sd.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_THAI.sd.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_USA.sd.h">
+      <Filter>image</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="uninstall.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

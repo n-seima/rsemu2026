@@ -1,0 +1,111 @@
+# ============================
+# ビルド成果物ディレクトリを無視
+# ============================
+
+*___Win32_Debug*/
+*___Win32_Release*/
+*___Win32_forJapan*/
+*___Win32_forJapanOperator*/
+*___Win32_Debug_FOR_JAPAN*/
+*___Win32_Release_FOR_JAPAN*/
+*___Win32_Debug_FOR_CHINA*/
+*___Win32_Release_FOR_CHINA*/
+
+# 中の必要ファイルを追跡対象にしたい場合は再スキャン許可（ただし、意図的に入れるときのみ有効）
+!*___Win32_Debug*/**
+!*___Win32_Release*/**
+!*___Win32_forJapan*/**
+!*___Win32_forJapanOperator*/**
+!*___Win32_Debug_FOR_JAPAN*/**
+!*___Win32_Release_FOR_JAPAN*/**
+!*___Win32_Debug_FOR_CHINA*/**
+!*___Win32_Release_FOR_CHINA*/**
+
+# ============================
+# Visual Studio 系キャッシュを完全除外
+# ============================
+
+.vs/
+*.ipch
+*.VC.db
+*.sdf
+*.opensdf
+*.db
+*.db-shm
+*.db-wal
+*.obj
+*.log
+*.pch
+*.tlog
+*.cache
+*.ilk
+*.idb
+*.pdb
+
+# ============================
+# 必要なプロジェクト構成・ソースコードファイルは除外しない
+# ============================
+
+# プロジェクト設定ファイル
+!*.sln
+!*.sln.docstates
+!*.vcxproj
+!*.vcxproj.filters
+!*.dsp
+!*.dsw
+
+# ユーザー構成（必要なら除外してもOK）
+!*.user
+!*.userosscache
+!*.suo
+!*.ncb
+!*.opt
+!*.aps
+
+# ソースコード
+!*.c
+!*.cpp
+!*.h
+!*.hpp
+!*.inl
+!*.def
+!*.idl
+
+# リソース
+!*.rc
+!*.bmp
+!*.ico
+!*.cur
+
+# ドキュメント系・設定ファイル
+!*.md
+!*.txt
+!*.xml
+!*.json
+!*.html
+!*.htm
+!*.scc
+
+# スクリプト・プログラム系
+!*.py
+!*.bat
+!*.cmd
+!*.sh
+!*.ps1
+!*.js
+!*.css
+!*.sql
+server/Debug/StaticLib1.lib
+StaticLib1/Debug/msado20.tlh
+StaticLib1/Debug/msado20.tli
+server/Debug/StaticLib1.lib
+server/SMManager/AvatarDBC_SMManagerR.exe
+server/SMManager/Release/SMManager.exe.recipe
+server/SMManager/Release/SMManager.res
+StaticLib1/Debug/msado20.tlh
+StaticLib1/Debug/msado20.tli
+StaticLib1/Debug/msado20.tlh
+StaticLib1/Debug/msado20.tli
+Client/Mangchi/Mangchi.ncb
+Client/Mangchi/Mangchi.plg
+Client/Red Stone dev Client/MangchiForJapan.exe

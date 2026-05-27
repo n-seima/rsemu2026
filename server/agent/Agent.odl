@@ -1,0 +1,42 @@
+// Agent.odl : type library source for Agent.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (Agent.tlb).
+
+[ uuid(DDA1672F-66C9-42FF-9E8A-3C739AFA2A07), version(1.0) ]
+library Agent
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CAgentDoc
+	
+	[ uuid(D439BFFB-26FE-44BB-B034-5122ACF63353) ]
+	dispinterface IAgent
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CAgentDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CAgentDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CAgentDoc
+	
+	[ uuid(E4FF91DC-E699-4724-9258-BA0790341034) ]
+	coclass Agent
+	{
+		[default] dispinterface IAgent;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

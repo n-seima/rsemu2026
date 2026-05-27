@@ -1,0 +1,36 @@
+MAXUSERCOUNT = 2000;
+WORLDNAME = 리뉴얼팀 서버;
+SERVERINDEX = 0;
+LISTSERVERINDEX = 1;	//	로그인 서버 리스트에서 보일 순서.
+GAMESERVER_COUNT = 1;
+TYPE = 2;			//	beta server
+DBCACHEIP = 58.150.56.170;
+DBCACHEPORT = 50128;
+IDDBCACHEIP = 58.150.56.170;
+IDDBCACHEPORT = 51029;
+IGNORE_SS_INFO = 1;
+
+WEEKFIXCHECK = -1;
+TESTWEEKFIXCHECK = -1;
+HOURFIXCHECK = -1;
+MINFIXCHECK  = -1;
+MSGFIXCHECK  = "What's up?!";
+
+//	길드전 예약을 못하는 시간을 정한다. 모두 0이면 설정 X
+//	요일(0 ~7) | 막을 시 (0 ~ 23) | 막을 분(0 ~ 59) | 복구 시 | 복구 분;
+EXCEPT_GUILDBATTLETIME = 3 | 9 | 30 | 12 | 30 ;
+
+TRIAL_GAME_BEGIN	=	2008 |	9	|  9;
+TRIAL_GAME_END		=	2008 |	10	| 10;
+TRIAL_GAME_NAME		=	"WCG 예선전";
+update_weelky_ranking_day = 3; //  주간 랭킹 산정 요일. 일요일=0,월요일=1,화요일=2,수요일=3,목요일=4,금요일=5,토요일=6
+
+OFFLINE_TOURNAMENT_COMMENT	=	"9월 10일 12시 30분 부터 14시 30분까지 오프라인 토너먼트를 진행함에 따라 일반 유저의 접속을 제한하고 있습니다.";
+OFFLINE_TOURNAMENT_BEGIN	=	2008 | 9 | 10 | 12 | 30;
+OFFLINE_TOURNAMENT_END		=	2008 | 9 | 10 | 14 | 30;
+
+
+SEASONVARIABLE	=	4;
+//requital	1	1440	2004/10/27
+
+END;

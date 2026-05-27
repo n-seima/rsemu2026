@@ -1,0 +1,6 @@
+화일 생성 시간 : date[12/01/00] time[18:58:41] 
+[18:58:56] Message : Nux 화일이 완성 되었습니다. - [C:\Work\Project - Mirror War\Patch\Release]폴더에
+
+"Patch.exe_"화일을 생성 하였습니다.
+
+8개의 화일을 압축하였습니다.

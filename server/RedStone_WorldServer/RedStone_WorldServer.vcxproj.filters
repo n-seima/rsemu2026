@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{cdc5b854-7e91-477f-869e-c37965555bce}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{cda7bb52-28f1-4531-aba8-e79486532565}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Etc">
+      <UniqueIdentifier>{2d4ff57d-7a45-443c-97fa-6e4c3d230630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="guild">
+      <UniqueIdentifier>{f1683f1d-785f-4bba-9110-9593fe235e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{4a1d04ff-baa1-4c27-ab30-fe910416a56f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{cc06a0d7-88b1-4dd4-a9c7-2689ef578244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\ｻﾁｸ ﾄﾚｵ・">
+      <UniqueIdentifier>{aa402eba-37ed-4602-b381-32ee073c2373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\ｹｯ">
+      <UniqueIdentifier>{90eb9ff4-8f44-4dea-8e0f-f33653252d60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ﾆﾐﾅｶ">
+      <UniqueIdentifier>{4c61b7cc-3f2a-46f0-885e-535bb9c1dee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{21236bb4-4725-409a-8599-41f47bcea961}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\common\adCommandDefine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cADO_BASE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cDECODER.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cScript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cServerStatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSOCKET.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSRVUTIL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\ExScript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\HardwareInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\Msjexhnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\PacketBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="party.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="partyPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\SFC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\Tracer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnionParty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CEvent.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="CUtil.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="operate_packet.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="CGuildBattleManager.cpp">
+      <Filter>guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cGuildManager.cpp">
+      <Filter>guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild.cpp">
+      <Filter>guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\guild_common.cpp">
+      <Filter>guild</Filter>
+    </ClCompile>
+    <ClCompile Include="life_code.cpp">
+      <Filter>common\ｻﾁｸ ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\life_code_common.cpp">
+      <Filter>common\ｻﾁｸ ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\reg_common.cpp">
+      <Filter>common\ｹｯ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\server_type_define.cpp">
+      <Filter>common\ｹｯ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\version.cpp">
+      <Filter>common\ｹｯ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\inputConsoleCommand.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\adCommandDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AuthControlManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\carrotShopDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cDECODER.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\cServerStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\cSOCKET.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\cSRVUTIL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\packet\definePacketData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\HardwareInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Msjexhnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\PacketBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="party.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\RSComm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\STACK.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Tracer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\zconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\zlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CEvent.h">
+      <Filter>Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="CUtil.h">
+      <Filter>Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\eventDefine.h">
+      <Filter>Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="operate_packet.h">
+      <Filter>Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="CGuildBattleManager.h">
+      <Filter>guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CGuildDefine.h">
+      <Filter>guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild.h">
+      <Filter>guild</Filter>
+    </ClInclude>
+    <ClInclude Include="life_code.h">
+      <Filter>common\ｻﾁｸ ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\inputConsoleCommand.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_BASE.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_BCSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_DBSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_GAMESERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGINSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_USERDBSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_WORLDSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="zdll.lib">
+      <Filter>lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="config-world.txt" />
+    <Text Include="config-world_dev.txt" />
+  </ItemGroup>
+</Project>

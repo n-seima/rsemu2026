@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DEV|Win32">
+      <Configuration>DEV</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forInner|Win32">
+      <Configuration>forInner</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forJapanOperator|Win32">
+      <Configuration>forJapanOperator</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forJapan|Win32">
+      <Configuration>forJapan</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forOperator|Win32">
+      <Configuration>forOperator</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forThaiOperator|Win32">
+      <Configuration>forThaiOperator</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forThai|Win32">
+      <Configuration>forThai</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forUSAOperator|Win32">
+      <Configuration>forUSAOperator</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forUSA|Win32">
+      <Configuration>forUSA</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="TestForJapan|Win32">
+      <Configuration>TestForJapan</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/Red Stone", VCAAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <ProjectGuid>{8CC40F9B-7627-4B7D-8AF4-22DE1908CABA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forThaiOperator|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forUSA|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forUSAOperator|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forOperator|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TestForJapan|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forJapanOperator|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forThaiOperator|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forUSA|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forUSAOperator|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forOperator|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='TestForJapan|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forJapanOperator|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forJapanOperator|Win32'">
+    <OutDir>.\forJapanOperator\</OutDir>
+    <IntDir>.\forJapanOperator\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TestForJapan|Win32'">
+    <OutDir>.\TestForJapan\</OutDir>
+    <IntDir>.\TestForJapan\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">
+    <OutDir>D:\他サバ\RED STONE</OutDir>
+    <IntDir>.\forJapan\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <IncludePath>$(ProjectDir)/../../dx81sdk;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forOperator|Win32'">
+    <OutDir>.\forOperator\</OutDir>
+    <IntDir>.\forOperator\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'">
+    <OutDir>.\Red_Stone___Win32_DEV\</OutDir>
+    <IntDir>.\Red_Stone___Win32_DEV\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">
+    <OutDir>.\Red_Stone___Win32_forInner\</OutDir>
+    <IntDir>.\Red_Stone___Win32_forInner\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forUSAOperator|Win32'">
+    <OutDir>.\forUSAOperator\</OutDir>
+    <IntDir>.\forUSAOperator\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">
+    <OutDir>.\forThai\</OutDir>
+    <IntDir>.\forThai\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forUSA|Win32'">
+    <OutDir>.\forUSA\</OutDir>
+    <IntDir>.\forUSA\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forThaiOperator|Win32'">
+    <OutDir>.\forThaiOperator\</OutDir>
+    <IntDir>.\forThaiOperator\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forJapanOperator|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_FOR_JAPAN;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forJapanOperator\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\forJapanOperator\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\forJapanOperator\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forJapanOperator\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\forJapanOperator\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forJapanOperator\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>../../Red stone for Japan/Red Stone(forOperator).exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TestForJapan|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_FOR_JAPAN;_FOR_TEST;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\TestForJapan\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\TestForJapan\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\TestForJapan\</ObjectFileName>
+      <ProgramDataBaseFileName>.\TestForJapan\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\TestForJapan\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\TestForJapan\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>../../Red stone for Japan/Red Stone(forTest).exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_FOR_JAPAN;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forJapan\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\forJapan\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\forJapan\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forJapan\</ProgramDataBaseFileName>
+      <SDLCheck>false</SDLCheck>
+      <MinimalRebuild />
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <DisableSpecificWarnings>4996;4430;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/source-charset:euc-kr /execution-charset:euc-kr %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\forJapan\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forJapan\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>D:\他サバ\RED STONE\Red Stone.exe</OutputFile>
+      <AdditionalDependencies>imm32.lib;odbc32.lib;odbccp32.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forOperator|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_FOR_KOREA;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forOperator\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\forOperator\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\forOperator\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forOperator\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\forOperator\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forOperator\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>../../../../../Red Stone dev Client/Red Stone(forOperator).exe</OutputFile>
+      <AdditionalDependencies>version.lib;odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_FOR_KOREA;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Red_Stone___Win32_DEV\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Red_Stone___Win32_DEV\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Red_Stone___Win32_DEV\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Red_Stone___Win32_DEV\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Red_Stone___Win32_DEV\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Red_Stone___Win32_DEV\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>../../../../../Red Stone dev Client/Red Stone.exe</OutputFile>
+      <AdditionalLibraryDirectories>HShield;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>version.lib;odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_FOR_KOREA;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libcd.lib;libcmt.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>../../../../../Red Stone dev Client/Red Stone.exe</OutputFile>
+      <AdditionalLibraryDirectories>HShield;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>version.lib;odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_FOR_KOREA;_IS_DEV_CLIENT;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <SDLCheck>false</SDLCheck>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <DisableSpecificWarnings>4996;4430;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/FI"stdafx.h" /Zc:forScope- /source-charset:.949 /execution-charset:.949 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>true</StringPooling>
+      <ConformanceMode>Default</ConformanceMode>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>C:\Program Files (x86)\GameON\RED STONE\Red Stone(Debug).exe</OutputFile>
+      <AdditionalDependencies>version.lib;odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_FOR_INNER;WIN32;_DEBUG;_WINDOWS;_FOR_KOREA;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Red_Stone___Win32_forInner\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Red_Stone___Win32_forInner\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Red_Stone___Win32_forInner\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Red_Stone___Win32_forInner\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Red_Stone___Win32_forInner\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Red_Stone___Win32_forInner\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>../../../../../Red Stone dev Client/Red Stone(forInner).exe</OutputFile>
+      <AdditionalLibraryDirectories>HShield;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>version.lib;odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forUSAOperator|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_FOR_USA;_FOR_ENG;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forUSAOperator\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\forUSAOperator\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\forUSAOperator\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forUSAOperator\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\forUSAOperator\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forUSAOperator\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>../../../Red stone for USA/Red Stone(forOperator).exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_FOR_THAI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forThai\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\forThai\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\forThai\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forThai\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\forThai\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x041e</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forThai\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>../../../Red stone for Thai/Red Stone.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forUSA|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_FOR_USA;_FOR_ENG;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forUSA\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\forUSA\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\forUSA\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forUSA\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\forUSA\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forUSA\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>../../../Red stone for USA/Red Stone.exe</OutputFile>
+      <AdditionalLibraryDirectories>HShield;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>version.lib;odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forThaiOperator|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_FOR_THAI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forThaiOperator\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\forThaiOperator\Red Stone.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\forThaiOperator\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forThaiOperator\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\forThaiOperator\Red Stone.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x041e</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forThaiOperator\Red Stone.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>../../../Red stone for Thai/Red Stone(forOperator).exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\common\carrotShopDefine.cpp" />
+    <ClCompile Include="..\..\common\common\commonDefine.cpp" />
+    <ClCompile Include="..\..\common\common\cPetDefine.cpp" />
+    <ClCompile Include="..\..\common\common\guild_common.cpp" />
+    <ClCompile Include="..\..\common\common\itemDefine.cpp" />
+    <ClCompile Include="..\..\common\common\partyDefine.cpp" />
+    <ClCompile Include="..\..\common\common\playerJobCommon.cpp" />
+    <ClCompile Include="..\..\common\common\userCustomDataDefine.cpp" />
+    <ClCompile Include="abilityToolTip.cpp" />
+    <ClCompile Include="aidAttackSkill.cpp" />
+    <ClCompile Include="arca.cpp" />
+    <ClCompile Include="astArcMissile.cpp" />
+    <ClCompile Include="astBigBullet.cpp" />
+    <ClCompile Include="astBouncingMissile.cpp" />
+    <ClCompile Include="astContinuousBit.cpp" />
+    <ClCompile Include="astContinuousHitOfDoppelganger.cpp" />
+    <ClCompile Include="astDoubleTarget.cpp" />
+    <ClCompile Include="astLightningWinder.cpp" />
+    <ClCompile Include="astMultiMissile.cpp" />
+    <ClCompile Include="astRollingLog.cpp" />
+    <ClCompile Include="astWideMissile.cpp" />
+    <ClCompile Include="ast_chain_lightning.cpp" />
+    <ClCompile Include="ast_fire_wall.cpp" />
+    <ClCompile Include="ast_giga_lightning.cpp" />
+    <ClCompile Include="ast_one_bite.cpp" />
+    <ClCompile Include="banner.cpp" />
+    <ClCompile Include="BattleLog.cpp" />
+    <ClCompile Include="bm_arch_devil.cpp" />
+    <ClCompile Include="bm_draco_lich.cpp" />
+    <ClCompile Include="bm_event.cpp" />
+    <ClCompile Include="bm_sage_event.cpp" />
+    <ClCompile Include="bm_tiamath.cpp" />
+    <ClCompile Include="bm_water_dragon.cpp" />
+    <ClCompile Include="book.cpp" />
+    <ClCompile Include="book_gpw.cpp" />
+    <ClCompile Include="book_MonsterDictionary.cpp" />
+    <ClCompile Include="bottomless_box_gpw.cpp" />
+    <ClCompile Include="CAbility.cpp" />
+    <ClCompile Include="CAbilityInfo.cpp" />
+    <ClCompile Include="CActiveSkill.cpp" />
+    <ClCompile Include="CActor.cpp" />
+    <ClCompile Include="CActorAction.cpp" />
+    <ClCompile Include="CActorAfterImage.cpp" />
+    <ClCompile Include="CActorAnmInfo.cpp" />
+    <ClCompile Include="CActorEffect.cpp" />
+    <ClCompile Include="CActorEvent.cpp" />
+    <ClCompile Include="CActorHit.cpp" />
+    <ClCompile Include="CActorInfo.cpp" />
+    <ClCompile Include="CActorManager.cpp" />
+    <ClCompile Include="CActorMove.cpp" />
+    <ClCompile Include="CActorOperatePacket.cpp" />
+    <ClCompile Include="CActorPut.cpp" />
+    <ClCompile Include="CActorSkill.cpp" />
+    <ClCompile Include="CActorStatus.cpp" />
+    <ClCompile Include="CActorWrongStatus.cpp" />
+    <ClCompile Include="cAGENT.cpp" />
+    <ClCompile Include="CAgentReceiveBankPacket.cpp" />
+    <ClCompile Include="CAgentReceiveCartPacket.cpp" />
+    <ClCompile Include="CAgentReceiveCommunityPacket.cpp" />
+    <ClCompile Include="CAgentReceiveEventPacket.cpp" />
+    <ClCompile Include="CAgentReceiveGamePacket.cpp" />
+    <ClCompile Include="CAgentReceiveGuildPacket.cpp" />
+    <ClCompile Include="CAgentReceiveItemPacket.cpp" />
+    <ClCompile Include="CAgentReceivePacket.cpp" />
+    <ClCompile Include="CAgentReceivePetPacket.cpp" />
+    <ClCompile Include="CAgentReceivePitchmanShop.cpp" />
+    <ClCompile Include="CAgentReceiveSkillPacket.cpp" />
+    <ClCompile Include="CAgentReceiveTradePacket.cpp" />
+    <ClCompile Include="CAgentSendBankPacket.cpp" />
+    <ClCompile Include="CAgentSendCartPacket.cpp" />
+    <ClCompile Include="CAgentSendCommunityPacket.cpp" />
+    <ClCompile Include="CAgentSendEventPacket.cpp" />
+    <ClCompile Include="CAgentSendGuildPacket.cpp" />
+    <ClCompile Include="CAgentSendItemPacket.cpp" />
+    <ClCompile Include="CAgentSendPacket.cpp" />
+    <ClCompile Include="CAgentSendPichmanShopPacket.cpp" />
+    <ClCompile Include="CAgentSendTradePacket.cpp" />
+    <ClCompile Include="CArea.cpp" />
+    <ClCompile Include="carrotShop.cpp" />
+    <ClCompile Include="CBank.cpp" />
+    <ClCompile Include="CBankWindow.cpp" />
+    <ClCompile Include="CCartWindow.cpp" />
+    <ClCompile Include="CClientGameType.cpp" />
+    <ClCompile Include="CColorEffect.cpp" />
+    <ClCompile Include="CCompress.cpp" />
+    <ClCompile Include="cCopyOrCutPrefixWnd.cpp" />
+    <ClCompile Include="CDebugCode.cpp" />
+    <ClCompile Include="CDebugWindow.cpp" />
+    <ClCompile Include="CDialog.cpp" />
+    <ClCompile Include="CEvent.cpp" />
+    <ClCompile Include="CFieldItem.cpp" />
+    <ClCompile Include="CFriendWindow.cpp" />
+    <ClCompile Include="CGame.cpp" />
+    <ClCompile Include="CGameBottomInterface.cpp" />
+    <ClCompile Include="CGameInfo.cpp" />
+    <ClCompile Include="CGameInterface.cpp" />
+    <ClCompile Include="CGamePlay.cpp" />
+    <ClCompile Include="CGamePlayChat.cpp" />
+    <ClCompile Include="CGamePlayDraw.cpp" />
+    <ClCompile Include="CGamePlayInterface.cpp" />
+    <ClCompile Include="CGamePlayMain.cpp" />
+    <ClCompile Include="CGamePlayMinimap.cpp" />
+    <ClCompile Include="CGamePlayNotice.cpp" />
+    <ClCompile Include="CGamePlayParty.cpp" />
+    <ClCompile Include="CGamePlaySystemMessage.cpp" />
+    <ClCompile Include="CGamePlayUtility.cpp" />
+    <ClCompile Include="CGameUtil.cpp" />
+    <ClCompile Include="cGAME_CLOSE.cpp" />
+    <ClCompile Include="cGAME_CONNECT_GAME_SERVER.cpp" />
+    <ClCompile Include="cGAME_CREATE_AVATAR.cpp" />
+    <ClCompile Include="cGAME_CREDIT.cpp" />
+    <ClCompile Include="cGAME_ENDDING.cpp" />
+    <ClCompile Include="cGAME_INIT.cpp" />
+    <ClCompile Include="cGAME_LOGO.cpp" />
+    <ClCompile Include="cGAME_OPENING.cpp" />
+    <ClCompile Include="cGAME_OPTION.cpp" />
+    <ClCompile Include="cGAME_SELECT_AVATAR.cpp" />
+    <ClCompile Include="cGAME_TITLE.cpp" />
+    <ClCompile Include="CGuardianPost.cpp" />
+    <ClCompile Include="CGuild.cpp" />
+    <ClCompile Include="CGuildBattleScheduler.cpp" />
+    <ClCompile Include="CGuildMark.cpp" />
+    <ClCompile Include="CGuildMarkComposer.cpp" />
+    <ClCompile Include="CGuildSkill.cpp" />
+    <ClCompile Include="CGuildSkillManager.cpp" />
+    <ClCompile Include="CGuildWindow.cpp" />
+    <ClCompile Include="CHero.cpp" />
+    <ClCompile Include="CHeroBattle.cpp" />
+    <ClCompile Include="CHeroGuildSkill.cpp" />
+    <ClCompile Include="CHeroInfo.cpp" />
+    <ClCompile Include="CHeroInterface.cpp" />
+    <ClCompile Include="CHeroItem.cpp" />
+    <ClCompile Include="CHeroItemEffect.cpp" />
+    <ClCompile Include="CHeroMove.cpp" />
+    <ClCompile Include="CHeroPet.cpp" />
+    <ClCompile Include="CHeroQuest.cpp" />
+    <ClCompile Include="CHeroSkill.cpp" />
+    <ClCompile Include="CHeroSkillExtraEffect.cpp" />
+    <ClCompile Include="CHeroStatus.cpp" />
+    <ClCompile Include="CHeroTitle.cpp" />
+    <ClCompile Include="CHeroUseSkill.cpp" />
+    <ClCompile Include="CHeroWrongStatus.cpp" />
+    <ClCompile Include="CHitEffect.cpp" />
+    <ClCompile Include="CImageData.cpp" />
+    <ClCompile Include="CInventoryWindow.cpp" />
+    <ClCompile Include="CItem.cpp" />
+    <ClCompile Include="CItemEffect.cpp" />
+    <ClCompile Include="CItemPrefix.cpp" />
+    <ClCompile Include="CJob.cpp" />
+    <ClCompile Include="cKARMA.cpp" />
+    <ClCompile Include="cKARMA_VALUE.cpp" />
+    <ClCompile Include="CLoadTextCode.cpp" />
+    <ClCompile Include="CLog.cpp" />
+    <ClCompile Include="CMain.cpp" />
+    <ClCompile Include="CMakeGuildWindow.cpp" />
+    <ClCompile Include="CMap.cpp" />
+    <ClCompile Include="CMessage.cpp" />
+    <ClCompile Include="CObject.cpp" />
+    <ClCompile Include="commonUI.cpp" />
+    <ClCompile Include="cPACKET_QUE.cpp" />
+    <ClCompile Include="CParty.cpp" />
+    <ClCompile Include="CPartyWindow.cpp" />
+    <ClCompile Include="CPetWindow.cpp" />
+    <ClCompile Include="CPitchmanShop.cpp" />
+    <ClCompile Include="CPitchmanShopWindow.cpp" />
+    <ClCompile Include="CPortal.cpp" />
+    <ClCompile Include="cPROJECT.cpp" />
+    <ClCompile Include="CQuest.cpp" />
+    <ClCompile Include="CQuestWindow.cpp" />
+    <ClCompile Include="CRepairItemWindow.cpp" />
+    <ClCompile Include="CSelectVillageWindow.cpp" />
+    <ClCompile Include="CShake.cpp" />
+    <ClCompile Include="CShoppingCart.cpp" />
+    <ClCompile Include="CShopWindow.cpp" />
+    <ClCompile Include="CSkill.cpp" />
+    <ClCompile Include="CSkillAid.cpp" />
+    <ClCompile Include="CSkillAlteringHitter.cpp" />
+    <ClCompile Include="CSkillAwesomeFortress.cpp" />
+    <ClCompile Include="CSkillBiteHanging.cpp" />
+    <ClCompile Include="CSkillBitGlider.cpp" />
+    <ClCompile Include="CSkillBoomerang.cpp" />
+    <ClCompile Include="CSkillBouncingLinear.cpp" />
+    <ClCompile Include="CSkillBunshine.cpp" />
+    <ClCompile Include="CSkillCharge.cpp" />
+    <ClCompile Include="CSkillContinuousAttack.cpp" />
+    <ClCompile Include="CSkillContinuousShoot.cpp" />
+    <ClCompile Include="CSkillContinuousWhirlwind.cpp" />
+    <ClCompile Include="CSkillDropOnHead.cpp" />
+    <ClCompile Include="CSkillExplosionDefendOnImage.cpp" />
+    <ClCompile Include="CSkillExplosionMissile.cpp" />
+    <ClCompile Include="CSkillFireBall.cpp" />
+    <ClCompile Include="CSkillIcyStalagmite.cpp" />
+    <ClCompile Include="CSkillImpact.cpp" />
+    <ClCompile Include="CSkillInit.cpp" />
+    <ClCompile Include="CSkillIntervalShooter.cpp" />
+    <ClCompile Include="CSkillJump.cpp" />
+    <ClCompile Include="CSkillJumpAttack.cpp" />
+    <ClCompile Include="CSkillLandMarker.cpp" />
+    <ClCompile Include="CSkillLaser.cpp" />
+    <ClCompile Include="CSkillLinerChainExplosion.cpp" />
+    <ClCompile Include="CSkillMachineMissile.cpp" />
+    <ClCompile Include="CSkillMirrorTower.cpp" />
+    <ClCompile Include="CSkillMissile.cpp" />
+    <ClCompile Include="CSkillMotion.cpp" />
+    <ClCompile Include="CSkillPiercingMissile.cpp" />
+    <ClCompile Include="CSkillRadialArc.cpp" />
+    <ClCompile Include="CSkillRush.cpp" />
+    <ClCompile Include="CSkillScimitarCutting.cpp" />
+    <ClCompile Include="CSkillSpecialMissile.cpp" />
+    <ClCompile Include="CSkillSpreadArrow.cpp" />
+    <ClCompile Include="CSkillSurprisingRaid.cpp" />
+    <ClCompile Include="CSkillTailChaser.cpp" />
+    <ClCompile Include="CSkillTeleport.cpp" />
+    <ClCompile Include="CSkillTornado.cpp" />
+    <ClCompile Include="CSkillWaterFall.cpp" />
+    <ClCompile Include="CSkillWhirlthrusting.cpp" />
+    <ClCompile Include="CSkillWhirlwind.cpp" />
+    <ClCompile Include="CSkillWindow.cpp" />
+    <ClCompile Include="CSound.cpp" />
+    <ClCompile Include="CStatusWindow.cpp" />
+    <ClCompile Include="CSystemWindow.cpp" />
+    <ClCompile Include="CTile.cpp" />
+    <ClCompile Include="CTitle.cpp" />
+    <ClCompile Include="CTitleManager.cpp" />
+    <ClCompile Include="CTrade.cpp" />
+    <ClCompile Include="CTradeWindow.cpp" />
+    <ClCompile Include="CUpgradeShop.cpp" />
+    <ClCompile Include="CWorldMap.cpp" />
+    <ClCompile Include="devCode.cpp" />
+    <ClCompile Include="dialog_box.cpp" />
+    <ClCompile Include="duel.cpp" />
+    <ClCompile Include="duel_ranking_ui.cpp" />
+    <ClCompile Include="easySkillTree.cpp" />
+    <ClCompile Include="effectManager.cpp" />
+    <ClCompile Include="firecracker.cpp" />
+    <ClCompile Include="FogMap.cpp" />
+    <ClCompile Include="gasTypeSkill.cpp" />
+    <ClCompile Include="gg.cpp" />
+    <ClCompile Include="gpPacket.cpp" />
+    <ClCompile Include="gpWarningMessage.cpp" />
+    <ClCompile Include="guild_feed_pet_window.cpp" />
+    <ClCompile Include="guild_hall_list.cpp" />
+    <ClCompile Include="guild_honor_point_list.cpp" />
+    <ClCompile Include="guild_inventory.cpp" />
+    <ClCompile Include="guild_related_place_list.cpp" />
+    <ClCompile Include="helpScreen.cpp" />
+    <ClCompile Include="hero_area.cpp" />
+    <ClCompile Include="hero_mini_pet.cpp" />
+    <ClCompile Include="hero_old_data.cpp" />
+    <ClCompile Include="hero_trap.cpp" />
+    <ClCompile Include="itemSet.cpp" />
+    <ClCompile Include="judgeToItemWnd.cpp" />
+    <ClCompile Include="listWindow.cpp" />
+    <ClCompile Include="mac.cpp" />
+    <ClCompile Include="mainForChina.cpp" />
+    <ClCompile Include="mainQuest.cpp" />
+    <ClCompile Include="main_quest_event.cpp" />
+    <ClCompile Include="main_quest_event_draw.cpp" />
+    <ClCompile Include="main_quest_event_update.cpp" />
+    <ClCompile Include="mergeItemWnd.cpp" />
+    <ClCompile Include="minimap.cpp" />
+    <ClCompile Include="miniPet.cpp" />
+    <ClCompile Include="miniPetWindow.cpp" />
+    <ClCompile Include="movie.cpp" />
+    <ClCompile Include="movie_anm_player.cpp" />
+    <ClCompile Include="movie_event.cpp" />
+    <ClCompile Include="movie_frame.cpp" />
+    <ClCompile Include="movie_frame_operate.cpp" />
+    <ClCompile Include="movie_io.cpp" />
+    <ClCompile Include="partyList.cpp" />
+    <ClCompile Include="partyListWindow.cpp" />
+    <ClCompile Include="pieceItem.cpp" />
+    <ClCompile Include="putBanner.cpp" />
+    <ClCompile Include="questItem.cpp" />
+    <ClCompile Include="receiveTrapPacket.cpp" />
+    <ClCompile Include="Red Stone.cpp" />
+    <ClCompile Include="removePrefixWnd.cpp" />
+    <ClCompile Include="requestJoinPartyUserListWindow.cpp" />
+    <ClCompile Include="screen_filter.cpp" />
+    <ClCompile Include="screen_focus.cpp" />
+    <ClCompile Include="secretDungeon.cpp" />
+    <ClCompile Include="selectItemInPack.cpp" />
+    <ClCompile Include="shop.cpp" />
+    <ClCompile Include="TDLanguage.cpp" />
+    <ClCompile Include="tdspring_motion.cpp" />
+    <ClCompile Include="TDUtil.cpp" />
+    <ClCompile Include="titleScreenForMultiLoginServer.cpp" />
+    <ClCompile Include="titleScreenWorldList.cpp" />
+    <ClCompile Include="tool.cpp" />
+    <ClCompile Include="trap.cpp" />
+    <ClCompile Include="trapSkill.cpp" />
+    <ClCompile Include="user_custom_data.cpp" />
+    <ClCompile Include="version.cpp" />
+    <ClCompile Include="worldMapFieldInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\common\actorDefine.h" />
+    <ClInclude Include="..\..\common\common\arcaDefine.h" />
+    <ClInclude Include="..\..\common\common\areaDefine.h" />
+    <ClInclude Include="..\..\common\common\bannerDefine.h" />
+    <ClInclude Include="..\..\common\common\book_define.h" />
+    <ClInclude Include="..\..\common\common\carrotShopDefine.h" />
+    <ClInclude Include="..\..\common\common\CGuildDefine.h" />
+    <ClInclude Include="..\..\common\common\CItemDefine.h" />
+    <ClInclude Include="..\..\common\common\CItemEffectDefine.h" />
+    <ClInclude Include="..\..\common\common\CKarmaDefine.h" />
+    <ClInclude Include="..\..\common\common\commonClass.h" />
+    <ClInclude Include="..\..\common\common\CSkillDefine.h" />
+    <ClInclude Include="..\..\common\common\CTitleDefine.h" />
+    <ClInclude Include="..\..\common\common\jobDefine.h" />
+    <ClInclude Include="..\..\common\common\mess_sign.h" />
+    <ClInclude Include="..\..\common\common\miniPetCommon.h" />
+    <ClInclude Include="..\..\common\common\partyDefine.h" />
+    <ClInclude Include="..\..\common\common\playerJobCommon.h" />
+    <ClInclude Include="..\..\common\common\RSComm.h" />
+    <ClInclude Include="..\..\common\common\trapDefine.h" />
+    <ClInclude Include="..\..\common\common\userCustomDataDefine.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_BASE.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_BCSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_DBSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_GAMESERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGINSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_WORLDSERVER.h" />
+    <ClInclude Include="..\..\common\packet\definePacketData.h" />
+    <ClInclude Include="arca.h" />
+    <ClInclude Include="ast_chain_lightning.h" />
+    <ClInclude Include="ast_fire_wall.h" />
+    <ClInclude Include="ast_one_bite.h" />
+    <ClInclude Include="banner.h" />
+    <ClInclude Include="BASETSD.H" />
+    <ClInclude Include="BattleLog.h" />
+    <ClInclude Include="bm_arch_devil.h" />
+    <ClInclude Include="bm_draco_lich.h" />
+    <ClInclude Include="bm_event.h" />
+    <ClInclude Include="bm_sage_event.h" />
+    <ClInclude Include="bm_tiamath.h" />
+    <ClInclude Include="bm_water_dragon.h" />
+    <ClInclude Include="book.h" />
+    <ClInclude Include="book_gpw.h" />
+    <ClInclude Include="book_MonsterDictionary.h" />
+    <ClInclude Include="bottomless_box_gpw.h" />
+    <ClInclude Include="cACTION.H" />
+    <ClInclude Include="cACTOR.H" />
+    <ClInclude Include="CActorInline.h" />
+    <ClInclude Include="cAGENT.h" />
+    <ClInclude Include="cAREA.h" />
+    <ClInclude Include="carrotShop.h" />
+    <ClInclude Include="CBank.h" />
+    <ClInclude Include="CBankWindow.h" />
+    <ClInclude Include="CCartWindow.h" />
+    <ClInclude Include="CColorEffect.h" />
+    <ClInclude Include="cCOMPRESS.h" />
+    <ClInclude Include="cCopyOrCutPrefixWnd.h" />
+    <ClInclude Include="CDebugWindow.h" />
+    <ClInclude Include="CDialog.h" />
+    <ClInclude Include="CEvent.h" />
+    <ClInclude Include="CFieldItem.h" />
+    <ClInclude Include="CFriendWindow.h" />
+    <ClInclude Include="cGAME.h" />
+    <ClInclude Include="CGamePlay.h" />
+    <ClInclude Include="CGamePlayInterface.h" />
+    <ClInclude Include="CGameSaveOption.h" />
+    <ClInclude Include="cGAME_CLOSE.h" />
+    <ClInclude Include="cGAME_CONNECT_GAME_SERVER.h" />
+    <ClInclude Include="cGAME_CREATE_AVATAR.h" />
+    <ClInclude Include="cGAME_CREDIT.h" />
+    <ClInclude Include="cGAME_ENDDING.h" />
+    <ClInclude Include="cGAME_INIT.h" />
+    <ClInclude Include="cGAME_LOGO.h" />
+    <ClInclude Include="cGAME_OPENING.h" />
+    <ClInclude Include="cGAME_OPTION.h" />
+    <ClInclude Include="cGAME_SELECT_AVATAR.h" />
+    <ClInclude Include="cGAME_TITLE.h" />
+    <ClInclude Include="CGuardianPost.h" />
+    <ClInclude Include="CGuild.h" />
+    <ClInclude Include="CGuildBattleScheduler.h" />
+    <ClInclude Include="CGuildMarkComposer.h" />
+    <ClInclude Include="CGuildSkill.h" />
+    <ClInclude Include="CGuildWindow.h" />
+    <ClInclude Include="cHERO.h" />
+    <ClInclude Include="CHitEffect.h" />
+    <ClInclude Include="CImageData.h" />
+    <ClInclude Include="CImageDataDefine.h" />
+    <ClInclude Include="cITEM.h" />
+    <ClInclude Include="CItemEffect.h" />
+    <ClInclude Include="CItemPrefix.h" />
+    <ClInclude Include="cJOB.H" />
+    <ClInclude Include="cKARMA.h" />
+    <ClInclude Include="cKARMA_VALUE.h" />
+    <ClInclude Include="CLoadTextCode.h" />
+    <ClInclude Include="CLog.h" />
+    <ClInclude Include="cMAIN.h" />
+    <ClInclude Include="CMakeGuildWindow.h" />
+    <ClInclude Include="cMAP.h" />
+    <ClInclude Include="cMESSAGE.h" />
+    <ClInclude Include="cOBJECT.h" />
+    <ClInclude Include="commonUI.h" />
+    <ClInclude Include="cPACKET.h" />
+    <ClInclude Include="CParty.h" />
+    <ClInclude Include="CPartyWindow.h" />
+    <ClInclude Include="CPet.h" />
+    <ClInclude Include="CPetWindow.h" />
+    <ClInclude Include="CPitchmanShop.h" />
+    <ClInclude Include="CPitchmanShopWindow.h" />
+    <ClInclude Include="CPlayerStatus.h" />
+    <ClInclude Include="CPortal.h" />
+    <ClInclude Include="cPROJECT.h" />
+    <ClInclude Include="cQUEST.h" />
+    <ClInclude Include="CQuestWindow.h" />
+    <ClInclude Include="CRepairItemWindow.h" />
+    <ClInclude Include="CSelectVillageWindow.h" />
+    <ClInclude Include="cSHAKE.h" />
+    <ClInclude Include="CShop.h" />
+    <ClInclude Include="CShoppingCart.h" />
+    <ClInclude Include="CShopWindow.h" />
+    <ClInclude Include="cSKILL.h" />
+    <ClInclude Include="CSkillWindow.h" />
+    <ClInclude Include="CSound.h" />
+    <ClInclude Include="cTILE.h" />
+    <ClInclude Include="CTitle.h" />
+    <ClInclude Include="CTrade.h" />
+    <ClInclude Include="CUpgradeShop.h" />
+    <ClInclude Include="cWEAPON.h" />
+    <ClInclude Include="CWindowInterface.h" />
+    <ClInclude Include="CWorldMap.h" />
+    <ClInclude Include="devCode.h" />
+    <ClInclude Include="dialog_box.h" />
+    <ClInclude Include="duel.h" />
+    <ClInclude Include="easySkillTree.h" />
+    <ClInclude Include="effectManager.h" />
+    <ClInclude Include="firecracker.h" />
+    <ClInclude Include="guild_feed_pet_window.h" />
+    <ClInclude Include="guild_hall_list.h" />
+    <ClInclude Include="guild_honor_point_list.h" />
+    <ClInclude Include="guild_inventory.h" />
+    <ClInclude Include="guild_related_place_list.h" />
+    <ClInclude Include="helpScreen.h" />
+    <ClInclude Include="hero_mini_pet.h" />
+    <ClInclude Include="itemSet.h" />
+    <ClInclude Include="judgeToItemWnd.h" />
+    <ClInclude Include="kls.h" />
+    <ClInclude Include="listWindow.h" />
+    <ClInclude Include="mac.h" />
+    <ClInclude Include="mainQuest.h" />
+    <ClInclude Include="main_quest_event.h" />
+    <ClInclude Include="mergeItemWnd.h" />
+    <ClInclude Include="miniPet.h" />
+    <ClInclude Include="miniPetWindow.h" />
+    <ClInclude Include="movie.h" />
+    <ClInclude Include="movie_anm_player.h" />
+    <ClInclude Include="ngpBrown.h" />
+    <ClInclude Include="NPGameLib.h" />
+    <ClInclude Include="pieceItem.h" />
+    <ClInclude Include="putBanner.h" />
+    <ClInclude Include="removePrefixWnd.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="screen_filter.h" />
+    <ClInclude Include="screen_focus.h" />
+    <ClInclude Include="secretDungeon.h" />
+    <ClInclude Include="selectItemInPack.h" />
+    <ClInclude Include="speedhackchecker.h" />
+    <ClInclude Include="ssl.h" />
+    <ClInclude Include="STDAFX.H" />
+    <ClInclude Include="summonBeast.h" />
+    <ClInclude Include="TDLanguage.h" />
+    <ClInclude Include="tdspring_motion.h" />
+    <ClInclude Include="TDUtil.h" />
+    <ClInclude Include="tool.h" />
+    <ClInclude Include="trap.h" />
+    <ClInclude Include="trapSkill.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="XTrap4Client.h" />
+    <ClInclude Include="XTrap\Xtrap_C_Interface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="cur00001.cur" />
+    <CustomBuild Include="cur00002.cur" />
+    <CustomBuild Include="cur00003.cur" />
+    <CustomBuild Include="cur00004.cur" />
+    <CustomBuild Include="cur00005.cur" />
+    <CustomBuild Include="cur00006.cur" />
+    <CustomBuild Include="cursor.cur" />
+    <CustomBuild Include="cursor1.cur" />
+    <CustomBuild Include="disarm.cur" />
+    <CustomBuild Include="event.cur" />
+    <CustomBuild Include="Include.zip" />
+    <CustomBuild Include="normal_c.cur" />
+    <CustomBuild Include="open_door.cur" />
+    <CustomBuild Include="RSﾀﾎｼﾎｰ・xls" />
+    <CustomBuild Include="sword.cur" />
+    <CustomBuild Include="unlock.cur" />
+    <CustomBuild Include="warning1.cur" />
+    <CustomBuild Include="warning2.cur" />
+    <CustomBuild Include="warning3.cur" />
+    <CustomBuild Include="warning4.cur" />
+    <CustomBuild Include="ｸﾊ ｵ･ﾀﾌﾅﾍ ﾃﾟｰ｡ ｰ・ﾃ ﾇﾊｿ菎ﾛｾ・txt" />
+    <CustomBuild Include="ﾁ・ﾃﾟｰ｡ ｰ・ﾃ ﾇﾊｿ・ﾀﾛｾ・txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="red stone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Red Stone.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Red Stone dev Client\config.txt">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">true</ExcludedFromBuild>
+    </Text>
+    <Text Include="GVG.TXT" />
+    <Text Include="text\common.txt" />
+    <Text Include="text\debug.txt" />
+    <Text Include="text\equipmentAllignment.txt" />
+    <Text Include="text\equipmentName.txt" />
+    <Text Include="text\eventMob.txt" />
+    <Text Include="text\extraItemGrade.txt" />
+    <Text Include="text\GreateGodGrace.txt" />
+    <Text Include="text\guildRank.txt" />
+    <Text Include="text\heroJobText.txt" />
+    <Text Include="text\innerHelp.txt" />
+    <Text Include="text\magicResistance.txt" />
+    <Text Include="text\MonsterDic.txt" />
+    <Text Include="text\monsterGrade.txt" />
+    <Text Include="text\monsterType.txt" />
+    <Text Include="text\npcName.txt" />
+    <Text Include="text\power.txt" />
+    <Text Include="text\server.txt" />
+    <Text Include="text\slanderFilter.txt" />
+    <Text Include="text\statusToolTip.txt" />
+    <Text Include="text\tip.txt" />
+    <Text Include="text\_fontName.txt" />
+    <Text Include="VS ｼｳﾄ｡ﾈﾄ ﾇﾘｾﾟ ﾇﾒ ﾀﾏ.TXT" />
+    <Text Include="ﾀﾏｺｻ ｾ･ﾀﾌﾆｮ ﾀ・ﾞ ｻ酩ﾗ.txt" />
+    <Text Include="ﾀﾏｺｻ ｿｹｿﾜ ｻ酩ﾗ.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dkls.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="kls.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="ngpBlue.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="ngpBrown.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="NPGameLib.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="SpeedHackCheckerDll.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="ssl.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="XTrap\XTrap4Client_ClientPart_mt.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="XTrap\XTrap4Client_mt.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="XTrap\XTrap4Client_ServerPart_mt.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="XTrap\XTrap_Unipher_mt.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DEV|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="ZipArchive.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">true</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Red Stone.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
+      <Project>{7e7053a4-d993-4baf-8937-122772e6d126}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,115 @@
+직업 추가시 필요한 작업
+	기획
+		- 초기 스탯 정의
+		- 시야 정의
+		- 최소,최대 대미지,방어력
+		- 레벨업에 따른 자동 증가 스탯 포인트 정의
+		- 스테이터스 효용 정의
+			힘 공격력,지식 이런거
+		- 스킬 디자인
+		- 스킬 마스터 칭호용 퀘스트
+		- 착용 가능한 무기 정의
+			아이콘?
+		- 전용 무기/전용 장비 디자인
+
+	그래픽
+		- 직업/무기 원화
+		- 직업 3D 이미지
+		- 무기 3D 이미지
+		- 스킬 아이콘
+		- 스킬 이펙트
+		- 직업 아이콘(파티창에 조그만거,8비트로 만들어야 함)
+		- data/heros 폴더에 직업 바디 3단계 추가(파일명은 l_strHeroBody.sad 가 됨)
+		- data/heros 폴더에 .plt 파일 추가 제작.
+			팔레트 툴을 이용해 다섯개의 팔레트를 하나로 합친다.
+				파일명은 l_strHeroBody.plt 가 됨
+
+	사운드
+		- 스킬 효과음
+
+	프로그램
+		- 파티 목록에 선호 직업 관련 작업 추가.
+			- 서버/클라이언트 양쪽에 필요한 작업(알아서 찾아서 할것.. - -)
+
+		- 서버
+			- server/common/cPlayerJobCommon.h
+				c_aIsMale에 성별 추가
+				c_aIsMelee에 근접 설정 추가
+				c_aFreeJobChangeJob 무기 바꾸기인지 변신인지 추가
+				c_aUseBulletJob 탄 사용하는 직업
+				c_aUseShieldJob 방패 사용하는 직업
+				c_aUseWeaponJob 무기 사용하는 직업 
+				c_aWeaponTypeItem 에 무기 카테고리 추가 시키고 #define	dWEAPON_TYPE_ITEM_COUNT	값 변경
+
+			- server/common/cPlayerJobCommon.cpp	g_aiLevelUpValue
+				레벨업에 따른 자동 증가 스탯 포인트	
+				
+			- 플레이어 초기 데이터
+				- cDEFAULT_JOB_DATA	g_aPlayer1LvSetting
+					job_default_data.txt을 파싱한 정보. 
+					직업 릴리즈 단계  기본 장비,기본 스킬등등의 정보가 있음
+				- CJobBasicDataDefine	g_aPlayerJobBaseInfo
+					게임서버 CActor.cpp
+					캐릭터 서버 세이브 정보의 기본 정보 초기 레벨 스탯등의 정보가 있음
+					초기 스탯,시야,최소 최대 대미지등을 여기서 입력 함
+				- CPlayerSaveData	g_aDefaultPlayerJobData
+					g_aPlayer1LvSetting와 g_aPlayerJobBaseInfo를 합쳐 만든 실제 초기 플레이어 세이브 정보
+					아바타 DBC에서 이정보를 읽어 캐릭터를 생성한다.
+
+			- server/common/playerJobCommon.h
+				dPLAYER_JOB_COUNT	변경
+				dBODY_ 시리즈 추가 직업당 3개 추가 하면됨
+				dBODY_HERO_JOB_END 인덱스 변경
+			- server/common/jobDefine.h
+				직업 디파인 추가
+			- server/RedStone_GameServer/CImageData.cpp
+				l_strHerofileName 에 직업 데이터 추가
+			- 무기추가시 미니펫먹이 생체형으로 설정.
+
+		- 클라이언트
+			- CImageData.cpp
+				l_strWeaponFileName 무기 추가
+				l_strJobIconFileName 직업 아이콘 추가
+				l_strShieldFileName 방패 추가
+				l_strHeroBody 직업 이미지 추가
+			- cGAME_INIT.cpp
+				s_mcuStatic.init( ... 메모리 늘려야 됨(아마도..)
+
+			- statusToolTip.txt
+				스태이터스 툴팁
+			- heroJobText.txt
+				영웅 직업 이름 추가
+
+			- dev data/script/skill/player 폴더에 스킬 스크립트 제작후 
+			- dev data/script/skill/skill.txt 파일에 해당 파일명 등록
+			- effect_file.txt
+				이팩트 내용을 추가.
+			- guild_skill.txt
+				길드 스킬 칭호를 추가.
+			- job_default_data.txt
+				캐릭 생성시 기본 장비와 스킬을 셋팅.
+			- title.txt
+				캐릭터 전용 칭호 추가.
+
+		- 망치	
+			- 직업 제한 정보 추가
+				- "SET_ITEM_DATA"
+					- 체크 박스
+				- "SETITEM"
+					- 체크 박스
+				- "QUEST_NEW"
+					- 체크 박스
+				- cJOB.cpp
+					g_aiEnableJobIDCList 에 새로운 직업 체크 박스 컨트롤 추가
+
+			- cMESSAGE.cpp
+				g_aDefaultJobName 에 직업 추가
+			- 퀘스트 수행 가능 정보 직업 추가
+			- 무기추가
+			- 직업체크 트리거 수정.
+
+		- 로그툴
+			- l_strJobName 변수 검색해 관련 이름(한글 영문 모두) 추가
+
+		- 어드민툴
+			- g_strJobName 변수에 직업추가

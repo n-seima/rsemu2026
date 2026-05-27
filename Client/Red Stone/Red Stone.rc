@@ -1,0 +1,101 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+NORMAL_CURSOR           CURSOR  DISCARDABLE     "cursor.cur"
+PICK                    CURSOR  DISCARDABLE     "normal_c.cur"
+PLAYER                  CURSOR  DISCARDABLE     "cur00001.cur"
+WARNING                 CURSOR  DISCARDABLE     "cur00002.cur"
+MOVE_FIELD              CURSOR  DISCARDABLE     "warning1.cur"
+OPEN_BOX                CURSOR  DISCARDABLE     "cur00003.cur"
+POINT_DIALOG            CURSOR  DISCARDABLE     "warning2.cur"
+DIALOG                  CURSOR  DISCARDABLE     "warning3.cur"
+GOLD                    CURSOR  DISCARDABLE     "warning4.cur"
+WAIT                    CURSOR  DISCARDABLE     "cur00004.cur"
+ATTACK                  CURSOR  DISCARDABLE     "cur00005.cur"
+UNLOCK                  CURSOR  DISCARDABLE     "unlock.cur"
+OPEN_DOOR               CURSOR  DISCARDABLE     "open_door.cur"
+DISARM                  CURSOR  DISCARDABLE     "disarm.cur"
+EVENT                   CURSOR  DISCARDABLE     "event.cur"
+VIEW                    CURSOR  DISCARDABLE     "cur00006.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+REDSTONE                ICON    DISCARDABLE     "red stone.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+MANIFEST_RESOURCE_ID    24      MOVEABLE PURE   "Red Stone.exe.manifest"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

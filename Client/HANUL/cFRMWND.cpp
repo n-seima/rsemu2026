@@ -1,0 +1,803 @@
+#include "cMAIN.H"
+#include "cFRMWND.H"
+#include "cDRAW.H"
+#include "cANM.H"
+#include "cTEXT.H"
+
+BYTE	IsSelectedFrame[dMAX_FRAME];
+int		l_iCurFrame;
+
+#define	IDM_MINUS_FRAME_5	0
+#define	IDM_MINUS_FRAME_1	1
+#define	IDM_PLUS_FRAME_1	2
+#define	IDM_PLUS_FRAME_5	3
+
+#define	dFRAME_BAR_COUNT	4
+
+cBARMENU	frameMenu[dFRAME_BAR_COUNT];
+BOOL		frameStatus[dFRAME_BAR_COUNT];
+cFRMWND		_FRMWND;
+
+
+void
+cFRMWND::SetBarMenu()
+{	frameMenu[0 ].Set("FRM -5",WIDTH - 48*4,1	,WIDTH - 48*3-2	,19,IDM_MINUS_FRAME_5);
+	frameMenu[1 ].Set("FRM -1",WIDTH - 48*3,1	,WIDTH - 48*2-2	,19,IDM_MINUS_FRAME_1);
+	frameMenu[2 ].Set("FRM +1",WIDTH - 48*2,1	,WIDTH - 48*1-2	,19,IDM_PLUS_FRAME_1);
+	frameMenu[3 ].Set("FRM +5",WIDTH - 48*1,1	,WIDTH - 2		,19,IDM_PLUS_FRAME_5);
+}
+
+void
+cFRMWND::UpdateBarMenu()
+{	int		current=0xffff;
+	for (int i=0;i<dFRAME_BAR_COUNT;i++)	if (frameMenu[i].rect.isIN(Mouse.x,Mouse.y)) current=i;
+
+	static	BOOL	ldown	=	FALSE;
+
+	if (keyBuff[VK_LBUTTON	] & 0x80	)
+	{	if (!ldown && current != 0xffff)
+		{	switch(current)
+			{	case	IDM_MINUS_FRAME_5	:	cANM::SetMaxFrame(cANM::GetMaxFrame(cANM::CurAnm)-5);_WORKWND.Draw();break;
+				case	IDM_MINUS_FRAME_1	:	cANM::SetMaxFrame(cANM::GetMaxFrame(cANM::CurAnm)-1);_WORKWND.Draw();break;
+				case	IDM_PLUS_FRAME_1	:	cANM::SetMaxFrame(cANM::GetMaxFrame(cANM::CurAnm)+1);_WORKWND.Draw();break;
+				case	IDM_PLUS_FRAME_5	:	cANM::SetMaxFrame(cANM::GetMaxFrame(cANM::CurAnm)+5);_WORKWND.Draw();break;
+			}
+			Draw();
+		}
+		ldown	=	TRUE;
+	}
+	else	ldown	=	FALSE;
+}
+
+void
+cFRMWND::DrawBarMenu()
+{	SetBarMenu();
+
+	for(int i=0;i<dFRAME_BAR_COUNT;i++)
+	{	WORD color	=	0;
+		cDRAW::Box	 (0x7fff,frameMenu[i].rect.x1  ,frameMenu[i].rect.y1  ,frameMenu[i].rect.x2  ,frameMenu[i].rect.y2  );
+		cDRAW::FillHB(color,frameMenu[i].rect.x1+1,frameMenu[i].rect.y1+1,frameMenu[i].rect.x2-1,frameMenu[i].rect.y2-1);
+		cTEXT::Put	 (frameMenu[i].rect.x1+4,frameMenu[i].rect.y1+4,0x7fff,frameMenu[i].string);
+	}
+}
+
+
+cFRMWND::cFRMWND()
+        :cDIBWND()
+{	Rate	=	100;
+	XPos	=	0;
+
+	memset(IsSelectedFrame,0,dMAX_FRAME);
+}
+
+cFRMWND::~cFRMWND()
+{
+}
+
+void
+cFRMWND::CloseWND()
+{	Close();
+}
+
+BOOL
+cFRMWND::Init(HINSTANCE hInst,HWND hWnd,cRECT *rect)
+{	lpszRegister	=	"FRMWINDOW";
+	Close();
+
+	if (!cDIBWND::Init(	0,(LPTSTR)lpszRegister,(LPTSTR)lpszRegister,
+						WS_CHILD|WS_HSCROLL,
+						rect->x1,rect->y1,rect->x2,rect->y2,
+						hWnd,NULL,hInst, 0L,
+						SW_SHOW,(WNDPROC)WNDProc
+						)
+		)
+		return FALSE;
+
+	Draw();
+
+	return TRUE;
+}
+
+void
+cFRMWND::Draw()
+{
+	SCROLLINFO si;
+
+	if (cIMG::Count <= 0 || height() < 30)
+	{	PAINTSTRUCT ps;
+		HDC		hDC		=	GetDC(hWND);
+
+		BeginPaint(hWND, &ps);
+
+		RECT rect;
+		client.Set(&rect);
+
+		FillRect(hDC,&rect,(HBRUSH)(COLOR_GRAYTEXT));
+		ReleaseDC(hWND,hDC);
+		EndPaint(hWND, &ps);
+
+		si.cbSize	=	sizeof(SCROLLINFO);
+		si.fMask	=	SIF_POS | SIF_RANGE | SIF_PAGE ;
+		EnableScrollBar(hWND,SB_HORZ,ESB_DISABLE_BOTH);
+		XPos		=	0;
+		return;
+	}
+
+	if (!Active()) return;
+
+	if	(_MAIN.workMode!=dWORK_SET_FRAME)
+	{	cDRAW::Fill(_cfg.frmColor);
+		cTEXT::OutLine(TRUE,0);
+		cTEXT::Put(4,4,0x7fff,"You are not editing an animation.",32);
+		cTEXT::OutLine(TRUE,0);
+		cDIBWND::Draw();
+		return;
+	}
+
+	imgXS=(cIMG::BigXS + 5);
+	imgYS=(cIMG::BigYS + 5);
+	Rate = 100;
+
+	ImgPerLine = (width()  - 8)/ imgXS;
+
+	if (ImgPerLine < _cfg.frmMinCol	)
+	{	ImgPerLine	=	_cfg.frmMinCol;
+		imgXS		=	(max(width()-8-5*_cfg.frmMinCol,0))/_cfg.frmMinCol  + 5;
+		Rate		=	imgXS*100/(cIMG::BigXS + 5);
+		imgYS		=	imgYS*Rate/100;
+	}
+
+	if (imgYS > height()-26	)
+	{	imgYS		=	max(height()-26,1);
+		Rate		=	imgYS*100/(cIMG::BigYS + 5);
+		imgXS		=	max((cIMG::BigXS + 5)*Rate/100,1);
+		ImgPerLine	=	(max(width() -8,0))/ imgXS;
+	}
+
+	imgXP	=	(width()-(ImgPerLine*imgXS))/2;
+	imgYP	=	height()-imgYS-4;
+
+	if (cANM::GetMaxFrame() > ImgPerLine)
+	{	si.cbSize	=	sizeof(SCROLLINFO);
+		si.fMask	=	SIF_POS | SIF_RANGE | SIF_PAGE ;
+		si.nMin		=	0;
+		si.nMax		=	cANM::GetMaxFrame()-1;
+		si.nPage	=	ImgPerLine;
+		si.nPos		=	XPos;
+		EnableScrollBar(hWND,SB_HORZ,ESB_ENABLE_BOTH);
+		SetScrollInfo(hWND,SB_HORZ,&si,TRUE);
+
+		XPos	=	min(XPos,si.nMax	-	ImgPerLine+1);
+	}
+	else 
+	{	EnableScrollBar(hWND,SB_HORZ,ESB_DISABLE_BOTH);
+		XPos		=	0;
+	}
+
+	cDRAW::Fill(_cfg.frmColor);
+
+	cDRAW::Fill(_GREEN,2,2, width()-2,18);
+
+	int image	=	cANM::GetFrameImage(cANM::CurFrame);
+
+	cTEXT::Put(8,4,_WHITE,   _ms("Animation #%.2d %s[%s] Frames [%d/%d] - Sprites [%d].",
+							cANM::CurAnm,ANM[cANM::CurAnm].Name,strDirect[cANM::GetAnmType()][cANM::CurDirect],
+							cANM::CurFrame+1,cANM::GetMaxFrame(),image));
+
+	cTEXT::Put(8,4,_LTYELLOW,_ms("            %.2d %s %s             %d %d  -             %d  ",
+							cANM::CurAnm,ANM[cANM::CurAnm].Name,strDirect[cANM::GetAnmType()][cANM::CurDirect],
+							cANM::CurFrame+1,cANM::GetMaxFrame(),image));
+
+	int i,xp,yp;
+
+	cIMG	*img;
+
+	for (i=0;i<cANM::GetMaxFrame()-XPos;i++)
+	{	
+		if (i>=ImgPerLine)
+			break;
+		xp	=	imgXP + i*imgXS;
+		yp	=	imgYP;
+
+			 if	(_MAIN.workMode!=dWORK_SET_FRAME)	cDRAW::Fill	(_DEEPGRAY	,xp,yp,xp+imgXS-2,yp+imgYS-2);
+		else if (i+XPos == cANM::CurFrame)			cDRAW::Fill	(_LTBLUE	,xp,yp,xp+imgXS-2,yp+imgYS-2);
+		else if (IsSelectedFrame[i+XPos ])			cDRAW::Fill	(_GREEN		,xp,yp,xp+imgXS-2,yp+imgYS-2);
+		else										cDRAW::Fill	(0			,xp,yp,xp+imgXS-2,yp+imgYS-2);
+
+		img	=	cIMG::Get(cANM::GetFrameImage(i+XPos));
+
+		if (img)
+		{
+			xp	=	imgXP+i*imgXS+imgXS/2-img->xs*Rate/200+img->xp*Rate/100;
+			yp	=	imgYP+imgYS/2-img->ys*Rate/200+img->yp*Rate/100;
+
+			if (cANM::isFlip())
+				xp = imgXP+i*imgXS+imgXS/2-img->xs*Rate/200 +(img->xs-img->xp)*Rate/100;
+
+			img->Put(xp,yp,Rate,cANM::isFlip(),dPUT_NORMAL);
+		}
+		else
+			img	=	NULL;
+
+		xp	=	imgXP + i*imgXS;
+		yp	=	imgYP;
+
+		if (i+XPos == cANM::CurFrame)
+			cDRAW::Box(_LTGREEN	,xp,yp,xp+imgXS-2,yp+imgYS-2);
+		else
+			cDRAW::Box(0x7fff	,xp,yp,xp+imgXS-2,yp+imgYS-2);
+
+		xp = xp+2;
+		int	nxp	=	xp+2;
+
+		cTEXT::OutLine(TRUE,0);
+
+		if (_cfg.bPUTINDEX)
+		{	int size = strlen(_ms("%d",i+XPos+1));
+
+			cDRAW::Fill(_GRAY,xp,yp+2,xp+4+6*size,yp+16);
+			cTEXT::Put(xp+2,yp+3,RGBmix(31,63,31),_ms("%d",i+XPos+1),32);
+			xp+= 6 + 6*size;
+		}
+
+		if (cANM::IsDamageFrame(i+XPos))
+		{	cDRAW::Fill(_LTGRAY,xp,yp+2,xp+8,yp+16);
+			cTEXT::Put(xp+2,yp+3,RGBmix(31,63,0),"D",32);
+			xp+=10;
+		}
+		if (cANM::IsTriggerFrame(i+XPos))
+		{	cDRAW::Fill(_LTGRAY,xp,yp+2,xp+8,yp+16);
+			cTEXT::Put(xp+2,yp+3,RGBmix(31,63,0),"T",32);
+			xp+=10;
+		}
+		if (cANM::IsStepFrame(i+XPos))
+		{	cDRAW::Fill(_LTGRAY,xp,yp+2,xp+8,yp+16);
+			cTEXT::Put(xp+2,yp+3,RGBmix(31,63,0),"S",32);
+			xp+=10;
+		}
+		if (cANM::IsBack(i+XPos))
+		{	cDRAW::Fill(_LTGRAY,xp,yp+2,xp+8,yp+16);
+			cTEXT::Put(xp+2,yp+3,RGBmix(31,63,0),"B",32);
+		}
+
+		if (cANM::IsLoopStartFrame(i+XPos))
+		{	cDRAW::Fill(_LTGRAY,nxp,yp+18,nxp+8,yp+32);
+			cTEXT::Put(nxp+2,yp+19,RGBmix(31,63,0),"S",32);
+		}
+		if (cANM::IsLoopEndFrame(i+XPos))
+		{	cDRAW::Fill(_LTGRAY,nxp,yp+18,nxp+8,yp+32);
+			cTEXT::Put(nxp+2,yp+19,RGBmix(31,63,0),"E",32);
+		}
+
+	}
+	DrawBarMenu();
+
+	
+	cDIBWND::Draw();
+
+	return;
+}
+
+void 
+cFRMWND::HScroll(WORD wScroll )
+{	SCROLLINFO si;
+
+	si.cbSize	=	sizeof( SCROLLINFO );
+	si.fMask	=	SIF_ALL;
+	GetScrollInfo( hWND, SB_HORZ, &si );
+
+	switch( wScroll )
+	{	case SB_LINERIGHT	:
+			if ( XPos <= (int)(si.nMax - si.nPage) )	XPos += 1;
+			break;
+
+		case SB_LINELEFT	:
+			if ( XPos > 0 ) XPos -= 1;
+			break;
+
+		case SB_THUMBTRACK :  // 스크롤바를 잡구 움직였을때..
+			GetScrollInfo( hWND, SB_HORZ, &si );
+			XPos = si.nTrackPos;
+			break;
+
+		case SB_PAGELEFT	:
+			XPos	=	max(0,XPos-ImgPerLine);
+			break;
+
+		case SB_PAGERIGHT	:
+			XPos	=	min(XPos+ImgPerLine,si.nMax - ImgPerLine+1);
+			break;
+	}
+
+	if (si.nPos != XPos )
+	{	si.fMask=	SIF_POS;
+		si.nPos	=	XPos;
+		SetScrollInfo( hWND, SB_HORZ, &si, TRUE );
+		Draw();
+	}
+}
+
+int
+cFRMWND::GetFrame()
+{	if (cIMG::Count <= 0 ) return 0xffff;
+
+	for (int i=0;i<cANM::GetMaxFrame()-XPos;i++)
+	{	if (i>=ImgPerLine) return 0xffff;
+
+		cRECT rect;
+		int xp	=	imgXP + i*imgXS,yp	=	imgYP;
+
+		rect.Set(xp,yp,xp+imgXS-2,yp+imgYS-2);
+
+		if (rect.isIN(Mouse.x,Mouse.y)) return i+XPos;
+	}
+
+	return 0xffff;
+}
+
+BOOL
+cFRMWND::Run()
+{	
+	if	(cIMG::Count <= 0 )
+		return FALSE;
+	
+	if	(_MAIN.workMode	!= dWORK_SET_FRAME)
+		return FALSE;
+
+	Mouse.MousePos(hWND);
+
+	int	pos;
+	static	BOOL	touch	=	FALSE;
+
+	UpdateBarMenu();
+
+	if	(keyBuff[VK_LBUTTON	]	& 0x80)
+	{	
+		pos		=	GetFrame();
+
+		if	(pos!=0xffff && !touch)
+		{
+			touch	=	TRUE;
+
+			if	(keyBuff[VK_SHIFT]		& 0x80)
+			{
+				memset(IsSelectedFrame,0,dMAX_FRAME);
+				int begin	=	cANM::CurFrame;
+				int	end		=	pos;
+
+				if	(begin > end)
+					swap(begin,end);
+
+				for (int i=begin;i<=end;i++)
+					IsSelectedFrame[i] = TRUE;
+
+				Draw();
+			} 
+			else
+			if	(keyBuff[VK_CONTROL]	& 0x80)
+			{	
+				IsSelectedFrame[pos]	=	1-IsSelectedFrame[pos];
+				Draw();
+			}
+			else
+			{	
+				cANM::SetCurrentFrame(pos);
+				_MAIN.Draw();
+			}
+		}
+	}
+	else
+		touch	=	FALSE;
+
+	return TRUE;
+}
+
+void
+cFRMWND::CopyAnmData(int what)
+{
+	int	iAnm	=	cANM::CurAnm;
+
+			if (what==1)	iAnm--;
+	else	if (what==2)	iAnm++;
+	else	return;
+
+	if (iAnm	<	0				)	return;
+	if (iAnm	>=	cANM::AnmCount	)	return;
+
+	cANM	*lpAnm	=	&ANM[cANM::CurAnm];
+
+	char	strAnmName[256];
+
+	strcpy(strAnmName,lpAnm->Name);
+	memcpy(lpAnm,&ANM[iAnm],sizeof(cANM));
+	strcpy(lpAnm->Name,strAnmName);
+
+	cANM::SetCurrentFrame(cANM::CurFrame);
+	_MAIN.Draw();
+
+	bVIRGIN	=	FALSE;
+
+	//	넣자!!
+}
+
+void
+cFRMWND::CopyFirstDirectPattern()
+{
+	cANM	*lpAnm		=	&ANM[cANM::CurAnm];
+
+	for (int iDirect=1;iDirect<cANM::GetMaxDirect();iDirect++)
+	{
+		for (int i=1;i<cANM::GetMaxFrame();i++)
+		{
+			int	iDelta		=	lpAnm->Sprite[0][i]	- lpAnm->Sprite[0][0];
+			int	iSprite		=	lpAnm->Sprite[iDirect][0]	+	iDelta;
+
+			cANM::SetFrameImage(iSprite,i,cANM::CurAnm,iDirect);
+		}
+	}
+
+	cANM::SetCurrentFrame(cANM::CurFrame);
+	_MAIN.Draw();
+
+	bVIRGIN	=	FALSE;
+}
+
+void		//	이후 프레임 인덱스 증가
+cFRMWND::IncFrameIndex()
+{	cIMG *img=cIMG::Get(cANM::GetFrameImage(curFrame));
+	int image=cIMG::Get(img);
+
+	for (int i=1;i<cANM::GetMaxFrame()-curFrame;i++)
+		cANM::SetFrameImage(min(image+i,cIMG::Count-1),curFrame+i);
+
+	cANM::SetCurrentFrame(cANM::CurFrame);
+	_MAIN.Draw();
+}
+
+void		//	이후 프레임 인덱스 증가
+cFRMWND::DecFrameIndex()
+{	cIMG *img=cIMG::Get(cANM::GetFrameImage(curFrame));
+	int image=cIMG::Get(img);
+
+	for (int i=1;i<cANM::GetMaxFrame()-curFrame;i++)
+		cANM::SetFrameImage(max(image-i,0),curFrame+i);
+
+	cANM::SetCurrentFrame(cANM::CurFrame);
+	_MAIN.Draw();
+}
+
+void		//	현 에니메이션의 모든 인덱스 증가.
+cFRMWND::IncAllIndex()
+{	if (cANM::CurDirect != 0 || cANM::CurFrame != 0)
+	{	ERRMSG("프레임 설정 에러","모든 프레임의 인덱스 증가하기는 북쪽의 첫번째 프레임에서만 할 수 있습니다.");
+		return;
+	}
+
+	cIMG *img=cIMG::Get(cANM::GetFrameImage(curFrame));
+	int image=cIMG::Get(img);
+
+	int	curframe	=	0;
+
+	for (int direct =0;direct<cANM::GetDirCount();direct++)
+		for (int frame=0;frame<cANM::GetMaxFrame();frame++)
+		{	cANM::SetFrameImage(min(image,cIMG::Count-1),frame,0xffff,direct);
+			image++;
+		}
+
+	cANM::SetCurrentFrame(cANM::CurFrame);
+	_MAIN.Draw();
+}
+
+void		//	현 에니메이션의 모든 인덱스 증가.
+cFRMWND::SyncAnm()
+{	cANM::Set(&addDATA[0]);
+
+	_MAIN.Draw();
+}
+
+void
+cFRMWND::SyncPreDirect()
+{
+	for (int i=0;i<cANM::GetMaxFrame();i++)
+		ANM[cANM::CurAnm].Sprite[cANM::CurDirect][i]	=	ANM[cANM::CurAnm].Sprite[cANM::CurDirect-1][i];
+	_MAIN.Draw();
+}
+
+void
+cFRMWND::SyncAllDirect()
+{
+	for (int j=1;j<cANM::GetMaxDirect();j++)
+		for (int i=0;i<cANM::GetMaxFrame();i++)
+			ANM[cANM::CurAnm].Sprite[j][i]	=	ANM[cANM::CurAnm].Sprite[0][i];
+}
+
+void
+cFRMWND::AddFrameIndex()
+{	cIMG *img=cIMG::Get(cANM::GetFrameImage(curFrame-1));
+	int image=cIMG::Get(img);
+
+	image=min(image+1,cIMG::Count-1);
+
+	cANM::SetFrameImage(image,curFrame);
+
+	if (curFrame == cANM::CurFrame)
+	{	cANM::SetCurrentFrame(cANM::CurFrame);
+		_MAIN.Draw();
+	}
+	else	Draw();
+}
+
+#define	IDM_INC_INDEX					1000
+#define	IDM_ADD_INDEX					1001
+#define	IDM_SET_END						1002
+#define	IDM_PLUS_5FRAME					1003
+#define	IDM_PLUS_10FRAME				1004
+#define	IDM_SET_FRONT					1005
+#define	IDM_SET_BACK					1006
+#define	IDM_SET_DAMAGE					1007
+#define	IDM_SET_TRIGGER					1008
+#define	IDM_INC_ALL_INDEX				1009
+#define	IDM_SYNC_FRAME					1010
+#define	IDM_SYNC_ALL_DIRECT				1011
+#define	IDM_SYNC_PRE_DIRECT				1012
+#define	IDM_SET_LOOP_START				1013
+#define	IDM_SET_LOOP_END				1014
+#define	IDM_SET_STEP					1021
+
+#define	IDM_DEC_INDEX					1015
+#define	IDM_COPY_PRE_ANM				1016
+#define	IDM_COPY_NEXT_ANM				1017
+#define	IDM_COPY_FIRST_DIRECT_PATTERN	1018
+
+#define	IDM_SYNC_ADD_DATA_FRAME			1019
+#define	IDM_SAVE_ADD_DATA				1020
+
+void
+cFRMWND::PopupMenu()
+{	if (_MAIN.workMode	!=	dWORK_SET_FRAME)	return;
+	if (cIMG::Count <= 0 )	return;
+
+	curFrame		=	GetFrame();
+
+	HMENU	hMenu	=	CreatePopupMenu();
+	cPOINT	pos;
+
+	pos.MousePos();
+
+	if (curFrame!=0xffff)
+	{
+		AppendMenu(hMenu,MFT_STRING,IDM_INC_INDEX,"Increment index of subsequent frames");
+		AppendMenu(hMenu,MFT_STRING,IDM_INC_ALL_INDEX,"Increment index (all directions)");
+		AppendMenu(hMenu,MFT_STRING,IDM_DEC_INDEX,"Decrease index of subsequent frames");
+
+		if (cANM::GetMaxFrame() > 1 && curFrame < cANM::GetMaxFrame()-1)
+			AppendMenu(hMenu,MFT_STRING,IDM_SET_END,"Remove subsequent frames");
+
+		AppendMenu(hMenu,MFT_SEPARATOR,0,NULL);
+	}
+
+	AppendMenu(hMenu,MFT_STRING,IDM_COPY_FIRST_DIRECT_PATTERN,"Copy the frame increment pattern in the first direction");
+	AppendMenu(hMenu,MFT_SEPARATOR,0,NULL);
+
+	if (curFrame!=0xffff)
+	{ if (cANM::IsBack(curFrame)) AppendMenu(hMenu,MFT_STRING,IDM_SET_BACK,"Put in front");
+		else AppendMenu(hMenu,MFT_STRING,IDM_SET_BACK,"Put behind");
+
+		AppendMenu(hMenu,MFT_SEPARATOR,0,NULL);
+
+		AppendMenu(hMenu,MFT_STRING,IDM_SET_DAMAGE ,"Damage frame");
+		AppendMenu(hMenu,MFT_STRING,IDM_SET_TRIGGER ,"Trigger Frame");
+		AppendMenu(hMenu,MFT_STRING,IDM_SET_STEP ,"Step Frame");
+		AppendMenu(hMenu,MFT_STRING,IDM_SET_LOOP_START ,"Loop first frame");
+		AppendMenu(hMenu,MFT_STRING,IDM_SET_LOOP_END ,"Loop last frame");
+		AppendMenu(hMenu,MFT_SEPARATOR,0,NULL);
+	}
+
+	AppendMenu(hMenu,MFT_STRING,IDM_SYNC_FRAME,"Synchronizing Characters and Frames");
+
+	if (cANM::GetMaxDirect() > 1)
+	{
+		if (cANM::CurDirect == 0)
+		AppendMenu(hMenu,MFT_STRING,IDM_SYNC_ALL_DIRECT,"Copy frame data in all directions");
+		else AppendMenu(hMenu,MFT_STRING,IDM_SYNC_PRE_DIRECT,"Copy frame data in the previous direction");
+	}
+
+	AppendMenu(hMenu,MFT_SEPARATOR,0,NULL);
+
+	if (cANM::CurAnm > 0 ) AppendMenu(hMenu,MFT_STRING,IDM_COPY_PRE_ANM,"Copy frame information from the previous animation");
+	if (cANM::CurAnm < cANM::AnmCount-1) AppendMenu(hMenu,MFT_STRING,IDM_COPY_NEXT_ANM,"Copy frame information from the next animation");
+
+	int iData;
+	
+	for (iData=dDATA_CHARACTER;iData<=dDATA_EFFECT;iData++)
+	{
+		if (addDATA[iData].isLoaded())
+		{
+			AppendMenu(hMenu,MFT_MENUBARBREAK,IDM_SYNC_ADD_DATA_FRAME,"Framesync based on additional data");
+			break;
+		}
+	}
+
+	TrackPopupMenu(hMenu,TPM_RIGHTBUTTON|TPM_TOPALIGN|TPM_LEFTALIGN,pos.x,pos.y,0,hWND,NULL);
+	DestroyMenu(hMenu);
+}
+
+void
+cFRMWND::SyncAddDataFrame()
+{
+	int	iAnm,iDirect,iFrame,iData;
+	
+	for (iData=dDATA_CHARACTER;iData<=dDATA_EFFECT;iData++)
+	{
+		if	(addDATA[iData].isLoaded())
+		{
+			cANIMATION	*lpAnm	=	&addDATA[iData];
+			int	iAnmCount		=	lpAnm->AnmCount;
+
+			cANM::AnmCount	=	iAnmCount;
+
+			for (iAnm=0;iAnm<iAnmCount;iAnm++)
+			{
+				int	iFrameCount			=	lpAnm->pANM[iAnm].FrameCount;
+				int	iDirectCount		=	lpAnm->pANM[iAnm].DirectCount;
+
+				ANM[iAnm].directCount	=	iDirectCount;
+				ANM[iAnm].FrameCount	=	iFrameCount;
+				ANM[iAnm].FPS			=	lpAnm->pANM[iAnm].FPS;
+				ANM[iAnm].PPS			=	lpAnm->pANM[iAnm].PPS;
+					
+				for (iDirect=0;iDirect<iDirectCount;iDirect++)
+				{
+					for (iFrame=0;iFrame<iFrameCount;iFrame++)
+						ANM[iAnm].Sprite[iDirect][iFrame]	=	lpAnm->pANM[iAnm].Sprite[iDirect*iFrameCount+iFrame];
+				}
+			}
+
+			bVIRGIN	=	FALSE;
+			return;
+		}
+	}
+}	//	cFRMWND::SyncAddDataFrame()
+
+LRESULT CALLBACK 
+cFRMWND::WNDProc(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam)
+{	switch(uMsg)
+	{	case	WM_PAINT		:
+			_FRMWND.Draw();
+			break;
+
+		case	WM_CLOSE		:
+		case	WM_DESTROY		:
+			return (0L);
+
+		case	WM_KEYDOWN		:
+			_MAIN.updateKey(wParam);
+			break;
+
+		case	WM_RBUTTONDOWN	:
+			_FRMWND.PopupMenu();
+			break;
+
+		case	WM_HSCROLL		:
+			_FRMWND.HScroll(wParam);
+			break;
+
+		case WM_COMMAND		:
+			switch( LOWORD( wParam ) )
+            {
+				case	IDM_COPY_FIRST_DIRECT_PATTERN	:
+					_FRMWND.CopyFirstDirectPattern();
+					break;
+			
+				case	IDM_INC_INDEX		:
+					_FRMWND.IncFrameIndex();
+					break;
+
+				case	IDM_DEC_INDEX		:
+					_FRMWND.DecFrameIndex();
+					break;
+
+				case	IDM_COPY_PRE_ANM	:
+					_FRMWND.CopyAnmData(1);
+					break;
+
+				case	IDM_COPY_NEXT_ANM	:
+					_FRMWND.CopyAnmData(2);
+
+					break;
+
+				case	IDM_INC_ALL_INDEX	:
+					_FRMWND.IncAllIndex();
+					break;
+
+				case	IDM_SYNC_ALL_DIRECT	:
+					_FRMWND.SyncAllDirect();
+					break;
+
+				case	IDM_SYNC_PRE_DIRECT	:
+					_FRMWND.SyncPreDirect();
+					break;
+
+				case	IDM_SYNC_ADD_DATA_FRAME		:
+					_FRMWND.SyncAddDataFrame();
+					_MAIN.Draw();
+					break;
+
+				case	IDM_SYNC_FRAME		:
+					_FRMWND.SyncAnm();
+					break;
+
+				case	IDM_ADD_INDEX		:
+					_FRMWND.AddFrameIndex();
+					break;
+
+				case	IDM_SET_END			:
+					cANM::SetMaxFrame(_FRMWND.curFrame+1);
+					_MAIN.Draw();
+					break;
+
+				case	IDM_PLUS_10FRAME	:
+					cANM::SetMaxFrame(cANM::GetMaxFrame(cANM::CurAnm)+10);
+					_MAIN.Draw();
+					break;
+
+				case	IDM_PLUS_5FRAME	:
+					cANM::SetMaxFrame(cANM::GetMaxFrame(cANM::CurAnm)+5);
+					_MAIN.Draw();
+					break;
+
+				case	IDM_SET_FRONT		:
+					cANM::SetFront(_FRMWND.curFrame);
+					_MAIN.Draw();
+					break;
+
+				case	IDM_SET_BACK		:
+				{	cANM::SetBack(_FRMWND.curFrame);
+					_MAIN.Draw();
+					break;
+				}
+
+				case	IDM_SET_DAMAGE		:
+				{	cANM::DamageFrame(_FRMWND.curFrame);
+					_FRMWND.Draw();
+					break;
+				}
+
+				case	IDM_SET_TRIGGER		:
+				{	cANM::TriggerFrame(_FRMWND.curFrame);
+					_FRMWND.Draw();
+					break;
+				}
+
+				case	IDM_SET_STEP		:
+				{	cANM::StepFrame(_FRMWND.curFrame);
+					_FRMWND.Draw();
+					break;
+				}
+
+				case	IDM_SET_LOOP_START	:
+				{	cANM::LoopStartFrame(_FRMWND.curFrame);
+					_FRMWND.Draw();
+					break;
+				}
+
+				case	IDM_SET_LOOP_END	:
+				{	cANM::LoopEndFrame(_FRMWND.curFrame);
+					_FRMWND.Draw();
+					break;
+				}
+
+			}
+			break;
+
+		case	WM_SYSCOMMAND	:
+			if ((LOWORD(wParam)&0xfff0) == SC_MOVE) return FALSE;
+			return( DefWindowProc( hWnd, uMsg, wParam, lParam ) );
+			break;
+
+		default :
+			return( DefWindowProc( hWnd, uMsg, wParam, lParam ) );
+	}
+
+	return (0L);
+}

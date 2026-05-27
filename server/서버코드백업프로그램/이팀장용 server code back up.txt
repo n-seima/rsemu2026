@@ -1,0 +1,32 @@
+isWantReplace
+dest	"서버 코드 백업" "d:/Work/RS/code/_터미널로 업데이트 할 코드들"
+root	"d:/Work/RS/code/code/korea"
+
+ext	"dsp"
+ext	"cpp"
+ext	"c"
+ext	"h"
+ext	"lib"
+ext	"dll"
+ext	"rc"
+ext	"rc2"
+ext	"ico"
+ext	"cur"
+ext	"bmp"
+ext	"dsw"
+ext	"odl"
+
+folder	"common/common"
+folder	"common/packet"
+folder	"server/redstone_gameserver"
+folder	"server/redstone_gameserver/XTrap"
+folder	"server/redstone_worldserver"
+folder	"server/redstone_user_dbserver"
+folder	"server/redstone_dbserver"
+folder	"server/redstone_broadcastserver"
+folder	"server/redstone_broadcastserver/res"
+folder	"server/smmanager"
+folder	"server/redstone_loginserver"
+folder	"server/redstone_logserver"
+
+end

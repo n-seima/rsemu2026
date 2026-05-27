@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{dd684c97-7574-4daf-9b91-57897ac212d5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0bff1a2c-49db-4f4d-af92-b1054c658c5f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{a6c90b02-98cd-4371-8cbf-387d24995b86}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="message">
+      <UniqueIdentifier>{7eaeb975-9a36-46bf-898a-96d6cae4adc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{748a5c89-99fe-40c8-b610-644f234c2a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frame">
+      <UniqueIdentifier>{2558333d-57cd-4397-b87a-63056c1b0cd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｸｮｼﾒｽｺ">
+      <UniqueIdentifier>{9550c195-f1a8-440f-9016-d9a33fb8c481}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_resource.sd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="install.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForInter.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForJapan.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForKorea.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForThai.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForUSA.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="bar_menu.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="c16BITSPRITE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="c8BITSPRITE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cBMP.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cDIB.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cDRAW.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cIMAGE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cNUX.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cPCX.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTEXT.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTGA.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTRANS.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cWINDOW.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="image_scroll_bar.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="SFC.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="complete.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="installData.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="license.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="welcome.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_jp.sd.cpp">
+      <Filter>ｸｮｼﾒｽｺ</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_kor.sd.cpp">
+      <Filter>ｸｮｼﾒｽｺ</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_thai.sd.cpp">
+      <Filter>ｸｮｼﾒｽｺ</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_USA.sd.cpp">
+      <Filter>ｸｮｼﾒｽｺ</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="install.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_resource.sd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="bar_menu.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cDECODER.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cDIB.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cDRAW.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cIMAGE.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cNUX.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cTEXT.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cWINDOW.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="image_scroll_bar.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="SFC.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="complete.h">
+      <Filter>frame</Filter>
+    </ClInclude>
+    <ClInclude Include="installData.h">
+      <Filter>frame</Filter>
+    </ClInclude>
+    <ClInclude Include="license.h">
+      <Filter>frame</Filter>
+    </ClInclude>
+    <ClInclude Include="welcome.h">
+      <Filter>frame</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_jp.sd.h">
+      <Filter>ｸｮｼﾒｽｺ</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_kor.sd.h">
+      <Filter>ｸｮｼﾒｽｺ</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_thai.sd.h">
+      <Filter>ｸｮｼﾒｽｺ</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_USA.sd.h">
+      <Filter>ｸｮｼﾒｽｺ</Filter>
+    </ClInclude>
+    <ClInclude Include="STDAFX.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

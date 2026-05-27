@@ -1,0 +1,58 @@
+개인
+능력치
+저항력
+선악치
+칭호
+
+퀘스트 목록
+퀘스트 정보
+
+
+기본정보
+재원
+길드전
+연고지
+공지
+
+옵션
+메뉴
+
+
+
+로그인
+확인
+새 계정만들기
+종료
+
+취소
+이름
+
+새 캐릭터 작성
+
+캐릭터 선택
+게임시작
+
+능력
+장비
+스킬
+파티
+퀘스트
+길드
+친구
+시스템
+
+SKILL
+STATUS
+INVENTORY
+PARTY
+FRIEND
+GUILD
+QUEST
+SHOP
+MY SHOP
+TRADE
+SYSTEM
+BANK
+SHOPPING CART
+BLACKSMITH
+MY MONSTER

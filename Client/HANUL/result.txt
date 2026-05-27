@@ -1,0 +1,8 @@
+
+************* Application Started at [22:50:27] *************
+
+D:\safe_zone\png_to_pcx\png_to_pcx\output
+
+************* Application Closed  at [22:54:22] *************
+
+

@@ -1,0 +1,209 @@
+itemPrefix
+{
+//////////////////////////////////////////////////
+//	기본 능력치 조절
+//////////////////////////////////////////////////
+	eIP_ADD_STRENGTH,"힘 [+0]",
+	eIP_ADD_AGILITY,"민첩성 [+0]",
+	eIP_ADD_CONSTITUTION,"건강 [+0]",
+	eIP_ADD_WISDOM,"지혜 [+0]",
+	eIP_ADD_INTELIGENCE,"지식 [+0]",
+	eIP_ADD_CHARISMA,"카리스마 [+0]",
+	eIP_ADD_LUCK,"운 [+0]",
+	eIP_FIXING_STRENGTH,"힘 고정 [0]",
+	eIP_FIXING_AGILITY,"민첩성 고정 [0]",
+	eIP_FIXING_CONSTITUTION,"건강 고정 [0]",
+	eIP_FIXING_WISDOM,"지혜 고정 [0]",
+	eIP_FIXING_INTELLIGENCE,"지식 고정 [0]",
+	eIP_FIXING_CHARISMA,"카리스마 고정 [0]",
+	eIP_FIXING_LUCK,"운 고정 [0]",
+	eIP_ADD_STRENGTH_BY_LEVEL,"힘 [+1]/레벨 [0]",
+	eIP_ADD_AGILITY_BY_LEVEL,"민첩성 [+1]/레벨 [0]",
+	eIP_ADD_CONSTITUTION_BY_LEVEL,"건강 [+1]/레벨 [0]",
+	eIP_ADD_WISDOM_BY_LEVEL,"지혜 [+1]/레벨 [0]",
+	eIP_ADD_INTELIGENCE_BY_LEVEL,"지식 [+1]/레벨 [0]",
+	eIP_ADD_CHARISMA_BY_LEVEL,"카리스마 [+1]/레벨 [0]",
+	eIP_ADD_LUCK_BY_LEVEL,"운 [+1]/레벨 [0]",
+	eIP_ADD_DAMAGE_PERCENTAGE,"대미지 [+0]％",
+	eIP_ADD_MIN_DAMAGE,"최소 대미지 [+0]",
+	eIP_ADD_MAX_DAMAGE,"최대 대미지 [+0]",
+	eIP_ADD_DEFENSE_PERCENTAGE,"방어력 [+0]％",
+	eIP_ADD_DEFENSE,"방어력 [+0]",
+	eIP_ADD_MAX_HP_PERCENTAGE,"최대 체력 [+0]％",
+	eIP_ADD_MAX_HP,"최대 체력 [+0]",
+	eIP_ADD_MAX_CP_PERCENTAGE,"최대 CP [+0]％",
+	eIP_ADD_MAX_CP,"최대 CP [+0]",
+	eIP_LOW_CP,"감소 한계 CP [+0]",
+
+//////////////////////////////////////////////////
+//	각종 확률 보정
+//////////////////////////////////////////////////
+	eIP_CORRECT_HIT_RATE,"명중률 [+0]％",
+	eIP_CORRECT_DODGE_RATE,"회피율 [+0]％",
+	eIP_SHIELD_BLOCK_RATE,"블럭률 [+0]％",
+	eIP_CRITICAL_HIT,"치명타 발동 확률 [+0]％",
+	eIP_CRUSH_SHOT,"결정타 발동 확률 [+0]％",
+	eIP_IGNORE_TARGET_DODGE_ABILITY,"타겟의 회피율 보정치 무시",
+	eIP_IGNORE_ATTACKER_CORRECT_HIT_VALUE,"공격자의 명중률 보정치 무시",
+	eIP_PERFECT_HIT,"<c:LTYELLOW>명중률 보정치 대폭 향상<n>",
+
+//////////////////////////////////////////////////////
+//	속도/시간 보정
+//////////////////////////////////////////////////////
+	eIP_BLOCKING_SPEED,"블럭킹 속도 [+0]％",
+	eIP_MOVE_SPEED,"이동 속도 [+0]％",
+	eIP_ACTION_SPEED,"공격 속도 [+0]％",
+	eIP_POTION_HEAL_SPEED,"물약 회복 속도 <c:LTYELLOW>+%d％<n>",
+	eIP_ADD_CONCENTRATION,"집중력 [+0]％",
+
+//////////////////////////////////////////////////////////////////////////////
+//	공격 성공시 추가 효과
+//////////////////////////////////////////////////////////////////////////////
+	eIP_FIRE_DAMAGE,"불 대미지 [0]~[1]",
+	eIP_WATER_DAMAGE,"물 대미지 [0]~[1]\n- 콜드 [2]Frame",
+	eIP_WIND_DAMAGE,"바람 대미지 [0]~[1]\n- 스턴 [2]Frame",
+	eIP_TERRA_DAMAGE,"[2]초간 초당 [0]~[1]의 중독 대미지",
+	eIP_LIGHT_DAMAGE,"빛 대미지 [0]~[1]\n- [2]초동안 명중,회피 저하 ",
+	eIP_DARK_DAMAGE,"어둠 대미지 [0]~[1]\n- 저주 [2]초",
+	eIP_STEAL_HP,"적에게 입힌 대미지의 [0]％를 체력으로 흡수한다.",
+	eIP_BONUS_CP,"CP 획득 보너스 [0]％",
+	eIP_FLEE,"적 도망 [0]％",
+	eIP_KNOCK_OUT,"녹아웃 공격 [+0]％",
+	eIP_INSTANT_KILL,"즉사 공격 [+0]％",
+	eIP_WEAPON_BREAKER,"무기파괴 공격 [+0]％([1]초)",
+	eIP_ARMOR_BREAKER,"갑옷파괴 공격 [+0]％([1]초)",
+	eIP_MAKE_COLD,"콜드 공격+ [0]％([1]초)",
+	eIP_MAKE_FREEZE,"프리즈 공격 [+0]％([1]초)",
+	eIP_MAKE_BLIND,"장님 공격 [+0]％([1]초)",
+	eIP_MAKE_STUN,"스턴 공격 [+0]％([1]초)",
+	eIP_MAKE_STONE,"석화 공격 [+0]％([1]초)",
+	eIP_MAKE_CONFUSE,"혼란 공격 [+0]％([1]초)",
+	eIP_MAKE_SLEEP,"잠 공격 [+0]％([1]초)",
+	eIP_MAKE_CHARMING,"차밍 공격 [+0]％([1]초)",
+	eIP_MAKE_FIRST_TARGET,"우선 타겟공격 [+0]％([1]초)",
+	eIP_MAKE_AI_DOWN ,"AI 저하 공격 [+0]％([1]초)",
+	eIP_MAKE_BERSERK,"버서크 공격 [+0]％([1]초)",
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//	마법 공격 저항
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	eIP_RESISTANCE_FIRE,"불 속성 저항 [+0]％",
+	eIP_RESISTANCE_WATER,"물 속성 저항 [+0]％",
+	eIP_RESISTANCE_WIND,"바람 속성 저항 [+0]％",
+	eIP_RESISTANCE_TERRA,"대지 속성 저항 [+0]％",
+	eIP_RESISTANCE_LIGHT,"빛 속성 저항 [+0]％",
+	eIP_RESISTANCE_DARK,"어둠 속성 저항 [+0]％",
+	eIP_RESISTANCE_MAGIC,"마법 저항 [+0]％",
+	eIP_ABSORB_FIRE,"불 속성 대미지 흡수 [0]％",
+	eIP_ABSORB_WATER,"물 속성 대미지 흡수 [0]％",
+	eIP_ABSORB_WIND,"바람 속성 대미지 흡수 [0]％",
+	eIP_ABSORB_TERRA,"대지 속성 대미지 흡수 [0]％",
+	eIP_ABSORB_LIGHT,"빛 속성 대미지 흡수 [0]％",
+	eIP_ABSORB_DARK,"어둠 속성 대미지 흡수 [0]％",
+	eIP_ABSORB_MAGIC,"마법 속성 대미지 흡수 [0]％",
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//	각종 저항, 면역
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	eIP_RESISTANCE_FREEZE,"프리즈 저항 [+0]％",
+	eIP_RESISTANCE_COLD,"콜드 저항 [+0]％",
+	eIP_RESISTANCE_STUN,"스턴 저항 [+0]％",
+	eIP_RESISTANCE_CONFUSE,"혼란 저항 [+0]％",
+	eIP_RESISTANCE_CHARMING,"차밍 저항 [+0]％",
+	eIP_RESISTANCE_STONE,"석화 저항 [+0]％",
+	eIP_RESISTANCE_INSTANCE_KILL,"즉사 저항 [+0]％",
+	eIP_RESISTANCE_POISON,"중독 저항 [+0]％",
+	eIP_RESISTANCE_SLEEP,"잠 저항 [+0]％",
+	eIP_RESISTANCE_STRANGE_STATUS,"이상계 저항 [+0]％",
+	eIP_RESISTANCE_DECLINE_STATUS,"저하계 저항 [+0]％",
+	eIP_RESISTANCE_CURSE_STATUS,"저주계 저항 [+0]％",
+	eIP_RESISTANCE_ALL_BAD_STATUS,"모든 상태 이상 저항 [+0]％",
+	eIP_RESISTANCE_KNOCK_BACK,"녹백 저항 [+0]％",
+	eIP_RESISTANCE_CRITICAL_SHOT,"치명타 저항 [+0]％",
+	eIP_RESISTANCE_CRUSH_SHOT,"결정타 저항 [+0]％",
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//	반격,스킬 관련
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	eIP_RETURN_DAMAGE,"대미지 돌려주기 [0]％",
+	eIP_DAMAGE_TO_CP,"대미지를 CP로 전환 [0]％",
+	eIP_MAKE_FREEZE_ATTACKER,"카운터 프리즈 [0]％([1]초)",
+	eIP_MAKE_COLD_ATTACKER,"카운터 콜드 [0]％([1]초)",
+	eIP_CHARGE_SKILL," ",
+	eIP_JOB_SKILL_LEVEL,"스킬 레벨 [+0]([1]계열 직업)",
+	eIP_ALL_SKILL_LEVEL,"스킬 레벨 [+0]",
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//	기타/특수 능력
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	eIP_FIRST_AID,"타격을 입으면 <c:LTYELLOW>10％<n>의 확률로 타격의 [0]％를 응급처치 한다.",
+	eIP_CHANGE_WEAPON_SPEED,"무기 교환 속도 [+0]％",
+	eIP_REGENERATION_HP,"체력 회복 +([0]/10초)",
+	eIP_RESURRECTION_CHANCE,"부활 [0]％",
+	eIP_BLURRED,"<c:LTYELLOW>블러<n>",
+	eIP_INVISIBLE,"<c:LTYELLOW>투명<n>",
+	eIP_LEVITATE,"<c:LTYELLOW>공중 부양<n>",
+	eIP_MAGIC_BULLET,"<c:LTYELLOW>마법 탄환<n>",
+	eIP_INFINITY_BULLET,"<c:LTYELLOW>무한 탄환<n>",
+	eIP_NOT_AIMED,"<c:LTYELLOW>선공을 당하지 않는다.<n>",
+	eIP_INCREASE_RARE_ITEM_DROP_CHANCE,"마법 아이템 드랍 확률 [+0]％",
+	eIP_INCREASE_UNIQUE_ITEM_DROP_CHANCE,"유니크 아이템 드랍 확률 [+0]％",
+	eIP_DECREASE_RELOAD_TIME,"아이템 리로드 타임 -[0]％",
+	eIP_AUTO_RELOAD,"<c:LTYELLOW>아이템 자동 리로드<n>",
+	eIP_DISABLE,	"<c:LTYELLOW>아이템을 사용할 수 없다.<n>",
+	eIP_CAN_NOT_STRIP,	"<c:LTYELLOW>착용 후 탈의가 불가능하다.<n>",
+	eIP_CAN_NOT_ADD_PREFIX,	"<c:LTYELLOW>추가 인챈트가 불가능하다.<n>",
+
+	eIP_UPGRADE_FIRE_DAMAGE_ATTACK, "<c:LTYELLOW>불 공격 접두사 1단계 상승<n>",
+	eIP_UPGRADE_WATER_DAMAGE_ATTACK, "<c:LTYELLOW>물 공격 접두사 1단계 상승<n>",
+	eIP_UPGRADE_WIND_DAMAGE_ATTACK, "<c:LTYELLOW>바람 공격 접두사 1단계 상승<n>",
+	eIP_UPGRADE_EARTH_DAMAGE_ATTACK, "<c:LTYELLOW>대지 공격 접두사 1단계 상승<n>",
+	eIP_UPGRADE_LIGHT_DAMAGE_ATTACK, "<c:LTYELLOW>빛 공격 접두사 1단계 상승<n>",
+	eIP_UPGRADE_DARK_DAMAGE_ATTACK, "<c:LTYELLOW>어둠 공격 접두사 1단계 상승<n>",
+
+	eIP_CONTROL_SKILL_LEVEL_BY_DIFFICULTY	, "스킬 난이도 [0] 레벨 이하 스킬들 레벨이 [1] 증가 한다.",
+	eIP_INCREASE_SUMMON_BEAST_STATUS		, "소환수의 모든 스탯이 [0] 증가",
+	eIP_INCREASE_GAIN_EXP_FOR_PET			, "[0]％의 펫 경험치 보너스",
+
+	eIP_IS_SHOP_SPECIAL_ITEM					,	"<c:LTYELLOW>일정 기간 대여하는 아이템<n>",
+	eIP_WEAKNING_TARGET_FIRE_RESISTANCE			,	"타겟의 불 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIP_WEAKNING_TARGET_WATER_RESISTANCE		,	"타겟의 물 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIP_WEAKNING_TARGET_WIND_RESISTANCE			,	"타겟의 바람 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIP_WEAKNING_TARGET_EARTH_RESISTANCE		,	"타겟의 대지 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIP_WEAKNING_TARGET_LIGHT_RESISTANCE		,	"타겟의 빛 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIP_WEAKNING_TARGET_DARK_RESISTANCE			,	"타겟의 어둠 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIP_WEAKNING_TARGET_MAGIC_RESISTANCE		,	"타겟의 마법 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIP_STRENGTHENING_FIRE_DAMAGE				,	"불 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIP_STRENGTHENING_WATER_DAMAGE				,	"물 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIP_STRENGTHENING_WIND_DAMAGE				,	"바람 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIP_STRENGTHENING_EARTH_DAMAGE				,	"대지 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIP_STRENGTHENING_LIGHT_DAMAGE				,	"빛 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIP_STRENGTHENING_DARK_DAMAGE				,	"어둠 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIP_STRENGTHENING_MAGIC_DAMAGE				,	"마법 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+
+	eIP_DECREASE_STRENGTH,"힘 [-0]",
+	eIP_DECREASE_AGILITY,"민첩성 [-0]",
+	eIP_DECREASE_CONSTITUTION,"건강 [-0]",
+	eIP_DECREASE_WISDOM,"지혜 [-0]",
+	eIP_DECREASE_INTELIGENCE,"지식 [-0]",
+	eIP_DECREASE_CHARISMA,"카리스마 [-0]",
+	eIP_DECREASE_LUCK,"운 [-0]",
+
+	eIP_DECLINE_ACTION_SPEED					,"공격 속도 [-0]％",
+	eIP_DECLINE_MOVE_SPEED						,"이동 속도 [-0]％",
+
+	eIP_ADD_DAMAGE_TO_UNDEAD					,	"언데드형 캐릭터에게 추가로 <c:LTYELLOW>[0]％<n>의 대미지를 준다.",
+	eIP_ADD_DAMAGE_TO_DEMON						,	"악마형 캐릭터에게 추가로 <c:LTYELLOW>[0]％<n>의 대미지를 준다.",
+	eIP_ADD_DAMAGE_TO_HUMAN						,	"인간형 캐릭터에게 추가로 <c:LTYELLOW>[0]％<n>의 대미지를 준다.",
+	eIP_ADD_DAMAGE_TO_ANIMAL					,	"동물형 캐릭터에게 추가로 <c:LTYELLOW>[0]％<n>의 대미지를 준다.",
+	eIP_ADD_DAMAGE_TO_HOLY_ANIMAL				,	"신수형 캐릭터에게 추가로 <c:LTYELLOW>[0]％<n>의 대미지를 준다.",
+	eIP_POTION_HEAL_SPEED2						,	"물약 회복 속도 <c:LTYELLOW>[0]％<n> 증가",
+
+	eIP_DECLINE_DEFENSE_PERCENTAGE				,	"방어력 [-0]％",
+	eIP_DECLINE_DEFENSE							,	"방어력 [-0]",
+	eIP_DECLINE_HIT_RATE						,	"명중률 [-0]％",
+	eIP_DECLINE_DODGE_RATE						,	"회피율 [-0]％",
+
+
+	"__end",
+};

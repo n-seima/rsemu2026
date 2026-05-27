@@ -1,0 +1,1413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b09a9634-b9d0-467f-944a-650d2febb768}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4bec30fc-e367-44a5-a4e5-dcf03330f6c0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Text">
+      <UniqueIdentifier>{9085acfa-c577-48ee-b7cd-119a11e48caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet">
+      <UniqueIdentifier>{675e2c84-d337-40ac-a948-67a4054ea2e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{bed7b3df-f96c-48c6-b351-d85000c8a27c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Field">
+      <UniqueIdentifier>{befc8e13-60c1-41b2-93a7-8b250796ee3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Field\Operate Packet">
+      <UniqueIdentifier>{13a0495c-e66b-4310-8087-6d1502379f21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Field\Send Packet">
+      <UniqueIdentifier>{0db356b4-168c-47f2-9847-68e848b01aee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Field\Field Event">
+      <UniqueIdentifier>{59317633-0356-4ec7-bdf1-53d9794f1a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Field\ﾇﾊｵ・ｿ錞ｵ ｸ昞ﾉ">
+      <UniqueIdentifier>{296c7ea0-07cf-437d-9765-20898dcb7b3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Field\ｰ眷・ｰ・ﾃ">
+      <UniqueIdentifier>{e7619015-04b3-430a-8602-5ed10d1fc036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor">
+      <UniqueIdentifier>{6bdcb7c2-6fd1-474a-b9fc-a556b6704ddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor\Character">
+      <UniqueIdentifier>{4a539a5f-fc75-480e-b959-0f658648617c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor\Actor Item">
+      <UniqueIdentifier>{e7a660de-b4c6-4b31-a45f-33ed4a4de8d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor\Actor Skill">
+      <UniqueIdentifier>{f59a924a-a898-41ba-9cc8-6184f2d42fac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor\ai">
+      <UniqueIdentifier>{0f78aae3-05e6-4f3d-8334-5ab9ce4e0d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Skill">
+      <UniqueIdentifier>{b50bdc97-e2c6-44b6-817a-6e1c6aa76d2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Skill\Skill Type">
+      <UniqueIdentifier>{3803a0fb-4278-4997-b10e-030efa876d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base Code">
+      <UniqueIdentifier>{21fe870d-6da2-4cc4-b687-4ca16a9c915f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{99958ec1-b686-47ef-a64e-f4331002db6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event">
+      <UniqueIdentifier>{12c96e03-46a2-4a1d-bbf8-bb0bed615e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event\tresure map">
+      <UniqueIdentifier>{7e50200c-e1b7-4dc0-b99f-e85ecd7205e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{49d42024-8dbe-4577-bc82-6c962d21c193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Game Packet">
+      <UniqueIdentifier>{924ca73d-17c1-4991-a3f0-92028df5b0c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Game Packet\Broad Cast Server">
+      <UniqueIdentifier>{a7816c86-807f-4593-8528-fb8979709bef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Title">
+      <UniqueIdentifier>{d05aa9b1-ac7f-4b64-b615-a5f6c9b18264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Guild">
+      <UniqueIdentifier>{3a4853b4-9fa9-4bf4-adb4-2bc01e35841a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object">
+      <UniqueIdentifier>{930886e1-982a-4980-959d-b1ecaf79fbe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object\Karma">
+      <UniqueIdentifier>{3f80103d-0208-44f1-a0ff-859268effb2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object\secret dungeon">
+      <UniqueIdentifier>{3c802dcb-9cf4-4da9-8fd5-60e52a2b82ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object\arca">
+      <UniqueIdentifier>{d204f3d1-ddd9-4a81-9143-b5fad7e1301c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object\bank">
+      <UniqueIdentifier>{9e694087-34b4-49e0-a62e-97d5b1af73f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object\carrot shop">
+      <UniqueIdentifier>{25c2dc61-dd00-437d-81ce-7d129b5f5be3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object\banner">
+      <UniqueIdentifier>{a4de4e94-9464-4f36-ad18-b7dfbe6a7969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object\fire work">
+      <UniqueIdentifier>{41d958a5-ffb3-45cb-a417-cc04dfea92f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object\book">
+      <UniqueIdentifier>{0a266760-05f7-47a2-b14c-47ace696b4a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object\character pattern">
+      <UniqueIdentifier>{543b7ecc-be24-40e1-8c40-240315cba98d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object\ｹﾌｴﾏ ﾆ・">
+      <UniqueIdentifier>{7834e892-971d-4dcd-9373-6ed35b0dab85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Object\ｰ眷・">
+      <UniqueIdentifier>{e77f765c-2542-4203-9cbe-70915b2ad738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="area">
+      <UniqueIdentifier>{ffd17e8b-b380-4320-ab31-eec26e708464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XTrap">
+      <UniqueIdentifier>{a9a5371f-99d3-436f-8591-ebc4c3bf4341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib&amp;DLL">
+      <UniqueIdentifier>{e484c546-e6c3-48c3-ac4a-3f831bdd40a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Life Code">
+      <UniqueIdentifier>{7a632447-cb2b-4666-a3f1-d54a8522d79c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{2e3f2d1f-6a7d-4fbc-be6c-05b2e4dbf948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\ｼｭｹ・ｰ・ｮ">
+      <UniqueIdentifier>{83c40088-e2ef-4281-b31c-57f9d0413049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{410b3d0b-0b60-4365-a7bf-404faadeb547}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="booking_work.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBookedWork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\CCompress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CExceptionHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CImageData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cJOB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cNPC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cPACKET.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cPROJECT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cServerStatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cSPLINE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\HardwareInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objectImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packetManger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\seedex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\SMTP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stressTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\Tracer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferForPacket.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cADO_BASE.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cLOG_QUE.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cScript.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSOCKET.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSRVUTIL.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\PacketBuffer.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldBankPacket.cpp">
+      <Filter>Field\Operate Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldCartPacket.cpp">
+      <Filter>Field\Operate Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldCommunityPacket.cpp">
+      <Filter>Field\Operate Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldEventPacket.cpp">
+      <Filter>Field\Operate Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldGuildPacket.cpp">
+      <Filter>Field\Operate Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldOperatePacket.cpp">
+      <Filter>Field\Operate Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldOperateTradePacket.cpp">
+      <Filter>Field\Operate Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldPitchmanShopPacket.cpp">
+      <Filter>Field\Operate Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="filedDeliverPacket.cpp">
+      <Filter>Field\Operate Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldAddSendPacket.cpp">
+      <Filter>Field\Send Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldSendPacket.cpp">
+      <Filter>Field\Send Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldSendStoredPacket.cpp">
+      <Filter>Field\Send Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldOXQuiz.cpp">
+      <Filter>Field\Field Event</Filter>
+    </ClCompile>
+    <ClCompile Include="karma_field.cpp">
+      <Filter>Field\Field Event</Filter>
+    </ClCompile>
+    <ClCompile Include="word_quiz_field.cpp">
+      <Filter>Field\Field Event</Filter>
+    </ClCompile>
+    <ClCompile Include="field_oc.cpp">
+      <Filter>Field\ﾇﾊｵ・ｿ錞ｵ ｸ昞ﾉ</Filter>
+    </ClCompile>
+    <ClCompile Include="duelForField.cpp">
+      <Filter>Field\ｰ眷・ｰ・ﾃ</Filter>
+    </ClCompile>
+    <ClCompile Include="banner_field.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CField.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldActor.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldAddActor.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldBooking.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldGuild.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldHealSkill.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldItem.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldLocalPartition.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldOperateBookedWork.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldParty.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CFieldSkill.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="field_arca.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="field_area.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="field_character_pattern.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="field_door.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="field_guild_battle.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="field_terrain.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="trapInField.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="utilField.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorMonster.cpp">
+      <Filter>Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorNPC.cpp">
+      <Filter>Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorPet.cpp">
+      <Filter>Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorPlayer.cpp">
+      <Filter>Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorQuest.cpp">
+      <Filter>Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorSendLog.cpp">
+      <Filter>Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorSlave.cpp">
+      <Filter>Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorSummonBeast.cpp">
+      <Filter>Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorTamedMonster.cpp">
+      <Filter>Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorEquipmentEffect.cpp">
+      <Filter>Actor\Actor Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorItem.cpp">
+      <Filter>Actor\Actor Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorItemUseToCharacter.cpp">
+      <Filter>Actor\Actor Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorItemUseToItem.cpp">
+      <Filter>Actor\Actor Item</Filter>
+    </ClCompile>
+    <ClCompile Include="actor_attack_object.cpp">
+      <Filter>Actor\Actor Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="actorSkillAI.cpp">
+      <Filter>Actor\Actor Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorSkill.cpp">
+      <Filter>Actor\Actor Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorSkillAura.cpp">
+      <Filter>Actor\Actor Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorSkillExtraEffect.cpp">
+      <Filter>Actor\Actor Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="checkBuffActor.cpp">
+      <Filter>Actor\Actor Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="actor_ai_sage_master.cpp">
+      <Filter>Actor\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="actor_pattern.cpp">
+      <Filter>Actor\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorAi.cpp">
+      <Filter>Actor\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="FindWay.cpp">
+      <Filter>Actor\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="CActor.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorBank.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorBattle.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorCart.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorCorrectData.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorEvent.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorGuild.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorGuildSkill.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorInfo.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorMove.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorParty.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorPassiveSkill.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorPitchmanShop.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorReactionSkill.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorSave.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorSend.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorStatus.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorTitle.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="CActorWrongStatus.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="GreateGodGrace.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="trapForActor.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="ast_chain_lightning.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="ast_ContinuousWhirlwind.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="ast_fire_wall.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="ast_gas.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="ast_giga_lightning.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="ast_mirror_image.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="ast_one_bite.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astBigBullet.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astBouncingMissile.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astContinuousBit.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astContinuousHitOfDoppelganger.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astDependOnImageTrap.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astDoubleTarget.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astExplosionWithImage.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astFlorenceSpecial.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astLightningWinder.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astMultiMissile.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astRollingLog.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astThrowItem.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="astWideMissile.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillAidAttack.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillAidMagic.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillAlteringHitter.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillAwesomeFortress.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillBiteHanging.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillBitGlider.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillBoomerang.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillBouncingLinear.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillBunshineAttack.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillCharging.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillContinuousAttack.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillContinuousShoot.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillDropOnHead.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillExplosion.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillExplosionMissile.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillFireBall.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillGuardianPost.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillHeal.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillIcyStalagmite.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillImpact.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillIntervalShooter.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillJump.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillJumpAttack.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillLandMarker.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillLaser.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillMachine.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillMirrorTower.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillMissile.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillPetCommand.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillPiercingMissile.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillRadialArc.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillRush.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillScimitarCutting.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillShimmeringShield.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillSpreadArrow.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillSurprisingRaid.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillTeleport.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillTornado.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillWaterFall.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillWhirlThrusting.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillWhirlwind.cpp">
+      <Filter>Skill\Skill Type</Filter>
+    </ClCompile>
+    <ClCompile Include="CAbilityInfo.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="CActiveSkill.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkill.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillInit.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="cDECODER.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cIMAGE.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CProfiler.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cPROTRACTOR.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CSolidCheck.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\regular_random.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\SFC.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cITEM.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CItemManager.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="item_book.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\itemDefine.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="itemPackList.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="itemSet.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="pieceItem.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CDropItemEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="CEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="CItemSaleEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlusDropGoldEvent.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="oxQuiz.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="word_quiz.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="receive_packet_from_bcs.cpp">
+      <Filter>Game\Game Packet\Broad Cast Server</Filter>
+    </ClCompile>
+    <ClCompile Include="send_packet_to_BCS.cpp">
+      <Filter>Game\Game Packet\Broad Cast Server</Filter>
+    </ClCompile>
+    <ClCompile Include="CReceivePacketFromDB.cpp">
+      <Filter>Game\Game Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CReceivePacketFromWorld.cpp">
+      <Filter>Game\Game Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CReceivePartyPacketFromWorld.cpp">
+      <Filter>Game\Game Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CSendPacketToClient.cpp">
+      <Filter>Game\Game Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CSendPacketToDB.cpp">
+      <Filter>Game\Game Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="CSendPacketToWorld.cpp">
+      <Filter>Game\Game Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="cGAME.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameActor.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameLog.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameParty.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="utilGame.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CTitle.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="CGuild.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="CGuildSendPacket.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="CGuildSkill.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\guild_common.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_manager.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="instance_guild_battle_manager.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="CKarma.cpp">
+      <Filter>Game Object\Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="CKarmaContainer.cpp">
+      <Filter>Game Object\Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="CKarmaReaction.cpp">
+      <Filter>Game Object\Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="CKarmaTrigger.cpp">
+      <Filter>Game Object\Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="karma_delay.cpp">
+      <Filter>Game Object\Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="instanceField.cpp">
+      <Filter>Game Object\secret dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="secretDungeon.cpp">
+      <Filter>Game Object\secret dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="arca.cpp">
+      <Filter>Game Object\arca</Filter>
+    </ClCompile>
+    <ClCompile Include="CBank.cpp">
+      <Filter>Game Object\bank</Filter>
+    </ClCompile>
+    <ClCompile Include="carrotShop.cpp">
+      <Filter>Game Object\carrot shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\carrotShopDefine.cpp">
+      <Filter>Game Object\carrot shop</Filter>
+    </ClCompile>
+    <ClCompile Include="banner.cpp">
+      <Filter>Game Object\banner</Filter>
+    </ClCompile>
+    <ClCompile Include="fireWork.cpp">
+      <Filter>Game Object\fire work</Filter>
+    </ClCompile>
+    <ClCompile Include="book.cpp">
+      <Filter>Game Object\book</Filter>
+    </ClCompile>
+    <ClCompile Include="pattern.cpp">
+      <Filter>Game Object\character pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="actor_mini_pet.cpp">
+      <Filter>Game Object\ｹﾌｴﾏ ﾆ・</Filter>
+    </ClCompile>
+    <ClCompile Include="miniPet.cpp">
+      <Filter>Game Object\ｹﾌｴﾏ ﾆ・</Filter>
+    </ClCompile>
+    <ClCompile Include="duel.cpp">
+      <Filter>Game Object\ｰ眷・</Filter>
+    </ClCompile>
+    <ClCompile Include="CDataSave.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialog.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="cPARTY.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cPetDefine.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CPitchmanShop.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CPortal.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CQuest.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CShop.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CShoppingCart.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CTrade.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="cUnionParty.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="trap.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="trapSkill.cpp">
+      <Filter>Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="area_arca.cpp">
+      <Filter>area</Filter>
+    </ClCompile>
+    <ClCompile Include="area_door.cpp">
+      <Filter>area</Filter>
+    </ClCompile>
+    <ClCompile Include="area_trap.cpp">
+      <Filter>area</Filter>
+    </ClCompile>
+    <ClCompile Include="cAREA.cpp">
+      <Filter>area</Filter>
+    </ClCompile>
+    <ClCompile Include="XTrap\XTrap4Server.cpp">
+      <Filter>XTrap</Filter>
+    </ClCompile>
+    <ClCompile Include="life_code.cpp">
+      <Filter>Life Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\life_code_common.cpp">
+      <Filter>Life Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\reg_common.cpp">
+      <Filter>common\ｼｭｹ・ｰ・ｮ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\server_type_define.cpp">
+      <Filter>common\ｼｭｹ・ｰ・ｮ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\version.cpp">
+      <Filter>common\ｼｭｹ・ｰ・ｮ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\commonDefine.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\CSharedMemory.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\inputConsoleCommand.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\MemoryModule.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\playerJobCommon.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="booking_work.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBookedWork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CCompress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CExceptionHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CImageData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CImageDataDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cJOB.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cNPC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CPetDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cPROJECT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cServerStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cSPLINE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debugCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="defineWarningMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\doorDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameCodeHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ggsrv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\HardwareInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\jobDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="objectImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="packetManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\rebirth_define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\regular_random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stressTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="summonBeast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\summonBeastDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\userCustomDataDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_BASE.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_BCSERVER.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_DBSERVER.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_GAMESERVER.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGINSERVER.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGSERVER.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_USERDBSERVER.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_WORLDSERVER.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\definePacketData.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\RSComm.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferForPacket.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cADO_BASE.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="cServer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\PacketBuffer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\ssl.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="field_oc.h">
+      <Filter>Field\ﾇﾊｵ・ｿ錞ｵ ｸ昞ﾉ</Filter>
+    </ClInclude>
+    <ClInclude Include="cFIELD.h">
+      <Filter>Field</Filter>
+    </ClInclude>
+    <ClInclude Include="CLocalPartion.h">
+      <Filter>Field</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\actorDefine.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="cACTOR.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="CActorStatus.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="ast_chain_lightning.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="ast_ContinuousWhirlwind.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="ast_fire_wall.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="ast_gas.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="ast_giga_lightning.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="ast_mirror_image.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="ast_one_bite.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astBigBullet.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astBouncingMissile.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astContinuousBit.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astContinuousHitOfDoppelganger.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astDependOnImageTrap.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astDoubleTarget.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astExplosionWithImage.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astFlorenceSpecial.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astLightningWinder.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astMultiMissile.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astRollingLog.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astThrowItem.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="astWideMissile.h">
+      <Filter>Skill\Skill Type</Filter>
+    </ClInclude>
+    <ClInclude Include="ast_define.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="CAbility.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="CActiveSkill.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\common\cSKILL.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CSkillDefine.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="cDECODER.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="cIMAGE.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CProfiler.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="cPROTRACTOR.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CSolidCheck.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\SFC.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="STDAFX.H">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="cITEM.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CItemDefine.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CItemEffectDefine.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="itemPackList.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="itemSet.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="pieceItem.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\treasureMapDefine.h">
+      <Filter>Event\tresure map</Filter>
+    </ClInclude>
+    <ClInclude Include="CEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="cGAME.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CTitle.h">
+      <Filter>Title</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CTitleDefine.h">
+      <Filter>Title</Filter>
+    </ClInclude>
+    <ClInclude Include="CGuild.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CGuildDefine.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="CGuildSkill.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\guild_skill_define.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="instance_guild_battle_manager.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="CKarma.h">
+      <Filter>Game Object\Karma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CKarmaDefine.h">
+      <Filter>Game Object\Karma</Filter>
+    </ClInclude>
+    <ClInclude Include="secretDungeon.h">
+      <Filter>Game Object\secret dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\secretDungeonDefine.h">
+      <Filter>Game Object\secret dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="arca.h">
+      <Filter>Game Object\arca</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\arcaDefine.h">
+      <Filter>Game Object\arca</Filter>
+    </ClInclude>
+    <ClInclude Include="CBank.h">
+      <Filter>Game Object\bank</Filter>
+    </ClInclude>
+    <ClInclude Include="carrotShop.h">
+      <Filter>Game Object\carrot shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\carrotShopDefine.h">
+      <Filter>Game Object\carrot shop</Filter>
+    </ClInclude>
+    <ClInclude Include="banner.h">
+      <Filter>Game Object\banner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\bannerDefine.h">
+      <Filter>Game Object\banner</Filter>
+    </ClInclude>
+    <ClInclude Include="fireWork.h">
+      <Filter>Game Object\fire work</Filter>
+    </ClInclude>
+    <ClInclude Include="book.h">
+      <Filter>Game Object\book</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\book_define.h">
+      <Filter>Game Object\book</Filter>
+    </ClInclude>
+    <ClInclude Include="pattern.h">
+      <Filter>Game Object\character pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\pattern_define.h">
+      <Filter>Game Object\character pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="actor_mini_pet.h">
+      <Filter>Game Object\ｹﾌｴﾏ ﾆ・</Filter>
+    </ClInclude>
+    <ClInclude Include="miniPet.h">
+      <Filter>Game Object\ｹﾌｴﾏ ﾆ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\miniPetCommon.h">
+      <Filter>Game Object\ｹﾌｴﾏ ﾆ・</Filter>
+    </ClInclude>
+    <ClInclude Include="duel.h">
+      <Filter>Game Object\ｰ眷・</Filter>
+    </ClInclude>
+    <ClInclude Include="CDataSave.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialog.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="cPARTY.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CPitchmanShop.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CPitchmanShopDefine.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CPortal.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CQuest.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CShop.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CShoppingCart.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CTrade.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\partyDefine.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="trap.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\trapDefine.h">
+      <Filter>Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\areaDefine.h">
+      <Filter>area</Filter>
+    </ClInclude>
+    <ClInclude Include="cAREA.h">
+      <Filter>area</Filter>
+    </ClInclude>
+    <ClInclude Include="XTrap\Xtrap_S_Interface.h">
+      <Filter>XTrap</Filter>
+    </ClInclude>
+    <ClInclude Include="life_code.h">
+      <Filter>Life Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\life_code_common.h">
+      <Filter>Life Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\reg_common.h">
+      <Filter>common\ｼｭｹ・ｰ・ｮ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\server_type_define.h">
+      <Filter>common\ｼｭｹ・ｰ・ｮ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\version.h">
+      <Filter>common\ｼｭｹ・ｰ・ｮ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CSharedMemory.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\inputConsoleCommand.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\MemoryModule.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\mess_sign.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\playerJobCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="config-Battle.txt">
+      <Filter>Text</Filter>
+    </Text>
+    <Text Include="config-game.txt">
+      <Filter>Text</Filter>
+    </Text>
+    <Text Include="config-game_dev.txt">
+      <Filter>Text</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="ssl.lib">
+      <Filter>Lib&amp;DLL</Filter>
+    </Library>
+    <Library Include="zdll.lib">
+      <Filter>Lib&amp;DLL</Filter>
+    </Library>
+    <Library Include="ggsrvdll.lib">
+      <Filter>Lib&amp;DLL</Filter>
+    </Library>
+    <Library Include="ggsrvlib.lib">
+      <Filter>Lib&amp;DLL</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="XTrap4Server.dll">
+      <Filter>XTrap</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AntiCpSvr.dll">
+      <Filter>Lib&amp;DLL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ggauth.dll">
+      <Filter>Lib&amp;DLL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ggsrvdll.dll">
+      <Filter>Lib&amp;DLL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SSDBInfo.bin">
+      <Filter>Lib&amp;DLL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ssl.dll">
+      <Filter>Lib&amp;DLL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="zlib1.dll">
+      <Filter>Lib&amp;DLL</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

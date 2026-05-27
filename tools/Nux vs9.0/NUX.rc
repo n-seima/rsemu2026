@@ -1,0 +1,176 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+NUX MENU 
+BEGIN
+    POPUP "화일"
+    BEGIN
+        MENUITEM "새 화일",                        IDM_NEW
+        MENUITEM SEPARATOR
+        POPUP "압축"
+        BEGIN
+            MENUITEM "Nux 화일 생성",                   IDM_PRESS
+            MENUITEM "기존의 화일 뒤에 붙이기",               IDM_PRESS_APPEND
+        END
+        POPUP "비압축"
+        BEGIN
+            MENUITEM "Nux 화일 생성",                   IDM_MERGE
+            MENUITEM "기존의 화일 뒤에 붙이기",               IDM_MERGE_APPEND
+        END
+        MENUITEM "풀어주기",                        IDM_EXTRACT
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기",                         IDM_EXIT
+    END
+    POPUP "이미지"
+    BEGIN
+        MENUITEM "이미지로 저장하기",                   IDM_SAVE_IMAGE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+PROGRESS DIALOGEX 0, 0, 271, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "작업 진행 상황"
+FONT 10, "돋움", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "취소",IDCANCEL,109,64,50,16
+    CONTROL         "",IDC_SCREEN,"Static",SS_ENHMETAFILE,3,4,262,57,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+FILE                    ICON                    "file.ico"
+FOLDER                  ICON                    "Folder.ico"
+0000                    ICON                    "Nestegg.ico"
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+NUX_E MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New File",                    IDM_NEW
+        MENUITEM SEPARATOR
+        POPUP "Compress"
+        BEGIN
+            MENUITEM "Make Nux File",               IDM_PRESS
+            MENUITEM "Attach to Exist File",        IDM_PRESS_APPEND
+        END
+        POPUP "Non Compress"
+        BEGIN
+            MENUITEM "Make Nux File",               IDM_MERGE
+            MENUITEM "Attatch To Exist File",       IDM_MERGE_APPEND
+        END
+        MENUITEM "Extract",                     IDM_EXTRACT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+PROGRESS_E DIALOGEX 0, 0, 271, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Progress"
+FONT 10, "Tahoma", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,109,64,50,16
+    CONTROL         "",IDC_SCREEN,"Static",SS_ENHMETAFILE,3,4,262,57,WS_EX_CLIENTEDGE
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

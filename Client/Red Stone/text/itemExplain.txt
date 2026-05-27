@@ -1,0 +1,973 @@
+itemExplain
+{
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//┃기본 수치
+	eIE_ADD_DEFENSE_POWER,
+	"방어력 [+0]",
+
+	eIE_BLOCKING_RATE,
+	"블럭률 [+0]％",
+
+	eIE_BELT_STACK_COUNT,
+	"스택 아이템 [0]개",
+
+	eIE_FREE_RARE_OPTION,
+	"[0]개의 제한 없는 접두사 생성 가능",
+//┃기본 수치
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//┃포션/기타 약품 효과
+	eIE_RECOVER_HP,
+	"체력 회복 [0]포인트",
+
+	eIE_RECOVER_HP_PERCENTAGE,
+	"체력 회복 [0]％"		,
+
+	eIE_RECOVER_CP,
+	"CP 충전 [0]포인트"	,
+
+	eIE_RECOVER_CP_PERCENTAGE,
+	"CP 충전 [0]％"		,
+
+	eIE_RECOVER_HP_CP,
+	"체력 회복 [0]포인트\n- CP충전 [0]포인트",
+
+	eIE_RECOVER_HP_CP_PERCENTAGE,
+	"체력 회복 [0]％\n- CP충전 [0]％",
+
+	eIE_RESURRECTION,
+	"전투 불능 캐릭터 부활\n- 체력회복 <c:LTYELLOW>[0]％<n>",
+
+	eIE_SELF_RESURRECTION,
+	"전투 불능 상태에서 부활\n- 체력회복 <c:LTYELLOW>[0]％<n>",
+
+	eIE_HEAL_STRANGE_STATUS,
+	"상태이상 중화 [0]％",		
+
+	eIE_RECOVER_ALL_STRANGE_STATUS,
+	"모든 이상계 상태 치료",
+
+	eIE_RECOVER_ALL_DECLINE_STATUS,
+	"모든 저하계 상태 치료",
+
+	eIE_RECOVER_ALL_CURSE_STATUS,
+	"모든 저주계 상태 치료",
+
+	eIE_RECOVER_ALL_BADSTATUS,
+	"모든 상태이상 치료",
+
+	eIE_HEAL_POSION,
+	"중독 상태 치료",
+
+	eIE_SHORT_WHILE_INCREASE_POWER,
+	"힘 [+0] [1]초",
+
+	eIE_SHORT_WHILE_INCREASE_AGILITY,
+	"민첩성 [+0] [1]초",
+
+	eIE_SHORT_WHILE_INCREASE_CONSTITUTION,
+	"건강 [+0] [1]초",
+
+	eIE_SHORT_WHILE_INCREASE_WISDOM,
+	"지혜 [+0] [1]초",
+
+	eIE_SHORT_WHILE_INCREASE_INTELIGENCE,
+	"지식 [+0] [1]초",
+
+	eIE_SHORT_WHILE_INCREASE_CHARISMA,
+	"카리스마 [+0] [1]초",
+
+	eIE_SHORT_WHILE_INCREASE_LUCK,
+	"행운 [+0] [1]초",
+
+	eIE_SHORT_WHILE_INCREASE_ATTACK_POWER,
+	"공격력 [+1]％ [0]초",
+
+	eIE_SHORT_WHILE_INCREASE_DEFENSE_POWER,
+	"방어력 [+1]％ [0]초",
+
+	eIE_SHORT_WHILE_INCREASE_HP,
+	"최대 체력 [+1]％ [0]초",
+
+	eIE_SHORT_WHILE_INCREASE_CP,
+	"최대 CP [+1]％ [0]초",
+
+	eIE_SHORT_WHILE_SET_MAX_DAMAGE,
+	"무기 대미지 최고로 유지 [0]초",
+
+	eIE_SHORT_WHILE_SET_MAX_CP,
+	"CP 최고로 유지 [0]초",
+//┃포션/기타 약품 효과
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//┃기타 소모성 아이템
+	eIE_OPEN_ARCA,
+	"보물상자 열쇠 레벨 [0]",
+
+	eIE_OPEN_DOOR,
+	"문 열쇠 레벨 [0]",
+
+	eIE_OPEN_ARCA_AND_DOOR,
+	"만능열쇠 레벨 [0]",
+
+	eIE_ONE_WAY_PORTAL,
+	"마을로 귀환한다.",
+
+	eIE_PORTAL,
+	"마을 왕복 포탈",
+
+	eIE_USE_JEWEL,
+	"사용 가능 횟수 [1]번(유지 시간 [0]분)",
+//┃기타 소모성 아이템
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//┃공격 부가 효과/부가 대미지
+	eIE_INSTANCE_KILL,
+	"타겟 즉사 확률 [+0]％",
+
+	eIE_MAKE_BERSERKER,
+	"버서크 공격 [0]％ [1]초",
+
+	eIE_MAKE_ARMOR_BREAK,
+	"갑옷파괴 공격 [0]％ [1]초",
+
+	eIE_MAKE_WEAPON_BREAK,
+	"무기파괴 공격 [0]％ [1]초",
+
+	eIE_MAKE_POISONED,
+	"중독 공격 - 초당 대미지 [1]([0]초)",
+
+	eIE_MAKE_CONFUSE,
+	"혼란 공격 [0]％ [1]초",
+
+	eIE_MAKE_CHARMING,
+	"유혹 공격 [0]％ [1]초",
+
+	eIE_MAKE_CHARMING_30,
+	"유혹 공격 [0]％ <c:LTYELLOW>30<n>초",
+
+	eIE_MAKE_STUN,
+	"스턴 공격 [0]％ [1]Frame",
+
+	eIE_MAKE_COLD,
+	"콜드 공격 [0]％ [1]초",
+
+	eIE_MAKE_COLD_100,
+	"콜드 공격 <c:LTYELLOW>100％<n> [0]초",
+
+	eIE_HIT_FIRE_DAMAGE,
+	"불 속성 대미지 [+0]",
+
+	eIE_HIT_WATER_DAMAGE,
+	"물 속성 대미지 [+0]",
+
+	eIE_HIT_WIND_DAMAGE,
+	"바람 속성 대미지 [+0]",
+
+	eIE_HIT_TERRA_DAMAGE,
+	"대지 속성 대미지 [+0]",
+
+	eIE_HIT_LIGHT_DAMAGE,
+	"빛 속성 대미지 [+0]",
+
+	eIE_HIT_DARK_DAMAGE,
+	"어둠 속성 대미지 [+0]",
+
+	eIE_ADD_DAMAGE_TO_UNDEAD,
+	"vs 언데드형 캐릭터 - 대미지 [+0]％",
+
+	eIE_ADD_DAMAGE_TO_DEMON,
+	"vs 악마형 캐릭터 - 대미지 [+0]％",
+
+	eIE_ADD_DAMAGE_TO_HUMAN,
+	"vs 인간형 캐릭터 - 대미지 [+0]％",
+
+	eIE_ADD_DAMAGE_TO_ANIMAL,
+	"vs 동물형 캐릭터 - 대미지 [+0]％",
+
+	eIE_ADD_DAMAGE_TO_HOLY_ANIMAL,
+	"vs 신수형 캐릭터 - 대미지 [+0]％",
+//┃공격 부가 효과
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//┃각종 부가 효과
+	eIE_DECREASE_RELOAD_TIME,
+	"아이템 리로드 타입 -[0]％",
+
+	eIE_INCREASE_TRANSFORMATION_SPEED,
+	"변신 속도 [0]％ 증가",
+
+	eIE_INCREASE_RECOVER_SPEED,
+	"물약 회복 속도 [0]％ 증가",
+
+	eIE_RETURN_DAMAGE,
+	"대미지 리턴 [0]％",
+
+	eIE_RETURN_DAMAGE_40,
+	"대미지 리턴 <c:LTYELLOW>40％<n>",
+
+	eIE_INFINITY_BULLET,
+	"무한 탄환",
+//┃각종 부가 효과
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//┃각종 수치 증가
+	eIE_INCREASE_MELEE_JOB_ATTACK_POWER,
+	"밀리 계열 직업 공격력 [+0]~[+1]",
+
+	eIE_INCREASE_POWER,
+	"힘 [+0]",
+
+	eIE_INCREASE_WISDON,
+	"지혜 [+0]",
+
+	eIE_INCREASE_INTELIGENCE,
+	"지식 [+0]",
+
+	eIE_INCREASE_CONSTITUTION,
+	"건강 [+0]",
+
+	eIE_INCREASE_AGILITY,
+	"민첩성 [+0]",
+
+	eIE_INCREASE_CHARISMA,
+	"카리스마 [+0]",
+
+	eIE_INCREASE_LUCK,
+	"행운 [+0]",
+
+	eIE_INCREASE_CRITICAL,
+	"크리티컬 [+0]％",
+
+	eIE_INCREASE_CRUSH_SHOT,
+	"결정타 [+0]％",
+
+	eIE_INCREASE_HIT_RATE,
+	"명중률 [+0]％",
+
+	eIE_INCREASE_DODGE_CHANCE,
+	"회피율 [+0]％",
+
+	eIE_INCREASE_CONCENTRATION,
+	"집중력 [+0]",
+
+	eIE_INCREASE_ATTACK_SPEED,
+	"공격 속도 [+0]％",
+//┃각종 수치 증가
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//┃저항
+	eIE_RESISTANCE_CURSE_STATUS,
+	"저주 상태 저항 [+0]％",
+
+	eIE_RESISTANCE_DECLINE_STATUS,
+	"능력치 저하 상태 저항 [+0]％",
+
+	eIE_RESISTANCE_STRANGE_STATUS,
+	"이상 상태 저항 [+0]％",
+
+	eIE_RESISTANCE_ALL_BAD_STATUS,
+	"모든 상태 이상 저항 [+0]％",
+
+	eIE_INCREASE_FIRE_RESITANCE,
+	"불 저항 [+0]％",
+
+	eIE_INCREASE_TERRA_RESITANCE,
+	"대지 저항 [+0]％",
+
+	eIE_INCREASE_WIND_RESITANCE,
+	"바람 저항 [+0]％",
+
+	eIE_INCREASE_WATER_RESITANCE,
+	"물 저항 [+0]％",
+
+	eIE_INCREASE_LIGHT_RESITANCE,
+	"빛 저항 [+0]％",
+
+	eIE_INCREASE_DARK_RESITANCE,
+	"어둠 저항 [+0]％",
+
+	eIE_INCREASE_FOUR_ELEMENTAL_RESITANCE,
+	"불, 물, 바람, 대지 저항 [+0]％",
+
+	eIE_INCREASE_MAGIC_RESITANCE,
+	"마법 저항 [+0]％",
+
+	eIE_INCREASE_NOCK_BACK_RESISTANCE,
+	"녹백 저항 [+0]％",
+
+	eIE_INCREASE_CRITICAL_RESISTANCE,
+	"치명타 저항 [+0]％",
+
+	eIE_INCREASE_CRUSH_SHOT_RESISTANCE,
+	"결정타 저항 [+0]％",
+
+	eIE_INCREASE_INSTANCE_KILL_RESISTANCE,
+	"즉사 저항 [+0]％",
+//┃저항
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//┃스킬레벨
+	eIE_INCREASE_MAGIC_LANCER_SKILL,
+	"마법창병의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_MAGIC_ARCHER_SKILL,
+	"마법궁수의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_KNIGHT_SKILL,
+	"기사의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_WARRIOR_SKILL,
+	"전사의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_WIZARD_SKILL,
+	"마법사의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_WEREWOLF_SKILL,
+	"늑대인간의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_THIEF_SKILL,
+	"도둑의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_FIGHTER_SKILL,
+	"격투가의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_BEAST_TAMER_SKILL,
+	"조련사의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_SUMMONER_SKILL,
+	"소환사의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_PRINCESSE_SKILL,
+	"공주의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_MAGICAL_GIRL_SKILL,
+	"변신 소녀의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_PRIEST_SKILL,
+	"사제의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_FALLEN_ANGEL_SKILL,
+	"타락천사의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_NECROMANCER_SKILL,
+	"네크로멘서의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_DEMON_SKILL,
+	"악마의 스킬 레벨 [+0]",
+
+	eIE_INCREASE_FEMALE_SKILL_LEVEL,
+	"여성 캐릭터 스킬 레벨 [+0]",
+
+	eIE_INCREASE_MALE_SKILL_LEVEL,
+	"남성 캐릭터 스킬 레벨 [+0]",
+
+	eIE_INCREASE_SKILL_LEVEL,
+	"모든 스킬 레벨 [+0]",
+//┃스킬레벨
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//┃신비한 마법 아이템
+	eIE_GROW_STRENGTH,
+	"힘 [+0] (성공 확률 : [1]％)",
+
+	eIE_GROW_AGILITY,
+	"민첩성 [+0] (성공 확률 : [1]％)",
+
+	eIE_GROW_CONSTITUTION,
+	"건강 [+0] (성공 확률 : [1]％)",
+
+	eIE_GROW_WISDOM,
+	"지혜 [+0] (성공 확률 : [1]％)",
+
+	eIE_GROW_INTELLIGENCE,
+	"지식 [+0] (성공 확률 : [1]％)",
+
+	eIE_GROW_CHARISMA,
+	"카리스마 [+0] (성공 확률 : [1]％)",
+
+	eIE_GROW_LUCK,
+	"행운 [+0] (성공 확률 : [1]％)",
+
+	eIE_GROW_HP,
+	"최대 HP [+0] (실패 확률 : [0]*[1]％)",
+
+	eIE_GROW_CP,
+	"최대 CP [+0] (실패 확률 : [0]*[1]％)",
+
+	eIE_INCREASE_WEAPON_DAMAGE,
+	"무기 대미지 [+0]％ (실패확률 : [0]+0.65％)",
+
+	eIE_INCREASE_ARMOR_DEFENSE,
+	"갑옷 방어력 [+0] (실패확률 : [0]+0.65％)",
+
+	eIE_MAGIC_JEWEL,
+	"접두사 [0]개 생성 (성공확률 : [1]％)",
+
+	eIE_FRONTIER_SCROLL					,
+	"사용자에게 [0]레벨 프론티어 타이틀을 부여합니다.",
+
+	eIE_NORMAL_ITEM_LOTTERY_TICKET		,
+	"드롭 레벨 [0]~[1] 사이의 노말 아이템을 랜덤하게 생성한다. 성공확률 100％",
+
+	eIE_RARE_ITEM_LOTTERY_TICKET		,
+	"드롭 레벨 [0]의 레어 아이템을 랜덤하게 생성한다. 성공확률 [1]％",
+
+	eIE_UNIQUE_ITEM_LOTTERY_TICKET	,
+	"드롭 레벨 [0]의 유니크 아이템을 랜덤하게 생성한다. 성공확률 [1]％",
+
+	eIE_SUPER_ITEM_LOTTERY_TICKET	,
+	"드롭 레벨 [0]의 슈퍼 유니크 아이템을 랜덤하게 생성한다. 성공확률 [1]％",
+
+	eIE_RESET_SKILL_POINT			,
+	"스킬 포인트 재분배",
+	
+	eIE_RESET_STATE_POINT			,
+	"스탯 포인트 재분배",
+
+	eIE_CHANGE_ITEM_PREFIX_2003_11_01	,//	11월 1일에 만든 접두사 변경 옵션
+	"대미지 옵션 변환",
+
+	eIE_CHANGE_ITEM_PREFIX_2003_11_17	,//	11월 17일에 만든 접두사 변경 옵션
+	"위험한 대미지 옵션 변환",
+
+	eIE_ORB_OF_SANTA,
+	"경험치 <c:LTYELLOW>1.5배<n>\n- 아이템 드롭율 <c:LTYELLOW>1.5배<n>\n-<c:LTYELLOW> 마을 무제한 귀환 가능<n>\n-<c:LTYELLOW> 프리미엄 존 진입<n>\n-<c:LTYELLOW> 타운 텔레포터 무료 사용<n>\n-<c:LTYELLOW> 마법의 양탄자 무한 소환 가능<n>",
+
+	eIE_SHORT_WHILE_INCREASE_ATTACK_POWER_BY_MINUTE,
+	"[0]분 동안 공격력을 [1]％ 증가 시킨다.",
+
+	eIE_SHORT_WHILE_INCREASE_DEFENSE_POWER_BY_MINUTE,
+	"[0]분 동안 방어력을 [1]％ 증가 시킨다.",
+
+	eIE_SHORT_WHILE_INCREASE_HP_BY_MINUTE,
+	"[0]분 동안 체력을 [1]％ 증가 시킨다.",
+
+	eIE_SHORT_WHILE_INCREASE_CP_BY_MINUTE,
+	"[0]분 동안 CP를 [1]％ 증가 시킨다.",
+
+	eIE_SHORT_WHILE_SET_MAX_DAMAGE_BY_MINUTE,
+	"[0]분 동안 무기 대미지가 항상 최고로 유지된다.",
+
+	eIE_SHORT_WHILE_SET_MAX_CP_BY_MINUTE,
+	"[0]분 동안 CP가 항상 최고로 유지된다.",
+
+	eIE_SHORT_WHILE_INCREASE_POWER_BY_MINUTE,
+	"힘을 [0]만큼 [1]분 동안 상승 시킨다.",
+
+	eIE_SHORT_WHILE_INCREASE_AGILITY_BY_MINUTE,
+	"민첨성을 [0]만큼 [1]분 동안 상승 시킨다.",
+
+	eIE_SHORT_WHILE_INCREASE_CONSTITUTION_BY_MINUTE,
+	"건강을 [0]만큼 [1]분 동안 상승 시킨다.",
+
+	eIE_SHORT_WHILE_INCREASE_WISDOM_BY_MINUTE,
+	"지혜를 [0]만큼 [1]분 동안 상승 시킨다.",
+
+	eIE_SHORT_WHILE_INCREASE_INTELIGENCE_BY_MINUTE,
+	"지식을 [0]만큼 [1]분 동안 상승 시킨다.",
+
+	eIE_SHORT_WHILE_INCREASE_CHARISMA_BY_MINUTE,
+	"카리스마를 [0]만큼 [1]분 동안 상승 시킨다.",
+
+	eIE_SHORT_WHILE_INCREASE_LUCK_BY_MINUTE,
+	"운을 [0]만큼 [1]분 동안 상승 시킨다.",
+
+	eIE_OVER_POWER_ITEM_EQUIP,
+	"자신 레벨보다 [0]레벨 높은 제한 레벨 아이템 사용 가능",
+
+	eIE_PERFECT_RESSURECTION,
+	"죽음 페널티 시간을 <c:LTGREEN>90％<n> 줄이고 <c:LTGREEN>[0]초<n>간 최대 체력을 [1]％로 만든다.",
+
+	eIE_MEMORY_STONE,
+	"현재 위치를 웨이 포인트 슬롯 [0]에 기억하고 크리스탈을 [1]개 생성한다.",
+
+	eIE_TELEPORT_STONE,
+	"웨이 포인트 슬롯 [0]에 기억하고 있는 장소로 텔레포트한다.",
+
+	eIE_CALL_MAGIC_CARPET							,	//	마법의 양탄자 소환
+	"마법의 양탄자를 소환한다.",
+
+	eIE_SHORT_WHILE_INCREASE_ATTACK_POWER_BY_MINUTE_10	,	//	*10%
+	"[0]분 동안 공격력을 [1]<c:LTYELLOW>0<n>％ 증가 시킨다.",
+
+	eIE_SHORT_WHILE_INCREASE_DEFENSE_POWER_BY_MINUTE_10	,
+	"[0]분 동안 방어력을 [1]<c:LTYELLOW>0<n>％ 증가 시킨다.",
+
+	eIE_INCREASE_LEVEL,
+	"레벨이 [0] 상승한다.",
+
+	eIE_EVENT_2004_01_21,
+	"모든 스킬 레벨 <c:LTGREEN>+2<n>\n- 행운 <c:LTGREEN>+200<n> ",
+
+	eIE_CHANGE_MAGIC_CARPET_SHAPE				,	//	마법의 양탄자 모양을 바꾼다.
+	"<c:LTYELLOW>가지고 있으면 마법의 양탄자 모양이 바뀐다.",
+
+	eIE_JIM_MORYS_ENCHANT						,	//	짐 모리의 인챈트
+	"<c:LTYELLOW>짐 모리의 아이템 인챈트<n>",
+
+	eIE_UNSKILLED_REPAIR_BROKEN_ITEM			,	//	"부숴진 아이템 수리",
+	"<c:LTYELLOW>부숴진 아이템을 서투르게 수리한다.<n>"		,
+
+	eIE_ENCHANT_ITEM_BY_UNIQUE_INFO				,	//	인챈트
+	"<c:LTYELLOW>아이템을 개량한다.<n>",
+
+	eIE_REPAIR_BROKEN_ITEM						,	//	"부숴진 아이템 수리",
+	"<c:LTYELLOW>부숴진 아이템을 완벽하게 수리한다.<n>",
+
+	eIE_CURE_ITEM_EQUIP_CURSE					,	//	"장비에 붙어 있는 저주를 풀어준다.
+	"<c:LTYELLOW>아이템에 걸린 저주를 풀어준다.<n>",
+
+	eIE_RELEASE_ATTACH_PREFIX_CURSE				,	//	"장비에 붙어 있는 저주를 풀어준다.
+	"<c:LTYELLOW>아이템 개량 제한을 풀어준다.<n>",
+
+	eIE_OX_QUIZ_TICKET							,	//	OX 퀴즈 티켓이다.
+	"<c:LTYELLOW>OX 퀴즈 티켓<n>",
+
+	eIE_INCREASE_SITDOWN_RECOVER_HP_SPEED		,	//	eIE_INCREASE_SITDOWN_RECOVER_HP_SPEED
+	"앉아 있을때 체력 회복 속도가 <c:LTYELLOW>[0]％<n> 증가한다.",
+
+	eIE_CREATE_GUILD							,	//	길드 생성
+	"길드를 생성하게 해준다.",
+
+	eIE_GUILD_LEVEL_UP							,	//	길드 생성
+	"길드를 레벨을 <c:LTYELLOW>[0]<n>로 만들어준다.",
+
+//┃신비한 마법 아이템
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//┃길드 마크
+	eIE_GS_EXPAND_PACK							,
+	"길드 마크를 고를 수 있는 선택의 폭을 늘려준다.",
+	eIE_GS_SPECIAL_PACK							,
+	"길드 마크를 고를 수 있는 선택의 폭을 늘려준다.",
+	eIE_GS_LUXURY_PACK						,
+	"길드 마크를 고를 수 있는 선택의 폭을 늘려준다.",
+	eIE_GS_HANGUL_PACK							,
+	"길드 마크를 고를 수 있는 선택의 폭을 늘려준다.",
+	eIE_GS_ENGLISH_PACK							,
+	"길드 마크를 고를 수 있는 선택의 폭을 늘려준다.",
+	eIE_GS_HANMUN_PACK							,
+	"길드 마크를 고를 수 있는 선택의 폭을 늘려준다.",
+	eIE_GS_ITEM_PACK							,
+	"길드 마크를 고를 수 있는 선택의 폭을 늘려준다.",
+	eIE_GS_ANIMAL_PACK							,
+	"길드 마크를 고를 수 있는 선택의 폭을 늘려준다.",
+//┃길드 마크
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+	eIE_PS_SIGNBOARD1							,
+	"믿음직한 팻말",
+
+	eIE_PS_SIGNBOARD2								,
+	"화려한 팻말",
+
+	eIE_PS_SIGNBOARD3								,
+	"신비한 팻말",
+
+	eIE_PS_SIGNBOARD4								,
+	"깨끗한 팻말",
+
+	eIE_PS_SIGNBOARD5								,
+	"정열적인 팻말",
+
+	eIE_PS_LOUD_SPEAKER		,
+	"확성기",
+
+	eIE_PS_COLOR_TEXT							,
+	"노점상의 팻말 내용의 색깔을 선택할 수 있게 해준다.",
+
+	eIE_PS_BOLD_TEXT							,
+	"노점상의 팻말 내용을 두꺼운 글씨로 쓸 수 있게 해준다.",
+
+	eIE_PS_EXPAND_TEXT_BUFFER					,
+	"노점상의 이름을 더 길게 쓸 수 있게 해준다.",
+
+	eIE_PS_TWINKLE								,
+	"노점상 팻말 주변에 반짝이는 효과를 준다.",
+
+	eIE_PS_PACK									,
+	"노점상 관련 기능을 모두 가능하게 해준다. (도우미 제외)",
+
+	eIE_WEAKNING_TARGET_FIRE_RESISTANCE			,
+	"타겟의 불 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIE_WEAKNING_TARGET_WATER_RESISTANCE		,
+	"타겟의 물 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIE_WEAKNING_TARGET_WIND_RESISTANCE			,
+	"타겟의 바람 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIE_WEAKNING_TARGET_EARTH_RESISTANCE		,
+	"타겟의 대지 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIE_WEAKNING_TARGET_LIGHT_RESISTANCE		,
+	"타겟의 빛 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIE_WEAKNING_TARGET_DARK_RESISTANCE			,
+	"타겟의 어둠 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIE_WEAKNING_TARGET_MAGIC_RESISTANCE		,
+	"타겟의 마법 저항을 <c:LTYELLOW>[0]％<n> 약화 시킨다.",
+	eIE_STRENGTHENING_FIRE_DAMAGE				,
+	"불 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIE_STRENGTHENING_WATER_DAMAGE				,
+	"물 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIE_STRENGTHENING_WIND_DAMAGE				,
+	"바람 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIE_STRENGTHENING_EARTH_DAMAGE				,
+	"대지 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIE_STRENGTHENING_LIGHT_DAMAGE				,
+	"빛 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIE_STRENGTHENING_DARK_DAMAGE				,
+	"어둠 속성 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIE_STRENGTHENING_MAGIC_DAMAGE				,
+	"마법 공격력을 <c:LTYELLOW>[0]％<n> 강화 시킨다.",
+	eIE_BREEDING_RECORD								,
+	"펫의 사육 기록서이다.",
+	eIE_LOTTERY_ITEM								,
+	"신비한 아이템 상자.",
+	eIE_CHARGE_EXTRA_ITEM_POWER					,
+	"마력 충전 키트",
+	eIE_REGEN_HP_ON_MAGIC_CARPET,
+	"HP 회복 기능이 있는 거북이 양탄자를 소환한다.",
+	eIE_NOT_DOWN_CP_ON_MAGIC_CARPET,
+	"이동해도 CP가 감소하지 않는 다람쥐 양탄자를 소환한다.",
+	eIE_INCREASE_MOVE_SPEED_ON_MAGIC_CARPET,
+	"마법 양탄자보다 더 빠른 드레이크 양탄자를 소환한다.",
+	eIE_FIGHT_MAGIC_CARPET,
+	"탄 채로 공격이 가능한 톱니바퀴 양탄자를 소환한다.",
+
+	eIE_EXPAND_INVENTORY_BAG,
+	"여행자용 가방의 크기를 <c:LTYELLOW>[0]<n>칸 확장 시킨다.",
+
+	eIE_REPAIR_DX_ITEM_KIT	,
+	"딜럭스 아이템의 내구도를 <c:LTYELLOW>[0]％<n> 상승시켜 준다.",
+
+	eIE_ITEM_PIECE			,
+	"아이템 조각",
+
+	eIE_SECRET_DUNGEON_KEY	,
+	"<c:LTYELLOW>비밀 던전 열쇠<n>",
+
+	eIE_REMOVE_PREFIX		,
+	"<c:LTYELLOW>마법 옵션 제거<n>",
+
+	eIE_JUMP_FIELD_USE_WORLD_MAP,
+	"<c:LTYELLOW>월드맵으로 필드 이동<n>",
+
+	eIE_PUT_VERTICAL_BANNER		,	//	가로 배너
+	"<c:LTYELLOW>수평 배너 설치<n>",
+
+	eIE_PUT_HORIZON_BANNER		,	//	세로 배너
+	"<c:LTYELLOW>수직 배너 설치<n>",
+
+	eIE_TREASURE_MAP		,	//	보물 지도
+	"<c:LTYELLOW>보물 지도<n>",
+
+	eIE_SHORT_WHILE_INCREASE_LUCKx100_BY_MINUTE	,	//	"운을 [0]*100만큼 [1]분 동안 상승 시킨다.",
+	"행운 [+0]<c:LTYELLOW>00<n> [1]분",
+
+	eIE_RESET_GUILD_SKILL_POINT					,	//	길드 스킬 재분배 두루마리
+	"길드 스킬 포인트 재분배(석상 스킬 제외)",
+
+	eIE_PORTAL_STONE							,	//	포탈 스톤
+	"웨이 포인트 슬롯 [0]에 기억하고 있는 장소로 통하는 포탈을 연다.",
+
+	eIE_COUPLE_RING_SET							,	//	커플 링 세트
+	"커플 링 두개를 생성한다.",
+
+	eIE_COUPLE_RING								,	//	커플 링
+	"커플링",
+
+	eIE_MIX_ITEM_BOX							,	//	바닥 없는 상자
+	"같은 종류의 아이템 두 개를 섞는다.",
+
+	eIE_FIRE_WORK								,
+	"불꽃 놀이",
+
+	eIE_RANDOM_FIRE_WORK,
+	"어떤 불꽃이 터질지 사용하기 전에는 알 수 없다.",
+
+	eIE_INCREASE_SELECT_POWER,
+	"선택한 스탯 증가",
+
+	eIE_PRESENT_COUPLE_RING	,
+	"증정용 커플 링",
+
+	eIE_NOT_DEFINE_COUPLE_COUPLE_RING	,
+	"상대 없는 커플 링",
+
+	eIE_ADD_CATEGORY							,
+	"책에 카테고리 추가",
+	
+	eIE_ADD_PAGE								,
+	"책에 페이지 추가",
+
+	eIE_BOOK									,
+	"책",
+
+	eIE_PRINCESS_WEAPON							,
+	"공주가 변신한 무기",
+
+	eIE_GUILD_HALL_PORTAL	,
+	"길드 홀 이동 아이템"	,
+
+	eIE_SUMMON_GUILD_GUARDIAN,
+	"길드 가디언 소환",
+
+	eIE_GUILD_STATUE_PIECE_EXPORTER	,
+	"길드 석상 관련 아이템",
+
+	eIE_GUILD_STATUE_PIECE	,
+	"길드 석상 관련 아이템",
+
+	eIE_TRANS_TO_OPERATOR,
+	"운영자로 변신할 수 있다.",
+
+	eIE_INC_LAST_DAMAGE							,	//	최종 대미지 중가
+	"물리 마법 구분없이 대미지가 [0]분간 [1]％ 증가한다.",
+
+	eIE_INC_HUNT_EXP								,	//	사냥 경험치 증가
+	"몬스터 사냥으로 획득하는 경험치가 [0]분간 [1]％ 증가한다.",
+
+	eIE_INC_HUNT_ITEM_DROP_CHANCE								,	//	사냥 경험치 증가
+	"아이템 드랍 확률이 [0]분간 [1]％ 증가한다.",
+
+	eIE_CLEAR_DEATH_PENELTY						,	//	죽음 페널티 회복
+	"죽음 페널티를 모두 회복 시킨다.",
+
+	eIE_INCREASE_MOVE_SPEED		,
+	"이동 속도가 [0]분간 [1]％ 증가한다.",
+
+	eIE_EVENT_BALOON			,	//	이벤트 풍선
+	"몬스터를 잡는 순간 일정 확률로 터지고 획득 경험치가 [0]배로 된다.",
+
+	eIE_SELECT_ITEM_IN_ITEM_PACK,
+	"신비한 아이템 상자",
+
+	eIE_INCREASE_FINAL_DAMAGE,
+	"최종 대미지 [+1]％ [0]분",
+
+	eIE_RECALL_MINIPET							,	//	미니펫 소환
+	"미니펫 소환",
+
+	eIE_EXTEND_MINIPET_TIME						,	//	미니펫의 시간을 늘려줌
+	"미니펫 시간 연장",
+
+	eIE_EXTEND_ALL_MINIPET_TIME					,	//	모든 미니펫의 시간을 늘려줌
+	"모든 미니펫 시간 연장",
+
+	eIE_SEAL_MINIPET							,	//	미니펫 봉인
+	"미니펫 봉인",
+
+	eIE_CHANGE_MINIPET_NAME						,	//	미니펫 이름 변경
+	"미니펫 이름 변경",
+
+	eIE_MINIPET_POUCH							,	//	미니펫이 담긴 주머니
+	"미니펫이 담긴 주머니",
+
+	eIE_FLAKE_OF_DOING_ONE						,
+	"미니펫 먹이",
+
+	eIE_FEATHER_OF_THINKING_ONE					,
+	"미니펫 먹이",
+
+	eIE_TOY_OF_SIN_AND_RIN						,
+	"미니펫 먹이",
+
+	eIE_REVERSIBLE_FRAME			,
+	"미니펫 두마리를 소환 할 수 있게 해준다.\n- 기간 [0]일",
+
+	eIE_CH5_SELECT_UPGRADE_TITLE				,
+	"칭호 레벨 상승",
+
+	eIE_CH5_RELASE_REVERSION,
+	"거래 불가 아이템 거래 가능하게 변경",
+
+	eIE_CH5_RESET_GUILD_SKILL_POINT,
+	"길드 스킬 포인트 재분배(석상 스킬 제외)",
+
+	eIE_CH5_BONUS_HP_AMULET,
+	"체력 [+1]",
+
+	eIE_CH5_BONUS_CP_AMULET,
+	"CP [+1]"
+
+	eIE_CH5_OVER_POWER_ITEM_EQUIP,
+	"자신 레벨보다 [0]레벨 높은 제한 레벨 아이템 사용 가능",
+
+	eIE_CH5_REVERSE_SKILL_POINT,
+	"스킬 하나 초기화",
+
+	eIE_CH5_REVERSE_STATE_POINT,
+	"스탯 하나 초기화",
+
+	eIE_CH5_REMOVE_PREFIX,
+	"접두사 제거",
+
+	eIE_CH5_COPY_ITEM,
+	"아이템 복사",
+
+	eIE_CH5_UPGRADE_NORMAL_ITEM_PREFIX_POWER,
+	"일반 아이템 접두사 업그레이드",
+
+	eIE_CH5_IMPROVE_NORMAL_ITEM_POWER,
+	"일반 아이템 성능 향상",
+
+	eIE_CH5_UPGRADE_UNIQUE_ITEM_PREFIX_POWER,
+	"유니크 아이템 접두사 업그레이드",
+
+	eIE_CH5_IMPROVE_UNIQUE_ITEM_POWER,
+	"유니크 아이템 성능 향상",
+
+	eIE_CH5_MIX_ITEM_BOX,
+	"같은 종류의 아이템 두개를 섞는다.",
+
+	eIE_CH5_SELECT_ALLIGNMENT
+	"성향 수치 선택",
+
+	eIE_TIME_STAMP,
+	"타임 스탬프",		//	타임 스탬프
+
+	eIE_ADD_TITLE,
+	"칭호 추가",
+
+	eIE_HUNTING_EXP_BONUS,
+	"사냥 경험치 보너스",
+
+	eIE_SET_BADGE	,	//	세트 배지
+	"세팅 배지",
+
+	eIE_NAME_STONE							,	//	성명석
+	"성명석",
+
+	eIE_INCREASE_MOVE_SPEED_ON_MAGIC_CARPET_RED	,	//	양탄자위에서 이동속도 증가
+	"마법 양탄자보다 더 빠른 붉은색 드레이크 양탄자를 소환한다.",
+
+	eIE_DUEL_BUFF_FIRE		,	//	결투 버프 불
+	"화염의 격노",
+
+	eIE_DUEL_BUFF_WATER		,	//	결투 버프 물
+	"물의 파동",
+
+	eIE_DUEL_BUFF_WIND		,	//	결투 버프 바람
+	"바람의 가호",
+
+	eIE_DUEL_BUFF_EARTH		,	//	결투 버프 대지
+	"대지의 울림",
+
+	eIE_SET_RUNE			,	//	세팅 룬
+	"세팅 룬",
+
+	eIE_MINIPET_AWAKEN50		,	//	미니펫 각성 50%
+	"각성의 씨앗",
+
+	eIE_MINIPET_AWAKEN100		,	//	미니펫 각성 50%
+	"각성의 열매",
+
+ 	eIE_GS_SIGNAL_PACK							,
+	"길드 마크 시그널 팩",
+
+ 	eIE_GS_UNIQUE1_PACK							,
+	"유니크 길드 마크 팩 1",
+
+ 	eIE_GS_UNIQUE2_PACK							,
+	"유니크 길드 마크 팩 2",
+
+	eIE_RECOVER_HP2				,
+	"체력을 [0]<c:LTYELLOW>00<n>포인트 회복 시켜준다.",
+
+	eIE_RECOVER_CP2				,	
+	"CP를 [0]<c:LTYELLOW>00<n>포인트 충전 시켜준다."								,
+
+	eIE_CASTING_MAGIC			,	
+	"[*]",
+
+	eIE_RESET_STRENGTH_STATE		,	//	힘 스탯 하나 재 분배
+	"힘 스탯을 재분배 한다.",
+
+	eIE_RESET_AGILITY_STATE			,	//	민첩 스탯 하나 재 분배
+	"민첩 스탯을 재분배 한다.",
+
+	eIE_RESET_CONSTITUTION_STATE	,	//	건강 스탯 하나 재 분배
+	"건강 스탯을 재분배 한다.",
+
+	eIE_RESET_INTELLIGENCE_STATE	,	//	지식 스탯 하나 재 분배
+	"지식 스탯을 재분배 한다.",
+
+	eIE_RESET_WISDOM_STATE			,	//	지혜 스탯 하나 재 분배
+	"지혜 스탯을 재분배 한다.",
+
+	eIE_RESET_CHARISMA_STATE		,	//	카리스마 스탯 하나 재 분배
+	"카리스마 스탯을 재분배 한다.",
+
+	eIE_RESET_LUCK_STATE			,	//	운 스탯 하나 재 분배
+	"운 스탯을 재분배 한다.",
+
+	eIE_USE_WORLD_MAP_TELEPORT	,	//	
+	"월드맵 상에 원하는 지역으로 텔레포트 한다.",
+
+	eIE_PERFECT_PARTY_REVIVE,
+	"전투불능 상태에 빠진 파티원 모두를 완전 부활 시키고 [0]<c:LTYELLOW>초<n> 동안 최대 HP,CP를 [1]<c:LTYELLOW>％<n>증가 시킨다.",
+
+	eIE_INCREASE_SECRET_DUNGEON_PLAY_COUNT,
+	"하루 비밀 던젼 입장 횟수 제한을 [0]<c:LTYELLOW>회<n> 늘린다.",
+
+	eIE_INCREASE_GAIN_MINIPET_EXP,
+	"미니펫이 먹이를 먹어 획득하는 경험치를 [0]<c:LTYELLOW>배<n>로 증가 시킨다.",
+
+	eIE_EQUIP_INCREASE_MOVE_SPEED,
+	"이동 속도가 [0]<c:LTYELLOW>％<n>로 증가",
+
+	eIE_INSTANCE_RECOVER_HP_PERCENTAGE		,	//	즉석 체력 회복
+	"체력 [0]<c:LTYELLOW>％<n> 즉시 회복"		,
+
+	eIE_INSTANCE_RECOVER_HPx100			,	//	즉석 체력 회복 옵션 수치 * 100
+	"체력 [0]<c:LTYELLOW>00 포인트<n> 즉시 회복"		,
+
+	eIE_INCREASE_GUILD_DUNGEON_PLAY_COUNT,
+	"하루 길드 던젼 입장 횟수 제한을 [0]<c:LTYELLOW>회<n> 늘린다.",
+
+	eIE_CHANGE_PET_NAME,
+	"펫 이름을 초기화 시켜 이름을 변경 할 수 있게 해 준다.",
+
+	eIE_SOUND_OF_LEADERS_BELL	,	
+	"[0]<c:LTYELLOW>시간<n> 동안 모든 유저의 경험치와 아이템 드랍률을 [1]<c:LTYELLOW>배<n>로 올려 준다.",
+
+	eIE_AB_PH_DAMAGE	,	
+	"[0]<c:LTYELLOW>％<n> 확률로 <c:LTYELLOW>물리 대미지<N>의 [1]<c:LTYELLOW>％<n>를 체력으로 흡수한다.",
+
+	eIE_REFLECTING_MIXER	,
+	"미니 펫을 믹싱한다"	,
+
+	eIE_CHAIN_OF_RESTRAINT	,
+	"미니펫의 기운을 속박한다"	,
+
+	eIE_SEAL_SPHERE_OF_DAWN,
+	"[0]<c:LTYELLOW>0<n>레벨 이하의 아이템 하나를 능력에 상관 없이 사용 가능하게 만들어 준다.",
+
+	// VV 09.08.07 
+	eIE_HIT_FIRE_DAMAGE_DX,	
+	"불속성 대미지 [+0]",
+	
+	eIE_HIT_WATER_DAMAGE_DX,
+	"물속성 대미지 [+0]",
+	
+	eIE_HIT_WIND_DAMAGE_DX,
+	"바람속성 대미지 [+0]",
+	
+	eIE_HIT_TERRA_DAMAGE_DX,
+	"대지속성 대미지 [+0]",
+	
+	eIE_HIT_LIGHT_DAMAGE_DX,
+	"빛속성 대미지 [+0]",
+	
+	eIE_HIT_DARK_DAMAGE_DX,
+	"어둠속성 대미지 [+0]",
+
+	"__end"
+};

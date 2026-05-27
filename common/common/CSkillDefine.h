@@ -1,0 +1,1712 @@
+#ifndef	_classSKILL_DEFINE_H
+#define	_classSKILL_DEFINE_H
+
+#ifndef __AFXWIN_H__
+#ifndef _WINDOWS_
+#include <windows.h>
+#endif
+#endif
+
+#define		dSKILL_COMMENT_LENGTH				256
+#define		dSKILL_POWER_UP_COMMENT_LENGTH		64
+#define		dSKILL_NAME_LENGTH					32
+#define		dSKILL_SOUND_FILE_LENGTH			32
+
+#define		dLIMIT_SKILL_LEVEL					50
+
+#define		dMAX_SKILL							2048
+#define		dMAX_ACTIVE_SKILL					256
+#define		dVALID_BLOCKER_CODE					dMAX_ACTIVE_SKILL
+
+
+#define		dABILITY_COUNT						52
+#define		dHERO_ABILITY_COUNT					52
+#define		dMONSTER_ABILITY_COUNT				10
+
+#define		dACTIVE_REACTION_COUNT				4
+#define		dPLAYER_ACTIVE_REACTION_LIMIT		4
+#define		dSKILL_SPARE_VALUE_COUNT			20	//	ø©∫–¿« ªÛ≈¬ƒ°
+#define		dMAX_REQUIRE_SKILL_COUNT			5
+#define		dEXTRA_EFFECT_COUNT					10
+
+#define		dSKILL_ACTION_TO_OBJECT				0xfff9	//	∫∏π∞ ªÛ¿⁄
+#define		dSKILL_BASIC_ATTACK_TO_ARCA			0xfffa	//	∫∏π∞ ªÛ¿⁄
+#define		dSKILL_BASIC_ATTACK_TO_DOOR			0xfffb	//	πÆ ∞¯∞›
+#define		dSKILL_BORDER_OF_ATTACK_TO_OBJECT	0xfffb	//	πÆ ∞¯∞›
+#define		dSKILL_BASIC_ATTACK					0xfffe	//	±‚∫ª∞¯∞›
+#define		dSKILL_CONTINUOUS_HIT_ATTACK		0xfffd	//	ø¨º” ≈∏∞› ∞¯∞›
+#define		dSKILL_ILLUSION_ATTACK				0xfffc	//	µÙ∑π¿Ã æ˚·√
+#define		dSKILL_INREGULAR_SKILL				0xfff0	//	±‚∫ª∞¯∞›
+#define		dSKILL_SERIAL_HOLYCROSS				144		// »¶∏Æ≈©∑ŒΩ∫Ω√∏ÆæÛπ¯»£ 09.09.24 
+#define		dSKILL_SERIAL_PLOT_OF_SHADOW		357		// ¿Ω∏¿« ±◊∏≤¿⁄ Ω√∏ÆæÅEπ¯»£ 09.09.29
+#define		dSKILL_HELL_PRISON								381
+#define		dJOB_MONSTER_START					201
+#define		dBREAK_EQUIPMENT_FACTOR				2
+#define		dNEED_STATE_EMPTY					0x3f	// « ø‰ªÛ≈¬ 
+
+#define		dPASSIVE_SKILL_COUNT				5		//	∆–Ω√∫ÅE∫≈≥ √÷¥ÅE°..
+
+
+#define		dMAX_PHYSICAL_DAMAGE					20000000
+#define		dMAX_MAGICAL_DAMAGE						20000000
+
+const	int	c_iCoolTimeSkillCount	=	10;
+
+#define		dSKILL_TRANSFORMATION_BOW_ATTACK				504
+#define		dSKILL_TRANSFORMATION_SWORD_ATTACK				500
+#define		dSKILL_TRANSFORMATION_FIRE_BOLT					545
+
+#define		dMAX_BIT_STICK_ACTOR							10
+#define		dMAX_CAN_USE_BIT_TO_ONE							2	
+enum
+{
+	eATTACK_OBJECT_DOOR,
+	eATTACK_OBJECT_ARCA,
+};
+
+enum
+{
+	eTARGET_OBJECT_TRAP	=	1,
+	eTARGET_OBJECT_FIELD_TRAP,
+	eTARGET_OBJECT_ARCA,
+	eTARGET_OBJECT_DOOR,
+};
+enum
+{
+	eBUNSHIN_RUSH_ATTACK = 1,		// ∫–Ω≈ ∑ØΩ¨ ∞¯∞›
+	eBUNSHIN_ROUND_ATTACK,			// ∫–Ω≈ ¡÷¿ßµπ∏Èº≠ ∞¯∞›
+
+};
+
+//
+//	Reaction Skill Active Trigger
+enum
+{
+	eRSAT_NONE,			//	æ¯æÅE	
+	eRSAT_STRIKE,		//	¥©±∫∞°ø°∞‘ ªÁøÅEﬂ¥Ÿ.
+	eRSAT_BLOCKING,		//	∫˙”∞≈∑«ﬂ¥Ÿ.
+	eRSAT_HIT,			//	∏¬æ“¥Ÿ.
+	eRSAT_DETECTING,	//	≈Ω¡ˆ«“∂ß
+	eRSAT_DAMAGE_MAGIC_SKILL_SB,	//	∏∂π˝ ∞¯∞› ¥Á«“∂ß
+	eRSAT_HIT_DAMAGE_PHYSICAL,	//	Ω«¡¶ ¥ÅEÃ¡ˆ∏¶ ¿‘±ÅE¿ÅE° π∞∏Æ ¥ÅEÃ¡ˆ∏¶ ¿‘¿Ω πﬂµø
+	eRSAT_HIT_CLOSE_RANGE_ATTACK_COUNTER,	//	±Ÿ¡¢ ∞¯∞›¿ª πﬁæ“¿ª ∂ß ƒ´ø˚·Õ
+	eRSAT_HIT_MISSILE_ATTACK,	//	ø¯∞≈∏Æ ∞¯∞›¿ª πﬁæ“¿ª ∂ß
+	eRSAT_HIT_CLOSE_RANGE_ATTACK_DODGE_COUNTER,	//	±Ÿ¡¢ ∞¯∞›¿ª πﬁæ“¿ª ∂ß »∏«« ƒ´ø˚·Õ
+	eRSAT_REST	,		//	¡§¡ˆªÛ≈¬
+	eRSAT_DAMAGED,		//	¥ÅEÃ¡ÅE¿‘¿ª∂ß
+	eRSAT_JUDGED_BEATEN_TIMING,	//	∏¬æ“¥Ÿ∞ÅE∆«¡§ ≥µ¿ª∂ß
+	eRSAT_HIT_PHYSICAL_DAMAGE_TIME_COUNTER,	//	π∞∏Æ∞¯∞› πﬁæ“¿ª∂ß ƒ´ø˚·Õ
+	eRSAT_HIT_STRANGE_STATUS_ATTACK,		//	ªÛ≈¬ ¿ÃªÅE∞¯∞›¿ª πﬁæ“¿ª∂ß ƒ´ø˚·Õ
+	eRSAT_PHYSICAL_DAMAGED,	//	Ω«¡¶ ¥ÅEÃ¡ˆ∏¶ ¿‘±ÅE¿ÅE° π∞∏Æ ¥ÅEÃ¡ˆ∏¶ ¿‘¿Ω πﬂµø
+};
+//
+//	Skill Type
+enum
+{
+	eST_NORMAL,
+	eST_PASSIVE,
+	eST_REACTION,
+	eST_SUPPORT,
+	eST_REAL_PASSIVE,
+};
+
+//
+//	Aid Magic
+enum
+{
+	eAM_ADD_FIRE_DAMAGE,
+	eAM_ADD_WATER_DAMAGE,
+	eAM_ADD_WIND_DAMAGE,
+	eAM_ADD_EARTH_DAMAGE,
+	eAM_ADD_LIGHT_DAMAGE,
+	eAM_ADD_DARK_DAMAGE,
+};
+
+enum
+{//ADD Hit Type
+	eAHT_POISON,
+	eAHT_DARK,
+	eAHT_BLEEDING,
+	eAHT_ELECTRIC_SHOCK,
+};
+
+//
+//	CE
+enum
+{
+	eCE_STRANGE_STATUS_CURE			=	0x01,	//¿ÃªÛ∞Ë≈ÅEÛ≈¬¿ÃªÛæ∆±∫ƒ°∑ÅE	
+	eCE_DECLINE_POWER_STATUS_CURE	=	0x02,	//¿˙«œ∞Ë≈ÅEÛ≈¬¿ÃªÛæ∆±∫ƒ°∑ÅE	
+	eCE_CURSE_STATUS_CURE			=	0x04,	//¿˙¡÷∞Ë≈ÅEÛ≈¬¿ÃªÛæ∆±∫ƒ°∑ÅE	
+	eCE_ALL_STRANGE_STATUS_CURE		=	0x08,	//∏µÁªÛ≈¬¿ÃªÛæ∆±∫ƒ°∑ÅE	
+	eCE_RESURRECTION				=	0x10,	//«‡µø∫“¥…æ∆±∫»∏∫π
+};
+
+//
+//	º“ºˆ¡° √≥∏Æ
+enum
+{
+	eDECIMAL_METHOD_LEAVE,	//	πˆ∏≤
+	eDECIMAL_METHOD_ROUND_OFF,	//	π› ø√∏≤
+	eDECIMAL_METHOD_UP,			//	ø√∏≤
+};
+
+//
+//	ªÁøÅE¥ÅEÅE
+enum
+{
+	eSKILL_CAST_AT_ENEMY				=	0x00000001,
+	eSKILL_CAST_AT_PLAYER				=	0x00000002,
+	eSKILL_CAST_AT_DEATH_PLAYER			=	0x00000004,
+	eSKILL_CAST_AT_GROUND				=	0x00000008,
+	eSKILL_CAST_QUICK					=	0x00000010,
+	eSKILL_CAST_AT_CASTER				=	0x00000020,
+	eSKILL_CAST_ON_DEATH_SUMMON_BEAST	=	0x00000040,
+	eSKILL_CAST_ON_PARTY_MEMBER			=	0x00000080,
+	eSKILL_CAST_ON_PET					=	0x00000100,
+	eSKILL_CAST_ON_ENEMY_PET			=	0x00000200,
+	eSKILL_CAST_ON_DEATH_PET			=	0x00000400,
+	eSKILL_CAST_ON_SUMMON_BEAST			=	0x00000800,
+	eSKILL_CAST_ON_KELBY				=	0x00001000,
+	eSKILL_CAST_ON_TRAP					=	0x00002000,
+	eSKILL_CAST_ON_ARCA					=	0x00004000,
+	eSKILL_CAST_ON_DOOR					=	0x00008000,
+	eSKILL_CAST_ON_USER_PARTY_MEMBER	=	0x00010000,
+};
+
+//
+//	µ•πÃ¡ÅE≈∏¿‘
+enum
+{
+	eDAMAGE_TYPE_PHYSICAL	=	0x01,
+	eDAMAGE_TYPE_FIRE		=	0x02,
+	eDAMAGE_TYPE_WATER		=	0x04,
+	eDAMAGE_TYPE_WIND		=	0x08,
+	eDAMAGE_TYPE_EARTH		=	0x10,
+	eDAMAGE_TYPE_LIGHT		=	0x20,
+	eDAMAGE_TYPE_DARK		=	0x40
+};
+
+enum
+{
+	eMDA_FIRE	,
+	eMDA_WATER	,
+	eMDA_WIND	,
+	eMDA_EARTH	,
+	eMDA_LIGHT	,
+	eMDA_DARK	
+};
+
+//
+//	Ω∫≈≥ ¡æ∑ÅE
+enum
+{
+	eSKILL_TYPE_NORMAL_HIT					,	//	∞°¿ÅE¿œπ›¿˚¿Œ π∞∏Æ ∞¯∞›
+	eSKILL_TYPE_CONTINUOUS_HIT_BY_CHARACTER	,	//	ƒ≥∏Ø≈Õ¿« ¥ÅEÃ¡ÅE«¡∑π¿”¿ª √º≈©«ÿº≠ 2¥ÅE¿ÃªÅE∂ß∏∞¥Ÿ.
+	eSKILL_TYPE_CONTINUOUS_HIT_VALUE		,	//	∆Æ∏Æ∞≈ «¡∑π¿” ¿Ã»ƒø° ºˆƒ°ø° ¿«∞≈«ÿº≠ º¯¬˜¿˚¿∏∑Œ ¥ÅEÃ¡ˆ∏¶ ¿‘»˘¥Ÿ.
+	eSKILL_TYPE_CONTINUOUS_HIT_BY_ILLUSION	,	//	¿‹ªÛø° ¿««— ø¨º” ≈∏∞›
+	eSKILL_TYPE_ATTACK_BY_BUNSHIN			,	//	∫–Ω≈ø° ¿««— ∞¯∞›
+	eSKILL_TYPE_SCIMITAR_CUTTING			,	//	Ω√πÃ≈Õ ƒø∆√
+	eSKILL_TYPE_RUSH						,	//	∑ØΩ¨
+
+	eSKILL_TYPE_JUMP_ATTACK					,	//	¡°«¡ ∞¯∞›
+	eSKILL_TYPE_WILD_STAMP					,	//	øÕ¿œµÅEΩ∫≈∆«¡
+	eSKILL_TYPE_ALTERING_HITTER				,	//	ø√≈Õ∏µ »˜≈Õ
+	eSKILL_TYPE_IMPACT						,	//	∂ß∏Æ∞ÅE¡÷¿ßø° √Ê∞›∆ƒ∞° ª˝±‰¥Ÿ.
+	eSKILL_TYPE_WHIRLWIND					,	//	»∏ø¿∏Æ«ÅE¿⁄±‚∏¶ ¡ﬂΩ…¿∏∑Œ ¿œ¡§ øµø™¿ª ∞¯∞›«—¥Ÿ.)
+	eSKILL_TYPE_WHIRLTHRUSTING				,	//	µπ∑¡¬˚‘£±ÅE	
+	eSKILL_TYPE_SURPRISING_RAID				,	//	º≠«¡∂Û¿Ã¬°∑π¿ÃµÅE	
+	eSKILL_TYPE_WHIRL_RUNNING				,	//	»Ÿ∑Ø¥◊
+	eSKILL_TYPE_GUARDIAN_POST				,	//	{	"∞°µæ∆˜Ω∫∆Æ"			,
+	eSKILL_TYPE_RADIAL_ARC					,	//	{	"∑π¿ÃµæÛæ∆≈©"			,
+	eSKILL_TYPE_AWESOME_FORTRESS			,	//	ø¿øÅE∂ ∆˜∆Æ∏ÆΩ∫
+	eSKILL_TYPE_BITE_HANGING				,	//	πŸ¿Ã∆Æ «‡¿◊
+	eSKILL_TYPE_BOUNCING_LINEAR				,
+
+	eSKILL_TYPE_FIRE_BALL					,	//	∆ƒ¿ÃæÅE∫º
+	eSKILL_TYPE_MISSILE						,	//	πÃªÁ¿œ
+	eSKILL_TYPE_CONTINUOUS_SHOOT			,	//	ø¨º” πﬂªÅE	
+	eSKILL_TYPE_EXPLOSION_MISSILE			,	//	∆¯πﬂπÃªÁ¿œ
+	eSKILL_TYPE_PIERCING_MISSILE			,	//	∞ÅEÅEÃªÁ¿œ
+	eSKILL_TYPE_ILLUSION_MISSILE			,	//	»ØªÛπÃªÁ¿œ
+	eSKILL_TYPE_SPREAD_ARROW				,	//	Ω∫«¡∑πµÅEæ÷∑ŒøÅE	
+	eSKILL_TYPE_BIT_GLIDER					,	//	∫Ò∆Æ ±€∂Û¿Ã¥ÅE	
+	eSKILL_TYPE_BOOMERANG					,	//	∫Œ∏ﬁ∂ÅE	
+	eSKILL_TYPE_LASER						,	//	∑π¿Ã¿ÅE	
+	eSKILL_TYPE_EXPLOSION					,	//	∆¯πﬂ«ÅE	
+	eSKILL_TYPE_EXPLOSION_DEPEND_ON_IMAGE	,	//	¿ÃπÃ¡ˆ¿«¡∏∆¯πﬂ«ÅE	
+	eSKILL_TYPE_LINER_CHAIN_EXPLOSION		,	//	¡¯º±«ÅE¨º‚∆¯πﬂ... -_-?
+	eSKILL_TYPE_LAND_MARKER					,	//	∑£µÂ∏∂ƒø
+	eSKILL_TYPE_INTERVAL_SHOOTER			,	//	¿Œ≈ÕπÅEΩ¥≈Õ
+	eSKILL_TYPE_WATER_FALL					,	//	øˆ≈Õ ∆ÅE	
+	eSKILL_TYPE_TORNADO						,	//	≈‰≥◊¿Ãµµ
+	eSKILL_TYPE_DROP_ON_HEAD				,	//	∏”∏Æ ¿ß∑Œ ∂≥æ˚›¯¥Ÿ.
+	eSKILL_TYPE_MACHINE_GUN					,	//	∏”ΩÆ∞«
+	eSKILL_TYPE_MACHINE_MISSILE				,	//	∏”ΩÆ¿« πÃªÁ¿œ
+	eSKILL_TYPE_SPECIAL_MISSILE				,	//	∆ØºÅEπÃªÁ¿œ
+	eSKILL_TYPE_TAIL_CHASER					,	//	≈◊¿œ √º¿Ãº≠
+	eSKILL_TYPE_SPIN_ARISING				,	//	µπ∑¡¿œæ˚œ™±ÅE
+	eSKILL_TYPE_ARMOR_DISASSEMBLER			,	//	æ∆∏”µΩ∫æ˚ÿ¿∫˙”Ø
+	eSKILL_TYPE_AID_ATTACK					,	//	∫∏¡∂ ∞¯∞›
+	eSKILL_TYPE_DOUBLE_TARGET				,	//	¥ı∫ÅE≈∏∞Ÿ
+	eSKILL_TYPE_GAS							,	//	∞°Ω∫
+	eSKILL_TYPE_FLORENCE_SPECIAL			,	//	«√∑Œ∑ªΩ∫ Ω∫∆‰º» ≈∏¿‘
+	eSKILL_TYPE_ROLLING_LOG					,	//	µ•±ºµ•±º≈ÅE™π´
+	eSKILL_TYPE_BIG_BULLET					,	//	∞≈¥ÅE∫»Ø
+	eSKILL_TYPE_THROW_ITEM					,	//	æ∆¿Ã≈€ ¥¯¡ˆ±ÅE	
+	eSKILL_TYPE_LIGHTNING_WINDER			,	//	∂Û¿Ã∆Æ¥◊ øÕ¿Œ¥ÅE	
+	eSKILL_TYPE_MIRROR_IMAGE				,	//	"πÃ∑Ø¿ÃπÃ¡ÅE			,
+	eSKILL_TYPE_CHAIN_LIGHTNING				,	//	"√º¿Œ∂Û¿Ã∆Æ¥◊"			,
+	eSKILL_TYPE_FIRE_WALL					,	//	"∆ƒ¿Ãæ˚€ÅE				,
+	eSKILL_TYPE_GIGA_LIGHTNING				,	//	"±‚∞°∂Û¿Ã∆Æ¥◊"			,
+	eSKILL_TYPE_CONTINUOUS_WHIRLWIND		,	//  ¡ˆº”«ÅEÛø˚—ÅE.√ﬂ∞°..
+	eSKILL_TYPE_MULTI_MISSILE				,	// ∏÷∆ºπÃªÁ¿œ.
+
+//////////////////////////////////////////////////////
+//	¿ÅEı¿˚¿Œ Ω∫≈≥ ∞Ê∞ÅE	
+	eSKILL_TYPE_AGRESSIVE_SKILL_BORDER		,	//	¿ÅEı¿˚¿Œ Ω∫≈≥ ∞Ê∞ÅE//	¿ÅEı¿˚¿Œ Ω∫≈≥ ∞Ê∞ÅE//////////////////////////////////////////////////////
+	eSKILL_TYPE_JUMP						,	//	¡°«¡
+	eSKILL_TYPE_PASSIVE_REACTION			,	//	¡ˆº”«ÅEÆæ◊º«
+	eSKILL_TYPE_ACTIVITY_REACTION			,	//	πﬂµø«ÅEÆæ◊º«
+	eSKILL_TYPE_ICY_STALAGMITE				,	//	æ∆¿ÃΩ√Ω∫≈ª∂Û±◊∏∂¿Ã∆Æ
+	eSKILL_TYPE_CHARGE						,	//	√Ê¿ÅE	
+	eSKILL_TYPE_HEAL						,	//	ƒ°∑ÅE	
+	eSKILL_TYPE_DANCING_BLOCKER				,	//	¥˙ŸÃ ∫˙”Œƒø
+	eSKILL_TYPE_MAGIC_SHIELD				,	//	∏∂π˝πÊ∆–
+	eSKILL_TYPE_ADVANCED_BLOCKING			,	//	∫˙”∞∑ÅE«‚ªÅE	
+	eSKILL_TYPE_AURA						,	//	ø¿∂ÅE	
+	eSKILL_TYPE_BLOCKING					,	//	∏∑±ÅE	
+	eSKILL_TYPE_DODGE						,	//	»∏««
+	eSKILL_TYPE_COUNTER						,	//	ƒ´ø˚·Õ
+	eSKILL_TYPE_TELEPORT					,	//	≈⁄∑π∆˜∆Æ
+
+	eSKILL_TYPE_AID_MAGIC					,	//	∫∏¡∂ ∏∂π˝
+	eSKILL_TYPE_COMPLETE_PROTECTION			,	//	ƒƒ«√∏Æ∆Æ «¡∑Œ≈ÿº«
+	eSKILL_TYPE_SHIMMERING_SHIELD			,	//	Ω√∏”∏µ Ω«µÅE	
+	eSKILL_TYPE_MIRROR_TOWER				,	//	πÃ∑Ø ≈∏øÅE	
+	eSKILL_TYPE_DISPLACEMENT				,	//	µΩ∫«√∑π¿ÃΩ∫∏’∆Æ
+
+	eSKILL_TYPE_PET_COMMAND					,
+	eSKILL_TYPE_ONE_BITE					,
+	eSKILL_TYPE_MINIPET_COMBI				,
+
+
+//////////////////////////////////////////////////////
+//	¿”Ω√ Ω∫≈≥ ∞Ê∞ÅE	
+//////////////////////////////////////////////////////
+
+	eSKILL_TYPE_TRAP						,
+	eSKILL_TYPE_CONTINUOUS_HIT_OF_DOPPELGANGER	,		// ∫–Ω≈¿« ø¨º”∞¯∞›
+	eSKILL_TYPE_PASSIVE						,	// ∆–Ω√∫ÅEΩ∫≈≥ 
+	eSKILL_TYPE_GROUP_CONTINUOUS_BY_BIT				,	//	∫Ò∆Æø°¿««— ±◊∑ÅEø¨≈∏!
+	eSKILL_TYPE_BOUNCING_MISSILE,						//	∆√±‚¥¬ πÃªÁ¿œ
+	eSKILL_TYPE_FLY_BOUNCING_MISSILE,						//	≥Ø∂Û∞°¥¬ ∆√±‚¥¬ πÃªÁ¿œ
+	eSKILL_TYPE_WIDE_MISSILE,						//πÅEß πÃªÁ¿œ
+	eSKILL_TYPE_ARC_MISSILE,						//∆˜π∞º± πÃªÁ¿œ
+
+};
+
+enum
+{	// ∆–Ω√∫ÅEø∞ÅE	
+	eSKILL_PEE_INCREASE_CONCENTRATION,	// ¡˝¡ﬂ∑¬
+	eSKILL_PEE_INCREASE_HARD_BLOW,		// ∞≠≈∏
+	eSKILL_PEE_INCREASE_MAX_HP	,	// √÷¥ÅEº∑¬¡ı∞°
+	eSKILL_PEE_INCREASE_STRANGE_STATUS_RESISTANCE	,	// ªÛ≈¬¿ÃªÛ¿˙«◊
+	eSKILL_PEE_INCREASE_RANGE				,	// ªÁ∞≈∏Æ¡ı∞°
+	eSKILL_PEE_INCREASE_MAGIC_RESISTANCE,		//	∏∂π˝¿˙«◊¡ı∞°.
+	eSKILL_PEE_CORRECT_LIGHT_MIN_DAMAGE,				//	∫˚√÷º“¥ÅEÃ¡ÅE∫∏¡§	
+	eSKILL_PEE_ADD_BIT_CHANCE,				//	∫Ò∆Æ∫Œ¬¯»Æ∑ÅE¡ı∞°
+	eSKILL_PEE_ADD_BIT_CHANCE_WHEN_BE_HIT,		//	∏¬¿ª∂ß ªÛ¥ÅEÅE∫Ò∆Æ∫Œ¬¯»Æ∑ÅE¡ı∞°
+	eSKILL_PEE_INCREASE_HIT_RANGE,			//	≈∏∞›πÅEß¡ı∞°
+
+};
+
+//
+//	Ω∫≈≥ ªÁøÅEª ¿ß«ÿ « ø‰«— ¿Â∫ÅE
+
+enum
+{
+	eREQUIRE_EQUIPMENT_FOR_SKILL_NONE			=	0,
+	eREQUIRE_EQUIPMENT_FOR_SKILL_WEAPON			=	0x0001,
+	eREQUIRE_EQUIPMENT_FOR_SKILL_SHIELD			=	0x0002,
+	eREQUIRE_EQUIPMENT_FOR_SKILL_BULLET			=	0x0004,
+	eREQUIRE_EQUIPMENT_FOR_SKILL_WEAPON2		=	0x0008,
+	eREQUIRE_EQUIPMENT_FOR_SKILL_PET			=	0x0010,
+	eREQUIRE_EQUIPMENT_FOR_SKILL_SUMMON_BEAST	=	0x0020,
+	eREQUIRE_EQUIPMENT_FOR_SKILL_PET_OR_BEAST	=	0x0040,
+	eREQUIRE_EQUIPMENT_FOR_SKILL_POTION			=	0x0080,
+	eREQUIRE_EQUIPMENT_FOR_SKILL_FLOWER			=	0x0100,
+	eREQUIRE_EQUIPMENT_FOR_SKILL_DRUG			=	0x0200,
+	eREQUIRE_EQUIPMENT_FOR_SKILL_CANDY			=	0x0400,
+};	//	Ω∫≈≥ ªÁøÅEª ¿ß«ÿ « ø‰«— ¿Â∫ÅE
+enum
+{
+	ePC_ATTACK,
+	ePC_DEFENSE,
+	ePC_PATROL,
+	ePC_SPECIAL_ACTION,
+	ePC_USE_SKILL,
+};
+
+//
+//	CP∏¶ æÚæ˚€¿¥¬ ≈∏¿Ãπ÷
+enum
+{
+	eGET_CP_HIT,//»˜∆Æ º¯∞£
+	eGET_CP_FIRST_HIT,//√ππ¯¬∞ »˜∆Æ
+	eGET_CP_DEFENSE,//∏∑¥¬ º¯∞£
+	eGET_CP_COUNTER,//∫£¥¬ º¯∞£
+	eGET_ACTION_FINISH,//«‡µø¡æ∑ÅE	
+	eGET_ACTION,//πﬂµø º¯∞£
+	eGET_LAND,//¬¯¡ˆº¯∞£
+	eGET_EVERY_HIT,//∏≈πÅE»˜∆ÆΩ√
+	eGET_ENNEMY_IN_ATTACK_RANGE,//ªÁ¡§±« ≥ª ¿˚¿Ã µÈæ˚€¬ º¯∞£
+	eGET_DEFENSE_DODGE,//∏∑¥¬ º¯∞£,»∏«« º¯∞£
+	eGET_PARTY_ATTACKED,//¡÷¿ß æ∆±∫ ªÛ≈¬¿ÃªÅE∏∂π˝ ∞¯∞› πﬁæ“¿ª Ω√
+	eGET_FIND_ENEMY,//¿ÅE«œ≥™ πﬂ∞ﬂ «“ ∂ß ∏∂¥Ÿ
+	eGET_ENEMY_DEATH,//¿ÅE«œ≥™ ∆ƒ∏ÅE«“ ∂ß ∏∂¥Ÿ
+//¿˚¿ª ∆«∫∞«— º¯∞£
+//º≥ƒ° øœ∑ÅEº¯∞£
+//«ÿ√º øœ∑ÅEº¯∞£
+//≈Ω¡ˆ«— º¯∞£
+//±‚ºÅEº∫∞¯«— º¯∞£
+//«— πÅE√º∑¬ »∏∫π «“ ∂ß∏∂¥Ÿ
+//∏∂¡ˆ∏∑ »˜∆Æ
+//æ∆±∫¿Ã æ˚—“ ∞¯∞› πﬁ¿ª∂ß∏∂¥Ÿ
+//æ∆±∫¿Ã ∫ÅE∞¯∞› πﬁ¿ª∂ß∏∂¥Ÿ
+//æ∆±∫¿Ã ∫“,πŸ∂ÅE∞¯∞›πﬁ¿ª∂ß∏∂¥Ÿ
+//æ∆±∫¿Ã π∞,∂• ∞¯∞›πﬁ¿ª∂ß∏∂¥Ÿ
+//æ∆±∫¿Ã ∏∂π˝∞¯∞› πﬁ¿ª∂ß∏∂¥Ÿ
+//¿˚±∫ «œ≥™ »˜∆ÆΩ√∏∂¥Ÿ
+//æ∆±∫ «— ∏ÅE¿˚øÅE√∏∂¥Ÿ
+//«— ∞≥ πﬂ∞ﬂΩ√∏∂¥Ÿ
+};
+
+enum
+{	// « ø‰ªÛ≈¬.
+	eNEED_STATE_CONSENSUS,		// ±≥∞®.
+	eNEED_STATE_FIGHTING_SPIRIT	,	// ≈ı¡ÅE
+};
+
+//
+//	Extra Effext Adaptive Target
+enum
+{
+	eEEAT_ALL			,
+	eEEAT_ENEMY			,
+	eEEAT_OWN_FORCE		,
+	eEEAT_SELF			,
+	eEEAT_PARTY_MEMBER	,
+	eEEAT_PET			,
+	eEEAT_ENEMY_PET		,
+	eEEAT_SUMMON_BEAST	,
+	eEEAT_PET_AND_BEAST	,
+	eEEAT_SELF_AND_ENEMY,
+	eEEAT_USER_PARTY_MEMBER	,
+	eEEAT_ALL_EXCEPT_SELF,
+	eEEAT_ENEMY_MONSTER,
+	eEEAT_ACTIVE_SKILL_AREA,
+};
+
+//
+//	Ω∫≈≥¿« ∫Œ∞° »ø∞ÅE
+enum
+{
+	eSKILL_EE_CONFUSE,	//	»•∂ÅE	
+	eSKILL_EE_BREAK_ARMOR,	//	∞©ø ∆ƒ±´
+	eSKILL_EE_BREAK_WEAPON,	//	π´±‚∆ƒ±´
+	eSKILL_EE_STUN,	//	∞Ê¡ÅE	
+	eSKILL_EE_FREEZE,	//	«¡∏Æ¡ÅE	
+	eSKILL_EE_COLD,	//	ƒ›µÅE	
+	eSKILL_EE_BLIND,	//	¿Â¥‘
+
+	eSKILL_EE_DECLINE_HIT_CHANCE,	//	∏˙›ﬂ∑ÅE¿˙«œ
+	eSKILL_EE_DECLINE_DODGE_CHANCE,	//	»∏««¿≤ ¿˙«œ
+
+	eSKILL_EE_INCLINE_ATTACK_POWER_PERCENTAGE_FOR_PET_COMMAND,
+	eSKILL_EE_INCLINE_DEFENSE_POWER_PERCENTAGE_FOR_PET_COMMAND,
+	eSKILL_EE_RESET_ATTACK_DEFENSE_POWER_FOR_PET_COMMAND,
+
+	eSKILL_EE_DECLINE_ATTACK_POWER,	//	∞¯∞›∑¬ ¿˙«œ
+	eSKILL_EE_DECLINE_ATTACK_POWER_PERCENTAGE,
+	eSKILL_EE_DECLINE_HIT_CHANCE_BY_LIGHT,	//	∫˚ø° ¿««— ∏˙›ﬂ∑ÅE¿˙«œ
+	eSKILL_EE_DECLINE_DODGE_CHANCE_BY_LIGHT,	//	∫˚ø° ¿««— »∏««¿≤ ¿˙«œ
+	eSKILL_EE_BLIND_BY_LIGHT,	//	∫˚ø° ¿««— ¿Â¥‘
+	eSKILL_EE_LIGHT_ATTACK_ADDITIONAL_EFFECT,	//	∫ÅE∞¯∞› ∫Œ∞°»ø∞ÅE	
+	eSKILL_EE_CURSE_AMPLIFICATION,
+	eSKILL_EE_CREATE_DUMMY,	//	¥ıπÃ ª˝º∫
+	eSKILL_EE_DECLINE_MOVE_SPEED,
+	eSKILL_EE_DECLINE_ATTACK_SPEED,
+
+	eSKILL_EE_INCLINE_HIT_CHANCE,	//	∏˙›ﬂ∑ÅEªÛΩ¬
+	eSKILL_EE_INCLINE_DODGE_CHANCE,	//	»∏««¿≤ ¡ı∞°
+	eSKILL_EE_INCLINE_MOVE_SPEED,	//	¿Ãµø º”µµ ¡ı∞°
+	eSKILL_EE_INCLINE_ATTACK_SPEED,	//	∞¯∞› º”µµ ¡ı∞°
+	eSKILL_EE_LEVITATE,	//	∞¯¡ﬂ∫ŒæÅE
+	eSKILL_EE_INCLINE_ATTACK_POWER,	//	∞¯∞›∑¬ ¡ı∞°
+	eSKILL_EE_INCLINE_ATTACK_POWER_PERCENTAGE,	//	∞¯∞›∑¬ ∆€ºæ∆º¡ÅE¡ı∞°
+
+	eSKILL_EE_DECREASE_FINAL_DEFENSE_POWER_PERCENTAGE,
+	eSKILL_EE_DECREASE_DEFENSE_POWER,	//	πÊæ˚”¬ ¡ı∞°
+	eSKILL_EE_DECREASE_DEFENSE_POWER_PERCENTAGE,	//	πÊæ˚”¬ ∆€ºæ∆º¡ÅE∞®º“
+	eSKILL_EE_INCREASE_DEFENSE_POWER,	//	πÊæ˚”¬ ¡ı∞°
+	eSKILL_EE_INCREASE_DEFENSE_POWER_PERCENTAGE,	//	πÊæ˚”¬ ∆€ºæ∆º¡ÅE¡ı∞°
+
+	eSKILL_EE_INCLINE_STRANGE_STATUS_RESISTANCE,	//	¿ÃªÛªÛ≈¬ ¿˙«◊ ¡ı∞°
+	eSKILL_EE_INCLINE_DECLINE_POWER_RESISTANCE,	//	¥…∑¬ƒ° ¿˙«œ ¿˙«◊ ¡ı∞°
+	eSKILL_EE_INCLINE_CURSE_RESISTANCE,	//	¿˙¡÷ ¿˙«◊ ¡ı∞°
+
+	eSKILL_EE_DECLINE_MAGIC_RESISTANCE,
+	eSKILL_EE_DECLINE_TARGET_MAGIC_RESISTANCE,	//	≈∏∞Ÿ∏∂π˝¿˙«◊∞®º“
+
+	eSKILL_EE_DECLINE_FIRE_RESISTANCE,	//	∫“¿˙«◊ ∞®º“
+	eSKILL_EE_DECLINE_WATER_RESISTANCE,	//	π∞¿˙«◊ ∞®º“
+	eSKILL_EE_DECLINE_WIND_RESISTANCE,	//	πŸ∂˜¿˙«◊ ∞®º“
+	eSKILL_EE_DECLINE_EARTH_RESISTANCE,	//	¥ÅEˆ¿˙«◊ ∞®º“
+	eSKILL_EE_DECLINE_LIGHT_RESISTANCE,	//	∫˚¿˙«◊ ∞®º“
+	eSKILL_EE_DECLINE_DARK_RESISTANCE,	//	æœ»Ê¿˙«◊ ∞®º“
+
+	eSKILL_EE_INCLINE_MAGIC_RESISTANCE,	//	∏∂π˝ ¿˙«◊ ¡ı∞°
+	eSKILL_EE_INCLINE_FIRE_RESISTANCE,	//	∫“¿˙«◊ ¡ı∞°
+	eSKILL_EE_INCLINE_WATER_RESISTANCE,	//	π∞¿˙«◊ ¡ı∞°
+	eSKILL_EE_INCLINE_WIND_RESISTANCE,	//	πŸ∂˜¿˙«◊ ¡ı∞°
+	eSKILL_EE_INCLINE_EARTH_RESISTANCE,	//	¥ÅEˆ¿˙«◊ ¡ı∞°
+	eSKILL_EE_INCLINE_LIGHT_RESISTANCE,	//	∫˚¿˙«◊ ¡ı∞°
+	eSKILL_EE_INCLINE_DARK_RESISTANCE,	//	æœ»Ê¿˙«◊ ¡ı∞°
+	eSKILL_EE_INCLINE_4ELEMENT_RESISTANCE,
+
+	eSKILL_EE_INCLINE_CONCENTRATION,	//	¡˝¡ﬂ∑¬ ¡ı∞°
+	eSKILL_EE_INCLINE_CONCENTRATION_BY_STELLAR_PEER,
+	eSKILL_EE_DECLINE_CONCENTRATION,	//	¡˝¡ﬂ∑¬ ∞®º“
+
+	eSKILL_EE_INCLINE_POWER,	//	»˚¡ı∞°"	
+	eSKILL_EE_INCLINE_AGILITY,	//	πŒ√∏º∫¡ı∞°"
+	eSKILL_EE_INCLINE_CONSTITUTION,	//	∞«∞≠¡ı∞°"	
+	eSKILL_EE_INCLINE_CHARISMA,	//	∞«∞≠¡ı∞°"	
+	eSKILL_EE_INCLINE_INTELIGENCE,	//	¡ˆΩƒ¡ı∞°"	
+	eSKILL_EE_INCLINE_WISDOM,	//	¡ˆ«˝¡ı∞°"	
+	eSKILL_EE_INCLINE_LUCK,	//	ø˚›ı∞°"	
+
+	eSKILL_EE_INCLINE_MAX_CP,	//	CP¡ı∞°
+	eSKILL_EE_INCLINE_MAX_HP,	//	√º∑¬¡ı∞°"	
+	eSKILL_EE_INCLINE_MAX_HP_PERCENTAGE,	//	√º∑¬¡ı∞°"	
+	eSKILL_EE_REGEN_HP,	//	√º∑¬¿⁄µø»∏∫π"	
+
+	eSKILL_EE_NOCK_BACK,	//	≥ÅEÅE
+	eSKILL_EE_CAN_NOT_MOVE_BY_EARTH,	//	¿Ãµø∫“∞° by ¥ÅEÅE	
+	eSKILL_EE_CAN_NOT_MOVE,	//	¿Ãµø∫“∞°
+	eSKILL_EE_DECLINE_MOVE_SPEED_BY_EARTH,	//	¿Ãµøº”µµ ¿˙«œ by ¥ÅEÅE	
+	eSKILL_EE_STUN_BY_EARTH,	//	∞Ê¡ÅEby ¥ÅEÅE	
+	eSKILL_EE_STONE_BY_EARTH,	//	ºÆ»≠ by ¥ÅEÅE	
+	eSKILL_EE_POISON,	//	¡ﬂµ∂
+	eSKILL_EE_CURE_POISON,	//	¡ﬂµ∂ ƒ°∑ÅE
+	eSKILL_EE_INCLINE_BY_OWNER_FORCE,	//	µø∑·ø°¿««—∞¯∞›∑¬ªÛΩ¬
+	eSKILL_EE_CHANGE_ALLIGNMENT,	//	º∫«ÅE∫Ø∞ÅE
+	eSKILL_EE_ADDITIONAL_FIRE_DAMAGE,	//	√ﬂ∞°∫“¥ÅEÃ¡ÅE		,
+	eSKILL_EE_ADDITIONAL_WATER_DAMAGE,	//	√ﬂ∞°π∞¥ÅEÃ¡ÅE		,
+	eSKILL_EE_ADDITIONAL_WIND_DAMAGE,	//	√ﬂ∞°πŸ∂˜¥ÅEÃ¡ÅE	,
+	eSKILL_EE_ADDITIONAL_EARTH_DAMAGE,	//	√ﬂ∞°¥ÅEˆ¥ÅEÃ¡ÅE	,
+	eSKILL_EE_ADDITIONAL_LIGHT_DAMAGE,	//	√ﬂ∞°∫˚¥ÅEÃ¡ÅE		,
+	eSKILL_EE_ADDITIONAL_DARK_DAMAGE,	//	√ﬂ∞°æ˚—“¥ÅEÃ¡ÅE	,
+
+	eSKILL_EE_FIRE_DAMAGE,	//	∫“¥ÅEÃ¡ÅE		,
+	eSKILL_EE_WATER_DAMAGE,	//	π∞¥ÅEÃ¡ÅE		,
+	eSKILL_EE_WIND_DAMAGE,	//	πŸ∂˜¥ÅEÃ¡ÅE	,
+	eSKILL_EE_EARTH_DAMAGE,	//	¥ÅEˆ¥ÅEÃ¡ÅE	,
+	eSKILL_EE_LIGHT_DAMAGE,	//	∫˚¥ÅEÃ¡ÅE		,
+	eSKILL_EE_DARK_DAMAGE,	//	æ˚—“¥ÅEÃ¡ÅE	,
+
+	eSKILL_EE_FIRE_DAMAGE_SHIELD,	//	∫“¥ÅEÃ¡ÅEΩ«µÅE	
+	eSKILL_EE_WATER_DAMAGE_SHIELD,	//	π∞¥ÅEÃ¡ÅEΩ«µÅE	
+	eSKILL_EE_WIND_DAMAGE_SHIELD,	//	πŸ∂ÅE¥ÅEÃ¡ÅEΩ«µÅE	
+	eSKILL_EE_EARTH_DAMAGE_SHIELD,	//	¥ÅEÅE¥ÅEÃ¡ÅEΩ«µÅE	
+	eSKILL_EE_LIGHT_DAMAGE_SHIELD,	//	∫ÅE¥ÅEÃ¡ÅEΩ«µÅE	
+	eSKILL_EE_DARK_DAMAGE_SHIELD,	//	æ˚—“ ¥ÅEÃ¡ÅEΩ«µÅE
+
+	eSKILL_EE_FLEE,
+	eSKILL_EE_FLEE_BY_TURNUNDEAD,	//µµ∏¡by≈œæµ•µÅE	
+	eSKILL_EE_STUN_BY_TURNUNDEAD,	//∏∂∫Òby≈œæµ•µÅE	
+	eSKILL_EE_INSTANCE_KILL_TURNUNDEAD,	//¡ÅEÁby≈œæµ•µÅE	
+	eSKILL_EE_DESTROYING_UNDEAD,	//	µΩ∫∆Æ∑Œ¿◊æµ•µÅE,
+	eSKILL_EE_DESTROYING_UNHOLY,	//	µΩ∫∆Æ∑Œ¿◊æ»¶∏Æ	,
+
+	eSKILL_EE_LIFE_DRAIN,	//√º∑¬»˙ÿÅE	
+	eSKILL_EE_RECOVER_HP,	//√º∑¬»∏∫π
+	eSKILL_EE_SLEEP,	//¿ÅE
+	eSKILL_EE_CURE_STRANGE_STATUS,	//¿ÃªÛ∞Ë≈ÅEÛ≈¬¿ÃªÛæ∆±∫ƒ°∑ÅE	
+	eSKILL_EE_CURE_CURSE,	//¿˙¡÷∞Ë≈ÅEÛ≈¬¿ÃªÛæ∆±∫ƒ°∑ÅE	
+	eSKILL_EE_CURE_DECLINE_POWER_STATUS,	//¿˙«œ∞Ë≈ÅEÛ≈¬¿ÃªÛæ∆±∫ƒ°∑ÅE	
+	eSKILL_EE_DISPLACEMENT,	//	∫˘¿«
+	eSKILL_EE_DETECTING,	//	µ≈ÿ∆√
+	eSKILL_EE_DETECTING_EVIL,	//	µ≈ÿ∆√ ¿Ã∫ÅE
+	eSKILL_EE_DISPELLING,	//	µΩ∫∆Á∏µ
+	eSKILL_EE_REDUCE_CP,	//	CP∞®º“
+	eSKILL_EE_REDUCE_CP_PERCENTAGE,	//	CP∞®º“(∆€ºæ∆º¡ÅE
+	eSKILL_EE_CHARMING,	//	√≠π÷
+	eSKILL_EE_SANCTUARY,
+	eSKILL_EE_WARP_NEAREST_VILLAGE,
+	eSKILL_EE_CALLING,
+	eSKILL_EE_CREATE_TOWN_PORTAL,
+	eSKILL_EE_LEVEL_DRAIN,
+	eSKILL_EE_INCREASE_LEVEL,
+	eSKILL_EE_DECREASE_BLOCKING_CHANCE,
+
+	eSKILL_EE_CHARMING_RESISTANCE,
+	eSKILL_EE_TAME,
+	eSKILL_EE_NONE_TARGET,	//	≈∏∞Ÿ ¡¶ø‹ ªÛ≈¬
+	eSKILL_EE_REAIM_TARGET,	//	≈∏∞Ÿ ¿ÅEº≥¡§
+	eSKILL_EE_FIRST_AID,	//	¿¿±ﬁ√≥ƒ°
+	eSKILL_EE_BREEDING_RECORD,	//	ªÁ¿∞±‚∑œ
+	eSKILL_EE_BONUS_EXP,	//	∞Ê«Ëƒ°∫∏≥ Ω∫
+
+	eSKILL_EE_PET_BOOST,	//
+	eSKILL_EE_BURST,	//
+
+	eSKILL_EE_STRENGTHENING_FIRE_DAMAGE,
+	eSKILL_EE_STRENGTHENING_WATER_DAMAGE,
+	eSKILL_EE_STRENGTHENING_WIND_DAMAGE,
+	eSKILL_EE_STRENGTHENING_EARTH_DAMAGE,
+	eSKILL_EE_STRENGTHENING_LIGHT_DAMAGE,
+	eSKILL_EE_STRENGTHENING_DARK_DAMAGE,
+	eSKILL_EE_STRENGTHENING_MAGIC_DAMAGE,
+
+	eSKILL_EE_DECLINE_CHARMING_RESISTANCE,
+	eSKILL_EE_RALLY,
+	eSKILL_EE_CHARMING_PET,
+
+	eSKILL_EE_CALL_SUMMON_BEAST,
+	eSKILL_EE_POWER_UP_SUMMON_BEAST,
+	eSKILL_EE_RIDING_DOG,
+	eSKILL_EE_INCREASE_SKILL_LEVEL,
+	eSKILL_EE_SET_TRAP,
+	eSKILL_EE_ADD_THORN,
+	eSKILL_EE_INCLINE_CRITICAL_CHANCE,
+	eSKILL_EE_PHYSICAL_DAMAGE_BASED_REMAIN_HP,
+	eSKILL_EE_FINDING_TEASURE,
+	eSKILL_EE_ITEM_COLLECTOR,
+	eSKILL_EE_GOLD_HOLDER,
+
+	eSKILL_EE_DECLINE_WEAPON_ATTACK_POWER_PERCENTAGE,
+	eSKILL_EE_INCLINE_WEAPON_ATTACK_POWER,
+	eSKILL_EE_INCLINE_ARMOR_DEFENSE_POWER,
+
+	eSKILL_EE_TAUNT,
+	eSKILL_EE_PET_TAUNT,
+	eSKILL_EE_INCREASE_STUN_RESISTANCE,
+	eSKILL_EE_DECREASE_PHYSICAL_DAMAGE,
+	eSKILL_EE_INVINCIBLE,
+	eSKILL_EE_DODGE_THIS_TIME_ATTACK,
+
+	eSKILL_EE_REDUCE_STRANGE_STATUS_TIME,
+	eSKILL_EE_REDUCE_CURSE_TIME,
+	eSKILL_EE_REDUCE_DECLINE_POWER_STATUS_TIME,
+
+	eSKILL_EE_MAKE_THE_OTHER_SELF,
+
+	eSKILL_EE_RESISTANCE_KNOCK_BACK,
+	eSKILL_EE_RESISTANCE_KNOCK_OUT,	//	≥ÅEæ∆øÅEπˆ∆º±ÅE
+	eSKILL_EE_INCREASE_RIGHT_PUNCH_SKILL_LEVEL,
+	eSKILL_EE_INCREASE_LEFT_PUNCH_SKILL_LEVEL,
+	eSKILL_EE_INCREASE_RIGHT_KICK_SKILL_LEVEL,
+	eSKILL_EE_INCREASE_LEFT_KICK_SKILL_LEVEL,
+	eSKILL_EE_INCREASE_DOWN_KICK_SKILL_LEVEL,
+
+	eSKILL_EE_NEUTRALIZE_POISON,
+	eSKILL_EE_NEUTRALIZE_FREEZE_STUN,
+
+	eSKILL_EE_DETECTING_MONSTER,
+	eSKILL_EE_INVISIBLE,
+	eSKILL_EE_INSTANCE_KILL,
+
+	eSKILL_EE_DISARM_TRAP,	//	"«‘¡§«ÿ√º"			,,
+	eSKILL_EE_DETECT_TRAP,	//	"«‘¡§≈Ω¡ÅE			,,
+	eSKILL_EE_DETECT_SECRET_OBJECT,	//	"∫Òπ–ø¿∫ÅEß∆Æ≈Ω¡ÅE	,,
+	eSKILL_EE_UNLOCK_ARCA,	//	"¿·±‰ªÛ¿⁄ø≠±ÅE		,,
+	eSKILL_EE_UNLOCK_DOOR,	//	"¿·±‰πÆø≠±ÅE		,,
+	eSKILL_EE_PICKPOCKET,	//	"º“∏≈ƒ°±ÅE			,,
+	eSKILL_EE_ROBBERY,	//	"æ∆¿Ã≈€∞≠≈ª"		,,
+
+	eSKILL_NOTIFICATION_OF_DEATH,	//	¡◊¿Ω¿« øπ∞˙‹ÅE	
+	eSKILL_EE_STEAL_MONEY,
+	eSKILL_EE_MIN_DAMAGE_FOR_THIS_TIME_ATTACK,
+	eSKILL_EE_ANIMATE_PARTNER,
+	eSKILL_EE_TORTURE,
+	eSKILL_EE_MAKE_SKILL_ZONE,
+	eSKILL_EE_MAKE_SHAKLE,	//	¡∑ºÅEª˝º∫
+	eSKILL_EE_PERIODICAL_DARK_DAMAGE_BY_SLEEP,	//	¡÷±‚¿˚¿∏∑Œ æ˚—“ ¥ÅEÃ¡ÅE¿‘»ÅE	
+	eSKILL_EE_ULTIMATE_BARRIER,
+	eSKILL_EE_PIGEON_POST,
+	eSKILL_EE_BERSERK,
+	eSKILL_EE_DANCE,
+	eSKILL_EE_MAGIC_BOX,
+	eSKILL_EE_COPY,
+
+	eSKILL_EE_TRANS_FROG,	//	{	"∞≥±∏∏Æ∫ØΩ≈"		
+	eSKILL_EE_TRANS_FROG2,	//	{	"∞≥±∏∏Æ∫ØΩ≈"		
+	eSKILL_EE_TRANS_FAT_GIRL,	//	{	"∫Ò∏∏¡ÅE			
+	eSKILL_EE_TRANS_TO_WEAPON,	//	{	"π´±‚∫ØΩ≈"			
+	eSKILL_EE_TRANS_TO_RABBIT,	//	{	"≈‰≥¢∫ØΩ≈"			
+	eSKILL_EE_JUMP_JUMP,	//	{	"±¯√—∞≈∏Æ±ÅE		
+	eSKILL_EE_FEIGN_DEATH,	//	{	"¡◊¿∫√¥«œ±ÅE		
+	eSKILL_EE_ATTACK_UNDER_FEIGN_DATH,	//	{	"¡◊¿∫√¥«œ∏Èº≠∞¯∞›«œ±ÅE
+	eSKILL_EE_BOUNCE,	//	∆®±‚±ÅE
+	eSKILL_EE_DECREASE_ALL_RESISTANCE,	//	∏µÅE¿˙«◊ ∞®º“
+
+	eSKILL_EE_EXPLOSION_BOTTLE,
+	eSKILL_EE_CHARGE_CP,
+	eSKILL_EE_MARIONETTE,	//	∏∂∏Æø¿≥◊∂ﬂ
+
+	eSKILL_EE_TRANS_POWER,	//	¥…∑¬ƒ°∫Ø»Ø"	
+	eSKILL_EE_MAKE_ILLUSION,
+	eSKILL_EE_DAMAGE_POOL,
+	eSKILL_EE_IMPULSE,
+	eSKILL_EE_BLOOD_DRAIN,
+	eSKILL_EE_SELF_REPROOF,
+	eSKILL_EE_DEGENERATE,
+	eSKILL_EE_PHANTOM_IMPULSE,
+	eSKILL_EE_TERRIBLE_DREAMS,
+	eSKILL_EE_HWABYUNG,
+	eSKILL_EE_ATTACK_COMMAND,
+	eSKILL_EE_PLOT_OF_SHADOW,
+	eSKILL_EE_SMELL_OF_DEATH,
+
+	eSKILL_EE_DRAW_BODY,
+	eSKILL_EE_CHAIN_DAMAGE,
+	eSKILL_EE_CHAIN_FIRE_DAMAGE,
+	eSKILL_EE_CHAIN_WATER_DAMAGE,
+	eSKILL_EE_CHAIN_WIND_DAMAGE,
+	eSKILL_EE_CHAIN_EARTH_DAMAGE,
+	eSKILL_EE_CHAIN_LIGHT_DAMAGE,
+	eSKILL_EE_CHAIN_DARK_DAMAGE,
+
+	eSKILL_EE_CONTRACT,
+	eSKILL_EE_DECLINE_RECOVER_HP_EFFICIENT,
+	eSKILL_EE_INTERRUPTING_REVIVE,
+	eSKILL_EE_BLOODY_CROSS,
+	eSKILL_EE_UNFAIR_COVENANT,
+
+	eSKILL_EE_SOUL_OATH,
+	eSKILL_EE_BLOOD_COMPACT,
+	eSKILL_EE_ANNULMENT_CONTRACT,
+
+	eSKILL_EE_IMMUNE_STRANGE_STAUS,
+	eSKILL_EE_IMMUNE_PHYSICAL_ATTACK,
+	eSKILL_EE_IMMUNE_MAGIC_ATTACK,
+
+	eSKILL_EE_INCREASE_FINAL_PHYSICAL_ATTACK_POWER,	//	√÷¡æπ∞∏Æ∞¯∞›∑¬¡ı∞°",
+
+	eSKILL_EE_DODGE_MAGIC_DAMAGE,
+	eSKILL_EE_FLY,
+	eSKILL_EE_REGEN_MONSTER,
+	eSKILL_EE_MONSTER_BOMB,
+
+	eSKILL_EE_SWALLOW,	//	ªÅE∞±ÅE	
+	eSKILL_EE_INHALE_ENEMY,
+	eSKILL_EE_DECREASE_SWALLOW_CORPES,	//	ªÅE≤ Ω√√ººÅE∞®º“
+	eSKILL_EE_CONVERSION_ICE,	//	∏µÅE∏∂π˝º”º∫ ∞¯∞› π∞ º”º∫¿∏∑Œ ¿ÅEØ
+	eSKILL_EE_FOG_FORM,
+	eSKILL_EE_NO_MORE_FIGHT,
+	eSKILL_EE_ONE_BITE,	//	«—¿‘!
+	eSKILL_EE_ZOMBIE_BOMB,	//	¡ª∫ÅE∆¯≈∫
+
+	eSKILL_EE_INCREASE_MAGIC_ITEM_DROP_CHANCE,
+	eSKILL_EE_INCREASE_GOLD_DROP_CHANCE,
+
+	eSKILL_EE_CORRECT_FIELD_FIRE_PENELTY,
+	eSKILL_EE_CORRECT_FIELD_WATER_PENELTY,
+	eSKILL_EE_CORRECT_FIELD_WIND_PENELTY,
+	eSKILL_EE_CORRECT_FIELD_EARTH_PENELTY,
+	eSKILL_EE_CORRECT_FIELD_LIGHT_PENELTY,
+	eSKILL_EE_CORRECT_FIELD_DARK_PENELTY,
+	eSKILL_EE_CORRECT_ITEM_EQUIP_LEVEL,
+	eSKILL_EE_INTERRUPTING_WEAPON,					// π´±‚«ÿ¡¶
+	eSKILL_EE_DECREASE_FINAL_ATTACK_POWER_PERCENTAGE, // √÷¡æ∞¯∞›∑¬∞®º“∆€ºæ∆º¡ÅE
+	eSKILL_EE_NOT_USE_ACTIVITY_REACTION_SKILL,		// πﬂµø«ÅEÆæ◊º«ªÁøÅE›¡ÅE	
+	eSKILL_EE_CONSENSUS,							// ±≥∞®ªÛ≈¬.
+	eSKILL_EE_INCREASE_ALL_STATUS,		/// ∏µÁ¥…∑¬ƒ°¡ı∞°.
+	eSKILL_EE_MADNESS,						// ±§∂ÅE	
+	eSKILL_EE_INCLINE_CRITICAL_DAMAGE_PERCENTAGE,	// ƒ°∏˙·∏¥ÅEÃ¡ˆ¡ı∞°∆€ºæ∆º¡ÅE	
+	eSKILL_EE_DRAIN_CP,			//CP»˙ÿÅE
+	eSKILL_EE_SOUL_CONVERSION,		// º“øÅE¡πˆ¿ÅE
+	eSKILL_EE_SOUL_BURN,			// º“øÅEÅE
+	eSKILL_EE_RAGE_SOUL,				// ≈∏ø¿∏£¥¬øµ»•..
+	eSKILL_EE_BINDING_WORDS,			// ææ˚Õ∏º”.
+	eSKILL_EE_FIGHT_ENERGY,				// ≈ı±ÅE
+	eSKILL_EE_RUSH,						// µπ¡ÅE	
+	eSKILL_EE_FIGHTING_SPIRIT,			// ≈ı¡ÅE
+	eSKILL_EE_IGNORE_NEED_STATE,		// « ø‰ªÛ≈¬π´Ω√
+	eSKILL_EE_IGNORE_BLOCKING,			// ∫˙”∞≈∑π´Ω√»Æ∑ÅE	
+	eSKILL_EE_RETURN_MISSILE_DAMAGE,	//	πÃªÁ¿œ¥ÅEÃ¡ˆ∏Æ≈œ
+	eSKILL_EE_INCREASE_HARD_BLOW,		// ∞≠≈∏»Æ∑ÅEı∞°
+	eSKILL_EE_JUMP,		// ¡°«¡
+	eSKILL_EE_ATTACK_DOPPELGANGER,	//	∫–Ω≈∞¯∞›
+	eSKILL_EE_ADD_BIT,	//	∫Ò∆Æ√ﬂ∞°
+	eSKILL_EE_REMOVE_BIT,	//	∫Ò∆Æ¡¶∞≈
+	eSKILL_EE_BLEEDING,	//	√‚«ÅE	
+	eSKILL_EE_ELECTRIC_SHOCK,	//	∞®¿ÅE	
+	eSKILL_EE_INSTANCE_HEAL_EFFECT,	//	¡ÅE√»˙»ø∞ÅE	
+	eSKILL_EE_MAKE_TYPE_UNDEAD,	//	æµ•µÂ»≠
+	eSKILL_EE_BLOOD_DONATION,	//	«Â«ÅE
+
+};
+
+enum
+{	// ≈ı±‚»ø∞ÅE	
+	eSKILL_FEE_NONE,		// æ¯¿Ω..
+	eSKILL_FEE_ADD_ABSOLUTE_ATTACK_POWER,	//	∆ƒ±´ ( ¿˝¥ÅE∞¯∞›∑¬ ºˆƒ° √ﬂ∞°)
+	eSKILL_FEE_INCREASE_ATTACK_COUNT,		//	¡˙«≥ ( ∞¯∞› »ΩºÅE¡ı∞°)
+	eSKILL_FEE_INCREASE_GET_CP,		//	¿˝¡¶ (»πµÅECP ¡ı∞°)
+	eSKILL_FEE_INCREASE_ABSOLUTE_CRITICAL_PERCENT,		//	æ˚Õ›¥œ ( ¿˝¥ÅE≈©∏Æ∆ºƒ√% ¡ı∞°)
+	eSKILL_FEE_DECREASE_COOL_TIME,		//	±‚¥ÅE( ƒ≈∏¿” ∞®º“ )
+
+};
+
+//
+//	special skill effect
+	enum
+{
+	eSKILL_SE_SNIPE_SHOT				=	0x0001,	//º≠¿÷¥¬ ≈∏∞Ÿ 100% ∏˙›ﬂ
+	eSKILL_SE_SKULL_SHOT				=	0x0002,	//º≠¿÷¥¬ ≈∏∞Ÿ ¡ÅEÅE	
+	eSKILL_SE_NOT_INTERRUPT				=	0x0004,	//¿˚¿« ∞¯∞›¿ª ∏¬æ∆µµ ≤‡≤‡¿Ã πˆ∆æ¥Ÿ. -_-;;
+	eSKILL_SE_THROW_WEAPON				=	0x0008,	//π´±‚¥¯¡ˆ±ÅEo-
+	eSKILL_SE_CHANGE_JOB				=	0x0010,	//¡˜æ˜πŸ≤Ÿ±ÅE	
+	eSKILL_SE_HIDE_SHIELD				=	0x0020,	//πÊ∆–¥¯¡ˆ±ÅEo-
+	eSKILL_SE_REMOVE_MISSLE				=	0x0040,	//πÃªÁ¿œ ¡¶∞≈
+	eSKILL_SE_DEFENSE_KNOCKOUT			=	0x0080,	//≥ÅE∆øÅEπÊæÅE	
+	eSKILL_SE_TAUNT						=	0x0100,	//≈∏ø˚‚Æ
+	eSKILL_SE_THROW_OTHER_JOB_WEAPON	=	0x0200,	//ººƒ¡¿ÅEπ´±‚¥¯¡ˆ±ÅEo-
+
+};
+
+//	Ω∫≈≥ ªÁøÅE∞·∞ÅE
+enum
+{
+	eSKILL_FIRE_RESULT_OK,							//	º∫∞ÅE
+	eSKILL_FIRE_RESULT_FAILED,						//	Ω«∆–
+	eSKILL_FIRE_RESULT_NOT_APT_SKILL_TO_TARGET	,	//	≈∏∞Ÿø°∞‘ ¿˚¿˝ƒ° æ ¿∫ Ω∫≈≥¿Ã¥Ÿ.
+	eSKILL_FIRE_RESULT_TOO_MANY_USE_THAT_SKILL	,	//	±◊ Ω∫≈≥¿ª ≥ π´ ∏π¿Ã ªÁøÅE«ﬂæ˚õ
+	eSKILL_FIRE_RESULT_BLOCKED_POINT,				//	¡°«¡ ¡æ∑ÅEΩ∫≈≥¿ª ªÁøÅEœ∑¡ «ﬂ¥¬µ• «ÿ¥ÅE¡ˆ¡°¿Ã ∫˙”∞µ«æÅE¿÷¥Ÿ.
+	eSKILL_FIRE_RESULT_TOO_CLOSE,					//	¡°«¡ ¡æ∑ÅEΩ∫≈≥¿ª ªÁøÅEœ∑¡ «ﬂ¥¬µ• «ÿ¥ÅE¡ˆ¡°¿Ã ≥ π´ ∞°±ı¥Ÿ.
+	eSKILL_FIRE_RESULT_BLOCKED_OBJECT,
+	eSKILL_FIRE_RESULT_CAN_NOT_FIND_TARGET_IN_ATTACK_RANGE,							//	º∫∞ÅE
+	eSKILL_FIRE_RESULT_NOT_APT_SKILL_TO_THIS_STATUS,
+	eSKILL_FIRE_RESULT_BY_BUSY	,					//	πŸªµ!!
+
+};
+
+
+enum
+{
+	eUSR_SUCCESS,
+	eUSR_FAULT_SKILL,
+	eUSR_WEAPON_NOT_FOUND,
+	eUSR_SHIELD_NOT_FOUND,
+	eUSR_BULLET_NOT_FOUND,
+	eUSR_LOWER_CP,
+	eUSR_VALID_SKILL,
+	eUSR_CANO_NOT_CLOSE_ATTACK_ON_HILL,
+	eUSR_PET_NOT_FOUND,
+	eUSR_SUMMON_BEAST_NOT_FOUND,
+	eUSR_REQUIRE_POTION,
+	eUSR_REQUIRE_DURG,
+	eUSR_REQUIRE_FLOWER,
+	eUSR_REQUIRE_CANDY,
+	eUSR_IS_COOL_TIME,
+	eUSR_NOT_NEED_STATE,		// « ø‰ªÛ≈¬..
+	eUSR_BINDING_WORDS,	/// ææ˚Õ∏º”ªÛ≈¬..
+
+};
+
+
+//
+//	Skill Ai Check Status
+
+enum
+{
+	eSACS_ORDERING,							//	øÅE±º¯¿ß
+	eSACS_IN_SIGHT_OWNER_FORCE_HP,			//	Ω√æﬂ≥ªæ∆±∫¿«HP
+	eSACS_RANGE_TO_TARGET,					//	≈∏∞Ÿ∞˙¿«∞≈∏Æ
+	eSACS_BUFF_ON_OWNER,					//	¿⁄Ω≈ø°∞‘πˆ«¡µ 
+	eSACS_BUFF_ON_TARGET,					//	≈∏∞Ÿø°∞‘πˆ«¡µ 
+	eSACS_OWNER_FORCE_COUNT_IN_SIGHT,		//	Ω√æﬂ≥ªµø∑·¿«ºÅE	
+	eSACS_ENEMY_COUNT_IN_SIGHT,				//	Ω√æﬂ≥ª¿˚¿«ºÅE	
+	eSACS_ENEMY_COUNT_IN_TARGET_AROUND,		//	≈∏∞Ÿ¡÷¿ßø°¿˚¿«ºÅE	
+	eSACS_DEATH_OWNER_FORCE_IN_SIGHT,		//	Ω√æﬂ≥ªæ∆±∫¿«¡◊¿Ω
+	eSACS_ON_BATTLE,						//	¿ÅEıªÛ»≤
+	eSACS_ENABLE_CURSE_AMPLIFY,				//	¿˙¡÷∑Œ¡ı∆¯∞°¥…
+	eSACS_TARGET_IS_PET,					//	≈∏∞Ÿ¿Ã∆ÅEÃ¥Ÿ
+	eSACS_ACTIVE_CHANCE,					//	πﬂµø»Æ∑ÅE	
+	eSACS_CURRENT_HP,						//	«ˆ¿ÁHP
+	eSACS_ATTACKED,							//	∞¯∞›¥Á«‘
+	eSACS_CHECK_STATUS,						//	ªÛ≈¬√º≈©
+	eSACS_CHECK_ANIMATE_PARTNER_COUNT,		//	ø°¥œ∏ﬁ¿Ã∆Æ ∆ƒ∆Æ≥  »ΩºÅE√º≈©
+	eSACS_CHECK_TRAP_COUNT		,			//	«‘¡§∞≥ºˆ√º≈©
+	eSACS_CHECK_SWALLOW_CORPES_COUNT	,	//	ªÅE≤Ω√√ººˆ√º≈©
+
+};
+
+//
+//	status
+enum
+{
+	eSTATUS_INVISIBLE,
+};
+
+enum
+{
+	eSage_book_color_normal		,
+	eSage_book_color_red		,
+	eSage_book_color_white_blue	,
+	eSage_book_color_blue		,
+};
+
+//
+//	Fire Ball Animation
+enum
+{
+	eFBA_FLY,
+	eFBA_FLOAT,
+	eFBA_APPEARANCE
+};
+
+//
+//	πÃªÁ¿œ¿Ã ≥Ø∂Û∞°¥¬ πÊ«ÅE
+enum
+{
+	eFLY_MISSILE_DIRECT_NE,
+	eFLY_MISSILE_DIRECT_SE,
+	eFLY_MISSILE_DIRECT_SW,
+	eFLY_MISSILE_DIRECT_NW,
+};
+
+//
+//	¿‹ªÅE¿ÃπÃ¡ÅE≈∏¿‘
+enum
+{
+eSKILL_AFTER_IMAGE_TYPE_NONE,
+eSKILL_AFTER_IMAGE_SELF_COPY,
+eSKILL_AFTER_IMAGE_NEXT_ANIMATION,
+eSKILL_AFTER_IMAGE_INCREASE_FRAME,
+eSKILL_AFTER_IMAGE_WATER_CANON_STYLE,
+};	//	¿‹ªÅE¿ÃπÃ¡ÅE≈∏¿‘
+
+
+//	HEOP	-	Hit Effect Ouput Part
+enum
+{
+	eHEOP_HIT_ZONE,	//	≈∏∞› øµø™(sad»≠¿œø° º≥¡§µ«æÅE¿÷¥Ÿ.)
+	eHEOP_FOOT,		//	πﬂ πÿø°..
+	eHEOP_SHOULDER,	//	æ˚Õ˙ø°..
+	eHEOP_ON_THE_HEAD,	//	∏”∏Æ ¬ ø°
+};
+
+//
+//	After Image Type
+enum
+{
+	eCAIT_NONE,
+	eCAIT_DELAY,
+};
+
+//
+//	Explosion Missile Status
+enum
+{
+	eEMS_FLY,
+	eEMS_EXPLOSION,
+};
+
+//
+//	Shake Timing
+enum
+{
+	eST_EXPLOSION,
+	eST_CAST,
+};
+
+class	cREQUIRE_SKILL
+{
+public:
+	WORD	m_wSkill;
+	WORD	m_wLevel;
+
+			cREQUIRE_SKILL()
+			{
+				m_wSkill	=	0xffff;
+			}
+};
+
+//
+//	Ω∫≈≥¿« ∫Œ∞° »ø∞ÅE
+class	CSkillExtraEffect
+{
+public:
+	class	cInterruptingArmor
+	{
+	public:
+		DWORD	m_bf7BeginLevel					:	7;
+		DWORD	m_bf7EndLevel					:	7;
+		DWORD	m_bf1InterruptingPartEaring		:	1;
+		DWORD	m_bf1InterruptingPartNecklace	:	1;
+		DWORD	m_bf1InterruptingPartBoots		:	1;
+		DWORD	m_bf1InterruptingPartHelm		:	1;
+		DWORD	m_bf1InterruptingPartGauntlet	:	1;
+		DWORD	m_bf1InterruptingPartArmor		:	1;
+		DWORD	m_bf1InterruptingPartRing		:	1;
+		DWORD	m_bf1InterruptingPartShield		:	1;
+	};
+
+	WORD			m_wEffect;
+	short			m_sActiveChance,m_sActiveChancePerLevel;
+	short			m_sUpkeepTime,m_sUpkeepTimePerLevel;
+	int				m_aiValue[10];
+	WORD			m_wLimitActiveChance,m_wLimitUpkeepTime;
+
+	WORD			m_bf1IsUpkeepTimeByFrame: 1;		//1
+
+	WORD			m_bf4TargetMethod		: 4;		//5
+	WORD			m_bf1TargetUndead		: 1;		//6
+	WORD			m_bf1TargetHuman		: 1;		//7
+	WORD			m_bf1TargetDemon		: 1;		//8
+	WORD			m_bf1TargetAnimal		: 1;		//9
+	WORD			m_bf1TargetHolyBeast	: 1;		//10
+	WORD			m_bf1IsActiveChaceInversePropotionByRemainHP				:	1;	//11	πﬂµø»Æ∑ÅE≤¿∫√º∑¬ø°π›∫Ò∑ 
+	WORD			m_bf1IsActiveChaceInversePropotionByRemainHPxMonsterGrade1	:	1;	//12	πﬂµø»Æ∑ÅE(≥≤¿∫√º∑¬∫Ò¿≤x∏ÛΩ∫≈Õµ˚Õﬁ(1:1,2:2,3:4,4:8)
+	WORD			m_bf1IsStop				:	1;	//13	¿Ã∞≈ º∫∞¯«œ∏ÅE∫Íèœ!!
+	WORD			m_bf1IsCalcUpkeepTimeRoundOff	:	1;	//14	¡ˆº”Ω√∞£ π›ø√∏≤¿∏∑Œ ∞ËªÅE	
+	WORD			:0;
+	WORD			m_wExtraEffectImage ;		// ∫Œ∞°»ø∞ÅE¿ÃπÃ¡ÅE
+	WORD			m_wExtraEffectOutputPart;	// ∫Œ∞°»ø∞ÅE¿ÃπÃ¡ÅE¿ßƒ°.
+					CSkillExtraEffect(){reset();}
+
+	inline	void	reset()
+	{
+		memset(this,0,sizeof(CSkillExtraEffect));
+		
+		m_bf1TargetUndead		=	TRUE;
+		m_bf1TargetHuman		=	TRUE;
+		m_bf1TargetDemon		=	TRUE;
+		m_bf1TargetAnimal		=	TRUE;
+		m_bf1TargetHolyBeast	=	TRUE;
+
+		m_wEffect				=	0xffff;
+		m_wLimitUpkeepTime		=	0xffff;
+		m_wLimitActiveChance	=	10000;
+		m_wExtraEffectImage		=	0xffff;		// ∫Œ∞°»ø∞ÅE¿ÃπÃ¡ÅE
+		m_wExtraEffectOutputPart	=	eHEOP_FOOT;	// ∫Œ∞°»ø∞ÅE¿ÃπÃ¡ÅE¿ßƒ°.
+
+	}
+};	//	class	CSkillExtraEffect
+
+class	CSkillExtraEffectInfo
+{
+public:
+	WORD			m_wEffect;
+	short			m_sActiveChance;
+	int				m_iUpkeepTime;
+	int				m_aiValue[10];
+
+	inline	int		getNockBackDistance(int _iLevel)
+	{
+		return	(m_aiValue[0]+m_aiValue[1]*_iLevel)/100;
+	}
+};
+
+#pragma	pack(2)
+typedef union _union_skill_enchanted_image
+{
+    struct 
+	{
+		DWORD	m_bf1InclineAttackPower	:	1;
+		DWORD	m_bf1InclineDefensePower:	1;
+		DWORD	m_bf1InclineHitChance	:	1;
+		DWORD	m_bf1InclineDodgeChance	:	1;
+		DWORD	m_bf1InclineAttackSpeed	:	1;
+		DWORD	m_bf1StrengthenMagicDamage:	1;
+		DWORD	m_bf1StrengthenResistance:	1;
+		DWORD	m_bf1InclineMoveSpeed	:	1;
+
+		DWORD	m_bf1DeclineAttackPower	:	1;
+		DWORD	m_bf1DeclineDefensePower:	1;
+		DWORD	m_bf1DeclineHitChance	:	1;
+		DWORD	m_bf1DeclineDodgeChance	:	1;
+		DWORD	m_bf1DeclineAttackSpeed	:	1;
+		DWORD	m_bf1WeaknessMagicRegistence:	1;
+		DWORD	m_bf1WeaknessResistance	:	1;
+		DWORD	m_bf1DeclineMoveSpeed	:	1;
+		DWORD	m_bf1IsTorture			:	1;	//	17
+		DWORD	m_bf1IsBloodDrain		:	1;	//
+		DWORD	m_bf1IsReversalPower	:	1;	//	
+		DWORD	m_bf1IsPlotOfShadow		:	1;	//	20
+		DWORD	m_bf1IsBreakArmor		:	1;	//	
+		DWORD	m_bf1IsBreakWeapon		:	1;	//	22
+
+//	ø‰±‚±˚›ÅE¿Ã∏ß«• ¿ßø° «•Ω√µ 
+///////////////////////////////////////////////////////////////////////////////////
+		DWORD	m_bf1EIFlameRing		:	1;
+		DWORD	m_bf1Incinerate			:	1;
+		DWORD	m_bf1VaccumPoint		:	1;
+		DWORD	m_bf1HotSkin			:	1;
+		DWORD	m_bf1DarkWeapon			:	1;
+		DWORD	m_bf1CancerHall			:	1;	//
+		DWORD	m_bf1UltimateBarrier	:	1;	//
+
+		DWORD	m_bf1IsExistTheOtherSelf:	1;
+		DWORD	m_bf1IsExistBiter		:	1;	//	31
+		DWORD	m_bf1IsLevelDown		:	1;	//	32
+///////////////////////////////////////////////////////////////////////////////////
+
+		DWORD	m_bf1IsNotificationOfDeath:	1;	//
+		DWORD	m_bf1IsAnimatePartner	:	1;	//	
+		DWORD	m_bf1IsBlockToMove		:	1;	//
+
+		DWORD	m_bf1IsBindByShakle		:	1;	//	1
+		DWORD	m_bf1IsHiding			:	1;
+		DWORD	m_bf1IsDisableInvisibleByAttack	:	1;
+		DWORD	m_bf1IsRabbitRush		:	1;
+		DWORD	m_bf1IsDance			:	1;
+		DWORD	m_bf1IsShutInMagicBox	:	1;
+		DWORD	m_bf1IsFeignDeath		:	1;
+		DWORD	m_bf1IsRabbit			:	1;
+		DWORD	m_bf1IsPlump			:	1;
+		DWORD	m_bf1IsFrog				:	1;
+		DWORD	m_bf1IsJumppingSkipping	:	1;	//	
+		DWORD	m_bf1IsTransToWeapon	:	1;	//	
+		DWORD	m_bf1IsImpulse			:	1;	//	
+		DWORD	m_bf1IsHwabyung			:	1;	//
+
+		DWORD	m_bf1IsSmellOfDeath		:	1;	//	18
+		DWORD	m_bf1IsInterruptingArmor:	1;	//	19
+		DWORD	m_bf1IsContract			:	1;	//	20
+		DWORD	m_bf1IsBloodCompact		:	1;	//	21
+		DWORD	m_bf1IsSoulOath			:	1;	//	22
+		DWORD	m_bf1IsUseSpecialAttack	:	1;	//	23
+		DWORD	m_bf1IsTaunted			:	1;	//	24
+		DWORD	m_bf1IsLaziness			:	1;	//	25
+
+		DWORD	m_bf1IsLightningBarrier	:	1;	//	26
+		DWORD	m_bf1IsConversionIce	:	1;	//	27
+		DWORD	m_bf1IsFogForm			:	1;	//	28
+		DWORD	m_bf1IsNoMoreFight		:	1;	//	29
+		DWORD	m_bf1IsZombieBomb		:	1;	//	30
+		DWORD	m_bf1IsInterruptingWeapon : 1; // 31  π´±‚«ÿ¡¶
+		DWORD	m_bf1IsNotUseActivityReactionSkill : 1; // 32 πﬂµø«ÅEÆæ◊º«ªÁøÅE›¡ÅE
+
+		DWORD	m_bf1IsConsensus			:	1;	//1 ±≥∞® ªÛ≈¬.
+		DWORD	m_bf1IsIncreaseAllStatus:1;		//2		∏µÁ¥…∑¬ƒ°¡ı∞°.
+		DWORD	m_bf1IsMadness:1;		//3		±§∂ÅE
+		DWORD	m_bf1IsStrengtheningCriticalDamage :1;// 4 ƒ°∏˙·∏¥ÅEÃ¡ˆ¡ı∞°.
+		DWORD	m_bf1IsSoulBurn:1;					// 5 º“øÅEÅE
+		DWORD	m_bf1IsRageSoul:1;					//6 ≈∏ø¿∏£¥¬øµ»•.
+		DWORD	m_bf1IsBindingWords:1;				// 7	ææ˚Õ∏º”.
+		DWORD	m_bf1IsFlee		:1	;				// 8	∞¯∆ÅE.
+		DWORD	m_bf1IsAddAbsoluteAttackPower				:	1;				//	9	¿˝¥ÅE™∞¯∞›∑¬√ﬂ∞°
+		DWORD	m_bf1IsIncreaseAttackCount					:	1;				//	10	∞¯∞›»Ωºˆ¡ı∞°
+		DWORD	m_bf1IsIncreaseGetCP						:	1;				//	11	»πµÊCP¡ı∞°
+		DWORD	m_bf1IsIncreaseAbsoluteCriticalPercent		:	1;				//	12	¿˝¥ÅE™≈©∏Æ∆ºƒ√%¡ı∞°
+		DWORD	m_bf1IsDecreaseCoolTime						:	1;				//	13	ƒ≈∏¿”∞®º“
+		DWORD	m_bf1IsRushTime								:	1;				//	14	µπ¡ÅE		
+		DWORD	m_bf1IsFightingSpirit						:	1;				//	15	≈ı¡ÅE		
+		DWORD	m_bf1IsIgnoreBlocking						:	1;				//	16	∫˙”∞≈∑π´Ω√
+		DWORD	m_bf1IsReturnMissileDamage					:	1;				//	17	πÃªÁ¿œ¥ÅEÃ¡ˆ∏Æ≈œ
+		DWORD	m_bf1IsIncreaseHardBlow						:	1;				//	18	∞≠≈∏»Æ∑ÅEı∞°
+		DWORD	m_bf1IsTransformationHunter					:	1;				//	19	ªÁ≥…≤€ ∏ÛΩ∫≈Õ ∫ØΩ≈
+		DWORD	m_bf1IsTransformationThief					:	1;				//	20	¡ªµµµœ ∏ÛΩ∫≈Õ∫ØΩ≈
+		DWORD	m_bf1IsTransformationMagician				:	1;				//	21	∏∂π˝ªÅE∏ÛΩ∫≈Õ∫ØΩ≈
+		DWORD	m_bf1IsTransformationReptile				:	1;				//	22	∆€π–∏ÆæÅE∏ÛΩ∫≈Õ∫ØΩ≈
+		DWORD	m_bf1IsImmunePhysicalDamage					:	1;				//	23	π∞∏Æ¥ÅEÃ¡ˆ¿Ãπ√
+		DWORD	m_bf1IsGreamTant							:	1;				//	24	∫˚¿«¿Â∏∑
+		DWORD	m_bf1IsPowerOfVitalization					:	1;				//	25	»∞º∫»≠¿«±«¥…
+		DWORD	m_bf1IsMakeTypeUndead						:	1;					//	26	æµ•µÂ»≠
+		DWORD	m_bf1IsElectricShock						:	1;					//	27	∞®¿ÅE		
+		DWORD	:0;
+
+    };
+
+    struct 
+	{
+		DWORD	m_value1;
+		DWORD	m_value2;
+		DWORD	m_value3;
+	};
+
+	inline	void	orEffect(_union_skill_enchanted_image *_lpEffect)
+	{
+		m_value1	|=	_lpEffect->m_value1;
+		m_value2	|=	_lpEffect->m_value2;
+		m_value3	|=	_lpEffect->m_value3;
+	}
+
+	inline	void	reset()
+	{
+		m_value1	=	0;
+		m_value2	=	0;
+		m_value3	=	0;
+	}
+
+	inline	BOOL	isSame(_union_skill_enchanted_image *_lpEffect)
+	{
+		if	(m_value1	==	_lpEffect->m_value1	&&	m_value2	==	_lpEffect->m_value2	&&	m_value3	==	_lpEffect->m_value3)
+			return	TRUE;
+
+		return	FALSE;
+	}
+
+	inline	void	copy(_union_skill_enchanted_image *_lpEffect)
+	{
+		m_value1	=	_lpEffect->m_value1;
+		m_value2	=	_lpEffect->m_value2;
+		m_value3	=	_lpEffect->m_value3;
+	}
+	inline	BOOL	isExitEffect()
+	{
+		if	(m_value1+m_value2+m_value3)
+			return	TRUE;
+
+		return	FALSE;
+	}
+
+}	uEnchantedImage;
+#pragma	pack()
+
+enum
+{
+	eWAD_METHOD_CASTER		=	1,
+	eWAD_MAX_EXPLOSION_RANGE,
+	eWAD_EXPLOSION_RANGE	,
+	eWAD_SHOOT_RANGE	,
+	eWAD_TARGET_NON_TARGET,
+};
+
+//	CSkillDefine::m_wSkillUniqueSpecialFeature
+enum
+{
+	eSUSF_IS_DISARM		=	1,
+	eSUSF_IS_UNLOCK_DOOR,
+	eSUSF_IS_UNLOCK_ARCA,
+};
+
+
+#define		dMAX_SKILL_AI_PATTERN				8
+#define		dMAX_SKILL_AI_PATTERN_VALUE_COUNT	5
+
+//
+//	Skill Ai Target
+enum
+{
+	eSAT_OWN_FORCE,
+	eSAT_ENEMY,
+	eSAT_SELF,
+	eSAT_OWN_FORCE_CORPSE,
+	eSAT_OWN_FORCE_SAME_ORDER_JOB_CORPSE,
+};
+
+class	cSkillAiPatternInfo
+{
+public:
+	WORD	m_wTrigger;
+	short	m_asValue[dMAX_SKILL_AI_PATTERN_VALUE_COUNT];
+};
+
+enum
+{
+	eSSD_CASTING,
+	eSSD_ACTION,
+	eSSD_HIT,
+	eSSD_CREATE,
+	eSSD_EXPLOSION,
+	eSSD_MISS,
+
+	eSSD_EE_SUCCESS,
+	eSSD_EE_MISS,
+};
+
+class	CSkillDefine
+{
+public:
+	class	CSoundInfo
+	{
+	public:
+		char				m_strCasting[dSKILL_SOUND_FILE_LENGTH];
+		char				m_strAction[dSKILL_SOUND_FILE_LENGTH];
+		char				m_strHit[dSKILL_SOUND_FILE_LENGTH];
+		char				m_strCreate[dSKILL_SOUND_FILE_LENGTH];
+		char				m_strExplosion[dSKILL_SOUND_FILE_LENGTH];
+		char				m_strMiss[dSKILL_SOUND_FILE_LENGTH];
+		WORD				m_wSEE_Success,m_wSEE_Miss;
+
+							CSoundInfo()	{reset();}
+
+		void				reset()
+		{
+			m_strCasting[0]		=	0;
+			m_strAction[0]		=	0;
+			m_strHit[0]			=	0;
+			m_strCreate[0]		=	0;
+			m_strMiss[0]		=	0;
+			m_wSEE_Success		=	0xffff;
+			m_wSEE_Miss			=	0xffff;
+
+		}
+	};
+
+	typedef union _union_check_status
+	{
+		struct 
+		{
+			DWORD	m_bf1IsPoison	:	1;
+			DWORD	m_bf1IsContract	:	1;
+			DWORD	m_bf1IsMinusCP	:	1;
+		};
+
+		struct 
+		{
+			DWORD	m_dwValue1;
+		};
+
+	}	uCheckStatus;
+
+	WORD				m_wSerial;							//	Ω√∏ÆæÅE	
+	WORD				m_wIconIndex;						//	æ∆¿Ãƒ‹ ¿Œµ¶Ω∫
+	WORD				m_wType;							//	≈∏¿‘
+	WORD				m_wAction,m_wAction2;				//	±‚ºÅEπﬂµøΩ√ ªÁøÅEœ¥¬ æ◊º«,æ◊º«¿Ã 2∞≥ ¿÷¿ªºˆµµ ¿÷¥Ÿ. ¿Ã∏¶≈◊∏ÅE∆ƒ¿Ãæ˚÷º ¡ÿ∫ÅE¥‹∞Ë∞° ¿÷∞ÅEπﬂªÅE¥‹∞Ë∞° ¿÷¥Ÿ.
+	WORD				m_wOverlapAction,m_wOverlapAction2;	//	ø¿πˆ∑¶µ«¥¬ æ◊º«
+	WORD				m_wReiterationDamageCountSyncWithOverlapAction;	//	ø¿πˆ∑¶µ«¥¬ æ◊º«∞ÅEΩÃ≈©«ÿº≠ √‚∑¬«“ ¥ÅEÃ¡ÅE»ΩºÅE	
+	WORD				m_wEnableJob;						//	ªÁøÅE∞°¥…«— ¡˜æÅE0xffff∏ÅE∏µÅE¡˜æ˜¿Ã ∞°¥…
+	WORD				m_wSpeed,m_wCorrectFPS;							//	º”µµ
+
+	char				m_strName[dSKILL_NAME_LENGTH];
+	WORD				m_wDifficultyLevel;					//	±‚ºÅE≥≠¿Ãµµ
+	WORD				m_wSkillGroup;						//	±‚ºÅE±◊∑ÅE	
+	WORD				m_wCastMethod;						//	æ◊º«,¡ˆº”«ÅEπﬂµø«ÅEº≠∆˜∆Æ,√Ê¿ÅE
+	WORD				m_wDamageAttribute;					//	¥ÅEÃ¡ÅEº”º∫
+	WORD				m_wTargetTypeLimit;						//	¥ÅEÅE¡¶«—
+	DWORD				m_dwTargetMethod;
+
+	WORD				m_wSpentHPPercentage,m_wSpentHPPercentageBasedBloodWing;				//	º“∏ÅEHP ∆€ºæ∆º¡ÅE	
+	WORD				m_wSpentCP,m_wSpentCPPerLevel;		//	º“∏ÅECP
+	WORD				m_wGetCP,m_wGetCPPerLevel,m_wGetCPTiming;	//	»πµÅECP,CP »πµÅE≈∏¿Ãπ÷
+
+	WORD				m_wMissileDustRange;					//	«—πÅEªÁøÅEœ∞ÅE¥ŸΩ√ ªÁøÅEœ∏ÅE≤®¡ÅE	
+	WORD				m_wIsNotSyncCP;						//	CPº“∏∏¶ º≠πˆøÕ ΩÃ≈© Ω√≈∞¡ÅEæ ¥¬¥Ÿ.
+	WORD				m_wIsMagicDamageBasedLastHitDamage;	//	∏∂π˝ ¥ÅEÃ¡ˆ∞° π´±ÅE∞¯∞›∑¬ ±‚π›¿Ã æ∆¥œ∞ÅE∏∂¡ˆ∏∑ø° ∏¬∞ÅE∂ß∏∞∞≈¿« ¥ı«—∞≈ «’¿Ã¥Ÿ.
+	DWORD				m_bf1IsIgnoreWeaponDamage			:	1;	//	π´±ÅE¥ÅEÃ¡ÅEπ´Ω√
+	DWORD				m_bf1IsPenetrationRush				:	1;	//	∞ÅEÅEØΩ¨?
+	DWORD				m_bf1IsLoopRushAni					:	1;	//	∑ØΩ¨ ø°¥œ∞° ∑Á«¡«—¥Ÿ.
+	DWORD				m_bf1IsAttackOnlyTargetRush			:	1;
+	DWORD				m_bf1IsWhirlRunningStyleRush		:	1;
+	DWORD				m_bf9IsParallellRushAngle			:	9;
+	DWORD				m_bf8ParallellRushGab				:	8;
+	DWORD				m_bf1IsShimmeringShieldByWeapon		:	1;
+	DWORD				m_bf1IsIgnoreTargetDodgeCorrectValue:	1;	//	≈∏∞Ÿ¿« »∏«« ∏¡§ π´Ω√
+	DWORD				m_bf1IsSyncShieldShape				:	1;	//	πÊ∆– ∏æÅEΩÃ≈©
+	DWORD				m_bf1IsNotWhirlTornado				:	1;
+	DWORD				m_bf1SetRushImageByTriggerNextFrame	:	1;
+	DWORD				m_bf1BeastBerserker					:	1;
+	DWORD				m_bf1IsGlareSkill					:	1;	//	29
+	DWORD				m_bf1NotRevenge						:	1;
+	DWORD				m_bf1IsSummonBeastCommand			:	1;	//	º“»ØºÅE∏˙”… 
+	DWORD				m_bf1IsSummonedBeastSkill			:	1;	//	º“»ØºÅEΩ∫≈≥¿Ã¥Ÿ.
+
+	cSkillAiPatternInfo	m_aAi[dMAX_SKILL_AI_PATTERN];
+	WORD				m_wAI_Target;
+	WORD				m_wLimitCrushChance;
+	WORD				m_wShootRangeCorrect;
+	WORD				m_wLimitShotCount;
+	WORD				m_wSkillUniqueSpecialFeature;
+	WORD				m_wImageRadius;
+	WORD				m_wOutputEffect;
+	WORD				m_wLimitActiveCount;
+	WORD				m_wMissileFollowImage;						//	πÃΩ∫ ≥¥¿ª∂ß ¿ÃπÃ¡ÅE	
+	BYTE				m_aTempBuffer[2];
+	
+	DWORD				m_bf1IsHideMissImage					:	1;
+	DWORD				m_bf1IsRightPunchSkill					:	1;
+	DWORD				m_bf1IsLeftPunchSkill					:	1;
+	DWORD				m_bf1IsRightKickSkill					:	1;
+	DWORD				m_bf1IsLeftKickSkill					:	1;
+	DWORD				m_bf1IsDownKickSkill					:	1;
+	DWORD				m_bf1IsCancelKnockBackSkill				:	1;
+	DWORD				m_bf1IsDecreaseWeaponCount				:	1;
+	DWORD				m_bf1IsInstanceApplyAura				:	1;
+	DWORD				m_bf1IsDefendOnImageTrap				:	1;
+	DWORD				m_bf1IsMonsterCounter					:	1;
+	DWORD				m_bf1IsApplyHealPointByPercentage		:	1;
+	DWORD				m_bf1IsIgnoreDodgeBlockReaction			:	1;
+	DWORD				m_bf1IsAttackDamageBasedAttackerRemainHPRate	:	1;
+	DWORD				m_bf1IsSelfDestructionSkill				:	1;	//	15
+	DWORD				m_bf1IsRefitImageSizeByHitRange			:	1;
+	DWORD				m_bf1IsCatchAndThrowingTypeAttackPower	:	1;
+	DWORD				m_bf1IsTagetingToBattleWithPartyMember	:	1;
+	DWORD				m_bf1IsPutHitDamage						:	1;
+	DWORD				m_bf1IsNonAggressiveSkill				:	1;
+	DWORD				m_bf1DefensePowerByCurseResistance		:	1;
+	DWORD				m_bf1DarkDamageAttackByDamagePoint		:	1;	//	22
+	DWORD				m_bf1IsPigeonPostItemSkill				:	1;
+	DWORD				m_bf1IsLoopLastFrame					:	1;
+	DWORD				m_bf1IsCastOnDestPosSkill				:	1;
+	DWORD				m_bf1PutTrasAfterAnm					:	1;
+	DWORD				m_bf1IsIllusionAttack					:	1;
+	DWORD				m_bf1IsResistKnockBackByCurse			:	1;
+	DWORD				m_bf1IsRequireFeignDeathStatus			:	1;
+	DWORD				m_bf1IsStopWhenFailedFirstSE			:	1;
+	DWORD				m_bf1IsToggleSkill						:	1;
+	DWORD				m_bf1IsCastImageOnReleasPos				:	1;	//	32
+
+	WORD				m_wDamageToHP,m_wDamageToHPPerLevel;	//	¿‘»ÅE¥ÅEÃ¡ÅE»˙ÿÅE	
+	WORD				m_wWADDamageMethod,m_wWADDamageGradeCount,m_wWADDamageValue,m_wWADMaxDamage,m_wWADMinDamage;
+
+	WORD				m_bf1IsIgnoreTargetBlockingChance		:	1;	//	≈∏∞Ÿ¿« πÊ∆– ∫˙”∞∑ÅEπ´Ω√
+	WORD				m_bf1IsRandomDustImageFrame				:	1;	//	≈∏∞Ÿ¿« πÊ∆– ∫˙”∞∑ÅEπ´Ω√
+	WORD				m_bf1IsOnOffSkill						:	1;
+	WORD				m_bf1IsGroundMissile					:	1;	//	∂•≈∏∞ÅE≥Øæ∆∞°¥¬ πÃªÁ¿œ
+	WORD				m_bf1IsApplyPhysicalDamageOnlyTarget	:	1;	//	≈∏∞Ÿø°∞‘∏∏π∞∏Æ¥ÅEÃ¡ˆ¿˚øÅE	
+	WORD				m_bf1IsParallelAfterImage				:	1;			//	ºˆ∆ÅE∫–Ω≈
+	WORD				m_bf1IsSyncSkillExtraEffectWithPlayer	:	1;//	«√∑π¿Ãæ˚€Õ Ω∫≈≥ ∫Œ∞°»ø∞ÅEΩÃ≈© Ω√≈¥
+	WORD				m_bf1IsMagicDamageBasedRemainHP			:	1;
+	WORD				m_bf1IsZoomInEffectSkill				:	1;
+	WORD				m_bf1IsHpSyncSkill						:	1;					//	æÛ∑∑∂◊∂• HP∏¶ ΩÃ≈© Ω√≈∞¥¬ Ω∫≈≥
+	WORD				m_bf1IsTestSkill						:	1;	//	≈◊Ω∫∆Æ¡ﬂ¿Œ Ω∫≈≥
+	WORD				m_bf1IsUsHealEffectToHitImageForAuraSkill:	1;	//	
+	WORD				m_bf1IsNotIncreaseByActiveAura			:	1;
+	WORD				m_bf1IsGetCPGasSkillByCasting			:	1;	//	14
+	WORD				m_bf1IsRequireMissImage					:	1;	//	15	πÃΩ∫ ¿ÃπÃ¡ÅE« øÅE
+	WORD				m_bf1IsBlockInDuelField					:	1;	//	16	∞·≈ÅE« µÂø°º≠ ªÁøÅE∫“∞°
+
+	WORD				m_wCoolTimeIndex;		//	≈∏∞Ÿø°∞‘∏∏π∞∏Æ¥ÅEÃ¡ˆ¿˚øÅE	
+	WORD				m_wCoolTime;			//	ºˆ∆ÅE∫–Ω≈
+	WORD				m_wCoolTimePerLevel;	//	«√∑π¿Ãæ˚€Õ Ω∫≈≥ ∫Œ∞°»ø∞ÅEΩÃ≈© Ω√≈¥
+	WORD				m_wMinimumCoolTime;
+	WORD				m_wCorrectTargetDefensivePower;
+	WORD				m_wPetCommand;
+	short				m_sIncreasePetPowerPerLevel;
+
+	WORD				m_wLimitPhysicalDamage,m_wLimitMagicDamage;
+	short				m_sLimitPhysicalDamagePerLevel,m_sLimitMagicDamagePerLevel;
+	WORD				m_wCircleRange;						//	∫˘∫˘µµ¥¬Ω∫≈≥¿« π›∞ÅE
+	short				m_sAuraActivePeriod,m_sAuraActivePeriodPerLevel,m_sAuraActivePeriodDecimalMethod;	//	ø¿∂ÅEΩ∫≈≥¿« πﬂµø ¡÷±ÅE	
+	WORD				m_wCureEffectField;					//	ƒ°∑ÅE»ø∞ÅE« µÅE	
+	short				m_sApplyLimitHPPercentage,m_sApplyLimitHPPercentagePerLevel;
+	WORD				m_wLimitApplyLimitHPPercentage;
+	short				m_sTargetLevelLimitType1;
+	short				m_sHumanTargetLevelLimitType1,m_sAnimalTargetLevelLimitType1,m_sHolyBeastTargetLevelLimitType1,m_sDemonTargetLevelLimitType1,m_sUndeadTargetLevelLimitType1;
+	short				m_sHealPercentageBasedCurrentHP,m_sHealPercentageBasedCurrentHPperLevel;
+	WORD				m_wHealPoint,m_wHealPointPerLevel;	//	ƒ°∑ÅEºˆƒ°
+	short				m_sHideWeaponTime,m_sHideWeaponTimePerLevel;
+
+	WORD				m_wWideAreaAttackDamagePercent,m_wWideAreaAttackDamagePercentPerLevel;
+	WORD				m_wBlackBluesFactor,m_wBlackBluesFactorPerLevel,m_wBlackBluesFactorLimit;
+	short				m_sAttackPoint,m_sAttackPointPerLevel,m_sAttackPointRange,m_sAttackPointRangePerLevel,m_sCorrectAttackPoint;	//	∞¯∞›∑¬
+	short				m_sAttackPercentage,m_sAttackPercentagePerLevel;
+	short				m_sDefensePoint,m_sDefensePointPerLevel;	//	πÊæ˚”¬
+	short				m_sDefensePercentage,m_sDefensePercentagePerLevel;
+
+	short				m_sFireDamage,m_sFireDamagePerLevel,m_sFireDamageRange,m_sFireDamageRangePerLevel;	//	∫“ ¥ÅEÃ¡ÅE	
+	short				m_sFireDamagePercentage,m_sFireDamagePercentagePerLevel,m_sFireDamagePercentageLimit;
+	short				m_sWaterDamage,m_sWaterDamagePerLevel,m_sWaterDamageRange,m_sWaterDamageRangePerLevel;	//	π∞ ¥ÅEÃ¡ÅE	
+	short				m_sWaterDamagePercentage,m_sWaterDamagePercentagePerLevel,m_sWaterDamagePercentageLimit;
+	short				m_sWindDamage,m_sWindDamagePerLevel,m_sWindDamageRange,m_sWindDamageRangePerLevel;	//	πŸ∂ÅE¥ÅEÃ¡ÅE	
+	short				m_sWindDamagePercentage,m_sWindDamagePercentagePerLevel,m_sWindDamagePercentageLimit;
+	short				m_sEarthDamage,m_sEarthDamagePerLevel,m_sEarthDamageRange,m_sEarthDamageRangePerLevel;	//	¥ÅEÅE¥ÅEÃ¡ÅE	
+	short				m_sEarthDamagePercentage,m_sEarthDamagePercentagePerLevel,m_sEarthDamagePercentageLimit;
+	short				m_sLightDamage,m_sLightDamagePerLevel,m_sLightDamageRange,m_sLightDamageRangePerLevel;	//	∫ÅE¥ÅEÃ¡ÅE	
+	short				m_sLightDamagePercentage,m_sLightDamagePercentagePerLevel,m_sLightDamagePercentageLimit;
+	short				m_sDarkDamage,m_sDarkDamagePerLevel,m_sDarkDamageRange,m_sDarkDamageRangePerLevel;	//	æ˚—“ ¥ÅEÃ¡ÅE	
+	short				m_sDarkDamagePercentage,m_sDarkDamagePercentagePerLevel,m_sDarkDamagePercentageLimit;
+
+	short				m_sPiercingChance,m_sPiercingChancePerLevel;
+
+	WORD				m_wSpecialEffect;
+	CSkillExtraEffect	m_aExtraEffect[dEXTRA_EFFECT_COUNT];
+	WORD				m_wApplyExtraEffectCount;
+	WORD				m_wActivateTrigger;
+	short				m_sNockbackDistance,m_sNockbackDistancePerLevel;	//	≥ÅEÅE∞≈∏Æ
+
+	short				m_sCastingTime;		//	ƒ≥Ω∫∆√ ≈∏¿” 
+	short				m_sAttackSpeed,m_sAttackSpeedPerLevel,m_sLimitAttackSpeed;		//	∞¯∞› º”µµ(1/16 «¡∑π¿” ¥‹¿ß * 100)
+	short				m_sCorrectAttackSpeed,m_sCorrectAttackSpeedPerLevel;
+
+	WORD				m_wMinimumShootRange;					//	√÷º“ ªÁ¡§ ∞≈∏Æ
+	WORD				m_wShootRange,m_wShootRangePerLevel;	//	ªÁ¡§ ∞≈∏Æ
+	WORD				m_wWeaponShootRangeCorrect,m_wWeaponShootRangeCorrectPerLevel;
+	
+	WORD				m_wMinimumHitRange,m_wHitRange,m_wHitRangePerLevel;		//	 ≈∏∞› πÅEß
+	WORD				m_wWeaponHitRangeCorrect;
+	WORD				m_wAngle;							//	∫Œ√§≤√ ¥ÅEÃ¡ˆ¿Ã¥Ÿ.
+
+	short				m_sHitChance,m_sHitChancePerLevel,m_sFixHitChance;	//	∏˙›ﬂ∑ÅE∫∏¡§,∑π∫ß¥ÅE∏˙›ﬂ∑ÅE∫∏¡§,∏˙›ﬂ∑ÅE	
+	short				m_sDodgeChance,m_sDodgeChancePerLevel,m_sFixDodgeCahnce;	//	»∏««∑ÅE∫∏¡§,∑π∫ß¥ÅE»∏««∑ÅE∫∏¡§,»∏««∑ÅE	
+	short				m_sCriticalChance,m_sCriticalChancePerLevel,m_sFixCriticalChance;	//	ƒ°∏˙·∏
+	short				m_sCrushChance,m_sCrushChancePerLevel,m_sFixCrushChance;	//	≈©∑ØΩ¨º¶
+	short				m_sCriticalToUndead,m_sCriticalToUndeadPerLevel,m_sCriticalToDemon,m_sCriticalToDemonPerLevel,m_sCriticalToAnimal,m_sCriticalToAnimalPerLevel;
+	short				m_sCriticalToHuman,m_sCriticalToHumanPerLevel,m_sCriticalToHolyAnimal,m_sCriticalToHolyAnimalPerLevel;//∞¢¡æ ∏ÛΩ∫≈Õø° ¥ÅE— ≈©∏Æ∆ºƒ√ ∫∏¡§ƒ°
+	WORD				m_wInstanceKillMethod;	//	¡ÅEÅE∞ËªÅEπÊπ˝
+	short				m_sInstanceKillToUndead,m_sInstanceKillToDemon,m_sInstanceKillToAnimal,m_sInstanceKillToHuman,m_sInstanceKillToHolyAnimal;//∞¢¡æ ∏ÛΩ∫≈Õø° ¥ÅE— ¡ÅEÅE∫∏¡§ƒ°
+	short				m_sInstanceKillToUndeadPerLevel,m_sInstanceKillToDemonPerLevel,m_sInstanceKillToAnimalPerLevel,m_sInstanceKillToHumanPerLevel,m_sInstanceKillToHolyAnimalPerLevel;//∞¢¡æ ∏ÛΩ∫≈Õø° ¥ÅE— ¡ÅEÅE∫∏¡§ƒ°
+	short				m_sBlockingChance,m_sBlockingChancePerLevel,m_sMaximumBlockingChance,m_sFixBlockingChance;	//	∫˙”∞≈∑ ∫∏¡§,∑π∫ß¥ÅE∫˙”∞≈∑ ∫∏¡§,∫˙”∞≈∑
+	short				m_sConcentration,m_sConcentrationPerLevel;	//	¡˝¡ﬂ∑¬ ∫∏¡§,∑π∫ß¥ÅE¡˝¡ﬂ∑¬ ∫∏¡§,¡˝¡ﬂ∑¬
+
+	short				m_sStunResistance,m_sStunResistancePerLevel;	//	∏∂∫ÅE¿˙«◊
+	short				m_sStrangeStatusResistance,m_sStrangeStatusResistancePerLevel;	//	¿ÃªÛ∞ÅE¿˙«◊
+	short				m_sDeclineResistance,m_sDeclineResistancePerLevel;	//	¿˙«œ∞ÅE¿˙«◊
+	short				m_sCurseResistance,m_sCurseResistancePerLevel;	//	¿˙¡÷∞ÅE¿˙«◊
+
+	short				m_sFireResistance,m_sFireResistancePerLevel;	//	∫“ ¿˙«◊
+	short				m_sWaterResistance,m_sWaterResistancePerLevel;	//	π∞ ¿˙«◊
+	short				m_sWindResistance,m_sWindResistancePerLevel;	//	πŸ∂ÅE¿˙«◊
+	short				m_sEarthResistance,m_sEarthResistancePerLevel;	//	¥ÅEÅE¿˙«◊
+	short				m_sLightResistance,m_sLightResistancePerLevel;	//	∫ÅE¿˙«◊
+	short				m_sDarkResistance,m_sDarkResistancePerLevel;	//	æ˚—“ ¿˙«◊
+
+	short				m_sBulletCount,m_sBulletCountPerLevel,m_sBulletLimitCount,m_wBulletDecimalMethod;
+	short				m_sShotCount,m_sShotCountPerLevel,m_wShotCountDecimalMethod;	//	µøΩ√ ∞¯∞›(?) »ΩºÅE º“ºˆ¡° √≥∏Æ ∏ﬁº“µÅE	
+	short				m_sContiniousShotMaxCount,m_sContiniousShotCount,m_sContiniousShotCountPerLevel,m_sContiniousShotPeriod,m_wContiniousShotDecimalMethod;//ø¨º” ªÁ∞›
+	short				m_wIncreaseActionAnmCount;
+
+	short				m_sCorrectTargetHitChance,m_sCorrectTargetHitChancePerLevel;	//	¿ÅE∏˙›ﬂ∑ÅE∫∏¡§
+
+	WORD				m_wUpkeepTime,m_wUpkeepTimePerLevel;	//	¿Ø¡ÅEΩ√∞£
+
+	short				m_sTargetFleeChance,m_sTargetStunChance;
+	short				m_sInstanceKillChance,m_sInstanceKillChancePerLevel;	//	≈∏∞Ÿ¿Ã µµ∏¡ ∞°∞≈≥™ Ω∫≈œµ«∞≈≥™ ¡ÅEÅE_-
+	short				m_sTargetDecreaseHitChance,m_sTargetDecreaseHitChancePerLevel;	//	∏¬¿∫≥—¿∫ ∏˙›ﬂ∑ÅE¿˙«œ
+
+	short				m_isExemptToDemonType,m_isExemptToHumanType,m_isExemptToAnimalType,m_isExemptToHolyAnimalType,m_isExemptToUndeadType;	//	øµ«‚¿ª æ» πﬁ¥¬ ∏ÛΩ∫≈Õ
+	short				m_sIntelligencePerLevel,m_sStrengthPerLevel,m_sLuckPerLevel,m_sAgilityPerLevel,m_sWisdomPerLevel,m_sCharismaPerLevel;
+
+	short				m_sOccurActionPeriod;	//	∫∏¡∂∏∂π˝ø°º≠ ¿˚øÅE¡÷±ÅE
+	short				m_sHealPoint,m_sHealPointPerLevel;	//	√º∑¬ »∏∫π ºˆƒ°
+	short				m_sFirstAidPoint,m_sFirstAidPointPerLevel,m_sFirstAidUpkeepTime;	//	¿¿±ﬁ ¡∂ƒ°
+	short				m_sDisarmLevel,m_sDisarmLevelPerLevel,m_sDetectLevelPerLevel,m_sDetectLevel;	//	«ÿ√º ∑π∫ß,≈Ω¡ÅE∑π∫ß
+	short				m_sActiveChance,m_sActiveChancePerLevel;		//	πﬂµø»Æ∑ÅEπﬂµø»Æ∑ÅE∑π∫ß ∫∏¡§
+	WORD				m_wActiveChanceByInRangeEnemyCount;
+	WORD				m_wLimitActiveChance;
+
+	WORD				m_wRequireEquipment;							//	« øÅE¿Â∫ÅE	
+	cREQUIRE_SKILL		m_aRequireSkill[dMAX_REQUIRE_SKILL_COUNT];
+
+	CSoundInfo			m_sound;
+
+	short				m_aValue[dSKILL_SPARE_VALUE_COUNT];		//	ø©∫–¿« ºˆƒ°..
+
+//	Ω∫≈≥ ±∏«ˆ¿ª ¿ß«ÿ « ø‰«— µ•¿Ã≈Õ
+	WORD				m_wImageScale;
+	WORD				m_wTargetMarkImage;
+	WORD				m_wShootImage;						//	≥Øæ∆∞•∂ß ¿ÃπÃ¡ÅE	
+	WORD				m_wMissileHeadImage;				//	≥Øæ∆∞°¥¬ π´±ÅE∏”∏Æø° ¬ÅEÅE¿ÃπÃ¡ÅE	
+	WORD				m_wMachineImage;					//	∏”Ω≈ ¿ÃπÃ¡ÅE	
+	WORD				m_wExplosionImage;					//	∆¯πﬂ«“∂ß ¿ÃπÃ¡ÅE	
+	WORD				m_wMissImage;						//	πÃΩ∫ ≥¥¿ª∂ß ¿ÃπÃ¡ÅE
+	WORD				m_wAidAttackImage,m_wAidAttackImageOutputPart,m_wAidAttackImageEffect;
+	WORD				m_wHitImage,m_wHitImageOutputPart,m_wHitImageEffect;
+	WORD				m_wHealImage,m_wHealImageOutputPart,m_wHealImageEffect;
+	WORD				m_wAddHitImage,m_wAddHitImageOutputPart,m_wAddHitImageEffect;
+	WORD				m_wCastImage,m_wCastImageOutputPart,m_wCastImageEffect;
+	WORD				m_wAidSkillCastingImage,m_wAidSkillCastingImageOutputPart,m_wAidSkillCastingImageEffect;	//	ªÁøÅE“∂ß Ω√¿ÅE⁄ø°∞‘ ≥™≈∏≥™¥¬ ¿ÃπÃ¡ÅE	
+	WORD				m_wSkillImage,m_wSkillImageOutputPart,m_wSkillImageEffect;						//	Ω∫≈≥ ¿ÃπÃ¡ÅE	
+	WORD				m_wCasterHitImage,m_wCasterHitImageOutputPart,m_wCasterHitImageEffect;		//	≈∏∞›¿ÃπÃ¡ÅE√‚∑¬ ∫Œ¿ß
+	WORD				m_wSwingImage,m_wSwingImageEffect;						//	π´±‚∏¶ »÷µŒ∏¶∂ß ≥™≈∏≥™¥¬ ¿ÃπÃ¡ÅE	
+	WORD				m_wBottomImage;	//	πŸ¥⁄ ¿ÃìG
+
+	WORD				m_wDodgeAngle;						//	»∏«« ∞¢
+	WORD				m_wHitAngleRange,m_wHitAngleRangePerLevel;	//	≈∏∞›∞¢µµπÅEß
+	WORD				m_wDodgeDistance;					//	»∏«« ∞≈∏Æ
+	WORD				m_wPaletteIndex;
+
+	DWORD				m_dwEnchantedEffectMask;			//	∏∂æ∆Ω∫≈©~
+	WORD				m_wEnchantedImage;					//	¿Œ√¶∆Æ ¿ÃπÃ¡ÅE	
+	WORD				m_wDustImageRange;
+
+	WORD				m_wShakeTiming;						//	æ¡¶ »ÁµÈ≤∏?
+	WORD				m_wShakeIntensity;					//	¡ˆ¡¯¿« ∞≠µµ
+	WORD				m_wShakeTime;						//	¡ˆ¡¯¿Ã ¿Ø¡ˆµ«¥¬ Ω√∞£..
+
+	BYTE				m_bCharacterAfterImageType;			//	∏ˆ∂◊æ∆∏Æ ¿‹ªÅE≈∏¿‘
+	BYTE				m_bCharacterAfterImageDelayTime;	//	µÙ∑π¿Ã ƒ≥∏Ø≈Õ ¿‹ªÅEµÙ∑π¿Ã ≈∏¿”
+	WORD				m_wStrikePeriod;
+	short				m_sStrikePeriodPerLevel;
+	WORD				m_wMinimumStrikePeriod;
+
+	WORD				m_wAfterImageType;					//	¿‹ªÅE≈∏¿‘
+	WORD				m_wAfterImageGap;					//	¿‹ªÅE∞£∞›
+	WORD				m_wAfterImageFirstImageDistance;	//	µŒπ¯¬∞ ¿ÃπÃ¡ÅE¿ßƒ°
+	WORD				m_wAfterImageFirstImageAlphaDepth,m_sAfterImageDecreaseAlphaDepthValue;	//	¿‹ªÅE√ππ¯¬∞ ¿ÃπÃ¡ˆøÕ Ω« ¿ÃπÃ¡ˆ¿« ∞£∞›
+	WORD				m_wAfterImageCount;					//	¿‹ªÛ¿« ºÅE
+	DWORD				m_bf1IsBlockOnlyMissilAttack	: 1;
+	DWORD				m_bf1IsExclusiveAction			: 1;
+	DWORD				m_bf5HitDamagePeriod			: 5;	//	¥ÅEÃ¡ÅE¿‘»˜¥¬ ¡÷±ÅE	
+	DWORD				m_bf1IsRoundRappedBunshinAttack	: 1;	//	∫–Ω≈ ∞¯∞›¿Œµ•... ¿˚¿ª µ—∑ØΩ—¥Ÿ.
+	DWORD				m_bf5BunshineAlphaDepth			: 5;	//	∫–Ω≈ ≥Ûµµ
+	DWORD				m_bf3MaxPetCount				: 3;
+	DWORD				m_bf2RequireSummonBeastGrade	: 2;
+	DWORD				m_bf2OperateSummonBeast			: 2;
+	DWORD				m_bf1IsPohibitAction			: 1;
+	DWORD				m_bf1ShootRangeZeroSkill		: 1;
+	DWORD				m_bf1IsTrap						: 1;
+	DWORD				m_bf1IsFlatTrap					: 1;
+	DWORD				m_bf1IsInstanceHeal				: 1;
+	DWORD				m_bf1IsOnlySelfEnchantSkill		: 1;	//	¿⁄±‚«—≈◊∏∏ ¿Œ√¶∆Æ «œ¥¬ Ω∫≈≥¿Ã¥Ÿ.
+	DWORD				m_bf1IsSecondJobMachine			: 1;
+	DWORD				m_bf1IsRapeExplosionImage		: 1;	//	28
+	DWORD				m_bf1IsLaser					: 1;	//	29
+	DWORD				m_bf1AttackByDamagedDamage		: 1;	//	30
+	DWORD				m_bf1PlayCastSoundByEnchantAidSkill	: 1;	//	31
+	DWORD				m_bf1RootAttackPower			: 1;	//	32
+
+	uEnchantedImage		m_enchantedImage;
+	WORD				m_wCommandSkill;
+
+	uCheckStatus		m_checkTargetStatus,m_checkCasterStatus;
+
+	DWORD				m_bf1IsObitianSkill				:	1;
+	DWORD				m_bf1IsDashBladeSkill			:	1;
+	DWORD				m_bf1IsAstroBowSkill			:	1;
+	DWORD				m_bf1IsCristalWaterSkill		:	1;
+	DWORD				m_bf1IsApplyToPartyAura			:	1;
+	DWORD				m_bf4ChangeDirect				:	4;
+	DWORD				m_bf1IsCastSelfBuff				:	1;
+	DWORD				m_bf1IsExplosionAtCastPos		:	1;	//	11
+	DWORD				m_bf1InsInstanceWaterFall		:	1;
+	DWORD				m_bf5MiniPetType				:	5;
+	DWORD				m_bf1IsDefaultMiniPetSkill		:	1;	//	18
+	DWORD				m_bf5MiniPetSkillType			:	5;	//	23
+	DWORD				m_bf1IsXMiniPetLevel			:	1;	//	24
+	DWORD				m_bf4PetSkillDamageExpressionType	:	4;	//	28
+	DWORD				m_bf1IsNormalMiniPetSkill		:	1;	//	29
+	DWORD				m_bf1IsDuelCoolTimeSkill		:	1;	//	30
+	DWORD				m_bf1IsShadowHideSkill			:	1;	//	31	µµµœ ±◊∏≤¿⁄ º˚±ÅEΩ∫≈≥¿Ã≥ƒ?.
+	DWORD				m_bf1IsApplyShadowHideEffect	:	1;	//	32	µµµœ ±◊∏≤¿⁄ º˚±ÅEΩ∫≈≥»ø∞ÅE¿˚øÅE	
+	DWORD				m_bf7DuelServerpenaltyDiv		:	7;	//	µ‡æÛº≠πÅEø°º≠ ∆‰≥Œ∆º∏¶ πﬁ¥¬ ±‚ºÅE(≥™¥©æ˚ÿ≠ æ¥¥Ÿ.)_ / 0 ~ 127 ±˚›ÅE	
+	DWORD				m_bf4PetSkillDamageExpressionTypeForAwaken	:	4;	//	11
+	DWORD				m_bf6NeedState					:	6	;// 17		Ω∫≈≥¿ª ªÁøÅEœ±ÅE¿ß«— « ø‰ªÛ≈¬
+	DWORD				m_bf1IsCancelNeedState			:	1	; // 18  « ø‰ªÛ≈¬«ÿ¡¶
+	DWORD				m_bf1IsReactionLimitCount		:	1	; //19 ∏Ææ◊º«πﬂµøºˆ¡¶«—...
+	DWORD				m_bf1IsIgnoreOptionAttackSpeed	:	1	;// 20	∞¯∞›º”µµæ∆¿Ã≈€ø…º«π´Ω√.
+	DWORD				m_bf1IsIgnoreLucky				:	1	;	// 21 ø˚’´Ω√.
+	DWORD				m_bf1IsRushAttack				:	1	;	//	 22 µπ¡ÅEæ˚·√...
+	DWORD				m_bf1IsIgnoreDelayAfterAttack	:	1	;	//	 23 ∞¯∞›»ƒ µÙ∑π¿Ã π´Ω√
+	DWORD				m_bf1IsApplyEffectChanceToPlayer	:	1	;	//	 24 «√∑π¿ÃæÅE∫Œ∞°»ø∞ÅE»Æ∑ÅE˚øÅE	
+	DWORD				m_bf1IsApplyFightingSpirit			:	1	;	//	 25 ≈ı¡ˆøµ«‚πﬁ¥¬ Ω∫≈≥
+	DWORD				m_bf1IsCanNotApplySameEffect			:	1	;	//	 26 ∞∞¿∫ ∫Œ∞°»ø∞ÅE¿˚øÅEæ»µ (¿œ∫Œ ¥…∑¬ƒ° ªÛΩ¬ πˆ«¡∏∏)
+	DWORD				m_bf1IsTargetingToActorStickedBit		:	1	;	//	 27 ∫Ò∆Æ∫Ÿ¿∫ ≈∏∞Ÿ
+	DWORD				m_bf4SpendBit							:	4	;	//	 31 º“∏∫Ò∆Æ
+	DWORD				m_bf1IsApplyCriticalEffectWhenBeLightEffect :	1;	//	 32	∫˚º”º∫∞ÅE√ªÛ≈¬¿ÃªÛ¿œ∂ß ≈©∏Æ∆ºƒ√»ø∞˙¿˚øÅE	
+	DWORD				:0;
+	//JBC		πÃ¥œ∆ÅE3¬ÅE∞¢º∫ ∞¢º∫¿« æææ— ø≠∏≈µ•πÃ¡ˆ∏¶ ∞ËªÅE“∂ß « ø‰«— ∫ØºˆµÅE09-01-07
+	WORD				m_wAwakenSkillBonusActiveChance;			//∞¢º∫¿« æææ— ∫∏≥ Ω∫ πﬂµø »Æ∑ÅE∞˙›§).
+	WORD				m_wAwakenSkillBonusActiveChancePerLevel;	//∞¢º∫¿« æææ— ∫∏≥ Ω∫ πﬂµø »Æ∑ÅE∑π∫ß¥ÅE.
+	
+	short				m_wAwakenSkillBonusDamage;					//∞¢º∫¿« æææ— ∫∏≥ Ω∫ µ•πÃ¡ÅE∞˙›§).
+	short				m_wAwakenSkillBonusDamagePerLevel;			//∞¢º∫¿« æææ— ∫∏≥ Ω∫ µ•πÃ¡ÅE∑π∫ß¥ÅE.
+	short				m_wAwakenSkillBonusDamageForOrigin;			//∞¢º∫¿« æææ— ∫∏≥ Ω∫ µ•πÃ¡ÅE¡¯»≠¿ÅEºˆΩƒ¿« ∞˙›§∞™)ø° √ﬂ∞°∞™.
+	short				m_wAwakenSkillBonusDamagePerLevelForOrigin;	//∞¢º∫¿« æææ— ∫∏≥ Ω∫ µ•πÃ¡ÅE¡¯»≠¿ÅEºˆΩƒ¿« ∑π∫ß¥ÅE∞™)ø° √ﬂ∞°∞™.
+	short				m_wAwakenSkillBonusDamageValueRangeForOrigin;//∞¢º∫¿« æææ— ∫∏≥ Ω∫ µ•πÃ¡ÅE¡¯»≠¿ÅEºˆΩƒ¿« +-∞™)ø° √ﬂ∞°∞™.
+	short				m_wAwakenSkillBonusDamageValueRangePerLevelForOrigin;//∞¢º∫¿« æææ— ∫∏≥ Ω∫ µ•πÃ¡ÅE¡¯»≠¿ÅEºˆΩƒ¿« ∑π∫ß¥ÅE+-∞™ )ø° √ﬂ∞°∞™.
+	
+	//JBC		πÃ¥œ∆ÅE4¬ÅE∞¢º∫ ∞¢º∫¿« æææ— ø≠∏≈∞≠»≠ø° ¿˚øÅE… ∫ØºˆµÅE9-04-06
+	short				m_wAwakenSkillBonusRange;					//∞¢º∫¿« æææ— ∫∏≥ Ω∫ ªÁ¡§ ∞≈∏Æ(∞˙›§).
+	short				m_wAwakenSkillBonusRangePerLevel;			//∞¢º∫¿« æææ— ∫∏≥ Ω∫ ªÁ¡§ ∞≈∏Æ(∑π∫ß¥ÅE..
+	
+	short				m_wAwakenSkillBonusDamageForBoJoSkill;			//∞¢º∫¿« æææ— ∫∏¡∂Ω∫≈≥¿ª ¿ß«— ∫∏≥ Ω∫ µ•πÃ¡ÅE∞˙›§).
+	short				m_wAwakenSkillBonusDamageForBoJoSkillPerLevel;	//∞¢º∫¿« æææ— ∫∏¡∂Ω∫≈≥¿ª ¿ß«— ∫∏≥ Ω∫ µ•πÃ¡ÅE∑π∫ß¥ÅE..
+	
+	short				m_wAwakenSkillBonusActiveChanceForBoJoSKill;					//∞¢º∫¿« æææ— ∫∏¡∂Ω∫≈≥ø° ∫Ÿ¿œ ∫∏≥ Ω∫ πﬂµø »Æ∑ÅE∞˙›§).
+	short				m_wAwakenSkillBonusActiveChanceForBoJoSKillPerLevel;			//∞¢º∫¿« æææ— ∫∏¡∂Ω∫≈≥ø° ∫Ÿ¿œ ∫∏≥ Ω∫ πﬂµø »Æ∑ÅE∑π∫ß¥ÅE.
+	
+	WORD				m_wApplyEffectChanceToPlayer;
+	WORD				m_wApplyEffectChancePerLevelToPlayer;
+	WORD				m_wApplyEffectChanceLimitToPlayer;
+
+	WORD				m_bf1IsApplyMinDamageWhenBeNotLightEffect			:1	;	// ∫˚∞ÅE√ªÛ≈¬¿ÃªÛ»ø∞˙∞° æ∆¥“∂ß √÷º“¥ÅEÃ¡ÅE¿˚øÅE	
+	WORD				m_bf1IsApplyExplosionWhenHitTargetStickedBit		:1	;	//2 ∫Ò∆Æ∫Œ¬¯¡ﬂ¿Œ ≈∏∞Ÿ »˜∆ÆΩ√ ∆¯πﬂ¿˚øÅE	
+	WORD				m_bf1IsApplySameTarget								:1	;	//3 ¡ﬂ∫π≈∏∞Ÿ¿˚øÅE	
+	WORD				m_bf11ArcHeight										:11	;	//14 ∆˜π∞º±≥Ù¿Ã
+	WORD				bf1IsAbleSkillWhenTransToWeapon						:1	;	//15 π´±‚∫ØΩ≈¡ﬂø°µµªÁøÅE°¥…
+	WORD				:0;	
+
+	short				m_sAttackPointPerActorLevel;
+	short				m_sAddDamagePercent;
+
+	WORD				m_bf5MagicDamageDiceCount						:	5;		//	5	∏∂π˝¥ÅEÃ¡ÅE¡÷ªÁ¿ß±º∏≤»ΩºÅE	
+	WORD				m_bf5MagicDamageDiceCountLimit					:	5;		//	10	∏∂π˝¥ÅEÃ¡ÅE¡÷ªÁ¿ß±º∏≤»Ωºˆ«—∞ÅE	
+	WORD				:0;
+	short				m_sMagicDamageDiceCountPerLevel;							//	∏∂π˝¥ÅEÃ¡ÅE¡÷ªÁ¿ß±º∏≤per∑π∫ß	
+
+	BYTE				m_abSpareSkillBuffer[12];
+
+	char				m_strComment[dSKILL_COMMENT_LENGTH];	
+	char				m_strPowerup[dSKILL_POWER_UP_COMMENT_LENGTH];
+};
+
+
+class	CAbilityDefine
+{
+public:
+	WORD			m_wSkill;
+	WORD			m_wLevel;
+};
+
+enum
+{	// « ø‰ªÛ≈¬.
+	eDAMAGE_NORMAL,		// ¿œπ›
+	eDAMAGE_MIN	,	// √÷º“¥ÅEÃ¡ÅE	
+	eDAMAGE_MAX	,	// √÷¥ÅEÅEÃ¡ÅE
+};
+
+
+
+class	cFighterAttackInfoE
+{
+public:
+	WORD	m_wLevel1,m_wLevel2;
+	WORD	m_wMinAttackPower,m_wMaxAttackPower;
+	WORD	m_wAttackSpeed,m_wAttackRange;
+};
+
+class	cFighterAttackInfo
+{
+public:
+	int						m_iCount;
+	cFighterAttackInfoE		m_aData[100];
+
+	cFighterAttackInfoE*	get(int _iLevel)
+	{
+		for (int i=0;i<m_iCount;i++)
+			if (_iLevel >= m_aData[i].m_wLevel1 && _iLevel <= m_aData[i].m_wLevel2)
+				return	&m_aData[i];
+
+		return	NULL;
+	}
+
+	int		getMinAttackPower(int _iLevel)
+	{
+		return	get(_iLevel)->m_wMinAttackPower;
+	}
+	int		getMaxAttackPower(int _iLevel)
+	{
+		return	get(_iLevel)->m_wMaxAttackPower;
+	}
+	int		getAttackSpeed(int _iLevel)
+	{
+		return	get(_iLevel)->m_wAttackSpeed;
+	}
+	int		getAttackRange(int _iLevel)
+	{
+		return	get(_iLevel)->m_wAttackRange;
+	}
+};
+
+extern	cFighterAttackInfo	g_fighterAttackInfo;
+
+enum
+{
+	eSKILL_DATA_VERSION_FIRST,
+	eSKILL_DATA_VERSION_ENCRYPT = eSKILL_DATA_VERSION_FIRST,
+	eSKILL_DATA_VERSION_ENCRYPT2,
+		
+	eSKILL_DATA_VERSION_LAST,
+	eSKILL_DATA_VERSION_CURRENT	=	eSKILL_DATA_VERSION_LAST-1,
+};
+
+#define	dSKILL_DATA_HEADER_SIGN	0xabcd1234
+
+#endif

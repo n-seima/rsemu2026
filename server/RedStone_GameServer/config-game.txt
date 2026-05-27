@@ -1,0 +1,52 @@
+SERVER_NAME	=	ChanTestServer;
+WORLDIP = 58.150.56.164;
+WORLDPORT = 59227;
+DBCACHEIP = 58.150.56.170;
+DBCACHEPORT = 50128;
+LOGIP = 58.150.56.170;
+LOGPORT = 53102;
+BROADCASTIP = 58.150.56.170;
+
+WCG_MAIL_SERVERIP = "211.189.66.49";
+WCG_MAIL_TITLE ="[KR] [Red Stone] Game-Result<WCG@logickorea.co.kr>"; // 메일 타이틀
+WCG_MAIL_SENDER = "WCG@logickorea.co.kr"; // 메일을 보내는 사람 메일 주소
+WCG_MAIL_SUBJECT = "[KR] [Red Stone] Game-Result"; // 메일 제목
+WCG_RECIPIENT = "rs_result@worldcybergame.com"; // 받을 사람
+WCG_CCRECIPIENT = nemo@logickorea.co.kr | goodboys@icm2k.com; // 참조 메일 리스트
+
+
+ignore_ss = true;
+//BROADCASTIP = 211.189.66.101;
+//BROADCASTIP = 211.235.238.107;
+//BROADCASTIP = 211.235.226.105;
+
+//gold_rush
+//{
+//	2007/09/20	3:30	200	200	"begin gold rush"	
+//	2007/09/25	4:30	"end gold rush"
+//}
+
+//ignore_ss	=	true;
+max_actor_count		5000
+server_index		0
+server_info_file	"testonly.gsd"
+//server_info_file	"duel.gsd";
+//test_server;
+real_price;
+
+
+//  duel_server;
+//  duel_1vs1 = 10;
+//  duel_2vs2 = 2;
+//  duel_3vs3 = 2;
+//  duel_4vs4 = 2;
+//  duel_5vs5 = 2;
+//  duel_trial_game = 5;
+//  duel_trial_team_size = 2;
+
+
+//stress_test_server;
+//	server_index 중요합니다. 서버의 물리적인 순서를 나타냅니다. 0,1,2,3,4,5....
+//	server_info_file 역시 중요합니다. type02는 서버 두대짜리. type03은 세대짜리... type01어쩌구
+
+END;

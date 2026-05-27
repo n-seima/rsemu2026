@@ -1,0 +1,193 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CONFIG DIALOGEX 0, 0, 303, 200
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RED STONE システム設定"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "確認",IDOK,100,180,50,17
+    PUSHBUTTON      "終了",IDCANCEL,152,180,50,17
+    GROUPBOX        "グラフィック設定",IDC_STATIC,6,7,290,93
+    GROUPBOX        "オプション",IDC_STATIC,6,101,290,76
+    CONTROL         "1. Direct Draw 使用(推奨)",IDC_USE_DIRECT_DRAW,"Button",
+                    BS_AUTORADIOBUTTON | BS_MULTILINE | BS_FLAT,12,21,92,9
+    CONTROL         "2. Direct Draw 使用(高級)",IDC_USE_AGP,"Button",
+                    BS_AUTORADIOBUTTON | BS_MULTILINE | BS_FLAT,12,32,93,10
+    CONTROL         "3. DIB 使用",IDC_USE_DIB,"Button",BS_AUTORADIOBUTTON | 
+                    BS_MULTILINE | BS_FLAT,12,43,47,10
+    LTEXT           "※ ゲームが遅いと感じた場合は、3番の「DIB 使用」を試してください。 \nまた、グラフィックドライバが最新のものになっていない場合は、更新する事をお勧めいたします。",
+                    IDC_STATIC,109,20,175,41
+    CONTROL         "サウンド オン",IDC_MUSIC_ON,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,12,115,81,10
+    CONTROL         "効果音 オン",IDC_SOUND_ON,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,12,129,53,10
+    LTEXT           "※ 戦闘中に停止してしまう場合は、サウンドドライバが原因であることが考えられます。 \n最新のものに更新する事をお勧めいたします。",
+                    IDC_STATIC,109,110,175,26
+    CONTROL         "独占モード",IDC_EXCLUSIVE_MODE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,12,142,46,10
+    LTEXT           "※ 独占モードを設定すると、RED STONEをプレイしている間は他のプログラムの効率が低下する可能性があります。 \nゲームが極端に遅い場合以外での設定はお勧めいたしません。",
+                    IDC_STATIC,109,138,175,35
+    CONTROL         "スリープモード",IDC_SLIM_MEMORY_MODE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,12,56,61,11
+    LTEXT           "※ スリープモードを設定すると、ゲーム開始の速度が速くなります。ただし、ゲーム中は常に通信接続が行われている関係上、状況によっては、スリープモードに設定していても遅くなる場合があります。",
+                    IDC_STATIC,109,62,176,34
+    CONTROL         "ウィンドウモード",IDC_WINDOW_MODE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,12,68,61,11
+    CONTROL         "解像度（1024×768）",IDC_1024X768,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,12,82,87,11
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "Mangchi.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Setup MFC ﾀﾀｿ・ﾇﾁｷﾎｱﾗｷ･\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Setup\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Setup.EXE\0"
+            VALUE "ProductName", "Setup ﾀﾀｿ・ﾇﾁｷﾎｱﾗｷ･\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

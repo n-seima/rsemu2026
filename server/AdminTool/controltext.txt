@@ -1,0 +1,279 @@
+//	0  ~  5
+//	IDD_ADMINTOOL_DIALOG
+Connect All Servers
+Update List
+//	IDD_AGE_COUNT
+Statistics
+//	IDD_CHARACTER_DATA
+Avatar
+WORLD
+DB Name
+
+
+//	6 ~ 10
+Master Tool
+Search Riches
+Search Item
+Unique Item List
+Data Convert
+
+//	11 ~ 15
+Avatar Data
+Account
+Avatar
+Search
+Save Data to File
+
+//	16 ~ 20
+Read Data File
+Name
+Guild
+Rank
+Avatar Index
+
+//	21 ~ 25
+Job
+Lev
+Exp
+Level Point
+Skill Point
+
+//	26 ~ 30
+Bonus
+Last Village
+Last Field
+Position
+Gold
+
+//	31 ~ 35
+Event Value
+Gold in Bank
+Save Count
+time(s)
+Handicap Time
+
+//	36 ~ 40
+Sec
+Play Time
+Day
+Hour
+Death Handicap
+
+//	41 ~ 45
+Sec
+Avatar Tool
+Save Selected Avatar
+Save All Avatar
+Calculation for Lost Exp
+
+//	46 ~ 50
+...
+Item List
+Remove Item
+Recover Item
+Having Title
+
+//	51 ~ 55
+Skill List
+Skill point init
+State point init
+Skill/State Check
+Move to the Vallige
+
+//	56 ~ 60
+Move to the Prison
+Move to the Gate
+//	IDD_CONNECT
+Connect
+Cancel
+//	IDD_EVENT
+Server
+
+//	61 ~ 65
+OX Quiz
+Year
+Month
+Day
+Hour
+
+//	66 ~ 70
+Minute
+Test
+Reservation
+Cancel a Reservation
+Question
+
+//	71 ~ 75
+Answer
+Sec(Count Down)
+Setting Question
+Repechage
+Quit OX Quiz
+
+//	76 ~ 80
+//	IDD_EXP_CALC
+CASE 1
+CASE 2
+CASE 3
+CASE 4
+Level
+
+//	81 ~ 85
+Exp
+~ Lost Level
+Result
+Calculate
+Cancel
+
+//	86 ~ 90
+//	IDD_MSG_DIALOG
+Message Box
+//	IDD_NEW_NAME
+Input New Name
+//	IDD_NOTICE_PAGE
+Notice for all servers
+Notice for selected server
+Delete User Connection Info
+
+//	91 ~ 95
+Kill World
+Send Notice 
+Save
+Load
+Repeat Notice
+
+//	96 ~ 100
+Year
+Month
+Day
+Hour
+Min
+
+//	101 ~ 105
+till
+Send the Notice
+Change Maintenance Time
+Check Maintenance Time
+Repeat Notice for Selected
+
+//	106 ~ 110
+Cancel Notice for Selected
+Repeat Notice for Selected
+Cancel Repeat Notice for All
+AdminTool Account Management
+Load
+
+//	111 ~ 115
+Change PW
+Remove Account
+Change Level
+//	IDD_SEARCH
+Year
+Month
+
+//	116 ~ 120
+Day
+Hour
+//	IDD_TENTATIVE_GUILD
+World
+Date
+Hour
+
+//	121 ~ 125
+Guild Battle
+//	IDD_USERSETTING
+User Setting
+Setting Bad User
+Date
+Check Bad User
+
+//	126 ~ 130
+Setting Bad Name
+Remove Bad Name
+Remove Account
+Remove Avatar
+Recover Account
+
+//	131 ~ 135
+Recover
+Check Info
+Recover Avatar
+Recover
+Update List
+
+//	136 ~ 140
+Change Avatar Name
+Sync Info
+Change Name
+Setting Operator
+Set for Operator
+
+//	141 ~ 145
+Count of Operator
+Search User
+Search for ID
+//	IDD_WORLD_SCORE
+Statistics
+Connected Total User Count
+
+//	146 ~ 150
+Selected Server:
+Max User Count / Hour
+aaaa
+Exit Tool
+Periodical Inspection
+
+//	151 ~ 155
+Check Currently Time
+Change Time
+Cancel 
+Weekday
+Hour
+
+//	156 ~ 160
+Min
+Guild Info
+Joining Date
+Fail Guild Creation
+yy
+
+//	161 ~ 165
+mm
+dd
+Fix lev
+Question
+Way Point
+
+//	166 ~ 170
+Extend Item's DeadTime
+Day
+Hour
+Min
+Add
+
+//	171 ~ 175
+Extend Item's Dead Time
+Update List
+Check Rich
+Check Item
+Check Super Item
+
+//	176 ~ 180
+Reservation Operator Command
+Registed Command List
+Running Time
+Finish Time
+Send to All Server
+
+//	181 ~ 185
+Message
+Command
+RESERVE
+MODIFY
+CANCEL
+
+//	186 ~ 190
+GET LIST
+Maintenance Reservation
+Using Account
+Send Directly

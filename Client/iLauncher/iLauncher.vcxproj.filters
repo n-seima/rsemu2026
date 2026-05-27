@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6cd9e388-6cfa-4f9a-923f-eb6aa8b05df3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d6100be3-f24b-4adf-ab60-522c7c5e28c2}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{9f91e233-0d66-480a-a763-04798f3c153e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="message">
+      <UniqueIdentifier>{dec3e0a4-18f8-4885-a8dd-f49457dd6b69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{5b27cba5-757e-4641-ae83-0879f0c9f9e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frame">
+      <UniqueIdentifier>{853245aa-ce58-4c44-aeb4-853f3c3d0fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image">
+      <UniqueIdentifier>{87ba445a-2e8d-4aaa-81b4-802dd27b537c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XTrap">
+      <UniqueIdentifier>{d1417004-5718-4e18-a76c-3ad1568a9162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{ef1d22a1-8eb6-4062-b495-1d8b23e6ed88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cAGENT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cPACKET_QUE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cSOCKET.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="downLoad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iLauncher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mac.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="update.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForInter.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForJapan.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForKorea.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForThai.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForUSA.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="bar_menu.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="c16BITSPRITE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="c8BITSPRITE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cBMP.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cDECODER.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cDIB.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cDRAW.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cIMAGE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cNUX.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cPCX.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTEXT.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTGA.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTRANS.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cWINDOW.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="image_scroll_bar.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="SFC.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="launcher.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="launcher_download.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="launcher_patch.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource.sd.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_jp.sd.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_kor.sd.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_thai.sd.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_USA.sd.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="iLauncher.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cAGENT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cPACKET.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cSOCKET.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="downLoad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="update.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="bar_menu.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cDECODER.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cDIB.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cDRAW.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cIMAGE.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cNUX.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cTEXT.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cWINDOW.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="image_scroll_bar.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="SFC.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="STDAFX.H">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="launcher.h">
+      <Filter>frame</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource.sd.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_jp.sd.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_kor.sd.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_thai.sd.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_USA.sd.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="XTrap\XTrap4Launcher.h">
+      <Filter>XTrap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Launcher.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="XTrap\XTrap4Launcher_mt.lib">
+      <Filter>XTrap</Filter>
+    </Library>
+    <Library Include="XTrap\XTrap4Launcher_st.lib">
+      <Filter>XTrap</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

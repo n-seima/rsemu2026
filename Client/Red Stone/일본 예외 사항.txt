@@ -1,0 +1,6 @@
+10년 3월15일
+	1. 일본용 이터널 전용 강화확률 
+		- CActorItem.cpp
+			int l_UpgradeChanceForJapan[dETERNAL_ITEM_MAX_LEVEL] =	// 일본 강화 확률
+	2. 일본용 금괴 데이터 수정
+		- 소스코드 수정사항 문서 참조.

@@ -1,0 +1,1355 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Engine - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_FOR_KOREA" /FR"Debug/" /Fp"Debug/Engine.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\bmp.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\c16BITSPRITE555.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\c16BITSPRITE565.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\c8BITSPRITE555.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\c8BITSPRITE565.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cANGLE.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cBARMENU.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cCANVAS.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\CDDraw.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cDECODER.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cDIB.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cDRAW.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cDROPDOWNLIST.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\CExceptionHandler.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cIMAGE.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\CImageScrollBar.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cINPDEV.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cJPG.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cLAYER555.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cLAYER565.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\COGGPlayer.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\Console.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cPCX.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\CPopupMenu.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cPROFILE.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cSOCKET.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\CSolidCheck.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\CSound.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cSPLINE.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cTALKBOX.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cTEXT.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\CTextDC.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\CTextList.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\CTextMT.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cTGA.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\CTooltip.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cTRANS.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\cWND.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\regular_random.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Engine\SFC.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC.tmp" with contents
+[
+/nologo /out:"Debug\Engine.lib" 
+.\Debug\bmp.obj
+.\Debug\c16BITSPRITE555.obj
+.\Debug\c16BITSPRITE565.obj
+.\Debug\c8BITSPRITE555.obj
+.\Debug\c8BITSPRITE565.obj
+.\Debug\cANGLE.obj
+.\Debug\cBARMENU.obj
+.\Debug\cCANVAS.obj
+.\Debug\CDDraw.obj
+.\Debug\cDECODER.obj
+.\Debug\cDIB.obj
+.\Debug\cDRAW.obj
+.\Debug\cDROPDOWNLIST.obj
+.\Debug\CExceptionHandler.obj
+.\Debug\cIMAGE.obj
+.\Debug\CImageScrollBar.obj
+.\Debug\cINPDEV.obj
+.\Debug\cJPG.obj
+.\Debug\cLAYER555.obj
+.\Debug\cLAYER565.obj
+.\Debug\COGGPlayer.obj
+.\Debug\Console.obj
+.\Debug\cPCX.obj
+.\Debug\CPopupMenu.obj
+.\Debug\cPROFILE.obj
+.\Debug\cSOCKET.obj
+.\Debug\CSolidCheck.obj
+.\Debug\CSound.obj
+.\Debug\cSPLINE.obj
+.\Debug\cTALKBOX.obj
+.\Debug\cTEXT.obj
+.\Debug\CTextDC.obj
+.\Debug\CTextList.obj
+.\Debug\CTextMT.obj
+.\Debug\cTGA.obj
+.\Debug\CTooltip.obj
+.\Debug\cTRANS.obj
+.\Debug\cWND.obj
+.\Debug\regular_random.obj
+.\Debug\SFC.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC.tmp"
+<h3>Output Window</h3>
+Compiling...
+bmp.cpp
+c16BITSPRITE555.cpp
+c16BITSPRITE565.cpp
+c8BITSPRITE555.cpp
+c8BITSPRITE565.cpp
+cANGLE.cpp
+cBARMENU.cpp
+cCANVAS.cpp
+CDDraw.cpp
+cDECODER.cpp
+cDIB.cpp
+cDRAW.cpp
+cDROPDOWNLIST.cpp
+CExceptionHandler.cpp
+cIMAGE.cpp
+CImageScrollBar.cpp
+cINPDEV.cpp
+cJPG.cpp
+cLAYER555.cpp
+cLAYER565.cpp
+COGGPlayer.cpp
+Console.cpp
+cPCX.cpp
+CPopupMenu.cpp
+cPROFILE.cpp
+cSOCKET.cpp
+CSolidCheck.cpp
+CSound.cpp
+cSPLINE.cpp
+cTALKBOX.cpp
+cTEXT.cpp
+CTextDC.cpp
+CTextList.cpp
+CTextMT.cpp
+cTGA.cpp
+CTooltip.cpp
+cTRANS.cpp
+cWND.cpp
+regular_random.cpp
+SFC.cpp
+Creating library...
+<h3>
+--------------------Configuration: Red Stone - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "../engine" /I "../../common/packet" /I "../../common/common" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_FOR_KOREA" /D "_IS_DEV_CLIENT" /D "_WSPIAPI_COUNTOF" /Fr"Debug/" /Fp"Debug/Red Stone.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\version.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\BattleLog.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CCompress.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CDebugCode.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CImageData.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CLog.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CMain.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CMap.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CMessage.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CObject.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\common\common\cPetDefine.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSound.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CTile.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\devCode.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\gg.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\mainForChina.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\minimap.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\Red Stone.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\screen_focus.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\TDLanguage.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\tdspring_motion.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\TDUtil.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\tool.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cGAME_SELECT_AVATAR.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cGAME_CREATE_AVATAR.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cGAME_CREDIT.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cGAME_OPTION.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cGAME_LOGO.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cGAME_OPENING.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cGAME_ENDDING.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cGAME_CONNECT_GAME_SERVER.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cGAME_TITLE.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\titleScreenForMultiLoginServer.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\titleScreenWorldList.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cGAME_CLOSE.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cGAME_INIT.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGame.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGameInfo.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGameInterface.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGameUtil.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\aidAttackSkill.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\ast_chain_lightning.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\ast_fire_wall.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\ast_giga_lightning.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\ast_one_bite.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\astArcMissile.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\astBigBullet.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\astBouncingMissile.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\astContinuousBit.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\astContinuousHitOfDoppelganger.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\astDoubleTarget.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\astLightningWinder.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\astMultiMissile.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\astRollingLog.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\astWideMissile.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillAid.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillAlteringHitter.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillAwesomeFortress.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillBiteHanging.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillBitGlider.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillBoomerang.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillBouncingLinear.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillBunshine.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillCharge.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillContinuousAttack.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillContinuousShoot.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillContinuousWhirlwind.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillDropOnHead.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillExplosionDefendOnImage.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillExplosionMissile.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillFireBall.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillIcyStalagmite.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillImpact.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillIntervalShooter.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillJump.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillJumpAttack.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillLandMarker.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillLaser.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillLinerChainExplosion.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillMachineMissile.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillMirrorTower.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillMissile.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillMotion.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillPiercingMissile.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillRadialArc.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillRush.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillScimitarCutting.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillSpecialMissile.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillSpreadArrow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillSurprisingRaid.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillTailChaser.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillTeleport.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillTornado.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillWaterFall.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillWhirlthrusting.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillWhirlwind.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\gasTypeSkill.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\abilityToolTip.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAbility.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAbilityInfo.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActiveSkill.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGuardianPost.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkill.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillInit.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\book_gpw.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\book_MonsterDictionary.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CWorldMap.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\worldMapFieldInfo.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CDebugWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\main_quest_event.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\main_quest_event_draw.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\main_quest_event_update.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\helpScreen.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CPartyWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\partyListWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\requestJoinPartyUserListWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGuildBattleScheduler.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGuildMarkComposer.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGuildWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\guild_feed_pet_window.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\guild_hall_list.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\guild_honor_point_list.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\guild_inventory.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\guild_related_place_list.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\dialog_box.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CFriendWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CMakeGuildWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CPetWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CQuestWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSelectVillageWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CStatusWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSystemWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\putBanner.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGamePlayChat.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGamePlayNotice.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGamePlaySystemMessage.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\bottomless_box_gpw.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\carrotShop.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CBankWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CCartWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cCopyOrCutPrefixWnd.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CInventoryWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CPitchmanShopWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CRepairItemWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CShopWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CTradeWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CUpgradeShop.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\judgeToItemWnd.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\mergeItemWnd.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\removePrefixWnd.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\selectItemInPack.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\miniPetWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CSkillWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\easySkillTree.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\commonUI.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\duel_ranking_ui.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\listWindow.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGameBottomInterface.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGamePlayInterface.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGamePlayMinimap.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\FogMap.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CQuest.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\mainQuest.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CFieldItem.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CItem.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CItemEffect.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CItemPrefix.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\common\common\itemDefine.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\itemSet.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\pieceItem.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\questItem.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActor.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorAction.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorAfterImage.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorAnmInfo.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorEffect.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorEvent.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorHit.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorInfo.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorManager.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorMove.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorOperatePacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorPut.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorSkill.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorStatus.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CActorWrongStatus.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHero.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroBattle.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroGuildSkill.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroInfo.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroInterface.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroItem.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroItemEffect.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroMove.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroPet.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroQuest.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroSkill.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroSkillExtraEffect.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroStatus.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroTitle.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroUseSkill.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHeroWrongStatus.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\hero_area.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\hero_old_data.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\hero_trap.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\user_custom_data.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\common\common\userCustomDataDefine.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGuild.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGuildMark.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGuildSkill.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGuildSkillManager.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\common\common\guild_common.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CTitle.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CTitleManager.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CDialog.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CEvent.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cKARMA.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cKARMA_VALUE.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CColorEffect.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CHitEffect.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CShake.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\effectManager.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\firecracker.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\arca.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\banner.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\book.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CArea.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CBank.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\secretDungeon.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CParty.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\common\common\partyDefine.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\partyList.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\trap.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\trapSkill.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CShoppingCart.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CPitchmanShop.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\common\common\carrotShopDefine.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CPortal.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CTrade.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\shop.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CJob.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\common\common\playerJobCommon.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\bm_arch_devil.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\bm_draco_lich.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\bm_event.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\bm_sage_event.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\bm_tiamath.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\bm_water_dragon.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\hero_mini_pet.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\miniPet.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\duel.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGamePlay.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGamePlayDraw.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGamePlayMain.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGamePlayParty.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CGamePlayUtility.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\gpPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\gpWarningMessage.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cPROJECT.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceiveTradePacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentSendTradePacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceiveBankPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentSendBankPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceiveItemPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentSendItemPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceiveEventPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentSendEventPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceiveCommunityPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentSendCommunityPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceiveGuildPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentSendGuildPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceiveCartPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentSendCartPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceivePitchmanShop.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentSendPichmanShopPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceiveGamePacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceivePacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceivePetPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentReceiveSkillPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CAgentSendPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\receiveTrapPacket.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cAGENT.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\cPACKET_QUE.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\mac.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CLoadTextCode.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\common\common\commonDefine.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\movie_anm_player.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\movie.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\movie_event.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\movie_frame.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\movie_frame_operate.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\movie_io.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\screen_filter.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\Client\Red Stone\CClientGameType.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE.tmp" with contents
+[
+version.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib imm32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Red Stone(Debug).pdb" /debug /machine:I386 /nodefaultlib:"LIBC" /out:"../../../../../Red Stone dev Client/Red Stone(Debug).exe" /pdbtype:sept 
+".\Debug\version.obj"
+".\Debug\BattleLog.obj"
+".\Debug\CCompress.obj"
+".\Debug\CDebugCode.obj"
+".\Debug\CImageData.obj"
+".\Debug\CLog.obj"
+".\Debug\CMain.obj"
+".\Debug\CMap.obj"
+".\Debug\CMessage.obj"
+".\Debug\CObject.obj"
+".\Debug\cPetDefine.obj"
+".\Debug\CSound.obj"
+".\Debug\CTile.obj"
+".\Debug\devCode.obj"
+".\Debug\gg.obj"
+".\Debug\mainForChina.obj"
+".\Debug\minimap.obj"
+".\Debug\Red Stone.obj"
+".\Debug\screen_focus.obj"
+".\Debug\TDLanguage.obj"
+".\Debug\tdspring_motion.obj"
+".\Debug\TDUtil.obj"
+".\Debug\tool.obj"
+".\Debug\cGAME_SELECT_AVATAR.obj"
+".\Debug\cGAME_CREATE_AVATAR.obj"
+".\Debug\cGAME_CREDIT.obj"
+".\Debug\cGAME_OPTION.obj"
+".\Debug\cGAME_LOGO.obj"
+".\Debug\cGAME_OPENING.obj"
+".\Debug\cGAME_ENDDING.obj"
+".\Debug\cGAME_CONNECT_GAME_SERVER.obj"
+".\Debug\cGAME_TITLE.obj"
+".\Debug\titleScreenForMultiLoginServer.obj"
+".\Debug\titleScreenWorldList.obj"
+".\Debug\cGAME_CLOSE.obj"
+".\Debug\cGAME_INIT.obj"
+".\Debug\CGame.obj"
+".\Debug\CGameInfo.obj"
+".\Debug\CGameInterface.obj"
+".\Debug\CGameUtil.obj"
+".\Debug\aidAttackSkill.obj"
+".\Debug\ast_chain_lightning.obj"
+".\Debug\ast_fire_wall.obj"
+".\Debug\ast_giga_lightning.obj"
+".\Debug\ast_one_bite.obj"
+".\Debug\astArcMissile.obj"
+".\Debug\astBigBullet.obj"
+".\Debug\astBouncingMissile.obj"
+".\Debug\astContinuousBit.obj"
+".\Debug\astContinuousHitOfDoppelganger.obj"
+".\Debug\astDoubleTarget.obj"
+".\Debug\astLightningWinder.obj"
+".\Debug\astMultiMissile.obj"
+".\Debug\astRollingLog.obj"
+".\Debug\astWideMissile.obj"
+".\Debug\CSkillAid.obj"
+".\Debug\CSkillAlteringHitter.obj"
+".\Debug\CSkillAwesomeFortress.obj"
+".\Debug\CSkillBiteHanging.obj"
+".\Debug\CSkillBitGlider.obj"
+".\Debug\CSkillBoomerang.obj"
+".\Debug\CSkillBouncingLinear.obj"
+".\Debug\CSkillBunshine.obj"
+".\Debug\CSkillCharge.obj"
+".\Debug\CSkillContinuousAttack.obj"
+".\Debug\CSkillContinuousShoot.obj"
+".\Debug\CSkillContinuousWhirlwind.obj"
+".\Debug\CSkillDropOnHead.obj"
+".\Debug\CSkillExplosionDefendOnImage.obj"
+".\Debug\CSkillExplosionMissile.obj"
+".\Debug\CSkillFireBall.obj"
+".\Debug\CSkillIcyStalagmite.obj"
+".\Debug\CSkillImpact.obj"
+".\Debug\CSkillIntervalShooter.obj"
+".\Debug\CSkillJump.obj"
+".\Debug\CSkillJumpAttack.obj"
+".\Debug\CSkillLandMarker.obj"
+".\Debug\CSkillLaser.obj"
+".\Debug\CSkillLinerChainExplosion.obj"
+".\Debug\CSkillMachineMissile.obj"
+".\Debug\CSkillMirrorTower.obj"
+".\Debug\CSkillMissile.obj"
+".\Debug\CSkillMotion.obj"
+".\Debug\CSkillPiercingMissile.obj"
+".\Debug\CSkillRadialArc.obj"
+".\Debug\CSkillRush.obj"
+".\Debug\CSkillScimitarCutting.obj"
+".\Debug\CSkillSpecialMissile.obj"
+".\Debug\CSkillSpreadArrow.obj"
+".\Debug\CSkillSurprisingRaid.obj"
+".\Debug\CSkillTailChaser.obj"
+".\Debug\CSkillTeleport.obj"
+".\Debug\CSkillTornado.obj"
+".\Debug\CSkillWaterFall.obj"
+".\Debug\CSkillWhirlthrusting.obj"
+".\Debug\CSkillWhirlwind.obj"
+".\Debug\gasTypeSkill.obj"
+".\Debug\abilityToolTip.obj"
+".\Debug\CAbility.obj"
+".\Debug\CAbilityInfo.obj"
+".\Debug\CActiveSkill.obj"
+".\Debug\CGuardianPost.obj"
+".\Debug\CSkill.obj"
+".\Debug\CSkillInit.obj"
+".\Debug\book_gpw.obj"
+".\Debug\book_MonsterDictionary.obj"
+".\Debug\CWorldMap.obj"
+".\Debug\worldMapFieldInfo.obj"
+".\Debug\CDebugWindow.obj"
+".\Debug\main_quest_event.obj"
+".\Debug\main_quest_event_draw.obj"
+".\Debug\main_quest_event_update.obj"
+".\Debug\helpScreen.obj"
+".\Debug\CPartyWindow.obj"
+".\Debug\partyListWindow.obj"
+".\Debug\requestJoinPartyUserListWindow.obj"
+".\Debug\CGuildBattleScheduler.obj"
+".\Debug\CGuildMarkComposer.obj"
+".\Debug\CGuildWindow.obj"
+".\Debug\guild_feed_pet_window.obj"
+".\Debug\guild_hall_list.obj"
+".\Debug\guild_honor_point_list.obj"
+".\Debug\guild_inventory.obj"
+".\Debug\guild_related_place_list.obj"
+".\Debug\dialog_box.obj"
+".\Debug\CFriendWindow.obj"
+".\Debug\CMakeGuildWindow.obj"
+".\Debug\CPetWindow.obj"
+".\Debug\CQuestWindow.obj"
+".\Debug\CSelectVillageWindow.obj"
+".\Debug\CStatusWindow.obj"
+".\Debug\CSystemWindow.obj"
+".\Debug\putBanner.obj"
+".\Debug\CGamePlayChat.obj"
+".\Debug\CGamePlayNotice.obj"
+".\Debug\CGamePlaySystemMessage.obj"
+".\Debug\bottomless_box_gpw.obj"
+".\Debug\carrotShop.obj"
+".\Debug\CBankWindow.obj"
+".\Debug\CCartWindow.obj"
+".\Debug\cCopyOrCutPrefixWnd.obj"
+".\Debug\CInventoryWindow.obj"
+".\Debug\CPitchmanShopWindow.obj"
+".\Debug\CRepairItemWindow.obj"
+".\Debug\CShopWindow.obj"
+".\Debug\CTradeWindow.obj"
+".\Debug\CUpgradeShop.obj"
+".\Debug\judgeToItemWnd.obj"
+".\Debug\mergeItemWnd.obj"
+".\Debug\removePrefixWnd.obj"
+".\Debug\selectItemInPack.obj"
+".\Debug\miniPetWindow.obj"
+".\Debug\CSkillWindow.obj"
+".\Debug\easySkillTree.obj"
+".\Debug\commonUI.obj"
+".\Debug\duel_ranking_ui.obj"
+".\Debug\listWindow.obj"
+".\Debug\CGameBottomInterface.obj"
+".\Debug\CGamePlayInterface.obj"
+".\Debug\CGamePlayMinimap.obj"
+".\Debug\FogMap.obj"
+".\Debug\CQuest.obj"
+".\Debug\mainQuest.obj"
+".\Debug\CFieldItem.obj"
+".\Debug\CItem.obj"
+".\Debug\CItemEffect.obj"
+".\Debug\CItemPrefix.obj"
+".\Debug\itemDefine.obj"
+".\Debug\itemSet.obj"
+".\Debug\pieceItem.obj"
+".\Debug\questItem.obj"
+".\Debug\CActor.obj"
+".\Debug\CActorAction.obj"
+".\Debug\CActorAfterImage.obj"
+".\Debug\CActorAnmInfo.obj"
+".\Debug\CActorEffect.obj"
+".\Debug\CActorEvent.obj"
+".\Debug\CActorHit.obj"
+".\Debug\CActorInfo.obj"
+".\Debug\CActorManager.obj"
+".\Debug\CActorMove.obj"
+".\Debug\CActorOperatePacket.obj"
+".\Debug\CActorPut.obj"
+".\Debug\CActorSkill.obj"
+".\Debug\CActorStatus.obj"
+".\Debug\CActorWrongStatus.obj"
+".\Debug\CHero.obj"
+".\Debug\CHeroBattle.obj"
+".\Debug\CHeroGuildSkill.obj"
+".\Debug\CHeroInfo.obj"
+".\Debug\CHeroInterface.obj"
+".\Debug\CHeroItem.obj"
+".\Debug\CHeroItemEffect.obj"
+".\Debug\CHeroMove.obj"
+".\Debug\CHeroPet.obj"
+".\Debug\CHeroQuest.obj"
+".\Debug\CHeroSkill.obj"
+".\Debug\CHeroSkillExtraEffect.obj"
+".\Debug\CHeroStatus.obj"
+".\Debug\CHeroTitle.obj"
+".\Debug\CHeroUseSkill.obj"
+".\Debug\CHeroWrongStatus.obj"
+".\Debug\hero_area.obj"
+".\Debug\hero_old_data.obj"
+".\Debug\hero_trap.obj"
+".\Debug\user_custom_data.obj"
+".\Debug\userCustomDataDefine.obj"
+".\Debug\CGuild.obj"
+".\Debug\CGuildMark.obj"
+".\Debug\CGuildSkill.obj"
+".\Debug\CGuildSkillManager.obj"
+".\Debug\guild_common.obj"
+".\Debug\CTitle.obj"
+".\Debug\CTitleManager.obj"
+".\Debug\CDialog.obj"
+".\Debug\CEvent.obj"
+".\Debug\cKARMA.obj"
+".\Debug\cKARMA_VALUE.obj"
+".\Debug\CColorEffect.obj"
+".\Debug\CHitEffect.obj"
+".\Debug\CShake.obj"
+".\Debug\effectManager.obj"
+".\Debug\firecracker.obj"
+".\Debug\arca.obj"
+".\Debug\banner.obj"
+".\Debug\book.obj"
+".\Debug\CArea.obj"
+".\Debug\CBank.obj"
+".\Debug\secretDungeon.obj"
+".\Debug\CParty.obj"
+".\Debug\partyDefine.obj"
+".\Debug\partyList.obj"
+".\Debug\trap.obj"
+".\Debug\trapSkill.obj"
+".\Debug\CShoppingCart.obj"
+".\Debug\CPitchmanShop.obj"
+".\Debug\carrotShopDefine.obj"
+".\Debug\CPortal.obj"
+".\Debug\CTrade.obj"
+".\Debug\shop.obj"
+".\Debug\CJob.obj"
+".\Debug\playerJobCommon.obj"
+".\Debug\bm_arch_devil.obj"
+".\Debug\bm_draco_lich.obj"
+".\Debug\bm_event.obj"
+".\Debug\bm_sage_event.obj"
+".\Debug\bm_tiamath.obj"
+".\Debug\bm_water_dragon.obj"
+".\Debug\hero_mini_pet.obj"
+".\Debug\miniPet.obj"
+".\Debug\duel.obj"
+".\Debug\CGamePlay.obj"
+".\Debug\CGamePlayDraw.obj"
+".\Debug\CGamePlayMain.obj"
+".\Debug\CGamePlayParty.obj"
+".\Debug\CGamePlayUtility.obj"
+".\Debug\gpPacket.obj"
+".\Debug\gpWarningMessage.obj"
+".\Debug\cPROJECT.obj"
+".\Debug\CAgentReceiveTradePacket.obj"
+".\Debug\CAgentSendTradePacket.obj"
+".\Debug\CAgentReceiveBankPacket.obj"
+".\Debug\CAgentSendBankPacket.obj"
+".\Debug\CAgentReceiveItemPacket.obj"
+".\Debug\CAgentSendItemPacket.obj"
+".\Debug\CAgentReceiveEventPacket.obj"
+".\Debug\CAgentSendEventPacket.obj"
+".\Debug\CAgentReceiveCommunityPacket.obj"
+".\Debug\CAgentSendCommunityPacket.obj"
+".\Debug\CAgentReceiveGuildPacket.obj"
+".\Debug\CAgentSendGuildPacket.obj"
+".\Debug\CAgentReceiveCartPacket.obj"
+".\Debug\CAgentSendCartPacket.obj"
+".\Debug\CAgentReceivePitchmanShop.obj"
+".\Debug\CAgentSendPichmanShopPacket.obj"
+".\Debug\CAgentReceiveGamePacket.obj"
+".\Debug\CAgentReceivePacket.obj"
+".\Debug\CAgentReceivePetPacket.obj"
+".\Debug\CAgentReceiveSkillPacket.obj"
+".\Debug\CAgentSendPacket.obj"
+".\Debug\receiveTrapPacket.obj"
+".\Debug\cAGENT.obj"
+".\Debug\cPACKET_QUE.obj"
+".\Debug\mac.obj"
+".\Debug\CLoadTextCode.obj"
+".\Debug\commonDefine.obj"
+".\Debug\movie_anm_player.obj"
+".\Debug\movie.obj"
+".\Debug\movie_event.obj"
+".\Debug\movie_frame.obj"
+".\Debug\movie_frame_operate.obj"
+".\Debug\movie_io.obj"
+".\Debug\screen_filter.obj"
+".\Debug\CClientGameType.obj"
+".\Debug\Red Stone.res"
+".\XTrap\XTrap4Client_ClientPart_mt.lib"
+".\XTrap\XTrap4Client_mt.lib"
+".\XTrap\XTrap4Client_ServerPart_mt.lib"
+".\XTrap\XTrap_Unipher_mt.lib"
+"\MyDev\japan_110322_0.0538_1220\Client\Engine\Debug\Engine.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE.tmp"
+<h3>Output Window</h3>
+Compiling...
+version.cpp
+BattleLog.cpp
+CCompress.cpp
+CDebugCode.cpp
+CImageData.cpp
+CLog.cpp
+CMain.cpp
+CMap.cpp
+CMessage.cpp
+CObject.cpp
+cPetDefine.cpp
+CSound.cpp
+CTile.cpp
+devCode.cpp
+gg.cpp
+mainForChina.cpp
+minimap.cpp
+Red Stone.cpp
+screen_focus.cpp
+TDLanguage.cpp
+tdspring_motion.cpp
+TDUtil.cpp
+tool.cpp
+cGAME_SELECT_AVATAR.cpp
+cGAME_CREATE_AVATAR.cpp
+cGAME_CREDIT.cpp
+cGAME_OPTION.cpp
+cGAME_LOGO.cpp
+cGAME_OPENING.cpp
+cGAME_ENDDING.cpp
+cGAME_CONNECT_GAME_SERVER.cpp
+cGAME_TITLE.cpp
+titleScreenForMultiLoginServer.cpp
+titleScreenWorldList.cpp
+cGAME_CLOSE.cpp
+cGAME_INIT.cpp
+CGame.cpp
+CGameInfo.cpp
+CGameInterface.cpp
+CGameUtil.cpp
+aidAttackSkill.cpp
+ast_chain_lightning.cpp
+ast_fire_wall.cpp
+ast_giga_lightning.cpp
+ast_one_bite.cpp
+astArcMissile.cpp
+astBigBullet.cpp
+astBouncingMissile.cpp
+astContinuousBit.cpp
+astContinuousHitOfDoppelganger.cpp
+astDoubleTarget.cpp
+astLightningWinder.cpp
+astMultiMissile.cpp
+astRollingLog.cpp
+astWideMissile.cpp
+CSkillAid.cpp
+CSkillAlteringHitter.cpp
+CSkillAwesomeFortress.cpp
+CSkillBiteHanging.cpp
+CSkillBitGlider.cpp
+CSkillBoomerang.cpp
+CSkillBouncingLinear.cpp
+CSkillBunshine.cpp
+CSkillCharge.cpp
+CSkillContinuousAttack.cpp
+CSkillContinuousShoot.cpp
+CSkillContinuousWhirlwind.cpp
+CSkillDropOnHead.cpp
+CSkillExplosionDefendOnImage.cpp
+CSkillExplosionMissile.cpp
+CSkillFireBall.cpp
+CSkillIcyStalagmite.cpp
+CSkillImpact.cpp
+CSkillIntervalShooter.cpp
+CSkillJump.cpp
+CSkillJumpAttack.cpp
+CSkillLandMarker.cpp
+CSkillLaser.cpp
+CSkillLinerChainExplosion.cpp
+CSkillMachineMissile.cpp
+CSkillMirrorTower.cpp
+CSkillMissile.cpp
+CSkillMotion.cpp
+CSkillPiercingMissile.cpp
+CSkillRadialArc.cpp
+CSkillRush.cpp
+CSkillScimitarCutting.cpp
+CSkillSpecialMissile.cpp
+CSkillSpreadArrow.cpp
+CSkillSurprisingRaid.cpp
+CSkillTailChaser.cpp
+CSkillTeleport.cpp
+CSkillTornado.cpp
+CSkillWaterFall.cpp
+CSkillWhirlthrusting.cpp
+CSkillWhirlwind.cpp
+gasTypeSkill.cpp
+abilityToolTip.cpp
+CAbility.cpp
+CAbilityInfo.cpp
+CActiveSkill.cpp
+CGuardianPost.cpp
+CSkill.cpp
+CSkillInit.cpp
+book_gpw.cpp
+book_MonsterDictionary.cpp
+CWorldMap.cpp
+worldMapFieldInfo.cpp
+CDebugWindow.cpp
+main_quest_event.cpp
+main_quest_event_draw.cpp
+main_quest_event_update.cpp
+helpScreen.cpp
+CPartyWindow.cpp
+partyListWindow.cpp
+requestJoinPartyUserListWindow.cpp
+CGuildBattleScheduler.cpp
+CGuildMarkComposer.cpp
+CGuildWindow.cpp
+guild_feed_pet_window.cpp
+guild_hall_list.cpp
+guild_honor_point_list.cpp
+guild_inventory.cpp
+guild_related_place_list.cpp
+dialog_box.cpp
+CFriendWindow.cpp
+CMakeGuildWindow.cpp
+CPetWindow.cpp
+CQuestWindow.cpp
+CSelectVillageWindow.cpp
+CStatusWindow.cpp
+CSystemWindow.cpp
+putBanner.cpp
+CGamePlayChat.cpp
+CGamePlayNotice.cpp
+CGamePlaySystemMessage.cpp
+bottomless_box_gpw.cpp
+carrotShop.cpp
+CBankWindow.cpp
+CCartWindow.cpp
+cCopyOrCutPrefixWnd.cpp
+CInventoryWindow.cpp
+CPitchmanShopWindow.cpp
+CRepairItemWindow.cpp
+CShopWindow.cpp
+CTradeWindow.cpp
+CUpgradeShop.cpp
+judgeToItemWnd.cpp
+mergeItemWnd.cpp
+removePrefixWnd.cpp
+selectItemInPack.cpp
+miniPetWindow.cpp
+CSkillWindow.cpp
+easySkillTree.cpp
+commonUI.cpp
+duel_ranking_ui.cpp
+listWindow.cpp
+CGameBottomInterface.cpp
+CGamePlayInterface.cpp
+CGamePlayMinimap.cpp
+FogMap.cpp
+CQuest.cpp
+mainQuest.cpp
+CFieldItem.cpp
+CItem.cpp
+CItemEffect.cpp
+CItemPrefix.cpp
+itemDefine.cpp
+itemSet.cpp
+pieceItem.cpp
+questItem.cpp
+CActor.cpp
+CActorAction.cpp
+CActorAfterImage.cpp
+CActorAnmInfo.cpp
+CActorEffect.cpp
+CActorEvent.cpp
+CActorHit.cpp
+CActorInfo.cpp
+CActorManager.cpp
+CActorMove.cpp
+CActorOperatePacket.cpp
+CActorPut.cpp
+CActorSkill.cpp
+CActorStatus.cpp
+CActorWrongStatus.cpp
+CHero.cpp
+CHeroBattle.cpp
+CHeroGuildSkill.cpp
+CHeroInfo.cpp
+CHeroInterface.cpp
+CHeroItem.cpp
+CHeroItemEffect.cpp
+CHeroMove.cpp
+CHeroPet.cpp
+CHeroQuest.cpp
+CHeroSkill.cpp
+CHeroSkillExtraEffect.cpp
+CHeroStatus.cpp
+CHeroTitle.cpp
+CHeroUseSkill.cpp
+CHeroWrongStatus.cpp
+hero_area.cpp
+hero_old_data.cpp
+hero_trap.cpp
+user_custom_data.cpp
+userCustomDataDefine.cpp
+CGuild.cpp
+CGuildMark.cpp
+CGuildSkill.cpp
+CGuildSkillManager.cpp
+guild_common.cpp
+CTitle.cpp
+CTitleManager.cpp
+CDialog.cpp
+CEvent.cpp
+cKARMA.cpp
+cKARMA_VALUE.cpp
+CColorEffect.cpp
+CHitEffect.cpp
+CShake.cpp
+effectManager.cpp
+firecracker.cpp
+arca.cpp
+banner.cpp
+book.cpp
+CArea.cpp
+CBank.cpp
+secretDungeon.cpp
+CParty.cpp
+partyDefine.cpp
+partyList.cpp
+trap.cpp
+trapSkill.cpp
+CShoppingCart.cpp
+CPitchmanShop.cpp
+carrotShopDefine.cpp
+CPortal.cpp
+CTrade.cpp
+shop.cpp
+CJob.cpp
+playerJobCommon.cpp
+bm_arch_devil.cpp
+bm_draco_lich.cpp
+bm_event.cpp
+bm_sage_event.cpp
+bm_tiamath.cpp
+bm_water_dragon.cpp
+hero_mini_pet.cpp
+miniPet.cpp
+duel.cpp
+CGamePlay.cpp
+CGamePlayDraw.cpp
+CGamePlayMain.cpp
+CGamePlayParty.cpp
+CGamePlayUtility.cpp
+gpPacket.cpp
+gpWarningMessage.cpp
+cPROJECT.cpp
+CAgentReceiveTradePacket.cpp
+CAgentSendTradePacket.cpp
+CAgentReceiveBankPacket.cpp
+CAgentSendBankPacket.cpp
+CAgentReceiveItemPacket.cpp
+CAgentSendItemPacket.cpp
+CAgentReceiveEventPacket.cpp
+CAgentSendEventPacket.cpp
+CAgentReceiveCommunityPacket.cpp
+CAgentSendCommunityPacket.cpp
+CAgentReceiveGuildPacket.cpp
+CAgentSendGuildPacket.cpp
+CAgentReceiveCartPacket.cpp
+CAgentSendCartPacket.cpp
+CAgentReceivePitchmanShop.cpp
+CAgentSendPichmanShopPacket.cpp
+CAgentReceiveGamePacket.cpp
+CAgentReceivePacket.cpp
+CAgentReceivePetPacket.cpp
+CAgentReceiveSkillPacket.cpp
+CAgentSendPacket.cpp
+receiveTrapPacket.cpp
+cAGENT.cpp
+cPACKET_QUE.cpp
+mac.cpp
+CLoadTextCode.cpp
+commonDefine.cpp
+movie_anm_player.cpp
+movie.cpp
+movie_event.cpp
+movie_frame.cpp
+movie_frame_operate.cpp
+movie_io.cpp
+screen_filter.cpp
+CClientGameType.cpp
+Linking...
+LIBCMTD.lib(crt0init.obj) : warning LNK4098: defaultlib "libcmt.lib" conflicts with use of other libs; use /NODEFAULTLIB:library
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10.tmp" with contents
+[
+/nologo /o"Debug/Red Stone.bsc" 
+".\Debug\version.sbr"
+".\Debug\BattleLog.sbr"
+".\Debug\CCompress.sbr"
+".\Debug\CDebugCode.sbr"
+".\Debug\CImageData.sbr"
+".\Debug\CLog.sbr"
+".\Debug\CMain.sbr"
+".\Debug\CMap.sbr"
+".\Debug\CMessage.sbr"
+".\Debug\CObject.sbr"
+".\Debug\cPetDefine.sbr"
+".\Debug\CSound.sbr"
+".\Debug\CTile.sbr"
+".\Debug\devCode.sbr"
+".\Debug\gg.sbr"
+".\Debug\mainForChina.sbr"
+".\Debug\minimap.sbr"
+".\Debug\Red Stone.sbr"
+".\Debug\screen_focus.sbr"
+".\Debug\TDLanguage.sbr"
+".\Debug\tdspring_motion.sbr"
+".\Debug\TDUtil.sbr"
+".\Debug\tool.sbr"
+".\Debug\cGAME_SELECT_AVATAR.sbr"
+".\Debug\cGAME_CREATE_AVATAR.sbr"
+".\Debug\cGAME_CREDIT.sbr"
+".\Debug\cGAME_OPTION.sbr"
+".\Debug\cGAME_LOGO.sbr"
+".\Debug\cGAME_OPENING.sbr"
+".\Debug\cGAME_ENDDING.sbr"
+".\Debug\cGAME_CONNECT_GAME_SERVER.sbr"
+".\Debug\cGAME_TITLE.sbr"
+".\Debug\titleScreenForMultiLoginServer.sbr"
+".\Debug\titleScreenWorldList.sbr"
+".\Debug\cGAME_CLOSE.sbr"
+".\Debug\cGAME_INIT.sbr"
+".\Debug\CGame.sbr"
+".\Debug\CGameInfo.sbr"
+".\Debug\CGameInterface.sbr"
+".\Debug\CGameUtil.sbr"
+".\Debug\aidAttackSkill.sbr"
+".\Debug\ast_chain_lightning.sbr"
+".\Debug\ast_fire_wall.sbr"
+".\Debug\ast_giga_lightning.sbr"
+".\Debug\ast_one_bite.sbr"
+".\Debug\astArcMissile.sbr"
+".\Debug\astBigBullet.sbr"
+".\Debug\astBouncingMissile.sbr"
+".\Debug\astContinuousBit.sbr"
+".\Debug\astContinuousHitOfDoppelganger.sbr"
+".\Debug\astDoubleTarget.sbr"
+".\Debug\astLightningWinder.sbr"
+".\Debug\astMultiMissile.sbr"
+".\Debug\astRollingLog.sbr"
+".\Debug\astWideMissile.sbr"
+".\Debug\CSkillAid.sbr"
+".\Debug\CSkillAlteringHitter.sbr"
+".\Debug\CSkillAwesomeFortress.sbr"
+".\Debug\CSkillBiteHanging.sbr"
+".\Debug\CSkillBitGlider.sbr"
+".\Debug\CSkillBoomerang.sbr"
+".\Debug\CSkillBouncingLinear.sbr"
+".\Debug\CSkillBunshine.sbr"
+".\Debug\CSkillCharge.sbr"
+".\Debug\CSkillContinuousAttack.sbr"
+".\Debug\CSkillContinuousShoot.sbr"
+".\Debug\CSkillContinuousWhirlwind.sbr"
+".\Debug\CSkillDropOnHead.sbr"
+".\Debug\CSkillExplosionDefendOnImage.sbr"
+".\Debug\CSkillExplosionMissile.sbr"
+".\Debug\CSkillFireBall.sbr"
+".\Debug\CSkillIcyStalagmite.sbr"
+".\Debug\CSkillImpact.sbr"
+".\Debug\CSkillIntervalShooter.sbr"
+".\Debug\CSkillJump.sbr"
+".\Debug\CSkillJumpAttack.sbr"
+".\Debug\CSkillLandMarker.sbr"
+".\Debug\CSkillLaser.sbr"
+".\Debug\CSkillLinerChainExplosion.sbr"
+".\Debug\CSkillMachineMissile.sbr"
+".\Debug\CSkillMirrorTower.sbr"
+".\Debug\CSkillMissile.sbr"
+".\Debug\CSkillMotion.sbr"
+".\Debug\CSkillPiercingMissile.sbr"
+".\Debug\CSkillRadialArc.sbr"
+".\Debug\CSkillRush.sbr"
+".\Debug\CSkillScimitarCutting.sbr"
+".\Debug\CSkillSpecialMissile.sbr"
+".\Debug\CSkillSpreadArrow.sbr"
+".\Debug\CSkillSurprisingRaid.sbr"
+".\Debug\CSkillTailChaser.sbr"
+".\Debug\CSkillTeleport.sbr"
+".\Debug\CSkillTornado.sbr"
+".\Debug\CSkillWaterFall.sbr"
+".\Debug\CSkillWhirlthrusting.sbr"
+".\Debug\CSkillWhirlwind.sbr"
+".\Debug\gasTypeSkill.sbr"
+".\Debug\abilityToolTip.sbr"
+".\Debug\CAbility.sbr"
+".\Debug\CAbilityInfo.sbr"
+".\Debug\CActiveSkill.sbr"
+".\Debug\CGuardianPost.sbr"
+".\Debug\CSkill.sbr"
+".\Debug\CSkillInit.sbr"
+".\Debug\book_gpw.sbr"
+".\Debug\book_MonsterDictionary.sbr"
+".\Debug\CWorldMap.sbr"
+".\Debug\worldMapFieldInfo.sbr"
+".\Debug\CDebugWindow.sbr"
+".\Debug\main_quest_event.sbr"
+".\Debug\main_quest_event_draw.sbr"
+".\Debug\main_quest_event_update.sbr"
+".\Debug\helpScreen.sbr"
+".\Debug\CPartyWindow.sbr"
+".\Debug\partyListWindow.sbr"
+".\Debug\requestJoinPartyUserListWindow.sbr"
+".\Debug\CGuildBattleScheduler.sbr"
+".\Debug\CGuildMarkComposer.sbr"
+".\Debug\CGuildWindow.sbr"
+".\Debug\guild_feed_pet_window.sbr"
+".\Debug\guild_hall_list.sbr"
+".\Debug\guild_honor_point_list.sbr"
+".\Debug\guild_inventory.sbr"
+".\Debug\guild_related_place_list.sbr"
+".\Debug\dialog_box.sbr"
+".\Debug\CFriendWindow.sbr"
+".\Debug\CMakeGuildWindow.sbr"
+".\Debug\CPetWindow.sbr"
+".\Debug\CQuestWindow.sbr"
+".\Debug\CSelectVillageWindow.sbr"
+".\Debug\CStatusWindow.sbr"
+".\Debug\CSystemWindow.sbr"
+".\Debug\putBanner.sbr"
+".\Debug\CGamePlayChat.sbr"
+".\Debug\CGamePlayNotice.sbr"
+".\Debug\CGamePlaySystemMessage.sbr"
+".\Debug\bottomless_box_gpw.sbr"
+".\Debug\carrotShop.sbr"
+".\Debug\CBankWindow.sbr"
+".\Debug\CCartWindow.sbr"
+".\Debug\cCopyOrCutPrefixWnd.sbr"
+".\Debug\CInventoryWindow.sbr"
+".\Debug\CPitchmanShopWindow.sbr"
+".\Debug\CRepairItemWindow.sbr"
+".\Debug\CShopWindow.sbr"
+".\Debug\CTradeWindow.sbr"
+".\Debug\CUpgradeShop.sbr"
+".\Debug\judgeToItemWnd.sbr"
+".\Debug\mergeItemWnd.sbr"
+".\Debug\removePrefixWnd.sbr"
+".\Debug\selectItemInPack.sbr"
+".\Debug\miniPetWindow.sbr"
+".\Debug\CSkillWindow.sbr"
+".\Debug\easySkillTree.sbr"
+".\Debug\commonUI.sbr"
+".\Debug\duel_ranking_ui.sbr"
+".\Debug\listWindow.sbr"
+".\Debug\CGameBottomInterface.sbr"
+".\Debug\CGamePlayInterface.sbr"
+".\Debug\CGamePlayMinimap.sbr"
+".\Debug\FogMap.sbr"
+".\Debug\CQuest.sbr"
+".\Debug\mainQuest.sbr"
+".\Debug\CFieldItem.sbr"
+".\Debug\CItem.sbr"
+".\Debug\CItemEffect.sbr"
+".\Debug\CItemPrefix.sbr"
+".\Debug\itemDefine.sbr"
+".\Debug\itemSet.sbr"
+".\Debug\pieceItem.sbr"
+".\Debug\questItem.sbr"
+".\Debug\CActor.sbr"
+".\Debug\CActorAction.sbr"
+".\Debug\CActorAfterImage.sbr"
+".\Debug\CActorAnmInfo.sbr"
+".\Debug\CActorEffect.sbr"
+".\Debug\CActorEvent.sbr"
+".\Debug\CActorHit.sbr"
+".\Debug\CActorInfo.sbr"
+".\Debug\CActorManager.sbr"
+".\Debug\CActorMove.sbr"
+".\Debug\CActorOperatePacket.sbr"
+".\Debug\CActorPut.sbr"
+".\Debug\CActorSkill.sbr"
+".\Debug\CActorStatus.sbr"
+".\Debug\CActorWrongStatus.sbr"
+".\Debug\CHero.sbr"
+".\Debug\CHeroBattle.sbr"
+".\Debug\CHeroGuildSkill.sbr"
+".\Debug\CHeroInfo.sbr"
+".\Debug\CHeroInterface.sbr"
+".\Debug\CHeroItem.sbr"
+".\Debug\CHeroItemEffect.sbr"
+".\Debug\CHeroMove.sbr"
+".\Debug\CHeroPet.sbr"
+".\Debug\CHeroQuest.sbr"
+".\Debug\CHeroSkill.sbr"
+".\Debug\CHeroSkillExtraEffect.sbr"
+".\Debug\CHeroStatus.sbr"
+".\Debug\CHeroTitle.sbr"
+".\Debug\CHeroUseSkill.sbr"
+".\Debug\CHeroWrongStatus.sbr"
+".\Debug\hero_area.sbr"
+".\Debug\hero_old_data.sbr"
+".\Debug\hero_trap.sbr"
+".\Debug\user_custom_data.sbr"
+".\Debug\userCustomDataDefine.sbr"
+".\Debug\CGuild.sbr"
+".\Debug\CGuildMark.sbr"
+".\Debug\CGuildSkill.sbr"
+".\Debug\CGuildSkillManager.sbr"
+".\Debug\guild_common.sbr"
+".\Debug\CTitle.sbr"
+".\Debug\CTitleManager.sbr"
+".\Debug\CDialog.sbr"
+".\Debug\CEvent.sbr"
+".\Debug\cKARMA.sbr"
+".\Debug\cKARMA_VALUE.sbr"
+".\Debug\CColorEffect.sbr"
+".\Debug\CHitEffect.sbr"
+".\Debug\CShake.sbr"
+".\Debug\effectManager.sbr"
+".\Debug\firecracker.sbr"
+".\Debug\arca.sbr"
+".\Debug\banner.sbr"
+".\Debug\book.sbr"
+".\Debug\CArea.sbr"
+".\Debug\CBank.sbr"
+".\Debug\secretDungeon.sbr"
+".\Debug\CParty.sbr"
+".\Debug\partyDefine.sbr"
+".\Debug\partyList.sbr"
+".\Debug\trap.sbr"
+".\Debug\trapSkill.sbr"
+".\Debug\CShoppingCart.sbr"
+".\Debug\CPitchmanShop.sbr"
+".\Debug\carrotShopDefine.sbr"
+".\Debug\CPortal.sbr"
+".\Debug\CTrade.sbr"
+".\Debug\shop.sbr"
+".\Debug\CJob.sbr"
+".\Debug\playerJobCommon.sbr"
+".\Debug\bm_arch_devil.sbr"
+".\Debug\bm_draco_lich.sbr"
+".\Debug\bm_event.sbr"
+".\Debug\bm_sage_event.sbr"
+".\Debug\bm_tiamath.sbr"
+".\Debug\bm_water_dragon.sbr"
+".\Debug\hero_mini_pet.sbr"
+".\Debug\miniPet.sbr"
+".\Debug\duel.sbr"
+".\Debug\CGamePlay.sbr"
+".\Debug\CGamePlayDraw.sbr"
+".\Debug\CGamePlayMain.sbr"
+".\Debug\CGamePlayParty.sbr"
+".\Debug\CGamePlayUtility.sbr"
+".\Debug\gpPacket.sbr"
+".\Debug\gpWarningMessage.sbr"
+".\Debug\cPROJECT.sbr"
+".\Debug\CAgentReceiveTradePacket.sbr"
+".\Debug\CAgentSendTradePacket.sbr"
+".\Debug\CAgentReceiveBankPacket.sbr"
+".\Debug\CAgentSendBankPacket.sbr"
+".\Debug\CAgentReceiveItemPacket.sbr"
+".\Debug\CAgentSendItemPacket.sbr"
+".\Debug\CAgentReceiveEventPacket.sbr"
+".\Debug\CAgentSendEventPacket.sbr"
+".\Debug\CAgentReceiveCommunityPacket.sbr"
+".\Debug\CAgentSendCommunityPacket.sbr"
+".\Debug\CAgentReceiveGuildPacket.sbr"
+".\Debug\CAgentSendGuildPacket.sbr"
+".\Debug\CAgentReceiveCartPacket.sbr"
+".\Debug\CAgentSendCartPacket.sbr"
+".\Debug\CAgentReceivePitchmanShop.sbr"
+".\Debug\CAgentSendPichmanShopPacket.sbr"
+".\Debug\CAgentReceiveGamePacket.sbr"
+".\Debug\CAgentReceivePacket.sbr"
+".\Debug\CAgentReceivePetPacket.sbr"
+".\Debug\CAgentReceiveSkillPacket.sbr"
+".\Debug\CAgentSendPacket.sbr"
+".\Debug\receiveTrapPacket.sbr"
+".\Debug\cAGENT.sbr"
+".\Debug\cPACKET_QUE.sbr"
+".\Debug\mac.sbr"
+".\Debug\CLoadTextCode.sbr"
+".\Debug\commonDefine.sbr"
+".\Debug\movie_anm_player.sbr"
+".\Debug\movie.sbr"
+".\Debug\movie_event.sbr"
+".\Debug\movie_frame.sbr"
+".\Debug\movie_frame_operate.sbr"
+".\Debug\movie_io.sbr"
+".\Debug\screen_filter.sbr"
+".\Debug\CClientGameType.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Red Stone(Debug).exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

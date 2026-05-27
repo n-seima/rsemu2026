@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Convertor|Win32">
+      <Configuration>Convertor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forJapan|Win32">
+      <Configuration>forJapan</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/Mangchi", CVAAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <ProjectGuid>{36D924F6-54AC-4C20-BB01-30BDC9C0A55D}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Convertor|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Convertor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">
+    <OutDir>.\Mangchi___Win32_forJapan\</OutDir>
+    <IntDir>.\Mangchi___Win32_forJapan\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Convertor|Win32'">
+    <OutDir>.\Convertor\</OutDir>
+    <IntDir>.\Convertor\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_FOR_KOREA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\Mangchi.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Mangchi.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\Mangchi.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>../../../../Red Stone dev Client/Mangchi.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Mangchi___Win32_forJapan\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Mangchi___Win32_forJapan\Mangchi.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Mangchi___Win32_forJapan\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Mangchi___Win32_forJapan\</ProgramDataBaseFileName>
+      <AdditionalOptions> /l </AdditionalOptions>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Mangchi___Win32_forJapan\Mangchi.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <ResourceOutputFileName>forJapan/Mangchi.res</ResourceOutputFileName>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Mangchi___Win32_forJapan\Mangchi.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>../Red Stone dev Client/MangchiForJapan.exe</OutputFile>
+      <AdditionalDependencies>comctl32.lib;winmm.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Convertor|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../server/common;../common;../../LNK Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_ISCONVERTOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Convertor\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Convertor\Mangchi.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Convertor\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Convertor\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Convertor\Mangchi.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Convertor\Mangchi.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>../Red Stone dev Client/MangchiC.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_FOR_KOREA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\Mangchi.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Mangchi.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Mangchi.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>../../../../Red Stone dev Client/Mangchi.exe</OutputFile>
+      <AdditionalDependencies>comctl32.lib;winmm.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\common\commonDefine.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\eventDefine.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="arca.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="book.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="book_category.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="book_info.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="book_page.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="c16BITSPRITE.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="c8BITSPRITE.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cACTOR.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cAREA.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cBARMENU.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CBGPlay.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cBMP.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cBODY.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cBUILDING.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cCHARACTER.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cCompareBox.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cDECODER.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CDecodeUniqueItemData.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cDIB.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cDRAW.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cHelpWindow.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cIMAGE.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CImageData.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cITEM.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cITEM_EFFECT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cITEM_PREFIX.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cITEM_PREFIX_EFFECT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cJOB.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cKARMA.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cKARMA_ADD.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cKARMA_REACTION.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cKARMA_TEXT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cKARMA_TRIGGER.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cKARMA_WND.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cLISTCONTROL.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CLoadTextCode.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CLocalize.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMAIN.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMAP.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CMapExportText.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMAPWND.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMAP_BUILDING.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMAP_OBJECT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMemoWindow.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMESSAGE.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMW_AREA.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMW_BUILDING.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMW_CHARACTER.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMW_COPYORCUT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMW_EDIT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMW_OBJECT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cMW_TILE.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cOBJECT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="command.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="compareText.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CPattn.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CPattnCtrl.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CPattnCtrlCliff.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cPCX.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cPROJECT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cQUEST.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetCharacterEventData.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetCharacterEventTree.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetCustomItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetCustomItemList.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetDialogContainer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetDialogKarma.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetDialogList.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetDialogMonster.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSetDialogNpcData.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetDialogSelectSpeech.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetDialogSpeech.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetQuest.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetShop.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetShopItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CSetShopList.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_ABILITY.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_AREA.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_AREA_EDIT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_BASIC_ITEM.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_CHARACTER.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_FIELD_CHARACTER.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_FONT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_ITEM_PREFIX.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_JOB.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_JOB_LIST.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_MAP.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_PROJECT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_SELECT_JOB.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSET_VALUE.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CShop.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cSKILL.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cTEXT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cTGA.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CTitle.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND_AREA.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND_BUILDING.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND_CHARACTER.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND_OBJECT.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND_TILE.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cTRANS.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cVALUE.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="cWINDOW.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="exportMapInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="exportText.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="exportTool.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="foceSyncText.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="itemPackList.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\error_code.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\exceptionhandler.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\file.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\lnk_util.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\memory_pool.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\memory_pool_normal.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\memory_pool_safe.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\safeMemory.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\safeMemoryForDebug.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\Timer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="mainQuest.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="mainQuestChapterInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="makeArca.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="makeItemPiece.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="makePieceItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="makeSecretDungeon.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="makeSecretDungeonFloor.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="makeSetItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="MANGCHI.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="MinimapWindow.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="modifyText.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="partrolRoad_mw.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="patrolRoad.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="pattern.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="pieceItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="road_tool_wnd.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="secretDungeon.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="setArca.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="setBook.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="setItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="setMainQuest.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="setMakeItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="setPieceItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="setSecretDungeon.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="setSetItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="set_character_pattern.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SFC.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SoundEffect.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="svn.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="trapSkill.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="URdoBuffer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\common\CKarmaDefine.h" />
+    <ClInclude Include="..\..\common\common\commonClass.h" />
+    <ClInclude Include="..\SERVER\common\book_define.h" />
+    <ClInclude Include="arca.h" />
+    <ClInclude Include="book.h" />
+    <ClInclude Include="book_category.h" />
+    <ClInclude Include="book_info.h" />
+    <ClInclude Include="book_page.h" />
+    <ClInclude Include="cACTOR.h" />
+    <ClInclude Include="cAI.h" />
+    <ClInclude Include="cAREA.h" />
+    <ClInclude Include="cBARMENU.h" />
+    <ClInclude Include="CBGPlay.h" />
+    <ClInclude Include="cBODY.h" />
+    <ClInclude Include="cBUILDING.h" />
+    <ClInclude Include="cCHARACTER.h" />
+    <ClInclude Include="cCompareBox.h" />
+    <ClInclude Include="cDECODER.h" />
+    <ClInclude Include="CDialog.h" />
+    <ClInclude Include="cDIB.h" />
+    <ClInclude Include="cDRAW.h" />
+    <ClInclude Include="cHelpWindow.h" />
+    <ClInclude Include="cIMAGE.h" />
+    <ClInclude Include="CImageData.h" />
+    <ClInclude Include="cITEM.h" />
+    <ClInclude Include="cITEM_EFFECT.h" />
+    <ClInclude Include="cITEM_PREFIX.h" />
+    <ClInclude Include="cITEM_PREFIX_EFFECT.h" />
+    <ClInclude Include="cJOB.h" />
+    <ClInclude Include="cKARMA.h" />
+    <ClInclude Include="CKarmaKeyword.h" />
+    <ClInclude Include="cLISTCONTROL.h" />
+    <ClInclude Include="CLoadTextCode.h" />
+    <ClInclude Include="cMAIN.h" />
+    <ClInclude Include="cMAP.h" />
+    <ClInclude Include="cMAPWND.h" />
+    <ClInclude Include="cMemoWindow.h" />
+    <ClInclude Include="cMESSAGE.h" />
+    <ClInclude Include="cOBJECT.h" />
+    <ClInclude Include="command.h" />
+    <ClInclude Include="CPattn.hpp" />
+    <ClInclude Include="CPattnCtrl.hpp" />
+    <ClInclude Include="cPROJECT.h" />
+    <ClInclude Include="cQUEST.h" />
+    <ClInclude Include="cSET.h" />
+    <ClInclude Include="CSetCustomItem.h" />
+    <ClInclude Include="CSetDialog.h" />
+    <ClInclude Include="CSetDialogKarma.h" />
+    <ClInclude Include="CSetDialogList.h" />
+    <ClInclude Include="CSetDialogMonster.h" />
+    <ClInclude Include="cSetDialogNpcData.h" />
+    <ClInclude Include="CSetDialogSpeech.h" />
+    <ClInclude Include="CSetShop.h" />
+    <ClInclude Include="CShop.h" />
+    <ClInclude Include="cSKILL.h" />
+    <ClInclude Include="CSound.h" />
+    <ClInclude Include="CSoundEffect.h" />
+    <ClInclude Include="cTEXT.h" />
+    <ClInclude Include="CTitle.h" />
+    <ClInclude Include="cTOOLWND.h" />
+    <ClInclude Include="cVALUE.h" />
+    <ClInclude Include="cWINDOW.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="itemPackList.h" />
+    <ClInclude Include="LNK_Common\error_code.h" />
+    <ClInclude Include="LNK_Common\exceptionhandler.h" />
+    <ClInclude Include="LNK_Common\file.h" />
+    <ClInclude Include="LNK_Common\lnk_common.h" />
+    <ClInclude Include="LNK_Common\lnk_define.h" />
+    <ClInclude Include="LNK_Common\lnk_util.h" />
+    <ClInclude Include="LNK_Common\mem.h" />
+    <ClInclude Include="LNK_Common\memory_pool.h" />
+    <ClInclude Include="LNK_Common\safeMemory.h" />
+    <ClInclude Include="LNK_Common\safeMemoryForDebug.h" />
+    <ClInclude Include="LNK_Common\smart_pointer.h" />
+    <ClInclude Include="LNK_Common\Timer.h" />
+    <ClInclude Include="localize.h" />
+    <ClInclude Include="mainQuest.h" />
+    <ClInclude Include="mainQuestChapterInfo.h" />
+    <ClInclude Include="MinimapWindow.h" />
+    <ClInclude Include="patrolRoad.h" />
+    <ClInclude Include="pattern.h" />
+    <ClInclude Include="pieceItem.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="secretDungeon.h" />
+    <ClInclude Include="setArca.h" />
+    <ClInclude Include="setBook.h" />
+    <ClInclude Include="setItem.h" />
+    <ClInclude Include="setMainQuest.h" />
+    <ClInclude Include="setMakeItem.h" />
+    <ClInclude Include="setPieceItem.h" />
+    <ClInclude Include="setSecretDungeon.h" />
+    <ClInclude Include="setSetItem.h" />
+    <ClInclude Include="set_character_pattern.h" />
+    <ClInclude Include="SFC.h" />
+    <ClInclude Include="STDAFX.H" />
+    <ClInclude Include="svn.h" />
+    <ClInclude Include="trapSkill.h" />
+    <ClInclude Include="URdoBuffer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resource\Cursor.cur" />
+    <CustomBuild Include="Resource\cursor_c.cur" />
+    <CustomBuild Include="Resource\cursor_h.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\Mangchi.ico" />
+    <Image Include="Resource\Tool.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Mangchi.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

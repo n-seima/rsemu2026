@@ -1,0 +1,91 @@
+title
+{
+	eTE_SKILL_MASTER		,	//	레벨 수치 자체로 계산
+	"[1]의 모든 스킬 레벨 [+0]"	,
+
+	eTE_PORTER				,	//	칭호레벨*레벨 수치
+	"인벤토리 사이즈 [0]"	,
+
+	eTE_BANK_CLIENT			,	//	칭호레벨^레벨 수치
+	"은행 아이템 슬롯 수 [0]\n- 보관 수수료 [1]％"	,
+
+	eTE_FRONTIER			,	//	칭호레벨^레벨 수치
+	"파티 경험치 보너스 [+0]％"	,
+
+	eTE_CITIZEN				,	//	시민
+	"길드원 신청 자격이 생김",
+
+	eTE_CARTOGRAPHER		,
+	"깊은동굴에서도 미니맵을 볼 수 있다.",
+
+	eTE_DEALER				,
+	"노점상을 열 수 있다.\n- 동시 판매 가능 아이템 수 [0]개",
+
+	eTE_MONSTER_DISCERNER	,	//	몬스터 감별사
+	"감별 가능 레벨 [0]\n- 감별 가능 분류 [1]\n- 감별 가능 등급 [2]",
+
+	eTE_CITY_WALKER			,	//	몬스터 감별사
+	"도시 내부 이동 속도 [0]％ 증가",
+
+	eTE_CAMPING_MASTER		,
+	"휴식시 체력 회복 속도 [0]％ 상승",
+
+	eTE_DRUGGIST			,	//	
+	"물약 효과 [0]％"					,
+
+	eTE_ALCHEMY				,
+	"순수 마법 대미지 [0]％ 증가",
+
+	eTE_COURTESY			,
+	"물건 값 [0]％ 할인",
+
+	eTE_ESOTERIC			,
+	"모든 상태이상 저항 [0]％ 증가",
+
+	eTE_BERSERKER	,
+	"하루에 [1]번, [2]분간 모든 능력치 [0]％ 상승",
+
+	eTE_SURVIVAL_INSTINCTS	,
+	"HP가 [0]％ 이하 이고 HP가 [1] 이하인 상태가 되면 [2]％ 확률로 치명타를 날린다.",
+
+	eTE_TRAP_EVADE			,
+	"회피율 [0]％",
+
+	eTE_LOCK_MASTER			,
+	"열쇠 해체 레벨 +[0]",
+
+	eTE_TREASURE_HUNTER		,
+	"문, 보물 상자 공격시 공격력 [0]％ 증가",
+
+	eTE_ELEMENTAL_MASTER	,
+	"페널티 [0]％ 감소",
+
+	eTE_ADVENTURER	,
+	"페널티 [0]％ 감소",
+	
+	eTE_INCLINE_POWER	,	
+	"힘 [+0],민첩성 [+1],지식 [+2],지혜 [+3],카리스마 [+4]\n- 운 [+5],건강 [+6],HP [+7],CP [+8]",
+
+	eTE_INCLINE_MAGIC_RESISTANCE	,
+	"불 저항 [+0]％,물 저항 [+0]％,바람 저항 [+0]％\n- 대지 저항 [+0]％,빛 저항 [+0]％,어둠 저항 [+0]％",
+
+	eTE_NATURAL_ENEMY				,
+	"인간형 몬스터에 대해 명중률 [0]％ 보너스\n- 언데드 몬스터에 대해 명중률 [1]％ 보너스\n- 악마형 몬스터에 대해 명중률 [2]％ 보너스\n- 동물형 몬스터에 대해 명중률 [3]％ 보너스\n- 신수형 몬스터에 대해 명중률 [4]％ 보너스",
+
+	eTE_HERO			,	//
+	"파티 플레이 선 경험치 보정치가 [0]％로 상승\n- 카리스마, 지혜 각각 보너스 [1]％"
+
+	eTE_ANTI_HERO		,	//
+	"파티 플레이 악 경험치 독점율이 [0]％로 상승\n- 카리스마 보너스 [1]％",
+
+	eTE_DISTINGUISHER,
+	"[0]레벨 이하의 플레이어 레벨 판별 가능",
+
+	eTE_BARD	,
+	"HP/CP가 모두 회복되고 <c:LTGREEN>%d분<n>간 HP/CP가 <c:LTGREEN>%d％<n> 상승한다.",
+
+	eTE_HUNTING_BONUS	,
+	"사냥 경험치 보너스",
+
+	"__end",
+};

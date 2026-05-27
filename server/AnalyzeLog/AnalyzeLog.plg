@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AnalyzeLog - Win32 Debug FOR JAPAN--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP24.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "../common" /I "../packet" /I "../../common/common" /I "../../common/packet" /D "_FOR_JAPAN" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_RSO" /FR"AnalyzeLog___Win32_Debug_FOR_JAPAN0/" /Fp"AnalyzeLog___Win32_Debug_FOR_JAPAN0/AnalyzeLog.pch" /YX"stdafx.h" /Fo"AnalyzeLog___Win32_Debug_FOR_JAPAN0/" /Fd"AnalyzeLog___Win32_Debug_FOR_JAPAN0/" /FD /GZ /c 
+"C:\MyDev\japan_110322_0.0538_1220\server\analyzelog\cADO_AnalyzeTool.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\server\analyzelog\DownloadLog.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\server\analyzelog\CFTPclient.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP24.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP25.tmp" with contents
+[
+winmm.lib ws2_32.lib /nologo /subsystem:windows /incremental:yes /pdb:"AnalyzeLog___Win32_Debug_FOR_JAPAN0/AnalyzeLog(Debug_Japan).pdb" /debug /machine:I386 /out:"AnalyzeLog(Debug_Japan).exe" /pdbtype:sept 
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\AnalyzeLog.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\AnalyzeLogDlg.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\book.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\cADO_AnalyzeTool.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\CBmpMenu.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\CDecoder.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\cITEM.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\CItemPrefix.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\cLOG_QUE.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\CMessage.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\cPetDefine.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\DownloadLog.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\file_buffer.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\job.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\LinkedList.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\LOGLISTBOX.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\ProcessInfoDlg.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\quest.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\setItem.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\StdAfx.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\blockingsocket.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\CFTPclient.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\ftpdatatypes.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\ftpfilestate.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\ftplistparse.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\duel_filter.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\log_filtering.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\LoadLogFile.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\exportLog.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\cNUX.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\commonDefine.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\cScript.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\cSRVUTIL.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\Msjexhnd.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\SFC.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\Tracer.obj
+.\AnalyzeLog___Win32_Debug_FOR_JAPAN0\AnalyzeLog.res
+.\zdll.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP25.tmp"
+<h3>Output Window</h3>
+Compiling...
+cADO_AnalyzeTool.cpp
+c:\program files\microsoft visual studio\vc98\include\comutil.h(101) : fatal error C1001: INTERNAL COMPILER ERROR
+        (compiler file 'msc1.cpp', line 1786) 
+         Please choose the Technical Support command on the Visual C++ 
+         Help menu, or open the Technical Support help file for more information
+DownloadLog.cpp
+CFTPclient.cpp
+C:\MyDev\japan_110322_0.0538_1220\server\analyzelog\CFTPclient.cpp(328) : error C2039: 'reset' : is not a member of 'auto_ptr<class nsFTP::CRepresentation>'
+C:\MyDev\japan_110322_0.0538_1220\server\analyzelog\CFTPclient.cpp(714) : error C2039: 'reset' : is not a member of 'auto_ptr<class nsFTP::CRepresentation>'
+C:\MyDev\japan_110322_0.0538_1220\server\analyzelog\CFTPclient.cpp(1112) : error C2039: 'clear' : is not a member of 'basic_string<char,struct std::char_traits<char>,class std::allocator<char> >'
+C:\MyDev\japan_110322_0.0538_1220\server\analyzelog\CFTPclient.cpp(1234) : error C2039: 'clear' : is not a member of 'basic_string<char,struct std::char_traits<char>,class std::allocator<char> >'
+C:\MyDev\japan_110322_0.0538_1220\server\analyzelog\CFTPclient.cpp(1248) : error C2039: 'clear' : is not a member of 'basic_string<char,struct std::char_traits<char>,class std::allocator<char> >'
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+AnalyzeLog(Debug_Japan).exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

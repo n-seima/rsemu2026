@@ -1,0 +1,237 @@
+//	0 ~ 5
+You don't execute this program if you are not administrator.
+[%s] is not the connection
+[%s] is the connection to [%s] at field number [%d]
+The Result to find user
+[%s] Server's fixed check time \n It starts [%s], [%d] hour [%d] minute \n Notice : [%s]
+Do you connect to the server?
+
+//	6 ~ 10
+Do you disconnect to the server?
+Input text
+Do you send the text at all servers?
+Do you send the text at [%s(%s)] server?
+The server is not connecting.
+
+//	11 ~ 15
+Do you close LOG SERVER right now?
+You don't change anything, because your level is low.
+Do you change the PASSWORD?
+This data have a error.
+[%s]'s password is [%s]
+
+//	16 ~ 20
+I didn't found the password of [%s]
+You have to input last password.
+You have to input new password.
+Do you wanna change the level?
+You can select the level between 1 ~ 5
+
+//	21 ~ 25
+Complete!! Please reload the user data.
+FAIL!!
+You can select the WEEK between 0(Mon) ~ 6(Sun)
+You can select the HOUR between 0      ~ 23
+You can select the MIN  between 0      ~ 59
+
+//	26 ~ 30
+You have to input the NOTICE.
+SERVER [%s]: WEEK[%s] HOUR[%d] MIN[%d] : MESSAGE[%s] \n Do you set the maintenance?
+Input avatar name
+Currently It was set %d operater.
+Input user id
+
+//	31 ~ 35
+Write under 60 characters why you block the user.
+It's too long message.
+Please, set the date after today.
+The avatar return to normal. [%d] person
+The avatar was block.
+
+//	36 ~ 40
+[%s] ID BLOCK : [%s] [%s] [%s]
+Select the SERVER.
+It's not connect any server.
+Success !! Account Recover
+It was recover the ID[%s]
+
+//	41 ~ 45
+It was recover the NewID [%s]->[%s]
+The Names was already register.
+It was not find at Backup DataBase.
+This work succeeded.
+Delete Account
+
+//	46 ~ 50
+Do you wanna delete the AVATAR? Server [%s(IP:%s)] Account [%s] Avatar Name [%s]
+SUCCESS AVATAR DELETE !! Server [%s(IP:%s)] Account [%s] Avatar count [%d] Name [%s]
+Do you wanna change the AVATAR NAME? Server [%s(IP:%s)] Account [%s] Avatar Name [%s]->[%s]
+It's not apply when if the user is using the account now
+Currently DB's connection is irregular. Please Check the DB.
+
+//	51 ~ 55
+The NEW NAME is exist.
+[WORKER : %s] Change the avatar name : Server [%s] Account [%d] OLD NAME [%s] -> NEW NAME [%s]
+The work is complete !!
+[WORKER : %s] ERROR : Change Name : Sync Error Account [%s] OLD NAME [%s] -> NEW NAME [%s]
+ERROR : Sync Name. Please Contact to DB Manager
+
+//	56 ~ 60
+FAIL UPDATE. OLD NAME is incorrect.
+ERROR : Stored Procedure. Please Contact to DB Manager.
+[WORKER : %s] Recover Avatar : Server [%s], Account [%s] NAME [%s]
+The Avatar was recover with originally name
+[WORKER : %s] Recover Avatar : Server [%s], Account [%s] OLD NAME [%s]-> NEW NAME[%s]
+
+//	61 ~ 65
+The Avatar was recoverd with new name
+The names is using by another
+The Names was recoverd with this account.
+It is impossible because this account has 4 avatars
+[WORKER : %s]FAIL RECOVER AVATAR : The Avatar is not exist at Backup Table. Server [%s] Account [%s] Old Name [%s]-> New Name[%s]
+
+//	66 ~ 70
+The Avatar is not exist at Backup Table.
+ERROR- Please Contact to DB Manager.
+Complete Recover Avatar!!
+[WORKER : %s] Complete Recover Avatar!!: Server [%s] Account [%s] Old Name [%s] -> New Name[%s]
+You have to try \YNC INDEX\ 
+
+//	71 ~ 75
+[WORKER : %s] Complete Recover Avatar : Server[%s] Account [%s] Old Name [%s] -> New Name [%s] But.. You have to try \YNC INDEX\ %d
+This account is not block. Account [%s]
+This account was blocking. Account [%s] Why : [%s]
+This account Index of this server was updated.!!
+This account is not exist. [%s]
+
+//	76 ~ 80
+[ACCOUNT of Backup Table] This account was connected at [%d]
+Start Date [%d] / Last Connect Date[%d] / Server [%s], Block Info : date [%d] why [%s]
+You have to get a guild data.
+Do you wanna send this message at SERVER [%s(%s)]
+SERVER [%s(%s)] : Do you demand the infomation of [%s(%d)] Guild?
+
+//	81 ~ 85
+[%s] SERVER's Log is writing since [%d]
+SERVER [%s] : Checking the log (%dm %dd,%dy)
+SERVER [%s] : Downloading the log (%dm %dd,%dy)
+SERVER [%s] : It doesn't download the day's log.(%dm %dd,%dy)
+SERVER [%s] : It doesn't find the day's log or can not connect the server.(%dm %dd,%dy)
+
+//	86 ~ 90
+SERVER [%s] : Arrang the log(%dm %dd,%dy)
+SERVER [%s] : It doesn't download(%dm %dd,%dy)
+SERVER [%s] : It is retring download(%dm %dd,%dy)
+<%dm %dd,%dy> TODAY'S RESULT \n\r ---------------------------------------------\n\r
+%s\n\r SERVER [%-15s] \n\r                           Max = [%05d]p(s), Avr = [%05d]p(s)\n\r
+
+//	91 ~ 95
+%s\n\r ---------------------------------------------\n\r Max Concurrent Connection : [%05d]p(s) [%02d]Hour
+[%02d Hour]  :  %05d person(s)
+This server is not regist.
+It can't fine game data folder.
+It can't fine [defaultjob.dat] file.
+
+//	96 ~ 100
+The data of [defaultJob.dat]file is different. You have to update the game.
+It can't fine [skill.dat] file.
+some data is modify. Do you process?
+It can't fine any avatar.
+ERROR : Loading Avatar Data!!
+
+//	101 ~ 105
+SKILL ERROR %d: This skill is reset.
+SKILL ERROR %d: This skill is reset.
+SKILL ERROR %d: This skill is reset. Level %d
+It's save with [%s].
+Loading Avatar Data...
+
+//	106 ~ 110
+You have to load any avatar.
+SAVE : [ADMINISTRATOR:%s] ID[%s] AVATAR NAME [%s]!!
+[%s(%s)]'s skill data is initial.
+[%s(%s)]'s Ability data is initial.
+%s\\Item List
+
+//	111 ~ 115
+Item Search - %s[%s].txt
+Item List - %s[%s].txt
+¡ß Bank Info
+  Current Golds : %d
+  Current Items
+
+//	116 ~ 120
+    ¢¹ Item Count : %d
+¡ß Avatar : %s
+   equiped Item
+    ¢¹ Equipment count : %d
+    ¢¹ Item count : %d
+
+//	121~125
+In [%s] Server,
+'s skill point is reset.
+[%s(%s)]'s level reset to level [%d].
+current skill point %d\ncorrect skill point %d\n\ncurrent state point %d\ncorrect state point %d
+find incorrect title info in follow character. please save character data before complete.\n\n'%s'
+
+//	126~130
+not guild member
+Rookie
+common member
+Congressman
+Sub guild master
+
+//	131~135
+Elder Member
+Guuld Master
+find incorrect bank item data. please save character data before complete.
+find incorrect item data in follow character. please save character data before complete.\n\n'%s'
+find incorrect cp value in follow character. please save character data before complete.\n\n'%s'
+
+//	136~140
+Incorrect Item has been finded and modified. Do save !!\n\n'%s'
+[%s] Cann't find empty slot!!In account [%s], recover Item %d unit(s) ,Gold [%d]
+Cann't find empty slot!!\n\n  Recover Item %d unit(s),Gold [%d]
+[%d:%d] This item already exist.
+In account [%s] [%s], Recover Item %dunit(s),Gold [%d]
+
+//	141~145
+In account [%s] [%s], In [%d]unit(s), Deleted Item [%d]unit(s), Gold[%d].
+That's it!!\n\nIn the List of %d unit(s), Deleted Item %d unit(s), Gold [%d].\n\n The List saved in '%s' file.
+That's it!!\n\n In Account [%s], Recovered Item %d unit(s), Gold [%d].
+In the result with [%d:%d], In the Bank, it was finded as below. Do you wanna remove the Item?\n\n'%s'
+Not founded the Item [%d:%d].
+
+//	146~150
+In the result with [%d:%d], In the Bank, it was finded as below. Do you wanna remove the Item?\n\n'%s'
+Founded incorrect data(s). %d Unit(s) \n\n Don't you care?
+This work permit %d level or more level operator
+extend %d item's term of validity
+You don't change anything, because your level is low.
+
+//	151~155
+extend all item's term of validity in server [%s]
+The time limit that all user have limited items [%s] will be renew. Is it right?
+Select the file has list of tester's character name.
+Caution!! You have to use this fuction when the service is maintenance.\n If not, it occurs trouble.
+Step 2. Input Guild Name and New Guild Master Name.
+
+//	156~160
+Fail!! Restart this dialog.
+It's working. Wait a minute.
+Step 1. Select the server.
+It was set with operator.
+It was set with normal user.
+
+//	161~165
+Operator Count : [%d]
+Obitian
+Dash Blade
+Astro Bow
+Cristal Water
+
+//	166~170
+Shield Craft
+Elemental Post
+Ether Shell
+Hollow Knight

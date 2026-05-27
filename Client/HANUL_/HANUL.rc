@@ -1,0 +1,341 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+TB_BITMAP               BITMAP  DISCARDABLE     "resource\\tool.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+SET_ANM DIALOG DISCARDABLE  0, 0, 267, 361
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "에니메이션 설정"
+FONT 9, "돋움"
+BEGIN
+    DEFPUSHBUTTON   "설정 완료",IDOK,169,337,43,18
+    PUSHBUTTON      "설정 취소",IDCANCEL,216,337,43,18
+    PUSHBUTTON      "불러오기",IDB_LOAD,6,337,50,18
+    PUSHBUTTON      "저장하기",IDB_SAVE,57,337,50,18
+    GROUPBOX        "옵션",IDC_STATIC,161,12,88,66
+    CONTROL         "그림자 저장",IDR_SAVESHADOW,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,171,28,53,10
+    CONTROL         "외곽선 저장",IDR_SAVEOUTLINE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,171,44,53,10
+    CONTROL         "서쪽 방향 플립",IDR_FLIP,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,171,59,62,10
+    LTEXT           "설정 이름          ",IDC_STATIC,16,20,54,8
+    EDITTEXT        IDE_ANINAME,73,17,84,14,ES_AUTOHSCROLL
+    LTEXT           "방향성",IDC_STATIC,16,52,55,8
+    COMBOBOX        IDC_ANI_KIND,73,49,84,126,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "List1",IDL_ANM_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,12,120,241,189
+    GROUPBOX        " 에니메이션 세부 설정 ",IDC_STATIC,7,107,251,226
+    LTEXT           "최대 에니메이션 ",IDC_STATIC,16,68,54,8
+    EDITTEXT        IDC_MAX_ANI,73,65,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "적용",IDB_APPLY,99,64,26,16,NOT WS_TABSTOP
+    LTEXT           "* 에니메이션 수를 수정하시려면  적용 버튼을 눌러 주셔야 합니다.",
+                    IDC_STATIC,16,87,236,12
+    GROUPBOX        " 기본 설정 ",IDC_STATIC,7,3,251,99
+    LTEXT           "에니메이션 분류",IDC_STATIC,16,37,55,8
+    COMBOBOX        IDC_ANI_DIRECT,73,33,84,126,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "끼워넣기",IDC_INSERT,122,312,43,17,NOT WS_TABSTOP
+    PUSHBUTTON      "추가",IDC_ADD,166,312,43,17,NOT WS_TABSTOP
+    PUSHBUTTON      "제거",IDC_REMOVE,210,312,43,17,NOT WS_TABSTOP
+END
+
+QUICK_OPEN DIALOG DISCARDABLE  36, 24, 326, 98
+STYLE WS_CHILD | WS_CLIPSIBLINGS
+FONT 9, "돋움체"
+BEGIN
+    DEFPUSHBUTTON   "모두 부르기",IDB_OPEN_ALL,262,0,58,18,NOT WS_TABSTOP
+    CONTROL         "하위 폴더 포함",IDC_INCLUDE_SUB,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | BS_FLAT,181,3,70,13
+    CONTROL         "한 화일에서 여러개의 이미지 읽음",IDC_GET_MULTI,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,5,5,144,10
+    CONTROL         "Progress1",IDP_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,8,65,307,15
+    LTEXT           "진행 작업 없음.",IDC_INFO,10,39,303,23
+    GROUPBOX        "진행 작업 없음",IDC_STATUS,3,24,317,66
+END
+
+SET_DETAIL_ANM DIALOG DISCARDABLE  0, 0, 191, 174
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "세부 설정"
+FONT 9, "돋움"
+BEGIN
+    LTEXT           "이 름 ",IDC_STATIC,9,10,21,11
+    EDITTEXT        IDE_ANINAME,32,6,71,14,ES_AUTOHSCROLL
+    LTEXT           "최대 프레임 ",IDC_STATIC,115,10,41,11
+    EDITTEXT        IDE_MAX_FRAME,157,6,26,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        " 방향 ",IDC_STATIC,8,29,175,62
+    CONTROL         "방향 없음",IDR_SINGLE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,15,43,41,13
+    CONTROL         "좌우 2 방향",IDR_LEFTRIGHT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,69,43,48,13
+    CONTROL         "상하 2 방향",IDR_UPDOWN,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,126,43,48,13
+    CONTROL         "4 방향",IDR_4WAY,"Button",BS_AUTORADIOBUTTON | BS_FLAT,
+                    15,57,30,13
+    CONTROL         "8 방향",IDR_8WAY,"Button",BS_AUTORADIOBUTTON | BS_FLAT,
+                    69,57,36,13
+    CONTROL         "16 방향",IDR_16WAY,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,126,57,36,13
+    DEFPUSHBUTTON   "설정",IDOK,82,152,46,18,NOT WS_TABSTOP
+    PUSHBUTTON      "취소",IDCANCEL,134,152,46,18,NOT WS_TABSTOP
+    CONTROL         "프레임 보정(스프라이트 위치와는 별도로 프레임 마다 위치를 기억한다.)",
+                    IDC_REFIT_FRAME,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    BS_FLAT,12,97,172,23
+    CONTROL         "릴리즈 포인트(마법이나 발사하는 무기 사용시 시작되는 위치 기억)",
+                    IDC_RELEASE_POINT,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | BS_FLAT,12,122,174,18
+    CONTROL         "32 방향",IDR_32WAY,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,15,72,36,13
+    CONTROL         "64 방향",IDR_64WAY,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,69,72,36,13
+END
+
+SET_TOOL DIALOG DISCARDABLE  0, 0, 262, 201
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "에디터 환경 설정"
+FONT 9, "돋움"
+BEGIN
+    GROUPBOX        "출력 옵션",IDC_STATIC,8,8,155,78
+    CONTROL         "그림자 보이기",IDC_SHADOW,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,16,21,59,10
+    CONTROL         "외곽선 보이기",IDC_OUTLINE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,89,21,53,10
+    CONTROL         "배경화면 사용(현 폴더에 ""back.bmp"")",IDC_WALLPAPER,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT,16,37,134,10
+    LTEXT           "워크 윈도우",IDC_STATIC,37,113,38,8
+    LTEXT           "이미지 윈도우",IDC_STATIC,37,138,44,8
+    LTEXT           "프레임 윈도우",IDC_STATIC,110,113,44,8
+    CONTROL         " ",IDC_WORKCOLOR,"Button",BS_OWNERDRAW,16,110,18,20
+    CONTROL         " ",IDC_IMGCOLOR,"Button",BS_OWNERDRAW,16,135,18,20
+    CONTROL         "",IDC_FRMCOLOR,"Button",BS_OWNERDRAW,89,110,18,20
+    GROUPBOX        "색상 설정",IDC_STATIC,8,93,155,71
+    LTEXT           "외곽선 컬러",IDC_STATIC,110,138,38,8
+    CONTROL         "",IDC_OUTCOLOR,"Button",BS_OWNERDRAW,89,135,18,20
+    DEFPUSHBUTTON   "설정 완료",IDOK,162,172,43,18
+    PUSHBUTTON      "설정 취소",IDCANCEL,210,172,43,18
+    CONTROL         "이전 이미지",IDC_PRE_IMAGE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,16,53,53,10
+    CONTROL         "스프라이트 정보",IDC_SPRITE_INFO,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,89,53,66,10
+    CONTROL         "충돌박스 그리기",IDC_DRAW_CRASH,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,16,68,66,10
+    CONTROL         "출력 옵션 바 메뉴",IDC_OPTION_BAR,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,8,176,66,10
+    CONTROL         "이미지 효과 바 메뉴",IDC_EFFECT_BAR,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,78,176,78,10
+    GROUPBOX        "좌표정렬 십자선",IDC_STATIC,169,8,84,57
+    CONTROL         "앞으로",IDR_FRONT,"Button",BS_AUTORADIOBUTTON | BS_FLAT,
+                    206,20,37,10
+    CONTROL         "뒤로",IDR_BACK,"Button",BS_AUTORADIOBUTTON | BS_FLAT,
+                    206,30,30,10
+    CONTROL         "반투명",IDR_HALF,"Button",BS_AUTORADIOBUTTON | BS_FLAT,
+                    206,41,37,10
+    CONTROL         "없앰",IDR_VALID,"Button",BS_AUTORADIOBUTTON | BS_FLAT,
+                    206,52,30,10
+    CONTROL         "",IDC_CROSSCOLOR,"Button",BS_OWNERDRAW,177,30,18,20
+    GROUPBOX        "윈도우 안에 이미지 수",IDC_STATIC,169,71,84,93
+    GROUPBOX        "이미지 윈도우",IDC_STATIC,174,81,72,46
+    LTEXT           "가로 :",IDC_STATIC,180,96,19,8
+    LTEXT           "세로 :",IDC_STATIC,180,111,19,8
+    GROUPBOX        "프레임 윈도우",IDC_STATIC,174,132,72,28
+    LTEXT           "가로 :",IDC_STATIC,180,144,19,8
+    EDITTEXT        IDE_MINIMGCOL,201,93,40,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDE_MINIMGROW,201,109,40,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDE_MINFRMCOL,201,141,40,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_TABSTOP
+    CONTROL         "이미지 인덱스",IDC_PUT_INDEX,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,89,68,59,10
+END
+
+GET_FILES DIALOG DISCARDABLE  0, 0, 201, 86
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+CAPTION "이미지 변환"
+FONT 10, "돋움"
+BEGIN
+    CONTROL         "Progress1",IDP_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,15,55,167,14
+    LTEXT           "32개의 화일중 4개의 화일을 변환 했습니다.",IDC_STATIC,
+                    16,40,144,8
+    GROUPBOX        "화일 변환",IDC_STATIC,6,26,186,52
+    LTEXT           "Static",IDC_STATIC,7,8,19,8
+END
+
+QUICK_OPEN2 DIALOG DISCARDABLE  36, 24, 326, 75
+STYLE WS_CHILD | WS_CLIPSIBLINGS
+FONT 9, "돋움체"
+BEGIN
+    CONTROL         "Progress1",IDP_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,8,46,307,15
+    LTEXT           "진행 작업 없음.",IDC_INFO,10,20,303,23
+    GROUPBOX        "진행 작업 없음",IDC_STATUS,3,4,317,66
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+HANUL MENU DISCARDABLE 
+BEGIN
+    POPUP "화일"
+    BEGIN
+        MENUITEM "새로운 화일",                 IDM_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "불러오기",                    IDM_LOAD
+        MENUITEM "저장하기",                    IDM_SAVE
+        MENUITEM "다른이름으로 저장",           IDM_SAVEAS
+        MENUITEM "코드 스프라이트로 저장",      IDM_SAVE_CODE_SPRITE
+        MENUITEM SEPARATOR
+        POPUP "덧붙이는 데이터"
+        BEGIN
+            MENUITEM "캐릭터 데이터",               IDM_LOADCHARACTER
+            MENUITEM "마법 효과 데이터",            IDM_LOADEFFECT
+            MENUITEM "무기 데이터",                 IDM_LOADWEAPON
+            MENUITEM "무기 효과 데이터",            IDM_LOADWEAPONEFFECT
+            MENUITEM "방패 데이터",                 IDM_LOADSHIELD
+            MENUITEM "방패효과 데이터",             IDM_LOADSHIELDEFFECT
+        END
+        MENUITEM "Import 에니메이션",           IDM_IMPORT
+        MENUITEM "Import 에니메이션(for 앉기)", IDM_IMPORT2
+        MENUITEM SEPARATOR
+        MENUITEM "이미지 불러오기(pcx,bmp,tga)", IDM_LOADBMP
+        MENUITEM "그림자 불러오기(pcx,bmp,tga)", IDM_LOADSHADOW
+        MENUITEM "그림자 이미지 같이 불러오기", IDM_LOAD_SET
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기",                      IDM_EXIT
+    END
+    POPUP "직업"
+    BEGIN
+        MENUITEM "장비 레이어 정보 불러오기",   IDM_LOAD_PLAYER_PARTS_LAYER
+        MENUITEM "장비 레이어 정보 저장하기",   IDM_SAVE_PLAYER_PARTS_LAYER
+        MENUITEM SEPARATOR
+        MENUITEM "플레이어 장비 아님",          ID_JOB_NONE, CHECKED
+        MENUITEM "견습 기사",                   ID_JOB_KNIGHT
+        MENUITEM "전사",                        ID_JOB_WARRIOR
+        MENUITEM "마법사",                      ID_JOB_WIZARD
+        MENUITEM "늑대 인간",                   ID_JOB_WEREWOLF
+        MENUITEM "사제",                        ID_JOB_PRIEST
+        MENUITEM "타락 천사",                   ID_JOB_FALLEN_ANGEL
+        MENUITEM "마법 궁수",                   ID_JOB_MAGIC_ARCHER
+        MENUITEM "마법 창병",                   ID_JOB_MAGIC_LANCER
+        MENUITEM "도둑",                        ID_JOB_ROGUE
+        MENUITEM "무도가",                      ID_JOB_FIGHTER, GRAYED
+        MENUITEM "공주",                        ID_JOB_PRINCESS
+        MENUITEM "마법 소녀",                   ID_JOB_MAGICAL_GIRL
+        MENUITEM "조련사",                      ID_JOB_TAMER
+        MENUITEM "소환사",                      ID_JOB_SUMMONER, GRAYED
+        MENUITEM "강신술사",                    ID_JOB_NECROMANCER
+        MENUITEM "악마",                        ID_JOB_DEVIL
+    END
+    POPUP "플레이어 파트 이미지 로딩"
+    BEGIN
+        MENUITEM "이미지",                      IDM_LOAD_PARTS_IMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "그림자",                      IDM_LOAD_SHADOW
+    END
+    POPUP "툴"
+    BEGIN
+        MENUITEM "화일 컨버트",                 IDM_RESAVE
+        MENUITEM "모든 스프라이트 중심 리셋",   IDM_RESET_POS
+        MENUITEM "Export",                      IDC_EXPORT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+CURSOR_VERT_SPLIT       CURSOR  DISCARDABLE     "Resource\\cursor1.cur"
+CURSOR_HORZ_SPLIT       CURSOR  DISCARDABLE     "Resource\\cursor2.cur"
+CURSOR_NULL             CURSOR  DISCARDABLE     "resource\\null.cur"
+CURSOR_HAND             CURSOR  DISCARDABLE     "handcursor.cur"
+CURSOR_SPOID            CURSOR  DISCARDABLE     "spoidCursor.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+HANUL                   ICON    DISCARDABLE     "Medical.ico"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

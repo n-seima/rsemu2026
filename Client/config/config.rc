@@ -1,0 +1,303 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CONFIG_C DIALOGEX 0, 0, 303, 179
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RGÏµÍ³ÉèÖÃ"
+FONT 10, "ËÎÌå", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "È·¶¨",IDOK,100,158,50,17
+    PUSHBUTTON      "½áÊø",IDCANCEL,152,158,50,17
+    GROUPBOX        "ÏÔ¿¨ÉèÖÃ",IDC_STATIC,6,7,290,69
+    GROUPBOX        "Ñ¡Ïî",IDC_STATIC,6,80,290,76
+    CONTROL         "1. Ê¹ÓÃDirect Draw(ÍÆ¼ö)",IDC_USE_DIRECT_DRAW,"Button",
+                    BS_AUTORADIOBUTTON | BS_MULTILINE | BS_FLAT,12,21,108,9
+    CONTROL         "2. Ê¹ÓÃDirect Draw(¸ß¼¶)",IDC_USE_AGP,"Button",
+                    BS_AUTORADIOBUTTON | BS_MULTILINE | BS_FLAT,12,32,112,10
+    CONTROL         "3. Ê¹ÓÃDIB",IDC_USE_DIB,"Button",BS_AUTORADIOBUTTON | 
+                    BS_MULTILINE | BS_FLAT,12,43,92,10
+    LTEXT           "¡ô µ±ÓÎÏ·»­ÃæºÜ²»Á÷³©Ê±£¬ÇëÉèÖÃÎªÑ¡Ïî3£¬µ«½¨ÒéÄú¸üÐÂÏÔ¿¨Çý¶¯¡£",
+                    IDC_STATIC,126,20,162,31
+    CONTROL         "¿ªÆôÒôÀÖ",IDC_MUSIC_ON,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,12,94,46,10
+    CONTROL         "¿ªÆôÐ§¹ûÒô",IDC_SOUND_ON,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,12,108,53,10
+    LTEXT           "¡ô ÈçÔÚ´ò¹Ö»ò±»¹ÖÎï¹¥»÷Ê±¶ÏÏß£¬¶àÊýÊÇÒòÎªÃ»ÓÐ°²×°Éù¿¨Çý¶¯¡£½¨Òé¸üÐÂ×îÐÂµÄÇý¶¯°æ±¾¡£",
+                    IDC_STATIC,126,89,162,26
+    CONTROL         "ÍêÕûÄ£Ê½",IDC_EXCLUSIVE_MODE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,12,121,46,10
+    LTEXT           "¡ô ÈçÑ¡Ôñ°²×°ÍêÕûÄ£Ê½£¬ÔÚÔËÐÐRGÊ±£¬½«Ó°ÏìÆäËüWINDOWS³ÌÐòµÄÔËÐÐÐ§ÂÊ¡£Òò´Ë£¬ÈçÓÎÏ·²»ÊÇÌØ±ð¿¨£¬Çë²»ÒªÒÔÍêÕûÄ£Ê½°²×°¡£",
+                    IDC_STATIC,126,117,162,35
+    CONTROL         "Full Screen",IDC_FULL_SCREEN,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,12,57,69,10
+    CONTROL         "Slim Mode",IDC_SLIM_MEMORY_MODE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,83,57,69,10
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CONFIG DIALOGEX 0, 0, 303, 205
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ºÓÀº º¸¼® ½Ã½ºÅÛ ¼³Á¤"
+FONT 9, "±¼¸²"
+BEGIN
+    DEFPUSHBUTTON   "È®ÀÎ",IDOK,100,183,50,17
+    PUSHBUTTON      "Á¾·á",IDCANCEL,152,183,50,17
+    GROUPBOX        "±×·¡ÇÈ ¼³Á¤",IDC_STATIC,6,7,290,93
+    GROUPBOX        "¿É¼Ç",IDC_STATIC,6,105,290,76
+    CONTROL         "1. Direct Draw »ç¿ë(±ÇÀå)",IDC_USE_DIRECT_DRAW,"Button",
+                    BS_AUTORADIOBUTTON | BS_MULTILINE | BS_FLAT,12,21,92,9
+    CONTROL         "2. Direct Draw »ç¿ë(°í±Þ)",IDC_USE_AGP,"Button",
+                    BS_AUTORADIOBUTTON | BS_MULTILINE | BS_FLAT,12,32,93,10
+    CONTROL         "3. DIB »ç¿ë",IDC_USE_DIB,"Button",BS_AUTORADIOBUTTON | 
+                    BS_MULTILINE | BS_FLAT,12,43,47,10
+    LTEXT           "¡Ø °ÔÀÓÀÌ ³Ê¹« ´À¸±¶§´Â 3¹ø ¼³Á¤À» ÇØº¸½Ã±â ¹Ù¶ø´Ï´Ù. ÇÏÁö¸¸, ±×º¸´Ù ±×·¡ÇÈ µå¶óÀÌ¹ö¸¦ ¾÷µ¥ÀÌÆ® ÇØ º¸½Ã±æ ±ÇÀåÇÕ´Ï´Ù.",
+                    IDC_STATIC,109,20,175,27
+    CONTROL         "À½¾Ç ÄÑ±â",IDC_MUSIC_ON,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,12,119,46,10
+    CONTROL         "È¿°úÀ½ ÄÑ±â",IDC_SOUND_ON,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,12,133,53,10
+    LTEXT           "¡Ø ¸ó½ºÅÍ¸¦ ¶§¸®°Å³ª ¸ÂÀ¸¸é ´Ù¿îµÇ´Â °æ¿ì ´ëºÎºÐ »ç¿îµå µå¶óÀÌ¹ö¸¦ ¼³Ä¡ ¾ÊÀº °æ¿ìÀÔ´Ï´Ù. ÃÖ½Å  µå¶óÀÌ¹ö·Î ¾÷µ¥ÀÌÆ® ÇÒ °ÍÀ» ±ÇÀåÇÕ´Ï´Ù.",
+                    IDC_STATIC,109,114,175,26
+    CONTROL         "µ¶Á¡ ¸ðµå",IDC_EXCLUSIVE_MODE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,12,146,46,10
+    LTEXT           "¡Ø µ¶Á¡¸ðµå¸¦ ¼³Á¤ÇÏ½Ã¸é ºÓÀºº¸¼®À» Áñ±â½Ã´Â µ¿¾È ´Ù¸¥ À©µµ¿ì ÇÁ·Î±×·¥ÀÇ È¿À²ÀÌ ¶³¾îÁú ¼ö ÀÖ½À´Ï´Ù. °ÔÀÓÀÌ ºñÁ¤»óÀûÀ¸·Î ´À·ÁÁö´Â °æ¿ì°¡ ¾Æ´Ï¸é ¼³Á¤ÇÏÁö ¸»¾Æ ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.",
+                    IDC_STATIC,109,142,175,35
+    CONTROL         "½½¸² ¸ðµå",IDC_SLIM_MEMORY_MODE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,12,56,61,11
+    LTEXT           "¡Ø ½½¸² ¸ðµå¸¦ ÄÑ½Ã¸é °ÔÀÓ ½ÃÀÛÇÏ´Â ¼Óµµ°¡ Çö°ÝÈ÷ »¡¶ó Áý´Ï´Ù. ÇÏÁö¸¸, °ÔÀÓ µµÁß µ¥ÀÌÅÍ¸¦ ½Ç½Ã°£À¸·Î ·Îµù ÇÏ±â ¶§¹®¿¡ ½Ã½ºÅÛ¿¡ µû¶ó °ÔÀÓ ÁøÇà¿¡ ¹«¸®°¡ ÀÖÀ» ¼öµµ ÀÖ½À´Ï´Ù.",
+                    IDC_STATIC,109,48,176,34
+    CONTROL         "Ã¢ ¸ðµå",IDC_WINDOW_MODE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,12,68,61,11
+    CONTROL         "ÇØ»óµµ 1024 X 768",IDC_1024X768,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,12,81,72,11
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+//    "#include ""res\\Setup.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "Mangchi.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Setup MFC ÀÀ¿ë ÇÁ·Î±×·¥\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Setup\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Setup.EXE\0"
+            VALUE "ProductName", "Setup ÀÀ¿ë ÇÁ·Î±×·¥\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "CONFIG", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 183
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CONFIG_I DIALOGEX 0, 0, 303, 183
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Red Stone system setting"
+FONT 9, "Arial", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,100,163,50,17
+    PUSHBUTTON      "Exit",IDCANCEL,152,163,50,17
+    GROUPBOX        "Graphic setting",IDC_STATIC,6,7,290,70
+    GROUPBOX        "option",IDC_STATIC,6,79,290,82
+    CONTROL         "1. Direct Draw use(basic)",IDC_USE_DIRECT_DRAW,"Button",
+                    BS_AUTORADIOBUTTON | BS_MULTILINE | BS_FLAT,12,21,95,9
+    CONTROL         "2. Direct Draw use(pro)",IDC_USE_AGP,"Button",
+                    BS_AUTORADIOBUTTON | BS_MULTILINE | BS_FLAT,12,32,93,10
+    CONTROL         "3. DIB use",IDC_USE_DIB,"Button",BS_AUTORADIOBUTTON | 
+                    BS_MULTILINE | BS_FLAT,12,43,47,10
+    LTEXT           "- When process is too slow, set mode number 3. However, update of graphic driver is more recommended.",
+                    IDC_STATIC,109,20,175,27
+    CONTROL         "Music on",IDC_MUSIC_ON,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,12,91,46,10
+    CONTROL         "Sound on",IDC_SOUND_ON,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,12,105,53,10
+    LTEXT           "- If system is down whenever hitting monster or being hit by monster, it is because you didn't install sound driver. Update to the latest version of driver is recommended.",
+                    IDC_STATIC,109,88,175,33
+    CONTROL         "Exclusive mode",IDC_EXCLUSIVE_MODE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,12,118,62,10
+    LTEXT           "- When exclusive mode is set, the efficiency of other windows could be lowered. Exclusive mode setting is not encouraged except when game process is abnormally slow.",
+                    IDC_STATIC,109,126,175,32
+    CONTROL         "Slim mode",IDC_SLIM_MEMORY_MODE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,12,54,61,8
+    CONTROL         "Window Mode",IDC_WINDOW_MODE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT,12,64,61,9
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+//#include "res\Setup.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

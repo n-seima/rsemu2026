@@ -1,0 +1,8 @@
+-	Platform SDK 설치
+-	VS 옵션에서 Platform SDK의 Include와 Lib 폴더를 추가 폴더로 추가(가장 밑에 추가)
+-	Include.zip 파일 VS Include 폴더에 덮어 씌우기
+
+-	VS Include 폴더에서 아래 두 파일 제거
+	Iprtrmib.h
+	WS2TCPIP.H
+

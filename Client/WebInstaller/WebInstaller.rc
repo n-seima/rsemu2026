@@ -1,0 +1,162 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+PROGRESS_BOX DIALOG DISCARDABLE  0, 0, 243, 108
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_CENTER | WS_CAPTION
+CAPTION "붉은 보석 설치"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,
+                    8,47,225,7
+    GROUPBOX        " 작업 정보",IDC_FRAME,5,4,233,79
+    LTEXT           "",IDC_INFO,9,20,219,8
+    LTEXT           "※ 서버와 연결 중입니다",IDC_DOWNLOAD_TEXT,9,34,216,8
+    LTEXT           "",IDC_TIME,9,58,214,8
+    LTEXT           "",IDC_DOWNLOAD_SPEED,9,69,208,8
+    PUSHBUTTON      "취소",IDCANCEL,122,87,57,18,NOT WS_TABSTOP
+    DEFPUSHBUTTON   "게임 시작",IDOK,63,87,57,18,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+APFRS                   ICON    DISCARDABLE     "red stone.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "PROGRESS_BOX", DIALOG
+    BEGIN
+        RIGHTMARGIN, 239
+        BOTTOMMARGIN, 107
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+PROGRESS_BOX_I DIALOG DISCARDABLE  0, 0, 243, 108
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_CENTER | WS_CAPTION
+CAPTION "Red Stone"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,
+                    8,47,225,7
+    GROUPBOX        "Information",IDC_FRAME,5,4,233,79
+    LTEXT           "",IDC_INFO,9,20,219,8
+    LTEXT           "* Connect to Server",IDC_DOWNLOAD_TEXT,9,34,216,8
+    LTEXT           "",IDC_TIME,9,58,219,8
+    LTEXT           "",IDC_DOWNLOAD_SPEED,9,69,219,8
+    PUSHBUTTON      "Cancel",IDCANCEL,122,87,57,18,NOT WS_TABSTOP
+    DEFPUSHBUTTON   "Start",IDOK,63,87,57,18,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "PROGRESS_BOX_I", DIALOG
+    BEGIN
+        RIGHTMARGIN, 239
+        BOTTOMMARGIN, 107
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

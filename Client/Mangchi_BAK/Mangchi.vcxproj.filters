@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7bc2cd32-ab2d-4136-9b96-14580769d650}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5ac550c2-d2de-47f1-9385-c6b84e584c52}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0d490d86-51fa-44ca-ae6a-751f5dbf7515}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Karma">
+      <UniqueIdentifier>{3e1a0a1b-31b0-4510-a82d-d2d4fa2882e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global Message">
+      <UniqueIdentifier>{e5d15cc3-1a70-428f-a812-bbe105086a55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base Code">
+      <UniqueIdentifier>{59aea60b-e5cd-4665-a90e-fbd5bbdc66f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ToolWnd">
+      <UniqueIdentifier>{b2d4f416-fd1c-4acb-815d-4a6880f73407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting">
+      <UniqueIdentifier>{62da6f58-06e8-4dfd-a8df-6dbd2f4c6f32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting\Dialog">
+      <UniqueIdentifier>{a6a88010-49de-462f-96e3-0fcb482b6c64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting\Piece Item">
+      <UniqueIdentifier>{15ef44ef-1b17-41d4-9bbe-27bfabefcbfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting\Set Item">
+      <UniqueIdentifier>{68ff71ba-8392-46d7-bb55-7e12ca31a8c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting\Arca">
+      <UniqueIdentifier>{fd76aa76-6fb1-46fb-bc54-afa6bc6406de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting\Custom Item">
+      <UniqueIdentifier>{b7c4fb6e-ebaf-4fe6-9e88-b0588116dca5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting\Secret Dungeon setting">
+      <UniqueIdentifier>{b1dc56ac-afaf-46cf-aa7f-f4054eb42a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting\book setting">
+      <UniqueIdentifier>{51e2f71a-2105-415b-a111-f501b39cb595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting\main quest setting">
+      <UniqueIdentifier>{baf300a4-46fd-464e-a882-e90ebce7a795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapWindow">
+      <UniqueIdentifier>{4785067c-8db9-4737-a5d1-8ca9721be1c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{2986aa20-41ed-4cde-9755-6f11acb3f413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pattern">
+      <UniqueIdentifier>{aaa4b28d-45f3-4280-9c82-758e41ac5854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{9265af7a-9c40-4b2e-a205-eaf35bc94fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Localize">
+      <UniqueIdentifier>{cdee5be4-d622-45e7-ac72-5c02e833d709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{2867eaea-730d-45b5-a49a-ff50a366f281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="book">
+      <UniqueIdentifier>{f0c4c563-228a-45fe-ab34-f9146ad51cdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quest">
+      <UniqueIdentifier>{0417d695-744b-47dc-a0ff-e5c849a6618e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="secret dungeon">
+      <UniqueIdentifier>{f1ed51d2-355c-48e9-9a08-950514ee724f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LNK_Common">
+      <UniqueIdentifier>{ff41d201-4108-4c19-86ae-cda740f81bd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{77a593b8-75c4-4ece-9528-22d05eb25632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="character pattern">
+      <UniqueIdentifier>{13e858ca-d825-4191-b4e9-f2108b18cbb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｹﾌｴﾏｸﾊ">
+      <UniqueIdentifier>{0ba70f5c-901a-42cd-b0c7-70cbf4fe783a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Undo">
+      <UniqueIdentifier>{c4f7f2e6-7989-46df-abfa-b2ec17aa1fdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemoWindow">
+      <UniqueIdentifier>{9aa946f8-bad8-4777-9baf-d66627181957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool">
+      <UniqueIdentifier>{0c16b99a-193d-4d0d-a00e-9271f02d48fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HelpWindow">
+      <UniqueIdentifier>{2dc10f0b-442f-4977-aa65-6875d38f73bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CompareBox">
+      <UniqueIdentifier>{fd541cc8-6aec-4453-a27e-85cac1883d91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="arca.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cACTOR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cAREA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBGPlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cBODY.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cBUILDING.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cCHARACTER.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDecodeUniqueItemData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CImageData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cJOB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cLISTCONTROL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cMAIN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cOBJECT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cPROJECT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CShop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cSKILL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CTitle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cVALUE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MANGCHI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="partrolRoad_mw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="patrolRoad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="road_tool_wnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="svn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trapSkill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cKARMA.cpp">
+      <Filter>Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="cKARMA_ADD.cpp">
+      <Filter>Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="cKARMA_REACTION.cpp">
+      <Filter>Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="cKARMA_TEXT.cpp">
+      <Filter>Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="cKARMA_TRIGGER.cpp">
+      <Filter>Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="cKARMA_WND.cpp">
+      <Filter>Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\eventDefine.cpp">
+      <Filter>Karma</Filter>
+    </ClCompile>
+    <ClCompile Include="cMESSAGE.cpp">
+      <Filter>Global Message</Filter>
+    </ClCompile>
+    <ClCompile Include="c16BITSPRITE.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="c8BITSPRITE.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cBARMENU.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cBMP.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cDECODER.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cDIB.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cDRAW.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cIMAGE.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cPCX.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cTEXT.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cTGA.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cTRANS.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cWINDOW.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="SFC.cpp">
+      <Filter>Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND.cpp">
+      <Filter>ToolWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND_AREA.cpp">
+      <Filter>ToolWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND_BUILDING.cpp">
+      <Filter>ToolWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND_CHARACTER.cpp">
+      <Filter>ToolWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND_OBJECT.cpp">
+      <Filter>ToolWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="cTOOLWND_TILE.cpp">
+      <Filter>ToolWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetDialog.cpp">
+      <Filter>Setting\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetDialogContainer.cpp">
+      <Filter>Setting\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetDialogKarma.cpp">
+      <Filter>Setting\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetDialogList.cpp">
+      <Filter>Setting\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetDialogMonster.cpp">
+      <Filter>Setting\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="cSetDialogNpcData.cpp">
+      <Filter>Setting\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetDialogSelectSpeech.cpp">
+      <Filter>Setting\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetDialogSpeech.cpp">
+      <Filter>Setting\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="makeItemPiece.cpp">
+      <Filter>Setting\Piece Item</Filter>
+    </ClCompile>
+    <ClCompile Include="makePieceItem.cpp">
+      <Filter>Setting\Piece Item</Filter>
+    </ClCompile>
+    <ClCompile Include="setPieceItem.cpp">
+      <Filter>Setting\Piece Item</Filter>
+    </ClCompile>
+    <ClCompile Include="makeSetItem.cpp">
+      <Filter>Setting\Set Item</Filter>
+    </ClCompile>
+    <ClCompile Include="setSetItem.cpp">
+      <Filter>Setting\Set Item</Filter>
+    </ClCompile>
+    <ClCompile Include="makeArca.cpp">
+      <Filter>Setting\Arca</Filter>
+    </ClCompile>
+    <ClCompile Include="setArca.cpp">
+      <Filter>Setting\Arca</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetCustomItem.cpp">
+      <Filter>Setting\Custom Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetCustomItemList.cpp">
+      <Filter>Setting\Custom Item</Filter>
+    </ClCompile>
+    <ClCompile Include="makeSecretDungeon.cpp">
+      <Filter>Setting\Secret Dungeon setting</Filter>
+    </ClCompile>
+    <ClCompile Include="makeSecretDungeonFloor.cpp">
+      <Filter>Setting\Secret Dungeon setting</Filter>
+    </ClCompile>
+    <ClCompile Include="setSecretDungeon.cpp">
+      <Filter>Setting\Secret Dungeon setting</Filter>
+    </ClCompile>
+    <ClCompile Include="setBook.cpp">
+      <Filter>Setting\book setting</Filter>
+    </ClCompile>
+    <ClCompile Include="setMainQuest.cpp">
+      <Filter>Setting\main quest setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_ABILITY.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_AREA.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_AREA_EDIT.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_BASIC_ITEM.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_CHARACTER.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_FIELD_CHARACTER.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_FONT.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_ITEM_PREFIX.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_JOB.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_JOB_LIST.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_MAP.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_PROJECT.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_SELECT_JOB.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cSET_VALUE.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetCharacterEventData.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetCharacterEventTree.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetQuest.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetShop.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetShopItem.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="CSetShopList.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="setMakeItem.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="cMAPWND.cpp">
+      <Filter>MapWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="cMW_AREA.cpp">
+      <Filter>MapWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="cMW_BUILDING.cpp">
+      <Filter>MapWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="cMW_CHARACTER.cpp">
+      <Filter>MapWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="cMW_COPYORCUT.cpp">
+      <Filter>MapWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="cMW_EDIT.cpp">
+      <Filter>MapWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="cMW_OBJECT.cpp">
+      <Filter>MapWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="cMW_TILE.cpp">
+      <Filter>MapWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="cITEM.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="cITEM_EFFECT.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="cITEM_PREFIX.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="cITEM_PREFIX_EFFECT.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="itemPackList.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="pieceItem.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="setItem.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CPattn.cpp">
+      <Filter>Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="CPattnCtrl.cpp">
+      <Filter>Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="CPattnCtrlCliff.cpp">
+      <Filter>Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="cMAP.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="cMAP_BUILDING.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="cMAP_OBJECT.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="exportMapInfo.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="CLoadTextCode.cpp">
+      <Filter>Localize</Filter>
+    </ClCompile>
+    <ClCompile Include="CLocalize.cpp">
+      <Filter>Localize</Filter>
+    </ClCompile>
+    <ClCompile Include="CMapExportText.cpp">
+      <Filter>Localize</Filter>
+    </ClCompile>
+    <ClCompile Include="compareText.cpp">
+      <Filter>Localize</Filter>
+    </ClCompile>
+    <ClCompile Include="exportText.cpp">
+      <Filter>Localize</Filter>
+    </ClCompile>
+    <ClCompile Include="exportTool.cpp">
+      <Filter>Localize</Filter>
+    </ClCompile>
+    <ClCompile Include="foceSyncText.cpp">
+      <Filter>Localize</Filter>
+    </ClCompile>
+    <ClCompile Include="modifyText.cpp">
+      <Filter>Localize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\commonDefine.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="book.cpp">
+      <Filter>book</Filter>
+    </ClCompile>
+    <ClCompile Include="book_category.cpp">
+      <Filter>book</Filter>
+    </ClCompile>
+    <ClCompile Include="book_info.cpp">
+      <Filter>book</Filter>
+    </ClCompile>
+    <ClCompile Include="book_page.cpp">
+      <Filter>book</Filter>
+    </ClCompile>
+    <ClCompile Include="cQUEST.cpp">
+      <Filter>quest</Filter>
+    </ClCompile>
+    <ClCompile Include="mainQuest.cpp">
+      <Filter>quest</Filter>
+    </ClCompile>
+    <ClCompile Include="mainQuestChapterInfo.cpp">
+      <Filter>quest</Filter>
+    </ClCompile>
+    <ClCompile Include="secretDungeon.cpp">
+      <Filter>secret dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\error_code.cpp">
+      <Filter>LNK_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\exceptionhandler.cpp">
+      <Filter>LNK_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\file.cpp">
+      <Filter>LNK_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\lnk_util.cpp">
+      <Filter>LNK_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\memory_pool.cpp">
+      <Filter>LNK_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\memory_pool_normal.cpp">
+      <Filter>LNK_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\memory_pool_safe.cpp">
+      <Filter>LNK_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\safeMemory.cpp">
+      <Filter>LNK_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\safeMemoryForDebug.cpp">
+      <Filter>LNK_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LNK_Common\Timer.cpp">
+      <Filter>LNK_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="pattern.cpp">
+      <Filter>character pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="set_character_pattern.cpp">
+      <Filter>character pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="MinimapWindow.cpp">
+      <Filter>ｹﾌｴﾏｸﾊ</Filter>
+    </ClCompile>
+    <ClCompile Include="URdoBuffer.cpp">
+      <Filter>Undo</Filter>
+    </ClCompile>
+    <ClCompile Include="cMemoWindow.cpp">
+      <Filter>MemoWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="command.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="cHelpWindow.cpp">
+      <Filter>HelpWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="cCompareBox.cpp">
+      <Filter>CompareBox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arca.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cACTOR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cAI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cAREA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBGPlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cBODY.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cBUILDING.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cCHARACTER.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CImageData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cJOB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cLISTCONTROL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cMAIN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cOBJECT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cPROJECT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CShop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cSKILL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSoundEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CTitle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cVALUE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="patrolRoad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="STDAFX.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="svn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trapSkill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cKARMA.h">
+      <Filter>Karma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CKarmaDefine.h">
+      <Filter>Karma</Filter>
+    </ClInclude>
+    <ClInclude Include="CKarmaKeyword.h">
+      <Filter>Karma</Filter>
+    </ClInclude>
+    <ClInclude Include="cMESSAGE.h">
+      <Filter>Global Message</Filter>
+    </ClInclude>
+    <ClInclude Include="cBARMENU.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="cDECODER.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="cDIB.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="cDRAW.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="cIMAGE.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="cTEXT.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="cWINDOW.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="SFC.h">
+      <Filter>Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="cTOOLWND.h">
+      <Filter>ToolWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="CSetDialog.h">
+      <Filter>Setting\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CSetDialogKarma.h">
+      <Filter>Setting\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CSetDialogList.h">
+      <Filter>Setting\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CSetDialogMonster.h">
+      <Filter>Setting\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="cSetDialogNpcData.h">
+      <Filter>Setting\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CSetDialogSpeech.h">
+      <Filter>Setting\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="setPieceItem.h">
+      <Filter>Setting\Piece Item</Filter>
+    </ClInclude>
+    <ClInclude Include="setSetItem.h">
+      <Filter>Setting\Set Item</Filter>
+    </ClInclude>
+    <ClInclude Include="setArca.h">
+      <Filter>Setting\Arca</Filter>
+    </ClInclude>
+    <ClInclude Include="CSetCustomItem.h">
+      <Filter>Setting\Custom Item</Filter>
+    </ClInclude>
+    <ClInclude Include="setSecretDungeon.h">
+      <Filter>Setting\Secret Dungeon setting</Filter>
+    </ClInclude>
+    <ClInclude Include="setBook.h">
+      <Filter>Setting\book setting</Filter>
+    </ClInclude>
+    <ClInclude Include="setMainQuest.h">
+      <Filter>Setting\main quest setting</Filter>
+    </ClInclude>
+    <ClInclude Include="cSET.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="CSetShop.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="setMakeItem.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="cMAPWND.h">
+      <Filter>MapWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="cITEM.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="cITEM_EFFECT.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="cITEM_PREFIX.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="cITEM_PREFIX_EFFECT.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="itemPackList.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="pieceItem.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="setItem.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="CPattn.hpp">
+      <Filter>Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="CPattnCtrl.hpp">
+      <Filter>Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="cMAP.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="CLoadTextCode.h">
+      <Filter>Localize</Filter>
+    </ClInclude>
+    <ClInclude Include="localize.h">
+      <Filter>Localize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\commonClass.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="book.h">
+      <Filter>book</Filter>
+    </ClInclude>
+    <ClInclude Include="book_category.h">
+      <Filter>book</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SERVER\common\book_define.h">
+      <Filter>book</Filter>
+    </ClInclude>
+    <ClInclude Include="book_info.h">
+      <Filter>book</Filter>
+    </ClInclude>
+    <ClInclude Include="book_page.h">
+      <Filter>book</Filter>
+    </ClInclude>
+    <ClInclude Include="cQUEST.h">
+      <Filter>quest</Filter>
+    </ClInclude>
+    <ClInclude Include="mainQuest.h">
+      <Filter>quest</Filter>
+    </ClInclude>
+    <ClInclude Include="mainQuestChapterInfo.h">
+      <Filter>quest</Filter>
+    </ClInclude>
+    <ClInclude Include="secretDungeon.h">
+      <Filter>secret dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\error_code.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\exceptionhandler.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\file.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\lnk_common.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\lnk_define.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\lnk_util.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\mem.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\memory_pool.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\safeMemory.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\safeMemoryForDebug.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\smart_pointer.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LNK_Common\Timer.h">
+      <Filter>LNK_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="pattern.h">
+      <Filter>character pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="set_character_pattern.h">
+      <Filter>character pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="MinimapWindow.h">
+      <Filter>ｹﾌｴﾏｸﾊ</Filter>
+    </ClInclude>
+    <ClInclude Include="URdoBuffer.h">
+      <Filter>Undo</Filter>
+    </ClInclude>
+    <ClInclude Include="cMemoWindow.h">
+      <Filter>MemoWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="cHelpWindow.h">
+      <Filter>HelpWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="cCompareBox.h">
+      <Filter>CompareBox</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\Mangchi.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\Tool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Mangchi.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resource\Cursor.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resource\cursor_c.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resource\cursor_h.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

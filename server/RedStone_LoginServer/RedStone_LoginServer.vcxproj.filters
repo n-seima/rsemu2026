@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8afa4f5c-a10a-4b2a-8a06-38e8295cf92c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3f3053e0-16d2-4f26-ba07-09f45cd239e0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{17221d33-2078-46bb-b2e0-929ad021fb60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ﾆﾐﾅｶ ﾃｳｸｮ">
+      <UniqueIdentifier>{7ee09c08-1cac-4ff3-90cd-bca61bc1798c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｻﾁｸ ﾄﾚｵ・">
+      <UniqueIdentifier>{261f767f-7acd-4db7-ab42-a86e061c4e1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｰ・ﾄﾚｵ・">
+      <UniqueIdentifier>{3a7ccb0c-7836-4579-b841-6934d6121e6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｰ・ﾄﾚｵ・\ﾆﾐﾅｶ">
+      <UniqueIdentifier>{5ec6033e-f773-48b7-bbbd-493609bba538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｹｯ">
+      <UniqueIdentifier>{7e739a0d-7bb5-4a56-bbc8-2e75064918e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ﾀﾌｺ･ﾆｮ">
+      <UniqueIdentifier>{8e210597-d02c-4b9f-8987-007e1601b2c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｺｸｾﾈ ﾄﾚｵ・">
+      <UniqueIdentifier>{36c4d0ba-4ed1-4980-bc63-aec73fffb933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c52dc9bd-95ce-4b60-b532-39335bab7356}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Client_LoginInfoList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="operate_packet.cpp">
+      <Filter>ﾆﾐﾅｶ ﾃｳｸｮ</Filter>
+    </ClCompile>
+    <ClCompile Include="life_code.cpp">
+      <Filter>ｻﾁｸ ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\life_code_common.cpp">
+      <Filter>ｻﾁｸ ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cADO_BASE.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="CExceptionHandler.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\CheckNic.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cScript.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cServerStatus.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSOCKET.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSRVUTIL.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\ExScript.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\HardwareInfo.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\inputConsoleCommand.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\PacketBuffer.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\SFC.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\Tracer.cpp">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\reg_common.cpp">
+      <Filter>ｹｯ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\server_type_define.cpp">
+      <Filter>ｹｯ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\version.cpp">
+      <Filter>ｹｯ</Filter>
+    </ClCompile>
+    <ClCompile Include="event.cpp">
+      <Filter>ﾀﾌｺ･ﾆｮ</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="buildVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="operate_packet.h">
+      <Filter>ﾆﾐﾅｶ ﾃｳｸｮ</Filter>
+    </ClInclude>
+    <ClInclude Include="life_code.h">
+      <Filter>ｻﾁｸ ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\life_code_common.h">
+      <Filter>ｻﾁｸ ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_BASE.h">
+      <Filter>ｰ・ﾄﾚｵ・\ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_DBSERVER.h">
+      <Filter>ｰ・ﾄﾚｵ・\ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_GAMESERVER.h">
+      <Filter>ｰ・ﾄﾚｵ・\ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGINSERVER.h">
+      <Filter>ｰ・ﾄﾚｵ・\ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_USERDBSERVER.h">
+      <Filter>ｰ・ﾄﾚｵ・\ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_WORLDSERVER.h">
+      <Filter>ｰ・ﾄﾚｵ・\ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\actorDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\adCommandDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\arcaDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\bannerDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\book_define.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\buildVersion.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cADO_BASE.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\carrotShopDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="CExceptionHandler.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CGuildDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CheckNic.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CItemDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CItemEffectDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CPetDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CPitchmanShopDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cPLAYER_DATA.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cScript.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cServerStatus.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CSkillDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cSOCKET.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cSRVUTIL.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\definePacketData.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\doorDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\eventDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\ExScript.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\HardwareInfo.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\inputConsoleCommand.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\jobDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\miniPetCommon.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\PacketBuffer.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\partyDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\playerJobCommon.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\RSComm.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\SFC.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\STACK.H">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\summonBeastDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\Tracer.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\userCustomDataDefine.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\zconf.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\zlib.h">
+      <Filter>ｰ・ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\reg_common.h">
+      <Filter>ｹｯ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\server_type_define.h">
+      <Filter>ｹｯ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\version.h">
+      <Filter>ｹｯ</Filter>
+    </ClInclude>
+    <ClInclude Include="event.h">
+      <Filter>ﾀﾌｺ･ﾆｮ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\mess_sign.h">
+      <Filter>ｺｸｾﾈ ﾄﾚｵ・</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="zdll.lib">
+      <Filter>lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CONFIG-LOGIN.TXT" />
+    <Text Include="notice.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="zlib1.dll">
+      <Filter>lib</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

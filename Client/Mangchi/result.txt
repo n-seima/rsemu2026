@@ -1,0 +1,108 @@
+
+************* Application Started at [04:05:35] ************* 
+
+********** class size Report ***********
+cACTOR       188
+cITEM        30
+cACTOR_SET   196624
+cJOB         328
+g_aBasicItem 3555328
+cCHARACTER   88
+1
+2
+3
+4
+L1
+Error in cDECODER::Upload - can not find 'mangchi.txt' file
+L2
+L3
+L4
+Map loading [178]D05_S01_B03.rmd
+Error in cOBJ_ANM::Load - 'sn__object_0241.rso' file not found
+Error in cOBJ_ANM::Load - 'sn__object_0130.rfo' file not found
+'241' numbers STATIC Object.
+'130' numbers FREE   Object.
+Total '371' numbers OBJECT Loaded.
+
+'0' numbers building loaded
+Object Loading - 1
+Object Loading - 2
+Loading Building
+Store - 2
+Other
+Karma
+character pattern
+Finish
+Remove quotes
+Select map
+Reset all building collision maps
+Reset all object collision maps
+End of collision map reset
+Map loading complete
+Map loading [000]T01.rmd
+Error in cOBJ_ANM::Load - 'sn__object_0105.rso' file not found
+Error in cOBJ_ANM::Load - 'sn__object_0038.rfo' file not found
+'105' numbers STATIC Object.
+'38' numbers FREE   Object.
+Total '143' numbers OBJECT Loaded.
+
+Object Loading - 1
+Object Loading - 2
+Loading Building
+Store - 2
+Other
+Karma
+character pattern
+Finish
+Remove quotes
+Select map
+Reset all building collision maps
+Reset all object collision maps
+End of collision map reset
+Map loading complete
+Map loading [888]TestMap.rmd
+Error in cOBJ_ANM::Load - 'sn__object_0173.rso' file not found
+Error in cOBJ_ANM::Load - 'sn__object_0102.rfo' file not found
+'173' numbers STATIC Object.
+'102' numbers FREE   Object.
+Total '275' numbers OBJECT Loaded.
+
+'0' numbers building loaded
+Object Loading - 1
+Object Loading - 2
+Loading Building
+Store - 2
+Other
+Karma
+character pattern
+Finish
+Remove quotes
+Select map
+Reset all building collision maps
+Reset all object collision maps
+End of collision map reset
+Map loading complete
+Map loading [901]Duel_Standby_1.rmd
+'434' numbers STATIC Object.
+'407' numbers FREE   Object.
+Total '841' numbers OBJECT Loaded.
+
+'0' numbers building loaded
+Object Loading - 1
+Object Loading - 2
+Loading Building
+Store - 2
+Other
+Karma
+character pattern
+Finish
+Remove quotes
+Select map
+Reset all building collision maps
+Reset all object collision maps
+End of collision map reset
+Map loading complete
+L5
+5
+6
+7

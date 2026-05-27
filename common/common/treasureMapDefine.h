@@ -1,0 +1,19 @@
+#ifndef	_classTreasureMapDefine_h
+#define	_classTreasureMapDefine_h
+
+#include "sfc.h"
+
+#define	dMAX_BOOST_EXP_COUNT_FOR_TREASURE_MAP_EVENT		10
+#define	dMAX_BOOST_GOLD_COUNT_FOR_TREASURE_MAP_EVENT	20
+
+#define	dTREASURE_MAP_UPKEEP_MINUTE						15
+
+#define	dBOOST_EXP_BY_TREASURE_MAP						200
+#define	dBOOST_GOLD_BY_TREASURE_MAP						400
+
+const	int	dBOOST_EXP_SECOND_BY_TREASURE_MAP_IN_SERVER		=	60*5;
+const	int	dBOOST_GOLD_SECOND_BY_TREASURE_MAP_IN_SERVER	=	60*5;
+const	int	dBOOST_PLAYER_EXP_SECOND_BY_TREASURE_MAP		=	60*10;
+const	int	dBOOST_PLAYER_GOLD_SECOND_BY_TREASURE_MAP		=	60*10;
+
+#endif

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DEBUG FOR CHINA|Win32">
+      <Configuration>DEBUG FOR CHINA</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug For JapanTest KR Inner|Win32">
+      <Configuration>Debug For JapanTest KR Inner</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug FOR JAPAN|Win32">
+      <Configuration>Debug FOR JAPAN</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forThai|Win32">
+      <Configuration>forThai</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forUsa|Win32">
+      <Configuration>forUsa</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/RedStoneServer/AdminTool", ZSAAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{D6707A8A-CB34-4253-9B37-30AEBD358A7C}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug For JapanTest KR Inner|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug FOR JAPAN|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG FOR CHINA|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug For JapanTest KR Inner|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug FOR JAPAN|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG FOR CHINA|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG FOR CHINA|Win32'">
+    <OutDir>.\debugForChina\</OutDir>
+    <IntDir>.\debugForChina\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">
+    <OutDir>.\forThai\</OutDir>
+    <IntDir>.\forThai\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">
+    <OutDir>.\forUsa\</OutDir>
+    <IntDir>.\forUsa\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug FOR JAPAN|Win32'">
+    <OutDir>.\AdminTool___Win32_Debug_FOR_JAPAN1\</OutDir>
+    <IntDir>.\AdminTool___Win32_Debug_FOR_JAPAN1\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug For JapanTest KR Inner|Win32'">
+    <OutDir>.\AdminTool___Win32_Debug_For_JapanTest_KR_Inner\</OutDir>
+    <IntDir>.\AdminTool___Win32_Debug_For_JapanTest_KR_Inner\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <AdditionalIncludeDirectories>../../common/common;../../common/packet;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ADMIN_TOOL;_FOR_KOREA;WIN32;_WSPIAPI_COUNTOF;_WINDOWS;__USE_ZLIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\AdminTool.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\AdminTool.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\AdminTool.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>Nafxcw.lib Libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>AdminTool_release.exe</OutputFile>
+      <AdditionalDependencies>zdll.lib;ws2_32.lib;winmm.lib;Nafxcw.lib;Libcmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../common/common;../../common/packet;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ADMIN_TOOL;_FOR_KOREA;WIN32;_DEBUG;_WINDOWS;__USE_ZLIB;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\AdminTool.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\AdminTool.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\AdminTool.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib Libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>AdminTool_debug.exe</OutputFile>
+      <AdditionalDependencies>zdll.lib;ws2_32.lib;winmm.lib;Nafxcwd.lib;Libcmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG FOR CHINA|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../common/common;../../common/packet;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ADMIN_TOOL;_FOR_CHINA;WIN32;_DEBUG;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\debugForChina\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\debugForChina\AdminTool.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader />
+      <ObjectFileName>.\debugForChina\</ObjectFileName>
+      <ProgramDataBaseFileName>.\debugForChina\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\debugForChina\AdminTool.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\debugForChina\AdminTool.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>AdminTool(china).exe</OutputFile>
+      <AdditionalDependencies>zdll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../common/common;../../common/packet;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ADMIN_TOOL;_FOR_THAI;WIN32;_DEBUG;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forThai\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\forThai\AdminTool.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader />
+      <ObjectFileName>.\forThai\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forThai\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\forThai\AdminTool.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x041e</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forThai\AdminTool.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib Libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>AdminTool(forThai).exe</OutputFile>
+      <AdditionalDependencies>zdll.lib;ws2_32.lib;winmm.lib;Nafxcwd.lib;Libcmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../common/common;../../common/packet;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ADMIN_TOOL;_FOR_USA;WIN32;_DEBUG;_WINDOWS;__USE_ZLIB;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forUsa\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\forUsa\AdminTool.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\forUsa\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forUsa\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\forUsa\AdminTool.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forUsa\AdminTool.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib Libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>AdminTool(D_USA).exe</OutputFile>
+      <AdditionalDependencies>Nafxcwd.lib;Libcmtd.lib;zdll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug FOR JAPAN|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../common/common;../../common/packet;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ADMIN_TOOL;_FOR_JAPAN;WIN32;_DEBUG;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\AdminTool___Win32_Debug_FOR_JAPAN1\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\AdminTool___Win32_Debug_FOR_JAPAN1\AdminTool.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader />
+      <ObjectFileName>.\AdminTool___Win32_Debug_FOR_JAPAN1\</ObjectFileName>
+      <ProgramDataBaseFileName>.\AdminTool___Win32_Debug_FOR_JAPAN1\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\AdminTool___Win32_Debug_FOR_JAPAN1\AdminTool.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\AdminTool___Win32_Debug_FOR_JAPAN1\AdminTool.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib Libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>C:\MyDev\540_Server\AdminTool\AdminTool(Japan).exe</OutputFile>
+      <AdditionalDependencies>Nafxcwd.lib;Libcmtd.lib;zdll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug For JapanTest KR Inner|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../common/common;../../common/packet;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ADMIN_TOOL;_FOR_KOREA;WIN32;_DEBUG;_WINDOWS;__USE_ZLIB;__JPTEST_FOR_KR_INNER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\AdminTool___Win32_Debug_For_JapanTest_KR_Inner\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\AdminTool___Win32_Debug_For_JapanTest_KR_Inner\AdminTool.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader />
+      <ObjectFileName>.\AdminTool___Win32_Debug_For_JapanTest_KR_Inner\</ObjectFileName>
+      <ProgramDataBaseFileName>.\AdminTool___Win32_Debug_For_JapanTest_KR_Inner\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\AdminTool___Win32_Debug_For_JapanTest_KR_Inner\AdminTool.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\AdminTool___Win32_Debug_For_JapanTest_KR_Inner\AdminTool.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib Libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>AdminTool20060707.exe</OutputFile>
+      <AdditionalDependencies>zdll.lib;ws2_32.lib;winmm.lib;Nafxcwd.lib;Libcmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\common\adCommandDefine.cpp" />
+    <ClCompile Include="..\..\common\common\cADO_BASE.cpp" />
+    <ClCompile Include="..\..\common\common\commonDefine.cpp" />
+    <ClCompile Include="..\..\common\common\cPetDefine.cpp" />
+    <ClCompile Include="..\..\common\common\cPLAYER_DATA.cpp" />
+    <ClCompile Include="..\..\common\common\cScript.cpp" />
+    <ClCompile Include="..\..\common\common\CSkill.cpp" />
+    <ClCompile Include="..\..\common\common\cSOCKET.cpp" />
+    <ClCompile Include="..\..\common\common\cSRVUTIL.cpp" />
+    <ClCompile Include="..\..\common\common\eventDefine.cpp" />
+    <ClCompile Include="..\..\common\common\guild_common.cpp" />
+    <ClCompile Include="..\..\common\common\Msjexhnd.cpp" />
+    <ClCompile Include="..\..\common\common\PacketBuffer.cpp" />
+    <ClCompile Include="..\..\common\common\playerJobCommon.cpp" />
+    <ClCompile Include="..\..\common\common\SFC.cpp" />
+    <ClCompile Include="..\..\common\common\Tracer.cpp" />
+    <ClCompile Include="AdminCommand.cpp" />
+    <ClCompile Include="AdminLogCode.cpp" />
+    <ClCompile Include="AdminTool.cpp" />
+    <ClCompile Include="AdminToolDlg.cpp" />
+    <ClCompile Include="AGEGRAPH.cpp" />
+    <ClCompile Include="book.cpp" />
+    <ClCompile Include="cADO_ADMIN.cpp" />
+    <ClCompile Include="cADO_ADMIN_FOR_ACCOUNT.cpp" />
+    <ClCompile Include="cADO_ADMIN_FOR_AVATAR.cpp" />
+    <ClCompile Include="cADO_ADMIN_FOR_COMMAND.cpp" />
+    <ClCompile Include="cADO_ADMIN_FOR_EVENT.cpp" />
+    <ClCompile Include="cADO_ADMIN_FOR_GUILD.cpp" />
+    <ClCompile Include="cADO_ADMIN_FOR_OPERATOR.cpp" />
+    <ClCompile Include="cADO_ADMIN_FOR_PVP.cpp" />
+    <ClCompile Include="cADO_ADMIN_FOR_STATISTICS.cpp" />
+    <ClCompile Include="cADO_ADMIN_FOR_TEMPWORK.cpp" />
+    <ClCompile Include="carrotShop.cpp" />
+    <ClCompile Include="CBmpMenu.cpp" />
+    <ClCompile Include="CCharacterData.cpp" />
+    <ClCompile Include="cDECODER.cpp" />
+    <ClCompile Include="cDlgChangeGMaster.cpp" />
+    <ClCompile Include="CFTPclient.cpp" />
+    <ClCompile Include="CharacterInfo.cpp" />
+    <ClCompile Include="cInventory.cpp" />
+    <ClCompile Include="cITEM.cpp" />
+    <ClCompile Include="cMakeItem.cpp" />
+    <ClCompile Include="CMessage.cpp" />
+    <ClCompile Include="cMiniPetList.cpp" />
+    <ClCompile Include="cPetList.cpp" />
+    <ClCompile Include="CTitle.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="EventTimeManager.cpp" />
+    <ClCompile Include="ExpCalc.cpp" />
+    <ClCompile Include="ftpclass\blockingsocket.cpp" />
+    <ClCompile Include="ftpclass\ftpdatatypes.cpp" />
+    <ClCompile Include="ftpclass\ftpfilestate.cpp" />
+    <ClCompile Include="ftpclass\ftplistparse.cpp" />
+    <ClCompile Include="guildInfo.cpp" />
+    <ClCompile Include="GuildInventory.cpp" />
+    <ClCompile Include="GuildPetAndGuardian.cpp" />
+    <ClCompile Include="IPCurrentStatus.cpp" />
+    <ClCompile Include="ItemPackList.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="LOGIN.cpp" />
+    <ClCompile Include="LottoEvent.cpp" />
+    <ClCompile Include="MSGDLG.cpp" />
+    <ClCompile Include="NEWNAME.cpp" />
+    <ClCompile Include="PAGE_NOTICE.cpp" />
+    <ClCompile Include="PAGE_PVPTOOL.cpp" />
+    <ClCompile Include="PAGE_SUM.cpp" />
+    <ClCompile Include="PAGE_USERSETTING.cpp" />
+    <ClCompile Include="playerData.cpp" />
+    <ClCompile Include="PollDlg.cpp" />
+    <ClCompile Include="quest.cpp" />
+    <ClCompile Include="questList.cpp" />
+    <ClCompile Include="RenewItemExpireDate.cpp" />
+    <ClCompile Include="rookieEvent090721.cpp" />
+    <ClCompile Include="SEARCHPAGE.cpp" />
+    <ClCompile Include="SelectFunc.cpp" />
+    <ClCompile Include="ServerTool.cpp" />
+    <ClCompile Include="serverTool050720.cpp" />
+    <ClCompile Include="serverTool050818.cpp" />
+    <ClCompile Include="serverToolOld.cpp" />
+    <ClCompile Include="setItem.cpp" />
+    <ClCompile Include="skill.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DEBUG FOR CHINA|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='DEBUG FOR CHINA|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug FOR JAPAN|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug FOR JAPAN|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug For JapanTest KR Inner|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug For JapanTest KR Inner|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TentativeGuildManager.cpp" />
+    <ClCompile Include="windowExtendAPI.cpp" />
+    <ClCompile Include="WorldScore.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\common\adCommandDefine.h" />
+    <ClInclude Include="..\..\common\common\CSkill.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_BASE.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_CONTROLSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_DBSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_GAMESERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGINSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_TOOLLOGSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_USERDBSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_WORLDSERVER.h" />
+    <ClInclude Include="AdminCommand.h" />
+    <ClInclude Include="AdminLogCode.h" />
+    <ClInclude Include="AdminTool.h" />
+    <ClInclude Include="AdminToolDlg.h" />
+    <ClInclude Include="AGEGRAPH.h" />
+    <ClInclude Include="book.h" />
+    <ClInclude Include="buildVersion.h" />
+    <ClInclude Include="cADO_ADMIN.h" />
+    <ClInclude Include="carrotShop.h" />
+    <ClInclude Include="CBmpMenu.h" />
+    <ClInclude Include="cDECODER.h" />
+    <ClInclude Include="cDlgChangeGMaster.h" />
+    <ClInclude Include="CFTPclient.h" />
+    <ClInclude Include="CharacterInfo.h" />
+    <ClInclude Include="cInventory.h" />
+    <ClInclude Include="cITEM.h" />
+    <ClInclude Include="cITEM_PREFIX.h" />
+    <ClInclude Include="cListManage.h" />
+    <ClInclude Include="cMakeItem.h" />
+    <ClInclude Include="CMessage.h" />
+    <ClInclude Include="cMiniPetList.h" />
+    <ClInclude Include="cPetList.h" />
+    <ClInclude Include="CTitle.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="EventTimeManager.h" />
+    <ClInclude Include="ExpCalc.h" />
+    <ClInclude Include="ftpclass\blockingsocket.h" />
+    <ClInclude Include="ftpclass\definements.h" />
+    <ClInclude Include="ftpclass\ftpdatatypes.h" />
+    <ClInclude Include="ftpclass\ftpfilestate.h" />
+    <ClInclude Include="ftpclass\ftplistparse.h" />
+    <ClInclude Include="ftpclass\rc_smart_ptr.h" />
+    <ClInclude Include="guildInfo.h" />
+    <ClInclude Include="GuildInventory.h" />
+    <ClInclude Include="GuildPetAndGuardian.h" />
+    <ClInclude Include="IPCurrentStatus.h" />
+    <ClInclude Include="ItemPackList.h" />
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="LOGIN.h" />
+    <ClInclude Include="LottoEvent.h" />
+    <ClInclude Include="MSGDLG.h" />
+    <ClInclude Include="NEWNAME.h" />
+    <ClInclude Include="PAGE_NOTICE.h" />
+    <ClInclude Include="PAGE_PVPTOOL.h" />
+    <ClInclude Include="PAGE_SUM.h" />
+    <ClInclude Include="PAGE_USERSETTING.h" />
+    <ClInclude Include="PollDlg.h" />
+    <ClInclude Include="quest.h" />
+    <ClInclude Include="questList.h" />
+    <ClInclude Include="RenewItemExpireDate.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SEARCHPAGE.h" />
+    <ClInclude Include="SelectFunc.h" />
+    <ClInclude Include="ServerTool.h" />
+    <ClInclude Include="skill.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TentativeGuildManager.h" />
+    <ClInclude Include="threadFunc.h" />
+    <ClInclude Include="windowExtendAPI.h" />
+    <ClInclude Include="WorldScore.h" />
+    <ClInclude Include="zconf.h" />
+    <ClInclude Include="zlib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\AdminTool.ico" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\bmp00003.bmp" />
+    <Image Include="res\bmp00006.bmp" />
+    <Image Include="res\graph.ico" />
+    <Image Include="res\red stone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AdminTool.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\AdminTool.rc2" />
+    <CustomBuild Include="zlib1.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="zdll.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug For JapanTest KR Inner|Win32'">true</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\ServerDownList.txt" />
+    <Text Include="controltext.txt" />
+    <Text Include="message.txt" />
+    <Text Include="message_eng.txt" />
+    <Text Include="ReadMe.txt" />
+    <Text Include="ReadMe_dev.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

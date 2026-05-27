@@ -1,0 +1,9 @@
+IP = 58.150.56.194;
+//IP = 211.189.40.159;
+ID = RedMaster;
+SOURCE = REDSTONE_ID_SOURCE;
+UPDATE_WEEKLY_RANKIG_WEEK_DAY = 3; //  주간 랭킹 산정 요일. 일요일=0,월요일=1,화요일=2,수요일=3,목요일=4,금요일=5,토요일=6
+IS_TEST_SERVER = "true";
+
+END;
+

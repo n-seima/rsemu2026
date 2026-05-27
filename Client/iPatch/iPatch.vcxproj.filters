@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b23a3aec-549c-4800-a8bf-83e2945685af}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{bd173752-4203-4150-bc6d-32ba7f2eed69}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c7cf4ecb-0b3c-46d6-af38-e3cbff476059}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="message">
+      <UniqueIdentifier>{b7fb2c57-f9d9-4afd-93cc-8a551d0175fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{c660acce-669e-4563-b9c0-1b3e17305a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frame">
+      <UniqueIdentifier>{6a242bc4-bf53-45a1-a8ee-44146e08aa3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sprite">
+      <UniqueIdentifier>{944a5870-f63c-419c-b0a3-9c9046bb10ae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_resource.sd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="install.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForInter.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForJapan.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForKorea.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForThai.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="messageForUSA.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="bar_menu.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="c16BITSPRITE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="c8BITSPRITE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cBMP.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cDIB.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cDRAW.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cIMAGE.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cNUX.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cPCX.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTEXT.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTGA.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cTRANS.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="cWINDOW.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="image_scroll_bar.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="SFC.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="complete.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="installData.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="welcome.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_jp.sd.cpp">
+      <Filter>sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_kor.sd.cpp">
+      <Filter>sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_thai.sd.cpp">
+      <Filter>sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="_resource_USA.sd.cpp">
+      <Filter>sprite</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="iPatch.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_resource.sd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="bar_menu.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cDIB.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cDRAW.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cIMAGE.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cNUX.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cTEXT.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="cWINDOW.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="image_scroll_bar.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="SFC.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="STDAFX.H">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="complete.h">
+      <Filter>frame</Filter>
+    </ClInclude>
+    <ClInclude Include="installData.h">
+      <Filter>frame</Filter>
+    </ClInclude>
+    <ClInclude Include="welcome.h">
+      <Filter>frame</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_jp.sd.h">
+      <Filter>sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_kor.sd.h">
+      <Filter>sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_thai.sd.h">
+      <Filter>sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="_resource_USA.sd.h">
+      <Filter>sprite</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

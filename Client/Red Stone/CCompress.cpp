@@ -1,0 +1,1138 @@
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <limits.h>
+
+#include "cCOMPRESS.H"
+
+BYTE	*l_lpSourceData;
+BYTE	l_aResultBuffer[1024*60];
+int		l_iResultBufferPoint	=	0;
+int		l_iSourceDataPoint		=	0;
+int		l_iSourceDataSize		=	0;
+
+#define BITBUFSIZ	(CHAR_BIT * sizeof bitbuf)
+#define INIT_CRC	0							/* CCITT: 0xFFFF */
+#define DICBIT		13							/* 12(-sn4-) or 13(-sn5-) */
+#define DICSIZ		(1U << DICBIT)
+#define MATCHBIT	8							/* bits for MAXMATCH - THRESHOLD */
+#define MAXMATCH	256							/* formerly F (not more than UCHAR_MAX + 1) */
+#define THRESHOLD	3							/* choose optimal value */
+#define PERC_FLAG	0x8000U
+#define NC			(UCHAR_MAX + MAXMATCH + 2 - THRESHOLD)
+												/* alphabet = {0, 1, 2, ..., NC - 1} */
+#define CBIT		9							/* $\lfloor \log_2 NC \rfloor + 1$ */
+#define CODE_BIT	16							/* codeword length */
+
+WORD	crc, bitbuf;
+
+void	make_crctable(void);
+void	fillbuf(int n);
+WORD	getbits(int n);
+void	putbits(int n, DWORD x);
+int		readSourceBuffer(BYTE *p, int n);
+void	writeResultBuffer(BYTE *p, int n);
+void	init_getbits(void);
+void	init_putbits(void);
+
+BOOL	encode(void);
+void	decode_start(void);
+void	decode(DWORD count, BYTE text[]);
+
+void	huf_encode_start(void);
+void	huf_decode_start(void);
+WORD	decode_c(void);
+WORD	decode_p(void);
+void	output(WORD c, WORD p);
+void	huf_encode_end(void);
+void	make_table(int nchar, BYTE bitlen[],int tablebits, WORD table[]);
+int		make_tree(int nparm, WORD freqparm[],BYTE lenparm[], WORD codeparm[]);
+
+int		unpackable;						// global, set in io.c
+ULONG	l_iCompressSize, l_iOriginalSize;		// global
+
+static	BYTE	buffer[DICSIZ];
+static	BYTE	header[1024];
+static	BYTE	headersize, headersum;
+static	WORD	file_crc;
+
+inline void put_to_header(int i, int n, ULONG x)
+{	while (--n >= 0) 
+	{	header[i++] = (BYTE)((WORD)x & 0xFF);
+		x >>= 8;
+	}
+}
+
+inline ULONG get_from_header(int i, int n)
+{	ULONG s;
+
+	s = 0;
+	while (--n >= 0) s = (s << 8) + header[i + n];  /* little endian */
+
+	return s;
+}
+
+inline WORD calc_headersum(void)
+{	int i;
+	WORD s;
+
+	s = 0;
+	for (i = 0; i < headersize; i++) s += header[i];
+	return s & 0xFF;
+}
+
+static char read_header(void)
+{
+	headersize	=	l_lpSourceData[l_iSourceDataPoint++];
+
+	if (headersize == 0) return 0;					//	end of archive
+
+	headersum	=	l_lpSourceData[l_iSourceDataPoint++];
+
+	readSourceBuffer(header, headersize);					//	CRC not used
+
+	if (calc_headersum() != headersum) return -1;
+
+	l_iCompressSize	=	get_from_header(5, 4);
+	l_iOriginalSize	=	get_from_header(9, 4);
+	file_crc		=	(WORD)get_from_header(headersize - 5, 2);
+
+	return	1;	//	success
+}
+
+inline void write_header(void)
+{
+	l_aResultBuffer[l_iResultBufferPoint++]	=	headersize;
+
+	put_to_header(headersize - 5, 2, (ULONG)file_crc);
+
+	l_aResultBuffer[l_iResultBufferPoint++]	=	(BYTE)calc_headersum();
+
+	writeResultBuffer(header, headersize);  /* CRC not used */
+}
+
+static void store(void)
+{	WORD n;
+
+	l_iOriginalSize	=	0;
+
+	crc				=	INIT_CRC;
+
+	int		size	=	l_iSourceDataSize;
+
+	if (size	==	0)
+	{
+		l_iCompressSize	=	0;
+		return;
+	}
+
+	n	=	DICSIZ;
+
+	while (1)
+	{
+		if (size	<	DICSIZ)	n	=	size;
+
+		memcpy(buffer,l_lpSourceData,n);
+		l_iSourceDataPoint	+=	n;
+		size				-=	n;
+		writeResultBuffer(buffer, n);
+		l_iOriginalSize		+=	n;
+
+		if (size == 0) break;
+	}
+
+	l_iCompressSize	= l_iOriginalSize;
+}
+
+/***********************************************************
+	huf.c -- static Huffman
+***********************************************************/
+
+#define NP (DICBIT + 1)
+#define NT (CODE_BIT + 3)
+#define PBIT 4  /* smallest integer such that (1U << PBIT) > NP */
+#define TBIT 5  /* smallest integer such that (1U << TBIT) > NT */
+#if NT > NP
+	#define NPT NT
+#else
+	#define NPT NP
+#endif
+
+WORD left[2 * NC - 1], right[2 * NC - 1];
+
+static BYTE *buf, c_len[NC], pt_len[NPT];
+static WORD bufsiz = 0, blocksize;
+static WORD	c_freq[2 * NC - 1], c_table[4096], c_code[NC],p_freq[2 * NP - 1], pt_table[256], pt_code[NPT],t_freq[2 * NT - 1];
+
+/***** encoding *****/
+
+static void count_t_freq(void)
+{	int i, k, n, count;
+
+	for (i = 0; i < NT; i++) t_freq[i] = 0;
+	n = NC;
+	while (n > 0 && c_len[n - 1] == 0) n--;
+	i = 0;
+	while (i < n) 
+	{	k = c_len[i++];
+		if (k == 0) 
+		{	count = 1;
+			while (i < n && c_len[i] == 0) {  i++;  count++;  }
+			if (count <= 2) t_freq[0] += count;
+			else if (count <= 18) t_freq[1]++;
+			else if (count == 19) {  t_freq[0]++;  t_freq[1]++;  }
+			else t_freq[2]++;
+		} else t_freq[k + 2]++;
+	}
+}
+
+static void write_pt_len(int n, int nbit, int i_special)
+{	int i, k;
+
+	while (n > 0 && pt_len[n - 1] == 0) n--;
+	putbits(nbit, n);
+	i = 0;
+	while (i < n) 
+	{	k = pt_len[i++];
+		if (k <= 6) putbits(3, k);
+		else putbits(k - 3, (1U << (k - 3)) - 2);
+		if (i == i_special) 
+		{	while (i < 6 && pt_len[i] == 0) i++;
+			putbits(2, (i - 3) & 3);
+		}
+	}
+}
+
+static void write_c_len(void)
+{	int i, k, n, count;
+
+	n = NC;
+
+	while (n > 0 && c_len[n - 1] == 0) n--;
+
+	putbits(CBIT, n);
+	i = 0;
+
+	while (i < n) 
+	{	k = c_len[i++];
+		if (k == 0) 
+		{	count = 1;
+			while (i < n && c_len[i] == 0) {  i++;  count++;  }
+			if (count <= 2) 
+			{	for (k = 0; k < count; k++)
+					putbits(pt_len[0], pt_code[0]);
+			} else if (count <= 18) 
+			{	putbits(pt_len[1], pt_code[1]);
+				putbits(4, count - 3);
+			} else if (count == 19) 
+			{	putbits(pt_len[0], pt_code[0]);
+				putbits(pt_len[1], pt_code[1]);
+				putbits(4, 15);
+			} else 
+			{	putbits(pt_len[2], pt_code[2]);
+				putbits(CBIT, count - 20);
+			}
+		} else putbits(pt_len[k + 2], pt_code[k + 2]);
+	}
+}
+
+inline void encode_c(int c)
+{	putbits(c_len[c], c_code[c]);
+}
+
+inline void encode_p(WORD p)
+{	WORD c, q;
+
+	c = 0;  q = p;  while (q) {  q >>= 1;  c++;  }
+	putbits(pt_len[c], pt_code[c]);
+	if (c > 1) putbits(c - 1, p & (0xFFFFU >> (17 - c)));
+}
+
+static void send_block(void)
+{	WORD i, k, flags, root, pos, size;
+
+	root = make_tree(NC, c_freq, c_len, c_code);
+	size = c_freq[root];  putbits(16, size);
+	if (root >= NC) 
+	{	count_t_freq();
+		root = make_tree(NT, t_freq, pt_len, pt_code);
+		if (root >= NT) 
+		{	write_pt_len(NT, TBIT, 3);
+		} else 
+		{	putbits(TBIT, 0);  putbits(TBIT, root);
+		}
+		write_c_len();
+	} else 
+	{   putbits(TBIT, 0);  putbits(TBIT, 0);
+		putbits(CBIT, 0);  putbits(CBIT, root);
+	}
+
+	root = make_tree(NP, p_freq, pt_len, pt_code);
+	if (root >= NP) 
+	{	write_pt_len(NP, PBIT, -1);
+	} else 
+	{	putbits(PBIT, 0);  putbits(PBIT, root);
+	}
+	pos = 0;
+	for (i = 0; i < size; i++) 
+	{	if (i % CHAR_BIT == 0) flags = buf[pos++];  else flags <<= 1;
+		if (flags & (1U << (CHAR_BIT - 1))) 
+		{	encode_c(buf[pos++] + (1U << CHAR_BIT));
+			k = buf[pos++] << CHAR_BIT;  k += buf[pos++];
+			encode_p(k);
+		} else encode_c(buf[pos++]);
+		if (unpackable) return;
+	}
+	for (i = 0; i < NC; i++) c_freq[i] = 0;
+	for (i = 0; i < NP; i++) p_freq[i] = 0;
+}
+
+static WORD output_pos, output_mask;
+
+void output(WORD c, WORD p)
+{	static WORD cpos;
+
+	if ((output_mask >>= 1) == 0) 
+	{	output_mask = 1U << (CHAR_BIT - 1);
+		if (output_pos >= bufsiz - 3 * CHAR_BIT) 
+		{	send_block();
+			if (unpackable) return;
+			output_pos = 0;
+		}
+		cpos = output_pos++;  buf[cpos] = 0;
+	}
+
+	buf[output_pos++] = (BYTE) c;  c_freq[c]++;
+
+	if (c >= (1U << CHAR_BIT)) 
+	{	buf[cpos] |= output_mask;
+		buf[output_pos++] = (BYTE)(p >> CHAR_BIT);
+		buf[output_pos++] = (BYTE) p;
+		c = 0;
+		while (p) {  p >>= 1;  c++;  }
+		p_freq[c]++;
+	}
+}
+
+void huf_encode_start(void)
+{	int i;
+
+	if (bufsiz == 0) 
+	{	bufsiz = 16 * 1024U;
+		while ((buf = (BYTE *)malloc(bufsiz)) == NULL) 
+		{	bufsiz = (bufsiz / 10U) * 9U;
+			if (bufsiz < 4 * 1024U) cMSG::Error("Decode Error!!","Out of memory.");
+		}
+	}
+
+	buf[0] = 0;
+	for (i = 0; i < NC; i++) c_freq[i] = 0;
+	for (i = 0; i < NP; i++) p_freq[i] = 0;
+	output_pos = output_mask = 0;
+	init_putbits();
+}
+
+inline void huf_encode_end(void)
+{	if (! unpackable) 
+	{	send_block();
+		putbits(CHAR_BIT - 1, 0);  /* flush remaining bits */
+	}
+}
+
+/***** decoding *****/
+
+static void read_pt_len(int nn, int nbit, int i_special)
+{
+	int i, c, n;
+	WORD mask;
+
+	n = getbits(nbit);
+	if (n == 0) 
+	{	c = getbits(nbit);
+		for (i = 0; i < nn; i++) pt_len[i] = 0;
+		for (i = 0; i < 256; i++) pt_table[i] = c;
+	} else 
+	{	i = 0;
+		while (i < n) 
+		{	c = bitbuf >> (BITBUFSIZ - 3);
+			if (c == 7) 
+			{	mask = 1U << (BITBUFSIZ - 1 - 3);
+				while (mask & bitbuf) {  mask >>= 1;  c++;  }
+			}
+			fillbuf((c < 7) ? 3 : c - 3);
+			pt_len[i++] = c;
+			if (i == i_special) 
+			{	c = getbits(2);
+				while (--c >= 0) pt_len[i++] = 0;
+			}
+		}
+		while (i < nn) pt_len[i++] = 0;
+		make_table(nn, pt_len, 8, pt_table);
+	}
+}
+
+static void read_c_len(void)
+{	int i, c, n;
+	WORD mask;
+
+	n = getbits(CBIT);
+	if (n == 0) 
+	{	c = getbits(CBIT);
+		for (i = 0; i < NC; i++) c_len[i] = 0;
+		for (i = 0; i < 4096; i++) c_table[i] = c;
+	} else 
+	{	i = 0;
+		while (i < n) 
+		{	c = pt_table[bitbuf >> (BITBUFSIZ - 8)];
+			if (c >= NT) 
+			{	mask = 1U << (BITBUFSIZ - 1 - 8);
+				do 
+				{	if (bitbuf & mask) c = right[c];
+					else               c = left [c];
+					mask >>= 1;
+				} while (c >= NT);
+			}
+
+			fillbuf(pt_len[c]);
+			if (c <= 2) 
+			{	if      (c == 0) c = 1;
+				else if (c == 1) c = getbits(4) + 3;
+				else             c = getbits(CBIT) + 20;
+				while (--c >= 0) c_len[i++] = 0;
+			} else c_len[i++] = c - 2;
+		}
+		while (i < NC) c_len[i++] = 0;
+		make_table(NC, c_len, 12, c_table);
+	}
+}
+
+WORD decode_c(void)
+{	WORD j, mask;
+
+	if (blocksize == 0) 
+	{	blocksize = getbits(16);
+		read_pt_len(NT, TBIT, 3);
+		read_c_len();
+		read_pt_len(NP, PBIT, -1);
+	}
+
+	blocksize--;
+	j = c_table[bitbuf >> (BITBUFSIZ - 12)];
+	if (j >= NC) 
+	{	mask = 1U << (BITBUFSIZ - 1 - 12);
+		do 
+		{	if (bitbuf & mask) j = right[j];
+			else               j = left [j];
+			mask >>= 1;
+		} while (j >= NC);
+	}
+
+	fillbuf(c_len[j]);
+	return j;
+}
+
+WORD decode_p(void)
+{	WORD j, mask;
+
+	j = pt_table[bitbuf >> (BITBUFSIZ - 8)];
+
+	if (j >= NP) 
+	{	mask = 1U << (BITBUFSIZ - 1 - 8);
+		do 
+		{	if (bitbuf & mask) j = right[j];
+			else               j = left [j];
+			mask >>= 1;
+		} while (j >= NP);
+	}
+
+	fillbuf(pt_len[j]);
+
+	if (j != 0) j = (1U << (j - 1)) + getbits(j - 1);
+
+	return j;
+}
+
+void huf_decode_start(void)
+{	init_getbits();
+	blocksize = 0;
+}
+
+
+/***********************************************************
+	decode.c
+***********************************************************/
+
+static int remainByte;  /* remaining bytes to copy */
+
+inline void decode_start(void)
+{	huf_decode_start();
+	remainByte = 0;
+}
+
+void decode(DWORD count, BYTE buffer[])
+	/* The calling function must keep the number of
+	   bytes to be processed.  This function decodes
+	   either 'count' bytes or 'DICSIZ' bytes, whichever
+	   is smaller, into the array 'buffer[]' of size
+	   'DICSIZ' or more.
+	   Call decode_start() once for each new file
+	   before calling this function. */
+{
+	static	WORD i;
+	WORD	r, c;
+
+	r	=	0;
+
+	while (--remainByte >= 0) 
+	{	buffer[r] = buffer[i];
+		i = (WORD)((i + 1) & (DICSIZ - 1));
+		if (++r == count) return;
+	}
+
+	for ( ; ; ) 
+	{	c = decode_c();
+		if (c <= UCHAR_MAX) 
+		{	buffer[r] = (BYTE)c;
+			if (++r == count) return;
+		} else 
+		{	remainByte = c - (UCHAR_MAX + 1 - THRESHOLD);
+			i = (WORD)((r - decode_p() - 1) & (DICSIZ - 1));
+			while (--remainByte >= 0) 
+			{	buffer[r] = buffer[i];
+				i = (WORD)((i + 1) & (DICSIZ - 1));
+				if (++r == count) return;
+			}
+		}
+	}
+}
+
+/***********************************************************
+	encode.c -- sliding dictionary with percolating update
+***********************************************************/
+#define PERCOLATE  1
+#define NIL        0
+#define MAX_HASH_VAL (3 * DICSIZ + (DICSIZ / 512 + 1) * UCHAR_MAX)
+
+typedef short node;
+
+static BYTE *text, *childcount;
+static node pos, matchpos, avail,*position, *parent, * m_prev, *m_next = NULL;
+static int m_remainder, matchlen = 0;
+
+#if MAXMATCH <= (UCHAR_MAX + 1)
+	static BYTE *level;
+#else
+	static WORD *level;
+#endif
+
+static void allocate_memory(void)
+{	if (m_next != NULL) return;
+
+    text		= (BYTE *)malloc(DICSIZ * 2 + MAXMATCH);
+	level		= (BYTE *)malloc((DICSIZ + UCHAR_MAX + 1) * sizeof(*level));
+	childcount	= (BYTE *)malloc((DICSIZ + UCHAR_MAX + 1) * sizeof(*childcount));
+
+	#if PERCOLATE
+	  position	= (short *)malloc((DICSIZ + UCHAR_MAX + 1) * sizeof(*position));
+	#else
+	  position	= (short *)malloc(DICSIZ * sizeof(*position));
+	#endif
+
+	parent		= (short *)malloc(DICSIZ * 2 * sizeof(*parent));
+	m_prev		= (short *)malloc(DICSIZ * 2 * sizeof(*m_prev));
+	m_next		= (short *)malloc((MAX_HASH_VAL + 1) * sizeof(*m_next));
+
+	if (m_next == NULL) cMSG::Error("Decode Error!!","Out of memory.");
+}
+
+static void init_slide(void)
+{	node i;
+
+	for (i = DICSIZ; i <= DICSIZ + UCHAR_MAX; i++) 
+	{	level[i] = 1;
+		#if PERCOLATE
+			position[i] = NIL;  /* sentinel */
+		#endif
+	}
+	for (i = DICSIZ; i < DICSIZ * 2; i++) parent[i] = NIL;
+	avail = 1;
+	for (i = 1; i < DICSIZ - 1; i++) m_next[i] = i + 1;
+	m_next[DICSIZ - 1] = NIL;
+	for (i = DICSIZ * 2; i <= MAX_HASH_VAL; i++) m_next[i] = NIL;
+}
+
+#define HASH(p, c) ((p) + ((c) << (DICBIT - 9)) + DICSIZ * 2)
+
+inline  node child(node q, BYTE c)
+	/* q's child for character c (NIL if not found) */
+{	node r;
+
+	r = m_next[HASH(q, c)];
+	parent[NIL] = q;  /* sentinel */
+	while (parent[r] != q) r = m_next[r];
+
+	return r;
+}
+
+static void makechild(node q, BYTE c, node r)
+	/* Let r be q's child for character c. */
+{	node h, t;
+
+	h			= (short)HASH(q, c);
+	t			= m_next[h];
+	m_next[h]		= r;
+	m_next[r]		= t;
+	m_prev[t]		= r;
+	m_prev[r]		= h;
+	parent[r]	= q;
+	childcount[q]++;
+}
+
+void split(node old)
+{	node newnode, t;
+
+	newnode				= avail;
+	avail				= m_next[newnode];
+	childcount[newnode] = 0;
+	t					= m_prev[old];
+	m_prev[newnode]		= t;
+	m_next[t]				= newnode;
+	t					= m_next[old];
+	m_next[newnode]		= t;
+	m_prev[t]				= newnode;
+	parent[newnode]		= parent[old];
+	level[newnode]		= matchlen;
+	position[newnode]	= pos;
+
+	makechild(newnode, text[matchpos + matchlen], old);
+	makechild(newnode, text[pos + matchlen], pos);
+}
+
+static void insert_node(void)
+{
+	node q, r, j, t;
+	BYTE c, *t1, *t2;
+
+	if (matchlen >= 4) {
+		matchlen--;
+		r = (short)((matchpos + 1) | DICSIZ);
+		while ((q = parent[r]) == NIL) r = m_next[r];
+		while (level[q] >= matchlen) {
+			r = q;  q = parent[q];
+		}
+		#if PERCOLATE
+			t = q;
+			while (position[t] < 0) {
+				position[t] = pos;  t = parent[t];
+			}
+			if (t < DICSIZ) position[t] = pos | PERC_FLAG;
+		#else
+			t = q;
+			while (t < DICSIZ) {
+				position[t] = pos;  t = parent[t];
+			}
+		#endif
+	} else {
+		q = (short)(text[pos] + DICSIZ);
+		c = text[pos + 1];
+		if ((r = child(q, c)) == NIL) {
+			makechild(q, c, pos);  matchlen = 1;
+			return;
+		}
+		matchlen = 2;
+	}
+	for ( ; ; ) {
+		if (r >= DICSIZ) {
+			j = MAXMATCH;  matchpos = r;
+		} else {
+			j = level[r];
+			matchpos = position[r] & ~PERC_FLAG;
+		}
+		if (matchpos >= pos) matchpos -= DICSIZ;
+		t1 = &text[pos + matchlen];  t2 = &text[matchpos + matchlen];
+		while (matchlen < j) {
+			if (*t1 != *t2) {  split(r);  return;  }
+			matchlen++;  t1++;  t2++;
+		}
+		if (matchlen >= MAXMATCH) break;
+		position[r] = pos;
+		q = r;
+		if ((r = child(q, *t1)) == NIL) {
+			makechild(q, *t1, pos);  return;
+		}
+		matchlen++;
+	}
+	t = m_prev[r];  m_prev[pos] = t;  m_next[t] = pos;
+	t = m_next[r];  m_next[pos] = t;  m_prev[t] = pos;
+	parent[pos] = q;  parent[r] = NIL;
+	m_next[r] = pos;  /* special use of m_next[] */
+}
+
+static void delete_node(void)
+{
+	#if PERCOLATE
+		node q, r, s, t, u;
+	#else
+		node r, s, t, u;
+	#endif
+
+	if (parent[pos] == NIL) return;
+	r = m_prev[pos];  s = m_next[pos];
+	m_next[r] = s;  m_prev[s] = r;
+	r = parent[pos];  parent[pos] = NIL;
+	if (r >= DICSIZ || --childcount[r] > 1) return;
+	#if PERCOLATE
+		t = position[r] & ~PERC_FLAG;
+	#else
+		t = position[r];
+	#endif
+	if (t >= pos) t -= DICSIZ;
+	#if PERCOLATE
+		s = t;  q = parent[r];
+		while ((u = position[q]) & PERC_FLAG) 
+		{	u &= ~PERC_FLAG;  if (u >= pos) u -= DICSIZ;
+			if (u > s) s = u;
+			position[q] = (short)(s | DICSIZ);
+			q = parent[q];
+		}
+		if (q < DICSIZ) 
+		{	if (u >= pos) u -= DICSIZ;
+			if (u > s) s = u;
+			position[q] = (short)(s | DICSIZ | PERC_FLAG);
+		}
+	#endif
+	s = child(r, text[t + level[r]]);
+	t = m_prev[s];  u = m_next[s];
+	m_next[t] = u;  m_prev[u] = t;
+	t = m_prev[r];  m_next[t] = s;  m_prev[s] = t;
+	t = m_next[r];  m_prev[t] = s;  m_next[s] = t;
+	parent[s] = parent[r];  parent[r] = NIL;
+	m_next[r] = avail;  avail = r;
+}
+
+static BOOL get_m_next_match(void)
+{	int n;
+
+	m_remainder--;
+
+	if (++pos == DICSIZ * 2) 
+	{	memmove(&text[0], &text[DICSIZ], DICSIZ + MAXMATCH);
+		n	=	readSourceBuffer(&text[DICSIZ + MAXMATCH], DICSIZ);
+		m_remainder += n;
+		pos =	DICSIZ;
+	}
+
+	delete_node();
+	insert_node();
+
+	return TRUE;
+}
+
+BOOL encode(void)
+{	int lastmatchlen;
+	node lastmatchpos;
+
+	allocate_memory();
+	init_slide();
+	huf_encode_start();
+	m_remainder = readSourceBuffer(&text[DICSIZ], DICSIZ + MAXMATCH);
+
+	matchlen = 0;
+	pos = DICSIZ;
+	insert_node();
+
+	if (matchlen > m_remainder) matchlen = m_remainder;
+
+	while (m_remainder > 0 && ! unpackable) 
+	{	lastmatchlen = matchlen;
+		lastmatchpos = matchpos;
+		if (!get_m_next_match()) return FALSE;
+
+		if (matchlen > m_remainder)	matchlen = m_remainder;
+
+		if (matchlen > lastmatchlen || lastmatchlen < THRESHOLD)	output(text[pos - 1], 0);
+		else 
+		{	output((WORD)(lastmatchlen + (UCHAR_MAX + 1 - THRESHOLD)),(WORD)((pos - lastmatchpos - 2) & (DICSIZ - 1)));
+			while (--lastmatchlen > 0)
+				if (!get_m_next_match()) return FALSE;
+			if (matchlen > m_remainder) matchlen = m_remainder;
+		}
+
+//		cNUX::FileRate	=	max(m_remainder,0)*100/size;
+	}
+
+	huf_encode_end();
+
+	return TRUE;
+}
+
+#include <stdarg.h>
+
+#define CRCPOLY  0xA001  /* ANSI CRC-16 */
+                         /* CCITT: 0x8408 */
+#define UPDATE_CRC(c)	crc = crctable[(crc ^ (c)) & 0xFF] ^ (crc >> CHAR_BIT)
+
+static WORD		crctable[UCHAR_MAX + 1]		=	{1,};
+static WORD		subbitbuf;
+static int		bitcount;
+
+void make_crctable(void)
+{	WORD i, j, r;
+
+	for (i = 0; i <= UCHAR_MAX; i++) 
+	{	r = i;
+		for (j = 0; j < CHAR_BIT; j++)
+			if (r & 1) r = (r >> 1) ^ CRCPOLY;
+			else       r >>= 1;
+
+		crctable[i] = r;
+	}
+}
+
+inline void fillbuf(int n)  /* Shift bitbuf n bits left, read n bits */
+{	bitbuf <<= n;
+
+	while (n > bitcount) 
+	{	bitbuf |= subbitbuf << (n -= bitcount);
+		if (l_iCompressSize != 0) 
+		{	l_iCompressSize--;
+			subbitbuf	=	l_lpSourceData[l_iSourceDataPoint++];
+
+		} else subbitbuf=	0;
+
+		bitcount = CHAR_BIT;
+	}
+
+	bitbuf |= subbitbuf >> (bitcount -= n);
+}
+
+inline WORD getbits(int n)
+{	WORD x;
+
+	x = bitbuf >> (BITBUFSIZ - n);  fillbuf(n);
+
+	return x;
+}
+
+void putbits(int n, DWORD x)  /* Write rightmost n bits of x */
+{	if (n < bitcount) 
+	{	subbitbuf |= x << (bitcount -= n);
+	} else 
+	{	if (l_iCompressSize < l_iOriginalSize) 
+		{
+			l_aResultBuffer[l_iResultBufferPoint++]	=	(BYTE)(subbitbuf | (x >> (n -= bitcount)));
+			l_iCompressSize++;
+		} 
+	else 
+		unpackable = 1;
+
+		if (n < CHAR_BIT) 
+		{	subbitbuf = (WORD)(x << (bitcount = CHAR_BIT - n));
+		} else 
+		{	if (l_iCompressSize < l_iOriginalSize) 
+			{
+				l_aResultBuffer[l_iResultBufferPoint++]	=	(BYTE)(x >> (n - CHAR_BIT));
+				l_iCompressSize++;
+			} else unpackable = 1;
+			subbitbuf = (WORD)(x << (bitcount = 2 * CHAR_BIT - n));
+		}
+	}
+}
+
+inline int readSourceBuffer(BYTE *p, int n)
+{
+	if (l_iSourceDataPoint	+	n	>	l_iSourceDataSize)	n	=	l_iSourceDataSize	-	l_iSourceDataPoint;
+
+	memcpy(p,l_lpSourceData+l_iSourceDataPoint,n);
+	l_iSourceDataPoint	+=	n;
+	l_iOriginalSize		+=	n;
+
+//	while (--i >= 0) UPDATE_CRC(*p++);
+
+	return n;
+}
+
+inline void writeResultBuffer(BYTE *p, int n)
+{
+//	if (l_iSourceDataPoint	+	n	>	l_iSourceDataSize)	n	=	l_iSourceDataSize	-	l_iSourceDataPoint;
+
+	memcpy(l_aResultBuffer+l_iResultBufferPoint,p,n);
+	l_iResultBufferPoint	+=	n;
+
+//	while (--n >= 0) UPDATE_CRC(*p++);
+}
+
+inline void init_getbits(void)
+{	bitbuf = 0;  subbitbuf = 0;  bitcount = 0;
+	fillbuf(BITBUFSIZ);
+}
+
+inline void init_putbits(void)
+{	bitcount = CHAR_BIT;  subbitbuf = 0;
+}
+
+void make_table(int nchar, BYTE bitlen[], int tablebits, WORD table[])
+{	WORD count[17], weight[17], start[18], *p;
+	WORD i, k, len, ch, jutbits, avail, m_nextcode, mask;
+
+	for (i = 1; i <= 16		; i++	) count[i]	= 0;
+	for (i = 0; i < nchar	; i++	) count[bitlen[i]]++;
+
+	start[1] = 0;
+	for (i = 1; i <= 16; i++)	start[i + 1] = start[i] + (count[i] << (16 - i));
+	if (start[17] != (WORD)(1U << 16)) cMSG::Error("Table Making Error!!","Bad table");
+
+	jutbits = 16 - tablebits;
+
+	for (i = 1; i <= tablebits; i++) 
+	{	start[i] >>= jutbits;
+		weight[i] = 1U << (tablebits - i);
+	}
+
+	while (i <= 16) weight[i++] = 1U << (16 - i);
+
+	i = start[tablebits + 1] >> jutbits;
+
+	if (i != (WORD)(1U << 16)) 
+	{	k = 1U << tablebits;
+		while (i != k) table[i++] = 0;
+	}
+
+	avail = nchar;
+	mask = 1U << (15 - tablebits);
+	for (ch = 0; ch < nchar; ch++) 
+	{	if ((len = bitlen[ch]) == 0) continue;
+		m_nextcode = start[len] + weight[len];
+		if (len <= tablebits) 
+		{	for (i = start[len]; i < m_nextcode; i++) table[i] = ch;
+		} else 
+		{	k = start[len];
+			p = &table[k >> jutbits];
+			i = len - tablebits;
+			while (i != 0) 
+			{	if (*p == 0) 
+				{	right[avail] = left[avail] = 0;
+					*p = avail++;
+				}
+
+				if (k & mask) p = &right[*p];
+				else          p = &left[*p];
+
+				k <<= 1;
+				i--;
+			}
+			*p = ch;
+		}
+		start[len] = m_nextcode;
+	}
+}
+
+/***********************************************************
+	maketree.c -- make Huffman tree
+***********************************************************/
+
+static int    n, heapsize;
+static short  heap[NC + 1];
+static WORD *freq, *sortptr, len_cnt[17];
+static BYTE  *len;
+
+static void count_len(int i)  /* call with i = root */
+{
+	static int depth = 0;
+
+	if (i < n) len_cnt[(depth < 16) ? depth : 16]++;
+	else {
+		depth++;
+		count_len(left [i]);
+		count_len(right[i]);
+		depth--;
+	}
+}
+
+static void make_len(int root)
+{
+	int i, k;
+	ULONG cum;
+
+	for (i = 0; i <= 16; i++) len_cnt[i] = 0;
+	count_len(root);
+	cum = 0;
+	for (i = 16; i > 0; i--)
+		cum += len_cnt[i] << (16 - i);
+	while (cum != (1U << 16)) {
+		fprintf(stderr, "17");
+		len_cnt[16]--;
+		for (i = 15; i > 0; i--) {
+			if (len_cnt[i] != 0) {
+				len_cnt[i]--;  len_cnt[i+1] += 2;  break;
+			}
+		}
+		cum--;
+	}
+	for (i = 16; i > 0; i--) {
+		k = len_cnt[i];
+		while (--k >= 0) len[*sortptr++] = i;
+	}
+}
+
+static void downheap(int i)
+	/* priority queue; send i-th entry down heap */
+{
+	int j, k;
+
+	k = heap[i];
+	while ((j = 2 * i) <= heapsize) {
+		if (j < heapsize && freq[heap[j]] > freq[heap[j + 1]])
+		 	j++;
+		if (freq[k] <= freq[heap[j]]) break;
+		heap[i] = heap[j];  i = j;
+	}
+	heap[i] = k;
+}
+
+static void make_code(int n, BYTE len[], WORD code[])
+{
+	int    i;
+	WORD start[18];
+
+	start[1] = 0;
+	for (i = 1; i <= 16; i++)
+		start[i + 1] = (start[i] + len_cnt[i]) << 1;
+	for (i = 0; i < n; i++) code[i] = start[len[i]]++;
+}
+
+int make_tree(int nparm, WORD freqparm[],
+				BYTE lenparm[], WORD codeparm[])
+	/* make tree, calculate len[], return root */
+{
+	int i, j, k, avail;
+
+	n = nparm;  freq = freqparm;  len = lenparm;
+	avail = n;  heapsize = 0;  heap[1] = 0;
+	for (i = 0; i < n; i++) {
+		len[i] = 0;
+		if (freq[i]) heap[++heapsize] = i;
+	}
+	if (heapsize < 2) {
+		codeparm[heap[1]] = 0;  return heap[1];
+	}
+	for (i = heapsize / 2; i >= 1; i--)
+		downheap(i);  /* make priority queue */
+	sortptr = codeparm;
+	do {  /* while queue has at least two entries */
+		i = heap[1];  /* take out least-freq entry */
+		if (i < n) *sortptr++ = i;
+		heap[1] = heap[heapsize--];
+		downheap(1);
+		j = heap[1];  /* m_next least-freq entry */
+		if (j < n) *sortptr++ = j;
+		k = avail++;  /* generate new node */
+		freq[k] = freq[i] + freq[j];
+		heap[1] = k;  downheap(1);  /* put into queue */
+		left[k] = i;  right[k] = j;
+	} while (heapsize > 1);
+	sortptr = codeparm;
+	make_len(k);
+	make_code(nparm, lenparm, codeparm);
+	return k;  /* return root */
+}
+
+
+/****************************************************************
+		내가 추가한 넘들
+****************************************************************/
+
+BYTE *
+CompressData(BYTE *_lpSourceData,int _iDataSize,int *_lpResultSize)
+{
+	if (crctable[0]!=0)	make_crctable();
+
+	l_lpSourceData		=	_lpSourceData;
+	l_iSourceDataSize	=	_iDataSize;
+	l_iResultBufferPoint=	0;
+	headersize			=	15;
+
+	memset(l_aResultBuffer,0,sizeof(l_aResultBuffer));
+
+	memcpy(header, "-sn5-", 5);												/* compress		*/
+	write_header();															/* temporarily	*/
+
+	l_iOriginalSize=	l_iCompressSize = 0;
+	unpackable	=	0;
+	crc			=	INIT_CRC;
+
+	if (!encode()) return NULL;
+
+	if (unpackable)
+	{	header[3]			=	'0';									/* store		*/
+		l_lpSourceData		=	_lpSourceData;
+		l_iSourceDataPoint	=	0;
+		l_iResultBufferPoint=	headersize+2;
+		store();
+	}
+
+	file_crc	=	crc ^ INIT_CRC;
+
+	put_to_header(5, 4, l_iCompressSize);
+	put_to_header(9, 4, l_iOriginalSize);
+
+//	memcpy(header + 13, "\0\0\0\0\x20\x01", 6);
+//	memcpy(header + headersize - 3, "\x20\0\0", 3);
+
+	*_lpResultSize		=	l_iResultBufferPoint;
+	l_iCompressSize		=	l_iResultBufferPoint;
+	l_iResultBufferPoint=	0;
+	write_header();  /* true header */
+
+	BYTE	*pResultBuffer	=	new BYTE [l_iCompressSize];
+
+	memcpy(pResultBuffer,l_aResultBuffer,l_iCompressSize);
+
+	return pResultBuffer;  /* success */
+}
+
+
+BYTE *
+DecompressData(BYTE *_lpSourceData,int _iSourceDataSize,int *_lpResultSize)
+{
+	if (crctable[0]!=0)	make_crctable();
+
+	l_lpSourceData		=	_lpSourceData;
+	l_iSourceDataSize	=	_iSourceDataSize;
+	l_iResultBufferPoint=	0;
+	l_iSourceDataPoint	=	0;
+
+//	압축 풀기 시작
+	int	n, method;
+	int	iResultDataSize	=	0;
+	int	read			=	read_header();
+
+	iResultDataSize		=	l_iOriginalSize;
+
+	crc					=	INIT_CRC;
+	method				=	header[3];
+	header[3]			=	' ';
+
+	if (method != '0')	decode_start();	//	압축됐다.
+
+	while (l_iOriginalSize != 0) 
+	{	
+		n		=	(WORD)((l_iOriginalSize > DICSIZ) ? DICSIZ : l_iOriginalSize);
+
+		if (method != '0')	decode(n, buffer);
+		else				memcpy(buffer,_lpSourceData+l_iSourceDataPoint,n);
+
+		writeResultBuffer(buffer, n);
+
+		l_iOriginalSize -= n;
+	}
+
+	BYTE	*pResultBuffer	=	new BYTE [iResultDataSize];
+
+	memcpy(pResultBuffer,l_aResultBuffer,iResultDataSize);
+
+	*_lpResultSize	=	iResultDataSize;
+
+	return pResultBuffer;	//l_aResultBuffer;  /* success */
+}

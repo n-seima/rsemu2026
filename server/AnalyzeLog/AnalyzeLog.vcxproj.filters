@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8bb5eea8-7e5b-4bb2-b43c-88fd692975b8}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1b79d285-e630-4c92-abd6-de140d8051e5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{5c1c85d6-e80a-47e1-b249-dc7e0f809670}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="FTPCLIENT">
+      <UniqueIdentifier>{64fd7f99-79d4-4786-bb50-ad7e61377d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｸｮｼﾒｽｺ ｼﾒｽｺ">
+      <UniqueIdentifier>{d863bfa2-242b-46d3-b617-68b196548e98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{94c463e8-ea1f-44e4-9387-9373632c2a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｷﾎｱﾗ ﾇﾊﾅﾍｸｵ">
+      <UniqueIdentifier>{b830e997-e5c3-4481-ad4f-8795a461d129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｹ鮴・ﾄﾚｵ・">
+      <UniqueIdentifier>{2316dbb8-837f-42db-94b3-e2ff954e0408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｷﾎｱﾗ ﾃﾟﾃ・">
+      <UniqueIdentifier>{e98f9c88-8352-4a0a-bb30-e7752f3a6fac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｰ・">
+      <UniqueIdentifier>{1e43ca13-c00d-4b13-8352-67c5cc12d777}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnalyzeLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalyzeLogDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="book.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cADO_AnalyzeTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBmpMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cITEM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CItemPrefix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cLOG_QUE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cPetDefine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file_buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="job.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LOGLISTBOX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessInfoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpclass\blockingsocket.cpp">
+      <Filter>FTPCLIENT</Filter>
+    </ClCompile>
+    <ClCompile Include="CFTPclient.cpp">
+      <Filter>FTPCLIENT</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpclass\ftpdatatypes.cpp">
+      <Filter>FTPCLIENT</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpclass\ftpfilestate.cpp">
+      <Filter>FTPCLIENT</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpclass\ftplistparse.cpp">
+      <Filter>FTPCLIENT</Filter>
+    </ClCompile>
+    <ClCompile Include="duel_filter.cpp">
+      <Filter>ｷﾎｱﾗ ﾇﾊﾅﾍｸｵ</Filter>
+    </ClCompile>
+    <ClCompile Include="log_filtering.cpp">
+      <Filter>ｷﾎｱﾗ ﾇﾊﾅﾍｸｵ</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadLogFile.cpp">
+      <Filter>ｹ鮴・ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="exportLog.cpp">
+      <Filter>ｷﾎｱﾗ ﾃﾟﾃ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cNUX.cpp">
+      <Filter>ｰ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\commonDefine.cpp">
+      <Filter>ｰ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cScript.cpp">
+      <Filter>ｰ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSRVUTIL.cpp">
+      <Filter>ｰ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\Msjexhnd.cpp">
+      <Filter>ｰ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\SFC.cpp">
+      <Filter>ｰ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\Tracer.cpp">
+      <Filter>ｰ・</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnalyzeLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalyzeLogDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cADO_AnalyzeTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBmpMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cITEM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cITEM_PREFIX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CItemPrefix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="job.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LOGLISTBOX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\blockingsocket.h">
+      <Filter>FTPCLIENT</Filter>
+    </ClInclude>
+    <ClInclude Include="CFTPclient.h">
+      <Filter>FTPCLIENT</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\definements.h">
+      <Filter>FTPCLIENT</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\ftpdatatypes.h">
+      <Filter>FTPCLIENT</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\ftpfilestate.h">
+      <Filter>FTPCLIENT</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\ftplistparse.h">
+      <Filter>FTPCLIENT</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\rc_smart_ptr.h">
+      <Filter>FTPCLIENT</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ｸｮｼﾒｽｺ ｼﾒｽｺ</Filter>
+    </ClInclude>
+    <ClInclude Include="duel_filter.h">
+      <Filter>ｷﾎｱﾗ ﾇﾊﾅﾍｸｵ</Filter>
+    </ClInclude>
+    <ClInclude Include="log_filtering.h">
+      <Filter>ｷﾎｱﾗ ﾇﾊﾅﾍｸｵ</Filter>
+    </ClInclude>
+    <ClInclude Include="exportLog.h">
+      <Filter>ｷﾎｱﾗ ﾃﾟﾃ・</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\AnalyzeLog.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\menutitl.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AnalyzeLog.rc">
+      <Filter>ｸｮｼﾒｽｺ ｼﾒｽｺ</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="zdll.lib">
+      <Filter>lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\AnalyzeLog.rc2">
+      <Filter>ｸｮｼﾒｽｺ ｼﾒｽｺ</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

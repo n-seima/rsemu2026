@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6e08bf3c-81c0-4b28-a2c1-68e4b15cafb7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f4390a70-640a-4112-bfab-159c84d15556}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b6f71c4d-3552-4e55-8946-20452da44ead}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Add Code">
+      <UniqueIdentifier>{f7f5011d-b05f-42b3-80a4-cb48b0ca2ba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add Code\Item Pack List">
+      <UniqueIdentifier>{be3c4504-459c-4d58-9211-6f0194f5478f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add Code\Carrot Shop">
+      <UniqueIdentifier>{fc140e99-250f-4750-94c2-cdf2e97cea74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add Code\quest">
+      <UniqueIdentifier>{a7a63056-0066-414d-b1f1-b67f7eda8c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add Code\Event Manager">
+      <UniqueIdentifier>{69617f20-3330-4ecd-bc38-cb352a9fa20e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add Code\Base">
+      <UniqueIdentifier>{293378d8-e044-4aee-b362-324939132526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add Code\server tool">
+      <UniqueIdentifier>{4cd3f61b-93a2-4c6f-8601-7170e7e3cfcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add Code\Inventory">
+      <UniqueIdentifier>{4d1506f7-b78f-4758-8c4d-600dab89c123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add Code\ftp class">
+      <UniqueIdentifier>{90a08885-8a9c-4b09-b43e-8226910844c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add Code\Guild">
+      <UniqueIdentifier>{5c9037f7-e535-4688-b9ef-232a8cc21e41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add Code\ｹﾌｴﾏﾆ・ｸｮｽｺﾆｮ">
+      <UniqueIdentifier>{1b58ef44-e72b-4f26-a29f-577319460f3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add Code\ﾆ・ｸｮｽｺﾆｮ">
+      <UniqueIdentifier>{0fa2188a-2fe3-4d17-a597-0d571e5922d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{c7056530-d82d-4d8e-b37f-f06cd31af981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{a1d8819b-00d2-49f4-9fce-40ab07ccf257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ﾆﾐﾅｶ">
+      <UniqueIdentifier>{130fb884-5231-410c-a9ba-e8e638e1aef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｾﾆﾀﾌﾅﾛ">
+      <UniqueIdentifier>{5d279bfc-0fe5-4557-a76a-a6cad0730397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{5bb8cf9d-adb6-4d6c-9ffa-7167faa889b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DLL">
+      <UniqueIdentifier>{c49f4aae-d203-4b92-a88d-f9b6c3b5a8e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Searching Avatar DB">
+      <UniqueIdentifier>{3a60a629-7b65-4b7d-9878-d09b5c4411b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\common\adCommandDefine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AdminCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AdminLogCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AdminTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AdminToolDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AGEGRAPH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cADO_ADMIN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cADO_ADMIN_FOR_ACCOUNT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cADO_ADMIN_FOR_AVATAR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cADO_ADMIN_FOR_COMMAND.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cADO_ADMIN_FOR_EVENT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cADO_ADMIN_FOR_GUILD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cADO_ADMIN_FOR_OPERATOR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cADO_ADMIN_FOR_PVP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cADO_ADMIN_FOR_STATISTICS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cADO_ADMIN_FOR_TEMPWORK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cADO_BASE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBmpMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cDlgChangeGMaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\CSkill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventTimeManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LOGIN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LottoEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSGDLG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\Msjexhnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NEWNAME.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\PacketBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PAGE_NOTICE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PAGE_PVPTOOL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PAGE_SUM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PAGE_USERSETTING.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PollDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEARCHPAGE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TentativeGuildManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\Tracer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldScore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemPackList.cpp">
+      <Filter>Add Code\Item Pack List</Filter>
+    </ClCompile>
+    <ClCompile Include="carrotShop.cpp">
+      <Filter>Add Code\Carrot Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="quest.cpp">
+      <Filter>Add Code\quest</Filter>
+    </ClCompile>
+    <ClCompile Include="questList.cpp">
+      <Filter>Add Code\quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\eventDefine.cpp">
+      <Filter>Add Code\Event Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Add Code\Event Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="cDECODER.cpp">
+      <Filter>Add Code\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\SFC.cpp">
+      <Filter>Add Code\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="windowExtendAPI.cpp">
+      <Filter>Add Code\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="rookieEvent090721.cpp">
+      <Filter>Add Code\server tool</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerTool.cpp">
+      <Filter>Add Code\server tool</Filter>
+    </ClCompile>
+    <ClCompile Include="serverTool050720.cpp">
+      <Filter>Add Code\server tool</Filter>
+    </ClCompile>
+    <ClCompile Include="serverTool050818.cpp">
+      <Filter>Add Code\server tool</Filter>
+    </ClCompile>
+    <ClCompile Include="serverToolOld.cpp">
+      <Filter>Add Code\server tool</Filter>
+    </ClCompile>
+    <ClCompile Include="cInventory.cpp">
+      <Filter>Add Code\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpclass\blockingsocket.cpp">
+      <Filter>Add Code\ftp class</Filter>
+    </ClCompile>
+    <ClCompile Include="CFTPclient.cpp">
+      <Filter>Add Code\ftp class</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpclass\ftpdatatypes.cpp">
+      <Filter>Add Code\ftp class</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpclass\ftpfilestate.cpp">
+      <Filter>Add Code\ftp class</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpclass\ftplistparse.cpp">
+      <Filter>Add Code\ftp class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\guild_common.cpp">
+      <Filter>Add Code\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="guildInfo.cpp">
+      <Filter>Add Code\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildInventory.cpp">
+      <Filter>Add Code\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildPetAndGuardian.cpp">
+      <Filter>Add Code\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="cMiniPetList.cpp">
+      <Filter>Add Code\ｹﾌｴﾏﾆ・ｸｮｽｺﾆｮ</Filter>
+    </ClCompile>
+    <ClCompile Include="cPetList.cpp">
+      <Filter>Add Code\ﾆ・ｸｮｽｺﾆｮ</Filter>
+    </ClCompile>
+    <ClCompile Include="book.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CCharacterData.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterInfo.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CMessage.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cPetDefine.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CTitle.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpCalc.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="IPCurrentStatus.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="playerData.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="RenewItemExpireDate.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="skill.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="cITEM.cpp">
+      <Filter>ｾﾆﾀﾌﾅﾛ</Filter>
+    </ClCompile>
+    <ClCompile Include="cMakeItem.cpp">
+      <Filter>ｾﾆﾀﾌﾅﾛ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\commonDefine.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cPLAYER_DATA.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cScript.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSOCKET.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSRVUTIL.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\playerJobCommon.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectFunc.cpp">
+      <Filter>Searching Avatar DB</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\common\adCommandDefine.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdminCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdminLogCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdminTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdminToolDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AGEGRAPH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cADO_ADMIN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBmpMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cDlgChangeGMaster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cListManage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CSkill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EventTimeManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LOGIN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LottoEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSGDLG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NEWNAME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PAGE_NOTICE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PAGE_PVPTOOL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PAGE_SUM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PAGE_USERSETTING.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PollDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEARCHPAGE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TentativeGuildManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="threadFunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldScore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemPackList.h">
+      <Filter>Add Code\Item Pack List</Filter>
+    </ClInclude>
+    <ClInclude Include="carrotShop.h">
+      <Filter>Add Code\Carrot Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="quest.h">
+      <Filter>Add Code\quest</Filter>
+    </ClInclude>
+    <ClInclude Include="questList.h">
+      <Filter>Add Code\quest</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>Add Code\Event Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="cDECODER.h">
+      <Filter>Add Code\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="windowExtendAPI.h">
+      <Filter>Add Code\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerTool.h">
+      <Filter>Add Code\server tool</Filter>
+    </ClInclude>
+    <ClInclude Include="cInventory.h">
+      <Filter>Add Code\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\blockingsocket.h">
+      <Filter>Add Code\ftp class</Filter>
+    </ClInclude>
+    <ClInclude Include="CFTPclient.h">
+      <Filter>Add Code\ftp class</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\definements.h">
+      <Filter>Add Code\ftp class</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\ftpdatatypes.h">
+      <Filter>Add Code\ftp class</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\ftpfilestate.h">
+      <Filter>Add Code\ftp class</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\ftplistparse.h">
+      <Filter>Add Code\ftp class</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpclass\rc_smart_ptr.h">
+      <Filter>Add Code\ftp class</Filter>
+    </ClInclude>
+    <ClInclude Include="guildInfo.h">
+      <Filter>Add Code\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildInventory.h">
+      <Filter>Add Code\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildPetAndGuardian.h">
+      <Filter>Add Code\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="cMiniPetList.h">
+      <Filter>Add Code\ｹﾌｴﾏﾆ・ｸｮｽｺﾆｮ</Filter>
+    </ClInclude>
+    <ClInclude Include="cPetList.h">
+      <Filter>Add Code\ﾆ・ｸｮｽｺﾆｮ</Filter>
+    </ClInclude>
+    <ClInclude Include="book.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterInfo.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CTitle.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpCalc.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="IPCurrentStatus.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="RenewItemExpireDate.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="skill.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_BASE.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_CONTROLSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_DBSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_GAMESERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGINSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_TOOLLOGSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_USERDBSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_WORLDSERVER.h">
+      <Filter>ﾆﾐﾅｶ</Filter>
+    </ClInclude>
+    <ClInclude Include="cITEM.h">
+      <Filter>ｾﾆﾀﾌﾅﾛ</Filter>
+    </ClInclude>
+    <ClInclude Include="cITEM_PREFIX.h">
+      <Filter>ｾﾆﾀﾌﾅﾛ</Filter>
+    </ClInclude>
+    <ClInclude Include="cMakeItem.h">
+      <Filter>ｾﾆﾀﾌﾅﾛ</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectFunc.h">
+      <Filter>Searching Avatar DB</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\AdminTool.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00003.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00006.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\graph.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\red stone.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AdminTool.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="zdll.lib">
+      <Filter>lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="controltext.txt" />
+    <Text Include="message.txt" />
+    <Text Include="message_eng.txt" />
+    <Text Include="ReadMe.txt" />
+    <Text Include="ReadMe_dev.txt" />
+    <Text Include="..\ServerDownList.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\AdminTool.rc2">
+      <Filter>resource</Filter>
+    </CustomBuild>
+    <CustomBuild Include="zlib1.dll">
+      <Filter>DLL</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

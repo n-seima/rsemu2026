@@ -1,0 +1,131 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AdminTool - Win32 Debug FOR JAPAN--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP52.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "../../common/common" /I "../../common/packet" /I "./" /D "_ADMIN_TOOL" /D "_FOR_JAPAN" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "__USE_ZLIB" /FR"AdminTool___Win32_Debug_FOR_JAPAN1/" /Fo"AdminTool___Win32_Debug_FOR_JAPAN1/" /Fd"AdminTool___Win32_Debug_FOR_JAPAN1/" /FD /GZ /c 
+"C:\MyDev\japan_110322_0.0538_1220\server\admintool\AdminToolDlg.cpp"
+"C:\MyDev\japan_110322_0.0538_1220\server\admintool\CFTPclient.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP52.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP53.tmp" with contents
+[
+Nafxcwd.lib Libcmtd.lib zdll.lib ws2_32.lib winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"C:\MyDev\540_Server\AdminTool\AdminTool(Japan).pdb" /map:"C:\MyDev\540_Server\AdminTool\AdminTool(Japan).map" /debug /machine:I386 /nodefaultlib:"Nafxcwd.lib Libcmtd.lib" /out:"C:\MyDev\540_Server\AdminTool\AdminTool(Japan).exe" /pdbtype:sept 
+.\AdminTool___Win32_Debug_FOR_JAPAN1\adCommandDefine.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\AdminCommand.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\AdminLogCode.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\AdminTool.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\AdminToolDlg.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\AGEGRAPH.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cADO_ADMIN.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cADO_ADMIN_FOR_ACCOUNT.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cADO_ADMIN_FOR_AVATAR.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cADO_ADMIN_FOR_COMMAND.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cADO_ADMIN_FOR_EVENT.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cADO_ADMIN_FOR_GUILD.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cADO_ADMIN_FOR_OPERATOR.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cADO_ADMIN_FOR_PVP.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cADO_ADMIN_FOR_STATISTICS.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cADO_ADMIN_FOR_TEMPWORK.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cADO_BASE.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\CBmpMenu.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cDlgChangeGMaster.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\CSkill.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\EventTimeManager.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\LOGIN.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\LottoEvent.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\MSGDLG.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\Msjexhnd.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\NEWNAME.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\PacketBuffer.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\PAGE_NOTICE.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\PAGE_PVPTOOL.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\PAGE_SUM.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\PAGE_USERSETTING.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\PollDlg.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\SEARCHPAGE.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\setItem.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\StdAfx.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\TentativeGuildManager.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\Tracer.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\WorldScore.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\ItemPackList.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\carrotShop.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\quest.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\questList.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\eventDefine.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\EventManager.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cDECODER.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\SFC.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\windowExtendAPI.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\rookieEvent090721.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\ServerTool.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\serverTool050720.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\serverTool050818.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\serverToolOld.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cInventory.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\blockingsocket.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\CFTPclient.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\ftpdatatypes.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\ftpfilestate.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\ftplistparse.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\guild_common.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\guildInfo.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\GuildInventory.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\GuildPetAndGuardian.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cMiniPetList.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cPetList.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\book.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\CCharacterData.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\CharacterInfo.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\CMessage.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cPetDefine.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\CTitle.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\ExpCalc.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\IPCurrentStatus.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\playerData.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\RenewItemExpireDate.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\skill.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cITEM.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cMakeItem.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\commonDefine.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cPLAYER_DATA.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cScript.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cSOCKET.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\cSRVUTIL.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\LinkedList.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\playerJobCommon.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\SelectFunc.obj
+.\AdminTool___Win32_Debug_FOR_JAPAN1\AdminTool.res
+.\zdll.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP53.tmp"
+<h3>Output Window</h3>
+Compiling...
+AdminToolDlg.cpp
+c:\program files\microsoft visual studio 9.0\vc\include\crtdefs.h(560) : error C2485: 'deprecated' : unrecognized extended attribute
+c:\program files\microsoft visual studio 9.0\vc\include\new.h(30) : warning C4601: #pragma push_macro : 'new' is not currently defined as a macro
+ WINVER not defined. Defaulting to 0x0600 (Windows Vista)
+c:\program files\microsoft visual studio 9.0\vc\atlmfc\include\afxv_w32.h(164) : warning C4601: #pragma push_macro : '_WINSOCKAPI_' is not currently defined as a macro
+c:\program files\microsoft visual studio 9.0\vc\atlmfc\include\afxv_w32.h(169) : fatal error C1083: Cannot open include file: 'windows.h': No such file or directory
+CFTPclient.cpp
+c:\program files\microsoft visual studio 9.0\vc\include\crtdefs.h(560) : error C2485: 'deprecated' : unrecognized extended attribute
+c:\program files\microsoft visual studio 9.0\vc\include\new.h(30) : warning C4601: #pragma push_macro : 'new' is not currently defined as a macro
+ WINVER not defined. Defaulting to 0x0600 (Windows Vista)
+c:\program files\microsoft visual studio 9.0\vc\atlmfc\include\afxv_w32.h(164) : warning C4601: #pragma push_macro : '_WINSOCKAPI_' is not currently defined as a macro
+c:\program files\microsoft visual studio 9.0\vc\atlmfc\include\afxv_w32.h(169) : fatal error C1083: Cannot open include file: 'windows.h': No such file or directory
+Generating Code...
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+AdminTool(Japan).exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

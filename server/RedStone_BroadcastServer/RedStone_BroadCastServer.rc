@@ -1,0 +1,242 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RedStone_BroadCastServer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\RedStone_BroadCastServer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_REDSTONE_BROADCASTSERVER_DIALOG DIALOGEX 0, 0, 290, 346
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RedStone_BroadCastServer"
+FONT 9, "굴림"
+BEGIN
+    DEFPUSHBUTTON   "Quit",IDOK,213,325,70,14
+    LISTBOX         IDC_MAINMESSAGE,7,7,203,188,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Start Server",ID_START_SERVER,213,7,70,14
+    DEFPUSHBUTTON   "Reload Config",ID_RELOAD_CONFIG,213,149,70,14,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Debugging",IDC_DEBUGGING,244,181,39,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,202,276,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,320,276,1
+    LTEXT           "Processing Data",IDC_STATIC,7,206,57,11
+    LTEXT           "User Data :",IDC_STATIC,7,226,41,10
+    EDITTEXT        IDC_USERDATATEXT,48,224,235,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "()",IDC_INWORLDNAME,69,205,207,11
+    EDITTEXT        IDC_GUILD_MEMBER_LIST_UPDATE_PERIOD,218,56,35,12,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_GUILD_MEMBER_LIST_UPDATE_APPLY,257,55,21,14
+    LTEXT           "UpdatePeriod",IDC_STATIC,217,41,43,9
+    PUSHBUTTON      "Change",IDC_IMMEDIATELY_UPDATE_CHANGE,250,91,29,14
+    LTEXT           "ImmediatelyUpdate",IDC_STATIC,217,77,63,9
+    GROUPBOX        "GuildList",IDC_STATIC,214,27,67,84
+    EDITTEXT        IDC_IMMEDIATELY_UPDATE,217,92,29,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_DEBUGGING_DIALOG DIALOG DISCARDABLE  0, 0, 357, 283
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Debugging Window"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,300,262,50,14
+    CONTROL         "Tab1",IDC_MAINTAB_INDEBUGGING,"SysTabControl32",0x0,7,7,
+                    343,250
+END
+
+IDD_FIND_USERINFO DIALOG DISCARDABLE  0, 0, 380, 315
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "유저 정보 검색 및 수정"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "유저 정보 확인",IDC_STATIC,7,7,366,78
+    EDITTEXT        IDC_DATA_TEXT_USERINFO,14,22,76,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "지정된 유저정보 보기",IDC_USERINFO,93,21,86,14
+    PUSHBUTTON      "모든 정보 파일로 출력하기",IDC_OUTPUT_ALL_INFO,245,21,
+                    127,12
+    GROUPBOX        "Checing Connected Game Servers",IDC_STATIC,7,96,360,73
+    COMBOBOX        IDC_COMBO1,15,130,96,91,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Servers",IDC_STATIC,18,116,62,10
+    LTEXT           "Recv Packet Size / Sec",IDC_STATIC,118,116,96,10
+    EDITTEXT        IDC_EDIT1,119,130,104,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Send Packet Size / Sec",IDC_STATIC,236,116,99,10
+    EDITTEXT        IDC_EDIT2,237,130,117,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Disconnect this server",IDC_BUTTON1,15,148,95,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "RedStone_BroadCastServer MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RedStone_BroadCastServer\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RedStone_BroadCastServer.EXE\0"
+            VALUE "ProductName", "RedStone_BroadCastServer 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_REDSTONE_BROADCASTSERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 339
+    END
+
+    IDD_DEBUGGING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 276
+    END
+
+    IDD_FIND_USERINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 373
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 308
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\RedStone_BroadCastServer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

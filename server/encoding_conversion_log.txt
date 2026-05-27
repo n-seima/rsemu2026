@@ -1,0 +1,1434 @@
+================================================================================
+ENCODING CONVERSION LOG
+================================================================================
+
+📊 CONVERSION SUMMARY:
+--------------------------------------------------------------------------------
+Total files scanned:           730
+Japanese → UTF-8:              0
+Korean (direct) → UTF-8:       450
+Two-step (via Korean) → UTF-8: 22
+Already UTF-8/ASCII:           258
+Failed conversions:            0
+Unknown encoding:              0
+--------------------------------------------------------------------------------
+
+📝 DETAILED CONVERSION LOG:
+================================================================================
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\adCommandDefine.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\adCommandDefine.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\AdminCommand.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\AdminCommand.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\AdminLogCode.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\AdminTool.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\AdminTool.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\AdminToolDlg.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\AGEGRAPH.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\AGEGRAPH.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cADO_ADMIN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cADO_ADMIN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cADO_ADMIN_FOR_ACCOUNT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cADO_ADMIN_FOR_AVATAR.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cADO_ADMIN_FOR_COMMAND.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cADO_ADMIN_FOR_EVENT.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cADO_ADMIN_FOR_GUILD.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cADO_ADMIN_FOR_OPERATOR.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cADO_ADMIN_FOR_PVP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cADO_ADMIN_FOR_STATISTICS.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cADO_ADMIN_FOR_TEMPWORK.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\carrotShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\CCharacterData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cDECODER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cDECODER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cDlgChangeGMaster.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\CharacterInfo.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cInventory.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cITEM.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cITEM.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cITEM_PREFIX.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\CMessage.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\CMessage.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cMiniPetList.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cScript.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\CSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\cSRVUTIL.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\CTitle.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\EventManager.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\EventManager.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\ExpCalc.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\guildInfo.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\GuildInventory.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\GuildPetAndGuardian.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\LinkedList.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\LOGIN.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\Msjexhnd.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\PacketBuffer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\PAGE_NOTICE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\PAGE_PVPTOOL.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.80)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\PAGE_PVPTOOL.h
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.71)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\PAGE_SUM.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\PAGE_USERSETTING.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\playerData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\PollDlg.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\quest.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\questList.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\RenewItemExpireDate.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\rookieEvent090721.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\SEARCHPAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\SelectFunc.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\SelectFunc.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\ServerTool.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\ServerTool.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\serverTool050720.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.90)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\serverTool050818.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\serverToolOld.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\skill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\StdAfx.h
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.67)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\targetver.h
+  └─ Two-step: GB2312 → EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\TentativeGuildManager.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\threadFunc.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\Tracer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\windowExtendAPI.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\windowExtendAPI.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\WorldScore.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AdminTool\WorldScore.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\agent\AgentDlg.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\agent\AgentDlg.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\agent\client.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\agent\client.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\agent\LiveThread.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\agent\server_info.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\agent\WorkerThread.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\AnalyzeLog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\AnalyzeLogDlg.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\AnalyzeLogDlg.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\cADO_AnalyzeTool.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\cADO_AnalyzeTool.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\CDecoder.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\CDecoder.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\cITEM.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\cITEM.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\CItemPrefix.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\CItemPrefix.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\cITEM_PREFIX.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\cLOG_QUE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\CMessage.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\CMessage.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\cNUX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\cSRVUTIL.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\DownloadLog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\exportLog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\exportLog.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\job.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\job.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\LinkedList.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\LoadLogFile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\LOGLISTBOX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\log_filtering.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\log_filtering.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\AnalyzeLog\quest.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\Converter_Paran\ADB_PARAN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\Converter_Paran\ADB_PARAN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\Converter_Paran\ADB_PARAN_AVATAR.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\Converter_Paran\Converter_Paran.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\backup.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\ChattingDataBase.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\ChattingDataBase.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\Client.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\Client.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\DlgFindUserInfo.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\DlgFindUserInfo.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\exceptionhandler.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\exceptionhandler.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\field.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\FriendsListUpdater.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\FriendsListUpdater.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\guild.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\guild.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\life_code.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\life_code.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\lnk_define.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\lnk_util.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\lnk_util.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\operate_packet.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\operate_packet.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\party.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\party.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\RedStone_BroadCastServerDlg.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\RedStone_BroadCastServerDlg.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\StdAfx.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\TemporaryListForEntry.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_BroadcastServer\TemporaryListForEntry.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\cADO_AVATAR.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\cADO_AVATAR.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\cADO_EVENT.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\cADO_GUILD.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\cADO_WEB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\cADO_WEB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\cDECODER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\cDECODER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\Client.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\Client.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\CPlayerBuff.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\CSaveData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\CSaveData.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\life_code.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\operatePacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_DBServer\Server.cpp
+  └─ Two-step: Big5 → EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\actorSkillAI.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\actor_ai_sage_master.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\actor_mini_pet.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\actor_mini_pet.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\actor_pattern.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\arca.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\arca.h
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.70)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\area_door.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astBigBullet.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astBigBullet.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astBouncingMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astContinuousBit.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astContinuousHitOfDoppelganger.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astDependOnImageTrap.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astDoubleTarget.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astExplosionWithImage.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astFlorenceSpecial.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astLightningWinder.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astLightningWinder.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astMultiMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astMultiMissile.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astRollingLog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astRollingLog.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astThrowItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\astWideMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\ast_chain_lightning.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\ast_define.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\ast_fire_wall.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\ast_gas.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\ast_giga_lightning.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\ast_mirror_image.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\ast_one_bite.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\booking_work.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\BufferForPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\BufferForPacket.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CAbility.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CAbilityInfo.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActiveSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActiveSkill.h
+  └─ Two-step: Big5 → EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActor.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cACTOR.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorAi.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorBank.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorBattle.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorCart.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.83)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorCorrectData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorEquipmentEffect.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorEvent.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorGuild.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorGuildSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorInfo.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorItemUseToCharacter.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorItemUseToItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorMonster.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorMove.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorNPC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorParty.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorPassiveSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorPet.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorPitchmanShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorPlayer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorQuest.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorReactionSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorSave.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorSend.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorSendLog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorSkillAura.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorSkillExtraEffect.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorSlave.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorStatus.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorStatus.h
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorSummonBeast.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorTamedMonster.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorTitle.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CActorWrongStatus.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cAREA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cAREA.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CBank.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CBank.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CBookedWork.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.83)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CBookedWork.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CDataSave.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CDataSave.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cDECODER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cDECODER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CDialog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CDialog.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CDropItemEvent.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CEvent.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CEvent.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CExceptionHandler.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CExceptionHandler.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CField.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cFIELD.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldActor.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldAddActor.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldAddSendPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldBankPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldBooking.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldCommunityPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldEventPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldGuild.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldGuildPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldHealSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldOperateBookedWork.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldOperatePacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldOperateTradePacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldOXQuiz.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldParty.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldPitchmanShopPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldSendPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldSendStoredPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CFieldSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cGAME.cpp
+  └─ Two-step: Big5 → EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cGAME.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CGameActor.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CGameLog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CGuild.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CGuild.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CGuildSendPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CGuildSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\checkBuffActor.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CImageData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CImageData.h
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.71)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cITEM.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cITEM.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CItemManager.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CItemSaleEvent.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cJOB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CKarma.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CKarma.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CKarmaContainer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CKarmaReaction.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CKarmaTrigger.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\Client.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\Client.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cNPC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cNPC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cPACKET.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cPARTY.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cPARTY.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CPitchmanShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CPitchmanShop.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CPlusDropGoldEvent.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CProfiler.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CProfiler.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cPROJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cPROJECT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cPROTRACTOR.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cPROTRACTOR.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CQuest.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CQuest.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CReceivePacketFromDB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CReceivePacketFromWorld.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CReceivePartyPacketFromWorld.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSendPacketToClient.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSendPacketToDB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSendPacketToWorld.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cServer.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CShop.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CShoppingCart.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cSKILL.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillAidAttack.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillAidMagic.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillAlteringHitter.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillAwesomeFortress.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillBiteHanging.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillBitGlider.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillBoomerang.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillBouncingLinear.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillBunshineAttack.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillCharging.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillContinuousAttack.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillContinuousShoot.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillDropOnHead.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillExplosionMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillFireBall.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillGuardianPost.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillHeal.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillIcyStalagmite.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillImpact.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillInit.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillIntervalShooter.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillJump.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillJumpAttack.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillLandMarker.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillLaser.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillMachine.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillMirrorTower.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillPetCommand.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillPiercingMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillRush.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillScimitarCutting.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillShimmeringShield.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillSpreadArrow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillTeleport.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillTornado.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillWaterFall.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CSkillWhirlwind.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cSPLINE.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CTitle.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CTrade.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\CTrade.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\cUnionParty.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\debugCode.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\debugCode.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\duel.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\duel.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\duelForField.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.97)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\field_arca.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\field_door.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\field_guild_battle.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\field_oc.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\filedDeliverPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.83)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\FindWay.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\fireWork.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\ggsrv.h
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\GreateGodGrace.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\guild_manager.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\instanceField.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\instance_guild_battle_manager.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\instance_guild_battle_manager.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\itemSet.cpp
+  └─ Two-step: GB2312 → EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\item_book.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\life_code.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\miniPet.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\miniPet.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\oxQuiz.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\pieceItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\receive_packet_from_bcs.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\secretDungeon.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\send_packet_to_BCS.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\Server.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\trap.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\trap.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\trapForActor.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\trapInField.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\trapSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\utilGame.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\word_quiz.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\word_quiz_field.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_GameServer\XTrap\XTrap4Server.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LoginServer\CExceptionHandler.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LoginServer\CExceptionHandler.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LoginServer\Client.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LoginServer\Client.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LoginServer\life_code.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LoginServer\life_code.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LoginServer\operate_packet.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LoginServer\operate_packet.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LoginServer\Server.cpp
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.59)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LoginServer\server.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LogServer\Client.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LogServer\Client.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LogServer\Logger.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_LogServer\Server.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_USER_DBServer\cADO_COMMAND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_USER_DBServer\cADO_COMMAND.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_USER_DBServer\cADO_USER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_USER_DBServer\cADO_USER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_USER_DBServer\Client.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_USER_DBServer\Client.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_USER_DBServer\common.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_USER_DBServer\event.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_USER_DBServer\life_code.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_USER_DBServer\Server.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\AuthControlManager.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\cDECODER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\cDECODER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\CEvent.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\CEvent.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\CGuildBattleManager.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\CGuildBattleManager.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\Client.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\Client.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\CUtil.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\guild.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\guild.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\life_code.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\operate_packet.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\operate_packet.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\party.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\party.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\partyPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\Server.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\RedStone_WorldServer\UnionParty.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\SMManager\CDataManager.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\SMManager\SMManagerDlg.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\SSViewer\DlgHistory.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\SSViewer\SSViewer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\SSViewer\SSViewerDlg.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\SSViewer\SSViewerDlg.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\SSViewer\StdAfx.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\SSViewer\TaskbarNotifier.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.83)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\SSViewer\TrayIcon.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\StressTestClient\cSOCKET.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\StressTestClient\cSOCKET.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\StressTestClient\StressTestClientDlg.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\System Management Tool\Schedule.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\System Management Tool\StdAfx.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\Tool_LogServer\Client.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\Tool_LogServer\Client.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\Tool_LogServer\Logger.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/server\Tool_LogServer\Server.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+

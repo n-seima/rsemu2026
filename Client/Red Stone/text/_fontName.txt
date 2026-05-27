@@ -1,0 +1,5 @@
+normal				"돋움";		//	게임에서 가장 많이 쓰이는 기본적인 폰트
+chatting			"바탕";		//	채팅창에 쓰이는 폰트
+messageBoxTitle		"바탕";		//	메시지 박스 타이틀 폰트
+streetStall			"굴림";		//	노점상 팻말의 폰트
+__end

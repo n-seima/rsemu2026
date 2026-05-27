@@ -1,0 +1,1704 @@
+#include "cMAIN.H"
+#include "cWORKWND.H"
+#include "cDRAW.H"
+#include "cANM.H"
+#include "cTEXT.H"
+#include "cANGLE.H"
+
+cPOINT		revisedPos[100]	;
+char		revisedCount=	0;
+cWORKWND	_WORKWND;
+
+#define	IDM_SET_OUTLINE			0
+#define	IDM_SET_SHADOW			1
+#define	IDM_SET_BACK			2
+#define	IDM_SET_SPRITEINFO		3
+#define	IDM_SET_CRASHBOX		4
+#define	IDM_PUT_INDEX			5
+#define	IDM_LOCK				6
+
+#define	IDM_COMPARE_DATA		7
+
+#define	IDM_ALPHA_SOFTDODGE		8
+#define	IDM_ALPHA_DIFFEREMT		9
+#define	IDM_ALPHA_DODGEBURN		10
+#define	IDM_ALPHA_SOFT			11
+#define	IDM_ALPHA_DODGE			12
+#define	IDM_ALPHA_LIGHT			13
+#define	IDM_ALPHA_EXLIGHT		14
+#define	IDM_ALPHA_NORMAL		15
+#define	IDM_ALPHA_HALF			16
+
+#define	IDM_IMAGE_8BIT			17
+#define	IDM_IMAGE_16BIT			18
+
+#define	IDM_PLAY_ANM			19
+
+#define	IDM_INCREASE_FPS		20
+#define	IDM_FPS					21
+#define	IDM_DECREASE_FPS		22
+
+#define	IDM_PPS_M10				29
+#define	IDM_PPS_M2				30
+#define	IDM_PPS					31
+#define	IDM_PPS_P2				32
+#define	IDM_PPS_P10				33
+#define	IDM_MOVE_OVAL			34
+#define	IDM_MOVE_CIRCLE			35
+
+#define	IDM_ANM_KIND			36
+#define	IDM_DATA_CHARACTER		37
+#define	IDM_DATA_WEAPON			38
+#define	IDM_DATA_WEAPONEFFECT	39
+#define	IDM_DATA_SHIELD			40
+#define	IDM_DATA_SHIELDEFFECT	41
+#define	IDM_DATA_EFFECT			42
+
+#define	IDM_RELEASE_POINT		43
+
+#define	IDM_ANM_FIRST			44
+#define	IDM_ANM_LAST			94
+
+#define	IDM_LINK_FIRST			95
+#define	IDM_LINK_LAST			145
+#define	IDM_ATTACK_ACTION		146
+#define	IDM_MAGIC_ACTION		147
+#define	IDM_OCCASIONALLY_REST	148
+
+enum
+{
+	eParts_title	=	149,
+	eParts_head_back,
+	eParts_head_front,
+	eParts_body_back,
+	eParts_body_front,
+	eParts_arm_left,
+	eParts_arm_right,
+	eParts_leg_left,
+	eParts_leg_right,
+	eParts_weapon,
+	eParts_shield,
+	eParts_end
+};
+
+enum
+{
+	eParts_load_head_back=	eParts_end,
+	eParts_load_head_front,
+	eParts_load_body_back,
+	eParts_load_body_front,
+	eParts_load_arm_left,
+	eParts_load_arm_right,
+	eParts_load_leg_left,
+	eParts_load_leg_right,
+	eParts_load_weapon,
+	eParts_load_shield,
+	eParts_load_end
+};
+
+enum
+{
+	eParts_select_head_back=	eParts_load_end,
+	eParts_select_head_front,
+	eParts_select_body_back,
+	eParts_select_body_front,
+	eParts_select_arm_left,
+	eParts_select_arm_right,
+	eParts_select_leg_left,
+	eParts_select_leg_right,
+	eParts_select_weapon,
+	eParts_select_shield,
+	eParts_select_end
+};
+
+#define	dBAR_COUNT				200
+
+#define	IDM_ANM_KIND			36
+#define	IDM_DATA_CHARACTER		37
+#define	IDM_DATA_WEAPON			38
+#define	IDM_DATA_WEAPONEFFECT	39
+#define	IDM_DATA_SHIELD			40
+#define	IDM_DATA_SHIELDEFFECT	41
+#define	IDM_DATA_EFFECT			42
+
+int		l_iEffectZoom	=	1;
+
+//	에니메이션 이동을 위한..
+cPOINT	MovePoint;
+
+
+cRECT	imgRect;
+
+cBARMENU	barMenu[dBAR_COUNT];
+BOOL		barStatus[dBAR_COUNT],moveSprite=FALSE,moveCross=FALSE,drawCrash=FALSE,bPRESSBAR=FALSE;
+int			curCursor	=	0;
+
+cWORKWND::cWORKWND()
+		 :cDIBWND()
+{	
+	Zoom	=	100;
+	Alpha	=	dPUT_NORMAL;
+	Zero.x	=	0xffff;
+	Zero.y	=	0xffff;
+	Repaint	=	FALSE;
+
+	imgRect.Set(0,0,0,0);
+}
+
+
+
+
+
+
+void
+DrawCircle(int x,int y,WORD color,int size)
+{
+	int	i,j;
+
+	for (i=0;i<=size/2+1;i++)
+	{
+		for (j=0;j<=size;j++)
+		{	
+			int im	=	i-1;
+			int	jm	=	j-1;
+
+			int	old	=	(im*2*im*2) + jm*jm;
+			int	cur	=	(i*2*i*2) + j*j;
+
+			if (old < size*size && cur >= size*size)
+			{
+				cDRAW::PutPixel(color,x+j,y+i);
+				cDRAW::PutPixel(color,x-j,y+i);
+				cDRAW::PutPixel(color,x+j,y-i);
+				cDRAW::PutPixel(color,x-j,y-i);
+			}
+		}
+	}
+}	//	DrawCircle(int x,int y,WORD color,int size)
+
+cWORKWND::~cWORKWND()
+{
+}
+
+void
+cWORKWND::CloseWND()
+{	Close();
+}
+
+void
+cWORKWND::SetBarMenu()
+	{ barMenu[0 ].Set("Outline" ,5 ,HEIGHT-22 ,71 ,HEIGHT-4 ,IDM_SET_OUTLINE);
+	barMenu[1 ].Set("Shadow" ,5 ,HEIGHT-42 ,71 ,HEIGHT-24 ,IDM_SET_SHADOW);
+	barMenu[2 ].Set("BackgroundPicture" ,5 ,HEIGHT-62 ,71 ,HEIGHT-44 ,IDM_SET_BACK);
+	barMenu[3 ].Set("PictureInfo" ,5 ,HEIGHT-82 ,71 ,HEIGHT-64 ,IDM_SET_SPRITEINFO);
+	barMenu[4 ].Set("CrashBox" ,5 ,HEIGHT-102 ,71 ,HEIGHT-84 ,IDM_SET_CRASHBOX);
+	barMenu[5 ].Set("Index" ,5 ,HEIGHT-122 ,71 ,HEIGHT-104 ,IDM_PUT_INDEX);
+	barMenu[6 ].Set("Lock" ,5 ,HEIGHT-142 ,71 ,HEIGHT-124 ,IDM_LOCK);
+
+	barMenu[8 ].Set("Flame" ,WIDTH-71 ,HEIGHT-22 ,WIDTH-5,HEIGHT-4 ,IDM_ALPHA_SOFTDODGE);
+	barMenu[9 ].Set("Poisoning" ,WIDTH-71 ,HEIGHT-42 ,WIDTH-5,HEIGHT-24 ,IDM_ALPHA_DIFFEREMT);
+	barMenu[10].Set("Scorching" ,WIDTH-71 ,HEIGHT-62 ,WIDTH-5,HEIGHT-44 ,IDM_ALPHA_DODGEBURN);
+	barMenu[11].Set("Smoke" ,WIDTH-71 ,HEIGHT-82 ,WIDTH-5,HEIGHT-64 ,IDM_ALPHA_SOFT);
+	barMenu[12].Set("Light Magic" ,WIDTH-71 ,HEIGHT-102 ,WIDTH-5,HEIGHT-84 ,IDM_ALPHA_DODGE);
+	barMenu[13].Set("Light" ,WIDTH-71 ,HEIGHT-122 ,WIDTH-5,HEIGHT-104 ,IDM_ALPHA_LIGHT);
+	barMenu[14].Set("LightEX" ,WIDTH-71 ,HEIGHT-142 ,WIDTH-5,HEIGHT-124 ,IDM_ALPHA_EXLIGHT);
+	barMenu[16].Set("Translucent" ,WIDTH-71 ,HEIGHT-162 ,WIDTH-5,HEIGHT-144 ,IDM_ALPHA_HALF);
+	barMenu[15].Set("Normal" ,WIDTH-71 ,HEIGHT-182 ,WIDTH-5,HEIGHT-164 ,IDM_ALPHA_NORMAL);
+
+	barMenu[17].Set(" 8-bit" ,WIDTH-71	,4         	,WIDTH-5,22        	,IDM_IMAGE_8BIT);
+	barMenu[18].Set("16-bit" ,WIDTH-71	,24        	,WIDTH-5,42        	,IDM_IMAGE_16BIT);
+
+	barMenu[19].Set("PLAY ANM" ,WIDTH-71	,49         ,WIDTH-5,67        	,IDM_PLAY_ANM);
+
+	barMenu[20].Set("Increase"		,WIDTH-71	,74         ,WIDTH-5,92        	,IDM_INCREASE_FPS);
+	barMenu[21].Set("28FRM/SEC"		,WIDTH-71	,94         ,WIDTH-5,112        ,IDM_FPS);
+	barMenu[22].Set("Decrease"		,WIDTH-71	,114        ,WIDTH-5,132        ,IDM_DECREASE_FPS);
+
+	barMenu[29].Set("-10 PIXEL"		,WIDTH-71	,HEIGHT-102	,WIDTH-5,HEIGHT-84	,IDM_PPS_M10);
+	barMenu[30].Set("- 2 PIXEL"		,WIDTH-71	,HEIGHT-82	,WIDTH-5,HEIGHT-64	,IDM_PPS_M2);
+	barMenu[31].Set("+ 2 PIXEL"		,WIDTH-71	,HEIGHT-62	,WIDTH-5,HEIGHT-44	,IDM_PPS);
+	barMenu[32].Set("+ 2 PIXEL"		,WIDTH-71	,HEIGHT-42	,WIDTH-5,HEIGHT-24	,IDM_PPS_P2);
+	barMenu[33].Set("+10 PIXEL"		,WIDTH-71	,HEIGHT-22	,WIDTH-5,HEIGHT-4	,IDM_PPS_P10);
+
+	barMenu[34].Set("2:1 Coordinates"		,WIDTH-71	,HEIGHT-124	,WIDTH-5,HEIGHT-106	,IDM_MOVE_OVAL);
+	barMenu[35].Set("1:1 Coordinates"		,WIDTH-71	,HEIGHT-144	,WIDTH-5,HEIGHT-126	,IDM_MOVE_CIRCLE);
+
+	barMenu[36].Set("EnyType"		,WIDTH-141	,HEIGHT-147	,WIDTH-75	,HEIGHT-129	,IDM_ANM_KIND);
+	barMenu[37].Set("Character"		,WIDTH-141	,HEIGHT-122	,WIDTH-75	,HEIGHT-104	,IDM_DATA_CHARACTER);
+	barMenu[38].Set("Weapon"			,WIDTH-141	,HEIGHT-102	,WIDTH-75	,HEIGHT-84	,IDM_DATA_WEAPON);
+	barMenu[39].Set("WeaponEffect"		,WIDTH-141	,HEIGHT-82	,WIDTH-75	,HEIGHT-64	,IDM_DATA_WEAPONEFFECT);
+	barMenu[40].Set("Shield"			,WIDTH-141	,HEIGHT-62	,WIDTH-75	,HEIGHT-44	,IDM_DATA_SHIELD);
+	barMenu[41].Set("ShieldEffect"		,WIDTH-141	,HEIGHT-42	,WIDTH-75	,HEIGHT-24	,IDM_DATA_SHIELDEFFECT);
+	barMenu[42].Set("Additional Effects"		,WIDTH-141	,HEIGHT-22	,WIDTH-75	,HEIGHT-4	,IDM_DATA_EFFECT);
+
+	barMenu[43].Set("Release Point"	,WIDTH-141	,HEIGHT-22	,WIDTH-75	,HEIGHT-4	,IDM_RELEASE_POINT);
+
+	{
+		int	iX	=	WIDTH-205;
+		int	iDX	=	60;
+		int	iY	=	HEIGHT-247;
+
+		barMenu[eParts_title].Set("Parts classification"		,iX	,iY+=20,iX+iDX	,iY+20+18);
+		iY	+=	5;
+		barMenu[eParts_head_back].Set("Head (back)"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_head_front].Set("Head (front)"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_body_back].Set("Torso (back)"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_body_front].Set("Torso (front)"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_arm_left].Set("Left Arm"			,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_arm_right].Set("Right Arm"		,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_leg_left].Set("Left Leg"		,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_leg_right].Set("Right Leg"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_weapon].Set("Weapon"			,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_shield].Set("Shield" ,iX	,iY+=20,iX+iDX	,iY+20+18);
+	}
+
+	{
+		int	iX	=	WIDTH-219;
+		int	iDX	=	12;
+		int	iY	=	HEIGHT-222;
+
+		barMenu[eParts_load_head_back].Set("L"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_load_head_front].Set("L"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_load_body_back].Set("L"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_load_body_front].Set("L"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_load_arm_left].Set("L"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_load_arm_right].Set("L"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_load_leg_left].Set("L"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_load_leg_right].Set("L"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_load_weapon].Set("L"		,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_load_shield].Set("L"		,iX	,iY+=20,iX+iDX	,iY+20+18);
+	}
+
+	{
+		int	iX	=	WIDTH-233;
+		int	iDX	=	12;
+		int	iY	=	HEIGHT-222;
+
+		barMenu[eParts_select_head_back].Set("S",iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_select_head_front].Set("S",iX,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_select_body_back].Set("S",iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_select_body_front].Set("S",iX,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_select_arm_left].Set("S"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_select_arm_right].Set("S",iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_select_leg_left].Set("S"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_select_leg_right].Set("S",iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_select_weapon].Set("S"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+		barMenu[eParts_select_shield].Set("S"	,iX	,iY+=20,iX+iDX	,iY+20+18);
+	}
+
+	barMenu[106].Set("Basic Attack" ,WIDTH-141 ,HEIGHT-42 ,WIDTH-75 ,HEIGHT-24 ,IDM_ATTACK_ACTION);
+	barMenu[107].Set("Default Magic" ,WIDTH-141 ,HEIGHT-62 ,WIDTH-75 ,HEIGHT-44 ,IDM_MAGIC_ACTION);
+	barMenu[108].Set("Occasionally Rest" ,WIDTH-211 ,HEIGHT-62 ,WIDTH-138 ,HEIGHT-44 ,IDM_OCCASIONALLY_REST);
+
+	barMenu[IDM_COMPARE_DATA].Set("Output equipment image",5 ,HEIGHT-102 ,71 ,HEIGHT-84 ,IDM_COMPARE_DATA);
+
+	int i;
+
+	for (i=IDM_ANM_FIRST;i<=IDM_ANM_LAST;i++)
+	{	
+		barMenu[i].Set("에니메이션",WIDTH-71	,HEIGHT-22	,WIDTH-5,HEIGHT-126	,i);
+		barMenu[i].SetActive(FALSE);
+	}
+
+	for (i=IDM_LINK_FIRST;i<=IDM_LINK_LAST;i++)
+	{	
+		barMenu[i].Set("L",WIDTH-71	,HEIGHT-22	,WIDTH-5,HEIGHT-126	,i);
+		barMenu[i].SetActive(FALSE);
+	}
+
+	barMenu[IDM_PLAY_ANM].SetActive(FALSE);
+}
+
+BOOL
+cWORKWND::Init(HINSTANCE hInst,HWND hWnd,cRECT *rect)
+{	lpszRegister	=	"WORKWINDOW";
+	Close();
+
+	if (!cDIBWND::Init(	0,(LPTSTR)lpszRegister,(LPTSTR)lpszRegister,
+						WS_CHILD,
+						rect->x1,rect->y1,rect->x2,rect->y2,
+						hWnd,NULL,hInst, 0L,
+						SW_SHOW,(WNDPROC)WNDProc
+						)
+		)
+		return FALSE;
+
+	Draw();
+
+	return TRUE;
+}
+
+void
+cWORKWND::ResetZero()
+{	Zero.Set(width() /2,height()*19/32);
+}
+
+void
+cWORKWND::PointedCenter()
+{
+}
+
+void
+cWORKWND::DrawBarMenu()
+{	int i;
+	int alpha;
+
+	memset(barStatus,0,sizeof(barStatus));
+
+	barStatus[IDM_SET_OUTLINE		]	=	_cfg.bDRAWOUTLINE;
+	barStatus[IDM_SET_SHADOW		]	=	_cfg.bDRAWSHADOW;
+	barStatus[IDM_SET_BACK			]	=	_cfg.bDRAWBACK;
+	barStatus[IDM_SET_SPRITEINFO	]	=	_cfg.bDRAWSPRITEINFO;
+	barStatus[IDM_COMPARE_DATA		]	=	_cfg.bDRAWPREFRAME;
+	barStatus[IDM_SET_CRASHBOX		]	=	_cfg.bDRAWCRASHBOX;
+	barStatus[IDM_PUT_INDEX			]	=	_cfg.bPUTINDEX;
+	barStatus[IDM_LOCK				]	=	_MAIN.Lock;
+	barStatus[IDM_PPS				]	=	TRUE;
+	barStatus[IDM_RELEASE_POINT		]	=	bPUTRELEASEPOINT;
+
+	if (cANM::s_iDefaultAttack	==	cANM::CurAnm)	barStatus[IDM_ATTACK_ACTION		]	=	TRUE;
+	if (cANM::s_iDefaultMagic	==	cANM::CurAnm)	barStatus[IDM_MAGIC_ACTION		]	=	TRUE;
+	if (cANM::s_wIsOccasionallyRestAction		)	barStatus[IDM_OCCASIONALLY_REST	]	=	TRUE;
+	
+
+	if	(MoveOval	==	2)
+		barStatus[IDM_MOVE_OVAL			]	=	TRUE;
+	else
+		barStatus[IDM_MOVE_CIRCLE		]	=	TRUE;
+
+/*
+	switch(ANM[cANM::CurAnm].FPS)
+	{	case	32	:	barStatus[IDM_FPS_32	]	=	TRUE;	break;
+		case	28	:	barStatus[IDM_FPS_28	]	=	TRUE;	break;
+		case	24	:	barStatus[IDM_FPS_24	]	=	TRUE;	break;
+		case	20	:	barStatus[IDM_FPS_20	]	=	TRUE;	break;
+		case	16	:	barStatus[IDM_FPS_16	]	=	TRUE;	break;
+		case	11	:	barStatus[IDM_FPS_11	]	=	TRUE;	break;
+		case	8	:	barStatus[IDM_FPS_8		]	=	TRUE;	break;
+		case	6	:	barStatus[IDM_FPS_6		]	=	TRUE;	break;
+		case	4	:	barStatus[IDM_FPS_4		]	=	TRUE;	break;
+	}
+*/
+	barStatus[IDM_FPS		]	=	TRUE;
+
+	if (bPLAYANM)
+	{	for (i=IDM_ALPHA_SOFTDODGE;i<=IDM_ALPHA_HALF   ;i++)	barMenu[i].SetActive(FALSE);
+		for (i=IDM_PPS_M10		  ;i<=IDM_MOVE_CIRCLE  ;i++)	barMenu[i].SetActive(TRUE);
+
+		strcpy(barMenu[IDM_PPS		].string,_ms("%3d PIXEL",ANM[cANM::CurAnm].PPS));
+		strcpy(barMenu[IDM_PLAY_ANM	].string,"STOP ANM");
+		strcpy(barMenu[IDM_FPS	].string,_ms("%d FPS",ANM[cANM::CurAnm].FPS));
+	}
+	else
+	{	for (i=IDM_ALPHA_SOFTDODGE;i<=IDM_ALPHA_HALF	;i++)	barMenu[i].SetActive(TRUE);
+		for (i=IDM_PPS_M10		  ;i<=IDM_MOVE_CIRCLE	;i++)	barMenu[i].SetActive(FALSE);
+		strcpy(barMenu[IDM_PLAY_ANM].string,"PLAY ANM");
+	}
+
+	if (cIMG::Count >= 1 && _MAIN.workMode == dWORK_SET_FRAME)
+	{	
+		for (i=IDM_SET_OUTLINE;i <= IDM_LOCK;i++)	barMenu[i].SetActive(FALSE);
+		barMenu[IDM_PLAY_ANM].SetActive(TRUE);
+
+		alpha	=	ANM[cANM.CurAnm].ALPHA;
+		
+		int index	=	0;
+		int	maxSize	=	70;
+		for (i=0;i<cANM::AnmCount;i++)
+		{
+			int size	=	size	=	strlen(ANM[i].Name)*6+6;
+
+			if	(size > maxSize)	maxSize	=	size;
+		}
+
+		for (i=cANM::AnmCount-1;i >= 0;i--,index++)
+		{
+			barMenu[i+IDM_ANM_FIRST ].Set (ANM[i].Name,5		,HEIGHT-2-20*(index+1)	,5+maxSize   ,HEIGHT-4 - index*20);
+			barMenu[i+IDM_ANM_FIRST ].SetActive(TRUE);
+			barMenu[i+IDM_LINK_FIRST].Set("LINK"	  ,8+maxSize,HEIGHT-2-20*(index+1)	,8+maxSize+32,HEIGHT-4 - index*20);
+			barMenu[i+IDM_LINK_FIRST].SetActive(TRUE);
+		}
+
+		barMenu[IDM_COMPARE_DATA].Set("Outputting Equipment Images",5		,HEIGHT-2-20*(index+1)-10	,110,HEIGHT-4 - index*20-10);
+		barMenu[IDM_COMPARE_DATA].SetActive(TRUE);
+
+		if (ANM[cANM::CurAnm].bSaveReleasePoint)
+		{
+			barMenu[IDM_RELEASE_POINT].SetActive(TRUE);
+			barMenu[IDM_RELEASE_POINT].Set("Setting up release points"	,5+5+maxSize+34	,HEIGHT-2-64,5+5+maxSize+124+34,HEIGHT-48);
+		}
+		else
+			barMenu[IDM_RELEASE_POINT].SetActive(FALSE);
+
+		barMenu[IDM_ATTACK_ACTION	].SetActive(TRUE);
+		barMenu[IDM_MAGIC_ACTION	].SetActive(TRUE);
+		barMenu[IDM_OCCASIONALLY_REST].SetActive(TRUE);
+
+		barMenu[IDM_ATTACK_ACTION	].Set("Basic Attacks"	,5+5+maxSize+34			,HEIGHT-2-20,5+5+maxSize+124+34			,HEIGHT- 4);
+		barMenu[IDM_MAGIC_ACTION	].Set("Basic magic"	,5+5+maxSize+34			,HEIGHT-2-40,5+5+maxSize+124+34			,HEIGHT-24);
+		barMenu[IDM_OCCASIONALLY_REST].Set("Take a break now and then",5+5+maxSize+124+34+5	,HEIGHT-2-20,5+5+maxSize+124+34+5+80	,HEIGHT-4);
+
+		for (i=IDM_ANM_KIND	;i <= IDM_DATA_EFFECT;i++)
+			barMenu[i].SetActive(TRUE);
+
+		if	(g_wAnmDataType	==	dDATA_CHARACTER && g_wPlayerJob)
+		{
+			for (i=eParts_title;i <= eParts_select_shield;i++)
+			{
+				barMenu[i].SetActive(TRUE);
+				barStatus[i]=	FALSE;
+			}
+
+			for (i=eBodyType_headB;i < eBodyType_count;i++)
+				if	(g_aPartsData[i].isLoaded())
+					barStatus[eParts_load_head_back+i-1	]	=	TRUE;
+
+			barStatus[eParts_title+g_wPartsType	]	=	TRUE;
+
+			for (i=eParts_select_head_back;i <= eParts_select_shield;i++)
+			{
+				int	anm		=	cANM::CurAnm;
+				int	dir		=	cANM::CurDirect;
+				int	frm		=	cANM::CurFrame;
+				int	iLayer	=	i-eParts_select_head_back;
+				int	iOrder	=	g_abDrawLayerOrder[anm][dir][frm][iLayer];
+
+				barMenu[i].SetText(_ms("%d",iOrder));
+			}
+
+			if	(g_iSelectParts)
+				barStatus[eParts_select_head_back+g_iSelectParts-1]	=	TRUE;
+		}
+		else
+		for (i=eParts_title;i <= eParts_select_shield;i++)
+			barMenu[i].SetActive(FALSE);
+
+		barStatus[IDM_DATA_CHARACTER+g_wAnmDataType	]	=	TRUE;
+		barStatus[IDM_ANM_FIRST+cANM::CurAnm		]	=	TRUE;
+
+		if	(ANM[cANM::CurAnm].LinkAnm != 0xffff)
+			barStatus[ANM[cANM::CurAnm].LinkAnm +IDM_LINK_FIRST]	=	TRUE;
+	}
+	else
+	{
+		for (i=IDM_ANM_FIRST	;i <= IDM_ANM_LAST ;i++)	barMenu[i].SetActive(FALSE);
+		for (i=IDM_LINK_FIRST	;i <= IDM_LINK_LAST ;i++)	barMenu[i].SetActive(FALSE);
+		for (i=IDM_ANM_KIND		;i <= IDM_DATA_EFFECT;i++)	barMenu[i].SetActive(FALSE);
+		for (i=IDM_SET_OUTLINE	;i <= IDM_LOCK	   ;i++)	barMenu[i].SetActive(TRUE);
+
+		for (i=eParts_title;i <= eParts_select_shield;i++)
+			barMenu[i].SetActive(FALSE);
+
+		barMenu[IDM_PLAY_ANM		].SetActive(FALSE);
+		barMenu[IDM_COMPARE_DATA	].SetActive(FALSE);
+		barMenu[IDM_RELEASE_POINT	].SetActive(FALSE);
+		barMenu[IDM_ATTACK_ACTION	].SetActive(FALSE);
+		barMenu[IDM_MAGIC_ACTION	].SetActive(FALSE);
+		barMenu[IDM_OCCASIONALLY_REST].SetActive(FALSE);
+
+		bPUTRELEASEPOINT	=	FALSE;
+		bPLAYANM			=	FALSE;
+		alpha				=	Alpha;
+	}
+
+	if (!_cfg.bOPTIONBAR)	for (i=IDM_SET_OUTLINE		;i<=IDM_LOCK		;i++)	barMenu[i].SetActive(FALSE);	//	옵션 바
+	if (!_cfg.bEFFECTBAR)	for (i=IDM_ALPHA_SOFTDODGE	;i<=IDM_ALPHA_HALF	;i++)	barMenu[i].SetActive(FALSE);	//	효과 바
+
+	if	(cANM::BPP	==	8	)	barStatus[IDM_IMAGE_8BIT	]	=	TRUE;
+	else						barStatus[IDM_IMAGE_16BIT	]	=	TRUE;
+
+	if (bPLAYANM)	for (int i=IDM_INCREASE_FPS;i <= IDM_DECREASE_FPS;i++)	barMenu[i].SetActive(TRUE);
+	else			for (int i=IDM_INCREASE_FPS;i <= IDM_DECREASE_FPS;i++)	barMenu[i].SetActive(FALSE);
+
+	barStatus[IDM_ALPHA_SOFTDODGE+alpha]	=	TRUE;
+
+	for(i=0;i<dBAR_COUNT;i++)
+	{	if (!barMenu[i].Active		) continue;
+
+		WORD color	=	0;
+		if (barStatus[i])	color	=	_LTCYAN;
+		cDRAW::Box	 (0	   ,barMenu[i].rect.x1  ,barMenu[i].rect.y1  ,barMenu[i].rect.x2  ,barMenu[i].rect.y2  );
+		cDRAW::FillHB(color,barMenu[i].rect.x1+1,barMenu[i].rect.y1+1,barMenu[i].rect.x2-1,barMenu[i].rect.y2-1);
+		cTEXT::Put	 (barMenu[i].rect.x1+4,barMenu[i].rect.y1+4,0x7fff,barMenu[i].string);
+	}
+}
+
+void
+cWORKWND::Draw(int x,int y,int alpha)
+{	int	anm	=	cANM::CurAnm;
+	int	dir	=	cANM::CurDirect;
+	int	frm	=	cANM::CurFrame;
+
+	if	(!_cfg.bDRAWPREFRAME)
+	{	
+		if	(cANM::GetMaxFrame() > 0)
+		{
+			cIMG::pCURRENT->PutShadow(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,TRUE);
+			cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+		}
+		return;
+	}
+
+	if	(_cfg.bDRAWSHADOW)
+	{	
+		if	(cANM::GetMaxFrame() > 0)
+			cIMG::pCURRENT->PutShadow(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,TRUE);
+
+		for (int i=0;i<5;i++)
+			if	(i != g_wAnmDataType)
+				addDATA[i].PutShadow(x,y,anm,dir,frm,Zoom,Zoom);
+	}
+
+	switch(g_wAnmDataType)
+	{
+		case	dDATA_CHARACTER		:
+		{
+			if	(g_wPartsType)
+			{
+				int	iCurrentPartsLayer	=	g_abDrawLayerOrder[anm][dir][frm][g_wPartsType-1];
+
+				for (int i=0;i<c_iBodyLayerCount;i++)
+				{
+					for (int iLayer=0;iLayer<c_iBodyLayerCount;iLayer++)
+					{
+						if	(g_abDrawLayerOrder[anm][dir][frm][iLayer]	!=	i)
+							continue;
+
+						if	(!g_aPartsData[iLayer+1].isLoaded())
+						{
+							if	(iCurrentPartsLayer	==	i)
+								cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);
+
+							break;
+						}
+
+						g_aPartsData[iLayer+1].Put(x,y,anm,dir,frm,Zoom,Zoom,alpha);
+						break;
+					}
+
+				}
+				break;
+			}
+
+			if	(addDATA[dDATA_WEAPON].isBack(anm,dir,frm))
+			{	
+				addDATA[dDATA_WEAPON].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_WEAPONEFFECT].PutReg(x,y,anm,dir,frm,Zoom*2,Zoom);
+			}
+
+			if	(addDATA[dDATA_SHIELD].isBack(anm,dir,frm))
+			{
+				addDATA[dDATA_SHIELD].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_SHIELDEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+			if	(addDATA[dDATA_EFFECT].isBack(anm,dir,frm))	
+				addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+			if	(cANM::GetMaxFrame() > 0)
+				cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+
+			if	(!addDATA[dDATA_EFFECT].isBack(anm,dir,frm))	
+				addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom*l_iEffectZoom,Zoom*l_iEffectZoom);
+
+			if	(!addDATA[dDATA_SHIELD].isBack(anm,dir,frm))
+			{
+				addDATA[dDATA_SHIELD].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_SHIELDEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+
+			if	(!addDATA[dDATA_WEAPON].isBack(anm,dir,frm))
+			{
+				addDATA[dDATA_WEAPON].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_WEAPONEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+			break;
+		}
+
+		case	dDATA_WEAPON		:
+		{	
+			if (cANM::IsBack(frm))
+			{	
+				if	(cANM::GetMaxFrame() > 0)
+					cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+				addDATA[dDATA_WEAPONEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+
+			if (addDATA[dDATA_SHIELD].isBack(anm,dir,frm))
+			{	
+				addDATA[dDATA_SHIELD].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_SHIELDEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+
+			if	(addDATA[dDATA_EFFECT].isBack(anm,dir,frm))	
+				addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+			addDATA[dDATA_CHARACTER].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+			if (!addDATA[dDATA_EFFECT].isBack(anm,dir,frm))	addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			if (!addDATA[dDATA_SHIELD].isBack(anm,dir,frm))
+			{	addDATA[dDATA_SHIELD].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_SHIELDEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+
+			if (!cANM::IsBack(frm))
+			{	if (cANM::GetMaxFrame() > 0)
+					cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+				addDATA[dDATA_WEAPONEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+			break;
+		}
+
+		case	dDATA_WEAPONEFFECT	:
+		{	if (addDATA[dDATA_WEAPON].isBack(anm,dir,frm))
+			{	addDATA[dDATA_WEAPON].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				if (cANM::GetMaxFrame() > 0)
+					cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+			}
+
+			if (addDATA[dDATA_SHIELD].isBack(anm,dir,frm))
+			{	addDATA[dDATA_SHIELD].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_SHIELDEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+
+			if (addDATA[dDATA_EFFECT].isBack(anm,dir,frm))	addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+			addDATA[dDATA_CHARACTER].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+			if (!addDATA[dDATA_EFFECT].isBack(anm,dir,frm))	addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			if (!addDATA[dDATA_SHIELD].isBack(anm,dir,frm))
+			{	addDATA[dDATA_SHIELD].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_SHIELDEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+
+			if (!addDATA[dDATA_WEAPON].isBack(anm,dir,frm))
+			{	addDATA[dDATA_WEAPON].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				if (cANM::GetMaxFrame() > 0)
+					cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+			}
+			break;
+		}
+
+		case	dDATA_SHIELD		:
+		{	if (addDATA[dDATA_WEAPON].isBack(anm,dir,frm))
+			{	addDATA[dDATA_WEAPON].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_WEAPONEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+
+			if (cANM::IsBack(frm))
+			{	
+				if (cANM::GetMaxFrame() > 0)
+					cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+				addDATA[dDATA_SHIELDEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+			if (addDATA[dDATA_EFFECT].isBack(anm,dir,frm))	addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+			addDATA[dDATA_CHARACTER].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+			if (!addDATA[dDATA_EFFECT].isBack(anm,dir,frm))	addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			if (!cANM::IsBack(frm))
+			{	
+				if (cANM::GetMaxFrame() > 0)
+					cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+				addDATA[dDATA_SHIELDEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+
+			if (!addDATA[dDATA_WEAPON].isBack(anm,dir,frm))
+			{	addDATA[dDATA_WEAPON].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_WEAPONEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+			break;
+		}
+
+		case	dDATA_SHIELDEFFECT		:
+		{	if (addDATA[dDATA_WEAPON].isBack(anm,dir,frm))
+			{	addDATA[dDATA_WEAPON].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_WEAPONEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+
+			if (addDATA[dDATA_SHIELD].isBack(anm,dir,frm))
+			{	addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+				if (cANM::GetMaxFrame() > 0)
+					cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+			}
+
+			if (addDATA[dDATA_EFFECT].isBack(anm,dir,frm))	addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+			addDATA[dDATA_CHARACTER].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+			if (!addDATA[dDATA_SHIELD].isBack(anm,dir,frm))
+			{	addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+				if (cANM::GetMaxFrame() > 0)
+					cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+			}
+
+			if (!addDATA[dDATA_EFFECT].isBack(anm,dir,frm))	addDATA[dDATA_EFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+			if (!addDATA[dDATA_WEAPON].isBack(anm,dir,frm))
+			{	addDATA[dDATA_WEAPON].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_WEAPONEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+			break;
+		}
+
+		case	dDATA_EFFECT		:
+		{	if	(addDATA[dDATA_WEAPON].isBack(anm,dir,frm))
+			{	
+				addDATA[dDATA_WEAPON].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_WEAPONEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+
+			if	(addDATA[dDATA_SHIELD].isBack(anm,dir,frm))
+			{	
+				addDATA[dDATA_SHIELD].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_SHIELDEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+			if (cANM::IsBack(frm))
+				if (cANM::GetMaxFrame() > 0)
+					cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+
+			addDATA[dDATA_CHARACTER].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+
+			if (!cANM::IsBack(frm))
+				if (cANM::GetMaxFrame() > 0)
+					cIMG::pCURRENT->Put(x-cANM::ReformPosX()*Zoom/100,y-cANM::ReformPosY()*Zoom/100,Zoom,cANM::isFlip(),alpha);	//	나
+
+			if (!addDATA[dDATA_SHIELD].isBack(anm,dir,frm))
+			{	
+				addDATA[dDATA_SHIELD].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_SHIELDEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+
+			if (!addDATA[dDATA_WEAPON].isBack(anm,dir,frm))
+			{	addDATA[dDATA_WEAPON].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+				addDATA[dDATA_WEAPONEFFECT].PutReg(x,y,anm,dir,frm,Zoom,Zoom);
+			}
+			break;
+		}
+	}
+
+	if (ANM[cANM::CurAnm].LinkAnm != 0xffff)
+	{	
+		int	link	=	ANM[cANM::CurAnm].LinkAnm;
+
+		x		=	x-cANM::ReformPosX()*Zoom/100;
+		y		=	y-cANM::ReformPosY()*Zoom/100;	//	나
+//		x		=	Zero.x+MovePoint.x*Zoom/100 - ANM[0].RefitPos[0].x;
+//		y		=	Zero.y+MovePoint.y*Zoom/100 - ANM[0].RefitPos[0].y;
+
+		if (ANM[link].FrameCount	>	0)
+		{
+			ANM[link].PutShadow(x,y,Zoom,FALSE);
+			ANM[link].Put(x,y,Zoom,FALSE);
+		}
+	}
+}
+
+void
+cWORKWND::Draw()
+{
+	if (!Active()) return;
+
+	Mouse.MousePos(hWND);
+	SetBarMenu();
+
+	int	xp,yp;
+
+	if (Zero.x	==	0xffff)	ResetZero();
+
+	Zero.x	=	max(10,Zero.x);
+	Zero.y	=	max(10,Zero.y);
+	Zero.x	=	min(Zero.x,width()-10);
+	Zero.y	=	min(Zero.y,height()-10);
+
+	int	RefitX	=	ANM[0].RefitPos[0].x*Zoom/100;
+	int	RefitY	=	ANM[0].RefitPos[0].y*Zoom/100;
+
+	if (_MAIN.workMode	!=	dWORK_SET_FRAME)
+	{	RefitX	=	ANM[0].RefitPos[0].x*Zoom/100;
+		RefitY	=	ANM[0].RefitPos[0].y*Zoom/100;
+	}
+
+	xp		=	Zero.x+MovePoint.x*Zoom/100 - RefitX;
+	yp		=	Zero.y+MovePoint.y*Zoom/100 - RefitY;
+
+	if (_cfg.bDRAWBACK && wallPaper)
+	{	
+		int i,j;
+
+		for (i=0;i<height()/wallPaper->Height+1;i++)
+			for (j=0;j<width()/wallPaper->Width+1;j++)
+				wallPaper->Put(j*wallPaper->Width,i*wallPaper->Height);
+	}
+	else
+		cDRAW::Fill(_cfg.workColor);
+
+	int	tx=8,ty=8,line=1;
+	int work=_MAIN.workMode;
+
+	if (cIMG::pCURRENT)
+	{
+		int alpha	=	Alpha;
+
+		if	(_MAIN.workMode	==	dWORK_SET_FRAME)
+		{	
+			alpha	=	ANM[cANM::CurAnm].ALPHA;
+			xp		=	Zero.x+MovePoint.x*Zoom/100 - RefitX;
+			yp		=	Zero.y+MovePoint.y*Zoom/100 - RefitY;
+		}
+
+		if	(_cfg.putCROSSBAR == dPUT_FRONT)
+		{
+			cDRAW::XLine(_cfg.crossColor,0,cDRAW::WIDTH-1 ,Zero.y,max(Zoom/100,1));
+			cDRAW::YLine(_cfg.crossColor,0,cDRAW::HEIGHT-1,Zero.x,max(Zoom/100,1));
+
+			if	(ANM[cANM::CurAnm].anmtype !=	dANI_CUSTOM && _MAIN.workMode==dWORK_SET_FRAME)
+				sdDATA.Put(Zero.x,Zero.y,GetDirectImage(ANM[cANM::CurAnm].anmtype,cANM::CurDirect,MoveOval));
+		}
+
+		if	(_cfg.bDRAWCRASHBOX || _MAIN.workMode==	dWORK_SET_CRASH)
+			DrawCircle(Zero.x,Zero.y,_LTRED,g_wCrashSize*Zoom/100);
+
+		if	(_MAIN.workMode	==	dWORK_SET_FRAME)
+		{	
+			cWORKWND::Draw(xp,yp,alpha);
+
+			if	(ANM[cANM::CurAnm].bSaveReleasePoint && _cfg.putCROSSBAR != dPUT_VALID)
+			{	
+				int x,y;
+
+				x	=	Zero.x	+	ANM[cANM::CurAnm].Release[cANM::CurDirect].x*Zoom/100;
+				y	=	Zero.y	+	ANM[cANM::CurAnm].Release[cANM::CurDirect].y*Zoom/100;
+
+				sdDATA.Put(x,y,16,Zoom,Zoom);
+			}
+		}
+		else 
+		{	
+			if (_cfg.bDRAWSHADOW && cIMG::pCURRENT->pSHADOW)
+			{
+				if	(cANM::isFlip())
+					cIMG::pCURRENT->PutShadow(xp,yp,Zoom,TRUE);
+				else
+					cIMG::pCURRENT->PutShadow(xp,yp,Zoom,TRUE);
+			}
+
+			cIMG::pCURRENT->Put(xp,yp,Zoom,cANM::isFlip(),alpha);
+		}
+
+		if (_cfg.bDRAWOUTLINE)
+			cIMG::pCURRENT->PutLayer(xp,yp,_cfg.outColor,Zoom,cANM::isFlip());
+
+		line		=	1+_cfg.bDRAWSPRITEINFO*2;
+
+		cDRAW::FillHB (0,4,4,180,4+line*15+4+20);
+
+		cTEXT::Put(tx,ty    ,0x7fff,_ms ("Image   :     /"));
+		cTEXT::Put(tx,ty    ,_LTCYAN,_ms("           %4d  %4d",cIMG::Current,cIMG::Count));
+		if (_cfg.bDRAWSPRITEINFO)
+		{	cTEXT::Put(tx,ty+=15,0x7fff,_ms ("Size   :     *"));
+			cTEXT::Put(tx,ty    ,_LTCYAN,_ms("           %4d  %4d",cIMG::pCURRENT->xs,cIMG::pCURRENT->ys));
+			cTEXT::Put(tx,ty+=15,0x7fff,_ms ("calibration     :     ,"));
+			cTEXT::Put(tx,ty    ,_LTCYAN,_ms("           %4d  %4d",-cIMG::pCURRENT->xp,-cIMG::pCURRENT->yp));
+		}
+
+		cTEXT::Put(tx,ty+=20,_LTYELLOW,_ms ("Full calibration :     ,"));
+		cTEXT::Put(tx,ty    ,_WHITE,_ms("           %4d  %4d",ANM[0].RefitPos[0].x,ANM[0].RefitPos[0].y));
+
+		if (_cfg.putCROSSBAR == dPUT_BACK)
+		{	cDRAW::XLine(_cfg.crossColor,0,cDRAW::WIDTH-1 ,Zero.y,max(Zoom/100,1));
+			cDRAW::YLine(_cfg.crossColor,0,cDRAW::HEIGHT-1,Zero.x,max(Zoom/100,1));
+
+			if (ANM[cANM::CurAnm].anmtype !=	dANI_CUSTOM && _MAIN.workMode==dWORK_SET_FRAME)
+				sdDATA.Put(Zero.x,Zero.y,GetDirectImage(ANM[cANM::CurAnm].anmtype,cANM::CurDirect,MoveOval));
+		}
+
+		if (_cfg.putCROSSBAR == dPUT_HALF)
+		{	cDRAW::XLineHB(_cfg.crossColor,0,cDRAW::WIDTH-1 ,Zero.y,max(Zoom/100,1));
+			cDRAW::YLineHB(_cfg.crossColor,0,cDRAW::HEIGHT-1,Zero.x,max(Zoom/100,1));
+
+			if (ANM[cANM::CurAnm].anmtype !=	dANI_CUSTOM && _MAIN.workMode==dWORK_SET_FRAME)
+				sdDATA.Put(Zero.x,Zero.y,GetDirectImage(ANM[cANM::CurAnm].anmtype,cANM::CurDirect,MoveOval),100,100,dPUT_HALF_BLENDING);
+		}
+
+		if (_MAIN.workMode==	dWORK_SET_CRASH	||	_cfg.bDRAWCRASHBOX)
+		{
+			if (_MAIN.workMode==	dWORK_SET_CRASH)
+			{
+				cDRAW::FillHB(0,200,7,600,44);
+				cTEXT::Put(202,12,0x7fff,_ms("Collision Box Size : %d Pixel",g_wCrashSize));
+				cTEXT::Put(202,12,_LTGREEN,_ms("                   %d",g_wCrashSize));
+				cTEXT::Put(202,29,0x7fff,"'+','-'Adjust the size of the red circle with the height.");
+			}
+
+			cDRAW::BoxHB(_LTRED,Zero.x+CRASHBOX.x1*Zoom/100+MovePoint.x*Zoom/100,Zero.y+CRASHBOX.y1*Zoom/100+MovePoint.y*Zoom/100,
+								Zero.x+CRASHBOX.x2*Zoom/100+MovePoint.x*Zoom/100,Zero.y+CRASHBOX.y2*Zoom/100+MovePoint.y*Zoom/100
+								,max(Zoom/100,2));
+		}
+
+		if (_MAIN.workMode==	dWORK_SET_SELECT	||	_cfg.bDRAWCRASHBOX)	
+		{
+			cDRAW::BoxHB(_LTBLUE,Zero.x+g_rectSelect.x1*Zoom/100+MovePoint.x*Zoom/100,Zero.y+g_rectSelect.y1*Zoom/100+MovePoint.y*Zoom/100,
+								Zero.x+g_rectSelect.x2*Zoom/100+MovePoint.x*Zoom/100,Zero.y+g_rectSelect.y2*Zoom/100+MovePoint.y*Zoom/100
+								,max(Zoom/100,2));
+		}
+
+		DrawBarMenu();
+	}
+	else
+	{	cDRAW::FillHB(0,4,4,200,line*14+8);
+		cTEXT::Put(tx,ty,0x7fff,"No image data");
+		DrawBarMenu();
+	}
+
+//	cDRAW::Line(0xffff,Zero.x,Zero.y,Zero.x + 200,Zero.y+100);
+//	cDRAW::Line(0xffff,Zero.x,Zero.y,Zero.x - 200,Zero.y+100);
+//	cDRAW::Line(0xffff,Zero.x,Zero.y,Zero.x + 200,Zero.y-100);
+//	cDRAW::Line(0xffff,Zero.x,Zero.y,Zero.x - 200,Zero.y-100);
+//	for (int i=0;i<360;i++)
+//	{	cDRAW::Fill(31,Zero.x+OvalRevised[i].x,Zero.y+OvalRevised[i].y,Zero.x+OvalRevised[i].x+1,Zero.y+OvalRevised[i].y+1);
+//	}
+
+//	cPOINT		*revisedPos	=	NULL;
+//	char		revisedCount=	0;
+//	if (revisedPos)	cTEXT::Put(100,100,0x7fff,_ms("%d->%d,%d",revisedCount,revisedPos[revisedCount].x,revisedPos[revisedCount].y));
+
+	cDIBWND::Draw();
+
+}
+
+void
+cWORKWND::ZoomIn()	
+{
+	if (_MAIN.workMode	==	dWORK_SET_CRASH)
+	{
+		g_wCrashSize	++;								//	2:1 좌표계
+
+		g_wCrashSize	=	min(g_wCrashSize,400);
+
+		Draw();
+		bVIRGIN	=	FALSE;
+
+		return;
+	}
+
+	if	(keyBuff[VK_SHIFT]		& 0x80)
+	{
+		l_iEffectZoom++;
+		return;
+	}
+
+	Zoom	=	min(Zoom+100,500);
+	if	(Zoom > 50)
+		Zoom = Zoom/100 * 100;
+
+	Repaint	=	TRUE;
+
+	if	(Zoom>=500)
+		_MAIN.TOOLBAR.Disable(IDM_ZOOMIN);
+
+	_MAIN.TOOLBAR.Enable(IDM_ZOOMOUT);
+
+	Draw();
+}
+
+void
+cWORKWND::ZoomOut()	
+{
+	if (_MAIN.workMode	==	dWORK_SET_CRASH)
+	{
+		g_wCrashSize	--;								//	2:1 좌표계
+
+		g_wCrashSize	=	max(g_wCrashSize,10);
+
+		Draw();
+		bVIRGIN	=	FALSE;
+
+		return;
+	}
+
+	if	(keyBuff[VK_SHIFT]		& 0x80)
+	{
+		l_iEffectZoom--;
+
+		l_iEffectZoom	=	max(l_iEffectZoom,1);
+		return;
+	}
+
+	Zoom	=	max(Zoom-100,50);
+	if (Zoom > 50) Zoom = Zoom/100 * 100;
+
+	Repaint	=	TRUE;
+	if (Zoom==50) _MAIN.TOOLBAR.Disable(IDM_ZOOMOUT);
+	_MAIN.TOOLBAR.Enable(IDM_ZOOMIN);
+
+	Draw();
+}
+
+void
+cWORKWND::UpdateBarMenu()
+{
+	int		current=0xffff;
+
+	for (int i=0;i<dBAR_COUNT;i++)
+		if (barMenu[i].rect.isIN(Mouse.x,Mouse.y) && barMenu[i].Active)
+			current	=	i;
+
+	if (keyBuff[VK_LBUTTON	] & 0x80)
+	{	if (current != 0xffff)	bPRESSBAR	=	TRUE;
+		if (!lbDown && current != 0xffff)
+		{	lbDown	=	TRUE;
+			
+			if (current >= IDM_ALPHA_SOFTDODGE && current <= IDM_ALPHA_HALF)
+			{	
+				if	(_MAIN.workMode==dWORK_SET_FRAME)
+				{	
+					ANM[cANM::CurAnm].ALPHA		=	dPUT_SOFT_DODGE+current-IDM_ALPHA_SOFTDODGE;
+					bVIRGIN	=	FALSE;
+				}
+				else
+					Alpha					=	dPUT_SOFT_DODGE+current-IDM_ALPHA_SOFTDODGE;
+			}
+
+			if	(current >= IDM_ANM_FIRST && current <= IDM_ANM_LAST)
+			{	
+				cANM::SetCurrentAnm(current - IDM_ANM_FIRST );
+				_MAIN.Draw();
+			}
+
+			if	(current >= IDM_LINK_FIRST && current <= IDM_LINK_LAST)
+			{
+				ANM[cANM::CurAnm].LinkAnm	=	current - IDM_LINK_FIRST;
+				barStatus[ANM[cANM::CurAnm].LinkAnm +IDM_LINK_FIRST]	=	TRUE;
+				_MAIN.Draw();
+			}
+
+			if	(g_wPartsType	==	0	&&	current >= IDM_DATA_CHARACTER && current <= IDM_DATA_EFFECT)
+			{	
+				g_wAnmDataType	=	current - IDM_DATA_CHARACTER;
+				g_wPartsType	=	0;
+				bVIRGIN			=	FALSE;
+				_MAIN.Draw();
+			}
+
+			if	(current >= eParts_load_head_back && current <= eParts_load_shield)
+				_MAIN.LoadData(current-eParts_load_head_back+1 ,TRUE);
+
+			if	(current >= eParts_select_head_back && current <= eParts_select_shield)
+				g_iSelectParts	=	current - eParts_select_head_back +1;
+
+			switch(current)
+			{
+				case	IDM_SET_OUTLINE		:	_cfg.bDRAWOUTLINE		=	1-_cfg.bDRAWOUTLINE		;break;
+				case	IDM_SET_SHADOW		:	_cfg.bDRAWSHADOW		=	1-_cfg.bDRAWSHADOW		;break;
+				case	IDM_SET_BACK		:	_cfg.bDRAWBACK			=	1-_cfg.bDRAWBACK		;break;
+				case	IDM_SET_SPRITEINFO	:	_cfg.bDRAWSPRITEINFO	=	1-_cfg.bDRAWSPRITEINFO	;break;
+				case	IDM_COMPARE_DATA	:	_cfg.bDRAWPREFRAME		=	1-_cfg.bDRAWPREFRAME	;break;
+				case	IDM_RELEASE_POINT	:	bPUTRELEASEPOINT		=	1-bPUTRELEASEPOINT		;break;
+
+				case	IDM_ATTACK_ACTION	:
+					cANM::s_iDefaultAttack	=	cANM::CurAnm;
+					_MAIN.Draw();
+					bVIRGIN	=	FALSE;
+					break;
+
+				case	IDM_MAGIC_ACTION	:
+					cANM::s_iDefaultMagic	=	cANM::CurAnm;
+					_MAIN.Draw();
+					bVIRGIN	=	FALSE;
+					break;
+
+				case	IDM_OCCASIONALLY_REST	:
+					if (cANM::s_wIsOccasionallyRestAction)	cANM::s_wIsOccasionallyRestAction	=	FALSE;
+					else									cANM::s_wIsOccasionallyRestAction	=	TRUE;
+					_MAIN.Draw();
+					bVIRGIN	=	FALSE;
+					break;
+
+				case	IDM_SET_CRASHBOX	:	_cfg.bDRAWCRASHBOX	=1-_cfg.bDRAWCRASHBOX	;break;
+				case	IDM_LOCK			:	_MAIN.Lock			=1-_MAIN.Lock			;break;
+				case	IDM_PUT_INDEX		:	
+					_cfg.bPUTINDEX		=1-_cfg.bPUTINDEX		;
+					_MAIN.Draw();
+					break;
+
+				case	IDM_IMAGE_8BIT		:
+					if (cANM::BPP==16 && cIMG::Count > 0)
+						switch(cMSG::YESNO("Warning!! Changing from 16-bit to 8-bit will initialize existing data.","Are you sure you want to continue?"))
+						{	case	IDNO	:	break;
+							case	IDYES	:	
+								cANM::BPP=8;
+								cIMG::Reset();
+								Repaint	=	TRUE;
+								break;
+						}
+					else
+					{	cANM::BPP=8;
+						Repaint	=	TRUE;
+					}
+					break;
+
+				case	IDM_IMAGE_16BIT		:
+					if (cANM::BPP==8 && cIMG::Count > 0)
+						switch(cMSG::YESNO("Warning!! Changing from 8-bit to 16-bit will initialize existing data.","Are you sure you want to continue?"))
+						{	case	IDNO	:	break;
+							case	IDYES	:	
+								cANM::BPP=16;
+								cIMG::Reset();
+								Repaint	=	TRUE;
+								break;
+						}
+					else
+					{	cANM::BPP=16;
+						_MAIN.Draw();
+					}
+					break;
+
+				case	IDM_PLAY_ANM		:
+					bPLAYANM	=	1	-	bPLAYANM;
+					if (!bPLAYANM)	_MAIN.Draw();
+					break;
+
+				case	IDM_INCREASE_FPS	:
+					ANM[cANM::CurAnm].FPS++;
+					bVIRGIN	=	FALSE;
+					break;
+
+				case	IDM_DECREASE_FPS	:
+					ANM[cANM::CurAnm].FPS--;
+					bVIRGIN	=	FALSE;
+					break;
+
+				case	IDM_PPS_P10			:
+					ANM[cANM::CurAnm].PPS	+=	10;
+					bVIRGIN	=	FALSE;
+					break;
+
+				case	IDM_PPS_P2			:
+					ANM[cANM::CurAnm].PPS	+=	2;
+					bVIRGIN	=	FALSE;
+					break;
+
+				case	IDM_PPS_M2			:
+					ANM[cANM::CurAnm].PPS	-=	2;
+					bVIRGIN					=	FALSE;
+					break;
+
+				case	IDM_PPS_M10			:
+					ANM[cANM::CurAnm].PPS	-=	10;
+					bVIRGIN					=	FALSE;
+					break;
+
+				case	IDM_MOVE_OVAL		:
+					MoveOval				=	2;
+					bVIRGIN					=	FALSE;
+					break;
+
+				case	IDM_MOVE_CIRCLE		:
+					MoveOval				=	1;
+					bVIRGIN					=	FALSE;
+					break;
+			}
+			Repaint	=	TRUE;
+		}
+		lbDown	=	TRUE;
+	}
+	else	bPRESSBAR=	FALSE;
+
+}
+
+/*
+POINT *
+TraceLine(int x1,int y1,int x2,int y2,int &count)
+{	int	slant,address,len=0,x=0;
+	int	index = 0;
+
+	POINT	*values;
+
+	if (x2==x1)
+	{	if (y1>y2) swap(y1,y2);
+
+		count	=	y2-y1+1;
+		values	=	new POINT [count];
+		for (int i=0;i<count;i++)
+		{	values[i].x	=	x1;
+			values[i].y	=	y1+i;
+		}
+
+		return values;
+	}
+
+	if (y2==y1)
+	{	if (x1>x2) swap(x1,x2);
+
+		count	= x2-x1+1;
+		values	=	new POINT [count];
+		for (int i=0;i<count;i++)
+		{	values[i].x	=	x1+i;
+			values[i].y	=	y1;
+		}
+
+		return values;
+	}
+
+	slant	=	(x2-x1)*(y2-y1);
+
+	int width	=	max(x2,x1)-min(x2,x1)+1;
+	int height	=	max(y2,y1)-min(y2,y1)+1;
+
+	count		=	max(width,height);
+	values		=	new POINT [count];
+
+	if (x1>x2)
+	{	swap(x1,x2);
+		swap(y1,y2);
+	}
+
+	address	=	x1+y1*WIDTH;
+
+	if (slant > 0)
+	{	if (width< height)
+			for (int i=0;i<height;i++)
+			{	if (x1 >= WIDTH )
+				{	count = index;
+					return values;
+				}
+				if (y1 >= HEIGHT)
+				{	count = index;
+					return values;
+				}
+
+				if (x1 >= 0 && y1 >= 0)
+				{	values[index].x	=	x;
+					values[index].y	=	x;
+					index	++;
+				}
+
+				len					+=	width;
+				y1++;
+				if (len >= height)	len-=height,x++,x1++;
+			}
+		else
+			for (int i=0;i<width;i++)
+			{	if (x1 >= WIDTH )
+				{	count = index;
+					return values;
+				}
+				if (y1 >= HEIGHT)
+				{	count = index;
+					return values;
+				}
+
+				values[index].x	=	x1;
+				values[index].y	=	y1;
+				index++;
+
+				len					+=	height;
+				x1++;
+				if (len >= width ) len-=width,address+=WIDTH,y1--;
+			}
+	}
+	else
+	{	if (width< height)
+			for (int i=0;i<height;i++)
+			{	if (x1 >= WIDTH )
+				{	count = index;
+					return values;
+				}
+				if (y1 <  0		)
+				{	count = index;
+					return values;
+				}
+
+				if (x1 >= 0 && y1 < HEIGHT)
+				{	values[index].x	=	x1;
+					values[index].y	=	y1;
+					index++;
+				}
+
+				len					+=	width;
+				address				-=	WIDTH;
+				y1--;
+				if (len >= height)	len-=height,x++,x1++;
+			}
+		else
+			for (int i=0;i<width;i++)
+			{	if (x1 >= WIDTH )
+				{	count = index;
+					return values;
+				}
+				if (y1 >= HEIGHT)
+				{	count = index;
+					return values;
+				}
+
+				values[index].x	=	x1;
+				values[index].y	=	y1;
+				index++;
+
+				len					+=	height;
+				x1++;
+				if (len >= width ) len-=width,address-=WIDTH,y1++;
+			}
+	}
+
+	return values;
+}
+
+*/
+
+//int	revisedAngle[8]	=	{90,30,0,330,270,210,180,150};
+int	revisedAngle[6][16]	=
+{	{0},
+	{0,180},
+	{90,270},
+	{90,0,270,180},
+	{90,45,0,315,270,225,180,135},
+	{90,67,45,22,0,337,315,292,270,247,225,203,180,157,135,112}
+};
+
+BOOL
+cWORKWND::Run()
+{
+	static	BOOL	isIn	=	FALSE;
+	Repaint	=	FALSE;
+
+	Mouse.MousePos(hWND);
+
+	if ((keyBuff[VK_LBUTTON	] & 0x80) == 0 )
+		lbDown	=	FALSE;
+	if ((keyBuff[VK_RBUTTON	] & 0x80) == 0 )
+		rbDown	=	FALSE;
+
+	if	(keyBuff[VK_BACK]&0x80)
+	{
+		int	x	=	Mouse.x - Zero.x;
+		int	y	=	Mouse.y - Zero.y;
+	}
+	
+
+	int	RefitX	=	ANM[0].RefitPos[0].x*Zoom/100;
+	int	RefitY	=	ANM[0].RefitPos[0].y*Zoom/100;
+
+	if	(_MAIN.workMode	!=	dWORK_SET_FRAME)
+		RefitX	=	0,RefitY	=	0;
+
+	UpdateBarMenu();
+
+	static	int		CurDir		=	-1;
+	static	int		CurAnm		=	-1;
+	static	int		CurFPS		=	-1;
+	static	int		CurPPS		=	-1;
+	static	int		moveOval	=	-1;
+
+	//	에니메이션 처리
+	if (bPLAYANM)
+	{	static	DWORD	lastTime	=	timeGetTime();
+		if (revisedCount==0 || CurDir != ANM[cANM::CurAnm].CurDirect ||	CurAnm	!=	cANM::CurAnm ||
+			CurFPS	!=	ANM[cANM::CurAnm].FPS || CurPPS	!=	ANM[cANM::CurAnm].PPS	||	moveOval	!=	MoveOval)
+		{
+			CurAnm	=	cANM::CurAnm;
+			CurDir	=	ANM[CurAnm].CurDirect;
+			CurFPS	=	ANM[CurAnm].FPS;
+			CurPPS	=	ANM[CurAnm].PPS;
+			moveOval=	MoveOval;
+
+			int angle	=	revisedAngle[ANM[CurAnm].anmtype][CurDir];
+
+			GetLinerRoad(revisedPos,CurPPS,CurFPS,angle,MoveOval);
+			revisedCount=	0;
+
+			if (CurPPS == 0)
+			{	MovePoint.x	=	0;
+				MovePoint.y	=	0;
+			}
+		}
+
+		if (lastTime + 1000/ANM[cANM::CurAnm].FPS < timeGetTime())
+		{	lastTime	=	timeGetTime();
+
+			cANM::PlusCurrentFrame();
+			Draw();
+
+			MovePoint.x	+=	revisedPos[revisedCount].x;
+			MovePoint.y	+=	revisedPos[revisedCount].y;
+
+			revisedCount ++;
+
+			if (revisedCount >= ANM[cANM::CurAnm].FPS)	revisedCount	=	0;
+
+			return TRUE;
+		}
+
+		if (Repaint) Draw();
+
+		return TRUE;
+	}
+	else
+	{	CurDir		=	-1;
+		MovePoint.x	=	0;
+		MovePoint.y	=	0;
+		revisedCount=	0;
+	}
+
+	curCursor	=	0;
+
+	if (cIMG::pCURRENT)
+	{
+		int xp=cIMG::pCURRENT->xp,yp=cIMG::pCURRENT->yp,xs=cIMG::pCURRENT->xs,ys=cIMG::pCURRENT->ys;
+		imgRect.Set(Zero.x-xp*Zoom/100,Zero.y-yp*Zoom/100,Zero.x-xp*Zoom/100+xs*Zoom/100,Zero.y-yp*Zoom/100+ys*Zoom/100);
+
+		if (keyBuff[VK_SPACE	] & 0x80)
+		{
+			curCursor	=	1;
+
+			if(keyBuff[VK_LBUTTON	] & 0x80)
+			{
+				lbDown		=	TRUE;
+				if (!moveCross)
+				{
+					moveCross	=	TRUE;
+					SetCursor(_MAIN.handCursor);
+				}
+			}
+			else
+			{	
+				if (GetCursor()!=_MAIN.defaultCursor)
+					SetCursor(_MAIN.defaultCursor);
+				moveCross	=	FALSE;
+			}
+		}
+		else
+		{	
+			if (GetCursor()!=_MAIN.defaultCursor && !moveSprite)
+				SetCursor(_MAIN.defaultCursor);
+
+			moveCross	=	FALSE;
+
+			if (client.isIN(Mouse.x,Mouse.y))
+			{	
+				if((keyBuff[VK_LBUTTON	] & 0x80) && !bPUTRELEASEPOINT)
+				{
+					if (!moveSprite && (_MAIN.workMode == dWORK_SET_SPRITE || _MAIN.workMode == dWORK_SET_FRAME))
+					{
+						int addX	=	RefitX,addY=RefitY;
+
+						if (_MAIN.workMode == dWORK_SET_FRAME && ANM[cANM::CurAnm].bSaveRefitPos)
+						{
+							addX	+=	cANM::ReformPosX()*Zoom/100;
+							addY	+=	cANM::ReformPosY()*Zoom/100;
+						}
+
+						int	x	=	(Mouse.x-imgRect.x1)*100/Zoom+addX*100/Zoom;
+						int	y	=	(Mouse.y-imgRect.y1)*100/Zoom+addY*100/Zoom;
+
+						if (cIMG::pCURRENT->isIN(x,y))
+						{	moveSprite	=	TRUE;
+							movePoll	=	Mouse;
+
+							if (_MAIN.Lock)
+							{	oldPos.x	=	ANM[0].RefitPos[0].x;
+								oldPos.y	=	ANM[0].RefitPos[0].y;
+							}
+							else
+							if (_MAIN.workMode == dWORK_SET_FRAME && ANM[cANM::CurAnm].bSaveRefitPos)
+							{	oldPos.x	=	cANM::ReformPosX();
+								oldPos.y	=	cANM::ReformPosY();
+							}
+							else
+							{	oldPos.x	=	cIMG::pCURRENT->xp;
+								oldPos.y	=	cIMG::pCURRENT->yp;
+							}
+
+							SetCursor(_MAIN.handCursor);
+						}
+					}
+				}
+				else	moveSprite	=	FALSE;
+			}
+			else
+			{	if (GetCursor()!=_MAIN.defaultCursor)	SetCursor(_MAIN.defaultCursor);
+				moveSprite	=	FALSE;
+			}
+		}
+	}
+	else
+	{
+		moveCross	=	FALSE;
+		moveSprite	=	FALSE;
+	}
+
+	if	(!(keyBuff[VK_LBUTTON	] & 0x80))
+		drawCrash	=	FALSE;
+
+	if (client.isIN(Mouse.x,Mouse.y))
+	{	
+		if (bPUTRELEASEPOINT && (keyBuff[VK_LBUTTON	] & 0x80) && !bPRESSBAR)
+		{
+			if(ANM[cANM::CurAnm].bSaveReleasePoint	)
+			{
+				ANM[cANM::CurAnm].Release[cANM::CurDirect].x	=	(_WORKWND.Mouse.x - _WORKWND.Zero.x)*100/_WORKWND.Zoom;
+				ANM[cANM::CurAnm].Release[cANM::CurDirect].y	=	(_WORKWND.Mouse.y - _WORKWND.Zero.y)*100/_WORKWND.Zoom;
+				bVIRGIN		=	FALSE;
+			}
+			Repaint		=	TRUE;
+		}
+		else
+		if (!drawCrash && _MAIN.workMode == dWORK_SET_CRASH && (keyBuff[VK_LBUTTON	] & 0x80) &&  !bPRESSBAR)
+		{	drawCrash	=	TRUE;
+			CRASHBOX.x1	=	(Mouse.x-Zero.x)*100/Zoom;
+			CRASHBOX.y1	=	(Mouse.y-Zero.y)*100/Zoom;
+			Repaint		=	TRUE;
+			bVIRGIN		=	FALSE;
+		}
+		else
+		if (!drawCrash && _MAIN.workMode == dWORK_SET_SELECT && (keyBuff[VK_LBUTTON	] & 0x80) &&  !bPRESSBAR)
+		{	drawCrash	=	TRUE;
+			g_rectSelect.x1	=	(Mouse.x-Zero.x)*100/Zoom;
+			g_rectSelect.y1	=	(Mouse.y-Zero.y)*100/Zoom;
+			Repaint		=	TRUE;
+			bVIRGIN		=	FALSE;
+		}
+		else
+		if (!oldMouse.match(Mouse))
+		{
+			if (drawCrash)		//	충돌 박스 그리는중
+			{
+				if (_MAIN.workMode == dWORK_SET_CRASH)
+				{
+					CRASHBOX.x2	=	(Mouse.x-Zero.x)*100/Zoom;
+					CRASHBOX.y2	=	(Mouse.y-Zero.y)*100/Zoom;
+				}
+				if (_MAIN.workMode == dWORK_SET_SELECT)
+				{
+					g_rectSelect.x2	=	(Mouse.x-Zero.x)*100/Zoom;
+					g_rectSelect.y2	=	(Mouse.y-Zero.y)*100/Zoom;
+				}
+				Repaint		=	TRUE;
+			}
+			else
+			if (moveCross)		//	중심 십자선 이동중
+			{	Zero.x	-=	(oldMouse.x-Mouse.x);
+				Zero.y	-=	(oldMouse.y-Mouse.y);
+				Repaint	=	TRUE;
+			}
+			else
+			if (moveSprite)		//	스프라이트 움직이는중
+			{
+				int		x,y;
+				static	int	dx	=	0,dy	=	0;
+				x	=	(movePoll.x	-	Mouse.x)*100/Zoom;
+				y	=	(movePoll.y	-	Mouse.y)*100/Zoom;
+
+				if (dx!=x || dy!=y)
+				{	if (_MAIN.workMode == dWORK_SET_FRAME && ANM[cANM::CurAnm].bSaveRefitPos)
+					{	cANM::ReformPos(oldPos.x+x,oldPos.y+y);
+						dx	=	x	,	dy	=	y;
+					}
+					else
+					{
+						cIMG::pCURRENT->rePos(oldPos.x+x,oldPos.y+y);
+						dx	=	x	,	dy	=	y;
+					}
+				}
+
+				Repaint	=	TRUE;
+			}
+		}
+		isIn	=	TRUE;
+	}
+	else
+	{	if (isIn)	Repaint	=	TRUE;
+		isIn		=	FALSE;
+		drawCrash	=	FALSE;
+		moveCross	=	FALSE;
+		moveSprite	=	FALSE;
+	}
+
+	oldMouse	=	Mouse;
+
+	if(Repaint) Draw();
+//	if (cIMG::Count <= 0 ) return TRUE;
+
+	return TRUE;
+}
+
+#define	IDM_CROSS_BACK		1000
+#define	IDM_CROSS_FRONT		1001
+#define	IDM_CROSS_HALF		1002
+#define	IDM_CROSS_VALID		1003
+
+void
+cWORKWND::PopupMenu()
+
+{	if (cIMG::Count		<=	0				)	return;
+
+	HMENU	hMenu	= CreatePopupMenu();
+	cPOINT	pos;
+
+	pos.MousePos();
+	AppendMenu(hMenu,MFT_STRING,IDM_CROSS_BACK ,"Crosshair back to image");
+  	AppendMenu(hMenu,MFT_STRING,IDM_CROSS_FRONT ,"Crosshair to front of image");
+  	AppendMenu(hMenu,MFT_STRING,IDM_CROSS_HALF ,"Crosshair translucent with image");
+  	AppendMenu(hMenu,MFT_STRING,IDM_CROSS_VALID ,"Remove crosshairs");
+
+	CheckMenuItem(hMenu,IDM_CROSS_BACK	+_cfg.putCROSSBAR	,MF_BYCOMMAND|MF_CHECKED);
+
+	TrackPopupMenu(hMenu,TPM_RIGHTBUTTON|TPM_TOPALIGN|TPM_LEFTALIGN,pos.x,pos.y,0,hWND,NULL);
+	DestroyMenu(hMenu);
+}
+
+void
+cWORKWND::SelectAnm()
+{
+}
+
+LRESULT CALLBACK
+cWORKWND::WNDProc(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam)
+{	switch(uMsg)
+	{	case WM_PAINT			:
+			_WORKWND.Draw();
+			break;
+
+		case WM_KEYDOWN			:
+			_MAIN.updateKey(wParam);
+			break;
+
+		case WM_RBUTTONDOWN		:
+			_WORKWND.PopupMenu();
+			break;
+
+		case WM_SETCURSOR		:
+			if (moveSprite || moveCross)
+					SetCursor(_MAIN.handCursor);
+			else	SetCursor(_MAIN.defaultCursor);
+			break;
+
+		case WM_COMMAND		:
+			switch( LOWORD( wParam ) )
+			{	case	IDM_CROSS_BACK		:
+				case	IDM_CROSS_FRONT		:
+				case	IDM_CROSS_HALF		:
+				case	IDM_CROSS_VALID		:
+					_cfg.putCROSSBAR	=	LOWORD( wParam )-IDM_CROSS_BACK;
+					_WORKWND.Draw();
+					break;
+			}
+
+
+		case WM_CLOSE			:
+		case WM_DESTROY			:
+			return (0L);
+
+		case WM_SYSCOMMAND	:
+			if ((LOWORD(wParam)&0xfff0) == SC_MOVE) return FALSE;
+			return( DefWindowProc( hWnd, uMsg, wParam, lParam ) );
+			break;
+
+		default					:
+			return( DefWindowProc( hWnd, uMsg, wParam, lParam ) );
+	}
+
+	return (0L);
+}

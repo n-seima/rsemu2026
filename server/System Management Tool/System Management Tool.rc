@@ -1,0 +1,372 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\System Management Tool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\System Management Tool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "System Management Tool 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "System Management Tool 버전 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SYSTEMMANAGEMENTTOOL_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "System Management Tool"
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,285,179,28,14
+    CONTROL         "List3",IDC_LIST_SCHEDULE,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,
+                    27,306,119
+    PUSHBUTTON      "백업 정책",IDC_MAKE_BACKUP,43,179,41,14
+    PUSHBUTTON      "파일 관리 정책",IDC_FILE_MANAGEMENT,84,179,52,14
+    PUSHBUTTON      "프로세스 정책",IDC_CHECK_PROCESS,136,179,50,14
+    CTEXT           "보기",IDC_STATIC,7,7,27,13,SS_CENTERIMAGE
+    CONTROL         "백업 정책",IDC_CHK_BACKUP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,42,7,49,13
+    CONTROL         "파일관리 정책",IDC_CHK_FILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,98,7,61,13
+    CONTROL         "프로세스 정책",IDC_CHK_PROC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,7,61,13
+    PUSHBUTTON      "시스템 모니터 정책",IDC_CHECK_SYSTEM,187,179,72,14
+    CONTROL         "시스템 모니터 정책",IDC_CHK_SYSTEM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,234,7,75,13
+    CTEXT           "만들기",IDC_STATIC,9,180,29,13,SS_CENTERIMAGE
+END
+
+IDD_DLG_SCHEDULE DIALOG DISCARDABLE  0, 0, 299, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "정책 설정 창"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,242,146,50,14
+    CONTROL         "",IDC_SHEET,"Static",SS_BLACKFRAME,7,7,285,138
+    PUSHBUTTON      "CANCEL",IDC_CANCEL,189,146,45,14
+END
+
+IDD_DLG_FILE_MNG DIALOG DISCARDABLE  0, 0, 317, 164
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "File Managemet"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,53,7,257,150
+    LTEXT           "Source",IDC_STATIC,59,15,27,9
+    LTEXT           "Target",IDC_STATIC,59,29,27,9
+    EDITTEXT        IDC_EDIT_SOURCE,90,13,147,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TARGET,90,28,147,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_SET_SOURCE,240,13,12,12
+    PUSHBUTTON      "...",IDC_BTN_SET_TARGET,240,28,12,12
+    CONTROL         "단순한 백업이 아닌 경우 스크립트 사용",
+                    IDC_CHK_USE_SCRIPT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    61,68,160,12
+    CONTROL         "포함된 폴더 동일 적용",IDC_CHK_WITH_FOLDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,61,48,102,12
+    CONTROL         "작업 후 Source 폴더 내용 삭제",IDC_CHK_DEL_SOURCE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,179,48,121,12
+    EDITTEXT        IDC_EDIT_SCRIPTFILE,72,83,147,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_SET_SCRIPT_FILE,222,83,12,12
+END
+
+IDD_DLG_TIME DIALOG DISCARDABLE  0, 0, 317, 164
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "Time Setting"
+FONT 10, "System"
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | NOT WS_VISIBLE | WS_TABSTOP,65,26,55,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | NOT WS_VISIBLE | 
+                    WS_TABSTOP | 0x8,123,26,64,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,53,7,257,150
+    CONTROL         "사용",IDC_CHK_USE_TIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,10,25,14
+    CONTROL         "특정일",IDC_RAD_SPECIAL_DATE,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,63,11,37,12
+    CONTROL         "월간",IDC_RAD_MONTH,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,102,11,30,12
+    CONTROL         "주간",IDC_RAD_WEEK,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,138,11,30,12
+    CONTROL         "일간",IDC_RAD_DAY,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,174,11,30,12
+    COMBOBOX        IDC_CMB_CLOCK,191,26,26,55,CBS_DROPDOWN | CBS_SORT | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_PROCESS DIALOG DISCARDABLE  0, 0, 317, 164
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "Check Process"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,53,7,257,150
+    EDITTEXT        IDC_EDIT_SCRIPTFILE,61,54,147,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_SET_SCRIPT_FILE,211,54,12,12
+    COMBOBOX        IDC_COB_PROCESS_NAME,61,26,107,12,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "감시할 Process를 선택하거나 입력하세요.",IDC_STATIC,61,
+                    12,155,10
+    COMBOBOX        IDC_CMB_CHECK_CONDITION,193,26,100,12,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_MONITORING DIALOG DISCARDABLE  0, 0, 317, 164
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "System Monitoring"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,53,7,257,150
+    EDITTEXT        IDC_EDIT_SCRIPTFILE,62,29,147,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_SET_SCRIPT_FILE,212,29,12,12
+    LTEXT           "처리할 스크립트 파일을 지정해 주세요.",IDC_STATIC,61,14,
+                    195,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "System Management Tool MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "System Management Tool\0"
+            VALUE "LegalCopyright", "Copyright (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "System Management Tool.EXE\0"
+            VALUE "ProductName", "System Management Tool 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SYSTEMMANAGEMENTTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_DLG_SCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_DLG_TIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_TIME DLGINIT
+BEGIN
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_CMB_CLOCK, 0x403, 3, 0
+0x3231, "\000" 
+    0
+END
+
+IDD_DLG_PROCESS DLGINIT
+BEGIN
+    IDC_CMB_CHECK_CONDITION, 0x403, 8, 0
+0xf8be, 0xbbc0, 0xb620, 0x00a7, 
+    IDC_CMB_CHECK_CONDITION, 0x403, 8, 0
+0xd6c0, 0xbbc0, 0xb620, 0x00a7, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "System Management Tool 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\System Management Tool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

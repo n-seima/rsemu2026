@@ -1,0 +1,61 @@
+// RedStoneWL.idl : IDL source for RedStoneWL.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (RedStoneWL.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(6E77E4DE-2890-4AA8-B122-964F4FC0B068),
+		dual,
+		helpstring("IRedStoneWL Interface"),
+		pointer_default(unique)
+	]
+	interface IRedStoneWL : IDispatch
+	{
+		[propget, id(1), helpstring("property getID")] HRESULT getID([out, retval] BSTR *pVal);
+		[propput, id(1), helpstring("property getID")] HRESULT getID([in] BSTR newVal);
+		[id(2), helpstring("method Run")] HRESULT Run();
+		[propget, id(3), helpstring("property UrlPath")] HRESULT UrlPath([out, retval] BSTR *pVal);
+		[propput, id(3), helpstring("property UrlPath")] HRESULT UrlPath([in] BSTR newVal);
+		[propget, id(4), helpstring("property PortalID")] HRESULT PortalID([out, retval] long *pVal);
+		[propput, id(4), helpstring("property PortalID")] HRESULT PortalID([in] long newVal);
+		[propget, id(5), helpstring("property Password")] HRESULT Password([out, retval] BSTR *pVal);
+		[propput, id(5), helpstring("property Password")] HRESULT Password([in] BSTR newVal);
+	};
+
+[
+	uuid(3DC591A7-F4F9-498F-8C68-9C8F3B5F0F1C),
+	version(1.1),
+	helpstring("RedStoneWL 1.1 Type Library")
+]
+library REDSTONEWLLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(096F7371-E7D0-42D9-820C-9244168F7E77),
+		helpstring("_IRedStoneWLEvents Interface")
+	]
+	dispinterface _IRedStoneWLEvents
+	{
+		properties:
+		methods:
+	};
+
+	[
+		uuid(BCF37AD2-F141-4B0F-9E56-A1E968E2559E),
+		helpstring("RedStoneWL Class")
+	]
+	coclass RedStoneWL
+	{
+		[default] interface IRedStoneWL;
+		[default, source] dispinterface _IRedStoneWLEvents;
+	};
+};

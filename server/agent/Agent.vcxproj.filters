@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{43209882-b52e-4c0e-9555-3dac8c8e5965}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e756fff4-a3ad-4dd2-8587-67aa987f1d4b}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{78fe5ff6-1499-4d40-b516-9695f42f64d8}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="TH">
+      <UniqueIdentifier>{87afbc79-eaa2-4291-9f31-1d5b0883d9bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="COM">
+      <UniqueIdentifier>{4f5e7fc8-24fe-4dd2-8d60-e8b3419cce23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="COM\NET">
+      <UniqueIdentifier>{6c130cba-ab4e-4064-b560-ae5ecd29680c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="COM\REG">
+      <UniqueIdentifier>{b866ba85-006c-4e83-ae50-58378641ddf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AG">
+      <UniqueIdentifier>{01a3ef4c-7449-42c4-8960-5a28dd9bed87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Agent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AgentDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="killProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="accept.cpp">
+      <Filter>TH</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveThread.cpp">
+      <Filter>TH</Filter>
+    </ClCompile>
+    <ClCompile Include="LogInServerThread.cpp">
+      <Filter>TH</Filter>
+    </ClCompile>
+    <ClCompile Include="ReconnectThread.cpp">
+      <Filter>TH</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkerThread.cpp">
+      <Filter>TH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSOCKET.cpp">
+      <Filter>COM\NET</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\reg_common.cpp">
+      <Filter>COM\REG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\server_type_define.cpp">
+      <Filter>COM\REG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\version.cpp">
+      <Filter>COM\REG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSRVUTIL.cpp">
+      <Filter>COM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\PacketBuffer.cpp">
+      <Filter>COM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\SFC.cpp">
+      <Filter>COM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\Tracer.cpp">
+      <Filter>COM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\TracerFromSaveLog.cpp">
+      <Filter>COM</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Agent.odl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Agent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AgentDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgProxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="killProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="server_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>AG</Filter>
+    </ClInclude>
+    <ClInclude Include="accept.h">
+      <Filter>TH</Filter>
+    </ClInclude>
+    <ClInclude Include="LiveThread.h">
+      <Filter>TH</Filter>
+    </ClInclude>
+    <ClInclude Include="LogInServerThread.h">
+      <Filter>TH</Filter>
+    </ClInclude>
+    <ClInclude Include="ReconnectThread.h">
+      <Filter>TH</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkerThread.h">
+      <Filter>TH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\packet\cPACKET_AGENT.h">
+      <Filter>COM\NET</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\cSOCKET.h">
+      <Filter>COM\NET</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\reg_common.h">
+      <Filter>COM\REG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\server_type_define.h">
+      <Filter>COM\REG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\version.h">
+      <Filter>COM\REG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\cSRVUTIL.h">
+      <Filter>COM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\PacketBuffer.h">
+      <Filter>COM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SFC.h">
+      <Filter>COM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Tracer.h">
+      <Filter>COM</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Agent.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Agent.rc">
+      <Filter>AG</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Agent.rc2">
+      <Filter>AG</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Agent.reg" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,369 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\AnalyzeLog.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\AnalyzeLog.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ANALYZELOG_DIALOG DIALOGEX 0, 0, 559, 509
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Searching Tool For Log"
+FONT 9, "굴림체"
+BEGIN
+    COMBOBOX        IDC_YY1,203,10,38,210,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MM1,254,10,26,363,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DD1,291,10,26,383,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HOUR1,331,10,26,376,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MIN1,369,10,26,384,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_YY2,203,25,38,207,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MM2,254,25,26,339,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DD2,291,25,26,363,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HOUR2,331,25,26,363,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MIN2,369,25,26,365,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SERVERLIST,40,46,82,313,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ID,40,61,82,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,183,61,82,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ITEMSERIAL,316,77,60,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMPARE,40,10,132,421,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Search",ID_LOG_SEARCH,35,135,162,18
+    PUSHBUTTON      "Save",ID_LOG_SAVE,5,471,57,18
+    PUSHBUTTON      "Load",ID_LOG_LOAD,63,471,57,18
+    PUSHBUTTON      "Search in List",ID_LOG_SEARCH_FILE,243,133,15,18,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Back",ID_LOG_BACK,200,135,42,18,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LISTBOX         IDC_LISTDATA,4,174,551,296,LBS_NOINTEGRALHEIGHT | 
+                    LBS_WANTKEYBOARDINPUT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL
+    PUSHBUTTON      "Exit",IDCANCEL,505,471,50,18,NOT WS_TABSTOP
+    CONTROL         "MonthCalendar1",IDC_LOG_CALENDAR,"SysMonthCal32",
+                    MCS_NOTODAY,461,5,94,111,WS_EX_CLIENTEDGE
+    LTEXT           "MM",IDC_STATIC,280,11,10,13,SS_CENTERIMAGE
+    LTEXT           "DD",IDC_STATIC,318,11,10,13,SS_CENTERIMAGE
+    LTEXT           "MM",IDC_STATIC,280,25,10,13,SS_CENTERIMAGE
+    LTEXT           "DD",IDC_STATIC,318,25,10,13,SS_CENTERIMAGE
+    LTEXT           "HH",IDC_STATIC,357,11,11,13,SS_CENTERIMAGE
+    LTEXT           "HH",IDC_STATIC,357,25,10,13,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,8,41,
+                    448,1
+    RTEXT           "ID",IDC_STATIC,16,63,19,9,SS_CENTERIMAGE
+    RTEXT           "Player Name",IDC_ST_NAME,124,63,55,9
+    RTEXT           "SERVER",IDC_STATIC,11,48,24,9,SS_CENTERIMAGE
+    RTEXT           "IT Serial",IDC_IT_SERIAL,269,79,42,9,SS_CENTERIMAGE
+    PUSHBUTTON      "Save Item",ID_LOG_ITEM_SAVE,358,491,57,18,NOT 
+                    WS_VISIBLE
+    LTEXT           "Min",IDC_STATIC,395,11,14,13,SS_CENTERIMAGE
+    LTEXT           "Min",IDC_STATIC,395,25,14,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_IP,183,46,82,14,ES_AUTOHSCROLL
+    RTEXT           "IP",IDC_STATIC,170,48,9,9,SS_CENTERIMAGE
+    PUSHBUTTON      "Merge File",ID_LOG_ADD_FILE,448,471,56,18
+    PUSHBUTTON      "LogToNux",IDC_LOGOPEN,403,471,43,18
+    PUSHBUTTON      "Download ITEM Log",ID_LOG_DOWN2,5,491,115,18,NOT 
+                    WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "오류난 로그 파일 수정",IDC_FIXFILE,459,491,96,18,NOT 
+                    WS_VISIBLE
+    RTEXT           "Main",IDC_STATIC,12,12,24,9,SS_CENTERIMAGE
+    RTEXT           "Item",IDC_STATIC,18,79,17,9,SS_CENTERIMAGE
+    COMBOBOX        IDC_ITEM,40,77,226,424,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "And Condition",IDC_AND,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,366,45,68,10
+    RTEXT           "FROM",IDC_STATIC,178,12,22,13,SS_CENTERIMAGE
+    LTEXT           "YY",IDC_STATIC,241,11,10,13,SS_CENTERIMAGE
+    LTEXT           "YY",IDC_STATIC,241,25,10,13,SS_CENTERIMAGE
+    RTEXT           "TO",IDC_STATIC,178,25,22,13,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "05년07월20일 비던 문제 관련 검색",ID_SP_LOG_SEARCH,240,
+                    140,51,9,BS_MULTILINE | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_DATAFOLERTXT,381,137,174,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set Log Data Folder",IDC_DATAFOLDER,294,135,86,18,
+                    BS_MULTILINE
+    RTEXT           "VALUE",IDC_STATIC,269,48,30,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_VALUE,304,46,60,14,ES_AUTOHSCROLL
+    CONTROL         "Log Download Server",IDC_isDownLoadServer,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,126,471,94,17
+    PUSHBUTTON      "NuxToLog",IDC_NUXtoLOG,358,471,43,18
+    LTEXT           " ",IDC_COMMENT,4,155,551,14,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Full Day",IDC_FULL_DAY,411,10,45,29,BS_MULTILINE
+    PUSHBUTTON      "Save",IDC_SAVE_FILTER,417,77,39,15
+    GROUPBOX        "Filter",IDC_STATIC,4,1,456,131
+    PUSHBUTTON      "Load",IDC_LOAD_FILTER,377,77,39,15
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,8,109,
+                    448,1
+    EDITTEXT        IDC_EDIT_FILTER,40,113,374,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_APPLY_EDIT_FILTER,433,113,23,15
+    RTEXT           "Filter",IDC_STATIC,9,116,26,9,SS_CENTERIMAGE
+    CONTROL         "Ignore Save Log",IDC_IGNORE_SAVE_LOG,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,366,55,76,10
+    CONTROL         "copy [.log] file",IDC_IS_COPY_LOG_DATA,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,239,471,102,17
+    PUSHBUTTON      "Get",IDC_GET_EDIT_FILTER,415,113,17,15
+    CONTROL         "Add Search Save Log",IDC_ADD_SAVE_LOG,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,366,66,92,10
+    CONTROL         "Set",IDC_IS_SET_ITEM,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,39,95,25,10
+    CONTROL         "Unique",IDC_IS_UNIQUE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,72,95,40,10
+    CONTROL         "DX",IDC_IS_DX,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,119,95,24,10
+    CONTROL         "Eternal",IDC_IS_ETERNAL,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,147,95,44,10
+    EDITTEXT        IDC_ETERNAL_GRADE,251,94,19,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Eternal Grade",IDC_IT_SERIAL2,195,96,52,10,
+                    SS_CENTERIMAGE
+    CONTROL         "Incorrect Item",IDC_CHECK_INCORRECT_ITEM,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT,383,95,72,10
+    COMBOBOX        IDC_CB_JOB,279,94,98,285,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "1 Day",IDC_LASTEST_1DAY,9,26,27,13,BS_MULTILINE
+    PUSHBUTTON      "1 Week",IDC_LASTEST_1WEEK,37,26,31,13,BS_MULTILINE
+    PUSHBUTTON      "2 Week",IDC_LASTEST_2WEEK,69,26,31,13,BS_MULTILINE
+    PUSHBUTTON      "1 Month",IDC_LASTEST_1MONTH,102,26,36,13,BS_MULTILINE
+    PUSHBUTTON      "6 Month",IDC_LASTEST_6MONTH,139,26,36,13,BS_MULTILINE
+END
+
+PROCESS_DLG DIALOG DISCARDABLE  0, 0, 307, 90
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Progress Info"
+FONT 10, "MS Gothic"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,128,69,50,19
+    RTEXT           "Total File Count",IDC_STATIC,2,9,65,8
+    RTEXT           "Current File",IDC_STATIC,18,24,49,8
+    RTEXT           "Read Log Count",IDC_STATIC,10,55,57,8
+    LTEXT           "",IDC_ST_FILE_COUNT,70,7,235,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_ST_CURRENT_FILE,70,22,235,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_ST_READ_COUNT,70,54,235,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Analyze Log",IDC_STATIC,22,39,45,8
+    LTEXT           "",IDC_ST_ANAL_LOG,70,38,235,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AnalyzeLog MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "AnalyzeLog\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AnalyzeLog.EXE\0"
+            VALUE "ProductName", "AnalyzeLog 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_LIST_MENU MENU DISCARDABLE 
+BEGIN
+    MENUITEM "Copy To Clipboard",           ID_COPY_CLIP
+    MENUITEM SEPARATOR
+    MENUITEM "Copy ID",                     ID_MENU_COPYID
+    MENUITEM "Copy Name",                   ID_MENU_COPYNAME
+    MENUITEM "Copy Item Serial",            ID_MENU_COPYSERIAL
+    MENUITEM "Copy IP",                     ID_MENU_COPYIP
+    MENUITEM SEPARATOR
+    MENUITEM "Delete Selected Items",       ID_MENU_DELETE
+    MENUITEM SEPARATOR
+    MENUITEM "전체보기",                    ID_MENU_DETAILVIEW
+    MENUITEM SEPARATOR
+    MENUITEM "Save to Text File",           ID_MENU_TXT_PRINT
+    MENUITEM "Print",                       ID_MENU_PRINT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MENUTITLE           BITMAP  DISCARDABLE     "res\\menutitl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR_LIST ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_DELETE,      IDA_DELETE,             VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    PROCESS_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 306
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FTPMSG1             "Login Fail"
+    IDS_FTPMSG2             "2"
+    IDS_FTPMSG3             "3"
+    IDS_FTPMSG4             "4"
+    IDS_FTPMSG5             "5"
+    IDS_FTPMSG6             "6"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\AnalyzeLog.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

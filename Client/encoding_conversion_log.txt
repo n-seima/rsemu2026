@@ -1,0 +1,3447 @@
+================================================================================
+ENCODING CONVERSION LOG
+================================================================================
+
+📊 CONVERSION SUMMARY:
+--------------------------------------------------------------------------------
+Total files scanned:           1507
+Japanese → UTF-8:              13
+Korean (direct) → UTF-8:       1080
+Two-step (via Korean) → UTF-8: 50
+Already UTF-8/ASCII:           364
+Failed conversions:            0
+Unknown encoding:              0
+--------------------------------------------------------------------------------
+
+📝 DETAILED CONVERSION LOG:
+================================================================================
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cANM.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cANM.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cBMP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cBMPWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cFRMWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cIMGWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cMAIN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cMAIN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cSET.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cSET.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cTEXT.h
+  └─ Direct: EUC-JP → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cTRANS.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cTRANS.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\cWORKWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Building Editor\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\config\main.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\config\main.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\config\message.cpp
+  └─ Two-step: TIS-620 → EUC-KR → UTF-8 (confidence: 0.55)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\config\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\config\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\c16BITSPRITE555.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\c16BITSPRITE565.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\c8BITSPRITE555.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\c8BITSPRITE565.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cANGLE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cANGLE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cBARMENU.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cBARMENU.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cCANVAS.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cCANVAS.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CDDraw.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CDDraw.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cDECODER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cDECODER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cDIB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cDROPDOWNLIST.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cDROPDOWNLIST.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CExceptionHandler.cpp
+  └─ Two-step: Windows-1252 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CExceptionHandler.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cIMAGE.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CImageScrollBar.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CImageScrollBar.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cINPDEV.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cINPDEV.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cLAYER555.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cLAYER565.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cMUSE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\COGGPlayer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\COGGPlayer.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\Console.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\Console.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CPopupMenu.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.88)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CPopupMenu.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cPROFILE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cPROFILE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cSOCKET.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cSOCKET.h
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CSound.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CSound.h
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cSPLINE.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cTALKBOX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cTALKBOX.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cTEXT.h
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CTextDC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CTextList.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CTextMT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\CTooltip.cpp
+  └─ Direct: CP932 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cTOOLTIP.h
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cTRANS.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cTRANS.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\cWND.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Engine\timer.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cANGLE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cANGLE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cANM.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cANM.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cBMP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cBMPWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cFRMWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cIMGWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cMAIN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cMAIN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cPICTURE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cSET.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cSET.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cTEXT.h
+  └─ Direct: EUC-JP → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cTRANS.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cTRANS.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\cWORKWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cANGLE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cANGLE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cANM.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cANM.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cBMP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cBMPWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cFRMWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cIMGWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cMAIN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cMAIN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cPICTURE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cSET.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cSET.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cTEXT.h
+  └─ Direct: EUC-JP → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cTRANS.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cTRANS.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\cWORKWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\HANUL_\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\bar_menu.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\bar_menu.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cAGENT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cAGENT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cBMP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cDECODER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cDECODER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cNUX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cPACKET.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cPACKET_QUE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cSOCKET.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cSOCKET.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cTEXT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.88)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\downLoad.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\image_scroll_bar.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\image_scroll_bar.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\launcher.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\launcher.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\launcher_download.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\mac.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\main.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\main.h
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\messageForJapan.cpp
+  └─ Direct: SHIFT_JIS → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\messageForKorea.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\messageForThai.cpp
+  └─ Two-step: TIS-620 → EUC-KR → UTF-8 (confidence: 0.83)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iLauncher\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cANGLE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cANGLE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cANM.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cANM.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cBMP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cBMPWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cIMGWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cMAIN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cMAIN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cPICTURE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cSET.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cTEXT.h
+  └─ Direct: EUC-JP → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cTRANS.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cTRANS.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\cWORKWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Image Maker\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\bar_menu.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\bar_menu.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cBMP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cDECODER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cNUX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\complete.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cTEXT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.88)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\image_scroll_bar.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\image_scroll_bar.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\installData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\main.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\main.h
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\messageForJapan.cpp
+  └─ Direct: SHIFT_JIS → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\messageForKorea.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\messageForThai.cpp
+  └─ Two-step: TIS-620 → EUC-KR → UTF-8 (confidence: 0.85)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Install\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\bar_menu.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\bar_menu.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cBMP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cNUX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\complete.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cTEXT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.88)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\image_scroll_bar.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\image_scroll_bar.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\installData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\main.cpp
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\main.h
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\messageForJapan.cpp
+  └─ Direct: SHIFT_JIS → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\messageForKorea.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\messageForThai.cpp
+  └─ Two-step: TIS-620 → EUC-KR → UTF-8 (confidence: 0.84)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iPatch\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\bar_menu.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\bar_menu.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cBMP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cNUX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cTEXT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.88)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\image_scroll_bar.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\image_scroll_bar.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\main.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\main.h
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\messageForJapan.cpp
+  └─ Two-step: IBM866 → EUC-KR → UTF-8 (confidence: 0.26)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\messageForKorea.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\messageForThai.cpp
+  └─ Two-step: TIS-620 → EUC-KR → UTF-8 (confidence: 0.82)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\iUninstaller\uninstallData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\JapanConfig\main.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\JapanConfig\main.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\JapanConfig\message.cpp
+  └─ Direct: SHIFT_JIS → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\JapanConfig\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\JapanConfig\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cDECODER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cDECODER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cDIB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cMAIN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cMESSAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cTEXT.h
+  └─ Direct: EUC-JP → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Log Decoder\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cACTOR.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cACTOR.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cAI.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cAREA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cAREA.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cBARMENU.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cBARMENU.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CBGPlay.h
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cBMP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cBODY.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cBODY.h
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cBUILDING.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cBUILDING.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cCHARACTER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cCHARACTER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cCompareBox.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cCompareBox.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cDECODER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cDECODER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CDecodeUniqueItemData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CDialog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CDialog.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cHelpWindow.cpp
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cITEM.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cITEM.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cITEM_EFFECT.cpp
+  └─ Two-step: Big5 → EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cITEM_EFFECT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cITEM_PREFIX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cITEM_PREFIX.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cITEM_PREFIX_EFFECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cITEM_PREFIX_EFFECT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cJOB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cJOB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cKARMA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cKARMA.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CKarmaKeyword.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cKARMA_ADD.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cKARMA_REACTION.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cKARMA_TEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cKARMA_TRIGGER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cKARMA_WND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cLISTCONTROL.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cLISTCONTROL.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CLoadTextCode.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.72)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CLoadTextCode.h
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CLocalize.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMAIN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMAIN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMAP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMAP.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CMapExportText.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMAPWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMAPWND.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMAP_BUILDING.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMAP_OBJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMemoWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMemoWindow.h
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMESSAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMESSAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMW_AREA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMW_BUILDING.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMW_CHARACTER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMW_COPYORCUT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMW_EDIT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMW_OBJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cMW_TILE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cOBJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cOBJECT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\command.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\compareText.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CPattnCtrl.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CPattnCtrlCliff.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cPROJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cPROJECT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cQUEST.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cQUEST.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetCharacterEventData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetCharacterEventTree.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.72)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetCustomItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetCustomItem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetCustomItemList.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetDialog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetDialog.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetDialogContainer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetDialogKarma.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetDialogList.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetDialogList.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetDialogMonster.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSetDialogNpcData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetDialogSpeech.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetQuest.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetShop.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetShopItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CSetShopList.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_ABILITY.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_AREA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_AREA_EDIT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_BASIC_ITEM.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_CHARACTER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_FIELD_CHARACTER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_FONT.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_ITEM_PREFIX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_JOB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_JOB_LIST.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_MAP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_PROJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_SELECT_JOB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSET_VALUE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CShop.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSKILL.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cSKILL.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cTEXT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.88)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\CTitle.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cTOOLWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cTOOLWND.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cTOOLWND_AREA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cTOOLWND_BUILDING.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cTOOLWND_CHARACTER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cTOOLWND_OBJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cTOOLWND_TILE.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cVALUE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\debug.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\debug.h
+  └─ Two-step: KOI8-R → EUC-KR → UTF-8 (confidence: 0.77)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\exportText.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\exportTool.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\foceSyncText.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.72)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\makeArca.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\makeItemPiece.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\makePieceItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\makeSecretDungeon.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\makeSecretDungeonFloor.cpp
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.72)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\makeSetItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\MANGCHI.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\MinimapWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\modifyText.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\partrolRoad_mw.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\patrolRoad.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\pattern.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\pattern.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\pieceItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\road_tool_wnd.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\secretDungeon.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setArca.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setArca.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setBook.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setBook.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setItem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setMainQuest.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setMainQuest.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setMakeItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setMakeItem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setPieceItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setPieceItem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setSecretDungeon.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setSecretDungeon.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setSetItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\setSetItem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\set_character_pattern.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\set_character_pattern.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\svn.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\trapSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\URdoBuffer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\URdoBuffer.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\error_code.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\error_code.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\exceptionhandler.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\exceptionhandler.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\file.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\file.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\lnk_common.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\lnk_define.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\lnk_util.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\lnk_util.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\mem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\memory_pool.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\memory_pool.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\memory_pool_normal.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\memory_pool_safe.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\safeMemory.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\safeMemoryForDebug.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\safeMemoryForDebug.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\smart_pointer.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\Timer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi\LNK_Common\Timer.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\arca.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cACTOR.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cACTOR.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cAI.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cAREA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cAREA.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cBARMENU.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cBARMENU.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CBGPlay.h
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cBMP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cBODY.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cBODY.h
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cBUILDING.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cBUILDING.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cCHARACTER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cCHARACTER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cCompareBox.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cCompareBox.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cDECODER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cDECODER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CDecodeUniqueItemData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CDialog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CDialog.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cHelpWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cITEM.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cITEM.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cITEM_EFFECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cITEM_EFFECT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cITEM_PREFIX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cITEM_PREFIX.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cITEM_PREFIX_EFFECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cITEM_PREFIX_EFFECT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cJOB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cJOB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cKARMA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cKARMA.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CKarmaKeyword.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cKARMA_ADD.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cKARMA_REACTION.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cKARMA_TEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cKARMA_TRIGGER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cKARMA_WND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cLISTCONTROL.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cLISTCONTROL.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CLoadTextCode.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.72)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CLoadTextCode.h
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CLocalize.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMAIN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMAIN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMAP.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMAP.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CMapExportText.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMAPWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMAPWND.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMAP_BUILDING.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMAP_OBJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMemoWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMemoWindow.h
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMESSAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMESSAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMW_AREA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMW_BUILDING.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMW_CHARACTER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMW_COPYORCUT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMW_EDIT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMW_OBJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cMW_TILE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cOBJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cOBJECT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\command.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\compareText.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CPattnCtrl.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CPattnCtrlCliff.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cPROJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cPROJECT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cQUEST.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cQUEST.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetCharacterEventData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetCharacterEventTree.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetCustomItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetCustomItem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetCustomItemList.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetDialog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetDialog.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetDialogContainer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetDialogKarma.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetDialogList.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetDialogList.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetDialogMonster.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSetDialogNpcData.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetDialogSpeech.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetQuest.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetShop.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetShopItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CSetShopList.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_ABILITY.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_AREA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_AREA_EDIT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_BASIC_ITEM.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_CHARACTER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_FIELD_CHARACTER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_FONT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_ITEM_PREFIX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_JOB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_JOB_LIST.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_MAP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_PROJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_SELECT_JOB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSET_VALUE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CShop.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSKILL.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cSKILL.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cTEXT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.88)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\CTitle.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cTOOLWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cTOOLWND.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cTOOLWND_AREA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cTOOLWND_BUILDING.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cTOOLWND_CHARACTER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cTOOLWND_OBJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cTOOLWND_TILE.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cVALUE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\debug.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\debug.h
+  └─ Two-step: KOI8-R → EUC-KR → UTF-8 (confidence: 0.77)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\exportText.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\exportTool.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\foceSyncText.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.72)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\makeArca.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\makeItemPiece.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\makePieceItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\makeSecretDungeon.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\makeSecretDungeonFloor.cpp
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.72)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\makeSetItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\MANGCHI.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\MinimapWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\modifyText.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\partrolRoad_mw.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\patrolRoad.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\pattern.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\pattern.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\pieceItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\road_tool_wnd.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\secretDungeon.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setArca.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setArca.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setBook.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setBook.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setItem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setMainQuest.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setMainQuest.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setMakeItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setMakeItem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setPieceItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setPieceItem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setSecretDungeon.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setSecretDungeon.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setSetItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\setSetItem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\set_character_pattern.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\set_character_pattern.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\SoundEffect.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.70)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\svn.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\trapSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\URdoBuffer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\URdoBuffer.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\error_code.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\error_code.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\exceptionhandler.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\exceptionhandler.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\file.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\file.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\lnk_common.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\lnk_define.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\lnk_util.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\lnk_util.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\mem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\memory_pool.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\memory_pool.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\memory_pool_normal.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\memory_pool_safe.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\safeMemory.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\safeMemoryForDebug.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\safeMemoryForDebug.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\smart_pointer.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\Timer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Mangchi_BAK\LNK_Common\Timer.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cANM.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cANM.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cANM2.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cBMP.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cBMPWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cFRMWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cIMAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cIMGWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cMAIN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cMAIN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cPCX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cSET.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cSET.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cTEXT.h
+  └─ Direct: EUC-JP → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cTRANS.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cTRANS.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\cWORKWND.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\exceptionhandler.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\exceptionhandler.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\lnk_define.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Object Editor\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\aidAttackSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\arca.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\astArcMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\astBigBullet.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\astBouncingMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\astDoubleTarget.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\astLightningWinder.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\astMultiMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\astRollingLog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\ast_chain_lightning.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\ast_fire_wall.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.94)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\ast_fire_wall.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.94)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\ast_giga_lightning.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\BattleLog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\BattleLog.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\bm_event.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\bm_event.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\book_MonsterDictionary.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\book_MonsterDictionary.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\bottomless_box_gpw.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAbility.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAbilityInfo.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActiveSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActor.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorAction.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorAfterImage.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.74)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorAnmInfo.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorEffect.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorEvent.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorHit.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorInfo.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorInline.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorManager.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorMove.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorOperatePacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorPut.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorStatus.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CActorWrongStatus.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cAGENT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cAGENT.h
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.64)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceiveBankPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceiveCartPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceiveCommunityPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceiveEventPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceiveGamePacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceiveGuildPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceiveItemPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceivePacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceivePetPacket.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceivePitchmanShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceiveSkillPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentReceiveTradePacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentSendCartPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.83)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentSendCommunityPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentSendEventPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentSendGuildPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentSendItemPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentSendPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentSendPichmanShopPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CAgentSendTradePacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CArea.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cAREA.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\carrotShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\carrotShop.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CBank.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CBank.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CBankWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CBankWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CCartWindow.cpp
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.69)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CCartWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CColorEffect.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CCompress.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cCOMPRESS.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cCopyOrCutPrefixWnd.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cCopyOrCutPrefixWnd.h
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CDebugCode.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CDebugWindow.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CDebugWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CEvent.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CEvent.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CFieldItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CFieldItem.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CFriendWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CFriendWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGame.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGameBottomInterface.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGameInfo.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGameInterface.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlay.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlay.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlayChat.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlayDraw.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlayInterface.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlayInterface.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlayMain.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlayMinimap.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlayNotice.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlayParty.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlaySystemMessage.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGamePlayUtility.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGameSaveOption.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGameUtil.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_CLOSE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_CLOSE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_CONNECT_GAME_SERVER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_CONNECT_GAME_SERVER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_CREATE_AVATAR.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_CREATE_AVATAR.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_CREDIT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_CREDIT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_ENDDING.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_ENDDING.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_INIT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_INIT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_LOGO.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_LOGO.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_OPENING.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_OPENING.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_OPTION.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_OPTION.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_SELECT_AVATAR.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.69)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_SELECT_AVATAR.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_TITLE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cGAME_TITLE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuardianPost.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuild.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuild.h
+  └─ Direct: CP932 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuildBattleScheduler.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuildBattleScheduler.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuildMark.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuildMarkComposer.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuildMarkComposer.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuildSkill.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuildSkillManager.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuildWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CGuildWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHero.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cHERO.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroBattle.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroGuildSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroInfo.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroInterface.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroItemEffect.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroMove.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroPet.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroQuest.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroSkillExtraEffect.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroStatus.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroTitle.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroUseSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHeroWrongStatus.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHitEffect.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CHitEffect.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CImageData.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CImageData.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CInventoryWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cITEM.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CItemEffect.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CItemPrefix.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CItemPrefix.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CJob.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cKARMA.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cKARMA.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cKARMA_DEFINE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CLoadTextCode.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CLoadTextCode.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.78)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CLog.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CLog.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CMain.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cMAIN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CMakeGuildWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CMakeGuildWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CMap.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cMAP.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CMessage.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cMESSAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CObject.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cOBJECT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\commonUI.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\commonUI.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cPACKET.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cPACKET_QUE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CParty.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CParty.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CPartyWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CPartyWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CPetWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CPetWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CPitchmanShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CPitchmanShopWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CPitchmanShopWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CPlayerStatus.h
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CPortal.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cPROJECT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cPROJECT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CQuest.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cQUEST.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CQuestWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CQuestWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CRepairItemWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CRepairItemWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSelectVillageWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSelectVillageWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CShake.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cSHAKE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CShop.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CShopWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CShopWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cSKILL.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillAid.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillAlteringHitter.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillBiteHanging.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillBitGlider.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillBoomerang.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillBouncingLinear.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillCharge.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillContinuousAttack.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillContinuousShoot.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillContinuousWhirlwind.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillDropOnHead.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillExplosionDefendOnImage.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillExplosionMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillFireBall.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillIcyStalagmite.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillImpact.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillInit.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillIntervalShooter.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillJump.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillJumpAttack.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillLandMarker.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillLaser.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillLinerChainExplosion.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillMachineMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillMirrorTower.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillMotion.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillPiercingMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillRadialArc.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillRush.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillScimitarCutting.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillSpecialMissile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillSpreadArrow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillSurprisingRaid.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillTailChaser.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillTeleport.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillTornado.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillWaterFall.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillWhirlthrusting.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillWhirlwind.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSkillWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSound.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CStatusWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CSystemWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CTile.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cTILE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CTitle.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CTitleManager.cpp
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CTrade.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CTrade.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CTradeWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CUpgradeShop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CUpgradeShop.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\cWEAPON.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CWindowInterface.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CWorldMap.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\CWorldMap.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\dialog_box.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\dialog_box.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\easySkillTree.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\easySkillTree.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\effectManager.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\firecracker.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\firecracker.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\FogMap.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\gasTypeSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\gg.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\gpPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\guild_feed_pet_window.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\guild_feed_pet_window.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\guild_hall_list.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\guild_hall_list.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\guild_honor_point_list.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\guild_honor_point_list.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\guild_inventory.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\guild_inventory.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\guild_related_place_list.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\guild_related_place_list.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\hero_mini_pet.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\hero_mini_pet.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\hero_old_data.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\hero_trap.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\itemDefine.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\itemSet.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\jobDefine.h
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\judgeToItemWnd.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\listWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\listWindow.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\mac.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\mainForChina.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\mainQuest.h
+  └─ Two-step: MacRoman → EUC-KR → UTF-8 (confidence: 0.70)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\main_quest_event.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\main_quest_event.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\main_quest_event_update.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.87)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\mergeItemWnd.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\minimap.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\miniPet.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\miniPetWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\miniPetWindow.h
+  └─ Direct: CP949 → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\movie.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\movie_anm_player.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\movie_io.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\partyListWindow.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\pieceItem.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\putBanner.cpp
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\putBanner.h
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\receiveTrapPacket.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\Red Stone.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\removePrefixWnd.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\removePrefixWnd.h
+  └─ Two-step: ISO-8859-1 → EUC-KR → UTF-8 (confidence: 0.73)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\selectItemInPack.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\selectItemInPack.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\shop.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\TDLanguage.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.88)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\TDLanguage.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\tdspring_motion.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\tdspring_motion.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\TDUtil.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\TDUtil.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\tool.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\trap.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\trapDefine.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\trapSkill.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\user_custom_data.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Red Stone\worldMapFieldInfo.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\reg\reg.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cDECODER.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cDECODER.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cDIB.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cIMAGE.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cMAIN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cMAIN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cMESSAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cTEXT.h
+  └─ Direct: EUC-JP → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\Server Info\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\svn\cSVNentriesParser.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\svn\cSVNentriesParser.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\svn\svnutil.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\svn\svnutil.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\svn\WWCommon.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\svn\WWCommon.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\SvnLib\cSVNentriesParser.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\SvnLib\cSVNentriesParser.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\SvnLib\svnutil.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\SvnLib\svnutil.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\SvnLib\WWCommon.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\SvnLib\WWCommon.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\c16BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\c8BITSPRITE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cDIB.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cDOWNLOAD.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cDRAW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cDRAW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cMAIN.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cMAIN.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cMESSAGE.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cNUX.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cTEXT.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cTEXT.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.88)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cWINDOW.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\cWINDOW.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\extract.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\SFC.cpp
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+
+[SUCCESS] C:/Users/seima/Desktop/rs_emu_sourcecode-main/Client\WebInstaller\SFC.h
+  └─ Direct: EUC-KR → UTF-8 (confidence: 0.99)
+

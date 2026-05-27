@@ -1,0 +1,19 @@
+knight		170
+warrior		225
+wizard		1000
+werewolf	285
+priest		225
+angel		335
+rogue		150
+fighter		150
+lancer		255
+archer		235
+tamer		200
+summoner	200
+princess	350
+girl		175
+necro		215
+demon		215
+NPC			200
+
+END;

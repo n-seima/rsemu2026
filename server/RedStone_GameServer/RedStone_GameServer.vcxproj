@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug FOR JAPAN|Win32">
+      <Configuration>Debug FOR JAPAN</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugForChina|Win32">
+      <Configuration>DebugForChina</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forInner|Win32">
+      <Configuration>forInner</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forThai|Win32">
+      <Configuration>forThai</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="forUsa|Win32">
+      <Configuration>forUsa</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="HS|Win32">
+      <Configuration>HS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PreviewTool|Win32">
+      <Configuration>PreviewTool</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseForChina|Win32">
+      <Configuration>ReleaseForChina</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseForJapan|Win32">
+      <Configuration>ReleaseForJapan</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/RedStone/RedStone_GameServer", NGAAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <ProjectGuid>{1C297B15-A813-4E91-B81B-5B8BE793A565}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug FOR JAPAN|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HS|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForChina|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugForChina|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForJapan|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug FOR JAPAN|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='HS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForChina|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugForChina|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForJapan|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForJapan|Win32'">
+    <OutDir>.\ReleaseForJapan\</OutDir>
+    <IntDir>.\ReleaseForJapan\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugForChina|Win32'">
+    <OutDir>.\DebugForChina\</OutDir>
+    <IntDir>.\DebugForChina\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">
+    <OutDir>.\forUsa\</OutDir>
+    <IntDir>.\forUsa\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForChina|Win32'">
+    <OutDir>.\ReleaseForChina\</OutDir>
+    <IntDir>.\ReleaseForChina\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">
+    <OutDir>.\forThai\</OutDir>
+    <IntDir>.\forThai\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">
+    <OutDir>.\PreviewTool\</OutDir>
+    <IntDir>.\PreviewTool\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HS|Win32'">
+    <OutDir>.\RedStone_GameServer___Win32_HS\</OutDir>
+    <IntDir>.\RedStone_GameServer___Win32_HS\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug FOR JAPAN|Win32'">
+    <OutDir>.\RedStone_GameServer___Win32_Debug_FOR_JAPAN\</OutDir>
+    <IntDir>.\RedStone_GameServer___Win32_Debug_FOR_JAPAN\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <IncludePath>$(ProjectDir)/../../dx81sdk;$(ProjectDir)/../../StaticLib1/Debug;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">
+    <OutDir>.\forInner\</OutDir>
+    <IntDir>.\forInner\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForJapan|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../../Common/common;../../common/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_FOR_JAPAN;WIN32;NDEBUG;_CONSOLE;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseForJapan\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\ReleaseForJapan\RedStone_GameServer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\ReleaseForJapan\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseForJapan\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\ReleaseForJapan\RedStone_GameServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseForJapan\RedStone_GameServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>../../Red stone for Japan/RedStone_GameServer(forJapan)release.exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zdll.lib;ssl.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugForChina|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Common/common;../../common/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WINDOWS;__USE_ZLIB;_FOR_CHINA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\DebugForChina\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\DebugForChina\RedStone_GameServer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\DebugForChina\</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugForChina\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\DebugForChina\RedStone_GameServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugForChina\RedStone_GameServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>RedStone_GameServer(china)debug.exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zdll.lib;ssl.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../Common;../packet;../../Common/common;../../common/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_FOR_KOREA;WIN32;NDEBUG;_CONSOLE;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\RedStone_GameServer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release\RedStone_GameServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\RedStone_GameServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>GameServerR.exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zdll.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions> /mapinfo:exports  /mapinfo:lines </AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../OGP_Lib;../../Common/common;../../common/packet;../tinyxml2.6.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_FOR_USA;WIN32;_DEBUG;_CONSOLE;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forUsa\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\forUsa\RedStone_GameServer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\forUsa\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forUsa\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\forUsa\RedStone_GameServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forUsa\RedStone_GameServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>GameServer(D_USA).exe</OutputFile>
+      <AdditionalLibraryDirectories>../OGP_lib;../tinyxml2.6.1;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tinyxmld.lib;zdll.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>10485760</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForChina|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../../Common/common;../../common/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_WINDOWS;__USE_ZLIB;_FOR_CHINA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseForChina\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\ReleaseForChina\RedStone_GameServer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\ReleaseForChina\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseForChina\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\ReleaseForChina\RedStone_GameServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseForChina\RedStone_GameServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>RedStone_GameServer(china)release.exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zdll.lib;ssl.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forThai|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Common/common;../../common/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_FOR_THAI;WIN32;_DEBUG;_CONSOLE;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forThai\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\forThai\RedStone_GameServer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\forThai\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forThai\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\forThai\RedStone_GameServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x041e</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forThai\RedStone_GameServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>RedStone_GameServer(forThai).exe</OutputFile>
+      <AdditionalDependencies>zdll.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>10485760</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Common/common;../../common/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SERVER_;_FOR_KOREA;WIN32;_DEBUG;_CONSOLE;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\RedStone_GameServer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\RedStone_GameServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\RedStone_GameServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>GameServerD.exe</OutputFile>
+      <AdditionalLibraryDirectories>../tinyxml2.6.1;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zdll.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>10485760</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Common/common;../../common/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_IS_TOOL;_FOR_KOREA;WIN32;_DEBUG;_CONSOLE;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\PreviewTool\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\PreviewTool\RedStone_GameServer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\PreviewTool\</ObjectFileName>
+      <ProgramDataBaseFileName>.\PreviewTool\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\PreviewTool\RedStone_GameServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\PreviewTool\RedStone_GameServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>GameServer(x4 Speed).exe</OutputFile>
+      <AdditionalDependencies>zdll.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>10485760</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='HS|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Common/common;../../common/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USE_HS;_FOR_KOREA;WIN32;_DEBUG;_CONSOLE;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\RedStone_GameServer___Win32_HS\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\RedStone_GameServer___Win32_HS\RedStone_GameServer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\RedStone_GameServer___Win32_HS\</ObjectFileName>
+      <ProgramDataBaseFileName>.\RedStone_GameServer___Win32_HS\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\RedStone_GameServer___Win32_HS\RedStone_GameServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\RedStone_GameServer___Win32_HS\RedStone_GameServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>RedStone_GameServer.exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib;HShield;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>AntiCpSvr.lib;zdll.lib;ssl.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug FOR JAPAN|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Common/common;../../common/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SERVER_;_FOR_JAPAN;WIN32;_DEBUG;_CONSOLE;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\RedStone_GameServer___Win32_Debug_FOR_JAPAN\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\RedStone_GameServer___Win32_Debug_FOR_JAPAN\RedStone_GameServer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\RedStone_GameServer___Win32_Debug_FOR_JAPAN\</ObjectFileName>
+      <ProgramDataBaseFileName>.\RedStone_GameServer___Win32_Debug_FOR_JAPAN\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SDLCheck>false</SDLCheck>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <DisableSpecificWarnings>4996;4430;4244;4838;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/source-charset:euc-kr /execution-charset:euc-kr %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\RedStone_GameServer___Win32_Debug_FOR_JAPAN\RedStone_GameServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\RedStone_GameServer___Win32_Debug_FOR_JAPAN\RedStone_GameServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\RedStone_GameServer___Win32_Debug_FOR_JAPAN\RedStone_GameServer(forJapan)debug.exe</OutputFile>
+      <AdditionalLibraryDirectories>../tinyxml2.6.1;../OGP_Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tinyxmld.lib;OGPAPI.lib;zdll.lib;ssl.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Common/common;../../common/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_FOR_INNER;_FOR_KOREA;WIN32;_DEBUG;_CONSOLE;_WINDOWS;__USE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\forInner\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\forInner\RedStone_GameServer.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\forInner\</ObjectFileName>
+      <ProgramDataBaseFileName>.\forInner\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\forInner\RedStone_GameServer.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\forInner\RedStone_GameServer.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>RedStone_GameServer(inner).exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib;HShield;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zdll.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\common\cADO_BASE.cpp" />
+    <ClCompile Include="..\..\common\common\carrotShopDefine.cpp" />
+    <ClCompile Include="..\..\common\common\CCompress.cpp" />
+    <ClCompile Include="..\..\common\common\cLOG_QUE.cpp" />
+    <ClCompile Include="..\..\common\common\commonDefine.cpp" />
+    <ClCompile Include="..\..\common\common\cPetDefine.cpp" />
+    <ClCompile Include="..\..\common\common\cScript.cpp" />
+    <ClCompile Include="..\..\common\common\cServerStatus.cpp" />
+    <ClCompile Include="..\..\common\common\CSharedMemory.cpp" />
+    <ClCompile Include="..\..\common\common\cSOCKET.cpp" />
+    <ClCompile Include="..\..\common\common\cSRVUTIL.cpp" />
+    <ClCompile Include="..\..\common\common\guild_common.cpp" />
+    <ClCompile Include="..\..\common\common\HardwareInfo.cpp" />
+    <ClCompile Include="..\..\common\common\inputConsoleCommand.cpp" />
+    <ClCompile Include="..\..\common\common\itemDefine.cpp" />
+    <ClCompile Include="..\..\common\common\life_code_common.cpp" />
+    <ClCompile Include="..\..\common\common\MemoryModule.c" />
+    <ClCompile Include="..\..\common\common\PacketBuffer.cpp" />
+    <ClCompile Include="..\..\common\common\playerJobCommon.cpp" />
+    <ClCompile Include="..\..\common\common\regular_random.cpp" />
+    <ClCompile Include="..\..\common\common\reg_common.cpp" />
+    <ClCompile Include="..\..\common\common\seedex.cpp" />
+    <ClCompile Include="..\..\common\common\server_type_define.cpp" />
+    <ClCompile Include="..\..\common\common\SFC.cpp" />
+    <ClCompile Include="..\..\common\common\SMTP.cpp" />
+    <ClCompile Include="..\..\common\common\Tracer.cpp" />
+    <ClCompile Include="..\..\common\common\version.cpp" />
+    <ClCompile Include="actorSkillAI.cpp" />
+    <ClCompile Include="actor_ai_sage_master.cpp" />
+    <ClCompile Include="actor_attack_object.cpp" />
+    <ClCompile Include="actor_mini_pet.cpp" />
+    <ClCompile Include="actor_pattern.cpp" />
+    <ClCompile Include="arca.cpp" />
+    <ClCompile Include="area_arca.cpp" />
+    <ClCompile Include="area_door.cpp" />
+    <ClCompile Include="area_trap.cpp" />
+    <ClCompile Include="astBigBullet.cpp" />
+    <ClCompile Include="astBouncingMissile.cpp" />
+    <ClCompile Include="astContinuousBit.cpp" />
+    <ClCompile Include="astContinuousHitOfDoppelganger.cpp" />
+    <ClCompile Include="astDependOnImageTrap.cpp" />
+    <ClCompile Include="astDoubleTarget.cpp" />
+    <ClCompile Include="astExplosionWithImage.cpp" />
+    <ClCompile Include="astFlorenceSpecial.cpp" />
+    <ClCompile Include="astLightningWinder.cpp" />
+    <ClCompile Include="astMultiMissile.cpp" />
+    <ClCompile Include="astRollingLog.cpp" />
+    <ClCompile Include="astThrowItem.cpp" />
+    <ClCompile Include="astWideMissile.cpp" />
+    <ClCompile Include="ast_chain_lightning.cpp" />
+    <ClCompile Include="ast_ContinuousWhirlwind.cpp" />
+    <ClCompile Include="ast_fire_wall.cpp" />
+    <ClCompile Include="ast_gas.cpp" />
+    <ClCompile Include="ast_giga_lightning.cpp" />
+    <ClCompile Include="ast_mirror_image.cpp" />
+    <ClCompile Include="ast_one_bite.cpp" />
+    <ClCompile Include="banner.cpp" />
+    <ClCompile Include="banner_field.cpp" />
+    <ClCompile Include="book.cpp" />
+    <ClCompile Include="booking_work.cpp" />
+    <ClCompile Include="BufferForPacket.cpp" />
+    <ClCompile Include="CAbilityInfo.cpp" />
+    <ClCompile Include="CActiveSkill.cpp" />
+    <ClCompile Include="CActor.cpp" />
+    <ClCompile Include="CActorAi.cpp" />
+    <ClCompile Include="CActorBank.cpp" />
+    <ClCompile Include="CActorBattle.cpp" />
+    <ClCompile Include="CActorCart.cpp" />
+    <ClCompile Include="CActorCorrectData.cpp" />
+    <ClCompile Include="CActorEquipmentEffect.cpp" />
+    <ClCompile Include="CActorEvent.cpp" />
+    <ClCompile Include="CActorGuild.cpp" />
+    <ClCompile Include="CActorGuildSkill.cpp" />
+    <ClCompile Include="CActorInfo.cpp" />
+    <ClCompile Include="CActorItem.cpp" />
+    <ClCompile Include="CActorItemUseToCharacter.cpp" />
+    <ClCompile Include="CActorItemUseToItem.cpp" />
+    <ClCompile Include="CActorMonster.cpp" />
+    <ClCompile Include="CActorMove.cpp" />
+    <ClCompile Include="CActorNPC.cpp" />
+    <ClCompile Include="CActorParty.cpp" />
+    <ClCompile Include="CActorPassiveSkill.cpp" />
+    <ClCompile Include="CActorPet.cpp" />
+    <ClCompile Include="CActorPitchmanShop.cpp" />
+    <ClCompile Include="CActorPlayer.cpp" />
+    <ClCompile Include="CActorQuest.cpp" />
+    <ClCompile Include="CActorReactionSkill.cpp" />
+    <ClCompile Include="CActorSave.cpp" />
+    <ClCompile Include="CActorSend.cpp" />
+    <ClCompile Include="CActorSendLog.cpp" />
+    <ClCompile Include="CActorSkill.cpp" />
+    <ClCompile Include="CActorSkillAura.cpp" />
+    <ClCompile Include="CActorSkillExtraEffect.cpp" />
+    <ClCompile Include="CActorSlave.cpp" />
+    <ClCompile Include="CActorStatus.cpp" />
+    <ClCompile Include="CActorSummonBeast.cpp" />
+    <ClCompile Include="CActorTamedMonster.cpp" />
+    <ClCompile Include="CActorTitle.cpp" />
+    <ClCompile Include="CActorWrongStatus.cpp" />
+    <ClCompile Include="cAREA.cpp" />
+    <ClCompile Include="carrotShop.cpp" />
+    <ClCompile Include="CBank.cpp" />
+    <ClCompile Include="CBookedWork.cpp" />
+    <ClCompile Include="CDataSave.cpp" />
+    <ClCompile Include="cDECODER.cpp" />
+    <ClCompile Include="CDialog.cpp" />
+    <ClCompile Include="CDropItemEvent.cpp" />
+    <ClCompile Include="CEvent.cpp" />
+    <ClCompile Include="CExceptionHandler.cpp" />
+    <ClCompile Include="CField.cpp" />
+    <ClCompile Include="CFieldActor.cpp" />
+    <ClCompile Include="CFieldAddActor.cpp" />
+    <ClCompile Include="CFieldAddSendPacket.cpp" />
+    <ClCompile Include="CFieldBankPacket.cpp" />
+    <ClCompile Include="CFieldBooking.cpp" />
+    <ClCompile Include="CFieldCartPacket.cpp" />
+    <ClCompile Include="CFieldCommunityPacket.cpp" />
+    <ClCompile Include="CFieldEventPacket.cpp" />
+    <ClCompile Include="CFieldGuild.cpp" />
+    <ClCompile Include="CFieldGuildPacket.cpp" />
+    <ClCompile Include="CFieldHealSkill.cpp" />
+    <ClCompile Include="CFieldItem.cpp" />
+    <ClCompile Include="CFieldLocalPartition.cpp" />
+    <ClCompile Include="CFieldOperateBookedWork.cpp" />
+    <ClCompile Include="CFieldOperatePacket.cpp" />
+    <ClCompile Include="CFieldOperateTradePacket.cpp" />
+    <ClCompile Include="CFieldOXQuiz.cpp" />
+    <ClCompile Include="CFieldParty.cpp" />
+    <ClCompile Include="CFieldPitchmanShopPacket.cpp" />
+    <ClCompile Include="CFieldSendPacket.cpp" />
+    <ClCompile Include="CFieldSendStoredPacket.cpp" />
+    <ClCompile Include="CFieldSkill.cpp" />
+    <ClCompile Include="cGAME.cpp" />
+    <ClCompile Include="CGameActor.cpp" />
+    <ClCompile Include="CGameLog.cpp" />
+    <ClCompile Include="CGameParty.cpp" />
+    <ClCompile Include="CGuild.cpp" />
+    <ClCompile Include="CGuildSendPacket.cpp" />
+    <ClCompile Include="CGuildSkill.cpp" />
+    <ClCompile Include="checkBuffActor.cpp" />
+    <ClCompile Include="cIMAGE.cpp" />
+    <ClCompile Include="CImageData.cpp" />
+    <ClCompile Include="cITEM.cpp" />
+    <ClCompile Include="CItemManager.cpp" />
+    <ClCompile Include="CItemSaleEvent.cpp" />
+    <ClCompile Include="cJOB.cpp" />
+    <ClCompile Include="CKarma.cpp" />
+    <ClCompile Include="CKarmaContainer.cpp" />
+    <ClCompile Include="CKarmaReaction.cpp" />
+    <ClCompile Include="CKarmaTrigger.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="cNPC.cpp" />
+    <ClCompile Include="cPACKET.cpp" />
+    <ClCompile Include="cPARTY.cpp" />
+    <ClCompile Include="CPitchmanShop.cpp" />
+    <ClCompile Include="CPlusDropGoldEvent.cpp" />
+    <ClCompile Include="CPortal.cpp" />
+    <ClCompile Include="CProfiler.cpp" />
+    <ClCompile Include="cPROJECT.cpp" />
+    <ClCompile Include="cPROTRACTOR.cpp" />
+    <ClCompile Include="CQuest.cpp" />
+    <ClCompile Include="CReceivePacketFromDB.cpp" />
+    <ClCompile Include="CReceivePacketFromWorld.cpp" />
+    <ClCompile Include="CReceivePartyPacketFromWorld.cpp" />
+    <ClCompile Include="CSendPacketToClient.cpp" />
+    <ClCompile Include="CSendPacketToDB.cpp" />
+    <ClCompile Include="CSendPacketToWorld.cpp" />
+    <ClCompile Include="CShop.cpp" />
+    <ClCompile Include="CShoppingCart.cpp" />
+    <ClCompile Include="CSkill.cpp" />
+    <ClCompile Include="CSkillAidAttack.cpp" />
+    <ClCompile Include="CSkillAidMagic.cpp" />
+    <ClCompile Include="CSkillAlteringHitter.cpp" />
+    <ClCompile Include="CSkillAwesomeFortress.cpp" />
+    <ClCompile Include="CSkillBiteHanging.cpp" />
+    <ClCompile Include="CSkillBitGlider.cpp" />
+    <ClCompile Include="CSkillBoomerang.cpp" />
+    <ClCompile Include="CSkillBouncingLinear.cpp" />
+    <ClCompile Include="CSkillBunshineAttack.cpp" />
+    <ClCompile Include="CSkillCharging.cpp" />
+    <ClCompile Include="CSkillContinuousAttack.cpp" />
+    <ClCompile Include="CSkillContinuousShoot.cpp" />
+    <ClCompile Include="CSkillDropOnHead.cpp" />
+    <ClCompile Include="CSkillExplosion.cpp" />
+    <ClCompile Include="CSkillExplosionMissile.cpp" />
+    <ClCompile Include="CSkillFireBall.cpp" />
+    <ClCompile Include="CSkillGuardianPost.cpp" />
+    <ClCompile Include="CSkillHeal.cpp" />
+    <ClCompile Include="CSkillIcyStalagmite.cpp" />
+    <ClCompile Include="CSkillImpact.cpp" />
+    <ClCompile Include="CSkillInit.cpp" />
+    <ClCompile Include="CSkillIntervalShooter.cpp" />
+    <ClCompile Include="CSkillJump.cpp" />
+    <ClCompile Include="CSkillJumpAttack.cpp" />
+    <ClCompile Include="CSkillLandMarker.cpp" />
+    <ClCompile Include="CSkillLaser.cpp" />
+    <ClCompile Include="CSkillMachine.cpp" />
+    <ClCompile Include="CSkillMirrorTower.cpp" />
+    <ClCompile Include="CSkillMissile.cpp" />
+    <ClCompile Include="CSkillPetCommand.cpp" />
+    <ClCompile Include="CSkillPiercingMissile.cpp" />
+    <ClCompile Include="CSkillRadialArc.cpp" />
+    <ClCompile Include="CSkillRush.cpp" />
+    <ClCompile Include="CSkillScimitarCutting.cpp" />
+    <ClCompile Include="CSkillShimmeringShield.cpp" />
+    <ClCompile Include="CSkillSpreadArrow.cpp" />
+    <ClCompile Include="CSkillSurprisingRaid.cpp" />
+    <ClCompile Include="CSkillTeleport.cpp" />
+    <ClCompile Include="CSkillTornado.cpp" />
+    <ClCompile Include="CSkillWaterFall.cpp" />
+    <ClCompile Include="CSkillWhirlThrusting.cpp" />
+    <ClCompile Include="CSkillWhirlwind.cpp" />
+    <ClCompile Include="CSolidCheck.cpp" />
+    <ClCompile Include="cSPLINE.cpp" />
+    <ClCompile Include="CTitle.cpp" />
+    <ClCompile Include="CTrade.cpp" />
+    <ClCompile Include="cUnionParty.cpp" />
+    <ClCompile Include="debugCode.cpp" />
+    <ClCompile Include="duel.cpp" />
+    <ClCompile Include="duelForField.cpp" />
+    <ClCompile Include="field_arca.cpp" />
+    <ClCompile Include="field_area.cpp" />
+    <ClCompile Include="field_character_pattern.cpp" />
+    <ClCompile Include="field_door.cpp" />
+    <ClCompile Include="field_guild_battle.cpp" />
+    <ClCompile Include="field_oc.cpp" />
+    <ClCompile Include="field_terrain.cpp" />
+    <ClCompile Include="filedDeliverPacket.cpp" />
+    <ClCompile Include="FindWay.cpp" />
+    <ClCompile Include="fireWork.cpp" />
+    <ClCompile Include="GreateGodGrace.cpp" />
+    <ClCompile Include="guild_manager.cpp" />
+    <ClCompile Include="instanceField.cpp" />
+    <ClCompile Include="instance_guild_battle_manager.cpp" />
+    <ClCompile Include="itemPackList.cpp" />
+    <ClCompile Include="itemSet.cpp" />
+    <ClCompile Include="item_book.cpp" />
+    <ClCompile Include="karma_delay.cpp" />
+    <ClCompile Include="karma_field.cpp" />
+    <ClCompile Include="life_code.cpp" />
+    <ClCompile Include="miniPet.cpp" />
+    <ClCompile Include="objectImage.cpp" />
+    <ClCompile Include="oxQuiz.cpp" />
+    <ClCompile Include="packetManger.cpp" />
+    <ClCompile Include="pattern.cpp" />
+    <ClCompile Include="pieceItem.cpp" />
+    <ClCompile Include="receive_packet_from_bcs.cpp" />
+    <ClCompile Include="secretDungeon.cpp" />
+    <ClCompile Include="send_packet_to_BCS.cpp" />
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="stressTest.cpp" />
+    <ClCompile Include="trap.cpp" />
+    <ClCompile Include="trapForActor.cpp" />
+    <ClCompile Include="trapInField.cpp" />
+    <ClCompile Include="trapSkill.cpp" />
+    <ClCompile Include="utilField.cpp" />
+    <ClCompile Include="utilGame.cpp" />
+    <ClCompile Include="word_quiz.cpp" />
+    <ClCompile Include="word_quiz_field.cpp" />
+    <ClCompile Include="XTrap\XTrap4Server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\common\actorDefine.h" />
+    <ClInclude Include="..\..\common\common\arcaDefine.h" />
+    <ClInclude Include="..\..\common\common\areaDefine.h" />
+    <ClInclude Include="..\..\common\common\bannerDefine.h" />
+    <ClInclude Include="..\..\common\common\book_define.h" />
+    <ClInclude Include="..\..\common\common\cADO_BASE.h" />
+    <ClInclude Include="..\..\common\common\carrotShopDefine.h" />
+    <ClInclude Include="..\..\common\common\CCompress.h" />
+    <ClInclude Include="..\..\common\common\CGuildDefine.h" />
+    <ClInclude Include="..\..\common\common\CImageDataDefine.h" />
+    <ClInclude Include="..\..\common\common\CItemDefine.h" />
+    <ClInclude Include="..\..\common\common\CItemEffectDefine.h" />
+    <ClInclude Include="..\..\common\common\CKarmaDefine.h" />
+    <ClInclude Include="..\..\common\common\CPetDefine.h" />
+    <ClInclude Include="..\..\common\common\CPitchmanShopDefine.h" />
+    <ClInclude Include="..\..\common\common\cServerStatus.h" />
+    <ClInclude Include="..\..\common\common\CSharedMemory.h" />
+    <ClInclude Include="..\..\common\common\CSkillDefine.h" />
+    <ClInclude Include="..\..\common\common\CTitleDefine.h" />
+    <ClInclude Include="..\..\common\common\doorDefine.h" />
+    <ClInclude Include="..\..\common\common\guild_skill_define.h" />
+    <ClInclude Include="..\..\common\common\HardwareInfo.h" />
+    <ClInclude Include="..\..\common\common\inputConsoleCommand.h" />
+    <ClInclude Include="..\..\common\common\jobDefine.h" />
+    <ClInclude Include="..\..\common\common\life_code_common.h" />
+    <ClInclude Include="..\..\common\common\MemoryModule.h" />
+    <ClInclude Include="..\..\common\common\mess_sign.h" />
+    <ClInclude Include="..\..\common\common\miniPetCommon.h" />
+    <ClInclude Include="..\..\common\common\PacketBuffer.h" />
+    <ClInclude Include="..\..\common\common\partyDefine.h" />
+    <ClInclude Include="..\..\common\common\pattern_define.h" />
+    <ClInclude Include="..\..\common\common\playerJobCommon.h" />
+    <ClInclude Include="..\..\common\common\rebirth_define.h" />
+    <ClInclude Include="..\..\common\common\regular_random.h" />
+    <ClInclude Include="..\..\common\common\reg_common.h" />
+    <ClInclude Include="..\..\common\common\RSComm.h" />
+    <ClInclude Include="..\..\common\common\secretDungeonDefine.h" />
+    <ClInclude Include="..\..\common\common\server_type_define.h" />
+    <ClInclude Include="..\..\common\common\SFC.h" />
+    <ClInclude Include="..\..\common\common\ssl.h" />
+    <ClInclude Include="..\..\common\common\summonBeastDefine.h" />
+    <ClInclude Include="..\..\common\common\trapDefine.h" />
+    <ClInclude Include="..\..\common\common\treasureMapDefine.h" />
+    <ClInclude Include="..\..\common\common\userCustomDataDefine.h" />
+    <ClInclude Include="..\..\common\common\version.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_BASE.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_BCSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_DBSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_GAMESERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGINSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_USERDBSERVER.h" />
+    <ClInclude Include="..\..\common\packet\cPACKET_WORLDSERVER.h" />
+    <ClInclude Include="..\..\common\packet\definePacketData.h" />
+    <ClInclude Include="..\common\common\cSKILL.h" />
+    <ClInclude Include="actor_mini_pet.h" />
+    <ClInclude Include="arca.h" />
+    <ClInclude Include="astBigBullet.h" />
+    <ClInclude Include="astBouncingMissile.h" />
+    <ClInclude Include="astContinuousBit.h" />
+    <ClInclude Include="astContinuousHitOfDoppelganger.h" />
+    <ClInclude Include="astDependOnImageTrap.h" />
+    <ClInclude Include="astDoubleTarget.h" />
+    <ClInclude Include="astExplosionWithImage.h" />
+    <ClInclude Include="astFlorenceSpecial.h" />
+    <ClInclude Include="astLightningWinder.h" />
+    <ClInclude Include="astMultiMissile.h" />
+    <ClInclude Include="astRollingLog.h" />
+    <ClInclude Include="astThrowItem.h" />
+    <ClInclude Include="astWideMissile.h" />
+    <ClInclude Include="ast_chain_lightning.h" />
+    <ClInclude Include="ast_ContinuousWhirlwind.h" />
+    <ClInclude Include="ast_define.h" />
+    <ClInclude Include="ast_fire_wall.h" />
+    <ClInclude Include="ast_gas.h" />
+    <ClInclude Include="ast_giga_lightning.h" />
+    <ClInclude Include="ast_mirror_image.h" />
+    <ClInclude Include="ast_one_bite.h" />
+    <ClInclude Include="banner.h" />
+    <ClInclude Include="book.h" />
+    <ClInclude Include="booking_work.h" />
+    <ClInclude Include="BufferForPacket.h" />
+    <ClInclude Include="buildVersion.h" />
+    <ClInclude Include="CAbility.h" />
+    <ClInclude Include="CActiveSkill.h" />
+    <ClInclude Include="cACTOR.h" />
+    <ClInclude Include="CActorStatus.h" />
+    <ClInclude Include="cAREA.h" />
+    <ClInclude Include="carrotShop.h" />
+    <ClInclude Include="CBank.h" />
+    <ClInclude Include="CBookedWork.h" />
+    <ClInclude Include="CDataSave.h" />
+    <ClInclude Include="cDECODER.h" />
+    <ClInclude Include="CDialog.h" />
+    <ClInclude Include="CEvent.h" />
+    <ClInclude Include="CExceptionHandler.h" />
+    <ClInclude Include="cFIELD.h" />
+    <ClInclude Include="cGAME.h" />
+    <ClInclude Include="CGuild.h" />
+    <ClInclude Include="CGuildSkill.h" />
+    <ClInclude Include="cIMAGE.h" />
+    <ClInclude Include="CImageData.h" />
+    <ClInclude Include="cITEM.h" />
+    <ClInclude Include="cJOB.H" />
+    <ClInclude Include="CKarma.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="CLocalPartion.h" />
+    <ClInclude Include="cNPC.h" />
+    <ClInclude Include="cPARTY.h" />
+    <ClInclude Include="CPitchmanShop.h" />
+    <ClInclude Include="CPortal.h" />
+    <ClInclude Include="CProfiler.h" />
+    <ClInclude Include="cPROJECT.h" />
+    <ClInclude Include="cPROTRACTOR.h" />
+    <ClInclude Include="CQuest.h" />
+    <ClInclude Include="cServer.h" />
+    <ClInclude Include="CShop.h" />
+    <ClInclude Include="CShoppingCart.h" />
+    <ClInclude Include="CSolidCheck.h" />
+    <ClInclude Include="cSPLINE.h" />
+    <ClInclude Include="CTitle.h" />
+    <ClInclude Include="CTrade.h" />
+    <ClInclude Include="debugCode.h" />
+    <ClInclude Include="defineWarningMessage.h" />
+    <ClInclude Include="duel.h" />
+    <ClInclude Include="field_oc.h" />
+    <ClInclude Include="fireWork.h" />
+    <ClInclude Include="gameCodeHeader.h" />
+    <ClInclude Include="ggsrv.h" />
+    <ClInclude Include="instance_guild_battle_manager.h" />
+    <ClInclude Include="itemPackList.h" />
+    <ClInclude Include="itemSet.h" />
+    <ClInclude Include="life_code.h" />
+    <ClInclude Include="miniPet.h" />
+    <ClInclude Include="objectImage.h" />
+    <ClInclude Include="packetManager.h" />
+    <ClInclude Include="pattern.h" />
+    <ClInclude Include="pieceItem.h" />
+    <ClInclude Include="ProcessThread.h" />
+    <ClInclude Include="secretDungeon.h" />
+    <ClInclude Include="STDAFX.H" />
+    <ClInclude Include="stressTest.h" />
+    <ClInclude Include="summonBeast.h" />
+    <ClInclude Include="trap.h" />
+    <ClInclude Include="XTrap\Xtrap_S_Interface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="config-Battle.txt" />
+    <Text Include="config-game.txt" />
+    <Text Include="config-game_dev.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="AntiCpSvr.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="ggauth.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="ggsrvdll.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="SSDBInfo.bin">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="ssl.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="XTrap4Server.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="zlib1.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="ggsrvdll.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="ggsrvlib.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="ssl.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="zdll.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='forUsa|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PreviewTool|Win32'">true</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

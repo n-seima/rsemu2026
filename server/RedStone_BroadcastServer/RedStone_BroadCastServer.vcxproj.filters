@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{fa2fbf6a-7fd3-4e24-8802-3da008a57d85}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Property Page">
+      <UniqueIdentifier>{cb5cf994-50c2-4fca-9aca-f368bb458870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{219563b4-bc0e-4535-9faa-67062b1961da}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{03db3de3-933d-4d52-a0fd-675106328708}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{44d36720-d79f-4cf8-ba30-0421ac905706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PACKET">
+      <UniqueIdentifier>{cd5856ea-04c0-4d73-b949-0c02fb100bf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="party">
+      <UniqueIdentifier>{98eee471-586f-4d2c-9773-f4d1c7b58a92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="operate packet">
+      <UniqueIdentifier>{574b328c-0cc9-44d4-ab9d-0fde2bc19bd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="guild">
+      <UniqueIdentifier>{2f0152a8-319e-4a43-a331-574ed9694bb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="field">
+      <UniqueIdentifier>{23ababc5-2515-44e0-828a-c502798c6153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{7e89a8a0-fa68-482a-9906-e46ef3a09eaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｻﾁｸ ﾄﾚｵ・">
+      <UniqueIdentifier>{ba2a7a7c-d689-4b44-a53d-a237b2ee2139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ｹｯ">
+      <UniqueIdentifier>{92f172f7-aae0-4246-b990-fb005f62482e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgFindUserInfo.cpp">
+      <Filter>Source Files\Property Page</Filter>
+    </ClCompile>
+    <ClCompile Include="backup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChattingDataBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChattingProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cServerStatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DebuggingDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendsListUpdater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\HardwareInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lnk_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RedStone_BroadCastServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RedStone_BroadCastServerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TemporaryListForEntry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\userCustomDataDefine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cADO_BASE.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cScript.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSOCKET.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cSRVUTIL.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="exceptionhandler.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\PacketBuffer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\SFC.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\Tracer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="party.cpp">
+      <Filter>party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\partyDefine.cpp">
+      <Filter>party</Filter>
+    </ClCompile>
+    <ClCompile Include="operate_packet.cpp">
+      <Filter>operate packet</Filter>
+    </ClCompile>
+    <ClCompile Include="guild.cpp">
+      <Filter>guild</Filter>
+    </ClCompile>
+    <ClCompile Include="field.cpp">
+      <Filter>field</Filter>
+    </ClCompile>
+    <ClCompile Include="life_code.cpp">
+      <Filter>ｻﾁｸ ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\life_code_common.cpp">
+      <Filter>ｻﾁｸ ﾄﾚｵ・</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\reg_common.cpp">
+      <Filter>ｹｯ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\server_type_define.cpp">
+      <Filter>ｹｯ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\version.cpp">
+      <Filter>ｹｯ</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgFindUserInfo.h">
+      <Filter>Source Files\Property Page</Filter>
+    </ClInclude>
+    <ClInclude Include="backup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buildVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChattingDataBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebuggingDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FriendsListUpdater.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RedStone_BroadCastServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RedStone_BroadCastServerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TemporaryListForEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\actorDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\arcaDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\bannerDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\book_define.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cADO_BASE.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\carrotShopDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CItemDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CItemEffectDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CPetDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CPitchmanShopDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\CPitchmanShopDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cPLAYER_DATA.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cScript.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cServerStatus.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CSkillDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cSOCKET.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\cSRVUTIL.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\doorDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\eventDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="exceptionhandler.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\HardwareInfo.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\jobDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lnk_define.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lnk_util.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\miniPetCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\PacketBuffer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\playerJobCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\RSComm.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\SFC.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\STACK.H">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\summonBeastDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\Tracer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\userCustomDataDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_BASE.h">
+      <Filter>PACKET</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_BCSERVER.h">
+      <Filter>PACKET</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_DBSERVER.h">
+      <Filter>PACKET</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_GAMESERVER.h">
+      <Filter>PACKET</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_LOGINSERVER.h">
+      <Filter>PACKET</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\cPACKET_WORLDSERVER.h">
+      <Filter>PACKET</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\packet\definePacketData.h">
+      <Filter>PACKET</Filter>
+    </ClInclude>
+    <ClInclude Include="party.h">
+      <Filter>party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\partyDefine.h">
+      <Filter>party</Filter>
+    </ClInclude>
+    <ClInclude Include="operate_packet.h">
+      <Filter>operate packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\CGuildDefine.h">
+      <Filter>guild</Filter>
+    </ClInclude>
+    <ClInclude Include="guild.h">
+      <Filter>guild</Filter>
+    </ClInclude>
+    <ClInclude Include="field.h">
+      <Filter>field</Filter>
+    </ClInclude>
+    <ClInclude Include="life_code.h">
+      <Filter>ｻﾁｸ ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\life_code_common.h">
+      <Filter>ｻﾁｸ ﾄﾚｵ・</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\reg_common.h">
+      <Filter>ｹｯ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\server_type_define.h">
+      <Filter>ｹｯ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common\version.h">
+      <Filter>ｹｯ</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\RedStone_BroadCastServer.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RedStone_BroadCastServer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="zdll.lib">
+      <Filter>lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="config-bc.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\RedStone_BroadCastServer.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
