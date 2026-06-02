@@ -209,7 +209,7 @@
     <CodeAnalysisRuleAssemblies />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">
-    <OutDir>D:\他サバ\RED STONE</OutDir>
+    <OutDir>..\..\RED STONE\</OutDir>
     <IntDir>.\forJapan\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -244,6 +244,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>.\Debug\</OutDir>
     <IntDir>.\Debug\</IntDir>
+    <TargetName>Red Stone(Debug)</TargetName>
     <LinkIncremental>true</LinkIncremental>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules />
@@ -389,7 +390,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
       <AdditionalIncludeDirectories>../engine;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_FOR_JAPAN;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_FOR_JAPAN;POINTER_64=;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\forJapan\</AssemblerListingLocation>
       <PrecompiledHeaderOutputFile>.\forJapan\Red Stone.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>.\forJapan\</ObjectFileName>
@@ -398,7 +399,7 @@
       <MinimalRebuild />
       <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
       <DisableSpecificWarnings>4996;4430;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <AdditionalOptions>/source-charset:euc-kr /execution-charset:euc-kr %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/FI"stdafx.h" /source-charset:utf-8 /execution-charset:.932 %(AdditionalOptions)</AdditionalOptions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Midl>
@@ -421,7 +422,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <OutputFile>D:\他サバ\RED STONE\Red Stone.exe</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalDependencies>imm32.lib;odbc32.lib;odbccp32.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
@@ -579,7 +580,7 @@
       <SDLCheck>false</SDLCheck>
       <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
       <DisableSpecificWarnings>4996;4430;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <AdditionalOptions>/FI"stdafx.h" /Zc:forScope- /source-charset:.932 /execution-charset:.932 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/FI"stdafx.h" /Zc:forScope- /source-charset:utf-8 /execution-charset:.949 %(AdditionalOptions)</AdditionalOptions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <StringPooling>true</StringPooling>
       <ConformanceMode>Default</ConformanceMode>
@@ -608,10 +609,11 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <OutputFile>C:\Program Files (x86)\GameON\RED STONE\Red Stone(Debug).exe</OutputFile>
+      <OutputFile>.\Debug\Red Stone(Debug).exe</OutputFile>
       <AdditionalDependencies>version.lib;odbc32.lib;odbccp32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forInner|Win32'">

@@ -452,7 +452,8 @@ BOOL CWorldScore::OnInitDialog()
 	CPropertyPage::OnInitDialog();
 
 	// TODO: Add extra initialization here
-	for(int iServer = 0;iServer<dMAX_WORLD_SERVER_COUNT;iServer++)
+	int iServer = 0;
+	for(;iServer<dMAX_WORLD_SERVER_COUNT;iServer++)
 	{
 		if( strcmp(sList[iServer].strName,"")==0)	continue;
 		m_ctlServerList.AddString(sList[iServer].strName);

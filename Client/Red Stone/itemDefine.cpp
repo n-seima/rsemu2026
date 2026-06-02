@@ -7,7 +7,7 @@ cExtraItemDefine::getRemainTimeEfficency()
 
 	curTime.update();
 
-	endTime.m_wYear		=	(WORD)(2000+m_year);
+	endTime.m_wYear		=	(WORD)DecodeItemExpireFullYear(m_year,curTime.m_wYear);
 	endTime.m_wMonth	=	m_month;
 	endTime.m_wDay		=	m_day;
 	endTime.m_wHour		=	m_hour;

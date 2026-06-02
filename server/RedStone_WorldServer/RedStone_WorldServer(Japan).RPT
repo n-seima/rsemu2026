@@ -1,0 +1,112 @@
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  008846E3 01:000A36E3 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_WorldServer\RedStone_WorldServer(Japan).exe
+
+Registers:
+EAX:CCCCCCCC
+EBX:002C4000
+ECX:CCCCCCCC
+EDX:7EFEFEFF
+ESI:004FECD4
+EDI:0AB2B03C
+CS:EIP:0023:008846E3
+SS:ESP:002B:004FECC4  EBP:004FFC78
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+008846E3  004FECC4  strcat+93
+008445D1  004FFC78  main+861
+008473E3  004FFC98  invoke_main+33
+008472E7  004FFCF4  __scrt_common_main_seh+157
+0084718D  004FFCFC  __scrt_common_main+D
+00847448  004FFD04  mainCRTStartup+8
+76425D49  004FFD14  BaseThreadInitThunk+19
+7779D83B  004FFD6C  RtlInitializeExceptionChain+6B
+7779D7C1  004FFD7C  RtlGetAppContainerNamedObjectPath+231
+
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  008846E3 01:000A36E3 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_WorldServer\RedStone_WorldServer(Japan).exe
+
+Registers:
+EAX:CCCCCCCC
+EBX:0ACB6000
+ECX:CCCCCCCC
+EDX:7EFEFEFF
+ESI:0060EC70
+EDI:0AB2B03C
+CS:EIP:0023:008846E3
+SS:ESP:002B:0060EC60  EBP:0060FC14
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+008846E3  0060EC60  strcat+93
+008445D1  0060FC14  main+861
+008473E3  0060FC34  invoke_main+33
+008472E7  0060FC90  __scrt_common_main_seh+157
+0084718D  0060FC98  __scrt_common_main+D
+00847448  0060FCA0  mainCRTStartup+8
+76425D49  0060FCB0  BaseThreadInitThunk+19
+7779D83B  0060FD08  RtlInitializeExceptionChain+6B
+7779D7C1  0060FD18  RtlGetAppContainerNamedObjectPath+231
+
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  008846E3 01:000A36E3 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_WorldServer\RedStone_WorldServer(Japan).exe
+
+Registers:
+EAX:CCCCCCCC
+EBX:0AD0D000
+ECX:CCCCCCCC
+EDX:7EFEFEFF
+ESI:0AF6EB54
+EDI:0AB2B03C
+CS:EIP:0023:008846E3
+SS:ESP:002B:0AF6EB44  EBP:0AF6FAF8
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+008846E3  0AF6EB44  strcat+93
+008445D1  0AF6FAF8  main+861
+008473E3  0AF6FB18  invoke_main+33
+008472E7  0AF6FB74  __scrt_common_main_seh+157
+0084718D  0AF6FB7C  __scrt_common_main+D
+00847448  0AF6FB84  mainCRTStartup+8
+76425D49  0AF6FB94  BaseThreadInitThunk+19
+7779D83B  0AF6FBEC  RtlInitializeExceptionChain+6B
+7779D7C1  0AF6FBFC  RtlGetAppContainerNamedObjectPath+231
+
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  008846E3 01:000A36E3 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_WorldServer\RedStone_WorldServer(Japan).exe
+
+Registers:
+EAX:CCCCCCCC
+EBX:00374000
+ECX:CCCCCCCC
+EDX:7EFEFEFF
+ESI:001FED04
+EDI:0AB2B03C
+CS:EIP:0023:008846E3
+SS:ESP:002B:001FECF4  EBP:001FFCA8
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+008846E3  001FECF4  strcat+93
+008445D1  001FFCA8  main+861
+008473E3  001FFCC8  invoke_main+33
+008472E7  001FFD24  __scrt_common_main_seh+157
+0084718D  001FFD2C  __scrt_common_main+D
+00847448  001FFD34  mainCRTStartup+8
+76425D49  001FFD44  BaseThreadInitThunk+19
+7779D83B  001FFD9C  RtlInitializeExceptionChain+6B
+7779D7C1  001FFDAC  RtlGetAppContainerNamedObjectPath+231
+

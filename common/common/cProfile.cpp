@@ -26,7 +26,7 @@ void	cProfileItem::Begin()
 
 void	cProfileItem::End()
 {
-	//	ÀÚ±â ÀÌ¸§ / °É¸° ½Ã°£ / È£ÃâµÈ Ä«¿îÆ®
+	//	ìžê¸° ì´ë¦„ / ê±¸ë¦° ì‹œê°„ / í˜¸ì¶œëœ ì¹´ìš´íŠ¸
 	fprintf(fp,"%s|%d\n",name,timeGetTime()-starttime);
 }
 
@@ -37,20 +37,20 @@ cProfile::cProfile(char * n,char *path)
 	fp = fopen(name,"a+");
 	if(fp==NULL)
 	{
-		printf("Çä.. ÆÄÀÏÀ» ¸¸µéÁö ¸øÇß½À´Ï´Ù. \n");
+		printf("í—‰.. íŒŒì¼ì„ ë§Œë“¤ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. \n");
 		close();
 	}
 
 	time_t tTime;	struct tm *tmTime;
 	tTime = time(NULL);	tmTime = localtime(&tTime);
-	fprintf(fp,"- START %4d³â%2d¿ù%2dÀÏ - %2d:%2d:%2d-----------------------\n",tmTime->tm_year+1900,tmTime->tm_mon+1,tmTime->tm_mday,tmTime->tm_hour,tmTime->tm_min,tmTime->tm_sec);
+	fprintf(fp,"- START %4dë…„%2dì›”%2dì¼ - %2d:%2d:%2d-----------------------\n",tmTime->tm_year+1900,tmTime->tm_mon+1,tmTime->tm_mday,tmTime->tm_hour,tmTime->tm_min,tmTime->tm_sec);
 }
 
 void	cProfile::close()
 {
 	time_t tTime;	struct tm *tmTime;
 	tTime = time(NULL);	tmTime = localtime(&tTime);
-	fprintf(fp,"- RESULT %4d³â%2d¿ù%2dÀÏ - %2d:%2d:%2d-----------------------\n",tmTime->tm_year+1900,tmTime->tm_mon+1,tmTime->tm_mday,tmTime->tm_hour,tmTime->tm_min,tmTime->tm_sec);
+	fprintf(fp,"- RESULT %4dë…„%2dì›”%2dì¼ - %2d:%2d:%2d-----------------------\n",tmTime->tm_year+1900,tmTime->tm_mon+1,tmTime->tm_mday,tmTime->tm_hour,tmTime->tm_min,tmTime->tm_sec);
 
 	for(int i =0 ;i<dMAXPROFILE_COUNT; i++)
 	{
@@ -75,7 +75,7 @@ void	cProfile::Begin(char *n)
 	if(i<dMAXPROFILE_COUNT)
 		pItem[i].Begin();
 	else{	
-		//	»õ·Î µî·ÏÇÏ°í ½ÃÀÛÇÑ´Ù.
+		//	ìƒˆë¡œ ë“±ë¡í•˜ê³  ì‹œìž‘í•œë‹¤.
 		for(int j = 0; j < dMAXPROFILE_COUNT;j++)
 			if(strcmp(pItem[j].GetName(),"")==0)
 				break;

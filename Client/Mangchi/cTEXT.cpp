@@ -17,6 +17,101 @@
 #include <conio.h>
 #include <string.h>
 
+static const char s_strUntranslated[] = "\226\242\226\174\226\363";
+
+static BOOL
+IsBrokenWideText(const WCHAR *pWide,int len)
+{
+	int	i,broken	=	0,halfKana	=	0;
+
+	for (i=0;i<len;i++)
+	{
+		WCHAR	ch	=	pWide[i];
+
+		if (ch == 0xfffd || (ch >= 0x00a0 && ch <= 0x00ff) || (ch >= 0xe000 && ch <= 0xf8ff))
+			broken++;
+		if (ch >= 0xff61 && ch <= 0xff9f)
+			halfKana++;
+	}
+
+	return	(broken >= 1 || halfKana >= 1);
+}
+
+static BOOL
+HasHighByte(const char *pStr,int len)
+{
+	int	i;
+
+	for (i=0;i<len;i++)
+		if (((BYTE)pStr[i]) >= 0x80)
+			return TRUE;
+
+	return FALSE;
+}
+
+static BOOL
+TextOutCP932(HDC hdc,int x,int y,const char *pStr)
+{
+	int	len	= pStr ? strlen(pStr) : 0;
+
+	if (len <= 0) return TextOutA(hdc,x,y,"",0);
+
+	int	wideLen	= MultiByteToWideChar(932,MB_ERR_INVALID_CHARS,pStr,len,NULL,0);
+	if (wideLen > 0)
+	{
+		WCHAR	*pWide	= new WCHAR[wideLen];
+		if (pWide)
+		{
+			MultiByteToWideChar(932,MB_ERR_INVALID_CHARS,pStr,len,pWide,wideLen);
+			if (IsBrokenWideText(pWide,wideLen))
+			{
+				delete[] pWide;
+				return TextOutCP932(hdc,x,y,s_strUntranslated);
+			}
+			BOOL	result	= TextOutW(hdc,x,y,pWide,wideLen);
+			delete[] pWide;
+			return result;
+		}
+	}
+
+	if (HasHighByte(pStr,len)) return TextOutCP932(hdc,x,y,s_strUntranslated);
+
+	return TextOutA(hdc,x,y,pStr,len);
+}
+
+static BOOL
+GetTextExtentPoint32CP932(HDC hdc,const char *pStr,SIZE *pSize)
+{
+	int	len	= pStr ? strlen(pStr) : 0;
+
+	if (len <= 0) return GetTextExtentPoint32A(hdc,"",0,pSize);
+
+	int	wideLen	= MultiByteToWideChar(932,MB_ERR_INVALID_CHARS,pStr,len,NULL,0);
+	if (wideLen > 0)
+	{
+		WCHAR	*pWide	= new WCHAR[wideLen];
+		if (pWide)
+		{
+			MultiByteToWideChar(932,MB_ERR_INVALID_CHARS,pStr,len,pWide,wideLen);
+			if (IsBrokenWideText(pWide,wideLen))
+			{
+				delete[] pWide;
+				return GetTextExtentPoint32CP932(hdc,s_strUntranslated,pSize);
+			}
+			BOOL	result	= GetTextExtentPoint32W(hdc,pWide,wideLen,pSize);
+			delete[] pWide;
+			return result;
+		}
+	}
+
+	if (HasHighByte(pStr,len))
+	{
+		return GetTextExtentPoint32CP932(hdc,s_strUntranslated,pSize);
+	}
+
+	return GetTextExtentPoint32A(hdc,pStr,len,pSize);
+}
+
 
 const char INDEXHF[3][32] = 
 {
@@ -370,28 +465,28 @@ cTEXT::Put(int xPos,int yPos,DWORD color,char *pStr)		//	Device Cotext에 찍어
 	if (s_bIsPutOutline)
 	{
 		SetTextColor(m_hDC,s_dwOutlineColor);
-		TextOut(m_hDC,xPos-1,yPos-1,pStr,strlen(pStr));
-		TextOut(m_hDC,xPos+1,yPos-1,pStr,strlen(pStr));
-		TextOut(m_hDC,xPos+1,yPos-1,pStr,strlen(pStr));
+		TextOutCP932(m_hDC,xPos-1,yPos-1,pStr);
+		TextOutCP932(m_hDC,xPos+1,yPos-1,pStr);
+		TextOutCP932(m_hDC,xPos+1,yPos-1,pStr);
 
-		TextOut(m_hDC,xPos-1,yPos  ,pStr,strlen(pStr));
-		TextOut(m_hDC,xPos+1,yPos  ,pStr,strlen(pStr));
-		TextOut(m_hDC,xPos+1,yPos  ,pStr,strlen(pStr));
+		TextOutCP932(m_hDC,xPos-1,yPos  ,pStr);
+		TextOutCP932(m_hDC,xPos+1,yPos  ,pStr);
+		TextOutCP932(m_hDC,xPos+1,yPos  ,pStr);
 
-		TextOut(m_hDC,xPos-1,yPos+1,pStr,strlen(pStr));
-		TextOut(m_hDC,xPos+1,yPos+1,pStr,strlen(pStr));
-		TextOut(m_hDC,xPos+1,yPos+1,pStr,strlen(pStr));
+		TextOutCP932(m_hDC,xPos-1,yPos+1,pStr);
+		TextOutCP932(m_hDC,xPos+1,yPos+1,pStr);
+		TextOutCP932(m_hDC,xPos+1,yPos+1,pStr);
 	}
 	
 	if (m_isPutShadow)
 	{
 		SetTextColor(m_hDC,s_dwShadowColor);
-		TextOut(m_hDC,xPos+1+s_bIsPutOutline,yPos+1+s_bIsPutOutline,pStr,strlen(pStr));
+		TextOutCP932(m_hDC,xPos+1+s_bIsPutOutline,yPos+1+s_bIsPutOutline,pStr);
 	}
 
 	SetTextColor(m_hDC,color);
 
-	TextOut(m_hDC,xPos,yPos,pStr,strlen(pStr));
+	TextOutCP932(m_hDC,xPos,yPos,pStr);
 }
 
 void
@@ -423,12 +518,12 @@ cTEXT::ScriptPut(int xPos,int yPos,DWORD color,char *pStr)		//	Device Cotext에 
 					if	(m_isPutShadow)
 					{
 						SetTextColor(m_hDC,s_dwShadowColor);
-						TextOut(m_hDC,xPos+1,yPos+1,pText,strlen(pText));
+						TextOutCP932(m_hDC,xPos+1,yPos+1,pText);
 					}
 
 					SetTextColor(m_hDC,s_dwPutColor);
 
-					TextOut(m_hDC,xPos,yPos,pText,strlen(pText));
+					TextOutCP932(m_hDC,xPos,yPos,pText);
 
 					xPos	+=	iIndex*Width;
 					iIndex	=	0;
@@ -452,16 +547,16 @@ cTEXT::ScriptPut(int xPos,int yPos,DWORD color,char *pStr)		//	Device Cotext에 
 
 					if (m_isPutShadow)
 					{	SetTextColor(m_hDC,s_dwShadowColor);
-						TextOut(m_hDC,xPos+1,yPos+1,pText,strlen(pText));
+						TextOutCP932(m_hDC,xPos+1,yPos+1,pText);
 					}
 
 					SetTextColor(m_hDC,s_dwPutColor);
 
-					TextOut(m_hDC,xPos,yPos,pText,strlen(pText));
+					TextOutCP932(m_hDC,xPos,yPos,pText);
 
 					SIZE	Size;
 
-					GetTextExtentPoint32(m_hDC,pText,strlen(pText),&Size);
+					GetTextExtentPoint32CP932(m_hDC,pText,&Size);
 
 //					SetFont(6,12,strFont);
 
@@ -482,24 +577,24 @@ cTEXT::ScriptPut(int xPos,int yPos,DWORD color,char *pStr)		//	Device Cotext에 
 
 		if (m_isPutShadow)
 		{	SetTextColor(m_hDC,s_dwShadowColor);
-			TextOut(m_hDC,xPos+1,yPos+1,pText,strlen(pText));
+			TextOutCP932(m_hDC,xPos+1,yPos+1,pText);
 		}
 
 		SetTextColor(m_hDC,s_dwPutColor);
 
-		TextOut(m_hDC,xPos,yPos,pText,strlen(pText));
+		TextOutCP932(m_hDC,xPos,yPos,pText);
 
 		return;
 	}
 
 	if (m_isPutShadow)
 	{	SetTextColor(m_hDC,s_dwShadowColor);
-		TextOut(m_hDC,xPos+1,yPos+1,pStr,strlen(pStr));
+		TextOutCP932(m_hDC,xPos+1,yPos+1,pStr);
 	}
 
 	SetTextColor(m_hDC,s_dwPutColor);
 
-	TextOut(m_hDC,xPos,yPos,pStr,strlen(pStr));
+	TextOutCP932(m_hDC,xPos,yPos,pStr);
 }
 
 
@@ -540,7 +635,7 @@ cTEXT::cPut(int xPos,int yPos,DWORD color,char *pStr)
 {
 	SIZE	Size;
 
-	GetTextExtentPoint32(m_hDC,pStr,strlen(pStr),&Size);
+	GetTextExtentPoint32CP932(m_hDC,pStr,&Size);
 
 	xPos	-=	Size.cx/2;
 
@@ -552,7 +647,7 @@ cTEXT::cPut(int xPos,int yPos,DWORD color,DWORD reverceColor,char *pStr)
 {
 	SIZE	Size;
 
-	GetTextExtentPoint32(m_hDC,pStr,strlen(pStr),&Size);
+	GetTextExtentPoint32CP932(m_hDC,pStr,&Size);
 
 	xPos	-=	Size.cx/2;
 
@@ -759,7 +854,7 @@ cTEXT::GetSize	(char *_strText)
 {
 	SIZE	Size;
 
-	GetTextExtentPoint32(m_hDC,_strText,strlen(_strText),&Size);
+	GetTextExtentPoint32CP932(m_hDC,_strText,&Size);
 
 	return	Size.cx;
 }

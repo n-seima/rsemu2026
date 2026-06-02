@@ -1,0 +1,104 @@
+[213711] Start LOG Server ... day : 20260530 - time : 213711 
+
+
+[213711] START WorkerThread[0] ...
+
+[213711] START WorkerThread[1] ...
+
+[213711] START WorkerThread[2] ...
+
+[213711] START WorkerThread[3] ...
+
+[213711] START WorkerThread[4] ...
+
+[213711] START WorkerThread[5] ...
+
+[213711] START WorkerThread[6] ...
+
+[213711] START WorkerThread[7] ...
+
+[213711] START PressThread ...
+
+[213711] End RecvThread... 
+
+[213711] START AdditionThread ...
+
+[214346] Fail bind !!
+
+
+[214346] Error InitSocket 
+
+
+[214351] Fail bind !!
+
+
+[214351] Error InitSocket 
+
+
+[214351] Fail bind !!
+
+
+[214351] Error InitSocket 
+
+
+[214352] Fail bind !!
+
+
+[214352] Error InitSocket 
+
+
+[214655] Fail bind !!
+
+
+[214655] Error InitSocket 
+
+
+[214656] Fail bind !!
+
+
+[214656] Error InitSocket 
+
+
+[214657] Fail bind !!
+
+
+[214657] Error InitSocket 
+
+
+[214718] Start LOG Server ... day : 20260530 - time : 214718 
+
+
+[214718] START WorkerThread[0] ...
+
+[214718] START WorkerThread[1] ...
+
+[214718] START WorkerThread[2] ...
+
+[214718] START WorkerThread[3] ...
+
+[214718] START WorkerThread[4] ...
+
+[214718] START WorkerThread[5] ...
+
+[214718] START WorkerThread[7] ...
+
+[214718] START WorkerThread[6] ...
+
+[214718] START PressThread ...
+
+[214718] End RecvThread... 
+
+[214718] START AdditionThread ...
+
+[214832] ()0 is Exit. - 1356752846
+
+
+[005227] ()1 is Exit. - 1356752846
+
+
+[005632] ()1 is Exit. - 1356752846
+
+
+[005718] ()1 is Exit. - 1356752846
+
+

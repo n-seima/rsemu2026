@@ -1,0 +1,71 @@
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 19:28:56
+Exception Handler Activate Time 2026/ 6/ 2 19:29: 4
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [19:28:56] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 83.351 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00CF1D8E 01:001D0D8E C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+
+Registers:
+EAX:8F189B74
+EBX:0003FFFC
+ECX:13804060
+EDX:00B00000
+ESI:8F189B74
+EDI:02B492CC
+CS:EIP:0023:00CF1D8E
+SS:ESP:002B:03DCF810  EBP:03DCF824
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Call stack:
+Address   Frame
+00CF1D8E  03DCF824  0001:001D0D8E C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+00CE31CB  03DCF844  0001:001C21CB C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+00C5610E  03DCF86C  0001:0013510E C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+00C530E4  03DCFA10  0001:001320E4 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+00C0E315  03DCFA50  0001:000ED315 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+00C0DD59  03DCFA68  0001:000ECD59 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+00C071DA  03DCFCC8  0001:000E61DA C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+00CC84F0  03DCFCF8  0001:001A74F0 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+011BE37D  03DCFD18  0001:0069D37D C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+011BE287  03DCFD74  0001:0069D287 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+011BE12D  03DCFD7C  0001:0069D12D C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+011BE3E8  03DCFD84  0001:0069D3E8 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone_fixed.exe
+74C95D49  03DCFD94  BaseThreadInitThunk+19
+76F5D83B  03DCFDEC  RtlInitializeExceptionChain+6B
+76F5D7C1  03DCFDFC  RtlGetAppContainerNamedObjectPath+231
+

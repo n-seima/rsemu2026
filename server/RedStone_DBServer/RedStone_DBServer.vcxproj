@@ -377,7 +377,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <SDLCheck>false</SDLCheck>
       <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
-      <AdditionalOptions>/source-charset:euc-kr /execution-charset:euc-kr %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Midl>

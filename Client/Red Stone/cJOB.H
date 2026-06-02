@@ -11,15 +11,15 @@
 
 enum
 {
-	eNPC_PLAYER,			//	ÇÃ·¹ÀÌ¾î
-	eNPC_NORMAL,			//	º¸Åë NPC
-	eNPC_MONSTER,			//	¸ó½ºÅÍ
+	eNPC_PLAYER,			//	í”Œë ˆì´ì–´
+	eNPC_NORMAL,			//	ë³´í†µ NPC
+	eNPC_MONSTER,			//	ëª¬ìŠ¤í„°
 
-	eNPC_WEAPON_MERCHANT,	//	¹«±â »óÀÎ
-	eNPC_ARMOR_MERCHANT,	//	¹æ¾î±¸ »óÀÎ
-	eNPC_ETC_ITEM_MERCHANT,	//	ÀâÈ­ »óÀÎ
-	eNPC_ACCESSORY_MERCHANT,//	µµ±¸ »óÀÎ
-	eNPC_PITCHMAN,			//	³ëÁ¡»ó
+	eNPC_WEAPON_MERCHANT,	//	ë¬´ê¸° ìƒì¸
+	eNPC_ARMOR_MERCHANT,	//	ë°©ì–´êµ¬ ìƒì¸
+	eNPC_ETC_ITEM_MERCHANT,	//	ìž¡í™” ìƒì¸
+	eNPC_ACCESSORY_MERCHANT,//	ë„êµ¬ ìƒì¸
+	eNPC_PITCHMAN,			//	ë…¸ì ìƒ
 	eNPC_BANK,
 	eNPC_SKILL_MASTER,
 
@@ -39,22 +39,22 @@ enum
 	eNPC_PROCESS_QUEST_REFERENCE_NPC,
 	eNPC_PROCESS_QUEST_TARGET_MONSTER,
 
-	eNPC_WEAPON_MERCHANT_KNIGHT_WARRIOR,	//	"°ß½À±â»ç/Àü»ç ¹«±â»ó",
-	eNPC_WEAPON_MERCHANT_WIZARD_WEREWOLF,	//	"¸¶¹ý»ç/´Á´ëÀÎ°£ ¹«±â»ó",
-	eNPC_WEAPON_MERCHANT_PRIEST_FALLEN_ANGEL,	//	"»çÁ¦/Å¸¶ôÃµ»ç ¹«±â»ó",
-	eNPC_WEAPON_MERCHANT_ROGUE_FIGHTER,	//	"µµµÏ/¹«µµ°¡ ¹«±â»ó",
-	eNPC_WEAPON_MERCHANT_LANCER_ARCHER,	//	"¸¶¹ý Ã¢°Ë»ç/¸¶¹ý ±Ã¼ö ¹«±â»ó",
-	eNPC_WEAPON_MERCHANT_TAMER_SUMMONER,	//	"Á¶·Ã»ç/¼ÒÈ¯»ç ¹«±â»ó",
-	eNPC_WEAPON_MERCHANT_PRINCESS_MAGICAL_GIRL,	//	"°øÁÖ/º¯½Å ¼Ò³à ¹«±â»ó",
-	eNPC_WEAPON_MERCHANT_NECROMANCER_DEVIL,	//	"°­½Å¼ú»ç/¾Ç¸¶ ¹«±â»ó",
+	eNPC_WEAPON_MERCHANT_KNIGHT_WARRIOR,	//	"ê²¬ìŠµê¸°ì‚¬/ì „ì‚¬ ë¬´ê¸°ìƒ",
+	eNPC_WEAPON_MERCHANT_WIZARD_WEREWOLF,	//	"ë§ˆë²•ì‚¬/ëŠ‘ëŒ€ì¸ê°„ ë¬´ê¸°ìƒ",
+	eNPC_WEAPON_MERCHANT_PRIEST_FALLEN_ANGEL,	//	"ì‚¬ì œ/íƒ€ë½ì²œì‚¬ ë¬´ê¸°ìƒ",
+	eNPC_WEAPON_MERCHANT_ROGUE_FIGHTER,	//	"ë„ë‘‘/ë¬´ë„ê°€ ë¬´ê¸°ìƒ",
+	eNPC_WEAPON_MERCHANT_LANCER_ARCHER,	//	"ë§ˆë²• ì°½ê²€ì‚¬/ë§ˆë²• ê¶ìˆ˜ ë¬´ê¸°ìƒ",
+	eNPC_WEAPON_MERCHANT_TAMER_SUMMONER,	//	"ì¡°ë ¨ì‚¬/ì†Œí™˜ì‚¬ ë¬´ê¸°ìƒ",
+	eNPC_WEAPON_MERCHANT_PRINCESS_MAGICAL_GIRL,	//	"ê³µì£¼/ë³€ì‹  ì†Œë…€ ë¬´ê¸°ìƒ",
+	eNPC_WEAPON_MERCHANT_NECROMANCER_DEVIL,	//	"ê°•ì‹ ìˆ ì‚¬/ì•…ë§ˆ ë¬´ê¸°ìƒ",
 
-	eNPC_REWARD_FOR_DUEL	,	//	"°áÅõÀå º¸»ó",
-	eNPC_WEAPON_MERCHANT_SOUL_BRINGER,	//	"¿µ¼ú»ç ¹«±â»ó",
-	eNPC_GUILD_HALL_TELEPORTER,		// "±æµåÈ¦ ÅÚ·¹Æ÷ÅÍ"
-	eNPC_EVENT_HELPER,		// "ÀÌº¥Æ® µµ¿ì¹Ì"
-	eNPC_ADVENTURER_SOCIETY,		// "¸ðÇè°¡ ÇùÈ¸"
-	eNPC_WEAPON_MERCHANT_OPTICALIST,	//	"±¤ÇÐ»ç¹«±â»ó"
-};	//	NPC Á¾·ù
+	eNPC_REWARD_FOR_DUEL	,	//	"ê²°íˆ¬ìž¥ ë³´ìƒ",
+	eNPC_WEAPON_MERCHANT_SOUL_BRINGER,	//	"ì˜ìˆ ì‚¬ ë¬´ê¸°ìƒ",
+	eNPC_GUILD_HALL_TELEPORTER,		// "ê¸¸ë“œí™€ í…”ë ˆí¬í„°"
+	eNPC_EVENT_HELPER,		// "ì´ë²¤íŠ¸ ë„ìš°ë¯¸"
+	eNPC_ADVENTURER_SOCIETY,		// "ëª¨í—˜ê°€ í˜‘íšŒ"
+	eNPC_WEAPON_MERCHANT_OPTICALIST,	//	"ê´‘í•™ì‚¬ë¬´ê¸°ìƒ"
+};	//	NPC ì¢…ë¥˜
 
 
 #define	dJOB_BORDER									100
@@ -70,7 +70,7 @@ enum
 #define	dJOB_SET_HERO								0
 #define	dJOB_SET_CHARACTER							1
 
-#define	dJOB_MONSTER								200		//	ÀÌ°Å ¼øÀüÈ÷ »ç¿ë °¡´É 
+#define	dJOB_MONSTER								200		//	ì´ê±° ìˆœì „ížˆ ì‚¬ìš© ê°€ëŠ¥ 
 #define	dJOB_SUMMON_BEAST							50
 
 #define	dACT_READY									2
@@ -82,14 +82,14 @@ enum
 #define	dJOB_VALID									0x7fff
 
 //
-//	Ä³¸¯ÅÍ Á¤º¸
+//	ìºë¦­í„° ì •ë³´
 class	cCHARACTER
 {
 public:
 	WORD			m_wSerial;
 	WORD			m_wBaseJob;
 	WORD			m_wMinLevel;
-	char			m_strName[32];	//	ÀÌ¸§
+	char			m_strName[32];	//	ì´ë¦„
 	WORD			m_wMaxLevel;
 };	//	class	cCHARACTER
 
@@ -104,19 +104,19 @@ public:
 };	//	class	cJOB
 
 //
-//	Å¬¶óÀÌ¾ðÆ®¿¡¼­ ÇÊ¿äÇÑ ±âº» Á¤º¸
+//	í´ë¼ì´ì–¸íŠ¸ì—ì„œ í•„ìš”í•œ ê¸°ë³¸ ì •ë³´
 class	CJobInfo
 {
 public:
-	char				m_strName[32];		//	Á÷¾÷ ÀÌ¸§1
-	BYTE				m_abBodyShape[4];					//	¸ó½ºÅÍ ¹Ùµð ½¦ÀÔ
+	char				m_strName[32];		//	ì§ì—… ì´ë¦„1
+	BYTE				m_abBodyShape[4];					//	ëª¬ìŠ¤í„° ë°”ë”” ì‰ìž…
 
 	WORD				m_wSerial;
-	int					m_iBody;			//	¸öÅë
+	int					m_iBody;			//	ëª¸í†µ
 	int					m_iVariation;
 	WORD				m_wPalette;
-	WORD				m_wPortrait;		//	Æ÷Æ®¸´
-	WORD				m_wType;			//	¿µ¿õ,NPC,¸ó½ºÅÍ
+	WORD				m_wPortrait;		//	í¬íŠ¸ë¦¿
+	WORD				m_wType;			//	ì˜ì›…,NPC,ëª¬ìŠ¤í„°
 	WORD				m_wRank,m_wKind;
 
 	WORD				m_bf1IsZinMonster	:	1;
@@ -133,7 +133,7 @@ public:
 };
 
 //
-//	Á÷¾÷ ¸Þ´ÏÁ®
+//	ì§ì—… ë©”ë‹ˆì ¸
 class	CJobManager
 {
 public:
@@ -141,9 +141,9 @@ public:
 	int				m_iCharacterDataCount;
 	WORD			m_aJobList[dMAX_CHARACTER_COUNT];
 
-	BOOL			init();//ÃÊ±âÈ­
-	BOOL			loadLocalBody(cNUX *_lpNux,cMCU *_lpMcu);//ÀÌ Áö¿ª¿¡¼­ »ç¿ëÇÏ´Â ¸ö¶×¾Æ¸® ·Îµù
-	void			close();	//	Á¦°Å
+	BOOL			init();//ì´ˆê¸°í™”
+	BOOL			loadLocalBody(cNUX *_lpNux,cMCU *_lpMcu);//ì´ ì§€ì—­ì—ì„œ ì‚¬ìš©í•˜ëŠ” ëª¸ëš±ì•„ë¦¬ ë¡œë”©
+	void			close();	//	ì œê±°
 	inline	int		getPalettIndex(int _iJob)	{return	m_aJob[_iJob].m_wPalette;}
 	CJobInfo*		getJob(int _iJob)			{return	&m_aJob[_iJob];}
 	CJobInfo*		getJob(char *_lpstrName);

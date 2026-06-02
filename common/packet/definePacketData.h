@@ -28,10 +28,10 @@ namespace	nsModifySaveData
 #define	dTRADE_ITEM_COUNT					18
 #define dFILEDNAME_LENGTH					34
 #define	dCHAT_LENGTH						128
-#define	dABILITY_COUNT						52	//¾ûÖô·¯Æ¼
+#define	dABILITY_COUNT						52	//ì—‰é›·ëŸ¬í‹°
 #define	dMAX_SERVER_COUNT					20
-#define	dDROPPING_ITEM_COUNT				10	//	¶³¾ûÑå¸®´Â ¾ÆÀÌÅÛ ÆÐÅÏ
-#define	dITEM_MONEY							0	//	µ· -o-
+#define	dDROPPING_ITEM_COUNT				10	//	ë–¨ì—‰ï¤—ë¦¬ëŠ” ì•„ì´í…œ íŒ¨í„´
+#define	dITEM_MONEY							0	//	ëˆ -o-
 #define	dMAX_OPERATE_DROPPED_ITEM			20
 #define	dMAX_TARGET_FOR_WIDE_AREA_ATTACK	32
 #define	dMAX_PROCESS_QUEST_COUNT			6
@@ -78,68 +78,68 @@ namespace	nsModifySaveData
 #define	dEXTRA_INVENTORY_SIZE				16
 
 #define dMAX_PARTY_COUNT					1000
-#define dPARTYNAME_LENGTH					22	//	ÆÄÆ¼ÀÌ¸§ ±æÀÌ
-#define dPARTY_MAXPLAYER					8	//	ÆÄÆ¼ÀÇ ÃÖ´EÀÎ¿ø¼E
-#define dPARTYLIST_COUNT					8	//	ÇÑ¹ø¿¡ º¸³»´Â ÆÄÆ¼ ¸®½ºÆ® ¼E
+#define dPARTYNAME_LENGTH					22	//	íŒŒí‹°ì´ë¦„ ê¸¸ì´
+#define dPARTY_MAXPLAYER					8	//	íŒŒí‹°ì˜ ìµœï¿½ÂEì¸ì›ï¿½ÂE
+#define dPARTYLIST_COUNT					8	//	í•œë²ˆì— ë³´ë‚´ëŠ” íŒŒí‹° ë¦¬ìŠ¤íŠ¸ ï¿½ÂE
 
-#define dUNION_PARTY_COUNT					8	//	ÆÄÆ¼ÀÌ¸§ ±æÀÌ
-#define dMAX_UNION_PARTY_COUNT				256	//	ÆÄÆ¼ÀÌ¸§ ±æÀÌ
-#define dUNION_PARTYNAME_LENGTH				22	//	ÆÄÆ¼ÀÌ¸§ ±æÀÌ
+#define dUNION_PARTY_COUNT					8	//	íŒŒí‹°ì´ë¦„ ê¸¸ì´
+#define dMAX_UNION_PARTY_COUNT				256	//	íŒŒí‹°ì´ë¦„ ê¸¸ì´
+#define dUNION_PARTYNAME_LENGTH				22	//	íŒŒí‹°ì´ë¦„ ê¸¸ì´
 #define dMAX_PLAYER_TITLE_COUNT				50
 
 #define	dDISSOLUTION_PARTY_AT_MOVE_FIELD	0xfffe
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­ÇÃ·¹ÀÌ¾Eµ¥ÀÌÅÍ Á¤ÀÇ
-class	CJobBasicDataDefine	//	±âº» Á÷¾÷¿¡ ÇÊ¿äÇÑ µ¥ÀÌÅÍ
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒí”Œë ˆì´ï¿½ÂEë°ì´í„° ì •ì˜
+class	CJobBasicDataDefine	//	ê¸°ë³¸ ì§ì—…ì— í•„ìš”í•œ ë°ì´í„°
 {
 public:
-	int				m_iLevel;							//	·¹º§
-	int				m_iExperience;						//	°æÇèÄ¡
-	DWORD			m_dwSkillExperience;				//	½ºÅ³ °æÇèÄ¡
+	int				m_iLevel;							//	ë ˆë²¨
+	int				m_iExperience;						//	ê²½í—˜ì¹˜
+	DWORD			m_dwSkillExperience;				//	ìŠ¤í‚¬ ê²½í—˜ì¹˜
 
-	int				m_iHP;								//	ÇöÀEÃ¼·Â			10.00	10,000.00  
-	int				m_iMaxHP;							//	ÃÖ´EÃ¼·Â			10.00	10,000.00  
-	int				m_iCP;								//	ÇöÀE  ÆÄ¿E°ÔÀÌÁE  1.00	 5,000.00  
-	int				m_iMaxCP;							//	¸Æ½Ã¸Ø ÆÄ¿E°ÔÀÌÁE10.00	10,000.00  
-	WORD			m_wCorrectMaxHPFactor;				//	ÃÖ´EHP °è»EÄ¿¡ ÇÊ¿äÇÑ HP ÀÎÀÚ
-	WORD			m_wCorrectMaxHPConstitutionFactor;	//	ÃÖ´EHP °è»EÄ¿¡ ÇÊ¿äÇÑ °Ç°­ ÀÎÀÚ
+	int				m_iHP;								//	í˜„ï¿½ÂEì²´ë ¥			10.00	10,000.00  
+	int				m_iMaxHP;							//	ìµœï¿½ÂEì²´ë ¥			10.00	10,000.00  
+	int				m_iCP;								//	í˜„ï¿½ÂE  íŒŒï¿½ÂEê²Œì´ï¿½ÂE  1.00	 5,000.00  
+	int				m_iMaxCP;							//	ë§¥ì‹œë©ˆ íŒŒï¿½ÂEê²Œì´ï¿½ÂE10.00	10,000.00  
+	WORD			m_wCorrectMaxHPFactor;				//	ìµœï¿½ÂEHP ê³„ï¿½ÂEì»¤ï¿½ í•„ìš”í•œ HP ì¸ìž
+	WORD			m_wCorrectMaxHPConstitutionFactor;	//	ìµœï¿½ÂEHP ê³„ï¿½ÂEì»¤ï¿½ í•„ìš”í•œ ê±´ê°• ì¸ìž
 
-	short			m_sStrength;						//	ÈE		5 1,000
-	short			m_sAgility;							//	¹ÎÃ¸¼º		5 1,000
-	short			m_sConstitution;					//	°Ç°­		5 1,000
-	short			m_sWisdom;							//	ÁöÇý		5 1,000
-	short			m_sIntelligence;					//	Áö½Ä		5 1,000
-	short			m_sCharisma;						//	Ä«¸®½º¸¶	5 1,000
-	short			m_sLuck;							//	¿E		5 1,000
-	short			m_sSight;							//	½Ã¾ß
+	short			m_sStrength;						//	ï¿½ÂE		5 1,000
+	short			m_sAgility;							//	ë¯¼ì²©ì„±		5 1,000
+	short			m_sConstitution;					//	ê±´ê°•		5 1,000
+	short			m_sWisdom;							//	ì§€í˜œ		5 1,000
+	short			m_sIntelligence;					//	ì§€ì‹		5 1,000
+	short			m_sCharisma;						//	ì¹´ë¦¬ìŠ¤ë§ˆ	5 1,000
+	short			m_sLuck;							//	ï¿½ÂE		5 1,000
+	short			m_sSight;							//	ì‹œì•¼
 
-	short			m_sMinDamage;						//	ÃÖ¼Ò µ¥¹ÌÁE	
-	short			m_sMaxDamage;						//	ÃÖ´Eµ¥¹ÌÁE	
-	short			m_sDefensivePower;					//	¹æ¾ûÓÂ
+	short			m_sMinDamage;						//	ìµœì†Œ ë°ë¯¸ï¿½ÂE	
+	short			m_sMaxDamage;						//	ìµœï¿½ÂEë°ë¯¸ï¿½ÂE	
+	short			m_sDefensivePower;					//	ë°©ì—‰æ¾¹
 
-	short			m_sAllignment;						//	¼ºÇE-100.00~100.00(absoulte evil,evil,neutral,good,absoulte good)
+	short			m_sAllignment;						//	ì„±ï¿½ÂE-100.00~100.00(absoulte evil,evil,neutral,good,absoulte good)
 
-	short			m_sFireResistance;					//	ºÒ ÀúÇ×·Â 0% 100.00%  
-	short			m_sWaterResistance;					//	¹° ÀúÇ×·Â 0% 100.00%  
-	short			m_sWindResistance;					//	¹Ù¶EÀúÇ×·Â 0% 100.00%  
-	short			m_sEarthResistance;					//	´EEÀúÇ×·Â 0% 100.00%  
-	short			m_sLightResistance;					//	ºEÀúÇ×·Â 0% 100.00%
-	short			m_sDarkResistance;					//	¾ûÑÒ ÀúÇ×·Â 0% 100.00%
+	short			m_sFireResistance;					//	ë¶ˆ ì €í•­ë ¥ 0% 100.00%  
+	short			m_sWaterResistance;					//	ë¬¼ ì €í•­ë ¥ 0% 100.00%  
+	short			m_sWindResistance;					//	ë°”ï¿½ÂEì €í•­ë ¥ 0% 100.00%  
+	short			m_sEarthResistance;					//	ï¿½ÂEÂEì €í•­ë ¥ 0% 100.00%  
+	short			m_sLightResistance;					//	ï¿½ÂEì €í•­ë ¥ 0% 100.00%
+	short			m_sDarkResistance;					//	ì—‰å–« ì €í•­ë ¥ 0% 100.00%
 
-	short			m_sBlindResistance;					//	Àå´Ô ÀúÇ×
-	short			m_sPoisonResistance;				//	Áßµ¶ ÀúÇ×
-	short			m_sSleepResistance;					//	ÀEÀúÇ×
-	short			m_sColdResistance;					//	ÄÝµEÀúÇ×
-	short			m_sFreezeResistance;				//	ÇÁ¸®ÁEÀúÇ×
-	short			m_sStunResistance;					//	°æÁEÀúÇ×
-	short			m_sStoneResistance;					//	¼®È­ ÀúÇ×
-	short			m_sConfuseResistance;				//	È¥¶EÀúÇ×
-	short			m_sCharmingResistance;				//	Ã­¹Ö ÀúÇ×
+	short			m_sBlindResistance;					//	ìž¥ë‹˜ ì €í•­
+	short			m_sPoisonResistance;				//	ì¤‘ë… ì €í•­
+	short			m_sSleepResistance;					//	ï¿½ÂEì €í•­
+	short			m_sColdResistance;					//	ì½œï¿½ÂEì €í•­
+	short			m_sFreezeResistance;				//	í”„ë¦¬ï¿½ÂEì €í•­
+	short			m_sStunResistance;					//	ê²½ï¿½ÂEì €í•­
+	short			m_sStoneResistance;					//	ì„í™” ì €í•­
+	short			m_sConfuseResistance;				//	í˜¼ï¿½ÂEì €í•­
+	short			m_sCharmingResistance;				//	ì± ë° ì €í•­
 
-	short			m_sBadStatusResistance;				//	»óÅÂ ÀÌ»ó°ø°Ý¿¡ ´EÑ ÀúÇ× 0% 100.00%
-	short			m_sDeclinePowerResistance;			//	´É·ÂÄ¡ ÀúÇÏ°è¿¡ ´EÑ ÀúÇ× 0% 100.00%
-	short			m_sCurseResistance;					//	ÀúÁÖ¿¡ ´EÑ ÀúÇ× 0% 100.00%
+	short			m_sBadStatusResistance;				//	ìƒíƒœ ì´ìƒê³µê²©ì— ï¿½ÂEï¿½ ì €í•­ 0% 100.00%
+	short			m_sDeclinePowerResistance;			//	ëŠ¥ë ¥ì¹˜ ì €í•˜ê³„ì— ï¿½ÂEï¿½ ì €í•­ 0% 100.00%
+	short			m_sCurseResistance;					//	ì €ì£¼ì— ï¿½ÂEï¿½ ì €í•­ 0% 100.00%
 };
 
 class cP_4POINT
@@ -170,11 +170,11 @@ class	cP_ITEM
 {
 public:
 	DWORD					m_dwSerial;
-	WORD					m_wBaseItem;					//	¾ÆÀÌÅÛ ÀÎµ¦½º
-	BYTE					m_bCount;						//	¼ýÀÚ
-	BYTE					m_bDurability;					//	³»±¸·Â
-	BYTE					m_aOption[2];					//	»ý¼ºµÉ¶§ ºÙÀº ¿É¼Ç
-	cP_ITEM_PREFIX_INFO		m_aPrefix[dITEM_PREFIX_COUNT];	//	Ãß°¡È¿°E3°³
+	WORD					m_wBaseItem;					//	ì•„ì´í…œ ì¸ë±ìŠ¤
+	BYTE					m_bCount;						//	ìˆ«ìž
+	BYTE					m_bDurability;					//	ë‚´êµ¬ë ¥
+	BYTE					m_aOption[2];					//	ìƒì„±ë ë•Œ ë¶™ì€ ì˜µì…˜
+	cP_ITEM_PREFIX_INFO		m_aPrefix[dITEM_PREFIX_COUNT];	//	ì¶”ê°€íš¨ï¿½ÂE3ê°œ
 };
 
 #pragma	pack()
@@ -184,19 +184,19 @@ public:
 class	cP_ACTOR_EQUIPMENT
 {
 public:
-	WORD			m_wItemCount;			//	¾ÆÀÌÅÛÀÇ ¼E	
+	WORD			m_wItemCount;			//	ì•„ì´í…œì˜ ï¿½ÂE	
 	cP_ITEM			m_aEquip[dEQUIPMENT_PART_COUNT];
 	cP_ITEM			m_aItems[dOWN_ITEM_COUNT];
 };
 
 //
-//	ÇÊµå¿¡ ¶³¾ûÝE¾ÆÀÌÅÛ
+//	í•„ë“œì— ë–¨ì—‰ï¿½ÂEì•„ì´í…œ
 class	cP_DROPPED_ITEM
 {
 public:
 	DWORD			m_bf10Serial	:	10;
 	DWORD			m_bf14BaseItem	:	14;
-	DWORD			m_bf4Type		:	4;	//	Å¸ÀÔ
+	DWORD			m_bf4Type		:	4;	//	íƒ€ìž…
 	WORD			m_wCount;
 	WORD			wX,wY;
 };	//	class	cDROPPED_ITEM
@@ -214,17 +214,17 @@ public:
 //	Operater Status
 enum
 {
-	eOS_NORMAL		=	1,	//	³E»
-	eOS_HIDE		=	2,	//	ÀáÇE_-
-	eOS_ANNOUNCE	=	3,	//	±¤°E.
+	eOS_NORMAL		=	1,	//	ï¿½ÂEï¿½
+	eOS_HIDE		=	2,	//	ìž ï¿½ÂE_-
+	eOS_ANNOUNCE	=	3,	//	ê´‘ï¿½ÂE.
 };
 
 //
 //	Operater Level
 enum
 {
-	eOL_0			=	0,	//	ÀÏ¹Ý ÇÃ·¹ÀÌ¾E	eOL_1			=	1,	//	¸¶½ºÅÍ(ÀEÉ-_-)
-	eOL_2			=	2,	//	Á÷¿E	eOL_3			=	3,	//	¾Ë¹Ù»ý
+	eOL_0			=	0,	//	ì¼ë°˜ í”Œë ˆì´ï¿½ÂE	eOL_1			=	1,	//	ë§ˆìŠ¤í„°(ï¿½ÂEï¿½-_-)
+	eOL_2			=	2,	//	ì§ï¿½ÂE	eOL_3			=	3,	//	ì•Œë°”ìƒ
 };
 
 enum
@@ -261,12 +261,12 @@ typedef union _union_time
 {
     struct 
 	{
-		DWORD	year		:	6;	//	¿¬
-		DWORD	month		:	4;	//	¿E		
-		DWORD	day			:	5;	//	ÀÏ
-		DWORD	hour		:	5;	//	½Ã
-		DWORD	minute		:	6;	//	ºÐ
-		DWORD	second		:	6;	//	ÃÊ
+		DWORD	year		:	6;	//	ì—°
+		DWORD	month		:	4;	//	ï¿½ÂE		
+		DWORD	day			:	5;	//	ì¼
+		DWORD	hour		:	5;	//	ì‹œ
+		DWORD	minute		:	6;	//	ë¶„
+		DWORD	second		:	6;	//	ì´ˆ
     };
 
     DWORD	m_dwValue;
@@ -286,48 +286,48 @@ public:
 //	Premium Service
 enum
 {
-	ePS_FREE	,	//	°øÂ¥ À¯ÀE	
-	ePS_LEVEL_1	,	//	·¹º§ 1
-	ePS_LEVEL_2	,	//	·¹º§ 2
-	ePS_LEVEL_3	,	//	·¹º§ 3
+	ePS_FREE	,	//	ê³µì§œ ìœ ï¿½ÂE	
+	ePS_LEVEL_1	,	//	ë ˆë²¨ 1
+	ePS_LEVEL_2	,	//	ë ˆë²¨ 2
+	ePS_LEVEL_3	,	//	ë ˆë²¨ 3
 };
 
 class	CPlayerSaveDataForClientDefine :	public CJobBasicDataDefine , public CPlayerEquipmentDataDefine
 {
 public:
 	char				m_strId[dID_LENGTH];//ID
-	char				m_strName[dNAME_LENGTH];//ÀÌ¸§
+	char				m_strName[dNAME_LENGTH];//ì´ë¦„
 
-	WORD				m_wJob;				//	ÇöÀEÁ÷¾E	
-	int					m_iGold;			//	µ·
-	WORD				m_wLevelPoint;		//	·¹º§¾EÆ÷ÀÎÆ®
+	WORD				m_wJob;				//	í˜„ï¿½ÂEì§ï¿½ÂE	
+	int					m_iGold;			//	ëˆ
+	WORD				m_wLevelPoint;		//	ë ˆë²¨ï¿½ÂEí¬ì¸íŠ¸
 
-	WORD				m_wCurrentField;	//ÇöÀEÇÊµE
+	WORD				m_wCurrentField;	//í˜„ï¿½ÂEí•„ï¿½ÂE
 	int					m_iXPos,m_iYPos;
-	WORD				m_wLastVillage;		//¸¶Áö¸·À¸·Î ¶°³ª¿Â ¸¶À»
+	WORD				m_wLastVillage;		//ë§ˆì§€ë§‰ìœ¼ë¡œ ë– ë‚˜ì˜¨ ë§ˆì„
 
 	WORD				m_wGuildSerial;
 	WORD				m_wGuildRank;
 	WORD				m_wBonusSkillPoint;
 
 	WORD				m_bf1IsDenyCommunity							:	1;
-	WORD				m_bf1IsAddPetSystemBy20040916					:	1;	//	ÆE½Ã½ºÅÛ ½ÃÀÛ
+	WORD				m_bf1IsAddPetSystemBy20040916					:	1;	//	ï¿½ÂEì‹œìŠ¤í…œ ì‹œìž‘
 	WORD				m_bf1IsReadyToMakeGuild							:	1;
 	WORD				m_bf1IsAddFailedPremiumItemInfoAndResetWayPoint	:	1;
 	WORD				m_bf1IsResetPremiumFieldInItem					:	1;
 	WORD				m_bf1IsBeginPremiumService						:	1;
 
 	WORD				m_bf1IsReceiveRiceCakeSoup						:	1;
-	WORD				m_bf1IsAddQuestCountDownTimer20055027			:	1;	//	ºó°Å
+	WORD				m_bf1IsAddQuestCountDownTimer20055027			:	1;	//	ë¹ˆê±°
 
 	WORD				m_bf1IsIncorrectConnectByGuildBattle			:	1;
-	WORD				m_bf1IsResetHidePitchmanShop20041102			:	1;	//	ºó°Å
+	WORD				m_bf1IsResetHidePitchmanShop20041102			:	1;	//	ë¹ˆê±°
 	WORD				m_bf3UseBoostCount								:	3;
 	WORD				m_bf1AddResetSkillStateScroll					:	1;
 	WORD				m_bf1IsHidePitchmanShop							:	1;
-	WORD				m_bf1AddData2005_03_03							:	1;	//	16 ¸ðµÎ »ç¿EÔ
+	WORD				m_bf1AddData2005_03_03							:	1;	//	16 ëª¨ë‘ ì‚¬ï¿½ÂEï¿½
 
-	CAbilityDefine		m_aAbility[dABILITY_COUNT];	//¾ûÖô·¯Æ¼
+	CAbilityDefine		m_aAbility[dABILITY_COUNT];	//ì—‰é›·ëŸ¬í‹°
 	CPlayerTitleInfo	m_aTitle[dMAX_PLAYER_TITLE_COUNT];
 	tsProcessQuestField	m_aProcessQuest[dMAX_PROCESS_QUEST_COUNT];
 	CPlayerWayPointInfo	m_aWayPoint[dMAX_PLAYER_WAY_POINT_COUNT];
@@ -336,9 +336,9 @@ public:
 class	CPlayerSaveDataForServerDefine	:	public CPlayerSaveDataForClientDefine
 {
 public:
-	DWORD				m_dwPlayTime;					//	ÇÃ·¹ÀÌ Å¸ÀÓ ºÐ ´ÜÀ§
+	DWORD				m_dwPlayTime;					//	í”Œë ˆì´ íƒ€ìž„ ë¶„ ë‹¨ìœ„
 
-	DWORD				m_bf12DeathPeneltySecond		: 12;	//	Á×À½À¸·Î ÀÎÇÑ ´É·ÂÄ¡ Æä³ÎÆ¼ Å¸ÀÓ
+	DWORD				m_bf12DeathPeneltySecond		: 12;	//	ì£½ìŒìœ¼ë¡œ ì¸í•œ ëŠ¥ë ¥ì¹˜ íŽ˜ë„í‹° íƒ€ìž„
 	DWORD				m_bf6ProhibitCommunityMinute	: 6;
 	DWORD				m_bf5LastUpdateDay				: 5;
 	DWORD				m_bf1WaitForRecallForKelby		: 1;
@@ -350,22 +350,22 @@ public:
 	DWORD				m_dwSaveCount;
 	DWORD				m_dwPeneltyTime;
 
-	WORD				m_bf1IsPlayOnGuildBattle		:	1;	//	±æµåÀEÁßÀÌ´Ù
-	WORD				m_bf5GuildBattleDay				:	5;	//	±æµåÀEÀÔÀåÇÑ ³¯
-	WORD				m_bf1IsTeleportToCouple			:	1;	//	Ä¿ÇÃ¸µÀ» »ç¿EØ ÅÚ·¹Æ÷Æ®ÁßÀÌ´Ù.
-	WORD				m_bf7UseCoupleRingSlot			:	7;	//	»ç¿EÑ Ä¿ÇÃ¸µ ¾ÆÀÌÅÛ ½½·Ô
+	WORD				m_bf1IsPlayOnGuildBattle		:	1;	//	ê¸¸ë“œï¿½ÂEì¤‘ì´ë‹¤
+	WORD				m_bf5GuildBattleDay				:	5;	//	ê¸¸ë“œï¿½ÂEìž…ìž¥í•œ ë‚ 
+	WORD				m_bf1IsTeleportToCouple			:	1;	//	ì»¤í”Œë§ì„ ì‚¬ï¿½ÂEï¿½ í…”ë ˆí¬íŠ¸ì¤‘ì´ë‹¤.
+	WORD				m_bf7UseCoupleRingSlot			:	7;	//	ì‚¬ï¿½ÂEï¿½ ì»¤í”Œë§ ì•„ì´í…œ ìŠ¬ë¡¯
 	WORD				m_bf1CancelQuestWork			:	1;
 	WORD				m_bf1CancelQuestWork2			:	1;	//	16
 
-	WORD				m_wAvatarIndex;				//	¾Æ¹ÙÅ¸ ÀÎµ¦½º
-	WORD				m_wRequitalCounter;			//	ÇÁ¸®¹Ì¾E¾ÆÀÌÅÛ º¸»EÄ«¿ûáÍ
+	WORD				m_wAvatarIndex;				//	ì•„ë°”íƒ€ ì¸ë±ìŠ¤
+	WORD				m_wRequitalCounter;			//	í”„ë¦¬ë¯¸ï¿½ÂEì•„ì´í…œ ë³´ï¿½ÂEì¹´ì›è¨´
 
 	BYTE				m_aCompleteQuest[dQUEST_BUFFER_SIZE];
 
 	WORD				m_bf10ESD_Time			:	10;	//	enter secret dungeon time
 	WORD				m_bf6ExtraInventorySize	:	6;	//	16
 
-	UTime				m_timeGuildJoinTime;		//	±æµE°¡ÀÔÇÑ ½Ã°£
+	UTime				m_timeGuildJoinTime;		//	ê¸¸ï¿½ÂEê°€ìž…í•œ ì‹œê°„
 	CItemDefine			m_itemFailedPremiumItem;
 
 	cPetDefine			m_aPet[dOWN_PET_COUNT];
@@ -375,8 +375,8 @@ public:
 	WORD				m_bf3GreateGodGrace		:	3;
 
 	BYTE				m_bRemainSecondForUseGateGlove;
-	BYTE				m_bf1IsMoveFieldByDeath		:	1;	//	Á×¾ûØ­ ¸¶À»·Î µ¹¾Æ ¿Ô´Ù.
-	BYTE				m_bf1IsMoveFieldByTeleport	:	1;	//	Á×¾ûØ­ ¸¶À»·Î µ¹¾Æ ¿Ô´Ù.
+	BYTE				m_bf1IsMoveFieldByDeath		:	1;	//	ì£½ì—‰å¹• ë§ˆì„ë¡œ ëŒì•„ ì™”ë‹¤.
+	BYTE				m_bf1IsMoveFieldByTeleport	:	1;	//	ì£½ì—‰å¹• ë§ˆì„ë¡œ ëŒì•„ ì™”ë‹¤.
 	BYTE				m_bf1IsAddIncreaseLastDamageBy20070508	:	1;
 	BYTE				m_bf1IsChangePetJobData	:	1;
 	BYTE				m_bf1IsAddCH5System		:	1;
@@ -398,13 +398,13 @@ public:
 	DWORD				m_bf1IsSaveUserCustomData	:	1;
 	DWORD				m_bf1IsReadyToSelectGuildMark:	1;
 	DWORD				m_bf1IsAddMiniPetSystem		:	1;	//	27
-	DWORD				m_bf5ActiveMiniPet			:	5;	//	ÇöÀEÈ°¼ºÈ­µÈ ¹Ì´ÏÆE
+	DWORD				m_bf5ActiveMiniPet			:	5;	//	í˜„ï¿½ÂEí™œì„±í™”ëœ ë¯¸ë‹ˆï¿½ÂE
 	WORD				m_awQuestCountDownTimer[dMAX_PROCESS_QUEST_COUNT];
 
 	WORD				m_wRedStonePoint;
 	WORD				m_wBoostExpSecondByTreasureMapEvent,m_wBoostGoldSecondByTreasureMapEvent;
 
-	WORD				m_wProcessChapterIndex;	//	ÁøÇEÁßÀÎ ¸ÞÀÎ Äù½ºÆ® Ã©ÅÍ ÀÎµ¦½º. GVG ¼­¹EÄ³¸¯ÅÍ´Â ÀÌ Á¤º¸°¡ 1ÀÌ¸EÀÌ¸§¿¡ '_' °¡ ¾ÈºÙ°E¹Ù·Î ¾ËÆÄºªÀÌ ºÙÀº °æ¿EÙ.
+	WORD				m_wProcessChapterIndex;	//	ì§„ï¿½ÂEì¤‘ì¸ ë©”ì¸ í€˜ìŠ¤íŠ¸ ì±•í„° ì¸ë±ìŠ¤. GVG ì„œï¿½ÂEìºë¦­í„°ëŠ” ì´ ì •ë³´ê°€ 1ì´ï¿½ÂEì´ë¦„ì— '_' ê°€ ì•ˆë¶™ï¿½ÂEë°”ë¡œ ì•ŒíŒŒë²³ì´ ë¶™ì€ ê²½ï¿½ÂEï¿½.
 	WORD				m_wProcessHighQuestIndex;
 
 	WORD				m_awMainQuestValue[10];
@@ -427,9 +427,9 @@ public:
 	UINT				m_reversalFrameDay	:	5;
 	UINT				m_reversalFrameHour	:	5;
 	UINT				m_reversalFrameMinute:	6;	//	25	
-	UINT				m_bf1IsLevelDown	:	1;	//	26	ÀúÀåÇÒ¶§ ·¹º§ ´Ù¿EÇã°¡
+	UINT				m_bf1IsLevelDown	:	1;	//	26	ì €ìž¥í• ë•Œ ë ˆë²¨ ë‹¤ï¿½ÂEí—ˆê°€
 
-//	2007 11 02 Ã©ÅÍ 5 Ãß°¡¸¦ À§ÇØ Ãß°¡ÇÑ µ¥ÀÌÅÍµE	
+//	2007 11 02 ì±•í„° 5 ì¶”ê°€ë¥¼ ìœ„í•´ ì¶”ê°€í•œ ë°ì´í„°ï¿½ÂE	
 	WORD				m_bf4CH5StateBonusCount	:	4;
 	WORD				m_bf4CH5SkillBonusCount	:	4;
 	WORD				m_bf4CH5HPBonusCount	:	4;
@@ -438,7 +438,7 @@ public:
 	UINT				m_bf4CH5PeneltyHPBonusCount		:	4;
 	UINT				m_bf4CH5PeneltyCPBonusCount		:	4;
 	UINT				m_bf5BardTitleCoolTime			:	5;
-	UINT				m_bf4LevelOfLatestReceivedCH5EquipLevelBonus	:	4;	//	¸¶Áö¸·À¸·Î Ã©ÅÍ 5 ÀåºE·¹º§ º¸Á¤ ºÎÀE¹Þ¾ÒÀ» ¶§ ÄªÈ£ ·¹º§
+	UINT				m_bf4LevelOfLatestReceivedCH5EquipLevelBonus	:	4;	//	ë§ˆì§€ë§‰ìœ¼ë¡œ ì±•í„° 5 ìž¥ï¿½ÂEë ˆë²¨ ë³´ì • ë¶€ï¿½ÂEë°›ì•˜ì„ ë•Œ ì¹­í˜¸ ë ˆë²¨
 	UINT				m_bf3GuildDungeonPlayTime		:	3;	//	20
 	UINT				:	0;	//	
 
@@ -450,11 +450,11 @@ public:
 	UINT				m_bf4EatEarthMiniPetCount	:	4;
 	UINT				m_bf4EatLightMiniPetCount	:	4;
 	UINT				m_bf4EatDarkMiniPetCount	:	4;
-	UINT				m_bf4RebirthCount			:	4;	//	ÀEý È½¼E	
-	UINT				m_bf4UseSealSphereOfDawnCount:	4;	//	»õº®ÀÇ ºÀÀÎ±¸ »ç¿EÈ½¼E
+	UINT				m_bf4RebirthCount			:	4;	//	ï¿½ÂEï¿½ íšŸï¿½ÂE	
+	UINT				m_bf4UseSealSphereOfDawnCount:	4;	//	ìƒˆë²½ì˜ ë´‰ì¸êµ¬ ì‚¬ï¿½ÂEíšŸï¿½ÂE
 	BYTE				m_aCompleteArbeit2[dARBEIT_BUFFER_SIZE];
 
-	UINT				m_bf6LastTransAvatarToGVGYear		:	6;	//	¸¶Áö¸·À¸·Î ÀEÛÇÑ ¿¬µµ
+	UINT				m_bf6LastTransAvatarToGVGYear		:	6;	//	ë§ˆì§€ë§‰ìœ¼ë¡œ ï¿½ÂEå¾˜ï¿½ ì—°ë„
 	UINT				m_bf4LastTransAvatarToGVGMonth	:	4;
 	UINT				m_bf5LastTransAvatarToGVGDay		:	5;
 
@@ -464,24 +464,26 @@ class	cPLAYER_SAVE_DATA_BASE_FOR_CLIENT	:	public CJobBasicDataDefine , public cP
 {
 public:
 	char				m_strId[dID_LENGTH];//ID
-	char				m_strName[dNAME_LENGTH];//ÀÌ¸§
-	WORD				m_wAvatarIndex;//¾Æ¹ÙÅ¸ ÀÎµ¦½º
+	char				m_strName[dNAME_LENGTH];//ì´ë¦„
+	WORD				m_wAvatarIndex;//ì•„ë°”íƒ€ ì¸ë±ìŠ¤
 
-	WORD				m_wJob;//ÇöÀEÁ÷¾E	int					m_iGold;
-	WORD				m_wLevelPoint;//·¹º§¾EÆ÷ÀÎÆ®
+	WORD				m_wJob;//í˜„ï¿½ÂEì§ï¿½ÂE
+	int					m_iGold;
+	WORD				m_wLevelPoint;//ë ˆë²¨ï¿½ÂEí¬ì¸íŠ¸
 
-	WORD				m_wLastVillage;//¸¶Áö¸·À¸·Î ¶°³ª¿Â ¸¶À»
-	WORD				m_wCurrentField;//ÇöÀEÇÊµE	cP_4POINT			m_pos;//À§Ä¡
+	WORD				m_wLastVillage;//ë§ˆì§€ë§‰ìœ¼ë¡œ ë– ë‚˜ì˜¨ ë§ˆì„
+	WORD				m_wCurrentField;//í˜„ï¿½ÂEí•„ï¿½ÂE
+	cP_4POINT			m_pos;//ìœ„ì¹˜
 
-	DWORD				m_dwPlayTime;	//	ÇÃ·¹ÀÌ Å¸ÀÓ ºÐ ´ÜÀ§
+	DWORD				m_dwPlayTime;	//	í”Œë ˆì´ íƒ€ìž„ ë¶„ ë‹¨ìœ„
 	int					m_iStolenExperience;
 	WORD				m_wGuildSerial;
 	WORD				m_wGuildRank;
 	BYTE				m_bCurrentLevelDeathCount;
 	BYTE				m_bDummyValue;
-	char				m_strDummy[6];	//	20¹ÙÀÌÆ® (dNAME_LENGTH +2) - 8 m_dwPlayTime,m_wGuildSerial,m_wGuildRank
+	char				m_strDummy[6];	//	20ë°”ì´íŠ¸ (dNAME_LENGTH +2) - 8 m_dwPlayTime,m_wGuildSerial,m_wGuildRank
 
-	CAbilityDefine		m_aAbility[dABILITY_COUNT];	//¾ûÖô·¯Æ¼
+	CAbilityDefine		m_aAbility[dABILITY_COUNT];	//ì—‰é›·ëŸ¬í‹°
 
 	CPlayerTitleInfo	m_aTitle[dMAX_PLAYER_TITLE_COUNT];
 	WORD				m_wBonusSkillPoint;
@@ -495,13 +497,13 @@ public:
 class	cPLAYER_SAVE_DATA_FOR_SERVER	:	public cPLAYER_SAVE_DATA_BASE_FOR_CLIENT
 {
 public:
-	DWORD				m_dwEventCheckerCounter;	//	ÀÌº¥Æ® Ã¼Ä¿
+	DWORD				m_dwEventCheckerCounter;	//	ì´ë²¤íŠ¸ ì²´ì»¤
 	DWORD				m_dwPeneltyTime;
 	BYTE				m_aCompleteQuest[dQUEST_BUFFER_SIZE];
 };
 
 //
-//	¾×ÅÍ µ¥ÀÌÅÍ(¼­¹ö¿¡ ÀúÀåÇÒ¶§ ÀÌ µ¥ÀÌÅÍ¸¦ ÀúÀåÇÑ´Ù.)
+//	ì•¡í„° ë°ì´í„°(ì„œë²„ì— ì €ìž¥í• ë•Œ ì´ ë°ì´í„°ë¥¼ ì €ìž¥í•œë‹¤.)
 class	cP_PLAYER_SAVE_DATA	:	public cPLAYER_SAVE_DATA_FOR_SERVER
 {
 public:
@@ -510,11 +512,11 @@ public:
 class	cACTOR_FACTOR_TYPE_FOR_SAVE
 {
 public:
-	short			m_sValue;		//	ÀåºñÇÑ »óÅÂ¿¡¼­ÀÇ ¼öÄ¡
+	short			m_sValue;		//	ìž¥ë¹„í•œ ìƒíƒœì—ì„œì˜ ìˆ˜ì¹˜
 	short			m_sFixValue;
 
-	short			m_sCorrectValue;//	ÀÏ½ÃÀûÀ¸·Î ´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	WORD			m_wTime;		//	À¯ÁE½Ã°£
+	short			m_sCorrectValue;//	ì¼ì‹œì ìœ¼ë¡œ ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	WORD			m_wTime;		//	ìœ ï¿½ÂEì‹œê°„
 };
 
 class cACTOR_GGG
@@ -543,51 +545,51 @@ public:
 };
 
 //
-//	ÇÊµå¸¦ ÀÌµ¿ÇÏ°Å³ª ÇØµµ À¯ÁöµÇ´Â µ¥ÀÌÅÍµE
+//	í•„ë“œë¥¼ ì´ë™í•˜ê±°ë‚˜ í•´ë„ ìœ ì§€ë˜ëŠ” ë°ì´í„°ï¿½ÂE
 class	CUpkeepPlayerData
 {
 private:
 	WORD					m_wParty;
 public:
-	WORD					m_wSpecialSkillField;	//	Æ¯¼E½ºÅ³ ÇÊµE_-?
+	WORD					m_wSpecialSkillField;	//	íŠ¹ï¿½ÂEìŠ¤í‚¬ í•„ï¿½ÂE_-?
 	WORD					m_wMachine;
 	WORD					m_bf10Costume					:	10;
 	WORD					m_bf1IsEvilSpritOfChristmas		:	1;
 	WORD					m_bf1IsHide						:	1;
 	DWORD					m_bf4Skin						:	4;			//16
 
-	DWORD					m_bf1IsMoveByChangeGuildHallOwner:	1;	//	±æµåÈ¦ ÁÖÀÎÀÌ³ª ±æµåÈ¦ ¸ð¾çÀÌ ¹Ù²ûÚûØ­ °­Á¦·Î ¸¶À»·Î ÀÌµ¿ ½ÃÄ×´Ù.
-	DWORD					m_bf1IsMoveByEndOfGuildBattle	:	1;	//	±æµåÀEÌ ³¡³ª¼­ °­Á¦·Î ¸¶À»·Î ÀÌµ¿ ½ÃÄ×´Ù.
-	DWORD					m_bf1IsMoveByNotGuildBattleTime	:	1;	//	±æµåÀEßÀÌ ¾Æ´Ï¶ó¼­ ¸¶À»·Î ÀÌµ¿ ½ÃÄ×´Ù.
-	DWORD					m_bf1IsMoveByOXQuizProcess		:	1;	//	ÀÌ¹Ì OX ÄûÁûÌ¡ ½ÃÀÛÇÏ°EÀÖ¾ûØ­ ¸¶À»·Î ÀÌµ¿ ½ÃÄ×´Ù.
-	DWORD					m_bf1IsMoveByNotOXQuizTime		:	1;	//	OX ÄûÁE½Ã°£ÀÌ ¾Æ´Ï¶E¸¶À»·Î ÀÌµ¿ ½ÃÄ×´Ù.
-	DWORD					m_bf1IsMoveByEndOfOXQuiz		:	1;	//	OX ÄûÁûÌ¡ Á¾·áµÇ¼­ ¸¶À»·Î ÀÌµ¿ ½ÃÅ´
+	DWORD					m_bf1IsMoveByChangeGuildHallOwner:	1;	//	ê¸¸ë“œí™€ ì£¼ì¸ì´ë‚˜ ê¸¸ë“œí™€ ëª¨ì–‘ì´ ë°”ë”æ‹”å¹• ê°•ì œë¡œ ë§ˆì„ë¡œ ì´ë™ ì‹œì¼°ë‹¤.
+	DWORD					m_bf1IsMoveByEndOfGuildBattle	:	1;	//	ê¸¸ë“œï¿½ÂEï¿½ ëë‚˜ì„œ ê°•ì œë¡œ ë§ˆì„ë¡œ ì´ë™ ì‹œì¼°ë‹¤.
+	DWORD					m_bf1IsMoveByNotGuildBattleTime	:	1;	//	ê¸¸ë“œï¿½ÂEåƒï¿½ ì•„ë‹ˆë¼ì„œ ë§ˆì„ë¡œ ì´ë™ ì‹œì¼°ë‹¤.
+	DWORD					m_bf1IsMoveByOXQuizProcess		:	1;	//	ì´ë¯¸ OX í€´ì§Šçž¼ ì‹œìž‘í•˜ï¿½ÂEìžˆì—‰å¹• ë§ˆì„ë¡œ ì´ë™ ì‹œì¼°ë‹¤.
+	DWORD					m_bf1IsMoveByNotOXQuizTime		:	1;	//	OX í€´ï¿½ÂEì‹œê°„ì´ ì•„ë‹ˆï¿½ÂEë§ˆì„ë¡œ ì´ë™ ì‹œì¼°ë‹¤.
+	DWORD					m_bf1IsMoveByEndOfOXQuiz		:	1;	//	OX í€´ì§Šçž¼ ì¢…ë£Œë˜ì„œ ë§ˆì„ë¡œ ì´ë™ ì‹œí‚´
 	DWORD					m_bf1IsBannedSecretDungeon		:	1;			//23
 
-	DWORD					m_bf5MagicCarpetShape			:	5;	//	ÇöÀE¾çÅºÀÚ ¸ð¾E	//28
-	DWORD					m_bf1IsJoinGuildDungeon			:	1;	//	±æµå´øÀEÔÀåÇÏ´ÂÁß.		//29
+	DWORD					m_bf5MagicCarpetShape			:	5;	//	í˜„ï¿½ÂEì–‘íƒ„ìž ëª¨ï¿½ÂE	//28
+	DWORD					m_bf1IsJoinGuildDungeon			:	1;	//	ê¸¸ë“œë˜ï¿½ÂEçº›æ´‹æ±‚ì©ï¿½.		//29
 
 	WORD					m_wBoostPower,m_wBoostTime;
 	WORD					m_wWordEventTime;
-	//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-	//¦­°Å½ÅÀÇ ÀºÃÑ
+	//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+	//â”ƒê±°ì‹ ì˜ ì€ì´
 	cACTOR_GGG				m_GGG;
 	WORD					m_wGuildMasterGrace;
-	//¦­°Å½ÅÀÇ ÀºÃÑ
-	//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+	//â”ƒê±°ì‹ ì˜ ì€ì´
+	//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 	cSummonBeastDefine		m_aSummonBeast[dOWN_SUMMON_BEAST_COUNT];
 
-	CItemDefine				m_jewel;						//	º¸¼®
+	CItemDefine				m_jewel;						//	ë³´ì„
 	WORD					m_wJewelTime;
 
-	WORD							m_wTransformationTime;		// º¯½Å ½Ã°£
-	WORD							m_wTransformationLevel;		// º¯½Å ·¹º§
-	WORD							m_wTransformationSkin;		// º¯½Å ½ºÅ²	
-	WORD							m_wTransformationSkill;		// º¯½Å ½ºÅ³	
+	WORD							m_wTransformationTime;		// ë³€ì‹  ì‹œê°„
+	WORD							m_wTransformationLevel;		// ë³€ì‹  ë ˆë²¨
+	WORD							m_wTransformationSkin;		// ë³€ì‹  ìŠ¤í‚¨	
+	WORD							m_wTransformationSkill;		// ë³€ì‹  ìŠ¤í‚¬	
 
-	inline	int				getPartySerial()				{return	m_wParty;}	//	ÆÄÆ¼¿¡ µé¾ûÌ¬´Ù.
-	inline	void			setPartySerial(int _iSerial)	{m_wParty	=	_iSerial;}	//	ÆÄÆ¼¿¡ µé¾ûÌ¬´Ù.
+	inline	int				getPartySerial()				{return	m_wParty;}	//	íŒŒí‹°ì— ë“¤ì—‰æª„ë‹¤.
+	inline	void			setPartySerial(int _iSerial)	{m_wParty	=	_iSerial;}	//	íŒŒí‹°ì— ë“¤ì—‰æª„ë‹¤.
 	inline	char*			getUpkeepPlayerDataPointer()	{return	(char*)this;}
 	inline	void			reset()
 	{
@@ -596,8 +598,8 @@ public:
 
 		m_bf1IsMoveByEndOfGuildBattle	=	FALSE;
 		m_bf1IsMoveByNotGuildBattleTime	=	FALSE;
-		m_bf1IsMoveByOXQuizProcess		=	FALSE;	//	ÀÌ¹Ì OX ÄûÁûÌ¡ ½ÃÀÛÇÏ°EÀÖ¾ûØ­ ¸¶À»·Î ÀÌµ¿ ½ÃÄ×´Ù.
-		m_bf1IsMoveByNotOXQuizTime		=	FALSE;	//	OX ÄûÁE½Ã°£ÀÌ ¾Æ´Ï¶E¸¶À»·Î ÀÌµ¿ ½ÃÄ×´Ù.
+		m_bf1IsMoveByOXQuizProcess		=	FALSE;	//	ì´ë¯¸ OX í€´ì§Šçž¼ ì‹œìž‘í•˜ï¿½ÂEìžˆì—‰å¹• ë§ˆì„ë¡œ ì´ë™ ì‹œì¼°ë‹¤.
+		m_bf1IsMoveByNotOXQuizTime		=	FALSE;	//	OX í€´ï¿½ÂEì‹œê°„ì´ ì•„ë‹ˆï¿½ÂEë§ˆì„ë¡œ ì´ë™ ì‹œì¼°ë‹¤.
 		m_bf1IsMoveByEndOfOXQuiz		=	FALSE;
 		m_bf1IsBannedSecretDungeon		=	FALSE;
 		m_bf1IsHide						=	FALSE;
@@ -686,15 +688,15 @@ public:
 
 #define	dACTIVE_REACTION_COUNT	4
 
-//¦­ÇÃ·¹ÀÌ¾Eµ¥ÀÌÅÍ Á¤ÀÇ
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒí”Œë ˆì´ï¿½ÂEë°ì´í„° ì •ì˜
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 //
-//	Å¬¶óÀÌ¾ðÆ® ÁÂÇ¥ Á¤º¸
+//	í´ë¼ì´ì–¸íŠ¸ ì¢Œí‘œ ì •ë³´
 class	CMinimumActorInfo
 {
 public:
-	WORD			bf11SerialInField	:	11;			//	ÇÊµå¾È¿¡¼­ ÇÃ·¹ÀÌ¾ûÜÇ ½Ã¸®¾E	
+	WORD			bf11SerialInField	:	11;			//	í•„ë“œì•ˆì—ì„œ í”Œë ˆì´ì—‰æ´‘ ì‹œë¦¬ï¿½ÂE	
 	WORD			bf2Team				:	2;
 	WORD			bf1IsNpc			:	1;
 
@@ -704,11 +706,11 @@ public:
 };	//	class	CMinimumActorInfo
 
 //
-//	Å¬¶óÀÌ¾ðÆ® ÁÂÇ¥ Á¤º¸
+//	í´ë¼ì´ì–¸íŠ¸ ì¢Œí‘œ ì •ë³´
 class	cEventNpcInfo
 {
 public:
-	DWORD			bf11Serial	:	11;		//11	ÇÊµå¾È¿¡¼­ ÇÃ·¹ÀÌ¾ûÜÇ ½Ã¸®¾E	
+	DWORD			bf11Serial	:	11;		//11	í•„ë“œì•ˆì—ì„œ í”Œë ˆì´ì—‰æ´‘ ì‹œë¦¬ï¿½ÂE	
 	DWORD			bf7Type		:	7;		//18
 	DWORD	:0;
 	WORD			wX,wY;
@@ -716,21 +718,21 @@ public:
 
 
 //
-//	¿ûÛµÀÚ Á¤º¸
+//	ì›æ»‚ìž ì •ë³´
 class	COperatorInfo
 {
 public:
-	WORD			wSerialInField;			//	ÇÊµå¾È¿¡¼­ ¿ûÛµÀÚÀÇ ½Ã¸®¾E	
+	WORD			wSerialInField;			//	í•„ë“œì•ˆì—ì„œ ì›æ»‚ìžì˜ ì‹œë¦¬ï¿½ÂE	
 	WORD			wOperatorLevel;
 	char			strName[dNAME_LENGTH];
 };
 
 //
-//	Å¬¶óÀÌ¾ðÆ® ÁÂÇ¥ Á¤º¸
+//	í´ë¼ì´ì–¸íŠ¸ ì¢Œí‘œ ì •ë³´
 class	CActorInfoForOuterActor
 {
 public:
-	WORD			wSerialInField;			//	ÇÊµå¾È¿¡¼­ ÇÃ·¹ÀÌ¾ûÜÇ ½Ã¸®¾E	
+	WORD			wSerialInField;			//	í•„ë“œì•ˆì—ì„œ í”Œë ˆì´ì—‰æ´‘ ì‹œë¦¬ï¿½ÂE	
 	WORD			wX,wY;
 	LONGLONG		dwEnchantedMask;
 };	//	class	CMinimumActorInfo
@@ -775,7 +777,7 @@ public:
 	DWORD			burst				: 1;
 };
 
-//	Å¬¶óÀÌ¾ðÆ®°¡ ±â¾EØµÑ ÇÊ¿ä°¡ ÀÖ´Â ÃÖ¼ÒÇÑÀÇ Á¤º¸
+//	í´ë¼ì´ì–¸íŠ¸ê°€ ê¸°ï¿½ÂEå·’ï¿½ í•„ìš”ê°€ ìžˆëŠ” ìµœì†Œí•œì˜ ì •ë³´
 class	CSimplePlayerInfo
 {
 public:
@@ -783,23 +785,23 @@ public:
 	DWORD			bf8RestHp			: 8;
 	DWORD			bf16MaxHp			: 16;
 	DWORD			bf2Team				: 2;
-	DWORD			bf2RideDog			: 2;	//	°³¸¦ Å¸°EÀÖ´Ù.
+	DWORD			bf2RideDog			: 2;	//	ê°œë¥¼ íƒ€ï¿½ÂEìžˆë‹¤.
 	DWORD			bf1IsSyncHeroInfo	: 1;
 	DWORD			bf1IsHide			: 1;
-//	32ºñÆ®
+//	32ë¹„íŠ¸
 
 	DWORD			bf4Weapon			: 4;
 	DWORD			bf8WeaponEffect		: 8;
 	DWORD			bf4Shield			: 4;
 	DWORD			bf2Armor			: 2;
 	DWORD			bf3ArmorPalette		: 3;
-	DWORD			bf11SerialInField	: 11;			//	ÇÊµå¾È¿¡¼­ ÇÃ·¹ÀÌ¾ûÜÇ ½Ã¸®¾E//	32ºñÆ®
+	DWORD			bf11SerialInField	: 11;			//	í•„ë“œì•ˆì—ì„œ í”Œë ˆì´ì—‰æ´‘ ì‹œë¦¬ï¿½ÂE//	32ë¹„íŠ¸
 
 	DWORD			bf14FirstAidHP		: 14;
 	DWORD			bf10Job				: 10;
 	DWORD			bf5MagicCarpetShape	: 5;
 	DWORD			bf3OperatorLevel	: 3;
-//	32ºñÆ®
+//	32ë¹„íŠ¸
 
 	DWORD			bf3Direct			: 3;
 	DWORD			bf5Scale			: 5;
@@ -810,16 +812,16 @@ public:
 	DWORD			bf1IsMarionette		: 1;
 	DWORD			bf3GuildPetType		: 3;
 	DWORD			bf1IsUnionPartyUser	: 1;
-//	28ºñÆ®
+//	28ë¹„íŠ¸
 
 	DWORD			bf12GuildSerial		: 12;
 	DWORD			bf5MiniPetType		: 5;
 	DWORD			bf5MiniPetType2		: 5;
 	DWORD			bf4RebirthCount		: 4;
-	DWORD			bf1IsSoundOfLedersBellsLeader	:	1;	//	27ºñÆ®
+	DWORD			bf1IsSoundOfLedersBellsLeader	:	1;	//	27ë¹„íŠ¸
 
-	WORD			wX,wY;					//	À§Ä¡
-	LONGLONG		dwEnchantedMask;		//	ÀÎÃ¦Æ¼µE¸¶½ºÅ©
+	WORD			wX,wY;					//	ìœ„ì¹˜
+	LONGLONG		dwEnchantedMask;		//	ì¸ì±ˆí‹°ï¿½ÂEë§ˆìŠ¤í¬
 	uEnchantedImage	enchantedImage;
 	WORD			wItemEffect;
 
@@ -827,7 +829,7 @@ public:
 };
 
 //
-//	Å¬¶óÀÌ¾ðÆ®°¡ ±â¾EØµÑ ÇÊ¿ä°¡ ÀÖ´Â ÃÖ¼ÒÇÑÀÇ Á¤º¸
+//	í´ë¼ì´ì–¸íŠ¸ê°€ ê¸°ï¿½ÂEå·’ï¿½ í•„ìš”ê°€ ìžˆëŠ” ìµœì†Œí•œì˜ ì •ë³´
 class	CVerySimplePlayerInfo
 {
 public:
@@ -843,15 +845,15 @@ public:
 	DWORD			bf1IsHide			: 1;
 	DWORD			bf1IsCopyActor		: 1;
 	DWORD			bf1IsMarionette		: 1;
-//	32ºñÆ®
+//	32ë¹„íŠ¸
 
-	DWORD			bf11SerialInField	: 11;	//	ÇÊµå¾È¿¡¼­ ÇÃ·¹ÀÌ¾ûÜÇ ½Ã¸®¾E	
+	DWORD			bf11SerialInField	: 11;	//	í•„ë“œì•ˆì—ì„œ í”Œë ˆì´ì—‰æ´‘ ì‹œë¦¬ï¿½ÂE	
 	DWORD			bf5Scale			: 5;
 	DWORD			bf3OperatorLevel	: 3;
-	DWORD			bf2RideDog			: 2;	//	°³¸¦ Å¸°EÀÖ´Ù.
-	DWORD			bf1IsDeath			: 1;	//	µØÁ³³Ä?
+	DWORD			bf2RideDog			: 2;	//	ê°œë¥¼ íƒ€ï¿½ÂEìžˆë‹¤.
+	DWORD			bf1IsDeath			: 1;	//	ë’ˆì¡Œëƒ?
 	DWORD			bf10Job				: 10;
-//	32ºñÆ®
+//	32ë¹„íŠ¸
 
 	DWORD			bf4MagicCarpetShape	:	4;
 	DWORD			bf4BlockerShape		:	4;
@@ -860,11 +862,11 @@ public:
 	DWORD			bf5MiniPetType2		:	5;
 	DWORD			bf1IsUnionPartyUser	:	1;
 	DWORD			bf4RebirthCount		:	4;
-	DWORD			bf1IsSoundOfLedersBellsLeader	:	1;	//	27ºñºÆ
+	DWORD			bf1IsSoundOfLedersBellsLeader	:	1;	//	27ë¹„ëµˆ
 
 
-	WORD			wX,wY;					//	À§Ä¡
-	LONGLONG		dwEnchantedMask;		//	ÀÎÃ¦Æ¼µE¸¶½ºÅ©
+	WORD			wX,wY;					//	ìœ„ì¹˜
+	LONGLONG		dwEnchantedMask;		//	ì¸ì±ˆí‹°ï¿½ÂEë§ˆìŠ¤í¬
 	uEnchantedImage	enchantedImage;
 	WORD			wItemEffect;
 };
@@ -873,34 +875,34 @@ public:
 class	CSimpleMonsterInfo
 {
 public:
-	DWORD			bf2Kind				: 2;		//	ÇÃ·¹ÀÌ¾ûÏÄ?
+	DWORD			bf2Kind				: 2;		//	í”Œë ˆì´ì—‰è¬³?
 	DWORD			bf10FirstAidHP		: 10;
 	DWORD			bf10Level			: 10;
 	DWORD			bf8Scale			: 8;
-	DWORD			bf2Team				: 2;	//	ÆÀ
-//	32ºñÆ®
+	DWORD			bf2Team				: 2;	//	íŒ€
+//	32ë¹„íŠ¸
 
-	DWORD			bf3Direct			: 3;	//	¼­ ÀÖ´Â ¹æÇE	
-	DWORD			bf1IsRegen			: 1;	//	¸®Á¨µÈ°Å³Ä?
-	DWORD			bf11SerialInField	: 11;	//	ÇÊµå¾È¿¡¼­ ½Ã¸®¾E	
-	DWORD			bf1IsPet			: 1;	//	ÆEÌ´Ù.
+	DWORD			bf3Direct			: 3;	//	ì„œ ìžˆëŠ” ë°©ï¿½ÂE	
+	DWORD			bf1IsRegen			: 1;	//	ë¦¬ì  ëœê±°ëƒ?
+	DWORD			bf11SerialInField	: 11;	//	í•„ë“œì•ˆì—ì„œ ì‹œë¦¬ï¿½ÂE	
+	DWORD			bf1IsPet			: 1;	//	ï¿½ÂEç”„ï¿½.
 	DWORD			bf1RideTamer		: 1;
 	DWORD			bf11Tamer			: 11;
 	DWORD			bf4BlockerShape		: 4;
-//	32ºñÆ®
+//	32ë¹„íŠ¸
 
 	DWORD			bf8RestHp			: 8;
 	DWORD			bf24MaxHp			: 24;
-//	32ºñÆ®
+//	32ë¹„íŠ¸
 
 	WORD			bf11Job				: 11;
 	WORD			bf1IsCopyActor		: 1;
 	WORD			bf1IsMarionette		: 1;
 	WORD			bf1IsBoss			: 1;
-	WORD			bf1IsHideName		: 1;	//	ÀÌ¸§ ¼û±â±E//	15
+	WORD			bf1IsHideName		: 1;	//	ì´ë¦„ ìˆ¨ê¸°ï¿½ÂE//	15
 
-	WORD			wX,wY;				//	À§Ä¡
-	LONGLONG		dwEnchantedMask;	//	ÀÎÃ¦Æ¼µE¸¶½ºÅ©
+	WORD			wX,wY;				//	ìœ„ì¹˜
+	LONGLONG		dwEnchantedMask;	//	ì¸ì±ˆí‹°ï¿½ÂEë§ˆìŠ¤í¬
 	uEnchantedImage	enchantedImage;
 
 	char			strName[dNAME_LENGTH];
@@ -909,24 +911,24 @@ public:
 class	CVerySimpleMonsterInfo
 {
 public:
-	DWORD			bf2Kind				: 2;	//	ÇÃ·¹ÀÌ¾ûÏÄ?
-	DWORD			bf3Direct			: 3;	//	¼­ ÀÖ´Â ¹æÇE	
-	DWORD			bf11SerialInField	: 11;	//	ÇÊµå¾È¿¡¼­ ½Ã¸®¾E	
+	DWORD			bf2Kind				: 2;	//	í”Œë ˆì´ì—‰è¬³?
+	DWORD			bf3Direct			: 3;	//	ì„œ ìžˆëŠ” ë°©ï¿½ÂE	
+	DWORD			bf11SerialInField	: 11;	//	í•„ë“œì•ˆì—ì„œ ì‹œë¦¬ï¿½ÂE	
 	DWORD			bf8Scale			: 8;
-	DWORD			bf2Team				: 2;	//	ÆÀ
-	DWORD			bf1IsMove			: 1;	//	ÀÌµ¿ÁßÀÌ´Ù.
-	DWORD			bf1IsPet			: 1;	//	ÆE	
+	DWORD			bf2Team				: 2;	//	íŒ€
+	DWORD			bf1IsMove			: 1;	//	ì´ë™ì¤‘ì´ë‹¤.
+	DWORD			bf1IsPet			: 1;	//	ï¿½ÂE	
 	DWORD			bf1RideTamer		: 1;
-	DWORD			bf1IsDeath			: 1;	//	µØÁ³³Ä?	//	30
+	DWORD			bf1IsDeath			: 1;	//	ë’ˆì¡Œëƒ?	//	30
 
 	WORD			bf11Job				:	11;
 	WORD			bf1IsCopyActor		:	1;
 	WORD			bf1IsMarionette		:	1;
 	WORD			bf1IsBoss			:	1;
-	WORD			bf1IsHideName		:	1;	//	ÀÌ¸§ ¼û±â±E//	15
+	WORD			bf1IsHideName		:	1;	//	ì´ë¦„ ìˆ¨ê¸°ï¿½ÂE//	15
 
-	WORD			wX,wY;						//	À§Ä¡
-	LONGLONG		dwEnchantedMask;		//	ÀÎÃ¦Æ¼µE¸¶½ºÅ©
+	WORD			wX,wY;						//	ìœ„ì¹˜
+	LONGLONG		dwEnchantedMask;		//	ì¸ì±ˆí‹°ï¿½ÂEë§ˆìŠ¤í¬
 	uEnchantedImage	enchantedImage;
 };
 
@@ -934,18 +936,18 @@ public:
 class	CSimpleNpcInfo
 {
 public:
-	DWORD			bf2Kind				: 2;	//	ÇÃ·¹ÀÌ¾ûÏÄ?
-	DWORD			bf6ActorKind		: 6;	//	¾×ÅÍ Á¾·E	
-	DWORD			bf3Direct			: 3;	//	¼­ ÀÖ´Â ¹æÇE	
-	DWORD			bf11SerialInField	: 11;	//	ÇÊµå¾È¿¡¼­ ½Ã¸®¾E	
-	DWORD			bf2Team				: 2;	//	ÆÀ
+	DWORD			bf2Kind				: 2;	//	í”Œë ˆì´ì—‰è¬³?
+	DWORD			bf6ActorKind		: 6;	//	ì•¡í„° ì¢…ï¿½ÂE	
+	DWORD			bf3Direct			: 3;	//	ì„œ ìžˆëŠ” ë°©ï¿½ÂE	
+	DWORD			bf11SerialInField	: 11;	//	í•„ë“œì•ˆì—ì„œ ì‹œë¦¬ï¿½ÂE	
+	DWORD			bf2Team				: 2;	//	íŒ€
 	DWORD			bf8Scale			: 8;
 	
 	WORD			bf11Job				:	11;
 	WORD			bf1IsTalker			:	1;
-	WORD			bf1IsHideName		:	1;	//	ÀÌ¸§ ¼û±â±E//	4ºñÆ® ³²À½
+	WORD			bf1IsHideName		:	1;	//	ì´ë¦„ ìˆ¨ê¸°ï¿½ÂE//	4ë¹„íŠ¸ ë‚¨ìŒ
 
-	WORD			wX,wY;						//	À§Ä¡
+	WORD			wX,wY;						//	ìœ„ì¹˜
 
 	char			strName[dNAME_LENGTH];
 };
@@ -953,16 +955,16 @@ public:
 class	CVerySimpleNpcInfo
 {
 public:
-	DWORD			bf2Kind				:	2;	//	ÇÃ·¹ÀÌ¾ûÏÄ?
-	DWORD			bf11SerialInField	:	11;	//	ÇÊµå¾È¿¡¼­ ½Ã¸®¾E	
+	DWORD			bf2Kind				:	2;	//	í”Œë ˆì´ì—‰è¬³?
+	DWORD			bf11SerialInField	:	11;	//	í•„ë“œì•ˆì—ì„œ ì‹œë¦¬ï¿½ÂE	
 	DWORD			bf11Job				:	11;
-	DWORD			bf3Direct			:	3;	//	¼­ ÀÖ´Â ¹æÇE	
+	DWORD			bf3Direct			:	3;	//	ì„œ ìžˆëŠ” ë°©ï¿½ÂE	
 	DWORD			bf1IsTalker			:	1;	//	28 bit
-	DWORD			bf1IsHideName		:	1;	//	ÀÌ¸§ ¼û±â±E
-	WORD			bf6ActorKind		:   6;	//	¾×ÅÍ Á¾·E	
-	WORD			bf2Team				:   2;	//	ÆÀ
+	DWORD			bf1IsHideName		:	1;	//	ì´ë¦„ ìˆ¨ê¸°ï¿½ÂE
+	WORD			bf6ActorKind		:   6;	//	ì•¡í„° ì¢…ï¿½ÂE	
+	WORD			bf2Team				:   2;	//	íŒ€
 	WORD			bf8Scale			:   8;  //	
-	WORD			wX,wY;						//	À§Ä¡
+	WORD			wX,wY;						//	ìœ„ì¹˜
 };
 
 
@@ -970,20 +972,20 @@ class cAVATAR_INFO
 {
 public:
 	WORD			m_wAvatarIndex;
-	char			m_strName[dNAME_LENGTH];		//	H ÀÌ¸§ - EMPTY - ´EÒ¹®ÀÚ ±¸ºÐ ¾ø±¸
-	WORD			m_wJob;				//	Á÷¾E	
-	WORD			m_wLevel;			//	·¹º§
+	char			m_strName[dNAME_LENGTH];		//	H ì´ë¦„ - EMPTY - ï¿½ÂEæ‹ˆï¿½ï¿½ êµ¬ë¶„ ì—†êµ¬
+	WORD			m_wJob;				//	ì§ï¿½ÂE	
+	WORD			m_wLevel;			//	ë ˆë²¨
 	WORD			m_wWeapon,m_wShield,m_wArmor;
-	WORD			m_wLastField;		//	¸¶Áö¸·À¸·Î ÀÖ´EÇÊµE-> ÀÌ°É·Î ¾Æ·¡ ÁÖ¼Òµµ ¾ò¾ûØ­ ÀúÀåÇÑ´Ù.
-	char			m_strIP[dIP_SIZE];	//	¸¶Áö¸·À¸·Î Á¢¼ÓÇØ ÀÖ´E°ÔÀÓ¼­¹EÁÖ¼Ò
+	WORD			m_wLastField;		//	ë§ˆì§€ë§‰ìœ¼ë¡œ ìžˆï¿½ÂEí•„ï¿½ÂE-> ì´ê±¸ë¡œ ì•„ëž˜ ì£¼ì†Œë„ ì–»ì—‰å¹• ì €ìž¥í•œë‹¤.
+	char			m_strIP[dIP_SIZE];	//	ë§ˆì§€ë§‰ìœ¼ë¡œ ì ‘ì†í•´ ìžˆï¿½ÂEê²Œìž„ì„œï¿½ÂEì£¼ì†Œ
 };
 
 //
-//	°ÔÀÓ¼­¹ö°¡ ¿ùµå¼­¹ö¿¡ ¾ÆÀÌÅÛ »ý¼º ½Å°úÔ¦ ÇÒ¶§ ÇÊ¿äÇÑ Á¤º¸
+//	ê²Œìž„ì„œë²„ê°€ ì›”ë“œì„œë²„ì— ì•„ì´í…œ ìƒì„± ì‹ ê³¼æ¿¤ í• ë•Œ í•„ìš”í•œ ì •ë³´
 class 	cCREATE_ITEM_INFO
 {
 public:
-	WORD	m_wItem,m_wSerial;	// ¾ÆÀÌÅÛ ±âº» ÀÎµ¦½º¿Í ÇÊµå¿¡¼­ µå¶E¾ÆÀÌÅÛ ½Ã¸®¾E
+	WORD	m_wItem,m_wSerial;	// ì•„ì´í…œ ê¸°ë³¸ ì¸ë±ìŠ¤ì™€ í•„ë“œì—ì„œ ë“œï¿½ÂEì•„ì´í…œ ì‹œë¦¬ï¿½ÂE
 };
 
 class 	cDROPPED_ITEM_FIRST_INFO
@@ -992,7 +994,7 @@ public:
 };
 
 //
-//	¿ùµå¼­¹ö¿¡¼­ °ÔÀÓ¼­¹ö¿¡ ¾ÆÀÌÅÛ »ý¼º°á°Eº¸³¾¶§ ÇÊ¿äÇÑ Á¤º¸
+//	ì›”ë“œì„œë²„ì—ì„œ ê²Œìž„ì„œë²„ì— ì•„ì´í…œ ìƒì„±ê²°ï¿½ÂEë³´ë‚¼ë•Œ í•„ìš”í•œ ì •ë³´
 class	cRESULT_CREATE_ITEM_INFO
 {
 public:
@@ -1002,7 +1004,7 @@ public:
 
 
 //
-//	ÆÇ¸Å´EE¾ÆÀÌÅÛ
+//	íŒë§¤ï¿½ÂEÂEì•„ì´í…œ
 class	CSellingAgentItem
 {
 public:

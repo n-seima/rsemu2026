@@ -22,14 +22,14 @@ void cHDDINFO::reflash()
 		return;
 	if(GetVolumeInformation(m_strHddName, NULL,NULL, &dwVS,&dwCom,&dwFSf,NULL,NULL))
 	{
-		//	NTFS¸¸ È®ÀÎÇÑ´Ù. ³ª¸ÓÁö´Â ¹«½ÃÇÏÀÚ.
+		//	NTFSë§Œ í™•ì¸í•œë‹¤. ë‚˜ë¨¸ì§€ëŠ” ë¬´ì‹œí•˜ì.
 		if(dwFSf==459007 && GetDiskFreeSpaceEx(m_strHddName, &Fbatc, &lnTotBytes, &lnAvailable))
 		{
-			// ÃÑ¿ë·®
+			// ì´ìš©ëŸ‰
 			double dTotalBytes = lnTotBytes.LowPart + (double)lnTotBytes.HighPart * (double)4294967296;		
 			m_iTotalMB = (int)(dTotalBytes / 1024 / 1024);		// Convert (MB)     
 
-			// ³²Àº¿ë·®
+			// ë‚¨ì€ìš©ëŸ‰
 			double dFreeBytes = lnAvailable.LowPart + (double)lnAvailable.HighPart * (double)4294967296;
 			m_iFreeMB = (int)(dFreeBytes / 1024 / 1024);			// Convert (MB)
 		}
@@ -132,10 +132,10 @@ cHardwareInfo::~cHardwareInfo(void)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Name : 
-// Desc : ¸Ş¸ğ¸®ÀÇ ÇöÈ²À» ¾Ë¾Æ³½´Ù
-//        iMemTotalSize : ½ÇÁ¦ ¸Ş¸ğ¸®ÀÇ ÀüÃ¼ Å©±â (KB ´ÜÀ§)
-//        iFreeMemSize  : »ç¿ë °¡´ÉÇÑ ½ÇÁ¦ ¸Ş¸ğ¸®ÀÇ Å©±â (KB ´ÜÀ§)
-//        iVirtualSize  : °¡»ó ¸Ş¸ğ¸®ÀÇ ÀüÃ¼ Å©±â  (KB ´ÜÀ§)
+// Desc : ë©”ëª¨ë¦¬ì˜ í˜„í™©ì„ ì•Œì•„ë‚¸ë‹¤
+//        iMemTotalSize : ì‹¤ì œ ë©”ëª¨ë¦¬ì˜ ì „ì²´ í¬ê¸° (KB ë‹¨ìœ„)
+//        iFreeMemSize  : ì‚¬ìš© ê°€ëŠ¥í•œ ì‹¤ì œ ë©”ëª¨ë¦¬ì˜ í¬ê¸° (KB ë‹¨ìœ„)
+//        iVirtualSize  : ê°€ìƒ ë©”ëª¨ë¦¬ì˜ ì „ì²´ í¬ê¸°  (KB ë‹¨ìœ„)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 void cHardwareInfo::getMemoryInfo(cMEMORYINFO * _info)
 {
@@ -145,8 +145,8 @@ void cHardwareInfo::getMemoryInfo(cMEMORYINFO * _info)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Name : 
-// Desc : CPU ÀÇ ÇöÈ²À» ¾Ë¾Æ³½´Ù
-//        ¾îÂ¿¼ö ¾øÀÌ Sleep() ¸¦ »ç¿ëÇØ¾ßÇÑ´Ù
+// Desc : CPU ì˜ í˜„í™©ì„ ì•Œì•„ë‚¸ë‹¤
+//        ì–´ì©”ìˆ˜ ì—†ì´ Sleep() ë¥¼ ì‚¬ìš©í•´ì•¼í•œë‹¤
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 int cHardwareInfo::getCPUUsage()
 {
@@ -158,11 +158,11 @@ int cHardwareInfo::getCPUUsage()
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Name : 
-// Desc : CPU Á¾·ù¸¦ ¾Ë¾Æ³½´Ù
+// Desc : CPU ì¢…ë¥˜ë¥¼ ì•Œì•„ë‚¸ë‹¤
 
-//        _pm_iCPUSpeed : CPUÀÇ ¼Óµµ. ±â·ÏµÈ ½Ã½ºÅÛ¿¡¼­¸¸ ÀĞ¾î¿Â´Ù.
-//        _pm_iCPUPhysicalCount   : ÇÁ·Î¼¼¼­ÀÇ °³¼ö. NTÀÇ °æ¿ì¿¡¸¸ ÀÇ¹Ì°¡ ÀÖ´Ù.
-//        _pszCPUType : ÇÁ·Î¼¼¼­ÀÇ Á¾·ù
+//        _pm_iCPUSpeed : CPUì˜ ì†ë„. ê¸°ë¡ëœ ì‹œìŠ¤í…œì—ì„œë§Œ ì½ì–´ì˜¨ë‹¤.
+//        _pm_iCPUPhysicalCount   : í”„ë¡œì„¸ì„œì˜ ê°œìˆ˜. NTì˜ ê²½ìš°ì—ë§Œ ì˜ë¯¸ê°€ ìˆë‹¤.
+//        _pszCPUType : í”„ë¡œì„¸ì„œì˜ ì¢…ë¥˜
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 void cHardwareInfo::getCPUDetailInfo(cCPUINFO * _info)
 {
@@ -172,7 +172,7 @@ void cHardwareInfo::getCPUDetailInfo(cCPUINFO * _info)
 	DWORD dwData;
 	DWORD dwDataSize;
 
-	// ÇÁ·Î¼¼¼­ÀÇ ¼Óµµ¸¦ ¾ò¾î³½´Ù.
+	// í”„ë¡œì„¸ì„œì˜ ì†ë„ë¥¼ ì–»ì–´ë‚¸ë‹¤.
 	lResult = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE,
 		TEXT("Hardware\\Description\\System\\CentralProcessor\\0"), 0, KEY_QUERY_VALUE, &hKey);
 	if(lResult == ERROR_SUCCESS) {
@@ -181,10 +181,10 @@ void cHardwareInfo::getCPUDetailInfo(cCPUINFO * _info)
 	}
 	RegCloseKey(hKey);
 
-	// ÇÏµå¿ş¾î Á¤º¸¸¦ ¾ò¾î³½´Ù.
+	// í•˜ë“œì›¨ì–´ ì •ë³´ë¥¼ ì–»ì–´ë‚¸ë‹¤.
 	GetSystemInfo(&sysInfo);
 
-	// ÇÁ·Î¼¼¼­ Å¸ÀÔºÎÅÍ °Ë»çÇÑ´Ù.
+	// í”„ë¡œì„¸ì„œ íƒ€ì…ë¶€í„° ê²€ì‚¬í•œë‹¤.
 	if(sysInfo.dwProcessorType  == PROCESSOR_INTEL_386){
 		strcpy(_info->szCPUType, TEXT("Intel 386"));
 	}else if(sysInfo.dwProcessorType  == PROCESSOR_INTEL_486){
@@ -199,10 +199,10 @@ void cHardwareInfo::getCPUDetailInfo(cCPUINFO * _info)
 		strcpy(_info->szCPUType,  TEXT("Not Find!"));
 	}
 
-	// ÇÁ·Î¼¼¼­ÀÇ °¹¼ö¸¦ °Ë»çÇÑ´Ù.
+	// í”„ë¡œì„¸ì„œì˜ ê°¯ìˆ˜ë¥¼ ê²€ì‚¬í•œë‹¤.
 	_info->m_iCPUPhysicalCount = sysInfo.dwNumberOfProcessors;
 
-	//	»ç¿ë·®À» ÃøÁ¤ÇÑ´Ù.
+	//	ì‚¬ìš©ëŸ‰ì„ ì¸¡ì •í•œë‹¤.
 	_info->m_iTotalUsage = getCPUUsage();
 }
 
@@ -210,7 +210,7 @@ void cHardwareInfo::getCPUDetailInfo(cCPUINFO * _info)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Name : 
-// Desc : HDD ÇöÈ² , µ¿½Ã¿¡ Á¢¼ÓÇÏÁö ¸» °Í.
+// Desc : HDD í˜„í™© , ë™ì‹œì— ì ‘ì†í•˜ì§€ ë§ ê²ƒ.
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 std::deque<cHDDINFO> * cHardwareInfo::getHDDInfoAll()
 {
@@ -222,7 +222,7 @@ std::deque<cHDDINFO> * cHardwareInfo::getHDDInfoAll()
 	ULARGE_INTEGER lnTotBytes;
 	ULARGE_INTEGER lnAvailable;
 	
-	//	³×Æ®¿÷ µå¶óÀÌºê±îÁö Àâ´Â´Ù. volume SerialÀÌ ÀÏÁ¤ÇÑ°Å °°±ä ÇÑµ¥.. Å×½ºÆ® ÇØºÁ¾ß µÇ´Â ¹®Á¦´Ï. 'Z'±îÁö ¸»°í.. ´ëÃæ 'R'Á¤µµ±îÁö¸¸ ÀĞ´ø°¡.
+	//	ë„¤íŠ¸ì› ë“œë¼ì´ë¸Œê¹Œì§€ ì¡ëŠ”ë‹¤. volume Serialì´ ì¼ì •í•œê±° ê°™ê¸´ í•œë°.. í…ŒìŠ¤íŠ¸ í•´ë´ì•¼ ë˜ëŠ” ë¬¸ì œë‹ˆ. 'Z'ê¹Œì§€ ë§ê³ .. ëŒ€ì¶© 'R'ì •ë„ê¹Œì§€ë§Œ ì½ë˜ê°€.
 	for(int i='A'; i<'R'; i++)
 	{
 		DWORD dwCom=0,dwFSf=0,dwVS=0;
@@ -231,14 +231,14 @@ std::deque<cHDDINFO> * cHardwareInfo::getHDDInfoAll()
 		sprintf(hddInfo.m_strHddName,"%c:/",i);
 		if(GetVolumeInformation(hddInfo.m_strHddName, NULL,NULL, &dwVS,&dwCom,&dwFSf,NULL,NULL))
 		{
-			//	NTFS¸¸ È®ÀÎÇÑ´Ù. ³ª¸ÓÁö´Â ¹«½ÃÇÏÀÚ.
+			//	NTFSë§Œ í™•ì¸í•œë‹¤. ë‚˜ë¨¸ì§€ëŠ” ë¬´ì‹œí•˜ì.
 			if(dwFSf==459007 && GetDiskFreeSpaceEx(hddInfo.m_strHddName, &Fbatc, &lnTotBytes, &lnAvailable))
 			{
-				// ÃÑ¿ë·®
+				// ì´ìš©ëŸ‰
 				double dTotalBytes = lnTotBytes.LowPart + (double)lnTotBytes.HighPart * (double)4294967296;		
 				hddInfo.m_iTotalMB = (int)(dTotalBytes / 1024 / 1024);		// Convert (MB)     
 
-				// ³²Àº¿ë·®
+				// ë‚¨ì€ìš©ëŸ‰
 				double dFreeBytes = lnAvailable.LowPart + (double)lnAvailable.HighPart * (double)4294967296;
 				hddInfo.m_iFreeMB = (int)(dFreeBytes / 1024 / 1024);			// Convert (MB)
 

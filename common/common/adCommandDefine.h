@@ -11,18 +11,18 @@
 
 typedef enum
 {
-//	·Î±×ÀÎ ¼­¹ö·Î..
-	eCOMMANDTYPE_LOGINSERVER	= 0,	//	·Î±×ÀÎ ¼­¹ö ´Ý±â/¿­±â
-	eCOMMONDTYPE_CHANGE_VERSION,//	¹öÁ¯ ¼öÁ¤ÇÏ±â
-	eCOMMANDTYPE_CHANGE_MAXUSER,//	ÃÖ´ë ¼ö¿ë ÀÎ¿ø¼ö¸¦ º¯°æÇÑ´Ù.
+//	ë¡œê·¸ì¸ ì„œë²„ë¡œ..
+	eCOMMANDTYPE_LOGINSERVER	= 0,	//	ë¡œê·¸ì¸ ì„œë²„ ë‹«ê¸°/ì—´ê¸°
+	eCOMMONDTYPE_CHANGE_VERSION,//	ë²„ì ¼ ìˆ˜ì •í•˜ê¸°
+	eCOMMANDTYPE_CHANGE_MAXUSER,//	ìµœëŒ€ ìˆ˜ìš© ì¸ì›ìˆ˜ë¥¼ ë³€ê²½í•œë‹¤.
 	
-//	°ÔÀÓ¼­¹ö·Î..
-	eCOMMANDTYPE_NOTICE			= 21,	//	°øÁöÇÏ±â
-	eCOMMANDTYPE_BANISH,		//	Ãß¹æÇÏ±â , 1È¸¼ºÀÌ´Ù. ´Ù½Ã ¸øµé¾î¿À°Ô ÇÏ±â À§ÇØ¼­´Â ´Ù¸¥ Á¶Ãë°¡ ÇÊ¿äÇÏ´Ù.
-	eCOMMANDTYPE_BROADCAST_MSG,	//	À¯ÀúµéÀÌ ¿Ã¸®´Â ¹æ¼Û¿ë ¸Þ¼¼Áö
+//	ê²Œìž„ì„œë²„ë¡œ..
+	eCOMMANDTYPE_NOTICE			= 21,	//	ê³µì§€í•˜ê¸°
+	eCOMMANDTYPE_BANISH,		//	ì¶”ë°©í•˜ê¸° , 1íšŒì„±ì´ë‹¤. ë‹¤ì‹œ ëª»ë“¤ì–´ì˜¤ê²Œ í•˜ê¸° ìœ„í•´ì„œëŠ” ë‹¤ë¥¸ ì¡°ì·¨ê°€ í•„ìš”í•˜ë‹¤.
+	eCOMMANDTYPE_BROADCAST_MSG,	//	ìœ ì €ë“¤ì´ ì˜¬ë¦¬ëŠ” ë°©ì†¡ìš© ë©”ì„¸ì§€
 	
-//	¿ùµå¼­¹ö·Î..
-	eCOMMONTYPE_CLOSEWORLD		= 41,	//	¿ùµå ¼­¹ö¸¦ ´ÝÀ» ½Ã°£À» Á¤ÇÑ´Ù.
+//	ì›”ë“œì„œë²„ë¡œ..
+	eCOMMONTYPE_CLOSEWORLD		= 41,	//	ì›”ë“œ ì„œë²„ë¥¼ ë‹«ì„ ì‹œê°„ì„ ì •í•œë‹¤.
 	eCOMMONTYPE_RENAME_AVATAR,
 
 	eCOMMONTYPE_MAINTENANCE_COUNT,
@@ -33,19 +33,19 @@ char *	g_CT_Text[];
 class	cAdCommandData
 {
 public:
-	int		idx;				//	db¿¡ µî·ÏµÈ ÀÎµ¦½º
-	UTime	releasetime;		//	È°¼ºÈ­ µÉ ½Ã°£
-	UTime	finishtime;			//	Á¾·áµÉ ½Ã°£
-	int		commandtype;		//	¾î¶² ¸í·ÉÀÎ°¡?
-	int		commandtarget;		//	¸í·ÉÀÌ ½ÇÇàµÉ ¼­¹ö ÀÎµ¦½º
-	int		param1,param2;		//	±âÅ¸ °ª 1,2
-	char	param3[32];			//	±âÅ¸ °ª 3
-	char	msg[dNOTICE_MAX_LENGTH];			//	Àü´ÞÇÒ ¸Þ¼¼Áö
-	char	who[32];			//	´©°¡ Àü´ÞÇÑ ¸Þ¼¼ÁöÀÏ±î?
-	UTime	registedtime;		//	¿¹¾àÇÑ ½Ã°£
-	char	whod[32];			//	´©°¡ »èÁ¦Çß³ª
-	UTime	deltime;			//	¾ðÁ¦ »èÁ¦ÇÑ°Ç°¡?
-	int		deltype;			//	¾î¶»°Ô »èÁ¦µÈ°É±î?
+	int		idx;				//	dbì— ë“±ë¡ëœ ì¸ë±ìŠ¤
+	UTime	releasetime;		//	í™œì„±í™” ë  ì‹œê°„
+	UTime	finishtime;			//	ì¢…ë£Œë  ì‹œê°„
+	int		commandtype;		//	ì–´ë–¤ ëª…ë ¹ì¸ê°€?
+	int		commandtarget;		//	ëª…ë ¹ì´ ì‹¤í–‰ë  ì„œë²„ ì¸ë±ìŠ¤
+	int		param1,param2;		//	ê¸°íƒ€ ê°’ 1,2
+	char	param3[32];			//	ê¸°íƒ€ ê°’ 3
+	char	msg[dNOTICE_MAX_LENGTH];			//	ì „ë‹¬í•  ë©”ì„¸ì§€
+	char	who[32];			//	ëˆ„ê°€ ì „ë‹¬í•œ ë©”ì„¸ì§€ì¼ê¹Œ?
+	UTime	registedtime;		//	ì˜ˆì•½í•œ ì‹œê°„
+	char	whod[32];			//	ëˆ„ê°€ ì‚­ì œí–ˆë‚˜
+	UTime	deltime;			//	ì–¸ì œ ì‚­ì œí•œê±´ê°€?
+	int		deltype;			//	ì–´ë–»ê²Œ ì‚­ì œëœê±¸ê¹Œ?
 
 	cAdCommandData()
 	{

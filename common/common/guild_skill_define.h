@@ -10,100 +10,100 @@
 //	Guild Skill Effect
 enum
 {
-	eGSE_INCREASE_MAX_GUILD_MEMBER_COUNT,	//	ÃÖ´ë±æµå¿øÁõ°¡
-	eGSE_INCREASE_MAX_GUILD_SUB_MASTER_COUNT,//ÃÖ´ë¼­ºê¸¶½ºÅÍ¼öÁõ°¡
-	eGSE_INCREASE_MAX_GUILD_CONGRESS_COUNT,	//	ÃÖ´ë±æµåÀÇ¿øÀÎ¿ø¼öÁõ°¡
-	eGSE_INCREASE_GUILD_VILLAGE,			//	¿¬°íÁö Áõ°¡
-	eGSE_INCREASE_GUILD_INVENTORY_SIZE,		//	±æµåÀÎº¥Åä¸®»çÀÌÁîÁõ°¡
-	eGSE_INCREASE_HP,						//Ã¼·ÂÁõ°¡				
-	eGSE_INCREASE_CP,						//CPÁõ°¡					
-	eGSE_INCREASE_HIT_CHANCE,				//Á¤È®µµÁõ°¡				
-	eGSE_INCREASE_DODGE_CHANCE,				//È¸ÇÇÀ²Áõ°¡				
-	eGSE_INCREASE_STRENGTH,					//ÈûÁõ°¡					
-	eGSE_INCREASE_AGILITY,					//¹ÎÃ¸¼ºÁõ°¡				
-	eGSE_INCREASE_CONSTITUTION,				//°Ç°­Áõ°¡				
-	eGSE_INCREASE_INTELLIGENCE,				//Áö½ÄÁõ°¡				
-	eGSE_INCREASE_WISDOM,					//ÁöÇýÁõ°¡				
-	eGSE_INCREASE_CHARISMA,					//Ä«¸®½º¸¶Áõ°¡			
-	eGSE_INCREASE_LUCK,						//¿îÁõ°¡					
-	eGSE_INCREASE_KNIGHT_SKILL_LEVEL,		//±â»ç½ºÅ³·¹º§Áõ°¡		
-	eGSE_INCREASE_WARRIOR_SKILL_LEVEL,		//Àü»ç½ºÅ³·¹º§Áõ°¡		
-	eGSE_INCREASE_WIZARD_SKILL_LEVEL,		//¸¶¹ý»ç½ºÅ³·¹º§Áõ°¡		
-	eGSE_INCREASE_WEREWOLF_SKILL_LEVEL,		//´Á´ëÀÎ°£½ºÅ³·¹º§Áõ°¡	
-	eGSE_INCREASE_PRIEST_SKILL_LEVEL,		//»çÁ¦½ºÅ³·¹º§Áõ°¡		
-	eGSE_INCREASE_FALLEN_ANGEL_SKILL_LEVEL,	//Å¸¶ôÃµ»ç½ºÅ³·¹º§Áõ°¡	
-	eGSE_INCREASE_ROGUE_SKILL_LEVEL,		//µµµÏ½ºÅ³·¹º§Áõ°¡		
-	eGSE_INCREASE_FIGHTER_SKILL_LEVEL,		//¹«µµ°¡½ºÅ³·¹º§Áõ°¡		
-	eGSE_INCREASE_MAGIC_LANCER_SKILL_LEVEL,	//¸¶¹ýÃ¢º´½ºÅ³·¹º§Áõ°¡	
-	eGSE_INCREASE_MAGIC_ARCHER_SKILL_LEVEL,	//¸¶¹ý±Ã¼ö½ºÅ³·¹º§Áõ°¡	
-	eGSE_INCREASE_TAMER_SKILL_LEVEL,		//Á¶·Ã»ç½ºÅ³·¹º§Áõ°¡		
-	eGSE_INCREASE_SUMMONER_SKILL_LEVEL,		//¼ÒÈ¯»ç½ºÅ³·¹º§Áõ°¡		
-	eGSE_INCREASE_PRINCESS_SKILL_LEVEL,		//°øÁÖ½ºÅ³·¹º§Áõ°¡		
-	eGSE_INCREASE_MAGIC_GIRL_SKILL_LEVEL,	//¸¶¹ý¼Ò³à½ºÅ³·¹º§Áõ°¡	
-	eGSE_INCREASE_NECROMANCER_SKILL_LEVEL,	//°­½Å¼ú»ç½ºÅ³·¹º§Áõ°¡	
-	eGSE_INCREASE_DEVIL_SKILL_LEVEL,		//¾Ç¸¶½ºÅ³·¹º§Áõ°¡		
+	eGSE_INCREASE_MAX_GUILD_MEMBER_COUNT,	//	ìµœëŒ€ê¸¸ë“œì›ì¦ê°€
+	eGSE_INCREASE_MAX_GUILD_SUB_MASTER_COUNT,//ìµœëŒ€ì„œë¸Œë§ˆìŠ¤í„°ìˆ˜ì¦ê°€
+	eGSE_INCREASE_MAX_GUILD_CONGRESS_COUNT,	//	ìµœëŒ€ê¸¸ë“œì˜ì›ì¸ì›ìˆ˜ì¦ê°€
+	eGSE_INCREASE_GUILD_VILLAGE,			//	ì—°ê³ ì§€ ì¦ê°€
+	eGSE_INCREASE_GUILD_INVENTORY_SIZE,		//	ê¸¸ë“œì¸ë²¤í† ë¦¬ì‚¬ì´ì¦ˆì¦ê°€
+	eGSE_INCREASE_HP,						//ì²´ë ¥ì¦ê°€				
+	eGSE_INCREASE_CP,						//CPì¦ê°€					
+	eGSE_INCREASE_HIT_CHANCE,				//ì •í™•ë„ì¦ê°€				
+	eGSE_INCREASE_DODGE_CHANCE,				//íšŒí”¼ìœ¨ì¦ê°€				
+	eGSE_INCREASE_STRENGTH,					//íž˜ì¦ê°€					
+	eGSE_INCREASE_AGILITY,					//ë¯¼ì²©ì„±ì¦ê°€				
+	eGSE_INCREASE_CONSTITUTION,				//ê±´ê°•ì¦ê°€				
+	eGSE_INCREASE_INTELLIGENCE,				//ì§€ì‹ì¦ê°€				
+	eGSE_INCREASE_WISDOM,					//ì§€í˜œì¦ê°€				
+	eGSE_INCREASE_CHARISMA,					//ì¹´ë¦¬ìŠ¤ë§ˆì¦ê°€			
+	eGSE_INCREASE_LUCK,						//ìš´ì¦ê°€					
+	eGSE_INCREASE_KNIGHT_SKILL_LEVEL,		//ê¸°ì‚¬ìŠ¤í‚¬ë ˆë²¨ì¦ê°€		
+	eGSE_INCREASE_WARRIOR_SKILL_LEVEL,		//ì „ì‚¬ìŠ¤í‚¬ë ˆë²¨ì¦ê°€		
+	eGSE_INCREASE_WIZARD_SKILL_LEVEL,		//ë§ˆë²•ì‚¬ìŠ¤í‚¬ë ˆë²¨ì¦ê°€		
+	eGSE_INCREASE_WEREWOLF_SKILL_LEVEL,		//ëŠ‘ëŒ€ì¸ê°„ìŠ¤í‚¬ë ˆë²¨ì¦ê°€	
+	eGSE_INCREASE_PRIEST_SKILL_LEVEL,		//ì‚¬ì œìŠ¤í‚¬ë ˆë²¨ì¦ê°€		
+	eGSE_INCREASE_FALLEN_ANGEL_SKILL_LEVEL,	//íƒ€ë½ì²œì‚¬ìŠ¤í‚¬ë ˆë²¨ì¦ê°€	
+	eGSE_INCREASE_ROGUE_SKILL_LEVEL,		//ë„ë‘‘ìŠ¤í‚¬ë ˆë²¨ì¦ê°€		
+	eGSE_INCREASE_FIGHTER_SKILL_LEVEL,		//ë¬´ë„ê°€ìŠ¤í‚¬ë ˆë²¨ì¦ê°€		
+	eGSE_INCREASE_MAGIC_LANCER_SKILL_LEVEL,	//ë§ˆë²•ì°½ë³‘ìŠ¤í‚¬ë ˆë²¨ì¦ê°€	
+	eGSE_INCREASE_MAGIC_ARCHER_SKILL_LEVEL,	//ë§ˆë²•ê¶ìˆ˜ìŠ¤í‚¬ë ˆë²¨ì¦ê°€	
+	eGSE_INCREASE_TAMER_SKILL_LEVEL,		//ì¡°ë ¨ì‚¬ìŠ¤í‚¬ë ˆë²¨ì¦ê°€		
+	eGSE_INCREASE_SUMMONER_SKILL_LEVEL,		//ì†Œí™˜ì‚¬ìŠ¤í‚¬ë ˆë²¨ì¦ê°€		
+	eGSE_INCREASE_PRINCESS_SKILL_LEVEL,		//ê³µì£¼ìŠ¤í‚¬ë ˆë²¨ì¦ê°€		
+	eGSE_INCREASE_MAGIC_GIRL_SKILL_LEVEL,	//ë§ˆë²•ì†Œë…€ìŠ¤í‚¬ë ˆë²¨ì¦ê°€	
+	eGSE_INCREASE_NECROMANCER_SKILL_LEVEL,	//ê°•ì‹ ìˆ ì‚¬ìŠ¤í‚¬ë ˆë²¨ì¦ê°€	
+	eGSE_INCREASE_DEVIL_SKILL_LEVEL,		//ì•…ë§ˆìŠ¤í‚¬ë ˆë²¨ì¦ê°€		
 	
-	eGSE_ABSORB_FIRE_PER_LEVEL	,	//{	"ºÒÈí¼öper·¹º§"			,	
-	eGSE_ABSORB_WATER_PER_LEVEL	,	//{	"¹°Èí¼öper·¹º§"			,	
-	eGSE_ABSORB_WIND_PER_LEVEL	,	//{	"¹Ù¶÷Èí¼öper·¹º§"		,	
-	eGSE_ABSORB_EARTH_PER_LEVEL	,	//{	"´ëÁöÈí¼öper·¹º§"		,	
-	eGSE_ABSORB_LIGHT_PER_LEVEL	,	//{	"ºûÈí¼öper·¹º§"			,	
-	eGSE_ABSORB_DARK_PER_LEVEL	,	//{	"¾îµÒÈí¼öper·¹º§"		,	
+	eGSE_ABSORB_FIRE_PER_LEVEL	,	//{	"ë¶ˆí¡ìˆ˜perë ˆë²¨"			,	
+	eGSE_ABSORB_WATER_PER_LEVEL	,	//{	"ë¬¼í¡ìˆ˜perë ˆë²¨"			,	
+	eGSE_ABSORB_WIND_PER_LEVEL	,	//{	"ë°”ëžŒí¡ìˆ˜perë ˆë²¨"		,	
+	eGSE_ABSORB_EARTH_PER_LEVEL	,	//{	"ëŒ€ì§€í¡ìˆ˜perë ˆë²¨"		,	
+	eGSE_ABSORB_LIGHT_PER_LEVEL	,	//{	"ë¹›í¡ìˆ˜perë ˆë²¨"			,	
+	eGSE_ABSORB_DARK_PER_LEVEL	,	//{	"ì–´ë‘ í¡ìˆ˜perë ˆë²¨"		,	
 
-	eGSE_INCREASE_DAMAGE_UNDER_SIEGE_WARFARE	,	//	"°ø¼ºÀü½Ã´ë¹ÌÁö»ó½Âper·¹º§"	,	
-	eGSE_REDUCE_DAMAGE_UNDER_SIEGE_WARFARE		,	//	"°ø¼ºÀü½Ã´ë¹ÌÁö°¨¼Òper·¹º§"	,	
-	eGSE_INCREASE_GUILD_PET_SIGHT				,	//	"±æµåÆê½Ã¾ßÁõ°¡
-	eGSE_INCREASE_GUILD_CREST_EFFICIENT			,	//	"±æµå¹®ÀåÈ¿À²Áõ°¡"
-	eGSE_INCREASE_GUILD_FLAG_EFFICIENT			,	//	"±æµå±ê¹ßÈ¿À²Áõ°¡"
-	eGSE_INCREASE_ASTRO_BOW_DAMAGE				,	//	"¾Æ½ºÆ®·Îº¸¿ì´ë¹ÌÁöÁõ°¡",
-	eGSE_INCREASE_GUILD_DOOR_EFFICIENT			,	//	"±æµå¹®È¿À²Áõ°¡
-	eGSE_INCREASE_GUILD_PET_ATTACK_SPEED		,	//	"±æµåÆê¾×¼Ç¼ÓµµÁõ°¡
-	eGSE_DECREASE_GUILD_SHOP_ITEM_PRICE			,	//	"±æµå»óÁ¡¾ÆÀÌÅÛ°¡°Ý°¨¼Ò
-	eGSE_INCREASE_DASH_BLADE_DAMAGE				,	//	"´ë½¬ºí·¹ÀÌµå´ë¹ÌÁöÁõ°¡
+	eGSE_INCREASE_DAMAGE_UNDER_SIEGE_WARFARE	,	//	"ê³µì„±ì „ì‹œëŒ€ë¯¸ì§€ìƒìŠ¹perë ˆë²¨"	,	
+	eGSE_REDUCE_DAMAGE_UNDER_SIEGE_WARFARE		,	//	"ê³µì„±ì „ì‹œëŒ€ë¯¸ì§€ê°ì†Œperë ˆë²¨"	,	
+	eGSE_INCREASE_GUILD_PET_SIGHT				,	//	"ê¸¸ë“œíŽ«ì‹œì•¼ì¦ê°€
+	eGSE_INCREASE_GUILD_CREST_EFFICIENT			,	//	"ê¸¸ë“œë¬¸ìž¥íš¨ìœ¨ì¦ê°€"
+	eGSE_INCREASE_GUILD_FLAG_EFFICIENT			,	//	"ê¸¸ë“œê¹ƒë°œíš¨ìœ¨ì¦ê°€"
+	eGSE_INCREASE_ASTRO_BOW_DAMAGE				,	//	"ì•„ìŠ¤íŠ¸ë¡œë³´ìš°ëŒ€ë¯¸ì§€ì¦ê°€",
+	eGSE_INCREASE_GUILD_DOOR_EFFICIENT			,	//	"ê¸¸ë“œë¬¸íš¨ìœ¨ì¦ê°€
+	eGSE_INCREASE_GUILD_PET_ATTACK_SPEED		,	//	"ê¸¸ë“œíŽ«ì•¡ì…˜ì†ë„ì¦ê°€
+	eGSE_DECREASE_GUILD_SHOP_ITEM_PRICE			,	//	"ê¸¸ë“œìƒì ì•„ì´í…œê°€ê²©ê°ì†Œ
+	eGSE_INCREASE_DASH_BLADE_DAMAGE				,	//	"ëŒ€ì‰¬ë¸”ë ˆì´ë“œëŒ€ë¯¸ì§€ì¦ê°€
 
-	eGSE_INCREASE_RESISTANCE_OF_FIRE_PER_LEVEL	,	//{	"ºÒÀúÇ×·ÂÁõ°¡per·¹º§"		,	
-	eGSE_INCREASE_RESISTANCE_OF_WATER_PER_LEVEL	,	//{	"¹°ÀúÇ×·ÂÁõ°¡per·¹º§"		,	
-	eGSE_INCREASE_RESISTANCE_OF_WIND_PER_LEVEL	,	//{	"¹Ù¶÷ÀúÇ×·ÂÁõ°¡per·¹º§"		,	
-	eGSE_INCREASE_RESISTANCE_OF_EARTH_PER_LEVEL	,	//{	"´ëÁöÀúÇ×·ÂÁõ°¡per·¹º§"		,	
-	eGSE_INCREASE_RESISTANCE_OF_LIGHT_PER_LEVEL	,	//{	"ºûÀúÇ×·ÂÁõ°¡per·¹º§"		,	
-	eGSE_INCREASE_RESISTANCE_OF_DARK_PER_LEVEL	,	//{	"¾îµÒÀúÇ×·ÂÁõ°¡per·¹º§"		,	
+	eGSE_INCREASE_RESISTANCE_OF_FIRE_PER_LEVEL	,	//{	"ë¶ˆì €í•­ë ¥ì¦ê°€perë ˆë²¨"		,	
+	eGSE_INCREASE_RESISTANCE_OF_WATER_PER_LEVEL	,	//{	"ë¬¼ì €í•­ë ¥ì¦ê°€perë ˆë²¨"		,	
+	eGSE_INCREASE_RESISTANCE_OF_WIND_PER_LEVEL	,	//{	"ë°”ëžŒì €í•­ë ¥ì¦ê°€perë ˆë²¨"		,	
+	eGSE_INCREASE_RESISTANCE_OF_EARTH_PER_LEVEL	,	//{	"ëŒ€ì§€ì €í•­ë ¥ì¦ê°€perë ˆë²¨"		,	
+	eGSE_INCREASE_RESISTANCE_OF_LIGHT_PER_LEVEL	,	//{	"ë¹›ì €í•­ë ¥ì¦ê°€perë ˆë²¨"		,	
+	eGSE_INCREASE_RESISTANCE_OF_DARK_PER_LEVEL	,	//{	"ì–´ë‘ ì €í•­ë ¥ì¦ê°€perë ˆë²¨"		,	
 
-	eGSE_DECREASE_FIELD_FIRE_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"ÇÊµåºÒÀúÇ×Æä³ÎÆ¼°¨¼Òper·¹º§"		,	
-	eGSE_DECREASE_FIELD_WATER_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"ÇÊµå¹°ÀúÇ×Æä³ÎÆ¼°¨¼Òper·¹º§"		,	
-	eGSE_DECREASE_FIELD_WIND_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"ÇÊµå¹Ù¶÷ÀúÇ×Æä³ÎÆ¼°¨¼Òper·¹º§"		,	
-	eGSE_DECREASE_FIELD_EARTH_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"ÇÊµå´ëÁöÀúÇ×Æä³ÎÆ¼°¨¼Òper·¹º§"		,	
-	eGSE_DECREASE_FIELD_LIGHT_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"ÇÊµåºûÀúÇ×Æä³ÎÆ¼°¨¼Òper·¹º§"		,	
-	eGSE_DECREASE_FIELD_DARK_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"ÇÊµå¾îµÒÀúÇ×Æä³ÎÆ¼°¨¼Òper·¹º§"		,	
+	eGSE_DECREASE_FIELD_FIRE_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"í•„ë“œë¶ˆì €í•­íŽ˜ë„í‹°ê°ì†Œperë ˆë²¨"		,	
+	eGSE_DECREASE_FIELD_WATER_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"í•„ë“œë¬¼ì €í•­íŽ˜ë„í‹°ê°ì†Œperë ˆë²¨"		,	
+	eGSE_DECREASE_FIELD_WIND_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"í•„ë“œë°”ëžŒì €í•­íŽ˜ë„í‹°ê°ì†Œperë ˆë²¨"		,	
+	eGSE_DECREASE_FIELD_EARTH_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"í•„ë“œëŒ€ì§€ì €í•­íŽ˜ë„í‹°ê°ì†Œperë ˆë²¨"		,	
+	eGSE_DECREASE_FIELD_LIGHT_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"í•„ë“œë¹›ì €í•­íŽ˜ë„í‹°ê°ì†Œperë ˆë²¨"		,	
+	eGSE_DECREASE_FIELD_DARK_RESISTANCE_PENELTY_PER_LEVEL	,	//{	"í•„ë“œì–´ë‘ ì €í•­íŽ˜ë„í‹°ê°ì†Œperë ˆë²¨"		,	
 
-	eGSE_INCREASE_OBITIAN_COUNT_PER_LEVEL		,	//{	"¿ÀºñÆ¼¾È°³¼öÁõ°¡per·¹º§"				,	
-	eGSE_INCREASE_CRISTAL_WATER_COUNT_PER_LEVEL	,	//{	"Å©¸®½ºÅ»¿öÅÍ°³¼öÁõ°¡per·¹º§"			,	
-	eGSE_INCREASE_ASTRAL_BOW_COUNT_PER_LEVEL	,	//{	"¾Æ½ºÆ®·Îº¸¿ì°³¼öÁõ°¡per·¹º§"			,	
-	eGSE_INCREASE_DASH_BLADE_COUNT_PER_LEVEL	,	//{	"´ë½¬ºí·¡ÀÌµå°³¼öÁõ°¡per·¹º§"			,	
+	eGSE_INCREASE_OBITIAN_COUNT_PER_LEVEL		,	//{	"ì˜¤ë¹„í‹°ì•ˆê°œìˆ˜ì¦ê°€perë ˆë²¨"				,	
+	eGSE_INCREASE_CRISTAL_WATER_COUNT_PER_LEVEL	,	//{	"í¬ë¦¬ìŠ¤íƒˆì›Œí„°ê°œìˆ˜ì¦ê°€perë ˆë²¨"			,	
+	eGSE_INCREASE_ASTRAL_BOW_COUNT_PER_LEVEL	,	//{	"ì•„ìŠ¤íŠ¸ë¡œë³´ìš°ê°œìˆ˜ì¦ê°€perë ˆë²¨"			,	
+	eGSE_INCREASE_DASH_BLADE_COUNT_PER_LEVEL	,	//{	"ëŒ€ì‰¬ë¸”ëž˜ì´ë“œê°œìˆ˜ì¦ê°€perë ˆë²¨"			,	
 
-	eGSE_INCREASE_CRITICAL_CRUSH_RESISTANCE_PER_LEVEL	,	//{	"Ä¡¸íÅ¸°áÁ¤Å¸ÀúÇ×Áõ°¡per·¹º§"			,	
-	eGSE_INCREASE_CURSE_RESISTANCE_PER_LEVEL			,	//{	"ÀúÁÖ°èÀúÇ×Áõ°¡per·¹º§"					,	
-	eGSE_INCREASE_STRANGE_STATUS_RESISTANCE_PER_LEVEL	,	//{	"ÀÌ»ó°èÀúÇ×Áõ°¡per·¹º§"					,	
-	eGSE_INCREASE_DECLINE_POWER_RESISTANCE_PER_LEVEL	,	//{	"ÀúÇÏ°èÀúÇ×Áõ°¡per·¹º§"					,	
+	eGSE_INCREASE_CRITICAL_CRUSH_RESISTANCE_PER_LEVEL	,	//{	"ì¹˜ëª…íƒ€ê²°ì •íƒ€ì €í•­ì¦ê°€perë ˆë²¨"			,	
+	eGSE_INCREASE_CURSE_RESISTANCE_PER_LEVEL			,	//{	"ì €ì£¼ê³„ì €í•­ì¦ê°€perë ˆë²¨"					,	
+	eGSE_INCREASE_STRANGE_STATUS_RESISTANCE_PER_LEVEL	,	//{	"ì´ìƒê³„ì €í•­ì¦ê°€perë ˆë²¨"					,	
+	eGSE_INCREASE_DECLINE_POWER_RESISTANCE_PER_LEVEL	,	//{	"ì €í•˜ê³„ì €í•­ì¦ê°€perë ˆë²¨"					,	
 
-	eGSE_INCREASE_PHYSICAL_MAGIC_DAMAGE_PER_LEVEL	,	//{	"¹°¸®¼Ó¼º°ø°Ý·ÂÁõ°¡per·¹º§"					,	
-	eGSE_DEFENSIVE_POWER_PER_LEVEL					,	//{	"¹æ¾î·ÂÁõ°¡ÆÛ¼¾Æ¼Áöper·¹º§"				,	
+	eGSE_INCREASE_PHYSICAL_MAGIC_DAMAGE_PER_LEVEL	,	//{	"ë¬¼ë¦¬ì†ì„±ê³µê²©ë ¥ì¦ê°€perë ˆë²¨"					,	
+	eGSE_DEFENSIVE_POWER_PER_LEVEL					,	//{	"ë°©ì–´ë ¥ì¦ê°€í¼ì„¼í‹°ì§€perë ˆë²¨"				,	
 
-	eGSE_INCREASE_ATTACK_SPEED_PER_LEVEL	,	//{	"°ø°Ý¼ÓµµÁõ°¡per·¹º§"					,	
-	eGSE_INCREASE_MOVE_SPEED_PER_LEVEL		,	//{	"ÀÌµ¿¼ÓµµÁõ°¡per·¹º§"					,	
+	eGSE_INCREASE_ATTACK_SPEED_PER_LEVEL	,	//{	"ê³µê²©ì†ë„ì¦ê°€perë ˆë²¨"					,	
+	eGSE_INCREASE_MOVE_SPEED_PER_LEVEL		,	//{	"ì´ë™ì†ë„ì¦ê°€perë ˆë²¨"					,	
 
-	eGSE_INCREASE_HIT_CHANCE_PER_LEVEL		,	//{	"¸íÁß·üÁõ°¡per·¹º§"						,	
-	eGSE_INCREASE_DODGE_CHANCE_PER_LEVEL	,	//{	"È¸ÇÇÀ²Áõ°¡per·¹º§"						,	
+	eGSE_INCREASE_HIT_CHANCE_PER_LEVEL		,	//{	"ëª…ì¤‘ë¥ ì¦ê°€perë ˆë²¨"						,	
+	eGSE_INCREASE_DODGE_CHANCE_PER_LEVEL	,	//{	"íšŒí”¼ìœ¨ì¦ê°€perë ˆë²¨"						,	
 
-	eGSE_INCREASE_GUARDIAN_COUNT_PER_LEVEL	,	//{	"°¡µð¾ð¼öÁõ°¡per·¹º§"					,	
-	eGSE_INCREASE_GUARDIAN_SIGHT_PER_LEVEL	,	//{	"°¡µð¾ð½Ã¾ßÁõ°¡"						,	
+	eGSE_INCREASE_GUARDIAN_COUNT_PER_LEVEL	,	//{	"ê°€ë””ì–¸ìˆ˜ì¦ê°€perë ˆë²¨"					,	
+	eGSE_INCREASE_GUARDIAN_SIGHT_PER_LEVEL	,	//{	"ê°€ë””ì–¸ì‹œì•¼ì¦ê°€"						,	
 
-	eGSE_SELL_MAGIC_ENCHANT_ITEM			,	//{	"¸¶¹ýÀÎÃ¦Æ®¿ëÇ°ÆÇ¸Å"				,	
+	eGSE_SELL_MAGIC_ENCHANT_ITEM			,	//{	"ë§ˆë²•ì¸ì±ˆíŠ¸ìš©í’ˆíŒë§¤"				,	
 
-	eGSE_DECREASE_DUNGEON_MAGIC_ATTR_PENELTY_PER_LEVEL	,	//{	"´øÁ¯¼Ó¼ºÆä³ÎÆ¼ÀúÇÏper·¹º§"						,	
-	eGSE_DECREASE_DEATH_PENELTY_PER_LEVEL				,	//{	"»ç¸ÁÆä³ÎÆ¼°¨¼Òper·¹º§"					,	
-	eGSE_INCREASE_SOUL_BRINGER_SKILL_LEVEL,			// ¿µ¼ú»ç½ºÅ³·¹º§Áõ°¡	
-	eGSE_INCREASE_CHAMPION_SKILL_LEVEL,			// Åõ»ç½ºÅ³·¹º§Áõ°¡	
-	eGSE_INCREASE_OPTICALIST_SKILL_LEVEL,		//	±¤ÇÐ»ç½ºÅ³·¹º§Áõ°¡
+	eGSE_DECREASE_DUNGEON_MAGIC_ATTR_PENELTY_PER_LEVEL	,	//{	"ë˜ì ¼ì†ì„±íŽ˜ë„í‹°ì €í•˜perë ˆë²¨"						,	
+	eGSE_DECREASE_DEATH_PENELTY_PER_LEVEL				,	//{	"ì‚¬ë§íŽ˜ë„í‹°ê°ì†Œperë ˆë²¨"					,	
+	eGSE_INCREASE_SOUL_BRINGER_SKILL_LEVEL,			// ì˜ìˆ ì‚¬ìŠ¤í‚¬ë ˆë²¨ì¦ê°€	
+	eGSE_INCREASE_CHAMPION_SKILL_LEVEL,			// íˆ¬ì‚¬ìŠ¤í‚¬ë ˆë²¨ì¦ê°€	
+	eGSE_INCREASE_OPTICALIST_SKILL_LEVEL,		//	ê´‘í•™ì‚¬ìŠ¤í‚¬ë ˆë²¨ì¦ê°€
 };
 
 #define	dGUILD_SKILL_EFFECT_VARIATION_COUNT					4
@@ -128,7 +128,7 @@ class	CGuildSkillDefine
 {
 public:
 	WORD					m_wSerial;
-	WORD					m_wIconIndex;						//	¾ÆÀÌÄÜ ÀÎµ¦½º
+	WORD					m_wIconIndex;						//	ì•„ì´ì½˜ ì¸ë±ìŠ¤
 	char					m_strName[dSKILL_NAME_LENGTH];
 
 	CGuildSkillEffectInfo	m_aEffect[dMAX_GUILD_SKILL_EFFECT_COUNT];
@@ -138,14 +138,14 @@ public:
 	WORD					m_wTopLevelLimitExpression;
 	WORD					m_aTopLevelLimitExpressionValue[dGUILD_SKILL_TOP_LEVEL_LIMIT_EXPRESSION_VALUE_COUNT];
 
-	WORD					m_wTopLevel;						//	ÇÑ°è ·¹º§
-	short					m_sMaxLevelByGuildHallLevel;		//	±æµå È¦ ·¹º§¿¡ ÀÇÇÑ ÃÖ°í ·¹º§
+	WORD					m_wTopLevel;						//	í•œê³„ ë ˆë²¨
+	short					m_sMaxLevelByGuildHallLevel;		//	ê¸¸ë“œ í™€ ë ˆë²¨ì— ì˜í•œ ìµœê³  ë ˆë²¨
 	int						m_iRequireGold;
 
 	char					m_strComment[dGUILD_SKILL_COMMENT_LENGTH];
-	DWORD					m_bf1IsStatueSkill				:	1;	//	¼®»ó ½ºÅ³ÀÌ´Ù.
+	DWORD					m_bf1IsStatueSkill				:	1;	//	ì„ìƒ ìŠ¤í‚¬ì´ë‹¤.
 	DWORD					m_bf1IsRequireSkillMasteryTitle :	1;
-	DWORD					m_bf3RequireGuildHallLevel		:	3;	//	ÇÊ¿äÇÑ ±æµå È¦ ·¹º§
+	DWORD					m_bf3RequireGuildHallLevel		:	3;	//	í•„ìš”í•œ ê¸¸ë“œ í™€ ë ˆë²¨
 	
 							CGuildSkillDefine()
 							{
@@ -163,8 +163,8 @@ public:
 		memset(m_awRequireSkill,0xff,sizeof(m_awRequireSkill));
 
 		m_wTopLevelLimitExpression	=	0;
-		m_wTopLevel					=	0;						//	ÇÑ°è ·¹º§
-		m_sMaxLevelByGuildHallLevel	=	0;		//	±æµå È¦ ·¹º§¿¡ ÀÇÇÑ ÃÖ°í ·¹º§
+		m_wTopLevel					=	0;						//	í•œê³„ ë ˆë²¨
+		m_sMaxLevelByGuildHallLevel	=	0;		//	ê¸¸ë“œ í™€ ë ˆë²¨ì— ì˜í•œ ìµœê³  ë ˆë²¨
 		m_iRequireGold				=	0;
 
 		m_bf1IsRequireSkillMasteryTitle	=	FALSE;

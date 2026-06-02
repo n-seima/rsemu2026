@@ -153,6 +153,17 @@ cPLAYER_DATA::decreaseExp(DWORD _dwDecreaseExp)
 	return	TRUE;
 }
 
+enum
+{
+	ePSL_NORMAL,
+	ePSL_LITE_LITE,
+	ePSL_LITE_PREMIUM,
+	ePSL_LITE_PLATINUM,
+	ePSL_LITE,
+	ePSL_PREMIUM,
+	ePSL_PLATINUM,
+};
+
 int
 cPLAYER_DATA::getBoostExperienceValue()
 {
@@ -189,18 +200,6 @@ cPLAYER_DATA::getBoostExperienceValue()
 	}
 
 	int	iCorrectExp			=	100;
-
-enum
-{
-	ePSL_NORMAL,
-	ePSL_LITE_LITE,
-	ePSL_LITE_PREMIUM,
-	ePSL_LITE_PLATINUM,
-	ePSL_LITE,
-	ePSL_PREMIUM,
-	ePSL_PLATINUM,
-};
-
 
 	if (iPreminumServiceLevel == ePSL_LITE)
 		iCorrectExp			=	120;

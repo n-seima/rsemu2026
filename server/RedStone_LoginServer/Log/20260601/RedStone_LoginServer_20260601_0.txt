@@ -1,0 +1,106 @@
+[181301] Open addr  [0] = 25.1.80.156,55661
+
+
+[181301] Start WorkerThread[0]...
+
+[181301] Start WorkerThread[5]...
+
+[181301] Start WorkerThread[6]...
+
+[181301] Start WorkerThread[1]...
+
+[181301] Start WorkerThread[4]...
+
+[181301] Start WorkerThread[7]...
+
+[181301] Start WorkerThread[2]...
+
+[181301] Start WorkerThread[3]...
+
+[181301] Start AcceptLoop ...
+
+[181301] START USERDBCtlThread
+
+[181301] Start Login Server ... day : 20260601 - time : 181301 
+
+
+[181301] START AdditionThread ...
+
+[181553] Open addr  [0] = 25.1.80.156,55661
+
+
+[181553] Start WorkerThread[0]...
+
+[181553] Start WorkerThread[7]...
+
+[181553] Start WorkerThread[2]...
+
+[181553] Start WorkerThread[4]...
+
+[181553] Start WorkerThread[1]...
+
+[181553] Start WorkerThread[6]...
+
+[181553] Start WorkerThread[5]...
+
+[181553] Start WorkerThread[3]...
+
+[181553] Start AcceptLoop ...
+
+[181553] Start Login Server ... day : 20260601 - time : 181553 
+
+
+[181553] START USERDBCtlThread
+
+[181554] START AdditionThread ...
+
+[182605] START connect world sock name = [お水サーバー(1)]
+
+[183111] LIL : id[omizu1] , login time [182615] , SPType [0X8002, 182615] , RPType [0X8702, 182616]
+
+[183111] Uncompotable User ... omizu1, why[Read = 0]
+
+[193054]  disconnect[cause too long idle] .. id[] serial [3] time[300006]
+
+[193054] SERROR : getqueue... user==NULL || !user->GetIsUsed() , dwIOCPKey = 3
+
+[212301] LIL : id[omizu1] , login time [212259] , SPType [0X1401, 212259] , RPType [0X0, 0]
+
+[212301] Uncompotable User ... omizu1, why[Read = 0]
+
+[230357] LIL : id[omizu1] , login time [230356] , SPType [0X1401, 230356] , RPType [0X0, 0]
+
+[230357] Uncompotable User ... omizu1, why[Read = 0]
+
+[230945] LIL : id[toa16] , login time [230939] , SPType [0X8002, 230939] , RPType [0X8702, 230939]
+
+[230945] Uncompotable User ... toa16, why[Read = 0]
+
+[000609] LIL : id[kai444] , login time [247] , SPType [0X8002, 247] , RPType [0X8702, 247]
+
+[000609] Uncompotable User ... kai444, why[Read = 0]
+
+[000834] LIL : id[omizu1] , login time [235559] , SPType [0X8002, 235559] , RPType [0X8702, 235559]
+
+[000834] Uncompotable User ... omizu1, why[Read = 0]
+
+[004952] LIL : id[pengg101] , login time [4946] , SPType [0X8002, 4946] , RPType [0X8702, 4946]
+
+[004952] Uncompotable User ... pengg101, why[Read = 0]
+
+[011500] LIL : id[omizu1] , login time [11427] , SPType [0X8002, 11427] , RPType [0X8702, 11427]
+
+[011500] Uncompotable User ... omizu1, why[Read = 0]
+
+[011554] LIL : id[kai444] , login time [11430] , SPType [0X8002, 11430] , RPType [0X8702, 11430]
+
+[011554] Uncompotable User ... kai444, why[Read = 0]
+
+[082542] LIL : id[omizu1] , login time [82541] , SPType [0X1401, 82541] , RPType [0X0, 0]
+
+[082542] Uncompotable User ... omizu1, why[Read = 0]
+
+[082553] LIL : id[omizu1] , login time [82552] , SPType [0X8002, 82552] , RPType [0X8702, 82552]
+
+[082553] Uncompotable User ... omizu1, why[Read = 0]
+

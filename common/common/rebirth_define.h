@@ -12,7 +12,7 @@ const	int		c_aiGainExpPeneltyForRebirth[]	=	{0,0,0,0,0,0};
 
 #define	dSTATE_POINT_FOR_EVERY_REBIRTH				100
 #define	dSKILL_POINT_FOR_EVERY_REBIRTH				100
-#define	dLIMIT_REBIRTH_COUNT						5		//	ÃÖ´ë Àü»ı È½¼ö
+#define	dLIMIT_REBIRTH_COUNT						5		//	ìµœëŒ€ ì „ìƒ íšŸìˆ˜
 
 const	int		c_aBonusStatePointForRebirth[]	=	{0,100,300,600,1000,1500};
 const	int		c_aBonusSkillPointForRebirth[]	=	{0,100,300,600,1000,1500};

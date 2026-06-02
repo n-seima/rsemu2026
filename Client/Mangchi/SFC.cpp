@@ -62,6 +62,7 @@ cSFC::cSFC()
 	GetCurrentDirectory(sizeof(_logFolder),_logFolder);
 	if (stricmp(_exportFileName(_logFolder),"debug")==0)	strcpy(_logFolder,_exportFolderName(_logFolder));
 	if (stricmp(_exportFileName(_logFolder),"release")==0)	strcpy(_logFolder,_exportFolderName(_logFolder));
+	if (stricmp(_exportFileName(_logFolder),"Mangchi___Win32_forJapan")==0)	strcpy(_logFolder,_exportFolderName(_logFolder));
 	SetCurrentDirectory(_logFolder);
 
 	strcpy(ReportFile,_ms("%s\\result.txt",_logFolder));

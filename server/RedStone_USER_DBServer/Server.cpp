@@ -151,7 +151,7 @@ void main()
 	}
 
 	if	(l_bIsTestDB)
-		MessageBox(NULL,"for inner test server","WARNING!!",MB_OK);
+		printf("for inner test server\n");
 
 #ifdef dUSE_SERVERSTATUS_REPORT
 // 	if	(l_bIsTestDB	==	FALSE)
@@ -375,6 +375,8 @@ BOOL InitCompletionPort()
 
 	GetSystemInfo(&sys_info);
 	dwThreadNum = sys_info.dwNumberOfProcessors * 2 + 1;
+	if (dwThreadNum > dMAX_WORKER_COUNT)
+		dwThreadNum = dMAX_WORKER_COUNT;
 
 	for(int i=0;i<(int)dwThreadNum;i++)
 	{

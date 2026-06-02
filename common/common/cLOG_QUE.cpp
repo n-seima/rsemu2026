@@ -1,7 +1,7 @@
 #include "cPACKET_LOGSERVER.h"
 
 //
-//	ÃÊ±âÈ­
+//	ì´ˆê¸°í™”
 void
 cLOG_QUE::reset()
 {
@@ -12,7 +12,7 @@ cLOG_QUE::reset()
 }	//	cLOG_QUE::reset()
 
 //
-//	ÆĞÅ¶ Ãß°¡
+//	íŒ¨í‚· ì¶”ê°€
 BOOL
 cLOG_QUE::addPacket(ALL_LOGMSG *_lpPacket)
 {
@@ -21,7 +21,7 @@ cLOG_QUE::addPacket(ALL_LOGMSG *_lpPacket)
 
 	if (_lpPacket->base.wSize > sizeof(ALL_LOGMSG))
 	{
-		printf("ÆĞÅ¶»çÀÌÁî¿À¹ö \n");
+		printf("íŒ¨í‚·ì‚¬ì´ì¦ˆì˜¤ë²„ \n");
 		return	FALSE;
 	}
 	memcpy(&m_aPacket[m_iLastQue],_lpPacket,_lpPacket->base.wSize);
@@ -30,13 +30,13 @@ cLOG_QUE::addPacket(ALL_LOGMSG *_lpPacket)
 	m_iCount++;
 	m_dwTotalPacketSize += _lpPacket->base.wSize;
 
-	if (m_iLastQue	>=	dMAX_MSG_COUNT)		m_iLastQue=0;	//	Ã³À½À¸·Î µ¹¾Æ°£´Ù.
+	if (m_iLastQue	>=	dMAX_MSG_COUNT)		m_iLastQue=0;	//	ì²˜ìŒìœ¼ë¡œ ëŒì•„ê°„ë‹¤.
 
 	return	TRUE;
 }	//	cLOG_QUE::addPacket(ALL_MSG *_lpPacket,int _iSerial)
 
 //
-//	¹ŞÀº ÆĞÅ¶ÀÌ³Ä?
+//	ë°›ì€ íŒ¨í‚·ì´ëƒ?
 BOOL
 cLOG_QUE::isReceivedPacket(int _iPacket)
 {
@@ -63,7 +63,7 @@ cLOG_QUE::isReceivedPacket(int _iPacket)
 }	//	cALL_LOGMSG_QUE::isReceivedPacket(int _iPacket)
 
 //
-//	Å¥¿¡¼­ ÆĞÅ¶À» ²¨³½´Ù.
+//	íì—ì„œ íŒ¨í‚·ì„ êº¼ë‚¸ë‹¤.
 ALL_LOGMSG*
 cLOG_QUE::popPacket()
 {
@@ -78,7 +78,7 @@ cLOG_QUE::popPacket()
 	else
 		reset();
 
-	if (m_iFirstQue	>=	dMAX_MSG_COUNT)	m_iFirstQue=0;	//	Ã³À½À¸·Î µ¹¾Æ°£´Ù.
+	if (m_iFirstQue	>=	dMAX_MSG_COUNT)	m_iFirstQue=0;	//	ì²˜ìŒìœ¼ë¡œ ëŒì•„ê°„ë‹¤.
 
 //	MSGOUT("Que : First[%d] Last[%d] Count[%d]",m_iFirstQue,m_iLastQue,m_iCount);
 	return	&m_aPacket[iReturnQue];
@@ -86,7 +86,7 @@ cLOG_QUE::popPacket()
 
 
 //
-//	Å¥¿¡¼­ ÆĞÅ¶À» ²¨³½´Ù.
+//	íì—ì„œ íŒ¨í‚·ì„ êº¼ë‚¸ë‹¤.
 ALL_LOGMSG*
 cLOG_QUE::getOne()
 {
@@ -101,7 +101,7 @@ cLOG_QUE::getOne()
 	else
 		reset();
 	
-	if (m_iCurrentQue	>=	dMAX_MSG_COUNT)	m_iCurrentQue=0;	//	Ã³À½À¸·Î µ¹¾Æ°£´Ù.
+	if (m_iCurrentQue	>=	dMAX_MSG_COUNT)	m_iCurrentQue=0;	//	ì²˜ìŒìœ¼ë¡œ ëŒì•„ê°„ë‹¤.
 
 //	MSGOUT("Que : First[%d] Last[%d] Count[%d]",m_iFirstQue,m_iLastQue,m_iCount);
 	return	&m_aPacket[iReturnQue];

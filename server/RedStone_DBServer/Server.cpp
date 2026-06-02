@@ -403,6 +403,8 @@ int main()
 
 	Sleep(1);
 
+	scp.Read(dCONFIGFILENAME);
+
 	FILE * dbcfp = fopen("AvatarDbInfo.bin","rb");
 
 	if	(!dbcfp)
@@ -422,26 +424,42 @@ int main()
 	{
 		l_bIsTestDB	=	TRUE;
 
-		MessageBox(NULL,"for inner test db server","warning",MB_OK);
+		printf("for inner test db server\n");
 
 		fclose(dbcfp);
 	}
 
-
-	if	(l_bIsTestDB	==	FALSE)
 	{
 		FILE * webfp = fopen("PurchaseDbInfo.bin","rb");
 
-		if	(!webfp)
+		if	(webfp)
 		{
-			ERRMSG("Can not read Purchase db connection info");
-			return 0;
+			fread(strWebDBSource,128,1,webfp);
+			fread(strWebDBId,64,1,webfp);
+			fread(strWebDBPw,64,1,webfp);
+			fclose(webfp);
+			l_bIsTestDB = FALSE;
 		}
+		else
+		{
+			char * lpstrPurchaseDB = scp.getData("PURCHASE_DB");
+			char strDefaultPurchaseDB[] = "redgem";
 
-		fread(strWebDBSource,128,1,webfp);
-		fread(strWebDBId,64,1,webfp);
-		fread(strWebDBPw,64,1,webfp);
-		fclose(webfp);
+			if	(lpstrPurchaseDB[0] == 0)
+				lpstrPurchaseDB = strDefaultPurchaseDB;
+
+			strcpy(strWebDBSource,lpstrPurchaseDB);
+			strcpy(strWebDBId,strAvatarDBId);
+			strcpy(strWebDBPw,strAvatarDBPw);
+			l_bIsTestDB = FALSE;
+			printf("purchase db fallback [%s]\n",strWebDBSource);
+		}
+	}
+
+	if	(l_bIsTestDB	==	FALSE && strWebDBSource[0] == 0)
+	{
+		ERRMSG("Can not read Purchase db connection info");
+		return 0;
 	}
 
 	g_sharedMemory.beginProcess();
@@ -462,8 +480,6 @@ int main()
 	CreateDirectory(bankpath, NULL);
 
 	g_dsManager.init(savepath,listpath,bankpath);
-	scp.Read(dCONFIGFILENAME);
-
 	//	衛 logだ 匐餌п憮 熱薑й 頂辨擊 試 熱薑п.
 	hEventMngThread = hAcceptThread = hAdditionThread = NULL;
 
@@ -662,6 +678,7 @@ BOOL InitSocket()
 
 	if (l_bIsTestDB	==	FALSE)
 	{
+		_log("Purchase DB Connect ip[%s] id[%s] source[%s]",strWebDBIp,strWebDBId,strWebDBSource);
 #ifdef _FOR_KOREA
 		if(!cWeb.Connect(strWebDBIp,strWebDBId,strWebDBPw,strWebDBSource,4))
 		{
@@ -2419,7 +2436,26 @@ void	ProcessRecvPacket(int serial)
 				sPacket.itemno = rPacket->itemno;
 				sPacket.wPrice = rPacket->sPrice;
 
-				cWeb.UseCarrot(rPacket,&sPacket);
+				_log("[CARROT] use request id[%s] name[%s] server[%s] item[%d] count[%d] price[%d] public[%d] zoneSerial[%d]",
+					rPacket->strId,rPacket->strName,rPacket->strServerName,rPacket->itemno,rPacket->itcnt,rPacket->sPrice,rPacket->wIsPublicItem,rPacket->dwSerialInServer);
+
+				int iCurrentCarrotCount = cCarrot.GetCarrot(rPacket->strId);
+
+				if	(iCurrentCarrotCount >= 0 && iCurrentCarrotCount < rPacket->sPrice)
+				{
+					sPacket.crcnt = iCurrentCarrotCount;
+					sPacket.wResult = eUCR_LOW_COUNT;
+					_log("[CARROT] use low count id[%s] current[%d] price[%d]",rPacket->strId,iCurrentCarrotCount,rPacket->sPrice);
+				}
+				else
+				{
+					cWeb.UseCarrot(rPacket,&sPacket);
+
+					if	(sPacket.wResult == eUCR_FAILED && sPacket.crcnt < 0)
+						sPacket.crcnt = iCurrentCarrotCount;
+				}
+				_log("[CARROT] use result id[%s] name[%s] item[%d] count[%d] price[%d] result[%d] remain[%d]",
+					sPacket.strId,sPacket.strName,sPacket.itemno,sPacket.itcnt,sPacket.wPrice,sPacket.wResult,sPacket.crcnt);
 				user->AddSendPacket((char *)&sPacket,sPacket.base.wSize);
 #else
 				BILL_PACK		sPacket;

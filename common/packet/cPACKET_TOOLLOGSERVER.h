@@ -12,69 +12,69 @@
 class	cMSG_BASE_TYPE_FORTOOLLOG
 {
 public:
-	WORD	wSize,				//	ÆÐÅ¶ »çÀÌÁî
-			wType;				//	ÆÐÅ¶ Å¸ÀÔ
+	WORD	wSize,				//	íŒ¨í‚· ì‚¬ì´ì¦ˆ
+			wType;				//	íŒ¨í‚· íƒ€ìž…
 	inline	void	set(WORD size,WORD type)	{wSize	=	size,wType	=	type;}
 };
 
 enum
 {
-	ePACKET_COMMON		=	0x1001	,	//	ÆÄÀÏ¿¡ ÀúÀåµÇ´Â ³»¿ëÀÌ´Ù.
-	ePACKET_SEARCH					,	//	¾îµå¹ÎÅø¿¡¼­ °Ë»öÀ» ¿äÃ»ÇÏ´Ù.
+	ePACKET_COMMON		=	0x1001	,	//	íŒŒì¼ì— ì €ìž¥ë˜ëŠ” ë‚´ìš©ì´ë‹¤.
+	ePACKET_SEARCH					,	//	ì–´ë“œë¯¼íˆ´ì—ì„œ ê²€ìƒ‰ì„ ìš”ì²­í•˜ë‹¤.
 
-	ePACKET_LOGIN		=	0x2001	,	//	¾îµå¹ÎÅø ·Î±×ÀÎ ÇÏ±â
-	ePACKET_SENDNOTICE				,	//	°øÁö ³¯¸®±â 
-	ePACKET_KILLWORLD				,	//	¿ùµå Á×ÀÌ±â
-	ePACKET_LOGINSERVER				,	//	·Î±×ÀÎ ¼­¹ö Á×ÀÌ±â/»ì¸®±â
+	ePACKET_LOGIN		=	0x2001	,	//	ì–´ë“œë¯¼íˆ´ ë¡œê·¸ì¸ í•˜ê¸°
+	ePACKET_SENDNOTICE				,	//	ê³µì§€ ë‚ ë¦¬ê¸° 
+	ePACKET_KILLWORLD				,	//	ì›”ë“œ ì£½ì´ê¸°
+	ePACKET_LOGINSERVER				,	//	ë¡œê·¸ì¸ ì„œë²„ ì£½ì´ê¸°/ì‚´ë¦¬ê¸°
 
-	ePACKET_SETBADUSER	=	0x3001	,	//	ºÒ·® À¯Àú ¼³Á¤
-	ePACKET_DELID					,	//	ID »èÁ¦
-	ePACKET_DELAVA					,	//	Ä³¸¯ÅÍ »èÁ¦
-	ePACKET_RECOVERID				,	//	°èÁ¤º¹±¸
-	ePACKET_RECOVERAVA				,	//	Ä³¸¯ÅÍ º¹±¸ 
-	ePACKET_CHANGENAME				,	//	Ä³¸¯ÅÍ ÀÌ¸§ º¯°æ 
-	ePACKET_SETOPERATER				,	//	¿î¿µÀÚ ¼³Á¤ÇÏ±â
+	ePACKET_SETBADUSER	=	0x3001	,	//	ë¶ˆëŸ‰ ìœ ì € ì„¤ì •
+	ePACKET_DELID					,	//	ID ì‚­ì œ
+	ePACKET_DELAVA					,	//	ìºë¦­í„° ì‚­ì œ
+	ePACKET_RECOVERID				,	//	ê³„ì •ë³µêµ¬
+	ePACKET_RECOVERAVA				,	//	ìºë¦­í„° ë³µêµ¬ 
+	ePACKET_CHANGENAME				,	//	ìºë¦­í„° ì´ë¦„ ë³€ê²½ 
+	ePACKET_SETOPERATER				,	//	ìš´ì˜ìž ì„¤ì •í•˜ê¸°
 
-	ePACKET_DATASAVE	=	0x4001	,	//	ºÒ·® À¯Àú ¼³Á¤
-	ePACKET_CHANGELEVEL				,	//	·¡º§ º¯°æ
-	ePACKET_CHANGELASTVILLAGE		,	//	¸¶Áö¸· ¸¶À» º¯°æ 
-	ePACKET_CHANGELASTFIELD			,	//	¸¶Áö¸· ÇÊµå º¯°æ 
+	ePACKET_DATASAVE	=	0x4001	,	//	ë¶ˆëŸ‰ ìœ ì € ì„¤ì •
+	ePACKET_CHANGELEVEL				,	//	ëž˜ë²¨ ë³€ê²½
+	ePACKET_CHANGELASTVILLAGE		,	//	ë§ˆì§€ë§‰ ë§ˆì„ ë³€ê²½ 
+	ePACKET_CHANGELASTFIELD			,	//	ë§ˆì§€ë§‰ í•„ë“œ ë³€ê²½ 
 
-	ePACKET_INSERTITEMTOBANK		,	//	ÀºÇà¿¡ ¾ÆÀÌÅÛ »ðÀÔ
-	ePACKET_INSERTITEM				,	//	ÀÎº¥Åä¸®¿¡ ¾ÆÀÌÅÛ ÀúÀå
-	ePACKET_REMOVEITEM				,	//	ÀÎº¥Åä¸®¿¡¼­ ¾ÆÀÌÅÛ »èÁ¦
-	ePACKET_ADDEXP					,	//	°æÇèÄ¡ Ãß°¡
+	ePACKET_INSERTITEMTOBANK		,	//	ì€í–‰ì— ì•„ì´í…œ ì‚½ìž…
+	ePACKET_INSERTITEM				,	//	ì¸ë²¤í† ë¦¬ì— ì•„ì´í…œ ì €ìž¥
+	ePACKET_REMOVEITEM				,	//	ì¸ë²¤í† ë¦¬ì—ì„œ ì•„ì´í…œ ì‚­ì œ
+	ePACKET_ADDEXP					,	//	ê²½í—˜ì¹˜ ì¶”ê°€
 
-	ePACKET_ADDGOLD					,	//	°ñµå Ãß°¡
-	ePACKET_ADDGOLDTOBANK			,	//	ÀºÇà¿¡ °ñµå Ãß°¡
-	ePACKET_REMOVEGOLDTOBANK		,	//	ÀºÇà¿¡¼­ °ñµå »èÁ¦
-	ePACKET_REMOVEGOLD				,	//	Ä³¸¯ÅÍ¿¡¼­ °ñµå »èÁ¦
-	ePACKET_REMOVEITEM_BUTTON		,	//	¾ÆÀÌÅÛ Á¦°Å.. (¹öÆ° »ç¿ë)
+	ePACKET_ADDGOLD					,	//	ê³¨ë“œ ì¶”ê°€
+	ePACKET_ADDGOLDTOBANK			,	//	ì€í–‰ì— ê³¨ë“œ ì¶”ê°€
+	ePACKET_REMOVEGOLDTOBANK		,	//	ì€í–‰ì—ì„œ ê³¨ë“œ ì‚­ì œ
+	ePACKET_REMOVEGOLD				,	//	ìºë¦­í„°ì—ì„œ ê³¨ë“œ ì‚­ì œ
+	ePACKET_REMOVEITEM_BUTTON		,	//	ì•„ì´í…œ ì œê±°.. (ë²„íŠ¼ ì‚¬ìš©)
 
-	ePACKET_RECOVERITEM_BUTTON		,	//	¾ÆÀÌÅÛ º¹±¸ .. (¹öÆ° »ç¿ë)
-	ePACKET_RESETSKILLPOINT			,	//	½ºÅ³ ¸®¼Â
-	ePACKET_RESETSTATPOINT			,	//	½ºÅÝ ¸®¼Â
-	ePACKET_MOVETO					,	//	¸¶Áö¸· ¸¶À» È¤Àº °¨¿Á È¤Àº ÀÔ±¸·Î ÀÌµ¿ 
-	ePACKET_DATACOPY				,	//	ÆÄÀÏ·Î ÀúÀåÇÑ°É Æ¯Á¤ Ä³¸¯ÅÍ¿¡ º¹»çÇÑ´Ù.
+	ePACKET_RECOVERITEM_BUTTON		,	//	ì•„ì´í…œ ë³µêµ¬ .. (ë²„íŠ¼ ì‚¬ìš©)
+	ePACKET_RESETSKILLPOINT			,	//	ìŠ¤í‚¬ ë¦¬ì…‹
+	ePACKET_RESETSTATPOINT			,	//	ìŠ¤í…Ÿ ë¦¬ì…‹
+	ePACKET_MOVETO					,	//	ë§ˆì§€ë§‰ ë§ˆì„ í˜¹ì€ ê°ì˜¥ í˜¹ì€ ìž…êµ¬ë¡œ ì´ë™ 
+	ePACKET_DATACOPY				,	//	íŒŒì¼ë¡œ ì €ìž¥í•œê±¸ íŠ¹ì • ìºë¦­í„°ì— ë³µì‚¬í•œë‹¤.
 
-	ePACKET_REMOVEITEM_FROM_BANK	,	//	ÀºÇà¿¡¼­ ¾ÆÀÌÅÛ »èÁ¦
-	ePACKET_SAVE_BANK_DATA			,	//	ÀºÇà µ¥ÀÌÅÍ ÀúÀå
-	ePACKET_FAILED_WORK				,	//	·Î±×¸¦ º¸³½ÈÄ¿¡ ¹«½¼ ÀÛ¾÷À» Çß´Âµ¥, ±× ÀÛ¾÷ÀÌ ½ÇÆÐ Çß´Ù.(ex ¼¼ÀÌºê ·Î±× º¸³»°í ¼¼ÀÌºê Çß´Âµ¥ ¹«½¼ ÀÌÀ¯·Î ¼¼ÀÌºê ½ÇÆÐ!!)
+	ePACKET_REMOVEITEM_FROM_BANK	,	//	ì€í–‰ì—ì„œ ì•„ì´í…œ ì‚­ì œ
+	ePACKET_SAVE_BANK_DATA			,	//	ì€í–‰ ë°ì´í„° ì €ìž¥
+	ePACKET_FAILED_WORK				,	//	ë¡œê·¸ë¥¼ ë³´ë‚¸í›„ì— ë¬´ìŠ¨ ìž‘ì—…ì„ í–ˆëŠ”ë°, ê·¸ ìž‘ì—…ì´ ì‹¤íŒ¨ í–ˆë‹¤.(ex ì„¸ì´ë¸Œ ë¡œê·¸ ë³´ë‚´ê³  ì„¸ì´ë¸Œ í–ˆëŠ”ë° ë¬´ìŠ¨ ì´ìœ ë¡œ ì„¸ì´ë¸Œ ì‹¤íŒ¨!!)
 
-	ePACKET_RENEW_PLAYER_ITEM		,	//	ÇÃ·¹ÀÌ¾î ¾ÆÀÌÅÛ ±â°£ ¿¬Àå
-	ePACKET_RENEW_BANK_ITEM			,	//	ÀºÇà ¾ÆÀÌÅÛ ±â°£ ¿¬Àå
+	ePACKET_RENEW_PLAYER_ITEM		,	//	í”Œë ˆì´ì–´ ì•„ì´í…œ ê¸°ê°„ ì—°ìž¥
+	ePACKET_RENEW_BANK_ITEM			,	//	ì€í–‰ ì•„ì´í…œ ê¸°ê°„ ì—°ìž¥
 	ePACKET_WORK_MESSAGE			,
-	ePACKET_LOAD_PLAYER_DATA		,	//	°èÁ¤ È¤Àº ÇÃ·¹ÀÌ¾î µ¥ÀÌÅÍ¸¦ ·Îµù Çß´Ù.
+	ePACKET_LOAD_PLAYER_DATA		,	//	ê³„ì • í˜¹ì€ í”Œë ˆì´ì–´ ë°ì´í„°ë¥¼ ë¡œë”© í–ˆë‹¤.
 
-	ePACKET_CHANGE_AVATAR_INDEX		,	//	¾Æ¹ÙÅ¸ ÀÎµ¦½º¸¦ ¹Ù²Þ
-	ePACKET_CHANGE_CURRENT_FIELD	,	//	ÇöÀç ÇÊµå¸¦ ¹Ù²Þ
-	ePACKET_CHANGE_SECRET_DUNGEON_PLAY_COUNT,	//	ºñ¹Ð ´øÁ¯ ÇÃ·¹ÀÌ ¼ö¸¦ ¹Ù²Þ
-	ePACKET_CHANGE_EXTRA_INVENTORY_SIZE,	//	ÀÎº¥Åä¸® »çÀÌÁî¸¦ ¹Ù²Þ
-	ePACKET_CHANGE_PENELTY_TIME,		//	Æä³ÎÆ¼ ½Ã°£À» ¹Ù²Þ
-	ePACKET_CHANGE_DEATH_PENELTY_TIME,	//	Á×À½ Æä³ÎÆ¼ ½Ã°£À» ¹Ù²Þ
-	ePACKET_CHANGE_OPERATOR_SHAPE	,	//	Á×À½ Æä³ÎÆ¼ ½Ã°£À» ¹Ù²Þ
+	ePACKET_CHANGE_AVATAR_INDEX		,	//	ì•„ë°”íƒ€ ì¸ë±ìŠ¤ë¥¼ ë°”ê¿ˆ
+	ePACKET_CHANGE_CURRENT_FIELD	,	//	í˜„ìž¬ í•„ë“œë¥¼ ë°”ê¿ˆ
+	ePACKET_CHANGE_SECRET_DUNGEON_PLAY_COUNT,	//	ë¹„ë°€ ë˜ì ¼ í”Œë ˆì´ ìˆ˜ë¥¼ ë°”ê¿ˆ
+	ePACKET_CHANGE_EXTRA_INVENTORY_SIZE,	//	ì¸ë²¤í† ë¦¬ ì‚¬ì´ì¦ˆë¥¼ ë°”ê¿ˆ
+	ePACKET_CHANGE_PENELTY_TIME,		//	íŽ˜ë„í‹° ì‹œê°„ì„ ë°”ê¿ˆ
+	ePACKET_CHANGE_DEATH_PENELTY_TIME,	//	ì£½ìŒ íŽ˜ë„í‹° ì‹œê°„ì„ ë°”ê¿ˆ
+	ePACKET_CHANGE_OPERATOR_SHAPE	,	//	ì£½ìŒ íŽ˜ë„í‹° ì‹œê°„ì„ ë°”ê¿ˆ
 	
-	ePACKET_CHANGE_GUILD_DUNGEON_PLAYTIME	,	//	Á×À½ Æä³ÎÆ¼ ½Ã°£À» ¹Ù²Þ
+	ePACKET_CHANGE_GUILD_DUNGEON_PLAYTIME	,	//	ì£½ìŒ íŽ˜ë„í‹° ì‹œê°„ì„ ë°”ê¿ˆ
 };
 
 struct PACKET_COMMON
@@ -82,7 +82,7 @@ struct PACKET_COMMON
 	cMSG_BASE_TYPE_FORTOOLLOG	base;	//	size = 28 + msg size
 
 	char		strId[dID_LENGTH];
-	DWORD		dwtime;				//	¸¶Áö¸· ÆÐÅ¶Àº 0xffffffff
+	DWORD		dwtime;				//	ë§ˆì§€ë§‰ íŒ¨í‚·ì€ 0xffffffff
 	char		strMsg[512];
 };
 
@@ -440,7 +440,7 @@ struct PACKET_MOVETO
 	char		strUserId[dID_LENGTH];
 	char		strUserName[dNAME_LENGTH];
 	char		strServerName[32];
-	WORD		wPoint;	//	0 - ¸¶À»·Î, 1 - prison , 2 - ÀÔ±¸·Î...
+	WORD		wPoint;	//	0 - ë§ˆì„ë¡œ, 1 - prison , 2 - ìž…êµ¬ë¡œ...
 };
 
 struct PACKET_DATACOPY
@@ -585,62 +585,62 @@ union	ALL_TOOLLOGMSG
 {
 	cMSG_BASE_TYPE_FORTOOLLOG		base;
 
-	PACKET_COMMON					mPACKET_COMMON;	//	¾îµå¹ÎÅø¿¡¼­ °Ë»ö°á°ú·Î µ¹·ÁÁØ´Ù.
-	PACKET_SEARCH					mPACKET_SEARCH;//	¾îµå¹ÎÅø¿¡¼­ °Ë»öÀ» ¿äÃ»ÇÑ´Ù.
+	PACKET_COMMON					mPACKET_COMMON;	//	ì–´ë“œë¯¼íˆ´ì—ì„œ ê²€ìƒ‰ê²°ê³¼ë¡œ ëŒë ¤ì¤€ë‹¤.
+	PACKET_SEARCH					mPACKET_SEARCH;//	ì–´ë“œë¯¼íˆ´ì—ì„œ ê²€ìƒ‰ì„ ìš”ì²­í•œë‹¤.
 
-	PACKET_LOGIN					mPACKET_LOGIN;	//	¾îµå¹ÎÅø ·Î±×ÀÎ ÇÏ±â
-	PACKET_SENDNOTICE				mPACKET_SENDNOTICE;	//	°øÁö ³¯¸®±â 
-	PACKET_KILLWORLD				mPACKET_KILLWORLD;	//	¿ùµå Á×ÀÌ±â
-	PACKET_LOGINSERVER				mPACKET_LOGINSERVER;	//	·Î±×ÀÎ ¼­¹ö Á×ÀÌ±â/»ì¸®±â
+	PACKET_LOGIN					mPACKET_LOGIN;	//	ì–´ë“œë¯¼íˆ´ ë¡œê·¸ì¸ í•˜ê¸°
+	PACKET_SENDNOTICE				mPACKET_SENDNOTICE;	//	ê³µì§€ ë‚ ë¦¬ê¸° 
+	PACKET_KILLWORLD				mPACKET_KILLWORLD;	//	ì›”ë“œ ì£½ì´ê¸°
+	PACKET_LOGINSERVER				mPACKET_LOGINSERVER;	//	ë¡œê·¸ì¸ ì„œë²„ ì£½ì´ê¸°/ì‚´ë¦¬ê¸°
 
-	PACKET_SETBADUSER				mPACKET_SETBADUSER;	//	ºÒ·® À¯Àú ¼³Á¤
-	PACKET_DELID					mPACKET_DELID;	//	ID »èÁ¦
-	PACKET_DELAVA					mPACKET_DELAVA;	//	Ä³¸¯ÅÍ »èÁ¦
-	PACKET_RECOVERID				mPACKET_RECOVERID;	//	°èÁ¤º¹±¸
-	PACKET_RECOVERAVA				mPACKET_RECOVERAVA;	//	Ä³¸¯ÅÍ º¹±¸ 
-	PACKET_CHANGENAME				mPACKET_CHANGENAME;	//	Ä³¸¯ÅÍ ÀÌ¸§ º¯°æ 
-	PACKET_SETOPERATER				mPACKET_SETOPERATER;	//	¿î¿µÀÚ ¼³Á¤ÇÏ±â
+	PACKET_SETBADUSER				mPACKET_SETBADUSER;	//	ë¶ˆëŸ‰ ìœ ì € ì„¤ì •
+	PACKET_DELID					mPACKET_DELID;	//	ID ì‚­ì œ
+	PACKET_DELAVA					mPACKET_DELAVA;	//	ìºë¦­í„° ì‚­ì œ
+	PACKET_RECOVERID				mPACKET_RECOVERID;	//	ê³„ì •ë³µêµ¬
+	PACKET_RECOVERAVA				mPACKET_RECOVERAVA;	//	ìºë¦­í„° ë³µêµ¬ 
+	PACKET_CHANGENAME				mPACKET_CHANGENAME;	//	ìºë¦­í„° ì´ë¦„ ë³€ê²½ 
+	PACKET_SETOPERATER				mPACKET_SETOPERATER;	//	ìš´ì˜ìž ì„¤ì •í•˜ê¸°
 
-	PACKET_DATASAVE					mPACKET_DATASAVE;	//	ºÒ·® À¯Àú ¼³Á¤
-	PACKET_CHANGELEVEL				mPACKET_CHANGELEVEL;	//	·¡º§ º¯°æ
-	PACKET_CHANGELASTVILLAGE		mPACKET_CHANGELASTVILLAGE;	//	¸¶Áö¸· ¸¶À» º¯°æ 
-	PACKET_CHANGELASTFIELD			mPACKET_CHANGELASTFIELD;	//	¸¶Áö¸· ÇÊµå º¯°æ 
+	PACKET_DATASAVE					mPACKET_DATASAVE;	//	ë¶ˆëŸ‰ ìœ ì € ì„¤ì •
+	PACKET_CHANGELEVEL				mPACKET_CHANGELEVEL;	//	ëž˜ë²¨ ë³€ê²½
+	PACKET_CHANGELASTVILLAGE		mPACKET_CHANGELASTVILLAGE;	//	ë§ˆì§€ë§‰ ë§ˆì„ ë³€ê²½ 
+	PACKET_CHANGELASTFIELD			mPACKET_CHANGELASTFIELD;	//	ë§ˆì§€ë§‰ í•„ë“œ ë³€ê²½ 
 
-	PACKET_INSERTITEMTOBANK			mPACKET_INSERTITEMTOBANK;	//	ÀºÇà¿¡ ¾ÆÀÌÅÛ »ðÀÔ
-	PACKET_INSERTITEM				mPACKET_INSERTITEM;	//	ÀÎº¥Åä¸®¿¡ ¾ÆÀÌÅÛ ÀúÀå
-	PACKET_REMOVEITEM				mPACKET_REMOVEITEM;	//	ÀÎº¥Åä¸®³ª ÀºÇà¿¡¼­ ¾ÆÀÌÅÛ »èÁ¦
-	PACKET_ADDEXP					mPACKET_ADDEXP;	//	°æÇèÄ¡ Ãß°¡
+	PACKET_INSERTITEMTOBANK			mPACKET_INSERTITEMTOBANK;	//	ì€í–‰ì— ì•„ì´í…œ ì‚½ìž…
+	PACKET_INSERTITEM				mPACKET_INSERTITEM;	//	ì¸ë²¤í† ë¦¬ì— ì•„ì´í…œ ì €ìž¥
+	PACKET_REMOVEITEM				mPACKET_REMOVEITEM;	//	ì¸ë²¤í† ë¦¬ë‚˜ ì€í–‰ì—ì„œ ì•„ì´í…œ ì‚­ì œ
+	PACKET_ADDEXP					mPACKET_ADDEXP;	//	ê²½í—˜ì¹˜ ì¶”ê°€
 
-	PACKET_ADDGOLD					mPACKET_ADDGOLD;	//	°ñµå Ãß°¡
-	PACKET_ADDGOLDTOBANK			mPACKET_ADDGOLDTOBANK;	//	ÀºÇà¿¡ °ñµå Ãß°¡
-	PACKET_REMOVEGOLDTOBANK			mPACKET_REMOVEGOLDTOBANK;	//	ÀºÇà¿¡¼­ °ñµå »èÁ¦
-	PACKET_REMOVEGOLD				mPACKET_REMOVEGOLD;	//	Ä³¸¯ÅÍ¿¡¼­ °ñµå »èÁ¦
-	PACKET_REMOVEITEM_BUTTON		mPACKET_REMOVEITEM_BUTTON;	//	¾ÆÀÌÅÛ Á¦°Å.. (¹öÆ° »ç¿ë)
+	PACKET_ADDGOLD					mPACKET_ADDGOLD;	//	ê³¨ë“œ ì¶”ê°€
+	PACKET_ADDGOLDTOBANK			mPACKET_ADDGOLDTOBANK;	//	ì€í–‰ì— ê³¨ë“œ ì¶”ê°€
+	PACKET_REMOVEGOLDTOBANK			mPACKET_REMOVEGOLDTOBANK;	//	ì€í–‰ì—ì„œ ê³¨ë“œ ì‚­ì œ
+	PACKET_REMOVEGOLD				mPACKET_REMOVEGOLD;	//	ìºë¦­í„°ì—ì„œ ê³¨ë“œ ì‚­ì œ
+	PACKET_REMOVEITEM_BUTTON		mPACKET_REMOVEITEM_BUTTON;	//	ì•„ì´í…œ ì œê±°.. (ë²„íŠ¼ ì‚¬ìš©)
 
-	PACKET_RECOVERITEM_BUTTON		mPACKET_RECOVERITEM_BUTTON;	//	¾ÆÀÌÅÛ º¹±¸ .. (¹öÆ° »ç¿ë)
-	PACKET_RESETSKILLPOINT			mPACKET_RESETSKILLPOINT;	//	½ºÅ³ ¸®¼Â
-	PACKET_RESETSTATPOINT			mPACKET_RESETSTATPOINT;	//	½ºÅÝ ¸®¼Â
-	PACKET_MOVETO					mPACKET_MOVETO;	//	¸¶Áö¸· ¸¶À» È¤Àº °¨¿Á È¤Àº ÀÔ±¸·Î ÀÌµ¿ 
+	PACKET_RECOVERITEM_BUTTON		mPACKET_RECOVERITEM_BUTTON;	//	ì•„ì´í…œ ë³µêµ¬ .. (ë²„íŠ¼ ì‚¬ìš©)
+	PACKET_RESETSKILLPOINT			mPACKET_RESETSKILLPOINT;	//	ìŠ¤í‚¬ ë¦¬ì…‹
+	PACKET_RESETSTATPOINT			mPACKET_RESETSTATPOINT;	//	ìŠ¤í…Ÿ ë¦¬ì…‹
+	PACKET_MOVETO					mPACKET_MOVETO;	//	ë§ˆì§€ë§‰ ë§ˆì„ í˜¹ì€ ê°ì˜¥ í˜¹ì€ ìž…êµ¬ë¡œ ì´ë™ 
 };
 
 #define	dMAX_MSG_COUNT		10000
 
 class cTOOLLOG_QUE
 {
-	ALL_TOOLLOGMSG	m_aPacket[dMAX_MSG_COUNT];		//	ÆÐÅ¶µé..
-	int			m_iFirstQue,m_iLastQue,m_iCurrentQue,m_iCount,m_iCounter;		//	Ã¹¹øÂ°,¸¶Áö¸· ÆÐÅ¶, ½×¿© ÀÖ´ÂÆÐÅ¶ ¼ö
+	ALL_TOOLLOGMSG	m_aPacket[dMAX_MSG_COUNT];		//	íŒ¨í‚·ë“¤..
+	int			m_iFirstQue,m_iLastQue,m_iCurrentQue,m_iCount,m_iCounter;		//	ì²«ë²ˆì§¸,ë§ˆì§€ë§‰ íŒ¨í‚·, ìŒ“ì—¬ ìžˆëŠ”íŒ¨í‚· ìˆ˜
 	CRITICAL_SECTION	cs;
 
 public:
 					cTOOLLOG_QUE()	{	InitializeCriticalSection(&cs);reset();	}
 					virtual ~cTOOLLOG_QUE()	{DeleteCriticalSection(&cs);	}
-	void			reset();									//	ÃÊ±âÈ­
+	void			reset();									//	ì´ˆê¸°í™”
 	inline	int		getCount(){return	m_iCount;}
-	BOOL			addPacket(ALL_TOOLLOGMSG *_lpPacket);				//	ÆÐÅ¶ Ãß°¡
-	BOOL			isReceivedPacket(int _iPacket);				//	¹ÞÀº ÆÐÅ¶ÀÌ³Ä?
-	ALL_TOOLLOGMSG	*	popPacket();								//	Å¥¿¡¼­ ÆÐÅ¶À» »©³½´Ù.
+	BOOL			addPacket(ALL_TOOLLOGMSG *_lpPacket);				//	íŒ¨í‚· ì¶”ê°€
+	BOOL			isReceivedPacket(int _iPacket);				//	ë°›ì€ íŒ¨í‚·ì´ëƒ?
+	ALL_TOOLLOGMSG	*	popPacket();								//	íì—ì„œ íŒ¨í‚·ì„ ë¹¼ë‚¸ë‹¤.
 
-	ALL_TOOLLOGMSG	*	getOne();									//	Å¥¿¡¼­ ÆÐÅ¶ ÇÏ³ª¸¦ ¾ò¾î³½´Ù.
+	ALL_TOOLLOGMSG	*	getOne();									//	íì—ì„œ íŒ¨í‚· í•˜ë‚˜ë¥¼ ì–»ì–´ë‚¸ë‹¤.
 	void			setFront()
 	{	
 		m_iCounter		=	m_iCount;

@@ -13,7 +13,7 @@
 #endif
 
 #ifdef	_FOR_USA
-#define	_OGP_SERVICE	1	//	ÆÛºúÔ®¼Å°¡ OGP´Ù
+#define	_OGP_SERVICE	1	//	í¼ë¹šè³­ì…”ê°€ OGPë‹¤
 #endif
 
 #ifdef	_OGP_SERVICE
@@ -70,7 +70,7 @@ enum
 
 const	int	c_iStateTypeCount	=	eSTATE_LUCK+1;
 
-#define	dSTATE_TYPE_COUNT			c_iStateTypeCount	//	const´Â »ö±òÀÌ ¾È º¯ÇØ¼­.. defineÀ¸·Î ´Ù½Ã Á¤ÀÇÇÔ.
+#define	dSTATE_TYPE_COUNT			c_iStateTypeCount	//	constëŠ” ìƒ‰ê¹”ì´ ì•ˆ ë³€í•´ì„œ.. defineìœ¼ë¡œ ë‹¤ì‹œ ì •ì˜í•¨.
 #define	dITEM_COOL_TIME_BUFFER_SIZE	12
 
 enum
@@ -240,75 +240,75 @@ public:
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR CRYPT
 ///////////////////////////////////////////////////////
-#define	dPROTECT_NONE							0			//	¾Æ¹«·± º¸È£ ÀåÄ¡°¡ ¾øÀ½
-#define	dPROTECT_ORCRYPT						1			//	°£´ÜÇÑ OR ¾ÏÈ£È­ ÇÑ´Ù.
-#define	dPROTECT_SEED							2			//	SEED·Î ¾ÏÈ£È­ ÇÑ´Ù.
-#define	dPROTECT_COMPRESSED						3			//	¾ĞÃàÇß´Ù.
+#define	dPROTECT_NONE							0			//	ì•„ë¬´ëŸ° ë³´í˜¸ ì¥ì¹˜ê°€ ì—†ìŒ
+#define	dPROTECT_ORCRYPT						1			//	ê°„ë‹¨í•œ OR ì•”í˜¸í™” í•œë‹¤.
+#define	dPROTECT_SEED							2			//	SEEDë¡œ ì•”í˜¸í™” í•œë‹¤.
+#define	dPROTECT_COMPRESSED						3			//	ì••ì¶•í–ˆë‹¤.
 
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR USER CLASS
 ///////////////////////////////////////////////////////
 #ifdef _FOR_INTER	
-	#define dID_LENGTH						64	//	USERÀÇ ¾ÆÀÌµE±æÀÌ 
+	#define dID_LENGTH						64	//	USERì˜ ì•„ì´ï¿½ÂEê¸¸ì´ 
 #else
-	#define dID_LENGTH						20	//	USERÀÇ ¾ÆÀÌµE±æÀÌ 
+	#define dID_LENGTH						20	//	USERì˜ ì•„ì´ï¿½ÂEê¸¸ì´ 
 #endif
-#define	dPASS_LENGTH						20	//	ÆĞ½º¿öµE±æÀÌ
-#define	dNAME_LENGTH						18	//	¾ÆÀÌµE±æÀÌ
-#define dCDKEY_LENGTH						18	//	CDKEY ±æÀÌ 
-#define	dIP_SIZE							16	//	ÁÖ¼Ò
+#define	dPASS_LENGTH						20	//	íŒ¨ìŠ¤ì›Œï¿½ÂEê¸¸ì´
+#define	dNAME_LENGTH						18	//	ì•„ì´ï¿½ÂEê¸¸ì´
+#define dCDKEY_LENGTH						18	//	CDKEY ê¸¸ì´ 
+#define	dIP_SIZE							16	//	ì£¼ì†Œ
 
-#define	dMAX_AVATAR_COUNT					6	//	ÃÖ´E»ı¼º °¡´ÉÇÑ ¾Æ¹ÙÅ¸ ¼E//	16°³ ÀÎµ¥.. rs2 ¹®Á¦·Î dB ÃÖÀûÈ­, ÆĞÅ¶ ÃÖÀûÈ­¸¦ ÇÏÁE¸øÇØ ¿E± 6°³¸¸ Áö¿E
-#define	dDEFAULT_AVATAR_COUNT				6	//	±âº» »ı¼º °¡´ÉÇÑ ¾Æ¹ÙÅ¸ ¼öÀE
-#define dMAX_AVATAR_DATA_SIZE				6000//	DB¿¡ ÀúÀåµÇ´Â ¹ÙÀÌ³Ê¸® ÃÖ´E»çÀÌÁE
+#define	dMAX_AVATAR_COUNT					6	//	ìµœï¿½ÂEìƒì„± ê°€ëŠ¥í•œ ì•„ë°”íƒ€ ï¿½ÂE//	16ê°œ ì¸ë°.. rs2 ë¬¸ì œë¡œ dB ìµœì í™”, íŒ¨í‚· ìµœì í™”ë¥¼ í•˜ï¿½ÂEëª»í•´ ï¿½ÂEï¿½ 6ê°œë§Œ ì§€ï¿½ÂE
+#define	dDEFAULT_AVATAR_COUNT				6	//	ê¸°ë³¸ ìƒì„± ê°€ëŠ¥í•œ ì•„ë°”íƒ€ ìˆ˜ï¿½ÂE
+#define dMAX_AVATAR_DATA_SIZE				6000//	DBì— ì €ì¥ë˜ëŠ” ë°”ì´ë„ˆë¦¬ ìµœï¿½ÂEì‚¬ì´ï¿½ÂE
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR COMMUNITY
 ///////////////////////////////////////////////////////
-#define dCHAT_LENGTH					128	//	Ã¤ÆÃ ¸Ş¼¼ÁE±æÀÌ
+#define dCHAT_LENGTH					128	//	ì±„íŒ… ë©”ì„¸ï¿½ÂEê¸¸ì´
 
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR GUILD
 ///////////////////////////////////////////////////////
 #define dGUILD_MAX_COUNT				4000
 #define dGUILD_COUNT_FORPACKET			3
-#define dGUILD_NAME_LENGTH				34	//GUILD NAME ÃÖ´E±æÀÌ
+#define dGUILD_NAME_LENGTH				34	//GUILD NAME ìµœï¿½ÂEê¸¸ì´
 
-#define dGUILD_CLASS_NOT				0	//±æµå°¡ ¾ø´Ù.
-#define dGUILD_CLASS_ROOKIE				1	//½ÅÀÔÈ¸¿E
-#define	dGUILD_CLASS_MEMBER				2	//Á¤È¸¿E
-#define dGUILD_CLASS_PARLIAMENT			3	//ÀÇ¿E
-#define dGUILD_CLASS_SUBMASTER			4	//ºÎ ¸¶½ºÅÍ
-#define dGUILD_CLASS_ELDER				5	//¿ø·Î 
-#define dGUILD_CLASS_MASTER				6	//¸¶½ºÅÍ
+#define dGUILD_CLASS_NOT				0	//ê¸¸ë“œê°€ ì—†ë‹¤.
+#define dGUILD_CLASS_ROOKIE				1	//ì‹ ì…íšŒï¿½ÂE
+#define	dGUILD_CLASS_MEMBER				2	//ì •íšŒï¿½ÂE
+#define dGUILD_CLASS_PARLIAMENT			3	//ì˜ï¿½ÂE
+#define dGUILD_CLASS_SUBMASTER			4	//ë¶€ ë§ˆìŠ¤í„°
+#define dGUILD_CLASS_ELDER				5	//ì›ë¡œ 
+#define dGUILD_CLASS_MASTER				6	//ë§ˆìŠ¤í„°
 
-#define dGUILD_MIN_PLAYER				10	//Ã³À½ 10¸úÍûİE¸ğÁıÀÌ °¡´ÉÇÏ´Ù.
-#define dGUILD_UP_PLAYER				10	//·¾¾÷½Ã Æ÷ÀÎÆ®¸¦ »ç¿EÏ¿© ÃÖ´E¸ğÁıÀÎ¿øÀ» ÀÌ ¼öÄ¡¸¸Å­ ¿Ã¸±¼EÀÖ´Ù.
-#define dGUILD_MAX_PLAYER				200	//±æµåÀÇ ÃÖ´E¸ğÁıÀÎ¿E- DB SP¼öÁ¤ÇÒ °Í!! - °¡ÀÔºÎºĞ
+#define dGUILD_MIN_PLAYER				10	//ì²˜ìŒ 10ë«„å¯¡ï¿½ÂEëª¨ì§‘ì´ ê°€ëŠ¥í•˜ë‹¤.
+#define dGUILD_UP_PLAYER				10	//ë ™ì—…ì‹œ í¬ì¸íŠ¸ë¥¼ ì‚¬ï¿½ÂEè‡¼ï¿½ ìµœï¿½ÂEëª¨ì§‘ì¸ì›ì„ ì´ ìˆ˜ì¹˜ë§Œí¼ ì˜¬ë¦´ï¿½ÂEìˆë‹¤.
+#define dGUILD_MAX_PLAYER				200	//ê¸¸ë“œì˜ ìµœï¿½ÂEëª¨ì§‘ì¸ï¿½ÂE- DB SPìˆ˜ì •í•  ê²ƒ!! - ê°€ì…ë¶€ë¶„
 
-#define dGUILD_MIN_SUBMASTER			1	//¼­¹ö¸¶½ºÅÍ´Â Ã³À½¿¡ ÀÌ¼öÄ¡¸¸Å­ µÑ¼EÀÖ´Ù. ¸¶½ºÅÍ°¡ ÁöÁ¤
-#define dGUILD_UP_SUBMASTER				1	//·¾¾÷½Ã Æ÷ÀÎÆ®¸¦ »ç¿EÏ¿© ÃÖ´E¼­ºE¶¼­ÅÍÀÎ¿øÀ» ÀÌ ¼öÄ¡¸¸Å­ ¿Ã¸±¼EÀÖ´Ù.
-#define dGUILD_MAX_SUBMASTER			25	//¼­ºE¶½ºÅÍÀÇ ÃÖ´EÀÎ¿E
-#define dGUILD_MIN_CONGRESSMAN			0	//ÀÇ¿øÀÇ ÃÊ±E¼³Á¤°¡´ÉÇÑ ÀÎ¿E
-#define dGUILD_UP_CONGRESSMAN			5	//·¾¾÷½Ã Æ÷ÀÎÆ®¸¦ »ç¿EÏ¿© ÃÖ´EÀÇ¿ø¼ö¸¦ ÀÌ ¼öÄ¡¸¸Å­ ¿Ã¸±¼EÀÖ´Ù.
-#define dGUILD_MAX_CONGRESSMAN			100	//ÀÇ¿øÀÇ ÃÖ´E¸ğÁıÀÎ¿E
-#define dGUILD_MIN_LEVEL				0	//±æµå·¹º§ÀÇ ½ÃÀÛ¼öÄ¡
-#define dGUILD_MAX_LEVEL				200	//±æµå·¹º§ÀÇ ÃÖ´EöÄ¡
+#define dGUILD_MIN_SUBMASTER			1	//ì„œë²„ë§ˆìŠ¤í„°ëŠ” ì²˜ìŒì— ì´ìˆ˜ì¹˜ë§Œí¼ ë‘˜ï¿½ÂEìˆë‹¤. ë§ˆìŠ¤í„°ê°€ ì§€ì •
+#define dGUILD_UP_SUBMASTER				1	//ë ™ì—…ì‹œ í¬ì¸íŠ¸ë¥¼ ì‚¬ï¿½ÂEè‡¼ï¿½ ìµœï¿½ÂEì„œï¿½ÂEë–¼ï¿½ç—¼æåªï¿½ ì´ ìˆ˜ì¹˜ë§Œí¼ ì˜¬ë¦´ï¿½ÂEìˆë‹¤.
+#define dGUILD_MAX_SUBMASTER			25	//ì„œï¿½ÂEë–½ëµ€ç—¼ï¿½ ìµœï¿½ÂEì¸ï¿½ÂE
+#define dGUILD_MIN_CONGRESSMAN			0	//ì˜ì›ì˜ ì´ˆï¿½ÂEì„¤ì •ê°€ëŠ¥í•œ ì¸ï¿½ÂE
+#define dGUILD_UP_CONGRESSMAN			5	//ë ™ì—…ì‹œ í¬ì¸íŠ¸ë¥¼ ì‚¬ï¿½ÂEè‡¼ï¿½ ìµœï¿½ÂEì˜ì›ìˆ˜ë¥¼ ì´ ìˆ˜ì¹˜ë§Œí¼ ì˜¬ë¦´ï¿½ÂEìˆë‹¤.
+#define dGUILD_MAX_CONGRESSMAN			100	//ì˜ì›ì˜ ìµœï¿½ÂEëª¨ì§‘ì¸ï¿½ÂE
+#define dGUILD_MIN_LEVEL				0	//ê¸¸ë“œë ˆë²¨ì˜ ì‹œì‘ìˆ˜ì¹˜
+#define dGUILD_MAX_LEVEL				200	//ê¸¸ë“œë ˆë²¨ì˜ ìµœï¿½ÂEç©‰ï¿½
 
-#define dGUILD_MIN_SKILL				1	//±æµE½ºÅ³ÀÇ ½ÃÀÛ¼öÄ¡
-#define dGUILD_UP_SKILL					3	//·¾¾÷½Ã Æ÷ÀÎÆ®¸¦ »ç¿EÏ¿© ÃÖ´E½ºÅ³¼ö¸¦ ÀÌ ¼öÄ¡¸¸Å­ ¿Ã¸±¼EÀÖ´Ù.
-#define dGUILD_MAX_SKILL				50	//ÃÖ´E±æµE½ºÅ³ ¼E
+#define dGUILD_MIN_SKILL				1	//ê¸¸ï¿½ÂEìŠ¤í‚¬ì˜ ì‹œì‘ìˆ˜ì¹˜
+#define dGUILD_UP_SKILL					3	//ë ™ì—…ì‹œ í¬ì¸íŠ¸ë¥¼ ì‚¬ï¿½ÂEè‡¼ï¿½ ìµœï¿½ÂEìŠ¤í‚¬ìˆ˜ë¥¼ ì´ ìˆ˜ì¹˜ë§Œí¼ ì˜¬ë¦´ï¿½ÂEìˆë‹¤.
+#define dGUILD_MAX_SKILL				50	//ìµœï¿½ÂEê¸¸ï¿½ÂEìŠ¤í‚¬ ï¿½ÂE
 
-#define dGUILD_MIN_INVEN				48	//±æµåÀÇ ÃÊ±EÀÎº¥Åä¸® ¼E
-#define dGUILD_UP_INVEN					10	//·¾¾÷½Ã Æ÷ÀÎÆ®¸¦ »ç¿EÏ¿© ÃÖ´EÀÎº¥Åä¸® ¼ö¸¦ ÀÌ ¼öÄ¡¸¸Å­ ¿Ã¸±¼EÀÖ´Ù.
-#define dGUILD_MAX_INVEN				200	//ÃÖ´E±æµEÀÎº¥Åä¸® ¼E
-#define dGUILD_MIN_GROUND				1	//±âº»À¸·Î ÇÏ³ª ÁÖ¾ûİø´Ù. (ÀÌº¥Æ®¿¡ µû¶EÇÏ³ª°¡ Á¤ÇØÁø´Ù.)
-#define dGUILD_UP_GROUND				1	//·¾¾÷½Ã Æ÷ÀÎÆ®¸¦ »ç¿EÏ¿© ÃÖ´E¿¬°úİE¼ö¸¦ ÀÌ ¼öÄ¡¸¸Å­ ¿Ã¸±¼EÀÖ´Ù.
-#define dGUILD_MAX_GROUND				5	//ÃÖ´E¿¬°úİE¼E
-#define dGUILD_MAX_HALL					1	//ÇÏ³ªÀÇ È¦·Î ÅEÏ°E, ¿¬°úİö°¡ ´Ã¾ûÏª¸EÃâ±¸°¡ ´Ã¾ûÏ­´Ù. 
+#define dGUILD_MIN_INVEN				48	//ê¸¸ë“œì˜ ì´ˆï¿½ÂEì¸ë²¤í† ë¦¬ ï¿½ÂE
+#define dGUILD_UP_INVEN					10	//ë ™ì—…ì‹œ í¬ì¸íŠ¸ë¥¼ ì‚¬ï¿½ÂEè‡¼ï¿½ ìµœï¿½ÂEì¸ë²¤í† ë¦¬ ìˆ˜ë¥¼ ì´ ìˆ˜ì¹˜ë§Œí¼ ì˜¬ë¦´ï¿½ÂEìˆë‹¤.
+#define dGUILD_MAX_INVEN				200	//ìµœï¿½ÂEê¸¸ï¿½ÂEì¸ë²¤í† ë¦¬ ï¿½ÂE
+#define dGUILD_MIN_GROUND				1	//ê¸°ë³¸ìœ¼ë¡œ í•˜ë‚˜ ì£¼ì—‰ç¢‘ë‹¤. (ì´ë²¤íŠ¸ì— ë”°ï¿½ÂEí•˜ë‚˜ê°€ ì •í•´ì§„ë‹¤.)
+#define dGUILD_UP_GROUND				1	//ë ™ì—…ì‹œ í¬ì¸íŠ¸ë¥¼ ì‚¬ï¿½ÂEè‡¼ï¿½ ìµœï¿½ÂEì—°ê³¼ï¿½ÂEìˆ˜ë¥¼ ì´ ìˆ˜ì¹˜ë§Œí¼ ì˜¬ë¦´ï¿½ÂEìˆë‹¤.
+#define dGUILD_MAX_GROUND				5	//ìµœï¿½ÂEì—°ê³¼ï¿½ÂEï¿½ÂE
+#define dGUILD_MAX_HALL					1	//í•˜ë‚˜ì˜ í™€ë¡œ ï¿½ÂEæ§‹ÂE, ì—°ê³¼ç—ºê°€ ëŠ˜ì—‰å»ï¿½ÂEì¶œêµ¬ê°€ ëŠ˜ì—‰æ•‘ë‹¤. 
 
-#define dGUILD_DORMANCYLIMITPERIOD_FORGUILDMASTER	30	//	day : ÀÌ ±â°£µ¿¾È ¸¶½ºÅÍ°¡ Á¢¼ÓÇÏÁE¾ÊÀ¸¸E ´Ù¸¥ À¯Àú¿¡°Ô ¸¶½ºÅÍ ±ÇÇÑÀÌ ³Ñ¾ûÌ£´Ù.
-#define dGUILD_MINLIMITPERIOD_FORCHANGINGELDER		30	//	day : ÀÌ ±â°£ÀÌ»E¸¶½ºÅÍ¸¦ Áö³½ ±æµå¿øÀº ÃßÈÄ ¿ø·Î·Î Ãß´EÈ´Ù.
-#define dGUILD_DORMANCYLIMITPERIOD_FORGUILD			45	//	day : ÀÌ ±â°£µ¿¾È ±æµå¿¡ ¼ÓÇÑ ¾ûÒ² À¯Àúµµ Á¢¼ÓÇÏÁE¾Ê´Â´Ù¸E±æµå´Â »èÁ¦µÈ´Ù.
+#define dGUILD_DORMANCYLIMITPERIOD_FORGUILDMASTER	30	//	day : ì´ ê¸°ê°„ë™ì•ˆ ë§ˆìŠ¤í„°ê°€ ì ‘ì†í•˜ï¿½ÂEì•Šìœ¼ï¿½ÂE ë‹¤ë¥¸ ìœ ì €ì—ê²Œ ë§ˆìŠ¤í„° ê¶Œí•œì´ ë„˜ì—‰é»”ë‹¤.
+#define dGUILD_MINLIMITPERIOD_FORCHANGINGELDER		30	//	day : ì´ ê¸°ê°„ì´ï¿½ÂEë§ˆìŠ¤í„°ë¥¼ ì§€ë‚¸ ê¸¸ë“œì›ì€ ì¶”í›„ ì›ë¡œë¡œ ì¶”ï¿½ÂEí™±ï¿½.
+#define dGUILD_DORMANCYLIMITPERIOD_FORGUILD			45	//	day : ì´ ê¸°ê°„ë™ì•ˆ ê¸¸ë“œì— ì†í•œ ì—‰ï¤® ìœ ì €ë„ ì ‘ì†í•˜ï¿½ÂEì•ŠëŠ”ë‹¤ï¿½ÂEê¸¸ë“œëŠ” ì‚­ì œëœë‹¤.
 
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR GAME PROCESS SERVER
@@ -320,24 +320,24 @@ public:
 //		DEFINE	FOR PARTY
 ///////////////////////////////////////////////////////
 #define dMAX_PARTY_COUNT				1000
-#define dPARTYNAME_LENGTH				22	//	ÆÄÆ¼ÀÌ¸§ ±æÀÌ
-#define dPARTY_MAXPLAYER				8	//	ÆÄÆ¼ÀÇ ÃÖ´EÀÎ¿ø¼E
-#define dPARTYLIST_COUNT				8	//	ÇÑ¹ø¿¡ º¸³»´Â ÆÄÆ¼ ¸®½ºÆ® ¼E
+#define dPARTYNAME_LENGTH				22	//	íŒŒí‹°ì´ë¦„ ê¸¸ì´
+#define dPARTY_MAXPLAYER				8	//	íŒŒí‹°ì˜ ìµœï¿½ÂEì¸ì›ï¿½ÂE
+#define dPARTYLIST_COUNT				8	//	í•œë²ˆì— ë³´ë‚´ëŠ” íŒŒí‹° ë¦¬ìŠ¤íŠ¸ ï¿½ÂE
 
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR LOG SERVER
 ///////////////////////////////////////////////////////
-#define dLOG_MAX_USER_COUNT				128		//LOG¼­¹ö¿¡¼­ ÇÑ¹ø¿¡ ¼ö¿E¡´ÉÇÑ ¼­¹ö¼E
+#define dLOG_MAX_USER_COUNT				128		//LOGì„œë²„ì—ì„œ í•œë²ˆì— ìˆ˜ï¿½ÂEã€ˆî€¦ï¿½ ì„œë²„ï¿½ÂE
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR LOGIN SERVER
 ///////////////////////////////////////////////////////
-#define dLOGIN_MAX_USER_COUNT			5000	//LOGIN¼­¹ö¿¡¼­ ÇÑ¹ø¿¡ ¼ö¿E¡´ÉÇÑ USER¼E
-#define dNOTICE_MAX_LENGTH				4000	//°øÁEÃÖ´E±æÀÌ - dbÀÇ ÃÖ´EVARCHARÇE±æÀÌ´Â 4000
+#define dLOGIN_MAX_USER_COUNT			5000	//LOGINì„œë²„ì—ì„œ í•œë²ˆì— ìˆ˜ï¿½ÂEã€ˆî€¦ï¿½ USERï¿½ÂE
+#define dNOTICE_MAX_LENGTH				4000	//ê³µï¿½ÂEìµœï¿½ÂEê¸¸ì´ - dbì˜ ìµœï¿½ÂEVARCHARï¿½ÂEê¸¸ì´ëŠ” 4000
 
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR GAME PROCESS SERVER
 ///////////////////////////////////////////////////////
-#define dGAME_MAX_USER_COUNT			2300	//°ÔÀÓ ¼­¹ö¿¡¼­ ÇÑ¹ø¿¡ ¼ö¿E¡´ÉÇÑ USER¼E
+#define dGAME_MAX_USER_COUNT			2300	//ê²Œì„ ì„œë²„ì—ì„œ í•œë²ˆì— ìˆ˜ï¿½ÂEã€ˆî€¦ï¿½ USERï¿½ÂE
 
 #ifdef _FOR_CHINA
 #define dGAME_MAX_FIELD_COUNT 2048
@@ -353,18 +353,18 @@ public:
 //		DEFINE	FOR WORLD MANAGEMENT SERVER
 ///////////////////////////////////////////////////////
 #define dWORLD_NAME_LENGTH				32
-#define dWORLD_MAX_USER_COUNT			32		//°ÔÀÓ¼­¹ö´Ù -_-a + admin 
-#define dWORLD_MAX_ALLUSER_COUNT		8000	//ÇÑ ¿ùµå´E¼ö¿E¡´ÉÇÑ ÀÎ¿E
+#define dWORLD_MAX_USER_COUNT			32		//ê²Œì„ì„œë²„ë‹¤ -_-a + admin 
+#define dWORLD_MAX_ALLUSER_COUNT		8000	//í•œ ì›”ë“œï¿½ÂEìˆ˜ï¿½ÂEã€ˆî€¦ï¿½ ì¸ï¿½ÂE
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR DB MANAGEMENT SERVER
 ///////////////////////////////////////////////////////
-#define dDB_MAX_USER_COUNT				16		//¿ùµE¼­¹ö¸¸...
-#define dUSERDB_MAX_USER_COUNT			16		//¿ùµE¼­¹ö¸¸...
+#define dDB_MAX_USER_COUNT				16		//ì›”ï¿½ÂEì„œë²„ë§Œ...
+#define dUSERDB_MAX_USER_COUNT			16		//ì›”ï¿½ÂEì„œë²„ë§Œ...
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR PACKET
 ///////////////////////////////////////////////////////
-#define	dMAX_PACKET_LENGTH				8196		//Å¬¶óÀÌ¾ğÆ®¿ÍÀÇ ÆĞÅ¶ ¹öÆÛÀÇ ±æÀÌ 
-#define	dMAX_PACKET_LENGTH_SERVER		256000		//¼­¹ö°£ÀÇ ÆĞÅ¶ ¹öÆÛÀÇ ±æÀÌ 
+#define	dMAX_PACKET_LENGTH				8196		//í´ë¼ì´ì–¸íŠ¸ì™€ì˜ íŒ¨í‚· ë²„í¼ì˜ ê¸¸ì´ 
+#define	dMAX_PACKET_LENGTH_SERVER		256000		//ì„œë²„ê°„ì˜ íŒ¨í‚· ë²„í¼ì˜ ê¸¸ì´ 
 
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR PROFILE
@@ -380,16 +380,16 @@ extern void	ProcessSendPacket(int serial);
 //extern CTracerFromSaveLog	* _SLOG;
 #define	_sLog			_SLOG->print
 
-const int	c_iDBControlledEvnetCount = 256;	//	DB·Î Á¦¾ûãÏ´Â ÀÌº¥Æ® ¼E
+const int	c_iDBControlledEvnetCount = 256;	//	DBë¡œ ì œì—‰è±ºëŠ” ì´ë²¤íŠ¸ ï¿½ÂE
 ///////////////////////////////////////////////////////
 //		DEFINE	FOR ADMIN TOOL
 ///////////////////////////////////////////////////////
-#define dMAX_WORLD_SERVER_COUNT			20	//	ÃÖ´E¿ùµE¼­¹E°¹¼E
+#define dMAX_WORLD_SERVER_COUNT			20	//	ìµœï¿½ÂEì›”ï¿½ÂEì„œï¿½ÂEê°¯ï¿½ÂE
 #define dMAX_ADMIN_COUNT				10
 
 typedef struct 
 {
-	WORD	wIndex;	//	°úÜ¯ ÀÎµ¦½º
+	WORD	wIndex;	//	ê³¼é¼ˆ ì¸ë±ìŠ¤
 	char	strName[dGUILD_NAME_LENGTH];
 	int		iLevel;
 	int		iHallLevel;
@@ -403,7 +403,7 @@ typedef struct
 	int		iLost;
 	int		iDraw;
 	int		iCancel;
-}GUILDINFO_FORADMIN;	//	admin Åø¿¡¼­ »ç¿EÒ Á¤º¸
+}GUILDINFO_FORADMIN;	//	admin íˆ´ì—ì„œ ì‚¬ï¿½ÂEï¿½ ì •ë³´
 
 
 ///////////////////////////////////////////////////////
@@ -428,35 +428,35 @@ public:
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////	
-//	°áÅõÀE°EÃ Á¤º¸ Á¤ÀÇ
+//	ê²°íˆ¬ï¿½ÂEï¿½ÂEï¿½ ì •ë³´ ì •ì˜
 ////////////////////////////////////////////////////////////////////////////////////////////////////	
 
-const	int	c_iDuelServerLobyIndex		=	900;	//	°áÅõÀE¼­¹E·ÎºEÇÊµEÀÎµ¦½º
+const	int	c_iDuelServerLobyIndex		=	900;	//	ê²°íˆ¬ï¿½ÂEì„œï¿½ÂEë¡œï¿½ÂEí•„ï¿½ÂEì¸ë±ìŠ¤
 const	int	c_iDefaultGoldForDuelPlayer	=	100;
-const	int	c_iLevelForDuelServer		=	300;	//	°áÅõ¼­¹ö¿¡¼­ÀÇ Ä³¸¯ÅÍ ·¹º§
+const	int	c_iLevelForDuelServer		=	300;	//	ê²°íˆ¬ì„œë²„ì—ì„œì˜ ìºë¦­í„° ë ˆë²¨
 
 class	cDuelRecord
 {
 public:
-	int	m_iTrialGameWinPoint;//	¿¹¼±ÀE½ÂÁ¡ : 
-	int	m_iDuelPoint;	//	°áÅEÆ÷ÀÎÆ® : º¸»EÁö±Ş¿E
-	int	m_iBattleCount;	//	ÀEEÈ½¼E	
-	int	m_iWinCount;	//	½Â¸® È½¼E	
-	int	m_iDefeatCount;	//	ÆĞ¹EÈ½¼E	
-	int	m_iDrawCount;	//	¹«½ÂºÎ È½¼E
-	int	m_iWeeklyWinPoint;		//	ÁÖ°£ °áÅE½ÂÁ¡
-	int	m_iWeeklyBattleCount;	//	ÁÖ°£ °áÅEÈ½¼E	
-	int	m_iWeeklyWinCount;		//	ÁÖ°£ °áÅE½Â¸® È½¼E	
-	int	m_iWeeklyDefeatCount;	//	ÁÖ°£ °áÅEÆĞ¹EÈ½¼E	
-	int	m_iWeeklyDrawCount;		//	ÁÖ°£ °áÅE¹«½ÂºÎ È½¼E
+	int	m_iTrialGameWinPoint;//	ì˜ˆì„ ï¿½ÂEìŠ¹ì  : 
+	int	m_iDuelPoint;	//	ê²°ï¿½ÂEí¬ì¸íŠ¸ : ë³´ï¿½ÂEì§€ê¸‰ï¿½ÂE
+	int	m_iBattleCount;	//	ï¿½ÂEÂEíšŸï¿½ÂE	
+	int	m_iWinCount;	//	ìŠ¹ë¦¬ íšŸï¿½ÂE	
+	int	m_iDefeatCount;	//	íŒ¨ï¿½ÂEíšŸï¿½ÂE	
+	int	m_iDrawCount;	//	ë¬´ìŠ¹ë¶€ íšŸï¿½ÂE
+	int	m_iWeeklyWinPoint;		//	ì£¼ê°„ ê²°ï¿½ÂEìŠ¹ì 
+	int	m_iWeeklyBattleCount;	//	ì£¼ê°„ ê²°ï¿½ÂEíšŸï¿½ÂE	
+	int	m_iWeeklyWinCount;		//	ì£¼ê°„ ê²°ï¿½ÂEìŠ¹ë¦¬ íšŸï¿½ÂE	
+	int	m_iWeeklyDefeatCount;	//	ì£¼ê°„ ê²°ï¿½ÂEíŒ¨ï¿½ÂEíšŸï¿½ÂE	
+	int	m_iWeeklyDrawCount;		//	ì£¼ê°„ ê²°ï¿½ÂEë¬´ìŠ¹ë¶€ íšŸï¿½ÂE
 	char	m_strID[dID_LENGTH];
 	char	m_strName[dNAME_LENGTH];
 	WORD	m_wJob;
 };
 
-//	¿©±â¿¡ °áÅõÆÀ Á¤º¸¸¦ ´ãÀ» ¶§´Â 
-//	m_strID´Â ºñ¿EE
-//	m_strName¿¡ ÆÀ ÀÌ¸§À» ³Ö´Â´Ù.
+//	ì—¬ê¸°ì— ê²°íˆ¬íŒ€ ì •ë³´ë¥¼ ë‹´ì„ ë•ŒëŠ” 
+//	m_strIDëŠ” ë¹„ï¿½ÂEÂE
+//	m_strNameì— íŒ€ ì´ë¦„ì„ ë„£ëŠ”ë‹¤.
 class	cDuelRankingInfo
 {
 public:
@@ -464,11 +464,11 @@ public:
 	char	m_strName[dNAME_LENGTH];
 	WORD	m_wJob,m_wRank;
 
-	int		m_iWinPoint;	//	½ÂÁ¡
-	int		m_iBattleCount;	//	ÀEEÈ½¼E	
-	int		m_iWinCount;	//	½Â¸® È½¼E	
-	int		m_iDefeatCount;	//	ÆĞ¹EÈ½¼E	
-	int		m_iDrawCount;	//	¹«½ÂºÎ È½¼E
+	int		m_iWinPoint;	//	ìŠ¹ì 
+	int		m_iBattleCount;	//	ï¿½ÂEÂEíšŸï¿½ÂE	
+	int		m_iWinCount;	//	ìŠ¹ë¦¬ íšŸï¿½ÂE	
+	int		m_iDefeatCount;	//	íŒ¨ï¿½ÂEíšŸï¿½ÂE	
+	int		m_iDrawCount;	//	ë¬´ìŠ¹ë¶€ íšŸï¿½ÂE
 };
 
 const	int	c_iDuelTeamMaxCount		=	1000;
@@ -478,31 +478,31 @@ const	int	c_iDuelTeamMemberCount	=	5;
 class	cDuelTeamBattlerInfo
 {
 public:
-	char	m_strID[dID_LENGTH];		//	°èÁ¤
-	char	m_strName[dNAME_LENGTH];	//	ÀÌ¸§
-	WORD	m_wJob;	//	Á÷¾E
+	char	m_strID[dID_LENGTH];		//	ê³„ì •
+	char	m_strName[dNAME_LENGTH];	//	ì´ë¦„
+	WORD	m_wJob;	//	ì§ï¿½ÂE
 };
 
 class	cDuelTeamRecord
 {
 public:
-	int		m_iWinPoint;	//	½ÂÁ¡
+	int		m_iWinPoint;	//	ìŠ¹ì 
 
-	int		m_iBattleCount;	//	ÀEEÈ½¼E	
-	int		m_iWinCount;	//	½Â¸® È½¼E	
-	int		m_iDefeatCount;	//	ÆĞ¹EÈ½¼E	
-	int		m_iDrawCount;	//	¹«½ÂºÎ È½¼E
+	int		m_iBattleCount;	//	ï¿½ÂEÂEíšŸï¿½ÂE	
+	int		m_iWinCount;	//	ìŠ¹ë¦¬ íšŸï¿½ÂE	
+	int		m_iDefeatCount;	//	íŒ¨ï¿½ÂEíšŸï¿½ÂE	
+	int		m_iDrawCount;	//	ë¬´ìŠ¹ë¶€ íšŸï¿½ÂE
 };
 
 class	cDuelTeamInfo
 {
 public:
-	WORD	m_wIndex;	//	ÀÎµ¦½º
-	char	m_strTeamName[c_iDuelTeamNameLength];	//	ÆÀÀÌ¸§
-	WORD	m_wMemberCount;	//	ÆÀ¿¡ ¼ÓÇÑ ¸â¹E¼E
+	WORD	m_wIndex;	//	ì¸ë±ìŠ¤
+	char	m_strTeamName[c_iDuelTeamNameLength];	//	íŒ€ì´ë¦„
+	WORD	m_wMemberCount;	//	íŒ€ì— ì†í•œ ë©¤ï¿½ÂEï¿½ÂE
 	cDuelTeamRecord			m_record;
 
-	cDuelTeamBattlerInfo	m_aMembers[c_iDuelTeamMemberCount];	//	¸â¹EÁ¤º¸
+	cDuelTeamBattlerInfo	m_aMembers[c_iDuelTeamMemberCount];	//	ë©¤ï¿½ÂEì •ë³´
 };
 
 enum 

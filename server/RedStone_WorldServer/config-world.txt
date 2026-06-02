@@ -1,36 +1,27 @@
-MAXUSERCOUNT = 2000;
-WORLDNAME = ∏Æ¥∫æÛ∆¿ º≠πˆ;
+MAXUSERCOUNT = 4000;
+WORLDNAME = Ç®êÖÉTÅ[ÉoÅ[;
 SERVERINDEX = 0;
-LISTSERVERINDEX = 1;	//	∑Œ±◊¿Œ º≠πˆ ∏ÆΩ∫∆Æø°º≠ ∫∏¿œ º¯º≠.
+WORLD_SERVER_IP = 127.0.0.1;
+SERVERLISTINDEX = 1;
 GAMESERVER_COUNT = 1;
-TYPE = 2;			//	beta server
-DBCACHEIP = 58.150.56.170;
-DBCACHEPORT = 50128;
-IDDBCACHEIP = 58.150.56.170;
-IDDBCACHEPORT = 51029;
+TYPE = 2;
+DBCACHEIP = 127.0.0.1;
+DBCACHEPORT = 52611;
+IDDBCACHEIP = 127.0.0.1;
+IDDBCACHEPORT = 51601;
 IGNORE_SS_INFO = 1;
-
+IS_INNER_TEST = 1;
 WEEKFIXCHECK = -1;
 TESTWEEKFIXCHECK = -1;
 HOURFIXCHECK = -1;
-MINFIXCHECK  = -1;
-MSGFIXCHECK  = "What's up?!";
-
-//	±ÊµÂ¿¸ øπæ‡¿ª ∏¯«œ¥¬ Ω√∞£¿ª ¡§«—¥Ÿ. ∏µŒ 0¿Ã∏È º≥¡§ X
-//	ø‰¿œ(0 ~7) | ∏∑¿ª Ω√ (0 ~ 23) | ∏∑¿ª ∫–(0 ~ 59) | ∫π±∏ Ω√ | ∫π±∏ ∫–;
-EXCEPT_GUILDBATTLETIME = 3 | 9 | 30 | 12 | 30 ;
-
-TRIAL_GAME_BEGIN	=	2008 |	9	|  9;
-TRIAL_GAME_END		=	2008 |	10	| 10;
-TRIAL_GAME_NAME		=	"WCG øπº±¿¸";
-update_weelky_ranking_day = 3; //  ¡÷∞£ ∑©≈∑ ªÍ¡§ ø‰¿œ. ¿œø‰¿œ=0,ø˘ø‰¿œ=1,»≠ø‰¿œ=2,ºˆø‰¿œ=3,∏Òø‰¿œ=4,±›ø‰¿œ=5,≈‰ø‰¿œ=6
-
-OFFLINE_TOURNAMENT_COMMENT	=	"9ø˘ 10¿œ 12Ω√ 30∫– ∫Œ≈Õ 14Ω√ 30∫–±Ó¡ˆ ø¿«¡∂Û¿Œ ≈‰≥ ∏’∆Æ∏¶ ¡¯«‡«‘ø° µ˚∂Û ¿œπ› ¿Ø¿˙¿« ¡¢º”¿ª ¡¶«—«œ∞Ì ¿÷Ω¿¥œ¥Ÿ.";
-OFFLINE_TOURNAMENT_BEGIN	=	2008 | 9 | 10 | 12 | 30;
-OFFLINE_TOURNAMENT_END		=	2008 | 9 | 10 | 14 | 30;
-
-
-SEASONVARIABLE	=	4;
-//requital	1	1440	2004/10/27
-
+MINFIXCHECK = -1;
+MSGFIXCHECK = "What's up?!";
+EXCEPT_GUILDBATTLETIME = 3 | 9 | 30 | 12 | 30;
+TRIAL_GAME_BEGIN = 2008 | 9 | 9;
+TRIAL_GAME_END = 2008 | 10 | 10;
+TRIAL_GAME_NAME = "Trial Game";
+OFFLINE_TOURNAMENT_COMMENT = "offline tournament comment";
+OFFLINE_TOURNAMENT_BEGIN = 2008 | 9 | 10 | 12 | 30;
+OFFLINE_TOURNAMENT_END = 2008 | 9 | 10 | 14 | 30;
+SEASONVARIABLE = 4;
 END;

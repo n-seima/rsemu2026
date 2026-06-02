@@ -1,1 +1,2 @@
 C:\RS_SOURCE\japan_110322_0.0538_1220_540\japan_110322_0.0538_1220_540\server\agent\Debug\Agent.exe
+C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\agent\Debug\Agent.exe

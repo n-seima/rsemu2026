@@ -1,0 +1,542 @@
+[113437] Start WorkerThread[0]...
+
+[113437] Start WorkerThread[2]...
+
+[113437] Start WorkerThread[3]...
+
+[113437] Start WorkerThread[1]...
+
+[113437] Start WorkerThread[5]...
+
+[113437] Start WorkerThread[6]...
+
+[113437] Start WorkerThread[4]...
+
+[113437] Start WorkerThread[7]...
+
+[113437] Start USERDBCtlThread ... 
+
+[113437] Start AcceptLoop ...
+
+[113437] g_MaxUserCount = 4000
+
+[113437] Start WORLD Server ... day  - Not Ready 
+
+[113437] Start DBCtlThread ... 
+
+[113437] Start AdditionThread ... 
+
+[113441]  isReady = 1 
+
+[113441]  Request Guild Infomation of Sql DB ... 
+
+[113441] Connected Server's IP Address is [127.0.0.1] 
+
+
+[113441]  This user is not game server
+
+[113441]  Recv Guild Info ....  Complete ............
+
+[113441]  isReady = 2 
+
+[113442] Connected Server's IP Address is [25.1.80.156] 
+
+
+[113442]  Send sendAppointmentQuizEventInfo... 
+
+[113442]  This user is game server. isReconnect[0] 
+
+
+[113442] Success SendGameServerInitDataThread
+
+[113442]  Try CONNECT to ACCOUNT DB : お水サーバー , 127.0.0.1 , idx 0
+
+[113442]  isReady = 3 
+
+[113442]  Let Start World Server...............!! 
+
+[113442] Connected Server's IP Address is [127.0.0.1] 
+
+
+[113442]  This user is not game server
+
+[114242] Connected Server's IP Address is [25.1.80.156] 
+
+
+[114242]  This user is not game server
+
+[114511] SEND ERROR ... ERROR 10054
+
+[114511] ===========>>>>>>>>>>		Dis User : 1 [SEND ERROR]
+
+[114511] GAME SERVER QUIT [type01]!!
+
+[114511] (type01)1 is exit
+
+
+[114511] ===========>>>>>>>>>>		Dis User : 1 [read byte = 0]
+
+[114523] Connected Server's IP Address is [25.1.80.156] 
+
+
+[114523]  Send sendAppointmentQuizEventInfo... 
+
+[114523]  This user is game server. isReconnect[0] 
+
+
+[114523] Success SendGameServerInitDataThread
+
+[121618] Connected Server's IP Address is [127.0.0.1] 
+
+
+[121625] ===========>>>>>>>>>>		Dis User : 5 [read byte = 0]
+
+[121625] GAME SERVER QUIT [CS_SERVER]!!
+
+[121625] (CS_SERVER)5 is exit
+
+
+[122345] SEND ERROR ... ERROR 10054
+
+[122345] ===========>>>>>>>>>>		Dis User : 4 [SEND ERROR]
+
+[122345] GAME SERVER QUIT [type01]!!
+
+[122345] (type01)4 is exit
+
+
+[122345] ===========>>>>>>>>>>		Dis User : 4 [read byte = 0]
+
+[122627] Connected Server's IP Address is [25.1.80.156] 
+
+
+[122627]  Send sendAppointmentQuizEventInfo... 
+
+[122627]  This user is game server. isReconnect[0] 
+
+
+[122627] Success SendGameServerInitDataThread
+
+[130826] ===========>>>>>>>>>>		Dis User : 3 [read byte = 0]
+
+[130826] GAME SERVER QUIT [#admin]!!
+
+[130826] (#admin)3 is exit
+
+
+[130833] Connected Server's IP Address is [25.1.80.156] 
+
+
+[130833]  This user is not game server
+
+[134429] -------> [ウォーターガーデン]GUILD lev UP+1 [2(+1225)]
+[134536] SEND ERROR ... ERROR 10054
+
+[134536] ===========>>>>>>>>>>		Dis User : 6 [SEND ERROR]
+
+[134536] GAME SERVER QUIT [type01]!!
+
+[134536] (type01)6 is exit
+
+
+[134536] ===========>>>>>>>>>>		Dis User : 6 [read byte = 0]
+
+[134631] Connected Server's IP Address is [25.1.80.156] 
+
+
+[134631]  Send sendAppointmentQuizEventInfo... 
+
+[134631]  This user is game server. isReconnect[0] 
+
+
+[134631] Success SendGameServerInitDataThread
+
+[134631] Send Guild Info (    comp) : [0] [ウォーターガーデン] [3]
+
+[134631] Send Guilder Info (    comp) : [0] [ウォーターガーデン] [3] [3]
+
+[134841] -------> [ウォーターガーデン]GUILD lev UP+1 [3(+1757)]
+[135041] -------> [ウォーターガーデン]GUILD lev UP+1 [4(+1671)]
+[135111] -------> [ウォーターガーデン]GUILD lev UP+1 [5(+11114)]
+[135131] SEND ERROR ... ERROR 10054
+
+[135131] ===========>>>>>>>>>>		Dis User : 8 [SEND ERROR]
+
+[135131] GAME SERVER QUIT [type01]!!
+
+[135131] (type01)8 is exit
+
+
+[135131] ===========>>>>>>>>>>		Dis User : 8 [read byte = 0]
+
+[135342] Connected Server's IP Address is [25.1.80.156] 
+
+
+[135342]  Send sendAppointmentQuizEventInfo... 
+
+[135342]  This user is game server. isReconnect[0] 
+
+
+[135342] Success SendGameServerInitDataThread
+
+[135342] Send Guild Info (    comp) : [0] [ウォーターガーデン] [3]
+
+[135342] Send Guilder Info (    comp) : [0] [ウォーターガーデン] [3] [3]
+
+[135342] SEND ERROR ... ERROR 10054
+
+[135342] ===========>>>>>>>>>>		Dis User : 9 [SEND ERROR]
+
+[135342] GAME SERVER QUIT [type01]!!
+
+[135342] (type01)9 is exit
+
+
+[135342] ===========>>>>>>>>>>		Dis User : 9 [read byte = 0]
+
+[135540] Connected Server's IP Address is [25.1.80.156] 
+
+
+[135540]  Send sendAppointmentQuizEventInfo... 
+
+[135540]  This user is game server. isReconnect[0] 
+
+
+[135540] Success SendGameServerInitDataThread
+
+[135540] Send Guild Info (    comp) : [0] [ウォーターガーデン] [3]
+
+[135540] Send Guilder Info (    comp) : [0] [ウォーターガーデン] [3] [3]
+
+[135601] SEND ERROR ... ERROR 10054
+
+[135601] ===========>>>>>>>>>>		Dis User : 10 [SEND ERROR]
+
+[135601] GAME SERVER QUIT [type01]!!
+
+[135601] (type01)10 is exit
+
+
+[135601] ===========>>>>>>>>>>		Dis User : 10 [read byte = 0]
+
+[135608] Connected Server's IP Address is [25.1.80.156] 
+
+
+[135608]  Send sendAppointmentQuizEventInfo... 
+
+[135608]  This user is game server. isReconnect[0] 
+
+
+[135608] Success SendGameServerInitDataThread
+
+[135608] Send Guild Info (    comp) : [0] [ウォーターガーデン] [3]
+
+[135608] Send Guilder Info (    comp) : [0] [ウォーターガーデン] [3] [3]
+
+[135648] -------> [ウォーターガーデン]GUILD lev UP+1 [6(+1891)]
+[135758] -------> [ウォーターガーデン]GUILD lev UP+1 [7(+19886)]
+[135858] -------> [ウォーターガーデン]GUILD lev UP+1 [8(+6268)]
+[140048] -------> [ウォーターガーデン]GUILD lev UP+1 [9(+24840)]
+[141400] SEND ERROR ... ERROR 10054
+
+[141400] ===========>>>>>>>>>>		Dis User : 11 [SEND ERROR]
+
+[141400] GAME SERVER QUIT [type01]!!
+
+[141400] (type01)11 is exit
+
+
+[141400] ===========>>>>>>>>>>		Dis User : 11 [read byte = 0]
+
+[141426] Connected Server's IP Address is [25.1.80.156] 
+
+
+[141426]  Send sendAppointmentQuizEventInfo... 
+
+[141426]  This user is game server. isReconnect[0] 
+
+
+[141426] Success SendGameServerInitDataThread
+
+[141426] Send Guild Info (    comp) : [0] [ウォーターガーデン] [3]
+
+[141426] Send Guilder Info (    comp) : [0] [ウォーターガーデン] [3] [3]
+
+[141556] -------> [ウォーターガーデン]GUILD lev UP+1 [10(+18081)]
+[141906] -------> [ウォーターガーデン]GUILD lev UP+1 [11(+1462)]
+[152837] SEND ERROR ... ERROR 10054
+
+[152837] ===========>>>>>>>>>>		Dis User : 12 [SEND ERROR]
+
+[152837] GAME SERVER QUIT [type01]!!
+
+[152837] (type01)12 is exit
+
+
+[152837] ===========>>>>>>>>>>		Dis User : 12 [read byte = 0]
+
+[153033] Connected Server's IP Address is [25.1.80.156] 
+
+
+[153033]  Send sendAppointmentQuizEventInfo... 
+
+[153033]  This user is game server. isReconnect[0] 
+
+
+[153033] Success SendGameServerInitDataThread
+
+[153033] Send Guild Info (    comp) : [0] [ウォーターガーデン] [3]
+
+[153033] Send Guilder Info (    comp) : [0] [ウォーターガーデン] [3] [3]
+
+[153251] Start WorkerThread[0]...
+
+[153251] Start WorkerThread[5]...
+
+[153251] Start WorkerThread[6]...
+
+[153251] Start WorkerThread[7]...
+
+[153251] Start WorkerThread[1]...
+
+[153251] Start WorkerThread[2]...
+
+[153251] Start WorkerThread[4]...
+
+[153251] Start WorkerThread[3]...
+
+[153251] Start USERDBCtlThread ... 
+
+[153251] Start AcceptLoop ...
+
+[153251] g_MaxUserCount = 4000
+
+[153251] Start WORLD Server ... day  - Not Ready 
+
+[153251] Start DBCtlThread ... 
+
+[153251] Start AdditionThread ... 
+
+[153255]  isReady = 1 
+
+[153255]  Request Guild Infomation of Sql DB ... 
+
+[153255]  [0 : ウォーターガーデン]GUILD  3(3)persons .. [1/1] 
+[153255]  Recv Guild Member Info ....  Complete ............
+
+[153255]  isReady = 2 
+
+[153501] Fail bind !!
+
+
+[153501] Error InitSocket 
+
+
+[153601] Fail bind !!
+
+
+[153601] Error InitSocket 
+
+
+[185019] Start WorkerThread[0]...
+
+[185019] Start WorkerThread[2]...
+
+[185019] Start WorkerThread[6]...
+
+[185019] Start WorkerThread[7]...
+
+[185019] Start WorkerThread[3]...
+
+[185019] Start WorkerThread[5]...
+
+[185019] Start WorkerThread[1]...
+
+[185019] Start WorkerThread[4]...
+
+[185019] Start USERDBCtlThread ... 
+
+[185019] Start AcceptLoop ...
+
+[185019] Start DBCtlThread ... 
+
+[185019] g_MaxUserCount = 4000
+
+[185019] Start WORLD Server ... day  - Not Ready 
+
+[185019] Start AdditionThread ... 
+
+[185023]  isReady = 1 
+
+[185023]  Request Guild Infomation of Sql DB ... 
+
+[185023]  [0 : ウォーターガーデン]GUILD  3(3)persons .. [1/1] 
+[185023]  Recv Guild Member Info ....  Complete ............
+
+[185023]  isReady = 2 
+
+[190827] Connected Server's IP Address is [25.1.80.156] 
+
+
+[190829]  Send sendAppointmentQuizEventInfo... 
+
+[190829]  This user is game server. isReconnect[0] 
+
+
+[190829] Success SendGameServerInitDataThread
+
+[190829] Send Guild Info (    comp) : [0] [ウォーターガーデン] [3]
+
+[190829] Send Guilder Info (    comp) : [0] [ウォーターガーデン] [3] [3]
+
+[190829]  Try CONNECT to ACCOUNT DB : お水サーバー , 127.0.0.1 , idx 0
+
+[190829]  isReady = 3 
+
+[190829]  Let Start World Server...............!! 
+
+[190829] Connected Server's IP Address is [127.0.0.1] 
+
+
+[190829]  This user is not game server
+
+[191350] Connected Server's IP Address is [127.0.0.1] 
+
+
+[191413] SEND ERROR ... ERROR 10054
+
+[191413] ===========>>>>>>>>>>		Dis User : 0 [SEND ERROR]
+
+[191413] GAME SERVER QUIT [type01]!!
+
+[191413] (type01)0 is exit
+
+
+[191413] ===========>>>>>>>>>>		Dis User : 0 [read byte = 0]
+
+[191432] Connected Server's IP Address is [25.1.80.156] 
+
+
+[191432]  Send sendAppointmentQuizEventInfo... 
+
+[191432]  This user is game server. isReconnect[0] 
+
+
+[191432] Success SendGameServerInitDataThread
+
+[191432] Send Guild Info (    comp) : [0] [ウォーターガーデン] [3]
+
+[191432] Send Guilder Info (    comp) : [0] [ウォーターガーデン] [3] [3]
+
+[192132] -------> [ウォーターガーデン]GUILD lev UP+1 [12(+21510)]
+[193154] Connected Server's IP Address is [25.1.80.156] 
+
+
+[193154]  This user is not game server
+
+[194713] ===========>>>>>>>>>>		Dis User : 4 [read byte = 0]
+
+[194713] GAME SERVER QUIT [#admin]!!
+
+[194713] (#admin)4 is exit
+
+
+[194731] Connected Server's IP Address is [25.1.80.156] 
+
+
+[194731]  This user is not game server
+
+[194821] ===========>>>>>>>>>>		Dis User : 5 [read byte = 0]
+
+[194821] GAME SERVER QUIT [#admin]!!
+
+[194821] (#admin)5 is exit
+
+
+[195011] Connected Server's IP Address is [25.1.80.156] 
+
+
+[195011]  This user is not game server
+
+[195102] ===========>>>>>>>>>>		Dis User : 6 [read byte = 0]
+
+[195102] GAME SERVER QUIT [#admin]!!
+
+[195102] (#admin)6 is exit
+
+
+[195321] SEND ERROR ... ERROR 10054
+
+[195321] ===========>>>>>>>>>>		Dis User : 3 [SEND ERROR]
+
+[195321] GAME SERVER QUIT [type01]!!
+
+[195321] (type01)3 is exit
+
+
+[195321] ===========>>>>>>>>>>		Dis User : 3 [read byte = 0]
+
+[195359] Connected Server's IP Address is [25.1.80.156] 
+
+
+[195359]  Send sendAppointmentQuizEventInfo... 
+
+[195359]  This user is game server. isReconnect[0] 
+
+
+[195359] Success SendGameServerInitDataThread
+
+[195359] Send Guild Info (    comp) : [0] [ウォーターガーデン] [3]
+
+[195359] Send Guilder Info (    comp) : [0] [ウォーターガーデン] [3] [3]
+
+[200319] -------> [ウォーターガーデン]GUILD lev UP+1 [13(+5579)]
+[200449] -------> [ウォーターガーデン]GUILD lev UP+1 [14(+78636)]
+[200551] SEND ERROR ... ERROR 10054
+
+[200551] ===========>>>>>>>>>>		Dis User : 7 [SEND ERROR]
+
+[200551] GAME SERVER QUIT [type01]!!
+
+[200551] (type01)7 is exit
+
+
+[200551] ===========>>>>>>>>>>		Dis User : 7 [read byte = 0]
+
+[200621] Connected Server's IP Address is [25.1.80.156] 
+
+
+[200621]  Send sendAppointmentQuizEventInfo... 
+
+[200621]  This user is game server. isReconnect[0] 
+
+
+[200621] Success SendGameServerInitDataThread
+
+[200621] Send Guild Info (    comp) : [0] [ウォーターガーデン] [3]
+
+[200621] Send Guilder Info (    comp) : [0] [ウォーターガーデン] [3] [3]
+
+[200831] -------> [ウォーターガーデン]GUILD lev UP+1 [15(+69540)]
+[200851] -------> [ウォーターガーデン]GUILD lev UP+1 [16(+117182)]
+[201001] -------> [ウォーターガーデン]GUILD lev UP+1 [17(+96538)]
+[201041] -------> [ウォーターガーデン]GUILD lev UP+1 [18(+87393)]
+[201121] -------> [ウォーターガーデン]GUILD lev UP+1 [19(+24860)]
+[201401] -------> [ウォーターガーデン]GUILD lev UP+1 [20(+32384)]
+[203121] Connected Server's IP Address is [25.1.80.156] 
+
+
+[203121]  This user is not game server
+
+[203402] ===========>>>>>>>>>>		Dis User : 9 [read byte = 0]
+
+[203402] GAME SERVER QUIT [#admin]!!
+
+[203402] (#admin)9 is exit
+
+
+[203419] Connected Server's IP Address is [25.1.80.156] 
+
+
+[203419]  This user is not game server
+

@@ -406,6 +406,8 @@ BOOL InitCompletionPort()
 
 	GetSystemInfo(&sys_info);
 	dwThreadNum = sys_info.dwNumberOfProcessors * 2 + 1;
+	if (dwThreadNum > dMAX_WORKER_COUNT)
+		dwThreadNum = dMAX_WORKER_COUNT;
 
 	for(int i=0;i<(int)dwThreadNum;i++)
 	{
@@ -907,6 +909,9 @@ PressThread(LPVOID lpParameter)
 
 				sprintf(sourceFn,"%s\\%d.log",strPath,pressDay);
 				sprintf(pressFn,"%s\\today.nux",strPath);
+
+				if (!IsFile(sourceFn))
+					continue;
 
 				if	(IsFile(pressFn))
 				{

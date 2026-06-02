@@ -15,7 +15,7 @@ public:
 	WORD			m_wSkill;
 	WORD			m_wLevel;
 	
-	int				getSkillPoint();	//	½ΊΕ³ ΖχΐΞΖ®?
+	int				getSkillPoint();	//	μ¤ν‚¬ ν¬μΈνΈ?
 
 };
 

@@ -237,7 +237,7 @@ BOOL	cPartyManager::Del(char *name)
 	return FALSE;
 }
 
-cParty		*cPartyManager::GetPartyPnt(char *name)	//	ID·Î cParty Æ÷ÀÎÅÍ ¾ò±â
+cParty		*cPartyManager::GetPartyPnt(char *name)	//	IDë¡œ cParty í¬ì¸í„° ì–»ê¸°
 {
 	CCritical	CS(&csPartyManager);
 

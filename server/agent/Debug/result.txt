@@ -1,0 +1,11 @@
+
+************* Application Started at [12:10:01] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+
+************* Application Closed  at [12:10:05] ************* 
+

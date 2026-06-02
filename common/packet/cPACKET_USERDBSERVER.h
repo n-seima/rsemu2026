@@ -1,7 +1,7 @@
 #ifndef _classPACKET_USER_DBSERVER_H
 #define _classPACKET_USER_DBSERVER_H
 
-//	#pragma once : ¹«Á¶°Ç ÇÑ¹ø¸¸ ¸µÅ© ... 
+//	#pragma once : ë¬´ì¡°ê±´ í•œë²ˆë§Œ ë§í¬ ... 
 #include "cPACKET_BASE.h"
 #include "definePacketData.h"
 #include "adCommandDefine.h"
@@ -13,66 +13,66 @@
 class	cMSG_BASE_TYPE_FORUSERDB
 {
 public:
-	WORD	wSize				//	ÆÐÅ¶ »çÀÌÁî
-,			wType				//	ÆÐÅ¶ Å¸ÀÔ
+	WORD	wSize				//	íŒ¨í‚· ì‚¬ì´ì¦ˆ
+,			wType				//	íŒ¨í‚· íƒ€ìž…
 ,			wSerial;
 	inline	void	set(WORD size,WORD type,int serial=-1)	{wSize	=	size,wType	=	type;wSerial = serial;}
 };
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­Login->User DB
-//¦­ÆÐÅ¶ ÀÎµ¦½º Á¤ÀÇ
-//	¦¬¦¬ÇÊµå ÁøÀÔ Àü					0x1401 ~ 0x1500 
-#define	dLU_LOGIN						0x1401	//	¾Æ¹ÙÅ¸ Á¤º¸±îÁö º¸³»¸ç, ¹Ù·Î °ÔÀÓÀ¸·Î µé¾î°£´Ù.
-#define	dLU_WLOGIN						0x1402	//	¿ùµå ¼­¹ö¿¡¼­ À¯Àú ·Î±×ÀÎÀ» È®ÀÎÇØ ÁØ´Ù.
-#define dLU_LOGOUT						0x1403	//	¼­¹ö¿¡¼­ ·Î±×¾Æ¿ô »ç½ÇÀ» ¾Ë·ÁÁØ´Ù.
-#define dLU_LOGIN_OTP					0x1404	//	ÀÔ·ÂµÈ OTP¸¦ Àü´ÞÇÑ´Ù.
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒLogin->User DB
+//â”ƒíŒ¨í‚· ì¸ë±ìŠ¤ ì •ì˜
+//	â”â”í•„ë“œ ì§„ìž… ì „					0x1401 ~ 0x1500 
+#define	dLU_LOGIN						0x1401	//	ì•„ë°”íƒ€ ì •ë³´ê¹Œì§€ ë³´ë‚´ë©°, ë°”ë¡œ ê²Œìž„ìœ¼ë¡œ ë“¤ì–´ê°„ë‹¤.
+#define	dLU_WLOGIN						0x1402	//	ì›”ë“œ ì„œë²„ì—ì„œ ìœ ì € ë¡œê·¸ì¸ì„ í™•ì¸í•´ ì¤€ë‹¤.
+#define dLU_LOGOUT						0x1403	//	ì„œë²„ì—ì„œ ë¡œê·¸ì•„ì›ƒ ì‚¬ì‹¤ì„ ì•Œë ¤ì¤€ë‹¤.
+#define dLU_LOGIN_OTP					0x1404	//	ìž…ë ¥ëœ OTPë¥¼ ì „ë‹¬í•œë‹¤.
 
-#define dSU_LOGIN						0x1410	//	°¢ ¼­¹öµéÀÌ À¯Àú Db¿¡ ·Î±×ÀÎÀ»...
-#define dSU_INFO						0x1411	//	º¯°æµÈ ¼­¹ö Á¤º¸¸¦ º¸³»ÁØ´Ù.
-#define dSU_NOT_DIS						0x1412	//	disÇÒ À¯Àú¸¦ Ã£Áö ¸øÇß´Ù.
-//¦­Login->User DB
-//¦­ÆÐÅ¶ ÀÎµ¦½º Á¤ÀÇ
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+#define dSU_LOGIN						0x1410	//	ê° ì„œë²„ë“¤ì´ ìœ ì € Dbì— ë¡œê·¸ì¸ì„...
+#define dSU_INFO						0x1411	//	ë³€ê²½ëœ ì„œë²„ ì •ë³´ë¥¼ ë³´ë‚´ì¤€ë‹¤.
+#define dSU_NOT_DIS						0x1412	//	disí•  ìœ ì €ë¥¼ ì°¾ì§€ ëª»í–ˆë‹¤.
+//â”ƒLogin->User DB
+//â”ƒíŒ¨í‚· ì¸ë±ìŠ¤ ì •ì˜
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­User DB->Login
-//¦­ÆÐÅ¶ ÀÎµ¦½º Á¤ÀÇ
-//	¦¬¦¬ÇÊµå ÁøÀÔ Àü					0x1501 ~ 0x1600
-#define dUL_RESULT_LOGIN				0x1501	//	·Î±×ÀÎ °á°ú
-#define dUL_RESULT_LOGIN_OTP			0x1507	//	OTPÀÔ·Â °á°ú
-#define dUL_RESULT_WLOGIN				0x1502	//	·Î±×ÀÎ °á°ú
-#define dUL_SERVER_LIST_ALL				0x1503	//	¼­¹ö¸®½ºÆ®
-#define dUL_SERVER_ADD					0x1504	//	¼­¹ö Ãß°¡
-#define dUL_SERVER_DELETE				0x1505	//	¼­¹ö »èÁ¦
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒUser DB->Login
+//â”ƒíŒ¨í‚· ì¸ë±ìŠ¤ ì •ì˜
+//	â”â”í•„ë“œ ì§„ìž… ì „					0x1501 ~ 0x1600
+#define dUL_RESULT_LOGIN				0x1501	//	ë¡œê·¸ì¸ ê²°ê³¼
+#define dUL_RESULT_LOGIN_OTP			0x1507	//	OTPìž…ë ¥ ê²°ê³¼
+#define dUL_RESULT_WLOGIN				0x1502	//	ë¡œê·¸ì¸ ê²°ê³¼
+#define dUL_SERVER_LIST_ALL				0x1503	//	ì„œë²„ë¦¬ìŠ¤íŠ¸
+#define dUL_SERVER_ADD					0x1504	//	ì„œë²„ ì¶”ê°€
+#define dUL_SERVER_DELETE				0x1505	//	ì„œë²„ ì‚­ì œ
 
-#define dUS_DIS_USER					0x1506	//	ÇØ´ç À¯Àú¸¦ Á×¿©¶ó... to world
-//¦­User DB->Login
-//¦­ÆÐÅ¶ ÀÎµ¦½º Á¤ÀÇ
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+#define dUS_DIS_USER					0x1506	//	í•´ë‹¹ ìœ ì €ë¥¼ ì£½ì—¬ë¼... to world
+//â”ƒUser DB->Login
+//â”ƒíŒ¨í‚· ì¸ë±ìŠ¤ ì •ì˜
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­Command
-#define dUL_ONOFF						0x1451	//	·Î±×ÀÎ ¼­¹ö ¿Â/¿ÀÇÁ
-#define dUL_CHANGEVER					0x1452	//	·Î±×ÀÎ ¼­¹öÀÇ ¹öÁ¯À» ¼öÁ¤ÇÑ´Ù.
-#define dUL_CHANGEMAXUSER				0x1453	//	·Î±×ÀÎ ¼­¹öÀÇ ÃÖ´ë ¼ö¿ëÀÎ¿øÀ» ¼öÁ¤ÇÑ´Ù.
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒCommand
+#define dUL_ONOFF						0x1451	//	ë¡œê·¸ì¸ ì„œë²„ ì˜¨/ì˜¤í”„
+#define dUL_CHANGEVER					0x1452	//	ë¡œê·¸ì¸ ì„œë²„ì˜ ë²„ì ¼ì„ ìˆ˜ì •í•œë‹¤.
+#define dUL_CHANGEMAXUSER				0x1453	//	ë¡œê·¸ì¸ ì„œë²„ì˜ ìµœëŒ€ ìˆ˜ìš©ì¸ì›ì„ ìˆ˜ì •í•œë‹¤.
 
-#define dUW_NOTICE						0x1461	//	°øÁö or À¯·á À¯Àú ¸Þ¼¼Áö Àü¼Û 
-#define dUW_BANISH						0x1462	//	Æ¯Á¤ À¯Àú Ãß¹æÇÏ±â
+#define dUW_NOTICE						0x1461	//	ê³µì§€ or ìœ ë£Œ ìœ ì € ë©”ì„¸ì§€ ì „ì†¡ 
+#define dUW_BANISH						0x1462	//	íŠ¹ì • ìœ ì € ì¶”ë°©í•˜ê¸°
 
-#define dUW_WORLD_CLOSE					0x1471	//	¿ùµå¸¦ ´Ý´Â´Ù.
-#define dUW_RENAME_AVATAR				0x1472	//	¾Æ¹ÙÅ¸ ÀÌ¸§ º¯°æ
-//¦­
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+#define dUW_WORLD_CLOSE					0x1471	//	ì›”ë“œë¥¼ ë‹«ëŠ”ë‹¤.
+#define dUW_RENAME_AVATAR				0x1472	//	ì•„ë°”íƒ€ ì´ë¦„ ë³€ê²½
+//â”ƒ
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­Server Info
-#define dWU_WORLDINFO					0x14A1	//	¿ùµå ¼­¹ö°¡ º¸³½ÀÚ·á. ¿ùµåÀÇ Á¤º¸¸¦ DB¿¡ °»½ÅÇÑ´Ù.
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒServer Info
+#define dWU_WORLDINFO					0x14A1	//	ì›”ë“œ ì„œë²„ê°€ ë³´ë‚¸ìžë£Œ. ì›”ë“œì˜ ì •ë³´ë¥¼ DBì— ê°±ì‹ í•œë‹¤.
 
-#define dWU_ASK_CARROTSHOPINFO			0x14B1	//	°ÔÀÓ³» ´ç±Ù »óÁ¡ÀÇ Á¤º¸¸¦ ¹Þ¾Æ¿Â´Ù.
+#define dWU_ASK_CARROTSHOPINFO			0x14B1	//	ê²Œìž„ë‚´ ë‹¹ê·¼ ìƒì ì˜ ì •ë³´ë¥¼ ë°›ì•„ì˜¨ë‹¤.
 #define dUW_ASK_CARROTSHOPINFO_RESULT	0x14F1
 
-#define dWU_ASK_INCREASE_DB_EVENT_VALUE			0x14B2	//	ÀÌº¥Æ® ¼öÄ¡ Áõ°¡ ¿äÃ»
-#define dUW_RESULT_OF_INCREASE_DB_EVENT_VALUE	0x14F2	//	ÀÌº¥Æ® ¼öÄ¡ Áõ°¡ ¿äÃ» °á°ú
+#define dWU_ASK_INCREASE_DB_EVENT_VALUE			0x14B2	//	ì´ë²¤íŠ¸ ìˆ˜ì¹˜ ì¦ê°€ ìš”ì²­
+#define dUW_RESULT_OF_INCREASE_DB_EVENT_VALUE	0x14F2	//	ì´ë²¤íŠ¸ ìˆ˜ì¹˜ ì¦ê°€ ìš”ì²­ ê²°ê³¼
 
 #define dWU_ASK_DB_CONTROLLED_EVENT_INFO		0x14B3
 #define dUW_DB_CONTROLLED_EVENT_INFO			0x14F3
@@ -80,38 +80,38 @@ public:
 #define dWU_ASK_DUEL_RECORD						0x14B4
 #define dUW_DUEL_RECORD							0x14F4
 
-#define dWU_UPDATE_DUEL_RECORD					0x14B5	//	°áÅõ ÀüÀû ¾÷µ¥ÀÌÆ®
+#define dWU_UPDATE_DUEL_RECORD					0x14B5	//	ê²°íˆ¬ ì „ì  ì—…ë°ì´íŠ¸
 
-#define dWU_ASK_DUEL_RANKING_INFO				0x14B6	//	°áÅõ ·©Å· ¿äÃ»
-#define dUW_DUEL_RANKING_INFO					0x14F5	//	°áÅõ ·©Å·
+#define dWU_ASK_DUEL_RANKING_INFO				0x14B6	//	ê²°íˆ¬ ëž­í‚¹ ìš”ì²­
+#define dUW_DUEL_RANKING_INFO					0x14F5	//	ê²°íˆ¬ ëž­í‚¹
 
-#define dWU_ASK_DUEL_TEAM_INFO					0x14B7	//	°áÅõ ÆÀ Á¤º¸ ¿äÃ»
-#define dUW_DUEL_TEAM_INFO						0x14F6	//	°áÅõ ÆÀ Á¤º¸ Àü¼Û
+#define dWU_ASK_DUEL_TEAM_INFO					0x14B7	//	ê²°íˆ¬ íŒ€ ì •ë³´ ìš”ì²­
+#define dUW_DUEL_TEAM_INFO						0x14F6	//	ê²°íˆ¬ íŒ€ ì •ë³´ ì „ì†¡
 
-#define dWU_UPDATE_DUEL_TEAM_RECORD				0x14B8	//	°áÅõ ÀüÀû ¾÷µ¥ÀÌÆ®
+#define dWU_UPDATE_DUEL_TEAM_RECORD				0x14B8	//	ê²°íˆ¬ ì „ì  ì—…ë°ì´íŠ¸
 
-#define dWU_RESET_DUEL_TEAM_INFO				0x14B9	//	°áÅõ ÀüÀû ÃÊ±âÈ­
+#define dWU_RESET_DUEL_TEAM_INFO				0x14B9	//	ê²°íˆ¬ ì „ì  ì´ˆê¸°í™”
 
-#define dUW_RESET_WEEKLY_DUEL_INFO				0x14F7	//	ÁÖ°£ °áÅõ ÀüÀû ÃÊ±âÈ­ ¿äÃ»
+#define dUW_RESET_WEEKLY_DUEL_INFO				0x14F7	//	ì£¼ê°„ ê²°íˆ¬ ì „ì  ì´ˆê¸°í™” ìš”ì²­
 
 
-//¦­
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒ
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 //////////////////////////////////////////////////////////////////////////
-//	·Î±× Á¤º¸ Ã³¸®
+//	ë¡œê·¸ ì •ë³´ ì²˜ë¦¬
 	enum
 	{
 		dWU_LOG_INOUT		=	0x1510,
 		dWU_LOG_QUEST,
 	};
-//	·Î±× Á¤º¸ Ã³¸®
+//	ë¡œê·¸ ì •ë³´ ì²˜ë¦¬
 //////////////////////////////////////////////////////////////////////////
 
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­Login->User DB
-//¦­·Î±×ÀÎ/·Î±×¾Æ¿ô
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒLogin->User DB
+//â”ƒë¡œê·¸ì¸/ë¡œê·¸ì•„ì›ƒ
 struct	LU_LOGIN
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
@@ -120,15 +120,15 @@ struct	LU_LOGIN
 	char			strSelectServer[dNAME_LENGTH];
 	char			strLoginIp[dIP_SIZE];
 	char			strMacAddress[64];
-	char			strClientCode[12];	//	Å¬¶óÀÌ¾ðÆ® °íÀ¯ ÄÚµå
-	WORD			disconnectExistID;	//	Á¢¼ÓÇØ ÀÖ´Â ¾ÆÀÌµðÀÇ Á¢¼ÓÀ» ²÷°í Á¢¼Ó.
+	char			strClientCode[12];	//	í´ë¼ì´ì–¸íŠ¸ ê³ ìœ  ì½”ë“œ
+	WORD			disconnectExistID;	//	ì ‘ì†í•´ ìžˆëŠ” ì•„ì´ë””ì˜ ì ‘ì†ì„ ëŠê³  ì ‘ì†.
 };	//	struct	CL_LOGIN
 
 struct  LU_LOGIN_OTP
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
 	char			strId[dID_LENGTH];
-	char			strOTP[12];	//	Å¬¶óÀÌ¾ðÆ® °íÀ¯ ÄÚµå
+	char			strOTP[12];	//	í´ë¼ì´ì–¸íŠ¸ ê³ ìœ  ì½”ë“œ
 	char			strIp[16];
 };
 
@@ -141,7 +141,7 @@ struct  LU_WLOGIN
 	char			strName[dNAME_LENGTH];
 	char			strIP[dIP_SIZE];
 	char			strMacAddress[64];
-	char			strClientCode[12];	//	Å¬¶óÀÌ¾ðÆ® °íÀ¯ ÄÚµå
+	char			strClientCode[12];	//	í´ë¼ì´ì–¸íŠ¸ ê³ ìœ  ì½”ë“œ
 };
 
 struct LU_LOGOUT
@@ -149,26 +149,26 @@ struct LU_LOGOUT
 	cMSG_BASE_TYPE_FORUSERDB	base;
 	char			strId[dID_LENGTH];
 	char			strIp[dIP_SIZE];
-	//	±âÅ¸ °»½ÅµÉ ³»¿ëµé
+	//	ê¸°íƒ€ ê°±ì‹ ë  ë‚´ìš©ë“¤
 };
 
 struct SU_LOGIN
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
-	char				id[dWORLD_NAME_LENGTH];	//	¼­¹öÀÇ ÀÌ¸§		- login¼­¹öÀÏ °æ¿ì ÀÌ¸§¸¸ ¹Þ¾ÆµÐ´Ù.
-	char				ip[dIP_SIZE];	//	¼­¹öÀÇ IP
+	char				id[dWORLD_NAME_LENGTH];	//	ì„œë²„ì˜ ì´ë¦„		- loginì„œë²„ì¼ ê²½ìš° ì´ë¦„ë§Œ ë°›ì•„ë‘”ë‹¤.
+	char				ip[dIP_SIZE];	//	ì„œë²„ì˜ IP
 	WORD				wServerIndex;
 	WORD				wServerListIndex;
-	WORD				wUserCount;		//	¼­¹ö¿¡ Á¢¼ÓÇÑ ÃÑ ÀÎ¿ø
-	WORD				wType : 10;			//	¼­¹öÀÇ Å¸ÀÔ 0 - NORMAL , 1 - TEST
+	WORD				wUserCount;		//	ì„œë²„ì— ì ‘ì†í•œ ì´ ì¸ì›
+	WORD				wType : 10;			//	ì„œë²„ì˜ íƒ€ìž… 0 - NORMAL , 1 - TEST
 	WORD				m_bf1IsInnerOpen :	1;
-	WORD				wMessage;			//	¼­¹öÀÇ Å¸ÀÔ 0 - NORMAL , 1 - TEST
+	WORD				wMessage;			//	ì„œë²„ì˜ íƒ€ìž… 0 - NORMAL , 1 - TEST
 };
 
 struct	UL_RESULT_WLOGIN
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
-	DWORD				dwResult;	// 0 - ´©±º°¡ ·Î±×ÀÎ µÇ¾î ÀÖ°Å³ª.. ¾ø´Â ¾ÆÀÌµðÀÌ´Ù.
+	DWORD				dwResult;	// 0 - ëˆ„êµ°ê°€ ë¡œê·¸ì¸ ë˜ì–´ ìžˆê±°ë‚˜.. ì—†ëŠ” ì•„ì´ë””ì´ë‹¤.
 	DWORD				serial;
 	WORD				isOper;
 	WORD				isNetCafeUser;
@@ -180,10 +180,10 @@ struct	UL_RESULT_WLOGIN
 struct SU_INFO
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
-	WORD				wUserCount;		//	¼­¹ö¿¡ Á¢¼ÓÇÑ ÃÑ ÀÎ¿ø
-	WORD				wType : 10;			//	¼­¹öÀÇ Å¸ÀÔ 0 - NORMAL , 1 - TEST
+	WORD				wUserCount;		//	ì„œë²„ì— ì ‘ì†í•œ ì´ ì¸ì›
+	WORD				wType : 10;			//	ì„œë²„ì˜ íƒ€ìž… 0 - NORMAL , 1 - TEST
 	WORD				m_bf1IsInnerOpen : 1;
-	WORD				wMessage;		//	¼­¹öÀÇ Å¸ÀÔ 0 - NORMAL , 1 - TEST
+	WORD				wMessage;		//	ì„œë²„ì˜ íƒ€ìž… 0 - NORMAL , 1 - TEST
 };
 
 struct	SU_NOT_DIS
@@ -192,22 +192,22 @@ struct	SU_NOT_DIS
 	char			strId[dID_LENGTH];
 	char			strIp[dIP_SIZE];
 };
-//¦­·Î±×ÀÎ/·Î±×¾Æ¿ô
-//¦­Login->User DB
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒë¡œê·¸ì¸/ë¡œê·¸ì•„ì›ƒ
+//â”ƒLogin->User DB
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­User DB->Login
-//¦­·Î±×ÀÎ/·Î±×¾Æ¿ô
-#define dRESULT_LOGIN_SUCCESS			0x000	//	¼º°ø
-#define dRESULT_LOGIN_FAILED			0x001	//	½ÇÆÐ
-#define dRESULT_LOGIN_USEDID			0x002	//	ÀÌ¹Ì °°Àº ¾ÆÀÌµð°¡ ·Î±×ÀÎ ÇÔ
-#define dRESULT_LOGIN_RETRY				0x003	//	»ó³ÉÇÏ°Ô '´Ù½Ã ÇØºÎ·Á¶ó +_+' 
-#define dRESULT_LOGIN_NOT_SAME_VERSION	0x004	//	¹öÁ¯ÀÌ Æ²¸®³×... 
-#define dRESULT_LOGIN_OTP				0x005	//	1Â÷ ¼º°ø. OTP ÀÔ·Â ¹Ù¶÷.
-#define dRESULT_LOGIN_SUCCESS_BUT_NOT_USE_OTP	0x006	//	¼º°ø. OTP´Â »ç¿ëÇÏÁö ¾ÊÀ½.
-#define dRESULT_LOGIN_SUCCESS_PERSONALCOM	0x007	//	PERSONAL COMM ¼º°ø. 
-#define dRESULT_LOGIN_FAIL_PERSONALCOM		0x008	//	PERSONAL COMM ½ÇÆÐ. 
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒUser DB->Login
+//â”ƒë¡œê·¸ì¸/ë¡œê·¸ì•„ì›ƒ
+#define dRESULT_LOGIN_SUCCESS			0x000	//	ì„±ê³µ
+#define dRESULT_LOGIN_FAILED			0x001	//	ì‹¤íŒ¨
+#define dRESULT_LOGIN_USEDID			0x002	//	ì´ë¯¸ ê°™ì€ ì•„ì´ë””ê°€ ë¡œê·¸ì¸ í•¨
+#define dRESULT_LOGIN_RETRY				0x003	//	ìƒëƒ¥í•˜ê²Œ 'ë‹¤ì‹œ í•´ë¶€ë ¤ë¼ +_+' 
+#define dRESULT_LOGIN_NOT_SAME_VERSION	0x004	//	ë²„ì ¼ì´ í‹€ë¦¬ë„¤... 
+#define dRESULT_LOGIN_OTP				0x005	//	1ì°¨ ì„±ê³µ. OTP ìž…ë ¥ ë°”ëžŒ.
+#define dRESULT_LOGIN_SUCCESS_BUT_NOT_USE_OTP	0x006	//	ì„±ê³µ. OTPëŠ” ì‚¬ìš©í•˜ì§€ ì•ŠìŒ.
+#define dRESULT_LOGIN_SUCCESS_PERSONALCOM	0x007	//	PERSONAL COMM ì„±ê³µ. 
+#define dRESULT_LOGIN_FAIL_PERSONALCOM		0x008	//	PERSONAL COMM ì‹¤íŒ¨. 
 
 
 struct UL_RESULT_LOGIN
@@ -220,10 +220,10 @@ struct UL_RESULT_LOGIN
 	char			strWhy[64];
 };
 
-#define dRESULT_LOGIN_OTP_SUCCESS		0x00		//	¼º°ø
-#define dRESULT_LOGIN_OTP_INCORRECT		0x01		//	Àß¸øµÈ OTPÄÚµå
-#define dRESULT_LOGIN_OTP_EXPIRE		0x02		//	OTPÆÄ±âµÊ. ´Ù½Ã ¿äÃ»ÇÒ °Í!
-#define dRESULT_LOGIN_OTP_ERROR			0x03		//	±âÅ¸ ¿¡·¯. -0-??
+#define dRESULT_LOGIN_OTP_SUCCESS		0x00		//	ì„±ê³µ
+#define dRESULT_LOGIN_OTP_INCORRECT		0x01		//	ìž˜ëª»ëœ OTPì½”ë“œ
+#define dRESULT_LOGIN_OTP_EXPIRE		0x02		//	OTPíŒŒê¸°ë¨. ë‹¤ì‹œ ìš”ì²­í•  ê²ƒ!
+#define dRESULT_LOGIN_OTP_ERROR			0x03		//	ê¸°íƒ€ ì—ëŸ¬. -0-??
 
 struct UL_RESULT_LOGIN_OTP
 {
@@ -233,24 +233,24 @@ struct UL_RESULT_LOGIN_OTP
 	DWORD			dwResult;
 };
 //
-//¦¬>¼­¹ö¸®½ºÆ®
+//â”>ì„œë²„ë¦¬ìŠ¤íŠ¸
 
-#define	dSERVER_TYPE_NORMAL		0	//	³ë¸» ¼­¹ö
-#define	dSERVER_TYPE_TEST		1	//	Å×½ºÆ® ¼­¹ö
+#define	dSERVER_TYPE_NORMAL		0	//	ë…¸ë§ ì„œë²„
+#define	dSERVER_TYPE_TEST		1	//	í…ŒìŠ¤íŠ¸ ì„œë²„
 
-class	cSERVER_SINFO	//	¼­¹öÁ¤º¸
+class	cSERVER_SINFO	//	ì„œë²„ì •ë³´
 {
 public:
-	char	m_strName[dWORLD_NAME_LENGTH];	//	¼­¹ö ÀÌ¸§
-	char	m_strIP[dIP_SIZE];			//	¼­¹ö IP
+	char	m_strName[dWORLD_NAME_LENGTH];	//	ì„œë²„ ì´ë¦„
+	char	m_strIP[dIP_SIZE];			//	ì„œë²„ IP
 
-	WORD	m_wType					:	10;		//	¼­¹ö Å¸ÀÔ
-	WORD	m_bf1IsInnerOpen		:	1;		//	³»ºÎ ¿ÀÇÂ
+	WORD	m_wType					:	10;		//	ì„œë²„ íƒ€ìž…
+	WORD	m_bf1IsInnerOpen		:	1;		//	ë‚´ë¶€ ì˜¤í”ˆ
 
-	WORD	m_wCount;					//	Á¢¼Ó ÀÎ¿ø
-	WORD	m_wMessage;					//	Æ¯º°ÇÑ ¸Þ¼¼Áö
-	WORD	m_bf8ServerPlaceInList	:	8;		//	¼­¹ö ÀÎµ¦½º(º¸ÀÌ´Â°Å
-	WORD	m_bf8SettingServerIndex	:	8;		//	¼­¹ö ÀÎµ¦½º(config-world.txt ÆÄÀÏ¿¡ SERVERINDEX ÀÇ ÀÎµ¦½º... ºÒº¯ ÀÎµ¦½º´Ù)
+	WORD	m_wCount;					//	ì ‘ì† ì¸ì›
+	WORD	m_wMessage;					//	íŠ¹ë³„í•œ ë©”ì„¸ì§€
+	WORD	m_bf8ServerPlaceInList	:	8;		//	ì„œë²„ ì¸ë±ìŠ¤(ë³´ì´ëŠ”ê±°
+	WORD	m_bf8SettingServerIndex	:	8;		//	ì„œë²„ ì¸ë±ìŠ¤(config-world.txt íŒŒì¼ì— SERVERINDEX ì˜ ì¸ë±ìŠ¤... ë¶ˆë³€ ì¸ë±ìŠ¤ë‹¤)
 
 };	//	class	cSERVER_SINFO
 
@@ -258,7 +258,7 @@ struct	UL_SERVER_LIST_ALL
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
-	WORD			wCount;				//	¼­¹ö±º ¼ö
+	WORD			wCount;				//	ì„œë²„êµ° ìˆ˜
 	cSERVER_SINFO	aServerList[dMAX_SERVER_COUNT];
 };
 
@@ -276,41 +276,41 @@ struct	UL_SERVER_DELETE
 	int				idx;
 };
 
-//<¦¬¼­¹ö¸®½ºÆ®
+//<â”ì„œë²„ë¦¬ìŠ¤íŠ¸
 
 struct  US_DIS_USER
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
 	char			strId[dID_LENGTH];
-	WORD			wWhy;				//	0 - ½Ã½ºÅÛÀÇ ¹®Á¦·Î Á¾·áÇÏ°Ú½À´Ï´Ù.
-										//	1 - ´©±º°¡ Á¢¼ÓÇØ¼­ Á¾·áÇÕ´Ï´Ù.
+	WORD			wWhy;				//	0 - ì‹œìŠ¤í…œì˜ ë¬¸ì œë¡œ ì¢…ë£Œí•˜ê² ìŠµë‹ˆë‹¤.
+										//	1 - ëˆ„êµ°ê°€ ì ‘ì†í•´ì„œ ì¢…ë£Œí•©ë‹ˆë‹¤.
 };
 
-//¦­·Î±×ÀÎ/·Î±×¾Æ¿ô
-//¦­User DB->Login
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒë¡œê·¸ì¸/ë¡œê·¸ì•„ì›ƒ
+//â”ƒUser DB->Login
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­Command
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒCommand
 
 /////////////////////////////////////////////	to LOGIN
-struct	UL_ONOFF	//	·Î±×ÀÎ ¼­¹ö ¿Â/¿ÀÇÁ
+struct	UL_ONOFF	//	ë¡œê·¸ì¸ ì„œë²„ ì˜¨/ì˜¤í”„
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
-	DWORD	onoff;		//	²ø±î ¸»±î ~
-	char	msg[4000];	//	°øÁö»çÇ× ¿Ã¸®±â ~
+	DWORD	onoff;		//	ëŒê¹Œ ë§ê¹Œ ~
+	char	msg[4000];	//	ê³µì§€ì‚¬í•­ ì˜¬ë¦¬ê¸° ~
 };
 
-struct	UL_CHANGEVER	//	·Î±×ÀÎ ¼­¹öÀÇ ¹öÁ¯À» ¼öÁ¤ÇÑ´Ù.
+struct	UL_CHANGEVER	//	ë¡œê·¸ì¸ ì„œë²„ì˜ ë²„ì ¼ì„ ìˆ˜ì •í•œë‹¤.
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
 	int		ver;
 };
 
-struct	UL_CHANGEMAXUSER//	·Î±×ÀÎ ¼­¹öÀÇ ÃÖ´ë ¼ö¿ëÀÎ¿øÀ» ¼öÁ¤ÇÑ´Ù.
+struct	UL_CHANGEMAXUSER//	ë¡œê·¸ì¸ ì„œë²„ì˜ ìµœëŒ€ ìˆ˜ìš©ì¸ì›ì„ ìˆ˜ì •í•œë‹¤.
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
@@ -318,25 +318,25 @@ struct	UL_CHANGEMAXUSER//	·Î±×ÀÎ ¼­¹öÀÇ ÃÖ´ë ¼ö¿ëÀÎ¿øÀ» ¼öÁ¤ÇÑ´Ù.
 };
 
 /////////////////////////////////////////////	to GAME
-struct	UW_NOTICE	//	°øÁö or À¯·á À¯Àú ¸Þ¼¼Áö Àü¼Û 
+struct	UW_NOTICE	//	ê³µì§€ or ìœ ë£Œ ìœ ì € ë©”ì„¸ì§€ ì „ì†¡ 
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
 	char	msg[dCHAT_LENGTH];
-	WORD	isUser;	//	À¯·á À¯Àú ¸Þ¼¼ÁöÀÏ °æ¿ì
+	WORD	isUser;	//	ìœ ë£Œ ìœ ì € ë©”ì„¸ì§€ì¼ ê²½ìš°
 	char	who[dNAME_LENGTH];
 };
 
-struct	UW_BANISH	//	Æ¯Á¤ À¯Àú Ãß¹æÇÏ±â
+struct	UW_BANISH	//	íŠ¹ì • ìœ ì € ì¶”ë°©í•˜ê¸°
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
-	char	who[dNAME_LENGTH];	//	´©±¸¿¡°Ô
-	char	msg[dCHAT_LENGTH];			//	Ãß¹æÀü¿¡ º¸³»ÁÙ ¸Þ¼¼Áö
+	char	who[dNAME_LENGTH];	//	ëˆ„êµ¬ì—ê²Œ
+	char	msg[dCHAT_LENGTH];			//	ì¶”ë°©ì „ì— ë³´ë‚´ì¤„ ë©”ì„¸ì§€
 };
 
 /////////////////////////////////////////////	to WORLD
-struct	UW_WORLD_CLOSE	//	¿ùµå¸¦ ´Ý´Â´Ù.
+struct	UW_WORLD_CLOSE	//	ì›”ë“œë¥¼ ë‹«ëŠ”ë‹¤.
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
@@ -353,12 +353,12 @@ struct UW_RENAME_AVATAR
 };
 
 
-//¦­
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒ
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­Server Info
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒServer Info
 
 #define dSERVERINFO_COUNT	10
 #define dMAXSERVICE_COMPANY_COUNT	5
@@ -373,7 +373,7 @@ struct SERVERINFO
 	WORD	maxusercounttoday;
 };
 
-struct WU_WORLDINFO//	¿ùµå ¼­¹ö°¡ º¸³½ÀÚ·á. ¿ùµåÀÇ Á¤º¸¸¦ DB¿¡ °»½ÅÇÑ´Ù.
+struct WU_WORLDINFO//	ì›”ë“œ ì„œë²„ê°€ ë³´ë‚¸ìžë£Œ. ì›”ë“œì˜ ì •ë³´ë¥¼ DBì— ê°±ì‹ í•œë‹¤.
 {
 	enum
 	{
@@ -385,7 +385,7 @@ struct WU_WORLDINFO//	¿ùµå ¼­¹ö°¡ º¸³½ÀÚ·á. ¿ùµåÀÇ Á¤º¸¸¦ DB¿¡ °»½ÅÇÑ´Ù.
 	};
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
-	SERVERINFO		info[dSERVERINFO_COUNT];	//	 0 Àº ¿ùµå ÀÚÃ¼.. , 1ºÎÅÍ °¢ °ÔÀÓ¼­¹ö
+	SERVERINFO		info[dSERVERINFO_COUNT];	//	 0 ì€ ì›”ë“œ ìžì²´.. , 1ë¶€í„° ê° ê²Œìž„ì„œë²„
 #if defined(_FOR_KOREA) || defined(_FOR_THAI)
 	DWORD	curusercountReserve[dMAXSERVICE_COMPANY_COUNT];
 #endif
@@ -395,36 +395,36 @@ struct WU_ASK_INCREASE_DB_EVENT_VALUE
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
-	char	strUserID[dNAME_LENGTH];	//	¹®Á¦ ¾øÀ» °æ¿ì´Â ÀÌº¥Æ® ÀÀ¸ðÀÚ·Î ±â·Ï
-	char	strUserName[dNAME_LENGTH];	//	¾ê´Â ÇÊ¿ä ¾øÀ½. ±×³É ¸®ÅÏÇÒ¶§ ´ã¾Æ ÁÖ¸é µÊ
-	WORD	wEventIndex;				//	ÀÌº¥Æ® ÀÎµ¦½º
-	int		iMaxCount;					//	ÀÌº¥Æ® ÃÖ´ë ÀÀ¸ð °¡´É È¸¼ö
-	BOOL	bReset;						//	ÀÌº¥Æ® ¼öÄ¡ ¹× ÀÀ¸ð À¯Àú ID ÃÊ±âÈ­
-	BOOL	bIsAllowMulipleID;			//	°°Àº IDÀÇ À¯Àú°¡ Áßº¹ ½ÅÃ» °¡´ÉÇÑÁö Ã¼Å©
+	char	strUserID[dNAME_LENGTH];	//	ë¬¸ì œ ì—†ì„ ê²½ìš°ëŠ” ì´ë²¤íŠ¸ ì‘ëª¨ìžë¡œ ê¸°ë¡
+	char	strUserName[dNAME_LENGTH];	//	ì–˜ëŠ” í•„ìš” ì—†ìŒ. ê·¸ëƒ¥ ë¦¬í„´í• ë•Œ ë‹´ì•„ ì£¼ë©´ ë¨
+	WORD	wEventIndex;				//	ì´ë²¤íŠ¸ ì¸ë±ìŠ¤
+	int		iMaxCount;					//	ì´ë²¤íŠ¸ ìµœëŒ€ ì‘ëª¨ ê°€ëŠ¥ íšŒìˆ˜
+	BOOL	bReset;						//	ì´ë²¤íŠ¸ ìˆ˜ì¹˜ ë° ì‘ëª¨ ìœ ì € ID ì´ˆê¸°í™”
+	BOOL	bIsAllowMulipleID;			//	ê°™ì€ IDì˜ ìœ ì €ê°€ ì¤‘ë³µ ì‹ ì²­ ê°€ëŠ¥í•œì§€ ì²´í¬
 };
 
 enum
 {
 	//	result of increase db event value
 	eROIDEV_SUCCESS,
-	eROIDEV_EVENT_COUNT_FULL,	//	ÀÌº¥Æ®°¡ Ç®ÀÌ´Ù.
-	eROIDEV_ALREADY_EXIST_USER,	//	ÀÌ¹Ì Á¸ÀçÇÏ´Â °èÁ¤ÀÌ´Ù.
-	eROIDEV_RESET,	//	¸®¼Â Çß´Ù.
+	eROIDEV_EVENT_COUNT_FULL,	//	ì´ë²¤íŠ¸ê°€ í’€ì´ë‹¤.
+	eROIDEV_ALREADY_EXIST_USER,	//	ì´ë¯¸ ì¡´ìž¬í•˜ëŠ” ê³„ì •ì´ë‹¤.
+	eROIDEV_RESET,	//	ë¦¬ì…‹ í–ˆë‹¤.
 };
 
 struct UW_RESULT_OF_INCREASE_DB_EVENT_VALUE
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
-//	°á°ú
+//	ê²°ê³¼
 	WORD	wResult;	
 
-//	¾Æ·¡ Á¤º¸´Â WU_ASK_INCREASE_DB_EVENT_VALUE ÆÐÅ¶¿¡¼­ ¹ÞÀº Á¤º¸ ±×´ë·Î º¹»ç
+//	ì•„ëž˜ ì •ë³´ëŠ” WU_ASK_INCREASE_DB_EVENT_VALUE íŒ¨í‚·ì—ì„œ ë°›ì€ ì •ë³´ ê·¸ëŒ€ë¡œ ë³µì‚¬
 	char	strUserID[dNAME_LENGTH];
-	char	strUserName[dNAME_LENGTH];	//	WU_ASK_INCREASE_DB_EVENT_VALUE ¿¡ °ªÀ» ±×´ë·Î µ¹·ÁÁÜ
-	WORD	wEventIndex;				//	ÀÌº¥Æ® ÀÎµ¦½º WU_ASK_INCREASE_DB_EVENT_VALUE ¿¡ °ªÀ» ±×´ë·Î µ¹·ÁÁÜ
+	char	strUserName[dNAME_LENGTH];	//	WU_ASK_INCREASE_DB_EVENT_VALUE ì— ê°’ì„ ê·¸ëŒ€ë¡œ ëŒë ¤ì¤Œ
+	WORD	wEventIndex;				//	ì´ë²¤íŠ¸ ì¸ë±ìŠ¤ WU_ASK_INCREASE_DB_EVENT_VALUE ì— ê°’ì„ ê·¸ëŒ€ë¡œ ëŒë ¤ì¤Œ
 
-//	Áõ°¡ÇÑ ÀÌº¥Æ® ¼öÄ¡
-	int		iValue;	//	Áõ°¡ÇÑ ¼öÄ¡
+//	ì¦ê°€í•œ ì´ë²¤íŠ¸ ìˆ˜ì¹˜
+	int		iValue;	//	ì¦ê°€í•œ ìˆ˜ì¹˜
 };
 
 struct WU_ASK_CARROTSHOPINFO
@@ -459,7 +459,7 @@ struct WU_ASK_DUEL_RECORD
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
 	char		strId[dID_LENGTH];
-	int			iGSSerialInWorld;	//	ÀÌ Á¤º¸¸¦ ¿äÃ»ÇÑ °ÔÀÓ¼­¹öÀÇ ¿ùµå»ó¿¡¼­ÀÇ ½Ã¸®¾ó
+	int			iGSSerialInWorld;	//	ì´ ì •ë³´ë¥¼ ìš”ì²­í•œ ê²Œìž„ì„œë²„ì˜ ì›”ë“œìƒì—ì„œì˜ ì‹œë¦¬ì–¼
 };
 
 struct	UW_DUEL_RECORD
@@ -469,7 +469,7 @@ struct	UW_DUEL_RECORD
 	char		strId[dID_LENGTH];
 	cDuelRecord	record;
 
-	int			iGSSerialInWorld;//	ÀÌ Á¤º¸¸¦ ¿äÃ»ÇÑ °ÔÀÓ¼­¹öÀÇ ¿ùµå»ó¿¡¼­ÀÇ ½Ã¸®¾ó
+	int			iGSSerialInWorld;//	ì´ ì •ë³´ë¥¼ ìš”ì²­í•œ ê²Œìž„ì„œë²„ì˜ ì›”ë“œìƒì—ì„œì˜ ì‹œë¦¬ì–¼
 };
 
 struct WU_UPDATE_DUEL_RECORD
@@ -477,7 +477,7 @@ struct WU_UPDATE_DUEL_RECORD
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
 	char		strId[dID_LENGTH];
-	int			iGSSerialInWorld;	//	ÀÌ Á¤º¸¸¦ ¿äÃ»ÇÑ °ÔÀÓ¼­¹öÀÇ ¿ùµå»ó¿¡¼­ÀÇ ½Ã¸®¾ó
+	int			iGSSerialInWorld;	//	ì´ ì •ë³´ë¥¼ ìš”ì²­í•œ ê²Œìž„ì„œë²„ì˜ ì›”ë“œìƒì—ì„œì˜ ì‹œë¦¬ì–¼
 
 	cDuelRecord	record;
 };
@@ -487,7 +487,7 @@ struct WU_UPDATE_DUEL_TEAM_RECORD
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
 	char			strTeamName[c_iDuelTeamNameLength];
-	int				iGSSerialInWorld;	//	ÀÌ Á¤º¸¸¦ ¿äÃ»ÇÑ °ÔÀÓ¼­¹öÀÇ ¿ùµå»ó¿¡¼­ÀÇ ½Ã¸®¾ó
+	int				iGSSerialInWorld;	//	ì´ ì •ë³´ë¥¼ ìš”ì²­í•œ ê²Œìž„ì„œë²„ì˜ ì›”ë“œìƒì—ì„œì˜ ì‹œë¦¬ì–¼
 
 	cDuelTeamRecord	record;
 };
@@ -506,9 +506,9 @@ struct UW_DUEL_RANKING_INFO
 {
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
-	WORD				wIsDailyRanking;	//	0 : ÁÖ°£ ·©Å·,1 : ÀÏ°£ ·©Å·
-	WORD				wWeeklyRankerCount,wTrialGameRankerCount;	//	ÁÖ°£ ·©Ä¿ ¼ö,TrialGame ·©Ä¿ ¼ö
-	cDuelRankingInfo	aList[200];	//	ÁÖ°£ ·©Å· + TrialGame·©Å·
+	WORD				wIsDailyRanking;	//	0 : ì£¼ê°„ ëž­í‚¹,1 : ì¼ê°„ ëž­í‚¹
+	WORD				wWeeklyRankerCount,wTrialGameRankerCount;	//	ì£¼ê°„ ëž­ì»¤ ìˆ˜,TrialGame ëž­ì»¤ ìˆ˜
+	cDuelRankingInfo	aList[200];	//	ì£¼ê°„ ëž­í‚¹ + TrialGameëž­í‚¹
 };
 
 struct WU_ASK_DUEL_TEAM_INFO
@@ -531,16 +531,16 @@ struct UW_RESET_WEEKLY_DUEL_INFO
 };
 
 
-//¦­
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒ
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 //////////////////////////////////////////////////////////////////////////
-//	·Î±× Á¤º¸ Ã³¸®
+//	ë¡œê·¸ ì •ë³´ ì²˜ë¦¬
 struct WU_LOG_INOUT
 {	
 	cMSG_BASE_TYPE_FORUSERDB	base;
 
-	BOOL	isIn;	//	0 ·Î±×¾Æ¿ô 1 ·Î±×ÀÎ
+	BOOL	isIn;	//	0 ë¡œê·¸ì•„ì›ƒ 1 ë¡œê·¸ì¸
 	short	lev;
 	short	job;
 	char	strID[20];
@@ -561,7 +561,7 @@ struct WU_LOG_QUEST
 	char	strName[20];
 	char	worldName[20];
 };
-//	·Î±× Á¤º¸ Ã³¸®
+//	ë¡œê·¸ ì •ë³´ ì²˜ë¦¬
 //////////////////////////////////////////////////////////////////////////
 
 #pragma pack()

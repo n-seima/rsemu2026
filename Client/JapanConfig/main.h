@@ -7,8 +7,6 @@
 #include <windows.h>
 #include <commctrl.h>
 
-#include "cWINDOW.H"
-
 #include "resource.h"
 #include "../red stone/CGameSaveOption.h"
 

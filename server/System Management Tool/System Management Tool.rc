@@ -79,7 +79,7 @@ CAPTION "System Management Tool ¡§∫∏"
 FONT 9, "±º∏≤"
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
-    LTEXT           "System Management Tool πˆ¿¸ 1.0",IDC_STATIC,40,10,119,8,
+    LTEXT           "System Management Tool πˆ¿ÅE1.0",IDC_STATIC,40,10,119,8,
                     SS_NOPREFIX
     LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
     DEFPUSHBUTTON   "»Æ¿Œ",IDOK,178,7,50,14,WS_GROUP
@@ -95,20 +95,20 @@ BEGIN
     CONTROL         "List3",IDC_LIST_SCHEDULE,"SysListView32",LVS_REPORT | 
                     LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,
                     27,306,119
-    PUSHBUTTON      "πÈæ˜ ¡§√•",IDC_MAKE_BACKUP,43,179,41,14
-    PUSHBUTTON      "∆ƒ¿œ ∞¸∏Æ ¡§√•",IDC_FILE_MANAGEMENT,84,179,52,14
+    PUSHBUTTON      "πÈæÅE¡§√•",IDC_MAKE_BACKUP,43,179,41,14
+    PUSHBUTTON      "∆ƒ¿œ ∞ÅEÆ ¡§√•",IDC_FILE_MANAGEMENT,84,179,52,14
     PUSHBUTTON      "«¡∑ŒººΩ∫ ¡§√•",IDC_CHECK_PROCESS,136,179,50,14
-    CTEXT           "∫∏±‚",IDC_STATIC,7,7,27,13,SS_CENTERIMAGE
-    CONTROL         "πÈæ˜ ¡§√•",IDC_CHK_BACKUP,"Button",BS_AUTOCHECKBOX | 
+    CTEXT           "∫∏±ÅE,IDC_STATIC,7,7,27,13,SS_CENTERIMAGE
+    CONTROL         "πÈæÅE¡§√•",IDC_CHK_BACKUP,"Button",BS_AUTOCHECKBOX | 
                     WS_TABSTOP,42,7,49,13
-    CONTROL         "∆ƒ¿œ∞¸∏Æ ¡§√•",IDC_CHK_FILE,"Button",BS_AUTOCHECKBOX | 
+    CONTROL         "∆ƒ¿œ∞ÅEÆ ¡§√•",IDC_CHK_FILE,"Button",BS_AUTOCHECKBOX | 
                     WS_TABSTOP,98,7,61,13
     CONTROL         "«¡∑ŒººΩ∫ ¡§√•",IDC_CHK_PROC,"Button",BS_AUTOCHECKBOX | 
                     WS_TABSTOP,167,7,61,13
     PUSHBUTTON      "Ω√Ω∫≈€ ∏¥œ≈Õ ¡§√•",IDC_CHECK_SYSTEM,187,179,72,14
     CONTROL         "Ω√Ω∫≈€ ∏¥œ≈Õ ¡§√•",IDC_CHK_SYSTEM,"Button",
                     BS_AUTOCHECKBOX | WS_TABSTOP,234,7,75,13
-    CTEXT           "∏∏µÈ±‚",IDC_STATIC,9,180,29,13,SS_CENTERIMAGE
+    CTEXT           "∏∏µÈ±ÅE,IDC_STATIC,9,180,29,13,SS_CENTERIMAGE
 END
 
 IDD_DLG_SCHEDULE DIALOG DISCARDABLE  0, 0, 299, 167
@@ -135,12 +135,12 @@ BEGIN
                     ES_READONLY
     PUSHBUTTON      "...",IDC_BTN_SET_SOURCE,240,13,12,12
     PUSHBUTTON      "...",IDC_BTN_SET_TARGET,240,28,12,12
-    CONTROL         "¥‹º¯«— πÈæ˜¿Ã æ∆¥— ∞ÊøÏ Ω∫≈©∏≥∆Æ ªÁøÎ",
+    CONTROL         "¥‹º¯«— πÈæ˜¿Ã æ∆¥— ∞ÊøÅEΩ∫≈©∏≥∆Æ ªÁøÅE,
                     IDC_CHK_USE_SCRIPT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
                     61,68,160,12
-    CONTROL         "∆˜«‘µ» ∆˙¥ı µø¿œ ¿˚øÎ",IDC_CHK_WITH_FOLDER,"Button",
+    CONTROL         "∆˜«‘µ» ∆˙¥ÅEµø¿œ ¿˚øÅE,IDC_CHK_WITH_FOLDER,"Button",
                     BS_AUTOCHECKBOX | WS_TABSTOP,61,48,102,12
-    CONTROL         "¿€æ˜ »ƒ Source ∆˙¥ı ≥ªøÎ ªË¡¶",IDC_CHK_DEL_SOURCE,
+    CONTROL         "¿€æÅE»ƒ Source ∆˙¥ÅE≥ªøÅEªË¡¶",IDC_CHK_DEL_SOURCE,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,179,48,121,12
     EDITTEXT        IDC_EDIT_SCRIPTFILE,72,83,147,12,ES_AUTOHSCROLL | 
                     ES_READONLY
@@ -158,7 +158,7 @@ BEGIN
                     DTS_RIGHTALIGN | DTS_UPDOWN | NOT WS_VISIBLE | 
                     WS_TABSTOP | 0x8,123,26,64,12
     CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,53,7,257,150
-    CONTROL         "ªÁøÎ",IDC_CHK_USE_TIME,"Button",BS_AUTOCHECKBOX | 
+    CONTROL         "ªÁøÅE,IDC_CHK_USE_TIME,"Button",BS_AUTOCHECKBOX | 
                     WS_TABSTOP,11,10,25,14
     CONTROL         "∆Ø¡§¿œ",IDC_RAD_SPECIAL_DATE,"Button",
                     BS_AUTORADIOBUTTON | NOT WS_VISIBLE,63,11,37,12
@@ -183,7 +183,7 @@ BEGIN
     PUSHBUTTON      "...",IDC_BTN_SET_SCRIPT_FILE,211,54,12,12
     COMBOBOX        IDC_COB_PROCESS_NAME,61,26,107,12,CBS_DROPDOWN | 
                     CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "∞®Ω√«“ Process∏¶ º±≈√«œ∞≈≥™ ¿‘∑¬«œººø‰.",IDC_STATIC,61,
+    LTEXT           "∞®Ω√«“ Process∏¶ º±≈√«œ∞≈≥™ ¿‘∑¬«œººøÅE",IDC_STATIC,61,
                     12,155,10
     COMBOBOX        IDC_CMB_CHECK_CONDITION,193,26,100,12,CBS_DROPDOWN | 
                     CBS_SORT | WS_VSCROLL | WS_TABSTOP
@@ -198,7 +198,7 @@ BEGIN
     EDITTEXT        IDC_EDIT_SCRIPTFILE,62,29,147,12,ES_AUTOHSCROLL | 
                     ES_READONLY
     PUSHBUTTON      "...",IDC_BTN_SET_SCRIPT_FILE,212,29,12,12
-    LTEXT           "√≥∏Æ«“ Ω∫≈©∏≥∆Æ ∆ƒ¿œ¿ª ¡ˆ¡§«ÿ ¡÷ººø‰.",IDC_STATIC,61,14,
+    LTEXT           "√≥∏Æ«“ Ω∫≈©∏≥∆Æ ∆ƒ¿œ¿ª ¡ˆ¡§«ÿ ¡÷ººøÅE",IDC_STATIC,61,14,
                     195,11
 END
 
@@ -227,13 +227,13 @@ BEGIN
         BLOCK "041204B0"
         BEGIN
             VALUE "CompanyName", "\0"
-            VALUE "FileDescription", "System Management Tool MFC ¿¿øÎ «¡∑Œ±◊∑•\0"
+            VALUE "FileDescription", "System Management Tool MFC ¿¿øÅE«¡∑Œ±◊∑•\0"
             VALUE "FileVersion", "1, 0, 0, 1\0"
             VALUE "InternalName", "System Management Tool\0"
             VALUE "LegalCopyright", "Copyright (C) 2008\0"
             VALUE "LegalTrademarks", "\0"
             VALUE "OriginalFilename", "System Management Tool.EXE\0"
-            VALUE "ProductName", "System Management Tool ¿¿øÎ «¡∑Œ±◊∑•\0"
+            VALUE "ProductName", "System Management Tool ¿¿øÅE«¡∑Œ±◊∑•\0"
             VALUE "ProductVersion", "1, 0, 0, 1\0"
         END
     END

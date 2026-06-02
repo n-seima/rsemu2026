@@ -18,8 +18,23 @@ enum
 	eCFV_ADD_MUSIC_ON,
 	eCFV_ADD_OUTPUT_DEVICE,
 	eCFV_ADD_WINDOW_MODE,
+	eCFV_ADD_RESOLUTION_MODE,
+	eCFV_ADD_VARIABLE_RESOLUTION,
 	eCFV_CURRENT_VERSION,
 };
+
+enum
+{
+	eGAME_RESOLUTION_800X600,
+	eGAME_RESOLUTION_1024X768,
+	eGAME_RESOLUTION_1280X720,
+	eGAME_RESOLUTION_1280X768,
+	eGAME_RESOLUTION_1366X768,
+	eGAME_RESOLUTION_1200X1005,
+	eGAME_RESOLUTION_CUSTOM,
+	eGAME_RESOLUTION_COUNT,
+};
+
 #pragma pack(2)
 class	CGameOption
 {
@@ -67,6 +82,9 @@ public:
 	// insu add
 	BOOL			b_bIsNewCarrotShop;
 	// insu add end
+	WORD			m_wResolutionMode;
+	WORD			m_wScreenWidth;
+	WORD			m_wScreenHeight;
 					CGameOption()
 					{
 						memset(this,0,sizeof(CGameOption));
@@ -86,9 +104,140 @@ public:
 						m_wIsAllowShout				=	TRUE;
 						m_wIsAllowPartyChat			=	TRUE;
 						b_bIsNewCarrotShop			=	FALSE;	// insu add ■■■■■■■■■■■■■■■
+						m_wResolutionMode			=	eGAME_RESOLUTION_800X600;
+						m_wScreenWidth				=	800;
+						m_wScreenHeight				=	600;
 					}
 };	//	class	CGameOption
 #pragma pack()
+
+inline	int
+GetGameResolutionMode(const CGameOption &_option)
+{
+	if	(_option.m_wResolutionMode < eGAME_RESOLUTION_COUNT)
+		return	_option.m_wResolutionMode;
+
+	return	_option.m_bf1IsUse1024X768 ? eGAME_RESOLUTION_1024X768 : eGAME_RESOLUTION_800X600;
+}
+
+inline	void
+SetGameResolutionMode(CGameOption &_option,int _iResolutionMode)
+{
+	if	(_iResolutionMode < 0 || _iResolutionMode >= eGAME_RESOLUTION_COUNT)
+		_iResolutionMode	=	eGAME_RESOLUTION_800X600;
+
+	_option.m_wResolutionMode	=	(WORD)_iResolutionMode;
+	_option.m_bf1IsUse1024X768	=	(_iResolutionMode == eGAME_RESOLUTION_1024X768);
+
+	switch(_iResolutionMode)
+	{
+		case	eGAME_RESOLUTION_1024X768	:
+			_option.m_wScreenWidth	=	1024;
+			_option.m_wScreenHeight	=	768;
+			break;
+
+		case	eGAME_RESOLUTION_1280X720	:
+			_option.m_wScreenWidth	=	1280;
+			_option.m_wScreenHeight	=	720;
+			break;
+
+		case	eGAME_RESOLUTION_1280X768	:
+			_option.m_wScreenWidth	=	1280;
+			_option.m_wScreenHeight	=	768;
+			break;
+
+		case	eGAME_RESOLUTION_1366X768	:
+			_option.m_wScreenWidth	=	1366;
+			_option.m_wScreenHeight	=	768;
+			break;
+
+		case	eGAME_RESOLUTION_1200X1005:
+			_option.m_wScreenWidth	=	1200;
+			_option.m_wScreenHeight	=	1005;
+			break;
+
+		case	eGAME_RESOLUTION_800X600	:
+		default								:
+			_option.m_wScreenWidth	=	800;
+			_option.m_wScreenHeight	=	600;
+			break;
+	}
+}
+
+inline	void
+SetGameResolutionSize(CGameOption &_option,int _iWidth,int _iHeight)
+{
+	if	(_iWidth	<	800		)	_iWidth		=	800;
+	if	(_iHeight	<	600		)	_iHeight	=	600;
+	if	(_iWidth	>	1920	)	_iWidth		=	1920;
+	if	(_iHeight	>	1080	)	_iHeight	=	1080;
+
+	if	(_iWidth == 800		&&	_iHeight == 600		)	SetGameResolutionMode(_option,eGAME_RESOLUTION_800X600);
+	else
+	if	(_iWidth == 1024	&&	_iHeight == 768		)	SetGameResolutionMode(_option,eGAME_RESOLUTION_1024X768);
+	else
+	if	(_iWidth == 1280	&&	_iHeight == 720		)	SetGameResolutionMode(_option,eGAME_RESOLUTION_1280X720);
+	else
+	if	(_iWidth == 1280	&&	_iHeight == 768		)	SetGameResolutionMode(_option,eGAME_RESOLUTION_1280X768);
+	else
+	if	(_iWidth == 1366	&&	_iHeight == 768		)	SetGameResolutionMode(_option,eGAME_RESOLUTION_1366X768);
+	else
+	if	(_iWidth == 1200	&&	_iHeight == 1005	)	SetGameResolutionMode(_option,eGAME_RESOLUTION_1200X1005);
+	else
+	{
+		_option.m_wResolutionMode	=	eGAME_RESOLUTION_CUSTOM;
+		_option.m_bf1IsUse1024X768	=	FALSE;
+		_option.m_wScreenWidth		=	(WORD)_iWidth;
+		_option.m_wScreenHeight		=	(WORD)_iHeight;
+	}
+}
+
+inline	void
+GetGameResolutionSize(const CGameOption &_option,int &_iWidth,int &_iHeight)
+{
+	if	(_option.m_wResolutionMode == eGAME_RESOLUTION_CUSTOM	&&
+		_option.m_wScreenWidth >= 800						&&
+		_option.m_wScreenHeight >= 600)
+	{
+		_iWidth		=	_option.m_wScreenWidth;
+		_iHeight	=	_option.m_wScreenHeight;
+		return;
+	}
+
+	switch(GetGameResolutionMode(_option))
+	{
+		case	eGAME_RESOLUTION_1024X768	:
+			_iWidth		=	1024;
+			_iHeight	=	768;
+			break;
+
+		case	eGAME_RESOLUTION_1280X720	:
+			_iWidth		=	1280;
+			_iHeight	=	720;
+			break;
+
+		case	eGAME_RESOLUTION_1280X768	:
+			_iWidth		=	1280;
+			_iHeight	=	768;
+			break;
+
+		case	eGAME_RESOLUTION_1366X768	:
+			_iWidth		=	1366;
+			_iHeight	=	768;
+			break;
+
+		case	eGAME_RESOLUTION_1200X1005:
+			_iWidth		=	1200;
+			_iHeight	=	1005;
+			break;
+
+		case	eGAME_RESOLUTION_800X600	:
+		default								:
+			_iWidth		=	800;
+			_iHeight	=	600;
+			break;
+	}
+}
 
 extern	CGameOption	g_config;
 

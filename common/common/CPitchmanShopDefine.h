@@ -17,7 +17,7 @@
 //	Pitchman Shop Status
 enum
 {
-	ePSS_READY,	//	¿ÀÇÂ ÁØºñÁßÀÌ´Ù.
+	ePSS_READY,	//	ì˜¤í”ˆ ì¤€ë¹„ì¤‘ì´ë‹¤.
 	ePSS_OPEN,
 	ePSS_REQUIRE_INFO,
 	ePSS_WAIT_INFO,
@@ -34,7 +34,7 @@ public:
 class	CMinimumPitchmanShopInfo
 {
 public:
-	WORD			wSerialInField;			//	ÇÊµå¾È¿¡¼­ ÇÃ·¹ÀÌ¾îÀÇ ½Ã¸®¾ó
+	WORD			wSerialInField;			//	í•„ë“œì•ˆì—ì„œ í”Œë ˆì´ì–´ì˜ ì‹œë¦¬ì–¼
 	WORD			wX,wY;
 };	//	class	CMinimumActorInfo
 
@@ -60,7 +60,7 @@ public:
 	CItemDefine		m_item;			
 	DWORD			m_dwPrice;
 	WORD			m_wSlot;
-	BYTE			m_bDenomination;		// ÅëÈ­´ÜÀ§.
+	BYTE			m_bDenomination;		// í†µí™”ë‹¨ìœ„.
 };
 
 class	CPitchmanShopForClient

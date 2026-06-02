@@ -309,7 +309,7 @@ cFIELD::dropSecretDungeonKey(cACTOR *_lpKiller,int _iX,int _iY)
 
 	g_im.generateItemByBaseItem(&item,g_im.m_wSecretDungeonKey,1);
 
-	item.m_year		=	g_currentTime.m_wYear-2000;
+	item.m_year		=	EncodeItemExpireYear(g_currentTime.m_wYear);
 	item.m_month	=	g_currentTime.m_wMonth;
 	item.m_day		=	g_currentTime.m_wDay;
 	item.m_hour		=	g_currentTime.m_wHour;
@@ -644,7 +644,7 @@ cFIELD::droppingItem(cACTOR *_lpActor,cACTOR *_lpKiller)
 
 			BOOL isGuildMasterGrace = FALSE;
 			if(_lpKiller)
-				isWordEventTime = _lpKiller->m_wGuildMasterGrace;
+				isGuildMasterGrace = _lpKiller->m_wGuildMasterGrace;
 
 			BOOL			bIsDropUnique	=	isDropUniqueChance(lpJob->m_aDroppingItem[i].m_wItemType,_lpActor->m_iLevel,iKillerLuck,iKillerUnique , isWordEventTime , isGuildMasterGrace);
 			BOOL			bIsDropRare		=	isDropRareChance(lpJob->m_aDroppingItem[i].m_wItemType,_lpActor->m_iLevel,iKillerCorrectItemDropRate,iKillerLuck,iKillerUnique,iKillerCorrectRare,iKillerCorrectMagicItemDropChance , isWordEventTime , isGuildMasterGrace);
@@ -696,10 +696,11 @@ cFIELD::droppingItem(cACTOR *_lpActor,cACTOR *_lpKiller)
 			iDroppingItemCount++;
 		}
 
-		if	(iDroppingItemCount	==	0	&&	iKillerLevel	>	0	&&	iKillerLevel	<	60)
+		if	(iDroppingItemCount	==	0	&&	iKillerLevel	>	0)
 		{
 			int		iCorrect	=	(int)pow(iKillerLevel,0.5f);
-			int		iDropChance	=	50*100/max(iCorrect,1);
+			int		iDropChance	=	50*max(g_iItemFactor,1)*100/max(iCorrect,1);
+			iDropChance			=	min(iDropChance,10000);
 
 			if	(iDropChance	&&	largeRandom(10000)	<	iDropChance)
 			{

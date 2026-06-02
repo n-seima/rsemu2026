@@ -7,10 +7,10 @@
 #include <deque>
 
 //	
-//	¿¡·¯ ·Î±×¸¦ ³²±â±â À§ÇÑ Æ¯¼ö Å¬·¡½º.
-//	¿î¿µÀÚµé¿¡°Ô ¼­¹öÀÇ »óÅÂ¸¦ ½±°Ô È®ÀÎÇÒ ¼ö ÀÖµµ·Ï ÇÏ±â À§ÇØ, ¸ðµç ¼­¹ö¿¡ Æ÷ÇÔµÈ´Ù.
+//	ì—ëŸ¬ ë¡œê·¸ë¥¼ ë‚¨ê¸°ê¸° ìœ„í•œ íŠ¹ìˆ˜ í´ëž˜ìŠ¤.
+//	ìš´ì˜ìžë“¤ì—ê²Œ ì„œë²„ì˜ ìƒíƒœë¥¼ ì‰½ê²Œ í™•ì¸í•  ìˆ˜ ìžˆë„ë¡ í•˜ê¸° ìœ„í•´, ëª¨ë“  ì„œë²„ì— í¬í•¨ëœë‹¤.
 
-//	viewerÃø¿¡¼­´Â ·Î±×¸¦ 
+//	viewerì¸¡ì—ì„œëŠ” ë¡œê·¸ë¥¼ 
 class cSSInfoTable
 {
 public:
@@ -57,15 +57,15 @@ public:
 
 	enum
 	{
-		//	ERROR LEVEL 5 : ÀÏ¹ÝÀûÀÎ »óÅÂ Àü¼Û
-		eERROR_TYPE_SERVERSTATUS = 0,		//	¼­¹öÀÇ ÇöÀç »óÅÂ¸¦ Àü¼Û
-		eERROR_TYPE_GAME_UPDATE_STATUS	,	//	°ÔÀÓ ¼­¹öÀÇ °ÔÀÓ ¾÷µ¥ÀÌÆ® »óÈ² Àü¼Û
+		//	ERROR LEVEL 5 : ì¼ë°˜ì ì¸ ìƒíƒœ ì „ì†¡
+		eERROR_TYPE_SERVERSTATUS = 0,		//	ì„œë²„ì˜ í˜„ìž¬ ìƒíƒœë¥¼ ì „ì†¡
+		eERROR_TYPE_GAME_UPDATE_STATUS	,	//	ê²Œìž„ ì„œë²„ì˜ ê²Œìž„ ì—…ë°ì´íŠ¸ ìƒí™© ì „ì†¡
 
-		//	ERROR LEVEL 2 : ¹®Á¦ ¹ß»ý Á÷Àü..
-		eERROR_TYPE_DB_DISKFULL = 701,		//	¼­¹öÀÇ µð½ºÅ©°¡ 200MÀÌÇÏ°¡ µÈ´Ù¸é °æ°í¸¦ º¸³½´Ù.
+		//	ERROR LEVEL 2 : ë¬¸ì œ ë°œìƒ ì§ì „..
+		eERROR_TYPE_DB_DISKFULL = 701,		//	ì„œë²„ì˜ ë””ìŠ¤í¬ê°€ 200Mì´í•˜ê°€ ëœë‹¤ë©´ ê²½ê³ ë¥¼ ë³´ë‚¸ë‹¤.
 
-		//	ERROR LEVEL 1 : ½ÇÁ¦ ¹®Á¦ ¹ß»ý. ±ä±Þ Ã³¸®ÇÒ °Í..
-		eERROR_TYPE_DB_SHUTDOWN = 901,		//	DB¿¡ Äõ¸®°¡ Á¤»óÀûÀ¸·Î Àü¼ÛÀÌ µÇÁö ¾ÊÀ» °æ¿ì (DB ERROR°¡ 50È¸ ¿¬¼ÓÀ¸·Î ¹ß»ýÇÒ °æ¿ì)
+		//	ERROR LEVEL 1 : ì‹¤ì œ ë¬¸ì œ ë°œìƒ. ê¸´ê¸‰ ì²˜ë¦¬í•  ê²ƒ..
+		eERROR_TYPE_DB_SHUTDOWN = 901,		//	DBì— ì¿¼ë¦¬ê°€ ì •ìƒì ìœ¼ë¡œ ì „ì†¡ì´ ë˜ì§€ ì•Šì„ ê²½ìš° (DB ERRORê°€ 50íšŒ ì—°ì†ìœ¼ë¡œ ë°œìƒí•  ê²½ìš°)
 	};
 	static cServerStatus & getInstance()
 	{
@@ -74,21 +74,21 @@ public:
 	}
 	~cServerStatus();
 
-	//	ÇÁ·ÎÁ§Æ® ½ÃÀÛ½Ã ½ÇÇàÇÒ °Í!!
-	BOOL	init(char * _worldname, char * _subname);		//°èÁ¤ Á¤º¸¸¦ ÀÐ°í, DB¿¡ Á¢¼ÓÇÑ´Ù.
+	//	í”„ë¡œì íŠ¸ ì‹œìž‘ì‹œ ì‹¤í–‰í•  ê²ƒ!!
+	BOOL	init(char * _worldname, char * _subname);		//ê³„ì • ì •ë³´ë¥¼ ì½ê³ , DBì— ì ‘ì†í•œë‹¤.
 	BOOL	isReady()
 	{
 		if(stricmp(m_strServerName,"WORLDNAME")==0)	return FALSE;
 		else										return TRUE;
 	}
-	void	release();	//DB¿ÍÀÇ Á¢¼Ó Á¤º¸¸¦ ÇØÁöÇÑ´Ù.
+	void	release();	//DBì™€ì˜ ì ‘ì† ì •ë³´ë¥¼ í•´ì§€í•œë‹¤.
 
-	//	¼­¹ö¸¦ À§ÇÑ
-	int		update(int _iErrorType, int _iParam1, char * _strParam2 );	//¿¡·¯ ·Î±×¸¦ ³²°Ü¶ó.
+	//	ì„œë²„ë¥¼ ìœ„í•œ
+	int		update(int _iErrorType, int _iParam1, char * _strParam2 );	//ì—ëŸ¬ ë¡œê·¸ë¥¼ ë‚¨ê²¨ë¼.
 	
-	//	Viewer¸¦ À§ÇÑ
-	int		getSS();	//	¼­¹öµéÀÇ »óÅÂ¸¦ °¡Á®¿Â´Ù.
-	int		getError(BOOL isFirst = FALSE);	//	Ä¡¸íÀûÀÎ ¿¡·¯µéÀÌ ÀÖ´ÂÁö È®ÀÎÇÑ´Ù.	//	isFirst -> ¸· ½ÇÇàÇÑ °æ¿ì?
+	//	Viewerë¥¼ ìœ„í•œ
+	int		getSS();	//	ì„œë²„ë“¤ì˜ ìƒíƒœë¥¼ ê°€ì ¸ì˜¨ë‹¤.
+	int		getError(BOOL isFirst = FALSE);	//	ì¹˜ëª…ì ì¸ ì—ëŸ¬ë“¤ì´ ìžˆëŠ”ì§€ í™•ì¸í•œë‹¤.	//	isFirst -> ë§‰ ì‹¤í–‰í•œ ê²½ìš°?
 };
 
 #define g_SS	cServerStatus::getInstance()

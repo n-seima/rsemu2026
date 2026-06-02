@@ -642,6 +642,8 @@ cADO_WEB::UseCarrot(GDMSG_USE_CARROT_LOG * rPacket,DGMSG_USE_CARROT_RESULT * sPa
 	return;
 #endif
 
+	sPacket->crcnt = -1;
+	sPacket->wResult = eUCR_FAILED;
 	
 	try{
 		_CommandPtr		pCmd = NULL;
@@ -650,7 +652,7 @@ cADO_WEB::UseCarrot(GDMSG_USE_CARROT_LOG * rPacket,DGMSG_USE_CARROT_RESULT * sPa
 		//Command 객체 이용
 		pCmd.CreateInstance(__uuidof(Command));
 		pCmd->ActiveConnection = GetConnection();
-		pCmd->CommandText = L"sp_red_CIG_BUY_test";
+		pCmd->CommandText = L"dbo.sp_red_CIG_BUY_test";
 		pCmd->CommandType  = adCmdStoredProc;
 		if(pCmd->ActiveConnection==NULL)
 		{
@@ -664,7 +666,7 @@ cADO_WEB::UseCarrot(GDMSG_USE_CARROT_LOG * rPacket,DGMSG_USE_CARROT_RESULT * sPa
 		
 		DEF_PARAM(pCmd,"@SID") = _variant_t((char *)rPacket->strServerName);
 		DEF_PARAM(pCmd,"@ID") = _variant_t((char *)rPacket->strId);
-		DEF_PARAM(pCmd,"@CN") = _variant_t((long)rPacket->strName);
+		DEF_PARAM(pCmd,"@CN") = _variant_t((char *)rPacket->strName);
 		DEF_PARAM(pCmd,"@JOB") = _variant_t((long)rPacket->job);
 		DEF_PARAM(pCmd,"@LEV") = _variant_t((long)rPacket->lev);
 		DEF_PARAM(pCmd,"@ITMNO") = _variant_t((long)rPacket->itemno);
@@ -676,31 +678,44 @@ cADO_WEB::UseCarrot(GDMSG_USE_CARROT_LOG * rPacket,DGMSG_USE_CARROT_RESULT * sPa
 		hr = pCmd->Execute(NULL,NULL,NULL);
 		
 		VARIANT regIdx;
-		regIdx = pCmd->GetParameters()->GetItem("@RWP")->Value;
-		sPacket->crcnt = regIdx.intVal;
-		regIdx = pCmd->GetParameters()->GetItem("@ECD")->Value;
-		sPacket->wResult = (WORD)regIdx.intVal;
-		if(sPacket->wResult == 0)
-			sPacket->wResult = eUCR_SUCCESS;
-		else
+		VariantInit(&regIdx);
+
+		try
 		{
-			switch(sPacket->wResult)
+			regIdx = pCmd->GetParameters()->GetItem("@RWP")->Value;
+			sPacket->crcnt = regIdx.intVal;
+			VariantClear(&regIdx);
+			regIdx = pCmd->GetParameters()->GetItem("@ECD")->Value;
+			sPacket->wResult = (WORD)regIdx.intVal;
+			_log("[CARROT] db use raw id[%s] rwp[%d] ecd[%d]",rPacket->strId,sPacket->crcnt,sPacket->wResult);
+			if(sPacket->wResult == 0)
+				sPacket->wResult = eUCR_SUCCESS;
+			else
 			{
-			case 100:	//	없는 아이디
-				sPacket->wResult = eUCR_NOTFOUNDUSER;
-				break;
-			case 101:	//	당근 수 부족
-				sPacket->wResult = eUCR_LOW_COUNT;
-				break;
-			case 103:	//	미동의 , 남은 당근갯수는 0으로 무조건 처리
-				sPacket->wResult = eUCR_AGREEMENT_FAILED;
-				break;
-			case 104:	//	아이템이 없다.
-				sPacket->wResult = eUCR_FAILED;
-				break;
+				switch(sPacket->wResult)
+				{
+				case 100:	//	없는 아이디
+					sPacket->wResult = eUCR_NOTFOUNDUSER;
+					break;
+				case 101:	//	당근 수 부족
+					sPacket->wResult = eUCR_LOW_COUNT;
+					break;
+				case 103:
+					sPacket->wResult = eUCR_AGREEMENT_FAILED;
+					break;
+				case 104:	//	아이템이 없다.
+					sPacket->wResult = eUCR_FAILED;
+					break;
+				default:
+					sPacket->wResult = eUCR_FAILED;
+					break;
+				}
 			}
 		}
-	
+		catch( _com_error &e )
+		{
+			_log("[CARROT] db use output params missing id[%s] fallback to current count",rPacket->strId);
+		}
 
 		VariantClear(&regIdx);
 		pCmd.Release();

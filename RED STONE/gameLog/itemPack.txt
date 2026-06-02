@@ -1,0 +1,14 @@
+17:26.06.01 23.01.21
+[26년 06월 01일 23시 01분 21초] getRandomItem - is invalid pack : 83
+[26년 06월 01일 23시 20분 45초] getRandomItem - is invalid pack : 83
+[26년 06월 02일 00시 08분 59초] getRandomItem - is invalid pack : 9
+[26년 06월 02일 06시 39분 08초] getRandomItem - is invalid pack : 83
+[26년 06월 02일 11시 02분 25초] getRandomItem - is invalid pack : 1
+[26년 06월 02일 11시 02분 33초] getRandomItem - is invalid pack : 2
+[26년 06월 02일 11시 02분 38초] getRandomItem - is invalid pack : 3
+[26년 06월 02일 11시 02분 51초] getRandomItem - is invalid pack : 82
+[26년 06월 02일 11시 02분 52초] getRandomItem - is invalid pack : 80
+[26년 06월 02일 11시 02분 53초] getRandomItem - is invalid pack : 78
+[26년 06월 02일 11시 02분 54초] getRandomItem - is invalid pack : 76
+[26년 06월 02일 11시 02분 54초] getRandomItem - is invalid pack : 74
+[26년 06월 02일 13시 56분 33초] getRandomItem - is invalid pack : 83

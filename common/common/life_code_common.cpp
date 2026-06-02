@@ -7,7 +7,7 @@ cLifeCode_Info::isLife(DWORD _dwCurTime)
 	if	(m_bIsCheckNow		==	FALSE)
 		return	TRUE;
 
-	if	(m_dwLastWorkTime	>	_dwCurTime)	//	½Ã°è°¡ ÇÑ¹ÙÄû µ¹¾Ò´Ù.
+	if	(m_dwLastWorkTime	>	_dwCurTime)	//	ì‹œê³„ê°€ í•œë°”í€´ ëŒì•˜ë‹¤.
 		return	TRUE;
 
 	int	iSpentTime	=	_dwCurTime-m_dwLastWorkTime;

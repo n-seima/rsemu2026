@@ -1,0 +1,502 @@
+[181357] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[181357] Start    Make DB Index.....
+
+[181357] End  Make DB Index.  ListCount 4, 0.003 Sec
+
+[181357] Start    Get Event Infomation .....
+
+[181401] End    Get Event Infomation 4.080 Sec
+
+[181401] Log Server [127.0.0.1] [59641]
+
+[181401] START WorkerThread[0] ...
+
+[181401] START WorkerThread[1] ...
+
+[181401] START WorkerThread[2] ...
+
+[181401] START WorkerThread[6] ...
+
+[181401] START Event Manager Thread ...
+
+[181401] START WorkerThread[4] ...
+
+[181401] START AdditionThread ...
+
+[181401] START WorkerThread[3] ...
+
+[181401] START WorkerThread[7] ...
+
+[181401] START WorkerThread[5] ...
+
+[181402] Wait for begin all worker thread
+
+[181402] Start Avatar DB Cache Server ... day : 20260601 - time : 181402 
+
+
+[181532] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[181532] Start    Make DB Index.....
+
+[181532] End  Make DB Index.  ListCount 4, 0.002 Sec
+
+[181532] Start    Get Event Infomation .....
+
+[181536] End    Get Event Infomation 4.041 Sec
+
+[181536] Log Server [127.0.0.1] [59641]
+
+[181536] START WorkerThread[0] ...
+
+[181536] START WorkerThread[1] ...
+
+[181536] START WorkerThread[2] ...
+
+[181536] START WorkerThread[3] ...
+
+[181536] START WorkerThread[4] ...
+
+[181536] START WorkerThread[5] ...
+
+[181536] START WorkerThread[7] ...
+
+[181536] START AdditionThread ...
+
+[181536] START Event Manager Thread ...
+
+[181536] START WorkerThread[6] ...
+
+[181537] Wait for begin all worker thread
+
+[181537] Start Avatar DB Cache Server ... day : 20260601 - time : 181537 
+
+
+[182605]  Provision Rank = 0
+
+[183121] ()1 is exit!!
+
+
+[183204]  Provision Rank = 0
+
+[185910] ()1 is exit!!
+
+
+[185933]  Provision Rank = 0
+
+[190631] ()1 is exit!!
+
+
+[190637]  Provision Rank = 0
+
+[192205] getBlankPos Succ: 0.000
+
+[192205] try to make avatar : [usi1111] [‚ ‚ñ‚¿‚á‚ñ] [0]
+
+[192205] add [10] [usi1111] ,[‚ ‚ñ‚¿‚á‚ñ], max count 5
+
+[192205]  ADD DBINDEX : [10] [‚ ‚ñ‚¿‚á‚ñ] [usi1111] [0],ret 4
+
+[192205] FINISH dLDMSG_CREATEAVATAR  0.008 sec..
+[193106] cADO_BASE::GetConnection() -> return NULL 
+
+
+[193913] getBlankPos Succ: 0.000
+
+[193913] try to make avatar : [usi1111] [‚Ë‚¥‚¿‚á‚ñ] [1]
+
+[193913] add [11] [usi1111] ,[‚Ë‚¥‚¿‚á‚ñ], max count 6
+
+[193913]  ADD DBINDEX : [11] [‚Ë‚¥‚¿‚á‚ñ] [usi1111] [1],ret 5
+
+[193913] FINISH dLDMSG_CREATEAVATAR  0.003 sec..
+[194103] getBlankPos Succ: 0.000
+
+[194103] try to make avatar : [pengg101] [Rockhopper] [0]
+
+[194103] add [12] [pengg101] ,[Rockhopper], max count 7
+
+[194103]  ADD DBINDEX : [12] [Rockhopper] [pengg101] [0],ret 6
+
+[194103] FINISH dLDMSG_CREATEAVATAR  0.003 sec..
+[200204] cADO_BASE::GetConnection() -> return NULL 
+
+
+[203403] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 209  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_EVENT.cpp ADODB.Parameters 
+
+
+[204203] cADO_BASE::GetConnection() -> return NULL 
+
+
+[205753] cADO_BASE::GetConnection() -> return NULL 
+
+
+[210245] cADO_BASE::GetConnection() -> return NULL 
+
+
+[211432] cADO_BASE::GetConnection() -> return NULL 
+
+
+[212413] cADO_BASE::GetConnection() -> return NULL 
+
+
+[213809] cADO_BASE::GetConnection() -> return NULL 
+
+
+[214202] cADO_BASE::GetConnection() -> return NULL 
+
+
+[220055] cADO_BASE::GetConnection() -> return NULL 
+
+
+[220613] cADO_BASE::GetConnection() -> return NULL 
+
+
+[224114] ()1 is exit!!
+
+
+[224258]  Provision Rank = 0
+
+[225425] cADO_BASE::GetConnection() -> return NULL 
+
+
+[225617] cADO_BASE::GetConnection() -> return NULL 
+
+
+[225730] cADO_BASE::GetConnection() -> return NULL 
+
+
+[225920] cADO_BASE::GetConnection() -> return NULL 
+
+
+[230047] cADO_BASE::GetConnection() -> return NULL 
+
+
+[230218] cADO_BASE::GetConnection() -> return NULL 
+
+
+[230352] cADO_BASE::GetConnection() -> return NULL 
+
+
+[230424] cADO_BASE::GetConnection() -> return NULL 
+
+
+[230446] cADO_BASE::GetConnection() -> return NULL 
+
+
+[230548] cADO_BASE::GetConnection() -> return NULL 
+
+
+[230630] cADO_BASE::GetConnection() -> return NULL 
+
+
+[230754] cADO_BASE::GetConnection() -> return NULL 
+
+
+[230811] cADO_BASE::GetConnection() -> return NULL 
+
+
+[230900] cADO_BASE::GetConnection() -> return NULL 
+
+
+[230918] getBlankPos Succ: 0.000
+
+[230918] try to make avatar : [usi1111] [‚ ‚ñ‚¿‚á‚ñwiz] [2]
+
+[230918] add [13] [usi1111] ,[‚ ‚ñ‚¿‚á‚ñwiz], max count 8
+
+[230918]  ADD DBINDEX : [13] [‚ ‚ñ‚¿‚á‚ñwiz] [usi1111] [2],ret 7
+
+[230918] FINISH dLDMSG_CREATEAVATAR  0.004 sec..
+[230928] ()1 is exit!!
+
+
+[230940]  Provision Rank = 0
+
+[231227] cADO_BASE::GetConnection() -> return NULL 
+
+
+[231449] cADO_BASE::GetConnection() -> return NULL 
+
+
+[231704] getBlankPos Succ: 0.000
+
+[231704] try to make avatar : [omizu1] [GM‚¨…] [3]
+
+[231704] add [14] [omizu1] ,[GM‚¨…], max count 9
+
+[231704]  ADD DBINDEX : [14] [GM‚¨…] [omizu1] [3],ret 8
+
+[231704] FINISH dLDMSG_CREATEAVATAR  0.004 sec..
+[231744] spDeleteAva : [GM‚¨…] [omizu1] [14]
+
+[231744] _iIndex remove [14] [omizu1] [GM‚¨…] [3]
+[231747] spDeleteAva : [‚¨…—ìp] [omizu1] [3]
+
+[231747] _iIndex remove [3] [omizu1] [‚¨…—ìp] [1]
+[231750] spDeleteAva : [aaaaa] [omizu1] [9]
+
+[231750] _iIndex remove [9] [omizu1] [aaaaa] [2]
+[231802] getBlankPos Succ: 0.000
+
+[231802] try to make avatar : [omizu1] [‚¨‚Ý‚¸] [1]
+
+[231802] add [15] [omizu1] ,[‚¨‚Ý‚¸], max count 10
+
+[231802]  ADD DBINDEX : [15] [‚¨‚Ý‚¸] [omizu1] [1],ret 9
+
+[231802] FINISH dLDMSG_CREATEAVATAR  0.005 sec..
+[231901] cADO_BASE::GetConnection() -> return NULL 
+
+
+[231901] cADO_BASE::GetConnection() -> return NULL 
+
+
+[232041] cADO_BASE::GetConnection() -> return NULL 
+
+
+[235548] ()1 is exit!!
+
+
+[000605] getBlankPos Succ: 0.000
+
+[000605] try to make avatar : [kai444] [‚Ú‚ñ‚«‚ã‚Ú‚ñ] [0]
+
+[000605] add [16] [kai444] ,[‚Ú‚ñ‚«‚ã‚Ú‚ñ], max count 11
+
+[000605]  ADD DBINDEX : [16] [‚Ú‚ñ‚«‚ã‚Ú‚ñ] [kai444] [0],ret 10
+
+[000605] FINISH dLDMSG_CREATEAVATAR  0.007 sec..
+[000607]  Provision Rank = 0
+
+[000821] ()1 is exit!!
+
+
+[000830]  Provision Rank = 0
+
+[002340] cADO_BASE::GetConnection() -> return NULL 
+
+
+[002701] cADO_BASE::GetConnection() -> return NULL 
+
+
+[003111] cADO_BASE::GetConnection() -> return NULL 
+
+
+[003729] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[003729] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [kai444/‚Ú‚ñ‚«‚ã‚Ú‚ñ:SC 23] [LV 67/241550] [JOB 17] [FIELD 4]
+[003729] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[003729] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [kai444/‚Ú‚ñ‚«‚ã‚Ú‚ñ:SC 23] [LV 67/241550] [JOB 17] [FIELD 4]
+[003729] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[003729] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [kai444/‚Ú‚ñ‚«‚ã‚Ú‚ñ:SC 23] [LV 67/241550] [JOB 17] [FIELD 4]
+[003729] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[003729] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [kai444/‚Ú‚ñ‚«‚ã‚Ú‚ñ:SC 23] [LV 67/241550] [JOB 17] [FIELD 4]
+[003729] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[003729] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [kai444/‚Ú‚ñ‚«‚ã‚Ú‚ñ:SC 23] [LV 67/241550] [JOB 17] [FIELD 4]
+[003729] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[003729]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[003729] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [kai444/‚Ú‚ñ‚«‚ã‚Ú‚ñ:SC 23] [LV 67/241550] [JOB 17] [FIELD 4]
+[003921] cADO_BASE::GetConnection() -> return NULL 
+
+
+[004622] cADO_BASE::GetConnection() -> return NULL 
+
+
+[004645] ()1 is exit!!
+
+
+[005405]  Provision Rank = 0
+
+[005828] cADO_BASE::GetConnection() -> return NULL 
+
+
+[010100] cADO_BASE::GetConnection() -> return NULL 
+
+
+[010343] cADO_BASE::GetConnection() -> return NULL 
+
+
+[011035] cADO_BASE::GetConnection() -> return NULL 
+
+
+[011048] cADO_BASE::GetConnection() -> return NULL 
+
+
+[011142] cADO_BASE::GetConnection() -> return NULL 
+
+
+[011410] cADO_BASE::GetConnection() -> return NULL 
+
+
+[011423] ()1 is exit!!
+
+
+[011442]  Provision Rank = 0
+
+[013228] cADO_BASE::GetConnection() -> return NULL 
+
+
+[061359] getBlankPos Succ: 0.000
+
+[061359] try to make avatar : [toa16] [‚í‚©‚È] [1]
+
+[061359] add [17] [toa16] ,[‚í‚©‚È], max count 12
+
+[061359]  ADD DBINDEX : [17] [‚í‚©‚È] [toa16] [1],ret 11
+
+[061359] FINISH dLDMSG_CREATEAVATAR  0.004 sec..
+[062154] cADO_BASE::GetConnection() -> return NULL 
+
+
+[062513] cADO_BASE::GetConnection() -> return NULL 
+
+
+[062808] cADO_BASE::GetConnection() -> return NULL 
+
+
+[062841] cADO_BASE::GetConnection() -> return NULL 
+
+
+[063045] cADO_BASE::GetConnection() -> return NULL 
+
+
+[063616] cADO_BASE::GetConnection() -> return NULL 
+
+
+[063809] cADO_BASE::GetConnection() -> return NULL 
+
+
+[064548] cADO_BASE::GetConnection() -> return NULL 
+
+
+[065231] cADO_BASE::GetConnection() -> return NULL 
+
+
+[065233] cADO_BASE::GetConnection() -> return NULL 
+
+
+[065334] cADO_BASE::GetConnection() -> return NULL 
+
+
+[065521] cADO_BASE::GetConnection() -> return NULL 
+
+
+[065617] cADO_BASE::GetConnection() -> return NULL 
+
+
+[065738] cADO_BASE::GetConnection() -> return NULL 
+
+
+[065747] cADO_BASE::GetConnection() -> return NULL 
+
+
+[070011] cADO_BASE::GetConnection() -> return NULL 
+
+
+[070011]  Provision Rank = 0
+
+[070039] cADO_BASE::GetConnection() -> return NULL 
+
+
+[070106] cADO_BASE::GetConnection() -> return NULL 
+
+
+[070403] cADO_BASE::GetConnection() -> return NULL 
+
+
+[070643] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 103  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_EVENT.cpp ADODB.Parameters 
+
+
+[070643] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 209  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_EVENT.cpp ADODB.Parameters 
+
+
+[070835] cADO_BASE::GetConnection() -> return NULL 
+
+
+[070840] cADO_BASE::GetConnection() -> return NULL 
+
+
+[070942] cADO_BASE::GetConnection() -> return NULL 
+
+
+[071421] cADO_BASE::GetConnection() -> return NULL 
+
+
+[071540] cADO_BASE::GetConnection() -> return NULL 
+
+
+[073139] cADO_BASE::GetConnection() -> return NULL 
+
+
+[074024] cADO_BASE::GetConnection() -> return NULL 
+
+
+[081534] ()1 is exit!!
+
+
+[081543]  Provision Rank = 0
+
+[081620] ()1 is exit!!
+
+
+[081631]  Provision Rank = 0
+
+[084200] ()1 is exit!!
+
+
+[084206]  Provision Rank = 0
+
+[084958] ()1 is exit!!
+
+
+[085010]  Provision Rank = 0
+

@@ -593,7 +593,7 @@ cACTOR::chargeExtraItem(cItem *_lpChargeKit,cItem *_lpDestItem)
 
 	if (iRemainMana	<	0)
 	{
-		_lpDestItem->m_year		=	g_currentTime.m_wYear-2000;
+		_lpDestItem->m_year		=	EncodeItemExpireYear(g_currentTime.m_wYear);
 		_lpDestItem->m_month	=	g_currentTime.m_wMonth;
 		_lpDestItem->m_day		=	g_currentTime.m_wDay;
 		_lpDestItem->m_hour		=	g_currentTime.m_wHour;

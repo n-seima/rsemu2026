@@ -43,7 +43,7 @@ BOOL	CTracerFromSaveLog::initialize( char * _dir,char * _fn)
 	strcpy(strPath,"");
 	strcpy(dir,"");
 	strcpy(strName,_fn);
-	//	console Ãâ·Â
+	//	console ì¶œë ¥
 	handleConsole = ::GetStdHandle( STD_OUTPUT_HANDLE );
 	if( handleConsole == INVALID_HANDLE_VALUE )
 	{
@@ -58,12 +58,12 @@ BOOL	CTracerFromSaveLog::initialize( char * _dir,char * _fn)
 			return false;
 	}
 
-	//	file Ãâ·Â
+	//	file ì¶œë ¥
 	day = cSRVUTIL::GetTime();
 	mon = cSRVUTIL::GetMonth()+1;
 	sprintf(strPath,"%s\\SaveLog",_dir);
 	CreateDirectory(strPath,NULL);
-	//	¿À´ÃÀÇ µğ·ºÅä¸®¸¦ ¸¸µé¾îº¸ÀÚ.
+	//	ì˜¤ëŠ˜ì˜ ë””ë ‰í† ë¦¬ë¥¼ ë§Œë“¤ì–´ë³´ì.
 	int dirname = 1900+cSRVUTIL::GetYear();
 	sprintf(dir,"%s\\%d_%d",strPath,dirname,mon);
 	CreateDirectory(dir,NULL);
@@ -154,7 +154,7 @@ BOOL	CTracerFromSaveLog::SetFileHandle()
 		}
 		if(mon!=cSRVUTIL::GetMonth()+1)
 		{
-			//	¿À´ÃÀÇ µğ·ºÅä¸®¸¦ ¸¸µé¾îº¸ÀÚ.
+			//	ì˜¤ëŠ˜ì˜ ë””ë ‰í† ë¦¬ë¥¼ ë§Œë“¤ì–´ë³´ì.
 			mon = cSRVUTIL::GetMonth()+1;
 			printf("current dir = [%s]\n",strPath);
 			int dirname = 1900+cSRVUTIL::GetYear();
@@ -166,7 +166,7 @@ BOOL	CTracerFromSaveLog::SetFileHandle()
 		sprintf(fn,"%s\\%s_%02d_%d.txt",dir,strName,ver,day);
 		if((fp = fopen(fn,"a+"))==NULL)
 			return FALSE;
-		//	±× Àü ÆÄÀÏÀº ¾ĞÃàÇÏ°í, ¾ĞÃàÇÑ txtÆÄÀÏÀº Áö¿î´Ù.
+		//	ê·¸ ì „ íŒŒì¼ì€ ì••ì¶•í•˜ê³ , ì••ì¶•í•œ txtíŒŒì¼ì€ ì§€ìš´ë‹¤.
 		return TRUE;
 	}catch(...){
 		return FALSE;

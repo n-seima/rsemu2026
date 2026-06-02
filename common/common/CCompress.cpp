@@ -1040,7 +1040,7 @@ int make_tree(int nparm, WORD freqparm[],
 
 
 /****************************************************************
-		³»°¡ Ãß°¡ÇÑ ³Ñµé
+		ë‚´ê°€ ì¶”ê°€í•œ ë„˜ë“¤
 ****************************************************************/
 
 BYTE *
@@ -1103,7 +1103,7 @@ DecompressData(BYTE *_lpSourceData,int _iSourceDataSize,int *_lpResultSize)
 	l_iResultBufferPoint=	0;
 	l_iSourceDataPoint	=	0;
 
-//	¾ĞÃà Ç®±â ½ÃÀÛ
+//	ì••ì¶• í’€ê¸° ì‹œì‘
 	int	n, method;
 	int	iResultDataSize	=	0;
 	int	read			=	read_header();
@@ -1114,7 +1114,7 @@ DecompressData(BYTE *_lpSourceData,int _iSourceDataSize,int *_lpResultSize)
 	method				=	header[3];
 	header[3]			=	' ';
 
-	if (method != '0')	decode_start();	//	¾ĞÃàµÆ´Ù.
+	if (method != '0')	decode_start();	//	ì••ì¶•ëë‹¤.
 
 	while (l_iOriginalSize != 0) 
 	{	

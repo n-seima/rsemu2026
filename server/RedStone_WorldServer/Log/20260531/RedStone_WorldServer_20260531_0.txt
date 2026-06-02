@@ -1,0 +1,373 @@
+[222538] Start WorkerThread[0]...
+
+[222538] Start WorkerThread[5]...
+
+[222538] Start WorkerThread[1]...
+
+[222538] Start WorkerThread[6]...
+
+[222538] Start WorkerThread[4]...
+
+[222538] Start WorkerThread[2]...
+
+[222538] Start WorkerThread[3]...
+
+[222538] Start WorkerThread[7]...
+
+[222538] Start USERDBCtlThread ... 
+
+[222538] g_MaxUserCount = 2000
+
+[222538] Start WORLD Server ... day  - Not Ready 
+
+[222538] Start AcceptLoop ...
+
+[222538] Start DBCtlThread ... 
+
+[222539] Start AdditionThread ... 
+
+[222542]  isReady = 1 
+
+[222542]  Request Guild Infomation of Sql DB ... 
+
+[222542]  Recv Guild Info ....  Complete ............
+
+[222542]  isReady = 2 
+
+[222604] Connected Server's IP Address is [127.0.0.1] 
+
+
+[222607]  Send sendAppointmentQuizEventInfo... 
+
+[222607]  This user is game server. isReconnect[0] 
+
+
+[222607] Success SendGameServerInitDataThread
+
+[222607]  Try CONNECT to ACCOUNT DB : LocalWorld , 127.0.0.1 , idx 0
+
+[222607]  isReady = 3 
+
+[222607]  Let Start World Server...............!! 
+
+[222607] Connected Server's IP Address is [127.0.0.1] 
+
+
+[222607]  This user is not game server
+
+[223301] SEND ERROR ... ERROR 10054
+
+[223301] ===========>>>>>>>>>>		Dis User : 0 [SEND ERROR]
+
+[223301] GAME SERVER QUIT [type01]!!
+
+[223301] (type01)0 is exit
+
+
+[223301] ===========>>>>>>>>>>		Dis User : 0 [read byte = 0]
+
+[223446] Connected Server's IP Address is [25.1.80.156] 
+
+
+[223448]  Send sendAppointmentQuizEventInfo... 
+
+[223448]  This user is game server. isReconnect[0] 
+
+
+[223448] Success SendGameServerInitDataThread
+
+[223752] Fail bind !!
+
+
+[223752] Error InitSocket 
+
+
+[223759] SEND ERROR ... ERROR 10054
+
+[223759] ===========>>>>>>>>>>		Dis User : 2 [SEND ERROR]
+
+[223759] GAME SERVER QUIT [type01]!!
+
+[223759] (type01)2 is exit
+
+
+[223759] ===========>>>>>>>>>>		Dis User : 2 [read byte = 0]
+
+[223913] Start WorkerThread[0]...
+
+[223913] Start WorkerThread[3]...
+
+[223913] Start WorkerThread[6]...
+
+[223913] Start WorkerThread[7]...
+
+[223913] Start WorkerThread[2]...
+
+[223913] Start WorkerThread[5]...
+
+[223913] Start WorkerThread[4]...
+
+[223913] Start WorkerThread[1]...
+
+[223913] Start USERDBCtlThread ... 
+
+[223913] Start AcceptLoop ...
+
+[223913] g_MaxUserCount = 4000
+
+[223913] Start WORLD Server ... day  - Not Ready 
+
+[223913] Start DBCtlThread ... 
+
+[223913] Start AdditionThread ... 
+
+[223917]  isReady = 1 
+
+[223917]  Request Guild Infomation of Sql DB ... 
+
+[223917]  Recv Guild Info ....  Complete ............
+
+[223917]  isReady = 2 
+
+[223924] Connected Server's IP Address is [25.1.80.156] 
+
+
+[223926]  Send sendAppointmentQuizEventInfo... 
+
+[223926]  This user is game server. isReconnect[0] 
+
+
+[223926] Success SendGameServerInitDataThread
+
+[223926]  Try CONNECT to ACCOUNT DB : 縺頑ｰｴ繧ｵ繝ｼ繝舌�ｼ , 127.0.0.1 , idx 0
+
+[223926]  isReady = 3 
+
+[223926]  Let Start World Server...............!! 
+
+[223926] Connected Server's IP Address is [127.0.0.1] 
+
+
+[223926]  This user is not game server
+
+[224402] Start WorkerThread[0]...
+
+[224402] Start WorkerThread[6]...
+
+[224402] Start WorkerThread[3]...
+
+[224402] Start WorkerThread[2]...
+
+[224402] Start WorkerThread[1]...
+
+[224402] Start WorkerThread[7]...
+
+[224402] Start WorkerThread[5]...
+
+[224402] Start WorkerThread[4]...
+
+[224402] Start USERDBCtlThread ... 
+
+[224402] Start AcceptLoop ...
+
+[224402] g_MaxUserCount = 4000
+
+[224402] Start WORLD Server ... day  - Not Ready 
+
+[224402] Start DBCtlThread ... 
+
+[224403] Start AdditionThread ... 
+
+[224406]  isReady = 1 
+
+[224406]  Request Guild Infomation of Sql DB ... 
+
+[224406]  Recv Guild Info ....  Complete ............
+
+[224406]  isReady = 2 
+
+[224423] Connected Server's IP Address is [25.1.80.156] 
+
+
+[224425]  Send sendAppointmentQuizEventInfo... 
+
+[224425]  This user is game server. isReconnect[0] 
+
+
+[224425] Success SendGameServerInitDataThread
+
+[224425]  Try CONNECT to ACCOUNT DB : 縺頑ｰｴ繧ｵ繝ｼ繝舌�ｼ , 127.0.0.1 , idx 0
+
+[224425]  isReady = 3 
+
+[224425]  Let Start World Server...............!! 
+
+[224425] Connected Server's IP Address is [127.0.0.1] 
+
+
+[224425]  This user is not game server
+
+[224506] SEND ERROR ... ERROR 10054
+
+[224506] ===========>>>>>>>>>>		Dis User : 0 [SEND ERROR]
+
+[224506] GAME SERVER QUIT [type01]!!
+
+[224506] (type01)0 is exit
+
+
+[224506] ===========>>>>>>>>>>		Dis User : 0 [read byte = 0]
+
+[224713] ===========>>>>>>>>>>		Dis User : 1 [read byte = 0]
+
+[224713] GAME SERVER QUIT [#login]!!
+
+[224713] (#login)1 is exit
+
+
+[225004] Start WorkerThread[0]...
+
+[225004] Start WorkerThread[7]...
+
+[225004] Start WorkerThread[1]...
+
+[225004] Start WorkerThread[3]...
+
+[225004] Start WorkerThread[4]...
+
+[225004] Start WorkerThread[6]...
+
+[225004] Start WorkerThread[5]...
+
+[225004] Start WorkerThread[2]...
+
+[225004] Start USERDBCtlThread ... 
+
+[225004] Start AcceptLoop ...
+
+[225004] g_MaxUserCount = 4000
+
+[225004] Start WORLD Server ... day  - Not Ready 
+
+[225004] Start DBCtlThread ... 
+
+[225005] Start AdditionThread ... 
+
+[225008]  isReady = 1 
+
+[225008]  Request Guild Infomation of Sql DB ... 
+
+[225008]  Recv Guild Info ....  Complete ............
+
+[225008]  isReady = 2 
+
+[225037] Connected Server's IP Address is [25.1.80.156] 
+
+
+[225040]  Send sendAppointmentQuizEventInfo... 
+
+[225040]  This user is game server. isReconnect[0] 
+
+
+[225040] Success SendGameServerInitDataThread
+
+[225040]  Try CONNECT to ACCOUNT DB : お水サーバー , 127.0.0.1 , idx 0
+
+[225040]  isReady = 3 
+
+[225040]  Let Start World Server...............!! 
+
+[225040] Connected Server's IP Address is [127.0.0.1] 
+
+
+[225040]  This user is not game server
+
+[231151] Start WorkerThread[2]...
+
+[231151] Start WorkerThread[0]...
+
+[231151] Start WorkerThread[6]...
+
+[231151] Start WorkerThread[5]...
+
+[231151] Start WorkerThread[1]...
+
+[231151] Start WorkerThread[7]...
+
+[231151] Start WorkerThread[3]...
+
+[231151] Start WorkerThread[4]...
+
+[231151] Start USERDBCtlThread ... 
+
+[231151] g_MaxUserCount = 4000
+
+[231151] Start AcceptLoop ...
+
+[231151] Start WORLD Server ... day  - Not Ready 
+
+[231151] Start DBCtlThread ... 
+
+[231151] Start AdditionThread ... 
+
+[231155]  isReady = 1 
+
+[231155]  Request Guild Infomation of Sql DB ... 
+
+[231155]  Recv Guild Info ....  Complete ............
+
+[231155]  isReady = 2 
+
+[231200] Connected Server's IP Address is [25.1.80.156] 
+
+
+[231202]  Send sendAppointmentQuizEventInfo... 
+
+[231202]  This user is game server. isReconnect[0] 
+
+
+[231202] Success SendGameServerInitDataThread
+
+[231202]  Try CONNECT to ACCOUNT DB : お水サーバー , 127.0.0.1 , idx 0
+
+[231202]  isReady = 3 
+
+[231202]  Let Start World Server...............!! 
+
+[231202] Connected Server's IP Address is [127.0.0.1] 
+
+
+[231202]  This user is not game server
+
+[231829] SEND ERROR ... ERROR 10054
+
+[231829] ===========>>>>>>>>>>		Dis User : 0 [SEND ERROR]
+
+[231829] GAME SERVER QUIT [type01]!!
+
+[231829] (type01)0 is exit
+
+
+[231829] ===========>>>>>>>>>>		Dis User : 0 [read byte = 0]
+
+[231909] Connected Server's IP Address is [25.1.80.156] 
+
+
+[231911]  Send sendAppointmentQuizEventInfo... 
+
+[231911]  This user is game server. isReconnect[0] 
+
+
+[231911] Success SendGameServerInitDataThread
+
+[231956] SEND ERROR ... ERROR 10054
+
+[231956] ===========>>>>>>>>>>		Dis User : 2 [SEND ERROR]
+
+[231956] GAME SERVER QUIT [type01]!!
+
+[231956] (type01)2 is exit
+
+
+[231956] ===========>>>>>>>>>>		Dis User : 2 [read byte = 0]
+

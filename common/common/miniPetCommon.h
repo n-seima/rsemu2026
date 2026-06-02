@@ -64,30 +64,30 @@ namespace	nsMiniPetST
 {
 	enum		//	Mini Pet Skill Type
 	{
-	None,	//	ÀüÅõÁßÀÎ »ó´ë °ø°İ
-	AttackUnderBattleEnemy,	//	ÀüÅõÁßÀÎ »ó´ë °ø°İ
-	ActionWhenDamaged,	//	¸ÂÀ»¶§¹ßµ¿
-	LordPowerUp,		//	ÁÖÀÎÆÄ¿ö¾÷
-	AidToLord,		//	ÁÖÀÎµ½±â
-	PowerUpUnderBattleToBoss,	//	ÆÄ¿ö¾÷_º¸½ºÀü
-	MiniPetSkillPowerUp,	//	¹Ì´ÏÆê½ºÅ³ÆÄ¿ö¾÷
-	AidToUnderBattleLord,	//	ÀüÅõÁßÁÖÀÎº¸Á¶
-	PickItem,	//	¾ÆÀÌÅÛÁİ±â
-	AvoidTrap,	//	ÇÔÁ¤È¸ÇÇ
-	PickGold,	//	°ñµåÈ¹µæ
-	DecreaseResurrectionPenelty,	//	ºÎÈ°Æä³ÎÆ¼°¨¼Ò
-	Resurrection,	//	ºÎÈ°Æä³ÎÆ¼°¨¼Ò
-	IncreaeUnlockLevel,	//	Àá±İÇØÃ¼·¹º§Áõ°¡
-	UseHealPotion,	//	Æ÷¼ÇÈ¿À²Áõ°¡
-	UseChargePotion,	//	CPÆ÷¼ÇÈ¿À²Áõ°¡
-	RecoverUseCP,	//	»ç¿ëCPÈ¸º¹
-	HealBonusByHealSkill,	//	Èú½ºÅ³È¸º¹Ã¼·ÂÁõ°¡
-	IncreaseDropItemChance,	//	¾ÆÀÌÅÛµå¶ø·üÁõ°¡
-	IncreaseDropGoldChance,	//	°ñµåµå¶ø·üÁõ°¡
+	None,	//	ì „íˆ¬ì¤‘ì¸ ìƒëŒ€ ê³µê²©
+	AttackUnderBattleEnemy,	//	ì „íˆ¬ì¤‘ì¸ ìƒëŒ€ ê³µê²©
+	ActionWhenDamaged,	//	ë§ì„ë•Œë°œë™
+	LordPowerUp,		//	ì£¼ì¸íŒŒì›Œì—…
+	AidToLord,		//	ì£¼ì¸ë•ê¸°
+	PowerUpUnderBattleToBoss,	//	íŒŒì›Œì—…_ë³´ìŠ¤ì „
+	MiniPetSkillPowerUp,	//	ë¯¸ë‹ˆí«ìŠ¤í‚¬íŒŒì›Œì—…
+	AidToUnderBattleLord,	//	ì „íˆ¬ì¤‘ì£¼ì¸ë³´ì¡°
+	PickItem,	//	ì•„ì´í…œì¤ê¸°
+	AvoidTrap,	//	í•¨ì •íšŒí”¼
+	PickGold,	//	ê³¨ë“œíšë“
+	DecreaseResurrectionPenelty,	//	ë¶€í™œí˜ë„í‹°ê°ì†Œ
+	Resurrection,	//	ë¶€í™œí˜ë„í‹°ê°ì†Œ
+	IncreaeUnlockLevel,	//	ì ê¸ˆí•´ì²´ë ˆë²¨ì¦ê°€
+	UseHealPotion,	//	í¬ì…˜íš¨ìœ¨ì¦ê°€
+	UseChargePotion,	//	CPí¬ì…˜íš¨ìœ¨ì¦ê°€
+	RecoverUseCP,	//	ì‚¬ìš©CPíšŒë³µ
+	HealBonusByHealSkill,	//	íìŠ¤í‚¬íšŒë³µì²´ë ¥ì¦ê°€
+	IncreaseDropItemChance,	//	ì•„ì´í…œë“œëë¥ ì¦ê°€
+	IncreaseDropGoldChance,	//	ê³¨ë“œë“œëë¥ ì¦ê°€
 	AttackTheObject,
-	IgnoreTargetMagicResistanceUnderBossBattle,	//	Å¸°Ù¸¶¹ıÀúÇ×¹«½Ã
-	ChargeAndFire,	//	½ºÅ³´©Àû°ø°İ
-	DecreaseChargeCount,	//	½ºÅ³´©Àû°ø°İ
+	IgnoreTargetMagicResistanceUnderBossBattle,	//	íƒ€ê²Ÿë§ˆë²•ì €í•­ë¬´ì‹œ
+	ChargeAndFire,	//	ìŠ¤í‚¬ëˆ„ì ê³µê²©
+	DecreaseChargeCount,	//	ìŠ¤í‚¬ëˆ„ì ê³µê²©
 	IncreaseActiveChanceUnderBossBattle,
 	};
 }
@@ -105,9 +105,9 @@ public:
 class	cMiniPetCommon
 {
 public:
-	UINT	m_bf7Level		:	7;	//	·¹º§
-	UINT	m_bf5Type		:	5;	//	Å¸ÀÔ
-	UINT	m_bf16Exp		:	16;	//	°æÇèÄ¡
+	UINT	m_bf7Level		:	7;	//	ë ˆë²¨
+	UINT	m_bf5Type		:	5;	//	íƒ€ì…
+	UINT	m_bf16Exp		:	16;	//	ê²½í—˜ì¹˜
 	UINT	m_bf4ExpireMonth:	4;	//	32
 
 	UINT	m_bf5ExpireYear	:	5;
@@ -134,6 +134,6 @@ public:
 };
 
 #define	dSTATE_POINT_FOR_EVERY_RESTRAINTED_MINIPET	10
-#define	dLIMIT_EAT_SAME_TYPE_MINIPET_COUNT			10		//	µ¿ÀÏ Á¾·ù ¹Ì´ÏÆê ¸Ô´Â°Ô °¡´ÉÇÑ È½¼ö
+#define	dLIMIT_EAT_SAME_TYPE_MINIPET_COUNT			10		//	ë™ì¼ ì¢…ë¥˜ ë¯¸ë‹ˆí« ë¨¹ëŠ”ê²Œ ê°€ëŠ¥í•œ íšŸìˆ˜
 
 #pragma	pack()

@@ -338,7 +338,7 @@
       <Optimization>MaxSpeed</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>_FOR_JAPAN;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_FOR_JAPAN;WIN32;NDEBUG;_WINDOWS;POINTER_64=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\iUninstaller___Win32_japanHanGame0\</AssemblerListingLocation>
       <PrecompiledHeaderOutputFile>.\iUninstaller___Win32_japanHanGame0\iUninstaller.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>.\iUninstaller___Win32_japanHanGame0\</ObjectFileName>
@@ -413,16 +413,16 @@
       <Optimization>MaxSpeed</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>_FOR_JAPAN;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_FOR_JAPAN;WIN32;NDEBUG;_WINDOWS;POINTER_64=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\japan\</AssemblerListingLocation>
       <PrecompiledHeaderOutputFile>.\japan\iUninstaller.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>.\japan\</ObjectFileName>
       <ProgramDataBaseFileName>.\japan\</ProgramDataBaseFileName>
-      <AdditionalIncludeDirectories>../engine;../../common/common;../../common/packet</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../dx81sdk;../engine;../../common/common;../../common/packet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
       <DisableSpecificWarnings>4996;4430;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <AdditionalOptions>/source-charset:euc-kr /execution-charset:euc-kr %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:forScope- /source-charset:utf-8 /execution-charset:.932 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -442,7 +442,7 @@
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>../../../Red stone for Japan/Uninstall.exe</OutputFile>
+      <OutputFile>.\japan\Uninstall.exe</OutputFile>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;legacy_stdio_definitions.lib;LIBCMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
@@ -525,7 +525,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Red Stone\CMain.cpp" />
+    <ClCompile Include="..\Red Stone\CMain.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='japan|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="bar_menu.cpp" />
     <ClCompile Include="c16BITSPRITE.cpp" />
     <ClCompile Include="c8BITSPRITE.cpp" />

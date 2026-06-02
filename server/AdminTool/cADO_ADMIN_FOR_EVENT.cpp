@@ -45,7 +45,8 @@ int cADO_ADMIN::spEvent_GoldRush_Create(cGoldRushDefine * _cGoldRush,char * _str
 		VariantClear(&regIdx);
 		
 		pCmd.Release();
-		pRs->Close();
+		if	(pRs && pRs->State == adStateOpen)
+			pRs->Close();
 		return 1;
 	}
 	catch( _com_error &e){
@@ -99,7 +100,8 @@ int cADO_ADMIN::spEvent_GoldRush_Get(cGoldRushDefine * _cGoldRush)
 		VariantClear(&v_varient);
 		iErrorCount = 0;
 		pCmd.Release();
-		pRs->Close();
+		if	(pRs && pRs->State == adStateOpen)
+			pRs->Close();
 		return 1;
 	}
 	catch( _com_error &e){
@@ -153,7 +155,8 @@ int cADO_ADMIN::spEvent_ItemPack_Create(int _iSerial,cItemPackInfo * _cIPInfo)
 		VariantClear(&regIdx);
 
 		pCmd.Release();
-		pRs->Close();
+		if	(pRs && pRs->State == adStateOpen)
+			pRs->Close();
 
 		return l_iResult;
 	}
@@ -263,7 +266,8 @@ cADO_ADMIN::GetCarrotShopInfo(cCarrotShopDefine * _cpCSInfo,int _isFirst)
 
 
 		pCmd.Release();
-		pRs->Close();
+		if	(pRs && pRs->State == adStateOpen)
+			pRs->Close();
 		return 1;
 	}
 	catch( _com_error &e){

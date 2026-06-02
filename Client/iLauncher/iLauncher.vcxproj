@@ -310,12 +310,16 @@
       <Optimization>MaxSpeed</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_FOR_JAPAN;WIN32;NDEBUG;_WINDOWS;_WSPIAPI_COUNTOF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../dx81sdk;../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_FOR_JAPAN;WIN32;NDEBUG;_WINDOWS;_WSPIAPI_COUNTOF;POINTER_64=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\japan\</AssemblerListingLocation>
       <PrecompiledHeaderOutputFile>.\japan\iLauncher.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>.\japan\</ObjectFileName>
       <ProgramDataBaseFileName>.\japan\</ProgramDataBaseFileName>
+      <SDLCheck>false</SDLCheck>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <DisableSpecificWarnings>4996;4430;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/Zc:forScope- /source-charset:utf-8 /execution-charset:.932 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -335,7 +339,7 @@
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>../../../../../Red stone for Japan/Launcher.exe</OutputFile>
+      <OutputFile>.\japan\Launcher.exe</OutputFile>
       <AdditionalDependencies>netapi32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

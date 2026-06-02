@@ -8,12 +8,12 @@
 #include "carrotShopDefine.h"
 #include "eventDefine.h"
 #include "cPACKET_GAMESERVER.h"
-//	¸ðµEÀ¯ÀúÀÇ µ¥ÀÌÅ¸¸¦ °¡Áö°EÀÖ´Ù.
+//	ëª¨ï¿½ÂEìœ ì €ì˜ ë°ì´íƒ€ë¥¼ ê°€ì§€ï¿½ÂEìžˆë‹¤.
 
-//	°ÔÀÓ ¼­¹ö¿¡¼­ ¿äÃ»ÇÏ´Â ÀÛ¾÷À» ÇØÁØ´Ù.
-//	°ÔÀÓ ¼­¹öÀÇ Á¤º¸, ¾ÆÀÌÅÛ »ý¼º, À¯Àúµé°£ÀÇ Ä¿¹Â´ÏÆ¼(¼¼ÀÌ, ±æµE Ä£±¸), ¼­¹ö°£ ÀÌµ¿
+//	ê²Œìž„ ì„œë²„ì—ì„œ ìš”ì²­í•˜ëŠ” ìž‘ì—…ì„ í•´ì¤€ë‹¤.
+//	ê²Œìž„ ì„œë²„ì˜ ì •ë³´, ì•„ì´í…œ ìƒì„±, ìœ ì €ë“¤ê°„ì˜ ì»¤ë®¤ë‹ˆí‹°(ì„¸ì´, ê¸¸ï¿½ÂE ì¹œêµ¬), ì„œë²„ê°„ ì´ë™
 
-//	ÆÐÅ¶ÀÇ ±âº»±¸¼º
+//	íŒ¨í‚·ì˜ ê¸°ë³¸êµ¬ì„±
 //	type,size
 
 #pragma pack(1)
@@ -21,8 +21,8 @@
 class	cMSG_BASE_TYPE_FORWORLD
 {
 public:
-	WORD	wSize,				//	ÆÐÅ¶ »çÀÌÁE			
-			wType;				//	ÆÐÅ¶ Å¸ÀÔ
+	WORD	wSize,				//	íŒ¨í‚· ì‚¬ì´ï¿½ÂE			
+			wType;				//	íŒ¨í‚· íƒ€ìž…
 	inline	void	set(WORD size,WORD type)	{wSize	=	size,wType	=	type;}
 };
 
@@ -30,20 +30,20 @@ public:
 //	PACKET TYPE
 /////////////////////////////////////////////////////////
 //	About In / Out
-#define	dSERVERStoWORLD_LOGIN				0x8001//	ÀÚ½Å(°ÔÀÓ ¼­¹EÀÇ Á¤º¸¸¦ ³Ñ°ÜÁÖ°E¿¬°áÀ» À¯ÁöÇÑ´Ù.
-#define	dSERVERStoWORLD_GETAVAS				0x8002//	¾Æ¹ÙÅ¸ÀÇ Á¤º¸µéÀ» º¸³»´Þ¶E
-#define	dSERVERStoWORLD_CREATEAVA			0x8003//	¾Æ¹ÙÅ¸¸¦ »õ·Ó°Ô ¸¸µé´Ù.
-#define	dSERVERStoWORLD_DELETEAVA			0x8004//	¾Æ¹ÙÅ¸¸¦ »èÁ¦ÇÑ´Ù.
-#define	dSERVERStoWORLD_LOADAVA				0x8005//	´©±º°¡ µé¾ûÌ¥°Å´Ï±E. ¾Æ¹ÙÅ¸ Á¤º¸ ºÒ·¯µÖ¶E
-#define	dSERVERStoWORLD_SAVEAVA				0x8006//	ÀúÀåÇÑ´Ù. µ¥ÀÌÅ¸... -0-
-#define	dSERVERStoWORLD_INFO				0x8007//	¾ûÐÀ ¼ÒÄÏÀ¸·Î ¹ÞÀ»ÁE¾Ë·ÁÁØ´Ù.
-#define	dSERVERStoWORLD_LOGOUT				0x8008//	°EÁ¾·áÇÒ ¿¹Á¤ÀÌ´Ï±E.. ´õÀÌ»EÆÐÅ¶À» º¸³»ÁE¸¶¼ÅÀ¯ ~~ 
-#define	dSERVERStoWORLD_JOIN_COMPLETE		0x8009//	Á¶ÀÎ ¿Ï·E- Á¤º¸¸¦ Á¤»óÀûÀ¸·Î »ç¿EÏ¼¼¿E
+#define	dSERVERStoWORLD_LOGIN				0x8001//	ìžì‹ (ê²Œìž„ ì„œï¿½ÂEì˜ ì •ë³´ë¥¼ ë„˜ê²¨ì£¼ï¿½ÂEì—°ê²°ì„ ìœ ì§€í•œë‹¤.
+#define	dSERVERStoWORLD_GETAVAS				0x8002//	ì•„ë°”íƒ€ì˜ ì •ë³´ë“¤ì„ ë³´ë‚´ë‹¬ï¿½ÂE
+#define	dSERVERStoWORLD_CREATEAVA			0x8003//	ì•„ë°”íƒ€ë¥¼ ìƒˆë¡­ê²Œ ë§Œë“¤ë‹¤.
+#define	dSERVERStoWORLD_DELETEAVA			0x8004//	ì•„ë°”íƒ€ë¥¼ ì‚­ì œí•œë‹¤.
+#define	dSERVERStoWORLD_LOADAVA				0x8005//	ëˆ„êµ°ê°€ ë“¤ì—‰æ€¯ê±°ë‹ˆï¿½ÂE. ì•„ë°”íƒ€ ì •ë³´ ë¶ˆëŸ¬ë‘¬ï¿½ÂE
+#define	dSERVERStoWORLD_SAVEAVA				0x8006//	ì €ìž¥í•œë‹¤. ë°ì´íƒ€... -0-
+#define	dSERVERStoWORLD_INFO				0x8007//	ì—‰éš™ ì†Œì¼“ìœ¼ë¡œ ë°›ì„ï¿½ÂEì•Œë ¤ì¤€ë‹¤.
+#define	dSERVERStoWORLD_LOGOUT				0x8008//	ï¿½ÂEì¢…ë£Œí•  ì˜ˆì •ì´ë‹ˆï¿½ÂE.. ë”ì´ï¿½ÂEíŒ¨í‚·ì„ ë³´ë‚´ï¿½ÂEë§ˆì…”ìœ  ~~ 
+#define	dSERVERStoWORLD_JOIN_COMPLETE		0x8009//	ì¡°ì¸ ì™„ï¿½ÂE- ì •ë³´ë¥¼ ì •ìƒì ìœ¼ë¡œ ì‚¬ï¿½ÂEç©¶ì…€ÂE
 
-#define	dSERVERStoWORLD_USER_LOGIN			0x8011//	ÀÌ À¯Àú°¡ ÀÚ½Å¿¡°Ô µé¾ûÛÔ´Ù.
-#define	dSERVERStoWORLD_USER_LOGOUT			0x8012//	ÀÌ À¯Àú°¡ ÀÚ½Å¿¡°Ô¼­ ³ª°¬´Ù.
-#define	dSERVERStoWORLD_GET_AVADATA			0x8013//	¾Æ¹ÙÅ¸ µ¥ÀÌÅ¸¸¦ ¿äÃ».. µÎ°¡ÁEÅ¸ÀÔÀÌ Á¸ÀçÇÑ´Ù.
-#define	dSERVERStoWORLD_COPY_DATA			0x8014//	Å×½ºÆ® ¼­¹ö¿¡ »ç¿EÒ Ä³¸¯ÅÍ¸¦ º¹»çÇÑ´Ù. ¹Ù·Î DBC¿¡ ³ÖÀ»°Í!!
+#define	dSERVERStoWORLD_USER_LOGIN			0x8011//	ì´ ìœ ì €ê°€ ìžì‹ ì—ê²Œ ë“¤ì—‰è¼©ë‹¤.
+#define	dSERVERStoWORLD_USER_LOGOUT			0x8012//	ì´ ìœ ì €ê°€ ìžì‹ ì—ê²Œì„œ ë‚˜ê°”ë‹¤.
+#define	dSERVERStoWORLD_GET_AVADATA			0x8013//	ì•„ë°”íƒ€ ë°ì´íƒ€ë¥¼ ìš”ì²­.. ë‘ê°€ï¿½ÂEíƒ€ìž…ì´ ì¡´ìž¬í•œë‹¤.
+#define	dSERVERStoWORLD_COPY_DATA			0x8014//	í…ŒìŠ¤íŠ¸ ì„œë²„ì— ì‚¬ï¿½ÂEï¿½ ìºë¦­í„°ë¥¼ ë³µì‚¬í•œë‹¤. ë°”ë¡œ DBCì— ë„£ì„ê²ƒ!!
 
 #define	dSERVERStoWORLD_ACCOUNT_INFO		0x8015
 #define	dSERVERStoWORLD_CONFIRM_ENTER_FIELD	0x8016//
@@ -51,16 +51,16 @@ public:
 #define	dSERVERStoWORLD_LIFE_SIGN			0x8018//
 
 
-#define	dWORLDtoSERVERS_LOGIN				0x8701//	guildÁ¤º¸±ûÝE´Ù ³Ñ°ÜÁáÀ¸´Ï ÀÌÁ¦ ¾Ë¾Æ¼­ÇØ!!
-#define	dWORLDtoSERVERS_GETAVAS				0x8702//	¾Æ¹ÙÅ¸ÀÇ Á¤º¸µéÀ» º¸³½´Ù.
-#define	dWORLDtoSERVERS_CREATEAVA			0x8703//	¾Æ¹ÙÅ¸ ¸¸µE°á°E
-#define	dWORLDtoSERVERS_DELETEAVA			0x8704//	¾Æ¹ÙÅ¸ »èÁ¦ °á°E
-#define	dWORLDtoSERVERS_LOADAVA				0x8705//	¾Æ¹ÙÅ¸ ÀÎÁE°á°E
-#define	dWORLDtoSERVERS_USER_LOGIN			0x8711//	ÀÎÁõ¸¸ È®ÀÎÇÏ°E
+#define	dWORLDtoSERVERS_LOGIN				0x8701//	guildì •ë³´ê¹©ï¿½ÂEë‹¤ ë„˜ê²¨ì¤¬ìœ¼ë‹ˆ ì´ì œ ì•Œì•„ì„œí•´!!
+#define	dWORLDtoSERVERS_GETAVAS				0x8702//	ì•„ë°”íƒ€ì˜ ì •ë³´ë“¤ì„ ë³´ë‚¸ë‹¤.
+#define	dWORLDtoSERVERS_CREATEAVA			0x8703//	ì•„ë°”íƒ€ ë§Œï¿½ÂEê²°ï¿½ÂE
+#define	dWORLDtoSERVERS_DELETEAVA			0x8704//	ì•„ë°”íƒ€ ì‚­ì œ ê²°ï¿½ÂE
+#define	dWORLDtoSERVERS_LOADAVA				0x8705//	ì•„ë°”íƒ€ ì¸ï¿½ÂEê²°ï¿½ÂE
+#define	dWORLDtoSERVERS_USER_LOGIN			0x8711//	ì¸ì¦ë§Œ í™•ì¸í•˜ï¿½ÂE
 #define	dWORLDtoSERVERS_DIS					0x8712
-#define	dWORLDtoSERVERS_GET_AVADATA			0x8713//	µ¥ÀÌÅ¸¸¸ ¿äÃ».. - ÀÏ¹ÝÀûÀÎ ¿äÃ»°EÃ¹ ·Î±×ÀÎÀ» À§ÇÑ ¿äÃ»
-#define	dWORLDtoSERVERS_USER_LOGOUT			0x8714//	Á¤»óÀûÀ¸·Î ·Î±×¾Æ¿EÇß´Ù.
-#define	dWORLDtoSERVERS_DISCONNECT_SERVER	0x8715//	°ÔÀÓ¼­¹ö°¡ Á×¾ú´Ù.
+#define	dWORLDtoSERVERS_GET_AVADATA			0x8713//	ë°ì´íƒ€ë§Œ ìš”ì²­.. - ì¼ë°˜ì ì¸ ìš”ì²­ï¿½ÂEì²« ë¡œê·¸ì¸ì„ ìœ„í•œ ìš”ì²­
+#define	dWORLDtoSERVERS_USER_LOGOUT			0x8714//	ì •ìƒì ìœ¼ë¡œ ë¡œê·¸ì•„ï¿½ÂEí–ˆë‹¤.
+#define	dWORLDtoSERVERS_DISCONNECT_SERVER	0x8715//	ê²Œìž„ì„œë²„ê°€ ì£½ì—ˆë‹¤.
 #define	dWORLDtoSERVERS_RENEW_PREMIUM_ITEM	0x8716
 
 #define	dWORLDtoSERVERS_ACCOUNT_INFO		0x8717
@@ -73,40 +73,40 @@ public:
 
 
 //	About Map & User
-#define	dSERVERStoWORLD_USER_MOVEMAP		0x8101//	ÀÚ½ÅÀÌ °¡Áö°EÀÖÁE¾ÊÀº ¸ÊÀ¸·Î À¯Àú°¡ ÀÌµ¿ÇÏ·Á ÇÒ¶§
-#define	dSERVERStoWORLD_USER_MOVEMAP_INFO	0x8104//	¸ÊÀÌµ¿¿¡ ÇÊ¿äÇÑ Á¤º¸¸¦ ¿ùµå¿¡°Ô ¾Ë¸°´Ù.
-#define	dSERVERStoWORLD_USER_RECALL			0x8107//	ÀÌÂÊÀ¸·Î ÀÌµ¿½ÃÄÑÁÖ~~~
-#define	dSERVERStoWORLD_EVENT_QUIZ_GATE_VILLAGE		0x8108//	OX ÄûÁE½ÃÀÛ ¸¶À»
+#define	dSERVERStoWORLD_USER_MOVEMAP		0x8101//	ìžì‹ ì´ ê°€ì§€ï¿½ÂEìžˆï¿½ÂEì•Šì€ ë§µìœ¼ë¡œ ìœ ì €ê°€ ì´ë™í•˜ë ¤ í• ë•Œ
+#define	dSERVERStoWORLD_USER_MOVEMAP_INFO	0x8104//	ë§µì´ë™ì— í•„ìš”í•œ ì •ë³´ë¥¼ ì›”ë“œì—ê²Œ ì•Œë¦°ë‹¤.
+#define	dSERVERStoWORLD_USER_RECALL			0x8107//	ì´ìª½ìœ¼ë¡œ ì´ë™ì‹œì¼œì£¼~~~
+#define	dSERVERStoWORLD_EVENT_QUIZ_GATE_VILLAGE		0x8108//	OX í€´ï¿½ÂEì‹œìž‘ ë§ˆì„
 #define	dSERVERStoWORLD_CALLING				0x810a
 #define	dSERVERStoWORLD_BOOST_POWER_BY_EVENT	0x8128
-#define	dSERVERStoWORLD_CHECK_USER_MOVEMAP	0x8129	//	ÀÚ½ÅÀÌ °¡Áö°EÀÖÁE¾ÊÀº ¸ÊÀ¸·Î À¯Àú°¡ ÀÌµ¿ÇÏ·Á ÇÒ¶§
-													//	SERVERStoWORLD_USER_MOVEMAP ¿¡ Å¸ÀÔ¸¸ ¹Ù²ã¼­ »ç¿EÑ´Ù.
+#define	dSERVERStoWORLD_CHECK_USER_MOVEMAP	0x8129	//	ìžì‹ ì´ ê°€ì§€ï¿½ÂEìžˆï¿½ÂEì•Šì€ ë§µìœ¼ë¡œ ìœ ì €ê°€ ì´ë™í•˜ë ¤ í• ë•Œ
+													//	SERVERStoWORLD_USER_MOVEMAP ì— íƒ€ìž…ë§Œ ë°”ê¿”ì„œ ì‚¬ï¿½ÂEç£¯ï¿½.
 #define	dSERVERStoWORLD_SIMPLE_WORK			0x812a	//
 #define	dSERVERStoWORLD_SOUND_OF_LEADERS_BELL	0x812c	
 #define	dSERVERStoWORLD_CHANGE_MSG_OF_LEDERS_BELL	0x812d
 
 
 #define	dWORLDtoSERVERS_USER_MOVEMAP		0x8801
-#define	dWORLDtoSERVERS_USER_RECALL			0x8807//	¾Ë±ß´Ù. °¡¶E~~~ 
+#define	dWORLDtoSERVERS_USER_RECALL			0x8807//	ì•Œê¸‹ë‹¤. ê°€ï¿½ÂE~~~ 
 #define	dWORLDtoSERVERS_CALLING				0x8808
 #define	dWORLDtoSERVERS_BOOST_POWER_BY_EVENT				0x8809
 #define	dWORLDtoSERVERS_CHANGE_DAY			0x880a
-#define	dWORLDtoSERVERS_CHECK_USER_MOVEMAP	0x882d	//	ÇÊµEÀÌµ¿ Ã¼Å© °á°ú¸¦ ³¯¸°´Ù.
-													//	SERVERStoWORLD_USER_MOVEMAP ÆÐÅ¶¿¡ Å¸ÀÔ¸¸ ¹Ù²E»ç¿EÑ´Ù.
+#define	dWORLDtoSERVERS_CHECK_USER_MOVEMAP	0x882d	//	í•„ï¿½ÂEì´ë™ ì²´í¬ ê²°ê³¼ë¥¼ ë‚ ë¦°ë‹¤.
+													//	SERVERStoWORLD_USER_MOVEMAP íŒ¨í‚·ì— íƒ€ìž…ë§Œ ë°”ï¿½ÂEì‚¬ï¿½ÂEç£¯ï¿½.
 #define	dWORLDtoSERVERS_SOUND_OF_LEADERS_BELL	0x882e
 #define dWORLDtoSERVERS_SYNC_CHANGEDNAME	0x882f
 
 
 //	About Admin
-#define	dSERVERStoWORLD_ADMIN_LOGIN			0x8102//	Login Á¤º¸¸¦ ¹Þ¾Æ¼­ AdminÀÏ°æ¿E½Ã½ºÅÛ ¸úÓÉ¾ûÔ¦ »ç¿E¡´ÉÇÏ°Ô..
-#define	dSERVERStoWORLD_ALL_MSG				0x8103//	°E®ÀÚ ¸ðµå°¡ WORLD¿¡°Ô .. ¸ðµEÀ¯Àúµé¿¡°Ô ÀEÞµÉ ¸Þ¼¼ÁE
-#define	dSERVERStoWORLD_ISCONNECT_USER		0x8105//	ÀÌ °èÁ¤ÀÇ À¯Àú°¡ ÇöÀEÀÖ³Ä?
-#define	dSERVERStoWORLD_OFFSERVER			0x8109//	¿ùµå¸¦ Á¾·áÇÑ´Ù. (¸ðµE°ÔÀÓ¼­¹ö°¡ Á¾·áµÉ¶§±ûÝE±â´Ù·È´Ù°¡..)
-#define	dSERVERStoWORLD_APPOINTMENT_QUIZ_EVENT		0x810b//	OX ÄûÁE¿¹¾E
+#define	dSERVERStoWORLD_ADMIN_LOGIN			0x8102//	Login ì •ë³´ë¥¼ ë°›ì•„ì„œ Adminì¼ê²½ï¿½ÂEì‹œìŠ¤í…œ ë«„è­šì—‰æ¿¤ ì‚¬ï¿½ÂEã€ˆî€¦æ§‹ï¿½..
+#define	dSERVERStoWORLD_ALL_MSG				0x8103//	ï¿½ÂEï¿½ï¿½ ëª¨ë“œê°€ WORLDì—ê²Œ .. ëª¨ï¿½ÂEìœ ì €ë“¤ì—ê²Œ ï¿½ÂEç€•ï¿½ ë©”ì„¸ï¿½ÂE
+#define	dSERVERStoWORLD_ISCONNECT_USER		0x8105//	ì´ ê³„ì •ì˜ ìœ ì €ê°€ í˜„ï¿½ÂEìžˆëƒ?
+#define	dSERVERStoWORLD_OFFSERVER			0x8109//	ì›”ë“œë¥¼ ì¢…ë£Œí•œë‹¤. (ëª¨ï¿½ÂEê²Œìž„ì„œë²„ê°€ ì¢…ë£Œë ë•Œê¹©ï¿½ÂEê¸°ë‹¤ë ¸ë‹¤ê°€..)
+#define	dSERVERStoWORLD_APPOINTMENT_QUIZ_EVENT		0x810b//	OX í€´ï¿½ÂEì˜ˆï¿½ÂE
 #define	dSERVERStoWORLD_PRODUCE_OX_QUIZ		0x810c
 #define	dSERVERStoWORLD_END_QUIZ_EVENT		0x810d
-#define	dSERVERStoWORLD_CANCEL_QUIZ_EVENT		0x810e//	OX ÄûÁEÃEÒ
-#define	dSERVERStoWORLD_OX_QUIZ_LOSER_REVIVE_BATTLE	0x810f//	OX ÄûÁEÆÐÀÚ ºÎÈ°ÀE
+#define	dSERVERStoWORLD_CANCEL_QUIZ_EVENT		0x810e//	OX í€´ï¿½ÂEï¿½ÂEï¿½
+#define	dSERVERStoWORLD_OX_QUIZ_LOSER_REVIVE_BATTLE	0x810f//	OX í€´ï¿½ÂEíŒ¨ìž ë¶€í™œï¿½ÂE
 #define dSERVERStoWORLD_CHANGE_FIXCHECK		0x8110
 #define dSERVERStoWORLD_GET_FIXCHECK		0x8111
 #define dSERVERStoWORLD_GET_GUILDLIST		0x8112
@@ -141,16 +141,16 @@ public:
 
 
 
-#define	dWORLDtoSERVERS_SENDINFOTOADMIN		0x8802//	Admin¿¡°Ô º¸³»ÁÙ °¢Á¾ °ÔÀÓ ¼­¹EÁ¤º¸ 
-#define	dWORLDtoSERVERS_ALL_MSG				0x8803//	WORLD°¡ °¢ °ÔÀÓ ¼­¹ö¿¡°Ô ÀEÞ 
-#define	dWORLDtoSERVERS_DELETE_AVATAR		0x8804//	»õ·Î¿EÄ³¸¯ÅÍ°¡ »ý¼ºµÇ¸EÀÌ Ä³¸¯ÅÍÀÇ saveÆÄÀÏÀ» »èÁ¦½ÃÅ²´Ù.
-#define	dWORLDtoSERVERS_ISCONNECT_USER		0x8805//	Á¢¼ÓÁßÀÎ Ä³¸¯ÅÍ ÀÌ¸§°E°°ÀÌ µ¹·ÁÁØ´Ù. ¸Ê ÀÌ¸§ÀÌ¶E ¹øÈ£¶E
-#define	dWORLDtoSERVERS_APPOINTMENT_QUIZ_EVENT		0x880b//	OX ÄûÁE¿¹¾E
-#define	dWORLDtoSERVERS_PRODUCE_OX_QUIZ		0x880c//	OX ÄûÁEÁ¦ÃE
-#define	dWORLDtoSERVERS_END_QUIZ_EVENT			0x880d//	OX ÄûÁEÁ¾·E
-#define	dWORLDtoSERVERS_CANCEL_QUIZ_EVENT		0x880e//	OX ÄûÁEÃEÒ
-#define	dWORLDtoSERVERS_OX_QUIZ_LOSER_REVIVE_BATTLE	0x880f//	OX ÄûÁEÆÐÀÚ ºÎÈ°ÀE
-#define dWORLDtoSERVERS_CHAGEGUILDBATTLE	0x8810//	adminÅø¿¡¼­ ±æµåÀE¿¹¾à»óÈ²À» ¹Ù²Û´Ù.
+#define	dWORLDtoSERVERS_SENDINFOTOADMIN		0x8802//	Adminì—ê²Œ ë³´ë‚´ì¤„ ê°ì¢… ê²Œìž„ ì„œï¿½ÂEì •ë³´ 
+#define	dWORLDtoSERVERS_ALL_MSG				0x8803//	WORLDê°€ ê° ê²Œìž„ ì„œë²„ì—ê²Œ ï¿½ÂEï¿½ 
+#define	dWORLDtoSERVERS_DELETE_AVATAR		0x8804//	ìƒˆë¡œï¿½ÂEìºë¦­í„°ê°€ ìƒì„±ë˜ï¿½ÂEì´ ìºë¦­í„°ì˜ saveíŒŒì¼ì„ ì‚­ì œì‹œí‚¨ë‹¤.
+#define	dWORLDtoSERVERS_ISCONNECT_USER		0x8805//	ì ‘ì†ì¤‘ì¸ ìºë¦­í„° ì´ë¦„ï¿½ÂEê°™ì´ ëŒë ¤ì¤€ë‹¤. ë§µ ì´ë¦„ì´ï¿½ÂE ë²ˆí˜¸ï¿½ÂE
+#define	dWORLDtoSERVERS_APPOINTMENT_QUIZ_EVENT		0x880b//	OX í€´ï¿½ÂEì˜ˆï¿½ÂE
+#define	dWORLDtoSERVERS_PRODUCE_OX_QUIZ		0x880c//	OX í€´ï¿½ÂEì œï¿½ÂE
+#define	dWORLDtoSERVERS_END_QUIZ_EVENT			0x880d//	OX í€´ï¿½ÂEì¢…ï¿½ÂE
+#define	dWORLDtoSERVERS_CANCEL_QUIZ_EVENT		0x880e//	OX í€´ï¿½ÂEï¿½ÂEï¿½
+#define	dWORLDtoSERVERS_OX_QUIZ_LOSER_REVIVE_BATTLE	0x880f//	OX í€´ï¿½ÂEíŒ¨ìž ë¶€í™œï¿½ÂE
+#define dWORLDtoSERVERS_CHAGEGUILDBATTLE	0x8810//	adminíˆ´ì—ì„œ ê¸¸ë“œï¿½ÂEì˜ˆì•½ìƒí™©ì„ ë°”ê¾¼ë‹¤.
 #define dWORLDtoSERVERS_GET_FIXCHECK		0x8811
 #define dWORLDtoSERVERS_GET_GUILDLIST		0x8812
 #define dWORLDtoSERVERS_GET_GUILDINFO		0x8813
@@ -170,7 +170,7 @@ public:
 #define dWORLDtoSERVERS_PRODUCE_WORD_QUIZ					0x8821
 #define dWORLDtoSERVERS_CHANGE_WORD_QUIZ_ROUND				0x8822
 #define dWORLDtoSERVERS_ITEM_PACK_LIST_SERIAL				0x8823
-#define	dWORLDtoSERVERS_UPDATE_WORD_COMPARE					0x8360		//ADMIN¿¡¼­ º¸³½Á¤º¸¸¦ ¿ùµå¸¦ °ÅÃÄ¼­ °ÔÀÓ ¼­¹ö·Î º¸³½´Ù.
+#define	dWORLDtoSERVERS_UPDATE_WORD_COMPARE					0x8360		//ADMINì—ì„œ ë³´ë‚¸ì •ë³´ë¥¼ ì›”ë“œë¥¼ ê±°ì³ì„œ ê²Œìž„ ì„œë²„ë¡œ ë³´ë‚¸ë‹¤.
 #define dWORLDtoSERVERS_LOTTO_EVENT_DATA					0x8361
 #define dWORLDtoSERVERS_EVENT_TIME_DATA						0x8362
 
@@ -301,14 +301,14 @@ public:
 #define	dWORLDtoSERVERS_CHANGE_GVG_SERVER_GUILD_MASTER		0x846d
 #define	dSERVERStoWORLD_CHANGE_GVG_SERVER_GUILD_MASTER		0x846e
 
-#define	dG2W_ASK_GVG_AVATAR_ORG_DATA						0x846f	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ»
-#define	dW2L_TOSS_ASK_GVG_AVATAR_ORG_DATA					0x8470	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶ Åä½º
-#define	dL2W_TOSS_ASK_GVG_AVATAR_ORG_DATA					0x8471	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶ Åä½º
-#define	dW2D_ASK_GVG_AVATAR_ORG_DATA						0x8472	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶
-#define	dD2W_GVG_AVATAR_ORG_DATA							0x8473	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶
-#define	dW2L_GVG_AVATAR_ORG_DATA							0x8474	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶
-#define	dL2W_GVG_AVATAR_ORG_DATA							0x8475	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶
-#define	dW2G_GVG_AVATAR_ORG_DATA							0x8476	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶
+#define	dG2W_ASK_GVG_AVATAR_ORG_DATA						0x846f	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­
+#define	dW2L_TOSS_ASK_GVG_AVATAR_ORG_DATA					0x8470	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚· í† ìŠ¤
+#define	dL2W_TOSS_ASK_GVG_AVATAR_ORG_DATA					0x8471	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚· í† ìŠ¤
+#define	dW2D_ASK_GVG_AVATAR_ORG_DATA						0x8472	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚·
+#define	dD2W_GVG_AVATAR_ORG_DATA							0x8473	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚·
+#define	dW2L_GVG_AVATAR_ORG_DATA							0x8474	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚·
+#define	dL2W_GVG_AVATAR_ORG_DATA							0x8475	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚·
+#define	dW2G_GVG_AVATAR_ORG_DATA							0x8476	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚·
 
 #define	dW2G_ASK_GVG_AVATAR_ORG_DATA_RESULT					0x8477
 #define	dL2W_ASK_GVG_AVATAR_ORG_DATA_RESULT					0x8478
@@ -319,7 +319,7 @@ public:
 #define	dSERVERStoWORLD_CREATE_PARTY				0x8401
 #define	dSERVERStoWORLD_JOIN_PARTY					0x8402
 #define	dSERVERStoWORLD_PARTY_WORK					0x8403
-#define	dSERVERStoWORLD_RENAME_PARTYNAME			0x8404	//	ÆÄÆ¼ ÀÌ¸§ ¹Ù²Ù±E
+#define	dSERVERStoWORLD_RENAME_PARTYNAME			0x8404	//	íŒŒí‹° ì´ë¦„ ë°”ê¾¸ï¿½ÂE
 #define	dSERVERStoWORLD_ASK_PARTY_LIST				0x8405
 #define	dSERVERStoWORLD_ASK_PARTYINFO				0x8406
 #define	dSERVERStoWORLD_CHANGE_PARTY_STATUS			0x8407
@@ -335,7 +335,7 @@ public:
 
 #define	dWORLDtoSERVERS_JOIN_PARTY					0x8b01
 #define	dWORLDtoSERVERS_PARTY_WORK					0x8b02
-#define	dWORLDtoSERVERS_RENAME_PARTYNAME			0x8b03	//	ÆÄÆ¼ ÀÌ¸§ ¹Ù²Ù±E- ÇÊ¿äÇÑ °ÔÀÓ ¼­¹ö¿¡°Ô¸¸.
+#define	dWORLDtoSERVERS_RENAME_PARTYNAME			0x8b03	//	íŒŒí‹° ì´ë¦„ ë°”ê¾¸ï¿½ÂE- í•„ìš”í•œ ê²Œìž„ ì„œë²„ì—ê²Œë§Œ.
 #define	dWORLDtoSERVERS_PARTY_LIST					0x8b04
 #define	dWORLDtoSERVERS_CHANGE_PARTY_MEMBER_INFO	0x8b05
 #define	dWORLDtoSERVERS_MOVE_FIELD_PARTY_MEMBER		0x8b06
@@ -350,42 +350,42 @@ public:
 #define	dWORLDtoSERVERS_GUILD_MEMBER_JOIN_PARTY			0x840a
 #define	dWORLDtoSERVERS_GUILD_MEMBER_JOIN_PARTY_ANSWER		0x840b
 
-//	ÆÄÆ¼ ¿¬ÇÕ °EÃ.
+//	íŒŒí‹° ì—°í•© ï¿½ÂEï¿½.
 #define	dSERVERStoWORLD_CREATE_UNION_PARTY			0x84a0
 #define	dWORLDtoSERVERS_UPDATE_UNION_PARTYINFO		0x84a1
 #define	dWORLDtoSERVERS_DISSOLUTION_UNION_PARTY		0x84a2
 #define	dWORLDtoSERVERS_CREATE_UNION_PARTY_RESULT	0x84a3
 
-//	¾ÆÀÌÅÛ Ã³¸®
-#define	dSERVERStoWORLD_CREATE_ITEM					0x8501	//	ÇÊµå¿¡ ¶³±¼ ¾ÆÀÌÅÛ »ý¼º
-#define	dSERVERStoWORLD_CREATE_SELL_ITEM			0x8502	//	ÆÇ¸ÅÇÒ ¾ÆÀÌÅÛ »ý¼º
+//	ì•„ì´í…œ ì²˜ë¦¬
+#define	dSERVERStoWORLD_CREATE_ITEM					0x8501	//	í•„ë“œì— ë–¨êµ´ ì•„ì´í…œ ìƒì„±
+#define	dSERVERStoWORLD_CREATE_SELL_ITEM			0x8502	//	íŒë§¤í•  ì•„ì´í…œ ìƒì„±
 #define	dSERVERStoWORLD_ADD_ITEM					0x8503	//	
-#define	dSERVERStoWORLD_ASK_ITEM_UNIQUE_SERIAL		0x8504	//	À¯´ÏÅ© ½Ã¸®¾E¿ä±¸
+#define	dSERVERStoWORLD_ASK_ITEM_UNIQUE_SERIAL		0x8504	//	ìœ ë‹ˆí¬ ì‹œë¦¬ï¿½ÂEìš”êµ¬
 #define	dSERVERStoWORLD_INCREASE_PACK_ITEM_COUNT	0x8505
 
 
-#define	dWORLDtoSERVERS_CREATE_ITEM_RESULT		0x8c01	//	ÇÊµå¿¡ ¶³±¼ ¾ÆÀÌÅÛ »ý¼º °á°E
-#define	dWORLDtoSERVERS_CREATE_SELL_ITEM_RESULT	0x8c02	//	ÆÇ¸ÅÇÒ ¾ÆÀÌÅÛ »ý¼º °á°E
-#define	dWORLDtoSERVERS_ADD_ITEM_RESULT			0x8c03	//	ÆÇ¸ÅÇÒ ¾ÆÀÌÅÛ »ý¼º °á°E
-#define	dWORLDtoSERVERS_ASK_ITEM_UNIQUE_SERIAL	0x8c04	//	À¯´ÏÅ© ½Ã¸®¾E¿ä±¸
+#define	dWORLDtoSERVERS_CREATE_ITEM_RESULT		0x8c01	//	í•„ë“œì— ë–¨êµ´ ì•„ì´í…œ ìƒì„± ê²°ï¿½ÂE
+#define	dWORLDtoSERVERS_CREATE_SELL_ITEM_RESULT	0x8c02	//	íŒë§¤í•  ì•„ì´í…œ ìƒì„± ê²°ï¿½ÂE
+#define	dWORLDtoSERVERS_ADD_ITEM_RESULT			0x8c03	//	íŒë§¤í•  ì•„ì´í…œ ìƒì„± ê²°ï¿½ÂE
+#define	dWORLDtoSERVERS_ASK_ITEM_UNIQUE_SERIAL	0x8c04	//	ìœ ë‹ˆí¬ ì‹œë¦¬ï¿½ÂEìš”êµ¬
 #define	dWORLDtoSERVERS_UPDATE_PACK_ITEM_COUNT	0x8c05	
 
-//	¼­¹ö°£ Ã³¸® 
-#define	dWORLDtoSERVERS_CHECKTIME				0x8d01	//	¼­¹EÁ¡°Ë ½Ã°£
-#define dWORLDtoSERVERS_CHEKCPACKET				0x8d02	//	Å×½ºÆ®¿E.
-#define dWORLDtoSERVERS_WORLDNAME				0x8d03	//	°¢ ¼­¹ö·Î ¿ùµEÀÌ¸§À» º¸³½´Ù.
+//	ì„œë²„ê°„ ì²˜ë¦¬ 
+#define	dWORLDtoSERVERS_CHECKTIME				0x8d01	//	ì„œï¿½ÂEì ê²€ ì‹œê°„
+#define dWORLDtoSERVERS_CHEKCPACKET				0x8d02	//	í…ŒìŠ¤íŠ¸ï¿½ÂE.
+#define dWORLDtoSERVERS_WORLDNAME				0x8d03	//	ê° ì„œë²„ë¡œ ì›”ï¿½ÂEì´ë¦„ì„ ë³´ë‚¸ë‹¤.
 
 //////////////////////////////////////////////////////////////////////////
-//	ÅEè¸¦ À§ÇÑ ·Î±× ±â·Ï
+//	ï¿½ÂEç”•ï¿½ ìœ„í•œ ë¡œê·¸ ê¸°ë¡
 typedef  enum
 {
 	dSERVERStoWORLD_LOG_INOUT				=	0x8f11,
 	dSERVERStoWORLD_LOG_QUEST,
 };
-//	ÅEè¸¦ À§ÇÑ ·Î±× ±â·Ï
+//	ï¿½ÂEç”•ï¿½ ìœ„í•œ ë¡œê·¸ ê¸°ë¡
 //////////////////////////////////////////////////////////////////////////
 
-//	¾ûÑå¹ÎÅEÀÌº¥Æ® ´Ü¾ûÜÇ ºñÆ® ¸¶½ºÅ©.
+//	ì—‰ï¤—ë¯¼ï¿½ÂEì´ë²¤íŠ¸ ë‹¨ì—‰æ´‘ ë¹„íŠ¸ ë§ˆìŠ¤í¬.
 
 #define dWORD_EVENT_EFFECT_ATK200				0x00000001
 #define dWORD_EVENT_EFFECT_ATK300				0x00000002
@@ -416,8 +416,8 @@ struct WORLDtoSERVERS_WORLDNAME
 //	PACKET s : Server -> World Server
 /////////////////////////////////////////////////////////
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­	PACKET In / Out
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒ	PACKET In / Out
 
 #define	dMAPNAME_LENGTH			32
 
@@ -433,9 +433,9 @@ enum
 class	cGameServerType
 {
 public:
-	WORD		wIndex;							//¸ÊÀÇ °úÜ¯ ÀÎµ¦½º
-	WORD		wType;							//¸ÊÀÇ Á¾·E	
-	char		strMapName[dMAPNAME_LENGTH];	//ÀÚ½ÅÀÌ °E®ÇÏ´Â ¸ÊÀÌ¸§À» µûÓÏÇÑ´Ù.
+	WORD		wIndex;							//ë§µì˜ ê³¼é¼ˆ ì¸ë±ìŠ¤
+	WORD		wType;							//ë§µì˜ ì¢…ï¿½ÂE	
+	char		strMapName[dMAPNAME_LENGTH];	//ìžì‹ ì´ ï¿½ÂEï¿½æ±‚ï¿½ ë§µì´ë¦„ì„ ë”°éí•œë‹¤.
 };
 
 struct	SERVERStoWORLD_LOGIN
@@ -476,15 +476,15 @@ struct	SERVERStoWORLD_LOGOUT
 struct	SERVERStoWORLD_JOIN_COMPLETE
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
-	char		strId[dID_LENGTH];	//	ÀÌ»ç¶÷ÀÇ µ¥ÀÌÅ¸¸¦ Á¤»óÀûÀ¸·Î »ç¿EÏ¼¼¿E
+	char		strId[dID_LENGTH];	//	ì´ì‚¬ëžŒì˜ ë°ì´íƒ€ë¥¼ ì •ìƒì ìœ¼ë¡œ ì‚¬ï¿½ÂEç©¶ì…€ÂE
 };
 
 struct SERVERStoWORLD_GETAVAS
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	DWORD		loginSerial;			//	login ¼­¹ö¿¡¼­ÀÇ ½Ã¸®¾E
-	DWORD		worldSerial;			//	world ¼­¹öÀÇ À¯ÀE½Ã¸®¾E	
+	DWORD		loginSerial;			//	login ì„œë²„ì—ì„œì˜ ì‹œë¦¬ï¿½ÂE
+	DWORD		worldSerial;			//	world ì„œë²„ì˜ ìœ ï¿½ÂEì‹œë¦¬ï¿½ÂE	
 	char		strId[dID_LENGTH];
 };
 
@@ -493,11 +493,11 @@ struct SERVERStoWORLD_CREATEAVA
 	cMSG_BASE_TYPE_FORWORLD		base;
 
 	DWORD		loginSerial;
-	DWORD		worldSerial;			//	world ¼­¹öÀÇ À¯ÀE½Ã¸®¾E	
+	DWORD		worldSerial;			//	world ì„œë²„ì˜ ìœ ï¿½ÂEì‹œë¦¬ï¿½ÂE	
 	char		strID[dID_LENGTH];
 	char		strName[dNAME_LENGTH];
 	char		strIP[dIP_SIZE];
-	WORD		wJob;	//	Á÷¾E};
+	WORD		wJob;	//	ì§ï¿½ÂE};
 };
 
 struct SERVERStoWORLD_DELETEAVA
@@ -532,15 +532,15 @@ struct	SERVERStoWORLD_INFO
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD						wSocketIndex;		//	0°E1
-	WORD						wCount;				//	index·Î ¸ô¾Æ³ÖÀ» À¯Àú¼E
+	WORD						wSocketIndex;		//	0ï¿½ÂE1
+	WORD						wCount;				//	indexë¡œ ëª°ì•„ë„£ì„ ìœ ì €ï¿½ÂE
 };
 
-struct	SERVERStoWORLD_USER_LOGIN			//	ÀÌ À¯Àú°¡ ÀÚ½Å¿¡°Ô µé¾ûÛÔ´Ù.
+struct	SERVERStoWORLD_USER_LOGIN			//	ì´ ìœ ì €ê°€ ìžì‹ ì—ê²Œ ë“¤ì—‰è¼©ë‹¤.
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	int			type;				//	0 - ÀÏ¹ÝÀûÀÎ ·Î±×ÀÎ , 1 - ¸ÊÀÇ ÀÌµ¿ 
+	int			type;				//	0 - ì¼ë°˜ì ì¸ ë¡œê·¸ì¸ , 1 - ë§µì˜ ì´ë™ 
 	DWORD		serial;
 	char		strID[dID_LENGTH];
 	DWORD		dwCode;
@@ -553,7 +553,7 @@ struct	SERVERStoWORLD_USER_LOGIN			//	ÀÌ À¯Àú°¡ ÀÚ½Å¿¡°Ô µé¾ûÛÔ´Ù.
 struct SERVERStoWORLD_GET_AVADATA
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
-	WORD			type;					//	0 - ÀÏ¹ÝÀûÀÎ µ¥ÀÌÅ¸¸¸ ¿äÃ» , 1 - ·Î±×ÀÎÀ» À§ÇÑ ¿äÃ»
+	WORD			type;					//	0 - ì¼ë°˜ì ì¸ ë°ì´íƒ€ë§Œ ìš”ì²­ , 1 - ë¡œê·¸ì¸ì„ ìœ„í•œ ìš”ì²­
 	DWORD			serial;
 	DWORD			dwIndex;
 	char			strId[dID_LENGTH];
@@ -564,7 +564,7 @@ struct SERVERStoWORLD_GET_AVADATA
 #endif
 };
 
-struct SERVERStoWORLD_COPY_DATA				//	Å×½ºÆ® ¼­¹ö¿¡ »ç¿EÒ Ä³¸¯ÅÍ¸¦ º¹»çÇÑ´Ù. ¹Ù·Î DBC¿¡ ³ÖÀ»°Í!!
+struct SERVERStoWORLD_COPY_DATA				//	í…ŒìŠ¤íŠ¸ ì„œë²„ì— ì‚¬ï¿½ÂEï¿½ ìºë¦­í„°ë¥¼ ë³µì‚¬í•œë‹¤. ë°”ë¡œ DBCì— ë„£ì„ê²ƒ!!
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
@@ -589,15 +589,15 @@ struct WORLDtoSERVERS_USER_LOGIN
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	DWORD		serial;						//	°ÔÀÓ¼­¹ö°¡ º¸³½ À¯ÀúÀÇ ½Ã¸®¾E- ±×´EÎ µ¹·ÁÁÖ¸EµÈ´Ù.
-	int			iIndex;						//	µûÓÏµÈ ½Ã¸®¾óÀ» µ¹·ÁÁØ´Ù. ¸¸¾E-1ÀÌ¸EµûÓÏ ½ÇÆÐ·Î À¯ÀEÀÚ¸¥´Ù.
+	DWORD		serial;						//	ê²Œìž„ì„œë²„ê°€ ë³´ë‚¸ ìœ ì €ì˜ ì‹œë¦¬ï¿½ÂE- ê·¸ï¿½ÂEï¿½ ëŒë ¤ì£¼ï¿½ÂEëœë‹¤.
+	int			iIndex;						//	ë”°éëœ ì‹œë¦¬ì–¼ì„ ëŒë ¤ì¤€ë‹¤. ë§Œï¿½ÂE-1ì´ï¿½ÂEë”°é ì‹¤íŒ¨ë¡œ ìœ ï¿½ÂEìžë¥¸ë‹¤.
 	WORD		wFieldidx;
 	WORD		bf10IFSerial	:	10;
 	WORD		bf4IFFloor		:	4;
 	WORD		wPartyIndex;
 	WORD		badtime;
-	WORD		oper;						//	¿ûÛµÀÚÀÎ°¡??
-	WORD		isOperInAccount;			//	°èÁ¤ÀÌ ¿ûÛµÀÚ·Î ¼³Á¤µÇ¾EÀÖ³ª?
+	WORD		oper;						//	ì›æ»‚ìžì¸ê°€??
+	WORD		isOperInAccount;			//	ê³„ì •ì´ ì›æ»‚ìžë¡œ ì„¤ì •ë˜ï¿½ÂEìžˆë‚˜?
 	WORD		isNetCafeUser;
 	WORD		bf1IsIncorrectConnectByGuildBattle : 1;
 	//	cP_PLAYER_DATA	aInfo;
@@ -626,17 +626,17 @@ struct WORLDtoSERVERS_DIS
 	cMSG_BASE_TYPE_FORWORLD		base;
 	
 	char			strId[dID_LENGTH];
-	char			strCause[128];		//	Á×ÀÌ´Â ÀÌÀ¯ -_x
+	char			strCause[128];		//	ì£½ì´ëŠ” ì´ìœ  -_x
 };
 
 struct WORLDtoSERVERS_GET_AVADATA
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD							type;					//	0 - ÀÏ¹ÝÀûÀÎ µ¥ÀÌÅ¸¸¸ ¿äÃ» , 1 - ·Î±×ÀÎÀ» À§ÇÑ ¿äÃ»
+	WORD							type;					//	0 - ì¼ë°˜ì ì¸ ë°ì´íƒ€ë§Œ ìš”ì²­ , 1 - ë¡œê·¸ì¸ì„ ìœ„í•œ ìš”ì²­
 	DWORD							serial;
 	CPlayerSaveDataForServerDefine	aInfo;
-	CUpkeepPlayerData				upkeepPlayerData;		//	ÇÊµå¸¦ ÀÌµ¿ÇØµµ À¯ÁöÇØ¾ß ÇÏ´Â µ¥ÀÌÅÍ
+	CUpkeepPlayerData				upkeepPlayerData;		//	í•„ë“œë¥¼ ì´ë™í•´ë„ ìœ ì§€í•´ì•¼ í•˜ëŠ” ë°ì´í„°
 	cActorStatusUpkeep				upkeepStatus;
 };
 
@@ -707,7 +707,7 @@ struct WORLDtoSERVERS_CONFIRM_ENTER_FIELD
 
 enum
 {
-//	¿ùµå¿¡¼­ °ÔÀÓ¼­¹ö·Î ÀEÛ
+//	ì›”ë“œì—ì„œ ê²Œìž„ì„œë²„ë¡œ ï¿½ÂEï¿½
 	eSWWG_BEGIN		=	0x0,
 	eSWWG_NOTICE_BEGIN_SIEGE_WARFARE,
 	eSWWG_NOTICE_END_SIEGE_WARFARE,
@@ -730,15 +730,15 @@ enum
 	eSWWG_RESET_WEEKLY_DUEL_RECORD,
 	eSWWG_REQUIRE_MORE_TIME_FOR_USE_SOUND_OF_LEADERS_BELL,
 	eSWWG_CHANGE_SYSTEM_TIME,
-	eSWWG_CONFIRM_USE_SOUND_OF_LEADERS_BELL,	//	ÀÎµµÀÚÀÇ Á¾¼Ò¸® »ç¿E°¡´É
+	eSWWG_CONFIRM_USE_SOUND_OF_LEADERS_BELL,	//	ì¸ë„ìžì˜ ì¢…ì†Œë¦¬ ì‚¬ï¿½ÂEê°€ëŠ¥
 	eSWWG_CHANGE_TRY_GUILD_DUNGEN_COUNT	,
 	eSWWG_SMS_ALARM_ERROR	,
 	eSWWG_UPDATE_GUILD_BATTLE_SCORE,
-	eSWWG_RESET_GUILD_SIEGEWARFARE_INFO,	//	±æµE°ø¼ºÀEÁ¤º¸ ÃÊ±âÈ­
+	eSWWG_RESET_GUILD_SIEGEWARFARE_INFO,	//	ê¸¸ï¿½ÂEê³µì„±ï¿½ÂEì •ë³´ ì´ˆê¸°í™”
 	eSWWG_RESET_1DAY_GUILD_INFO		,
 	eSWWG_RESET_1WEEK_GUILD_INFO	,
 
-//	°ÔÀÓ ¼­¹ö¿¡¼­ ¿ùµå·Î ÀEÛ
+//	ê²Œìž„ ì„œë²„ì—ì„œ ì›”ë“œë¡œ ï¿½ÂEï¿½
 	eSWGW_BEGIN		=	0x1000,
 	eSWGW_SIEGE_WARFARE_RESULT_SUCCESS_TO_DEFENSE	,
 	eSWGW_SIEGE_WARFARE_RESULT_SUCCESS_TO_INVADE	,
@@ -756,22 +756,22 @@ enum
 	eSWGW_INCREASE_TRY_GUILD_POINT_BATTLE_COUNT	,
 	eSWGW_UPDATE_SECRET_DUNGEON_INFO,
 	eSWGW_INCREASE_RED_STONE_COUNT,
-	eSWGW_INCREASE_BONUS_GUILD_POINT,	//	º¸³Ê½º ±æµEÆ÷ÀÎÆ® Áõ°¡
+	eSWGW_INCREASE_BONUS_GUILD_POINT,	//	ë³´ë„ˆìŠ¤ ê¸¸ï¿½ÂEí¬ì¸íŠ¸ ì¦ê°€
 	eSWGW_RECOVER_BONUS_GUILD_POINT_PENELTY	,
 	eSWGW_NAME_STONE_INDEX,
 	eSWGW_ACTIVE_GUILD_MASTER_GRACE,
 	eSWGW_INCREASE_TRY_GUILD_DUNGEON_COUNT	,
 	eSWGW_CHANGE_SYSTEM_TIME	,
-	eSWGW_CHANGE_GUILD_PET_EXP			,		// ±æµåÆE¹º§º¯°E	
-	eSWGW_RESET_GUILD_BATTLE_SCHEDULE	,		// ±æµåÀE½ºÄÉÁEÃÊ±âÈ­ 
+	eSWGW_CHANGE_GUILD_PET_EXP			,		// ê¸¸ë“œï¿½ÂEë­”ãŽˆï¿½ÂE	
+	eSWGW_RESET_GUILD_BATTLE_SCHEDULE	,		// ê¸¸ë“œï¿½ÂEìŠ¤ì¼€ï¿½ÂEì´ˆê¸°í™” 
 
-	eSWAW_BEGIN		=	0x2000,	//	¾ûÑå¹ÎÅE>¿ùµE	
+	eSWAW_BEGIN		=	0x2000,	//	ì—‰ï¤—ë¯¼ï¿½ÂE>ì›”ï¿½ÂE	
 	eSWAW_CHANGE_GUILD_MARK_TWINKLE_STATUS,
 	eSWAW_CHANGE_GUILD_HALL_LEVEL,
 	eSWAW_CHANGE_GUILD_VILLAGE_INFO,
 	eSWAW_CHANGE_GUILD_MASTER_GRACE,
 	eSWAW_CHANGE_GUILD_INFO_ETC_BY_ADMINTOOL,
-	eSWAW_RESET_SOUND_OF_LEDERS_BELL_COOLTIME	,	//	ÀÎµµÀÚÀÇ Á¾¼Ò¸® ÃÊ±âÈ­
+	eSWAW_RESET_SOUND_OF_LEDERS_BELL_COOLTIME	,	//	ì¸ë„ìžì˜ ì¢…ì†Œë¦¬ ì´ˆê¸°í™”
 	eSWAW_ASK_SOUND_OF_LEDERS_BELL_EVENT_INFO,
 	eSWAW_CHANGE_GUILD_POINT_BATTLE_COUNT	,
 	eSWAW_ASK_LOTTO_EVENT_DATA,
@@ -780,17 +780,17 @@ enum
 	eSWAW_CHANGE_TODAY_GUILD_BATTLE_COUNT,
 	eSWAW_CHANGE_THIS_WEEK_GUILD_BATTLE_COUNT,
 
-	eSWLW_BEGIN		=	0x3000,						//	·Î±×ÀÎ ¼­¹ö¿¡¼­ ¿ùµå·Î
+	eSWLW_BEGIN		=	0x3000,						//	ë¡œê·¸ì¸ ì„œë²„ì—ì„œ ì›”ë“œë¡œ
 	eSWLW_SMS_ALARM_ERROR	,
 	eSWLW_UPDATE_CARROT_SHOP_INFO	,
 
-	eSWWA_BEGIN		=	0x4000,		//	¿ùµE>¾ûÑå¹ÎÅE	
+	eSWWA_BEGIN		=	0x4000,		//	ì›”ï¿½ÂE>ì—‰ï¤—ë¯¼ï¿½ÂE	
 	eSWWA_CAN_NOT_FOUND_LOGIN_SERVER,
 
-	eSWWL_BEGIN		=	0x5000,						//	¿ùµE¼­¹ö¿¡¼­ ·Î±×ÀÎ ¼­¹ö·Î
+	eSWWL_BEGIN		=	0x5000,						//	ì›”ï¿½ÂEì„œë²„ì—ì„œ ë¡œê·¸ì¸ ì„œë²„ë¡œ
 	eSWWL_UPDATE_CARROT_SHOP_INFO	,
 	
-	eSWDW_BEGIN		=	0x6000,		//	DBC->¿ùµE
+	eSWDW_BEGIN		=	0x6000,		//	DBC->ì›”ï¿½ÂE
 };
 
 struct D2W_SIMPLE_WORK
@@ -827,7 +827,7 @@ public:
 	WORD	wTerm;
 };
 
-struct WORLDtoSERVERS_RENEW_PREMIUM_ITEM	//	ÇÁ¸®¹Ì¾E¾ÆÀÌÅÛ º¸»EÁ¤º¸
+struct WORLDtoSERVERS_RENEW_PREMIUM_ITEM	//	í”„ë¦¬ë¯¸ï¿½ÂEì•„ì´í…œ ë³´ï¿½ÂEì •ë³´
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
@@ -847,8 +847,8 @@ struct WORLDtoSERVERS_GETAVAS
 	cMSG_BASE_TYPE_FORWORLD		base;
 
 	char			strID[dID_LENGTH];
-	DWORD			loginSerial;			//	login ¼­¹ö¿¡¼­ÀÇ ½Ã¸®¾E	
-	DWORD			worldSerial;			//	world ¼­¹öÀÇ À¯ÀE½Ã¸®¾E	
+	DWORD			loginSerial;			//	login ì„œë²„ì—ì„œì˜ ì‹œë¦¬ï¿½ÂE	
+	DWORD			worldSerial;			//	world ì„œë²„ì˜ ìœ ï¿½ÂEì‹œë¦¬ï¿½ÂE	
 	cAVATAR_INFO	aAvatarList[dMAX_AVATAR_COUNT];
 };
 
@@ -858,10 +858,10 @@ struct WORLDtoSERVERS_CREATEAVA
 
 	char			strID[dID_LENGTH];
 	DWORD			loginSerial;
-	DWORD			worldSerial;			//	world ¼­¹öÀÇ À¯ÀE½Ã¸®¾E	
-	short			wResult;		//	°á°E	
-	WORD			wIndex;			//	¸ûÕøÂ° ¾Æ¹ÙÅ¸¿¡ Ãß°¡µÇ¾ú´ÂÁE..
-	cAVATAR_INFO	aCharacter;		//	µ¥ÀÌÅ¸µµ º¸³»ÁØ´Ù. 
+	DWORD			worldSerial;			//	world ì„œë²„ì˜ ìœ ï¿½ÂEì‹œë¦¬ï¿½ÂE	
+	short			wResult;		//	ê²°ï¿½ÂE	
+	WORD			wIndex;			//	ë«ˆç¤«ì§¸ ì•„ë°”íƒ€ì— ì¶”ê°€ë˜ì—ˆëŠ”ï¿½ÂE..
+	cAVATAR_INFO	aCharacter;		//	ë°ì´íƒ€ë„ ë³´ë‚´ì¤€ë‹¤. 
 };
 
 struct WORLDtoSERVERS_DELETEAVA
@@ -870,7 +870,7 @@ struct WORLDtoSERVERS_DELETEAVA
 
 	DWORD			loginSerial;
 	char			strID[dID_LENGTH];
-	short			wResult;		//	°á°E
+	short			wResult;		//	ê²°ï¿½ÂE
 };
 
 enum
@@ -887,8 +887,8 @@ struct WORLDtoSERVERS_LIFE_SIGN
 	cMSG_BASE_TYPE_FORWORLD		base;
 
 	WORD	wSign;	
-	int		iServerIndex;	//	-1ÀÌ¸E¿ùµE	
-	int		iGameServerCount;	//	¿öµå¿¡¼­¸¸ ¾²´Â °ª. -1ÀÌ¸E¿ùµå°¡ ¾Æ´Ñ°÷¿¡¼­ º¸³½ °ªÀ¸·Î ÀÎ½ÄÇÏ°E¹«½ÃÇØ ¹ö¸°´Ù.
+	int		iServerIndex;	//	-1ì´ï¿½ÂEì›”ï¿½ÂE	
+	int		iGameServerCount;	//	ì›Œë“œì—ì„œë§Œ ì“°ëŠ” ê°’. -1ì´ï¿½ÂEì›”ë“œê°€ ì•„ë‹Œê³³ì—ì„œ ë³´ë‚¸ ê°’ìœ¼ë¡œ ì¸ì‹í•˜ï¿½ÂEë¬´ì‹œí•´ ë²„ë¦°ë‹¤.
 
 	char	strIP[32];
 	char	strMsg[64];
@@ -920,45 +920,45 @@ struct WORLDtoSERVERS_LOADAVA
 	WORD			wResult;
 };
 
-struct	SERVERStoWORLD_USER_LOGOUT			//	ÀÌ À¯Àú°¡ ÀÚ½Å¿¡°Ô¼­ ³ª°¬´Ù.
+struct	SERVERStoWORLD_USER_LOGOUT			//	ì´ ìœ ì €ê°€ ìžì‹ ì—ê²Œì„œ ë‚˜ê°”ë‹¤.
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD		type;						//	 0 -logout , 1 - ´Ù¸¥ ¼­¹ö·Î ÀÌµ¿
+	WORD		type;						//	 0 -logout , 1 - ë‹¤ë¥¸ ì„œë²„ë¡œ ì´ë™
 	int			iSerialInServer;
 	char		strID[dID_LENGTH];
 	char		strName[dNAME_LENGTH];
 	char		strIP[dIP_SIZE];
 };
 
-//¦­	PACKET In / Out
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒ	PACKET In / Out
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­	PACKET Map & User
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒ	PACKET Map & User
 
 struct	SERVERStoWORLD_USER_MOVEMAP
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	int			iSerialInServer;	//	ÇØ´E°ÔÀÓ ¼­¹ö¿¡¼­ÀÇ ½Ã¸®¾E
-	int			iWorldSerial;	//	¿ùµå¿¡¼­ °E®ÇÏ´Â À¯ÀE½Ã¸®¾E- °ÔÀÓ¼­¹ö¿¡ ·Î±×ÀÎÀ» ¼º°øÇÏ¸E¿ùµå°¡ º¸³»ÁØ´Ù. 
-	WORD		wFieldSerial;	//	ÇÊµåÀÇ °úÜ¯ ½Ã¸®¾E	
+	int			iSerialInServer;	//	í•´ï¿½ÂEê²Œìž„ ì„œë²„ì—ì„œì˜ ì‹œë¦¬ï¿½ÂE
+	int			iWorldSerial;	//	ì›”ë“œì—ì„œ ï¿½ÂEï¿½æ±‚ï¿½ ìœ ï¿½ÂEì‹œë¦¬ï¿½ÂE- ê²Œìž„ì„œë²„ì— ë¡œê·¸ì¸ì„ ì„±ê³µí•˜ï¿½ÂEì›”ë“œê°€ ë³´ë‚´ì¤€ë‹¤. 
+	WORD		wFieldSerial;	//	í•„ë“œì˜ ê³¼é¼ˆ ì‹œë¦¬ï¿½ÂE	
 	WORD		wIsPremiumMember;
 	char		strMapName[dMAPNAME_LENGTH];
 	WORD		wGateIndex;
 	WORD		wXPos,wYPos;
-	WORD		wCheckResult;	//	ÆÐÅ¶ Å¸ÀÔÀÌ dSERVERStoWORLD_CHECK_USER_MOVEMAPÀÎ °æ¿EÀÌ °ª¿¡ °á°ú¸¦ ´ã¾Æ
-								//	ÆÐÅ¶ Å¸ÀÔÀ» dWORLDtoSERVERS_CHECK_USER_MOVEMAP·Î ¹Ù²E°ÔÀÓ ¼­¹ö¿¡ ÀEÛÇÑ´Ù.
+	WORD		wCheckResult;	//	íŒ¨í‚· íƒ€ìž…ì´ dSERVERStoWORLD_CHECK_USER_MOVEMAPì¸ ê²½ï¿½ÂEì´ ê°’ì— ê²°ê³¼ë¥¼ ë‹´ì•„
+								//	íŒ¨í‚· íƒ€ìž…ì„ dWORLDtoSERVERS_CHECK_USER_MOVEMAPë¡œ ë°”ï¿½ÂEê²Œìž„ ì„œë²„ì— ï¿½ÂEå¾˜ç£¯ï¿½.
 };
 
 struct SERVERStoWORLD_USER_MOVEMAP_INFO
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 	
-	DWORD						dwSerial;				//	ÇØ´EÅ¬¶óÀÌ¾ðÆ®ÀÇ ¿ùµE½Ã¸®¾E
-	CUpkeepPlayerData			upkeepPlayerData;		//	ÇÊµå¸¦ ÀÌµ¿ÇØµµ À¯ÁöÇØ¾ß ÇÏ´Â µ¥ÀÌÅÍ
+	DWORD						dwSerial;				//	í•´ï¿½ÂEí´ë¼ì´ì–¸íŠ¸ì˜ ì›”ï¿½ÂEì‹œë¦¬ï¿½ÂE
+	CUpkeepPlayerData			upkeepPlayerData;		//	í•„ë“œë¥¼ ì´ë™í•´ë„ ìœ ì§€í•´ì•¼ í•˜ëŠ” ë°ì´í„°
 	cActorStatusUpkeep			upkeepStatus;
 	WORD		wIsNetCafeUser;
 };
@@ -972,9 +972,9 @@ struct WORLDtoSERVERS_SOUND_OF_LEADERS_BELL
 	int		iActorSerial;
 
 	WORD	wItemIndex,wDisplayName;
-	WORD	wWork;	//	0 ÀÌº¥Æ® ½ÃÀÛ,1 ÀE¼ ´EEÀÌº¥Æ® Á¾·E2 ¸®´E´EEÀÌº¥Æ® Á¾·E3 ¸Þ½ÃÁEº¯°E
-	WORD	wBeginYear,wBeginMonth,wBeginDay,wBeginHour,wBeginMinute;	//	½ÃÀÛÇÑ ½Ã°£(¾ûÑå¹ÎÅø¿¡¼­ ¸¸ ¾¸. °ÔÀÓ ¼­¹ö¿¡´Â ¾²·¹±E°ª)
-	WORD	wCoolTimeMinute;	//	³²Àº ÄðÅ¸ÀÓ(¾ûÑå¹ÎÅø¿¡¼­ ¸¸ ¾¸. °ÔÀÓ ¼­¹ö¿¡´Â ¾²·¹±E°ª)
+	WORD	wWork;	//	0 ì´ë²¤íŠ¸ ì‹œìž‘,1 ï¿½ÂEï¿½ ï¿½ÂEÂEì´ë²¤íŠ¸ ì¢…ï¿½ÂE2 ë¦¬ï¿½ÂEï¿½ÂEÂEì´ë²¤íŠ¸ ì¢…ï¿½ÂE3 ë©”ì‹œï¿½ÂEë³€ï¿½ÂE
+	WORD	wBeginYear,wBeginMonth,wBeginDay,wBeginHour,wBeginMinute;	//	ì‹œìž‘í•œ ì‹œê°„(ì—‰ï¤—ë¯¼íˆ´ì—ì„œ ë§Œ ì”€. ê²Œìž„ ì„œë²„ì—ëŠ” ì“°ë ˆï¿½ÂEê°’)
+	WORD	wCoolTimeMinute;	//	ë‚¨ì€ ì¿¨íƒ€ìž„(ì—‰ï¤—ë¯¼íˆ´ì—ì„œ ë§Œ ì”€. ê²Œìž„ ì„œë²„ì—ëŠ” ì“°ë ˆï¿½ÂEê°’)
 
 	char	strCaster[dNAME_LENGTH];
 	char	strMessage[128];
@@ -1017,19 +1017,19 @@ struct WORLDtoSERVERS_USER_RECALL
 	char						strName[dNAME_LENGTH];
 };
 
-#define	dMOVEMAP_RESULT_SUCCESS			0x01	//	ÀÌµ¿°¡´É
-#define	dMOVEMAP_RESULT_NOTFIND			0x02	//	Á¸ÀçÇÏÁE¾Ê°Å³ª.. ÇöÀEÁ¢¼Ó ºÒ°¡´É Áö¿ªÀÔ´Ï´Ù.
-#define	dMOVEMAP_RESULT_FULL			0x03	//	´õÀÌ»EÀÔÀåÀÌ ºÒ°¡´ÉÇÕ´Ï´Ù.
-#define	dMOVEMAP_RESULT_USEDNAME		0x04	//	°°Àº ÀÌ¸§ÀÇ ¾ÆÀÌµð°¡ ÀÖ´Ù -_-;
-#define	dMOVEMAP_RESULT_UNKNOWN_ERROR	0x05	//	¾Ë¼E¾ø´Â ¹®Á¦ ¹ß»ý.. -_-a
-#define	dMOVEMAP_RESULT_PREMIUM_ZONE	0x06	//	ÇÁ¸®¹Ì¾EÁ¸ÀÎµ¥ ´ç½ÅÀº ÇÁ¸®¹Ì¾E»ç¿EÚ°¡ ¾Æ³Ä!!
-#define	dMOVEMAP_RESULT_ONE_WAY_PORTAL	0x07	//	ÀÏ¹æÅEEÆ÷Å»ÀÌ´Ù.
-#define	dMOVEMAP_RESULT_TEST_PORTAL		0x08	//	Å×½ºÆ® Æ÷Å»ÀÔ´Ï´Ù.
-#define	dMOVEMAP_RESULT_MOVE_TO_IF		0x09	//	ÀÎ½ºÅÏ½º ´øÁ¯À¸·Î ÀÔÀE
-#define	dMOVEMAP_RESULT_CAN_NOT_MOVE_FIELD_STATUS	0x0a	//	ÇÊµEÀÌµ¿À» ÇÒ ¼E¾ø´Â »óÅÂÀÌ´Ù.
+#define	dMOVEMAP_RESULT_SUCCESS			0x01	//	ì´ë™ê°€ëŠ¥
+#define	dMOVEMAP_RESULT_NOTFIND			0x02	//	ì¡´ìž¬í•˜ï¿½ÂEì•Šê±°ë‚˜.. í˜„ï¿½ÂEì ‘ì† ë¶ˆê°€ëŠ¥ ì§€ì—­ìž…ë‹ˆë‹¤.
+#define	dMOVEMAP_RESULT_FULL			0x03	//	ë”ì´ï¿½ÂEìž…ìž¥ì´ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.
+#define	dMOVEMAP_RESULT_USEDNAME		0x04	//	ê°™ì€ ì´ë¦„ì˜ ì•„ì´ë””ê°€ ìžˆë‹¤ -_-;
+#define	dMOVEMAP_RESULT_UNKNOWN_ERROR	0x05	//	ì•Œï¿½ÂEì—†ëŠ” ë¬¸ì œ ë°œìƒ.. -_-a
+#define	dMOVEMAP_RESULT_PREMIUM_ZONE	0x06	//	í”„ë¦¬ë¯¸ï¿½ÂEì¡´ì¸ë° ë‹¹ì‹ ì€ í”„ë¦¬ë¯¸ï¿½ÂEì‚¬ï¿½ÂEå¾®ï¿½ ì•„ëƒ!!
+#define	dMOVEMAP_RESULT_ONE_WAY_PORTAL	0x07	//	ì¼ë°©ï¿½ÂEÂEí¬íƒˆì´ë‹¤.
+#define	dMOVEMAP_RESULT_TEST_PORTAL		0x08	//	í…ŒìŠ¤íŠ¸ í¬íƒˆìž…ë‹ˆë‹¤.
+#define	dMOVEMAP_RESULT_MOVE_TO_IF		0x09	//	ì¸ìŠ¤í„´ìŠ¤ ë˜ì ¼ìœ¼ë¡œ ìž…ï¿½ÂE
+#define	dMOVEMAP_RESULT_CAN_NOT_MOVE_FIELD_STATUS	0x0a	//	í•„ï¿½ÂEì´ë™ì„ í•  ï¿½ÂEì—†ëŠ” ìƒíƒœì´ë‹¤.
 
-	//	±âÅ¸ ÇÊ¿äÇÒÁöµµ ¸ð¸£´Â °á°E
-#define	dMOVEMAP_RESULT_NOTGUILD		0x11	//	Æ¯Á¤±æµå¸¸ÀÌ ÀÔÀE°¡´ÉÇÕ´Ï´Ù.
+	//	ê¸°íƒ€ í•„ìš”í• ì§€ë„ ëª¨ë¥´ëŠ” ê²°ï¿½ÂE
+#define	dMOVEMAP_RESULT_NOTGUILD		0x11	//	íŠ¹ì •ê¸¸ë“œë§Œì´ ìž…ï¿½ÂEê°€ëŠ¥í•©ë‹ˆë‹¤.
 
 
 struct WORLDtoSERVERS_USER_MOVEMAP
@@ -1038,20 +1038,20 @@ struct WORLDtoSERVERS_USER_MOVEMAP
 
 	WORD		Result;
 	int			iSerialInServer;
-	WORD		wUniqueFieldSerial;	//	ÇÊµåÀÇ °úÜ¯ ½Ã¸®¾E	
+	WORD		wUniqueFieldSerial;	//	í•„ë“œì˜ ê³¼é¼ˆ ì‹œë¦¬ï¿½ÂE	
 	char		strServerAddr[dIP_SIZE];
 	char		strMapName[dMAPNAME_LENGTH];
 	WORD		wGateIndex;
 	WORD		wXPos,wYPos;
 };
 
-//¦­	PACKET Map & User
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒ	PACKET Map & User
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­	PACKET Community
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒ	PACKET Community
 
 struct	SERVERStoWORLD_USER_SAY
 {
@@ -1170,9 +1170,9 @@ struct WORLDtoSERVERS_DUEL_RANKER_INFO
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD				wIsDailyRanking;	//	0 : ÁÖ°£ ·©Å·,1 : ÀÏ°£ ·©Å·
-	WORD				wWeeklyRankerCount,wTrialGameRankerCount;	//	ÁÖ°£ ·©Ä¿ ¼E¿¹¼±ÀE·©Ä¿ ¼E	
-	cDuelRankingInfo	aList[200];	//	¿¹¼±ÀE·©Å· + ÁÖ°£ ·©Å·
+	WORD				wIsDailyRanking;	//	0 : ì£¼ê°„ ëž­í‚¹,1 : ì¼ê°„ ëž­í‚¹
+	WORD				wWeeklyRankerCount,wTrialGameRankerCount;	//	ì£¼ê°„ ëž­ì»¤ ï¿½ÂEì˜ˆì„ ï¿½ÂEëž­ì»¤ ï¿½ÂE	
+	cDuelRankingInfo	aList[200];	//	ì˜ˆì„ ï¿½ÂEëž­í‚¹ + ì£¼ê°„ ëž­í‚¹
 };
 
 struct WORLDtoSERVERS_RESULT_INCREASE_DB_EVENT_VALUE
@@ -1289,8 +1289,8 @@ struct	WORLDtoSERVERS_CALLING
 
 enum
 {
-	eBPBE_TM_GOLD,	//	º¸¹° Áöµµ ÀÌº¥Æ®¸¦ ÀÎÇÑ °ñµE4¹E	
-	eBPBE_TM_EXP,	//	º¸¹° Áöµµ ÀÌº¥Æ®·Î ÀÎÇÑ °æÇèÄ¡ 2¹E
+	eBPBE_TM_GOLD,	//	ë³´ë¬¼ ì§€ë„ ì´ë²¤íŠ¸ë¥¼ ì¸í•œ ê³¨ï¿½ÂE4ï¿½ÂE	
+	eBPBE_TM_EXP,	//	ë³´ë¬¼ ì§€ë„ ì´ë²¤íŠ¸ë¡œ ì¸í•œ ê²½í—˜ì¹˜ 2ï¿½ÂE
 };
 
 struct SERVERStoWORLD_BOOST_POWER_BY_EVENT
@@ -1322,9 +1322,9 @@ struct WORLDtoSERVERS_CHANGE_DAY
 enum
 {
 	eROFS_SUCCESS					,
-	eROFS_CAN_NOT_FIND_TARGET		,	//	Å¸°ÙÀ» ¸øÃ£°Ú´ÂµðÀ¯.. -o-;;
-	eROFS_TARGET_DENIED_SAY_MESSAGE	,	//	¼ö½Å °ÅºÎ »óÅÂ
-	eROFS_TARGET_IS_OPERATOR		,	//	´EóÀÌ ¿ûÛµÀÚ´Ù
+	eROFS_CAN_NOT_FIND_TARGET		,	//	íƒ€ê²Ÿì„ ëª»ì°¾ê² ëŠ”ë””ìœ .. -o-;;
+	eROFS_TARGET_DENIED_SAY_MESSAGE	,	//	ìˆ˜ì‹  ê±°ë¶€ ìƒíƒœ
+	eROFS_TARGET_IS_OPERATOR		,	//	ï¿½ÂEç“šï¿½ ì›æ»‚ìžë‹¤
 };
 
 struct	WORLDtoSERVERS_USER_SAY_RESULT 
@@ -1346,9 +1346,9 @@ struct	WORLDtoSERVERS_PARTY_CHAT
 	char	strMsg[dCHAT_LENGTH];
 };
 
-#define	dFIND_RESULT_NOTFIND		0x00	//	Á¢¼ÓÇÏÁE¾Ê¾Ò½À´Ï´Ù.
+#define	dFIND_RESULT_NOTFIND		0x00	//	ì ‘ì†í•˜ï¿½ÂEì•Šì•˜ìŠµë‹ˆë‹¤.
 #define	dFIND_RESULT_SUCCESS		0x01
-#define	dFIND_NOT_EXIST_COUPLE_RING	0x02	//	Á¢¼ÓÇÏÁE¾Ê¾Ò½À´Ï´Ù.
+#define	dFIND_NOT_EXIST_COUPLE_RING	0x02	//	ì ‘ì†í•˜ï¿½ÂEì•Šì•˜ìŠµë‹ˆë‹¤.
 
 struct	WORLDtoSERVERS_USER_FIND
 {
@@ -1371,11 +1371,11 @@ struct WORLDtoSERVERS_CHAT_ADMIN
 	char	strMsg[dCHAT_LENGTH];
 };
 
-//¦­	PACKET Community
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒ	PACKET Community
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­	PACKET Guild
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒ	PACKET Guild
 
 struct	SERVERStoWORLD_USER_CREATEGUILD
 {
@@ -1411,7 +1411,7 @@ struct	SERVERStoWORLD_TRANS_GUILD_TO_GVG_SERVER
 	cMSG_BASE_TYPE_FORWORLD			base;
 
 	cGuildInfoForTransToGVG			guildData;
-	char							strMasterName[dNAME_LENGTH];	//	±æµE¸¶½ºÅÍ ÀÌ¸§
+	char							strMasterName[dNAME_LENGTH];	//	ê¸¸ï¿½ÂEë§ˆìŠ¤í„° ì´ë¦„
 	char							strMasterId[dID_LENGTH];
 	int								iWorldIndex;
 	WORD	wMasterLevel;
@@ -1439,7 +1439,7 @@ struct	WORLDtoSERVERS_TRANS_GUILD_TO_GVG_SERVER
 	cMSG_BASE_TYPE_FORWORLD			base;
 
 	cGuildInfoForTransToGVG			guildData;
-	char							strMasterName[dNAME_LENGTH];	//	±æµE¸¶½ºÅÍ ÀÌ¸§
+	char							strMasterName[dNAME_LENGTH];	//	ê¸¸ï¿½ÂEë§ˆìŠ¤í„° ì´ë¦„
 	char							strMasterId[dID_LENGTH];
 	int								iWorldIndex;
 	WORD	wMasterLevel;
@@ -1504,46 +1504,46 @@ struct SERVERStoWORLD_CHANGE_GVG_SERVER_GUILD_MASTER
 	char	strNewMasterID[dID_LENGTH];
 };
 
-struct G2W_ASK_GVG_AVATAR_ORG_DATA						//	0x846f	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ»
+struct G2W_ASK_GVG_AVATAR_ORG_DATA						//	0x846f	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­
 {
 	cMSG_BASE_TYPE_FORDB		base;
 
 	WORD	wOrgServer;
-	WORD	wNotUseUnderBarName;	//	ÀÌ¸§ÀÌ ±æ¾E¹ØÁÙ(_)À» ¸EºÙÀÌ°E¹Ù·Î ¾ËÆÄºªÀ» ºÙÀÎ ÀÌ¸§ÀÌ´Ù.
+	WORD	wNotUseUnderBarName;	//	ì´ë¦„ì´ ê¸¸ï¿½ÂEë°‘ì¤„(_)ì„ ï¿½ÂEë¶™ì´ï¿½ÂEë°”ë¡œ ì•ŒíŒŒë²³ì„ ë¶™ì¸ ì´ë¦„ì´ë‹¤.
 	char	strName[dNAME_LENGTH];	//	
 	char	strId[dID_LENGTH];	//	
 };
 
-struct W2L_TOSS_ASK_GVG_AVATAR_ORG_DATA					//	0x8470	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶ Åä½º
+struct W2L_TOSS_ASK_GVG_AVATAR_ORG_DATA					//	0x8470	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚· í† ìŠ¤
 {
 	cMSG_BASE_TYPE_FORDB		base;
 
 	WORD	wOrgServer;
-	WORD	wNotUseUnderBarName;	//	ÀÌ¸§ÀÌ ±æ¾E¹ØÁÙ(_)À» ¸EºÙÀÌ°E¹Ù·Î ¾ËÆÄºªÀ» ºÙÀÎ ÀÌ¸§ÀÌ´Ù.
+	WORD	wNotUseUnderBarName;	//	ì´ë¦„ì´ ê¸¸ï¿½ÂEë°‘ì¤„(_)ì„ ï¿½ÂEë¶™ì´ï¿½ÂEë°”ë¡œ ì•ŒíŒŒë²³ì„ ë¶™ì¸ ì´ë¦„ì´ë‹¤.
 	char	strName[dNAME_LENGTH];	//	
 	char	strId[dID_LENGTH];	//	
 };
 
-struct L2W_TOSS_ASK_GVG_AVATAR_ORG_DATA					//	0x8471	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶ Åä½º
+struct L2W_TOSS_ASK_GVG_AVATAR_ORG_DATA					//	0x8471	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚· í† ìŠ¤
 {
 	cMSG_BASE_TYPE_FORDB		base;
 
 	WORD	wOrgServer;
-	WORD	wNotUseUnderBarName;	//	ÀÌ¸§ÀÌ ±æ¾E¹ØÁÙ(_)À» ¸EºÙÀÌ°E¹Ù·Î ¾ËÆÄºªÀ» ºÙÀÎ ÀÌ¸§ÀÌ´Ù.
+	WORD	wNotUseUnderBarName;	//	ì´ë¦„ì´ ê¸¸ï¿½ÂEë°‘ì¤„(_)ì„ ï¿½ÂEë¶™ì´ï¿½ÂEë°”ë¡œ ì•ŒíŒŒë²³ì„ ë¶™ì¸ ì´ë¦„ì´ë‹¤.
 	char	strName[dNAME_LENGTH];	//	
 	char	strId[dID_LENGTH];	//	
 };
 
-struct W2D_ASK_GVG_AVATAR_ORG_DATA						//	0x8472	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶
+struct W2D_ASK_GVG_AVATAR_ORG_DATA						//	0x8472	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚·
 {
 	cMSG_BASE_TYPE_FORDB		base;
 
-	WORD	wNotUseUnderBarName;	//	ÀÌ¸§ÀÌ ±æ¾E¹ØÁÙ(_)À» ¸EºÙÀÌ°E¹Ù·Î ¾ËÆÄºªÀ» ºÙÀÎ ÀÌ¸§ÀÌ´Ù.
+	WORD	wNotUseUnderBarName;	//	ì´ë¦„ì´ ê¸¸ï¿½ÂEë°‘ì¤„(_)ì„ ï¿½ÂEë¶™ì´ï¿½ÂEë°”ë¡œ ì•ŒíŒŒë²³ì„ ë¶™ì¸ ì´ë¦„ì´ë‹¤.
 	char	strId[dID_LENGTH];	//	
 	char	strName[dNAME_LENGTH];	//	
 };
 
-struct D2W_GVG_AVATAR_ORG_DATA							//	0x8473	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶
+struct D2W_GVG_AVATAR_ORG_DATA							//	0x8473	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚·
 {
 	cMSG_BASE_TYPE_FORDB		base;
 
@@ -1551,7 +1551,7 @@ struct D2W_GVG_AVATAR_ORG_DATA							//	0x8473	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸
 	CPlayerSaveDataForServerDefine	avatarData;
 };
 
-struct W2L_GVG_AVATAR_ORG_DATA							//	0x8474	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶
+struct W2L_GVG_AVATAR_ORG_DATA							//	0x8474	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚·
 {
 	cMSG_BASE_TYPE_FORDB		base;
 
@@ -1559,7 +1559,7 @@ struct W2L_GVG_AVATAR_ORG_DATA							//	0x8474	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸
 	CPlayerSaveDataForServerDefine	avatarData;
 };
 
-struct L2W_GVG_AVATAR_ORG_DATA							//	0x8475	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶
+struct L2W_GVG_AVATAR_ORG_DATA							//	0x8475	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚·
 {
 	cMSG_BASE_TYPE_FORDB		base;
 
@@ -1567,7 +1567,7 @@ struct L2W_GVG_AVATAR_ORG_DATA							//	0x8475	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸
 	CPlayerSaveDataForServerDefine	avatarData;
 };
 
-struct W2G_GVG_AVATAR_ORG_DATA							//	0x8476	//	G.V.G ¼­¹ö¿¡¼­ º»¼­¹Eº»·¡ Ä³¸¯ÅÍ µ¥ÀÌÅÍ ¿äÃ» ÆÐÅ¶
+struct W2G_GVG_AVATAR_ORG_DATA							//	0x8476	//	G.V.G ì„œë²„ì—ì„œ ë³¸ì„œï¿½ÂEë³¸ëž˜ ìºë¦­í„° ë°ì´í„° ìš”ì²­ íŒ¨í‚·
 {
 	cMSG_BASE_TYPE_FORDB		base;
 
@@ -1741,7 +1741,7 @@ struct	SERVERStoWORLD_CHANGE_GUILD_INVENTORY_ITEM_PLACE
 	char		strMemberName[dNAME_LENGTH];
 };
 
-struct	SERVERStoWORLD_USER_DELETEGUILD	//	±æµE¸¶½ºÅÍ & ÇöÀEÁ¢¼ÓÁßÀÎ ±æµå¿E& ¸ðµE±æµå¿øÀÇ Á¤º¸ °»½Å
+struct	SERVERStoWORLD_USER_DELETEGUILD	//	ê¸¸ï¿½ÂEë§ˆìŠ¤í„° & í˜„ï¿½ÂEì ‘ì†ì¤‘ì¸ ê¸¸ë“œï¿½ÂE& ëª¨ï¿½ÂEê¸¸ë“œì›ì˜ ì •ë³´ ê°±ì‹ 
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
@@ -1841,15 +1841,15 @@ struct	SERVERStoWORLD_UPDATE_GUILD_MEMBER_LEVEL
 enum
 {
 	eRBGB_SUCCESS					,
-	eRBGB_ALREADY_EXIST_SCHEDULE	,	//	ÀÌ¹Ì ½ÅÃ» ÇßÀÝ¾Æ!!
-	eRBGB_ALREADY_BOOKED			,	//	ÀÌ¹Ì ¿¹¾àµÇ¾EÀÖ´Ù.
-	eRBGB_OVER_BATTLE_FOR_THIS_WEEK	,	//	ÀÌ¹øÁÖ ÀEõ´Â ³¡³µ´Ù.
+	eRBGB_ALREADY_EXIST_SCHEDULE	,	//	ì´ë¯¸ ì‹ ì²­ í–ˆìž–ì•„!!
+	eRBGB_ALREADY_BOOKED			,	//	ì´ë¯¸ ì˜ˆì•½ë˜ï¿½ÂEìžˆë‹¤.
+	eRBGB_OVER_BATTLE_FOR_THIS_WEEK	,	//	ì´ë²ˆì£¼ ï¿½ÂEé†®ï¿½ ëë‚¬ë‹¤.
 
-	eRBGB_NOT_EXIST_GUILD			,	//	Á¸ÀçÇÏÁE¾Ê´Â ±æµå´Ù.
-	eRBGB_INCORRECT_DATA			,	//	µ¥ÀÌÅÍ°¡ Àß¸EµÇ¾ú´Ù.
-	eRBGB_FULL_REQUEST_IN_THAT_TIME	,	//	±× ½Ã°£¿¡ ½ÅÃ»ÀÌ Á¾·áµÇ¾ú´Ù.
+	eRBGB_NOT_EXIST_GUILD			,	//	ì¡´ìž¬í•˜ï¿½ÂEì•ŠëŠ” ê¸¸ë“œë‹¤.
+	eRBGB_INCORRECT_DATA			,	//	ë°ì´í„°ê°€ ìž˜ï¿½ÂEë˜ì—ˆë‹¤.
+	eRBGB_FULL_REQUEST_IN_THAT_TIME	,	//	ê·¸ ì‹œê°„ì— ì‹ ì²­ì´ ì¢…ë£Œë˜ì—ˆë‹¤.
 
-	eRBGB_OVER_BATTLE_FOR_THIS_DAY	,	//	¿À´Ã ÀEõ´Â ³¡³µ´Ù.
+	eRBGB_OVER_BATTLE_FOR_THIS_DAY	,	//	ì˜¤ëŠ˜ ï¿½ÂEé†®ï¿½ ëë‚¬ë‹¤.
 };
 
 struct	SERVERStoWORLD_BOOKING_GUILD_BATTLE
@@ -1883,9 +1883,9 @@ struct	SERVERStoWORLD_WORLD_VALUE_INFO
 //	Result of Cancel Guild Battle
 enum
 {
-	eRCGB_SUCCESS									,	//	¼º°E	
-	eRCGB_VALID										,	//	¿¹¾àµÈ°Å ¾ø´Ù.
-	eRCGB_CAN_NOT_CANCEL_BATTLE_BY_ALREADY_ENGAGED	,	//	ÃEÒÇÒ ¼E¾ø´Ù.
+	eRCGB_SUCCESS									,	//	ì„±ï¿½ÂE	
+	eRCGB_VALID										,	//	ì˜ˆì•½ëœê±° ì—†ë‹¤.
+	eRCGB_CAN_NOT_CANCEL_BATTLE_BY_ALREADY_ENGAGED	,	//	ï¿½ÂEï¤´ï¿½ ï¿½ÂEì—†ë‹¤.
 };
 
 struct	SERVERStoWORLD_CANCEL_GUILD_BATTLE
@@ -1943,7 +1943,7 @@ struct	WORLDtoSERVERS_USER_LISTGUILD
 };
 
 //
-//	±æµEÇÏ³ªÀÇ Á¤º¸ ¾÷µ¥ÀÌÆ®
+//	ê¸¸ï¿½ÂEí•˜ë‚˜ì˜ ì •ë³´ ì—…ë°ì´íŠ¸
 struct	WORLDtoSERVERS_UPDATE_GUILD_INFO
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
@@ -1954,7 +1954,7 @@ struct	WORLDtoSERVERS_UPDATE_GUILD_INFO
 };
 
 //
-//	±æµåÀEÁ¤º¸
+//	ê¸¸ë“œï¿½ÂEì •ë³´
 struct	WORLDtoSERVERS_GUILD_BATTLE_SCHEDULE
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
@@ -1963,7 +1963,7 @@ struct	WORLDtoSERVERS_GUILD_BATTLE_SCHEDULE
 };
 
 //
-//	±æµåÀE°á°E
+//	ê¸¸ë“œï¿½ÂEê²°ï¿½ÂE
 struct	WORLDtoSERVERS_GUILD_BATTLE_RESULT
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
@@ -2134,7 +2134,7 @@ struct	WORLDtoSERVERS_UPDATE_GUILD_GOLD
 };
 
 //
-//	Á¸ÀçÇÏÁE¾Ê´Â ±æµå´Ù.
+//	ì¡´ìž¬í•˜ï¿½ÂEì•ŠëŠ” ê¸¸ë“œë‹¤.
 struct	WORLDtoSERVERS_VALID_GUILD
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
@@ -2155,10 +2155,10 @@ struct	WORLDtoSERVERS_USER_GUILDINFO
 
 
 #define	dCREATEGUILD_RESULT_SUCCESS		0x01
-#define	dCREATEGUILD_RESULT_FULL		0x02		//	´õÀÌ»E¸¸µé¼E¾ø½À´Ï´Ù.
-#define	dCREATEGUILD_RESULT_SAMENAME	0x03		//	°°Àº ÀÌ¸§ÀÇ ±æµå°¡ Á¸ÀçÇÑ´Ù.
-#define	dCREATEGUILD_RESULT_HAVEGUILD	0x04		//	¸¶½ºÅÍ°¡ ´Ù¸¥ ±æµå°¡ ÀÖÀÝ¾Æ -_-a
-#define	dCREATEGUILD_RESULT_FAIL		0x05		//	´Ù¸¥ ÀÌÀ¯·Î ½ÇÆÐ
+#define	dCREATEGUILD_RESULT_FULL		0x02		//	ë”ì´ï¿½ÂEë§Œë“¤ï¿½ÂEì—†ìŠµë‹ˆë‹¤.
+#define	dCREATEGUILD_RESULT_SAMENAME	0x03		//	ê°™ì€ ì´ë¦„ì˜ ê¸¸ë“œê°€ ì¡´ìž¬í•œë‹¤.
+#define	dCREATEGUILD_RESULT_HAVEGUILD	0x04		//	ë§ˆìŠ¤í„°ê°€ ë‹¤ë¥¸ ê¸¸ë“œê°€ ìžˆìž–ì•„ -_-a
+#define	dCREATEGUILD_RESULT_FAIL		0x05		//	ë‹¤ë¥¸ ì´ìœ ë¡œ ì‹¤íŒ¨
 
 struct	WORLDtoSERVERS_USER_CREATEGUILD
 {
@@ -2172,11 +2172,11 @@ struct	WORLDtoSERVERS_USER_CREATEGUILD
 };
 
 #define	dJOINGUILD_RESULT_SUCCESS		0x01
-#define	dJOINGUILD_RESULT_NOTFIND		0x02	//	±×·± ±æµå´Â ¾ø´Âµ¥ .. ;
-#define	dJOINGUILD_RESULT_FULL			0x03	//	Çª ~~ ¿E
-#define	dJOINGUILD_RESULT_JOINED		0x04	//	ÀÌ¹Ì ´Ù¸¥ ±æµå¿¡ Á¶ÀÎµÇ¾EÀÖ´Ù.
+#define	dJOINGUILD_RESULT_NOTFIND		0x02	//	ê·¸ëŸ° ê¸¸ë“œëŠ” ì—†ëŠ”ë° .. ;
+#define	dJOINGUILD_RESULT_FULL			0x03	//	í‘¸ ~~ ï¿½ÂE
+#define	dJOINGUILD_RESULT_JOINED		0x04	//	ì´ë¯¸ ë‹¤ë¥¸ ê¸¸ë“œì— ì¡°ì¸ë˜ï¿½ÂEìžˆë‹¤.
 #define	dJOINGUILD_RESULT_NEEDRANK		0x05
-#define	dJOINGUILD_RESULT_FAIL			0x06	//	¹»±û›~~
+#define	dJOINGUILD_RESULT_FAIL			0x06	//	ë­˜ê¹©Â›~~
 
 struct	WORLDtoSERVERS_USER_JOINGUILD
 {
@@ -2190,12 +2190,12 @@ struct	WORLDtoSERVERS_USER_JOINGUILD
 };
 
 #define	dEXITGUILD_RESULT_SUCCESS		0x01
-#define	dEXITGUILD_RESULT_NOTFIND		0x02	//	±×·± ±æµå´Â ¾ø´Âµ¥ .. ;
-#define	dEXITGUILD_RESULT_NOTJOIN		0x03	//	³Í ±æµE¾ø½º ~~
-#define	dEXITGUILD_RESULT_NOTACOUNT		0x04	//	Á¤º¸°¡ ÀÏÄ¡ÇÏÁE¾Ê½À´Ï´Ù.
-#define	dEXITGUILD_RESULT_FAIL			0x05	//	¹»±û›~~
-#define dEXITGUILD_RESULT_NEEDRANK		0x06	//	¹»±û›~~
-#define dEXITGUILD_RESULT_FAILED_BY_TARGET_IS_GUILD_MASTER	0x07	//	¹»±û›~~
+#define	dEXITGUILD_RESULT_NOTFIND		0x02	//	ê·¸ëŸ° ê¸¸ë“œëŠ” ì—†ëŠ”ë° .. ;
+#define	dEXITGUILD_RESULT_NOTJOIN		0x03	//	ë„Œ ê¸¸ï¿½ÂEì—†ìŠ¤ ~~
+#define	dEXITGUILD_RESULT_NOTACOUNT		0x04	//	ì •ë³´ê°€ ì¼ì¹˜í•˜ï¿½ÂEì•ŠìŠµë‹ˆë‹¤.
+#define	dEXITGUILD_RESULT_FAIL			0x05	//	ë­˜ê¹©Â›~~
+#define dEXITGUILD_RESULT_NEEDRANK		0x06	//	ë­˜ê¹©Â›~~
+#define dEXITGUILD_RESULT_FAILED_BY_TARGET_IS_GUILD_MASTER	0x07	//	ë­˜ê¹©Â›~~
 #define dEXITGUILD_RESULT_FAILED_BY_TARGET_IS_ELDER			0x08
 #define dEXITGUILD_RESULT_FAILED_BY_IT_IS_ABLE_ONLY_MASTER	0x09
 
@@ -2210,7 +2210,7 @@ struct	WORLDtoSERVERS_USER_EXITGUILD
 };
 
 #define	dDELETEGUILD_RESULT_SUCCESS		0x01		
-#define	dDELETEGUILD_RESULT_FAIL		0x02	//	¹º ÀÌÀ¯°¡ ÀÖÀ»±E-_-a
+#define	dDELETEGUILD_RESULT_FAIL		0x02	//	ë­” ì´ìœ ê°€ ìžˆì„ï¿½ÂE-_-a
 
 struct	WORLDtoSERVERS_USER_DELETEGUILD
 {
@@ -2231,11 +2231,11 @@ struct	WORLDtoSERVERS_DELETEGUILD
 };
 
 #define	dCHANGERANK_RESULT_SUCCESS		0x01
-#define	dCHANGERANK_RESULT_NOTFIND		0x02	//	±×·± ±æµå´Â ¾ø´Âµ¥ .. ;
-#define	dCHANGERANK_RESULT_NOTACOUNT	0x03	//	Á¤º¸°¡ ÀÏÄ¡ÇÏÁE¾Ê½À´Ï´Ù.
-#define	dCHANGERANK_RESULT_FAIL			0x04	//	¹»±û›~~
+#define	dCHANGERANK_RESULT_NOTFIND		0x02	//	ê·¸ëŸ° ê¸¸ë“œëŠ” ì—†ëŠ”ë° .. ;
+#define	dCHANGERANK_RESULT_NOTACOUNT	0x03	//	ì •ë³´ê°€ ì¼ì¹˜í•˜ï¿½ÂEì•ŠìŠµë‹ˆë‹¤.
+#define	dCHANGERANK_RESULT_FAIL			0x04	//	ë­˜ê¹©Â›~~
 
-struct WORLDtoSERVERS_USER_CHANGERANK			//	¼º°øÇßÀ» °æ¿EÀE¼­¹ö¿¡°Ô...
+struct WORLDtoSERVERS_USER_CHANGERANK			//	ì„±ê³µí–ˆì„ ê²½ï¿½ÂEï¿½ÂEì„œë²„ì—ê²Œ...
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
@@ -2268,13 +2268,13 @@ struct	WORLDtoSERVERS_UPDATE_GUILD_SKILL_LEVEL
 //	Result of Increase Guild Skill Level
 enum
 {
-	eRIGSL_OK,	//	¼º°E	
-	eRIGSL_SKILL_POINT_LACKS,	//	½ºÅ³Æ÷ÀÎÆ®°¡ ºÎÁ·ÇÏ´Ù.
-	eRIGSL_LEVEL_SKILL_IS_MAX,	//	½ºÅ³·¹º§ÀÌ ¸Æ½º´Ù.
+	eRIGSL_OK,	//	ì„±ï¿½ÂE	
+	eRIGSL_SKILL_POINT_LACKS,	//	ìŠ¤í‚¬í¬ì¸íŠ¸ê°€ ë¶€ì¡±í•˜ë‹¤.
+	eRIGSL_LEVEL_SKILL_IS_MAX,	//	ìŠ¤í‚¬ë ˆë²¨ì´ ë§¥ìŠ¤ë‹¤.
 };
 
 //
-//	±æµE·¹º§ Áõ°¡ ½ÇÆÐ. ´EóÀº ÇØ´E±æµåÀÇ ±æ¸¶(
+//	ê¸¸ï¿½ÂEë ˆë²¨ ì¦ê°€ ì‹¤íŒ¨. ï¿½ÂEç“šï¿½ í•´ï¿½ÂEê¸¸ë“œì˜ ê¸¸ë§ˆ(
 struct	WORLDtoSERVERS_GUILD_SKILL_LEVEL_INCREASE_FAILURE
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
@@ -2296,12 +2296,12 @@ struct	WORLDtoSERVERS_UPDATE_GUILD_BATTLE_INFO
 
 	WORD						wTimeOrder;
 	WORD						wFieldOrder;
-	WORD						awBattleGuild[2];	//	´EEÒ µÎ ±æµE	
+	WORD						awBattleGuild[2];	//	ï¿½ÂEÂEï¿½ ë‘ ê¸¸ï¿½ÂE	
 	WORD						wGuildSerial;
 };
 
 /////////////////////////////////////////////////////////////////////////////
-//	¸ðµE¼­¹ö¿¡°Ô º¸³»ÁE±æµEÁ¤º¸µE.
+//	ëª¨ï¿½ÂEì„œë²„ì—ê²Œ ë³´ë‚´ï¿½ÂEê¸¸ï¿½ÂEì •ë³´ï¿½ÂE.
 /////////////////////////////////////////////////////////////////////////////
 struct	WORLDtoSERVERS_GUILD_CREATE
 {
@@ -2372,11 +2372,11 @@ struct WORLDtoSERVERS_UPDATE_GUILD_HALL_INFO
 };
 
 
-//¦­	PACKET Guild
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒ	PACKET Guild
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­	PACKET Party
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒ	PACKET Party
 
 struct	SERVERStoWORLD_CREATE_UNION_PARTY
 {
@@ -2390,7 +2390,7 @@ struct	SERVERStoWORLD_CREATE_PARTY
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD	wFieldSerial;		//	À¯´ÏÅ© ÇÊµE½Ã¸®¾E	
+	WORD	wFieldSerial;		//	ìœ ë‹ˆí¬ í•„ï¿½ÂEì‹œë¦¬ï¿½ÂE	
 	int		iMasterZoneSerial,iTargetZoneSerial;
 	int		iMasterDuelVP,iTargetDuelVP;
 
@@ -2412,8 +2412,8 @@ struct	SERVERStoWORLD_JOIN_PARTY
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD	wPartySerial;	//	ÆÄÆ¼ ½Ã¸®¾E	
-	WORD	wFieldSerial;	//	À¯´ÏÅ© ÇÊµE½Ã¸®¾E	
+	WORD	wPartySerial;	//	íŒŒí‹° ì‹œë¦¬ï¿½ÂE	
+	WORD	wFieldSerial;	//	ìœ ë‹ˆí¬ í•„ï¿½ÂEì‹œë¦¬ï¿½ÂE	
 	int		iZoneSerial,iDuelVP;
 
 	WORD	bf7RemainHP				:	8;
@@ -2434,32 +2434,32 @@ struct	SERVERStoWORLD_PARTY_WORK
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD	wPartySerial;			//	ÆÄÆ¼ ½Ã¸®¾E-> ÆÄÆ¼ ÀÌ¸§À¸·Î ±³Ã¼ÇÒ °Í !!
+	WORD	wPartySerial;			//	íŒŒí‹° ì‹œë¦¬ï¿½ÂE-> íŒŒí‹° ì´ë¦„ìœ¼ë¡œ êµì²´í•  ê²ƒ !!
 	DWORD	dwUniqueSerial;
 	WORD	wWork;
 
-	char	strName[dNAME_LENGTH];	//	Å»ÅðÇÒ »ç¶÷ÀÇ ÀÌ¸§ 
+	char	strName[dNAME_LENGTH];	//	íƒˆí‡´í•  ì‚¬ëžŒì˜ ì´ë¦„ 
 };
 
-struct	SERVERStoWORLD_UNION_PARTY_WORK					//¿¬ÇÕ ÆÄÆ¼¿¡ °EE¸Þ¼¼Áö¸¦ ¿ùµå·Î ÀEÞÇÑ´Ù.
+struct	SERVERStoWORLD_UNION_PARTY_WORK					//ì—°í•© íŒŒí‹°ì— ï¿½ÂEÂEë©”ì„¸ì§€ë¥¼ ì›”ë“œë¡œ ï¿½ÂEåƒ¿ç£¯ï¿½.
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 	
-	WORD						wPartySerial;			//	ÆÄÆ¼ ½Ã¸®¾E-> ÆÄÆ¼ ÀÌ¸§À¸·Î ±³Ã¼ÇÒ °Í !!
+	WORD						wPartySerial;			//	íŒŒí‹° ì‹œë¦¬ï¿½ÂE-> íŒŒí‹° ì´ë¦„ìœ¼ë¡œ êµì²´í•  ê²ƒ !!
 	WORD						wUnionPartySerial;
 	WORD						wWork;
 	
-	char						strName[dNAME_LENGTH];	//	Å»ÅðÇÒ »ç¶÷ÀÇ ÀÌ¸§ 
+	char						strName[dNAME_LENGTH];	//	íƒˆí‡´í•  ì‚¬ëžŒì˜ ì´ë¦„ 
 };
 
 struct	SERVERStoWORLD_DISCONNECT_PARTY_MEMBER
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD	wPartySerial;			//	ÆÄÆ¼ ½Ã¸®¾E-> ÆÄÆ¼ ÀÌ¸§À¸·Î ±³Ã¼ÇÒ °Í !!
+	WORD	wPartySerial;			//	íŒŒí‹° ì‹œë¦¬ï¿½ÂE-> íŒŒí‹° ì´ë¦„ìœ¼ë¡œ êµì²´í•  ê²ƒ !!
 
 	char	strPartyName[dPARTYNAME_LENGTH];
-	char	strName[dNAME_LENGTH];	//	Å»ÅðÇÒ »ç¶÷ÀÇ ÀÌ¸§ 
+	char	strName[dNAME_LENGTH];	//	íƒˆí‡´í•  ì‚¬ëžŒì˜ ì´ë¦„ 
 };
 
 struct	SERVERStoWORLD_PARTY_ENTER_IF
@@ -2480,12 +2480,12 @@ enum
 
 enum
 {
-	eGMJPA_DENY, // °ÅÀý
-	eGMJPA_OK, // ¿ÀÄÉÀÌ
-	eGMJPA_HAVE_NO_TARGET, //	 ´EóÀÌ ¾ø´Ù.
-	eGMJPA_TARGET_IS_IN_PARTY,	// ´EóÀÌ ÆÄÆ¼°¡ ÀÖ´Ù.
-	eGMJPA_PARTY_IS_FULL,		//	 ÆÄÆ¼°¡ Ç®ÀÌ¿¡¿E	
-	eGMJPA_FAILED,			//	 ½ÇÆÐ?
+	eGMJPA_DENY, // ê±°ì ˆ
+	eGMJPA_OK, // ì˜¤ì¼€ì´
+	eGMJPA_HAVE_NO_TARGET, //	 ï¿½ÂEç“šï¿½ ì—†ë‹¤.
+	eGMJPA_TARGET_IS_IN_PARTY,	// ï¿½ÂEç“šï¿½ íŒŒí‹°ê°€ ìžˆë‹¤.
+	eGMJPA_PARTY_IS_FULL,		//	 íŒŒí‹°ê°€ í’€ì´ì—ï¿½ÂE	
+	eGMJPA_FAILED,			//	 ì‹¤íŒ¨?
 };
 
 struct	SERVERStoWORLD_GUILD_MEMBER_JOIN_PARTY
@@ -2580,18 +2580,18 @@ struct	SERVERStoWORLD_RENAME_PARTYNAME
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD	wPartySerial;				//	ÆÄÆ¼ ½Ã¸®¾E
+	WORD	wPartySerial;				//	íŒŒí‹° ì‹œë¦¬ï¿½ÂE
 	char	strPartyName[dPARTYNAME_LENGTH];
-	char	strName[dPARTYNAME_LENGTH];	//	ÆÄÆ¼ ÀÌ¸§
+	char	strName[dPARTYNAME_LENGTH];	//	íŒŒí‹° ì´ë¦„
 };
 
 struct	SERVERStoWORLD_ASK_PARTY_LIST
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	DWORD	dwSerial;					//	¹ÞÀ» À¯ÀúÀÇ ½Ã¸®¾E	
-	WORD	isNext;						//	0 - ÀEÆäÀÌÁE, 1 - ´ÙÀ½ ÆäÀÌÁE	
-	WORD	wPartyIndex;				//	¹ÞÀ» ±âÁØÀÌ µÇ´Â ÆÄÆ¼ÀÇ ÀÎµ¦½º
+	DWORD	dwSerial;					//	ë°›ì„ ìœ ì €ì˜ ì‹œë¦¬ï¿½ÂE	
+	WORD	isNext;						//	0 - ï¿½ÂEíŽ˜ì´ï¿½ÂE, 1 - ë‹¤ìŒ íŽ˜ì´ï¿½ÂE	
+	WORD	wPartyIndex;				//	ë°›ì„ ê¸°ì¤€ì´ ë˜ëŠ” íŒŒí‹°ì˜ ì¸ë±ìŠ¤
 };
 
 struct SERVERStoWORLD_ASK_PARTYINFO
@@ -2612,8 +2612,8 @@ struct SERVERStoWORLD_CHANGE_PARTY_STATUS
 	DWORD	bf1IsChangeSetting		:	1;
 	DWORD	bf3GoldShareMethod		:	3;
 	DWORD	bf3ItemShareMethod		:	3;
-	DWORD	bf3PartyObject			:	3;	//ÆÄÆ¼ ¸ñÀE	
-	DWORD	bf1IsOpenParty			:	1;	//¸â¹ö¸¦ °è¼Ó ¸ðÁýÇÑ´Ù.
+	DWORD	bf3PartyObject			:	3;	//íŒŒí‹° ëª©ï¿½ÂE	
+	DWORD	bf1IsOpenParty			:	1;	//ë©¤ë²„ë¥¼ ê³„ì† ëª¨ì§‘í•œë‹¤.
 
 	DWORD	bf3LastReceiveGoldMember:	3;
 	DWORD	bf3LastReceiveItemMember:	3;
@@ -2629,8 +2629,8 @@ struct WORLDtoSERVERS_CHANGE_PARTY_STATUS
 	DWORD	bf1IsChangeSetting		:	1;
 	DWORD	bf3GoldShareMethod		:	3;
 	DWORD	bf3ItemShareMethod		:	3;
-	DWORD	bf3PartyObject			:	3;	//ÆÄÆ¼ ¸ñÀE	
-	DWORD	bf1IsOpenParty			:	1;	//¸â¹ö¸¦ °è¼Ó ¸ðÁýÇÑ´Ù.
+	DWORD	bf3PartyObject			:	3;	//íŒŒí‹° ëª©ï¿½ÂE	
+	DWORD	bf1IsOpenParty			:	1;	//ë©¤ë²„ë¥¼ ê³„ì† ëª¨ì§‘í•œë‹¤.
 
 	DWORD	bf3LastReceiveGoldMember:	3;
 	DWORD	bf3LastReceiveItemMember:	3;
@@ -2667,11 +2667,11 @@ struct	SERVERStoWORLD_MOVE_FIELD_PARTY_MEMBER
 	char	strPartyName[dPARTYNAME_LENGTH];
 	char	strName[dNAME_LENGTH];
 	int		iZoneSerial				:	31;
-	int		bf1IsLeave				:	1;	//	±× ÇÊµå¿¡¼­ ¶°³ª´Â°Å³Ä?
+	int		bf1IsLeave				:	1;	//	ê·¸ í•„ë“œì—ì„œ ë– ë‚˜ëŠ”ê±°ëƒ?
 	WORD	bf10InstanceField		:	10;
 	WORD	bf4InstanceFieldFloor	:	4;
 
-	WORD	wDestFieldSerial;	//	¸ñÀûÁE};
+	WORD	wDestFieldSerial;	//	ëª©ì ï¿½ÂE};
 };
 
 #define	dJOINPARTY_RESULT_SUCCESS		0x01
@@ -2696,7 +2696,7 @@ struct	WORLDtoSERVERS_JOIN_PARTY
 	WORD	bf4SecretDungeonPlayCount	:	4;
 	WORD	bf3GuildDungeonPlayCount	:	4;
 
-	int		iDuelVP;	//	°áÅE½ÂÁ¡
+	int		iDuelVP;	//	ê²°ï¿½ÂEìŠ¹ì 
 
 	char	strPartyName[dPARTYNAME_LENGTH];
 	char	strName[dNAME_LENGTH];
@@ -2706,27 +2706,27 @@ struct	WORLDtoSERVERS_PARTY_WORK
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD	wPartySerial;				//	±æµEÀÎµ¦½º - ÀÚ½ÅÀÇ ±æµåÀÎÁE.
+	WORD	wPartySerial;				//	ê¸¸ï¿½ÂEì¸ë±ìŠ¤ - ìžì‹ ì˜ ê¸¸ë“œì¸ï¿½ÂE.
 	DWORD	dwUniqueSerial;
 	WORD	wWork;
-	char	strName[dNAME_LENGTH];	//	»èÁ¦µÉ À¯ÀúÀÇ ¾ÆÀÌµE
+	char	strName[dNAME_LENGTH];	//	ì‚­ì œë  ìœ ì €ì˜ ì•„ì´ï¿½ÂE
 };
 
 struct	WORLDtoSERVERS_DISCONNECT_PARTY_MEMBER
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD	wPartySerial;				//	±æµEÀÎµ¦½º - ÀÚ½ÅÀÇ ±æµåÀÎÁE.
+	WORD	wPartySerial;				//	ê¸¸ï¿½ÂEì¸ë±ìŠ¤ - ìžì‹ ì˜ ê¸¸ë“œì¸ï¿½ÂE.
 	WORD	wIsBanish;
 	char	strPartyName[dPARTYNAME_LENGTH];
-	char	strName[dNAME_LENGTH];	//	»èÁ¦µÉ À¯ÀúÀÇ ¾ÆÀÌµE
+	char	strName[dNAME_LENGTH];	//	ì‚­ì œë  ìœ ì €ì˜ ì•„ì´ï¿½ÂE
 };
 
 struct	WORLDtoSERVERS_UPDATE_PARTYINFO
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD						wIsCreate;		//	ÀÌÁ¦¸· ¸¸µé¾ûÝEÆÄÆ¼´Ù.
+	WORD						wIsCreate;		//	ì´ì œë§‰ ë§Œë“¤ì—‰ï¿½ÂEíŒŒí‹°ë‹¤.
 	
 	CSimplePartyInfo			partyInfo;
 };
@@ -2735,9 +2735,9 @@ struct	WORLDtoSERVERS_UPDATE_UNIONPARTYINFO
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 	
-	WORD						wIsCreate;					//	ÀÌÁ¦¸· ¸¸µé¾ûÝEÆÄÆ¼´Ù.
-	char						strName[dNAME_LENGTH];		//	¿¬ÇÕ ÆÄÆ¼ ÀÌ¸§.
-	DWORD						m_dwUniqueSerial;			//	À¯´ÏÅ© ½Ã¸®¾E
+	WORD						wIsCreate;					//	ì´ì œë§‰ ë§Œë“¤ì—‰ï¿½ÂEíŒŒí‹°ë‹¤.
+	char						strName[dNAME_LENGTH];		//	ì—°í•© íŒŒí‹° ì´ë¦„.
+	DWORD						m_dwUniqueSerial;			//	ìœ ë‹ˆí¬ ì‹œë¦¬ï¿½ÂE
 	
 	CSimpleUnionPartyInfo		unionPartyInfo;
 };
@@ -2769,18 +2769,18 @@ struct WORLDtoSERVERS_RENAME_PARTYNAME
 	cMSG_BASE_TYPE_FORWORLD		base;
 
 	short	sResult;
-	WORD	wPartySerial;				//	ÆÄÆ¼ ½Ã¸®¾E	
-	char	strName[dPARTYNAME_LENGTH];	//	ÆÄÆ¼ ÀÌ¸§
-	char	strChangeName[dPARTYNAME_LENGTH];	//	ÆÄÆ¼ ÀÌ¸§
+	WORD	wPartySerial;				//	íŒŒí‹° ì‹œë¦¬ï¿½ÂE	
+	char	strName[dPARTYNAME_LENGTH];	//	íŒŒí‹° ì´ë¦„
+	char	strChangeName[dPARTYNAME_LENGTH];	//	íŒŒí‹° ì´ë¦„
 };
 
 struct	WORLDtoSERVERS_PARTY_LIST
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	DWORD						dwSerial;	//	¹ÞÀ» À¯ÀúÀÇ ½Ã¸®¾E	
-	WORD						wPartySIndex,wPartyEIndex;	//	¹ÞÀ» ±âÁØÀÌ µÇ´Â ÆÄÆ¼ÀÇ ÀÎµ¦½º
-	WORD						wPartyCount;				//	³Ñ¾ûÌ¥ °¹¼E
+	DWORD						dwSerial;	//	ë°›ì„ ìœ ì €ì˜ ì‹œë¦¬ï¿½ÂE	
+	WORD						wPartySIndex,wPartyEIndex;	//	ë°›ì„ ê¸°ì¤€ì´ ë˜ëŠ” íŒŒí‹°ì˜ ì¸ë±ìŠ¤
+	WORD						wPartyCount;				//	ë„˜ì—‰æ€¯ ê°¯ï¿½ÂE
 	CSimplePartyInfo			pInfo[dPARTYLIST_COUNT];
 };
 
@@ -2806,51 +2806,51 @@ struct	WORLDtoSERVERS_MOVE_FIELD_PARTY_MEMBER
 	char	strPartyName[dPARTYNAME_LENGTH];
 	char	strName[dNAME_LENGTH];
 	int		iZoneSerial;
-	int		bf1IsLeave			:	1;	//	±× ÇÊµå¿¡¼­ ¶°³ª´Â°Å³Ä?
+	int		bf1IsLeave			:	1;	//	ê·¸ í•„ë“œì—ì„œ ë– ë‚˜ëŠ”ê±°ëƒ?
 	WORD	bf10IFSerial		:	10;
 	WORD	bf4IFFloor			:	4;
 
-	WORD	wDestFieldSerial;	//	¸ñÀûÁE};
+	WORD	wDestFieldSerial;	//	ëª©ì ï¿½ÂE};
 };
 
-//¦­	PACKET Party
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒ	PACKET Party
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­¾ÆÀÌÅÛ Ã³¸®
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒì•„ì´í…œ ì²˜ë¦¬
 
 //	Game server -> World server
-//	ÇÊµå¿¡ ¶³¾ûÒß¸®´Â ¾ÆÀÌÅÛ »ý¼º
+//	í•„ë“œì— ë–¨ì—‰ï¥‡ë¦¬ëŠ” ì•„ì´í…œ ìƒì„±
 struct SERVERStoWORLD_CREATE_ITEM
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD						wCount;//¾ÆÀÌÅÛ ¼E	
-	WORD						wFieldSerial;//ÇÊµE½Ã¸®¾E	
-	cCREATE_ITEM_INFO			aCreateItem[dDROPPING_ITEM_COUNT+1];//»ý¼ºÇÒ ¾ÆÀÌÅÛ
+	WORD						wCount;//ì•„ì´í…œ ï¿½ÂE	
+	WORD						wFieldSerial;//í•„ï¿½ÂEì‹œë¦¬ï¿½ÂE	
+	cCREATE_ITEM_INFO			aCreateItem[dDROPPING_ITEM_COUNT+1];//ìƒì„±í•  ì•„ì´í…œ
 };	//	struct SERVERStoWORLD_CREATE_ITEM
 
 //	World server -> Game server
-//	ÇÊµå¿¡ ¶³¾ûÒß¸®´Â ¾ÆÀÌÅÛ »ý¼º °á°ú¸¦ ¹ÞÀ½
+//	í•„ë“œì— ë–¨ì—‰ï¥‡ë¦¬ëŠ” ì•„ì´í…œ ìƒì„± ê²°ê³¼ë¥¼ ë°›ìŒ
 struct WORLDtoSERVERS_CREATE_ITEM_RESULT
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD						wCount;//¾ÆÀÌÅÛ ¼E	
-	WORD						wFieldSerial;//ÇÊµE½Ã¸®¾E	
+	WORD						wCount;//ì•„ì´í…œ ï¿½ÂE	
+	WORD						wFieldSerial;//í•„ï¿½ÂEì‹œë¦¬ï¿½ÂE	
 	cRESULT_CREATE_ITEM_INFO	aCreateItemResult[dDROPPING_ITEM_COUNT+1];
 };	//	struct WORLDtoSERVERS_CREATE_ITEM_RESULT
 
 //	Game server -> World server
-//	»óÁ¡¿¡¼­ ÆÇ¸ÅÇÏ´Â ¾ÆÀÌÅÛ »ý¼º
+//	ìƒì ì—ì„œ íŒë§¤í•˜ëŠ” ì•„ì´í…œ ìƒì„±
 struct SERVERStoWORLD_CREATE_SELL_ITEM
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
 	int							iSerialInServer;
-	DWORD						dwPrice;	//	°¡°Ý
+	DWORD						dwPrice;	//	ê°€ê²©
 	char						strName[dNAME_LENGTH];
-	CItemDefine					item;	//	ÆÇ¸ÅÇÒ ¾ÆÀÌÅÛ
+	CItemDefine					item;	//	íŒë§¤í•  ì•„ì´í…œ
 	WORD						wCount;
 	WORD						wWhere;
 	WORD						wIsDuelPointShop;
@@ -2858,57 +2858,57 @@ struct SERVERStoWORLD_CREATE_SELL_ITEM
 };	//	struct SERVERStoWORLD_CREATE_SELL_ITEM
 
 //	World server -> Game server
-//	»óÁ¡¿¡¼­ ÆÇ¸ÅÇÏ´Â ¾ÆÀÌÅÛ »ý¼º °á°E
+//	ìƒì ì—ì„œ íŒë§¤í•˜ëŠ” ì•„ì´í…œ ìƒì„± ê²°ï¿½ÂE
 struct WORLDtoSERVERS_CREATE_SELL_ITEM_RESULT
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
 	char						strName[dNAME_LENGTH];
 	int							iSerialInServer;
-	DWORD						dwPrice;	//	°¡°Ý
+	DWORD						dwPrice;	//	ê°€ê²©
 	DWORD						dwSerial;
 	WORD						wCount,wWhere;
-	CItemDefine					item;	//	ÆÇ¸ÅÇÒ ¾ÆÀÌÅÛ
+	CItemDefine					item;	//	íŒë§¤í•  ì•„ì´í…œ
 	WORD						wIsDuelPointShop;
 	WORD						wIsTokenShop;
 };	//	struct SERVERStoWORLD_CREATE_SELL_ITEM
 
 //	Game server -> World server
-//	¾ÆÀÌÅÛ »ý¼º
+//	ì•„ì´í…œ ìƒì„±
 struct SERVERStoWORLD_ADD_ITEM
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD						wClient;//	°úÌ´ -o-
-	CItemDefine					item;	//	ÆÇ¸ÅÇÒ ¾ÆÀÌÅÛ
+	WORD						wClient;//	ê³¼ç”„ -o-
+	CItemDefine					item;	//	íŒë§¤í•  ì•„ì´í…œ
 };	//	struct SERVERStoWORLD_ADD_ITEM
 
 //	World server -> Game server
-//	¾ÆÀÌÅÛ »ý¼º
+//	ì•„ì´í…œ ìƒì„±
 struct WORLDtoSERVERS_ADD_ITEM_RESULT
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD						wClient;//	°úÌ´ -o-
-	CItemDefine					item;	//	ÆÇ¸ÅÇÒ ¾ÆÀÌÅÛ
+	WORD						wClient;//	ê³¼ç”„ -o-
+	CItemDefine					item;	//	íŒë§¤í•  ì•„ì´í…œ
 };	//	struct WORLDtoSERVERS_ADD_ITEM
 
 //	Game server -> World server
-//	¾ÆÀÌÅÛÀÇ À¯´ÏÅ© ½Ã¸®¾óÀ» ¿ä±¸
+//	ì•„ì´í…œì˜ ìœ ë‹ˆí¬ ì‹œë¦¬ì–¼ì„ ìš”êµ¬
 struct SERVERStoWORLD_ASK_ITEM_UNIQUE_SERIAL
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	int							iSerialInServer;//	°úÌ´ -o-
+	int							iSerialInServer;//	ê³¼ç”„ -o-
 };	//	struct SERVERStoWORLD_ADD_ITEM
 
 //	World server -> Game server
-//	¾ÆÀÌÅÛÀÇ À¯´ÏÅ© ½Ã¸®¾óÀ» ¿ä±¸
+//	ì•„ì´í…œì˜ ìœ ë‹ˆí¬ ì‹œë¦¬ì–¼ì„ ìš”êµ¬
 struct WORLDtoSERVERS_ASK_ITEM_UNIQUE_SERIAL
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	int							iSerialInServer;//	°úÌ´ -o-
+	int							iSerialInServer;//	ê³¼ç”„ -o-
 	DWORD						dwSerial;
 };	//	struct WORLDtoSERVERS_ASK_UNIQUE_SERIAL
 
@@ -2938,9 +2938,9 @@ struct WORLDtoSERVERS_CARROT_SHOP_INFO
 	cMSG_BASE_TYPE_FORWORLD		base;
 
 	WORD	wIndex,wCount;
-	WORD	wStatus;	//	0 ½ÃÀÛ,1 µµÁß,2 ¸¶Áö¸·
+	WORD	wStatus;	//	0 ì‹œìž‘,1 ë„ì¤‘,2 ë§ˆì§€ë§‰
 
-	cCarrotShopCategoryInfo2	categoryInfo;	//	µ¥ÀÌÅÍ »çÀÌÁûÌ¡ °úÕ«ÁÙÀÌ±E¶§¹®¿¡ À§Ä¡ º¯°æÇÏ¸E¾ÈµÊ
+	cCarrotShopCategoryInfo2	categoryInfo;	//	ë°ì´í„° ì‚¬ì´ì§Šçž¼ ê³¼ï¥ì¤„ì´ï¿½ÂEë•Œë¬¸ì— ìœ„ì¹˜ ë³€ê²½í•˜ï¿½ÂEì•ˆë¨
 	cCarrotShopCategoryInfo1	data;
 };
 
@@ -2951,11 +2951,11 @@ struct WORLDtoSERVERS_UPDATE_PACK_ITEM_COUNT
 	WORD	wPackSerial,wItemIndex,wCount;
 };
 
-//¦­¾ÆÀÌÅÛ Ã³¸®
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒì•„ì´í…œ ì²˜ë¦¬
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­	PACKET FOR ADMIN
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒ	PACKET FOR ADMIN
 
 struct	WORLDtoSERVERS_ITEM_PACK_INFO
 {
@@ -3004,7 +3004,7 @@ struct SERVERStoWORLD_UPDATE_CARROT_SHOP_INFO
 	cMSG_BASE_TYPE_FORWORLD		base;
 
 	WORD	wIndex,wCount;
-	WORD	wStatus;	//	0 ½ÃÀÛ,1 ÁøÇE2 Á¾·E
+	WORD	wStatus;	//	0 ì‹œìž‘,1 ì§„ï¿½ÂE2 ì¢…ï¿½ÂE
 	cCarrotShopCategoryInfoDefine	data;
 };
 
@@ -3101,15 +3101,15 @@ struct	WORLDtoSERVERS_SENDINFOTOADMIN
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD		wGameSrvCount;							//	Á¢¼ÓµÈ °ÔÀÓ¼­¹E¼E.. 
-	DWORD		wUserCount,wMaxUserCount;				//	µ¿Á¢¼E
+	WORD		wGameSrvCount;							//	ì ‘ì†ëœ ê²Œìž„ì„œï¿½ÂEï¿½ÂE.. 
+	DWORD		wUserCount,wMaxUserCount;				//	ë™ì ‘ï¿½ÂE
 };
 
 struct	SERVERStoWORLD_ALL_MSG
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	char			strMessage[dCHAT_LENGTH];	//	¸Þ½ÃÁE
+	char			strMessage[dCHAT_LENGTH];	//	ë©”ì‹œï¿½ÂE
 };
 
 struct	SERVERStoWORLD_ISCONNECT_USER
@@ -3171,7 +3171,7 @@ struct	SERVERStoWORLD_CHANGE_WORD_QUIZ_ROUND
 };
 
 struct	SERVERStoWORLD_SET_EVENT_WORD
-{	// ¸¶Áö¸· ¼öÁ¤ÀÏ : 09.10.09
+{	// ë§ˆì§€ë§‰ ìˆ˜ì •ì¼ : 09.10.09
 	cMSG_BASE_TYPE_FORWORLD		base;
 
 	char	strWordOrString[256];
@@ -3179,12 +3179,12 @@ struct	SERVERStoWORLD_SET_EVENT_WORD
 	DWORD	bf16EventKind : 16;		// 16
 	DWORD	bf16BuffSerial : 16;	//32
 	DWORD	dwTimeInfo;
-	WORD	wBeginTimeYear;				//½ÃÀÛ ½Ã°£...
+	WORD	wBeginTimeYear;				//ì‹œìž‘ ì‹œê°„...
 	WORD	wBeginTimeMonth;
 	WORD	wBeginTimeDay;
 	WORD	wBeginTimeHour;
 	WORD	wBeginTimeMinite;
-	WORD	wEndTimeYear;				//Á¾·E½Ã°£...
+	WORD	wEndTimeYear;				//ì¢…ï¿½ÂEì‹œê°„...
 	WORD	wEndTimeMonth;
 	WORD	wEndTimeDay;
 	WORD	wEndTimeHour;
@@ -3266,7 +3266,7 @@ struct	SERVERStoWORLD_CHANGE_FIXCHECK
 	cMSG_BASE_TYPE_FORWORLD		base;
 
 	short	wWeek,wHour,wMin;
-	char	strNoticeMsg[98];	//	%dºÐÈÄ ¼­¹ö°¡ Á¾·áÇÕ´Ï´Ù.¾Õ¿¡ ¿Ã¸»..
+	char	strNoticeMsg[98];	//	%dë¶„í›„ ì„œë²„ê°€ ì¢…ë£Œí•©ë‹ˆë‹¤.ì•žì— ì˜¬ë§..
 };
 
 struct	SERVERStoWORLD_GET_FIXCHECK
@@ -3338,7 +3338,7 @@ struct	SERVERStoWORLD_BANISH_USER
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	WORD	wIsForced;	//	°­Á¦·Î ¦i¾Æ³½´Ù.
+	WORD	wIsForced;	//	ê°•ì œë¡œ ï¿½iì•„ë‚¸ë‹¤.
 	char	strName[dNAME_LENGTH];
 	char	strReason[256];
 };
@@ -3363,7 +3363,7 @@ struct	WORLDtoSERVERS_ALL_MSG
 {
 	cMSG_BASE_TYPE_FORWORLD		base;
 
-	char			strMessage[dCHAT_LENGTH];	//	¸Þ½ÃÁE
+	char			strMessage[dCHAT_LENGTH];	//	ë©”ì‹œï¿½ÂE
 };
 
 	struct	WORLDtoSERVERS_GET_FIXCHECK
@@ -3430,12 +3430,12 @@ struct	WORLDtoSERVERS_ALL_MSG
 		DWORD						dwTimeInfo;
 		DWORD						bf16EventKind : 16;		// 16
 		DWORD						bf16BuffSerial : 16;	//32
-		WORD						wBeginTimeYear;				//½ÃÀÛ ½Ã°£...
+		WORD						wBeginTimeYear;				//ì‹œìž‘ ì‹œê°„...
 		WORD						wBeginTimeMonth;
 		WORD						wBeginTimeDay;
 		WORD						wBeginTimeHour;
 		WORD						wBeginTimeMinite;
-		WORD						wEndTimeYear;				//Á¾·E½Ã°£...
+		WORD						wEndTimeYear;				//ì¢…ï¿½ÂEì‹œê°„...
 		WORD						wEndTimeMonth;
 		WORD						wEndTimeDay;
 		WORD						wEndTimeHour;
@@ -3518,8 +3518,8 @@ struct	WORLDtoSERVERS_ALL_MSG
 	{
 		cMSG_BASE_TYPE_FORWORLD		base;
 
-		WORD	isTime;			//	¸ûÕøÂ° ½Ã°£ÀÎ°¡.
-		WORD	wField;			//	¸ûÕøÂ° ÇÊµåÀÎ°¡..(10°³Áß ÇÑ°³)
+		WORD	isTime;			//	ë«ˆç¤«ì§¸ ì‹œê°„ì¸ê°€.
+		WORD	wField;			//	ë«ˆç¤«ì§¸ í•„ë“œì¸ê°€..(10ê°œì¤‘ í•œê°œ)
 
 		char	strGuildName1[dGUILD_NAME_LENGTH];
 		char	strGuildName2[dGUILD_NAME_LENGTH];
@@ -3529,7 +3529,7 @@ struct	WORLDtoSERVERS_ALL_MSG
 	{
 		cMSG_BASE_TYPE_FORWORLD		base;
 
-		WORD	wIsForced;	//	°­Á¦·Î ¦i¾Æ³½´Ù.
+		WORD	wIsForced;	//	ê°•ì œë¡œ ï¿½iì•„ë‚¸ë‹¤.
 		char	strName[dNAME_LENGTH];
 		char	strReason[256];
 	};
@@ -3561,42 +3561,42 @@ struct	WORLDtoSERVERS_ALL_MSG
 
 		cRenewItemExpireTimeInfo	aList[dRENEW_ITEM_EXPIRE_TIME_INFO_BUFFER_SIZE];
 	};
-	//¦­	PACKET  FOR ADMIN
-	//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+	//â”ƒ	PACKET  FOR ADMIN
+	//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-	//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-	//¦­	PACKET 
+	//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+	//â”ƒ	PACKET 
 
 	struct	WORLDtoSERVERS_CHECKTIME
 	{
 		cMSG_BASE_TYPE_FORWORLD		base;
 
-		WORD		wType;	//	1 - ´Ý¾Æ¶E 0 - ´Ù½Ã ¿­¾ûÒE
+		WORD		wType;	//	1 - ë‹«ì•„ï¿½ÂE 0 - ë‹¤ì‹œ ì—´ì—‰ï¿½ÂE
 	};
 
-	//¦­	PACKET 
-	//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+	//â”ƒ	PACKET 
+	//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-	//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-	//¦­	PACKET 
+	//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+	//â”ƒ	PACKET 
 
 	struct WORLDtoSERVERS_PRIZE_PLAYER_RESULT
 	{
 		cMSG_BASE_TYPE_FORWORLD		base;
 
-		char						strID[20];//	ID¸úÜ¸·Î À¯ÀEÈ®ÀÎ
-		char						strName[20];//	ÄÉ¸¯ÅÍ¸úÜ¸·Î À¯ÀEÈ®ÀÎ
+		char						strID[20];//	IDë«„æ£…ë¡œ ìœ ï¿½ÂEí™•ì¸
+		char						strName[20];//	ì¼€ë¦­í„°ë«„æ£…ë¡œ ìœ ï¿½ÂEí™•ì¸
 		WORD						wIsPrizePlayer;
 	};	//	struct WORLDtoSERVERS_ADD_ITEM
 
 	//	Game server -> World server
-	//	¾ÆÀÌÅÛÀÇ À¯´ÏÅ© ½Ã¸®¾óÀ» ¿ä±¸
+	//	ì•„ì´í…œì˜ ìœ ë‹ˆí¬ ì‹œë¦¬ì–¼ì„ ìš”êµ¬
 	struct SERVERStoWORLD_ASK_PRIZE_PLAYER
 	{
 		cMSG_BASE_TYPE_FORWORLD		base;
 
-		char						strID[20];//	ID¸úÜ¸·Î À¯ÀEÈ®ÀÎ
-		char						strName[20];//	ÄÉ¸¯ÅÍ¸úÜ¸·Î À¯ÀEÈ®ÀÎ
+		char						strID[20];//	IDë«„æ£…ë¡œ ìœ ï¿½ÂEí™•ì¸
+		char						strName[20];//	ì¼€ë¦­í„°ë«„æ£…ë¡œ ìœ ï¿½ÂEí™•ì¸
 	};	//	struct SERVERStoWORLD_ADD_ITEM
 
 	//struct
@@ -3604,16 +3604,16 @@ struct	WORLDtoSERVERS_ALL_MSG
 	//	cMSG_BASE_TYPE_FORWORLD		base;
 	//};
 
-	//¦­	PACKET 
-	//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+	//â”ƒ	PACKET 
+	//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 	//////////////////////////////////////////////////////////////////////////
-	//	ÅEè¸¦ À§ÇÑ ·Î±× ±â·Ï
+	//	ï¿½ÂEç”•ï¿½ ìœ„í•œ ë¡œê·¸ ê¸°ë¡
 	struct SERVERStoWORLD_LOG_INOUT
 	{
 		cMSG_BASE_TYPE_FORWORLD	base;
 
-		BOOL	isIn;	//	0 ·Î±×¾Æ¿E1 ·Î±×ÀÎ
+		BOOL	isIn;	//	0 ë¡œê·¸ì•„ï¿½ÂE1 ë¡œê·¸ì¸
 		short	lev;
 		short	job;
 		char	strID[20];
@@ -3635,7 +3635,7 @@ struct	WORLDtoSERVERS_ALL_MSG
 	};
 
 
-	//	ÅEè¸¦ À§ÇÑ ·Î±× ±â·Ï
+	//	ï¿½ÂEç”•ï¿½ ìœ„í•œ ë¡œê·¸ ê¸°ë¡
 	//////////////////////////////////////////////////////////////////////////
 
 

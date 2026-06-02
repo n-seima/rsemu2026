@@ -1,0 +1,144 @@
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  57D6F773 01:000DE773 C:\WINDOWS\SYSTEM32\ucrtbased.dll
+
+Registers:
+EAX:10BDF784
+EBX:0988F468
+ECX:000004F0
+EDX:7EFEFEFF
+ESI:10BDE9F4
+EDI:10BDF784
+CS:EIP:0023:57D6F773
+SS:ESP:002B:10BDE9E4  EBP:10BDFBA4
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+57D6F773  10BDFBA4  strcat+93
+57D37542  10BDFBEC  register_onexit_function+E2
+76425D49  10BDFBFC  BaseThreadInitThunk+19
+7779D83B  10BDFC54  RtlInitializeExceptionChain+6B
+7779D7C1  10BDFC64  RtlGetAppContainerNamedObjectPath+231
+
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  57D6F773 01:000DE773 C:\WINDOWS\SYSTEM32\ucrtbased.dll
+
+Registers:
+EAX:10C1F408
+EBX:0984E4D8
+ECX:00000504
+EDX:7EFEFEFF
+ESI:10C1E678
+EDI:10C1F408
+CS:EIP:0023:57D6F773
+SS:ESP:002B:10C1E668  EBP:10C1F828
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+57D6F773  10C1F828  strcat+93
+57D37542  10C1F870  register_onexit_function+E2
+76425D49  10C1F880  BaseThreadInitThunk+19
+7779D83B  10C1F8D8  RtlInitializeExceptionChain+6B
+7779D7C1  10C1F8E8  RtlGetAppContainerNamedObjectPath+231
+
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  57D8F773 01:000DE773 C:\WINDOWS\SYSTEM32\ucrtbased.dll
+
+Registers:
+EAX:1029F8A0
+EBX:08F6D640
+ECX:00000510
+EDX:7EFEFEFF
+ESI:1029EB10
+EDI:1029F8A0
+CS:EIP:0023:57D8F773
+SS:ESP:002B:1029EB00  EBP:1029FCC0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+57D8F773  1029FCC0  strcat+93
+57D57542  1029FD08  register_onexit_function+E2
+76425D49  1029FD18  BaseThreadInitThunk+19
+7779D83B  1029FD70  RtlInitializeExceptionChain+6B
+7779D7C1  1029FD80  RtlGetAppContainerNamedObjectPath+231
+
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  57D6F773 01:000DE773 C:\WINDOWS\SYSTEM32\ucrtbased.dll
+
+Registers:
+EAX:1065F850
+EBX:093EE540
+ECX:000004FC
+EDX:7EFEFEFF
+ESI:1065EAC0
+EDI:1065F850
+CS:EIP:0023:57D6F773
+SS:ESP:002B:1065EAB0  EBP:1065FC70
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+57D6F773  1065FC70  strcat+93
+57D37542  1065FCB8  register_onexit_function+E2
+76425D49  1065FCC8  BaseThreadInitThunk+19
+7779D83B  1065FD20  RtlInitializeExceptionChain+6B
+7779D7C1  1065FD30  RtlGetAppContainerNamedObjectPath+231
+
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  57D6F773 01:000DE773 C:\WINDOWS\SYSTEM32\ucrtbased.dll
+
+Registers:
+EAX:10C1FA10
+EBX:099BDF40
+ECX:00000504
+EDX:7EFEFEFF
+ESI:10C1EC80
+EDI:10C1FA10
+CS:EIP:0023:57D6F773
+SS:ESP:002B:10C1EC70  EBP:10C1FE30
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+57D6F773  10C1FE30  strcat+93
+57D37542  10C1FE78  register_onexit_function+E2
+76425D49  10C1FE88  BaseThreadInitThunk+19
+7779D83B  10C1FEE0  RtlInitializeExceptionChain+6B
+7779D7C1  10C1FEF0  RtlGetAppContainerNamedObjectPath+231
+
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  57D6F773 01:000DE773 C:\WINDOWS\SYSTEM32\ucrtbased.dll
+
+Registers:
+EAX:1061F6D8
+EBX:0935DE30
+ECX:00000504
+EDX:7EFEFEFF
+ESI:1061E948
+EDI:1061F6D8
+CS:EIP:0023:57D6F773
+SS:ESP:002B:1061E938  EBP:1061FAF8
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+57D6F773  1061FAF8  strcat+93
+57D37542  1061FB40  register_onexit_function+E2
+76425D49  1061FB50  BaseThreadInitThunk+19
+7779D83B  1061FBA8  RtlInitializeExceptionChain+6B
+7779D7C1  1061FBB8  RtlGetAppContainerNamedObjectPath+231
+

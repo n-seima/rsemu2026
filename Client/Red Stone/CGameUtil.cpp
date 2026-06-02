@@ -179,8 +179,6 @@ cGAME_UTIL::DrawLoadingText()
 BOOL CALLBACK
 cGAME_UTIL::OperateSpeedHackUser(int _iType)
 {
-	ReleaseChecker(0);
-
 	return	FALSE;
 
 	s_bIsSpeedHackUser			=	TRUE;
@@ -194,14 +192,16 @@ cGAME_UTIL::OperateSpeedHackUser(int _iType)
 		for (int i=0;i<pList.num;i++)
 			ERRMSG(pList.pname[i],pList.mname[i]);
 */
-	ReleaseChecker(0);
-
 	return	TRUE;
 }
 
 void
 cGAME_UTIL::BeginSpeedHackChecker()
 {
+	s_bIsSpeedHackUser			=	FALSE;
+	s_wSpeedHackUserCountdown	=	0;
+	return;
+
 	int		iResult	=	InitChecker("Version=1.3",CLOCK_METHOD);//BOTH_METHOD);
 //#define PATTERN_METHOD		1
 //#define CLOCK_METHOD		2
@@ -229,7 +229,8 @@ cGAME_UTIL::BeginSpeedHackChecker()
 void
 cGAME_UTIL::CloseSpeedHackChecker()
 {
-	ReleaseChecker(0);
+	s_bIsSpeedHackUser			=	FALSE;
+	s_wSpeedHackUserCountdown	=	0;
 }
 
 //
@@ -237,6 +238,10 @@ cGAME_UTIL::CloseSpeedHackChecker()
 BOOL
 cGAME_UTIL::CheckSpeedHack()
 {
+	s_bIsSpeedHackUser			=	FALSE;
+	s_wSpeedHackUserCountdown	=	0;
+	return	FALSE;
+
 	struct PList pList;
 
 	pList = EnumProcs();

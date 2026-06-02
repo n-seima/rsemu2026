@@ -44,34 +44,64 @@ cFIELD::receiveOpenCarrotShop(CG_OPEN_CARROT_SHOP *_lpPacket,int _iSerial)
 	if	(g_bIsDuelServer || g_iWorldServerType	==	eSERVER_TYPE_GVG)
 		return;
 
+	lpActor->m_wWaitDBMessageSecond	=	0;
+
+	BOOL	bIsWaitCarrotCount = FALSE;
+
+	if (lpActor->m_iCarrotCount < 0)
+		lpActor->m_iCarrotCount = 0;
+
+	_log("[CARROT] open request id[%s] name[%s] cached[%d] dbRequest[%d]",
+		lpActor->m_strId,lpActor->m_strName,lpActor->m_iCarrotCount,bIsWaitCarrotCount);
+
+	if	(!bIsWaitCarrotCount	&&	lpActor->m_iCarrotCount	<	0)
+		return;
+
 	SG_CARROT_SHOP_INFO	packet;
 
 	packet.base.set(sizeof(packet),dSG_CARROT_SHOP_INFO);
 	packet.wStatus				=	0;
-	packet.wCount				=	g_carrotShopInfo.m_wCategoryCount;
-	packet.iRemainCarrotCount	=	lpActor->m_iCarrotCount;
+	int iCategoryCount = g_carrotShopInfo.m_wCategoryCount;
+
+	if (iCategoryCount > dMAX_CARROT_SHOP_CATEGORY_COUNT)
+		iCategoryCount = dMAX_CARROT_SHOP_CATEGORY_COUNT;
+
+	packet.wCount = iCategoryCount;
+	packet.iRemainCarrotCount	=	bIsWaitCarrotCount ? -1 : lpActor->m_iCarrotCount;
 
 	DWORD	dwCheckSum	=	g_carrotShopInfo.m_dwCheckSum;
 
-	if	(dwCheckSum		==	_lpPacket->dwCheckSum)
+	// The shop catalog is bundled in the client as data/carrotShop.dat.
+	// Sending the whole catalog on every open can stall the legacy client,
+	// so the server only returns the live balance/open result here.
+	packet.wIsOK				=	TRUE;
+	packet.wStatus				=	2;
+	packet.wIndex				=	0;
+	packet.base.wSize			=	sizeof(packet)-sizeof(packet.data);
+
+	g_userPM.add(lpActor->m_iClientSerial,&packet,packet.base.wSize);
+
+	return;
+
+	if	(FALSE && dwCheckSum		==	_lpPacket->dwCheckSum)
 	{
 		packet.wIsOK				=	TRUE;
 		packet.base.wSize			=	sizeof(packet)-sizeof(packet.data);
 
 		g_userPM.add(lpActor->m_iClientSerial,&packet,packet.base.wSize);
 
-		if	(lpActor->m_iCarrotCount	<	0)
-			g_game.sendGetCarrotCount(lpActor);
-
 		return;	
 	}
 
 	packet.wIsOK	=	FALSE;
 
-	for	(int	i=0;i<g_carrotShopInfo.m_wCategoryCount;i++)
+	for	(int	i=0;i<iCategoryCount;i++)
 	{
 		memcpy(&packet.data,&g_carrotShopInfo.m_aData[i],sizeof(packet.data));
 		memcpy(&packet.categoryInfo,g_carrotShopInfo.m_aData[i].getCategoryInfo(),sizeof(cCarrotShopCategoryInfo2));
+
+		if (packet.data.m_wItemCount > dMAX_CARROT_SHOP_ITEM_COUNT)
+			packet.data.m_wItemCount = dMAX_CARROT_SHOP_ITEM_COUNT;
 
 		packet.wIndex		=	i;
 		packet.base.wSize	=	sizeof(packet)-sizeof(packet.data.m_aItemList)+sizeof(cCarrotShopItemDefine)*packet.data.m_wItemCount;
@@ -85,9 +115,6 @@ cFIELD::receiveOpenCarrotShop(CG_OPEN_CARROT_SHOP *_lpPacket,int _iSerial)
 	packet.base.wSize	=	sizeof(packet)-sizeof(packet.data);
 
 	g_userPM.add(lpActor->m_iClientSerial,&packet,packet.base.wSize);
-
-	if	(lpActor->m_iCarrotCount	<	0)
-		g_game.sendGetCarrotCount(lpActor);
 }
 
 void

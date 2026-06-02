@@ -15,7 +15,7 @@ WORD		_gCOL[7][16];
 
 DWORD	__first,__second;
 
-inline AB4(DWORD color,int alpha)
+inline DWORD AB4(DWORD color,int alpha)
 {	__first		=	color&d4AM_MASK_1;
 	__first		>>=	5;
 	__first		*=	alpha;

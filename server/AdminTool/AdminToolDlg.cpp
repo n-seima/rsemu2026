@@ -386,13 +386,16 @@ BOOL CAdminToolDlg::OnInitDialog()
 	}
 */
 #ifndef _FOR_INTER
-	g_bIsRequireSendToolLog	=	TRUE;
+	BOOL	bUseToolLog	=	(g_iToolLogPort > 0 && g_strToolLogIP[0] && stricmp(g_strToolLogIP,"0") != 0 && stricmp(g_strToolLogIP,"none") != 0);
+	g_bIsRequireSendToolLog	=	bUseToolLog;
 
-	if	(!logSock.init(g_iToolLogPort,g_strToolLogIP,"TOOL LOG SERVER",4))
+	if	(bUseToolLog && !logSock.init(g_iToolLogPort,g_strToolLogIP,"TOOL LOG SERVER",4))
 	{
-		AfxMessageBox("Could not initialize Log Server!!");
-		return FALSE;
+		g_bIsRequireSendToolLog	=	FALSE;
+		bUseToolLog				=	FALSE;
 	}
+#else
+	BOOL	bUseToolLog	=	FALSE;
 #endif
 
 	char hostname[32];
@@ -400,18 +403,19 @@ BOOL CAdminToolDlg::OnInitDialog()
 	struct hostent* he = gethostbyname(hostname);
 	struct in_addr iaddr;
 	memset(&iaddr,0,sizeof(iaddr));
-	memcpy(&iaddr,he->h_addr_list[0],sizeof(iaddr));
+	if	(he && he->h_addr_list[0])
+		memcpy(&iaddr,he->h_addr_list[0],sizeof(iaddr));
 
 	PACKET_LOGIN	sPacket;
 	sPacket.base.set(sizeof(PACKET_LOGIN),ePACKET_LOGIN);
 	strcpy(sPacket.strId,strAdminId);
-	memcpy(&iaddr,he->h_addr_list[0],sizeof(iaddr));
+	if	(he && he->h_addr_list[0])
+		memcpy(&iaddr,he->h_addr_list[0],sizeof(iaddr));
 	strcpy(sPacket.strIp,inet_ntoa(iaddr));
 
-	if	(!logSock.SendPacket((char *)&sPacket,sPacket.base.wSize))
+	if	(bUseToolLog && !logSock.SendPacket((char *)&sPacket,sPacket.base.wSize))
 	{
-		AfxMessageBox("Could not login to Log Server!!");
-		return FALSE;
+		g_bIsRequireSendToolLog	=	FALSE;
 	}
 ////	extLevel	=	eAL_SYSTEM_OPERATER;
 
@@ -1267,7 +1271,7 @@ void CAdminToolDlg::OnTimer(UINT nIDEvent)
 
 	//	툴 로그 서버와의 통신이 지속되는지를 확인한다.
 #ifndef _FOR_INTER
-	if(logSock.sock == NULL)
+	if(g_bIsRequireSendToolLog && logSock.sock == NULL)
 	{	//	툴을 종료한다.
 		SendMessage(WM_CLOSE);
 	}

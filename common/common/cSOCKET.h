@@ -10,7 +10,7 @@
 #endif // _MSC_VER > 1000
 
 /////////////////////////////////////////////////////////////////
-//		IOCP¸¦ »ç¿ëÇÏÁö ¾ÊÀº socket class
+//		IOCPë¥¼ ì‚¬ìš©í•˜ì§€ ì•Šì€ socket class
 /////////////////////////////////////////////////////////////////
 
 #include <winsock2.h>
@@ -33,7 +33,7 @@ public:
 	WORD				wBaseSize;
 	WORD				wLastPacket;
 
-	char				name[dNAME_LENGTH];	//	¼­¹ö ÀÌ¸§À¸·Î ±¸ºÐÇÒ°Å ÀÖÀ¸¸ç.. ±¸ºÐÇØ¾ßÁã..
+	char				name[dNAME_LENGTH];	//	ì„œë²„ ì´ë¦„ìœ¼ë¡œ êµ¬ë¶„í• ê±° ìžˆìœ¼ë©°.. êµ¬ë¶„í•´ì•¼ì¥..
 	char				m_strIp[dIP_SIZE];
 	int					m_iPort;
 	BOOL	isLinkConnect;
@@ -43,15 +43,15 @@ public:
 	BOOL	isSync;
 
 #ifdef _DEBUG
-	DWORD				m_dwTotalSendSize;			//	±âÁØ ½Ã°£µ¿¾È º¸³½ »çÀÌÁî
-	DWORD				m_dwTotalSendSizeInPacket;	//	±âÁØ ½Ã°£µ¿¾È º¸³½ »çÀÌÁî(ÆÐÅ¶µ¥ÀÌÅÍ¸¦ ±âÁØ)
-	DWORD				m_dwTotalSendCount;			//	±âÁØ ½Ã°£µ¿¾È º¸³½ È½¼ö
+	DWORD				m_dwTotalSendSize;			//	ê¸°ì¤€ ì‹œê°„ë™ì•ˆ ë³´ë‚¸ ì‚¬ì´ì¦ˆ
+	DWORD				m_dwTotalSendSizeInPacket;	//	ê¸°ì¤€ ì‹œê°„ë™ì•ˆ ë³´ë‚¸ ì‚¬ì´ì¦ˆ(íŒ¨í‚·ë°ì´í„°ë¥¼ ê¸°ì¤€)
+	DWORD				m_dwTotalSendCount;			//	ê¸°ì¤€ ì‹œê°„ë™ì•ˆ ë³´ë‚¸ íšŸìˆ˜
 	
-	DWORD				m_dwTotalRecvSize;			//	±âÁØ ½Ã°£µ¿¾È ¹ÞÀº »çÀÌÁî
-	DWORD				m_dwTotalRecvCount;			//	±âÁØ ½Ã°£µ¿¾È ¹ÞÀº È½¼ö
+	DWORD				m_dwTotalRecvSize;			//	ê¸°ì¤€ ì‹œê°„ë™ì•ˆ ë°›ì€ ì‚¬ì´ì¦ˆ
+	DWORD				m_dwTotalRecvCount;			//	ê¸°ì¤€ ì‹œê°„ë™ì•ˆ ë°›ì€ íšŸìˆ˜
 
-	DWORD				m_dwSendCheckTime;			//	1ºÐ¿¡ ÇÑ¹ø¾¿ ·Î±× ÀúÀåÇÏ°í ¸®¼ÂÇÑ´Ù.
-	DWORD				m_dwRecvCheckTime;			//	1ºÐ¿¡ ÇÑ¹ø¾¿ ·Î±× ÀúÀåÇÏ°í ¸®¼ÂÇÑ´Ù.
+	DWORD				m_dwSendCheckTime;			//	1ë¶„ì— í•œë²ˆì”© ë¡œê·¸ ì €ìž¥í•˜ê³  ë¦¬ì…‹í•œë‹¤.
+	DWORD				m_dwRecvCheckTime;			//	1ë¶„ì— í•œë²ˆì”© ë¡œê·¸ ì €ìž¥í•˜ê³  ë¦¬ì…‹í•œë‹¤.
 #endif
 
 	CPacketBuffer	*	rPacketBuf;

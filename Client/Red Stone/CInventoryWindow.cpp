@@ -1134,6 +1134,9 @@ CGamePlay::OperateInventoryWindow()
 {
 	OperateInventoryWindowPopupMenu();	//	아이템 윈도우 스크롤바 업데이트
 
+	if	(g_gwCarrotShop.m_wWaitOpenResultTime	>	0)
+		g_gwCarrotShop.m_wWaitOpenResultTime--;
+
 	if	(cINPDEV::IsExclusive())
 		return;
 
@@ -1182,9 +1185,13 @@ CGamePlay::OperateInventoryWindow()
 					if	(itemFocus.generatePieceItem(&pieceItem))
 					{
 						cBasicItem	*lpBasicItem	=	pieceItem.getBasicItem();
-						WORD		*lpImage		=	g_smiIconItem.get16Image(lpBasicItem->m_wIconShape);
 
-						s_ttCommon.setImage(lpImage);
+						if	(lpBasicItem	&&	lpBasicItem->m_wIconShape	<	g_smiIconItem.m_iCount)
+						{
+							WORD		*lpImage		=	g_smiIconItem.get16Image(lpBasicItem->m_wIconShape);
+
+							s_ttCommon.setImage(lpImage);
+						}
 					}
 				}
 			}
@@ -1471,7 +1478,17 @@ CGamePlay::UpdateInventoryWindow()
 
 		case	eIWM_OPEN_CARROT_SHOP				:
 		{
-			s_agent.sendOpenCarrotShop(g_carrotShop.getCheckSum());
+			if	(g_gwCarrotShop.isOpened())
+				break;
+
+			if	(g_gwCarrotShop.m_wWaitOpenResultTime)
+			{
+				CGamePlay::AddSystemMessage(LTYELLOW,dMSG_WAIT_FOR_CART_DATA);
+				break;
+			}
+
+			g_gwCarrotShop.m_wWaitOpenResultTime	=	0;
+			g_gwCarrotShop.open();
 			break;
 		}
 #ifdef	_FOR_JAPAN					//JBC 08-08-12
@@ -1979,6 +1996,16 @@ CGamePlay::PutItem(cItem *_lpItem,int _iX,int _iY,BOOL _bIsPutCount,BOOL _bIsSma
 
 	if	(!lpBasicItem)
 		return;
+
+	if	(lpBasicItem->m_wIconShape	>=	g_smiIconItem.m_iCount)
+	{
+		if	(_bIsSmallSize)
+			g_sprInterface.Put(_iX,_iY,eIWI_BROKEN_ITEM,70,70);
+		else
+			g_sprInterface.Put(_iX,_iY,eIWI_BROKEN_ITEM);
+
+		return;
+	}
 
 	if	(_bIsSmallSize)
 	{

@@ -10,7 +10,7 @@
 #define	dSECRET_DUNGEON_NAME_LENGTH				56
 #define	dSECRET_DUNGEON_IDCODE_LENGTH			32
 #define	dMAX_SECRET_DUNGEON_COUNT				256
-#define	dINSTANCE_FIELD_FLAG					0x800	//	ÇÊµå ÀÎµ¦½º°¡ 2048 ÀÌ»óÀÌ¸é ºñ´ø Ãë±Ş ÇÑ´Ù.
+#define	dINSTANCE_FIELD_FLAG					0x800	//	í•„ë“œ ì¸ë±ìŠ¤ê°€ 2048 ì´ìƒì´ë©´ ë¹„ë˜ ì·¨ê¸‰ í•œë‹¤.
 #define	dENTER_SECRET_DUNGEON_LIMIT_PER_ONE_DAY	2
 
 #define	dSERECT_DUNGEON_KEY_REGEN_PERIOD		10
@@ -37,10 +37,10 @@ public:
 	WORD						m_wSerial;
 	WORD						m_wLimitCount;
 	WORD						m_bf8FloorCount		:	8;
-	WORD						m_bf1IsTestDungeon	:	1;	//	Å×¼·¿¡¼­¸¸ ³ª¿Â´Ù.
-	WORD						m_bf1IsTowerOfOrdeal:	1;	//	½Ã·ÃÀÇ Å¾ÀÌ´Ù.
-	WORD						m_bf1IsGuildDungen	:	1;	//	±æµå ´øÁ¯ÀÌ´Ù.
-	WORD						m_bf5GuildDungenSerial	:	5;	//	¸î¹øÂ° ±æµå ´øÁ¯ÀÌ³Ä? 
+	WORD						m_bf1IsTestDungeon	:	1;	//	í…Œì„­ì—ì„œë§Œ ë‚˜ì˜¨ë‹¤.
+	WORD						m_bf1IsTowerOfOrdeal:	1;	//	ì‹œë ¨ì˜ íƒ‘ì´ë‹¤.
+	WORD						m_bf1IsGuildDungen	:	1;	//	ê¸¸ë“œ ë˜ì ¼ì´ë‹¤.
+	WORD						m_bf5GuildDungenSerial	:	5;	//	ëª‡ë²ˆì§¸ ê¸¸ë“œ ë˜ì ¼ì´ëƒ? 
 	char						m_strName[dSECRET_DUNGEON_NAME_LENGTH];
 	WORD						m_wActiveKeyCount;
 	WORD						m_wMinLevel,m_wMaxLevel;

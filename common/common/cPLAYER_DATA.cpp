@@ -15,24 +15,24 @@ DWORD	g_aExpTable[2000]=
 #define dEQUIP_WEAPON			0
 #define dEQUIP_WEAPON_2			17
 #define dEQUIP_SHIELD_BULLET	1
-#define	dEQUIP_ARMOR			2			//	°©¿Ê
+#define	dEQUIP_ARMOR			2			//	ê°‘ì˜·
 
-#define	dJOB_KNIGHT									0		//	°ß½À±â»ç
-#define	dJOB_WARRIOR								1		//	Àü»ç
-#define	dJOB_WIZARD									2		//	¸¶¹ı»ç
-#define	dJOB_WEREWOLF								3		//	´Á´ëÀÎ°£
-#define	dJOB_PRIEST									4		//	»çÁ¦
-#define	dJOB_FALLEN_ANGEL							5		//	Å¸¶ôÃµ»ç
-#define	dJOB_ROGUE									6		//	µµµÏ
-#define	dJOB_FIGHTER								7		//	¹«µµ°¡
-#define	dJOB_MAGIC_LANCER							8		//	¸¶¹ı Ã¢°Ë»ç
-#define	dJOB_MAGIC_ARCHER							9		//	¸¶¹ı ±Ã¼ö
-#define	dJOB_BEAST_TAMER							10		//	Á¶·Ã»ç
-#define	dJOB_SUMMONER								11		//	¼ÒÈ¯»ç
-#define	dJOB_PRINCESS								12		//	°øÁÖ
-#define	dJOB_MAGICAL_GIRL							13		//	¸¶¹ı ¼Ò³à
-#define	dJOB_NECROMANCER							14		//	³×Å©·Î¸Ç¼­
-#define	dJOB_DEVIL									15		//	¾Ç¸¶
+#define	dJOB_KNIGHT									0		//	ê²¬ìŠµê¸°ì‚¬
+#define	dJOB_WARRIOR								1		//	ì „ì‚¬
+#define	dJOB_WIZARD									2		//	ë§ˆë²•ì‚¬
+#define	dJOB_WEREWOLF								3		//	ëŠ‘ëŒ€ì¸ê°„
+#define	dJOB_PRIEST									4		//	ì‚¬ì œ
+#define	dJOB_FALLEN_ANGEL							5		//	íƒ€ë½ì²œì‚¬
+#define	dJOB_ROGUE									6		//	ë„ë‘‘
+#define	dJOB_FIGHTER								7		//	ë¬´ë„ê°€
+#define	dJOB_MAGIC_LANCER							8		//	ë§ˆë²• ì°½ê²€ì‚¬
+#define	dJOB_MAGIC_ARCHER							9		//	ë§ˆë²• ê¶ìˆ˜
+#define	dJOB_BEAST_TAMER							10		//	ì¡°ë ¨ì‚¬
+#define	dJOB_SUMMONER								11		//	ì†Œí™˜ì‚¬
+#define	dJOB_PRINCESS								12		//	ê³µì£¼
+#define	dJOB_MAGICAL_GIRL							13		//	ë§ˆë²• ì†Œë…€
+#define	dJOB_NECROMANCER							14		//	ë„¤í¬ë¡œë§¨ì„œ
+#define	dJOB_DEVIL									15		//	ì•…ë§ˆ
 #define	dOWN_ITEM_COUNT								42
 #define	dEQUIPMENT_PART_COUNT						23
 #define	dDEFAULT_ITEM_SLOT_COUNT					30
@@ -77,7 +77,7 @@ cPLAYER_DATA::initializeJobData(char *_strId,char *_strName,int _iJob,int _iFiel
 	m_wLastVillage	=	0;
 
 	if	(_iField	!=	-1)
-		m_wCurrentField	=	_iField;//ÇöÀç ÇÊµå
+		m_wCurrentField	=	_iField;//í˜„ì¬ í•„ë“œ
 
 	if	(_iServerType	==	eSERVER_TYPE_DUEL)
 	{
@@ -94,7 +94,7 @@ cPLAYER_DATA::initializeJobData(char *_strId,char *_strName,int _iJob,int _iFiel
 }
 
 //
-//	°¢ Á÷¾÷ÀÇ µğÆúÆ® µ¥ÀÌÅÍ¸¦ ÀĞ¾î µéÀÎ´Ù.
+//	ê° ì§ì—…ì˜ ë””í´íŠ¸ ë°ì´í„°ë¥¼ ì½ì–´ ë“¤ì¸ë‹¤.
 BOOL
 LoadDefaultPlayerData(char *fn)
 {
@@ -129,38 +129,38 @@ GetSkillIndex(int _iSkill)
 {
 	int	aSkillIndex[80]	=	
 	{
-	  0,  0 ,// ¼öÁ÷ º£±â
-	  1,  1 ,// ¼öÆò º£±â
-	  2,  2 ,// »ç¼± º£±â
-	  3,  3 ,// Âî¸£±â
-	  4,  4 ,// ¿ÍÀÏµå ´í½º
-	  5, 25 ,// ³»·ÁÄ¡±â
-	  6, 26 ,// ÀÌ´Ü ³»·ÁÄ¡±â
-	  7, 27 ,// ºê·Îµå ºí·¹ÀÌµå
-	  8, 28 ,// ¼Ò´Ğ ºí·¹ÀÌµå
-	  9, 29 ,// µô·¹ÀÌ Å©·¯½Ì
-	 10, 30 ,// ½ºÆ®·¹ÀÌÆ® ½ºÆÄÀÌÅ©
-	 11,100 ,// ÈÄ·ÁÄ¡±â
-	 12,101 ,// ½ğ ½º¸Å½Ì
-	 13,102 ,// ¿¢¼Ò½ÃÁò ÀÎÄ«¿îÅÍ
-	 14,103 ,// °¡Áî ÇÚµå
-	 15,125 ,// ÅÚ·¹Å°³×½Ã½º
-	 16,126 ,// ºí·¹½ºµå ÇØ¸Ó
-	 17,127 ,// Çìºì¸® ÇÁ·¹½Ì
-	 18,128 ,// Æä´õ ´Ïµé
-	 19,129 ,// È¦¸® ¼­Å¬
-	 20,130 ,// ºí·¯µğ À®
-	 21,225 ,// Ã¢ Âî¸£±â
-	 22,226 ,// µ¥ÀúÆ® ºí·¡½ºÆ®
-	 23,227 ,// ·¡ÇÇµå ½ºÆÃ°Å
-	 24,228 ,// ÅõÃ¢
-	 25,229 ,// ÀÏ·çÁ¯ ½ºÇÇ¾î
-	 26,230 ,// ÀÚº§¸° ÅÛÆä½ºÆ®
-	 27,200 ,// È­»ì ½î±â
-	 28,201 ,// ½ºÅ¸Æ²¸µ ¶óÀÌ³Ê
-	 29,202 ,// ÇÇ¾î½Ì ¾Ö·Î¿ì
-	 30,203 ,// ½º³ªÀÌÇÁ
-	 31,204 ,// ½ºÄÃ Æä´ÏÆ®·¹ÀÌÅÍ
+	  0,  0 ,// ìˆ˜ì§ ë² ê¸°
+	  1,  1 ,// ìˆ˜í‰ ë² ê¸°
+	  2,  2 ,// ì‚¬ì„  ë² ê¸°
+	  3,  3 ,// ì°Œë¥´ê¸°
+	  4,  4 ,// ì™€ì¼ë“œ ëŒ„ìŠ¤
+	  5, 25 ,// ë‚´ë ¤ì¹˜ê¸°
+	  6, 26 ,// ì´ë‹¨ ë‚´ë ¤ì¹˜ê¸°
+	  7, 27 ,// ë¸Œë¡œë“œ ë¸”ë ˆì´ë“œ
+	  8, 28 ,// ì†Œë‹‰ ë¸”ë ˆì´ë“œ
+	  9, 29 ,// ë”œë ˆì´ í¬ëŸ¬ì‹±
+	 10, 30 ,// ìŠ¤íŠ¸ë ˆì´íŠ¸ ìŠ¤íŒŒì´í¬
+	 11,100 ,// í›„ë ¤ì¹˜ê¸°
+	 12,101 ,// ìœ ìŠ¤ë§¤ì‹±
+	 13,102 ,// ì—‘ì†Œì‹œì¦˜ ì¸ì¹´ìš´í„°
+	 14,103 ,// ê°€ì¦ˆ í•¸ë“œ
+	 15,125 ,// í…”ë ˆí‚¤ë„¤ì‹œìŠ¤
+	 16,126 ,// ë¸”ë ˆìŠ¤ë“œ í•´ë¨¸
+	 17,127 ,// í—¤ë¸ë¦¬ í”„ë ˆì‹±
+	 18,128 ,// í˜ë” ë‹ˆë“¤
+	 19,129 ,// í™€ë¦¬ ì„œí´
+	 20,130 ,// ë¸”ëŸ¬ë”” ìœ™
+	 21,225 ,// ì°½ ì°Œë¥´ê¸°
+	 22,226 ,// ë°ì €íŠ¸ ë¸”ë˜ìŠ¤íŠ¸
+	 23,227 ,// ë˜í”¼ë“œ ìŠ¤íŒ…ê±°
+	 24,228 ,// íˆ¬ì°½
+	 25,229 ,// ì¼ë£¨ì ¼ ìŠ¤í”¼ì–´
+	 26,230 ,// ìë²¨ë¦° í…œí˜ìŠ¤íŠ¸
+	 27,200 ,// í™”ì‚´ ì˜ê¸°
+	 28,201 ,// ìŠ¤íƒ€í‹€ë§ ë¼ì´ë„ˆ
+	 29,202 ,// í”¼ì–´ì‹± ì• ë¡œìš°
+	 30,203 ,// ìŠ¤ë‚˜ì´í”„
+	 31,204 ,// ìŠ¤ì»¬ í˜ë‹ˆíŠ¸ë ˆì´í„°
 	 0xffff,
 	};
 
@@ -196,7 +196,7 @@ cPLAYER_DATA::rebuildSkillInfo()
 
 		if	(iSkill	==	0xffff)	
 		{
-			printf("¿¡·¯!!\n%d -> %d\n",lpAbility->m_wSkill,iSkill);
+			printf("ì—ëŸ¬!!\n%d -> %d\n",lpAbility->m_wSkill,iSkill);
 			getch();
 		}
 
@@ -208,7 +208,7 @@ cPLAYER_DATA::rebuildSkillInfo()
 
 
 //
-//	½ºÅ³ Æ÷ÀÎÆ®·Î ·¹º§À» ¾ò¾î¿Â´Ù.
+//	ìŠ¤í‚¬ í¬ì¸íŠ¸ë¡œ ë ˆë²¨ì„ ì–»ì–´ì˜¨ë‹¤.
 BOOL
 cPLAYER_DATA::getLevelBySkillPoint(int *_lpiLevel,int *_lpiExp,int *_lpiSkillPoint)
 {
@@ -224,7 +224,7 @@ cPLAYER_DATA::getLevelBySkillPoint(int *_lpiLevel,int *_lpiExp,int *_lpiSkillPoi
 		iSkillPoint	+=	iPoint;
 	}
 
-	if (iSkillPoint	>	0)	iSkillPoint--;	//	°¡Àå ±âº» ½ºÅ³
+	if (iSkillPoint	>	0)	iSkillPoint--;	//	ê°€ì¥ ê¸°ë³¸ ìŠ¤í‚¬
 
 	*_lpiSkillPoint	=	iSkillPoint;
 
@@ -246,7 +246,7 @@ cPLAYER_DATA::getLevelBySkillPoint(int *_lpiLevel,int *_lpiExp,int *_lpiSkillPoi
 }
 
 //
-//	½ºÅ³ µ¥ÀÌÅÍ°¡ Á¤»óÀÎÁö È®ÀÎ
+//	ìŠ¤í‚¬ ë°ì´í„°ê°€ ì •ìƒì¸ì§€ í™•ì¸
 BOOL
 cPLAYER_DATA::isCorrectSkillData()
 {
@@ -267,7 +267,7 @@ cPLAYER_DATA::isCorrectSkillData()
 }
 
 //
-//	ºó ¾ÆÀÌÅÛ ½½·Ô Ã£±â
+//	ë¹ˆ ì•„ì´í…œ ìŠ¬ë¡¯ ì°¾ê¸°
 int
 cPLAYER_DATA::getValidItemSlot()
 {
@@ -279,7 +279,7 @@ cPLAYER_DATA::getValidItemSlot()
 }
 
 //
-//	ÇöÀç ½ºÅ³Æ÷ÀÎÆ®ÀÇ ÇÕ
+//	í˜„ì¬ ìŠ¤í‚¬í¬ì¸íŠ¸ì˜ í•©
 int
 cPLAYER_DATA::getCurrentStatePointSum()
 {
@@ -289,7 +289,7 @@ cPLAYER_DATA::getCurrentStatePointSum()
 }
 
 //
-//	ÇöÀç ½ºÅ³Æ÷ÀÎÆ®ÀÇ ÇÕ
+//	í˜„ì¬ ìŠ¤í‚¬í¬ì¸íŠ¸ì˜ í•©
 int
 cPLAYER_DATA::getCurrentStatePointSumByLevel()
 {
@@ -302,7 +302,7 @@ cPLAYER_DATA::getCurrentStatePointSumByLevel()
 }
 
 //
-//	ÇöÀç ½ºÅ³Æ÷ÀÎÆ®ÀÇ ÇÕ
+//	í˜„ì¬ ìŠ¤í‚¬í¬ì¸íŠ¸ì˜ í•©
 int
 cPLAYER_DATA::getCurrentSkillPointSum()
 {
@@ -320,11 +320,11 @@ cPLAYER_DATA::getCurrentSkillPointSum()
 		iSkillPoint	+=	iPoint;
 	}
 
-	return	iSkillPoint-1;	//	°¡Àå ±âº» ½ºÅ³
+	return	iSkillPoint-1;	//	ê°€ì¥ ê¸°ë³¸ ìŠ¤í‚¬
 }
 
 //
-//	·¹º§À» º¸°í ½ºÅ³Æ÷ÀÎÆ®¸¦ ÆÇ´ÜÇÑ´Ù.
+//	ë ˆë²¨ì„ ë³´ê³  ìŠ¤í‚¬í¬ì¸íŠ¸ë¥¼ íŒë‹¨í•œë‹¤.
 int
 cPLAYER_DATA::getCurrentSkillPointByLevel()
 {
@@ -342,7 +342,7 @@ cPLAYER_DATA::getCurrentSkillPointByLevel()
 		llExp								/=	dwLevelupExperience;
 
 	DWORD	dwCurrentLevelSkillPoint=	(DWORD)llExp;
-	iSkillPoint						+=	dwCurrentLevelSkillPoint;	//	°æÇèÄ¡¿¡ ÀÇÇÑ º¸Á¤
+	iSkillPoint						+=	dwCurrentLevelSkillPoint;	//	ê²½í—˜ì¹˜ì— ì˜í•œ ë³´ì •
 
 	if	(m_wBonusSkillPoint	!=	0xffff)	
 		iSkillPoint					+=	m_wBonusSkillPoint;
@@ -356,7 +356,7 @@ cPLAYER_DATA::getCurrentSkillPointByLevel()
 }
 
 //
-//	½ºÅ³ Æ÷ÀÎÆ® ÃÊ±âÈ­	
+//	ìŠ¤í‚¬ í¬ì¸íŠ¸ ì´ˆê¸°í™”	
 BOOL
 cPLAYER_DATA::resetSkillPoint()
 {
@@ -382,7 +382,7 @@ cPLAYER_DATA::resetSkillPoint()
 
 		DWORD		dwCurrentLevelSkillPoint=	(DWORD)llExp;
 
-		iSkillPoint							+=	dwCurrentLevelSkillPoint;	//	°æÇèÄ¡¿¡ ÀÇÇÑ º¸Á¤
+		iSkillPoint							+=	dwCurrentLevelSkillPoint;	//	ê²½í—˜ì¹˜ì— ì˜í•œ ë³´ì •
 
 		if	(m_wBonusSkillPoint!=	0xffff)	
 			iSkillPoint		+=	m_wBonusSkillPoint;
@@ -401,7 +401,7 @@ cPLAYER_DATA::resetSkillPoint()
 }
 
 //
-//	½ºÅÈ ÃÊ±âÈ­
+//	ìŠ¤íƒ¯ ì´ˆê¸°í™”
 BOOL
 cPLAYER_DATA::resetStatePoint()
 {
@@ -416,49 +416,49 @@ cPLAYER_DATA::resetStatePoint()
 	int	iJob				=	m_wJob/2,i;
 
 	m_wLevelPoint			=	0;
-	m_sStrength				=	lpJob->m_sStrength;		//	Èû			5 1,000
-	m_sAgility				=	lpJob->m_sAgility;		//	¹ÎÃ¸¼º		5 1,000
-	m_sConstitution			=	lpJob->m_sConstitution;	//	°Ç°­		5 1,000
-	m_sWisdom				=	lpJob->m_sWisdom;		//	ÁöÇı		5 1,000
-	m_sIntelligence			=	lpJob->m_sIntelligence;	//	Áö½Ä		5 1,000
-	m_sCharisma				=	lpJob->m_sCharisma;		//	Ä«¸®½º¸¶	5 1,000
-	m_sLuck					=	lpJob->m_sLuck;			//	¿î			5 1,000
+	m_sStrength				=	lpJob->m_sStrength;		//	í˜			5 1,000
+	m_sAgility				=	lpJob->m_sAgility;		//	ë¯¼ì²©ì„±		5 1,000
+	m_sConstitution			=	lpJob->m_sConstitution;	//	ê±´ê°•		5 1,000
+	m_sWisdom				=	lpJob->m_sWisdom;		//	ì§€í˜œ		5 1,000
+	m_sIntelligence			=	lpJob->m_sIntelligence;	//	ì§€ì‹		5 1,000
+	m_sCharisma				=	lpJob->m_sCharisma;		//	ì¹´ë¦¬ìŠ¤ë§ˆ	5 1,000
+	m_sLuck					=	lpJob->m_sLuck;			//	ìš´			5 1,000
 	m_iCP					=	lpJob->m_iCP;
-	m_iHP					=	lpJob->m_iHP	;								//	ÇöÀç Ã¼·Â			10.00	10,000.00  
-	m_iMaxHP				=	lpJob->m_iMaxHP	;							//	ÃÖ´ë Ã¼·Â			10.00	10,000.00  
-	m_iCP					=	lpJob->m_iCP	;								//	ÇöÀç   ÆÄ¿ö °ÔÀÌÁö   1.00	 5,000.00  
-	m_iMaxCP				=	lpJob->m_iMaxCP	;							//	¸Æ½Ã¸Ø ÆÄ¿ö °ÔÀÌÁö	10.00	10,000.00  
-	m_wCorrectMaxHPFactor	=	lpJob->m_wCorrectMaxHPFactor	;				//	ÃÖ´ë HP °è»ê½Ä¿¡ ÇÊ¿äÇÑ HP ÀÎÀÚ
-	m_wCorrectMaxHPConstitutionFactor	=	lpJob->m_wCorrectMaxHPConstitutionFactor	;	//	ÃÖ´ë HP °è»ê½Ä¿¡ ÇÊ¿äÇÑ °Ç°­ ÀÎÀÚ
-	m_sMinDamage			=	lpJob->m_sMinDamage	;						//	ÃÖ¼Ò µ¥¹ÌÁö
-	m_sMaxDamage			=	lpJob->m_sMaxDamage	;						//	ÃÖ´ë µ¥¹ÌÁö
-	m_sDefensivePower		=	lpJob->m_sDefensivePower	;					//	¹æ¾î·Â
+	m_iHP					=	lpJob->m_iHP	;								//	í˜„ì¬ ì²´ë ¥			10.00	10,000.00  
+	m_iMaxHP				=	lpJob->m_iMaxHP	;							//	ìµœëŒ€ ì²´ë ¥			10.00	10,000.00  
+	m_iCP					=	lpJob->m_iCP	;								//	í˜„ì¬   íŒŒì›Œ ê²Œì´ì§€   1.00	 5,000.00  
+	m_iMaxCP				=	lpJob->m_iMaxCP	;							//	ë§¥ì‹œë©ˆ íŒŒì›Œ ê²Œì´ì§€	10.00	10,000.00  
+	m_wCorrectMaxHPFactor	=	lpJob->m_wCorrectMaxHPFactor	;				//	ìµœëŒ€ HP ê³„ì‚°ì‹ì— í•„ìš”í•œ HP ì¸ì
+	m_wCorrectMaxHPConstitutionFactor	=	lpJob->m_wCorrectMaxHPConstitutionFactor	;	//	ìµœëŒ€ HP ê³„ì‚°ì‹ì— í•„ìš”í•œ ê±´ê°• ì¸ì
+	m_sMinDamage			=	lpJob->m_sMinDamage	;						//	ìµœì†Œ ë°ë¯¸ì§€
+	m_sMaxDamage			=	lpJob->m_sMaxDamage	;						//	ìµœëŒ€ ë°ë¯¸ì§€
+	m_sDefensivePower		=	lpJob->m_sDefensivePower	;					//	ë°©ì–´ë ¥
 
-	m_sFireResistance		=	lpJob->m_sFireResistance	;					//	ºÒ ÀúÇ×·Â 0% 100.00%  
-	m_sWaterResistance		=	lpJob->m_sWaterResistance	;					//	¹° ÀúÇ×·Â 0% 100.00%  
-	m_sWindResistance		=	lpJob->m_sWindResistance	;					//	¹Ù¶÷ ÀúÇ×·Â 0% 100.00%  
-	m_sEarthResistance		=	lpJob->m_sEarthResistance	;					//	´ëÁö ÀúÇ×·Â 0% 100.00%  
-	m_sLightResistance		=	lpJob->m_sLightResistance	;					//	ºû ÀúÇ×·Â 0% 100.00%
-	m_sDarkResistance		=	lpJob->m_sDarkResistance	;					//	¾îµÒ ÀúÇ×·Â 0% 100.00%
+	m_sFireResistance		=	lpJob->m_sFireResistance	;					//	ë¶ˆ ì €í•­ë ¥ 0% 100.00%  
+	m_sWaterResistance		=	lpJob->m_sWaterResistance	;					//	ë¬¼ ì €í•­ë ¥ 0% 100.00%  
+	m_sWindResistance		=	lpJob->m_sWindResistance	;					//	ë°”ëŒ ì €í•­ë ¥ 0% 100.00%  
+	m_sEarthResistance		=	lpJob->m_sEarthResistance	;					//	ëŒ€ì§€ ì €í•­ë ¥ 0% 100.00%  
+	m_sLightResistance		=	lpJob->m_sLightResistance	;					//	ë¹› ì €í•­ë ¥ 0% 100.00%
+	m_sDarkResistance		=	lpJob->m_sDarkResistance	;					//	ì–´ë‘  ì €í•­ë ¥ 0% 100.00%
 
-	m_sBlindResistance		=	lpJob->m_sBlindResistance	;					//	Àå´Ô ÀúÇ×
-	m_sPoisonResistance		=	lpJob->m_sPoisonResistance	;				//	Áßµ¶ ÀúÇ×
-	m_sSleepResistance		=	lpJob->m_sSleepResistance	;					//	Àá ÀúÇ×
-	m_sColdResistance		=	lpJob->m_sColdResistance	;					//	Äİµå ÀúÇ×
-	m_sFreezeResistance		=	lpJob->m_sFreezeResistance	;				//	ÇÁ¸®Áî ÀúÇ×
-	m_sStunResistance		=	lpJob->m_sStunResistance	;					//	°æÁ÷ ÀúÇ×
-	m_sStoneResistance		=	lpJob->m_sStoneResistance	;					//	¼®È­ ÀúÇ×
-	m_sConfuseResistance	=	lpJob->m_sConfuseResistance	;				//	È¥¶õ ÀúÇ×
-	m_sCharmingResistance	=	lpJob->m_sCharmingResistance	;				//	Ã­¹Ö ÀúÇ×
+	m_sBlindResistance		=	lpJob->m_sBlindResistance	;					//	ì¥ë‹˜ ì €í•­
+	m_sPoisonResistance		=	lpJob->m_sPoisonResistance	;				//	ì¤‘ë… ì €í•­
+	m_sSleepResistance		=	lpJob->m_sSleepResistance	;					//	ì  ì €í•­
+	m_sColdResistance		=	lpJob->m_sColdResistance	;					//	ì½œë“œ ì €í•­
+	m_sFreezeResistance		=	lpJob->m_sFreezeResistance	;				//	í”„ë¦¬ì¦ˆ ì €í•­
+	m_sStunResistance		=	lpJob->m_sStunResistance	;					//	ê²½ì§ ì €í•­
+	m_sStoneResistance		=	lpJob->m_sStoneResistance	;					//	ì„í™” ì €í•­
+	m_sConfuseResistance	=	lpJob->m_sConfuseResistance	;				//	í˜¼ë€ ì €í•­
+	m_sCharmingResistance	=	lpJob->m_sCharmingResistance	;				//	ì± ë° ì €í•­
 
-	m_sBadStatusResistance	=	lpJob->m_sBadStatusResistance	;				//	»óÅÂ ÀÌ»ó°ø°İ¿¡ ´ëÇÑ ÀúÇ× 0% 100.00%
-	m_sDeclinePowerResistance=	lpJob->m_sDeclinePowerResistance	;			//	´É·ÂÄ¡ ÀúÇÏ°è¿¡ ´ëÇÑ ÀúÇ× 0% 100.00%
-	m_sCurseResistance		=	lpJob->m_sCurseResistance	;					//	ÀúÁÖ¿¡ ´ëÇÑ ÀúÇ× 0% 100.00%
+	m_sBadStatusResistance	=	lpJob->m_sBadStatusResistance	;				//	ìƒíƒœ ì´ìƒê³µê²©ì— ëŒ€í•œ ì €í•­ 0% 100.00%
+	m_sDeclinePowerResistance=	lpJob->m_sDeclinePowerResistance	;			//	ëŠ¥ë ¥ì¹˜ ì €í•˜ê³„ì— ëŒ€í•œ ì €í•­ 0% 100.00%
+	m_sCurseResistance		=	lpJob->m_sCurseResistance	;					//	ì €ì£¼ì— ëŒ€í•œ ì €í•­ 0% 100.00%
 
 
 	for (i=2;i<=m_iLevel;i++)
 	{
-//		Èû	¹ÎÃ¸¼º	°Ç°­	Áö½Ä	ÁöÇı	Ä«¸®½º¸¶	¿î	»ç¿ëÀÚ
+//		í˜	ë¯¼ì²©ì„±	ê±´ê°•	ì§€ì‹	ì§€í˜œ	ì¹´ë¦¬ìŠ¤ë§ˆ	ìš´	ì‚¬ìš©ì
 		m_sStrength		+=	g_aiLevelUpValue[iJob][0];
 		m_sAgility		+=	g_aiLevelUpValue[iJob][1];
 		m_sConstitution	+=	g_aiLevelUpValue[iJob][2];
@@ -477,23 +477,23 @@ cPLAYER_DATA::resetStatePoint()
 }
 
 //
-//	µ¥ÀÌÅÍ ÀüÈ¯
+//	ë°ì´í„° ì „í™˜
 BOOL
 cPLAYER_DATA::convertData(cP_PLAYER_SAVE_DATA *_lpData)
 {
-	memcpy(this,_lpData,sizeof(CJobBasicDataDefine));	//¾îºô·¯Æ¼
+	memcpy(this,_lpData,sizeof(CJobBasicDataDefine));	//ì–´ë¹ŒëŸ¬í‹°
 
 	strcpy(m_strId,_lpData->m_strId);
 	strcpy(m_strName,_lpData->m_strName);
 
-	m_wJob				=	_lpData->m_wJob;			//	ÇöÀç Á÷¾÷
-	m_iGold				=	_lpData->m_iGold;			//	µ·
-	m_wLevelPoint		=	_lpData->m_wLevelPoint;		//	·¹º§¾÷ Æ÷ÀÎÆ®
+	m_wJob				=	_lpData->m_wJob;			//	í˜„ì¬ ì§ì—…
+	m_iGold				=	_lpData->m_iGold;			//	ëˆ
+	m_wLevelPoint		=	_lpData->m_wLevelPoint;		//	ë ˆë²¨ì—… í¬ì¸íŠ¸
 
-	m_wCurrentField		=	_lpData->m_wCurrentField;	//ÇöÀç ÇÊµå
+	m_wCurrentField		=	_lpData->m_wCurrentField;	//í˜„ì¬ í•„ë“œ
 	m_iXPos				=	_lpData->m_pos.x;
 	m_iYPos				=	_lpData->m_pos.y;
-	m_wLastVillage		=	_lpData->m_wLastVillage;	//¸¶Áö¸·À¸·Î ¶°³ª¿Â ¸¶À»
+	m_wLastVillage		=	_lpData->m_wLastVillage;	//ë§ˆì§€ë§‰ìœ¼ë¡œ ë– ë‚˜ì˜¨ ë§ˆì„
 
 	m_wGuildSerial		=	0xffff;
 	m_wGuildRank		=	0;
@@ -521,19 +521,19 @@ cPLAYER_DATA::convertData(cP_PLAYER_SAVE_DATA *_lpData)
 		m_aEquip[i].m_isBroken	=	FALSE;
 	}
 
-	memcpy(m_aAbility,_lpData->m_aAbility,sizeof(m_aAbility));	//¾îºô·¯Æ¼
+	memcpy(m_aAbility,_lpData->m_aAbility,sizeof(m_aAbility));	//ì–´ë¹ŒëŸ¬í‹°
 	memcpy(m_aTitle,_lpData->m_aTitle,sizeof(m_aTitle));
 	memcpy(m_aProcessQuest,_lpData->m_aProcessQuest,sizeof(m_aProcessQuest));
 
-	m_dwPlayTime			=	_lpData->m_dwPlayTime;		//	ÇÃ·¹ÀÌ Å¸ÀÓ ºĞ ´ÜÀ§
+	m_dwPlayTime			=	_lpData->m_dwPlayTime;		//	í”Œë ˆì´ íƒ€ì„ ë¶„ ë‹¨ìœ„
 	m_dwSaveCount			=	_lpData->m_dwSaveCount;
-	m_wAvatarIndex			=	_lpData->m_wAvatarIndex;	//	¾Æ¹ÙÅ¸ ÀÎµ¦½º
+	m_wAvatarIndex			=	_lpData->m_wAvatarIndex;	//	ì•„ë°”íƒ€ ì¸ë±ìŠ¤
 	memcpy(m_aCompleteQuest,_lpData->m_aCompleteQuest,sizeof(m_aCompleteQuest));
 
 	memset(m_aWayPoint,0xff,sizeof(m_aWayPoint));
 	m_dwPeneltyTime			=	0;
 
-	m_wRequitalCounter		=	0;	//	ÇöÀç ·¹º§¿¡¼­ Á×Àº È½¼ö
+	m_wRequitalCounter		=	0;	//	í˜„ì¬ ë ˆë²¨ì—ì„œ ì£½ì€ íšŸìˆ˜
 	m_itemFailedPremiumItem.reset();
 
 	return	TRUE;
@@ -555,21 +555,21 @@ cPLAYER_DATA::increaseExp(int _iExperience)
 	if	(llAddExp	<	0	||	llExp	<	0)
 		return	FALSE;
 
-	if	(llExp	<	iLevelupExperience		)	//	·¹º§¾÷À» ¸øÇßÀ»¶§
+	if	(llExp	<	iLevelupExperience		)	//	ë ˆë²¨ì—…ì„ ëª»í–ˆì„ë•Œ
 	{
 		m_iExperience	=	(int)llExp;
 
 		int	iCurrentSkillPointByLevel	=	getCurrentSkillPointByLevel();
 		int	iCurrentSkillPoint			=	getCurrentSkillPointSum();
 
-		//·¾¾÷À» ¸øÇÏ°í ½ºÅ³¾÷À» ÇŞ´Ù.
+		//ë ™ì—…ì„ ëª»í•˜ê³  ìŠ¤í‚¬ì—…ì„ í–‡ë‹¤.
 		if	(iCurrentSkillPointByLevel	>	iCurrentSkillPoint)
 			m_dwSkillExperience	+=	(iCurrentSkillPointByLevel-iCurrentSkillPoint);
 
 		return	TRUE;
 	}
 
-	int	iLevelUpCount	=	0,i;	//	·¹º§¾÷ È½¼ö
+	int	iLevelUpCount	=	0,i;	//	ë ˆë²¨ì—… íšŸìˆ˜
 	int	iJob			=	m_wJob/2;
 	// rekunn
 	for (i=m_iLevel;i<2000;i++)
@@ -589,7 +589,7 @@ cPLAYER_DATA::increaseExp(int _iExperience)
 	{
 		if	(getCurrentStatePointSum()+5	>	getCurrentStatePointSumByLevel())
 			break;
-//		Èû	¹ÎÃ¸¼º	°Ç°­	Áö½Ä	ÁöÇı	Ä«¸®½º¸¶	¿î	»ç¿ëÀÚ
+//		í˜	ë¯¼ì²©ì„±	ê±´ê°•	ì§€ì‹	ì§€í˜œ	ì¹´ë¦¬ìŠ¤ë§ˆ	ìš´	ì‚¬ìš©ì
 		m_sStrength				+=	g_aiLevelUpValue[iJob][0];
 		m_sAgility				+=	g_aiLevelUpValue[iJob][1];
 		m_sConstitution			+=	g_aiLevelUpValue[iJob][2];
@@ -607,7 +607,7 @@ cPLAYER_DATA::increaseExp(int _iExperience)
 		int	iCurrentSkillPointByLevel	=	getCurrentSkillPointByLevel();
 		int	iCurrentSkillPoint			=	getCurrentSkillPointSum();
 
-		//½ºÅ³¾÷µµ ÇÏ°í ·¦¾÷µµ ÇŞ´Ù.
+		//ìŠ¤í‚¬ì—…ë„ í•˜ê³  ë©ì—…ë„ í–‡ë‹¤.
 		if	(iCurrentSkillPointByLevel	>	iCurrentSkillPoint)
 			m_dwSkillExperience			+=	(iCurrentSkillPointByLevel-iCurrentSkillPoint);
 	}

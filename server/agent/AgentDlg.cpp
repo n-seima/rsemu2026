@@ -109,7 +109,7 @@ CAgentDlg::loadConfig()
 
 	m_iServerType	=	0;
 
-	m_strLogInServerIP	=	"196.0.0.1";
+	m_strLogInServerIP	=	"127.0.0.1";
 
 	if	(!file.Open(_ms("%s/config.dat",g_strLogFolder),"rb"))
 		return;

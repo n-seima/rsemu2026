@@ -104,7 +104,7 @@ cGuild::resetGuildExp20040602()
 	WORD	wOldLevel	=	m_wLevel;
 	DWORD	dwExpSum	=	getExpSum20040602();
 
-	//	ÃÊ±âÈ­
+	//	ì´ˆê¸°í™”
 	{
 //		m_dwExp		=	0;
 //		m_wLevel	=	1;
@@ -136,7 +136,7 @@ cGuild::close()
 //	Sleep(1000);
 	dwUpdateTime = timeGetTime();
 
-	wPre = 0xffff;		//	0xffff - ÃÊ±â»óÅÂ , 1 - ÀÓ½Ã µî·ÏµÈ »óÅÂ. 0 - Á¤½Äµî·ÏµÈ »óÅÂ
+	wPre = 0xffff;		//	0xffff - ì´ˆê¸°ìƒíƒœ , 1 - ì„ì‹œ ë“±ë¡ëœ ìƒíƒœ. 0 - ì •ì‹ë“±ë¡ëœ ìƒíƒœ
 	dwHashValue = 0;
 
 	for(int i = 0;i < dGUILD_MAX_PLAYER;i++)
@@ -186,7 +186,7 @@ cGuild::updateGuildInfo()
 }
 
 //
-//	±æµå °æÇèÄ¡ Áõ°¡. Áõ°¡ °¡´ÉÇÑ °æÇèÄ¡¸¦ Áõ°¡ ½ÃÅ°°í ±æµå ·¹º§°ú ±æµå ½ºÅ³ Æ÷ÀÎÆ®¸¦ °»½ÅÇÑ´Ù.
+//	ê¸¸ë“œ ê²½í—˜ì¹˜ ì¦ê°€. ì¦ê°€ ê°€ëŠ¥í•œ ê²½í—˜ì¹˜ë¥¼ ì¦ê°€ ì‹œí‚¤ê³  ê¸¸ë“œ ë ˆë²¨ê³¼ ê¸¸ë“œ ìŠ¤í‚¬ í¬ì¸íŠ¸ë¥¼ ê°±ì‹ í•œë‹¤.
 int
 cGuild::increaseGuildExp(DWORD _dwIncreaseExp)
 {
@@ -200,9 +200,9 @@ cGuild::increaseGuildExp(DWORD _dwIncreaseExp)
 
 		m_wGuildPoint			=	getFullSkillPoint();
 
-		_log("%s ±æµå °æÇèÄ¡ Ã³¸® µµÁß ±æµå Æ÷ÀÎÆ®°¡ ÀÌ»óÇØ¼­ ÃÊ±âÈ­ ½ÃÅ´",m_strName);
+		_log("%s ê¸¸ë“œ ê²½í—˜ì¹˜ ì²˜ë¦¬ ë„ì¤‘ ê¸¸ë“œ í¬ì¸íŠ¸ê°€ ì´ìƒí•´ì„œ ì´ˆê¸°í™” ì‹œí‚´",m_strName);
 
-//	·Î±×ÇÊ¿ä
+//	ë¡œê·¸í•„ìš”
 	}
 
 	if	(m_wLevel	>=	dMAX_GUILD_LEVEL)
@@ -212,17 +212,17 @@ cGuild::increaseGuildExp(DWORD _dwIncreaseExp)
 
 	while(_dwIncreaseExp)
 	{
-		DWORD	dwAddExp=	0xffffffff-m_dwExp;	//	Áõ°¡ °¡´ÉÇÑ °æÇèÄ¡(½ÇÁ¦·Î ´õÇØÁÙ °æÇèÄ¡ÀÌ´Ù.)
+		DWORD	dwAddExp=	0xffffffff-m_dwExp;	//	ì¦ê°€ ê°€ëŠ¥í•œ ê²½í—˜ì¹˜(ì‹¤ì œë¡œ ë”í•´ì¤„ ê²½í—˜ì¹˜ì´ë‹¤.)
 
-		if (_dwIncreaseExp	<=	dwAddExp)	//	Áõ°¡ °¡´ÉÇÑ ¹üÀ§ ¾È¿¡ ÀÖ´Ù.
+		if (_dwIncreaseExp	<=	dwAddExp)	//	ì¦ê°€ ê°€ëŠ¥í•œ ë²”ìœ„ ì•ˆì— ìˆë‹¤.
 		{
 			dwAddExp		=	_dwIncreaseExp;
-			_dwIncreaseExp	-=	dwAddExp;	//	´õÇÏ±â·Î Çß´ø °æÇèÄ¡¿¡¼­ Áõ°¡ °¡´ÉÇÑ ¼öÄ¡ ¸¸Å­ »©ÁØ´Ù.
-			m_dwExp			+=	dwAddExp;	//	Áõ°¡ °¡´ÉÇÑ ¼öÄ¡ ¸¸Å­ ´õÇØÁØ´Ù.
+			_dwIncreaseExp	-=	dwAddExp;	//	ë”í•˜ê¸°ë¡œ í–ˆë˜ ê²½í—˜ì¹˜ì—ì„œ ì¦ê°€ ê°€ëŠ¥í•œ ìˆ˜ì¹˜ ë§Œí¼ ë¹¼ì¤€ë‹¤.
+			m_dwExp			+=	dwAddExp;	//	ì¦ê°€ ê°€ëŠ¥í•œ ìˆ˜ì¹˜ ë§Œí¼ ë”í•´ì¤€ë‹¤.
 		}
-		else	//	ÃÊ°ú Çß´Ù. °æÇèÄ¡¸¦ ÇÑ°è ¼öÄ¡·Î ¼³Á¤ÇÑ´Ù.
+		else	//	ì´ˆê³¼ í–ˆë‹¤. ê²½í—˜ì¹˜ë¥¼ í•œê³„ ìˆ˜ì¹˜ë¡œ ì„¤ì •í•œë‹¤.
 		{
-			_dwIncreaseExp	-=	dwAddExp;	//	´õÇÏ±â·Î Çß´ø °æÇèÄ¡¿¡¼­ Áõ°¡ °¡´ÉÇÑ ¼öÄ¡ ¸¸Å­ »©ÁØ´Ù.
+			_dwIncreaseExp	-=	dwAddExp;	//	ë”í•˜ê¸°ë¡œ í–ˆë˜ ê²½í—˜ì¹˜ì—ì„œ ì¦ê°€ ê°€ëŠ¥í•œ ìˆ˜ì¹˜ ë§Œí¼ ë¹¼ì¤€ë‹¤.
 			m_dwExp			=	0xffffffff;
 		}
 
@@ -249,13 +249,13 @@ cGuild::increaseGuildExp(DWORD _dwIncreaseExp)
 
 	m_wLevel			=	min(m_wLevel,dMAX_GUILD_LEVEL);
 	m_wExpTaxRate		=	min(getMaximumExpTax(),m_wExpTaxRate);
-//	±æµå °æÇèÄ¡ Àû»ê ¼öÄ¡´Â ÇÃ·¹ÀÌ¾î °æÇèÄ¡ÀÇ 0.05%~(10/±æµå·¹º§)%ÀÓ (Àû»ê ½Ã ¹ö¸² Ã³¸®)
+//	ê¸¸ë“œ ê²½í—˜ì¹˜ ì ì‚° ìˆ˜ì¹˜ëŠ” í”Œë ˆì´ì–´ ê²½í—˜ì¹˜ì˜ 0.05%~(10/ê¸¸ë“œë ˆë²¨)%ì„ (ì ì‚° ì‹œ ë²„ë¦¼ ì²˜ë¦¬)
 
 	return	iIncreaseLevel;
 }
 
 //
-//	·¹º§ º¯°æ
+//	ë ˆë²¨ ë³€ê²½
 BOOL
 cGuild::makeLevel(int _iLevel)
 {
@@ -270,13 +270,13 @@ cGuild::makeLevel(int _iLevel)
 	m_wGuildPoint		+=	iIncreaseLevel;
 	m_wLevel			=	min(m_wLevel,dMAX_GUILD_LEVEL);
 	m_wExpTaxRate		=	min(getMaximumExpTax(),m_wExpTaxRate);
-//	±æµå °æÇèÄ¡ Àû»ê ¼öÄ¡´Â ÇÃ·¹ÀÌ¾î °æÇèÄ¡ÀÇ 0.05%~(10/±æµå·¹º§)%ÀÓ (Àû»ê ½Ã ¹ö¸² Ã³¸®)
+//	ê¸¸ë“œ ê²½í—˜ì¹˜ ì ì‚° ìˆ˜ì¹˜ëŠ” í”Œë ˆì´ì–´ ê²½í—˜ì¹˜ì˜ 0.05%~(10/ê¸¸ë“œë ˆë²¨)%ì„ (ì ì‚° ì‹œ ë²„ë¦¼ ì²˜ë¦¬)
 
 	return	TRUE;
 }
 
 //
-//	ÇöÀç ±æµå Æ÷ÀÎÆ®ÀÇ ÇÕ
+//	í˜„ì¬ ê¸¸ë“œ í¬ì¸íŠ¸ì˜ í•©
 int
 cGuild::getCurrentGuildPointSum()
 {
@@ -290,14 +290,14 @@ cGuild::getCurrentGuildPointSum()
 	return	iSum;
 }
 //
-//	±æµå °æÇèÄ¡ Áõ°¡. Áõ°¡ °¡´ÉÇÑ °æÇèÄ¡¸¦ Áõ°¡ ½ÃÅ°°í ±æµå ·¹º§°ú ±æµå ½ºÅ³ Æ÷ÀÎÆ®¸¦ °»½ÅÇÑ´Ù.
-//	±×¸®°í °á°ú ¸®ÅÏ
+//	ê¸¸ë“œ ê²½í—˜ì¹˜ ì¦ê°€. ì¦ê°€ ê°€ëŠ¥í•œ ê²½í—˜ì¹˜ë¥¼ ì¦ê°€ ì‹œí‚¤ê³  ê¸¸ë“œ ë ˆë²¨ê³¼ ê¸¸ë“œ ìŠ¤í‚¬ í¬ì¸íŠ¸ë¥¼ ê°±ì‹ í•œë‹¤.
+//	ê·¸ë¦¬ê³  ê²°ê³¼ ë¦¬í„´
 int
 cGuild::increaseGuildSkillLevel(int _iSkill,CGuildSkillInfo *_lpSkillInfo)
 {
 	CCritical	CS(&csGuild);
 
-	if	(_iSkill	==	0xffff)	//	¿ÏÀü ÃÊ±âÈ­(±æµå ¼®»ó Á¦¿Ü)
+	if	(_iSkill	==	0xffff)	//	ì™„ì „ ì´ˆê¸°í™”(ê¸¸ë“œ ì„ìƒ ì œì™¸)
 	{
 		memset(m_abGuildSkill,0,sizeof(m_abGuildSkill));
 		m_wGuildPoint			=	getFullSkillPoint();
@@ -307,7 +307,7 @@ cGuild::increaseGuildSkillLevel(int _iSkill,CGuildSkillInfo *_lpSkillInfo)
 		return	eRIGSL_OK;
 	}
 
-	if	(_iSkill	==	0xfffe)	//	±æµå ½ºÅ³¸¸ ÃÊ±âÈ­
+	if	(_iSkill	==	0xfffe)	//	ê¸¸ë“œ ìŠ¤í‚¬ë§Œ ì´ˆê¸°í™”
 	{
 		memset(m_abGuildSkill,0,c_iNormalGuildSkillCount);
 
@@ -326,7 +326,7 @@ cGuild::increaseGuildSkillLevel(int _iSkill,CGuildSkillInfo *_lpSkillInfo)
 		return	eRIGSL_OK;
 	}
 
-	if	(_iSkill	==	0xfffd)	//	CH5¿ë ÃÊ±âÈ­
+	if	(_iSkill	==	0xfffd)	//	CH5ìš© ì´ˆê¸°í™”
 	{
 		memset(m_abGuildSkill,0,c_iNormalGuildSkillCount);
 
@@ -564,10 +564,10 @@ WORD	cGuild::CheckJoinMember(char * _strMaster, char * _strMember)
 
 	CGuildMan * man = GetGuilderPnt(_strMaster);
 	CGuildMan * man2 = GetGuilderPnt(_strMember);
-	//	_strMaster°¡ ±æ¸¶ È¤Àº ºÎ±æ¸¶ÀÎ°¡.
+	//	_strMasterê°€ ê¸¸ë§ˆ í˜¹ì€ ë¶€ê¸¸ë§ˆì¸ê°€.
 	if(!man || man->wSerial==0xffff || (man->m_wRank!=dGUILD_CLASS_MASTER && man->m_wRank!=dGUILD_CLASS_SUBMASTER))
 		return dJOINGUILD_RESULT_NEEDRANK;
-	//	ÃÖ´ë ÀÎ¿øÀ» ÃÊ°ú Çß´Â°¡.. _strMember°¡ ÀÌ¹Ì ÀÖ´Â°¡...
+	//	ìµœëŒ€ ì¸ì›ì„ ì´ˆê³¼ í–ˆëŠ”ê°€.. _strMemberê°€ ì´ë¯¸ ìˆëŠ”ê°€...
 	if(man2 && man2->wSerial!=0xffff)
 		return dJOINGUILD_RESULT_JOINED;
 	
@@ -587,7 +587,7 @@ WORD	cGuild::CheckExitMember(char * _strMaster, char * _strMember)
 	if	(!targetMember	|| targetMember->wSerial	==	0xffff)
 		return dEXITGUILD_RESULT_FAIL;
 
-	if	(STRICMP(_strMaster,_strMember)	!=	0)	//	Å¸ÀÎÀ» ¦iÀ¸·Á¸é ºÎ±æ¸¶³ª ±æ¸¶¿©¾ß ÇÑ´Ù.
+	if	(STRICMP(_strMaster,_strMember)	!=	0)	//	íƒ€ì¸ì„ ï¿½iìœ¼ë ¤ë©´ ë¶€ê¸¸ë§ˆë‚˜ ê¸¸ë§ˆì—¬ì•¼ í•œë‹¤.
 	{
 		if	(member->m_wRank	!=	dGUILD_CLASS_MASTER &&	member->m_wRank	!=	dGUILD_CLASS_SUBMASTER)
 			return dEXITGUILD_RESULT_NEEDRANK;
@@ -714,7 +714,7 @@ cGuildManager::GetGuildPnt(char *_strName)
 	return NULL;
 }
 
-//	Serial°ú °íÀ¯ index¸¦ µ¿ÀÏ½Ã Ã³¸® ÇØ¹ö·È´Ù. ¹®Á¦ ¾ø°ÚÁö??
+//	Serialê³¼ ê³ ìœ  indexë¥¼ ë™ì¼ì‹œ ì²˜ë¦¬ í•´ë²„ë ¸ë‹¤. ë¬¸ì œ ì—†ê² ì§€??
 cGuild	*	
 cGuildManager::GetGuildPnt(WORD	_wIndex)
 {
@@ -775,7 +775,7 @@ cGuildManager::GetGuildManPnt(char * _strName)
 {
 	CCritical	CS(&csDeque);
 //	DWORD	dwHashValue = cSRVUTIL::GetHashCode((BYTE *)_strName);
-//	CGuildAdvanceInfoÁ¤º¸°¡ º¯°æµÇ´Â ÀÌÀ¯ ¶§¹®¿¡ _strName¿¡ ´ëÇÑ hashcode°Ë»öÀÌ ºÒ°¡´ÉÇÑ »óÅÂ.
+//	CGuildAdvanceInfoì •ë³´ê°€ ë³€ê²½ë˜ëŠ” ì´ìœ  ë•Œë¬¸ì— _strNameì— ëŒ€í•œ hashcodeê²€ìƒ‰ì´ ë¶ˆê°€ëŠ¥í•œ ìƒíƒœ.
 
 	CGuildMan * _man = NULL;
 
@@ -814,7 +814,7 @@ cGuildManager::resetGuildHallInfo()
 	}
 }
 
-//	ÀüÅõ ÇÊµå ½Ã¸®¾ó ¸®ÅÏ
+//	ì „íˆ¬ í•„ë“œ ì‹œë¦¬ì–¼ ë¦¬í„´
 int
 cGuildManager::getBattleFieldByHall(int _iHallLevel,int _iHallSlot)
 {
@@ -825,7 +825,7 @@ cGuildManager::getBattleFieldByHall(int _iHallLevel,int _iHallSlot)
 }
 
 //
-//	±æµå Á¤º¸¿¡ µû¶ó ±æµå È¦ Á¤º¸¸¦ ºôµå ÇÑ´Ù.
+//	ê¸¸ë“œ ì •ë³´ì— ë”°ë¼ ê¸¸ë“œ í™€ ì •ë³´ë¥¼ ë¹Œë“œ í•œë‹¤.
 void
 cGuildManager::buildHallInfoByGuild()
 {
@@ -887,7 +887,7 @@ cGuildManager::buildHallInfoByGuild()
 }
 
 //
-//	±æµåÀÇ ±æµåÈ¦ Á¤º¸¸¦ ±æµåÈ¦ Á¤º¸¿¡ µû¶ó ¼³Á¤ÇÑ´Ù.
+//	ê¸¸ë“œì˜ ê¸¸ë“œí™€ ì •ë³´ë¥¼ ê¸¸ë“œí™€ ì •ë³´ì— ë”°ë¼ ì„¤ì •í•œë‹¤.
 void
 cGuildManager::buildGuildHallInfoByHall()
 {
@@ -948,14 +948,14 @@ cGuildManager::resetInvadeGuildInfo()
 			m_aHallList[i][j].m_wInvadeGuild	=	0xffff;
 }
 
-//	°ø¼ºÀü ÇÒ ±æµå ¼³Á¤
+//	ê³µì„±ì „ í•  ê¸¸ë“œ ì„¤ì •
 void
 cGuildManager::setInvadeGuild(int _iHallLevel,int _iOrder,int _iGuild)
 {
 	m_aHallList[_iHallLevel][_iOrder].m_wInvadeGuild	=	_iGuild;
 }
 
-//	_iGuild°¡ Á¦°Å µÇ¾î _iHallLevel·¹º§ È¦ÀÇ ¼ø¼­¸¦ Á¤¸® ÇÏ°í °ø¼ºÀü Á¤º¸¸¦ Á¤¸®ÇÑ´Ù.
+//	_iGuildê°€ ì œê±° ë˜ì–´ _iHallLevelë ˆë²¨ í™€ì˜ ìˆœì„œë¥¼ ì •ë¦¬ í•˜ê³  ê³µì„±ì „ ì •ë³´ë¥¼ ì •ë¦¬í•œë‹¤.
 void
 cGuildManager::rebuildHallInfoByRemoveGuild(int _iGuild)
 {
@@ -972,7 +972,7 @@ cGuildManager::rebuildHallInfoByRemoveGuild(int _iGuild)
 		{
 			if	(m_aHallList[iHallLevel][iHall].m_wOwnGuild	==	_iGuild)
 			{
-				for	(int i=iHall;i<iHallCount-1;i++)	//	±æµåÁ¤º¸¸¦ ¾ÕÀ¸·Î ´ó±ä´Ù
+				for	(int i=iHall;i<iHallCount-1;i++)	//	ê¸¸ë“œì •ë³´ë¥¼ ì•ìœ¼ë¡œ ëŒ•ê¸´ë‹¤
 				{
 					int	iFieldSerial	=	m_aHallList[iHallLevel][i].m_wHallSerial;
 					int	iBattleField	=	m_aHallList[iHallLevel][i].m_bf12BattleField;
@@ -984,7 +984,7 @@ cGuildManager::rebuildHallInfoByRemoveGuild(int _iGuild)
 					m_aHallList[iHallLevel][i].m_wHallSerial		=	iFieldSerial;
 				}
 
-				m_aHallList[iHallLevel][iHallCount-1].reset();	//	¸¶Áö¸·°Ç ¸®¼Â
+				m_aHallList[iHallLevel][iHallCount-1].reset();	//	ë§ˆì§€ë§‰ê±´ ë¦¬ì…‹
 				iCheckHallLevel	=	iHallLevel;
 				break;
 			}

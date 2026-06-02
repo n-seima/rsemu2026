@@ -33,10 +33,10 @@ public:
 	~cMessSign();
 
 	static	void	SetDataEncodeTable(int _iTableIndex);
-	static	void	EncodeDataBuffer2(void *_lpBuffer,int _iBufferSize);	//	¹öÆÛ
-	static	void	DecodeDataBuffer2(void *_lpBuffer,int _iBufferSize);	//	¹öÆÛ
+	static	void	EncodeDataBuffer2(void *_lpBuffer,int _iBufferSize);	//	ë²„í¼
+	static	void	DecodeDataBuffer2(void *_lpBuffer,int _iBufferSize);	//	ë²„í¼
 
-	static	void	EncodeBuffer(void *_lpBuffer,int _iBufferSize);	//	¹öÆÛ
+	static	void	EncodeBuffer(void *_lpBuffer,int _iBufferSize);	//	ë²„í¼
 	static	void	DecodeBuffer(void *_lpBuffer,void *_lpReturnBuffer,int _iReturnBufferSize);
 	static	void	DecodeBuffer(void *_lpBuffer,int _iBufferSize);
 	static	int		DecodeBufferToInt(void *_lpBuffer,int _iBufferSize);
@@ -77,7 +77,7 @@ public:
 };
 
 
-extern	cEncryptGameServerPacketTable	g_gsEncTable;	//	Å¬¶E>°ÔÀÓ¼­¹ö¿EÆĞÅ¶ ÀÎÄÚµEÅ×ÀÌºE
+extern	cEncryptGameServerPacketTable	g_gsEncTable;	//	í´ï¿½ÂE>ê²Œì„ì„œë²„ï¿½ÂEíŒ¨í‚· ì¸ì½”ï¿½ÂEí…Œì´ï¿½ÂE
 extern	void		BuildMessSign();
 extern	int			_IsTestID(char *_lpstId);
 extern	void		GetMessSignEncodeSign(unsigned int *_uiValue);

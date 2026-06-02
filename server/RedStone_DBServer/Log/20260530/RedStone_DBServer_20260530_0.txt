@@ -1,0 +1,140 @@
+[212818] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[212947] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[213523] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[213523] Start    Make DB Index.....
+
+[213523] End  Make DB Index.  ListCount 4, 0.035 Sec
+
+[213523] Start    Get Event Infomation .....
+
+[213527] End    Get Event Infomation 4.046 Sec
+
+[213527] Log Server [127.0.0.1] [59641]
+
+[213529] ERROR : connect [59641,127.0.0.1] Error 10061
+
+
+[213529] Failed connecting Log Server !!
+
+[213529] Error InitSocket 
+
+
+[213730] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[213730] Start    Make DB Index.....
+
+[213730] End  Make DB Index.  ListCount 4, 0.003 Sec
+
+[213730] Start    Get Event Infomation .....
+
+[213735] End    Get Event Infomation 4.035 Sec
+
+[213735] Log Server [127.0.0.1] [59641]
+
+[213735] START AdditionThread ...
+
+[213735] START WorkerThread[1] ...
+
+[213735] START WorkerThread[0] ...
+
+[213735] START WorkerThread[6] ...
+
+[213735] START WorkerThread[2] ...
+
+[213735] START Event Manager Thread ...
+
+[213735] START WorkerThread[4] ...
+
+[213735] START WorkerThread[5] ...
+
+[213735] START WorkerThread[7] ...
+
+[213735] START WorkerThread[3] ...
+
+[213736] Wait for begin all worker thread
+
+[213736] Start Avatar DB Cache Server ... day : 20260530 - time : 213736 
+
+
+[214828] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[214828] Start    Make DB Index.....
+
+[214828] End  Make DB Index.  ListCount 4, 0.002 Sec
+
+[214828] Start    Get Event Infomation .....
+
+[214832] End    Get Event Infomation 3.957 Sec
+
+[214832] Log Server [127.0.0.1] [59641]
+
+[214832] Fail bind !!
+
+
+[214832] Error InitSocket 
+
+
+[214927] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[214927] Start    Make DB Index.....
+
+[214927] End  Make DB Index.  ListCount 4, 0.003 Sec
+
+[214927] Start    Get Event Infomation .....
+
+[214931] End    Get Event Infomation 4.032 Sec
+
+[214931] Log Server [127.0.0.1] [59641]
+
+[214931] START WorkerThread[0] ...
+
+[214931] START WorkerThread[1] ...
+
+[214931] START WorkerThread[2] ...
+
+[214931] START WorkerThread[3] ...
+
+[214931] START WorkerThread[6] ...
+
+[214931] START WorkerThread[5] ...
+
+[214931] START WorkerThread[7] ...
+
+[214931] START AdditionThread ...
+
+[214931] START WorkerThread[4] ...
+
+[214931] START Event Manager Thread ...
+
+[214932] Wait for begin all worker thread
+
+[214932] Start Avatar DB Cache Server ... day : 20260530 - time : 214932 
+
+
+[223937] ()0 is exit!!
+
+
+[231611] ()0 is exit!!
+
+
+[005048]  Provision Rank = 0
+
+[005227] ()1 is exit!!
+
+
+[005438]  Provision Rank = 0
+
+[005632] ()1 is exit!!
+
+
+[005637]  Provision Rank = 0
+
+[005718] ()1 is exit!!
+
+
+[005719] ()0 is exit!!
+
+

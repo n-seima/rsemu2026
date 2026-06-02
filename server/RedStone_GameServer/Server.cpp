@@ -299,7 +299,10 @@ void	SendLoginInfoToWorldServer(BOOL _isReconnect)
 			}
 		}
 		_log("Send Ip = %s",strIp[nic]);
-		strcpy(cwlogin.strIp[cwlogin.wNICount],cConfigData::Inst().m_strToWorldIP.c_str());
+		const char *lpstrConnectIP = cConfigData::Inst().m_strToWorldIP.c_str();
+		if	(lpstrConnectIP[0] == 0)
+			lpstrConnectIP = strIp[nic];
+		strcpy(cwlogin.strIp[cwlogin.wNICount],lpstrConnectIP);
 		cwlogin.wNICount++;
 	}
 
@@ -409,6 +412,157 @@ SetCurrentFolderProc	FPSetCurrentFolder;
 GetCurrentFolderProc	FPGetCurrentFolder;
 InitCSProc				FPInitCS;
 RemoveASProc			FPRemoveAS;
+
+static int
+LocalSetCurrentFolder(char *_lpstrDestFolder)
+{
+	return	SetCurrentDirectory(_lpstrDestFolder);
+}
+
+static int
+LocalGetCurrentFolder(int _iSize,char *_lpstrResult)
+{
+	return	GetCurrentDirectory(_iSize,_lpstrResult);
+}
+
+static char*
+LocalGetHeroFileName(int _iIndex)
+{
+	static char	s_strEnd[]	=	"end";
+	static char	s_astrHeroFileName[][64]	=
+	{
+		"Knight01.sad",			"Knight02.sad",			"Knight03.sad",
+		"Warrior01.sad",		"Warrior02.sad",		"Warrior03.sad",
+		"Wizard01.sad",			"Wizard02.sad",			"Wizard03.sad",
+		"Werewolf01.sad",		"Werewolf02.sad",		"Werewolf03.sad",
+		"Priest01.sad",			"Priest02.sad",			"Priest03.sad",
+		"FallenAngel01.sad",	"FallenAngel02.sad",	"FallenAngel03.sad",
+		"Rogue01.sad",			"Rogue02.sad",			"Rogue03.sad",
+		"Champion01.sad",		"Champion02.sad",		"Champion03.sad",
+		"Lancer01.sad",			"Lancer02.sad",			"Lancer03.sad",
+		"Archer01.sad",			"Archer02.sad",			"Archer03.sad",
+		"BeastTamer01.sad",		"BeastTamer01.sad",		"BeastTamer03.sad",
+		"BeastTamer01.sad",		"BeastTamer01.sad",		"BeastTamer03.sad",
+		"Princess01.sad",		"Princess02.sad",		"Princess03.sad",
+		"MagicalGirl01.sad",	"MagicalGirl02.sad",	"MagicalGirl03.sad",
+		"NecroMancer01.sad",	"NecroMancer02.sad",	"NecroMancer03.sad",
+		"Devil01.sad",			"Devil02.sad",			"Devil03.sad",
+		"SoulBringer01.sad",	"SoulBringer02.sad",	"SoulBringer03.sad",
+		"Champion01.sad",		"Champion02.sad",		"Champion03.sad",
+		"Opticalist01.sad",		"Opticalist02.sad",		"Opticalist03.sad",
+		"BeastMan01.sad",		"BeastMan02.sad",		"BeastMan03.sad",
+	};
+
+	if	(_iIndex	<	0)
+		return	s_strEnd;
+
+	if	(_iIndex	>=	sizeof(s_astrHeroFileName)/sizeof(s_astrHeroFileName[0]))
+		return	s_strEnd;
+
+	return	s_astrHeroFileName[_iIndex];
+}
+
+static char*
+LocalGetIndexedSadFileName(int _iIndex,int _iMaxCount)
+{
+	static char	s_strEnd[]		=	"end";
+	static char	s_strResult[MAX_PATH];
+	char		astrFileName[128][MAX_PATH];
+	int			iCount			=	0;
+
+	if	(_iIndex	<	0	||	_iIndex	>=	_iMaxCount)
+		return	s_strEnd;
+
+	WIN32_FIND_DATA	findData;
+	HANDLE	hFind	=	FindFirstFile("*.sad",&findData);
+
+	if	(hFind	==	INVALID_HANDLE_VALUE)
+		return	s_strEnd;
+
+	do
+	{
+		if	(findData.dwFileAttributes	&	FILE_ATTRIBUTE_DIRECTORY)
+			continue;
+
+		if	(iCount	>=	_iMaxCount)
+			break;
+
+		strncpy(astrFileName[iCount],findData.cFileName,MAX_PATH-1);
+		astrFileName[iCount][MAX_PATH-1]	=	0;
+		iCount++;
+	}
+	while	(FindNextFile(hFind,&findData));
+
+	FindClose(hFind);
+
+	for	(int i=0;i<iCount-1;i++)
+	{
+		for	(int j=i+1;j<iCount;j++)
+		{
+			if	(_stricmp(astrFileName[i],astrFileName[j])	>	0)
+			{
+				char	strTemp[MAX_PATH];
+				strcpy(strTemp,astrFileName[i]);
+				strcpy(astrFileName[i],astrFileName[j]);
+				strcpy(astrFileName[j],strTemp);
+			}
+		}
+	}
+
+	if	(_iIndex	>=	iCount)
+		return	s_strEnd;
+
+	strcpy(s_strResult,astrFileName[_iIndex]);
+
+	return	s_strResult;
+}
+
+static char*
+LocalGetMonsterFileName(int _iIndex)
+{
+	return	LocalGetIndexedSadFileName(_iIndex,99);
+}
+
+static char*
+LocalGetNpcFileName(int _iIndex)
+{
+	return	LocalGetIndexedSadFileName(_iIndex,99);
+}
+
+static int
+LocalIsActionTime(unsigned int _dwBookedTime,unsigned int _dwCurrentTime)
+{
+	if	(_dwBookedTime	==	0xffffffff)
+		return	FALSE;
+
+	return	((int)(_dwCurrentTime-_dwBookedTime)	>=	0);
+}
+
+static void
+LocalInitCS(void *_lpData)
+{
+	if	(_lpData)
+		InitializeCriticalSection((LPCRITICAL_SECTION)_lpData);
+}
+
+static int
+LocalRemoveAS(int _iSerial,int *_lpiRookie,unsigned short *_lpwSerial,int *_lpiASCount)
+{
+	return	FALSE;
+}
+
+static void
+InitLocalGameDLLProc()
+{
+	FPGetHeroFileName	=	LocalGetHeroFileName;
+	FPGetMonsterFileName=	LocalGetMonsterFileName;
+	FPGetNpcFileName	=	LocalGetNpcFileName;
+	FPIsActionTime		=	LocalIsActionTime;
+	FPSetCurrentFolder	=	LocalSetCurrentFolder;
+	FPGetCurrentFolder	=	LocalGetCurrentFolder;
+	FPInitCS			=	LocalInitCS;
+	FPRemoveAS			=	LocalRemoveAS;
+}
 
 class	cSmartMemory
 {
@@ -809,31 +963,51 @@ int main()
 	}
 
 	cSmartMemory	dllBuffer;
-	HMEMORYMODULE	hGameDLL;
+	HMEMORYMODULE	hGameDLL	=	NULL;
 
 	CSharedMemory	shareMemory;
 
-	if	(!shareMemory.open("rsgsdllmemory"))
-		return	-1;
+	if	(shareMemory.open("rsgsdllmemory"))
+	{
+		int	iSize	=	*(int*)shareMemory.getBuffer();
 
-	int	iSize	=	*(int*)shareMemory.getBuffer();
+		if	(iSize	>	0	&&	iSize	<	64*1024*1024)
+		{
+			dllBuffer.alloc(iSize);
 
-	dllBuffer.alloc(iSize);
+			memcpy(dllBuffer.getBuffer(),shareMemory.getBuffer()+4,iSize);
 
-	memcpy(dllBuffer.getBuffer(),shareMemory.getBuffer()+4,iSize);
+			hGameDLL	=  MemoryLoadLibrary(dllBuffer.getBuffer());
+		}
+	}
 
-	hGameDLL	=  MemoryLoadLibrary(dllBuffer.getBuffer());
+	if	(hGameDLL)
+	{
+		FPGetHeroFileName	=	(GetHeroFileNameProc)MemoryGetProcAddress(hGameDLL, "GetHeroFileName");
+		FPGetMonsterFileName=	(GetMonsterFileNameProc)MemoryGetProcAddress(hGameDLL, "GetMonsterFileName");
+		FPGetNpcFileName	=	(GetNpcFileNameProc)MemoryGetProcAddress(hGameDLL, "GetNpcFileName");
+		FPIsActionTime		=	(IsActionTimeProc)MemoryGetProcAddress(hGameDLL, "IsActionTime");
+		FPSetCurrentFolder	=	(SetCurrentFolderProc)MemoryGetProcAddress(hGameDLL, "SetCurrentFolder");
+		FPGetCurrentFolder	=	(GetCurrentFolderProc)MemoryGetProcAddress(hGameDLL, "GetCurrentFolder");
+		FPInitCS			=	(InitCSProc)MemoryGetProcAddress(hGameDLL, "InitCS");
+		FPRemoveAS			=	(RemoveASProc)MemoryGetProcAddress(hGameDLL, "RemoveAS");
 
-	if	(hGameDLL == NULL)
-		return	-1;
+		FPSetCurrentFolder	=	LocalSetCurrentFolder;
+		FPGetCurrentFolder	=	LocalGetCurrentFolder;
+	}
 
- 	FPGetHeroFileName	=	(GetHeroFileNameProc)MemoryGetProcAddress(hGameDLL, "GetHeroFileName");
- 	FPGetMonsterFileName=	(GetMonsterFileNameProc)MemoryGetProcAddress(hGameDLL, "GetMonsterFileName");
- 	FPGetNpcFileName	=	(GetNpcFileNameProc)MemoryGetProcAddress(hGameDLL, "GetNpcFileName");
- 	FPIsActionTime		=	(IsActionTimeProc)MemoryGetProcAddress(hGameDLL, "IsActionTime");
- 	FPSetCurrentFolder	=	(SetCurrentFolderProc)MemoryGetProcAddress(hGameDLL, "SetCurrentFolder");
- 	FPGetCurrentFolder	=	(GetCurrentFolderProc)MemoryGetProcAddress(hGameDLL, "GetCurrentFolder");
- 	FPInitCS			=	(InitCSProc)MemoryGetProcAddress(hGameDLL, "InitCS");
+	if	(!FPGetHeroFileName		||	!FPGetMonsterFileName	||	!FPGetNpcFileName	||
+		 !FPIsActionTime		||	!FPSetCurrentFolder		||	!FPGetCurrentFolder	||
+		 !FPInitCS				||	!FPRemoveAS)
+	{
+		if	(hGameDLL)
+		{
+			MemoryFreeLibrary(hGameDLL);
+			hGameDLL	=	NULL;
+		}
+
+		InitLocalGameDLLProc();
+	}
 
 	g_pJoinPlayerManager	=	new cJoinPlayerManager();
 	g_pMoveFieldUserManager	=	new cMoveFieldUserManager();
@@ -859,7 +1033,8 @@ int main()
 	KILL(g_pDsManager);
 	KILL(cLOG);
 
-	MemoryFreeLibrary(hGameDLL);
+	if	(hGameDLL)
+		MemoryFreeLibrary(hGameDLL);
 
 	return	0;
 }
@@ -929,6 +1104,7 @@ InitSocket()
 	struct hostent* he = gethostbyname(name);
 	struct in_addr iaddr;
 	memset(&iaddr,0,sizeof(iaddr));
+	BOOL bForceLocalListen = (strcmp(cConfigData::Inst().m_strWorldIp.c_str(),"127.0.0.1") == 0);
 
 	for(i =0; he->h_addr_list[i] !=0 && i<dMAX_ACCEPT_COUNT; i++)
 	{
@@ -937,8 +1113,10 @@ InitSocket()
 
 		memcpy(&iaddr,he->h_addr_list[i],sizeof(iaddr));
 		strcpy(l_serverAddr,inet_ntoa(iaddr));
+		if (bForceLocalListen)
+			strcpy(l_serverAddr,"127.0.0.1");
 
-		if(g_bIsOperatorServer == FALSE)		// 개발자 서버가 아니면.. 아이피 검사를 한다.
+		if(!bForceLocalListen && g_bIsOperatorServer == FALSE)		// 개발자 서버가 아니면.. 아이피 검사를 한다.
 		{
 			if	(isLocalOpen)
 			{
@@ -987,6 +1165,9 @@ InitSocket()
 		}
 
 		++acceptCount;
+
+		if (bForceLocalListen)
+			break;
 	}
 	
 	for(int a = 0; a<acceptCount;a++)
@@ -2038,7 +2219,7 @@ void AdditionThread(LPVOID lpParameter)
 
 		if	(!g_socketDBC.sock)
 		{
-			if	(!g_socketDBC.init(dwDBCPort,strDBCIp,"DBC SERVER",sizeof(cMSG_BASE_TYPE_FORWORLD)))
+			if	(!g_socketDBC.init(dwDBCPort,strDBCIp,"DBC SERVER",sizeof(cMSG_BASE_TYPE_FORDB)))
 			{
 				g_socketDBC.isLoopRecv = FALSE;
 				g_socketDBC.kill();
@@ -2333,16 +2514,28 @@ WorldCtlThread(LPVOID lpParameter)
 					}
 
 					SG_RESULT_CONNECT		sConnect;
+					memset(&sConnect,0,sizeof(sConnect));
 
 					sConnect.base.set(sizeof(SG_RESULT_CONNECT),dSG_RESULT_CONNECT);
 					sConnect.base.wSize			=	sizeof(sConnect)-sizeof(sConnect.strGuildName);
 					sConnect.wFieldSerial		=	cuLogin->wFieldidx;
-					sConnect.serverTime.year	=	g_currentTime.m_wYear-2000;
-					sConnect.serverTime.month	=	g_currentTime.m_wMonth;
-					sConnect.serverTime.day		=	g_currentTime.m_wDay;
-					sConnect.serverTime.hour	=	g_currentTime.m_wHour;
-					sConnect.serverTime.minute	=	g_currentTime.m_wMinute;
-					sConnect.serverTime.second	=	g_currentTime.m_wSecond;
+					{
+						CTimeInfo	connectTime;
+						connectTime.update();
+
+						int	iServerYear	=	connectTime.m_wYear-2000;
+						if	(iServerYear	<	0)
+							iServerYear	=	0;
+						if	(iServerYear	>	63)
+							iServerYear	=	63;
+
+						sConnect.serverTime.year	=	iServerYear;
+						sConnect.serverTime.month	=	connectTime.m_wMonth;
+						sConnect.serverTime.day		=	connectTime.m_wDay;
+						sConnect.serverTime.hour	=	connectTime.m_wHour;
+						sConnect.serverTime.minute	=	connectTime.m_wMinute;
+						sConnect.serverTime.second	=	connectTime.m_wSecond;
+					}
 					sConnect.dwSeasonVariable	=	g_iSeasonVariable;
 
 					{

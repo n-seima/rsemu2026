@@ -1,0 +1,87 @@
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  7779A1C6 01:000691C6 C:\WINDOWS\SYSTEM32\ntdll.dll
+
+Registers:
+EAX:00000000
+EBX:FFFFFFFA
+ECX:FFFFFFFF
+EDX:FFFFFFFA
+ESI:0051EB58
+EDI:0051EB48
+CS:EIP:0023:7779A1C6
+SS:ESP:002B:008FF550  EBP:008FF5DC
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010213
+
+Call stack:
+Address   Frame
+7779A1C6  008FF5DC  RtlQueryPerformanceFrequency+126
+777BF57C  008FF60C  RtlMapGenericMask+93C
+77784263  008FF620  RtlEnterCriticalSection+63
+00068706  008FF704  0001:00017706 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000781BF  008FF7F4  0001:000271BF C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+00077644  008FF900  0001:00026644 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000BB3C1  008FF940  0001:0006A3C1 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000776E9  008FFA40  0001:000266E9 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+00158C41  008FFB14  0001:00107C41 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011ABFA  008FFB5C  0001:000C9BFA C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011A5D3  008FFB94  0001:000C95D3 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011A67E  008FFBB4  0001:000C967E C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011ADAE  008FFBC8  0001:000C9DAE C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+001185D0  008FFC0C  0001:000C75D0 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011833C  008FFC40  0001:000C733C C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011839E  008FFC60  0001:000C739E C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011876A  008FFC80  0001:000C776A C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+00118A92  008FFC94  0001:000C7A92 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000BC8BF  008FFCF4  0001:0006B8BF C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000BC74D  008FFCFC  0001:0006B74D C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000BCA08  008FFD04  0001:0006BA08 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+76425D49  008FFD14  BaseThreadInitThunk+19
+7779D83B  008FFD6C  RtlInitializeExceptionChain+6B
+7779D7C1  008FFD7C  RtlGetAppContainerNamedObjectPath+231
+
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  7779A1C6 01:000691C6 C:\WINDOWS\SYSTEM32\ntdll.dll
+
+Registers:
+EAX:00000000
+EBX:FFFFFFFA
+ECX:FFFFFFFF
+EDX:FFFFFFFA
+ESI:00518AB0
+EDI:00518AA0
+CS:EIP:0023:7779A1C6
+SS:ESP:002B:008FE060  EBP:008FE0E8
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010213
+
+Call stack:
+Address   Frame
+7779A1C6  008FE0E8  RtlQueryPerformanceFrequency+126
+777BF57C  008FE118  RtlMapGenericMask+93C
+77784263  008FE12C  RtlEnterCriticalSection+63
+00068706  008FE210  0001:00017706 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000781BF  008FE300  0001:000271BF C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+00077644  008FE40C  0001:00026644 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000BB4D8  008FE448  0001:0006A4D8 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000BB3F2  008FF940  0001:0006A3F2 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000776E9  008FFA40  0001:000266E9 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+00158C41  008FFB14  0001:00107C41 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011ABFA  008FFB5C  0001:000C9BFA C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011A5D3  008FFB94  0001:000C95D3 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011A67E  008FFBB4  0001:000C967E C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011ADAE  008FFBC8  0001:000C9DAE C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+001185D0  008FFC0C  0001:000C75D0 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011833C  008FFC40  0001:000C733C C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011839E  008FFC60  0001:000C739E C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+0011876A  008FFC80  0001:000C776A C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+00118A92  008FFC94  0001:000C7A92 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000BC8BF  008FFCF4  0001:0006B8BF C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000BC74D  008FFCFC  0001:0006B74D C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+000BCA08  008FFD04  0001:0006BA08 C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\Tool_LogServer\Tool_LogServer(Japan).exe
+76425D49  008FFD14  BaseThreadInitThunk+19
+7779D83B  008FFD6C  RtlInitializeExceptionChain+6B
+7779D7C1  008FFD7C  RtlGetAppContainerNamedObjectPath+231
+

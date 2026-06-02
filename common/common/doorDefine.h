@@ -8,7 +8,7 @@
 #define	dLINK_WITH_AREA_DOOR_COUNT	4
 
 //
-//	╧╝ ╩Себ
+//	К╛╦ Л┐│М┐°
 enum
 {
 	eDS_CLOSE,

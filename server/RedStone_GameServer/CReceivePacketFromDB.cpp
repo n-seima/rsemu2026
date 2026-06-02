@@ -161,13 +161,24 @@ cGAME::operateUseCarrotResult(DGMSG_USE_CARROT_RESULT *_lpPacket)
 	cACTOR *lpActor	=	getActor(_lpPacket->dwSerialInServer);
 
 	if	(!lpActor)
+	{
+		_log("[CARROT] use result actor not found id[%s] zoneSerial[%d] result[%d] remain[%d]",
+			_lpPacket->strId,_lpPacket->dwSerialInServer,_lpPacket->wResult,_lpPacket->crcnt);
 		return;
+	}
 
 	if	(STRICMP(lpActor->m_strId,_lpPacket->strId) != 0)
+	{
+		_log("[CARROT] use result id mismatch packetId[%s] actorId[%s] zoneSerial[%d] result[%d] remain[%d]",
+			_lpPacket->strId,lpActor->m_strId,_lpPacket->dwSerialInServer,_lpPacket->wResult,_lpPacket->crcnt);
 		return;
+	}
 
 	lpActor->m_wIsWaitCartMessage				=	FALSE;
 	lpActor->m_wWaitBuyCarrotShopItemResultTime	=	0;
+
+	_log("[CARROT] use result id[%s] name[%s] item[%d] count[%d] price[%d] result[%d] remain[%d]",
+		_lpPacket->strId,_lpPacket->strName,_lpPacket->itemno,_lpPacket->itcnt,_lpPacket->wPrice,_lpPacket->wResult,_lpPacket->crcnt);
 
 	switch(_lpPacket->wResult)
 	{
@@ -175,6 +186,7 @@ cGAME::operateUseCarrotResult(DGMSG_USE_CARROT_RESULT *_lpPacket)
 			lpActor->buyCarrotShopItem(_lpPacket->itemno,_lpPacket->itcnt,_lpPacket->crcnt,_lpPacket->wPrice);
 			break;
 		case	eUCR_NOTFOUNDUSER		:	//	해당 유저를 찾을수 없다.
+			lpActor->sendBuyCarrotShopItemResult(eBCIR_FAILED,lpActor->m_iCarrotCount);
 			break;
 		case	eUCR_LOW_COUNT			:	//	당근 갯수가 모잘라
 			lpActor->m_iCarrotCount	=	_lpPacket->crcnt;
@@ -184,6 +196,8 @@ cGAME::operateUseCarrotResult(DGMSG_USE_CARROT_RESULT *_lpPacket)
 			lpActor->sendEtcWork(eEW_WITHDRAW_CARROT_AGREEMENT_FAILED);
 			break;
 		case	eUCR_FAILED				:	//	여튼 실패	
+		default:
+			lpActor->sendBuyCarrotShopItemResult(eBCIR_FAILED,lpActor->m_iCarrotCount);
 			break;
 	}
 }
@@ -199,7 +213,11 @@ cGAME::operateGetCarrotCount(DGMSG_GET_CARROT_COUNT_RESULT	*_lpPacket)
 	if	(STRICMP(lpActor->m_strId,_lpPacket->strId) != 0)
 		return;
 
-	lpActor->m_wIsWaitCartMessage	=	FALSE;
+	lpActor->m_wIsWaitCartMessage		=	FALSE;
+	lpActor->m_wWaitDBMessageSecond	=	0;
+
+	_log("[CARROT] get count result id[%s] name[%s] result[%d] count[%d]",
+		lpActor->m_strId,lpActor->m_strName,_lpPacket->wResult,_lpPacket->iRemainCarrotCount);
 
 	switch(_lpPacket->wResult)
 	{

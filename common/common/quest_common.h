@@ -68,7 +68,7 @@ public:
 	char	m_strName[dQUEST_NAME_SIZE];
 	char	m_astrExplain[dQUEST_STATUS_COUNT][dQUEST_EXPLAIN_SIZE];
 
-	WORD	m_wQuestType;	//	ÀÌº¥Æ® Äù½ºÆ®¿©?
+	WORD	m_wQuestType;	//	ì´ë²¤íŠ¸ í€˜ìŠ¤íŠ¸ì—¬?
 	WORD	m_wBeginYear,m_wBeginMonth,m_wBeginDay;
 	WORD	m_wExpireYear,m_wExpireMonth,m_wExpireDay;
 
@@ -83,16 +83,16 @@ public:
 
 	UINT	m_uiEnableJobMask;
 
-	WORD	m_bf1IsMaleJobEquipAble				:	1;	//	³²¼º Á÷¾÷ °¡´É
-	WORD	m_bf1IsFemaleJobEquipAble			:	1;	//	¿©¼º Á÷¾÷ °¡´É
+	WORD	m_bf1IsMaleJobEquipAble				:	1;	//	ë‚¨ì„± ì§ì—… ê°€ëŠ¥
+	WORD	m_bf1IsFemaleJobEquipAble			:	1;	//	ì—¬ì„± ì§ì—… ê°€ëŠ¥
 	WORD	m_isEnableCancel					:	1;
 	WORD	m_isRemoveQuestItemByCancelQuest	:	1;
 	WORD	m_isTestQuestInTestServer			:	1;
-	WORD	m_bf1IsDisableQuest					:	1;	//6 ÀüÃ¼¸ñ·Ï¿¡¼­ Ç¥½Ã¾ÈÇÔ
-	WORD	m_bf6ChapterNumber					:   6;	//12  Ã©ÅÍ¹øÈ£ // c_iMaxChapterCount
+	WORD	m_bf1IsDisableQuest					:	1;	//6 ì „ì²´ëª©ë¡ì—ì„œ í‘œì‹œì•ˆí•¨
+	WORD	m_bf6ChapterNumber					:   6;	//12  ì±•í„°ë²ˆí˜¸ // c_iMaxChapterCount
 	WORD	: 0;
-	WORD	m_bf6PartNumber						:   6; //6  ÆÄÆ®¹øÈ£ // c_iMaxHighQuestCount
-	WORD	m_bf3Quarter						:	3; //9 ºĞ±âÄù½ºÆ®
+	WORD	m_bf6PartNumber						:   6; //6  íŒŒíŠ¸ë²ˆí˜¸ // c_iMaxHighQuestCount
+	WORD	m_bf3Quarter						:	3; //9 ë¶„ê¸°í€˜ìŠ¤íŠ¸
 	WORD	: 0;
 	char	m_aSpareBuffer[30];
 };

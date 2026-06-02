@@ -5,7 +5,7 @@
 
 #define		dMAX_EVENT_TIME_COUNT	128
 #define		dEVENT_TIME_BUFFER_BIT	32
-#define		dEVENT_TIME_BUFFER_SIZE	dMAX_EVENT_TIME_COUNT/dEVENT_TIME_BUFFER_BIT // 32ºñÆ®¸¦ ³ª´«´Ù..
+#define		dEVENT_TIME_BUFFER_SIZE	dMAX_EVENT_TIME_COUNT/dEVENT_TIME_BUFFER_BIT // 32ë¹„íŠ¸ë¥¼ ë‚˜ëˆˆë‹¤..
 //
 //	Event Type
 enum
@@ -25,34 +25,34 @@ enum
 
 enum
 {
-	eEVENT_TIME_CHRISTMAS,	//	Å©¸®½º¸¶½º
-	eEVENT_TIME_VAL,	//	¹ß·»Å¸ÀÎµ¥ÀÌ
-	eEVENT_TIME_WHITE_DAY,	//	È­ÀÌÆ® µ¥ÀÌ
-	eEVENT_TIME_THE_FIRST_OF_THE_YEAR_LUNAR,	//	¼³³¯
-	eEVENT_TIME_THE_FIRST_OF_THE_YEAR,	//	½Å³â
+	eEVENT_TIME_CHRISTMAS,	//	í¬ë¦¬ìŠ¤ë§ˆìŠ¤
+	eEVENT_TIME_VAL,	//	ë°œë Œíƒ€ì¸ë°ì´
+	eEVENT_TIME_WHITE_DAY,	//	í™”ì´íŠ¸ ë°ì´
+	eEVENT_TIME_THE_FIRST_OF_THE_YEAR_LUNAR,	//	ì„¤ë‚ 
+	eEVENT_TIME_THE_FIRST_OF_THE_YEAR,	//	ì‹ ë…„
 
-	eEVENT_TIME_JANUARY_FULL_MOON,	//	Á¤¿ù´ëº¸¸§
-	eEVENT_TIME_DAY_OF_CHILDREN,	//	¾î¸°ÀÌ³¯
-	eEVENT_TIME_RESTORATION_OF_NATURE,	//	ÀÚ¿¬ÀÇ º¹¿ø(½Ä¸ñÀÏ)
-	eEVENT_TIME_KOREAN_THANKSGIVING_DAY,	//	Ãß¼®
-	eEVENT_TIME_CHILDRENS_DAY,					//	 ¾î¸°ÀÌ³¯
+	eEVENT_TIME_JANUARY_FULL_MOON,	//	ì •ì›”ëŒ€ë³´ë¦„
+	eEVENT_TIME_DAY_OF_CHILDREN,	//	ì–´ë¦°ì´ë‚ 
+	eEVENT_TIME_RESTORATION_OF_NATURE,	//	ìžì—°ì˜ ë³µì›(ì‹ëª©ì¼)
+	eEVENT_TIME_KOREAN_THANKSGIVING_DAY,	//	ì¶”ì„
+	eEVENT_TIME_CHILDRENS_DAY,					//	 ì–´ë¦°ì´ë‚ 
 
-	eEVENT_TIME_PARENTS_DAY,					// ¾î¹öÀÌ³¯
-	eEVENT_TIME_TEACHERS_DAY,					// ½º½ÂÀÇ³¯
-	eEVENT_TIME_A_RAINY_DAY,					// ºñ¿À´Â ³¯
-	eEVENT_TIME_DAY_OF_SEA,						// ¹Ù´ÙÀÇ³¯
-	eEVENT_TIME_INDEPENDENCE_OF_NACRIEMA,		// ³ªÅ©¸®¿¡¸¶ÀÇ µ¶¸³
+	eEVENT_TIME_PARENTS_DAY,					// ì–´ë²„ì´ë‚ 
+	eEVENT_TIME_TEACHERS_DAY,					// ìŠ¤ìŠ¹ì˜ë‚ 
+	eEVENT_TIME_A_RAINY_DAY,					// ë¹„ì˜¤ëŠ” ë‚ 
+	eEVENT_TIME_DAY_OF_SEA,						// ë°”ë‹¤ì˜ë‚ 
+	eEVENT_TIME_INDEPENDENCE_OF_NACRIEMA,		// ë‚˜í¬ë¦¬ì—ë§ˆì˜ ë…ë¦½
 
-	eEVENT_TIME_KOREAN_THANKSGIVING_DAY2,	//	Ãß¼®2
-	eEVENT_TIME_HALLOWEEN,					//	ÇÒ·ÎÀ©
-	eEVENT_TIME_DAY_OF_FIREWORKS,			//	ºÒ²É³îÀÌÀÇ ³¯
-	eEVENT_TIME_CHRISTMAS2,					//	Å©¸®½º¸¶½º2
-	eEVENT_TIME_NEW_YEAR_EVENT_OF_DECEMBER,	//	12¿ù»õÇØÀÌº¥Æ®
+	eEVENT_TIME_KOREAN_THANKSGIVING_DAY2,	//	ì¶”ì„2
+	eEVENT_TIME_HALLOWEEN,					//	í• ë¡œìœˆ
+	eEVENT_TIME_DAY_OF_FIREWORKS,			//	ë¶ˆê½ƒë†€ì´ì˜ ë‚ 
+	eEVENT_TIME_CHRISTMAS2,					//	í¬ë¦¬ìŠ¤ë§ˆìŠ¤2
+	eEVENT_TIME_NEW_YEAR_EVENT_OF_DECEMBER,	//	12ì›”ìƒˆí•´ì´ë²¤íŠ¸
 		
-	eEVENT_TIME_DELEATION_OF_NATURE,//	ÀÚ¿¬ÀÇ »çÀý´Ü ÀÌº¥Æ®
-	eEVENT_TIME_DELEATION_OF_NATURE_EXP_BONUS,//	ÀÚ¿¬ÀÇ »çÀý´Ü ÀÌº¥Æ®(°æÇèÄ¡ º¸³Ê½º)
-	eEVENT_TIME_7TH_ANNIVERSARY_EVENT,					//	 7ÁÖ³â ÀÌº¥Æ®
-	eEVENT_TIME_REDISTRIBUTION_EVENT_OF_FIGHTER_AND_SOULBRINGER,	// Åõ»ç ¿µ¼ú»ç ÀçºÐ¹è ÀÌº¥Æ®
+	eEVENT_TIME_DELEATION_OF_NATURE,//	ìžì—°ì˜ ì‚¬ì ˆë‹¨ ì´ë²¤íŠ¸
+	eEVENT_TIME_DELEATION_OF_NATURE_EXP_BONUS,//	ìžì—°ì˜ ì‚¬ì ˆë‹¨ ì´ë²¤íŠ¸(ê²½í—˜ì¹˜ ë³´ë„ˆìŠ¤)
+	eEVENT_TIME_7TH_ANNIVERSARY_EVENT,					//	 7ì£¼ë…„ ì´ë²¤íŠ¸
+	eEVENT_TIME_REDISTRIBUTION_EVENT_OF_FIGHTER_AND_SOULBRINGER,	// íˆ¬ì‚¬ ì˜ìˆ ì‚¬ ìž¬ë¶„ë°° ì´ë²¤íŠ¸
 	eEVENT_END,
 };
 
@@ -69,19 +69,19 @@ public:
 extern	char	*g_strEventTimeName[];
 
 class	cEventWordDefine
-{		// ¸¶Áö¸· ¼öÁ¤ÀÏ : 09.10.09
+{		// ë§ˆì§€ë§‰ ìˆ˜ì •ì¼ : 09.10.09
 public:
 	BOOL			m_bIsActiveWordCompareEvent;
 	char			m_strEventWord[256];
-	DWORD			m_bf16EventKind		: 16;		// ÀÌº¥Æ® Á¾·ù
-	DWORD			m_bf16BuffSerial	: 16;		// ÀÌº¥Æ® ¹öÇÁ !
-	DWORD			m_dwTimeMinite;					//ºÐ´ÜÀ§ ½Ã°£...
-	WORD			m_wBeginTimeYear;				//½ÃÀÛ ½Ã°£...
+	DWORD			m_bf16EventKind		: 16;		// ì´ë²¤íŠ¸ ì¢…ë¥˜
+	DWORD			m_bf16BuffSerial	: 16;		// ì´ë²¤íŠ¸ ë²„í”„ !
+	DWORD			m_dwTimeMinite;					//ë¶„ë‹¨ìœ„ ì‹œê°„...
+	WORD			m_wBeginTimeYear;				//ì‹œìž‘ ì‹œê°„...
 	WORD			m_wBeginTimeMonth;
 	WORD			m_wBeginTimeDay;
 	WORD			m_wBeginTimeHour;
 	WORD			m_wBeginTimeMinite;
-	WORD			m_wEndTimeYear;				//Á¾·á ½Ã°£...
+	WORD			m_wEndTimeYear;				//ì¢…ë£Œ ì‹œê°„...
 	WORD			m_wEndTimeMonth;
 	WORD			m_wEndTimeDay;
 	WORD			m_wEndTimeHour;
@@ -147,7 +147,7 @@ public:
 	BOOL		m_bIsActiveEvent;
 	UTime		m_utBegin,m_utEnd;
 	int			m_iLottoBoxSerial;
-	int			m_iDropChance;	//	10¸¸
+	int			m_iDropChance;	//	10ë§Œ
 	int			m_iMinMobLevel,m_iMaxMobLevel;
 	int			m_iLevelRange;
 	int			m_iCriticalChance,m_iCriticalCount;

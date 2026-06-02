@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "ExScript.h"
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­class	CWWTime
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒclass	CWWTime
 static int monthend[13] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
 int CWWTime::GetDate()
@@ -194,7 +194,7 @@ int	CWWTime::GetDay()
 	return m_iResult;
 }
 
-int	CWWTime::GetWeekDay()		//	 0 ~ 6 : 0 -> ÀÏ¿äÀÏ
+int	CWWTime::GetWeekDay()		//	 0 ~ 6 : 0 -> ì¼ìš”ì¼
 {
 	int m_iResult=0;
 	time_t tTime;
@@ -264,7 +264,7 @@ int	CWWTime::CalcMin(int _a,int _b,int _isPlus, int * _Hour, int * _Week)
 	}
 }
 
-int	CWWTime::CalcDayOnToday(int _yy,int _mm, int _dd)	//	¿À´Ã°ú ¸çÄ¥ Â÷ÀÌÀÏ±î?
+int	CWWTime::CalcDayOnToday(int _yy,int _mm, int _dd)	//	ì˜¤ëŠ˜ê³¼ ë©°ì¹  ì°¨ì´ì¼ê¹Œ?
 {
 	time_t tTime,tSpTime,tRetTime;
 	struct tm tmTime;
@@ -314,7 +314,7 @@ int	CWWTime::CalcHour(int _a,int _b,int _isPlus, int * _Week)
 	}
 }
 
-int	CWWTime::GetWeekDayOfaday(int _yy, int _mm, int _dd)	//	 0 ~ 6 : 0 -> ÀÏ¿äÀÏ
+int	CWWTime::GetWeekDayOfaday(int _yy, int _mm, int _dd)	//	 0 ~ 6 : 0 -> ì¼ìš”ì¼
 {
 	time_t tTime,tAfterTime;
 	struct tm tmTime;
@@ -333,11 +333,11 @@ int	CWWTime::GetWeekDayOfaday(int _yy, int _mm, int _dd)	//	 0 ~ 6 : 0 -> ÀÏ¿äÀÏ
 	
 	return tmTime.tm_wday;
 }
-//¦­class	CWWTime
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒclass	CWWTime
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­class	CWWScript
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒclass	CWWScript
 CWWScript::CWWScript()
 {
 	m_strFileName[0] = NULL;
@@ -357,7 +357,7 @@ CWWScript::~CWWScript()
 /////////////////////////////////////////////////////
 //	these are public functions.
 int	CWWScript::Read(char * _strFilename,int _iMaxCount)
-{	// Á¤»óÀûÀÎ ÆÄÀÏÀÌ ¾Æ´Ï°Å³ª Ä«¿îÆ® ¼³Á¤ÀÌ Àß¸øµÇ¸é ¹«È¿ ~ 
+{	// ì •ìƒì ì¸ íŒŒì¼ì´ ì•„ë‹ˆê±°ë‚˜ ì¹´ìš´íŠ¸ ì„¤ì •ì´ ì˜ëª»ë˜ë©´ ë¬´íš¨ ~ 
 	if(_strFilename[0] == NULL, strcmp(_strFilename,"")==0 || _iMaxCount<=0)	
 		return 0;
 	if(m_cScp)
@@ -389,7 +389,7 @@ int	CWWScript::Read(char * _strFilename,int _iMaxCount)
 	fclose(fp);
 
 	if(iRet== -1)
-		return 0;	//	¿¡·¯°¡ ÀÖ¾î¼­ Á¤»óÀûÀ¸·Î ÀĞ¾îµéÀÌÁö ¸øÇß´Ù.
+		return 0;	//	ì—ëŸ¬ê°€ ìˆì–´ì„œ ì •ìƒì ìœ¼ë¡œ ì½ì–´ë“¤ì´ì§€ ëª»í–ˆë‹¤.
 
 	return 1;
 }
@@ -398,27 +398,27 @@ int	CWWScript::Save(char * _strFilename)
 {
 	FILE * fp = NULL;
 	char	strNewFilename[eMAXFILENAMELENGTH];
-	if(_strFilename == NULL)	//	±âÁ¸ÀÇ ÆÄÀÏÀ» ¹é¾÷ÇÏ°í, ±âÁ¸ ÀÌ¸§À¸·Î ±â·ÏÇÑ´Ù.
+	if(_strFilename == NULL)	//	ê¸°ì¡´ì˜ íŒŒì¼ì„ ë°±ì—…í•˜ê³ , ê¸°ì¡´ ì´ë¦„ìœ¼ë¡œ ê¸°ë¡í•œë‹¤.
 		strcpy(strNewFilename,m_strFileName);
 	else
 		strcpy(strNewFilename,_strFilename);
 	
 	FILE * tmpFp=  NULL;
-	if( (tmpFp = fopen(strNewFilename,"r")) )//	°°Àº ÀÌ¸§ÀÇ ÆÄÀÏÀÌ ÀÌ¹Ì ÀÖ´Ù¸é
+	if( (tmpFp = fopen(strNewFilename,"r")) )//	ê°™ì€ ì´ë¦„ì˜ íŒŒì¼ì´ ì´ë¯¸ ìˆë‹¤ë©´
 	{
 		fclose(tmpFp);	tmpFp = NULL;
-		//	ÀÌ¸§À» ¹Ù²Û´Ù.
+		//	ì´ë¦„ì„ ë°”ê¾¼ë‹¤.
 		char	strTmpFilename[eMAXFILENAMELENGTH];
 		sprintf(strTmpFilename,"%s_backup_%d_%d",strNewFilename,CWWTime::GetDate(),CWWTime::GetTimes() );
 		if(rename(strNewFilename,strTmpFilename))
-			return 0;	//	ÆÄÀÏ¸í º¯È¯¿¡ ½ÇÆĞ Çß½À´Ï´Ù.
+			return 0;	//	íŒŒì¼ëª… ë³€í™˜ì— ì‹¤íŒ¨ í–ˆìŠµë‹ˆë‹¤.
 	}
-	//	»õ·Î¿î ÆÄÀÏÀ» »ı¼ºÇØ¼­ Ã³¸®ÇÕ´Ï´Ù. 
+	//	ìƒˆë¡œìš´ íŒŒì¼ì„ ìƒì„±í•´ì„œ ì²˜ë¦¬í•©ë‹ˆë‹¤. 
 	fp = fopen(strNewFilename,"w+");
 	if(!fp)
-		return 0;	// ÆÄÀÏ »ı¼º¿¡ ½ÇÆĞ Çß½À´Ï´Ù.
+		return 0;	// íŒŒì¼ ìƒì„±ì— ì‹¤íŒ¨ í–ˆìŠµë‹ˆë‹¤.
 
-	{	//	µ¥ÀÌÅÍ¸¦ Ãâ·ÂÇÑ´Ù.
+	{	//	ë°ì´í„°ë¥¼ ì¶œë ¥í•œë‹¤.
 		int isChild = 0;
 		for(int i = 0;i<m_iCount;i++)
 		{
@@ -554,7 +554,7 @@ int CWWScript::ReadLine(FILE *f)
 		if(count>0)
 		{
 			int iRet = ParseLine(_readline, count);
-			if (iRet == -1)	//¿¡·¯°¡ ÀÖ´Ù¸é
+			if (iRet == -1)	//ì—ëŸ¬ê°€ ìˆë‹¤ë©´
 				return iRet;
 		}
 		return 0;
@@ -570,24 +570,24 @@ int CWWScript::ParseLine(char *_readline,int size)
 	int		cnt			=	0;
 	int		count		=	0;
 	int		isTXT		=	0;
-	int		isTexted	=	0;	//""·Î °¨½ÎÁø µ¥ÀÌÅÍ°¡ ÇØ´ç ¼ø¹ø¿¡ ÀÖÀ» °æ¿ì 
+	int		isTexted	=	0;	//""ë¡œ ê°ì‹¸ì§„ ë°ì´í„°ê°€ í•´ë‹¹ ìˆœë²ˆì— ìˆì„ ê²½ìš° 
 	int		isData		=	0;
-	char	tmp[eMAXLENGTHOFALINE];			//	ÀÓ½Ã ÀúÀå °ø°£.
+	char	tmp[eMAXLENGTHOFALINE];			//	ì„ì‹œ ì €ì¥ ê³µê°„.
 	memset(tmp,0,eMAXLENGTHOFALINE);
 
 	for(count=0;count<size; count++)
 	{
-		//	Áö³ªÃÄ¾ß ÇÒ °Íµé 
+		//	ì§€ë‚˜ì³ì•¼ í•  ê²ƒë“¤ 
 		if(!isTXT && _readline[count]==' ' || _readline[count]==9 || _readline[count]==13)
 			continue;
 
-		//	Æ¯¼ö ±âÈ£µé
+		//	íŠ¹ìˆ˜ ê¸°í˜¸ë“¤
 		if(!isTXT && _readline[count]=='/')
 		{
 			if( _readline[count-1]=='/')
 				return 1;
 		}
-		//	ÅØ½ºÆ®ÀÇ ³¡°ú ½ÃÀÛÀ» Ç¥±â
+		//	í…ìŠ¤íŠ¸ì˜ ëê³¼ ì‹œì‘ì„ í‘œê¸°
 		if(_readline[count]=='\"')
 		{
 			if(isTXT)	isTXT = 0;
@@ -601,7 +601,7 @@ int CWWScript::ParseLine(char *_readline,int size)
 		}
 		if(!isTXT && _readline[count]=='{')
 		{
-			if(!m_isHaveChild)	//	±ÔÄ¢¿¡ ¾î±ß³µ´Ù.
+			if(!m_isHaveChild)	//	ê·œì¹™ì— ì–´ê¸‹ë‚¬ë‹¤.
 				return -1;
 			if(m_isChildData)
 				return -1;
@@ -625,30 +625,30 @@ int CWWScript::ParseLine(char *_readline,int size)
 			if(tmp[0]!=0)
 			{
 				memset(m_cScp[m_iScpCount].m_bData[parse],0,dWWS_MAXDATASIZE);
-				if(parse == 0)	//	ÀÌ³à¼®Àº ÀÌ¸§ÀÌ´Ù.
+				if(parse == 0)	//	ì´ë…€ì„ì€ ì´ë¦„ì´ë‹¤.
 				{
-					if(!m_isHaveChild && !m_isChildData)	//	ºÎ¸ğÀÌ°Å³ª µ¶¸³ÀûÀÎ µ¥ÀÌÅÍ
+					if(!m_isHaveChild && !m_isChildData)	//	ë¶€ëª¨ì´ê±°ë‚˜ ë…ë¦½ì ì¸ ë°ì´í„°
 					{
-						if(strstr(tmp,dWWS_HAVECHILD))//	ÀÚ½ÄÀ» °¡Áø °æ¿ì , µ¥ÀÌÅÍ´Â ¾øÀ¸´Ï ¼¼ÆÃ¸¸ ÇÏ°í ³Ñ±ä´Ù.
+						if(strstr(tmp,dWWS_HAVECHILD))//	ìì‹ì„ ê°€ì§„ ê²½ìš° , ë°ì´í„°ëŠ” ì—†ìœ¼ë‹ˆ ì„¸íŒ…ë§Œ í•˜ê³  ë„˜ê¸´ë‹¤.
 						{
 							m_isHaveChild = 1;
 							memcpy(m_strParentName,tmp,cnt);
 							m_strParentName[cnt] = 0;
 							return 1;
 						}
-						else//	µ¶¸³ÀûÀÎ µ¥ÀÌÅÍ
+						else//	ë…ë¦½ì ì¸ ë°ì´í„°
 						{	
 							memcpy(m_cScp[m_iScpCount].m_bData[parse],tmp,cnt);
 							m_cScp[m_iScpCount].m_bData[parse][cnt] = 0;
 							strcpy(m_cScp[m_iScpCount].m_strName,(char *)m_cScp[m_iScpCount].m_bData[parse]);
 							m_cScp[m_iScpCount].m_dwHashCode = cSRVUTIL::GetHashCode((BYTE *)m_cScp[m_iScpCount].m_strName);
 						}
-					}else	//	ÀÚ½ÄÀ¸·Î Ã³¸®ÇØ¾ß ÇÑ´Ù.
+					}else	//	ìì‹ìœ¼ë¡œ ì²˜ë¦¬í•´ì•¼ í•œë‹¤.
 					{
-						//	Àß¸øµÈ ¹®¹ıÀÌ¶ó¸é 
+						//	ì˜ëª»ëœ ë¬¸ë²•ì´ë¼ë©´ 
 						if(!m_isHaveChild || !m_isChildData || m_strParentName[0]==NULL)
 							return -1;
-						//	Á¤»óÀûÀÌ¶ó¸é..
+						//	ì •ìƒì ì´ë¼ë©´..
 						memcpy(m_cScp[m_iScpCount].m_bData[parse],tmp,cnt);
 						m_cScp[m_iScpCount].m_bData[parse][cnt] = 0;
 						strcpy(m_cScp[m_iScpCount].m_strName,m_strParentName);
@@ -703,5 +703,5 @@ int CWWScript::ParseLine(char *_readline,int size)
 	if(isData)	return 0;
 	else		return 1;
 }
-//¦­class	CLogSystem
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒclass	CLogSystem
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”

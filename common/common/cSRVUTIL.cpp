@@ -52,7 +52,7 @@ void cSRVUTIL::GetUTime(cpUTime *_pUTime,DWORD _sec)
 	_pUTime->minute = tmTime->tm_min;
 	_pUTime->second = tmTime->tm_sec;
 	
-	if(_sec)	//	ÀÌ ÃÊ¸¸Å­ ´õÇØ¼­ º¸³»ÁØ´Ù.
+	if(_sec)	//	ì´ ì´ˆë§Œí¼ ë”í•´ì„œ ë³´ë‚´ì¤€ë‹¤.
 	{
 		_pUTime->second += _sec;
 		if(_pUTime->second>=60)
@@ -260,7 +260,7 @@ int	cSRVUTIL::GetDay()
 	return m_iResult;
 }
 
-int	cSRVUTIL::GetWeekDay()		//	 0 ~ 6 : 0 -> ÀÏ¿äÀÏ
+int	cSRVUTIL::GetWeekDay()		//	 0 ~ 6 : 0 -> ì¼ìš”ì¼
 {
 	int m_iResult=0;
 	time_t tTime;
@@ -299,30 +299,30 @@ void cSRVUTIL::getTimeToUTime(char *_pstrDate,cpUTime *_pUTime)
 	{
 		char	strTime[8];
 		int idx = 0;
-		memcpy(strTime,_lpstrDate+idx,4);		//	¿¬
+		memcpy(strTime,_lpstrDate+idx,4);		//	ì—°
 		strTime[4]	=	0;
 		iYear		=	atoi(strTime);
 		
 		idx += 5;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	¿ù
+		memcpy(strTime,_lpstrDate+idx,2);	//	ì›”
 		strTime[2]	=	0;
 		iMonth		=	atoi(strTime);
 
 		idx += 3;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	ÀÏ
+		memcpy(strTime,_lpstrDate+idx,2);	//	ì¼
 		strTime[2]	=	0;
 		iDay		=	atoi(strTime);
 
 		idx += 3;
 
 		int addHour = 0;
-		if(strncmp(_lpstrDate+idx,"¿ÀÀü",4)==0)
+		if(strncmp(_lpstrDate+idx,"ì˜¤ì „",4)==0)
 		{
 			idx += 4;
 		}else
-		if(strncmp(_lpstrDate+idx,"¿ÀÈÄ",4)==0)
+		if(strncmp(_lpstrDate+idx,"ì˜¤í›„",4)==0)
 		{
 			addHour = 1;
 			idx += 4;
@@ -333,10 +333,10 @@ void cSRVUTIL::getTimeToUTime(char *_pstrDate,cpUTime *_pUTime)
 
 		if(_lpstrDate[idx+2]==':')
 		{
-			memcpy(strTime,_lpstrDate+idx,2);	//	½Ã
+			memcpy(strTime,_lpstrDate+idx,2);	//	ì‹œ
 			idx -= 1;
 		}else{
-			memcpy(strTime,_lpstrDate+idx+1,2);	//	½Ã
+			memcpy(strTime,_lpstrDate+idx+1,2);	//	ì‹œ
 		}
 		strTime[2]	=	0;
 		iHour		=	atoi(strTime);
@@ -355,13 +355,13 @@ void cSRVUTIL::getTimeToUTime(char *_pstrDate,cpUTime *_pUTime)
 
 		idx += 4;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	ºÐ
+		memcpy(strTime,_lpstrDate+idx,2);	//	ë¶„
 		strTime[2]	=	0;
 		iMinute		=	atoi(strTime);
 
 		idx += 3;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	ºÐ
+		memcpy(strTime,_lpstrDate+idx,2);	//	ë¶„
 		strTime[2]	= 0;
 		iSec		=	atoi(strTime);
 	}
@@ -369,43 +369,43 @@ void cSRVUTIL::getTimeToUTime(char *_pstrDate,cpUTime *_pUTime)
 	{
 		char	strTime[8];
 		int idx = 0;
-		memcpy(strTime,_lpstrDate+idx,4);		//	¿¬
+		memcpy(strTime,_lpstrDate+idx,4);		//	ì—°
 		strTime[4]	=	0;
 		iYear		=	atoi(strTime);
 		
 		idx += 5;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	¿ù
+		memcpy(strTime,_lpstrDate+idx,2);	//	ì›”
 		strTime[2]	=	0;
 		iMonth		=	atoi(strTime);
 
 		idx += 3;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	ÀÏ
+		memcpy(strTime,_lpstrDate+idx,2);	//	ì¼
 		strTime[2]	=	0;
 		iDay		=	atoi(strTime);
 
 		idx += 3;
 
-		//	ÀÏº»Àº yyyy-mm-dd hh:mm:ssÇüÅÂ 
+		//	ì¼ë³¸ì€ yyyy-mm-dd hh:mm:ssí˜•íƒœ 
 		if(_lpstrDate[idx+1]==':')
 		{
-			memcpy(strTime,_lpstrDate+idx,1);	//	½Ã
+			memcpy(strTime,_lpstrDate+idx,1);	//	ì‹œ
 			idx -= 1;
 			strTime[1]	=	0;
 		}else
-			memcpy(strTime,_lpstrDate+idx,2);	//	½Ã
+			memcpy(strTime,_lpstrDate+idx,2);	//	ì‹œ
 		strTime[2]	=	0;
 		iHour		=	atoi(strTime);
 		idx += 3;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	ºÐ
+		memcpy(strTime,_lpstrDate+idx,2);	//	ë¶„
 		strTime[2]	=	0;
 		iMinute		=	atoi(strTime);
 
 		idx += 3;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	ºÐ
+		memcpy(strTime,_lpstrDate+idx,2);	//	ë¶„
 		strTime[2]	= 0;
 		iSec		=	atoi(strTime);
 	}
@@ -488,10 +488,10 @@ int	cSRVUTIL::CalcTermToday(cpUTime _pUTime,int _iReturnType)
 	int ret = 0;
 	switch(_iReturnType)
 	{
-	case eDATECHECK_YY:	//	365ÀÏ ±âÁØ.
+	case eDATECHECK_YY:	//	365ì¼ ê¸°ì¤€.
 		ret = tRetTime  / 60 / 60 / 24 / 30 / 365;
 		break;
-	case eDATECHECK_MM:	//	30ÀÏ ±âÁØ.
+	case eDATECHECK_MM:	//	30ì¼ ê¸°ì¤€.
 		ret = tRetTime  / 60 / 60 / 24 / 30;
 		break;
 	case eDATECHECK_DD:
@@ -537,10 +537,10 @@ unsigned int cSRVUTIL::CalcTermOfDayToDay(cpUTime _pPrevUTime, cpUTime _pUTime, 
 	int ret = 0;
 	switch(_iReturnType)
 	{
-	case eDATECHECK_YY:	//	365ÀÏ ±âÁØ.
+	case eDATECHECK_YY:	//	365ì¼ ê¸°ì¤€.
 		ret = tRetTime  / 60 / 60 / 24 / 30 / 365;
 		break;
-	case eDATECHECK_MM:	//	30ÀÏ ±âÁØ.
+	case eDATECHECK_MM:	//	30ì¼ ê¸°ì¤€.
 		ret = tRetTime  / 60 / 60 / 24 / 30;
 		break;
 	case eDATECHECK_DD:
@@ -610,7 +610,7 @@ int	cSRVUTIL::CalcHour(int _a,int _b,int _isPlus, int * _Week)
 	}
 }
 
-int	cSRVUTIL::GetWeekDayOfaday(int _yy, int _mm, int _dd)	//	 0 ~ 6 : 0 -> ÀÏ¿äÀÏ
+int	cSRVUTIL::GetWeekDayOfaday(int _yy, int _mm, int _dd)	//	 0 ~ 6 : 0 -> ì¼ìš”ì¼
 {
 	time_t tTime,tAfterTime;
 	struct tm tmTime;
@@ -775,10 +775,10 @@ WORD cSRVUTIL::Uncompress(unsigned char * _sourcedata, unsigned char * _targetda
 #endif	//	__USE_ZLIB
 
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­class	cUniCode
-char cSRVUTIL::m_pStrChar[1024];		//	°£´ÜÇÑ ÅØ½ºÆ® º¯¿ª¿ë
-wchar_t cSRVUTIL::m_pStrWChar[1024];	//	°£´ÜÇÑ ÅØ½ºÆ® º¯¿ª¿ë
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒclass	cUniCode
+char cSRVUTIL::m_pStrChar[1024];		//	ê°„ë‹¨í•œ í…ìŠ¤íŠ¸ ë³€ì—­ìš©
+wchar_t cSRVUTIL::m_pStrWChar[1024];	//	ê°„ë‹¨í•œ í…ìŠ¤íŠ¸ ë³€ì—­ìš©
 
 const char * cSRVUTIL::UnicodeToAscii(const wchar_t * _lpStr1,int opt)
 {
@@ -793,7 +793,7 @@ const char * cSRVUTIL::UnicodeToAscii(const wchar_t * _lpStr1,int opt)
 	
 	size_t asize = (size_t)WideCharToMultiByte( opt, 0, _lpStr1, (int)size, NULL, 0, NULL, NULL );
 	WideCharToMultiByte(opt,0,_lpStr1,(int)size+1,m_pStrChar,(int)asize,NULL,NULL);
-//	size_t ret = wcstombs( m_pStrChar, _lpStr1, size ); ÇÑ±Û Â©¸°´Ù. -_-;;
+//	size_t ret = wcstombs( m_pStrChar, _lpStr1, size ); í•œê¸€ ì§¤ë¦°ë‹¤. -_-;;
 	return m_pStrChar;
 }
 
@@ -824,7 +824,7 @@ int	cSRVUTIL::UnicodeToAscii(const wchar_t * _lpStr1,char * _lpStr2, int _size,i
 
 	if( !size )
 		return 0;
-	++size;	//	NULLÀÌ µé¾î°¥ À§Ä¡
+	++size;	//	NULLì´ ë“¤ì–´ê°ˆ ìœ„ì¹˜
 	if(!_size)
 		_size = (int)size;
 	memset( _lpStr2, 0, size+ 1);
@@ -849,8 +849,8 @@ int	cSRVUTIL::AsciiToUnicode(char * _lpStr1,wchar_t * _lpStr2, int _size,int opt
 
 	return (int)wsize;
 }
-//¦­class	cUniCode
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒclass	cUniCode
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -956,12 +956,12 @@ cSRVUTIL::getMacAddressByAdapter(std::string _ipaddress)
 // 	}
 // 	
 // 	pAdapter = pAdapterInfo;
-// 	std::string incorrectIP = "0.0.0.0";	//	°¡»ó adapter
+// 	std::string incorrectIP = "0.0.0.0";	//	ê°€ìƒ adapter
 // 	while (pAdapter) 
 // 	{
 // 		if(incorrectIP.compare(pAdapter->IpAddressList.IpAddress.String) !=0)
 // 		{
-// 			if(pAdapter->Address[1]==0 && pAdapter->Address[2]==0)	//	mac address°¡ ºó °æ¿ì. netbios¿¡¼­ ¹ß»ýÇßÀ½. È¤½Ã ¸ô¶ó »ðÀÔÇØ µÒ.
+// 			if(pAdapter->Address[1]==0 && pAdapter->Address[2]==0)	//	mac addressê°€ ë¹ˆ ê²½ìš°. netbiosì—ì„œ ë°œìƒí–ˆìŒ. í˜¹ì‹œ ëª°ë¼ ì‚½ìž…í•´ ë‘ .
 // 			{
 // 				pAdapter = pAdapter->Next;
 // 				continue;

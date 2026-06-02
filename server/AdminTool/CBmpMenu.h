@@ -95,7 +95,7 @@ public:
 	// ClassWizard generated virtual function overrides
 	//{{AFX_VIRTUAL(MenuToolBar)
 	protected:
-	virtual void OnCustomDrawNotify(LPARAM lParam, LRESULT* pResult );	//NM_CUSTOMDRAW handler
+	virtual void OnCustomDrawNotify(NMHDR* pNMHDR, LRESULT* pResult );	//NM_CUSTOMDRAW handler
 	virtual LRESULT DefWindowProc(UINT message, WPARAM wParam, LPARAM lParam);
 	virtual void OnMouseMove(UINT nFlags, CPoint point);
 	//}}AFX_VIRTUAL
@@ -113,7 +113,7 @@ protected:
 	afx_msg void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags);
 	//}}AFX_MSG
 	
-	void	OnPostLbuttonMsg(UINT nFlags, LPARAM point);			//Called from OnLbuttonDown using PostMessage
+	afx_msg LRESULT	OnPostLbuttonMsg(WPARAM wParam, LPARAM lParam);			//Called from OnLbuttonDown using PostMessage
 	BOOL	KeyboardFilter(UINT nChar, UINT nRepCnt, UINT nFlags) ; //Helper function used by OnKeyDown
 	BOOL	Draw3DCheckmark(CDC& dc, const CRect rc, BOOL bSelected, HBITMAP hbmCheck,
 				BOOL bDrawSunkenBdr, BOOL bGrayImage);				//Helper function used by OnCustomDrawNotify

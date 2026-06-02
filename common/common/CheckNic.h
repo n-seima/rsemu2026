@@ -86,8 +86,8 @@ private:
 	typedef std::set< Record, RIRSort > Records;
 	typedef std::vector< Header> Headers;
 
-	Records		_records;	//< ÀúÀåµÈ ·¹ÄÚµå
-	Headers		_headers;	//< Çì´õ Á¤º¸
+	Records		_records;	//< ì €ìž¥ëœ ë ˆì½”ë“œ
+	Headers		_headers;	//< í—¤ë” ì •ë³´
 public:
 	bool		addStat( const wchar_t * ftp, const wchar_t* path );
 	bool		getCC( const SockAddr& test, String& cc);

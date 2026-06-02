@@ -1,0 +1,68 @@
+g_DBAccount [CHECK!!] DB [121.253.46.11] , id[redstone], pw[qnfrdmsqhtjr] ,NAME[redstone_id_source] 
+g_DBAccount [CHECK!!] DB [121.253.46.11] , id[redstone], pw[qnfrdmsqhtjr] ,NAME[redstone_id_source] 
+
+  
+ Error: -2147467259 
+ Msg: エラーを特定できません 
+ Description: [DBNETLIB][ConnectionOpen (Connect()).]SQL Server が存在しないか、アクセスが拒否されました。 Line: 413  File d:\red stone\japan_110322_0.0538_1220_new_20110915\common\common\cado_base.cpp Microsoft OLE DB Provider for SQL Server 
+
+g_DBAccount [CHECK!!] DB [121.253.46.11] , id[redstone], pw[qnfrdmsqhtjr] ,NAME[redstone_id_source] 
+g_DBAccount [CHECK!!] DB [121.253.46.11] , id[redstone], pw[qnfrdmsqhtjr] ,NAME[redstone_id_source] 
+
+  
+ Error: -2147467259 
+ Msg: エラーを特定できません 
+ Description: [DBNETLIB][ConnectionOpen (Connect()).]SQL Server が存在しないか、アクセスが拒否されました。 Line: 421  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\common\common\cADO_BASE.cpp Microsoft OLE DB Provider for SQL Server 
+
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 121.253.46.32
+ERROR : connect [53621,121.253.46.32] Error 10060
+
+ERROR -> connect to world server : 0 , 121.253.46.32
+try connect to world server : 1 , 121.253.46.40
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+ERROR : connect [53621,121.253.46.40] Error 10060
+
+ERROR -> connect to world server : 1 , 121.253.46.40
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 2 , 121.253.46.52
+ERROR : connect [53621,121.253.46.52] Error 10060
+
+ERROR -> connect to world server : 2 , 121.253.46.52
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+ERROR ReallySend :[25.1.80.156]  size 108, type 8001(LT 0) ,ERROR 10038
+------------------QUIT SOCKET THREAD ---------------------
+
+LOSE CONNECTION : world server : 0 , 25.1.80.156
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+LOSE CONNECTION : world server : 0 , 25.1.80.156
+------------------QUIT SOCKET THREAD ---------------------
+
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+------------------QUIT SOCKET THREAD ---------------------
+
+LOSE CONNECTION : world server : 0 , 25.1.80.156

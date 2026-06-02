@@ -1,0 +1,4537 @@
+[090128] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[090128] Start    Make DB Index.....
+
+[090128] End  Make DB Index.  ListCount 9, 0.024 Sec
+
+[090128] Start    Get Event Infomation .....
+
+[090132] End    Get Event Infomation 4.146 Sec
+
+[090132] Log Server [127.0.0.1] [59641]
+
+[090132] START WorkerThread[2] ...
+
+[090132] START WorkerThread[1] ...
+
+[090132] START Event Manager Thread ...
+
+[090132] START WorkerThread[4] ...
+
+[090132] START WorkerThread[5] ...
+
+[090132] START WorkerThread[6] ...
+
+[090132] START WorkerThread[7] ...
+
+[090132] START AdditionThread ...
+
+[090132] START WorkerThread[0] ...
+
+[090132] START WorkerThread[3] ...
+
+[090133] Wait for begin all worker thread
+
+[090133] Start Avatar DB Cache Server ... day : 20260602 - time : 90133 
+
+
+[090133]  Provision Rank = 0
+
+[090434] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[090434] Start    Make DB Index.....
+
+[090434] End  Make DB Index.  ListCount 9, 0.002 Sec
+
+[090434] Start    Get Event Infomation .....
+
+[090438] End    Get Event Infomation 4.040 Sec
+
+[090438] Log Server [127.0.0.1] [59641]
+
+[090438] START WorkerThread[0] ...
+
+[090438] START WorkerThread[4] ...
+
+[090438] START WorkerThread[3] ...
+
+[090438] START WorkerThread[1] ...
+
+[090438] START WorkerThread[5] ...
+
+[090438] START WorkerThread[6] ...
+
+[090438] START WorkerThread[2] ...
+
+[090438] START AdditionThread ...
+
+[090438] START Event Manager Thread ...
+
+[090438] START WorkerThread[7] ...
+
+[090439] Wait for begin all worker thread
+
+[090439] Start Avatar DB Cache Server ... day : 20260602 - time : 90439 
+
+
+[090959] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[090959] Start    Make DB Index.....
+
+[090959] End  Make DB Index.  ListCount 9, 0.002 Sec
+
+[090959] Start    Get Event Infomation .....
+
+[091003] End    Get Event Infomation 3.970 Sec
+
+[091003] Log Server [127.0.0.1] [59641]
+
+[091003] START WorkerThread[1] ...
+
+[091003] START AdditionThread ...
+
+[091003] START WorkerThread[0] ...
+
+[091003] START WorkerThread[4] ...
+
+[091003] START WorkerThread[3] ...
+
+[091003] START WorkerThread[5] ...
+
+[091003] START WorkerThread[6] ...
+
+[091003] START Event Manager Thread ...
+
+[091003] START WorkerThread[2] ...
+
+[091003] START WorkerThread[7] ...
+
+[091004] Wait for begin all worker thread
+
+[091004] Start Avatar DB Cache Server ... day : 20260602 - time : 91004 
+
+
+[091009]  Provision Rank = 0
+
+[091658] ()1 is exit!!
+
+
+[091703]  Provision Rank = 0
+
+[092024] ()1 is exit!!
+
+
+[092030]  Provision Rank = 0
+
+[092621] ()1 is exit!!
+
+
+[092626]  Provision Rank = 0
+
+[093954] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[093954] Start    Make DB Index.....
+
+[093954] End  Make DB Index.  ListCount 9, 0.003 Sec
+
+[093954] Start    Get Event Infomation .....
+
+[093959] End    Get Event Infomation 5.059 Sec
+
+[093959] Purchase DB Connect ip[127.0.0.1] id[RedMaster] source[redgem]
+
+[093959] Log Server [127.0.0.1] [59641]
+
+[093959] START WorkerThread[0] ...
+
+[093959] START WorkerThread[2] ...
+
+[093959] START WorkerThread[4] ...
+
+[093959] START WorkerThread[3] ...
+
+[093959] START WorkerThread[6] ...
+
+[093959] START WorkerThread[7] ...
+
+[093959] START AdditionThread ...
+
+[093959] START WorkerThread[5] ...
+
+[093959] START WorkerThread[1] ...
+
+[093959] START Event Manager Thread ...
+
+[093959]  Provision Rank = 0
+
+[094000] Wait for begin all worker thread
+
+[094000] Start Avatar DB Cache Server ... day : 20260602 - time : 94000 
+
+
+[094026] omizu1 GetCarrotCountTime = 0.098 [count 9999]
+
+[094036] omizu1 GetCarrotCountTime = 0.001 [count 9999]
+
+[094042] omizu1 GetCarrotCountTime = 0.002 [count 9999]
+
+[094100] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 710  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[094150] omizu1 GetCarrotCountTime = 0.092 [count 9999]
+
+[094155] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 710  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[094433] omizu1 GetCarrotCountTime = 0.100 [count 9999]
+
+[094436] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 710  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[102029] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[102029] Start    Make DB Index.....
+
+[102029] End  Make DB Index.  ListCount 9, 0.003 Sec
+
+[102029] Start    Get Event Infomation .....
+
+[102033] End    Get Event Infomation 3.971 Sec
+
+[102033] Purchase DB Connect ip[127.0.0.1] id[RedMaster] source[redgem]
+
+[102033] Log Server [127.0.0.1] [59641]
+
+[102033] START WorkerThread[1] ...
+
+[102033] START WorkerThread[2] ...
+
+[102033] START WorkerThread[6] ...
+
+[102033] START WorkerThread[5] ...
+
+[102033] START WorkerThread[7] ...
+
+[102033] START WorkerThread[3] ...
+
+[102033] START AdditionThread ...
+
+[102033] START Event Manager Thread ...
+
+[102033] START WorkerThread[0] ...
+
+[102033] START WorkerThread[4] ...
+
+[102034] Wait for begin all worker thread
+
+[102034] Start Avatar DB Cache Server ... day : 20260602 - time : 102034 
+
+
+[102034]  Provision Rank = 0
+
+[102054] omizu1 GetCarrotCountTime = 0.104 [count 9999]
+
+[102058] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[512] count[10] price[300] public[0] zoneSerial[2603]
+
+[102058] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 713  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[102058] [CARROT] use result id[omizu1] name[‚¨…wiz] item[512] count[10] price[300] result[4] remain[0]
+
+[102102] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[512] count[10] price[300] public[0] zoneSerial[2603]
+
+[102102] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 713  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[102102] [CARROT] use result id[omizu1] name[‚¨…wiz] item[512] count[10] price[300] result[4] remain[0]
+
+[102357] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[102357] Start    Make DB Index.....
+
+[102357] End  Make DB Index.  ListCount 9, 0.001 Sec
+
+[102357] Start    Get Event Infomation .....
+
+[102401] End    Get Event Infomation 3.975 Sec
+
+[102401] Purchase DB Connect ip[127.0.0.1] id[RedMaster] source[redgem]
+
+[102401] Log Server [127.0.0.1] [59641]
+
+[102401] START WorkerThread[0] ...
+
+[102401] START WorkerThread[1] ...
+
+[102401] START AdditionThread ...
+
+[102401] START WorkerThread[4] ...
+
+[102401] START WorkerThread[7] ...
+
+[102401] START WorkerThread[5] ...
+
+[102401] START WorkerThread[6] ...
+
+[102401] START Event Manager Thread ...
+
+[102401] START WorkerThread[3] ...
+
+[102401] START WorkerThread[2] ...
+
+[102402] Wait for begin all worker thread
+
+[102402] Start Avatar DB Cache Server ... day : 20260602 - time : 102402 
+
+
+[102404]  Provision Rank = 0
+
+[102416] omizu1 GetCarrotCountTime = 0.091 [count 9999]
+
+[102420] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[512] count[10] price[300] public[0] zoneSerial[2603]
+
+[102420] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 757  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[102420] [CARROT] use result id[omizu1] name[‚¨…wiz] item[512] count[10] price[300] result[4] remain[0]
+
+[102425] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[512] count[10] price[300] public[0] zoneSerial[2603]
+
+[102425] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 757  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[102425] [CARROT] use result id[omizu1] name[‚¨…wiz] item[512] count[10] price[300] result[4] remain[0]
+
+[102638] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[102638] Start    Make DB Index.....
+
+[102638] End  Make DB Index.  ListCount 9, 0.002 Sec
+
+[102638] Start    Get Event Infomation .....
+
+[102642] End    Get Event Infomation 4.225 Sec
+
+[102642] Purchase DB Connect ip[127.0.0.1] id[RedMaster] source[redgem]
+
+[102642] Log Server [127.0.0.1] [59641]
+
+[102642] START WorkerThread[0] ...
+
+[102642] START WorkerThread[1] ...
+
+[102642] START WorkerThread[2] ...
+
+[102642] START WorkerThread[6] ...
+
+[102642] START WorkerThread[4] ...
+
+[102642] START WorkerThread[3] ...
+
+[102642] START WorkerThread[7] ...
+
+[102642] START AdditionThread ...
+
+[102642] START Event Manager Thread ...
+
+[102642] START WorkerThread[5] ...
+
+[102643] Wait for begin all worker thread
+
+[102643] Start Avatar DB Cache Server ... day : 20260602 - time : 102643 
+
+
+[102644]  Provision Rank = 0
+
+[102713] omizu1 GetCarrotCountTime = 0.097 [count 9999]
+
+[102718] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[512] count[10] price[300] public[0] zoneSerial[2603]
+
+[102718] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 728  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[102718] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[102718] [CARROT] use result id[omizu1] name[‚¨…wiz] item[512] count[10] price[300] result[0] remain[9999]
+
+[102729] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[102837] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[102837] Start    Make DB Index.....
+
+[102837] End  Make DB Index.  ListCount 9, 0.002 Sec
+
+[102837] Start    Get Event Infomation .....
+
+[102841] End    Get Event Infomation 3.964 Sec
+
+[102841] Purchase DB Connect ip[127.0.0.1] id[RedMaster] source[redgem]
+
+[102841] Log Server [127.0.0.1] [59641]
+
+[102841] START WorkerThread[1] ...
+
+[102841] START WorkerThread[0] ...
+
+[102841] START WorkerThread[2] ...
+
+[102841] START WorkerThread[3] ...
+
+[102841] START AdditionThread ...
+
+[102841] START WorkerThread[4] ...
+
+[102841] START WorkerThread[6] ...
+
+[102841] START Event Manager Thread ...
+
+[102841] START WorkerThread[5] ...
+
+[102841] START WorkerThread[7] ...
+
+[102842] Wait for begin all worker thread
+
+[102842] Start Avatar DB Cache Server ... day : 20260602 - time : 102842 
+
+
+[102844]  Provision Rank = 0
+
+[102908] omizu1 GetCarrotCountTime = 0.103 [count 9999]
+
+[102918] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[512] count[10] price[300] public[0] zoneSerial[2603]
+
+[102918] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[102918] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[102918] [CARROT] use result id[omizu1] name[‚¨…wiz] item[512] count[10] price[300] result[0] remain[9999]
+
+[103012] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[338] count[1] price[1000] public[0] zoneSerial[2603]
+
+[103012] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[103012] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[103012] [CARROT] use result id[omizu1] name[‚¨…wiz] item[338] count[1] price[1000] result[0] remain[9999]
+
+[103026] omizu1 GetCarrotCountTime = 0.002 [count 9999]
+
+[103106] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 731  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[103106] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 788  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[103119] pengg101 GetCarrotCountTime = 0.107 [count 9999]
+
+[103213] omizu1 GetCarrotCountTime = 0.096 [count 9999]
+
+[103218] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[512] count[10] price[300] public[0] zoneSerial[2603]
+
+[103218] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[103218] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[103218] [CARROT] use result id[omizu1] name[‚¨…wiz] item[512] count[10] price[300] result[0] remain[9999]
+
+[103538] cADO_BASE::GetConnection() -> return NULL 
+
+
+[103826] cADO_BASE::GetConnection() -> return NULL 
+
+
+[103951] cADO_BASE::GetConnection() -> return NULL 
+
+
+[104005] omizu1 GetCarrotCountTime = 0.094 [count 9999]
+
+[104017] omizu1 GetCarrotCountTime = 0.001 [count 9999]
+
+[104020] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[463] count[1] price[500] public[1] zoneSerial[2603]
+
+[104020] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104020] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[104020] [CARROT] use result id[omizu1] name[‚¨…wiz] item[463] count[1] price[500] result[0] remain[9999]
+
+[104027] omizu1 GetCarrotCountTime = 0.001 [count 9999]
+
+[104117] pengg101 GetCarrotCountTime = 0.092 [count 9999]
+
+[104124] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[104124] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104124] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104124] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104132] pengg101 GetCarrotCountTime = 0.001 [count 9999]
+
+[104158] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[104245] omizu1 GetCarrotCountTime = 0.100 [count 9999]
+
+[104304] omizu1 GetCarrotCountTime = 0.002 [count 9999]
+
+[104312] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[104314] omizu1 GetCarrotCountTime = 0.002 [count 9999]
+
+[104328] pengg101 GetCarrotCountTime = 0.095 [count 9999]
+
+[104330] omizu1 GetCarrotCountTime = 0.002 [count 9999]
+
+[104345] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2604]
+
+[104345] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104345]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[104345] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104345] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[104354] pengg101 GetCarrotCountTime = 0.001 [count 9999]
+
+[104356] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2604]
+
+[104356] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104356] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104356] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[104357] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2604]
+
+[104357] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104357] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104357] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[104515] omizu1 GetCarrotCountTime = 0.100 [count 9999]
+
+[104527] omizu1 GetCarrotCountTime = 0.002 [count 9999]
+
+[104651] pengg101 GetCarrotCountTime = 0.099 [count 9999]
+
+[104743] pengg101 GetCarrotCountTime = 0.098 [count 9999]
+
+[104750] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2604]
+
+[104750] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104750] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104750] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[104822] omizu1 GetCarrotCountTime = 0.002 [count 9999]
+
+[104825] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2603]
+
+[104825] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104825] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[104825] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[104841] pengg101 GetCarrotCountTime = 0.001 [count 9999]
+
+[104943] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[104943] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104943] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104943] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104944] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[104944] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104944]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[104944] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104944] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104945] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[104945] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104945] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104945] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104946] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[104947] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104947] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104947] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104947] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[104947] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104947] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104947] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104949] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[104949] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104949] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104949] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104949] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[104949] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104949] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104949] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104950] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[104950] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104950]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[104950] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104950] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104951] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[104951] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[104951] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[104951] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105006] pengg101 GetCarrotCountTime = 0.094 [count 9999]
+
+[105011] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105011] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105011] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105011] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105012] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105012] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105012] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105012] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105014] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105014] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105014] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105014] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105014] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105014] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105014] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105014] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105015] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105015] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105015]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[105015] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105015] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105016] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105016] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105016] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105016] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105024] pengg101 GetCarrotCountTime = 0.001 [count 9999]
+
+[105035] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105035] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105035] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105035] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105036] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105036] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105036] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105036] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105037] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105037] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105037] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105037] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105037] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105037] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105037] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105037] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105038] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105038] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105038]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[105038] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105038] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105039] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105039] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105039] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105039] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105041] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105041] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105041] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105041] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105043] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[460] count[1] price[300] public[0] zoneSerial[2604]
+
+[105043] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105043] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105043] [CARROT] use result id[pengg101] name[Rockhopper] item[460] count[1] price[300] result[0] remain[9999]
+
+[105139] pengg101 GetCarrotCountTime = 0.095 [count 9999]
+
+[105206] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105207] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105207] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105207] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105208] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105208] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105208] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105208] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105209] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105209] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105209]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[105209] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105209] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105210] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105210] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105210] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105210] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105240] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[105243] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2604]
+
+[105243] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105243] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105243] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[105300] omizu1 GetCarrotCountTime = 0.002 [count 9999]
+
+[105351] pengg101 GetCarrotCountTime = 0.091 [count 9999]
+
+[105358] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[417] count[1] price[500] public[1] zoneSerial[2604]
+
+[105358] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105358] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105358] [CARROT] use result id[pengg101] name[Rockhopper] item[417] count[1] price[500] result[0] remain[9999]
+
+[105406] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[105408] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[463] count[1] price[500] public[1] zoneSerial[2604]
+
+[105408] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105408] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105408] [CARROT] use result id[pengg101] name[Rockhopper] item[463] count[1] price[500] result[0] remain[9999]
+
+[105410] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[105412] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[3] count[1] price[500] public[1] zoneSerial[2604]
+
+[105412] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105412] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105412] [CARROT] use result id[pengg101] name[Rockhopper] item[3] count[1] price[500] result[0] remain[9999]
+
+[105836] pengg101 GetCarrotCountTime = 0.098 [count 9999]
+
+[105843] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[415] count[1] price[300] public[0] zoneSerial[2604]
+
+[105844] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105844]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[105844] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105844] [CARROT] use result id[pengg101] name[Rockhopper] item[415] count[1] price[300] result[0] remain[9999]
+
+[105906] pengg101 GetCarrotCountTime = 0.001 [count 9999]
+
+[105911] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105911] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105911] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105911] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105912] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105912] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105912] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105912] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105913] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105913] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105913] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105913] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105914] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105914] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105914] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105914] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105916] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105916] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105916] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105916] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105916] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105916] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105916]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[105916] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105916] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105918] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[335] count[1] price[150] public[0] zoneSerial[2604]
+
+[105918] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[105918] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[105918] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[110001] pengg101 GetCarrotCountTime = 0.093 [count 9999]
+
+[110018] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[528] count[1] price[300] public[0] zoneSerial[2604]
+
+[110018] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110018] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110018] [CARROT] use result id[pengg101] name[Rockhopper] item[528] count[1] price[300] result[0] remain[9999]
+
+[110038] pengg101 GetCarrotCountTime = 0.001 [count 9999]
+
+[110050] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[512] count[10] price[300] public[0] zoneSerial[2604]
+
+[110050] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110050] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110050] [CARROT] use result id[pengg101] name[Rockhopper] item[512] count[10] price[300] result[0] remain[9999]
+
+[110159] pengg101 GetCarrotCountTime = 0.097 [count 9999]
+
+[110222] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[247] count[1] price[300] public[0] zoneSerial[2604]
+
+[110222] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110222] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110222] [CARROT] use result id[pengg101] name[Rockhopper] item[247] count[1] price[300] result[0] remain[9999]
+
+[110228] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[110231] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[248] count[1] price[300] public[0] zoneSerial[2604]
+
+[110231] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110231] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110231] [CARROT] use result id[pengg101] name[Rockhopper] item[248] count[1] price[300] result[0] remain[9999]
+
+[110233] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[110236] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[249] count[1] price[300] public[0] zoneSerial[2604]
+
+[110236] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110236]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[110236] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110236] [CARROT] use result id[pengg101] name[Rockhopper] item[249] count[1] price[300] result[0] remain[9999]
+
+[110239] pengg101 GetCarrotCountTime = 0.001 [count 9999]
+
+[110242] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[407] count[1] price[300] public[0] zoneSerial[2604]
+
+[110242] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110242] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110242] [CARROT] use result id[pengg101] name[Rockhopper] item[407] count[1] price[300] result[0] remain[9999]
+
+[110243] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[405] count[1] price[300] public[0] zoneSerial[2604]
+
+[110243] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110243] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110243] [CARROT] use result id[pengg101] name[Rockhopper] item[405] count[1] price[300] result[0] remain[9999]
+
+[110245] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[403] count[1] price[300] public[0] zoneSerial[2604]
+
+[110245] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110245] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110245] [CARROT] use result id[pengg101] name[Rockhopper] item[403] count[1] price[300] result[0] remain[9999]
+
+[110246] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[401] count[1] price[300] public[0] zoneSerial[2604]
+
+[110246] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110246] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110246] [CARROT] use result id[pengg101] name[Rockhopper] item[401] count[1] price[300] result[0] remain[9999]
+
+[110248] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[399] count[1] price[300] public[0] zoneSerial[2604]
+
+[110248] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110248] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110248] [CARROT] use result id[pengg101] name[Rockhopper] item[399] count[1] price[300] result[0] remain[9999]
+
+[110255] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[110258] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2604]
+
+[110258] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110258]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[110258] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110258] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[110311] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 788  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[110311] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[110311] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 317] [LV 104/1193256] [JOB 2] [FIELD 0]
+[110311] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[110311] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 317] [LV 104/1193256] [JOB 2] [FIELD 0]
+[110311] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 867  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[110311] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[110311] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 317] [LV 104/1193256] [JOB 2] [FIELD 0]
+[110311] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[110311]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[110311] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 317] [LV 104/1193256] [JOB 2] [FIELD 0]
+[110324] pengg101 GetCarrotCountTime = 0.101 [count 9999]
+
+[110327] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2604]
+
+[110327] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110327] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110327] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[110346] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[110348] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2604]
+
+[110348] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110348] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110348] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[110400] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[110402] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2604]
+
+[110402] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110402] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110402] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[110428] cADO_BASE::GetConnection() -> return NULL 
+
+
+[110433] pengg101 GetCarrotCountTime = 0.101 [count 9999]
+
+[110447] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[110709] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[463] count[1] price[500] public[1] zoneSerial[2619]
+
+[110709] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110709] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110709] [CARROT] use result id[pengg101] name[Rockhopper] item[463] count[1] price[500] result[0] remain[9999]
+
+[110714] pengg101 GetCarrotCountTime = 0.001 [count 9999]
+
+[110716] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[463] count[1] price[500] public[1] zoneSerial[2619]
+
+[110716] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110716] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110716] [CARROT] use result id[pengg101] name[Rockhopper] item[463] count[1] price[500] result[0] remain[9999]
+
+[110727] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[110750] pengg101 GetCarrotCountTime = 0.093 [count 9999]
+
+[110756] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[453] count[1] price[300] public[0] zoneSerial[2619]
+
+[110756] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[110756]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[110756] [CARROT] use fallback success id[pengg101] remain[9999]
+
+[110756] [CARROT] use result id[pengg101] name[Rockhopper] item[453] count[1] price[300] result[0] remain[9999]
+
+[110823] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[110852] pengg101 GetCarrotCountTime = 0.097 [count 9999]
+
+[111122] cADO_BASE::GetConnection() -> return NULL 
+
+
+[111140] omizu1 GetCarrotCountTime = 0.099 [count 9999]
+
+[111144] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2603]
+
+[111144] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[111144] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[111144] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[111219] cADO_BASE::GetConnection() -> return NULL 
+
+
+[111330] ()1 is exit!!
+
+
+[111345] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[111345] Start    Make DB Index.....
+
+[111345] End  Make DB Index.  ListCount 9, 0.002 Sec
+
+[111345] Start    Get Event Infomation .....
+
+[111349] End    Get Event Infomation 3.966 Sec
+
+[111349] Purchase DB Connect ip[127.0.0.1] id[RedMaster] source[redgem]
+
+[111349] Log Server [127.0.0.1] [59641]
+
+[111349] START WorkerThread[0] ...
+
+[111349] START WorkerThread[4] ...
+
+[111349] START WorkerThread[3] ...
+
+[111349] START WorkerThread[2] ...
+
+[111349] START WorkerThread[5] ...
+
+[111349] START WorkerThread[1] ...
+
+[111349] START WorkerThread[6] ...
+
+[111349] START WorkerThread[7] ...
+
+[111349] START Event Manager Thread ...
+
+[111349] START AdditionThread ...
+
+[111350] Wait for begin all worker thread
+
+[111350] Start Avatar DB Cache Server ... day : 20260602 - time : 111350 
+
+
+[111350]  Provision Rank = 0
+
+[111411] omizu1 GetCarrotCountTime = 0.096 [count 9999]
+
+[111441] omizu1 GetCarrotCountTime = 0.002 [count 9999]
+
+[111447] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[337] count[1] price[300] public[0] zoneSerial[2603]
+
+[111447] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[111447] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[111447] [CARROT] use result id[omizu1] name[‚¨…wiz] item[337] count[1] price[300] result[0] remain[9999]
+
+[111521] omizu1 GetCarrotCountTime = 0.093 [count 9999]
+
+[111524] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2603]
+
+[111524] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[111524] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[111524] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[111527] omizu1 GetCarrotCountTime = 0.002 [count 9999]
+
+[111530] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2603]
+
+[111530] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[111530] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[111530] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[111532] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2603]
+
+[111532] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[111532] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[111532] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[111533] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2603]
+
+[111533] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 725  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[111533] [CARROT] use fallback success id[omizu1] remain[9999]
+
+[111533] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[112133] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[112133] Start    Make DB Index.....
+
+[112133] End  Make DB Index.  ListCount 9, 0.003 Sec
+
+[112133] Start    Get Event Infomation .....
+
+[112137] End    Get Event Infomation 4.049 Sec
+
+[112137] Purchase DB Connect ip[127.0.0.1] id[RedMaster] source[redgem]
+
+[112137] Log Server [127.0.0.1] [59641]
+
+[112137] START WorkerThread[0] ...
+
+[112137] START WorkerThread[1] ...
+
+[112137] START WorkerThread[3] ...
+
+[112137] START WorkerThread[7] ...
+
+[112137] START WorkerThread[4] ...
+
+[112137] START WorkerThread[5] ...
+
+[112137] START AdditionThread ...
+
+[112137] START WorkerThread[2] ...
+
+[112137] START Event Manager Thread ...
+
+[112137] START WorkerThread[6] ...
+
+[112138]  Provision Rank = 0
+
+[112138] Wait for begin all worker thread
+
+[112138] Start Avatar DB Cache Server ... day : 20260602 - time : 112138 
+
+
+[112435] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[112435] Start    Make DB Index.....
+
+[112435] End  Make DB Index.  ListCount 9, 0.002 Sec
+
+[112435] Start    Get Event Infomation .....
+
+[112439] End    Get Event Infomation 4.040 Sec
+
+[112439] Purchase DB Connect ip[127.0.0.1] id[RedMaster] source[redgem]
+
+[112439] Log Server [127.0.0.1] [59641]
+
+[112439] START WorkerThread[1] ...
+
+[112439] START WorkerThread[4] ...
+
+[112439] START WorkerThread[2] ...
+
+[112439] START WorkerThread[5] ...
+
+[112439] START WorkerThread[6] ...
+
+[112439] START WorkerThread[7] ...
+
+[112439] START AdditionThread ...
+
+[112439] START WorkerThread[0] ...
+
+[112439] START WorkerThread[3] ...
+
+[112439] START Event Manager Thread ...
+
+[112440]  Provision Rank = 0
+
+[112440] Wait for begin all worker thread
+
+[112440] Start Avatar DB Cache Server ... day : 20260602 - time : 112440 
+
+
+[112507] omizu1 GetCarrotCountTime = 0.108 [count 9999]
+
+[112508] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[112513] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[300] public[0] zoneSerial[2603]
+
+[112514] [CARROT] db use raw id[omizu1] rwp[9699] ecd[0]
+
+[112514] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[300] result[0] remain[9699]
+
+[112628] cADO_BASE::GetConnection() -> return NULL 
+
+
+[112641] ()2 is exit!!
+
+
+[112645] ()1 is exit!!
+
+
+[113400] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[113400] Start    Make DB Index.....
+
+[113400] End  Make DB Index.  ListCount 9, 0.003 Sec
+
+[113400] Start    Get Event Infomation .....
+
+[113405] End    Get Event Infomation 5.134 Sec
+
+[113405] Purchase DB Connect ip[127.0.0.1] id[RedMaster] source[redgem]
+
+[113405] Log Server [127.0.0.1] [59641]
+
+[113405] START WorkerThread[0] ...
+
+[113405] START WorkerThread[5] ...
+
+[113405] START WorkerThread[1] ...
+
+[113405] START WorkerThread[3] ...
+
+[113405] START Event Manager Thread ...
+
+[113405] START WorkerThread[7] ...
+
+[113405] START WorkerThread[6] ...
+
+[113405] START AdditionThread ...
+
+[113405] START WorkerThread[4] ...
+
+[113405] START WorkerThread[2] ...
+
+[113406] Wait for begin all worker thread
+
+[113406] Start Avatar DB Cache Server ... day : 20260602 - time : 113406 
+
+
+[113442]  Provision Rank = 0
+
+[113520] omizu1 GetCarrotCountTime = 0.102 [count 9699]
+
+[113610] usi1111 GetCarrotCountTime = 0.097 [count 9999]
+
+[113629] omizu1 GetCarrotCountTime = 0.002 [count 9699]
+
+[113630] usi1111 GetCarrotCountTime = 0.001 [count 9999]
+
+[113634] cADO_BASE::GetConnection() -> return NULL 
+
+
+[113645] usi1111 GetCarrotCountTime = 0.002 [count 9999]
+
+[113648] omizu1 GetCarrotCountTime = 0.002 [count 9699]
+
+[113658] pengg101 GetCarrotCountTime = 0.002 [count 9999]
+
+[113701] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[512] count[10] price[300] public[0] zoneSerial[2604]
+
+[113701] [CARROT] db use raw id[pengg101] rwp[9699] ecd[0]
+
+[113701] [CARROT] use result id[pengg101] name[Rockhopper] item[512] count[10] price[300] result[0] remain[9699]
+
+[113722] omizu1 GetCarrotCountTime = 0.093 [count 9699]
+
+[113729] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[417] count[1] price[500] public[1] zoneSerial[2603]
+
+[113729] [CARROT] db use raw id[omizu1] rwp[9199] ecd[0]
+
+[113729] [CARROT] use result id[omizu1] name[‚¨…wiz] item[417] count[1] price[500] result[0] remain[9199]
+
+[113739] omizu1 GetCarrotCountTime = 0.002 [count 9199]
+
+[113742] usi1111 GetCarrotCountTime = 0.002 [count 9999]
+
+[113742] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[463] count[1] price[500] public[1] zoneSerial[2603]
+
+[113742] [CARROT] db use raw id[omizu1] rwp[8699] ecd[0]
+
+[113742] [CARROT] use result id[omizu1] name[‚¨…wiz] item[463] count[1] price[500] result[0] remain[8699]
+
+[113745] omizu1 GetCarrotCountTime = 0.001 [count 8699]
+
+[113748] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[3] count[1] price[500] public[1] zoneSerial[2603]
+
+[113748] [CARROT] db use raw id[omizu1] rwp[8199] ecd[0]
+
+[113748] [CARROT] use result id[omizu1] name[‚¨…wiz] item[3] count[1] price[500] result[0] remain[8199]
+
+[113807] cADO_BASE::GetConnection() -> return NULL 
+
+
+[114021] usi1111 GetCarrotCountTime = 0.100 [count 9999]
+
+[114037] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 426  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp ADODB.Parameters 
+
+
+[114037] pengg101 GetCarrotCountTime = 0.096 [count -1]
+
+[114058] omizu1 GetCarrotCountTime = 0.090 [count 8199]
+
+[114104] usi1111 GetCarrotCountTime = 0.002 [count 9999]
+
+[114210] omizu1 GetCarrotCountTime = 0.111 [count 8199]
+
+[114436] usi1111 GetCarrotCountTime = 0.093 [count 9999]
+
+[114511] ()2 is exit!!
+
+
+[114523]  Provision Rank = 0
+
+[114536] omizu1 GetCarrotCountTime = 0.093 [count 8199]
+
+[114553] usi1111 GetCarrotCountTime = 0.002 [count 9999]
+
+[114649] usi1111 GetCarrotCountTime = 0.100 [count 9999]
+
+[114712] usi1111 GetCarrotCountTime = 0.119 [count 9999]
+
+[114807] usi1111 GetCarrotCountTime = 0.093 [count 9999]
+
+[114817] omizu1 GetCarrotCountTime = 0.098 [count 8199]
+
+[114827] usi1111 GetCarrotCountTime = 0.001 [count 9999]
+
+[114829] omizu1 GetCarrotCountTime = 0.002 [count 8199]
+
+[114848] omizu1 GetCarrotCountTime = 0.002 [count 8199]
+
+[114853] usi1111 GetCarrotCountTime = 0.001 [count 9999]
+
+[114858] pengg101 GetCarrotCountTime = 0.001 [count 9699]
+
+[114903] usi1111 GetCarrotCountTime = 0.002 [count 9999]
+
+[114912] omizu1 GetCarrotCountTime = 0.001 [count 8199]
+
+[114919] omizu1 GetCarrotCountTime = 0.002 [count 8199]
+
+[114920] usi1111 GetCarrotCountTime = 0.002 [count 9999]
+
+[114929] pengg101 GetCarrotCountTime = 0.097 [count 9699]
+
+[114929] usi1111 GetCarrotCountTime = 0.002 [count 9999]
+
+[114932] omizu1 GetCarrotCountTime = 0.001 [count 8199]
+
+[114939] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2605]
+
+[114939] [CARROT] db use raw id[pengg101] rwp[9698] ecd[0]
+
+[114939] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9698]
+
+[114948] usi1111 GetCarrotCountTime = 0.001 [count 9999]
+
+[114951] pengg101 GetCarrotCountTime = 0.002 [count 9698]
+
+[115001] usi1111 GetCarrotCountTime = 0.001 [count 9999]
+
+[115023] usi1111 GetCarrotCountTime = 0.002 [count 9999]
+
+[115024] omizu1 GetCarrotCountTime = 0.002 [count 8199]
+
+[115031] omizu1 GetCarrotCountTime = 0.145 [count 8199]
+
+[115039] usi1111 GetCarrotCountTime = 0.096 [count 9999]
+
+[115048] omizu1 GetCarrotCountTime = 0.002 [count 8199]
+
+[115051] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[115051] [CARROT] db use raw id[omizu1] rwp[8198] ecd[0]
+
+[115051] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8198]
+
+[115052] usi1111 GetCarrotCountTime = 0.002 [count 9999]
+
+[115054] omizu1 GetCarrotCountTime = 0.002 [count 8198]
+
+[115057] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[115057] [CARROT] db use raw id[omizu1] rwp[8197] ecd[0]
+
+[115057] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8197]
+
+[115058] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[115058] [CARROT] db use raw id[omizu1] rwp[8196] ecd[0]
+
+[115058] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8196]
+
+[115059] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[115059] [CARROT] db use raw id[omizu1] rwp[8195] ecd[0]
+
+[115059] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8195]
+
+[115152] omizu1 GetCarrotCountTime = 0.095 [count 8195]
+
+[115156] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[115156] [CARROT] db use raw id[omizu1] rwp[8194] ecd[0]
+
+[115156] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8194]
+
+[115157] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[115157] [CARROT] db use raw id[omizu1] rwp[8193] ecd[0]
+
+[115157] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8193]
+
+[115158] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[115158] [CARROT] db use raw id[omizu1] rwp[8192] ecd[0]
+
+[115158] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8192]
+
+[115159] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[115159] [CARROT] db use raw id[omizu1] rwp[8191] ecd[0]
+
+[115159] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8191]
+
+[115200] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[115200] [CARROT] db use raw id[omizu1] rwp[8190] ecd[0]
+
+[115200] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8190]
+
+[115202] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[115202] [CARROT] db use raw id[omizu1] rwp[8189] ecd[0]
+
+[115202] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8189]
+
+[115206] usi1111 GetCarrotCountTime = 0.001 [count 9999]
+
+[115254] omizu1 GetCarrotCountTime = 0.092 [count 8189]
+
+[115300] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[115300] [CARROT] db use raw id[omizu1] rwp[8188] ecd[0]
+
+[115300] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8188]
+
+[115304] omizu1 GetCarrotCountTime = 0.002 [count 8188]
+
+[115400] pengg101 GetCarrotCountTime = 0.101 [count 9698]
+
+[115435] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2605]
+
+[115435] [CARROT] db use raw id[pengg101] rwp[9697] ecd[0]
+
+[115435] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9697]
+
+[115438] usi1111 GetCarrotCountTime = 0.002 [count 9999]
+
+[121625] ()3 is exit!!
+
+
+[121903] omizu1 GetCarrotCountTime = 0.103 [count 8188]
+
+[121908] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121908] [CARROT] db use raw id[omizu1] rwp[8187] ecd[0]
+
+[121908] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8187]
+
+[121909] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121909] [CARROT] db use raw id[omizu1] rwp[8186] ecd[0]
+
+[121909] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8186]
+
+[121911] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121911] [CARROT] db use raw id[omizu1] rwp[8185] ecd[0]
+
+[121911] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8185]
+
+[121912] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121912] [CARROT] db use raw id[omizu1] rwp[8184] ecd[0]
+
+[121912] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8184]
+
+[121912] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121912] [CARROT] db use raw id[omizu1] rwp[8183] ecd[0]
+
+[121912] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8183]
+
+[121914] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121914] [CARROT] db use raw id[omizu1] rwp[8182] ecd[0]
+
+[121914] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8182]
+
+[121915] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121915] [CARROT] db use raw id[omizu1] rwp[8181] ecd[0]
+
+[121915] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8181]
+
+[121916] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121916] [CARROT] db use raw id[omizu1] rwp[8180] ecd[0]
+
+[121916] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8180]
+
+[121917] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121917] [CARROT] db use raw id[omizu1] rwp[8179] ecd[0]
+
+[121917] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8179]
+
+[121917] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121917] [CARROT] db use raw id[omizu1] rwp[8178] ecd[0]
+
+[121917] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8178]
+
+[121919] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121919] [CARROT] db use raw id[omizu1] rwp[8177] ecd[0]
+
+[121919] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8177]
+
+[121920] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121920] [CARROT] db use raw id[omizu1] rwp[8176] ecd[0]
+
+[121920] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8176]
+
+[121921] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121921] [CARROT] db use raw id[omizu1] rwp[8175] ecd[0]
+
+[121921] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8175]
+
+[121922] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121922] [CARROT] db use raw id[omizu1] rwp[8174] ecd[0]
+
+[121922] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8174]
+
+[121923] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121923] [CARROT] db use raw id[omizu1] rwp[8173] ecd[0]
+
+[121923] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8173]
+
+[121924] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121924] [CARROT] db use raw id[omizu1] rwp[8172] ecd[0]
+
+[121924] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8172]
+
+[121926] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121926] [CARROT] db use raw id[omizu1] rwp[8171] ecd[0]
+
+[121926] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8171]
+
+[121927] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121927] [CARROT] db use raw id[omizu1] rwp[8170] ecd[0]
+
+[121927] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8170]
+
+[121928] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121928] [CARROT] db use raw id[omizu1] rwp[8169] ecd[0]
+
+[121928] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8169]
+
+[121929] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121929] [CARROT] db use raw id[omizu1] rwp[8168] ecd[0]
+
+[121929] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8168]
+
+[121931] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121931] [CARROT] db use raw id[omizu1] rwp[8167] ecd[0]
+
+[121931] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8167]
+
+[121932] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121932] [CARROT] db use raw id[omizu1] rwp[8166] ecd[0]
+
+[121932] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8166]
+
+[121933] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121933] [CARROT] db use raw id[omizu1] rwp[8165] ecd[0]
+
+[121933] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8165]
+
+[121934] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121934] [CARROT] db use raw id[omizu1] rwp[8164] ecd[0]
+
+[121934] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8164]
+
+[121935] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121935] [CARROT] db use raw id[omizu1] rwp[8163] ecd[0]
+
+[121935] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8163]
+
+[121936] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121936] [CARROT] db use raw id[omizu1] rwp[8162] ecd[0]
+
+[121936] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8162]
+
+[121937] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121937] [CARROT] db use raw id[omizu1] rwp[8161] ecd[0]
+
+[121937] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8161]
+
+[121938] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121938] [CARROT] db use raw id[omizu1] rwp[8160] ecd[0]
+
+[121938] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8160]
+
+[121939] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121939] [CARROT] db use raw id[omizu1] rwp[8159] ecd[0]
+
+[121939] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8159]
+
+[121940] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121940] [CARROT] db use raw id[omizu1] rwp[8158] ecd[0]
+
+[121940] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8158]
+
+[121940] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121941] [CARROT] db use raw id[omizu1] rwp[8157] ecd[0]
+
+[121941] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8157]
+
+[121942] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121942] [CARROT] db use raw id[omizu1] rwp[8156] ecd[0]
+
+[121942] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8156]
+
+[121943] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121943] [CARROT] db use raw id[omizu1] rwp[8155] ecd[0]
+
+[121943] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8155]
+
+[121945] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121945] [CARROT] db use raw id[omizu1] rwp[8154] ecd[0]
+
+[121945] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8154]
+
+[121946] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121946] [CARROT] db use raw id[omizu1] rwp[8153] ecd[0]
+
+[121946] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8153]
+
+[121947] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[121947] [CARROT] db use raw id[omizu1] rwp[8152] ecd[0]
+
+[121947] [CARROT] use result id[omizu1] name[‚¨…wiz] item[246] count[1] price[1] result[0] remain[8152]
+
+[121947] cADO_BASE::GetConnection() -> return NULL 
+
+
+[122052] omizu1 GetCarrotCountTime = 0.094 [count 8152]
+
+[122317] cADO_BASE::GetConnection() -> return NULL 
+
+
+[122345] ()2 is exit!!
+
+
+[122627]  Provision Rank = 0
+
+[122750] pengg101 GetCarrotCountTime = 0.102 [count 9697]
+
+[122801] omizu1 GetCarrotCountTime = 0.002 [count 8152]
+
+[122822] pengg101 GetCarrotCountTime = 0.100 [count 9697]
+
+[122841] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[417] count[1] price[500] public[1] zoneSerial[2603]
+
+[122841] [CARROT] db use raw id[omizu1] rwp[7652] ecd[0]
+
+[122841] [CARROT] use result id[omizu1] name[‚¨…wiz] item[417] count[1] price[500] result[0] remain[7652]
+
+[122853] omizu1 GetCarrotCountTime = 0.002 [count 7652]
+
+[122857] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[417] count[1] price[500] public[1] zoneSerial[2603]
+
+[122857] [CARROT] db use raw id[omizu1] rwp[7152] ecd[0]
+
+[122857] [CARROT] use result id[omizu1] name[‚¨…wiz] item[417] count[1] price[500] result[0] remain[7152]
+
+[122902] omizu1 GetCarrotCountTime = 0.001 [count 7152]
+
+[122905] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[417] count[1] price[500] public[1] zoneSerial[2603]
+
+[122905] [CARROT] db use raw id[omizu1] rwp[6652] ecd[0]
+
+[122905] [CARROT] use result id[omizu1] name[‚¨…wiz] item[417] count[1] price[500] result[0] remain[6652]
+
+[123030] pengg101 GetCarrotCountTime = 0.097 [count 9697]
+
+[123125] cADO_BASE::GetConnection() -> return NULL 
+
+
+[123132] omizu1 GetCarrotCountTime = 0.105 [count 6652]
+
+[123142] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[415] count[1] price[300] public[0] zoneSerial[2603]
+
+[123142] [CARROT] db use raw id[omizu1] rwp[6352] ecd[0]
+
+[123142] [CARROT] use result id[omizu1] name[‚¨…wiz] item[415] count[1] price[300] result[0] remain[6352]
+
+[123155] omizu1 GetCarrotCountTime = 0.002 [count 6352]
+
+[123159] [CARROT] use request id[omizu1] name[‚¨…wiz] server[‚¨…ƒT[ƒo[] item[415] count[1] price[300] public[0] zoneSerial[2603]
+
+[123159] [CARROT] db use raw id[omizu1] rwp[6052] ecd[0]
+
+[123159] [CARROT] use result id[omizu1] name[‚¨…wiz] item[415] count[1] price[300] result[0] remain[6052]
+
+[123405] omizu1 GetCarrotCountTime = 0.098 [count 16051]
+
+[123408] omizu1 GetCarrotCountTime = 0.002 [count 16051]
+
+[123417] omizu1 GetCarrotCountTime = 0.001 [count 9999]
+
+[123436] cADO_BASE::GetConnection() -> return NULL 
+
+
+[123443] pengg101 GetCarrotCountTime = 0.100 [count 9697]
+
+[123449] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123449] [CARROT] db use raw id[pengg101] rwp[9998] ecd[0]
+
+[123449] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9998]
+
+[123450] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123450] [CARROT] db use raw id[pengg101] rwp[9997] ecd[0]
+
+[123450] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9997]
+
+[123450] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123451] [CARROT] db use raw id[pengg101] rwp[9996] ecd[0]
+
+[123451] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9996]
+
+[123452] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123452] [CARROT] db use raw id[pengg101] rwp[9995] ecd[0]
+
+[123452] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9995]
+
+[123453] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123453] [CARROT] db use raw id[pengg101] rwp[9994] ecd[0]
+
+[123453] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9994]
+
+[123457] pengg101 GetCarrotCountTime = 0.002 [count 9994]
+
+[123458] omizu1 GetCarrotCountTime = 0.002 [count 9999]
+
+[123501] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123501] [CARROT] db use raw id[pengg101] rwp[9993] ecd[0]
+
+[123501] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9993]
+
+[123503] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123503] [CARROT] db use raw id[pengg101] rwp[9992] ecd[0]
+
+[123503] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9992]
+
+[123505] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123505] [CARROT] db use raw id[pengg101] rwp[9991] ecd[0]
+
+[123505] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9991]
+
+[123506] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123506] [CARROT] db use raw id[pengg101] rwp[9990] ecd[0]
+
+[123506] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9990]
+
+[123509] pengg101 GetCarrotCountTime = 0.001 [count 9990]
+
+[123511] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123511] [CARROT] db use raw id[pengg101] rwp[9989] ecd[0]
+
+[123511] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9989]
+
+[123512] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123512] [CARROT] db use raw id[pengg101] rwp[9988] ecd[0]
+
+[123512] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9988]
+
+[123513] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123513] [CARROT] db use raw id[pengg101] rwp[9987] ecd[0]
+
+[123513] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9987]
+
+[123514] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123514] [CARROT] db use raw id[pengg101] rwp[9986] ecd[0]
+
+[123514] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9986]
+
+[123518] pengg101 GetCarrotCountTime = 0.001 [count 9986]
+
+[123522] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123522] [CARROT] db use raw id[pengg101] rwp[9985] ecd[0]
+
+[123522] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9985]
+
+[123523] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123523] [CARROT] db use raw id[pengg101] rwp[9984] ecd[0]
+
+[123523] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9984]
+
+[123524] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123524] [CARROT] db use raw id[pengg101] rwp[9983] ecd[0]
+
+[123524] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9983]
+
+[123525] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123525] [CARROT] db use raw id[pengg101] rwp[9982] ecd[0]
+
+[123525] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9982]
+
+[123525] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123525] [CARROT] db use raw id[pengg101] rwp[9981] ecd[0]
+
+[123525] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9981]
+
+[123529] pengg101 GetCarrotCountTime = 0.002 [count 9981]
+
+[123533] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123533] [CARROT] db use raw id[pengg101] rwp[9980] ecd[0]
+
+[123533] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9980]
+
+[123534] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123534] [CARROT] db use raw id[pengg101] rwp[9979] ecd[0]
+
+[123534] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9979]
+
+[123535] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123535] [CARROT] db use raw id[pengg101] rwp[9978] ecd[0]
+
+[123535] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9978]
+
+[123536] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123536] [CARROT] db use raw id[pengg101] rwp[9977] ecd[0]
+
+[123536] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9977]
+
+[123539] pengg101 GetCarrotCountTime = 0.002 [count 9977]
+
+[123542] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123542] [CARROT] db use raw id[pengg101] rwp[9976] ecd[0]
+
+[123542] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9976]
+
+[123542] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123542] [CARROT] db use raw id[pengg101] rwp[9975] ecd[0]
+
+[123542] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9975]
+
+[123543] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123543] [CARROT] db use raw id[pengg101] rwp[9974] ecd[0]
+
+[123543] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9974]
+
+[123544] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123544] [CARROT] db use raw id[pengg101] rwp[9973] ecd[0]
+
+[123544] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9973]
+
+[123545] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123545] [CARROT] db use raw id[pengg101] rwp[9972] ecd[0]
+
+[123545] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9972]
+
+[123549] pengg101 GetCarrotCountTime = 0.001 [count 9972]
+
+[123552] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123552] [CARROT] db use raw id[pengg101] rwp[9971] ecd[0]
+
+[123552] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9971]
+
+[123553] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123553] [CARROT] db use raw id[pengg101] rwp[9970] ecd[0]
+
+[123553] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9970]
+
+[123554] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123554] [CARROT] db use raw id[pengg101] rwp[9969] ecd[0]
+
+[123554] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9969]
+
+[123555] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123555] [CARROT] db use raw id[pengg101] rwp[9968] ecd[0]
+
+[123555] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9968]
+
+[123555] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123555] [CARROT] db use raw id[pengg101] rwp[9967] ecd[0]
+
+[123555] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9967]
+
+[123559] pengg101 GetCarrotCountTime = 0.002 [count 9967]
+
+[123608] pengg101 GetCarrotCountTime = 0.002 [count 9967]
+
+[123611] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123611] [CARROT] db use raw id[pengg101] rwp[9966] ecd[0]
+
+[123611] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9966]
+
+[123611] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123611] [CARROT] db use raw id[pengg101] rwp[9965] ecd[0]
+
+[123611] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9965]
+
+[123612] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123612] [CARROT] db use raw id[pengg101] rwp[9964] ecd[0]
+
+[123612] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9964]
+
+[123613] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123613] [CARROT] db use raw id[pengg101] rwp[9963] ecd[0]
+
+[123613] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9963]
+
+[123615] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123615] [CARROT] db use raw id[pengg101] rwp[9962] ecd[0]
+
+[123615] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9962]
+
+[123622] pengg101 GetCarrotCountTime = 0.002 [count 9962]
+
+[123625] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123625] [CARROT] db use raw id[pengg101] rwp[9961] ecd[0]
+
+[123625] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9961]
+
+[123625] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123625] [CARROT] db use raw id[pengg101] rwp[9960] ecd[0]
+
+[123625] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9960]
+
+[123626] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123626] [CARROT] db use raw id[pengg101] rwp[9959] ecd[0]
+
+[123626] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9959]
+
+[123627] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[123627] [CARROT] db use raw id[pengg101] rwp[9958] ecd[0]
+
+[123627] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9958]
+
+[123822] omizu1 GetCarrotCountTime = 0.101 [count 9999]
+
+[124025] pengg101 GetCarrotCountTime = 0.097 [count 9958]
+
+[124106] cADO_BASE::GetConnection() -> return NULL 
+
+
+[124151] pengg101 GetCarrotCountTime = 0.102 [count 9958]
+
+[124326] pengg101 GetCarrotCountTime = 0.093 [count 9958]
+
+[124338] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[124338] [CARROT] db use raw id[pengg101] rwp[9957] ecd[0]
+
+[124338] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9957]
+
+[124339] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[124339] [CARROT] db use raw id[pengg101] rwp[9956] ecd[0]
+
+[124339] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9956]
+
+[124340] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[124340] [CARROT] db use raw id[pengg101] rwp[9955] ecd[0]
+
+[124340] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9955]
+
+[124341] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[124341] [CARROT] db use raw id[pengg101] rwp[9954] ecd[0]
+
+[124341] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9954]
+
+[124342] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2604]
+
+[124342] [CARROT] db use raw id[pengg101] rwp[9953] ecd[0]
+
+[124342] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9953]
+
+[124414] usi1111 GetCarrotCountTime = 0.002 [count 9999]
+
+[124706] cADO_BASE::GetConnection() -> return NULL 
+
+
+[125246] cADO_BASE::GetConnection() -> return NULL 
+
+
+[125252] pengg101 GetCarrotCountTime = 0.100 [count 9953]
+
+[125255] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125255] [CARROT] db use raw id[pengg101] rwp[9952] ecd[0]
+
+[125255] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9952]
+
+[125256] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125256] [CARROT] db use raw id[pengg101] rwp[9951] ecd[0]
+
+[125256] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9951]
+
+[125257] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125257] [CARROT] db use raw id[pengg101] rwp[9950] ecd[0]
+
+[125257] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9950]
+
+[125258] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125258] [CARROT] db use raw id[pengg101] rwp[9949] ecd[0]
+
+[125258] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9949]
+
+[125259] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125259] [CARROT] db use raw id[pengg101] rwp[9948] ecd[0]
+
+[125259] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9948]
+
+[125308] pengg101 GetCarrotCountTime = 0.003 [count 9948]
+
+[125311] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125311] [CARROT] db use raw id[pengg101] rwp[9947] ecd[0]
+
+[125311] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9947]
+
+[125312] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125313] [CARROT] db use raw id[pengg101] rwp[9946] ecd[0]
+
+[125313] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9946]
+
+[125313] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125313] [CARROT] db use raw id[pengg101] rwp[9945] ecd[0]
+
+[125313] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9945]
+
+[125314] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125314] [CARROT] db use raw id[pengg101] rwp[9944] ecd[0]
+
+[125314] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9944]
+
+[125314] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125314] [CARROT] db use raw id[pengg101] rwp[9943] ecd[0]
+
+[125314] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9943]
+
+[125336] pengg101 GetCarrotCountTime = 0.096 [count 9943]
+
+[125341] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125341] [CARROT] db use raw id[pengg101] rwp[9942] ecd[0]
+
+[125341] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9942]
+
+[125342] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125342] [CARROT] db use raw id[pengg101] rwp[9941] ecd[0]
+
+[125342] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9941]
+
+[125344] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125344] [CARROT] db use raw id[pengg101] rwp[9940] ecd[0]
+
+[125344] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9940]
+
+[125345] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2767]
+
+[125345] [CARROT] db use raw id[pengg101] rwp[9939] ecd[0]
+
+[125345] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9939]
+
+[125349] cADO_BASE::GetConnection() -> return NULL 
+
+
+[125352] cADO_BASE::GetConnection() -> return NULL 
+
+
+[125507] pengg101 GetCarrotCountTime = 0.105 [count 9939]
+
+[125521] pengg101 GetCarrotCountTime = 0.001 [count 9939]
+
+[125524] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125524] [CARROT] db use raw id[pengg101] rwp[9938] ecd[0]
+
+[125524] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9938]
+
+[125524] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125524] [CARROT] db use raw id[pengg101] rwp[9937] ecd[0]
+
+[125524] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9937]
+
+[125525] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125525] [CARROT] db use raw id[pengg101] rwp[9936] ecd[0]
+
+[125525] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9936]
+
+[125526] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125526] [CARROT] db use raw id[pengg101] rwp[9935] ecd[0]
+
+[125526] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9935]
+
+[125527] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125527] [CARROT] db use raw id[pengg101] rwp[9934] ecd[0]
+
+[125527] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9934]
+
+[125527] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125527] [CARROT] db use raw id[pengg101] rwp[9933] ecd[0]
+
+[125527] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9933]
+
+[125528] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125528] [CARROT] db use raw id[pengg101] rwp[9932] ecd[0]
+
+[125528] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9932]
+
+[125529] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125529] [CARROT] db use raw id[pengg101] rwp[9931] ecd[0]
+
+[125529] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9931]
+
+[125530] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125530] [CARROT] db use raw id[pengg101] rwp[9930] ecd[0]
+
+[125530] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9930]
+
+[125531] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125531] [CARROT] db use raw id[pengg101] rwp[9929] ecd[0]
+
+[125531] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9929]
+
+[125531] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125531] [CARROT] db use raw id[pengg101] rwp[9928] ecd[0]
+
+[125531] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9928]
+
+[125532] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125532] [CARROT] db use raw id[pengg101] rwp[9927] ecd[0]
+
+[125532] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9927]
+
+[125533] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125533] [CARROT] db use raw id[pengg101] rwp[9926] ecd[0]
+
+[125533] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9926]
+
+[125542] pengg101 GetCarrotCountTime = 0.097 [count 9926]
+
+[125547] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125547] [CARROT] db use raw id[pengg101] rwp[9925] ecd[0]
+
+[125547] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9925]
+
+[125548] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125548] [CARROT] db use raw id[pengg101] rwp[9924] ecd[0]
+
+[125548] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9924]
+
+[125549] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125549] [CARROT] db use raw id[pengg101] rwp[9923] ecd[0]
+
+[125549] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9923]
+
+[125550] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125550] [CARROT] db use raw id[pengg101] rwp[9922] ecd[0]
+
+[125550] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9922]
+
+[125550] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125550] [CARROT] db use raw id[pengg101] rwp[9921] ecd[0]
+
+[125550] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9921]
+
+[125551] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125551] [CARROT] db use raw id[pengg101] rwp[9920] ecd[0]
+
+[125551] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9920]
+
+[125552] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125552] [CARROT] db use raw id[pengg101] rwp[9919] ecd[0]
+
+[125552] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9919]
+
+[125552] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125552] [CARROT] db use raw id[pengg101] rwp[9918] ecd[0]
+
+[125552] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9918]
+
+[125553] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125553] [CARROT] db use raw id[pengg101] rwp[9917] ecd[0]
+
+[125553] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9917]
+
+[125554] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125554] [CARROT] db use raw id[pengg101] rwp[9916] ecd[0]
+
+[125554] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9916]
+
+[125555] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125555] [CARROT] db use raw id[pengg101] rwp[9915] ecd[0]
+
+[125555] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9915]
+
+[125556] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125556] [CARROT] db use raw id[pengg101] rwp[9914] ecd[0]
+
+[125556] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9914]
+
+[125557] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[2709]
+
+[125557] [CARROT] db use raw id[pengg101] rwp[9913] ecd[0]
+
+[125557] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9913]
+
+[125642] cADO_BASE::GetConnection() -> return NULL 
+
+
+[125646] cADO_BASE::GetConnection() -> return NULL 
+
+
+[125937] cADO_BASE::GetConnection() -> return NULL 
+
+
+[130130] cADO_BASE::GetConnection() -> return NULL 
+
+
+[130203] cADO_BASE::GetConnection() -> return NULL 
+
+
+[130218] cADO_BASE::GetConnection() -> return NULL 
+
+
+[130218] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[130218] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 610] [LV 113/1263276] [JOB 2] [FIELD 0]
+[130218] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[130218] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 610] [LV 113/1263276] [JOB 2] [FIELD 0]
+[130218] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[130218] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 610] [LV 113/1263276] [JOB 2] [FIELD 0]
+[130218] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[130218] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 610] [LV 113/1263276] [JOB 2] [FIELD 0]
+[130218] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[130218] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 610] [LV 113/1263276] [JOB 2] [FIELD 0]
+[130218] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[130218]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[130218] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 610] [LV 113/1263276] [JOB 2] [FIELD 0]
+[130218] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[130218] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 610] [LV 113/1263276] [JOB 2] [FIELD 0]
+[130218] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[130218] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 610] [LV 113/1263276] [JOB 2] [FIELD 0]
+[130218] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[130218] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 610] [LV 113/1263276] [JOB 2] [FIELD 0]
+[130219] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[130219] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 610] [LV 113/1263276] [JOB 2] [FIELD 0]
+[130219] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[130219] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 610] [LV 113/1263276] [JOB 2] [FIELD 0]
+[130316] cADO_BASE::GetConnection() -> return NULL 
+
+
+[130420] cADO_BASE::GetConnection() -> return NULL 
+
+
+[130515] cADO_BASE::GetConnection() -> return NULL 
+
+
+[131427] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[131427] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 621] [LV 113/1263401] [JOB 2] [FIELD 3]
+[131428] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[131428] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 621] [LV 113/1263401] [JOB 2] [FIELD 3]
+[131428] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[131428] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 621] [LV 113/1263401] [JOB 2] [FIELD 3]
+[131428] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[131428] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 621] [LV 113/1263401] [JOB 2] [FIELD 3]
+[131941] cADO_BASE::GetConnection() -> return NULL 
+
+
+[132531] Create Guild : guild [ƒEƒH[ƒ^[ƒK[ƒfƒ“] master[‚¨…wiz] result[1]
+[132531] Join Guild : guild[ƒEƒH[ƒ^[ƒK[ƒfƒ“] target[‚ ‚ñ‚¿‚á‚ñwiz] result [1]
+[132531] Join Guild : guild[ƒEƒH[ƒ^[ƒK[ƒfƒ“] target[Rockhopper] result [1]
+[132607] cADO_BASE::GetConnection() -> return NULL 
+
+
+[132828] getBlankPos Succ: 0.000
+
+[132828] try to make avatar : [pengg101] [Humboldt] [1]
+
+[132828] add [18] [pengg101] ,[Humboldt], max count 10
+
+[132828]  ADD DBINDEX : [18] [Humboldt] [pengg101] [1],ret 9
+
+[132828] FINISH dLDMSG_CREATEAVATAR  0.006 sec..
+[132855] getBlankPos Succ: 0.000
+
+[132855] try to make avatar : [pengg101] [King] [2]
+
+[132855] add [19] [pengg101] ,[King], max count 11
+
+[132855]  ADD DBINDEX : [19] [King] [pengg101] [2],ret 10
+
+[132855] FINISH dLDMSG_CREATEAVATAR  0.087 sec..
+[132918] getBlankPos Succ: 0.000
+
+[132918] try to make avatar : [pengg101] [Adelie] [3]
+
+[132918] add [20] [pengg101] ,[Adelie], max count 12
+
+[132918]  ADD DBINDEX : [20] [Adelie] [pengg101] [3],ret 11
+
+[132918] FINISH dLDMSG_CREATEAVATAR  0.002 sec..
+[133008] getBlankPos Succ: 0.000
+
+[133008] try to make avatar : [pengg101] [Gentoo] [4]
+
+[133008] add [21] [pengg101] ,[Gentoo], max count 13
+
+[133008]  ADD DBINDEX : [21] [Gentoo] [pengg101] [4],ret 12
+
+[133008] FINISH dLDMSG_CREATEAVATAR  0.088 sec..
+[133012] cADO_BASE::GetConnection() -> return NULL 
+
+
+[133209] getBlankPos Succ: 0.000
+
+[133209] try to make avatar : [pengg101] [Emperor] [5]
+
+[133209] add [22] [pengg101] ,[Emperor], max count 14
+
+[133209]  ADD DBINDEX : [22] [Emperor] [pengg101] [5],ret 13
+
+[133209] FINISH dLDMSG_CREATEAVATAR  0.094 sec..
+[133212] getBlankPos Succ: 0.000
+
+[133212] try to make avatar : [omizu2] [1111] [0]
+
+[133212] add [23] [omizu2] ,[1111], max count 15
+
+[133212]  ADD DBINDEX : [23] [1111] [omizu2] [0],ret 14
+
+[133212] FINISH dLDMSG_CREATEAVATAR  0.084 sec..
+[133415] getBlankPos Succ: 0.000
+
+[133415] try to make avatar : [omizu2] [2222] [1]
+
+[133415] add [24] [omizu2] ,[2222], max count 16
+
+[133415]  ADD DBINDEX : [24] [2222] [omizu2] [1],ret 15
+
+[133415] FINISH dLDMSG_CREATEAVATAR  0.003 sec..
+[133459] getBlankPos Succ: 0.000
+
+[133459] try to make avatar : [omizu2] [3333] [2]
+
+[133459] add [25] [omizu2] ,[3333], max count 17
+
+[133459]  ADD DBINDEX : [25] [3333] [omizu2] [2],ret 16
+
+[133459] FINISH dLDMSG_CREATEAVATAR  0.005 sec..
+[133551] cADO_BASE::GetConnection() -> return NULL 
+
+
+[134022] omizu1 GetCarrotCountTime = 0.107 [count 9999]
+
+[134105] cADO_BASE::GetConnection() -> return NULL 
+
+
+[134105] cADO_BASE::GetConnection() -> return NULL 
+
+
+[134111] pengg101 GetCarrotCountTime = 0.102 [count 9913]
+
+[134120] pengg101 GetCarrotCountTime = 0.002 [count 9913]
+
+[134536] ()2 is exit!!
+
+
+[134631]  Provision Rank = 0
+
+[134710] omizu1 GetCarrotCountTime = 0.120 [count 9999]
+
+[134721] cADO_BASE::GetConnection() -> return NULL 
+
+
+[134740] omizu1 GetCarrotCountTime = 0.125 [count 9999]
+
+[134744] pengg101 GetCarrotCountTime = 0.002 [count 9913]
+
+[134748] pengg101 GetCarrotCountTime = 0.001 [count 9913]
+
+[134808] cADO_BASE::GetConnection() -> return NULL 
+
+
+[134906] cADO_BASE::GetConnection() -> return NULL 
+
+
+[135128] cADO_BASE::GetConnection() -> return NULL 
+
+
+[135131] ()2 is exit!!
+
+
+[135342]  Provision Rank = 0
+
+[135342] ()2 is exit!!
+
+
+[135540]  Provision Rank = 0
+
+[135601] ()2 is exit!!
+
+
+[135608]  Provision Rank = 0
+
+[135704] cADO_BASE::GetConnection() -> return NULL 
+
+
+[135750] omizu1 GetCarrotCountTime = 0.102 [count 9999]
+
+[135819] cADO_BASE::GetConnection() -> return NULL 
+
+
+[135911] cADO_BASE::GetConnection() -> return NULL 
+
+
+[140055] pengg101 GetCarrotCountTime = 0.104 [count 9913]
+
+[140153] pengg101 GetCarrotCountTime = 0.002 [count 9913]
+
+[140200] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140200] [CARROT] db use raw id[pengg101] rwp[9912] ecd[0]
+
+[140200] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9912]
+
+[140201] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140201] [CARROT] db use raw id[pengg101] rwp[9911] ecd[0]
+
+[140201] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9911]
+
+[140202] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140202] [CARROT] db use raw id[pengg101] rwp[9910] ecd[0]
+
+[140202] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9910]
+
+[140203] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140203] [CARROT] db use raw id[pengg101] rwp[9909] ecd[0]
+
+[140203] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9909]
+
+[140219] pengg101 GetCarrotCountTime = 0.001 [count 9909]
+
+[140222] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140222] [CARROT] db use raw id[pengg101] rwp[9908] ecd[0]
+
+[140222] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9908]
+
+[140223] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140223] [CARROT] db use raw id[pengg101] rwp[9907] ecd[0]
+
+[140223] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9907]
+
+[140223] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140223] [CARROT] db use raw id[pengg101] rwp[9906] ecd[0]
+
+[140223] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9906]
+
+[140224] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140224] [CARROT] db use raw id[pengg101] rwp[9905] ecd[0]
+
+[140224] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9905]
+
+[140224] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140224] [CARROT] db use raw id[pengg101] rwp[9904] ecd[0]
+
+[140224] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9904]
+
+[140226] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140226] [CARROT] db use raw id[pengg101] rwp[9903] ecd[0]
+
+[140226] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9903]
+
+[140227] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140227] [CARROT] db use raw id[pengg101] rwp[9902] ecd[0]
+
+[140227] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9902]
+
+[140232] pengg101 GetCarrotCountTime = 0.001 [count 9902]
+
+[140235] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140235] [CARROT] db use raw id[pengg101] rwp[9901] ecd[0]
+
+[140235] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9901]
+
+[140235] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140235] [CARROT] db use raw id[pengg101] rwp[9900] ecd[0]
+
+[140235] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9900]
+
+[140237] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140237] [CARROT] db use raw id[pengg101] rwp[9899] ecd[0]
+
+[140237] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9899]
+
+[140238] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140238] [CARROT] db use raw id[pengg101] rwp[9898] ecd[0]
+
+[140238] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9898]
+
+[140239] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140239] [CARROT] db use raw id[pengg101] rwp[9897] ecd[0]
+
+[140239] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9897]
+
+[140240] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140240] [CARROT] db use raw id[pengg101] rwp[9896] ecd[0]
+
+[140240] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9896]
+
+[140240] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140240] [CARROT] db use raw id[pengg101] rwp[9895] ecd[0]
+
+[140240] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9895]
+
+[140245] pengg101 GetCarrotCountTime = 0.002 [count 9895]
+
+[140248] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140248] [CARROT] db use raw id[pengg101] rwp[9894] ecd[0]
+
+[140248] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9894]
+
+[140248] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140248] [CARROT] db use raw id[pengg101] rwp[9893] ecd[0]
+
+[140248] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9893]
+
+[140250] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140250] [CARROT] db use raw id[pengg101] rwp[9892] ecd[0]
+
+[140250] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9892]
+
+[140250] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140250] [CARROT] db use raw id[pengg101] rwp[9891] ecd[0]
+
+[140250] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9891]
+
+[140251] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140251] [CARROT] db use raw id[pengg101] rwp[9890] ecd[0]
+
+[140251] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9890]
+
+[140252] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140252] [CARROT] db use raw id[pengg101] rwp[9889] ecd[0]
+
+[140252] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9889]
+
+[140253] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140253] [CARROT] db use raw id[pengg101] rwp[9888] ecd[0]
+
+[140253] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9888]
+
+[140259] pengg101 GetCarrotCountTime = 0.001 [count 9888]
+
+[140301] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140301] [CARROT] db use raw id[pengg101] rwp[9887] ecd[0]
+
+[140301] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9887]
+
+[140302] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140302] [CARROT] db use raw id[pengg101] rwp[9886] ecd[0]
+
+[140302] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9886]
+
+[140303] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140304] [CARROT] db use raw id[pengg101] rwp[9885] ecd[0]
+
+[140304] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9885]
+
+[140305] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140305] [CARROT] db use raw id[pengg101] rwp[9884] ecd[0]
+
+[140305] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9884]
+
+[140307] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140307] [CARROT] db use raw id[pengg101] rwp[9883] ecd[0]
+
+[140307] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9883]
+
+[140308] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140308] [CARROT] db use raw id[pengg101] rwp[9882] ecd[0]
+
+[140308] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9882]
+
+[140309] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140309] [CARROT] db use raw id[pengg101] rwp[9881] ecd[0]
+
+[140309] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9881]
+
+[140315] pengg101 GetCarrotCountTime = 0.002 [count 9881]
+
+[140317] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140317] [CARROT] db use raw id[pengg101] rwp[9880] ecd[0]
+
+[140317] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9880]
+
+[140319] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140319] [CARROT] db use raw id[pengg101] rwp[9879] ecd[0]
+
+[140319] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9879]
+
+[140320] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140320] [CARROT] db use raw id[pengg101] rwp[9878] ecd[0]
+
+[140320] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9878]
+
+[140321] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140321] [CARROT] db use raw id[pengg101] rwp[9877] ecd[0]
+
+[140321] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9877]
+
+[140323] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140323] [CARROT] db use raw id[pengg101] rwp[9876] ecd[0]
+
+[140323] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9876]
+
+[140324] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140324] [CARROT] db use raw id[pengg101] rwp[9875] ecd[0]
+
+[140324] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9875]
+
+[140325] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140325] [CARROT] db use raw id[pengg101] rwp[9874] ecd[0]
+
+[140325] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9874]
+
+[140330] pengg101 GetCarrotCountTime = 0.001 [count 9874]
+
+[140332] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140332] [CARROT] db use raw id[pengg101] rwp[9873] ecd[0]
+
+[140332] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9873]
+
+[140333] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140333] [CARROT] db use raw id[pengg101] rwp[9872] ecd[0]
+
+[140333] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9872]
+
+[140333] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140333] [CARROT] db use raw id[pengg101] rwp[9871] ecd[0]
+
+[140333] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9871]
+
+[140334] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140334] [CARROT] db use raw id[pengg101] rwp[9870] ecd[0]
+
+[140334] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9870]
+
+[140334] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140334] [CARROT] db use raw id[pengg101] rwp[9869] ecd[0]
+
+[140334] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9869]
+
+[140335] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140335] [CARROT] db use raw id[pengg101] rwp[9868] ecd[0]
+
+[140335] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9868]
+
+[140336] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140336] [CARROT] db use raw id[pengg101] rwp[9867] ecd[0]
+
+[140336] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9867]
+
+[140342] pengg101 GetCarrotCountTime = 0.002 [count 9867]
+
+[140344] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140344] [CARROT] db use raw id[pengg101] rwp[9866] ecd[0]
+
+[140344] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9866]
+
+[140345] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140345] [CARROT] db use raw id[pengg101] rwp[9865] ecd[0]
+
+[140345] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9865]
+
+[140346] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140346] [CARROT] db use raw id[pengg101] rwp[9864] ecd[0]
+
+[140346] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9864]
+
+[140346] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140346] [CARROT] db use raw id[pengg101] rwp[9863] ecd[0]
+
+[140346] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9863]
+
+[140347] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140347] [CARROT] db use raw id[pengg101] rwp[9862] ecd[0]
+
+[140347] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9862]
+
+[140349] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140349] [CARROT] db use raw id[pengg101] rwp[9861] ecd[0]
+
+[140349] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9861]
+
+[140354] pengg101 GetCarrotCountTime = 0.001 [count 9861]
+
+[140356] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140356] [CARROT] db use raw id[pengg101] rwp[9860] ecd[0]
+
+[140356] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9860]
+
+[140358] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140358] [CARROT] db use raw id[pengg101] rwp[9859] ecd[0]
+
+[140358] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9859]
+
+[140358] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140358] [CARROT] db use raw id[pengg101] rwp[9858] ecd[0]
+
+[140358] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9858]
+
+[140400] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140400] [CARROT] db use raw id[pengg101] rwp[9857] ecd[0]
+
+[140400] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9857]
+
+[140400] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140400] [CARROT] db use raw id[pengg101] rwp[9856] ecd[0]
+
+[140400] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9856]
+
+[140402] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140402] [CARROT] db use raw id[pengg101] rwp[9855] ecd[0]
+
+[140402] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9855]
+
+[140407] pengg101 GetCarrotCountTime = 0.001 [count 9855]
+
+[140409] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140409] [CARROT] db use raw id[pengg101] rwp[9854] ecd[0]
+
+[140409] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9854]
+
+[140410] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140410] [CARROT] db use raw id[pengg101] rwp[9853] ecd[0]
+
+[140410] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9853]
+
+[140411] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140411] [CARROT] db use raw id[pengg101] rwp[9852] ecd[0]
+
+[140411] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9852]
+
+[140412] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140412] [CARROT] db use raw id[pengg101] rwp[9851] ecd[0]
+
+[140412] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9851]
+
+[140412] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140412] [CARROT] db use raw id[pengg101] rwp[9850] ecd[0]
+
+[140412] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9850]
+
+[140414] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140414] [CARROT] db use raw id[pengg101] rwp[9849] ecd[0]
+
+[140414] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9849]
+
+[140418] pengg101 GetCarrotCountTime = 0.002 [count 9849]
+
+[140420] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140420] [CARROT] db use raw id[pengg101] rwp[9848] ecd[0]
+
+[140420] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9848]
+
+[140421] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140421] [CARROT] db use raw id[pengg101] rwp[9847] ecd[0]
+
+[140421] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9847]
+
+[140422] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140422] [CARROT] db use raw id[pengg101] rwp[9846] ecd[0]
+
+[140422] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9846]
+
+[140423] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140423] [CARROT] db use raw id[pengg101] rwp[9845] ecd[0]
+
+[140423] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9845]
+
+[140423] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140423] [CARROT] db use raw id[pengg101] rwp[9844] ecd[0]
+
+[140423] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9844]
+
+[140424] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140424] [CARROT] db use raw id[pengg101] rwp[9843] ecd[0]
+
+[140424] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9843]
+
+[140431] pengg101 GetCarrotCountTime = 0.002 [count 9843]
+
+[140433] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140433] [CARROT] db use raw id[pengg101] rwp[9842] ecd[0]
+
+[140433] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9842]
+
+[140434] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140434] [CARROT] db use raw id[pengg101] rwp[9841] ecd[0]
+
+[140434] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9841]
+
+[140435] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140435] [CARROT] db use raw id[pengg101] rwp[9840] ecd[0]
+
+[140435] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9840]
+
+[140436] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140436] [CARROT] db use raw id[pengg101] rwp[9839] ecd[0]
+
+[140436] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9839]
+
+[140437] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140437] [CARROT] db use raw id[pengg101] rwp[9838] ecd[0]
+
+[140437] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9838]
+
+[140437] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140437] [CARROT] db use raw id[pengg101] rwp[9837] ecd[0]
+
+[140437] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9837]
+
+[140439] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140439] [CARROT] db use raw id[pengg101] rwp[9836] ecd[0]
+
+[140439] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9836]
+
+[140444] pengg101 GetCarrotCountTime = 0.002 [count 9836]
+
+[140447] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140447] [CARROT] db use raw id[pengg101] rwp[9835] ecd[0]
+
+[140447] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9835]
+
+[140448] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140448] [CARROT] db use raw id[pengg101] rwp[9834] ecd[0]
+
+[140448] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9834]
+
+[140449] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140449] [CARROT] db use raw id[pengg101] rwp[9833] ecd[0]
+
+[140449] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9833]
+
+[140450] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140450] [CARROT] db use raw id[pengg101] rwp[9832] ecd[0]
+
+[140450] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9832]
+
+[140450] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140450] [CARROT] db use raw id[pengg101] rwp[9831] ecd[0]
+
+[140450] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9831]
+
+[140451] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140451] [CARROT] db use raw id[pengg101] rwp[9830] ecd[0]
+
+[140451] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9830]
+
+[140452] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140452] [CARROT] db use raw id[pengg101] rwp[9829] ecd[0]
+
+[140452] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9829]
+
+[140459] pengg101 GetCarrotCountTime = 0.001 [count 9829]
+
+[140501] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140501] [CARROT] db use raw id[pengg101] rwp[9828] ecd[0]
+
+[140501] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9828]
+
+[140503] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140503] [CARROT] db use raw id[pengg101] rwp[9827] ecd[0]
+
+[140503] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9827]
+
+[140504] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140504] [CARROT] db use raw id[pengg101] rwp[9826] ecd[0]
+
+[140504] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9826]
+
+[140504] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140504] [CARROT] db use raw id[pengg101] rwp[9825] ecd[0]
+
+[140504] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9825]
+
+[140506] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140506] [CARROT] db use raw id[pengg101] rwp[9824] ecd[0]
+
+[140506] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9824]
+
+[140506] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140506] [CARROT] db use raw id[pengg101] rwp[9823] ecd[0]
+
+[140506] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9823]
+
+[140507] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140507] [CARROT] db use raw id[pengg101] rwp[9822] ecd[0]
+
+[140507] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9822]
+
+[140512] pengg101 GetCarrotCountTime = 0.002 [count 9822]
+
+[140514] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140514] [CARROT] db use raw id[pengg101] rwp[9821] ecd[0]
+
+[140514] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9821]
+
+[140514] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[140514] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 1024] [LV 118/652720] [JOB 2] [FIELD 162]
+[140514] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[140514] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 1024] [LV 118/652720] [JOB 2] [FIELD 162]
+[140514] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[140514] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 1024] [LV 118/652720] [JOB 2] [FIELD 162]
+[140514] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[140514] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 1024] [LV 118/652720] [JOB 2] [FIELD 162]
+[140514] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[140514] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 1024] [LV 118/652720] [JOB 2] [FIELD 162]
+[140514] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[140514]  error count 6 , ì ‘ì†ì´ ëŠì–´ì§„ ê±¸ë¡œ ê°„ì£¼í•˜ê³ , ìƒˆë¡­ê²Œ ì—°ê²°í•´ì„œ ì‚¬ìš©í•œë‹¤. 
+
+[140514] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 1024] [LV 118/652720] [JOB 2] [FIELD 162]
+[140514] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[140514] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 1024] [LV 118/652720] [JOB 2] [FIELD 162]
+[140514] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[140514] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 1024] [LV 118/652720] [JOB 2] [FIELD 162]
+[140514] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 661  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[140514] __DB SAVE fail : eSAVE_DB_UNKNOWN_ERROR [pengg101/Rockhopper:SC 1024] [LV 118/652720] [JOB 2] [FIELD 162]
+[140515] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140515] [CARROT] db use raw id[pengg101] rwp[9820] ecd[0]
+
+[140515] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9820]
+
+[140516] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140516] [CARROT] db use raw id[pengg101] rwp[9819] ecd[0]
+
+[140516] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9819]
+
+[140518] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140518] [CARROT] db use raw id[pengg101] rwp[9818] ecd[0]
+
+[140518] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9818]
+
+[140519] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140519] [CARROT] db use raw id[pengg101] rwp[9817] ecd[0]
+
+[140519] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9817]
+
+[140520] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140520] [CARROT] db use raw id[pengg101] rwp[9816] ecd[0]
+
+[140520] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9816]
+
+[140521] [CARROT] use request id[pengg101] name[Rockhopper] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[140521] [CARROT] db use raw id[pengg101] rwp[9815] ecd[0]
+
+[140521] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9815]
+
+[140604] cADO_BASE::GetConnection() -> return NULL 
+
+
+[141228] cADO_BASE::GetConnection() -> return NULL 
+
+
+[141246] cADO_BASE::GetConnection() -> return NULL 
+
+
+[141330] cADO_BASE::GetConnection() -> return NULL 
+
+
+[141400] ()2 is exit!!
+
+
+[141406] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: —v‹‚³‚ê‚½–¼‘OA‚Ü‚½‚Í˜”‚É‘Î‰ž‚·‚é€–Ú‚ªƒRƒŒƒNƒVƒ‡ƒ“‚ÅŒ©‚Â‚©‚è‚Ü‚¹‚ñB Line: 377  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_AVATAR.cpp ADODB.Parameters 
+
+
+[141426]  Provision Rank = 0
+
+[141447] omizu1 GetCarrotCountTime = 0.114 [count 9999]
+
+[141536] omizu1 GetCarrotCountTime = 0.101 [count 9999]
+
+[141604] cADO_BASE::GetConnection() -> return NULL 
+
+
+[141619] omizu1 GetCarrotCountTime = 0.094 [count 9999]
+
+[141737] pengg101 GetCarrotCountTime = 0.098 [count 9815]
+
+[141919] omizu1 GetCarrotCountTime = 0.104 [count 9999]
+
+[141928] pengg101 GetCarrotCountTime = 0.002 [count 9815]
+
+[142148] cADO_BASE::GetConnection() -> return NULL 
+
+
+[142203] omizu1 GetCarrotCountTime = 0.125 [count 9999]
+
+[142343] omizu1 GetCarrotCountTime = 0.103 [count 9999]
+
+[142455] cADO_BASE::GetConnection() -> return NULL 
+
+
+[142517] cADO_BASE::GetConnection() -> return NULL 
+
+
+[142520] omizu1 GetCarrotCountTime = 0.104 [count 9999]
+
+[142657] cADO_BASE::GetConnection() -> return NULL 
+
+
+[142844] omizu1 GetCarrotCountTime = 0.104 [count 9999]
+
+[142953] cADO_BASE::GetConnection() -> return NULL 
+
+
+[143142] pengg101 GetCarrotCountTime = 0.103 [count 9815]
+
+[143148] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[335] count[1] price[10] public[0] zoneSerial[3217]
+
+[143148] [CARROT] db use raw id[pengg101] rwp[9805] ecd[0]
+
+[143148] [CARROT] use result id[pengg101] name[Humboldt] item[335] count[1] price[10] result[0] remain[9805]
+
+[143149] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[335] count[1] price[10] public[0] zoneSerial[3217]
+
+[143149] [CARROT] db use raw id[pengg101] rwp[9795] ecd[0]
+
+[143149] [CARROT] use result id[pengg101] name[Humboldt] item[335] count[1] price[10] result[0] remain[9795]
+
+[143153] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[528] count[1] price[300] public[0] zoneSerial[3217]
+
+[143153] [CARROT] db use raw id[pengg101] rwp[9495] ecd[0]
+
+[143153] [CARROT] use result id[pengg101] name[Humboldt] item[528] count[1] price[300] result[0] remain[9495]
+
+[143154] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143154] [CARROT] db use raw id[pengg101] rwp[9494] ecd[0]
+
+[143154] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9494]
+
+[143155] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143155] [CARROT] db use raw id[pengg101] rwp[9493] ecd[0]
+
+[143155] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9493]
+
+[143156] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143156] [CARROT] db use raw id[pengg101] rwp[9492] ecd[0]
+
+[143156] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9492]
+
+[143157] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143157] [CARROT] db use raw id[pengg101] rwp[9491] ecd[0]
+
+[143157] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9491]
+
+[143157] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143157] [CARROT] db use raw id[pengg101] rwp[9490] ecd[0]
+
+[143157] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9490]
+
+[143159] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143159] [CARROT] db use raw id[pengg101] rwp[9489] ecd[0]
+
+[143159] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9489]
+
+[143200] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143200] [CARROT] db use raw id[pengg101] rwp[9488] ecd[0]
+
+[143200] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9488]
+
+[143201] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143201] [CARROT] db use raw id[pengg101] rwp[9487] ecd[0]
+
+[143201] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9487]
+
+[143202] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143202] [CARROT] db use raw id[pengg101] rwp[9486] ecd[0]
+
+[143202] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9486]
+
+[143203] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143203] [CARROT] db use raw id[pengg101] rwp[9485] ecd[0]
+
+[143203] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9485]
+
+[143204] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143204] [CARROT] db use raw id[pengg101] rwp[9484] ecd[0]
+
+[143204] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9484]
+
+[143205] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143205] [CARROT] db use raw id[pengg101] rwp[9483] ecd[0]
+
+[143205] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9483]
+
+[143206] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143206] [CARROT] db use raw id[pengg101] rwp[9482] ecd[0]
+
+[143206] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9482]
+
+[143206] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143206] [CARROT] db use raw id[pengg101] rwp[9481] ecd[0]
+
+[143206] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9481]
+
+[143207] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143207] [CARROT] db use raw id[pengg101] rwp[9480] ecd[0]
+
+[143207] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9480]
+
+[143208] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3217]
+
+[143208] [CARROT] db use raw id[pengg101] rwp[9479] ecd[0]
+
+[143208] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9479]
+
+[143512] pengg101 GetCarrotCountTime = 0.110 [count 9479]
+
+[143523] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143523] [CARROT] db use raw id[pengg101] rwp[9478] ecd[0]
+
+[143523] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9478]
+
+[143524] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143524] [CARROT] db use raw id[pengg101] rwp[9477] ecd[0]
+
+[143524] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9477]
+
+[143525] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143525] [CARROT] db use raw id[pengg101] rwp[9476] ecd[0]
+
+[143525] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9476]
+
+[143525] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143525] [CARROT] db use raw id[pengg101] rwp[9475] ecd[0]
+
+[143525] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9475]
+
+[143526] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143526] [CARROT] db use raw id[pengg101] rwp[9474] ecd[0]
+
+[143526] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9474]
+
+[143527] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143527] [CARROT] db use raw id[pengg101] rwp[9473] ecd[0]
+
+[143527] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9473]
+
+[143528] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143528] [CARROT] db use raw id[pengg101] rwp[9472] ecd[0]
+
+[143528] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9472]
+
+[143529] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143529] [CARROT] db use raw id[pengg101] rwp[9471] ecd[0]
+
+[143529] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9471]
+
+[143530] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143530] [CARROT] db use raw id[pengg101] rwp[9470] ecd[0]
+
+[143530] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9470]
+
+[143531] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143531] [CARROT] db use raw id[pengg101] rwp[9469] ecd[0]
+
+[143531] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9469]
+
+[143532] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143532] [CARROT] db use raw id[pengg101] rwp[9468] ecd[0]
+
+[143532] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9468]
+
+[143533] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143533] [CARROT] db use raw id[pengg101] rwp[9467] ecd[0]
+
+[143533] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9467]
+
+[143534] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143534] [CARROT] db use raw id[pengg101] rwp[9466] ecd[0]
+
+[143534] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9466]
+
+[143535] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143535] [CARROT] db use raw id[pengg101] rwp[9465] ecd[0]
+
+[143535] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9465]
+
+[143536] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143536] [CARROT] db use raw id[pengg101] rwp[9464] ecd[0]
+
+[143536] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9464]
+
+[143536] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143536] [CARROT] db use raw id[pengg101] rwp[9463] ecd[0]
+
+[143536] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9463]
+
+[143537] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143537] [CARROT] db use raw id[pengg101] rwp[9462] ecd[0]
+
+[143537] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9462]
+
+[143538] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143538] [CARROT] db use raw id[pengg101] rwp[9461] ecd[0]
+
+[143538] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9461]
+
+[143539] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143539] [CARROT] db use raw id[pengg101] rwp[9460] ecd[0]
+
+[143539] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9460]
+
+[143539] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143539] [CARROT] db use raw id[pengg101] rwp[9459] ecd[0]
+
+[143539] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9459]
+
+[143540] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143540] [CARROT] db use raw id[pengg101] rwp[9458] ecd[0]
+
+[143540] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9458]
+
+[143541] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143541] [CARROT] db use raw id[pengg101] rwp[9457] ecd[0]
+
+[143541] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9457]
+
+[143542] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143542] [CARROT] db use raw id[pengg101] rwp[9456] ecd[0]
+
+[143542] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9456]
+
+[143543] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143543] [CARROT] db use raw id[pengg101] rwp[9455] ecd[0]
+
+[143543] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9455]
+
+[143543] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143543] [CARROT] db use raw id[pengg101] rwp[9454] ecd[0]
+
+[143543] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9454]
+
+[143544] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143544] [CARROT] db use raw id[pengg101] rwp[9453] ecd[0]
+
+[143544] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9453]
+
+[143617] pengg101 GetCarrotCountTime = 0.107 [count 9453]
+
+[143623] pengg101 GetCarrotCountTime = 0.002 [count 9453]
+
+[143626] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143626] [CARROT] db use raw id[pengg101] rwp[9452] ecd[0]
+
+[143626] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9452]
+
+[143627] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143627] [CARROT] db use raw id[pengg101] rwp[9451] ecd[0]
+
+[143627] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9451]
+
+[143627] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143627] [CARROT] db use raw id[pengg101] rwp[9450] ecd[0]
+
+[143627] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9450]
+
+[143628] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143628] [CARROT] db use raw id[pengg101] rwp[9449] ecd[0]
+
+[143628] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9449]
+
+[143629] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143629] [CARROT] db use raw id[pengg101] rwp[9448] ecd[0]
+
+[143629] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9448]
+
+[143630] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143630] [CARROT] db use raw id[pengg101] rwp[9447] ecd[0]
+
+[143630] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9447]
+
+[143631] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143631] [CARROT] db use raw id[pengg101] rwp[9446] ecd[0]
+
+[143631] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9446]
+
+[143632] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143632] [CARROT] db use raw id[pengg101] rwp[9445] ecd[0]
+
+[143632] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9445]
+
+[143632] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143632] [CARROT] db use raw id[pengg101] rwp[9444] ecd[0]
+
+[143632] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9444]
+
+[143633] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143633] [CARROT] db use raw id[pengg101] rwp[9443] ecd[0]
+
+[143633] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9443]
+
+[143634] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143634] [CARROT] db use raw id[pengg101] rwp[9442] ecd[0]
+
+[143634] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9442]
+
+[143634] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143634] [CARROT] db use raw id[pengg101] rwp[9441] ecd[0]
+
+[143634] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9441]
+
+[143635] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143635] [CARROT] db use raw id[pengg101] rwp[9440] ecd[0]
+
+[143635] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9440]
+
+[143636] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143636] [CARROT] db use raw id[pengg101] rwp[9439] ecd[0]
+
+[143636] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9439]
+
+[143636] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143636] [CARROT] db use raw id[pengg101] rwp[9438] ecd[0]
+
+[143636] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9438]
+
+[143637] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143637] [CARROT] db use raw id[pengg101] rwp[9437] ecd[0]
+
+[143637] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9437]
+
+[143638] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143638] [CARROT] db use raw id[pengg101] rwp[9436] ecd[0]
+
+[143638] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9436]
+
+[143639] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143639] [CARROT] db use raw id[pengg101] rwp[9435] ecd[0]
+
+[143639] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9435]
+
+[143641] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143641] [CARROT] db use raw id[pengg101] rwp[9434] ecd[0]
+
+[143641] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9434]
+
+[143642] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143642] [CARROT] db use raw id[pengg101] rwp[9433] ecd[0]
+
+[143642] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9433]
+
+[143643] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143643] [CARROT] db use raw id[pengg101] rwp[9432] ecd[0]
+
+[143643] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9432]
+
+[143644] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143644] [CARROT] db use raw id[pengg101] rwp[9431] ecd[0]
+
+[143644] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9431]
+
+[143645] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143645] [CARROT] db use raw id[pengg101] rwp[9430] ecd[0]
+
+[143645] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9430]
+
+[143647] [CARROT] use request id[pengg101] name[Humboldt] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3214]
+
+[143647] [CARROT] db use raw id[pengg101] rwp[9429] ecd[0]
+
+[143647] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9429]
+
+[143719] cADO_BASE::GetConnection() -> return NULL 
+
+
+[143859] cADO_BASE::GetConnection() -> return NULL 
+
+
+[144056] cADO_BASE::GetConnection() -> return NULL 
+
+
+[144104] pengg101 GetCarrotCountTime = 0.101 [count 9429]
+
+[144116] pengg101 GetCarrotCountTime = 0.001 [count 9429]
+
+[144400] omizu1 GetCarrotCountTime = 0.114 [count 9999]
+
+[144543] omizu1 GetCarrotCountTime = 0.105 [count 9999]
+
+[144820] cADO_BASE::GetConnection() -> return NULL 
+
+
+[145748] omizu1 GetCarrotCountTime = 0.104 [count 9999]
+
+[152837] ()2 is exit!!
+
+
+[153033]  Provision Rank = 0
+
+[153053] omizu1 GetCarrotCountTime = 0.107 [count 9999]
+
+[153245] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[153245] Start    Make DB Index.....
+
+[153245] End  Make DB Index.  ListCount 17, 0.028 Sec
+
+[153245] Start    Get Event Infomation .....
+
+[153249] End    Get Event Infomation 4.156 Sec
+
+[153249] Purchase DB Connect ip[127.0.0.1] id[RedMaster] source[redgem]
+
+[153249] Log Server [127.0.0.1] [59641]
+
+[153249] START WorkerThread[0] ...
+
+[153249] START WorkerThread[1] ...
+
+[153249] START WorkerThread[2] ...
+
+[153249] START WorkerThread[4] ...
+
+[153249] START WorkerThread[5] ...
+
+[153249] START WorkerThread[6] ...
+
+[153249] START Event Manager Thread ...
+
+[153249] START WorkerThread[3] ...
+
+[153249] START AdditionThread ...
+
+[153249] START WorkerThread[7] ...
+
+[153250] Wait for begin all worker thread
+
+[153250] Start Avatar DB Cache Server ... day : 20260602 - time : 153250 
+
+
+[185013] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[185013] Start    Make DB Index.....
+
+[185013] End  Make DB Index.  ListCount 17, 0.044 Sec
+
+[185013] Start    Get Event Infomation .....
+
+[185017] End    Get Event Infomation 4.110 Sec
+
+[185017] Purchase DB Connect ip[127.0.0.1] id[RedMaster] source[redgem]
+
+[185017] Log Server [127.0.0.1] [59641]
+
+[185017] START WorkerThread[0] ...
+
+[185017] START WorkerThread[4] ...
+
+[185017] START WorkerThread[2] ...
+
+[185017] START WorkerThread[1] ...
+
+[185017] START WorkerThread[6] ...
+
+[185017] START WorkerThread[7] ...
+
+[185017] START AdditionThread ...
+
+[185017] START Event Manager Thread ...
+
+[185017] START WorkerThread[3] ...
+
+[185017] START WorkerThread[5] ...
+
+[185018] Wait for begin all worker thread
+
+[185018] Start Avatar DB Cache Server ... day : 20260602 - time : 185018 
+
+
+[190829]  Provision Rank = 0
+
+[191413] ()1 is exit!!
+
+
+[191432]  Provision Rank = 0
+
+[191751] cADO_BASE::GetConnection() -> return NULL 
+
+
+[191920] ERROR ReallySend :[LOG SERVER]  size 697, type 10(LT 0) ,ERROR 10054
+
+[191920] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[192242] cADO_BASE::GetConnection() -> return NULL 
+
+
+[192635] cADO_BASE::GetConnection() -> return NULL 
+
+
+[195321] ()1 is exit!!
+
+
+[195359]  Provision Rank = 0
+
+[195745] cADO_BASE::GetConnection() -> return NULL 
+
+
+[195939] cADO_BASE::GetConnection() -> return NULL 
+
+
+[200551] ()1 is exit!!
+
+
+[200621]  Provision Rank = 0
+
+[200757] cADO_BASE::GetConnection() -> return NULL 
+
+
+[201321] 
+  
+ Error: -2147217865 
+ Msg: IDispatch error #3127 
+ Description: ƒIƒuƒWƒFƒNƒg–¼ 'OrderTb' ‚ª–³Œø‚Å‚·B Line: 92  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp Microsoft OLE DB Provider for SQL Server 
+
+
+[201841] cADO_BASE::GetConnection() -> return NULL 
+
+
+[202255] spDeleteAva : [1111] [omizu2] [23]
+
+[202255] _iIndex remove [23] [omizu2] [1111] [0]
+[202256] spDeleteAva : [2222] [omizu2] [24]
+
+[202256] _iIndex remove [24] [omizu2] [2222] [1]
+[202257] spDeleteAva : [3333] [omizu2] [25]
+
+[202257] _iIndex remove [25] [omizu2] [3333] [2]
+[202308] getBlankPos Succ: 0.000
+
+[202308] try to make avatar : [omizu2] [‚¨…‹³] [0]
+
+[202308] add [26] [omizu2] ,[‚¨…‹³], max count 18
+
+[202308]  ADD DBINDEX : [26] [‚¨…‹³] [omizu2] [0],ret 17
+
+[202308] FINISH dLDMSG_CREATEAVATAR  0.007 sec..
+[202423] spDeleteAva : [Emperor] [pengg101] [22]
+
+[202423] _iIndex remove [22] [pengg101] [Emperor] [5]
+[202429] getBlankPos Succ: 0.000
+
+[202429] try to make avatar : [pengg101] [Emperor] [5]
+
+[202429] add [27] [pengg101] ,[Emperor], max count 19
+
+[202429]  ADD DBINDEX : [27] [Emperor] [pengg101] [5],ret 18
+
+[202429] FINISH dLDMSG_CREATEAVATAR  0.005 sec..
+[203609] 
+  
+ Error: -2147217865 
+ Msg: IDispatch error #3127 
+ Description: ƒIƒuƒWƒFƒNƒg–¼ 'OrderTb' ‚ª–³Œø‚Å‚·B Line: 92  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_DBServer\cADO_WEB.cpp Microsoft OLE DB Provider for SQL Server 
+
+
+[204610] [CARROT] use request id[pengg101] name[Emperor] server[‚¨…ƒT[ƒo[] item[246] count[1] price[1] public[0] zoneSerial[3603]
+
+[204610] [CARROT] db use raw id[pengg101] rwp[9428] ecd[0]
+
+[204610] [CARROT] use result id[pengg101] name[Emperor] item[246] count[1] price[1] result[0] remain[9428]
+
+[210006] cADO_BASE::GetConnection() -> return NULL 
+
+
+[211337] cADO_BASE::GetConnection() -> return NULL 
+
+

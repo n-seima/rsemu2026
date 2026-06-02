@@ -536,12 +536,12 @@ public:
 };
 
 //	압축&화일 병합 관련..
-#define	dMAX_MERGE_FILE	2046
+#define	dMAX_MERGE_FILE	20000
 
 class cMERGEINFO
 {
 public:
-	char	FName[40];
+	char	FName[260];
 	DWORD	Locate;
 	DWORD	Size;
 };
@@ -1359,7 +1359,7 @@ if (ptr)													\
 
 #endif
 
-inline	GetTextCheckSum(char *_lpstrText)
+inline int GetTextCheckSum(char *_lpstrText)
 {
 	int	iCheckSum	=	0;
 	int	iStrsize	=	strlen(_lpstrText);

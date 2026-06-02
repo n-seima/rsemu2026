@@ -8,6 +8,42 @@
 
 #pragma pack(2)
 
+inline int EncodeItemExpireYear(int _iFullYear)
+{
+	if	(_iFullYear <= 0)
+		return	0;
+
+	return	(_iFullYear-2000)&0x0f;
+}
+
+inline int DecodeItemExpireFullYear(int _iEncodedYear,int _iCurrentFullYear)
+{
+	if	(_iEncodedYear <= 0)
+		return	0;
+
+	int	iCurrentOffset	=	_iCurrentFullYear-2000;
+
+	if	(iCurrentOffset < 0)
+		return	2000+_iEncodedYear;
+
+	int	iExpireOffset	=	(iCurrentOffset&~0x0f)+_iEncodedYear;
+
+	if	(iExpireOffset < iCurrentOffset-1)
+		iExpireOffset	+=	16;
+
+	return	2000+iExpireOffset;
+}
+
+inline int DecodeItemExpireYearOffset(int _iEncodedYear,int _iCurrentFullYear)
+{
+	int	iFullYear	=	DecodeItemExpireFullYear(_iEncodedYear,_iCurrentFullYear);
+
+	if	(iFullYear <= 0)
+		return	0;
+
+	return	iFullYear-2000;
+}
+
 #define	dITEM_NAME_LENGTH				50
 #define	dNAME_LENGTH					18
 
@@ -16,12 +52,12 @@
 #define	dGENERATE_ITEM_DATA_COUNT		4
 #define	dGENERATE_ITEM_DATA_VALUE_COUNT	4
 
-#define	dITEM_KIND_ALL					0xffff		//	¸ğµç Á¾·ùÀÇ ¾ÆÀÌÅÛ
-#define	dITEM_KIND_WASTING				0xfffe		//	¸ğµç Á¾·ùÀÇ ¾ÆÀÌÅÛ
+#define	dITEM_KIND_ALL					0xffff		//	ëª¨ë“  ì¢…ë¥˜ì˜ ì•„ì´í…œ
+#define	dITEM_KIND_WASTING				0xfffe		//	ëª¨ë“  ì¢…ë¥˜ì˜ ì•„ì´í…œ
 #define	dMAX_ITEM_COUNT_BY_KIND			400
 
 #define	dOWN_ITEM_COUNT					42
-#define	dMONSTER_ITEM_COUNT				10			//	¸ó½ºÅÍ°¡ °¡Áö°í ÀÖÀ» ¼ö ÀÖ´Â ¾ÆÀÌÅÛÀÇ ÃÖ´ë ¼ö
+#define	dMONSTER_ITEM_COUNT				10			//	ëª¬ìŠ¤í„°ê°€ ê°€ì§€ê³  ìˆì„ ìˆ˜ ìˆëŠ” ì•„ì´í…œì˜ ìµœëŒ€ ìˆ˜
 
 #define	dITEM_PREFIX_COUNT				3
 
@@ -35,7 +71,7 @@
 
 #define	dOWN_ITEM_COUNT							42
 #define	dEQUIPMENT_PART_COUNT					23
-#define	dEQUIPMENT_SKILL_SLOT				200			// 10.01.06 ½ºÅ³½½·Ô¿¡ Âø¿ëÇÏ´Â ¾ÆÀÌÅÛ ±¸ºĞ
+#define	dEQUIPMENT_SKILL_SLOT				200			// 10.01.06 ìŠ¤í‚¬ìŠ¬ë¡¯ì— ì°©ìš©í•˜ëŠ” ì•„ì´í…œ êµ¬ë¶„
 #define	dLIMIT_BADGE_ITEM_COUNT_IN_INVENTORY	5 // 20240904 rekunn 3
 #define	dDX_ITEM_REPAIR_FACTOR					36
 #define	dULTIMATE_ITEM_REPAIR_FACTOR			36
@@ -49,27 +85,27 @@
 #define	dVALID_PLAYER_WAYPOINT			0xf
 #define	dITEM_INDEX_GOLD_BAR			4237			// 09.08.19
 #define	dITEM_MAX_GOLD_BAR_STACK		100				// 09.10.08
-#define	dMAX_GOLD_BAR_STACK_FOR_JAPAN	10			// ÀÏº» ÃÖ´ë ±İ±« ½ºÅÃÁ¦ÇÑÀº 10°³ÀÌ´Ù.
-#define	dITEM_INDEX_ATTACH_PREFIX			4437			// Á¢µÎ»ç ºÙ¿©³Ö±â¾ÆÀÌÅÛ
-#define	dITEM_INDEX_ATTACH_PREFIX_CAN_NOT_TRADE			4459			// Á¢µÎ»ç ºÙ¿©³Ö±â¾ÆÀÌÅÛ °Å·¡ºÒ°¡.
+#define	dMAX_GOLD_BAR_STACK_FOR_JAPAN	10			// ì¼ë³¸ ìµœëŒ€ ê¸ˆê´´ ìŠ¤íƒì œí•œì€ 10ê°œì´ë‹¤.
+#define	dITEM_INDEX_ATTACH_PREFIX			4437			// ì ‘ë‘ì‚¬ ë¶™ì—¬ë„£ê¸°ì•„ì´í…œ
+#define	dITEM_INDEX_ATTACH_PREFIX_CAN_NOT_TRADE			4459			// ì ‘ë‘ì‚¬ ë¶™ì—¬ë„£ê¸°ì•„ì´í…œ ê±°ë˜ë¶ˆê°€.
 
 
-#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B1			3958			// ±æµå´øÀü b1 Ãş ÀÎµ¦½º
-#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B2			3959			// ±æµå´øÀü b2 Ãş ÀÎµ¦½º
-#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B3			3960			// ±æµå´øÀü b3 Ãş ÀÎµ¦½º
-#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B4			3961			// ±æµå´øÀü b4 Ãş ÀÎµ¦½º
-#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B5			3962			// ±æµå´øÀü b5 Ãş ÀÎµ¦½º
-#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B6			3963			// ±æµå´øÀü b6 Ãş ÀÎµ¦½º
-#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B7			3964			// ±æµå´øÀü b7 Ãş ÀÎµ¦½º
-#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B8			3965			// ±æµå´øÀü b8 Ãş ÀÎµ¦½º
-#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B9			3966			// ±æµå´øÀü b9 Ãş ÀÎµ¦½º
+#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B1			3958			// ê¸¸ë“œë˜ì „ b1 ì¸µ ì¸ë±ìŠ¤
+#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B2			3959			// ê¸¸ë“œë˜ì „ b2 ì¸µ ì¸ë±ìŠ¤
+#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B3			3960			// ê¸¸ë“œë˜ì „ b3 ì¸µ ì¸ë±ìŠ¤
+#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B4			3961			// ê¸¸ë“œë˜ì „ b4 ì¸µ ì¸ë±ìŠ¤
+#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B5			3962			// ê¸¸ë“œë˜ì „ b5 ì¸µ ì¸ë±ìŠ¤
+#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B6			3963			// ê¸¸ë“œë˜ì „ b6 ì¸µ ì¸ë±ìŠ¤
+#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B7			3964			// ê¸¸ë“œë˜ì „ b7 ì¸µ ì¸ë±ìŠ¤
+#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B8			3965			// ê¸¸ë“œë˜ì „ b8 ì¸µ ì¸ë±ìŠ¤
+#define	dITEM_INDEX_GUILD_DUNGEON_TICKET_B9			3966			// ê¸¸ë“œë˜ì „ b9 ì¸µ ì¸ë±ìŠ¤
 
 const	int	c_iFireWorkKindCount	=	10;
 
 #define	dDROPPING_GOLD_RANGE			10
 
-#define	dDROP_ITEM_SEAL_TIME			300		//	300ÃÊ¸é 6ºĞ
-#define	dITEM_MONEY						0	//	µ· -o-
+#define	dDROP_ITEM_SEAL_TIME			300		//	300ì´ˆë©´ 6ë¶„
+#define	dITEM_MONEY						0	//	ëˆ -o-
 #define	dPICK_ABLE_RANGE				(4*110*110) // 2024 0904 rekunn (110*110)
 
 #define	dDEFENSIVE_EQUIPMENT_COUNT		5
@@ -79,56 +115,56 @@ const	int	c_iFireWorkKindCount	=	10;
 #define	dRANGE_OF_USE_ITEM				(200*200)
 
 #define	dDROP_ITEM_PATTERN_COUNT		10
-#define	dDEFAULT_SHIELD_RIGIDITY_TIME	4		//	µğÆúÆ® ¹æÆĞ °æÁ÷ ½Ã°£(¹æÆĞ·Î ºí·° ÇßÀ»¶§ ±× ÀÚ¼¼ ±×´ë·Î ±»¾î-_-Á®ÀÖ´Â ½Ã°£)
+#define	dDEFAULT_SHIELD_RIGIDITY_TIME	4		//	ë””í´íŠ¸ ë°©íŒ¨ ê²½ì§ ì‹œê°„(ë°©íŒ¨ë¡œ ë¸”ëŸ­ í–ˆì„ë•Œ ê·¸ ìì„¸ ê·¸ëŒ€ë¡œ êµ³ì–´-_-ì ¸ìˆëŠ” ì‹œê°„)
 #define	dBELT_SLOT_COUNT				5
 
 #define	dVALID_ITEM						0xffffffff
 
 #define	dEQUIP_WEAPON					0
-#define	dEQUIP_SHIELD_BULLET			1			//	¹æÆĞ/ÅºÈ¯
-#define	dEQUIP_ARMOR					2			//	°©¿Ê
-#define	dEQUIP_GLOVE					3			//	Àå°©
+#define	dEQUIP_SHIELD_BULLET			1			//	ë°©íŒ¨/íƒ„í™˜
+#define	dEQUIP_ARMOR					2			//	ê°‘ì˜·
+#define	dEQUIP_GLOVE					3			//	ì¥ê°‘
 #define	dEQUIP_HELM						4
-#define	dEQUIP_EARING					5			//	±Í°Å¸®
-#define	dEQUIP_NECKLACE					6			//	¸ñ°ÉÀÌ
-#define	dEQUIP_BELT						7			//	º§Æ®
-#define	dEQUIP_SHOES					8			//	½Å¹ß
-#define	dEQUIP_RING						9			//	¹İÁö
-#define	dEQUIP_RING1					9			//	¹İÁö
-#define	dEQUIP_RING2					10			//	¹İÁö
-#define	dEQUIP_RING3					11			//	¹İÁö
-#define	dEQUIP_RING4					12			//	¹İÁö
-#define	dEQUIP_RING5					13			//	¹İÁö
-#define	dEQUIP_RING6					14			//	¹İÁö
-#define	dEQUIP_RING7					15			//	¹İÁö
-#define	dEQUIP_RING8					16			//	¹İÁö
-#define	dEQUIP_WEAPON_2					17			//	¹«±â2
-#define	dEQUIP_BELT_SLOT1				18			//	º§Æ® ½½·Ô 1
-#define	dEQUIP_BELT_SLOT2				19			//	º§Æ® ½½·Ô 2
-#define	dEQUIP_BELT_SLOT3				20			//	º§Æ® ½½·Ô 3
-#define	dEQUIP_BELT_SLOT4				21			//	º§Æ® ½½·Ô 4
-#define	dEQUIP_BELT_SLOT5				22			//	º§Æ® ½½·Ô 5
+#define	dEQUIP_EARING					5			//	ê·€ê±°ë¦¬
+#define	dEQUIP_NECKLACE					6			//	ëª©ê±¸ì´
+#define	dEQUIP_BELT						7			//	ë²¨íŠ¸
+#define	dEQUIP_SHOES					8			//	ì‹ ë°œ
+#define	dEQUIP_RING						9			//	ë°˜ì§€
+#define	dEQUIP_RING1					9			//	ë°˜ì§€
+#define	dEQUIP_RING2					10			//	ë°˜ì§€
+#define	dEQUIP_RING3					11			//	ë°˜ì§€
+#define	dEQUIP_RING4					12			//	ë°˜ì§€
+#define	dEQUIP_RING5					13			//	ë°˜ì§€
+#define	dEQUIP_RING6					14			//	ë°˜ì§€
+#define	dEQUIP_RING7					15			//	ë°˜ì§€
+#define	dEQUIP_RING8					16			//	ë°˜ì§€
+#define	dEQUIP_WEAPON_2					17			//	ë¬´ê¸°2
+#define	dEQUIP_BELT_SLOT1				18			//	ë²¨íŠ¸ ìŠ¬ë¡¯ 1
+#define	dEQUIP_BELT_SLOT2				19			//	ë²¨íŠ¸ ìŠ¬ë¡¯ 2
+#define	dEQUIP_BELT_SLOT3				20			//	ë²¨íŠ¸ ìŠ¬ë¡¯ 3
+#define	dEQUIP_BELT_SLOT4				21			//	ë²¨íŠ¸ ìŠ¬ë¡¯ 4
+#define	dEQUIP_BELT_SLOT5				22			//	ë²¨íŠ¸ ìŠ¬ë¡¯ 5
 #define	dEQUIPMENT_PART_COUNT			23
-#define	dITEM_INDEX_STONEOFMYSTERY		3955			// 09.08.26 ½Åºñ¼®
-#define	dITEM_INDEX_STONEOFMYSTERY_PIECE	3954		// 09.09.07 ½Åºñ¼® Á¶°¢ 
-#define	dITEM_INDEX_TANTILLESS			3957			// 09.08.26 ÅºÆ¿¸®½º À¯¹°
-#define	dITEM_INDEX_TANTILLESS_PIECE		3956			// 09.08.26 ÅºÆ¿¸®½º À¯¹° Á¶°¢	
-#define dITEM_INDEX_CRYSTAL				3828			// 09.08.26 °áÁ¤¼®
-#define	dETERNAL_ITEM_MAX_LEVEL			10		// ÀÌÅÍ³Î¾ÆÀÌÅÛ ÃÖ°í·¹º§	09.08.25
-#define	dLIMIT_EQUIP_RING_OF_INFINITY_COUNT	1			//	 ¹«ÇÑÀÇ ¹İÁö Âø¿ë Á¦ÇÑ Àü»ı È¸Â÷´ç °³¼ö.
+#define	dITEM_INDEX_STONEOFMYSTERY		3955			// 09.08.26 ì‹ ë¹„ì„
+#define	dITEM_INDEX_STONEOFMYSTERY_PIECE	3954		// 09.09.07 ì‹ ë¹„ì„ ì¡°ê° 
+#define	dITEM_INDEX_TANTILLESS			3957			// 09.08.26 íƒ„í‹¸ë¦¬ìŠ¤ ìœ ë¬¼
+#define	dITEM_INDEX_TANTILLESS_PIECE		3956			// 09.08.26 íƒ„í‹¸ë¦¬ìŠ¤ ìœ ë¬¼ ì¡°ê°	
+#define dITEM_INDEX_CRYSTAL				3828			// 09.08.26 ê²°ì •ì„
+#define	dETERNAL_ITEM_MAX_LEVEL			10		// ì´í„°ë„ì•„ì´í…œ ìµœê³ ë ˆë²¨	09.08.25
+#define	dLIMIT_EQUIP_RING_OF_INFINITY_COUNT	1			//	 ë¬´í•œì˜ ë°˜ì§€ ì°©ìš© ì œí•œ ì „ìƒ íšŒì°¨ë‹¹ ê°œìˆ˜.
 #define	dCARVING_LUCK_FACTOR		0.0005
 //
 //	CBIP - Compute Basic Item Price
 enum
 {
-	eCBIP_PRICE,	//	°¡°İÀ¸·Î Ã³¸®
-	eCBIP_VALUE1,	//	¼öÄ¡ 1À¸·Î Ã³¸®
-	eCBIP_PRICE_MUL_VALUE1,	//	°¡°İ * ¼öÄ¡1
-	eCBIP_PRICE_MUL_VALUE2,	//	°¡°İ * ¼öÄ¡2
-	eCBIP_PRICE_MUL_VALUE1_PLUS1,	//	°¡°İ * (¼öÄ¡1 +1)
-	eCBIP_VALUE1_MUL_VALUE2_DIV_PRICE,	//	¼öÄ¡1*¼öÄ¡2/°¡°İ
-	eCBIP_PRICE_DIV_10,	//	°¡°İ / 10
-	eCBIP_VALUE1_MUL_VALUE2_MUL_PRICE,	//	¼öÄ¡1*¼öÄ¡2*°¡°İ
+	eCBIP_PRICE,	//	ê°€ê²©ìœ¼ë¡œ ì²˜ë¦¬
+	eCBIP_VALUE1,	//	ìˆ˜ì¹˜ 1ìœ¼ë¡œ ì²˜ë¦¬
+	eCBIP_PRICE_MUL_VALUE1,	//	ê°€ê²© * ìˆ˜ì¹˜1
+	eCBIP_PRICE_MUL_VALUE2,	//	ê°€ê²© * ìˆ˜ì¹˜2
+	eCBIP_PRICE_MUL_VALUE1_PLUS1,	//	ê°€ê²© * (ìˆ˜ì¹˜1 +1)
+	eCBIP_VALUE1_MUL_VALUE2_DIV_PRICE,	//	ìˆ˜ì¹˜1*ìˆ˜ì¹˜2/ê°€ê²©
+	eCBIP_PRICE_DIV_10,	//	ê°€ê²© / 10
+	eCBIP_VALUE1_MUL_VALUE2_MUL_PRICE,	//	ìˆ˜ì¹˜1*ìˆ˜ì¹˜2*ê°€ê²©
 	eCBIP_LEVEL_PER_GOLD
 };
 
@@ -136,17 +172,17 @@ enum
 //	CIPP - Compute Item Price by Prefix
 enum
 {
-	eCIPP_PRICE,	//	°¡°İÀ¸·Î Ã³¸®
-	eCIPP_VALUE1,	//	¼öÄ¡1
-	eCIPP_VALUE1_MUL_PRICE,	//	°¡°İ * ¼öÄ¡1
-	eCIPP_VALUE1_DIV_PRICE,	//	¼öÄ¡1 / °¡°İ
-	eCIPP_VALUE1_MUL_PRICE_DIV_100,	//	¼öÄ¡1*°¡°İ/100
-	eCIPP_PRICE_MUL_VALUE2_DIV_VALUE1,//°¡°İ*¼öÄ¡2/¼öÄ¡1
+	eCIPP_PRICE,	//	ê°€ê²©ìœ¼ë¡œ ì²˜ë¦¬
+	eCIPP_VALUE1,	//	ìˆ˜ì¹˜1
+	eCIPP_VALUE1_MUL_PRICE,	//	ê°€ê²© * ìˆ˜ì¹˜1
+	eCIPP_VALUE1_DIV_PRICE,	//	ìˆ˜ì¹˜1 / ê°€ê²©
+	eCIPP_VALUE1_MUL_PRICE_DIV_100,	//	ìˆ˜ì¹˜1*ê°€ê²©/100
+	eCIPP_PRICE_MUL_VALUE2_DIV_VALUE1,//ê°€ê²©*ìˆ˜ì¹˜2/ìˆ˜ì¹˜1
 };
 
 const	int	c_iaCarvingData[][2] =
-{	// °¢ÀÎ ´Ü°èº° ¾÷±×·¹ÀÌµå ºñ¿ë
-	// µ· x¸¸ , °áÁ¤¼® °³¼ö
+{	// ê°ì¸ ë‹¨ê³„ë³„ ì—…ê·¸ë ˆì´ë“œ ë¹„ìš©
+	// ëˆ xë§Œ , ê²°ì •ì„ ê°œìˆ˜
 	{50, 0},
 	{100, 0},
 	{150, 0},
@@ -187,65 +223,65 @@ const	int	c_iaCarvingData[][2] =
 
 const	int	c_aItemEquipPlace[]	=
 {
-	dEQUIP_HELM,//"Çï¸ä",
-	dEQUIP_HELM,//"°ü",
-	dEQUIP_GLOVE,//"Àå°©",
-	dEQUIP_GLOVE,//"Àå°©´ë¿ë",
-	dEQUIP_GLOVE,//"¹ßÅé",
-	dEQUIP_GLOVE,//"ÆÈÂî",
-	dEQUIP_BELT,//"º§Æ®",
-	dEQUIP_SHOES,//"ºÎÃ÷",
-	dEQUIP_NECKLACE,//"¸ñ°ÉÀÌ",
-	dEQUIP_RING,//"¹İÁö",
-	dEQUIP_EARING,//"±Í°ÉÀÌ",
-	dEQUIP_EARING,//"¸ÁÅä",
-	dEQUIP_SHIELD_BULLET,//"ºê·ÎÄ¡",
-	dEQUIP_GLOVE,//"ÆÈ ¹®½Å",
-	dEQUIP_SHIELD_BULLET,//"¾î±ú ¹®½Å",
-	dEQUIP_SHIELD_BULLET,//"½ÊÀÚ°¡",
-	dEQUIP_ARMOR,//"°ø¿ë°©¿Ê",
-	dEQUIP_ARMOR,//"Àü¿ë°©¿Ê",
-	dEQUIP_WEAPON,//"ÇÑ¼Õ°Ë",
-	dEQUIP_SHIELD_BULLET,//"¹æÆĞ",
-	dEQUIP_WEAPON,//"¾ç¼Õ°Ë",
-	dEQUIP_WEAPON,//"ÁöÆÎÀÌ",
-	dEQUIP_WEAPON,//"ÀÌ»¡",
-	dEQUIP_WEAPON,//"¸ŞÀÌ½º",
-	dEQUIP_WEAPON,//"³¯°³",
-	dEQUIP_WEAPON,//"´Üµµ",
-	dEQUIP_WEAPON,//"È°",
-	dEQUIP_SHIELD_BULLET,//"È­»ì",
-	dEQUIP_WEAPON,//"Ã¢",
-	dEQUIP_WEAPON,//"ÇÇ¸®",
-	dEQUIP_WEAPON,//"½½¸µ",
-	dEQUIP_SHIELD_BULLET,//"ÅºÈ¯",
-	dEQUIP_WEAPON,//"¸¶¼úºÀ",
-	dEQUIP_WEAPON,//"Ã¤Âï",
-	dITEM_KIND_WASTING,//"º¸¼®",
-	dITEM_KIND_WASTING,//"Ã¼·Â Æ÷¼Ç",
-	dITEM_KIND_WASTING,//"Â÷Â¡ Æ÷¼Ç",
-	dITEM_KIND_WASTING,//"½ºÅÈ Çâ»ó Æ÷¼Ç",
-	dITEM_KIND_WASTING,//"¼º´É Çâ»ó Æ÷¼Ç",
-	dITEM_KIND_WASTING,//"Ä¡·á¾à",
-	dITEM_KIND_WASTING,//"»óÅÂ È¸º¹Á¦",
-	0xffff,//"¿­¼è",
-	dITEM_KIND_WASTING,//"Æ÷Å» ½ºÅæ",
-	0xffff,//"ÇÊ»ì±â µÎ·ç¸»ÀÌ",
-	dITEM_KIND_WASTING,//"¸ÔÀ» °Í/±âÅ¸",
-	0xffff,//"´É·ÂÇâ»óÁ¦",
-	0xffff,//"°­È­¾×",
-	0xffff,//"¸¶¹ı º¸¼®",
-	0xffff,//"Æ¯¼ö ¾ÆÀÌÅÛ",
+	dEQUIP_HELM,//"í—¬ë©§",
+	dEQUIP_HELM,//"ê´€",
+	dEQUIP_GLOVE,//"ì¥ê°‘",
+	dEQUIP_GLOVE,//"ì¥ê°‘ëŒ€ìš©",
+	dEQUIP_GLOVE,//"ë°œí†±",
+	dEQUIP_GLOVE,//"íŒ”ì°Œ",
+	dEQUIP_BELT,//"ë²¨íŠ¸",
+	dEQUIP_SHOES,//"ë¶€ì¸ ",
+	dEQUIP_NECKLACE,//"ëª©ê±¸ì´",
+	dEQUIP_RING,//"ë°˜ì§€",
+	dEQUIP_EARING,//"ê·€ê±¸ì´",
+	dEQUIP_EARING,//"ë§í† ",
+	dEQUIP_SHIELD_BULLET,//"ë¸Œë¡œì¹˜",
+	dEQUIP_GLOVE,//"íŒ” ë¬¸ì‹ ",
+	dEQUIP_SHIELD_BULLET,//"ì–´ê¹¨ ë¬¸ì‹ ",
+	dEQUIP_SHIELD_BULLET,//"ì‹­ìê°€",
+	dEQUIP_ARMOR,//"ê³µìš©ê°‘ì˜·",
+	dEQUIP_ARMOR,//"ì „ìš©ê°‘ì˜·",
+	dEQUIP_WEAPON,//"í•œì†ê²€",
+	dEQUIP_SHIELD_BULLET,//"ë°©íŒ¨",
+	dEQUIP_WEAPON,//"ì–‘ì†ê²€",
+	dEQUIP_WEAPON,//"ì§€íŒ¡ì´",
+	dEQUIP_WEAPON,//"ì´ë¹¨",
+	dEQUIP_WEAPON,//"ë©”ì´ìŠ¤",
+	dEQUIP_WEAPON,//"ë‚ ê°œ",
+	dEQUIP_WEAPON,//"ë‹¨ë„",
+	dEQUIP_WEAPON,//"í™œ",
+	dEQUIP_SHIELD_BULLET,//"í™”ì‚´",
+	dEQUIP_WEAPON,//"ì°½",
+	dEQUIP_WEAPON,//"í”¼ë¦¬",
+	dEQUIP_WEAPON,//"ìŠ¬ë§",
+	dEQUIP_SHIELD_BULLET,//"íƒ„í™˜",
+	dEQUIP_WEAPON,//"ë§ˆìˆ ë´‰",
+	dEQUIP_WEAPON,//"ì±„ì°",
+	dITEM_KIND_WASTING,//"ë³´ì„",
+	dITEM_KIND_WASTING,//"ì²´ë ¥ í¬ì…˜",
+	dITEM_KIND_WASTING,//"ì°¨ì§• í¬ì…˜",
+	dITEM_KIND_WASTING,//"ìŠ¤íƒ¯ í–¥ìƒ í¬ì…˜",
+	dITEM_KIND_WASTING,//"ì„±ëŠ¥ í–¥ìƒ í¬ì…˜",
+	dITEM_KIND_WASTING,//"ì¹˜ë£Œì•½",
+	dITEM_KIND_WASTING,//"ìƒíƒœ íšŒë³µì œ",
+	0xffff,//"ì—´ì‡ ",
+	dITEM_KIND_WASTING,//"í¬íƒˆ ìŠ¤í†¤",
+	0xffff,//"í•„ì‚´ê¸° ë‘ë£¨ë§ì´",
+	dITEM_KIND_WASTING,//"ë¨¹ì„ ê²ƒ/ê¸°íƒ€",
+	0xffff,//"ëŠ¥ë ¥í–¥ìƒì œ",
+	0xffff,//"ê°•í™”ì•¡",
+	0xffff,//"ë§ˆë²• ë³´ì„",
+	0xffff,//"íŠ¹ìˆ˜ ì•„ì´í…œ",
 
-	0xffff,//"Äù½ºÆ® ¾ÆÀÌÅÛ",
-	0xffff,//"ÇÁ¸®¹Ì¾ö ¾ÆÀÌÅÛ",
-	0xffff,//"ÀÎÃ¦Æ® ¾ÆÀÌÅÛ",
-	0xffff,//"¾ÆÀÌÅÛÆÑ",
+	0xffff,//"í€˜ìŠ¤íŠ¸ ì•„ì´í…œ",
+	0xffff,//"í”„ë¦¬ë¯¸ì—„ ì•„ì´í…œ",
+	0xffff,//"ì¸ì±ˆíŠ¸ ì•„ì´í…œ",
+	0xffff,//"ì•„ì´í…œíŒ©",
 	
-	0xffff,//"¸ğµç ¹«±â",
-	dEQUIP_WEAPON,	// ³´
-	dEQUIP_WEAPON,	// ¾Ï¿şÆù
-	dEQUIP_WEAPON,	// Ã¥
+	0xffff,//"ëª¨ë“  ë¬´ê¸°",
+	dEQUIP_WEAPON,	// ë‚«
+	dEQUIP_WEAPON,	// ì•”ì›¨í°
+	dEQUIP_WEAPON,	// ì±…
 };
 
 //
@@ -273,66 +309,66 @@ enum
 
 enum
 {
-eIK_HELM						,//"Çï¸ä",
-eIK_CROWN						,//"°ü",
-eIK_GLOVE						,//"Àå°©",
-eIK_GLOVE_STYLE					,//"Àå°©´ë¿ë",
-eIK_CLAW						,//"¹ßÅé",
-eIK_BRACELET					,//"ÆÈÂî",
-eIK_BELT						,//"º§Æ®",
-eIK_BOOTS						,//"ºÎÃ÷",
-eIK_NECKLACE					,//"¸ñ°ÉÀÌ",
-eIK_RING						,//"¹İÁö",
-eIK_EARING						,//"±Í°ÉÀÌ",
-eIK_CLOAK						,//"¸ÁÅä",
-eIK_BROOCH						,//"ºê·ÎÄ¡",
-eIK_ARM_TATOO					,//"ÆÈ¹®½Å",
-eIK_SHOLDER_TATOO				,//"¾î±ú¹®½Å",
-eIK_CROSS						,//"½ÊÀÚ°¡",
-eIK_ARMOR						,//"°ø¿ë°©¿Ê",
-eIK_EXCLUSIVE_ARMOR				,//"Àü¿ë°©¿Ê",
-eIK_ONEHANDED_SWORD				,//"ÇÑ¼Õ°Ë",
-eIK_SHIELD						,//"¹æÆĞ",
-eIK_TWOHANDED_SWORD				,//"¾ç¼Õ°Ë",
-eIK_STAFF						,//"ÁöÆÎÀÌ",
-eIK_TOOTH						,//"ÀÌ»¡",
-eIK_MACE						,//"¸ŞÀÌ½º",
-eIK_WING						,//"³¯°³",
-eIK_KNIFE						,//"´Üµµ",
-eIK_BOW							,//"È°",
-eIK_ARROW						,//"È­»ì",
-eIK_SPEAR						,//"Ã¢",
-eIK_FLUTE						,//"ÇÇ¸®",
-eIK_SLING						,//"½½¸µ",
-eIK_BULLET						,//"ÅºÈ¯",
-eIK_MAGICAL_ROD					,//"¸¶¼úºÀ",
-eIK_WHIP						,//"Ã¤Âï",
-eIK_JEWEL						,//"º¸¼®",
-eIK_HEAL_POTION					,//"Ã¼·Â Æ÷¼Ç",
-eIK_CHARGING_POTION				,//"Â÷Â¡ Æ÷¼Ç",
-eIK_STATE_IMPROVE_POTION		,//"½ºÅÈ Çâ»ó Æ÷¼Ç",
-eIK_IMPROVE_PERFORMANCE_POTION	,//"¼º´É Çâ»ó Æ÷¼Ç",
-eIK_DRUG						,//"Ä¡·á¾à",
-eIK_STATUS_DRUG					,//"»óÅÂ È¸º¹Á¦",
-eIK_KEY							,//"¿­¼è",
-eIK_PORTAL_STONE				,//"Æ÷Å» ½ºÅæ",
-eIK_SKILL_SCROLL				,//"ÇÊ»ì±â µÎ·ç¸»ÀÌ",
-eIK_FOOD_AND_ETC				,//"¸ÔÀ» °Í/±âÅ¸",
-eIK_IMPROVE_STATE				,//"´É·ÂÇâ»óÁ¦",
-eIK_IMPROVE_PERFORMANCE			,//"°­È­¾×",
-eIK_MAGIC_JEWEL					,//"¸¶¹ı º¸¼®",
-eIK_SPECIAL						,//"Æ¯¼ö ¾ÆÀÌÅÛ",
+eIK_HELM						,//"í—¬ë©§",
+eIK_CROWN						,//"ê´€",
+eIK_GLOVE						,//"ì¥ê°‘",
+eIK_GLOVE_STYLE					,//"ì¥ê°‘ëŒ€ìš©",
+eIK_CLAW						,//"ë°œí†±",
+eIK_BRACELET					,//"íŒ”ì°Œ",
+eIK_BELT						,//"ë²¨íŠ¸",
+eIK_BOOTS						,//"ë¶€ì¸ ",
+eIK_NECKLACE					,//"ëª©ê±¸ì´",
+eIK_RING						,//"ë°˜ì§€",
+eIK_EARING						,//"ê·€ê±¸ì´",
+eIK_CLOAK						,//"ë§í† ",
+eIK_BROOCH						,//"ë¸Œë¡œì¹˜",
+eIK_ARM_TATOO					,//"íŒ”ë¬¸ì‹ ",
+eIK_SHOLDER_TATOO				,//"ì–´ê¹¨ë¬¸ì‹ ",
+eIK_CROSS						,//"ì‹­ìê°€",
+eIK_ARMOR						,//"ê³µìš©ê°‘ì˜·",
+eIK_EXCLUSIVE_ARMOR				,//"ì „ìš©ê°‘ì˜·",
+eIK_ONEHANDED_SWORD				,//"í•œì†ê²€",
+eIK_SHIELD						,//"ë°©íŒ¨",
+eIK_TWOHANDED_SWORD				,//"ì–‘ì†ê²€",
+eIK_STAFF						,//"ì§€íŒ¡ì´",
+eIK_TOOTH						,//"ì´ë¹¨",
+eIK_MACE						,//"ë©”ì´ìŠ¤",
+eIK_WING						,//"ë‚ ê°œ",
+eIK_KNIFE						,//"ë‹¨ë„",
+eIK_BOW							,//"í™œ",
+eIK_ARROW						,//"í™”ì‚´",
+eIK_SPEAR						,//"ì°½",
+eIK_FLUTE						,//"í”¼ë¦¬",
+eIK_SLING						,//"ìŠ¬ë§",
+eIK_BULLET						,//"íƒ„í™˜",
+eIK_MAGICAL_ROD					,//"ë§ˆìˆ ë´‰",
+eIK_WHIP						,//"ì±„ì°",
+eIK_JEWEL						,//"ë³´ì„",
+eIK_HEAL_POTION					,//"ì²´ë ¥ í¬ì…˜",
+eIK_CHARGING_POTION				,//"ì°¨ì§• í¬ì…˜",
+eIK_STATE_IMPROVE_POTION		,//"ìŠ¤íƒ¯ í–¥ìƒ í¬ì…˜",
+eIK_IMPROVE_PERFORMANCE_POTION	,//"ì„±ëŠ¥ í–¥ìƒ í¬ì…˜",
+eIK_DRUG						,//"ì¹˜ë£Œì•½",
+eIK_STATUS_DRUG					,//"ìƒíƒœ íšŒë³µì œ",
+eIK_KEY							,//"ì—´ì‡ ",
+eIK_PORTAL_STONE				,//"í¬íƒˆ ìŠ¤í†¤",
+eIK_SKILL_SCROLL				,//"í•„ì‚´ê¸° ë‘ë£¨ë§ì´",
+eIK_FOOD_AND_ETC				,//"ë¨¹ì„ ê²ƒ/ê¸°íƒ€",
+eIK_IMPROVE_STATE				,//"ëŠ¥ë ¥í–¥ìƒì œ",
+eIK_IMPROVE_PERFORMANCE			,//"ê°•í™”ì•¡",
+eIK_MAGIC_JEWEL					,//"ë§ˆë²• ë³´ì„",
+eIK_SPECIAL						,//"íŠ¹ìˆ˜ ì•„ì´í…œ",
 
-eIK_QUEST_ITEM					,//"Äù½ºÆ® ¾ÆÀÌÅÛ",
-eIK_PREMIUM_ITEM				,//"ÇÁ¸®¹Ì¾ö ¾ÆÀÌÅÛ",
-eIK_ENCHANT_ITEM				,//"ÀÎÃ¦Æ® ¾ÆÀÌÅÛ",
-eIK_ITEM_PACK					,//"¾ÆÀÌÅÛÆÑ",
+eIK_QUEST_ITEM					,//"í€˜ìŠ¤íŠ¸ ì•„ì´í…œ",
+eIK_PREMIUM_ITEM				,//"í”„ë¦¬ë¯¸ì—„ ì•„ì´í…œ",
+eIK_ENCHANT_ITEM				,//"ì¸ì±ˆíŠ¸ ì•„ì´í…œ",
+eIK_ITEM_PACK					,//"ì•„ì´í…œíŒ©",
 
-eIK_ALL_WEAPON					,//"¸ğµç ¹«±â",
+eIK_ALL_WEAPON					,//"ëª¨ë“  ë¬´ê¸°",
 eIK_SCYTHE						,
 eIK_ARM_WEAPON					,
-eIK_BOOK						,		// Ã¥
-eIK_END,							// ¸¶Áö¸·..
+eIK_BOOK						,		// ì±…
+eIK_END,							// ë§ˆì§€ë§‰..
 
 };
 
@@ -383,34 +419,34 @@ public:
 
 typedef struct 
 {
-	DWORD isCanNotDropItem				:	1;	//	¹ö¸±¼ö ¾ø´Â ¾ÆÀÌÅÛ
-	DWORD isDurabilityToUseCount		:	1;	//	³»±¸·ÂÀ» »ç¿ë È½¼ö·Î º¯È¯ÇÏ´Â ¾ÆÀÌÅÛ
-	DWORD isUseToItem					:	1;	//	¾ÆÀÌÅÛ¿¡ »ç¿ëÇÏ´Â ¾ÆÀÌÅÛ
-	DWORD isUseToCharacter				:	1;	//	Ä³¸¯ÅÍ¿¡ »ç¿ëÇÏ´Â ¾ÆÀÌÅÛ
-	DWORD isCanNotSelllItem				:	1;	//	ÆÈ ¼ö ¾ø´Â ¾ÆÀÌÅÛ
-	DWORD isCanUseCorpseStatus			:	1;	//	Á×Àº ÈÄ¿¡µµ »ç¿ë°¡´ÉÇÑ ¾ÆÀÌÅÛ
-	DWORD isUseToCorpse					:	1;	//	½ÃÃ¼¿¡ »ç¿ëÇÏ´Â ¾ÆÀÌÅÛ
-	DWORD isEquipableToBelt				:	1;	//	º§Æ®¿¡ Âø¿ë °¡´ÉÇÑ ¾ÆÀÌÅÛ
-	DWORD isCanNotUseableItem			:	1;	//	»ç¿ëÇÒ ¼ö ¾ø´Â ¾ÆÀÌÅÛ
-	DWORD premiumLevel					:	3;	//	ÇÁ¸®¹Ì¾ö ·¹º§
-	DWORD isCanNotStoreBank				:	1;	//	ÀºÇà¿¡ º¸°üÇÒ ¼ö ¾ø´Â ¾ÆÀÌÅÛ
-	DWORD isCanNotDestroyItem			:	1;	//	ÆÄ±« ºÒ°¡ ¾ÆÀÌÅÛ
-	DWORD isCanNotTradeItem				:	1;	//	°Å·¡ÇÒ¼ö ¾ø´Â ¾ÆÀÌÅÛ
-	DWORD isExclusiveToNormalItem		:	1;	//	º¸Åë ¾ÆÀÌÅÛ¿¡¸¸ »ç¿ëÇÒ ¼ö ÀÖ´Â ¾ÆÀÌÅÛ
-	DWORD isExclusiveToUniqueItem		:	1;	//	À¯´ÏÅ© ¾ÆÀÌÅÛ¿¡¸¸ »ç¿ëÇÒ ¼ö ÀÖ´Â ¾ÆÀÌÅÛ
-	DWORD isDestroyRingAtFailedEnchant	:	1;	//	ÀÎÃ¦Æ®¿¡ ½ÇÆĞÇÑ ¹İÁö´Â »Ç°µ´Ù.
-	DWORD isUpgradePrefixLevel			:	1;	//	Á¢µÎ»çÀÇ ·¹º§À» ¿Ã·ÁÁÖ´Â ÀÎÃ¦Æ®ÀÌ´Ù.
-	DWORD isBadge						:	1;	//	¹èÁö ¾ÆÀÌÅÛÀÌ´Ù.
-	DWORD isEffectInInventoryItem		:	1;	//	ÀÎº¥Åä¸® ¾È¿¡¼­µµ È¿°ú°¡ ÀÖ´Â ¾ÆÀÌÅÛ
-	DWORD isCanNotOwnSameItem			:	1;	//	°°Àº ¾ÆÀÌÅÛÀ» °¡Áú¼ö ¾ø´Ù.
-	DWORD isGuildBattleItem				:	1;	//	±æµåÀü ¾ÆÀÌÅÛÀÌ´Ù.
-	DWORD isRequireSaveUseLog			:	1;	//	»ç¿ëÇÑ ·Î±×¸¦ ³²±æ ÇÊ¿ä°¡ ÀÖ´Ù.
+	DWORD isCanNotDropItem				:	1;	//	ë²„ë¦´ìˆ˜ ì—†ëŠ” ì•„ì´í…œ
+	DWORD isDurabilityToUseCount		:	1;	//	ë‚´êµ¬ë ¥ì„ ì‚¬ìš© íšŸìˆ˜ë¡œ ë³€í™˜í•˜ëŠ” ì•„ì´í…œ
+	DWORD isUseToItem					:	1;	//	ì•„ì´í…œì— ì‚¬ìš©í•˜ëŠ” ì•„ì´í…œ
+	DWORD isUseToCharacter				:	1;	//	ìºë¦­í„°ì— ì‚¬ìš©í•˜ëŠ” ì•„ì´í…œ
+	DWORD isCanNotSelllItem				:	1;	//	íŒ” ìˆ˜ ì—†ëŠ” ì•„ì´í…œ
+	DWORD isCanUseCorpseStatus			:	1;	//	ì£½ì€ í›„ì—ë„ ì‚¬ìš©ê°€ëŠ¥í•œ ì•„ì´í…œ
+	DWORD isUseToCorpse					:	1;	//	ì‹œì²´ì— ì‚¬ìš©í•˜ëŠ” ì•„ì´í…œ
+	DWORD isEquipableToBelt				:	1;	//	ë²¨íŠ¸ì— ì°©ìš© ê°€ëŠ¥í•œ ì•„ì´í…œ
+	DWORD isCanNotUseableItem			:	1;	//	ì‚¬ìš©í•  ìˆ˜ ì—†ëŠ” ì•„ì´í…œ
+	DWORD premiumLevel					:	3;	//	í”„ë¦¬ë¯¸ì—„ ë ˆë²¨
+	DWORD isCanNotStoreBank				:	1;	//	ì€í–‰ì— ë³´ê´€í•  ìˆ˜ ì—†ëŠ” ì•„ì´í…œ
+	DWORD isCanNotDestroyItem			:	1;	//	íŒŒê´´ ë¶ˆê°€ ì•„ì´í…œ
+	DWORD isCanNotTradeItem				:	1;	//	ê±°ë˜í• ìˆ˜ ì—†ëŠ” ì•„ì´í…œ
+	DWORD isExclusiveToNormalItem		:	1;	//	ë³´í†µ ì•„ì´í…œì—ë§Œ ì‚¬ìš©í•  ìˆ˜ ìˆëŠ” ì•„ì´í…œ
+	DWORD isExclusiveToUniqueItem		:	1;	//	ìœ ë‹ˆí¬ ì•„ì´í…œì—ë§Œ ì‚¬ìš©í•  ìˆ˜ ìˆëŠ” ì•„ì´í…œ
+	DWORD isDestroyRingAtFailedEnchant	:	1;	//	ì¸ì±ˆíŠ¸ì— ì‹¤íŒ¨í•œ ë°˜ì§€ëŠ” ë½€ê° ë‹¤.
+	DWORD isUpgradePrefixLevel			:	1;	//	ì ‘ë‘ì‚¬ì˜ ë ˆë²¨ì„ ì˜¬ë ¤ì£¼ëŠ” ì¸ì±ˆíŠ¸ì´ë‹¤.
+	DWORD isBadge						:	1;	//	ë°°ì§€ ì•„ì´í…œì´ë‹¤.
+	DWORD isEffectInInventoryItem		:	1;	//	ì¸ë²¤í† ë¦¬ ì•ˆì—ì„œë„ íš¨ê³¼ê°€ ìˆëŠ” ì•„ì´í…œ
+	DWORD isCanNotOwnSameItem			:	1;	//	ê°™ì€ ì•„ì´í…œì„ ê°€ì§ˆìˆ˜ ì—†ë‹¤.
+	DWORD isGuildBattleItem				:	1;	//	ê¸¸ë“œì „ ì•„ì´í…œì´ë‹¤.
+	DWORD isRequireSaveUseLog			:	1;	//	ì‚¬ìš©í•œ ë¡œê·¸ë¥¼ ë‚¨ê¸¸ í•„ìš”ê°€ ìˆë‹¤.
 	DWORD isDXItem						:	1;
-	DWORD isBeginnerItem				:	1;	//	ÃÊº¸ÀÚ¸¦ À§ÇÑ ¾ÆÀÌÅÛ
-	DWORD isExtraItem					:	1;	//	¿¢½ºÆ®¶ó ¾ÆÀÌÅÛ
-	DWORD isMagicCarpetEmblem			:	1;	//	¾çÅºÀÚ ¿¥ºí·³ÀÌ´Ù.
-	DWORD isMergeToCarpetEmblem			:	1;	//	»ç¿ëÇÏ¸é ¾çÅºÀÚ ¿¥ºí·³¿¡ º´ÇÕµÈ´Ù.
-	DWORD isUseAbleBulletSubstituteArrow:	1;	//	»ç¿ëÇÏ¸é ¾çÅºÀÚ ¿¥ºí·³¿¡ º´ÇÕµÈ´Ù.	//	30
+	DWORD isBeginnerItem				:	1;	//	ì´ˆë³´ìë¥¼ ìœ„í•œ ì•„ì´í…œ
+	DWORD isExtraItem					:	1;	//	ì—‘ìŠ¤íŠ¸ë¼ ì•„ì´í…œ
+	DWORD isMagicCarpetEmblem			:	1;	//	ì–‘íƒ„ì ì— ë¸”ëŸ¼ì´ë‹¤.
+	DWORD isMergeToCarpetEmblem			:	1;	//	ì‚¬ìš©í•˜ë©´ ì–‘íƒ„ì ì— ë¸”ëŸ¼ì— ë³‘í•©ëœë‹¤.
+	DWORD isUseAbleBulletSubstituteArrow:	1;	//	ì‚¬ìš©í•˜ë©´ ì–‘íƒ„ì ì— ë¸”ëŸ¼ì— ë³‘í•©ëœë‹¤.	//	30
 	DWORD isUseSpecialPrice				:	1;
 	DWORD isUseToMiniPet				:	1;
 
@@ -418,104 +454,104 @@ typedef struct
 
 const	BOOL	const_aIsShapeChangeItem[]	=	
 {
-0,//"Çï¸ä",
-0,//"°ü",
-0,//"Àå°©",
-0,//"Àå°©´ë¿ë",
-0,//"¹ßÅé",
-0,//"ÆÈÂî",
-0,//"º§Æ®",
-0,//"ºÎÃ÷",
-0,//"¸ñ°ÉÀÌ",
-0,//"¹İÁö",
-0,//"±Í°ÉÀÌ",
-0,//"¸ÁÅä",
-0,//"ºê·ÎÄ¡",
-0,//"ÆÈ ¹®½Å",
-0,//"¾î±ú ¹®½Å",
-0,//"½ÊÀÚ°¡",
-1,//"°ø¿ë°©¿Ê",
-1,//"Àü¿ë°©¿Ê",
-1,//"ÇÑ¼Õ°Ë",
-1,//"¹æÆĞ",
-1,//"¾ç¼Õ°Ë",
-1,//"ÁöÆÎÀÌ",
-0,//"ÀÌ»¡",
-1,//"¸ŞÀÌ½º",
-1,//"³¯°³",
-1,//"´Üµµ",
-1,//"È°",
-0,//"È­»ì",
-1,//"Ã¢",
-1,//"ÇÇ¸®",
-1,//"½½¸µ",
-0,//"ÅºÈ¯",
-1,//"¸¶¼úºÀ",
-1,//"Ã¤Âï",
-0,//"º¸¼®",
-0,//"Ã¼·Â Æ÷¼Ç",
-0,//"Â÷Â¡ Æ÷¼Ç",
-0,//"½ºÅÈ Çâ»ó Æ÷¼Ç",
-0,//"¼º´É Çâ»ó Æ÷¼Ç",
-0,//"Ä¡·á¾à",
-0,//"»óÅÂ È¸º¹Á¦",
-0,//"¿­¼è",
-0,//"Æ÷Å» ½ºÅæ",
-0,//"ÇÊ»ì±â µÎ·ç¸»ÀÌ",
-0,//"¸ÔÀ» °Í/±âÅ¸",
-0,//"´É·ÂÇâ»óÁ¦",
-0,//"°­È­¾×",
-0,//"¸¶¹ı º¸¼®",
-0,//"Æ¯¼ö ¾ÆÀÌÅÛ",
-0,//"¸ğµç ¹«±â",
-1,	// ³´.
-1,	// ¾Ï¿şÆù
-1,	// Ã¥
+0,//"í—¬ë©§",
+0,//"ê´€",
+0,//"ì¥ê°‘",
+0,//"ì¥ê°‘ëŒ€ìš©",
+0,//"ë°œí†±",
+0,//"íŒ”ì°Œ",
+0,//"ë²¨íŠ¸",
+0,//"ë¶€ì¸ ",
+0,//"ëª©ê±¸ì´",
+0,//"ë°˜ì§€",
+0,//"ê·€ê±¸ì´",
+0,//"ë§í† ",
+0,//"ë¸Œë¡œì¹˜",
+0,//"íŒ” ë¬¸ì‹ ",
+0,//"ì–´ê¹¨ ë¬¸ì‹ ",
+0,//"ì‹­ìê°€",
+1,//"ê³µìš©ê°‘ì˜·",
+1,//"ì „ìš©ê°‘ì˜·",
+1,//"í•œì†ê²€",
+1,//"ë°©íŒ¨",
+1,//"ì–‘ì†ê²€",
+1,//"ì§€íŒ¡ì´",
+0,//"ì´ë¹¨",
+1,//"ë©”ì´ìŠ¤",
+1,//"ë‚ ê°œ",
+1,//"ë‹¨ë„",
+1,//"í™œ",
+0,//"í™”ì‚´",
+1,//"ì°½",
+1,//"í”¼ë¦¬",
+1,//"ìŠ¬ë§",
+0,//"íƒ„í™˜",
+1,//"ë§ˆìˆ ë´‰",
+1,//"ì±„ì°",
+0,//"ë³´ì„",
+0,//"ì²´ë ¥ í¬ì…˜",
+0,//"ì°¨ì§• í¬ì…˜",
+0,//"ìŠ¤íƒ¯ í–¥ìƒ í¬ì…˜",
+0,//"ì„±ëŠ¥ í–¥ìƒ í¬ì…˜",
+0,//"ì¹˜ë£Œì•½",
+0,//"ìƒíƒœ íšŒë³µì œ",
+0,//"ì—´ì‡ ",
+0,//"í¬íƒˆ ìŠ¤í†¤",
+0,//"í•„ì‚´ê¸° ë‘ë£¨ë§ì´",
+0,//"ë¨¹ì„ ê²ƒ/ê¸°íƒ€",
+0,//"ëŠ¥ë ¥í–¥ìƒì œ",
+0,//"ê°•í™”ì•¡",
+0,//"ë§ˆë²• ë³´ì„",
+0,//"íŠ¹ìˆ˜ ì•„ì´í…œ",
+0,//"ëª¨ë“  ë¬´ê¸°",
+1,	// ë‚«.
+1,	// ì•”ì›¨í°
+1,	// ì±…
 };
 
 class	CBasicItemData
 {
 public:
 	int						m_iSerial;
-	char					m_strName[dITEM_NAME_LENGTH];		//	ÀÌ¸§
-	char					m_strOwnerGuild[dNAME_LENGTH];	//	¼ÒÀ¯±æµå
-	DWORD					m_dwCommentAddress;					//	¾ÆÀÌÅÛ ¼³¸íÀÇ ÁÖ¼Ò(ÅØ½ºÆ®´Â µû·Î ¸ğ¾Æ¼­ º¸°üÇÑ´Ù. ³Ê¹« ¸¹´Ù. --)
+	char					m_strName[dITEM_NAME_LENGTH];		//	ì´ë¦„
+	char					m_strOwnerGuild[dNAME_LENGTH];	//	ì†Œìœ ê¸¸ë“œ
+	DWORD					m_dwCommentAddress;					//	ì•„ì´í…œ ì„¤ëª…ì˜ ì£¼ì†Œ(í…ìŠ¤íŠ¸ëŠ” ë”°ë¡œ ëª¨ì•„ì„œ ë³´ê´€í•œë‹¤. ë„ˆë¬´ ë§ë‹¤. --)
 	WORD					m_wKind;
-	BYTE					m_aEnableJob[18];					//	Âø¿ë °¡´ÉÇÑ Á÷¾÷
+	BYTE					m_aEnableJob[18];					//	ì°©ìš© ê°€ëŠ¥í•œ ì§ì—…
 
-	DWORD					m_dwPrice;							//	°¡°İ
-	WORD					m_wPriceComputeMethod;				//	°¡°İ °è»ê½Ä
+	DWORD					m_dwPrice;							//	ê°€ê²©
+	WORD					m_wPriceComputeMethod;				//	ê°€ê²© ê³„ì‚°ì‹
 
-	WORD					m_wRange;							//	°ø°İ °Å¸®
-	WORD					m_wDamageRange;						//	µ¥¹ÌÁö ¹üÀ§
-	WORD					m_wSpeed;							//	°ø°İ ¼Óµµ
+	WORD					m_wRange;							//	ê³µê²© ê±°ë¦¬
+	WORD					m_wDamageRange;						//	ë°ë¯¸ì§€ ë²”ìœ„
+	WORD					m_wSpeed;							//	ê³µê²© ì†ë„
 
-	WORD					m_wMinDamage,m_wMaxDamage;			//	°ø°İ·Â
-	WORD					m_wDurability;						//	³»±¸·Â
+	WORD					m_wMinDamage,m_wMaxDamage;			//	ê³µê²©ë ¥
+	WORD					m_wDurability;						//	ë‚´êµ¬ë ¥
 
 	WORD					m_wEquipUseLimitValue;
 	WORD					m_wEquipUseLimitContents;
 	WORD					m_wEquipUseLimitMethod;
-	WORD					m_wRequireLevel;					//	»ç¿ë/Àåºñ¸¦ À§ÇÑ ÃÖ¼Ò ·¹º§
+	WORD					m_wRequireLevel;					//	ì‚¬ìš©/ì¥ë¹„ë¥¼ ìœ„í•œ ìµœì†Œ ë ˆë²¨
 	WORD					m_wRequireStrength;
-	WORD					m_wRequireDexterity;				//	»ç¿ë/Àåºñ¸¦ À§ÇÑ ÃÖ¼Ò ¹ÎÃ¸¼º
+	WORD					m_wRequireDexterity;				//	ì‚¬ìš©/ì¥ë¹„ë¥¼ ìœ„í•œ ìµœì†Œ ë¯¼ì²©ì„±
 	WORD					m_wRequireConstitution;
-	WORD					m_wRequireWisdom;					//	»ç¿ë/Àåºñ¸¦ À§ÇÑ ÃÖ¼Ò ÁöÇı
-	WORD					m_wRequireIntelligence;				//	»ç¿ë/Àåºñ¸¦ À§ÇÑ ÃÖ¼Ò Áö½Ä
-	WORD					m_wRequireCharisma;					//	»ç¿ë/Àåºñ¸¦ À§ÇÑ ÃÖ¼Ò Ä«¸®½º¸¶
+	WORD					m_wRequireWisdom;					//	ì‚¬ìš©/ì¥ë¹„ë¥¼ ìœ„í•œ ìµœì†Œ ì§€í˜œ
+	WORD					m_wRequireIntelligence;				//	ì‚¬ìš©/ì¥ë¹„ë¥¼ ìœ„í•œ ìµœì†Œ ì§€ì‹
+	WORD					m_wRequireCharisma;					//	ì‚¬ìš©/ì¥ë¹„ë¥¼ ìœ„í•œ ìµœì†Œ ì¹´ë¦¬ìŠ¤ë§ˆ
 	WORD					m_wRequireLuck;
-	WORD					m_wRequireAllignment;				//	»ç¿ë/Àåºñ¸¦ À§ÇÑ ¼ºÇâ
+	WORD					m_wRequireAllignment;				//	ì‚¬ìš©/ì¥ë¹„ë¥¼ ìœ„í•œ ì„±í–¥
 
 	WORD					m_wIconShape;
 	WORD					m_wFieldShape;
 	WORD					m_wEquippedShape;
 	WORD					m_questKind : 2;
 	WORD					m_questIndex: 14;
-	WORD					m_wStackLimit;						//	Æ¯Á¤ Äù½ºÆ®¿¡ ÇÊ¿äÇÑ ¾ÆÀÌÅÛÀÌ´Ù.
-	WORD					m_wDropLevel;						//	¾ÆÀÌÅÛ µå¶ø ·¹º§
+	WORD					m_wStackLimit;						//	íŠ¹ì • í€˜ìŠ¤íŠ¸ì— í•„ìš”í•œ ì•„ì´í…œì´ë‹¤.
+	WORD					m_wDropLevel;						//	ì•„ì´í…œ ë“œë ë ˆë²¨
 
-	WORD					m_aValue[2][2];						//	¾ÆÀÌÅÛ »ı¼ºµÉ¶§ °áÁ¤µÇ´Â ¼öÄ¡
-	cITEM_GENERATE_DATA		m_aGenerateData[dGENERATE_ITEM_DATA_COUNT];	//	¾ÆÀÌÅÛ »ı¼ºµÉ¶§ °áÁ¤µÇ´Â ¼öÄ¡
+	WORD					m_aValue[2][2];						//	ì•„ì´í…œ ìƒì„±ë ë•Œ ê²°ì •ë˜ëŠ” ìˆ˜ì¹˜
+	cITEM_GENERATE_DATA		m_aGenerateData[dGENERATE_ITEM_DATA_COUNT];	//	ì•„ì´í…œ ìƒì„±ë ë•Œ ê²°ì •ë˜ëŠ” ìˆ˜ì¹˜
 	cUniqueData				m_aUniqueData[dITEM_UNIQUE_DATA_COUNT];		//
 	WORD					m_wPriceValue;
 	tsBasicItemAttribute	m_attr;
@@ -524,7 +560,7 @@ public:
 	WORD					m_wEnchantMinChance,m_wEnchantMaxChance;
 	WORD					m_wEnchantLimitPrefixDiscernmentCode;
 	WORD					m_wPaletteIndex;
-	WORD					m_wBoostDurability;					//	³»±¸·Â ÁõÆø
+	WORD					m_wBoostDurability;					//	ë‚´êµ¬ë ¥ ì¦í­
 	WORD					m_wCorrectDropChance;
 	WORD					m_wBaseItem;
 	WORD					m_wExtraGrade;
@@ -532,7 +568,7 @@ public:
 	WORD					m_wIsIDPublicItem;
 	
 	DWORD					m_bf1IsDestroyWhenMoveField		:	1;
-	DWORD					m_bf1IsBuyOnlyGuildMaster		:	1;	//	±æµå ¸¶½ºÅÍ¸¸ ±¸¸Å °¡´É
+	DWORD					m_bf1IsBuyOnlyGuildMaster		:	1;	//	ê¸¸ë“œ ë§ˆìŠ¤í„°ë§Œ êµ¬ë§¤ ê°€ëŠ¥
 	DWORD					m_bf1IsUseOnlyGuildMaster		:	1;
 	DWORD					m_bf1IsUseAbleByThrowPotionSkill:	1;
 	DWORD					m_bf1IsUseAbleByThrowFlowerSkill:	1;
@@ -541,26 +577,26 @@ public:
 	DWORD					m_bf1IsUltimate					:	1;
 	DWORD					m_bf1IsBlockToEnchant			:	1;
 	DWORD					m_bf1IsBlockToFeedPet			:	1;
-	DWORD					m_bf1IsFreeTeleport				:	1;	//	¹«·á Å¸¿î Æ÷Å».
-	DWORD					m_bf1IsRequestSummonCarpet		:	1;	//	¾çÅºÀÚ ¼ÒÈ¯ ÀÇ·Ú.
-	DWORD					m_bf1IsCanSummonMagicCarpet		:	1;	//	¾çÅºÀÚ ¼ÒÈ¯ °¡´ÉÇÏ°Ô ÇÏ´Â ¾ÆÀÌÅÛ.
+	DWORD					m_bf1IsFreeTeleport				:	1;	//	ë¬´ë£Œ íƒ€ìš´ í¬íƒˆ.
+	DWORD					m_bf1IsRequestSummonCarpet		:	1;	//	ì–‘íƒ„ì ì†Œí™˜ ì˜ë¢°.
+	DWORD					m_bf1IsCanSummonMagicCarpet		:	1;	//	ì–‘íƒ„ì ì†Œí™˜ ê°€ëŠ¥í•˜ê²Œ í•˜ëŠ” ì•„ì´í…œ.
 	DWORD					m_bf1RemeberPlace0				:	1;
 	DWORD					m_bf1RemeberPlace1				:	1;
-	DWORD					m_bf1RemeberPlace2				:	1;	//	2¹ø ½½·Ô¿¡ Àå¼Ò ±â¾ï	16
+	DWORD					m_bf1RemeberPlace2				:	1;	//	2ë²ˆ ìŠ¬ë¡¯ì— ì¥ì†Œ ê¸°ì–µ	16
 	DWORD					m_bf1AddEntryGuildDungeon		:	1;	//	17
-	DWORD					m_bf1IsAddGetMysticStone		:	1;	//	½Åºñ¼® Ãß°¡ È¹µæ 18
-	DWORD					m_bf1IsAddGetTantalissRelic		:	1;	//	ÅºÅ»¸®½º À¯¹° Ãß°¡ È¹µæ 19
-	DWORD					m_bf1IsIgnoreGuildHallLevelForEntryTantalisExile	:	1;	//	±æµåÈ¦ ·¹º§ Á¦ÇÑ ¾øÀÌ ÅºÅ»¸®½º À¯Àû ÀÔÀå 20
-	DWORD					m_bf1IsInfinitySeriousUpgradeChanceUp	:	1;	//	21	°­È­ È®·ü »ó½Â
+	DWORD					m_bf1IsAddGetMysticStone		:	1;	//	ì‹ ë¹„ì„ ì¶”ê°€ íšë“ 18
+	DWORD					m_bf1IsAddGetTantalissRelic		:	1;	//	íƒ„íƒˆë¦¬ìŠ¤ ìœ ë¬¼ ì¶”ê°€ íšë“ 19
+	DWORD					m_bf1IsIgnoreGuildHallLevelForEntryTantalisExile	:	1;	//	ê¸¸ë“œí™€ ë ˆë²¨ ì œí•œ ì—†ì´ íƒ„íƒˆë¦¬ìŠ¤ ìœ ì  ì…ì¥ 20
+	DWORD					m_bf1IsInfinitySeriousUpgradeChanceUp	:	1;	//	21	ê°•í™” í™•ë¥  ìƒìŠ¹
 	DWORD					m_bf1IsRequireLogWithGuildInfo	:	1;	//	22
-	DWORD					m_bf1IsFreePastPortal			:	1;	//	23	°øÂ¥ ÆĞ½ºÆ® Æ÷Å»
-	DWORD					m_bf1IsHalfPastPortal			:	1;	//	24	¹İ°ª ÆĞ½ºÆ® Æ÷Å»
-	DWORD					m_bf1IsExcludeExpBonus			:	1;	//	25	½ºÇÇ¾î Á¾·ù ¾ÆÀÌÅÛÀÎµ¥ °æÇèÄ¡ º¸³Ê½º°¡ ¾ø´Ù.
-	DWORD					m_bf3WearLimit					:	3;	//	28	¾ÆÀÌÅÛ Âø¿ë °¹¼ö Á¦ÇÑ. 09.08.11
-  	DWORD					m_bf1IsEternalItem				:	1;	//	29	ÀÌÅÍ³Î ¾ÆÀÌÅÛ		09.08.25
-  	DWORD					m_bf1EternalItemUpgradeNotPenalty		:	1;	//	30	ÀÌÅÍ³Î¾ÆÀÌÅÛ °­È­ ÆĞ³ÎÆ¼ Á¦°Å~	09.08.25
-	DWORD					m_bf1IsUpgradeMaterials			:	1;	//31 °­È­Á¦ ¾ÆÀÌÅÛ 09.08.26
-  	DWORD					m_bf1IsItemNotUsePet			:	1;	//32 Æê¿¡°Ô ¾ÆÀÌÅÛ »ç¿ë ºÒ°¡..	09.09.04
+	DWORD					m_bf1IsFreePastPortal			:	1;	//	23	ê³µì§œ íŒ¨ìŠ¤íŠ¸ í¬íƒˆ
+	DWORD					m_bf1IsHalfPastPortal			:	1;	//	24	ë°˜ê°’ íŒ¨ìŠ¤íŠ¸ í¬íƒˆ
+	DWORD					m_bf1IsExcludeExpBonus			:	1;	//	25	ìŠ¤í”¼ì–´ ì¢…ë¥˜ ì•„ì´í…œì¸ë° ê²½í—˜ì¹˜ ë³´ë„ˆìŠ¤ê°€ ì—†ë‹¤.
+	DWORD					m_bf3WearLimit					:	3;	//	28	ì•„ì´í…œ ì°©ìš© ê°¯ìˆ˜ ì œí•œ. 09.08.11
+  	DWORD					m_bf1IsEternalItem				:	1;	//	29	ì´í„°ë„ ì•„ì´í…œ		09.08.25
+  	DWORD					m_bf1EternalItemUpgradeNotPenalty		:	1;	//	30	ì´í„°ë„ì•„ì´í…œ ê°•í™” íŒ¨ë„í‹° ì œê±°~	09.08.25
+	DWORD					m_bf1IsUpgradeMaterials			:	1;	//31 ê°•í™”ì œ ì•„ì´í…œ 09.08.26
+  	DWORD					m_bf1IsItemNotUsePet			:	1;	//32 í«ì—ê²Œ ì•„ì´í…œ ì‚¬ìš© ë¶ˆê°€..	09.09.04
   	
   	BOOL					m_bIsExceptionItem;
   	WORD					m_wPremiumItemLevelForWithdraw;
@@ -568,42 +604,42 @@ public:
   	BYTE					m_bCoolTimeIndex;
   	WORD					m_wCoolTimeSecond;
   	
-  	WORD					m_wNextEternalItemSerial;							//  ÀÌÅÍ³Î ¾ÆÀÌÅÛ ´ÙÀ½´Ü°è ¾ÆÀÌÅÛ ½Ã¸®¾ó 09.08.25
+  	WORD					m_wNextEternalItemSerial;							//  ì´í„°ë„ ì•„ì´í…œ ë‹¤ìŒë‹¨ê³„ ì•„ì´í…œ ì‹œë¦¬ì–¼ 09.08.25
   
-  	WORD					m_bf4EternalItemCurrentLevel	:	4;				//4	ÀÌÅÍ³Î ¾ÆÀÌÅÛ ÇöÀç ´Ü°è 09.08.25
-  	WORD					m_bf1IsMaleJobEquipAble			:	1;	//5	³²¼º Á÷¾÷ Âø¿ë °¡´É
-  	WORD					m_bf1IsFemaleJobEquipAble		:	1;	//6	¿©¼º Á÷¾÷ Âø¿ë °¡´É  
-	WORD					m_bf7UpgradeBaseSuccessPercent	:	7;	//13 ÀÌÅÍ³Î¾ÆÀÌÅÛ °­È­ È®·ü % ¿É¼Ç  09.08.25
-	WORD					m_bf1IsOccurEatPotionEffect		:	1;	//14 »ç¿ë½Ã Æ÷¼Ç ¸Ô´Â È¿°ú ¹ß»ı  09.09.11
-	WORD					m_bf1IsUseShop					:	1;	// 15 »óÁ¡ ÀÌ¿ëÇÏ±â	
-	WORD					m_bf1IsUseBank					:	1;	// 16 ÀºÇà ÀÌ¿ëÇÏ±â	
+  	WORD					m_bf4EternalItemCurrentLevel	:	4;				//4	ì´í„°ë„ ì•„ì´í…œ í˜„ì¬ ë‹¨ê³„ 09.08.25
+  	WORD					m_bf1IsMaleJobEquipAble			:	1;	//5	ë‚¨ì„± ì§ì—… ì°©ìš© ê°€ëŠ¥
+  	WORD					m_bf1IsFemaleJobEquipAble		:	1;	//6	ì—¬ì„± ì§ì—… ì°©ìš© ê°€ëŠ¥  
+	WORD					m_bf7UpgradeBaseSuccessPercent	:	7;	//13 ì´í„°ë„ì•„ì´í…œ ê°•í™” í™•ë¥  % ì˜µì…˜  09.08.25
+	WORD					m_bf1IsOccurEatPotionEffect		:	1;	//14 ì‚¬ìš©ì‹œ í¬ì…˜ ë¨¹ëŠ” íš¨ê³¼ ë°œìƒ  09.09.11
+	WORD					m_bf1IsUseShop					:	1;	// 15 ìƒì  ì´ìš©í•˜ê¸°	
+	WORD					m_bf1IsUseBank					:	1;	// 16 ì€í–‰ ì´ìš©í•˜ê¸°	
 
 	UINT					m_uiEquipAbleJobMask;
-	WORD					m_wUpgradePenaltyItemSerial;				// °­È­ÆĞ³ÎÆ¼ ¾ÆÀÌÅÛ ½Ã¸®¾ó 09.08.26
+	WORD					m_wUpgradePenaltyItemSerial;				// ê°•í™”íŒ¨ë„í‹° ì•„ì´í…œ ì‹œë¦¬ì–¼ 09.08.26
 
-	WORD					m_bf7UpgradeMaterialsSuccessPercent	:	7;		//7	°­È­Á¦ °­È­È®·ü %¿É¼Ç	09.08.26
-	WORD					m_bf7UpgradeCosmicPowerSuccessPercent	:	7;		//14 ÄÚ½º¹ÍÆÄ¿ö °­È­È®·ü %¿É¼Ç		09.08.26
-	WORD					m_bf1IsNotConsume						:	1;		//15	 »ç¿ë½Ã ¼Ò¸ğ¾ÈµÊ.
-	WORD					m_bf1IsUseItemAfterTransformation		:	1;		//16	¸ó½ºÅÍ º¯½ÅÈÄ »ç¿ë
+	WORD					m_bf7UpgradeMaterialsSuccessPercent	:	7;		//7	ê°•í™”ì œ ê°•í™”í™•ë¥  %ì˜µì…˜	09.08.26
+	WORD					m_bf7UpgradeCosmicPowerSuccessPercent	:	7;		//14 ì½”ìŠ¤ë¯¹íŒŒì›Œ ê°•í™”í™•ë¥  %ì˜µì…˜		09.08.26
+	WORD					m_bf1IsNotConsume						:	1;		//15	 ì‚¬ìš©ì‹œ ì†Œëª¨ì•ˆë¨.
+	WORD					m_bf1IsUseItemAfterTransformation		:	1;		//16	ëª¬ìŠ¤í„° ë³€ì‹ í›„ ì‚¬ìš©
 
 	WORD					m_bf4ItemRebirthCount					:	4;
-	WORD					m_bf5LimitUpgradeRingOfInfinity			:	5;		//9 ¹«ÇÑÀÇ ¹İÁö ¾÷±×·¹ÀÌµå Á¦ÇÑ ¼öÄ¡
-	WORD					m_bf1IsRingOfInfinity					:	1;		//10	¹«ÇÑÀÇ¹İÁö?
+	WORD					m_bf5LimitUpgradeRingOfInfinity			:	5;		//9 ë¬´í•œì˜ ë°˜ì§€ ì—…ê·¸ë ˆì´ë“œ ì œí•œ ìˆ˜ì¹˜
+	WORD					m_bf1IsRingOfInfinity					:	1;		//10	ë¬´í•œì˜ë°˜ì§€?
 	WORD					m_bf1IsUseToEnemy						:	1;
 	WORD					m_bf1IsUseAfterWear						:	1;
 	WORD					m_bf1IsUsePremiumInventory				:	1;
-	WORD					m_bf1IsNotApplyCopyEffect				:	1;		//14	º¹»ç È¿°ú Àû¿ë¾ÈµÊ
-	WORD					m_bf1IsNotApplyReversionEffect			:	1;		//15	°Å·¡ºÒ°¡ÇØÁ¦ È¿°ú Àû¿ë¾ÈµÊ
-	WORD					m_bf1IsNotGetUsedSkill					:	1;		//16	½ºÅ³·Î Áİ±â ºÒ°¡
+	WORD					m_bf1IsNotApplyCopyEffect				:	1;		//14	ë³µì‚¬ íš¨ê³¼ ì ìš©ì•ˆë¨
+	WORD					m_bf1IsNotApplyReversionEffect			:	1;		//15	ê±°ë˜ë¶ˆê°€í•´ì œ íš¨ê³¼ ì ìš©ì•ˆë¨
+	WORD					m_bf1IsNotGetUsedSkill					:	1;		//16	ìŠ¤í‚¬ë¡œ ì¤ê¸° ë¶ˆê°€
 
-	WORD					m_wMoveFieldSerial;						//	ÀÌµ¿ÇÒ ÇÊµå ¹øÈ£..  »ç¿ëÇÏ·Á¸é ¾ÆÀÌÅÛ ¿É¼Ç¿¡ ÇÊµå ÀÌµ¿¿É¼ÇÀ» Ãß°¡ ½ÃÅ²´Ù.
-	WORD					m_wRequireMaxLevel;					//	»ç¿ë/Àåºñ¸¦ À§ÇÑ ÃÖ´ë ·¹º§
+	WORD					m_wMoveFieldSerial;						//	ì´ë™í•  í•„ë“œ ë²ˆí˜¸..  ì‚¬ìš©í•˜ë ¤ë©´ ì•„ì´í…œ ì˜µì…˜ì— í•„ë“œ ì´ë™ì˜µì…˜ì„ ì¶”ê°€ ì‹œí‚¨ë‹¤.
+	WORD					m_wRequireMaxLevel;					//	ì‚¬ìš©/ì¥ë¹„ë¥¼ ìœ„í•œ ìµœëŒ€ ë ˆë²¨
 
 	WORD					m_wItemEffect;
 
-	WORD					m_bf1IsNotUseToGVG						:	1;	//1	GVG ¿¡¼­ »ç¿ë ºÒ°¡
+	WORD					m_bf1IsNotUseToGVG						:	1;	//1	GVG ì—ì„œ ì‚¬ìš© ë¶ˆê°€
 	WORD					:	0;
-	BYTE					m_aDummyData[50];					//	ÀÌÈÄ·Î Ãß°¡µÉ µ¥ÀÌÅÍ¿¡ ´ëºñÇØ¼­
+	BYTE					m_aDummyData[50];					//	ì´í›„ë¡œ ì¶”ê°€ë  ë°ì´í„°ì— ëŒ€ë¹„í•´ì„œ
 
 	inline	BOOL			isEquipAbleJob(int _iJob)
 	{
@@ -633,14 +669,14 @@ public:
 		return	FALSE;
 	}
 
-	inline	BOOL			isManExclusiveItem()	//	³²¼º Àü¿ë ¾ÆÀÌÅÛ
+	inline	BOOL			isManExclusiveItem()	//	ë‚¨ì„± ì „ìš© ì•„ì´í…œ
 	{
 		if	(m_bf1IsMaleJobEquipAble	&&	!m_bf1IsFemaleJobEquipAble)
 			return	TRUE;
 
 		return	FALSE;
 	}
-	inline	BOOL			isWomanExclusiveItem()	//	¿©¼º Àü¿ë ¾ÆÀÌÅÛ
+	inline	BOOL			isWomanExclusiveItem()	//	ì—¬ì„± ì „ìš© ì•„ì´í…œ
 	{
 		if	(!m_bf1IsMaleJobEquipAble	&&	m_bf1IsFemaleJobEquipAble)
 			return	TRUE;
@@ -661,7 +697,7 @@ public:
 	}
 
 
-	inline	BOOL			isAllJobItem()	//	¸ğµç Á÷¾÷ÀÌ »ç¿ë °¡´ÉÇÑ ¾ÆÀÌÅÛ
+	inline	BOOL			isAllJobItem()	//	ëª¨ë“  ì§ì—…ì´ ì‚¬ìš© ê°€ëŠ¥í•œ ì•„ì´í…œ
 	{
 		for (int i=0;i<dPLAYER_JOB_COUNT;i++)
 		{
@@ -669,14 +705,14 @@ public:
 				return	FALSE;
 		}
 
-		//	³²¼ºÀü¿ë È¤Àº ¿©¼º Àü¿ë Ã¼Å© ÇÒ±î?
+		//	ë‚¨ì„±ì „ìš© í˜¹ì€ ì—¬ì„± ì „ìš© ì²´í¬ í• ê¹Œ?
 
 		return	TRUE;
 	}
 
 	inline BOOL			isGoldBar()		// 09.08.19
 	{
-		if	(m_iSerial == dITEM_INDEX_GOLD_BAR)			// ÀÎµ¦½º 4237Àº ±İ±«ÀÌ´Ù.
+		if	(m_iSerial == dITEM_INDEX_GOLD_BAR)			// ì¸ë±ìŠ¤ 4237ì€ ê¸ˆê´´ì´ë‹¤.
 			return TRUE;
 		
 		return FALSE;
@@ -687,16 +723,16 @@ public:
 		return	m_wDurability;
 	}
 
-	inline	BOOL			isEquipmentItem()		//Ãß°¡ .
-	{	// Àåºñ ¾ÆÀÌÅÛÀÎ°¡?
+	inline	BOOL			isEquipmentItem()		//ì¶”ê°€ .
+	{	// ì¥ë¹„ ì•„ì´í…œì¸ê°€?
 		if	(c_aItemEquipPlace[m_wKind]	>=	dEQUIP_WEAPON && c_aItemEquipPlace[m_wKind]	<=	dEQUIP_RING )
 			return	TRUE;
 		
 		return FALSE;
 	}
-	inline	BOOL			isUnique()			// ¼öÁ¤
+	inline	BOOL			isUnique()			// ìˆ˜ì •
 	{
-		if	(isEquipmentItem() == FALSE)	//  ¼Ò¸ğÇ°Àº ¹«½Ã
+		if	(isEquipmentItem() == FALSE)	//  ì†Œëª¨í’ˆì€ ë¬´ì‹œ
 			return	FALSE;
 
 		if	(m_aUniqueData[0].m_wEffect != 0xffff)
@@ -705,7 +741,7 @@ public:
 		return	FALSE;
 	}
 	inline	BOOL			isAttachAblePrefix()
-	{	// Á¢µÎ»ç¸¦  ºÙÀÏ ¼ö ÀÖ´Â ¾ÆÀÌÅÛÀÎ°¡?
+	{	// ì ‘ë‘ì‚¬ë¥¼  ë¶™ì¼ ìˆ˜ ìˆëŠ” ì•„ì´í…œì¸ê°€?
 		if(isEquipmentItem() || m_wKind == eIK_JEWEL )
 			return TRUE;
 
@@ -713,49 +749,49 @@ public:
 
 	}
 
-	inline	BOOL			isAppearanceChangeItem()	//	Âø¿ë ÇÏ¸é Ä³¸¯ÅÍ ¿ÜÇüÀÌ º¯ÇÏ´Â ¾ÆÀÌÅÛÀÎ°¡?
+	inline	BOOL			isAppearanceChangeItem()	//	ì°©ìš© í•˜ë©´ ìºë¦­í„° ì™¸í˜•ì´ ë³€í•˜ëŠ” ì•„ì´í…œì¸ê°€?
 	{
 		return	const_aIsShapeChangeItem[m_wKind];
 	}
-	inline int			getNextEternalItemSerial()			// ´ÙÀ½´Ü°è¾ÆÀÌÅÛ ½Ã¸®¾ó		09.08.25
+	inline int			getNextEternalItemSerial()			// ë‹¤ìŒë‹¨ê³„ì•„ì´í…œ ì‹œë¦¬ì–¼		09.08.25
 	{
 		return m_wNextEternalItemSerial;
 	}
-	inline int			getUpgradePenaltyItemSerial()			// °­È­ÆĞ³ÎÆ¼¾ÆÀÌÅÛ ½Ã¸®¾ó		09.08.26
+	inline int			getUpgradePenaltyItemSerial()			// ê°•í™”íŒ¨ë„í‹°ì•„ì´í…œ ì‹œë¦¬ì–¼		09.08.26
 		{
 		return m_wUpgradePenaltyItemSerial;
 	}
 	
-	inline int			getCurrentEternalItemLevel()		// ÇöÀç ´Ü°è					09.08.25
+	inline int			getCurrentEternalItemLevel()		// í˜„ì¬ ë‹¨ê³„					09.08.25
 		{
 		return m_bf4EternalItemCurrentLevel;
 	}
-	inline BOOL			isEternalItem()					// ÀÌÅÍ³Î¾ÆÀÌÅÛ??	09.08.25
+	inline BOOL			isEternalItem()					// ì´í„°ë„ì•„ì´í…œ??	09.08.25
 		{
 		return m_bf1IsEternalItem;
 	}
-	inline BOOL			isCosmicPower()					// ÄÚ½º¹ÍÆÄ¿ö¿É¼Ç???	09.08.25
+	inline BOOL			isCosmicPower()					// ì½”ìŠ¤ë¯¹íŒŒì›Œì˜µì…˜???	09.08.25
 		{
 		return m_bf1IsInfinitySeriousUpgradeChanceUp;
 	}
 	
-	inline BOOL			isUpgradeEternalItemNotPenalty()	// ¾÷±×·¹ÀÌµå ÆĞ³ÎÆ¼ Á¦°Å¿É¼Ç??	09.08.25
+	inline BOOL			isUpgradeEternalItemNotPenalty()	// ì—…ê·¸ë ˆì´ë“œ íŒ¨ë„í‹° ì œê±°ì˜µì…˜??	09.08.25
 		{
 		return m_bf1EternalItemUpgradeNotPenalty;
 	}
-	inline BOOL			isUpgradeMaterialsItem()			// °­È­Á¦ ¾ÆÀÌÅÛ ? ? ?  09.08.26
+	inline BOOL			isUpgradeMaterialsItem()			// ê°•í™”ì œ ì•„ì´í…œ ? ? ?  09.08.26
 		{
 		return m_bf1IsUpgradeMaterials;
 	}
-	inline int			getUpgradeMaterialsItemSuccessChance()	// °­È­Á¦ °­È­ È®·ü	09.08.26
+	inline int			getUpgradeMaterialsItemSuccessChance()	// ê°•í™”ì œ ê°•í™” í™•ë¥ 	09.08.26
 		{
 		return m_bf7UpgradeMaterialsSuccessPercent;
 	}
-	inline int			getUpgradeCosmicPowerSuccessChance()	// ÄÚ½º¹ÍÆÄ¿ö °­È­ ¼º°ø È®·ü	09.08.26
+	inline int			getUpgradeCosmicPowerSuccessChance()	// ì½”ìŠ¤ë¯¹íŒŒì›Œ ê°•í™” ì„±ê³µ í™•ë¥ 	09.08.26
 		{
 		return m_bf7UpgradeCosmicPowerSuccessPercent;
 	}
-	inline int			getUpgradeBaseSuccessChance()			// ±âº» °­È­ ¼º°ø È®·ü	09.08.26
+	inline int			getUpgradeBaseSuccessChance()			// ê¸°ë³¸ ê°•í™” ì„±ê³µ í™•ë¥ 	09.08.26
 		{
 		return m_bf7UpgradeBaseSuccessPercent;
 	}
@@ -795,12 +831,12 @@ class	CItemBaseInfo
 public: 
 	DWORD				m_dwSerial;
 
-	WORD				m_wBaseItem;							//	¾ÆÀÌÅÛ ÀÎµ¦½º
-	BYTE				m_bCount;								//	¼ıÀÚ
-	BYTE				m_bDurability;							//	³»±¸·Â
-	BYTE				m_aOption[2];							//	»ı¼ºµÉ¶§ ºÙÀº ¿É¼Ç
+	WORD				m_wBaseItem;							//	ì•„ì´í…œ ì¸ë±ìŠ¤
+	BYTE				m_bCount;								//	ìˆ«ì
+	BYTE				m_bDurability;							//	ë‚´êµ¬ë ¥
+	BYTE				m_aOption[2];							//	ìƒì„±ë ë•Œ ë¶™ì€ ì˜µì…˜
 
-	CItemPrefixInfo		m_aPrefix[dITEM_PREFIX_COUNT];	//	Ãß°¡È¿°ú 3°³
+	CItemPrefixInfo		m_aPrefix[dITEM_PREFIX_COUNT];	//	ì¶”ê°€íš¨ê³¼ 3ê°œ
 	BOOL				isSame(CItemBaseInfo* _lpItemBaseInfo)
 	{
 		if(m_dwSerial != _lpItemBaseInfo->m_dwSerial)
@@ -834,9 +870,9 @@ class	CCustomItemDefine	: public CItemBaseInfo
 {
 public:
 	char			m_strName[30];
-	DWORD			m_bf20TermOfValidate	:	20;	//	ºĞ´ÜÀ§
-	DWORD			m_bf1IsSellInCarrotShop	:	1;	//	ºĞ´ÜÀ§
-	DWORD			m_bf1IsCustomItem		:	1;	//	Ä¿½ºÅÒ ¾ÆÀÌÅÛ(Ä÷¸®Æ¼¸¦ ¹«½ÃÇÏ°í CItemBaseInfo Á¤º¸´ë·Î ¼¼ÆÃ)
+	DWORD			m_bf20TermOfValidate	:	20;	//	ë¶„ë‹¨ìœ„
+	DWORD			m_bf1IsSellInCarrotShop	:	1;	//	ë¶„ë‹¨ìœ„
+	DWORD			m_bf1IsCustomItem		:	1;	//	ì»¤ìŠ¤í…€ ì•„ì´í…œ(í€„ë¦¬í‹°ë¥¼ ë¬´ì‹œí•˜ê³  CItemBaseInfo ì •ë³´ëŒ€ë¡œ ì„¸íŒ…)
 	DWORD			m_bf2ItemInArcaType		:	2;
 	
 	WORD			m_wIsAttachRandomPrefix,m_wDropLevel;
@@ -847,15 +883,15 @@ class	cCoupleRingDefine
 {
 public:
 	DWORD				m_dwSerial;
-	WORD				m_wBaseItem;						//	¾ÆÀÌÅÛ ÀÎµ¦½º
+	WORD				m_wBaseItem;						//	ì•„ì´í…œ ì¸ë±ìŠ¤
 
 	WORD				m_bf1IsCanNotTradeItem	:	1;		//	1
-	WORD				m_year			: 5;	//6	À¯È¿±â°£
+	WORD				m_year			: 5;	//6	ìœ íš¨ê¸°ê°„
 	WORD				m_month			: 4;	//10
 	WORD				m_day			: 5;	//15
 	WORD				:0;
 
-	BYTE				m_aOption[2];							//	»ı¼ºµÉ¶§ ºÙÀº ¿É¼Ç
+	BYTE				m_aOption[2];							//	ìƒì„±ë ë•Œ ë¶™ì€ ì˜µì…˜
 
 	char				m_strCoupleName[dNAME_LENGTH-2];
 
@@ -886,7 +922,7 @@ class	cBookItemDefine
 {
 public:
 	DWORD				m_dwSerial;
-	WORD				m_wBaseItem;			//	¾ÆÀÌÅÛ ÀÎµ¦½º
+	WORD				m_wBaseItem;			//	ì•„ì´í…œ ì¸ë±ìŠ¤
 
 	WORD				m_wBookIndex;
 	BYTE				m_aCategoryInfo[c_iMaxBookCategoryCount];
@@ -896,7 +932,7 @@ class	cBlockLightPocket
 {
 public:
 	int				m_iVitalPoint;
-	WORD			m_wBaseItem;			//	¾ÆÀÌÅÛ ÀÎµ¦½º
+	WORD			m_wBaseItem;			//	ì•„ì´í…œ ì¸ë±ìŠ¤
 
 	UINT			m_bf3SkillLevel1:	3;
 	UINT			m_bf3SkillLevel2:	3;
@@ -911,9 +947,9 @@ public:
 	UINT			m_bf1isUseAwakenItem50	:		1;	//	31
 	UINT			m_bf1isUseAwakenItem100	:		1;	//	32
 
-	UINT			m_bf7Level		:	7;	//	·¹º§
-	UINT			m_bf5Type		:	5;	//	Å¸ÀÔ
-	UINT			m_bf16Exp		:	16;	//	°æÇèÄ¡
+	UINT			m_bf7Level		:	7;	//	ë ˆë²¨
+	UINT			m_bf5Type		:	5;	//	íƒ€ì…
+	UINT			m_bf16Exp		:	16;	//	ê²½í—˜ì¹˜
 	UINT			m_bf3SkillLevel11:	3;	//	31
 
 	int				m_iEnergyPoint,m_iMineralPoint;
@@ -930,10 +966,10 @@ class	cPrincessWeaponDefine
 {
 public:
 	DWORD				m_dwSerial;
-	WORD				m_wBaseItem;			//	¾ÆÀÌÅÛ ÀÎµ¦½º
-	WORD				m_wBasicItem;			//	¾ÆÀÌÅÛ ÀÎµ¦½º
+	WORD				m_wBaseItem;			//	ì•„ì´í…œ ì¸ë±ìŠ¤
+	WORD				m_wBasicItem;			//	ì•„ì´í…œ ì¸ë±ìŠ¤
 
-	BYTE				m_aOption[2];			//	»ı¼ºµÉ¶§ ºÙÀº ¿É¼Ç
+	BYTE				m_aOption[2];			//	ìƒì„±ë ë•Œ ë¶™ì€ ì˜µì…˜
 
 	BYTE				m_bFireDamage;
 	BYTE				m_bWaterDamage;
@@ -952,7 +988,7 @@ class	cNameStone
 {
 public:
 	DWORD				m_dwSerial;
-	WORD				m_wBaseItem;			//	¾ÆÀÌÅÛ ÀÎµ¦½º
+	WORD				m_wBaseItem;			//	ì•„ì´í…œ ì¸ë±ìŠ¤
 
 	WORD				m_wTargetWorld;
 	char				m_strName[dNAME_LENGTH];
@@ -962,7 +998,7 @@ class	cBookCategoryItemDefine
 {
 public:
 	DWORD				m_dwSerial;
-	WORD				m_wBaseItem;			//	¾ÆÀÌÅÛ ÀÎµ¦½º
+	WORD				m_wBaseItem;			//	ì•„ì´í…œ ì¸ë±ìŠ¤
 
 	WORD				m_wBookIndex;
 	WORD				m_wBeginCategory,m_wEndCategory;
@@ -972,7 +1008,7 @@ class	cBookPageItemDefine
 {
 public:
 	DWORD				m_dwSerial;
-	WORD				m_wBaseItem;			//	¾ÆÀÌÅÛ ÀÎµ¦½º
+	WORD				m_wBaseItem;			//	ì•„ì´í…œ ì¸ë±ìŠ¤
 
 	WORD				m_wBookIndex;
 	WORD				m_wCategory;
@@ -982,7 +1018,7 @@ public:
 class	cSetItemDefine	: public CItemBaseInfo
 {
 public:
-	WORD			m_bf1IsCustomItem				:	1;	//	Ä¿½ºÅÒ ¾ÆÀÌÅÛ(Ä÷¸®Æ¼¸¦ ¹«½ÃÇÏ°í CItemBaseInfo Á¤º¸´ë·Î ¼¼ÆÃ)
+	WORD			m_bf1IsCustomItem				:	1;	//	ì»¤ìŠ¤í…€ ì•„ì´í…œ(í€„ë¦¬í‹°ë¥¼ ë¬´ì‹œí•˜ê³  CItemBaseInfo ì •ë³´ëŒ€ë¡œ ì„¸íŒ…)
 	WORD			m_bf1IsDropInTempDungeonMonster	:	1;
 	WORD			m_bf1IsDropInTempDungeonArca	:	1;
 	WORD			m_bf1IsDropInNormalFieldMonster	:	1;
@@ -991,14 +1027,14 @@ public:
 	WORD			m_bf4ReversionType				:	4;
 	WORD			m_bf6Dummy						:	6;
 
-	WORD			m_wDummyData;	//	¿ö·¡ Á÷¾÷ ¼³Á¤ ÀÖ´ø ÀÚ¸®´Ù
+	WORD			m_wDummyData;	//	ì›Œë˜ ì§ì—… ì„¤ì • ìˆë˜ ìë¦¬ë‹¤
 
 	WORD			m_wDropChance,m_wDropLevel;
 	WORD			m_wGenerateQuality,m_aPrefixGenerateQuality[dITEM_PREFIX_COUNT];
 
 	char			m_strName[30];
 	DWORD			m_dwCommentAddress;
-	WORD			m_wCommentSize;					//	¾ÆÀÌÅÛ ¼³¸íÀÇ »çÀÌÁî(ÅØ½ºÆ®´Â µû·Î ¸ğ¾Æ¼­ º¸°üÇÑ´Ù. ³Ê¹« ¸¹´Ù. --)
+	WORD			m_wCommentSize;					//	ì•„ì´í…œ ì„¤ëª…ì˜ ì‚¬ì´ì¦ˆ(í…ìŠ¤íŠ¸ëŠ” ë”°ë¡œ ëª¨ì•„ì„œ ë³´ê´€í•œë‹¤. ë„ˆë¬´ ë§ë‹¤. --)
 
 	UINT			m_uiEnableJobMask;	
 
@@ -1184,7 +1220,7 @@ public:
 	}
 };
 
-#define	dDROPPING_ITEM_COUNT				10		//	¶³¾îµå¸®´Â ¾ÆÀÌÅÛ ÆĞÅÏ
+#define	dDROPPING_ITEM_COUNT				10		//	ë–¨ì–´ë“œë¦¬ëŠ” ì•„ì´í…œ íŒ¨í„´
 
 class	cDroppingItemForItemPiece
 {
@@ -1221,7 +1257,7 @@ public:
 class	cDroppingItem
 {
 public:
-	WORD		m_wItemType	;			//	¾ÆÀÌÅÛ
+	WORD		m_wItemType	;			//	ì•„ì´í…œ
 
 	WORD		m_bf8Count			:	10;
 	WORD		m_bf1IsCustomItem	:	1;
@@ -1363,18 +1399,18 @@ class	cExtraItemDefine
 {
 public: 
 	DWORD				m_dwSerial;
-	WORD				m_wBaseItem;			//	¾ÆÀÌÅÛ ÀÎµ¦½º
-	short				m_sCurrentEfficiency;	//	ÇöÀç È¿À²
-	BYTE				m_aOption[2];			//	»ı¼ºµÉ¶§ ºÙÀº ¿É¼Ç
+	WORD				m_wBaseItem;			//	ì•„ì´í…œ ì¸ë±ìŠ¤
+	short				m_sCurrentEfficiency;	//	í˜„ì¬ íš¨ìœ¨
+	BYTE				m_aOption[2];			//	ìƒì„±ë ë•Œ ë¶™ì€ ì˜µì…˜
 
-	CItemPrefixInfo		m_aPrefix[dITEM_PREFIX_COUNT];	//	Ãß°¡È¿°ú 3°³
+	CItemPrefixInfo		m_aPrefix[dITEM_PREFIX_COUNT];	//	ì¶”ê°€íš¨ê³¼ 3ê°œ
 
-	DWORD				m_isBroken		: 1;	//	ºÎ½¤Áø ¾ÆÀÌÅÛ
-	DWORD				m_isCursed		: 1;	//	ÀúÁÖ ¹ŞÀº ¾ÆÀÌÅÛ
-	DWORD				m_wayPointIndex	: 4;	//	¿şÀÌ Æ÷ÀÎÆ® ÀÎµ¦½º
-	DWORD				m_isCanNotAttachPrefixItem	: 1;	//	´õ ÀÌ»ó Á¢µÎ»ç¸¦ ºÙÀÏ ¼ö ¾ø´Â ¾ÆÀÌÅÛ
+	DWORD				m_isBroken		: 1;	//	ë¶€ìˆ´ì§„ ì•„ì´í…œ
+	DWORD				m_isCursed		: 1;	//	ì €ì£¼ ë°›ì€ ì•„ì´í…œ
+	DWORD				m_wayPointIndex	: 4;	//	ì›¨ì´ í¬ì¸íŠ¸ ì¸ë±ìŠ¤
+	DWORD				m_isCanNotAttachPrefixItem	: 1;	//	ë” ì´ìƒ ì ‘ë‘ì‚¬ë¥¼ ë¶™ì¼ ìˆ˜ ì—†ëŠ” ì•„ì´í…œ
 
-	DWORD				m_year			: 4;	//	À¯È¿±â°£
+	DWORD				m_year			: 4;	//	ìœ íš¨ê¸°ê°„
 	DWORD				m_month			: 5;
 	DWORD				m_day			: 5;
 	DWORD				m_hour			: 5;
@@ -1388,7 +1424,7 @@ class	cMagicCarpetEmblemDefine
 {
 public: 
 	DWORD				m_dwSerial;
-	WORD				m_wBaseItem;			//	¾ÆÀÌÅÛ ÀÎµ¦½º
+	WORD				m_wBaseItem;			//	ì•„ì´í…œ ì¸ë±ìŠ¤
 
 	WORD				m_bf1IsActiveGearCarpet		:	1;
 	WORD				m_bf1IsTurtleCarpet			:	1;
@@ -1398,16 +1434,16 @@ public:
 	WORD				m_bf1IsWildCat				:	1;
 	WORD				m_bf1IsRedDrakeCarpet		:	1;
 
-	BYTE				m_aOption[2];			//	»ı¼ºµÉ¶§ ºÙÀº ¿É¼Ç
+	BYTE				m_aOption[2];			//	ìƒì„±ë ë•Œ ë¶™ì€ ì˜µì…˜
 
-	CItemPrefixInfo		m_aPrefix[dITEM_PREFIX_COUNT];	//	Ãß°¡È¿°ú 3°³
+	CItemPrefixInfo		m_aPrefix[dITEM_PREFIX_COUNT];	//	ì¶”ê°€íš¨ê³¼ 3ê°œ
 
-	DWORD				m_isBroken					: 1;	//	ºÎ½¤Áø ¾ÆÀÌÅÛ
-	DWORD				m_isCursed					: 1;	//	ÀúÁÖ ¹ŞÀº ¾ÆÀÌÅÛ
-	DWORD				m_wayPointIndex				: 4;	//	¿şÀÌ Æ÷ÀÎÆ® ÀÎµ¦½º
-	DWORD				m_isCanNotAttachPrefixItem	: 1;	//	´õ ÀÌ»ó Á¢µÎ»ç¸¦ ºÙÀÏ ¼ö ¾ø´Â ¾ÆÀÌÅÛ
+	DWORD				m_isBroken					: 1;	//	ë¶€ìˆ´ì§„ ì•„ì´í…œ
+	DWORD				m_isCursed					: 1;	//	ì €ì£¼ ë°›ì€ ì•„ì´í…œ
+	DWORD				m_wayPointIndex				: 4;	//	ì›¨ì´ í¬ì¸íŠ¸ ì¸ë±ìŠ¤
+	DWORD				m_isCanNotAttachPrefixItem	: 1;	//	ë” ì´ìƒ ì ‘ë‘ì‚¬ë¥¼ ë¶™ì¼ ìˆ˜ ì—†ëŠ” ì•„ì´í…œ
 
-	DWORD				m_year						: 4;	//	À¯È¿±â°£
+	DWORD				m_year						: 4;	//	ìœ íš¨ê¸°ê°„
 	DWORD				m_month						: 5;
 	DWORD				m_day						: 5;
 	DWORD				m_hour						: 5;
@@ -1417,29 +1453,29 @@ public:
 class	cSpecialItemDefine	: public CItemBaseInfo
 {
 public:
-	DWORD				m_isBroken						:	1;	//	ºÎ½¤Áø ¾ÆÀÌÅÛ
+	DWORD				m_isBroken						:	1;	//	ë¶€ìˆ´ì§„ ì•„ì´í…œ
 	DWORD				m_bf1IsSpecialItem				:	1;	//	
 
-	DWORD				m_bf1IsReversionItem			:	1;	//	±Í¼ÓµÈ ¾ÆÀÌÅÛ
-	DWORD				m_bf1IsReversionItemWhenEquip	:	1;	//	Âø¿ëÇÏ¸é ±Í¼Ó µÇ´Â ¾ÆÀÌÅÛ
-	DWORD				m_bf1IsSetItem					:	1;	//	¼¼Æ® ¾ÆÀÌÅÛÀÌ´Ù.
-	DWORD				m_bf1IsUnknown					:	1;	//	¹«½¼ ¾ÆÀÌÅÛÀÎÁö ¸ğ¸£°Ú´Ù.
+	DWORD				m_bf1IsReversionItem			:	1;	//	ê·€ì†ëœ ì•„ì´í…œ
+	DWORD				m_bf1IsReversionItemWhenEquip	:	1;	//	ì°©ìš©í•˜ë©´ ê·€ì† ë˜ëŠ” ì•„ì´í…œ
+	DWORD				m_bf1IsSetItem					:	1;	//	ì„¸íŠ¸ ì•„ì´í…œì´ë‹¤.
+	DWORD				m_bf1IsUnknown					:	1;	//	ë¬´ìŠ¨ ì•„ì´í…œì¸ì§€ ëª¨ë¥´ê² ë‹¤.
 
-	DWORD				m_bf11SValue					:	11;	//	¼¼Æ® ¾ÆÀÌÅÛÀÌ³ª Á¶°¢ ¾ÆÀÌÅÛ ÀÎµ¦½º
-	DWORD				m_bf10EquipLevel				:	10;	//	Âø¿ë Á¦ÇÑ ·¹º§
-	DWORD				m_bf1IsFreeUseItem				:	1;	//	»ç¿ëÀÌ³ª Âø¿ë¿¡ Á¦ÇÑÀÌ ¾ø´Â ¾ÆÀÌÅÛ 28
+	DWORD				m_bf11SValue					:	11;	//	ì„¸íŠ¸ ì•„ì´í…œì´ë‚˜ ì¡°ê° ì•„ì´í…œ ì¸ë±ìŠ¤
+	DWORD				m_bf10EquipLevel				:	10;	//	ì°©ìš© ì œí•œ ë ˆë²¨
+	DWORD				m_bf1IsFreeUseItem				:	1;	//	ì‚¬ìš©ì´ë‚˜ ì°©ìš©ì— ì œí•œì´ ì—†ëŠ” ì•„ì´í…œ 28
 
 };
 
-class	CItemDefine : public CItemBaseInfo	//	26¹ÙÀÌÆ®
+class	CItemDefine : public CItemBaseInfo	//	26ë°”ì´íŠ¸
 {
 public: 
-	DWORD				m_isBroken			: 1;	//	ºÎ½¤Áø ¾ÆÀÌÅÛ
+	DWORD				m_isBroken			: 1;	//	ë¶€ìˆ´ì§„ ì•„ì´í…œ
 	DWORD				m_bf1IsSpecialItem	: 1;	//	
-	DWORD				m_wayPointIndex		: 4;	//	¿şÀÌ Æ÷ÀÎÆ® ÀÎµ¦½º
+	DWORD				m_wayPointIndex		: 4;	//	ì›¨ì´ í¬ì¸íŠ¸ ì¸ë±ìŠ¤
 
-	DWORD				m_isCanNotAttachPrefixItem	: 1;	//	´õ ÀÌ»ó Á¢µÎ»ç¸¦ ºÙÀÏ ¼ö ¾ø´Â ¾ÆÀÌÅÛ
-	DWORD				m_year				: 4;	//	À¯È¿±â°£
+	DWORD				m_isCanNotAttachPrefixItem	: 1;	//	ë” ì´ìƒ ì ‘ë‘ì‚¬ë¥¼ ë¶™ì¼ ìˆ˜ ì—†ëŠ” ì•„ì´í…œ
+	DWORD				m_year				: 4;	//	ìœ íš¨ê¸°ê°„
 	DWORD				m_month				: 5;
 	DWORD				m_day				: 5;
 	DWORD				m_hour				: 5;
@@ -1464,7 +1500,7 @@ public:
 	{
 		((CItemDefineForValue *)this)->m_dwValue = _dwValue;
 	}
-	inline	BOOL	isExpirationData()	// À¯È¿±â°£ À¯¹« Ã¼Å©..
+	inline	BOOL	isExpirationData()	// ìœ íš¨ê¸°ê°„ ìœ ë¬´ ì²´í¬..
 	{	
 		if(m_year != 0 || m_month != 0 || m_day != 0 || m_hour != 0 || m_minute != 0)
 			return TRUE;
@@ -1472,7 +1508,7 @@ public:
 
 	}
 
-	inline	BOOL	isMoneyItem()	//	°ñµå°Å³ª.. ±İ±«
+	inline	BOOL	isMoneyItem()	//	ê³¨ë“œê±°ë‚˜.. ê¸ˆê´´
 	{
 		if	(m_wBaseItem == dITEM_INDEX_GOLD_BAR || m_wBaseItem == dITEM_MONEY)
 			return	TRUE;
@@ -1568,36 +1604,36 @@ public:
 	WORD			m_wSerial;
 	WORD			m_wDiscernmentCode;
 	WORD			m_wType;
-	short			m_aValue[2][2];//¼öÄ¡ 1,2ÀÇ ÃÖ´ë ÃÖ¼ÒÄ¡
-	short			m_sValue3;//3¹øÂ° ¼öÄ¡
+	short			m_aValue[2][2];//ìˆ˜ì¹˜ 1,2ì˜ ìµœëŒ€ ìµœì†Œì¹˜
+	short			m_sValue3;//3ë²ˆì§¸ ìˆ˜ì¹˜
 	char			m_str1stPrefix[20],m_str2stPrefix[20];
 	WORD			m_wDropLevel;
-	WORD			m_wPrefixForm;//Á¢µÎ»ç Å¸ÀÔ 0Àº ¸í»ç,1Àº Çü¿ë»ç
+	WORD			m_wPrefixForm;//ì ‘ë‘ì‚¬ íƒ€ì… 0ì€ ëª…ì‚¬,1ì€ í˜•ìš©ì‚¬
 
-	DWORD			m_dwPrice;//°¡°İ
-	WORD			m_wComputePriceMethod;	//	°¡°İ °è»ê ¹æ¹ı
-	WORD			m_wPriceFactor;	//	°öÇÒ °ÍÀÎ°¡ ´õÇÒ °ÍÀÎ°¡
+	DWORD			m_dwPrice;//ê°€ê²©
+	WORD			m_wComputePriceMethod;	//	ê°€ê²© ê³„ì‚° ë°©ë²•
+	WORD			m_wPriceFactor;	//	ê³±í•  ê²ƒì¸ê°€ ë”í•  ê²ƒì¸ê°€
 
-	BYTE			m_aEnableSet[4];	//	Ã³À½,µÎ¹øÂ°,¼¼¹øÂ°,´ı-_-
+	BYTE			m_aEnableSet[4];	//	ì²˜ìŒ,ë‘ë²ˆì§¸,ì„¸ë²ˆì§¸,ë¤-_-
 	BYTE			m_aStickableItem[dITEM_PREFIX_STICK_ABLE_ITEM_COUNT];
 	BYTE			m_bWeaponEffect,m_bArmorEffect;
 	WORD			m_wIsDXPrefix;
 	WORD			m_wCorrectDropChance;
 	short			m_saCorrectQualityPrefix[2];
 	WORD			m_wIsUltimatePrefix;
-	WORD			m_bf1IsStickableItemScythe :1;		// 1 ³´..
-	WORD			m_bf1IsStickAbleItemArmWeapon :1;		//2 ¾Ï¿şÆù..
-	WORD			m_bf1IsStickAbleItemBook		:1;		//3 Ã¥ 
+	WORD			m_bf1IsStickableItemScythe :1;		// 1 ë‚«..
+	WORD			m_bf1IsStickAbleItemArmWeapon :1;		//2 ì•”ì›¨í°..
+	WORD			m_bf1IsStickAbleItemBook		:1;		//3 ì±… 
 	WORD			:0;
 	BYTE			m_aTempValue[30];	// 32 -> 30
 
 					cITEM_PREFIX()	{m_wSerial	=	0xffff;}
 
 	void			reset();
-	void			copy(cITEM_PREFIX *_lpPrefix);	//	º¹»ç
+	void			copy(cITEM_PREFIX *_lpPrefix);	//	ë³µì‚¬
 	void			getMaxValue(short *_lpValues);
 	char*			getPrefix(int _iPos);
-	DWORD			getPriceValue(int _iValue1,int _iValue2);	//	°¡°İ ÀÎÀÚ ¾ò±â
+	DWORD			getPriceValue(int _iValue1,int _iValue2);	//	ê°€ê²© ì¸ì ì–»ê¸°
 
 	inline	BOOL	isStickAbleItem(int _iKind)
 	{
@@ -1662,8 +1698,8 @@ public:
 	WORD		m_wCount;
 	WORD		m_wLinkItem;
 	char		m_strName[28];
-	UINT		m_bf1IsSelectOneItem	:	1;	//	ÀÌ°É »ç¿ëÇÏ¸é À¯Àú´Â ÀÌ ¾ÆÀÌÅÛÁß ÇÏ³ª¸¦ ¼±ÅÃÇÒ ¼ö ÀÖ´Ù.
-	UINT		m_bf1IsSelectOnePrefix	:	1;	//	¿©±â¼­ ¾ÆÀÌÅÛÀ» »ç¿ëÇÏ¸é À¯Àú´Â ¾ÆÀÌÅÛÀÇ Á¢µÎ»çµé Áß ÇÏ³ª¸¸ ¼±ÅÃÇÒ ¼ö ÀÖ´Ù.
+	UINT		m_bf1IsSelectOneItem	:	1;	//	ì´ê±¸ ì‚¬ìš©í•˜ë©´ ìœ ì €ëŠ” ì´ ì•„ì´í…œì¤‘ í•˜ë‚˜ë¥¼ ì„ íƒí•  ìˆ˜ ìˆë‹¤.
+	UINT		m_bf1IsSelectOnePrefix	:	1;	//	ì—¬ê¸°ì„œ ì•„ì´í…œì„ ì‚¬ìš©í•˜ë©´ ìœ ì €ëŠ” ì•„ì´í…œì˜ ì ‘ë‘ì‚¬ë“¤ ì¤‘ í•˜ë‚˜ë§Œ ì„ íƒí•  ìˆ˜ ìˆë‹¤.
 
 	cItemInPack	m_aItems[dMAX_ITEM_IN_ITEM_PACK];
 
@@ -1711,7 +1747,7 @@ enum
 };
 
 const	int c_iItemDataLastVersion	=	eITEMDATAVERSION_LAST-1;
-#define	dLAST_ITEM_DATA_VERSION	c_iItemDataLastVersion	//	VA¿¡¼­ »ö±ò Ç¥½Ã ÇÏ·Á°í..--
+#define	dLAST_ITEM_DATA_VERSION	c_iItemDataLastVersion	//	VAì—ì„œ ìƒ‰ê¹” í‘œì‹œ í•˜ë ¤ê³ ..--
 
 #define	dITEM_FILE_NAME	"item.dat"
 

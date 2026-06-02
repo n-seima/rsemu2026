@@ -8,6 +8,16 @@ cBODY					g_aBody[dBODY_COUNT];
 cBODY					g_aEffect[dEFFECT_IMAGE_DATA_COUNT];
 CImageDataManager		g_idm;
 
+static char*
+getBaseFileName(char* _lpstrFileName)
+{
+	char* lpstrBackSlash = strrchr(_lpstrFileName, '\\');
+	char* lpstrSlash = strrchr(_lpstrFileName, '/');
+	char* lpstrBase = lpstrBackSlash > lpstrSlash ? lpstrBackSlash : lpstrSlash;
+
+	return lpstrBase ? lpstrBase + 1 : _lpstrFileName;
+}
+
 //
 //	최초의 초기화
 BOOL
@@ -37,11 +47,13 @@ CImageDataManager::loadJobBodyData()
 
 		while(1)
 		{
-			if	(STRICMP(FPGetHeroFileName(iIndex),"end")	==0)
+			char* lpstrFileName = getBaseFileName(FPGetHeroFileName(iIndex));
+
+			if	(STRICMP(lpstrFileName,"end")	==0)
 				break;
 
-			if	(!g_aBody[iIndex].load(FPGetHeroFileName(iIndex)))
-				return	ERRMSG("error in CImageDataManager::loadJobBodyData()","can not find heros data\n%s",FPGetHeroFileName(iIndex));
+			if	(!g_aBody[iIndex].load(lpstrFileName))
+				return	ERRMSG("error in CImageDataManager::loadJobBodyData()","can not find heros data\n%s",lpstrFileName);
 
 			iIndex++;
 		}
@@ -74,10 +86,12 @@ CImageDataManager::loadJobBodyData()
 
 		while(1)
 		{
-			if	(STRICMP(FPGetMonsterFileName(iIndex),"end")	==0)
+			char* lpstrFileName = getBaseFileName(FPGetMonsterFileName(iIndex));
+
+			if	(STRICMP(lpstrFileName,"end")	==0)
 				break;
 
-			g_aBody[dBODY_MONSTER_START+iIndex].load(FPGetMonsterFileName(iIndex));
+			g_aBody[dBODY_MONSTER_START+iIndex].load(lpstrFileName);
 
 			iIndex++;
 		}
@@ -92,10 +106,12 @@ CImageDataManager::loadJobBodyData()
 
 		while(1)
 		{
-			if	(STRICMP(FPGetNpcFileName(iIndex),"end")	==0)
+			char* lpstrFileName = getBaseFileName(FPGetNpcFileName(iIndex));
+
+			if	(STRICMP(lpstrFileName,"end")	==0)
 				break;
 
-			g_aBody[dBODY_NPC_START+iIndex].load(FPGetNpcFileName(iIndex));
+			g_aBody[dBODY_NPC_START+iIndex].load(lpstrFileName);
 
 			iIndex++;
 		}

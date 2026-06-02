@@ -53,7 +53,12 @@ cGAME::sendUseCarrotLog(cACTOR *_lpActor,int _iPremiumItemIndex,int _iCount,int 
 		strcpy(packet.ogpServiceKey.m_strToken,lpClient->m_strToken);
 #endif
 
-	return	g_socketDBC.SendPacket((char *)&packet,packet.base.wSize);
+	BOOL bSent = g_socketDBC.SendPacket((char *)&packet,packet.base.wSize);
+
+	_log("[CARROT] send use id[%s] name[%s] item[%d] count[%d] price[%d] public[%d] zoneSerial[%d] sent[%d]",
+		packet.strId,packet.strName,packet.itemno,packet.itcnt,packet.sPrice,packet.wIsPublicItem,packet.dwSerialInServer,bSent);
+
+	return	bSent;
 }
 
 BOOL
@@ -81,6 +86,9 @@ cGAME::sendGetCarrotCount(cACTOR *_lpActor)
 
 	if	(lpClient)
 		strcpy(packet.strIP,lpClient->ip);
+
+	_log("[CARROT] send get count id[%s] name[%s] zoneSerial[%d] ip[%s]",
+		_lpActor->m_strId,_lpActor->m_strName,_lpActor->m_iZoneSerial,packet.strIP);
 
 #ifdef	_OGP_SERVICE
 	packet.ogpServiceKey.m_wGameServiceID	=	dOGP_GAME_SERVICE_ID;

@@ -224,14 +224,21 @@ cPACKET_HANDLER::ReceiveCarrotShopInfo(SERVER_PACKETS *_lpPacket)
 	{
 		if	(lpPacket->wStatus	==	2)
 		{
-			g_carrotShop.m_wCategoryCount	=	lpPacket->wCount;
-			g_carrotShop.save();
+			if	(g_carrotShop.m_wCategoryCount	==	0	&&	lpPacket->wCount	>	0)
+			{
+				g_carrotShop.m_wCategoryCount	=	min(lpPacket->wCount,dMAX_CARROT_SHOP_CATEGORY_COUNT);
+				g_carrotShop.save();
+			}
 		}
 
 		if	(lpPacket->iRemainCarrotCount	==	-1)
+		{
+			g_gwCarrotShop.m_wWaitOpenResultTime	=	dSYNC_FPS*5;
 			return;
+		}
 
 		g_gwCarrotShop.m_iRemainCarrotCount	=	lpPacket->iRemainCarrotCount;
+		g_gwCarrotShop.m_wWaitOpenResultTime	=	0;
 
 		g_gwCarrotShop.open();
 

@@ -60,8 +60,8 @@ BEGIN
                     IDC_STATIC,109,62,176,34
     CONTROL         "ウィンドウモード",IDC_WINDOW_MODE,"Button",
                     BS_AUTOCHECKBOX | BS_FLAT,12,68,61,11
-    CONTROL         "解像度（1024×768）",IDC_1024X768,"Button",
-                    BS_AUTOCHECKBOX | BS_FLAT,12,82,87,11
+    COMBOBOX        IDC_RESOLUTION,12,82,87,64,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
 END
 
 #endif    // Japanese resources

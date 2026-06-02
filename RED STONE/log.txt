@@ -1,0 +1,44 @@
+//========================================================================================================
+Application Begin Time 2026/ 6/ 2 14:47:15
+Current Time           2026/ 6/ 2 14:57:16
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+************* Application Started at [14:47:15] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+winsock closed
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+
+************* Application Closed  at [14:57:16] ************* 
+
+//========================================================================================================

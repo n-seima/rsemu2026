@@ -642,7 +642,7 @@
       <SDLCheck>false</SDLCheck>
       <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
       <DisableSpecificWarnings>4996;4430;4244;4838;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <AdditionalOptions>/source-charset:euc-kr /execution-charset:euc-kr %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Midl>
@@ -705,6 +705,13 @@
       <AdditionalLibraryDirectories>../lib;HShield;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>zdll.lib;winmm.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)..\common;$(SolutionDir)..\common\common;$(SolutionDir)common;..\..\common\packet;..\..\common\common;C:\Users\seima\Desktop\rs_emu_sourcecode-main\dx81sdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:forScope- %(AdditionalOptions)</AdditionalOptions>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\common\common\cADO_BASE.cpp" />

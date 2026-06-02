@@ -1,0 +1,321 @@
+[222509] Success DB Connecting ... 
+
+
+[222509] Open Server addr = 25.1.80.156
+
+
+[222509] Start WorkerThread[0] ...
+
+[222509] Start EventMngThread ...
+
+[222509] Start WorkerThread[2] ...
+
+[222509] Start WorkerThread[1] ...
+
+[222509] Start WorkerThread[6] ...
+
+[222509] Start WorkerThread[7] ...
+
+[222509] Start WorkerThread[5] ...
+
+[222509] Start WorkerThread[3] ...
+
+[222509] Start WorkerThread[4] ...
+
+[222509] Start AdditionThread ...
+
+[222510]  Carrot Shop Item Count at First = 3
+
+[222510] Start USER DB Cache Server ... day : 20260531 - time : 222510 
+
+
+[222525] Add User  = 1 , 127.0.0.1 
+
+
+[222525] Connect Server : [#login] [25.1.80.156] 0 0 idx 65535
+
+
+[222538] Add User  = 2 , 127.0.0.1 
+
+
+[222538]  SendCarrotShop to user []
+
+[222538]  Send CarrotShop Info : count 3 (3)
+
+[222607] Connect Server : [LocalWorld] [127.0.0.1] 2 0 idx 0
+
+
+[222607]  Add Server : LocalWorld , 127.0.0.1, 1 
+
+[222909] login strResult = 2 
+
+
+[222911] login strResult = 2 
+
+
+[222919] login strResult = 6 
+
+
+[223104] login strResult = 6 
+
+
+[223159]  Login Error : [-2] 
+[223159] login strResult = 1 
+
+
+[223204] login strResult = 6 
+
+
+[223249] login strResult = 6 
+
+
+[223455] login strResult = 6 
+
+
+[223630] login strResult = 6 
+
+
+[223647] login strResult = 6 
+
+
+[223801] (LocalWorld)1 is Exit!!
+
+
+[223804] (#login)0 is Exit!!
+
+
+[223901] Add User  = 1 , 127.0.0.1 
+
+
+[223901] Connect Server : [#login] [25.1.80.156] 0 0 idx 65535
+
+
+[223913] Add User  = 2 , 127.0.0.1 
+
+
+[223913]  SendCarrotShop to user [127.0.0.1]
+
+[223913]  Send CarrotShop Info : count 3 (3)
+
+[223926] Connect Server : [ãŠæ°´ã‚µãƒ¼ãƒãƒ¼] [127.0.0.1] 2 0 idx 0
+
+
+[223926]  Add Server : ãŠæ°´ã‚µãƒ¼ãƒãƒ¼ , 127.0.0.1, 1 
+
+[223930] login strResult = 6 
+
+
+[223940] login strResult = 6 
+
+
+[223948] (ãŠæ°´ã‚µãƒ¼ãƒãƒ¼)1 is Exit!!
+
+
+[223954] (#login)0 is Exit!!
+
+
+[224334] Success DB Connecting ... 
+
+
+[224334] Open Server addr = 25.1.80.156
+
+
+[224334] Start WorkerThread[0] ...
+
+[224334] Start WorkerThread[1] ...
+
+[224334] Start WorkerThread[3] ...
+
+[224334] Start WorkerThread[4] ...
+
+[224334] Start WorkerThread[6] ...
+
+[224334] Start WorkerThread[7] ...
+
+[224334] Start WorkerThread[5] ...
+
+[224334] Start WorkerThread[2] ...
+
+[224334] Start EventMngThread ...
+
+[224335] Start AdditionThread ...
+
+[224335]  Carrot Shop Item Count at First = 3
+
+[224335] Start USER DB Cache Server ... day : 20260531 - time : 224335 
+
+
+[224349] Add User  = 1 , 127.0.0.1 
+
+
+[224349] Connect Server : [#login] [25.1.80.156] 0 0 idx 65535
+
+
+[224402] Add User  = 2 , 127.0.0.1 
+
+
+[224402]  SendCarrotShop to user []
+
+[224402]  Send CarrotShop Info : count 3 (3)
+
+[224425] Connect Server : [ãŠæ°´ã‚µãƒ¼ãƒãƒ¼] [127.0.0.1] 2 0 idx 0
+
+
+[224425]  Add Server : ãŠæ°´ã‚µãƒ¼ãƒãƒ¼ , 127.0.0.1, 1 
+
+[224433] login strResult = 6 
+
+
+[224512] login strResult = 6 
+
+
+[224523] login strResult = 6 
+
+
+[224607] login strResult = 6 
+
+
+[224713] (#login)0 is Exit!!
+
+
+[224928] Success DB Connecting ... 
+
+
+[224928] Open Server addr = 25.1.80.156
+
+
+[224928] Start WorkerThread[2] ...
+
+[224928] Start WorkerThread[0] ...
+
+[224928] Start WorkerThread[1] ...
+
+[224928] Start WorkerThread[5] ...
+
+[224928] Start WorkerThread[4] ...
+
+[224928] Start WorkerThread[3] ...
+
+[224928] Start WorkerThread[7] ...
+
+[224928] Start WorkerThread[6] ...
+
+[224928] Start EventMngThread ...
+
+[224929] Start AdditionThread ...
+
+[224929]  Carrot Shop Item Count at First = 3
+
+[224929] Start USER DB Cache Server ... day : 20260531 - time : 224929 
+
+
+[224949] Add User  = 1 , 127.0.0.1 
+
+
+[224949] Connect Server : [#login] [25.1.80.156] 0 0 idx 65535
+
+
+[225004] Add User  = 2 , 127.0.0.1 
+
+
+[225004]  SendCarrotShop to user []
+
+[225004]  Send CarrotShop Info : count 3 (3)
+
+[225040] Connect Server : [‚¨…ƒT[ƒo[] [127.0.0.1] 2 0 idx 0
+
+
+[225040]  Add Server : ‚¨…ƒT[ƒo[ , 127.0.0.1, 1 
+
+[225048] login strResult = 6 
+
+
+[225155] login strResult = 6 
+
+
+[225222]  Login Error : [-2] 
+[225222] login strResult = 1 
+
+
+[225227] login strResult = 6 
+
+
+[231129] Success DB Connecting ... 
+
+
+[231129] Open Server addr = 25.1.80.156
+
+
+[231129] Start WorkerThread[1] ...
+
+[231129] Start WorkerThread[0] ...
+
+[231129] Start WorkerThread[5] ...
+
+[231129] Start WorkerThread[3] ...
+
+[231129] Start WorkerThread[4] ...
+
+[231129] Start WorkerThread[6] ...
+
+[231129] Start WorkerThread[7] ...
+
+[231129] Start WorkerThread[2] ...
+
+[231129] Start EventMngThread ...
+
+[231129] Start AdditionThread ...
+
+[231130]  Carrot Shop Item Count at First = 3
+
+[231130] Start USER DB Cache Server ... day : 20260531 - time : 231130 
+
+
+[231138] Add User  = 1 , 127.0.0.1 
+
+
+[231138] Connect Server : [#login] [25.1.80.156] 0 0 idx 65535
+
+
+[231151] Add User  = 2 , 127.0.0.1 
+
+
+[231151]  SendCarrotShop to user []
+
+[231151]  Send CarrotShop Info : count 3 (3)
+
+[231202] Connect Server : [‚¨…ƒT[ƒo[] [127.0.0.1] 2 0 idx 0
+
+
+[231202]  Add Server : ‚¨…ƒT[ƒo[ , 127.0.0.1, 1 
+
+[231206] login strResult = 2 
+
+
+[231208] login strResult = 2 
+
+
+[231209] login strResult = 3 
+
+
+[231216] login strResult = 6 
+
+
+[231220] login strResult = 6 
+
+
+[231833] login strResult = 6 
+
+
+[231840] login strResult = 6 
+
+
+[231919] login strResult = 6 
+
+
+[232235] (‚¨…ƒT[ƒo[)1 is Exit!!
+
+
+[232235] (#login)0 is Exit!!
+
+

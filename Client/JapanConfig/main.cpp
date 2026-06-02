@@ -22,16 +22,96 @@ BOOL			l_bIsTemplatePatch	=	FALSE;
 
 LPCTSTR			lpszRegistry	=	"software\\L&K Logic Korea\\Red Stone";
 
+struct	cResolutionOption
+{
+	int			m_iMode;
+	const char	*m_lpstrText;
+};
+
+cResolutionOption	l_aResolutionOption[] =
+{
+	{	eGAME_RESOLUTION_800X600,	"800 x 600"		},
+	{	eGAME_RESOLUTION_1024X768,	"1024 x 768"	},
+	{	eGAME_RESOLUTION_1280X720,	"1280 x 720"	},
+	{	eGAME_RESOLUTION_1280X768,	"1280 x 768"	},
+	{	eGAME_RESOLUTION_1366X768,	"1366 x 768"	},
+	{	eGAME_RESOLUTION_1200X1005,	"1200 x 1005"	},
+};
+
+int				l_iResolutionOptionCount	=	sizeof(l_aResolutionOption)/sizeof(l_aResolutionOption[0]);
+
+int
+GetResolutionOptionIndex(int _iResolutionMode)
+{
+	for	(int i=0;i<l_iResolutionOptionCount;i++)
+	{
+		if	(l_aResolutionOption[i].m_iMode	==	_iResolutionMode)
+			return	i;
+	}
+
+	return	0;
+}
+
+BOOL
+GetResolutionSizeFromText(char *_lpstrText,int &_iWidth,int &_iHeight)
+{
+	int	aiValue[2]	=	{0,0};
+	int	iIndex		=	0;
+	char	*lpText	=	_lpstrText;
+
+	while(*lpText && iIndex < 2)
+	{
+		while(*lpText && (*lpText < '0' || *lpText > '9'))
+			lpText++;
+
+		if	(!*lpText)
+			break;
+
+		while(*lpText >= '0' && *lpText <= '9')
+		{
+			aiValue[iIndex]	=	aiValue[iIndex]*10+(*lpText-'0');
+			lpText++;
+		}
+
+		iIndex++;
+	}
+
+	if	(iIndex	<	2)
+		return	FALSE;
+
+	_iWidth		=	aiValue[0];
+	_iHeight	=	aiValue[1];
+
+	return	TRUE;
+}
+
+void
+SetResolutionComboText(HWND _hResolution,const CGameOption &_option)
+{
+	int		iWidth,iHeight;
+	char	strResolution[64];
+
+	GetGameResolutionSize(_option,iWidth,iHeight);
+	wsprintf(strResolution,"%d x %d",iWidth,iHeight);
+
+	SendMessage(_hResolution,CB_SETCURSEL,GetResolutionOptionIndex(GetGameResolutionMode(_option)),0);
+	SetWindowText(_hResolution,strResolution);
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 //									초기화 클래스..
 ////////////////////////////////////////////////////////////////////////////////
 
 cMain::cMain()
 {
+	m_pFileData		=	NULL;
+	m_dwFileSize	=	0;
 }
 
 cMain::~cMain()
 {
+	if	(m_pFileData)
+		delete [] m_pFileData;
 }
 
 
@@ -83,13 +163,22 @@ cMain::initDlg(HWND hDlg)
 
 	cFILE	file;
 
+	{
+		CGameOption	defaultOption;
+		m_option	=	defaultOption;
+	}
+
 	if (file.Open("config.cfg","rb"))
 	{
 		m_dwFileSize	=	file.Length;
 		m_pFileData		=	new char [m_dwFileSize];
 
 		file.Read(m_pFileData,m_dwFileSize);
-		memcpy(&m_option,m_pFileData,sizeof(m_option));
+		{
+			DWORD	dwCopySize	=	m_dwFileSize < sizeof(m_option) ? m_dwFileSize : sizeof(m_option);
+			if	(dwCopySize	>	0)
+				memcpy(&m_option,m_pFileData,dwCopySize);
+		}
 
 		if (m_option.m_iOutputDevice > eCD_DIB || m_option.m_iOutputDevice < 0)
 			m_option.m_iOutputDevice	=	eCD_DIRECTDRAW;
@@ -105,6 +194,14 @@ cMain::initDlg(HWND hDlg)
 		m_pFileData		=	new char [sizeof(m_option)];
 		memcpy(m_pFileData,&m_option,sizeof(m_option));
 	}
+
+	if	(m_option.m_dwConfigVersion < eCFV_ADD_RESOLUTION_MODE)
+		SetGameResolutionMode(m_option,m_option.m_bf1IsUse1024X768 ? eGAME_RESOLUTION_1024X768 : eGAME_RESOLUTION_800X600);
+	else
+	if	(m_option.m_dwConfigVersion < eCFV_ADD_VARIABLE_RESOLUTION)
+		SetGameResolutionMode(m_option,GetGameResolutionMode(m_option));
+	else
+		SetGameResolutionSize(m_option,m_option.m_wScreenWidth,m_option.m_wScreenHeight);
 
 
 	m_bIsVirgin	=	TRUE;
@@ -133,8 +230,11 @@ cMain::initDlg(HWND hDlg)
 		CheckDlgButton(hDlg,IDC_EXCLUSIVE_MODE,TRUE);
 	if	(m_option.m_bf1IsWindowMode)
 		CheckDlgButton(hDlg,IDC_WINDOW_MODE,TRUE);
-	if	(m_option.m_bf1IsUse1024X768	)
-		CheckDlgButton(hDlg,IDC_1024X768,TRUE);
+
+	HWND	hResolution	=	GetDlgItem(hDlg,IDC_RESOLUTION);
+	for	(int i=0;i<l_iResolutionOptionCount;i++)
+		SendMessage(hResolution,CB_ADDSTRING,0,(LPARAM)l_aResolutionOption[i].m_lpstrText);
+	SetResolutionComboText(hResolution,m_option);
 
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
@@ -160,8 +260,23 @@ cMain::complete(HWND _hDlg)
 	m_option.m_bIsSoundOn		=	IsDlgButtonChecked(_hDlg,IDC_SOUND_ON);
 	m_option.m_wIsExclusiveMode	=	IsDlgButtonChecked(_hDlg,IDC_EXCLUSIVE_MODE);
 	m_option.m_dwConfigVersion	=	eCFV_CURRENT_VERSION-1;
-	m_option.m_bf1IsUse1024X768	=	IsDlgButtonChecked(_hDlg,IDC_1024X768);
+	{
+		char	strResolution[64];
+		int		iWidth,iHeight;
 
+		GetDlgItemText(_hDlg,IDC_RESOLUTION,strResolution,sizeof(strResolution));
+
+		if	(!GetResolutionSizeFromText(strResolution,iWidth,iHeight))
+			GetGameResolutionSize(m_option,iWidth,iHeight);
+
+		SetGameResolutionSize(m_option,iWidth,iHeight);
+	}
+
+	if	(m_pFileData)
+		delete [] m_pFileData;
+
+	m_dwFileSize	=	sizeof(m_option);
+	m_pFileData		=	new char [m_dwFileSize];
 	memcpy(m_pFileData,&m_option,sizeof(m_option));
 
 	SetLogFolder();

@@ -640,6 +640,32 @@ void main()
 	memset(g_dwMaxTimeYahooUserCount,0,sizeof(DWORD)*24);
 	char filename[2048];
 	sprintf(filename,"%s\\%d_Score.txt",strScorePath,cSRVUTIL::GetTime());
+	FILE *fpScore = fopen(filename,"r");
+	if	(fpScore)
+	{
+		fclose(fpScore);
+	}
+	else
+	{
+		fpScore = fopen(filename,"w");
+		if	(fpScore)
+		{
+#ifdef _FOR_KOREA
+			fprintf(fpScore,"MAXUSER = 0 | 0 | 0 | 0 | 0 | 0;\n");
+#else
+			fprintf(fpScore,"MAXUSER = 0 | 0 ;\n");
+#endif
+			for	(int t=0;t<24;t++)
+			{
+#ifdef _FOR_KOREA
+				fprintf(fpScore,"T%d = 0 | 0 | 0;\n",t);
+#else
+				fprintf(fpScore,"T%d = 0;\n",t);
+#endif
+			}
+			fclose(fpScore);
+		}
+	}
 	if(scp_score.Read(filename)==dNOTFILE)
 	{
 		g_dwMaxUserCount = 0;

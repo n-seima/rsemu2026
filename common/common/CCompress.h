@@ -15,7 +15,7 @@
 
 #include "SFC.H"
 
-BYTE*	CompressData(BYTE *_lpSourceData,int _iDataSize,int *_lpResultSize);	//	_lpSourceData¸¦ ¾ĞÃàÇØ¼­ ¸®ÅÏÇÑ´Ù.
-BYTE*	DecompressData(BYTE *_lpSourceData,int _iDataSize,int *_lpResultSize);//	_lpSourceDataÀÇ ¾ĞÃàÀ» Ç®¾î¼­ ¸®ÅÏÇÑ´Ù.
+BYTE*	CompressData(BYTE *_lpSourceData,int _iDataSize,int *_lpResultSize);	//	_lpSourceDataë¥¼ ì••ì¶•í•´ì„œ ë¦¬í„´í•œë‹¤.
+BYTE*	DecompressData(BYTE *_lpSourceData,int _iDataSize,int *_lpResultSize);//	_lpSourceDataì˜ ì••ì¶•ì„ í’€ì–´ì„œ ë¦¬í„´í•œë‹¤.
 
 #endif

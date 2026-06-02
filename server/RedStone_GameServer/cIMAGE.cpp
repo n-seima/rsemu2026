@@ -123,7 +123,10 @@ cBODY::load(char *fn,cNUX *nux)
 	file->Read(&SADHEADER,sizeof(SADHEADER));
 
 	if	(strcmp(SADHEADER.Reg,REGSADHEADER)!=0	&&	strcmp(SADHEADER.Reg,REGSADHEADER2)!=0)
-		return MSGOUT("Error in cANM::Load - header not match!!");
+	{
+		if	(SADHEADER.Size != file->Length)
+			return MSGOUT("Error in cANM::Load - header not match!!");
+	}
 
 	m_iAnmCount			=	SADHEADER.AnmCount;
 	m_iSpriteCount		=	SADHEADER.ImageCount;

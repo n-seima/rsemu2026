@@ -1,26 +1,26 @@
 #ifndef	_job_define_h
 #define	_job_define_h
 
-#define	dJOB_KNIGHT									0		//	°ß½À±â»E
-#define	dJOB_WARRIOR								1		//	ÀEE
-#define	dJOB_WIZARD									2		//	¸¶¹ý»E
-#define	dJOB_WEREWOLF								3		//	´Á´EÎ°£
-#define	dJOB_PRIEST									4		//	»çÁ¦
-#define	dJOB_FALLEN_ANGEL							5		//	Å¸¶ôÃµ»E
-#define	dJOB_ROGUE									6		//	µµµÏ
-#define	dJOB_FIGHTER								7		//	¹«µµ°¡
-#define	dJOB_MAGIC_LANCER							8		//	¸¶¹ý Ã¢°Ë»E
-#define	dJOB_MAGIC_ARCHER							9		//	¸¶¹ý ±Ã¼E
-#define	dJOB_BEAST_TAMER							10		//	Á¶·Ã»E
-#define	dJOB_SUMMONER								11		//	¼ÒÈ¯»E
-#define	dJOB_PRINCESS								12		//	°øÁÖ
-#define	dJOB_MAGICAL_GIRL							13		//	¸¶¹ý ¼Ò³E
-#define	dJOB_NECROMANCER							14		//	³×Å©·Î¸Ç¼­
-#define	dJOB_DEVIL									15		//	¾Ç¸¶
-#define	dJOB_SOUL_BRINGER							16		//	¿µ¼ú»E
-#define	dJOB_CHAMPION								17		//	Åõ»E
-#define	dJOB_OPTICALIST								18		//	±¤ÇÐ»E
-#define	dJOB_BEAST_MAN								19		//	¼öÀÎ
+#define	dJOB_KNIGHT									0		//	ê²¬ìŠµê¸°ï¿½ÂE
+#define	dJOB_WARRIOR								1		//	ï¿½ÂEÂE
+#define	dJOB_WIZARD									2		//	ë§ˆë²•ï¿½ÂE
+#define	dJOB_WEREWOLF								3		//	ëŠ‘ï¿½ÂEå¯¬ï¿½
+#define	dJOB_PRIEST									4		//	ì‚¬ì œ
+#define	dJOB_FALLEN_ANGEL							5		//	íƒ€ë½ì²œï¿½ÂE
+#define	dJOB_ROGUE									6		//	ë„ë‘‘
+#define	dJOB_FIGHTER								7		//	ë¬´ë„ê°€
+#define	dJOB_MAGIC_LANCER							8		//	ë§ˆë²• ì°½ê²€ï¿½ÂE
+#define	dJOB_MAGIC_ARCHER							9		//	ë§ˆë²• ê¶ï¿½ÂE
+#define	dJOB_BEAST_TAMER							10		//	ì¡°ë ¨ï¿½ÂE
+#define	dJOB_SUMMONER								11		//	ì†Œí™˜ï¿½ÂE
+#define	dJOB_PRINCESS								12		//	ê³µì£¼
+#define	dJOB_MAGICAL_GIRL							13		//	ë§ˆë²• ì†Œï¿½ÂE
+#define	dJOB_NECROMANCER							14		//	ë„¤í¬ë¡œë§¨ì„œ
+#define	dJOB_DEVIL									15		//	ì•…ë§ˆ
+#define	dJOB_SOUL_BRINGER							16		//	ì˜ìˆ ï¿½ÂE
+#define	dJOB_CHAMPION								17		//	íˆ¬ï¿½ÂE
+#define	dJOB_OPTICALIST								18		//	ê´‘í•™ï¿½ÂE
+#define	dJOB_BEAST_MAN								19		//	ìˆ˜ì¸
 #define	dPLAYER_JOB_COUNT							20
 
 #define	dJOB_CODE_MONSTER							32
@@ -28,98 +28,98 @@
 #define	dJOB_CODE_ALL								34
 
 
-#define	dJOB_KELBY_1								51		//	ÄÌºE
+#define	dJOB_KELBY_1								51		//	ì¼ˆï¿½ÂE
 #define	dJOB_KELBY_2								52		//
 #define	dJOB_KELBY_3								53		//
-#define	dJOB_SWELLFER_1								54		//	½ºÀ£ÆÛ
+#define	dJOB_SWELLFER_1								54		//	ìŠ¤ì›°í¼
 #define	dJOB_SWELLFER_2								55		//
 #define	dJOB_SWELLFER_3								56		//
-#define	dJOB_WINDY_1								57		//	À©µE
+#define	dJOB_WINDY_1								57		//	ìœˆï¿½ÂE
 #define	dJOB_WINDY_2								58		//
 #define	dJOB_WINDY_3								59		//
-#define	dJOB_HEDGER_1								60		//	ÇòÀE
+#define	dJOB_HEDGER_1								60		//	í—·ï¿½ÂE
 #define	dJOB_HEDGER_2								61		//
 #define	dJOB_HEDGER_3								62		//
 
 #define	dJOB_OPERATOR_ANGEL_MALE					63		//
 #define	dJOB_OPERATOR_ANGEL_FEMALE					64		//
 
-#define	dSBT_KELBY									0		//	ÄÌºE
-#define	dSBT_SWELLFER								1		//	½ºÀ£ÆÛ
-#define	dSBT_WINDY									2		//	À©µE
-#define	dSBT_HEDGER									3		//	ÇòÀE
-#define	dBODY_HERO_JOB_START						0		//	°ß½À±â»E
-#define	dBODY_KNIGHT1								0		//	°ß½À±â»E
-#define	dBODY_KNIGHT2								1		//	°ß½À±â»E
-#define	dBODY_KNIGHT3								2		//	°ß½À±â»E
-#define	dBODY_WARRIOR1								3		//	ÀEE
-#define	dBODY_WARRIOR2								4		//	ÀEE
-#define	dBODY_WARRIOR3								5		//	ÀEE
-#define	dBODY_WIZARD1								6		//	¸¶¹ý»E
-#define	dBODY_WIZARD2								7		//	¸¶¹ý»E
-#define	dBODY_WIZARD3								8		//	¸¶¹ý»E
-#define	dBODY_WEREWOLF1								9		//	´Á´EÎ°£1
-#define	dBODY_WEREWOLF2								10		//	´Á´EÎ°£2
-#define	dBODY_WEREWOLF3								11		//	´Á´EÎ°£3
-#define	dBODY_PRIEST1								12		//	»çÁ¦1
-#define	dBODY_PRIEST2								13		//	»çÁ¦2
-#define	dBODY_PRIEST3								14		//	»çÁ¦3
-#define	dBODY_FALLEN_ANGEL1							15		//	Å¸¶ôÃµ»E
-#define	dBODY_FALLEN_ANGEL2							16		//	Å¸¶ôÃµ»E
-#define	dBODY_FALLEN_ANGEL3							17		//	Å¸¶ôÃµ»E
-#define	dBODY_ROGUE1								18		//	µµµÏ1
-#define	dBODY_ROGUE2								19		//	µµµÏ2
-#define	dBODY_ROGUE3								20		//	µµµÏ3
-#define	dBODY_FIGHTER1								21		//	µµµÏ1
-#define	dBODY_FIGHTER2								22		//	µµµÏ2
-#define	dBODY_FIGHTER3								23		//	µµµÏ3
-#define	dBODY_MAGIC_LANCER1							24		//	¸¶¹ý Ã¢°Ë»E
-#define	dBODY_MAGIC_LANCER2							25		//	¸¶¹ý Ã¢°Ë»E
-#define	dBODY_MAGIC_LANCER3							26		//	¸¶¹ý Ã¢°Ë»E
-#define	dBODY_MAGIC_ARCHER1							27		//	¸¶¹ý ±Ã¼E
-#define	dBODY_MAGIC_ARCHER2							28		//	¸¶¹ý ±Ã¼E
-#define	dBODY_MAGIC_ARCHER3							29		//	¸¶¹ý ±Ã¼E
-#define	dBODY_BEAST_TAMER1							30		//	¼ÒÈ¯»E
-#define	dBODY_BEAST_TAMER2							31		//	¼ÒÈ¯»E
-#define	dBODY_BEAST_TAMER3							32		//	¼ÒÈ¯»E
-#define	dBODY_SUMMONER1								33		//	¼ÒÈ¯»E
-#define	dBODY_SUMMONER2								34		//	¼ÒÈ¯»E
-#define	dBODY_SUMMONER3								35		//	¼ÒÈ¯»E
-#define	dBODY_PRINCESS1								36		//	°øÁÖ1
-#define	dBODY_PRINCESS2								37		//	°øÁÖ2
-#define	dBODY_PRINCESS3								38		//	°øÁÖ3
-#define	dBODY_MAGICAL_GIRL1							39		//	¸¶¹ý ¼Ò³E
-#define	dBODY_MAGICAL_GIRL2							40		//	¸¶¹ý ¼Ò³E
-#define	dBODY_MAGICAL_GIRL3							41		//	¸¶¹ý ¼Ò³E
-#define	dBODY_NECROMANCER1							42		//	³×Å©·Î¸Ç¼­1
-#define	dBODY_NECROMANCER2							43		//	³×Å©·Î¸Ç¼­2
-#define	dBODY_NECROMANCER3							44		//	³×Å©·Î¸Ç¼­3
-#define	dBODY_DEVIL1								45		//	¾Ç¸¶1
-#define	dBODY_DEVIL2								46		//	¾Ç¸¶2
-#define	dBODY_DEVIL3								47		//	¾Ç¸¶3
-#define	dBODY_SOUL_BRINGER1							48		//	¿µ¼ú»E1
-#define	dBODY_SOUL_BRINGER2							49		//	¿µ¼ú»E2
-#define	dBODY_SOUL_BRINGER3							50		//	¿µ¼ú»E3
-#define	dBODY_CHAMPION1								51		//	Åõ»E1
-#define	dBODY_CHAMPION2								52		//	Åõ»E2
-#define	dBODY_CHAMPION3								53		//	Åõ»E3
-#define	dBODY_OPTICALIST1							54		//	±¤ÇÐ»E1
-#define	dBODY_OPTICALIST2							55		//	±¤ÇÐ»E2
-#define	dBODY_OPTICALIST3							56		//	±¤ÇÐ»E3
-#define	dBODY_BEAST_MAN1							57		//	¼öÀÎ 1
-#define	dBODY_BEAST_MAN2							58		//	¼öÀÎ 2
-#define	dBODY_BEAST_MAN3							59		//	¼öÀÎ 3
+#define	dSBT_KELBY									0		//	ì¼ˆï¿½ÂE
+#define	dSBT_SWELLFER								1		//	ìŠ¤ì›°í¼
+#define	dSBT_WINDY									2		//	ìœˆï¿½ÂE
+#define	dSBT_HEDGER									3		//	í—·ï¿½ÂE
+#define	dBODY_HERO_JOB_START						0		//	ê²¬ìŠµê¸°ï¿½ÂE
+#define	dBODY_KNIGHT1								0		//	ê²¬ìŠµê¸°ï¿½ÂE
+#define	dBODY_KNIGHT2								1		//	ê²¬ìŠµê¸°ï¿½ÂE
+#define	dBODY_KNIGHT3								2		//	ê²¬ìŠµê¸°ï¿½ÂE
+#define	dBODY_WARRIOR1								3		//	ï¿½ÂEÂE
+#define	dBODY_WARRIOR2								4		//	ï¿½ÂEÂE
+#define	dBODY_WARRIOR3								5		//	ï¿½ÂEÂE
+#define	dBODY_WIZARD1								6		//	ë§ˆë²•ï¿½ÂE
+#define	dBODY_WIZARD2								7		//	ë§ˆë²•ï¿½ÂE
+#define	dBODY_WIZARD3								8		//	ë§ˆë²•ï¿½ÂE
+#define	dBODY_WEREWOLF1								9		//	ëŠ‘ï¿½ÂEå¯¬ï¿½1
+#define	dBODY_WEREWOLF2								10		//	ëŠ‘ï¿½ÂEå¯¬ï¿½2
+#define	dBODY_WEREWOLF3								11		//	ëŠ‘ï¿½ÂEå¯¬ï¿½3
+#define	dBODY_PRIEST1								12		//	ì‚¬ì œ1
+#define	dBODY_PRIEST2								13		//	ì‚¬ì œ2
+#define	dBODY_PRIEST3								14		//	ì‚¬ì œ3
+#define	dBODY_FALLEN_ANGEL1							15		//	íƒ€ë½ì²œï¿½ÂE
+#define	dBODY_FALLEN_ANGEL2							16		//	íƒ€ë½ì²œï¿½ÂE
+#define	dBODY_FALLEN_ANGEL3							17		//	íƒ€ë½ì²œï¿½ÂE
+#define	dBODY_ROGUE1								18		//	ë„ë‘‘1
+#define	dBODY_ROGUE2								19		//	ë„ë‘‘2
+#define	dBODY_ROGUE3								20		//	ë„ë‘‘3
+#define	dBODY_FIGHTER1								21		//	ë„ë‘‘1
+#define	dBODY_FIGHTER2								22		//	ë„ë‘‘2
+#define	dBODY_FIGHTER3								23		//	ë„ë‘‘3
+#define	dBODY_MAGIC_LANCER1							24		//	ë§ˆë²• ì°½ê²€ï¿½ÂE
+#define	dBODY_MAGIC_LANCER2							25		//	ë§ˆë²• ì°½ê²€ï¿½ÂE
+#define	dBODY_MAGIC_LANCER3							26		//	ë§ˆë²• ì°½ê²€ï¿½ÂE
+#define	dBODY_MAGIC_ARCHER1							27		//	ë§ˆë²• ê¶ï¿½ÂE
+#define	dBODY_MAGIC_ARCHER2							28		//	ë§ˆë²• ê¶ï¿½ÂE
+#define	dBODY_MAGIC_ARCHER3							29		//	ë§ˆë²• ê¶ï¿½ÂE
+#define	dBODY_BEAST_TAMER1							30		//	ì†Œí™˜ï¿½ÂE
+#define	dBODY_BEAST_TAMER2							31		//	ì†Œí™˜ï¿½ÂE
+#define	dBODY_BEAST_TAMER3							32		//	ì†Œí™˜ï¿½ÂE
+#define	dBODY_SUMMONER1								33		//	ì†Œí™˜ï¿½ÂE
+#define	dBODY_SUMMONER2								34		//	ì†Œí™˜ï¿½ÂE
+#define	dBODY_SUMMONER3								35		//	ì†Œí™˜ï¿½ÂE
+#define	dBODY_PRINCESS1								36		//	ê³µì£¼1
+#define	dBODY_PRINCESS2								37		//	ê³µì£¼2
+#define	dBODY_PRINCESS3								38		//	ê³µì£¼3
+#define	dBODY_MAGICAL_GIRL1							39		//	ë§ˆë²• ì†Œï¿½ÂE
+#define	dBODY_MAGICAL_GIRL2							40		//	ë§ˆë²• ì†Œï¿½ÂE
+#define	dBODY_MAGICAL_GIRL3							41		//	ë§ˆë²• ì†Œï¿½ÂE
+#define	dBODY_NECROMANCER1							42		//	ë„¤í¬ë¡œë§¨ì„œ1
+#define	dBODY_NECROMANCER2							43		//	ë„¤í¬ë¡œë§¨ì„œ2
+#define	dBODY_NECROMANCER3							44		//	ë„¤í¬ë¡œë§¨ì„œ3
+#define	dBODY_DEVIL1								45		//	ì•…ë§ˆ1
+#define	dBODY_DEVIL2								46		//	ì•…ë§ˆ2
+#define	dBODY_DEVIL3								47		//	ì•…ë§ˆ3
+#define	dBODY_SOUL_BRINGER1							48		//	ì˜ìˆ ï¿½ÂE1
+#define	dBODY_SOUL_BRINGER2							49		//	ì˜ìˆ ï¿½ÂE2
+#define	dBODY_SOUL_BRINGER3							50		//	ì˜ìˆ ï¿½ÂE3
+#define	dBODY_CHAMPION1								51		//	íˆ¬ï¿½ÂE1
+#define	dBODY_CHAMPION2								52		//	íˆ¬ï¿½ÂE2
+#define	dBODY_CHAMPION3								53		//	íˆ¬ï¿½ÂE3
+#define	dBODY_OPTICALIST1							54		//	ê´‘í•™ï¿½ÂE1
+#define	dBODY_OPTICALIST2							55		//	ê´‘í•™ï¿½ÂE2
+#define	dBODY_OPTICALIST3							56		//	ê´‘í•™ï¿½ÂE3
+#define	dBODY_BEAST_MAN1							57		//	ìˆ˜ì¸ 1
+#define	dBODY_BEAST_MAN2							58		//	ìˆ˜ì¸ 2
+#define	dBODY_BEAST_MAN3							59		//	ìˆ˜ì¸ 3
 
-#define	dBODY_KELBY_1								86		//	ÄÌºE
+#define	dBODY_KELBY_1								86		//	ì¼ˆï¿½ÂE
 #define	dBODY_KELBY_2								87		//
 #define	dBODY_KELBY_3								88		//
-#define	dBODY_SWELLFER_1							89		//	½ºÀ£ÆÛ
+#define	dBODY_SWELLFER_1							89		//	ìŠ¤ì›°í¼
 #define	dBODY_SWELLFER_2							90		//
 #define	dBODY_SWELLFER_3							91		//
-#define	dBODY_WINDY_1								92		//	À©µE
+#define	dBODY_WINDY_1								92		//	ìœˆï¿½ÂE
 #define	dBODY_WINDY_2								93		//
 #define	dBODY_WINDY_3								94		//
-#define	dBODY_HEDGER_1								95		//	ÇòÀE
+#define	dBODY_HEDGER_1								95		//	í—·ï¿½ÂE
 #define	dBODY_HEDGER_2								96		//
 #define	dBODY_HEDGER_3								97		//
 
@@ -133,173 +133,173 @@ const	int		c_iHeroJobBodyCount		=	dPLAYER_JOB_COUNT*3;
 #define	dSUMMON_BEAST_TYPE_COUNT					4		//
 
 #define	dJOB_NPC_START								101
-#define	dJOB_NPC_MAN1								101		//	¾ÆÀú¾¾ (Æò¹Î) 1				Æò¹EÑ °áÈ¥ÇÑ ³²ÀÚ ½ºÅ¸ÀÏ. ¹EE	±âÁ¸
-#define	dJOB_NPC_MAN2								102		//	¾ÆÀú¾¾ (Æò¹Î) 2				Æò¹EÑ °áÈ¥ÇÑ ³²ÀÚ ½ºÅ¸ÀÏ. ¿Ê ¸ð¾çÀÌ Á» ´Ù¸£´Ù. ¹EE	
-#define	dJOB_NPC_WOMAN1								103		//	ºÎÀÎ (Æò¹Î) 1				Æò¹EÑ °áÈ¥ÇÑ ¿©ÀÚ. ¹EE ¿Ê ¸ð¾çÀÌ Á» ´Ù¸§	±âÁ¸
-#define	dJOB_NPC_WOMAN2								104		//	ºÎÀÎ (Æò¹Î) 2				Æò¹EÑ °áÈ¥ÇÑ ¿©ÀÚ. ¹EE ¿Ê ¸ð¾çÀÌ Á» ´Ù¸§	
-#define	dJOB_NPC_YOUNG_MAN1							105		//	Ã»³E1 (Æò¹Î)				°áÈ¥ ¾È ÇÑ Ã»³E±âÁ¸
-#define	dJOB_NPC_YOUNG_MAN2							106		//	Ã»³E2 (Æò¹Î)				°áÈ¥ ¾È ÇÑ Ã»³E±âÁ¸
-#define	dJOB_NPC_LADY1								107		//	¾Æ°¡¾¾ (Æò¹Î) 1				°áÈ¥ ¾È ÇÑ Ã³³E	±âÁ¸
-#define	dJOB_NPC_LADY2								108		//	¾Æ°¡¾¾ (Æò¹Î) 2				°áÈ¥ ¾È ÇÑ Ã³³E ¿ÊÀÌ ´Ù¸§	
-#define	dJOB_NPC_GRAND_FATHER						109		//	ÇÒ¾Æ¹öÁE(Æò¹Î)				³EÎ³×.	±âÁ¸
-#define	dJOB_NPC_GRAND_MOTHER						110		//	ÇÒ¸ÓÁE(Æò¹Î)				³ªÀÌµE¿©ÀÎ.	
-#define	dJOB_NPC_BOY1								111		//	³²¾Æ (Æò¹Î) 1				³²ÀÚ ¾ÆÀÌ. Áß»Eþ	±âÁ¸
-#define	dJOB_NPC_BOY2								112		//	³²¾Æ (Æò¹Î) 2				³²ÀÚ ¾ÆÀÌ. Áß»Eþ	
-#define	dJOB_NPC_GIRL1								113		//	¿©¾Æ (Æò¹Î) 1				¿©ÀÚ ¾ÆÀÌ. Áß»Eþ	
-#define	dJOB_NPC_GIRL2								114		//	¿©¾Æ (Æò¹Î) 2				¿©ÀÚ ¾ÆÀÌ. Áß»Eþ	
-#define	dJOB_NPC_NOBLE_MAN1							115		//	±ÍÁ· ³²ÀÚ 1				±ÍÁ· ³²ÀÚ. ³ªÀÌ°¡ Á» µé¾úÀ½	±âÁ¸
-#define	dJOB_NPC_NOBLE_MAN2							116		//	±ÍÁ· ³²ÀÚ 2				±ÍÁ· ³²ÀÚ.  ŒÀº ³ªÀÌ	±âÁ¸
-#define	dJOB_NPC_NOBLE_WOMAN1						117		//	±ÍÁ· ºÎÀÎ 1				¿EÆÇÑ ±ÍÁ· ºÎÀÎ	±âÁ¸
-#define	dJOB_NPC_NOBLE_WOMAN2						118		//	±ÍÁ· ºÎÀÎ 2				¿EÆÇÑ ±ÍÁ· ºÎÀÎ. ³ªÀÌ°¡ ¾à°£ µé¾úÀ½.	
-#define	dJOB_NPC_NOBLE_BOY							119		//	³²¾Æ (±ÍÁ·)				±ÍÁ· ÀÚ³E Àß ÀÔ¾úÀ½	±âÁ¸
-#define	dJOB_NPC_NOBLE_GIRL							120		//	¿©¾Æ (±ÍÁ·)				±ÍÁ· ÀÚ³E Àß ÀÔ¾úÀ½	
-#define	dJOB_NPC_GYPSY_MAN1							121		//	Áý½Ã (³²) 1				°ÅÁE°°Àº ´À³¦ÀÌ ¾Æ´Ñ Áý½Ã ÀEEÇ È­·ÁÇÑ ÀÇ»óÀ» ÀÔ¾úÀ½	
-#define	dJOB_NPC_GYPSY_MAN2							122		//	Áý½Ã (³²) 2				°ÅÁE°°Àº ´À³¦ÀÌ ¾Æ´Ñ Áý½Ã ÀEEÇ È­·ÁÇÑ ÀÇ»óÀ» ÀÔ¾úÀ½	
-#define	dJOB_NPC_GYPSY_WOMAN1						123		//	Áý½Ã (¿©) 1				°ÅÁE°°Àº ´À³¦ÀÌ ¾Æ´Ñ Áý½Ã ÀEEÇ È­·ÁÇÑ ÀÇ»óÀ» ÀÔ¾úÀ½	
-#define	dJOB_NPC_GYPSY_WOMAN2						124		//	Áý½Ã (¿©) 2				°ÅÁE°°Àº ´À³¦ÀÌ ¾Æ´Ñ Áý½Ã ÀEEÇ È­·ÁÇÑ ÀÇ»óÀ» ÀÔ¾úÀ½	
-#define	dJOB_NPC_GYPSY_BOY1							125		//	Áý½Ã (³²¾Æ) 1				°ÅÁE°°Àº ´À³¦ÀÌ ¾Æ´Ñ Áý½Ã ÀEEÇ È­·ÁÇÑ ÀÇ»óÀ» ÀÔ¾úÀ½	
-#define	dJOB_NPC_GYPSY_BOY2							126		//	Áý½Ã (³²¾Æ) 2				°ÅÁE°°Àº ´À³¦ÀÌ ¾Æ´Ñ Áý½Ã ÀEEÇ È­·ÁÇÑ ÀÇ»óÀ» ÀÔ¾úÀ½	
-#define	dJOB_NPC_GYPSY_GIRL1						127		//	Áý½Ã (¿©¾Æ) 1				°ÅÁE°°Àº ´À³¦ÀÌ ¾Æ´Ñ Áý½Ã ÀEEÇ È­·ÁÇÑ ÀÇ»óÀ» ÀÔ¾úÀ½	
-#define	dJOB_NPC_GYPSY_GIRL2						128		//	Áý½Ã (¿©¾Æ) 2				°ÅÁE°°Àº ´À³¦ÀÌ ¾Æ´Ñ Áý½Ã ÀEEÇ È­·ÁÇÑ ÀÇ»óÀ» ÀÔ¾úÀ½	
-#define	dJOB_NPC_FARMER1							129		//	³óºÎ 1				¹ÐÂ¤ ¸ðÀÚ¿¡ ÀEâ¸¦ µE¸ð½À	
-#define	dJOB_NPC_FARMER2							130		//	³óºÎ 2				ÆÈÀ» °È¾EºÙÀÌ°EÀÖ´Â ³óºÎÀÇ ¸ð½À	
-#define	dJOB_NPC_WOODCUTTER1						131		//	³ª¹«²Û 1				µµ³¢µE¸ð½À	
-#define	dJOB_NPC_WOODCUTTER2						132		//	³ª¹«²Û 2				³ª¹«ÁE» Áö°EÀÖÀ½	
-#define	dJOB_NPC_MINER								133		//	±¤ºÎ					±âÁ¸
-#define	dJOB_NPC_SAILER								134		//	¼±¿E				±âÁ¸
-#define	dJOB_NPC_HALBERD_MAN						135		//	µµ³¢Ã¢º´					±âÁ¸
-#define	dJOB_NPC_TEMPLE_KNIGHT_M					136		//	¼º±â»E(³²)					±âÁ¸
-#define	dJOB_NPC_TEMPLE_KNIGHT_F					137		//	¼º±â»E(¿©)					±âÁ¸
-#define	dJOB_NPC_BISHOP								138		//	ÁÖ±³					±âÁ¸
-#define	dJOB_NPC_PRIEST								139		//	½ÅºÎ					±âÁ¸
-#define	dJOB_NPC_NUN								140		//	¼ö³E				±âÁ¸
-#define	dJOB_NPC_MERCENARY_SOLDIER_M				141		//	¿E´ (³²)					±âÁ¸
-#define	dJOB_NPC_MERCENARY_SOLDIER_F				142		//	¿E´ (¿©)					±âÁ¸
-#define	dJOB_NPC_BAGGER								143		//	°ÅÁE				±âÁ¸
-#define	dJOB_NPC_DANCING_GIRL						144		//	»ç¸· ¹«ÈE(¿©ÀÚ)					±âÁ¸
-#define	dJOB_NPC_INSTRUCTOR_M						145		//	»ç°EÐ±³ ³²±³°E				
-#define	dJOB_NPC_INSTRUCTOR_F						146		//	»ç°EÐ±³ ¿©±³°E				±âÁ¸
-#define	dJOB_NPC_CADET1								147		//	»ç°E»ýµµ 1					±âÁ¸
-#define	dJOB_NPC_CADET2								148		//	»ç°E»ýµµ 2					
-#define	dJOB_NPC_WIZARD								149		//	¸¶¹ý»E(³²ÀÚ ³EÎ)				»ÏÁ· ¸ðÀÚ ¾´ ÀEEûÀÎ ³E¶¹ý»E ·¹µE¾ÆÀÌ ´Ü¿E°â¿E
-#define	dJOB_NPC_MAGICIAN_M							150		//	¸¶¹ý»E(³²ÀÚ)				ÀþÀº ¸¶¹ý»E ·¹µE¾ÆÀÌ ´Ü¿E°â¿E
-#define	dJOB_NPC_MAGICIAN_F							151		//	¸¶¹ý»E(¿©ÀÚ)				ÀþÀº ¸¶¹ý»E Á» ³EâÀÌ ÀÖ°Ô, ·¹µE¾ÆÀÌ ´Ü¿E°â¿E
-#define	dJOB_NPC_SHOPKEEPER_WEAPON					152		//	¹«±âÁ¡ ÁÖÀÎ (³²)				¿EôºÎ¶ôÇÑ ´EåÀåÀÌ ´À³¦	
-#define	dJOB_NPC_GROCER_M							153		//	ÀâÈ­Á¡ ÁÖÀÎ (³²)				ÀEEûÀÎ »óÁ¡ ÁÖÀÎ	
-#define	dJOB_NPC_GROCER_F							154		//	ÀâÈ­Á¡ ÁÖÀÎ (¿©)				ÀEEûÀÎ »óÁ¡ ÁÖÀÎ	
-#define	dJOB_NPC_PITCHMAN_M							155		//	³E¡»EÁÖÀÎ (³²)					
-#define	dJOB_NPC_PITCHMAN_F							156		//	³E¡»EÁÖÀÎ (¿©)					
-#define	dJOB_NPC_PITCHMAN_GRAND_FATHER				157		//	³E¡»EÁÖÀÎ (³²³E					
-#define	dJOB_NPC_PITCHMAN_GRAND_MOTHER				158		//	³E¡»EÁÖÀÎ (¿©³E					
-#define	dJOB_NPC_ANGEL								159		//	Ãµ»E				
+#define	dJOB_NPC_MAN1								101		//	ì•„ì €ì”¨ (í‰ë¯¼) 1				í‰ï¿½ÂEï¿½ ê²°í˜¼í•œ ë‚¨ìž ìŠ¤íƒ€ì¼. ï¿½ÂEÂE	ê¸°ì¡´
+#define	dJOB_NPC_MAN2								102		//	ì•„ì €ì”¨ (í‰ë¯¼) 2				í‰ï¿½ÂEï¿½ ê²°í˜¼í•œ ë‚¨ìž ìŠ¤íƒ€ì¼. ì˜· ëª¨ì–‘ì´ ì¢€ ë‹¤ë¥´ë‹¤. ï¿½ÂEÂE	
+#define	dJOB_NPC_WOMAN1								103		//	ë¶€ì¸ (í‰ë¯¼) 1				í‰ï¿½ÂEï¿½ ê²°í˜¼í•œ ì—¬ìž. ï¿½ÂEÂE ì˜· ëª¨ì–‘ì´ ì¢€ ë‹¤ë¦„	ê¸°ì¡´
+#define	dJOB_NPC_WOMAN2								104		//	ë¶€ì¸ (í‰ë¯¼) 2				í‰ï¿½ÂEï¿½ ê²°í˜¼í•œ ì—¬ìž. ï¿½ÂEÂE ì˜· ëª¨ì–‘ì´ ì¢€ ë‹¤ë¦„	
+#define	dJOB_NPC_YOUNG_MAN1							105		//	ì²­ï¿½ÂE1 (í‰ë¯¼)				ê²°í˜¼ ì•ˆ í•œ ì²­ï¿½ÂEê¸°ì¡´
+#define	dJOB_NPC_YOUNG_MAN2							106		//	ì²­ï¿½ÂE2 (í‰ë¯¼)				ê²°í˜¼ ì•ˆ í•œ ì²­ï¿½ÂEê¸°ì¡´
+#define	dJOB_NPC_LADY1								107		//	ì•„ê°€ì”¨ (í‰ë¯¼) 1				ê²°í˜¼ ì•ˆ í•œ ì²˜ï¿½ÂE	ê¸°ì¡´
+#define	dJOB_NPC_LADY2								108		//	ì•„ê°€ì”¨ (í‰ë¯¼) 2				ê²°í˜¼ ì•ˆ í•œ ì²˜ï¿½ÂE ì˜·ì´ ë‹¤ë¦„	
+#define	dJOB_NPC_GRAND_FATHER						109		//	í• ì•„ë²„ï¿½ÂE(í‰ë¯¼)				ï¿½ÂEæ¬¾ï¿½.	ê¸°ì¡´
+#define	dJOB_NPC_GRAND_MOTHER						110		//	í• ë¨¸ï¿½ÂE(í‰ë¯¼)				ë‚˜ì´ï¿½ÂEì—¬ì¸.	
+#define	dJOB_NPC_BOY1								111		//	ë‚¨ì•„ (í‰ë¯¼) 1				ë‚¨ìž ì•„ì´. ì¤‘ï¿½ÂEï¿½	ê¸°ì¡´
+#define	dJOB_NPC_BOY2								112		//	ë‚¨ì•„ (í‰ë¯¼) 2				ë‚¨ìž ì•„ì´. ì¤‘ï¿½ÂEï¿½	
+#define	dJOB_NPC_GIRL1								113		//	ì—¬ì•„ (í‰ë¯¼) 1				ì—¬ìž ì•„ì´. ì¤‘ï¿½ÂEï¿½	
+#define	dJOB_NPC_GIRL2								114		//	ì—¬ì•„ (í‰ë¯¼) 2				ì—¬ìž ì•„ì´. ì¤‘ï¿½ÂEï¿½	
+#define	dJOB_NPC_NOBLE_MAN1							115		//	ê·€ì¡± ë‚¨ìž 1				ê·€ì¡± ë‚¨ìž. ë‚˜ì´ê°€ ì¢€ ë“¤ì—ˆìŒ	ê¸°ì¡´
+#define	dJOB_NPC_NOBLE_MAN2							116		//	ê·€ì¡± ë‚¨ìž 2				ê·€ì¡± ë‚¨ìž. ï¿½ÂŒì€ ë‚˜ì´	ê¸°ì¡´
+#define	dJOB_NPC_NOBLE_WOMAN1						117		//	ê·€ì¡± ë¶€ì¸ 1				ï¿½ÂEíŒï¿½ ê·€ì¡± ë¶€ì¸	ê¸°ì¡´
+#define	dJOB_NPC_NOBLE_WOMAN2						118		//	ê·€ì¡± ë¶€ì¸ 2				ï¿½ÂEíŒï¿½ ê·€ì¡± ë¶€ì¸. ë‚˜ì´ê°€ ì•½ê°„ ë“¤ì—ˆìŒ.	
+#define	dJOB_NPC_NOBLE_BOY							119		//	ë‚¨ì•„ (ê·€ì¡±)				ê·€ì¡± ìžï¿½ÂE ìž˜ ìž…ì—ˆìŒ	ê¸°ì¡´
+#define	dJOB_NPC_NOBLE_GIRL							120		//	ì—¬ì•„ (ê·€ì¡±)				ê·€ì¡± ìžï¿½ÂE ìž˜ ìž…ì—ˆìŒ	
+#define	dJOB_NPC_GYPSY_MAN1							121		//	ì§‘ì‹œ (ë‚¨) 1				ê±°ï¿½ÂEê°™ì€ ëŠë‚Œì´ ì•„ë‹Œ ì§‘ì‹œ ï¿½ÂEÂEï¿½ í™”ë ¤í•œ ì˜ìƒì„ ìž…ì—ˆìŒ	
+#define	dJOB_NPC_GYPSY_MAN2							122		//	ì§‘ì‹œ (ë‚¨) 2				ê±°ï¿½ÂEê°™ì€ ëŠë‚Œì´ ì•„ë‹Œ ì§‘ì‹œ ï¿½ÂEÂEï¿½ í™”ë ¤í•œ ì˜ìƒì„ ìž…ì—ˆìŒ	
+#define	dJOB_NPC_GYPSY_WOMAN1						123		//	ì§‘ì‹œ (ì—¬) 1				ê±°ï¿½ÂEê°™ì€ ëŠë‚Œì´ ì•„ë‹Œ ì§‘ì‹œ ï¿½ÂEÂEï¿½ í™”ë ¤í•œ ì˜ìƒì„ ìž…ì—ˆìŒ	
+#define	dJOB_NPC_GYPSY_WOMAN2						124		//	ì§‘ì‹œ (ì—¬) 2				ê±°ï¿½ÂEê°™ì€ ëŠë‚Œì´ ì•„ë‹Œ ì§‘ì‹œ ï¿½ÂEÂEï¿½ í™”ë ¤í•œ ì˜ìƒì„ ìž…ì—ˆìŒ	
+#define	dJOB_NPC_GYPSY_BOY1							125		//	ì§‘ì‹œ (ë‚¨ì•„) 1				ê±°ï¿½ÂEê°™ì€ ëŠë‚Œì´ ì•„ë‹Œ ì§‘ì‹œ ï¿½ÂEÂEï¿½ í™”ë ¤í•œ ì˜ìƒì„ ìž…ì—ˆìŒ	
+#define	dJOB_NPC_GYPSY_BOY2							126		//	ì§‘ì‹œ (ë‚¨ì•„) 2				ê±°ï¿½ÂEê°™ì€ ëŠë‚Œì´ ì•„ë‹Œ ì§‘ì‹œ ï¿½ÂEÂEï¿½ í™”ë ¤í•œ ì˜ìƒì„ ìž…ì—ˆìŒ	
+#define	dJOB_NPC_GYPSY_GIRL1						127		//	ì§‘ì‹œ (ì—¬ì•„) 1				ê±°ï¿½ÂEê°™ì€ ëŠë‚Œì´ ì•„ë‹Œ ì§‘ì‹œ ï¿½ÂEÂEï¿½ í™”ë ¤í•œ ì˜ìƒì„ ìž…ì—ˆìŒ	
+#define	dJOB_NPC_GYPSY_GIRL2						128		//	ì§‘ì‹œ (ì—¬ì•„) 2				ê±°ï¿½ÂEê°™ì€ ëŠë‚Œì´ ì•„ë‹Œ ì§‘ì‹œ ï¿½ÂEÂEï¿½ í™”ë ¤í•œ ì˜ìƒì„ ìž…ì—ˆìŒ	
+#define	dJOB_NPC_FARMER1							129		//	ë†ë¶€ 1				ë°€ì§š ëª¨ìžì— ï¿½ÂEç¶¬ï¿½ ï¿½ÂEëª¨ìŠµ	
+#define	dJOB_NPC_FARMER2							130		//	ë†ë¶€ 2				íŒ”ì„ ê±·ï¿½ÂEë¶™ì´ï¿½ÂEìžˆëŠ” ë†ë¶€ì˜ ëª¨ìŠµ	
+#define	dJOB_NPC_WOODCUTTER1						131		//	ë‚˜ë¬´ê¾¼ 1				ë„ë¼ï¿½ÂEëª¨ìŠµ	
+#define	dJOB_NPC_WOODCUTTER2						132		//	ë‚˜ë¬´ê¾¼ 2				ë‚˜ë¬´ï¿½ÂEï¿½ ì§€ï¿½ÂEìžˆìŒ	
+#define	dJOB_NPC_MINER								133		//	ê´‘ë¶€					ê¸°ì¡´
+#define	dJOB_NPC_SAILER								134		//	ì„ ï¿½ÂE				ê¸°ì¡´
+#define	dJOB_NPC_HALBERD_MAN						135		//	ë„ë¼ì°½ë³‘					ê¸°ì¡´
+#define	dJOB_NPC_TEMPLE_KNIGHT_M					136		//	ì„±ê¸°ï¿½ÂE(ë‚¨)					ê¸°ì¡´
+#define	dJOB_NPC_TEMPLE_KNIGHT_F					137		//	ì„±ê¸°ï¿½ÂE(ì—¬)					ê¸°ì¡´
+#define	dJOB_NPC_BISHOP								138		//	ì£¼êµ					ê¸°ì¡´
+#define	dJOB_NPC_PRIEST								139		//	ì‹ ë¶€					ê¸°ì¡´
+#define	dJOB_NPC_NUN								140		//	ìˆ˜ï¿½ÂE				ê¸°ì¡´
+#define	dJOB_NPC_MERCENARY_SOLDIER_M				141		//	ï¿½ÂEï¿½ (ë‚¨)					ê¸°ì¡´
+#define	dJOB_NPC_MERCENARY_SOLDIER_F				142		//	ï¿½ÂEï¿½ (ì—¬)					ê¸°ì¡´
+#define	dJOB_NPC_BAGGER								143		//	ê±°ï¿½ÂE				ê¸°ì¡´
+#define	dJOB_NPC_DANCING_GIRL						144		//	ì‚¬ë§‰ ë¬´ï¿½ÂE(ì—¬ìž)					ê¸°ì¡´
+#define	dJOB_NPC_INSTRUCTOR_M						145		//	ì‚¬ï¿½ÂEé–¨ï¿½ ë‚¨êµï¿½ÂE				
+#define	dJOB_NPC_INSTRUCTOR_F						146		//	ì‚¬ï¿½ÂEé–¨ï¿½ ì—¬êµï¿½ÂE				ê¸°ì¡´
+#define	dJOB_NPC_CADET1								147		//	ì‚¬ï¿½ÂEìƒë„ 1					ê¸°ì¡´
+#define	dJOB_NPC_CADET2								148		//	ì‚¬ï¿½ÂEìƒë„ 2					
+#define	dJOB_NPC_WIZARD								149		//	ë§ˆë²•ï¿½ÂE(ë‚¨ìž ï¿½ÂEï¿½)				ë¾°ì¡± ëª¨ìž ì“´ ï¿½ÂEÂEå²µï¿½ ï¿½ÂEë–´æšˆÂE ë ˆï¿½ÂEì•„ì´ ë‹¨ï¿½ÂEê²¸ï¿½ÂE
+#define	dJOB_NPC_MAGICIAN_M							150		//	ë§ˆë²•ï¿½ÂE(ë‚¨ìž)				ì Šì€ ë§ˆë²•ï¿½ÂE ë ˆï¿½ÂEì•„ì´ ë‹¨ï¿½ÂEê²¸ï¿½ÂE
+#define	dJOB_NPC_MAGICIAN_F							151		//	ë§ˆë²•ï¿½ÂE(ì—¬ìž)				ì Šì€ ë§ˆë²•ï¿½ÂE ì¢€ ï¿½ÂEè¢–ï¿½ ìžˆê²Œ, ë ˆï¿½ÂEì•„ì´ ë‹¨ï¿½ÂEê²¸ï¿½ÂE
+#define	dJOB_NPC_SHOPKEEPER_WEAPON					152		//	ë¬´ê¸°ì  ì£¼ì¸ (ë‚¨)				ï¿½ÂEæ“…ç“˜éŸ†ï¿½ ï¿½ÂEæšæšï¿½ ëŠë‚Œ	
+#define	dJOB_NPC_GROCER_M							153		//	ìž¡í™”ì  ì£¼ì¸ (ë‚¨)				ï¿½ÂEÂEå²µï¿½ ìƒì  ì£¼ì¸	
+#define	dJOB_NPC_GROCER_F							154		//	ìž¡í™”ì  ì£¼ì¸ (ì—¬)				ï¿½ÂEÂEå²µï¿½ ìƒì  ì£¼ì¸	
+#define	dJOB_NPC_PITCHMAN_M							155		//	ï¿½ÂEã€ÂEì£¼ì¸ (ë‚¨)					
+#define	dJOB_NPC_PITCHMAN_F							156		//	ï¿½ÂEã€ÂEì£¼ì¸ (ì—¬)					
+#define	dJOB_NPC_PITCHMAN_GRAND_FATHER				157		//	ï¿½ÂEã€ÂEì£¼ì¸ (ë‚¨ï¿½ÂE					
+#define	dJOB_NPC_PITCHMAN_GRAND_MOTHER				158		//	ï¿½ÂEã€ÂEì£¼ì¸ (ì—¬ï¿½ÂE					
+#define	dJOB_NPC_ANGEL								159		//	ì²œï¿½ÂE				
 #define	dJOB_NPC_END								160
 
-#define	dJOB_NPC_FAT_GIRL							161		//	¶×º¸ ¼Ò³E
-#define	dJOB_NPC_FROG								162		//	°³±¸¸®
-#define	dJOB_NPC_RABBIT								163		//	Åä³¢
+#define	dJOB_NPC_FAT_GIRL							161		//	ëš±ë³´ ì†Œï¿½ÂE
+#define	dJOB_NPC_FROG								162		//	ê°œêµ¬ë¦¬
+#define	dJOB_NPC_RABBIT								163		//	í† ë¼
 
 ////////////////////////////////////////////////////////////////////////////////////////////
-//	¸ó½ºÅÍ
+//	ëª¬ìŠ¤í„°
 ////////////////////////////////////////////////////////////////////////////////////////////
 #define	dJOB_MONSTER_START							201
 
-#define	dJOB_MONSTER_SKELETON_AXE					201		//	¾ðµ¥µEÇØ°ñÀEEµµ³¢	Skeleton, Axe		175§¯		±âÁ¸
-#define	dJOB_MONSTER_SKELETON_SWORD					202		//	¾ðµ¥µEÇØ°ñÀEE½ÖÄ®	Skeleton, Sword		175§¯		±âÁ¸
-#define	dJOB_MONSTER_SKELETON_KNIGHT				203		//	¾ðµ¥µEÇØ°ñ±â»ESkeleton Knight		190§¯		±âÁ¸
-#define	dJOB_MONSTER_ZOMBIE							204		//	¾ðµ¥µEÁ»ºEZombie		170§¯		±âÁ¸
-#define	dJOB_MONSTER_LIVINNG_DEAD					205		//	¾ðµ¥µE»EÛÀELiving Dead		155§¯		±âÁ¸
-#define	dJOB_MONSTER_GHOST							206		//	¾ðµ¥µEÀ¯·É	Ghost		180§¯		±âÁ¸
-#define	dJOB_MONSTER_MUMMY							207		//	¾ðµ¥µE¹ÌÀÌ¶EMummy		200§¯		±âÁ¸
-#define	dJOB_MONSTER_GHOST_ARMOR					208		//	¾ðµ¥µE°úÙºÆ® ¾Æ¸Ó	Ghost Armor		250§¯		±âÁ¸
-#define	dJOB_MONSTER_VAMPIRE						209		//	¾ðµ¥µE¹EÄÀÌ¾EVampire		180§¯	Èúã÷±Í, ¼¼¹Ìº¸½º´Ù¿E±ÍÁ·ÀE½ºÅ¸ÀÏ	¼¼¹Ìº¸½º
-#define	dJOB_MONSTER_LICH							210		//	¾ðµ¥µE¸®Ä¡	Lich		210§¯	°øÁß ºÎ¾E Çã¸® ¹ØÀº ¾øÀ½. ¸Ó¸®ºÎÅÍ Çã¸®±ûÝö´Â 100§¯	º¸½º
+#define	dJOB_MONSTER_SKELETON_AXE					201		//	ì–¸ë°ï¿½ÂEí•´ê³¨ï¿½ÂEÂEë„ë¼	Skeleton, Axe		175ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_SKELETON_SWORD					202		//	ì–¸ë°ï¿½ÂEí•´ê³¨ï¿½ÂEÂEìŒì¹¼	Skeleton, Sword		175ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_SKELETON_KNIGHT				203		//	ì–¸ë°ï¿½ÂEí•´ê³¨ê¸°ï¿½ÂESkeleton Knight		190ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_ZOMBIE							204		//	ì–¸ë°ï¿½ÂEì¢€ï¿½ÂEZombie		170ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_LIVINNG_DEAD					205		//	ì–¸ë°ï¿½ÂEï¿½ÂEé‚¦ÂELiving Dead		155ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_GHOST							206		//	ì–¸ë°ï¿½ÂEìœ ë ¹	Ghost		180ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_MUMMY							207		//	ì–¸ë°ï¿½ÂEë¯¸ì´ï¿½ÂEMummy		200ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_GHOST_ARMOR					208		//	ì–¸ë°ï¿½ÂEê³¼æš®íŠ¸ ì•„ë¨¸	Ghost Armor		250ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_VAMPIRE						209		//	ì–¸ë°ï¿½ÂEï¿½ÂEì»¥æ½”ÂEVampire		180ãŽ	ížå¤±ê·€, ì„¸ë¯¸ë³´ìŠ¤ë‹¤ï¿½ÂEê·€ì¡±ï¿½ÂEìŠ¤íƒ€ì¼	ì„¸ë¯¸ë³´ìŠ¤
+#define	dJOB_MONSTER_LICH							210		//	ì–¸ë°ï¿½ÂEë¦¬ì¹˜	Lich		210ãŽ	ê³µì¤‘ ë¶€ï¿½ÂE í—ˆë¦¬ ë°‘ì€ ì—†ìŒ. ë¨¸ë¦¬ë¶€í„° í—ˆë¦¬ê¹©ç—ºëŠ” 100ãŽ	ë³´ìŠ¤
 							
-#define	dJOB_MONSTER_DARK_ELF						211		//	ÀÎ°£ÇEºúÓ¢ ¿¤ÇÁ	Black Elf		160§¯		±âÁ¸
-#define	dJOB_MONSTER_ASSASSIN						212		//	ÀÎ°£ÇE¾û×õ½Å	Assassin		165§¯	µµÀE½ºÅ¸ÀÏ	±âÁ¸
-#define	dJOB_MONSTER_AGGRESSIVE_NATIVE				213		//	ÀÎ°£ÇE¿øÁÖ¹Î			80§¯	ºÎ½¬¸Ç ½ºÅ¸ÀÏÀÇ ÀÛÀº ¿øÁÖ¹Î, ¹«±â´Â ¸ùµÕÀÌ	
-#define	dJOB_MONSTER_FALLEN_WIZARD					214		//	ÀÎ°£ÇEÅ¸¶ôÇÑ ¸¶¹ý»EFallen Wizard		145§¯	±¸ºÎÁ¤ÇÑ °ö»çµE½ºÅ¸ÀÏ, ±¸ºÒ±¸ºÒÇÑ ½ºÅÂÇÁ ¼ÒÁE
-#define	dJOB_MONSTER_TEMPLE_KNIGHT					215		//	ÀÎ°£ÇE±ÃÁ¤ ±â»ç´Ü	Temple Knight		195§¯	Àå½Å, ¸ÚÁEÇ® ÇÃ·¹ÀÌÆ® ¸ÞÀÏ¿¡ ÇÒ¹öµE
-#define	dJOB_MONSTER_DARK_PRIEST					216		//	ÀÎ°£ÇE´ÙÅ© ÇÁ¸®½ºÆ®	Dark Priest		160§¯	È¸º¹°Eº¸Á¶ ¸¶¹ý ÀE®ÀÇ ¼ºÁ÷ÀÚ	
-#define	dJOB_MONSTER_CONJUERER						217		//	ÀÎ°£ÇE¾ûÑÒÀÇ ¼ÒÈ¯»EConjuerer		165§¯	Ã¤ÂE¸·Î ¹«ÀE
-#define	dJOB_MONSTER_GIANT							218		//	ÀÎ°£ÇEÀÚÀÌ¾ðÆ®	Giant		230§¯		¼¼¹Ì º¸½º, ±âÁ¸
-#define	dJOB_MONSTER_ELF_KING						219		//	ÀÎ°£ÇE¿¤ÇÁ Å·	Elf King		175§¯	Ä®°E·Õº¸¿E¼ÒÁEº¸½º
-#define	dJOB_MONSTER_ARCHMAGE						220		//	ÀÎ°£ÇE´E¶¼ú»EArchmage		180§¯	Àå½ÅÀÇ ¸¶¹ý»E ·¹µå¾ÆÀÌ º¸½º·Î µûÜE¿¹Á¤	º¸½º
+#define	dJOB_MONSTER_DARK_ELF						211		//	ì¸ê°„ï¿½ÂEë¹šäº¶ ì—˜í”„	Black Elf		160ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_ASSASSIN						212		//	ì¸ê°„ï¿½ÂEì—‰èºªì‹ 	Assassin		165ãŽ	ë„ï¿½ÂEìŠ¤íƒ€ì¼	ê¸°ì¡´
+#define	dJOB_MONSTER_AGGRESSIVE_NATIVE				213		//	ì¸ê°„ï¿½ÂEì›ì£¼ë¯¼			80ãŽ	ë¶€ì‰¬ë§¨ ìŠ¤íƒ€ì¼ì˜ ìž‘ì€ ì›ì£¼ë¯¼, ë¬´ê¸°ëŠ” ëª½ë‘¥ì´	
+#define	dJOB_MONSTER_FALLEN_WIZARD					214		//	ì¸ê°„ï¿½ÂEíƒ€ë½í•œ ë§ˆë²•ï¿½ÂEFallen Wizard		145ãŽ	êµ¬ë¶€ì •í•œ ê³±ì‚¬ï¿½ÂEìŠ¤íƒ€ì¼, êµ¬ë¶ˆêµ¬ë¶ˆí•œ ìŠ¤íƒœí”„ ì†Œï¿½ÂE
+#define	dJOB_MONSTER_TEMPLE_KNIGHT					215		//	ì¸ê°„ï¿½ÂEê¶ì • ê¸°ì‚¬ë‹¨	Temple Knight		195ãŽ	ìž¥ì‹ , ë©‹ï¿½ÂEí’€ í”Œë ˆì´íŠ¸ ë©”ì¼ì— í• ë²„ï¿½ÂE
+#define	dJOB_MONSTER_DARK_PRIEST					216		//	ì¸ê°„ï¿½ÂEë‹¤í¬ í”„ë¦¬ìŠ¤íŠ¸	Dark Priest		160ãŽ	íšŒë³µï¿½ÂEë³´ì¡° ë§ˆë²• ï¿½ÂEï¿½ï¿½ ì„±ì§ìž	
+#define	dJOB_MONSTER_CONJUERER						217		//	ì¸ê°„ï¿½ÂEì—‰å–«ì˜ ì†Œí™˜ï¿½ÂEConjuerer		165ãŽ	ì±„ï¿½ÂEë§‰ï¿½ ë¬´ï¿½ÂE
+#define	dJOB_MONSTER_GIANT							218		//	ì¸ê°„ï¿½ÂEìžì´ì–¸íŠ¸	Giant		230ãŽ		ì„¸ë¯¸ ë³´ìŠ¤, ê¸°ì¡´
+#define	dJOB_MONSTER_ELF_KING						219		//	ì¸ê°„ï¿½ÂEì—˜í”„ í‚¹	Elf King		175ãŽ	ì¹¼ï¿½ÂEë¡±ë³´ï¿½ÂEì†Œï¿½ÂEë³´ìŠ¤
+#define	dJOB_MONSTER_ARCHMAGE						220		//	ì¸ê°„ï¿½ÂEï¿½ÂEë–¼è‡ÂEArchmage		180ãŽ	ìž¥ì‹ ì˜ ë§ˆë²•ï¿½ÂE ë ˆë“œì•„ì´ ë³´ìŠ¤ë¡œ ë”°ï¿½ÂEì˜ˆì •	ë³´ìŠ¤
 							
-#define	dJOB_MONSTER_DEMI_BEHOLDER					221		//	¾Ç¸¶ÇEµ¥¹Ì ºñÈ¦´EDemi Beholder		90§¯		±âÁ¸
-#define	dJOB_MONSTER_REPTILE						222		//	¾Ç¸¶ÇE·¾Å¸ÀÏ	Reptile		120§¯		±âÁ¸
-#define	dJOB_MONSTER_COCK_FIGHTER					223		//	¾Ç¸¶ÇE´ß ÀEECock Fighter		175§¯		±âÁ¸
-#define	dJOB_MONSTER_LIZARD_WARRIOR					224		//	¾Ç¸¶ÇE¸®ÀÚµE¿ö¸®¾ELizard Warrior		155§¯		±âÁ¸
-#define	dJOB_MONSTER_LIZARD_RIDER					225		//	¾Ç¸¶ÇE¸®ÀÚµE¶óÀÌ´ELizard Rider		180§¯		±âÁ¸
-#define	dJOB_MONSTER_RAT_FIGHTER					226		//	¾Ç¸¶ÇE·§ ÆÄÀÌÅÍ	Rat Fighter		140§¯		±âÁ¸
-#define	dJOB_MONSTER_DEMON							227		//	¾Ç¸¶ÇEµ¥¸EDemon		185§¯		¼¼¹Ì º¸½º, ±âÁ¸
-#define	dJOB_MONSTER_OGRE							228		//	¾Ç¸¶ÇE¿À¿EÅ	Ogre		210§¯		¼¼¹Ì º¸½º, ±âÁ¸
-#define	dJOB_MONSTER_BAHOMATE						229		//	¾Ç¸¶ÇE¹ÙÈ£¸ÅÆ®			210§¯	¿°¼Ò ÆÄÃæ·ù¶ó´Â °Í.	¼¼¹Ì º¸½º, ±âÁ¸
-#define	dJOB_MONSTER_RED_DEMON						230		//	¾Ç¸¶ÇEºÓÀº ¾Ç¸¶	Red Demon		300§¯	ÃÖÁ¾ º¸½º ´Ù¿E°Å´EÔ°EÀ§¿E» º¸¿©ÁÙ °Í	ÃÖÁ¾ º¸½º
+#define	dJOB_MONSTER_DEMI_BEHOLDER					221		//	ì•…ë§ˆï¿½ÂEë°ë¯¸ ë¹„í™€ï¿½ÂEDemi Beholder		90ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_REPTILE						222		//	ì•…ë§ˆï¿½ÂEë ™íƒ€ì¼	Reptile		120ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_COCK_FIGHTER					223		//	ì•…ë§ˆï¿½ÂEë‹­ ï¿½ÂEÂECock Fighter		175ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_LIZARD_WARRIOR					224		//	ì•…ë§ˆï¿½ÂEë¦¬ìžï¿½ÂEì›Œë¦¬ï¿½ÂELizard Warrior		155ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_LIZARD_RIDER					225		//	ì•…ë§ˆï¿½ÂEë¦¬ìžï¿½ÂEë¼ì´ï¿½ÂELizard Rider		180ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_RAT_FIGHTER					226		//	ì•…ë§ˆï¿½ÂEëž« íŒŒì´í„°	Rat Fighter		140ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_DEMON							227		//	ì•…ë§ˆï¿½ÂEë°ï¿½ÂEDemon		185ãŽ		ì„¸ë¯¸ ë³´ìŠ¤, ê¸°ì¡´
+#define	dJOB_MONSTER_OGRE							228		//	ì•…ë§ˆï¿½ÂEì˜¤ï¿½ÂEï¿½	Ogre		210ãŽ		ì„¸ë¯¸ ë³´ìŠ¤, ê¸°ì¡´
+#define	dJOB_MONSTER_BAHOMATE						229		//	ì•…ë§ˆï¿½ÂEë°”í˜¸ë§¤íŠ¸			210ãŽ	ì—¼ì†Œ íŒŒì¶©ë¥˜ë¼ëŠ” ê²ƒ.	ì„¸ë¯¸ ë³´ìŠ¤, ê¸°ì¡´
+#define	dJOB_MONSTER_RED_DEMON						230		//	ì•…ë§ˆï¿½ÂEë¶‰ì€ ì•…ë§ˆ	Red Demon		300ãŽ	ìµœì¢… ë³´ìŠ¤ ë‹¤ï¿½ÂEê±°ï¿½ÂEè¹ˆÂEìœ„ï¿½ÂEï¿½ ë³´ì—¬ì¤„ ê²ƒ	ìµœì¢… ë³´ìŠ¤
 							
-#define	dJOB_MONSTER_TURTLE_DRAGON					231		//	µ¿¹°ÇEÅÍÆ² µå·¡°ETurtle Dragon		190§¯		±âÁ¸
-#define	dJOB_MONSTER_SPIDER							232		//	µ¿¹°ÇE°Å¹Ì	Spider		130§¯		±âÁ¸
-#define	dJOB_MONSTER_SCORPION						233		//	µ¿¹°ÇEÀE¥	Scorpion		180§¯		±âÁ¸
-#define	dJOB_MONSTER_JELLYFISH						234		//	µ¿¹°ÇEÇØÆÄ¸®			170§¯		±âÁ¸
-#define	dJOB_MONSTER_WORM							235		//	µ¿¹°ÇE¿EWorm		170§¯(±æÀÌ)		±âÁ¸
-#define	dJOB_MONSTER_KING_CRAB						236		//	µ¿¹°ÇEÅ· Å©·¦	King Crab		50§¯	Å°´Â ÀÛÁö¸¸ ±× ³ÐÀÌ±ûÝEÇÕÄ¡¸E²Ï Å©´Ù. ¿·À¸·Î °ÉÀ» °Í	
-#define	dJOB_MONSTER_INSECT_SWARM					237		//	µ¿¹°ÇE°EE¶¼	Insect Swarm		120§¯	°EE¶¼. Á¡À¸·Î¸¸ ÀÌ·ç¾ûÝ®µµ µÉ µE
-#define	dJOB_MONSTER_WOLF							238		//	µ¿¹°ÇE´Á´EWolf		50§¯	±æÀÌ´Â 150§¯~170§¯ Á¤µµ µÈ´Ù. °Å´EÑ ´Á´E
-#define	dJOB_MONSTER_BIG_MOLE						239		//	µ¿¹°ÇEÅ« µÎ´õÁEBig Moul		400§¯(ÆÈ±æÀÌ)		¼¼¹Ìº¸½º, ±âÁ¸
-#define	dJOB_MONSTER_MAD_BEAR						240		//	µ¿¹°ÇE¹ÌÄ£ °EMad Bear		250§¯(±æÀÌ)	ÀÌµ¿½Ã¿¡´Â ³× ¹ß·Î °È°E°ø°ÝÇÒ ¶§´Â ¼­¼­ ¾Õ ¹ß·Î.	¼¼¹Ìº¸½º
+#define	dJOB_MONSTER_TURTLE_DRAGON					231		//	ë™ë¬¼ï¿½ÂEí„°í‹€ ë“œëž˜ï¿½ÂETurtle Dragon		190ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_SPIDER							232		//	ë™ë¬¼ï¿½ÂEê±°ë¯¸	Spider		130ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_SCORPION						233		//	ë™ë¬¼ï¿½ÂEï¿½ÂEï¿½	Scorpion		180ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_JELLYFISH						234		//	ë™ë¬¼ï¿½ÂEí•´íŒŒë¦¬			170ãŽ		ê¸°ì¡´
+#define	dJOB_MONSTER_WORM							235		//	ë™ë¬¼ï¿½ÂEï¿½ÂEWorm		170ãŽ(ê¸¸ì´)		ê¸°ì¡´
+#define	dJOB_MONSTER_KING_CRAB						236		//	ë™ë¬¼ï¿½ÂEí‚¹ í¬ëž©	King Crab		50ãŽ	í‚¤ëŠ” ìž‘ì§€ë§Œ ê·¸ ë„“ì´ê¹©ï¿½ÂEí•©ì¹˜ï¿½ÂEê½¤ í¬ë‹¤. ì˜†ìœ¼ë¡œ ê±¸ì„ ê²ƒ	
+#define	dJOB_MONSTER_INSECT_SWARM					237		//	ë™ë¬¼ï¿½ÂEï¿½ÂEÂEë–¼	Insect Swarm		120ãŽ	ï¿½ÂEÂEë–¼. ì ìœ¼ë¡œë§Œ ì´ë£¨ì—‰ç¼¶ë„ ë  ï¿½ÂE
+#define	dJOB_MONSTER_WOLF							238		//	ë™ë¬¼ï¿½ÂEëŠ‘ï¿½ÂEWolf		50ãŽ	ê¸¸ì´ëŠ” 150ãŽ~170ãŽ ì •ë„ ëœë‹¤. ê±°ï¿½ÂEï¿½ ëŠ‘ï¿½ÂE
+#define	dJOB_MONSTER_BIG_MOLE						239		//	ë™ë¬¼ï¿½ÂEí° ë‘ë”ï¿½ÂEBig Moul		400ãŽ(íŒ”ê¸¸ì´)		ì„¸ë¯¸ë³´ìŠ¤, ê¸°ì¡´
+#define	dJOB_MONSTER_MAD_BEAR						240		//	ë™ë¬¼ï¿½ÂEë¯¸ì¹œ ï¿½ÂEMad Bear		250ãŽ(ê¸¸ì´)	ì´ë™ì‹œì—ëŠ” ë„¤ ë°œë¡œ ê±·ï¿½ÂEê³µê²©í•  ë•ŒëŠ” ì„œì„œ ì•ž ë°œë¡œ.	ì„¸ë¯¸ë³´ìŠ¤
 							
-#define	dJOB_MONSTER_FIRE_BOGY						241		//	½Å¼öÇEºÒµµ±úºE		150§¯	ºÒÀÇ ½Å¼E±âÁ¸
-#define	dJOB_MONSTER_TONGUE_EYE						242		//	½Å¼öÇEÇú¹Ù´Ú´«			200§¯	¹°ÀÇ ½Å¼E±âÁ¸
-#define	dJOB_MONSTER_GARGOYLE						243		//	½Å¼öÇE°¡°úÜÏ	Gargoyle		155§¯	¹Ù¶÷ÀÇ ½Å¼E±âÁ¸
-#define	dJOB_MONSTER_METAL_GOLEM					244		//	½Å¼öÇE¸ÞÅ» °ñ·½	Metal Golem		220§¯	¶¥ÀÇ ½Å¼E±âÁ¸
-#define	dJOB_MONSTER_CENTAURS						245		//	½Å¼öÇEÄËÅ¸¿EÎ½º	Centaurs		210§¯	¹Ù¶÷ÀÇ ½Å¼E±âÁ¸
-#define	dJOB_MONSTER_MERMAN_KNIGHT					246		//	½Å¼öÇE¸Ó¸Ç ³ªÀÌÆ®	Merman Knight		220§¯	¹°ÀÇ ½Å¼E±âÁ¸
-#define	dJOB_MONSTER_TIMBER_MAN						247		//	½Å¼öÇEÆÀ¹ö¸Ç	Timber Man		230§¯	¶¥ÀÇ ½Å¼E±âÁ¸
-#define	dJOB_MONSTER_SALAMANDER						248		//	½Å¼öÇE»ç¶ó¸¸´Ù	Salamander		100§¯	ºÒÀÇ ½Å¼E ºÒ µµ¸¶¹E
-#define	dJOB_MONSTER_DARK_FIRE						249		//	½Å¼öÇE´ÙÅ© ÆÄÀÌ¾EDark Fire		120§¯	¾ûÑÒÀÇ ½Å¼E °ËÀº ºÒ·Î µÑ·¯½ÎÀÎ ±«¹° ºÐÀ§±E¼¼¹Ì º¸½º
-#define	dJOB_MONSTER_WHITE_SHADOW					250		//	½Å¼öÇEÈ­ÀÌÆ® ¼¨µµ¿EWhite Shadow		140§¯	ºûÀÇ ½Å¼E ¸öÁýÀÌ ÀÛÀº ¾ûÔ° ¾ÆÀÌ °°Àº ºÐÀ§±Eº¸½º
+#define	dJOB_MONSTER_FIRE_BOGY						241		//	ì‹ ìˆ˜ï¿½ÂEë¶ˆë„ê¹¨ï¿½ÂE		150ãŽ	ë¶ˆì˜ ì‹ ï¿½ÂEê¸°ì¡´
+#define	dJOB_MONSTER_TONGUE_EYE						242		//	ì‹ ìˆ˜ï¿½ÂEí˜“ë°”ë‹¥ëˆˆ			200ãŽ	ë¬¼ì˜ ì‹ ï¿½ÂEê¸°ì¡´
+#define	dJOB_MONSTER_GARGOYLE						243		//	ì‹ ìˆ˜ï¿½ÂEê°€ê³¼è­œ	Gargoyle		155ãŽ	ë°”ëžŒì˜ ì‹ ï¿½ÂEê¸°ì¡´
+#define	dJOB_MONSTER_METAL_GOLEM					244		//	ì‹ ìˆ˜ï¿½ÂEë©”íƒˆ ê³¨ë ˜	Metal Golem		220ãŽ	ë•…ì˜ ì‹ ï¿½ÂEê¸°ì¡´
+#define	dJOB_MONSTER_CENTAURS						245		//	ì‹ ìˆ˜ï¿½ÂEì¼„íƒ€ï¿½ÂEé¤¨ï¿½	Centaurs		210ãŽ	ë°”ëžŒì˜ ì‹ ï¿½ÂEê¸°ì¡´
+#define	dJOB_MONSTER_MERMAN_KNIGHT					246		//	ì‹ ìˆ˜ï¿½ÂEë¨¸ë§¨ ë‚˜ì´íŠ¸	Merman Knight		220ãŽ	ë¬¼ì˜ ì‹ ï¿½ÂEê¸°ì¡´
+#define	dJOB_MONSTER_TIMBER_MAN						247		//	ì‹ ìˆ˜ï¿½ÂEíŒ€ë²„ë§¨	Timber Man		230ãŽ	ë•…ì˜ ì‹ ï¿½ÂEê¸°ì¡´
+#define	dJOB_MONSTER_SALAMANDER						248		//	ì‹ ìˆ˜ï¿½ÂEì‚¬ë¼ë§Œë‹¤	Salamander		100ãŽ	ë¶ˆì˜ ì‹ ï¿½ÂE ë¶ˆ ë„ë§ˆï¿½ÂE
+#define	dJOB_MONSTER_DARK_FIRE						249		//	ì‹ ìˆ˜ï¿½ÂEë‹¤í¬ íŒŒì´ï¿½ÂEDark Fire		120ãŽ	ì—‰å–«ì˜ ì‹ ï¿½ÂE ê²€ì€ ë¶ˆë¡œ ë‘˜ëŸ¬ì‹¸ì¸ ê´´ë¬¼ ë¶„ìœ„ï¿½ÂEì„¸ë¯¸ ë³´ìŠ¤
+#define	dJOB_MONSTER_WHITE_SHADOW					250		//	ì‹ ìˆ˜ï¿½ÂEí™”ì´íŠ¸ ì„€ë„ï¿½ÂEWhite Shadow		140ãŽ	ë¹›ì˜ ì‹ ï¿½ÂE ëª¸ì§‘ì´ ìž‘ì€ ì—‰è¹ˆ ì•„ì´ ê°™ì€ ë¶„ìœ„ï¿½ÂEë³´ìŠ¤
 
-#define	dJOB_MONSTER_SKELETON_SANTA					251		//	ÇØ°E»E¸
+#define	dJOB_MONSTER_SKELETON_SANTA					251		//	í•´ï¿½ÂEï¿½ÂEï¿½
 
-#define	dJOB_MONSTER_SAGE							252		//	¼¼ÀÌÁE
-#define	dJOB_MONSTER_SAGE_MASTER					253		//	¼¼ÀÌÁE¸¶½ºÅÍ	,
-#define	dJOB_MONSTER_TIAMATH_FEELER					254		//	Æ¼¾Æ¸Þ½º(À§ ÃË¼E,
-#define	dJOB_MONSTER_TIAMATH						255		//	Æ¼¾Æ¸Þ½º(º»Ã¼)	,
-#define	dJOB_MONSTER_TIAMATH_BOTTOM_FEELER			256		//	Æ¼¾Æ¸Þ½º(¾Æ·¡ ÃË¼E
-#define	dJOB_MONSTER_WATER_DRAGON					257		//	¿öÅÍ µå·¡°E	,
-#define	dJOB_MONSTER_ARCH_DEVIL						258		//	¾ÆÅ© µ¥ºE	,
-#define	dJOB_MONSTER_DRACO_LICH						259		//	µå¶óÄÚ ¸®Ä¡		,
-#define	dJOB_MONSTER_DRACO_LICH_ORB					260		//	µå¶óÄÚ ¸®Ä¡ ¿ÀºE,
+#define	dJOB_MONSTER_SAGE							252		//	ì„¸ì´ï¿½ÂE
+#define	dJOB_MONSTER_SAGE_MASTER					253		//	ì„¸ì´ï¿½ÂEë§ˆìŠ¤í„°	,
+#define	dJOB_MONSTER_TIAMATH_FEELER					254		//	í‹°ì•„ë©”ìŠ¤(ìœ„ ì´‰ï¿½ÂE,
+#define	dJOB_MONSTER_TIAMATH						255		//	í‹°ì•„ë©”ìŠ¤(ë³¸ì²´)	,
+#define	dJOB_MONSTER_TIAMATH_BOTTOM_FEELER			256		//	í‹°ì•„ë©”ìŠ¤(ì•„ëž˜ ì´‰ï¿½ÂE
+#define	dJOB_MONSTER_WATER_DRAGON					257		//	ì›Œí„° ë“œëž˜ï¿½ÂE	,
+#define	dJOB_MONSTER_ARCH_DEVIL						258		//	ì•„í¬ ë°ï¿½ÂE	,
+#define	dJOB_MONSTER_DRACO_LICH						259		//	ë“œë¼ì½” ë¦¬ì¹˜		,
+#define	dJOB_MONSTER_DRACO_LICH_ORB					260		//	ë“œë¼ì½” ë¦¬ì¹˜ ì˜¤ï¿½ÂE,
 
 #define	dJOB_MONSTER_Exist_Variation_begin			261		//		{
-#define	dJOB_MONSTER_Giant_Skull					261		//		{"ÀÚÀÌ¾ðÆ®ÇØ°E
-#define	dJOB_MONSTER_Undead_Magician				262		//		{"ÇØ°E¸¶¹ý»E
-#define	dJOB_MONSTER_Bone_Chimera					263		//		{"º» Å°¸Þ¶E
-#define	dJOB_MONSTER_High_Elf						264		//		{"ÇÏÀÌ ¿¤ÇÁ"
-#define	dJOB_MONSTER_Gangster						265		//		{"±øÆÐ"
-#define	dJOB_MONSTER_Sikhs							266		//		{"½ÃÅ© ±³µµ"
-#define	dJOB_MONSTER_Escapee						267		//		{"Å»ÁÖÀÚ"
-#define	dJOB_MONSTER_Mad_Demon						268		//		{"±¤¸¶"
-#define	dJOB_MONSTER_God_of_Death					269		//		{"»ç½Å"
-#define	dJOB_MONSTER_Succubus						270		//		{"¼­Å¥¹ö½º"
-#define	dJOB_MONSTER_Mantis_Warrior					271		//		{"¸ÇÆ¼½º ÀEE
-#define	dJOB_MONSTER_Pumpkin_Head					272		//		{"ÆßÇÁÅ²ÇEE
-#define	dJOB_MONSTER_Monkey_King					273		//		{"´EÕ ¿ø¼þÀÌ"
-#define	dJOB_MONSTER_Giant_Frog						274		//		{"°Å´E°³±¸¸®"
-#define	dJOB_MONSTER_Tongue_Monster					275		//		{"Çô±«¼E
-#define	dJOB_MONSTER_Dark_Buffalo					276		//		{"´ÙÅ© ¹öÆÈ·Î"
-#define	dJOB_MONSTER_Unicorn						277		//		{"À¯´ÏÄÜ"
-#define	dJOB_MONSTER_Apostles						278		//		{"»çµµ"
-#define	dJOB_MONSTER_Cherubim						279		//		{"ÄÉ·çºE
+#define	dJOB_MONSTER_Giant_Skull					261		//		{"ìžì´ì–¸íŠ¸í•´ï¿½ÂE
+#define	dJOB_MONSTER_Undead_Magician				262		//		{"í•´ï¿½ÂEë§ˆë²•ï¿½ÂE
+#define	dJOB_MONSTER_Bone_Chimera					263		//		{"ë³¸ í‚¤ë©”ï¿½ÂE
+#define	dJOB_MONSTER_High_Elf						264		//		{"í•˜ì´ ì—˜í”„"
+#define	dJOB_MONSTER_Gangster						265		//		{"ê¹¡íŒ¨"
+#define	dJOB_MONSTER_Sikhs							266		//		{"ì‹œí¬ êµë„"
+#define	dJOB_MONSTER_Escapee						267		//		{"íƒˆì£¼ìž"
+#define	dJOB_MONSTER_Mad_Demon						268		//		{"ê´‘ë§ˆ"
+#define	dJOB_MONSTER_God_of_Death					269		//		{"ì‚¬ì‹ "
+#define	dJOB_MONSTER_Succubus						270		//		{"ì„œíë²„ìŠ¤"
+#define	dJOB_MONSTER_Mantis_Warrior					271		//		{"ë§¨í‹°ìŠ¤ ï¿½ÂEÂE
+#define	dJOB_MONSTER_Pumpkin_Head					272		//		{"íŽŒí”„í‚¨ï¿½ÂEÂE
+#define	dJOB_MONSTER_Monkey_King					273		//		{"ï¿½ÂEï¿½ ì›ìˆ­ì´"
+#define	dJOB_MONSTER_Giant_Frog						274		//		{"ê±°ï¿½ÂEê°œêµ¬ë¦¬"
+#define	dJOB_MONSTER_Tongue_Monster					275		//		{"í˜€ê´´ï¿½ÂE
+#define	dJOB_MONSTER_Dark_Buffalo					276		//		{"ë‹¤í¬ ë²„íŒ”ë¡œ"
+#define	dJOB_MONSTER_Unicorn						277		//		{"ìœ ë‹ˆì½˜"
+#define	dJOB_MONSTER_Apostles						278		//		{"ì‚¬ë„"
+#define	dJOB_MONSTER_Cherubim						279		//		{"ì¼€ë£¨ï¿½ÂE
 #define	dJOB_MONSTER_Exist_Variation_end			279		//		{
 
-#define	dJOB_MONSTER_Guild_Crest					280		//		{"±æµE¹®ÀE
+#define	dJOB_MONSTER_Guild_Crest					280		//		{"ê¸¸ï¿½ÂEë¬¸ï¿½ÂE
 
-#define	dJOB_MONSTER_ShieldCraft					281		//		{"½¯µEÅ©·¡ÇÁÆ®"
-#define	dJOB_MONSTER_ElelementalPost				282		//		{"¿¤·¹¸àÆ² Æ÷½ºÆ®"
-#define	dJOB_MONSTER_EtherShell						283		//		{"¿¡Å×¸£ ½©"
-#define	dJOB_MONSTER_HollowKnight					284		//		{"ÇÒ·Î¿E³ªÀÌÆ®"
+#define	dJOB_MONSTER_ShieldCraft					281		//		{"ì‰´ï¿½ÂEí¬ëž˜í”„íŠ¸"
+#define	dJOB_MONSTER_ElelementalPost				282		//		{"ì—˜ë ˆë©˜í‹€ í¬ìŠ¤íŠ¸"
+#define	dJOB_MONSTER_EtherShell						283		//		{"ì—í…Œë¥´ ì‰˜"
+#define	dJOB_MONSTER_HollowKnight					284		//		{"í• ë¡œï¿½ÂEë‚˜ì´íŠ¸"
 
-#define	dJOB_MONSTER_GuildFlag						285		//		{"±æµEÀE« Æ÷ÀÎÆ®
+#define	dJOB_MONSTER_GuildFlag						285		//		{"ê¸¸ï¿½ÂEï¿½ÂEï¿½ í¬ì¸íŠ¸
 
 
 enum
@@ -316,26 +316,26 @@ enum
 enum	eNpcSkin
 {
 	eNS_NONE			,
-	eNS_KNIGHT			,		//	°ß½À ±â»E	
-	eNS_WARRIOR			,		//	ÀEE	
-	eNS_WIZARD			,		//	¸¶¹ý»E	
-	eNS_WEREWOLF		,		//	´Á´EÎ°£
-	eNS_PRIEST			,		//	»çÁ¦
-	eNS_FALLEN_ANGEL	,		//	Å¸¶ôÃµ»E	
-	eNS_ROGUE			,		//	µµµÏ
-	eNS_FIGHTER			,		//	¹«µµ°¡
-	eNS_MAGIC_LANCER	,		//	¸¶¹ý Ã¢°Ë»E	
-	eNS_MAGIC_ARCHER	,		//	¸¶¹ý ±Ã¼E	
-	eNS_BEAST_TAMER		,		//	Á¶·Ã»E	
-	eNS_SUMMONER		,		//	¼ÒÈ¯»E	
-	eNS_PRINCESS		,		//	°øÁÖ
-	eNS_MAGICAL_GIRL	,		//	¸¶¹ý ¼Ò³E	
-	eNS_NECROMANCER		,		//	³×Å©·Î¸Ç¼­
-	eNS_DEVIL			,		//	¾Ç¸¶
-	eNS_OPERATOR_MALE	,		//	³²ÀÚ Ãµ»E	
-	eNS_OPERATOR_FEMALE	,		//	¿©ÀÚ Ãµ»E	
-	eNS_SOUL_BRINGER	,		//	¿µ¼ú»E	
-	eNS_CHAMPION		,		//	Åõ»E
+	eNS_KNIGHT			,		//	ê²¬ìŠµ ê¸°ï¿½ÂE	
+	eNS_WARRIOR			,		//	ï¿½ÂEÂE	
+	eNS_WIZARD			,		//	ë§ˆë²•ï¿½ÂE	
+	eNS_WEREWOLF		,		//	ëŠ‘ï¿½ÂEå¯¬ï¿½
+	eNS_PRIEST			,		//	ì‚¬ì œ
+	eNS_FALLEN_ANGEL	,		//	íƒ€ë½ì²œï¿½ÂE	
+	eNS_ROGUE			,		//	ë„ë‘‘
+	eNS_FIGHTER			,		//	ë¬´ë„ê°€
+	eNS_MAGIC_LANCER	,		//	ë§ˆë²• ì°½ê²€ï¿½ÂE	
+	eNS_MAGIC_ARCHER	,		//	ë§ˆë²• ê¶ï¿½ÂE	
+	eNS_BEAST_TAMER		,		//	ì¡°ë ¨ï¿½ÂE	
+	eNS_SUMMONER		,		//	ì†Œí™˜ï¿½ÂE	
+	eNS_PRINCESS		,		//	ê³µì£¼
+	eNS_MAGICAL_GIRL	,		//	ë§ˆë²• ì†Œï¿½ÂE	
+	eNS_NECROMANCER		,		//	ë„¤í¬ë¡œë§¨ì„œ
+	eNS_DEVIL			,		//	ì•…ë§ˆ
+	eNS_OPERATOR_MALE	,		//	ë‚¨ìž ì²œï¿½ÂE	
+	eNS_OPERATOR_FEMALE	,		//	ì—¬ìž ì²œï¿½ÂE	
+	eNS_SOUL_BRINGER	,		//	ì˜ìˆ ï¿½ÂE	
+	eNS_CHAMPION		,		//	íˆ¬ï¿½ÂE
 };
 
 

@@ -149,7 +149,7 @@ GetServerNameRegistryName(int _iServerType)
 	return	s_strName;
 }
 
-//	¼­¹ö ·¹Áö½ºÆ®¸® »ı¼º
+//	ì„œë²„ ë ˆì§€ìŠ¤íŠ¸ë¦¬ ìƒì„±
 BOOL
 MakeServerRegistry(CRegKey	*_lpReg)
 {
@@ -240,7 +240,7 @@ WriteWorldServerIPToRegistry(int _iServerType,char *_lpstrIP)
 }
 
 int
-ReadWorldServerIndexWithRegistry(int _iServerType)	//	¿ùµå ÀÎµ¦½º ÀĞ±â
+ReadWorldServerIndexWithRegistry(int _iServerType)	//	ì›”ë“œ ì¸ë±ìŠ¤ ì½ê¸°
 {
 	CRegKey	reg;
 	DWORD	dwValue;
@@ -256,7 +256,7 @@ ReadWorldServerIndexWithRegistry(int _iServerType)	//	¿ùµå ÀÎµ¦½º ÀĞ±â
 	return	(int)dwValue;
 }
 BOOL
-WriteWorldServerIndexToRegistry(int _iServerType,int _iIndex)	//	¿ùµå ÀÎµ¦½º ÀúÀå
+WriteWorldServerIndexToRegistry(int _iServerType,int _iIndex)	//	ì›”ë“œ ì¸ë±ìŠ¤ ì €ì¥
 {
 	CRegKey	reg;
 
@@ -269,7 +269,7 @@ WriteWorldServerIndexToRegistry(int _iServerType,int _iIndex)	//	¿ùµå ÀÎµ¦½º ÀúÀ
 }
 
 int
-ReadGameServerIndexWithRegistry(int _iServerType)	//	°ÔÀÓ ¼­¹ö ÀÎµ¦½º ÀĞ±â
+ReadGameServerIndexWithRegistry(int _iServerType)	//	ê²Œì„ ì„œë²„ ì¸ë±ìŠ¤ ì½ê¸°
 {
 	CRegKey	reg;
 	DWORD	dwValue;
@@ -285,7 +285,7 @@ ReadGameServerIndexWithRegistry(int _iServerType)	//	°ÔÀÓ ¼­¹ö ÀÎµ¦½º ÀĞ±â
 	return	(int)dwValue;
 }
 BOOL
-WriteGameServerIndexToRegistry(int _iServerType,int _iIndex)	//	°ÔÀÓ ¼­¹ö ÀÎµ¦½º ÀúÀå
+WriteGameServerIndexToRegistry(int _iServerType,int _iIndex)	//	ê²Œì„ ì„œë²„ ì¸ë±ìŠ¤ ì €ì¥
 {
 	CRegKey	reg;
 
@@ -480,7 +480,7 @@ ReadAllServerVersionInRegistry()
 }
 
 BOOL
-WriteLifeSignToRegistry(int _iServerType,DWORD _dwSign)	//	¶óÀÌÇÁ »çÀÎ ±â·Ï
+WriteLifeSignToRegistry(int _iServerType,DWORD _dwSign)	//	ë¼ì´í”„ ì‚¬ì¸ ê¸°ë¡
 {
 	CRegKey	reg;
 
@@ -491,7 +491,7 @@ WriteLifeSignToRegistry(int _iServerType,DWORD _dwSign)	//	¶óÀÌÇÁ »çÀÎ ±â·Ï
 }
 
 int
-ReadLifeSignWithRegistry(int _iServerType)	//	¶óÀÌÇÁ »çÀÎ ÀĞ±â
+ReadLifeSignWithRegistry(int _iServerType)	//	ë¼ì´í”„ ì‚¬ì¸ ì½ê¸°
 {
 	CRegKey	reg;
 
@@ -507,7 +507,7 @@ ReadLifeSignWithRegistry(int _iServerType)	//	¶óÀÌÇÁ »çÀÎ ÀĞ±â
 }
 
 BOOL
-WriteAgentSignToRegistry(int _iServerType,DWORD _dwSign)	//	¿¡ÀÌÀüÆ® »çÀÎ ±â·Ï
+WriteAgentSignToRegistry(int _iServerType,DWORD _dwSign)	//	ì—ì´ì „íŠ¸ ì‚¬ì¸ ê¸°ë¡
 {
 	CRegKey	reg;
 
@@ -518,7 +518,7 @@ WriteAgentSignToRegistry(int _iServerType,DWORD _dwSign)	//	¿¡ÀÌÀüÆ® »çÀÎ ±â·Ï
 }
 
 int
-ReadAgentSignWithRegistry(int _iServerType)	//	¿¡ÀÌÀüÆ® »çÀÎ ÀĞ±â
+ReadAgentSignWithRegistry(int _iServerType)	//	ì—ì´ì „íŠ¸ ì‚¬ì¸ ì½ê¸°
 {
 	CRegKey	reg;
 

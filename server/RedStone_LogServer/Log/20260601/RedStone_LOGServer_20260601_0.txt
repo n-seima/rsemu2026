@@ -1,0 +1,201 @@
+[181210] Start LOG Server ... day : 20260601 - time : 181210 
+
+
+[181210] START WorkerThread[0] ...
+
+[181210] End RecvThread... 
+
+[181210] START WorkerThread[2] ...
+
+[181210] START WorkerThread[3] ...
+
+[181210] START WorkerThread[4] ...
+
+[181210] START WorkerThread[5] ...
+
+[181210] START WorkerThread[6] ...
+
+[181210] START WorkerThread[7] ...
+
+[181210] START PressThread ...
+
+[181210] START WorkerThread[1] ...
+
+[181211] START AdditionThread ...
+
+[181430] ()0 is Exit. - 1168199735
+
+
+[181512] Fail bind !!
+
+
+[181512] Error InitSocket 
+
+
+[181517] Start LOG Server ... day : 20260601 - time : 181517 
+
+
+[181517] START WorkerThread[0] ...
+
+[181517] START WorkerThread[1] ...
+
+[181517] START WorkerThread[2] ...
+
+[181517] START WorkerThread[3] ...
+
+[181517] START WorkerThread[4] ...
+
+[181517] START WorkerThread[5] ...
+
+[181517] START WorkerThread[6] ...
+
+[181517] START WorkerThread[7] ...
+
+[181517] START PressThread ...
+
+[181517] End RecvThread... 
+
+[181518] START AdditionThread ...
+
+[183121] ()1 is Exit. - -152039989
+
+
+[184758] START - Make new log
+
+[184758] path : D:/LOG/ÇÁ¶õµ¨
+
+[184758] m_strLogFileName = D:/LOG/ÇÁ¶õµ¨\20260601.log
+
+[184758] - can not find old file
+
+[184758] - make new file [D:/LOG/ÇÁ¶õµ¨\20260601.log]
+
+[184758] END - Make New Log
+
+[185910] ()1 is Exit. - -152039989
+
+
+[190631] ()1 is Exit. - -152039989
+
+
+[224114] ()1 is Exit. - -152039989
+
+
+[230928] ()1 is Exit. - -152039989
+
+
+[235548] ()1 is Exit. - -152039989
+
+
+[000821] ()1 is Exit. - -152039989
+
+
+[002315] - can not find old file
+
+[002315] - make new file [D:/LOG/ÇÁ¶õµ¨\20260602.log]
+
+[004645] ()1 is Exit. - -152039989
+
+
+[011423] ()1 is Exit. - -152039989
+
+
+[030000] 30000 -> Not Found File for Compressing!!
+
+
+[030000] 30000 -> Not Found File for Compressing!!
+
+
+[030000] 30000 -> Not Found File for Compressing!!
+
+
+[030000] 30000 -> Not Found File for Compressing!!
+
+
+[030000]  ProcessPress time = 0.4 Sec
+
+
+[081534] ()1 is Exit. - -152039989
+
+
+[081620] ()1 is Exit. - -152039989
+
+
+[084200] ()1 is Exit. - -152039989
+
+
+[084958] ()1 is Exit. - -152039989
+
+
+[090123] ()0 is Exit. - -152039989
+
+
+[090123] ()1 is Exit. - -152039989
+
+
+[090431] ()1 is Exit. - -152039989
+
+
+[090431] ()0 is Exit. - -152039989
+
+
+[090935] ()0 is Exit. - -152039989
+
+
+[091658] ()1 is Exit. - -152039989
+
+
+[092024] ()1 is Exit. - -152039989
+
+
+[092621] ()1 is Exit. - -152039989
+
+
+[093951] ()1 is Exit. - -152039989
+
+
+[093951] ()0 is Exit. - -152039989
+
+
+[102026] ()1 is Exit. - -152039989
+
+
+[102026] ()0 is Exit. - -153350745
+
+
+[102355] ()1 is Exit. - -153350745
+
+
+[102355] ()0 is Exit. - -153350745
+
+
+[102635] ()1 is Exit. - -153350745
+
+
+[102635] ()0 is Exit. - -153350745
+
+
+[102834] ()1 is Exit. - -153350745
+
+
+[102834] ()0 is Exit. - -153350745
+
+
+[111330] ()1 is Exit. - -153350745
+
+
+[111335] ()0 is Exit. - -153350745
+
+
+[112131] ()0 is Exit. - -153350745
+
+
+[112131] ()1 is Exit. - -153350745
+
+
+[112432] ()0 is Exit. - -153350745
+
+
+[112432] ()1 is Exit. - -153350745
+
+

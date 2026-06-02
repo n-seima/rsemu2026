@@ -197,7 +197,8 @@ class	CGuildMarkPackManager	: public CGuildMarkItemPackInfo
 public:
 	BOOL		init();	//	ｱ豬・ｸｶﾅｩ ｾﾆﾀﾌﾅﾒ ﾁ､ｺｸ ﾃﾊｱ篳ｭ..
 	BOOL		save();	//	ｱ豬・ｸｶﾅｩ ｾﾆﾀﾌﾅﾛ ﾁ､ｺｸ 
-	BOOL		load();	//	ｱ豬・ｸｶﾅｩ ｾﾆﾀﾌﾅﾛ ﾁ､ｺｸ ｺﾒｷｯｿﾀｱ・	BOOL		initForDev();
+	BOOL		load();
+	BOOL		initForDev();
 
 };
 

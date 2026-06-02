@@ -42,10 +42,10 @@ enum
 
 enum
 {
-	eSERVER_STATUS_OFF		,	//	Á¤»óÀûÀ¸·Î ²¨Á® ÀÖ´Â °æ¿ì
-	eSERVER_STATUS_BOOTING	,	//	ÄÑÁö´Â ÁßÀÌ´Ù.
-	eSERVER_STATUS_ON		,	//	ÄÑÁ³´Ù. ÀÌ °æ¿ì ÇÁ·Î¼¼½º°¡ Á×¾î ÀÖ´Ù¸é ÀÚµ¿ Àç½ÃÀÛ
-	eSERVER_STATUS_QUIT		,	//	¼­¹ö ²ô´ÂÁß
+	eSERVER_STATUS_OFF		,	//	ì •ìƒì ìœ¼ë¡œ êº¼ì ¸ ìžˆëŠ” ê²½ìš°
+	eSERVER_STATUS_BOOTING	,	//	ì¼œì§€ëŠ” ì¤‘ì´ë‹¤.
+	eSERVER_STATUS_ON		,	//	ì¼œì¡Œë‹¤. ì´ ê²½ìš° í”„ë¡œì„¸ìŠ¤ê°€ ì£½ì–´ ìžˆë‹¤ë©´ ìžë™ ìž¬ì‹œìž‘
+	eSERVER_STATUS_QUIT		,	//	ì„œë²„ ë„ëŠ”ì¤‘
 };
 
 const	int		c_ServerTypeCount	=	eST_COUNT;

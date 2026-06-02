@@ -1,6 +1,6 @@
-[17:22:50] Message : This Computer cpu Type - Unknown CPU
-[17:22:50] Message : This Computer Has MMX Technology
+[00:19:21] Message : This Computer cpu Type - Unknown CPU
+[00:19:21] Message : This Computer Has MMX Technology
 
-[17:22:51] Message : Error in cMAIN::Init - can not find registry data of Red Stone
+[00:19:23] Message : Error in cMAIN::Init - can not find registry data of Red Stone
 
-[17:22:51] Message : - ÇÁ·Î±×·¥ Á¤»óÁ¾·á. -
+[00:19:23] Message : - ú°E¡œê·¸E¨ E•ìƒEE£E -

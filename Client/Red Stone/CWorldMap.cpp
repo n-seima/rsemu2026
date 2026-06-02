@@ -146,6 +146,9 @@ CWorldMap::getInfoSurfaceFieldIndex(int _iFieldindex)
 	if (iIndex	==	-1)
 	{
 		char	strFileName[64];
+
+		if (strlen(g_map.m_strFileName)	<	8)
+			return	-1;
 		
 		strncpy(strFileName,g_map.m_strFileName+5,3);
 		
@@ -201,9 +204,11 @@ CWorldMap::getInfoShortestNode(int _iBegin,int _iEnd,cWM_road *_lpRoad,cWM_road 
 int
 CWorldMap::getParentFieldIndex(int _iIndex)
 {
-	for(int i=0 ; i<dMAX_MAIN_FIELD_COUNT ; i++)
+	for(int i=0 ; i<g_gwWorldMap.m_info.m_iFieldInfoCount && i<dMAX_MAIN_FIELD_COUNT ; i++)
 	{
-		for(int j=0 ; j<g_gwWorldMap.m_info.m_aFieldList[i].m_wLinkDungeonCount ; j++)
+		int	iLinkDungeonCount	=	min(g_gwWorldMap.m_info.m_aFieldList[i].m_wLinkDungeonCount,dMAX_LINK_DUNGEON_COUNT);
+
+		for(int j=0 ; j<iLinkDungeonCount ; j++)
 		{
 			if (g_gwWorldMap.m_info.m_aFieldList[i].m_awLinkDungeon[j] == _iIndex)
 				return g_gwWorldMap.m_info.m_aFieldList[i].m_wFieldSerial;
@@ -582,6 +587,13 @@ CWorldMap::drawFieldInfoTab()
 
 	if (iFocusField	==	-1)
 		iFocusField	=	m_info.m_iSelectFieldIndex;
+	if (iFocusField	<	0	||	iFocusField	>=	m_info.m_iFieldInfoCount)
+	{
+		if (m_info.m_iCurrentFieldIndex	>=	0	&&	m_info.m_iCurrentFieldIndex	<	m_info.m_iFieldInfoCount)
+			iFocusField	=	m_info.m_iCurrentFieldIndex;
+		else
+			return;
+	}
 
 	int iAddX = 0;
 	int iAddY = 0;
@@ -601,7 +613,7 @@ CWorldMap::drawFieldInfoTab()
 
 	cWM_mainFieldInfo	*lpInfo	=	&m_info.m_aFieldList[iFocusField];
 
-	if(iFocusField != -1)		// 포커스가 되어있으면...
+	if(iFocusField != -1 && lpInfo->m_wFieldSerial < dMAX_MAP_COUNT)		// 포커스가 되어있으면...
 	{
 		if (lpInfo->m_wLowLevel	==	0)
 			s_textBold16.cPut(posCenter.x,m_rectInfoFrame.y1+6,LTYELLOW,g_aMapSimpleInfo[lpInfo->m_wFieldSerial].m_strName);
@@ -617,12 +629,14 @@ CWorldMap::drawFieldInfoTab()
 	g_sprWorldMap.Put(26,iY-14,36);
 	s_textBold14.put(40,iY-24,WHITE,dMSG_WM_FIELD_INFO);
 
-	for (i=0;i<lpInfo->m_wLinkDungeonCount;i++)
+	int	iLinkDungeonCount	=	min(lpInfo->m_wLinkDungeonCount,dMAX_LINK_DUNGEON_COUNT);
+
+	for (i=0;i<iLinkDungeonCount;i++)
 	{
 		int				iLinkDungeon	=	lpInfo->m_awLinkDungeon[i];
 		cWM_dungeonInfo	*lpDungenInfo	=	NULL;
 		
-		if (iLinkDungeon	!=	0xffff)
+		if (iLinkDungeon	!=	0xffff	&&	iLinkDungeon	>=	0	&&	iLinkDungeon	<	m_info.m_iDungeonInfoCount)
 			lpDungenInfo	=	&m_info.m_aDungeonList[iLinkDungeon];
 
 		if (lpDungenInfo	==	NULL)
@@ -638,6 +652,9 @@ CWorldMap::drawFieldInfoTab()
 		{
 			int		iDungeonSerial	=	lpDungenInfo->m_awDungeonList[0];
 			char	strDungeonName[64];
+
+			if (iDungeonSerial	<	0	||	iDungeonSerial	>=	dMAX_MAP_COUNT)
+				continue;
 
 			strcpy(strDungeonName,g_aMapSimpleInfo[iDungeonSerial].m_strName);
 
@@ -660,6 +677,9 @@ CWorldMap::drawFieldInfoTab()
 
 		iY	+=	15;
 	}
+
+	if (m_info.m_iCurrentFieldIndex	<	0	||	m_info.m_iCurrentFieldIndex	>=	m_info.m_iFieldInfoCount)
+		return;
 
 	lpInfo	=	&m_info.m_aFieldList[m_info.m_iCurrentFieldIndex];
 
@@ -693,15 +713,21 @@ CWorldMap::setQuestField()
 		
 		int			iQuestIndex	=	g_hero.m_aProcessQuest[i].questIndex;
 		CQuestItem	*lpQuest	=	lpQuestManager->getQuest(iQuestIndex);
+		if (!lpQuest)
+			continue;
 		tsProcessQuestField		*lpSelectQuest	=	&g_hero.m_aProcessQuest[i];
 		int						iProcessLevel	=	lpSelectQuest->questProcessLevel;
 		CQuestItem::cQuestInfo	*lpQuestText	=	lpQuest->getInfo(iProcessLevel);
+		if (!lpQuestText)
+			continue;
 		int iNpc = 0;
 						
 		for(int j=0 ; j<lpQuestText->m_wLinkFieldCount ; j++)
 		{
 			int iResult = g_map.getDungeonFirstFloor(lpQuestText->m_pLinkField[j]);
 			iResult = m_info.getSurfaceField(iResult);
+			if (iResult	<	0	||	iResult	>=	m_info.m_iFieldInfoCount)
+				continue;
 
 			BOOL bAdd = TRUE;
 			for(int k=0 ; k<m_vtiQFIndexList.size() ; k++)
@@ -798,6 +824,8 @@ CWorldMap::drawPartyInfoTab()
 
 			CPartyMemberInfo	*lpMemberInfo	=	&s_partyInfo.m_aMemberList[i];
 			int					iMemberField	=	m_info.getSurfaceField(lpMemberInfo->m_wFieldSerial);
+			if (iMemberField	<	0	||	iMemberField	>=	m_info.m_iFieldInfoCount)
+				continue;
 			cWM_mainFieldInfo	*lpFieldInfo	=	&m_info.m_aFieldList[iMemberField];
 			
 			lpFieldInfo->m_rectFrame.getCenter(&posCenter);
@@ -859,6 +887,9 @@ CWorldMap::drawQuestInfoTab()
 	}
 
 	{
+		if (m_info.m_iCurrentFieldIndex	<	0	||	m_info.m_iCurrentFieldIndex	>=	m_info.m_iFieldInfoCount)
+			return;
+
 		cWM_mainFieldInfo	*lpCurrentField	=	&m_info.m_aFieldList[m_info.m_iCurrentFieldIndex];
 
 		lpCurrentField->m_rectFrame.getCenter(&posCenter);
@@ -987,12 +1018,9 @@ CWorldMap::draw()
 	if(s_iPopupInterface	!=	ePIW_WORLD_MAP)
 		return;
 // 월드맵 출력
-	int iRate = 100; // 기본비율 100
+	int iRate = GetWorldMapScaleRate(); // 기본비율 100
 
-	if (g_iScreenWidth != 800)
-		iRate = (int)(g_iScreenWidth*100)/800;
-
-	g_sprWorldMap.Put(0,0,0, iRate, iRate);
+	g_sprWorldMap.Put(GetWorldMapOffsetX(),GetWorldMapOffsetY(),0, iRate, iRate);
 // 버튼 컨트롤 출력
 	m_info.drawFieldFrame(m_iWorldmapMenu);
 	m_bmRadioButton.draw();
@@ -1219,6 +1247,9 @@ CWorldMap::updateQuestInfoTab()
 	CQuestItem::cQuestInfo	*lpQuestText	=	lpQuest->getInfo(iProcessLevel);
 	int						iClientField	=	lpQuest->getClientField(iProcessLevel);
 	int						iFocusFieldIndex=	m_info.m_iFocusFieldIndex;
+
+	if (iFocusFieldIndex	!=	-1	&&	(iFocusFieldIndex	<	0	||	iFocusFieldIndex	>=	m_info.m_iFieldInfoCount))
+		iFocusFieldIndex	=	-1;
 
 	if (iFocusFieldIndex	!=	-1)
 	{

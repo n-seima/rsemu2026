@@ -1,0 +1,192 @@
+[222456] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[222456] Start    Make DB Index.....
+
+[222456] End  Make DB Index.  ListCount 4, 0.028 Sec
+
+[222456] Start    Get Event Infomation .....
+
+[222500] End    Get Event Infomation 4.059 Sec
+
+[222500] Log Server [127.0.0.1] [59641]
+
+[222500] START WorkerThread[0] ...
+
+[222500] START WorkerThread[2] ...
+
+[222500] START WorkerThread[1] ...
+
+[222500] START WorkerThread[3] ...
+
+[222500] START WorkerThread[4] ...
+
+[222500] START WorkerThread[6] ...
+
+[222500] START AdditionThread ...
+
+[222500] START WorkerThread[7] ...
+
+[222500] START WorkerThread[5] ...
+
+[222500] START Event Manager Thread ...
+
+[222501] Wait for begin all worker thread
+
+[222501] Start Avatar DB Cache Server ... day : 20260531 - time : 222501 
+
+
+[222607]  Provision Rank = 0
+
+[223301] ()1 is exit!!
+
+
+[223448]  Provision Rank = 0
+
+[223759] ()1 is exit!!
+
+
+[223801] ()0 is exit!!
+
+
+[223926]  Provision Rank = 0
+
+[223948] ()0 is exit!!
+
+
+[223949] ()1 is exit!!
+
+
+[224314] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[224314] Start    Make DB Index.....
+
+[224314] End  Make DB Index.  ListCount 4, 0.004 Sec
+
+[224314] Start    Get Event Infomation .....
+
+[224318] End    Get Event Infomation 4.041 Sec
+
+[224318] Log Server [127.0.0.1] [59641]
+
+[224318] START WorkerThread[0] ...
+
+[224318] START WorkerThread[1] ...
+
+[224318] START WorkerThread[3] ...
+
+[224318] START WorkerThread[4] ...
+
+[224318] START WorkerThread[2] ...
+
+[224318] START WorkerThread[6] ...
+
+[224318] START AdditionThread ...
+
+[224318] START Event Manager Thread ...
+
+[224318] START WorkerThread[7] ...
+
+[224318] START WorkerThread[5] ...
+
+[224319] Wait for begin all worker thread
+
+[224319] Start Avatar DB Cache Server ... day : 20260531 - time : 224319 
+
+
+[224425]  Provision Rank = 0
+
+[224506] ()1 is exit!!
+
+
+[224721] ()0 is exit!!
+
+
+[224902] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[224902] Start    Make DB Index.....
+
+[224902] End  Make DB Index.  ListCount 4, 0.002 Sec
+
+[224902] Start    Get Event Infomation .....
+
+[224906] End    Get Event Infomation 4.049 Sec
+
+[224906] Log Server [127.0.0.1] [59641]
+
+[224906] START WorkerThread[0] ...
+
+[224906] START WorkerThread[1] ...
+
+[224906] START WorkerThread[3] ...
+
+[224906] START WorkerThread[2] ...
+
+[224906] START WorkerThread[5] ...
+
+[224906] START WorkerThread[7] ...
+
+[224906] START WorkerThread[4] ...
+
+[224906] START WorkerThread[6] ...
+
+[224906] START Event Manager Thread ...
+
+[224906] START AdditionThread ...
+
+[224907] Wait for begin all worker thread
+
+[224907] Start Avatar DB Cache Server ... day : 20260531 - time : 224907 
+
+
+[225040]  Provision Rank = 0
+
+[231121] DB Connect ip[127.0.0.1] id[RedMaster] source[REDSTONE_AVATAR_SOURCE]
+
+[231121] Start    Make DB Index.....
+
+[231121] End  Make DB Index.  ListCount 4, 0.004 Sec
+
+[231121] Start    Get Event Infomation .....
+
+[231125] End    Get Event Infomation 4.062 Sec
+
+[231125] Log Server [127.0.0.1] [59641]
+
+[231125] START WorkerThread[5] ...
+
+[231125] START WorkerThread[3] ...
+
+[231125] START WorkerThread[4] ...
+
+[231125] START WorkerThread[0] ...
+
+[231125] START WorkerThread[2] ...
+
+[231125] START WorkerThread[1] ...
+
+[231125] START WorkerThread[6] ...
+
+[231125] START WorkerThread[7] ...
+
+[231125] START AdditionThread ...
+
+[231125] START Event Manager Thread ...
+
+[231126] Wait for begin all worker thread
+
+[231126] Start Avatar DB Cache Server ... day : 20260531 - time : 231126 
+
+
+[231202]  Provision Rank = 0
+
+[231829] ()1 is exit!!
+
+
+[231911]  Provision Rank = 0
+
+[231956] ()1 is exit!!
+
+
+[232235] ()0 is exit!!
+
+

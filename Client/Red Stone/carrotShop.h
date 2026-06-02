@@ -53,7 +53,7 @@ public:
 	// ┌─────────────────────────────┐
 	// │                     두번째 카테고리                      │
 	// └─────────────────────────────┘
-	cRECT			m_aSecCategoryPos[dMAX_CARROT_SHOP_CATEGORY_COUNT];	// insu add .. 두번째카테고리 위치정보 - 두번째 카테고리는 일단 20개로 고정되어 있음
+	cRECT			m_aSecCategoryPos[dMAX_CARROT_SHOP_CATEGORY_COUNT+2];	// insu add .. 전체/인기 + 실제 카테고리
 	int				m_iFocusSecCategory;								// insu add .. 두번째 카테고리 포커스 정보
 	int				m_iSelectSecCategory;								// insu add .. 선택된 두번째 카테고리
 	CImageScrollBar	m_sbScrollBar;										// insu add .. 스크롤 바 
@@ -156,6 +156,7 @@ public:
 	int				m_iBuyItem,m_iBuyCategory;
 	int				m_iScrollBarPos,m_iCurrentCategory,m_iCategoryLineCount;
 	WORD			m_wIsWaitResult;
+	WORD			m_wWaitOpenResultTime;
 	int				m_iRemainCarrotCount;
 
 	void			open();

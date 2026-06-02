@@ -5339,7 +5339,7 @@ CKarma::extendItemValidateTimeToNextDay(CKarmaItem *_lpReaction,cACTOR *_lpAsker
 	if	(!lpItem)
 		return	FALSE;
 
-	lpItem->m_year	=	g_currentTime.m_wYear-2000;
+	lpItem->m_year	=	EncodeItemExpireYear(g_currentTime.m_wYear);
 	lpItem->m_month	=	g_currentTime.m_wMonth;
 	lpItem->m_day	=	g_currentTime.m_wDay;
 	lpItem->m_hour	=	g_currentTime.m_wHour;
@@ -5612,7 +5612,7 @@ CKarma::timeStamp(CKarmaItem *_lpReaction,cACTOR *_lpTarget)
 
 	CTimeInfo	itemTime;
 
-	lpItem->m_year		=	g_currentTime.m_wYear-2000;
+	lpItem->m_year		=	EncodeItemExpireYear(g_currentTime.m_wYear);
 	lpItem->m_month		=	g_currentTime.m_wMonth;
 	lpItem->m_day		=	g_currentTime.m_wDay;
 	lpItem->m_hour		=	g_currentTime.m_wHour;

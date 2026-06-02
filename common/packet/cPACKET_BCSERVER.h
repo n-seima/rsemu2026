@@ -15,12 +15,12 @@ class CChattingLog
 public:
 	enum
 	{
-		eCT_TALK=0	,//	ÀÏ¹Ý ¸»ÇÏ±â
-		eCT_SAY		,//	±Ó¸»ÇÏ±â
-		eCT_PARTY	,//	ÆÄÆ¼¿ø ´ëÈ­
-		eCT_GUILD	,//	±æµå¿ø ´ëÈ­
-		eCT_SHOUT	,//	¿ÜÄ¡±â
-		eCT_ADMIN	,//	°ü¸®ÀÚ Àü´Þ ¸Þ¼¼Áö
+		eCT_TALK=0	,//	ì¼ë°˜ ë§í•˜ê¸°
+		eCT_SAY		,//	ê·“ë§í•˜ê¸°
+		eCT_PARTY	,//	íŒŒí‹°ì› ëŒ€í™”
+		eCT_GUILD	,//	ê¸¸ë“œì› ëŒ€í™”
+		eCT_SHOUT	,//	ì™¸ì¹˜ê¸°
+		eCT_ADMIN	,//	ê´€ë¦¬ìž ì „ë‹¬ ë©”ì„¸ì§€
 	};
 
 	struct stWho
@@ -41,54 +41,54 @@ public:
 };
 
 typedef enum
-{	//	±âÁ¸ÀÇ ÆÐÅ¶ Å¸ÀÔ°ú ¸ð¾ç»õ¸¦ °®Ãß±â À§ÇØ ±×³É d·Î ½ÃÀÛ
+{	//	ê¸°ì¡´ì˜ íŒ¨í‚· íƒ€ìž…ê³¼ ëª¨ì–‘ìƒˆë¥¼ ê°–ì¶”ê¸° ìœ„í•´ ê·¸ëƒ¥ dë¡œ ì‹œìž‘
 
 	//////////////////////////////////////////////////////////
 	//	Client <---> BroadCast Server
-	dCB_LOGIN = 0x7001,//client°¡ broadcast¿¡°Ô ·Î±×ÀÎÁ¤º¸
-	dCB_UPDATE_USER_ALLINFO	,	//	À¯Àú°¡ ¿¹Àü¿¡ °¡Áö°í ÀÖ´ø ÀüÃ¼ À¯Àú Á¤º¸¸¦ ¾÷µ¥ÀÌÆ® ÇÑ´Ù.
-								//	m_bf1IsSaveAllDataByClient ÇÃ·¡±× ¼¼ÆÃÇÒ°Í
-								//	m_bf1IsSaveAllDataByClient ÀÌ¹Ì ÀÌ ÇÃ·¡±×°¡ ¼¼ÆÃµÈ À¯Àú´Â ¹«½ÃÇÒ°Í
+	dCB_LOGIN = 0x7001,//clientê°€ broadcastì—ê²Œ ë¡œê·¸ì¸ì •ë³´
+	dCB_UPDATE_USER_ALLINFO	,	//	ìœ ì €ê°€ ì˜ˆì „ì— ê°€ì§€ê³  ìžˆë˜ ì „ì²´ ìœ ì € ì •ë³´ë¥¼ ì—…ë°ì´íŠ¸ í•œë‹¤.
+								//	m_bf1IsSaveAllDataByClient í”Œëž˜ê·¸ ì„¸íŒ…í• ê²ƒ
+								//	m_bf1IsSaveAllDataByClient ì´ë¯¸ ì´ í”Œëž˜ê·¸ê°€ ì„¸íŒ…ëœ ìœ ì €ëŠ” ë¬´ì‹œí• ê²ƒ
 	dCB_CHANGE_USER_SKILL_SETTING,
 	dCB_CHANGE_FRIEND_GROUP_NAME,
 	dCB_ADD_FRIEND,
 	dCB_REMOVE_FRIEND,
-	dCB_CHANGE_FRIEND_GROUP,	//	Æ¯Á¤ Ä£±¸ÀÇ ±×·ìÀ» º¯°æ
+	dCB_CHANGE_FRIEND_GROUP,	//	íŠ¹ì • ì¹œêµ¬ì˜ ê·¸ë£¹ì„ ë³€ê²½
 
 	dBC_LOGIN_RESULT,
-	dBC_UPDATE_FRIEND_ONLINE_STATUS	,	//	Ä£±¸ ¸ñ·ÏÀÇ ¿Â¶óÀÎ »óÅÂ °»½Å
+	dBC_UPDATE_FRIEND_ONLINE_STATUS	,	//	ì¹œêµ¬ ëª©ë¡ì˜ ì˜¨ë¼ì¸ ìƒíƒœ ê°±ì‹ 
 
-	dCB_CHANGE_PARTY_PROSPECTUS			,	//	ÆÄÆ¼ ¸ðÁý¿ä°­ º¯°æ
-	dCB_ASK_PARTY_PROSPECTUS			,	//	ÆÄÆ¼ ¸ðÁý¿ä°­ ¿äÃ»
-	dCB_ASK_OPEN_PARTY_LIST				,	//	ÆÄÆ¼ ¸®½ºÆ® ¿äÃ»
+	dCB_CHANGE_PARTY_PROSPECTUS			,	//	íŒŒí‹° ëª¨ì§‘ìš”ê°• ë³€ê²½
+	dCB_ASK_PARTY_PROSPECTUS			,	//	íŒŒí‹° ëª¨ì§‘ìš”ê°• ìš”ì²­
+	dCB_ASK_OPEN_PARTY_LIST				,	//	íŒŒí‹° ë¦¬ìŠ¤íŠ¸ ìš”ì²­
 
-	dBC_SERVER_MESSAGE					,	//	¼­¹ö ¸Þ½ÃÁö
-	dBC_OPEN_PARTY_LIST					,	//	¿ÀÇÂµÈ ÆÄÆ¼ ¸®½ºÆ®
-	dBC_UPDATE_PARTY_PROSPECTUS			,	//	ÆÄÆ¼ ¸ðÁý¿ä°­
+	dBC_SERVER_MESSAGE					,	//	ì„œë²„ ë©”ì‹œì§€
+	dBC_OPEN_PARTY_LIST					,	//	ì˜¤í”ˆëœ íŒŒí‹° ë¦¬ìŠ¤íŠ¸
+	dBC_UPDATE_PARTY_PROSPECTUS			,	//	íŒŒí‹° ëª¨ì§‘ìš”ê°•
 
-	dBC_INFO_GUILD_MEMBER_CONNECTION_LIST,		// ±æµå¸â¹ö Á¢¼Ó ¸®½ºÆ® ..
+	dBC_INFO_GUILD_MEMBER_CONNECTION_LIST,		// ê¸¸ë“œë©¤ë²„ ì ‘ì† ë¦¬ìŠ¤íŠ¸ ..
 	//	Client <---> BroadCast Server
 	//////////////////////////////////////////////////////////
 
 	//////////////////////////////////////////////////////////
 	//	Game Server <---> BroadCast Server
-	dGB_LOGIN = 0x7011,//°ÔÀÓ¼­¹ö°¡ broadcast¿¡°Ô ·Î±×ÀÎ Á¤º¸
-	dGB_REG_CLIENT,//»õ·Ó°Ô Âü°¡ÇÑ Å¬¶óÀÌ¾ðÆ®ÀÇ Á¤º¸
-	dGB_REG_OLDCLIENT,//ÇÃ·¹ÀÌ ÁßÀÎµ¥µµ ¾ÆÁ÷ BC¿¡ µî·ÏµÇÁö ¾ÊÀº À¯Àú¿¡ ´ëÇÑ µî·ÏÀ» ¿äÃ»
+	dGB_LOGIN = 0x7011,//ê²Œìž„ì„œë²„ê°€ broadcastì—ê²Œ ë¡œê·¸ì¸ ì •ë³´
+	dGB_REG_CLIENT,//ìƒˆë¡­ê²Œ ì°¸ê°€í•œ í´ë¼ì´ì–¸íŠ¸ì˜ ì •ë³´
+	dGB_REG_OLDCLIENT,//í”Œë ˆì´ ì¤‘ì¸ë°ë„ ì•„ì§ BCì— ë“±ë¡ë˜ì§€ ì•Šì€ ìœ ì €ì— ëŒ€í•œ ë“±ë¡ì„ ìš”ì²­
 	dGB_ADD_FRIEND,
-	dGB_FORCED_REMOVE_FRIEND,	//	Ä£±¸ÀÇ ¿äÃ»À¸·Î Ä£±¸ ¸ñ·Ï¿¡¼­ Ä£±¸ÀÇ ÀÌ¸§À» »«´Ù...?
+	dGB_FORCED_REMOVE_FRIEND,	//	ì¹œêµ¬ì˜ ìš”ì²­ìœ¼ë¡œ ì¹œêµ¬ ëª©ë¡ì—ì„œ ì¹œêµ¬ì˜ ì´ë¦„ì„ ëº€ë‹¤...?
 	dGB_GUILD_CHAT,
-	dGB_PARTY_CHAT,	//	ÆÄÆ¼ Ã¤ÆÃ
-	dGB_GUILD_WORK_BUS,	//	±æµå¿ø ÀüÃ¼¿¡°Ô º¸³»´Â ³»¿ë Ã³¸®
+	dGB_PARTY_CHAT,	//	íŒŒí‹° ì±„íŒ…
+	dGB_GUILD_WORK_BUS,	//	ê¸¸ë“œì› ì „ì²´ì—ê²Œ ë³´ë‚´ëŠ” ë‚´ìš© ì²˜ë¦¬
 	dGB_PARTY_PACKET_DELIVER,
-	dGB_PACKET_DELIVER,		//	ÆÐÅ¶ ¹è´Þ
-	dGB_UPDATE_INFO			,	//	Å¬¶óÀÌ¾ðÆ®ÀÇ Á¤º¸°¡ ¾÷µ¥ÀÌÆ® µÇ¾ú´Ù.
-	dGB_ASK_ITEM_INFO		,	//	¿î¿µÀÚ°¡ Æ¯Á¤ Ä³¸¯ÅÍÀÇ ¾ÆÀÌÅÛ Á¤º¸¸¦ ¿äÃ»ÇÔ
+	dGB_PACKET_DELIVER,		//	íŒ¨í‚· ë°°ë‹¬
+	dGB_UPDATE_INFO			,	//	í´ë¼ì´ì–¸íŠ¸ì˜ ì •ë³´ê°€ ì—…ë°ì´íŠ¸ ë˜ì—ˆë‹¤.
+	dGB_ASK_ITEM_INFO		,	//	ìš´ì˜ìžê°€ íŠ¹ì • ìºë¦­í„°ì˜ ì•„ì´í…œ ì •ë³´ë¥¼ ìš”ì²­í•¨
 
-	dBG_REG_CLIENT_RESULT = 0x7112,	//	Å¬¶óÀÌ¾ðÆ® µî·Ï °á°ú
-	dBG_REG_OLDCLIENT_RESULT,		//	Å¬¶óÀÌ¾ðÆ® µî·Ï °á°ú ¿¾³¯°Å?
-	dBG_REG_CLIENT_SERIAL	,		//	µî·Ï Å¬¶óÀÌ¾ðÆ® ½Ã¸®¾ó
-	dBG_ASK_CLIENT_INFO		,		//	°ÔÀÓ ¼­¹ö¿¡¼­ Ä¿¹Â´ÏÆ¼ ¼­¹ö¿¡ Æ¯Á¤ ½Ã¸®¾ó¿¡ °üÇÑ ÀÛ¾÷À» ¿äÃ»Çß´Âµ¥, ½ÇÁ¦·Î Ä¿¹Â´ÏÆ¼ ¼­¹ö¿¡´Â ±×°Ô ¾ø´Ù.
+	dBG_REG_CLIENT_RESULT = 0x7112,	//	í´ë¼ì´ì–¸íŠ¸ ë“±ë¡ ê²°ê³¼
+	dBG_REG_OLDCLIENT_RESULT,		//	í´ë¼ì´ì–¸íŠ¸ ë“±ë¡ ê²°ê³¼ ì˜›ë‚ ê±°?
+	dBG_REG_CLIENT_SERIAL	,		//	ë“±ë¡ í´ë¼ì´ì–¸íŠ¸ ì‹œë¦¬ì–¼
+	dBG_ASK_CLIENT_INFO		,		//	ê²Œìž„ ì„œë²„ì—ì„œ ì»¤ë®¤ë‹ˆí‹° ì„œë²„ì— íŠ¹ì • ì‹œë¦¬ì–¼ì— ê´€í•œ ìž‘ì—…ì„ ìš”ì²­í–ˆëŠ”ë°, ì‹¤ì œë¡œ ì»¤ë®¤ë‹ˆí‹° ì„œë²„ì—ëŠ” ê·¸ê²Œ ì—†ë‹¤.
 	dBG_ASK_ITEM_INFO		,
 
 	//	Game Server <---> BroadCast Server
@@ -96,7 +96,7 @@ typedef enum
 
 	//////////////////////////////////////////////////////////
 	//	World Server <---> BroadCast Server
-	dWB_REMOVE_USERINFO	= 0x7051,	//	À¯Àú Á¤º¸ Á¦°Å
+	dWB_REMOVE_USERINFO	= 0x7051,	//	ìœ ì € ì •ë³´ ì œê±°
 	dWB_PARTY_LIST,
 	dWB_UPDATE_PARTY_INFO,
 	dWB_GUILD_WORK_BUS,
@@ -119,19 +119,19 @@ struct CB_LOGIN
 {
 	cMSG_BASE_TYPE	base;
 
-	WORD		wIndex;		//	Çã°¡¹ÞÀº ÀÎµ¦½º
+	WORD		wIndex;		//	í—ˆê°€ë°›ì€ ì¸ë±ìŠ¤
 	DWORD		dwCRC32;
 	WORD		wGuildIndex;
-	char		strId[dID_LENGTH];		//	ÀÌÇÏ´Â Á¤»óÀ¯ÀúÀÎÁö È®ÀÎÀ» À§ÇØ
+	char		strId[dID_LENGTH];		//	ì´í•˜ëŠ” ì •ìƒìœ ì €ì¸ì§€ í™•ì¸ì„ ìœ„í•´
 	char		strName[dNAME_LENGTH];
-	WORD		wGuildDisplayIndex;		//	±æµåÃ¢¿¡ µðÆúµå·Î º¸ÀÌ´Â ¼ø¼­. À½...±×·¯´Ï±î. °ÔÀÓ ¼­¹ö »óÀÇ ÀÎµ¦½º¶ó°í ÇÏ´Â°Ô ¸ÂÀ»·Á³ª;
+	WORD		wGuildDisplayIndex;		//	ê¸¸ë“œì°½ì— ë””í´ë“œë¡œ ë³´ì´ëŠ” ìˆœì„œ. ìŒ...ê·¸ëŸ¬ë‹ˆê¹Œ. ê²Œìž„ ì„œë²„ ìƒì˜ ì¸ë±ìŠ¤ë¼ê³  í•˜ëŠ”ê²Œ ë§žì„ë ¤ë‚˜;
 };
 
 struct	CB_UPDATE_USER_ALLINFO
 {
 	cMSG_BASE_TYPE	base;
 
-	char	strId[dID_LENGTH];		//	Ã³À½ µî·Ï
+	char	strId[dID_LENGTH];		//	ì²˜ìŒ ë“±ë¡
 	char	strName[dNAME_LENGTH];
 
 	WORD	wFriendCount;
@@ -155,12 +155,12 @@ struct	CB_CHANGE_FRIEND_GROUP_NAME
 	char			strName[dFRIEND_GROUP_NAME_LENGTH];
 };
 
-struct	CB_CHANGE_PARTY_PROSPECTUS	//	ÆÄÆ¼ ¸ðÁý¿ä°­ º¯°æ
+struct	CB_CHANGE_PARTY_PROSPECTUS	//	íŒŒí‹° ëª¨ì§‘ìš”ê°• ë³€ê²½
 {
 	cMSG_BASE_TYPE	base;
 
 	WORD			wPartySerial;
-	DWORD			dwPreferenceJobMask;		// Á÷¾÷ÀÌ Ãß°¡µÇ¾î WORD -> DWORD ÇüÀ¸·Î ÀüÈ¯.
+	DWORD			dwPreferenceJobMask;		// ì§ì—…ì´ ì¶”ê°€ë˜ì–´ WORD -> DWORD í˜•ìœ¼ë¡œ ì „í™˜.
 	WORD			bf1IsChangeText				:	1;
 	WORD			bf10RecruitMemberLevelRange	:	10;
 
@@ -179,8 +179,8 @@ struct	BC_UPDATE_PARTY_PROSPECTUS
 	cMSG_BASE_TYPE	base;
 
 	WORD			wPartySerial;
-	DWORD			dwPreferenceJobMask;			// Á÷¾÷ÀÌ Ãß°¡µÇ¾î WORD -> DWORD ÇüÀ¸·Î ÀüÈ¯.
-	WORD			bf1IsIncludeText			:	1;	//	ÅØ½ºÆ®µµ º¯°æµÇ³Ä?
+	DWORD			dwPreferenceJobMask;			// ì§ì—…ì´ ì¶”ê°€ë˜ì–´ WORD -> DWORD í˜•ìœ¼ë¡œ ì „í™˜.
+	WORD			bf1IsIncludeText			:	1;	//	í…ìŠ¤íŠ¸ë„ ë³€ê²½ë˜ëƒ?
 	WORD			bf10RecruitMemberLevelRange	:	10;
 
 	char			strPartyProspectus[c_iPartyProspectusLength];
@@ -213,14 +213,14 @@ struct BC_LOGIN_RESULT
 {
 	enum
 	{
-		eFAILED,					//	ºñÁ¤»óÀûÀÌ´Ù ´Ù½Ã Á¢¼Ó ½Ãµµ ÇØÁÖ¼¼¿ä
-		eREQUIRE_UPDATE_DATA,		//	Á¤»óÀûÀ¸·Î Á¢¼ÓÇß´Ù. µ¥ÀÌÅÍ Àü¼ÛÇÔ
-		eDO_NOT_REQUIRE_UPDATE_DATA,//	Á¤»óÀûÀ¸·Î Á¢¼ÓÇß´Ù. µ¥ÀÌÅÍ Àü¼Û ÇÊ¿ä ¾ø´Ù.
+		eFAILED,					//	ë¹„ì •ìƒì ì´ë‹¤ ë‹¤ì‹œ ì ‘ì† ì‹œë„ í•´ì£¼ì„¸ìš”
+		eREQUIRE_UPDATE_DATA,		//	ì •ìƒì ìœ¼ë¡œ ì ‘ì†í–ˆë‹¤. ë°ì´í„° ì „ì†¡í•¨
+		eDO_NOT_REQUIRE_UPDATE_DATA,//	ì •ìƒì ìœ¼ë¡œ ì ‘ì†í–ˆë‹¤. ë°ì´í„° ì „ì†¡ í•„ìš” ì—†ë‹¤.
 	};
 
 	cMSG_BASE_TYPE			base;
 
-	WORD					wResult;		//	1 - Á¤»ó, 0 - ÀÌ»óÀ¯Àú,´Ù½Ã Á¢¼ÓÀ» ½ÃµµÇØÁÖ¼¼¿ä.
+	WORD					wResult;		//	1 - ì •ìƒ, 0 - ì´ìƒìœ ì €,ë‹¤ì‹œ ì ‘ì†ì„ ì‹œë„í•´ì£¼ì„¸ìš”.
 	WORD					wFriendCount;
 	WORD					wBCSerial;
 
@@ -248,17 +248,17 @@ struct BC_OPEN_PARTY_LIST
 	cPartyInfoForPL	aList[c_iPartyBufferSizeForPartyList];
 };
 
-struct BC_UPDATE_FRIEND_ONLINE_STATUS	//	Ä£±¸ ¸ñ·ÏÀÇ ¿Â¶óÀÎ »óÅÂ °»½Å
+struct BC_UPDATE_FRIEND_ONLINE_STATUS	//	ì¹œêµ¬ ëª©ë¡ì˜ ì˜¨ë¼ì¸ ìƒíƒœ ê°±ì‹ 
 {
 	cMSG_BASE_TYPE				base;
 	
 	cFriendListOnlineInfoBase	onlineStatus;
 };
-struct BC_INFO_GUILD_MEMBER_CONNECTION_LIST	//	±æµå ¸ñ·ÏÀÇ ¿Â¶óÀÎ »óÅÂ °»½Å
+struct BC_INFO_GUILD_MEMBER_CONNECTION_LIST	//	ê¸¸ë“œ ëª©ë¡ì˜ ì˜¨ë¼ì¸ ìƒíƒœ ê°±ì‹ 
 {
 	cMSG_BASE_TYPE				base;
-	WORD	wCount;			// Á¢¼ÓÇÑ ±æµå¿ø ¼ö 
-	DWORD	adwHashNameCode[c_iMaxGuildMemberCount];		//	Á¢¼ÓÇÑ ±æµå¿ø ³×ÀÓ..
+	WORD	wCount;			// ì ‘ì†í•œ ê¸¸ë“œì› ìˆ˜ 
+	DWORD	adwHashNameCode[c_iMaxGuildMemberCount];		//	ì ‘ì†í•œ ê¸¸ë“œì› ë„¤ìž„..
 };
 /////////////////////////////////////////////////////////////////
 //	
@@ -266,22 +266,22 @@ struct GB_LOGIN
 {
 	cMSG_BASE_TYPE	base;
 
-	char		strName[dNAME_LENGTH];	//	°ÔÀÓ¼­¹öÀÇ ÀÌ¸§, Áßº¹µÇ¸é ¾ÈµÈ´Ù.
+	char		strName[dNAME_LENGTH];	//	ê²Œìž„ì„œë²„ì˜ ì´ë¦„, ì¤‘ë³µë˜ë©´ ì•ˆëœë‹¤.
 };
 
 struct GB_REG_CLIENT
 {
 	cMSG_BASE_TYPE	base;
 
-	char		strId[dID_LENGTH];		//	ÀÌÇÏ´Â Á¤»óÀ¯ÀúÀÎÁö È®ÀÎÀ» À§ÇØ
+	char		strId[dID_LENGTH];		//	ì´í•˜ëŠ” ì •ìƒìœ ì €ì¸ì§€ í™•ì¸ì„ ìœ„í•´
 	char		strName[dNAME_LENGTH];
 
 	WORD		wLevel;
 	WORD		wGuildSerial;
 	WORD		wGuildRank;
 	WORD		wAvatarIndex;
-	WORD		wOper;					//	¿î¿µÀÚ ·¹º§
-	WORD		wSerial;				//	µ¹·Á¹ÞÀ»¶§ »ç¿ëÇÒ °ÔÀÓ¼­¹ö³»ÀÇ client serial
+	WORD		wOper;					//	ìš´ì˜ìž ë ˆë²¨
+	WORD		wSerial;				//	ëŒë ¤ë°›ì„ë•Œ ì‚¬ìš©í•  ê²Œìž„ì„œë²„ë‚´ì˜ client serial
 	WORD		wCurrentField;
 	WORD		wPartySerial;
 };
@@ -307,7 +307,7 @@ struct	GB_GUILD_CHAT
 
 	WORD				wBCSerial;
 	char				strName[dNAME_LENGTH];
-	char				strMessage[dCHAT_LENGTH];	//	¸Þ½ÃÁö
+	char				strMessage[dCHAT_LENGTH];	//	ë©”ì‹œì§€
 };
 
 struct	GB_GUILD_WORK_BUS
@@ -343,7 +343,7 @@ struct	GB_PARTY_CHAT
 
 	WORD				wBCSerial;
 	char				strName[dNAME_LENGTH];
-	char				strMessage[dCHAT_LENGTH];	//	¸Þ½ÃÁö
+	char				strMessage[dCHAT_LENGTH];	//	ë©”ì‹œì§€
 };
 
 struct GB_UPDATE_INFO
@@ -356,10 +356,10 @@ struct GB_UPDATE_INFO
 	WORD		wLevel;
 	WORD		wGuildSerial;
 	WORD		wGuildRank;
-	WORD		wOper;		//	¿î¿µÀÚ ·¹º§
+	WORD		wOper;		//	ìš´ì˜ìž ë ˆë²¨
 	WORD		wCurrentField;
 	WORD		wPartySerial;
-	WORD		wAvatarIndex;	//	¾Æ¹ÙÅ¸ ÀÎµ¦½º 
+	WORD		wAvatarIndex;	//	ì•„ë°”íƒ€ ì¸ë±ìŠ¤ 
 };
 
 struct GB_ASK_ITEM_INFO
@@ -382,17 +382,17 @@ struct BG_REG_CLIENT_RESULT
 {
 	cMSG_BASE_TYPE	base;
 
-	WORD		wIndex;					//	BCÀÇ ÀÓ½ÃÅ×ÀÌºí¿¡ µÕ·ÏµÈ ÀÎµ¦½º
-										//	0xffff - ¿¡·¯. Á¤»óÀûÀ¸·Î ÀÛ¾÷ÀÌ ºÒ°¡´ÉÇÕ´Ï´Ù. (ÀÎ¿ø¼ö ÃÊ°ú È¤Àº ±âÅ¸ ¹®Á¦)
-										//	0xfffe - ÀÌ¹Ì µî·ÏµÈ À¯ÀúÀÔ´Ï´Ù.
-	WORD		wSerial;				//	°ÔÀÓ¼­¹ö³»ÀÇ client serial
+	WORD		wIndex;					//	BCì˜ ìž„ì‹œí…Œì´ë¸”ì— ë‘¥ë¡ëœ ì¸ë±ìŠ¤
+										//	0xffff - ì—ëŸ¬. ì •ìƒì ìœ¼ë¡œ ìž‘ì—…ì´ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤. (ì¸ì›ìˆ˜ ì´ˆê³¼ í˜¹ì€ ê¸°íƒ€ ë¬¸ì œ)
+										//	0xfffe - ì´ë¯¸ ë“±ë¡ëœ ìœ ì €ìž…ë‹ˆë‹¤.
+	WORD		wSerial;				//	ê²Œìž„ì„œë²„ë‚´ì˜ client serial
 };
 
 struct BG_REG_CLIENT_SERIAL
 {
 	cMSG_BASE_TYPE	base;
 
-	WORD			wRealIndex;				//	BC¿¡ Á¤»óÀûÀ¸·Î µî·ÏµÈ ÀÎµ¦½º 
+	WORD			wRealIndex;				//	BCì— ì •ìƒì ìœ¼ë¡œ ë“±ë¡ëœ ì¸ë±ìŠ¤ 
 	WORD			wSerial;
 };
 
@@ -400,7 +400,7 @@ struct BG_ASK_CLIENT_INFO
 {
 	cMSG_BASE_TYPE	base;
 
-	WORD			wSerial;				//	BC¿¡ Á¤»óÀûÀ¸·Î µî·ÏµÈ ÀÎµ¦½º 
+	WORD			wSerial;				//	BCì— ì •ìƒì ìœ¼ë¡œ ë“±ë¡ëœ ì¸ë±ìŠ¤ 
 };
 
 /////////////////////////////////////////////////////////////////

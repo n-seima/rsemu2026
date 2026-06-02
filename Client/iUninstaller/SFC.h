@@ -1359,7 +1359,7 @@ if (ptr)													\
 
 #endif
 
-inline	GetTextCheckSum(char *_lpstrText)
+inline	int GetTextCheckSum(char *_lpstrText)
 {
 	int	iCheckSum	=	0;
 	int	iStrsize	=	strlen(_lpstrText);

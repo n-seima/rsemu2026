@@ -1,0 +1,140 @@
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23:56: 4
+Exception Handler Activate Time 2026/ 6/ 1 23:56: 6
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0B4610C4 CCCCCCCC:CCCCCCCC лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл ╘о
+лллллллл
+
+Registers:
+EAX:0ACFB428
+EBX:0AB9B000
+ECX:00FB1F08
+EDX:61475F00
+ESI:0127BF20
+EDI:0ACFB670
+CS:EIP:0023:0B4610C4
+SS:ESP:002B:0ACFB418  EBP:0ACFB52C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Call stack:
+Address   Frame
+0B4610C4  0ACFB52C  0000:00000000 
+00CEE73A  0ACFB67C  cGAME::findDataFolder+23A
+00CEF3B7  0ACFD0D4  cGAME::init+467
+00D85CEC  0ACFF90C  mainLoop+7AC
+00D869DA  0ACFFB90  main+48A
+00D97563  0ACFFBB0  invoke_main+33
+00D97467  0ACFFC0C  __scrt_common_main_seh+157
+00D9730D  0ACFFC14  __scrt_common_main+D
+00D975C8  0ACFFC1C  mainCRTStartup+8
+76425D49  0ACFFC2C  BaseThreadInitThunk+19
+7779D83B  0ACFFC84  RtlInitializeExceptionChain+6B
+7779D7C1  0ACFFC94  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23:58:15
+Exception Handler Activate Time 2026/ 6/ 1 23:58:16
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0B7610C4 CCCCCCCC:CCCCCCCC ллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллH╔о
+лллллллл
+
+Registers:
+EAX:0ACFB050
+EBX:0ABFE000
+ECX:00FB1F08
+EDX:61475F00
+ESI:0127BF20
+EDI:0ACFB298
+CS:EIP:0023:0B7610C4
+SS:ESP:002B:0ACFB040  EBP:0ACFB154
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Call stack:
+Address   Frame
+0B7610C4  0ACFB154  0000:00000000 
+00CEE73A  0ACFB2A4  cGAME::findDataFolder+23A
+00CEF3B7  0ACFCCFC  cGAME::init+467
+00D85CEC  0ACFF534  mainLoop+7AC
+00D869DA  0ACFF7B8  main+48A
+00D97563  0ACFF7D8  invoke_main+33
+00D97467  0ACFF834  __scrt_common_main_seh+157
+00D9730D  0ACFF83C  __scrt_common_main+D
+00D975C8  0ACFF844  mainCRTStartup+8
+76425D49  0ACFF854  BaseThreadInitThunk+19
+7779D83B  0ACFF8AC  RtlInitializeExceptionChain+6B
+7779D7C1  0ACFF8BC  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23:58:44
+Exception Handler Activate Time 2026/ 6/ 1 23:58:45
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0B5210C4 CCCCCCCC:CCCCCCCC лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл┬╘с
+лллллллл-
+
+Registers:
+EAX:0AD3B490
+EBX:0AB31000
+ECX:00FB1F08
+EDX:61475F00
+ESI:0127BF20
+EDI:0AD3B6D8
+CS:EIP:0023:0B5210C4
+SS:ESP:002B:0AD3B480  EBP:0AD3B594
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Call stack:
+Address   Frame
+0B5210C4  0AD3B594  0000:00000000 
+00CEE73A  0AD3B6E4  cGAME::findDataFolder+23A
+00CEF3B7  0AD3D13C  cGAME::init+467
+00D85CEC  0AD3F974  mainLoop+7AC
+00D869DA  0AD3FBF8  main+48A
+00D97563  0AD3FC18  invoke_main+33
+00D97467  0AD3FC74  __scrt_common_main_seh+157
+00D9730D  0AD3FC7C  __scrt_common_main+D
+00D975C8  0AD3FC84  mainCRTStartup+8
+76425D49  0AD3FC94  BaseThreadInitThunk+19
+7779D83B  0AD3FCEC  RtlInitializeExceptionChain+6B
+7779D7C1  0AD3FCFC  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2  0: 3:26
+Exception Handler Activate Time 2026/ 6/ 2  0: 3:27
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0B5210C4 CCCCCCCC:CCCCCCCC лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл<╘с
+лллллллл
+
+Registers:
+EAX:0AD3B444
+EBX:0AB13000
+ECX:00FB1F08
+EDX:61475F00
+ESI:0127BF20
+EDI:0AD3B68C
+CS:EIP:0023:0B5210C4
+SS:ESP:002B:0AD3B434  EBP:0AD3B548
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Call stack:
+Address   Frame
+0B5210C4  0AD3B548  0000:00000000 
+00CEE73A  0AD3B698  cGAME::findDataFolder+23A
+00CEF3B7  0AD3D0F0  cGAME::init+467
+00D85CEC  0AD3F928  mainLoop+7AC
+00D869DA  0AD3FBAC  main+48A
+00D97563  0AD3FBCC  invoke_main+33
+00D97467  0AD3FC28  __scrt_common_main_seh+157
+00D9730D  0AD3FC30  __scrt_common_main+D
+00D975C8  0AD3FC38  mainCRTStartup+8
+76425D49  0AD3FC48  BaseThreadInitThunk+19
+7779D83B  0AD3FCA0  RtlInitializeExceptionChain+6B
+7779D7C1  0AD3FCB0  RtlGetAppContainerNamedObjectPath+231
+

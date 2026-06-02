@@ -436,8 +436,16 @@ cGAME_TITLE::OperatePacket()
 			}
 
 			case	dRESULT_LOGIN_SUCCESS_BUT_NOT_USE_OTP	:
-				g_msgBox.cPopup(NULL,dMSG_DO_YOU_WANT_ASK_MOTP_SYSTEM,dMSG_YES,dMSG_NO);	//	OTP 신청 할껴?
-				g_msgBox.setButtonId(dPBM_LOGIN_MOTP_CAMPAIGN_YES,dPBM_LOGIN_MOTP_CAMPAIGN_NO);
+				strcpy(s_strLastID,s_strID);
+				strcpy(s_strLastSelectServerName,s_strSelectServerName);
+
+#ifdef _USE_XTRAP
+				XTrap_C_SetUserInfoEx(s_strLastID,s_strLastSelectServerName," "," ",0,NULL);
+#endif
+
+				BookingMode(eGAME_SELECT_AVATAR,dSTEP_FINISH,dFADE_OUT);
+				s_inputBox.close();
+				cINPDEV::Init(s_hWnd,s_hInst);
 				break;
 
 			case	dRESULT_LOGIN_FAIL_PERSONALCOM	:

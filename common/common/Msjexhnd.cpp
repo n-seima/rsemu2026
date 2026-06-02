@@ -7,7 +7,7 @@
 #ifdef _DEBUG
 #undef THIS_FILE
 static char THIS_FILE[]=__FILE__;
-#define new DEBUG_NEW
+// #define new DEBUG_NEW
 #endif
 #endif
 
@@ -85,7 +85,7 @@ void MSJExceptionHandler::SetLogFileName( PTSTR pszLogFileName )
 LONG WINAPI MSJExceptionHandler::MSJUnhandledExceptionFilter(
                                              PEXCEPTION_POINTERS pExceptionInfo )
 {
-	//	ÀÌ°÷¿¡ ÇÊ¿äÇÑ ³»¿ëÀ» ³Ö¾îÁØ´Ù. ³»°¡ ¿øÇÏ´Â ¹Ú½º¸¦...
+	//	E´E³EEú±Eš”ú±EE´E©EEE£E´E€E¤. E´E€ Eí•˜EEE•ìŠ¤E¼...
     m_hReportFile = CreateFile( m_szLogFileName,
                                 GENERIC_WRITE,
                                 0,
@@ -104,7 +104,7 @@ LONG WINAPI MSJExceptionHandler::MSJUnhandledExceptionFilter(
         m_hReportFile = 0;
     }
 
-	return EXCEPTION_EXECUTE_HANDLER;	//	±ò²ûÇÏ°Ô Á¾·áÇØº¸ÀÚ..
+	return EXCEPTION_EXECUTE_HANDLER;	//	E”ë”ú±˜ê²EEE£Œí•´E´EE.
 /*
     if ( m_previousFilter )
       return m_previousFilter( pExceptionInfo );

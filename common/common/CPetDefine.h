@@ -25,9 +25,9 @@ class	cPetAndBook_common
 {
 public:
 	char	m_strName[dPET_NAME_LENGTH];
-	WORD	m_wBreedingTime;	//	µ¨²Ù ´Ù´Ñ ½Ã°£
-	WORD	m_bf14Loyalty	:	14;	//	Ãæ¼ºµµ
-	WORD	m_bf2TamerSlot	:	2;	//	ÁÖÀÎ ½½·Ô
+	WORD	m_wBreedingTime;	//	ë¸ê¾¸ ë‹¤ë‹Œ ì‹œê°„
+	WORD	m_bf14Loyalty	:	14;	//	ì¶©ì„±ë„
+	WORD	m_bf2TamerSlot	:	2;	//	ì£¼ì¸ ìŠ¬ë¡¯
 };
 
 class	cPetDefine : public cPetAndBook_common
@@ -35,11 +35,11 @@ class	cPetDefine : public cPetAndBook_common
 public:
 	DWORD	m_bf10Level		:	10;
 	DWORD	m_bf22CurrentHP	:	22;
-	WORD	m_bf10Job		:	10;	//	ÇÕÃÄ¼­ 48ºñÆ®(6¹ÙÀÌÆ®)
+	WORD	m_bf10Job		:	10;	//	í•©ì³ì„œ 48ë¹„íŠ¸(6ë°”ì´íŠ¸)
 	WORD	m_bf5BoostCount	:	5;
 	WORD	m_bf1Job		:	1;
 
-	DWORD	m_dwExperience;		//	°æÇèÄ¡
+	DWORD	m_dwExperience;		//	ê²½í—˜ì¹˜
 
 	int		getJobIndex()
 	{
@@ -68,23 +68,23 @@ public:
 class	cBreedingRecordBookExInfo
 {
 public:
-	DWORD	m_bf31Experience:	31;	//	°æÇèÄ¡ 31ºñÆ®
-	DWORD	m_bf1IsNewBRB	:	1;	//	ÀÌ°Ô 0 ÀÌé¸ é¿³¯ Ã¥ÃÀ´Ù.
+	DWORD	m_bf31Experience:	31;	//	ê²½í—˜ì¹˜ 31ë¹„íŠ¸
+	DWORD	m_bf1IsNewBRB	:	1;	//	ì´ê²Œ 0 ì´å‹‡ æ¶Œë‚  ì±…ì³„ë‹¤.
 };
 
 class	cBreedingRecordBookDefine : public cPetAndBook_common
 {
 public:
 	DWORD	m_bf10Level		:	10;
-	DWORD	m_bf11TamerLevel:	11;	//	ÁÖÀÎ ·¹º§
-	DWORD	m_bf4TamerSlot	:	4;	//	ÁÖÀÎ ½½·Ô
-	DWORD	m_bf7Spare		:	7;	//	7ºñÆ® ³²À½
+	DWORD	m_bf11TamerLevel:	11;	//	ì£¼ì¸ ë ˆë²¨
+	DWORD	m_bf4TamerSlot	:	4;	//	ì£¼ì¸ ìŠ¬ë¡¯
+	DWORD	m_bf7Spare		:	7;	//	7ë¹„íŠ¸ ë‚¨ìŒ
 
-	WORD	m_bf10Job		:	10;	//	ÇÕÃÄ¼­ 48ºñÆ®(6¹ÙÀÌÆ®)
+	WORD	m_bf10Job		:	10;	//	í•©ì³ì„œ 48ë¹„íŠ¸(6ë°”ì´íŠ¸)
 	WORD	m_bf5BoostCount	:	5;
 	WORD	m_bf1Job		:	1;
 
-	DWORD	m_dwExperience;		//	°æÇèÄ¡
+	DWORD	m_dwExperience;		//	ê²½í—˜ì¹˜
 
 	unsigned int	buildByPetInfo(cPetDefine *_lpPetInfo,int _iAvatarIndex,int _iLevel);
 	int		getAvatarIndex();
