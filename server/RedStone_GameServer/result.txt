@@ -1,0 +1,7 @@
+
+************* Application Started at [20:06:19] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+ - 마법 효과 로딩 시작
+** Frame skip. start!! engaged fps are 16 **

@@ -5,51 +5,51 @@
 #include "cSRVUTIL.h"
 
 ///////////////////////////////////////////////////////////////////
-//	»ç¿ëÇÏÁö ¾Ê´Â ±â´ÉÀº »èÁ¦ÇÏµµ·Ï ÇÏÀÚ.
+//	ì‚¬ìš©í•˜ì§€ ì•ŠëŠ” ê¸°ëŠ¥ì€ ì‚­ì œí•˜ë„ë¡ í•˜ìž.
 
 #define dPS_SLEEP			Sleep
 #define dPS_HANDLE_THREAD	HANDLE
 
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­class	CWWTime
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒclass	CWWTime
 #include <time.h>
 
 class CWWTime
 {
 public:
-	static int	GetDate();//intÇüÀÇ YYYYMMDD
-	static int	GetTimes();//½Ã°£ + ºÐ + ÃÊ 
-	static int	GetNextDate();//intÇüÀÇ YYYYMMDD
-	static int	GetPrevDate();//intÇüÀÇ YYYYMMDD
-	static int	GetNextDate(int _istandardDate);//intÇüÀÇ YYYYMMDD
-	static int	GetPrevDate(int _istandardDate);//intÇüÀÇ YYYYMMDD
-	static int	GetMin();//intÇüÀÇ MIN
-	static int	GetHour();//intÇüÀÇ HOUR
-	static int	GetYear();//intÇüÀÇ YEAR , + 1900 ÇÊ¿äÇÏ¸é Á÷Á¢ ÇÒ °Í !!
-	static int	GetMonth();//intÇüÀÇ Month
-	static int	GetDay();//	intÇüÀÇ Day
-	static int	GetWeekDay();// 0 ~ 6 : 0 -> ÀÏ¿äÀÏ
+	static int	GetDate();//intí˜•ì˜ YYYYMMDD
+	static int	GetTimes();//ì‹œê°„ + ë¶„ + ì´ˆ 
+	static int	GetNextDate();//intí˜•ì˜ YYYYMMDD
+	static int	GetPrevDate();//intí˜•ì˜ YYYYMMDD
+	static int	GetNextDate(int _istandardDate);//intí˜•ì˜ YYYYMMDD
+	static int	GetPrevDate(int _istandardDate);//intí˜•ì˜ YYYYMMDD
+	static int	GetMin();//intí˜•ì˜ MIN
+	static int	GetHour();//intí˜•ì˜ HOUR
+	static int	GetYear();//intí˜•ì˜ YEAR , + 1900 í•„ìš”í•˜ë©´ ì§ì ‘ í•  ê²ƒ !!
+	static int	GetMonth();//intí˜•ì˜ Month
+	static int	GetDay();//	intí˜•ì˜ Day
+	static int	GetWeekDay();// 0 ~ 6 : 0 -> ì¼ìš”ì¼
 	static int	GetSec();
 //	static void GetMSSQLDBDateNTime(char * _date);//	yyyy-mm-dd hh:mm:ss
 
-	static int	CalcDayOnToday(int _yy,int _mm, int _dd);	//	¿À´Ã°ú ¸çÄ¥ Â÷ÀÌÀÏ±î? ½ÃÀÛÀÏºÎÅÍ ¾îÁ¦±îÁöÀÇ ±â°£
+	static int	CalcDayOnToday(int _yy,int _mm, int _dd);	//	ì˜¤ëŠ˜ê³¼ ë©°ì¹  ì°¨ì´ì¼ê¹Œ? ì‹œìž‘ì¼ë¶€í„° ì–´ì œê¹Œì§€ì˜ ê¸°ê°„
 	static int	CalcMin(int _a,int _b,int _isPlus, int * _Hour, int * _Week);
 	static int	CalcHour(int _a,int _b,int _isPlus, int * _Week);
-	static int	GetWeekDayOfaday(int _yy, int _mm, int _dd);	//	 0 ~ 6 : 0 -> ÀÏ¿äÀÏ
+	static int	GetWeekDayOfaday(int _yy, int _mm, int _dd);	//	 0 ~ 6 : 0 -> ì¼ìš”ì¼
 };
-//¦­class	CWWTime
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒclass	CWWTime
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­class	CWWScript
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒclass	CWWScript
 #include <stdio.h>
 /////////////////////////////////////////
-//	½ºÅ©¸³Æ®ÀÇ ÀÏ¹ÝÀûÀÎ ÇüÅÂ´Â ¾Æ·¡¿Í °°ÀÌ ±¸¼ºµÈ´Ù.
+//	ìŠ¤í¬ë¦½íŠ¸ì˜ ì¼ë°˜ì ì¸ í˜•íƒœëŠ” ì•„ëž˜ì™€ ê°™ì´ êµ¬ì„±ëœë‹¤.
 //  name = data1 | data2 | data3 ...; 
 //  .
 //  .
-//	¿¹¿ÜÀûÀ¸·Î ¾Æ·¡¿Í °°Àº °æ¿ì .. ÀÚ½ÅÀÇ ÀÚ½Ä µ¥ÀÌÅÍ¸¦ ÁöÁ¤ÇÒ ¼ö ÀÖ´Ù. ´Ü, ºÎ¸ð´Â ÀÚ½ÄÀ» ÇÑ¹ø¸¸ °¡Áú ¼ö ÀÖ´Ù.
+//	ì˜ˆì™¸ì ìœ¼ë¡œ ì•„ëž˜ì™€ ê°™ì€ ê²½ìš° .. ìžì‹ ì˜ ìžì‹ ë°ì´í„°ë¥¼ ì§€ì •í•  ìˆ˜ ìžˆë‹¤. ë‹¨, ë¶€ëª¨ëŠ” ìžì‹ì„ í•œë²ˆë§Œ ê°€ì§ˆ ìˆ˜ ìžˆë‹¤.
 //	name_HAVE_CHILD;
 //	{
 //		child name = data1 | data2 | ...;
@@ -57,21 +57,21 @@ public:
 //		.
 //	}
 //
-//	±âº»ÀûÀ¸·Î ¶óÀÎ´ÜÀ§·Î ÀÐ¾î ºÐ¼®ÇÏ´Â ½ºÅ©¸³Æ®ÀÌ´Ù.
-//	±ä ÅØ½ºÆ® µ¥ÀÌÅÍ´Â ""·Î °¨½Î°í, ÇÑ ÀÌ¸§¾Æ·¡(ºÎ¸ðµç, ÀÚ½ÄÀÌµç) ÇÑ°³¸¸ÀÌ Á¸Àç °¡´ÉÇÏ´Ù.
+//	ê¸°ë³¸ì ìœ¼ë¡œ ë¼ì¸ë‹¨ìœ„ë¡œ ì½ì–´ ë¶„ì„í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸ì´ë‹¤.
+//	ê¸´ í…ìŠ¤íŠ¸ ë°ì´í„°ëŠ” ""ë¡œ ê°ì‹¸ê³ , í•œ ì´ë¦„ì•„ëž˜(ë¶€ëª¨ë“ , ìžì‹ì´ë“ ) í•œê°œë§Œì´ ì¡´ìž¬ ê°€ëŠ¥í•˜ë‹¤.
 /////////////////////////////////////////
 
 #define dWWS_MAXNAMESIZE	128
 #define dWWS_MAXDATACOUNT	8
-#define dWWS_MAXDATASIZE	128	//	µ¥ÀÌÅÍÀÇ ±æÀÌ°¡ 128À» ³Ñ¾î¼­´Â ¾ÈµÇÁö¸¸.. ¿¹¿Ü°¡ 7ÀÖ´Ù.
+#define dWWS_MAXDATASIZE	128	//	ë°ì´í„°ì˜ ê¸¸ì´ê°€ 128ì„ ë„˜ì–´ì„œëŠ” ì•ˆë˜ì§€ë§Œ.. ì˜ˆì™¸ê°€ 7ìžˆë‹¤.
 #define dWWS_PARSECHAR		'='
 #define dWWS_DATAPARSECHAR	'|'
 #define dWWS_DATAENDCHAR	';'
 #define dWWS_COMMENTS		"//"
-#define	dWWS_NOTFILE		-1	//	ÆÄÀÏÀ» Ã£À»¼ö°¡ ¾ø´Ù.
-#define dWWS_ENDMESSAGE		"END"//½ºÅ©¸³Æ®ÀÇ ¸¶Áö¸·À» Ç¥±âÇÒ ¶§ »ç¿ëÇÏ³ª, Æ¯º°ÇÑ °æ¿ì°¡ ¾Æ´Ï¶ó¸é Ç¥±âÇÒ ÇÊ¿ä´Â ¾ø´Ù.
+#define	dWWS_NOTFILE		-1	//	íŒŒì¼ì„ ì°¾ì„ìˆ˜ê°€ ì—†ë‹¤.
+#define dWWS_ENDMESSAGE		"END"//ìŠ¤í¬ë¦½íŠ¸ì˜ ë§ˆì§€ë§‰ì„ í‘œê¸°í•  ë•Œ ì‚¬ìš©í•˜ë‚˜, íŠ¹ë³„í•œ ê²½ìš°ê°€ ì•„ë‹ˆë¼ë©´ í‘œê¸°í•  í•„ìš”ëŠ” ì—†ë‹¤.
 #define dWWS_HAVECHILD		"_HAS_CHILD"
-#define dWWS_TSTEXT			"__THIS_IS_TEXT_DATA"	//	m_strBigData¿¡ µ¥ÀÌÅÍ°¡ ÀúÀåµÉ °æ¿ì.
+#define dWWS_TSTEXT			"__THIS_IS_TEXT_DATA"	//	m_strBigDataì— ë°ì´í„°ê°€ ì €ìž¥ë  ê²½ìš°.
 #define dWWW_CHILD_START	'{'
 #define dWWW_CHILD_END		'}'
 
@@ -85,11 +85,11 @@ public:
 	}
 	~cScpData(){ if(m_strBigData) { delete [] m_strBigData; m_strBigData = NULL; } }
 
-	DWORD	m_dwHashCode;//ÀÌ¸§À» hash ÄÚµå·Î °¡Áö°í ÀÖ´Ù. ÀÚ½ÄÀÇ °æ¿ì ºÎ¸ð¿Í ÀÚ½Ä ÀÌ¸§À» ÇÕÄ£ ÈÄ HashCode¸¦ Ã£¾Æ³½´Ù.
-	char	m_strName[dWWS_MAXNAMESIZE];//ÀÚ½ÄÀÌ ¾ø´Â °æ¿ì ÀÌ ÀÌ¸§¸¸ »ç¿ëÇÑ´Ù.
-	char	m_strChildName[dWWS_MAXNAMESIZE];//ÀÚ½ÄÀÏ °æ¿ì, ºÎ¸ðÀÇ ÀÌ¸§°ú ÀÚ½ÅÀÇ ÀÌ¸§À» ´Ù °¡Áö°í ÀÖ´Ù.
-	BYTE	m_bData[dWWS_MAXDATACOUNT][dWWS_MAXDATASIZE];//¼³Á¤ÇÑ µ¥ÀÌÅÍµé
-	char*	m_strBigData;//¿¹¿ÜÀûÀ¸·Î Å« µ¥ÀÌÅÍ.. " " ·Î µÑ·¯½Î¿©Áø µ¥ÀÌÅÍ.
+	DWORD	m_dwHashCode;//ì´ë¦„ì„ hash ì½”ë“œë¡œ ê°€ì§€ê³  ìžˆë‹¤. ìžì‹ì˜ ê²½ìš° ë¶€ëª¨ì™€ ìžì‹ ì´ë¦„ì„ í•©ì¹œ í›„ HashCodeë¥¼ ì°¾ì•„ë‚¸ë‹¤.
+	char	m_strName[dWWS_MAXNAMESIZE];//ìžì‹ì´ ì—†ëŠ” ê²½ìš° ì´ ì´ë¦„ë§Œ ì‚¬ìš©í•œë‹¤.
+	char	m_strChildName[dWWS_MAXNAMESIZE];//ìžì‹ì¼ ê²½ìš°, ë¶€ëª¨ì˜ ì´ë¦„ê³¼ ìžì‹ ì˜ ì´ë¦„ì„ ë‹¤ ê°€ì§€ê³  ìžˆë‹¤.
+	BYTE	m_bData[dWWS_MAXDATACOUNT][dWWS_MAXDATASIZE];//ì„¤ì •í•œ ë°ì´í„°ë“¤
+	char*	m_strBigData;//ì˜ˆì™¸ì ìœ¼ë¡œ í° ë°ì´í„°.. " " ë¡œ ë‘˜ëŸ¬ì‹¸ì—¬ì§„ ë°ì´í„°.
 };
 
 class	CWWScript
@@ -110,7 +110,7 @@ public:
 
 		eMAXSCPDATACOUNT = 512,
 		eMAXFILENAMELENGTH = 1024,
-		eMAXLENGTHOFALINE = 4196,	//	ÇÑÁÙÀÌ 4KÀÌÇÏ¿©¾ß¸¸ ÇÑ´Ù.
+		eMAXLENGTHOFALINE = 4196,	//	í•œì¤„ì´ 4Kì´í•˜ì—¬ì•¼ë§Œ í•œë‹¤.
 	};
 
 	typedef union 
@@ -126,24 +126,24 @@ public:
 	}unWW_DataType;
 
 private:
-	char		m_strFileName[eMAXFILENAMELENGTH];	//	path±îÁö °°ÀÌ Àü´Þ ¹Þ´Â´Ù.
+	char		m_strFileName[eMAXFILENAMELENGTH];	//	pathê¹Œì§€ ê°™ì´ ì „ë‹¬ ë°›ëŠ”ë‹¤.
 
-	int			m_iTotCount;			//	ÀÐ¾îµéÀÎ ÃÑ µ¥ÀÌÅ¸ Á¾·ùÀÇ ¼ö
+	int			m_iTotCount;			//	ì½ì–´ë“¤ì¸ ì´ ë°ì´íƒ€ ì¢…ë¥˜ì˜ ìˆ˜
 	int			m_iScpCount;
 	int			m_iRunning;
-	int			m_isHaveChild;	//	¾î¹ÌÀÇ ÀÌ¸§µÚ¿¡ dWWS_HAVECHILD°¡ ÀÖ³Ä?
-	int			m_isChildData;	//	{¸¦ ¸¸³µ³Ä?
+	int			m_isHaveChild;	//	ì–´ë¯¸ì˜ ì´ë¦„ë’¤ì— dWWS_HAVECHILDê°€ ìžˆëƒ?
+	int			m_isChildData;	//	{ë¥¼ ë§Œë‚¬ëƒ?
 	char		m_strParentName[dWWS_MAXNAMESIZE];
 
-	cScpData*	m_cScp;	//	STLÀ» »ç¿ëÇÏ°í ½ÍÀ¸¸é ÄÚµå¸¦ º¹»çÇØ¼­ º¯°æÇÏ¼¼¿ä. ±âº» ÄÚµå´Â ´Ù¸¥ ÄÚµåµé°úÀÇ ÀÇÁ¸¼ºÀ» ÃÖ¼ÒÇÑÀ¸·Î À¯ÁöÇÏ°Ú½À´Ï´Ù.
-	int			m_iCount;	//	m_cScpÀÇ Ä«¿îÆ®
+	cScpData*	m_cScp;	//	STLì„ ì‚¬ìš©í•˜ê³  ì‹¶ìœ¼ë©´ ì½”ë“œë¥¼ ë³µì‚¬í•´ì„œ ë³€ê²½í•˜ì„¸ìš”. ê¸°ë³¸ ì½”ë“œëŠ” ë‹¤ë¥¸ ì½”ë“œë“¤ê³¼ì˜ ì˜ì¡´ì„±ì„ ìµœì†Œí•œìœ¼ë¡œ ìœ ì§€í•˜ê² ìŠµë‹ˆë‹¤.
+	int			m_iCount;	//	m_cScpì˜ ì¹´ìš´íŠ¸
 
 public:
 	CWWScript();
 	~CWWScript();
 
 	int		Read(char * _strFilename,int _iMaxCount = eMAXSCPDATACOUNT);
-	int		Save(char * _strFilename = NULL);//º¯°æµÈ ³»¿ëÀ» ÀúÀåÇÒ ¼ö ÀÖ´Ù. NULLÀÌ¸é ±âÁ¸ÀÇ ÆÄÀÏÀ» ¹é¾÷ÇÏ°í, ¶È°°Àº ÀÌ¸§À¸·Î »ý¼ºÇÑ´Ù. È¤Àº ÁÖ¾îÁø ÀÌ¸§À¸·Î »ý¼º °¡´ÉÇÏ´Ù.
+	int		Save(char * _strFilename = NULL);//ë³€ê²½ëœ ë‚´ìš©ì„ ì €ìž¥í•  ìˆ˜ ìžˆë‹¤. NULLì´ë©´ ê¸°ì¡´ì˜ íŒŒì¼ì„ ë°±ì—…í•˜ê³ , ë˜‘ê°™ì€ ì´ë¦„ìœ¼ë¡œ ìƒì„±í•œë‹¤. í˜¹ì€ ì£¼ì–´ì§„ ì´ë¦„ìœ¼ë¡œ ìƒì„± ê°€ëŠ¥í•˜ë‹¤.
 
 	int		GetData(int _iType,unWW_DataType * _ret,char * _strName,int count=1,char * _strChildName = NULL);
 	int		SetData(char * _value, char * _strName,int count=1,char * _strChildName = NULL);

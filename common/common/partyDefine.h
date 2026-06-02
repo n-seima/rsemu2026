@@ -7,7 +7,7 @@
 
 #define	dPARTY_MEMBER_COUNT		8
 #define	dPARTY_COUNT			1024
-#define dPARTYNAME_LENGTH		22	//	ÆÄÆ¼ÀÌ¸§ ±æÀÌ
+#define dPARTYNAME_LENGTH		22	//	íŒŒí‹°ì´ë¦„ ê¸¸ì´
 
 
 ///	Party Work Result
@@ -23,7 +23,7 @@
 #define	dPWR_RECONNECT								-10
 #define	dPWR_CAN_NOT_FIND_UNION_PARTY				-11
 
-//	dPW_DUP = Party Work Dissolution Union Party ¿¬ÇÕ ÆÄÆ¼ ÇØÃ¼ÀÇ ÀÌÀ¯...
+//	dPW_DUP = Party Work Dissolution Union Party ì—°í•© íŒŒí‹° í•´ì²´ì˜ ì´ìœ ...
 #define	dPW_DUP_BY_UNKNOWN							0
 #define	dPW_DUP_BY_LEAVE_PARTY_MEMBER				1
 
@@ -36,9 +36,9 @@ const	int	c_iPartyProspectusLength	=	64;
 //	Party Object
 enum
 {
-	ePO_HUNT,	//	»ç³É
-	ePO_EXPLORATION,	//	Å½ÇE	
-	ePO_QUEST,	//	Äù½ºÆ® ÇØ°E
+	ePO_HUNT,	//	ì‚¬ëƒ¥
+	ePO_EXPLORATION,	//	íƒï¿½ÂE	
+	ePO_QUEST,	//	í€˜ìŠ¤íŠ¸ í•´ï¿½ÂE
 };
 
 //
@@ -83,19 +83,19 @@ class	CSimplePartyMemberInfo
 public:
 	char	m_strName[dNAME_LENGTH];
 
-	WORD	m_wCurrentField;	//	ÇöÀE¼Ò¼Ó ÇÊµE	
+	WORD	m_wCurrentField;	//	í˜„ï¿½ÂEì†Œì† í•„ï¿½ÂE	
 	int		m_iZoneSerial;
 	int		m_iDuelVP;
 
 	DWORD	m_bf10InstanceField			:	10;
-	DWORD	m_bf10Level					:	10;	//	·¹º§
+	DWORD	m_bf10Level					:	10;	//	ë ˆë²¨
 	DWORD	m_bf8RemainHP				:	8;
 	DWORD	m_bf4InstanceFieldFloor		:	4;
 
 	DWORD	m_bf3GuildDungeonPlayTime	:	3;	//	31
 	DWORD	m_bf1IsDisconnected			:	1;
-	DWORD	m_bf8Job					:	8;	//	Á÷¾E	
-	DWORD	m_bf1IsMoveField			:	1;	//	ÇÊµEÀÌµ¿ÁßÀÌ´Ù.
+	DWORD	m_bf8Job					:	8;	//	ì§ï¿½ÂE	
+	DWORD	m_bf1IsMoveField			:	1;	//	í•„ï¿½ÂEì´ë™ì¤‘ì´ë‹¤.
 	DWORD	m_bf4SecretDungeonPlayCount	:	4;
 
 };
@@ -103,14 +103,14 @@ public:
 class	CSimpleUnionPartyInfo
 {
 public:
-	WORD					wPartySerialList[dUNION_PARTY_COUNT];		//	ÆÄÆ¼µéÀÇ ½Ã¸®¾E¸®½ºÆ®.
+	WORD					wPartySerialList[dUNION_PARTY_COUNT];		//	íŒŒí‹°ë“¤ì˜ ì‹œë¦¬ï¿½ÂEë¦¬ìŠ¤íŠ¸.
 
 };
 
 class	CSimplePartyInfo
 {
 public:
-	WORD					m_wSerial;					//	ÆÄÆ¼ÀÇ °úÜ¯ ½Ã¸®¾E	
+	WORD					m_wSerial;					//	íŒŒí‹°ì˜ ê³¼é¼ˆ ì‹œë¦¬ï¿½ÂE	
 	DWORD					m_dwUniqueSerial;
 	WORD					m_wGateField;
 
@@ -118,8 +118,8 @@ public:
 	DWORD					m_bf10GateArea			:	10;
 	DWORD					m_bf3GoldShareMethod	:	3;
 	DWORD					m_bf3ItemShareMethod	:	3;
-	DWORD					m_bf3PartyObject		:	3;	//ÆÄÆ¼ ¸ñÀE	
-	DWORD					m_bf1IsOpenParty		:	1;	//¸â¹ö¸¦ °è¼Ó ¸ğÁıÇÑ´Ù.
+	DWORD					m_bf3PartyObject		:	3;	//íŒŒí‹° ëª©ï¿½ÂE	
+	DWORD					m_bf1IsOpenParty		:	1;	//ë©¤ë²„ë¥¼ ê³„ì† ëª¨ì§‘í•œë‹¤.
 
 	char					m_strName[dPARTYNAME_LENGTH];
 
@@ -136,11 +136,11 @@ public:
 class	cPartyInfoForBCS
 {
 public:
-	WORD				m_wSerial;					//	ÆÄÆ¼ÀÇ °úÜ¯ ½Ã¸®¾E
-	WORD				m_bf1IsValidParty	:	1;	//	ÆÄÆ¼ ¸ñÀE	
-	WORD				m_bf3PartyObject	:	3;	//	ÆÄÆ¼ ¸ñÀE	
-	WORD				m_bf1IsOpenParty	:	1;	//	¸â¹ö¸¦ °è¼Ó ¸ğÁıÇÑ´Ù.
-	WORD				m_bf3MemberCount	:	3;	//	ÆÄÆ¼ ¸â¹E¼E
+	WORD				m_wSerial;					//	íŒŒí‹°ì˜ ê³¼é¼ˆ ì‹œë¦¬ï¿½ÂE
+	WORD				m_bf1IsValidParty	:	1;	//	íŒŒí‹° ëª©ï¿½ÂE	
+	WORD				m_bf3PartyObject	:	3;	//	íŒŒí‹° ëª©ï¿½ÂE	
+	WORD				m_bf1IsOpenParty	:	1;	//	ë©¤ë²„ë¥¼ ê³„ì† ëª¨ì§‘í•œë‹¤.
+	WORD				m_bf3MemberCount	:	3;	//	íŒŒí‹° ë©¤ï¿½ÂEï¿½ÂE
 	char				m_strMasterName[dNAME_LENGTH];
 
 	cPartyMemberInfoForBCS	m_aMemberList[dPARTY_MEMBER_COUNT];
@@ -150,15 +150,15 @@ public:
 
 const	int	c_iPartyBufferSizeForPartyList	=	6;
 
-class	cPartyInfoForPL	//	ÆÄÆ¼ ¸®½ºÆ®¸¦ À§ÇÑ ÆÄÆ¼ Á¤º¸
+class	cPartyInfoForPL	//	íŒŒí‹° ë¦¬ìŠ¤íŠ¸ë¥¼ ìœ„í•œ íŒŒí‹° ì •ë³´
 {
 public:
-	WORD	m_wSerial;					//	ÆÄÆ¼ÀÇ °úÜ¯ ½Ã¸®¾E	
-	WORD	m_bf3PartyObject				:	3;	//	ÆÄÆ¼ ¸ñÀE	
-	WORD	m_bf3MemberCount				:	3;	//	ÆÄÆ¼ ¸â¹E¼E	
+	WORD	m_wSerial;					//	íŒŒí‹°ì˜ ê³¼é¼ˆ ì‹œë¦¬ï¿½ÂE	
+	WORD	m_bf3PartyObject				:	3;	//	íŒŒí‹° ëª©ï¿½ÂE	
+	WORD	m_bf3MemberCount				:	3;	//	íŒŒí‹° ë©¤ï¿½ÂEï¿½ÂE	
 	WORD	m_bf10RecruitMemberLevelRange	:	10;
 
-	DWORD	m_dwPreferenceJobMask;		// ¼öÁ¤..
+	DWORD	m_dwPreferenceJobMask;		// ìˆ˜ì •..
 
 	cPartyMemberInfoForBCS	m_aMemberList[dPARTY_MEMBER_COUNT];
 

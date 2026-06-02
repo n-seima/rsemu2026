@@ -1,0 +1,2739 @@
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 19:22:13
+Exception Handler Activate Time 2026/ 6/ 1 19:22:19
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [19:22:13] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00F0093D 01:001AF93D C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:045EB68E
+EBX:00000000
+ECX:00000001
+EDX:00000000
+ESI:00000002
+EDI:00000378
+CS:EIP:0023:00F0093D
+SS:ESP:002B:004FF674  EBP:004FF6D8
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00F0093D  004FF6D8  cWorldMapFieldInfo::getSurfaceField+5D
+00ECDCFE  004FF72C  CWorldMap::getInfoSurfaceFieldIndex+1E
+00EEF1C7  004FF74C  cMAP::setQuestLinkFieldIndex+77
+00E45C36  004FF778  CGamePlay::BuildMinimapFrameInfo+866
+00E46631  004FF8A4  CGamePlay::UpdateMinimap+201
+00E449BB  004FFABC  CGamePlay::UpdateMain+4CB
+00E3735B  004FFAD4  CGamePlay::Run+15B
+00E31E4D  004FFAD8  CGame::Update+2ED
+00EF7C20  004FFB08  WinMain+70
+013ED8AD  004FFB28  invoke_main+2D
+013ED7B7  004FFB84  __scrt_common_main_seh+157
+013ED65D  004FFB8C  __scrt_common_main+D
+013ED918  004FFB94  WinMainCRTStartup+8
+76425D49  004FFBA4  BaseThreadInitThunk+19
+7779D83B  004FFBFC  RtlInitializeExceptionChain+6B
+7779D7C1  004FFC0C  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 19:22:24
+Exception Handler Activate Time 2026/ 6/ 1 19:22:31
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [19:22:24] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+error in cSOCKET::send - The descriptor is not a socket.
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00F0093D 01:001AF93D C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:045EB68E
+EBX:00000000
+ECX:00000001
+EDX:00000000
+ESI:00000002
+EDI:000001B1
+CS:EIP:0023:00F0093D
+SS:ESP:002B:004FE848  EBP:004FE8AC
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00F0093D  004FE8AC  cWorldMapFieldInfo::getSurfaceField+5D
+00F01342  004FE900  cWorldMapFieldInfo::setCurrentField+22
+00EE98EC  004FF958  cMAP::FindQuestLinkField+1BC
+00E45AA3  004FF984  CGamePlay::BuildMinimapFrameInfo+6D3
+00E46631  004FFAB0  CGamePlay::UpdateMinimap+201
+00E449BB  004FFCC8  CGamePlay::UpdateMain+4CB
+00E3735B  004FFCE0  CGamePlay::Run+15B
+00E31E4D  004FFCE4  CGame::Update+2ED
+00EF7C20  004FFD14  WinMain+70
+013ED8AD  004FFD34  invoke_main+2D
+013ED7B7  004FFD90  __scrt_common_main_seh+157
+013ED65D  004FFD98  __scrt_common_main+D
+013ED918  004FFDA0  WinMainCRTStartup+8
+76425D49  004FFDB0  BaseThreadInitThunk+19
+7779D83B  004FFE08  RtlInitializeExceptionChain+6B
+7779D7C1  004FFE18  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 20: 9:11
+Exception Handler Activate Time 2026/ 6/ 1 20: 9:34
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [20:09:11] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005B0D40 01:001AFD40 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:03CBF000
+EBX:00000000
+ECX:00000000
+EDX:0000DBDF
+ESI:0000E982
+EDI:00000103
+CS:EIP:0023:005B0D40
+SS:ESP:002B:03AFEF38  EBP:03AFEF9C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010283
+
+Call stack:
+Address   Frame
+005B0D40  03AFEF9C  cWorldMapFieldInfo::getSurfaceField+70
+005B1896  03AFF7BC  cWorldMapFieldInfo::update+D6
+0057EBAF  03AFF8EC  CWorldMap::update+29F
+004F4C80  03AFFAFC  CGamePlay::UpdateMain+420
+004E76DB  03AFFB14  CGamePlay::Run+15B
+004E1E4D  03AFFB18  CGame::Update+2ED
+005A8010  03AFFB48  WinMain+70
+00A9DC5D  03AFFB68  invoke_main+2D
+00A9DB67  03AFFBC4  __scrt_common_main_seh+157
+00A9DA0D  03AFFBCC  __scrt_common_main+D
+00A9DCC8  03AFFBD4  WinMainCRTStartup+8
+76425D49  03AFFBE4  BaseThreadInitThunk+19
+7779D83B  03AFFC3C  RtlInitializeExceptionChain+6B
+7779D7C1  03AFFC4C  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 20: 9:40
+Exception Handler Activate Time 2026/ 6/ 1 20: 9:47
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [20:09:40] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005B0D2D 01:001AFD2D C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:03C9B68E
+EBX:00000000
+ECX:00000001
+EDX:00000000
+ESI:00000002
+EDI:00000378
+CS:EIP:0023:005B0D2D
+SS:ESP:002B:037BF65C  EBP:037BF6C0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+005B0D2D  037BF6C0  cWorldMapFieldInfo::getSurfaceField+5D
+0057E08E  037BF714  CWorldMap::getInfoSurfaceFieldIndex+1E
+0059F5B7  037BF734  cMAP::setQuestLinkFieldIndex+77
+004F5FA6  037BF760  CGamePlay::BuildMinimapFrameInfo+866
+004F69A1  037BF88C  CGamePlay::UpdateMinimap+201
+004F4D2B  037BFAA4  CGamePlay::UpdateMain+4CB
+004E76DB  037BFABC  CGamePlay::Run+15B
+004E1E4D  037BFAC0  CGame::Update+2ED
+005A8010  037BFAF0  WinMain+70
+00A9DC5D  037BFB10  invoke_main+2D
+00A9DB67  037BFB6C  __scrt_common_main_seh+157
+00A9DA0D  037BFB74  __scrt_common_main+D
+00A9DCC8  037BFB7C  WinMainCRTStartup+8
+76425D49  037BFB8C  BaseThreadInitThunk+19
+7779D83B  037BFBE4  RtlInitializeExceptionChain+6B
+7779D7C1  037BFBF4  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 21:46:38
+Exception Handler Activate Time 2026/ 6/ 1 21:47: 0
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [21:46:38] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005D106D 01:001B006D C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:03B3B696
+EBX:00000000
+ECX:00000001
+EDX:00000000
+ESI:00000002
+EDI:00000378
+CS:EIP:0023:005D106D
+SS:ESP:002B:038FF514  EBP:038FF578
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+005D106D  038FF578  cWorldMapFieldInfo::getSurfaceField+5D
+0059E3EE  038FF5CC  CWorldMap::getInfoSurfaceFieldIndex+1E
+005BF8F7  038FF5EC  cMAP::setQuestLinkFieldIndex+77
+00516316  038FF618  CGamePlay::BuildMinimapFrameInfo+866
+00516D11  038FF744  CGamePlay::UpdateMinimap+201
+0051509B  038FF95C  CGamePlay::UpdateMain+4CB
+005079AB  038FF974  CGamePlay::Run+15B
+00501E4D  038FF978  CGame::Update+2ED
+005C8360  038FF9A8  WinMain+70
+00ABDF1D  038FF9C8  invoke_main+2D
+00ABDE27  038FFA24  __scrt_common_main_seh+157
+00ABDCCD  038FFA2C  __scrt_common_main+D
+00ABDF88  038FFA34  WinMainCRTStartup+8
+76425D49  038FFA44  BaseThreadInitThunk+19
+7779D83B  038FFA9C  RtlInitializeExceptionChain+6B
+7779D7C1  038FFAAC  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 21:47: 4
+Exception Handler Activate Time 2026/ 6/ 1 23: 3:15
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [21:47:04] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+CAgent::isDisconnected m_isEventDisconnect
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  00ABDAC4 01:0069CAC4 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000005
+ECX:00000000
+EDX:00000000
+ESI:00CCD278
+EDI:00000000
+CS:EIP:0023:00ABDAC4
+SS:ESP:002B:038FF4DC  EBP:038FF5B4
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00ABDAC4  038FF4E0  _aulldiv+14
+00503611  038FF5B4  CGamePlay::DrawBottomInterface+15E1
+0050E2B4  038FF5E8  CGamePlay::DrawNormalGameScreen+3C4
+0050DD09  038FF600  CGamePlay::DrawMain+79
+0050718A  038FF604  CGamePlay::Draw+2A
+005013A4  038FF860  CGame::Draw+A4
+005C8360  038FF890  WinMain+70
+00ABDF1D  038FF8B0  invoke_main+2D
+00ABDE27  038FF90C  __scrt_common_main_seh+157
+00ABDCCD  038FF914  __scrt_common_main+D
+00ABDF88  038FF91C  WinMainCRTStartup+8
+76425D49  038FF92C  BaseThreadInitThunk+19
+7779D83B  038FF984  RtlInitializeExceptionChain+6B
+7779D7C1  038FF994  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23: 3:52
+Exception Handler Activate Time 2026/ 6/ 1 23: 4: 2
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [23:03:52] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  00ABDAC4 01:0069CAC4 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000005
+ECX:00000000
+EDX:00000000
+ESI:00CCD278
+EDI:00000000
+CS:EIP:0023:00ABDAC4
+SS:ESP:002B:0369F7F8  EBP:0369F8D0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00ABDAC4  0369F7FC  _aulldiv+14
+00503611  0369F8D0  CGamePlay::DrawBottomInterface+15E1
+0050E2B4  0369F904  CGamePlay::DrawNormalGameScreen+3C4
+0050DD09  0369F91C  CGamePlay::DrawMain+79
+0050718A  0369F920  CGamePlay::Draw+2A
+005013A4  0369FB7C  CGame::Draw+A4
+005C8360  0369FBAC  WinMain+70
+00ABDF1D  0369FBCC  invoke_main+2D
+00ABDE27  0369FC28  __scrt_common_main_seh+157
+00ABDCCD  0369FC30  __scrt_common_main+D
+00ABDF88  0369FC38  WinMainCRTStartup+8
+76425D49  0369FC48  BaseThreadInitThunk+19
+7779D83B  0369FCA0  RtlInitializeExceptionChain+6B
+7779D7C1  0369FCB0  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23: 4: 8
+Exception Handler Activate Time 2026/ 6/ 1 23: 4:14
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [23:04:08] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  00ABDAC4 01:0069CAC4 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000005
+ECX:00000000
+EDX:00000000
+ESI:00CCD278
+EDI:00000000
+CS:EIP:0023:00ABDAC4
+SS:ESP:002B:038FF5B4  EBP:038FF68C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00ABDAC4  038FF5B8  _aulldiv+14
+00503611  038FF68C  CGamePlay::DrawBottomInterface+15E1
+0050E2B4  038FF6C0  CGamePlay::DrawNormalGameScreen+3C4
+0050DD09  038FF6D8  CGamePlay::DrawMain+79
+0050718A  038FF6DC  CGamePlay::Draw+2A
+005013A4  038FF938  CGame::Draw+A4
+005C8360  038FF968  WinMain+70
+00ABDF1D  038FF988  invoke_main+2D
+00ABDE27  038FF9E4  __scrt_common_main_seh+157
+00ABDCCD  038FF9EC  __scrt_common_main+D
+00ABDF88  038FF9F4  WinMainCRTStartup+8
+76425D49  038FFA04  BaseThreadInitThunk+19
+7779D83B  038FFA5C  RtlInitializeExceptionChain+6B
+7779D7C1  038FFA6C  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23: 4:20
+Exception Handler Activate Time 2026/ 6/ 1 23: 4:26
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [23:04:20] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  00ABDAC4 01:0069CAC4 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000005
+ECX:00000000
+EDX:00000000
+ESI:00CCD278
+EDI:00000000
+CS:EIP:0023:00ABDAC4
+SS:ESP:002B:038FF460  EBP:038FF538
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00ABDAC4  038FF464  _aulldiv+14
+00503611  038FF538  CGamePlay::DrawBottomInterface+15E1
+0050E2B4  038FF56C  CGamePlay::DrawNormalGameScreen+3C4
+0050DD09  038FF584  CGamePlay::DrawMain+79
+0050718A  038FF588  CGamePlay::Draw+2A
+005013A4  038FF7E4  CGame::Draw+A4
+005C8360  038FF814  WinMain+70
+00ABDF1D  038FF834  invoke_main+2D
+00ABDE27  038FF890  __scrt_common_main_seh+157
+00ABDCCD  038FF898  __scrt_common_main+D
+00ABDF88  038FF8A0  WinMainCRTStartup+8
+76425D49  038FF8B0  BaseThreadInitThunk+19
+7779D83B  038FF908  RtlInitializeExceptionChain+6B
+7779D7C1  038FF918  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23: 4:36
+Exception Handler Activate Time 2026/ 6/ 1 23: 4:42
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [23:04:36] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  00ABDAC4 01:0069CAC4 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000005
+ECX:00000000
+EDX:00000000
+ESI:00CCD278
+EDI:00000000
+CS:EIP:0023:00ABDAC4
+SS:ESP:002B:003BF664  EBP:003BF73C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00ABDAC4  003BF668  _aulldiv+14
+00503611  003BF73C  CGamePlay::DrawBottomInterface+15E1
+0050E2B4  003BF770  CGamePlay::DrawNormalGameScreen+3C4
+0050DD09  003BF788  CGamePlay::DrawMain+79
+0050718A  003BF78C  CGamePlay::Draw+2A
+005013A4  003BF9E8  CGame::Draw+A4
+005C8360  003BFA18  WinMain+70
+00ABDF1D  003BFA38  invoke_main+2D
+00ABDE27  003BFA94  __scrt_common_main_seh+157
+00ABDCCD  003BFA9C  __scrt_common_main+D
+00ABDF88  003BFAA4  WinMainCRTStartup+8
+76425D49  003BFAB4  BaseThreadInitThunk+19
+7779D83B  003BFB0C  RtlInitializeExceptionChain+6B
+7779D7C1  003BFB1C  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23: 5:11
+Exception Handler Activate Time 2026/ 6/ 1 23: 5:16
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [23:05:11] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  00ABDAC4 01:0069CAC4 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000005
+ECX:00000000
+EDX:00000000
+ESI:00CCD278
+EDI:00000000
+CS:EIP:0023:00ABDAC4
+SS:ESP:002B:038FF604  EBP:038FF6DC
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00ABDAC4  038FF608  _aulldiv+14
+00503611  038FF6DC  CGamePlay::DrawBottomInterface+15E1
+0050E2B4  038FF710  CGamePlay::DrawNormalGameScreen+3C4
+0050DD09  038FF728  CGamePlay::DrawMain+79
+0050718A  038FF72C  CGamePlay::Draw+2A
+005013A4  038FF988  CGame::Draw+A4
+005C8360  038FF9B8  WinMain+70
+00ABDF1D  038FF9D8  invoke_main+2D
+00ABDE27  038FFA34  __scrt_common_main_seh+157
+00ABDCCD  038FFA3C  __scrt_common_main+D
+00ABDF88  038FFA44  WinMainCRTStartup+8
+76425D49  038FFA54  BaseThreadInitThunk+19
+7779D83B  038FFAAC  RtlInitializeExceptionChain+6B
+7779D7C1  038FFABC  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23: 5:32
+Exception Handler Activate Time 2026/ 6/ 1 23: 5:38
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [23:05:32] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  00ABDAC4 01:0069CAC4 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000005
+ECX:00000000
+EDX:00000000
+ESI:00CCD278
+EDI:00000000
+CS:EIP:0023:00ABDAC4
+SS:ESP:002B:038FF628  EBP:038FF700
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00ABDAC4  038FF62C  _aulldiv+14
+00503611  038FF700  CGamePlay::DrawBottomInterface+15E1
+0050E2B4  038FF734  CGamePlay::DrawNormalGameScreen+3C4
+0050DD09  038FF74C  CGamePlay::DrawMain+79
+0050718A  038FF750  CGamePlay::Draw+2A
+005013A4  038FF9AC  CGame::Draw+A4
+005C8360  038FF9DC  WinMain+70
+00ABDF1D  038FF9FC  invoke_main+2D
+00ABDE27  038FFA58  __scrt_common_main_seh+157
+00ABDCCD  038FFA60  __scrt_common_main+D
+00ABDF88  038FFA68  WinMainCRTStartup+8
+76425D49  038FFA78  BaseThreadInitThunk+19
+7779D83B  038FFAD0  RtlInitializeExceptionChain+6B
+7779D7C1  038FFAE0  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23: 6:57
+Exception Handler Activate Time 2026/ 6/ 1 23: 7: 3
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [23:06:57] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  00ABDAC4 01:0069CAC4 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000005
+ECX:00000000
+EDX:00000000
+ESI:00CCD278
+EDI:00000000
+CS:EIP:0023:00ABDAC4
+SS:ESP:002B:038FF4C8  EBP:038FF5A0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00ABDAC4  038FF4CC  _aulldiv+14
+00503611  038FF5A0  CGamePlay::DrawBottomInterface+15E1
+0050E2B4  038FF5D4  CGamePlay::DrawNormalGameScreen+3C4
+0050DD09  038FF5EC  CGamePlay::DrawMain+79
+0050718A  038FF5F0  CGamePlay::Draw+2A
+005013A4  038FF84C  CGame::Draw+A4
+005C8360  038FF87C  WinMain+70
+00ABDF1D  038FF89C  invoke_main+2D
+00ABDE27  038FF8F8  __scrt_common_main_seh+157
+00ABDCCD  038FF900  __scrt_common_main+D
+00ABDF88  038FF908  WinMainCRTStartup+8
+76425D49  038FF918  BaseThreadInitThunk+19
+7779D83B  038FF970  RtlInitializeExceptionChain+6B
+7779D7C1  038FF980  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23: 9:57
+Exception Handler Activate Time 2026/ 6/ 1 23:10: 2
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [23:09:57] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  00ABDAC4 01:0069CAC4 C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000005
+ECX:00000000
+EDX:00000000
+ESI:00CCD278
+EDI:00000000
+CS:EIP:0023:00ABDAC4
+SS:ESP:002B:0365F36C  EBP:0365F444
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00ABDAC4  0365F370  _aulldiv+14
+00503611  0365F444  CGamePlay::DrawBottomInterface+15E1
+0050E2B4  0365F478  CGamePlay::DrawNormalGameScreen+3C4
+0050DD09  0365F490  CGamePlay::DrawMain+79
+0050718A  0365F494  CGamePlay::Draw+2A
+005013A4  0365F6F0  CGame::Draw+A4
+005C8360  0365F720  WinMain+70
+00ABDF1D  0365F740  invoke_main+2D
+00ABDE27  0365F79C  __scrt_common_main_seh+157
+00ABDCCD  0365F7A4  __scrt_common_main+D
+00ABDF88  0365F7AC  WinMainCRTStartup+8
+76425D49  0365F7BC  BaseThreadInitThunk+19
+7779D83B  0365F814  RtlInitializeExceptionChain+6B
+7779D7C1  0365F824  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23:16:51
+Exception Handler Activate Time 2026/ 6/ 1 23:17:20
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [23:16:51] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+error in cSOCKET::send - The descriptor is not a socket.
+error in cSOCKET::send - The descriptor is not a socket.
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005D106D 01:001B006D C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:03B3B696
+EBX:00000000
+ECX:00000001
+EDX:00000000
+ESI:00000002
+EDI:000001B1
+CS:EIP:0023:005D106D
+SS:ESP:002B:038FE460  EBP:038FE4C4
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+005D106D  038FE4C4  cWorldMapFieldInfo::getSurfaceField+5D
+005D1B02  038FE518  cWorldMapFieldInfo::setCurrentField+22
+005BA01C  038FF570  cMAP::FindQuestLinkField+1BC
+004D7464  038FF5A8  CAgent::packetHandler+2F4
+00514E46  038FF7B8  CGamePlay::UpdateMain+276
+005079AB  038FF7D0  CGamePlay::Run+15B
+00501E4D  038FF7D4  CGame::Update+2ED
+005C8360  038FF804  WinMain+70
+00ABDF1D  038FF824  invoke_main+2D
+00ABDE27  038FF880  __scrt_common_main_seh+157
+00ABDCCD  038FF888  __scrt_common_main+D
+00ABDF88  038FF890  WinMainCRTStartup+8
+76425D49  038FF8A0  BaseThreadInitThunk+19
+7779D83B  038FF8F8  RtlInitializeExceptionChain+6B
+7779D7C1  038FF908  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 1 23:43:22
+Exception Handler Activate Time 2026/ 6/ 2  0:21:37
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [23:43:22] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+CAgent::isDisconnected m_isEventDisconnect
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  00B2D73B 01:0069C73B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:0248F9D8
+EDI:00000000
+CS:EIP:0023:00B2D73B
+SS:ESP:002B:0396F428  EBP:0396F460
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00B2D73B  0396F430  _alldiv+4B
+005A33D2  0396F460  CHero::getSkillPointSumByLevel+A2
+005755CA  0396F7F4  CGamePlay::OperateBottomInterfaceTooltip+132A
+00575950  0396F800  CGamePlay::UpdateBottomInterface+240
+00584E80  0396FA10  CGamePlay::UpdateMain+330
+0057798B  0396FA28  CGamePlay::Run+15B
+00571E4D  0396FA2C  CGame::Update+2ED
+00638360  0396FA5C  WinMain+70
+00B2E37D  0396FA7C  invoke_main+2D
+00B2E287  0396FAD8  __scrt_common_main_seh+157
+00B2E12D  0396FAE0  __scrt_common_main+D
+00B2E3E8  0396FAE8  WinMainCRTStartup+8
+76425D49  0396FAF8  BaseThreadInitThunk+19
+7779D83B  0396FB50  RtlInitializeExceptionChain+6B
+7779D7C1  0396FB60  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 11:35: 7
+Exception Handler Activate Time 2026/ 6/ 2 11:52:26
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [11:35:07] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+CAgent::isDisconnected m_isEventDisconnect
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  00F3D73B 01:0069C73B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:0289F9D8
+EDI:00000000
+CS:EIP:0023:00F3D73B
+SS:ESP:002B:03D7F788  EBP:03D7F7C0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+00F3D73B  03D7F790  _alldiv+4B
+009B34A2  03D7F7C0  CHero::getSkillPointSumByLevel+A2
+0098561A  03D7FB54  CGamePlay::OperateBottomInterfaceTooltip+132A
+009859A0  03D7FB60  CGamePlay::UpdateBottomInterface+240
+00994F30  03D7FD70  CGamePlay::UpdateMain+330
+009879FB  03D7FD88  CGamePlay::Run+15B
+00981EAD  03D7FD8C  CGame::Update+2ED
+00A484F0  03D7FDBC  WinMain+70
+00F3E37D  03D7FDDC  invoke_main+2D
+00F3E287  03D7FE38  __scrt_common_main_seh+157
+00F3E12D  03D7FE40  __scrt_common_main+D
+00F3E3E8  03D7FE48  WinMainCRTStartup+8
+76425D49  03D7FE58  BaseThreadInitThunk+19
+7779D83B  03D7FEB0  RtlInitializeExceptionChain+6B
+7779D7C1  03D7FEC0  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 12:27:39
+Exception Handler Activate Time 2026/ 6/ 2 12:47:58
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [12:27:39] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:005DF6B8  EBP:005DF6F0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  005DF6C0  _alldiv+4B
+010034A2  005DF6F0  CHero::getSkillPointSumByLevel+A2
+00FD567A  005DFA84  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  005DFA90  CGamePlay::UpdateBottomInterface+240
+00FE4F30  005DFCA0  CGamePlay::UpdateMain+330
+00FD7A3B  005DFCB8  CGamePlay::Run+15B
+00FD1F0D  005DFCBC  CGame::Update+2ED
+01098530  005DFCEC  WinMain+70
+0158E49D  005DFD0C  invoke_main+2D
+0158E3A7  005DFD68  __scrt_common_main_seh+157
+0158E24D  005DFD70  __scrt_common_main+D
+0158E508  005DFD78  WinMainCRTStartup+8
+76425D49  005DFD88  BaseThreadInitThunk+19
+7779D83B  005DFDE0  RtlInitializeExceptionChain+6B
+7779D7C1  005DFDF0  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 12:48: 5
+Exception Handler Activate Time 2026/ 6/ 2 12:52:12
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [12:48:05] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:008FF650  EBP:008FF688
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  008FF658  _alldiv+4B
+010034A2  008FF688  CHero::getSkillPointSumByLevel+A2
+00FD567A  008FFA1C  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  008FFA28  CGamePlay::UpdateBottomInterface+240
+00FE4F30  008FFC38  CGamePlay::UpdateMain+330
+00FD7A3B  008FFC50  CGamePlay::Run+15B
+00FD1F0D  008FFC54  CGame::Update+2ED
+01098530  008FFC84  WinMain+70
+0158E49D  008FFCA4  invoke_main+2D
+0158E3A7  008FFD00  __scrt_common_main_seh+157
+0158E24D  008FFD08  __scrt_common_main+D
+0158E508  008FFD10  WinMainCRTStartup+8
+76425D49  008FFD20  BaseThreadInitThunk+19
+7779D83B  008FFD78  RtlInitializeExceptionChain+6B
+7779D7C1  008FFD88  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 12:52:18
+Exception Handler Activate Time 2026/ 6/ 2 12:55:24
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [12:52:18] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:00E6F0F8  EBP:00E6F130
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  00E6F100  _alldiv+4B
+010034A2  00E6F130  CHero::getSkillPointSumByLevel+A2
+00FD567A  00E6F4C4  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  00E6F4D0  CGamePlay::UpdateBottomInterface+240
+00FE4F30  00E6F6E0  CGamePlay::UpdateMain+330
+00FD7A3B  00E6F6F8  CGamePlay::Run+15B
+00FD1F0D  00E6F6FC  CGame::Update+2ED
+01098530  00E6F72C  WinMain+70
+0158E49D  00E6F74C  invoke_main+2D
+0158E3A7  00E6F7A8  __scrt_common_main_seh+157
+0158E24D  00E6F7B0  __scrt_common_main+D
+0158E508  00E6F7B8  WinMainCRTStartup+8
+76425D49  00E6F7C8  BaseThreadInitThunk+19
+7779D83B  00E6F820  RtlInitializeExceptionChain+6B
+7779D7C1  00E6F830  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 12:55:30
+Exception Handler Activate Time 2026/ 6/ 2 12:56: 9
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [12:55:30] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:00D3F750  EBP:00D3F788
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  00D3F758  _alldiv+4B
+010034A2  00D3F788  CHero::getSkillPointSumByLevel+A2
+00FD567A  00D3FB1C  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  00D3FB28  CGamePlay::UpdateBottomInterface+240
+00FE4F30  00D3FD38  CGamePlay::UpdateMain+330
+00FD7A3B  00D3FD50  CGamePlay::Run+15B
+00FD1F0D  00D3FD54  CGame::Update+2ED
+01098530  00D3FD84  WinMain+70
+0158E49D  00D3FDA4  invoke_main+2D
+0158E3A7  00D3FE00  __scrt_common_main_seh+157
+0158E24D  00D3FE08  __scrt_common_main+D
+0158E508  00D3FE10  WinMainCRTStartup+8
+76425D49  00D3FE20  BaseThreadInitThunk+19
+7779D83B  00D3FE78  RtlInitializeExceptionChain+6B
+7779D7C1  00D3FE88  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 12:56:15
+Exception Handler Activate Time 2026/ 6/ 2 12:56:40
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [12:56:15] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:003CF544  EBP:003CF57C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  003CF54C  _alldiv+4B
+010034A2  003CF57C  CHero::getSkillPointSumByLevel+A2
+00FD567A  003CF910  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  003CF91C  CGamePlay::UpdateBottomInterface+240
+00FE4F30  003CFB2C  CGamePlay::UpdateMain+330
+00FD7A3B  003CFB44  CGamePlay::Run+15B
+00FD1F0D  003CFB48  CGame::Update+2ED
+01098530  003CFB78  WinMain+70
+0158E49D  003CFB98  invoke_main+2D
+0158E3A7  003CFBF4  __scrt_common_main_seh+157
+0158E24D  003CFBFC  __scrt_common_main+D
+0158E508  003CFC04  WinMainCRTStartup+8
+76425D49  003CFC14  BaseThreadInitThunk+19
+7779D83B  003CFC6C  RtlInitializeExceptionChain+6B
+7779D7C1  003CFC7C  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 12:56:46
+Exception Handler Activate Time 2026/ 6/ 2 12:57:28
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [12:56:46] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0106CBCB 01:0017BBCB C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:006DFF92
+EBX:00000000
+ECX:0000FFFF
+EDX:0000FFFF
+ESI:0460C482
+EDI:03F2D08E
+CS:EIP:0023:0106CBCB
+SS:ESP:002B:001BF73C  EBP:001BF7E0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Call stack:
+Address   Frame
+0106CBCB  001BF7E0  CWorldMap::UpdateTotalInfo+14B
+0106F11A  001BF900  CWorldMap::update+2BA
+00FE5020  001BFB10  CGamePlay::UpdateMain+420
+00FD7A3B  001BFB28  CGamePlay::Run+15B
+00FD1F0D  001BFB2C  CGame::Update+2ED
+01098530  001BFB5C  WinMain+70
+0158E49D  001BFB7C  invoke_main+2D
+0158E3A7  001BFBD8  __scrt_common_main_seh+157
+0158E24D  001BFBE0  __scrt_common_main+D
+0158E508  001BFBE8  WinMainCRTStartup+8
+76425D49  001BFBF8  BaseThreadInitThunk+19
+7779D83B  001BFC50  RtlInitializeExceptionChain+6B
+7779D7C1  001BFC60  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 12:57:37
+Exception Handler Activate Time 2026/ 6/ 2 12:58: 9
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [12:57:37] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:0096F398  EBP:0096F3D0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  0096F3A0  _alldiv+4B
+010034A2  0096F3D0  CHero::getSkillPointSumByLevel+A2
+00FD567A  0096F764  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  0096F770  CGamePlay::UpdateBottomInterface+240
+00FE4F30  0096F980  CGamePlay::UpdateMain+330
+00FD7A3B  0096F998  CGamePlay::Run+15B
+00FD1F0D  0096F99C  CGame::Update+2ED
+01098530  0096F9CC  WinMain+70
+0158E49D  0096F9EC  invoke_main+2D
+0158E3A7  0096FA48  __scrt_common_main_seh+157
+0158E24D  0096FA50  __scrt_common_main+D
+0158E508  0096FA58  WinMainCRTStartup+8
+76425D49  0096FA68  BaseThreadInitThunk+19
+7779D83B  0096FAC0  RtlInitializeExceptionChain+6B
+7779D7C1  0096FAD0  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 12:58:15
+Exception Handler Activate Time 2026/ 6/ 2 13: 8: 2
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [12:58:15] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:007BF340  EBP:007BF378
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  007BF348  _alldiv+4B
+010034A2  007BF378  CHero::getSkillPointSumByLevel+A2
+00FD567A  007BF70C  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  007BF718  CGamePlay::UpdateBottomInterface+240
+00FE4F30  007BF928  CGamePlay::UpdateMain+330
+00FD7A3B  007BF940  CGamePlay::Run+15B
+00FD1F0D  007BF944  CGame::Update+2ED
+01098530  007BF974  WinMain+70
+0158E49D  007BF994  invoke_main+2D
+0158E3A7  007BF9F0  __scrt_common_main_seh+157
+0158E24D  007BF9F8  __scrt_common_main+D
+0158E508  007BFA00  WinMainCRTStartup+8
+76425D49  007BFA10  BaseThreadInitThunk+19
+7779D83B  007BFA68  RtlInitializeExceptionChain+6B
+7779D7C1  007BFA78  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 13: 8:11
+Exception Handler Activate Time 2026/ 6/ 2 13:15:32
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [13:08:11] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:008FF3EC  EBP:008FF424
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  008FF3F4  _alldiv+4B
+010034A2  008FF424  CHero::getSkillPointSumByLevel+A2
+00FD567A  008FF7B8  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  008FF7C4  CGamePlay::UpdateBottomInterface+240
+00FE4F30  008FF9D4  CGamePlay::UpdateMain+330
+00FD7A3B  008FF9EC  CGamePlay::Run+15B
+00FD1F0D  008FF9F0  CGame::Update+2ED
+01098530  008FFA20  WinMain+70
+0158E49D  008FFA40  invoke_main+2D
+0158E3A7  008FFA9C  __scrt_common_main_seh+157
+0158E24D  008FFAA4  __scrt_common_main+D
+0158E508  008FFAAC  WinMainCRTStartup+8
+76425D49  008FFABC  BaseThreadInitThunk+19
+7779D83B  008FFB14  RtlInitializeExceptionChain+6B
+7779D7C1  008FFB24  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 13:15:38
+Exception Handler Activate Time 2026/ 6/ 2 13:16:18
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [13:15:38] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:00D3F8A4  EBP:00D3F8DC
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  00D3F8AC  _alldiv+4B
+010034A2  00D3F8DC  CHero::getSkillPointSumByLevel+A2
+00FD567A  00D3FC70  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  00D3FC7C  CGamePlay::UpdateBottomInterface+240
+00FE4F30  00D3FE8C  CGamePlay::UpdateMain+330
+00FD7A3B  00D3FEA4  CGamePlay::Run+15B
+00FD1F0D  00D3FEA8  CGame::Update+2ED
+01098530  00D3FED8  WinMain+70
+0158E49D  00D3FEF8  invoke_main+2D
+0158E3A7  00D3FF54  __scrt_common_main_seh+157
+0158E24D  00D3FF5C  __scrt_common_main+D
+0158E508  00D3FF64  WinMainCRTStartup+8
+76425D49  00D3FF74  BaseThreadInitThunk+19
+7779D83B  00D3FFCC  RtlInitializeExceptionChain+6B
+7779D7C1  00D3FFDC  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 13:16:36
+Exception Handler Activate Time 2026/ 6/ 2 13:28:47
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [13:16:36] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:0098F5C0  EBP:0098F5F8
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  0098F5C8  _alldiv+4B
+010034A2  0098F5F8  CHero::getSkillPointSumByLevel+A2
+00FD567A  0098F98C  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  0098F998  CGamePlay::UpdateBottomInterface+240
+00FE4F30  0098FBA8  CGamePlay::UpdateMain+330
+00FD7A3B  0098FBC0  CGamePlay::Run+15B
+00FD1F0D  0098FBC4  CGame::Update+2ED
+01098530  0098FBF4  WinMain+70
+0158E49D  0098FC14  invoke_main+2D
+0158E3A7  0098FC70  __scrt_common_main_seh+157
+0158E24D  0098FC78  __scrt_common_main+D
+0158E508  0098FC80  WinMainCRTStartup+8
+76425D49  0098FC90  BaseThreadInitThunk+19
+7779D83B  0098FCE8  RtlInitializeExceptionChain+6B
+7779D7C1  0098FCF8  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 13:28:54
+Exception Handler Activate Time 2026/ 6/ 2 13:30:29
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [13:28:54] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:0419F39C  EBP:0419F3D4
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  0419F3A4  _alldiv+4B
+010034A2  0419F3D4  CHero::getSkillPointSumByLevel+A2
+00FD567A  0419F768  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  0419F774  CGamePlay::UpdateBottomInterface+240
+00FE4F30  0419F984  CGamePlay::UpdateMain+330
+00FD7A3B  0419F99C  CGamePlay::Run+15B
+00FD1F0D  0419F9A0  CGame::Update+2ED
+01098530  0419F9D0  WinMain+70
+0158E49D  0419F9F0  invoke_main+2D
+0158E3A7  0419FA4C  __scrt_common_main_seh+157
+0158E24D  0419FA54  __scrt_common_main+D
+0158E508  0419FA5C  WinMainCRTStartup+8
+76425D49  0419FA6C  BaseThreadInitThunk+19
+7779D83B  0419FAC4  RtlInitializeExceptionChain+6B
+7779D7C1  0419FAD4  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 13:30:35
+Exception Handler Activate Time 2026/ 6/ 2 13:35:48
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [13:30:35] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0158D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02EEF9D8
+EDI:00000000
+CS:EIP:0023:0158D85B
+SS:ESP:002B:041CF3FC  EBP:041CF434
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0158D85B  041CF404  _alldiv+4B
+010034A2  041CF434  CHero::getSkillPointSumByLevel+A2
+00FD567A  041CF7C8  CGamePlay::OperateBottomInterfaceTooltip+132A
+00FD5A00  041CF7D4  CGamePlay::UpdateBottomInterface+240
+00FE4F30  041CF9E4  CGamePlay::UpdateMain+330
+00FD7A3B  041CF9FC  CGamePlay::Run+15B
+00FD1F0D  041CFA00  CGame::Update+2ED
+01098530  041CFA30  WinMain+70
+0158E49D  041CFA50  invoke_main+2D
+0158E3A7  041CFAAC  __scrt_common_main_seh+157
+0158E24D  041CFAB4  __scrt_common_main+D
+0158E508  041CFABC  WinMainCRTStartup+8
+76425D49  041CFACC  BaseThreadInitThunk+19
+7779D83B  041CFB24  RtlInitializeExceptionChain+6B
+7779D7C1  041CFB34  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 14: 7:41
+Exception Handler Activate Time 2026/ 6/ 2 14: 8:28
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [14:07:41] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0126D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02BCF9D8
+EDI:00000000
+CS:EIP:0023:0126D85B
+SS:ESP:002B:003CF784  EBP:003CF7BC
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0126D85B  003CF78C  _alldiv+4B
+00CE34A2  003CF7BC  CHero::getSkillPointSumByLevel+A2
+00CB567A  003CFB50  CGamePlay::OperateBottomInterfaceTooltip+132A
+00CB5A00  003CFB5C  CGamePlay::UpdateBottomInterface+240
+00CC4F30  003CFD6C  CGamePlay::UpdateMain+330
+00CB7A3B  003CFD84  CGamePlay::Run+15B
+00CB1F0D  003CFD88  CGame::Update+2ED
+00D78530  003CFDB8  WinMain+70
+0126E49D  003CFDD8  invoke_main+2D
+0126E3A7  003CFE34  __scrt_common_main_seh+157
+0126E24D  003CFE3C  __scrt_common_main+D
+0126E508  003CFE44  WinMainCRTStartup+8
+76425D49  003CFE54  BaseThreadInitThunk+19
+7779D83B  003CFEAC  RtlInitializeExceptionChain+6B
+7779D7C1  003CFEBC  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 14: 8:32
+Exception Handler Activate Time 2026/ 6/ 2 14:12:26
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [14:08:32] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'レッドアイ文書Ⅰ' in [quest 081 1. レッドアイ文書Ⅰを探して]
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 86.289 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0126D85B 01:0069C85B C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:00000000
+EBX:00000064
+ECX:00000000
+EDX:00000000
+ESI:02BCF9D8
+EDI:00000000
+CS:EIP:0023:0126D85B
+SS:ESP:002B:040FF488  EBP:040FF4C0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Call stack:
+Address   Frame
+0126D85B  040FF490  _alldiv+4B
+00CE34A2  040FF4C0  CHero::getSkillPointSumByLevel+A2
+00CB567A  040FF854  CGamePlay::OperateBottomInterfaceTooltip+132A
+00CB5A00  040FF860  CGamePlay::UpdateBottomInterface+240
+00CC4F30  040FFA70  CGamePlay::UpdateMain+330
+00CB7A3B  040FFA88  CGamePlay::Run+15B
+00CB1F0D  040FFA8C  CGame::Update+2ED
+00D78530  040FFABC  WinMain+70
+0126E49D  040FFADC  invoke_main+2D
+0126E3A7  040FFB38  __scrt_common_main_seh+157
+0126E24D  040FFB40  __scrt_common_main+D
+0126E508  040FFB48  WinMainCRTStartup+8
+76425D49  040FFB58  BaseThreadInitThunk+19
+7779D83B  040FFBB0  RtlInitializeExceptionChain+6B
+7779D7C1  040FFBC0  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 19: 8:55
+Exception Handler Activate Time 2026/ 6/ 2 19:10:45
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [19:08:55] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 83.351 mb
+** Frame skip. start!! engaged fps are 62 **
+error in cSOCKET::send - The descriptor is not a socket.
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006023EE 01:001D13EE C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:8ECFFB74
+EBX:0003FFFC
+ECX:1337A060
+EDX:03590000
+ESI:8ECFFB74
+EDI:024592EC
+CS:EIP:0023:006023EE
+SS:ESP:002B:0393F520  EBP:0393F534
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Call stack:
+Address   Frame
+006023EE  0393F534  cDRAW::PutImage+1E
+005F381B  0393F554  cSMI::put+4B
+005666BE  0393F57C  CGamePlay::PutItem+15E
+00563684  0393F728  CGamePlay::DrawInventoryWindow+2B4
+0051E865  0393F75C  CGamePlay::DrawNormalGameScreen+3E5
+0051E2B9  0393F774  CGamePlay::DrawMain+79
+0051775A  0393F778  CGamePlay::Draw+2A
+00511964  0393F9D4  CGame::Draw+A4
+005D8B40  0393FA04  WinMain+70
+00ACEA5D  0393FA24  invoke_main+2D
+00ACE967  0393FA80  __scrt_common_main_seh+157
+00ACE80D  0393FA88  __scrt_common_main+D
+00ACEAC8  0393FA90  WinMainCRTStartup+8
+74C95D49  0393FAA0  BaseThreadInitThunk+19
+76F5D83B  0393FAF8  RtlInitializeExceptionChain+6B
+76F5D7C1  0393FB08  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 19:15:16
+Exception Handler Activate Time 2026/ 6/ 2 19:18:37
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [19:15:16] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 83.351 mb
+** Frame skip. start!! engaged fps are 62 **
+error in cSOCKET::send - The descriptor is not a socket.
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006023EE 01:001D13EE C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:8ECE5B74
+EBX:0003FFFC
+ECX:13360060
+EDX:03590000
+ESI:8ECE5B74
+EDI:024592EC
+CS:EIP:0023:006023EE
+SS:ESP:002B:0393F8C0  EBP:0393F8D4
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Call stack:
+Address   Frame
+006023EE  0393F8D4  cDRAW::PutImage+1E
+005F381B  0393F8F4  cSMI::put+4B
+005666BE  0393F91C  CGamePlay::PutItem+15E
+00563684  0393FAC8  CGamePlay::DrawInventoryWindow+2B4
+0051E865  0393FAFC  CGamePlay::DrawNormalGameScreen+3E5
+0051E2B9  0393FB14  CGamePlay::DrawMain+79
+0051775A  0393FB18  CGamePlay::Draw+2A
+00511964  0393FD74  CGame::Draw+A4
+005D8B40  0393FDA4  WinMain+70
+00ACEA5D  0393FDC4  invoke_main+2D
+00ACE967  0393FE20  __scrt_common_main_seh+157
+00ACE80D  0393FE28  __scrt_common_main+D
+00ACEAC8  0393FE30  WinMainCRTStartup+8
+74C95D49  0393FE40  BaseThreadInitThunk+19
+76F5D83B  0393FE98  RtlInitializeExceptionChain+6B
+76F5D7C1  0393FEA8  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 19:18:42
+Exception Handler Activate Time 2026/ 6/ 2 19:18:50
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [19:18:42] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 83.351 mb
+** Frame skip. start!! engaged fps are 62 **
+error in cSOCKET::send - The descriptor is not a socket.
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006023EE 01:001D13EE C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:8E628B74
+EBX:0003FFFC
+ECX:12CA3060
+EDX:03590000
+ESI:8E628B74
+EDI:024592EC
+CS:EIP:0023:006023EE
+SS:ESP:002B:0393F290  EBP:0393F2A4
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Call stack:
+Address   Frame
+006023EE  0393F2A4  cDRAW::PutImage+1E
+005F381B  0393F2C4  cSMI::put+4B
+005666BE  0393F2EC  CGamePlay::PutItem+15E
+00563684  0393F4A4  CGamePlay::DrawInventoryWindow+2B4
+0051E865  0393F4D8  CGamePlay::DrawNormalGameScreen+3E5
+0051E2B9  0393F4F0  CGamePlay::DrawMain+79
+0051775A  0393F4F4  CGamePlay::Draw+2A
+00511964  0393F750  CGame::Draw+A4
+005D8B40  0393F780  WinMain+70
+00ACEA5D  0393F7A0  invoke_main+2D
+00ACE967  0393F7FC  __scrt_common_main_seh+157
+00ACE80D  0393F804  __scrt_common_main+D
+00ACEAC8  0393F80C  WinMainCRTStartup+8
+74C95D49  0393F81C  BaseThreadInitThunk+19
+76F5D83B  0393F874  RtlInitializeExceptionChain+6B
+76F5D7C1  0393F884  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 19:18:54
+Exception Handler Activate Time 2026/ 6/ 2 19:22:55
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [19:18:54] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 83.351 mb
+** Frame skip. start!! engaged fps are 62 **
+error in cSOCKET::send - The descriptor is not a socket.
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006023EE 01:001D13EE C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:8EAB9B74
+EBX:0003FFFC
+ECX:13134060
+EDX:00420000
+ESI:8EAB9B74
+EDI:024592EC
+CS:EIP:0023:006023EE
+SS:ESP:002B:036DF510  EBP:036DF524
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Call stack:
+Address   Frame
+006023EE  036DF524  cDRAW::PutImage+1E
+005F381B  036DF544  cSMI::put+4B
+005666BE  036DF56C  CGamePlay::PutItem+15E
+00563684  036DF71C  CGamePlay::DrawInventoryWindow+2B4
+0051E865  036DF750  CGamePlay::DrawNormalGameScreen+3E5
+0051E2B9  036DF768  CGamePlay::DrawMain+79
+0051775A  036DF76C  CGamePlay::Draw+2A
+00511964  036DF9C8  CGame::Draw+A4
+005D8B40  036DF9F8  WinMain+70
+00ACEA5D  036DFA18  invoke_main+2D
+00ACE967  036DFA74  __scrt_common_main_seh+157
+00ACE80D  036DFA7C  __scrt_common_main+D
+00ACEAC8  036DFA84  WinMainCRTStartup+8
+74C95D49  036DFA94  BaseThreadInitThunk+19
+76F5D83B  036DFAEC  RtlInitializeExceptionChain+6B
+76F5D7C1  036DFAFC  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 19:23:12
+Exception Handler Activate Time 2026/ 6/ 2 19:23:51
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [19:23:12] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 83.351 mb
+** Frame skip. start!! engaged fps are 62 **
+error in cSOCKET::send - The descriptor is not a socket.
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006023EE 01:001D13EE C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:8ECE0B74
+EBX:0003FFFC
+ECX:1335B060
+EDX:03590000
+ESI:8ECE0B74
+EDI:024592EC
+CS:EIP:0023:006023EE
+SS:ESP:002B:0393F240  EBP:0393F254
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Call stack:
+Address   Frame
+006023EE  0393F254  cDRAW::PutImage+1E
+005F381B  0393F274  cSMI::put+4B
+005666BE  0393F29C  CGamePlay::PutItem+15E
+00563684  0393F44C  CGamePlay::DrawInventoryWindow+2B4
+0051E865  0393F480  CGamePlay::DrawNormalGameScreen+3E5
+0051E2B9  0393F498  CGamePlay::DrawMain+79
+0051775A  0393F49C  CGamePlay::Draw+2A
+00511964  0393F6F8  CGame::Draw+A4
+005D8B40  0393F728  WinMain+70
+00ACEA5D  0393F748  invoke_main+2D
+00ACE967  0393F7A4  __scrt_common_main_seh+157
+00ACE80D  0393F7AC  __scrt_common_main+D
+00ACEAC8  0393F7B4  WinMainCRTStartup+8
+74C95D49  0393F7C4  BaseThreadInitThunk+19
+76F5D83B  0393F81C  RtlInitializeExceptionChain+6B
+76F5D7C1  0393F82C  RtlGetAppContainerNamedObjectPath+231
+
+//========================================================================================================
+Application Begin Time          2026/ 6/ 2 19:24:11
+Exception Handler Activate Time 2026/ 6/ 2 19:28:20
+
+[version 0.0540] [date:Sat May 23 21:39:41 2026] [rev:1216]
+===== normal log
+
+************* Application Started at [19:24:11] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+g_sprLoading.Load
+BSC
+s_thLoading.Create
+LoadData - begin
+LoadData - LoadCheckObjectInfo
+LoadData - g_sprInterface.Load
+LoadData - g_project.load
+can not find item 'ドリューの日記帳' in [quest 313 失踪した生態学者]
+LoadData - g_am.close
+Error in cANM::Load - 'data/interface/game/magic_carpet06.sad' file not found
+LoadData - g_sm.init
+LoadData - g_titleManager.init
+LoadData - g_guildManager.init
+LoadData - g_itemCountWindow.init
+LoadData - g_hero.reset
+remain static memory 83.351 mb
+** Frame skip. start!! engaged fps are 62 **
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006023EE 01:001D13EE C:\Users\seima\Desktop\rs_emu_sourcecode-main\RED STONE\Red Stone.exe
+
+Registers:
+EAX:8ECFAB74
+EBX:0003FFFC
+ECX:13375060
+EDX:03590000
+ESI:8ECFAB74
+EDI:024592EC
+CS:EIP:0023:006023EE
+SS:ESP:002B:0393F480  EBP:0393F494
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Call stack:
+Address   Frame
+006023EE  0393F494  cDRAW::PutImage+1E
+005F381B  0393F4B4  cSMI::put+4B
+005666BE  0393F4DC  CGamePlay::PutItem+15E
+00563684  0393F688  CGamePlay::DrawInventoryWindow+2B4
+0051E865  0393F6BC  CGamePlay::DrawNormalGameScreen+3E5
+0051E2B9  0393F6D4  CGamePlay::DrawMain+79
+0051775A  0393F6D8  CGamePlay::Draw+2A
+00511964  0393F934  CGame::Draw+A4
+005D8B40  0393F964  WinMain+70
+00ACEA5D  0393F984  invoke_main+2D
+00ACE967  0393F9E0  __scrt_common_main_seh+157
+00ACE80D  0393F9E8  __scrt_common_main+D
+00ACEAC8  0393F9F0  WinMainCRTStartup+8
+74C95D49  0393FA00  BaseThreadInitThunk+19
+76F5D83B  0393FA58  RtlInitializeExceptionChain+6B
+76F5D7C1  0393FA68  RtlGetAppContainerNamedObjectPath+231
+

@@ -1,34 +1,34 @@
 //////////////////////////////////////////////////////////////////////////////////********
 //	SFC.H
 
-//	¸ûÌ¡ÁEÀ¯¿EÑ ·çÆ¾°E¸ûÌ¡ÁEÀ¯¿EÑ ¸ÅÅ©·Î
-//	MMX·¹Áö½ºÅÍ¿Í FPU·¹Áö½ºÅÍ¸¦ ÀÌ¿EÑ ¸Ş¸ğ¸® ÀEÛ.
+//	ë«ˆç¼ï¿½ÂEìœ ï¿½ÂEï¿½ ë£¨í‹´ï¿½ÂEë«ˆç¼ï¿½ÂEìœ ï¿½ÂEï¿½ ë§¤í¬ë¡œ
+//	MMXë ˆì§€ìŠ¤í„°ì™€ FPUë ˆì§€ìŠ¤í„°ë¥¼ ì´ï¿½ÂEï¿½ ë©”ëª¨ë¦¬ ï¿½ÂEï¿½.
 
-//	ÀÛ¼º ³¯Â¥ : 1999.02.22
-//	1ÂE °»½Å : 1999.03.15	-	* MMX·¹Áö½ºÅÍ¿ÍFPU·¹Áö½ºÅÍ¸¦ ÀÌ¿EÑ ¸Ş¸ğ¸® ÀEÛÃß°¡
-//								* UTIL.H -> GLOBAL.H ·Î ¹Ù²Ş.
-//	2ÂE °»½Å : 1999.03.24	-	* cRECT global class¸¦ Ãß°¡ÇÔÀ» ½ÃÀÛÀ¸·Î ÀEª Å¬·¡½º ÀÛ¼º.
-//	3ÂE °»½Å : 1999.05.14  -   * sine,cosine Å×ÀÌºEÃß°¡
-//	4ÂE °»½Å : 2000.06.09	-	* sine,cosine Å×ÀÌºEÁ¦°Å
+//	ì‘ì„± ë‚ ì§œ : 1999.02.22
+//	1ï¿½ÂE ê°±ì‹  : 1999.03.15	-	* MMXë ˆì§€ìŠ¤í„°ì™€FPUë ˆì§€ìŠ¤í„°ë¥¼ ì´ï¿½ÂEï¿½ ë©”ëª¨ë¦¬ ï¿½ÂEå€ç…ï¿½
+//								* UTIL.H -> GLOBAL.H ë¡œ ë°”ê¿ˆ.
+//	2ï¿½ÂE ê°±ì‹  : 1999.03.24	-	* cRECT global classë¥¼ ì¶”ê°€í•¨ì„ ì‹œì‘ìœ¼ë¡œ ï¿½ÂEï¿½ í´ë˜ìŠ¤ ì‘ì„±.
+//	3ï¿½ÂE ê°±ì‹  : 1999.05.14  -   * sine,cosine í…Œì´ï¿½ÂEì¶”ê°€
+//	4ï¿½ÂE ê°±ì‹  : 2000.06.09	-	* sine,cosine í…Œì´ï¿½ÂEì œê±°
 
 //								* cSTRING,cSTRINGS,cFOLDER,cFILE,cRECT,cRECTS,cRECT_SIZE,cRECTS_SIZE,cPOINT,cPOINTS class
-//								Ãß°¡ ¹× ±³Á¤
+//								ì¶”ê°€ ë° êµì •
 
-//								* ¾ĞÃEÅ¬·¡½º cNUX Ãß°¡
+//								* ì••ï¿½ÂEí´ë˜ìŠ¤ cNUX ì¶”ê°€
 
 //								* _ms,_exportFileName,_exportFolderName,_exportExt,_setExt,_fileSize,IsFolder
-//								µûÜÇ ÀEª ÇÔ¼EÃß°¡¹× ±³Á¤
+//								ë”°æ´‘ ï¿½ÂEï¿½ í•¨ï¿½ÂEì¶”ê°€ë° êµì •
 
-//								* ÀEª º¯¼Eg_strLogFolder Ãß°¡(ÇÁ·Î±×·¥ÀÌ ½ÇÇàµÈ Æú´E
+//								* ï¿½ÂEï¿½ ë³€ï¿½ÂEg_strLogFolder ì¶”ê°€(í”„ë¡œê·¸ë¨ì´ ì‹¤í–‰ëœ í´ï¿½ÂE
 
-//								* GLOBAL À» SFC·Î ¹Ù²Ş
+//								* GLOBAL ì„ SFCë¡œ ë°”ê¿ˆ
 
-//	5ÂE °»½Å : 2000.06.22	-	* _fileSize Á¦°Å
-//								* cFILE¸¦ cFILES·Î ¹Ù²Ş
-//								* cFILE È­ÀÏ Á¦¾EÅ¬·¡½º Ãß°¡
-//								* cNUX È­ÀÏ º´ÇÕ ±â´É Ãß°¡
-//								* IsFile Ãß°¡
-//								* cFILES Å¬·¡½º Á¦°Å. -.- cFOLDER°EÇÕÃÄ ¹ö·È´Ù.
+//	5ï¿½ÂE ê°±ì‹  : 2000.06.22	-	* _fileSize ì œê±°
+//								* cFILEë¥¼ cFILESë¡œ ë°”ê¿ˆ
+//								* cFILE í™”ì¼ ì œï¿½ÂEí´ë˜ìŠ¤ ì¶”ê°€
+//								* cNUX í™”ì¼ ë³‘í•© ê¸°ëŠ¥ ì¶”ê°€
+//								* IsFile ì¶”ê°€
+//								* cFILES í´ë˜ìŠ¤ ì œê±°. -.- cFOLDERï¿½ÂEí•©ì³ ë²„ë ¸ë‹¤.
 
 
 /////////////////////////////////////////////////////////////////////////////////*********/
@@ -56,12 +56,12 @@
 
 const	unsigned int	d1MEGA	=	1024*1024;
 
-#define pKILL(buff) if (buff) {delete [] buff	;buff=NULL;}	// Æ÷ÀÎÅÍ »èÁ¦..
-#define KILL(buff)	if (buff) {delete buff		;buff=NULL;}	// Å¬·¡½º »èÁ¦..
+#define pKILL(buff) if (buff) {delete [] buff	;buff=NULL;}	// í¬ì¸í„° ì‚­ì œ..
+#define KILL(buff)	if (buff) {delete buff		;buff=NULL;}	// í´ë˜ìŠ¤ ì‚­ì œ..
 #undef  ATTEMPT
-#define ATTEMPT(x)	{ if (FAILED(x)) goto ERROR_LABEL; }		//	¿¡·¯ Ã³¸®..
+#define ATTEMPT(x)	{ if (FAILED(x)) goto ERROR_LABEL; }		//	ì—ëŸ¬ ì²˜ë¦¬..
 #undef  RELEASE
-#define RELEASE(x)	{ if (x != NULL) {x->Release(); x = NULL;} }//	DX°³Ã¼ »èÁ¦..
+#define RELEASE(x)	{ if (x != NULL) {x->Release(); x = NULL;} }//	DXê°œì²´ ì‚­ì œ..
 
 #define	MSGOUT		cMSG::Output
 #define	ERRMSG		cMSG::Error
@@ -82,23 +82,23 @@ template <class A> inline void swap(A &a, A &b)
 };
 
 
-//	ÀEª º¯¼öµE
-extern	BOOL		bRUNAPPLICATION,bACTIVEAPP;				//	¾ûãÃ¸®ÄÉÀÌ¼ÇÀÇ »óÅÂ 
-extern	char		g_strLogFolder[1024];					//	ÇÁ·Î±×·¥ ½ÇÇEÆú´E
-extern	int			g_iScreenWidth,g_iScreenHeight;			//	È­¸E»çÀÌÁE
-//	ÀEª ÇÔ¼öµE
-extern	void		memset16(WORD *dest,WORD value,unsigned int size);	//	16ºñÆ® ¿E.
-extern	int			random(int range);									//	·£´ıÇÔ¼E
-extern	int			largeRandom(int range);									//	·£´ıÇÔ¼E
-extern	inline BOOL	SafeRange(int value,int minValue,int maxValue);		//	¹E§ Ã¼Å©
-extern	inline void	RotateValue(int &value,int maxValue);				//	Å©±â¸¦ Ã¼Å©ÇØ¼­ Å©¸E0À¸·Î..
-extern	inline void	ClipValue(int &value,int minValue,int maxValue);	//	Å©±â¸¦ Ã¼Å©ÇØ¼­ ÀÚ¸¥´Ù.
+//	ï¿½ÂEï¿½ ë³€ìˆ˜ï¿½ÂE
+extern	BOOL		bRUNAPPLICATION,bACTIVEAPP;				//	ì—‰æŸ´ë¦¬ì¼€ì´ì…˜ì˜ ìƒíƒœ 
+extern	char		g_strLogFolder[1024];					//	í”„ë¡œê·¸ë¨ ì‹¤ï¿½ÂEí´ï¿½ÂE
+extern	int			g_iScreenWidth,g_iScreenHeight;			//	í™”ï¿½ÂEì‚¬ì´ï¿½ÂE
+//	ï¿½ÂEï¿½ í•¨ìˆ˜ï¿½ÂE
+extern	void		memset16(WORD *dest,WORD value,unsigned int size);	//	16ë¹„íŠ¸ ï¿½ÂE.
+extern	int			random(int range);									//	ëœë¤í•¨ï¿½ÂE
+extern	int			largeRandom(int range);									//	ëœë¤í•¨ï¿½ÂE
+extern	inline BOOL	SafeRange(int value,int minValue,int maxValue);		//	ï¿½ÂEï¿½ ì²´í¬
+extern	inline void	RotateValue(int &value,int maxValue);				//	í¬ê¸°ë¥¼ ì²´í¬í•´ì„œ í¬ï¿½ÂE0ìœ¼ë¡œ..
+extern	inline void	ClipValue(int &value,int minValue,int maxValue);	//	í¬ê¸°ë¥¼ ì²´í¬í•´ì„œ ìë¥¸ë‹¤.
 extern	inline BOOL	SetLogFolder(){return	SetCurrentDirectory(g_strLogFolder);}
 extern	BOOL		CheckName(char *_strName,int _iNameLimit=4);
 extern	int			GetLastDay(int _iYear,int _iMonth);
 
 
-extern	BOOL		_makeShotcut(char* src, char* lnkName, char* lnkPath);	//	¼ôÄÆÀ» ¸¸µç´Ù.
+extern	BOOL		_makeShotcut(char* src, char* lnkName, char* lnkPath);	//	ìˆì»·ì„ ë§Œë“ ë‹¤.
 inline	char* _cdecl _ms(char *str,...)
 {	
 	static	char	s_tempStr[1024];
@@ -110,16 +110,16 @@ inline	char* _cdecl _ms(char *str,...)
 	return s_tempStr;
 }
 
-extern	char		*_exportFileName(char *str);			//	È­ÀÏ ÀÌ¸§¸¸ »Ì¾Æ ³½´Ù.
+extern	char		*_exportFileName(char *str);			//	í™”ì¼ ì´ë¦„ë§Œ ë½‘ì•„ ë‚¸ë‹¤.
 extern	char		*_exportName(char *str);
-extern	char		*_exportFolderName(char *str);			//	Æú´EÀÌ¸§¸¸ »Ì¾Æ ³½´Ù.
-extern	char		*_exportExt(char *str);					//	È®ÀåÀÚ¸¸ »Ì¾Æ ³½´Ù.
-extern	void		_setExt(char *srcStr,char *destStr);	//	È®ÀåÀÚ¸¦ ¼³Á¤ÇÑ´Ù.
-extern	BOOL		IsFolder(char *fn);						//	ÀÌ ³à¼®ÀÌ Æú´õ³Ä?
-extern	BOOL		IsFile(char *fn);						//	ÀÌ ³à¼® È­ÀÏÀÌ³Ä?
-extern	BOOL		Safety();								//	¾ÈÀEÏ´Ù!!
-extern	BOOL		Errored();								//	¿¡·¯°¡ ³µ´Ù!!
-extern	void		EXIT(char *title,char *main,...);					//	°Á ³¡³½´Ù.
+extern	char		*_exportFolderName(char *str);			//	í´ï¿½ÂEì´ë¦„ë§Œ ë½‘ì•„ ë‚¸ë‹¤.
+extern	char		*_exportExt(char *str);					//	í™•ì¥ìë§Œ ë½‘ì•„ ë‚¸ë‹¤.
+extern	void		_setExt(char *srcStr,char *destStr);	//	í™•ì¥ìë¥¼ ì„¤ì •í•œë‹¤.
+extern	BOOL		IsFolder(char *fn);						//	ì´ ë…€ì„ì´ í´ë”ëƒ?
+extern	BOOL		IsFile(char *fn);						//	ì´ ë…€ì„ í™”ì¼ì´ëƒ?
+extern	BOOL		Safety();								//	ì•ˆï¿½ÂEæ±‚ï¿½!!
+extern	BOOL		Errored();								//	ì—ëŸ¬ê°€ ë‚¬ë‹¤!!
+extern	void		EXIT(char *title,char *main,...);					//	ê± ëë‚¸ë‹¤.
 extern	BOOL		ustrncpy(char *dest,char *src,int size);
 
 extern	inline		BOOL
@@ -263,7 +263,7 @@ public:
 				return TRUE;
 			}
 
-	inline	void	expand(int _iXS,int _iYS)	//	»çÀÌÁEÅ°¿EE
+	inline	void	expand(int _iXS,int _iYS)	//	ì‚¬ì´ï¿½ÂEí‚¤ï¿½ÂEÂE
 	{
 		x1	-=	_iXS,y1	-=	_iYS,x2	+=	_iXS,y2	+=	_iYS;
 	}
@@ -351,9 +351,9 @@ class cSTRING
 {
 public:
 	char			*String;
-	int				Length;					//	¹®ÀåÀÇ »çÀÌÁE	
+	int				Length;					//	ë¬¸ì¥ì˜ ì‚¬ì´ï¿½ÂE	
 	int				Value;
-	cSTRING			*pPRE,*pNEXT;			//	ÀÌÀEÀÌÈÄ
+	cSTRING			*pPRE,*pNEXT;			//	ì´ï¿½ÂEì´í›„
 
 					cSTRING();
 					cSTRING(char *str);
@@ -386,9 +386,9 @@ public:
 class cSTRINGS
 {
 public:
-	int			maxString,Count;	//	ÇÑ°E¹®Àå¼ö¿Í ÇöÀE¹®Àå¼E	
-	cSTRING		*pHEAD,*pTAIL;		//	Ã³À½°E¸¶Áö¸·
-	int			CurString;			//	ÇöÀE¹®ÀE
+	int			maxString,Count;	//	í•œï¿½ÂEë¬¸ì¥ìˆ˜ì™€ í˜„ï¿½ÂEë¬¸ì¥ï¿½ÂE	
+	cSTRING		*pHEAD,*pTAIL;		//	ì²˜ìŒï¿½ÂEë§ˆì§€ë§‰
+	int			CurString;			//	í˜„ï¿½ÂEë¬¸ï¿½ÂE
 				cSTRINGS(int count = 0xffff);
 				~cSTRINGS();
 
@@ -446,8 +446,8 @@ public:
 	BOOL	_cdecl		writeStream(char *str,...);
 	BOOL				writeStreamNP(char *str,BOOL _bIsPutReturn=TRUE);
 	BOOL				Skip(int skip);
-	BOOL				Rewind();			//	È­ÀÏ Ã³À½À¸·Î
-	BOOL				End();				//	È­ÀÏ ³¡À¸·Î
+	BOOL				Rewind();			//	í™”ì¼ ì²˜ìŒìœ¼ë¡œ
+	BOOL				End();				//	í™”ì¼ ëìœ¼ë¡œ
 	BOOL				IsOpen();
 	BOOL				Set(cFILE *file,DWORD size);
 	BOOL				Copy(char *fn);
@@ -471,23 +471,23 @@ public:
 							if (SortTerm > dSORT_NOT) SortTerm = dSORT_NOT;
 						}
 
-	static	BOOL		Delete			(char *delDir);				//	Æú´õÀÇ È­ÀÏÀ» ºñ·ÔÇÑ ¸ğµç°É Áö¿ûĞÙ.(Áö¿EE¾ø´Â °Å¸E¼Ó¼ºÀ» ¹Ù²ã¼­ Áö¿ûĞÙ.)
-	static	BOOL		Create			(char *folder,BOOL changeFolder=FALSE);				//	Æú´õ¸¦ ¸¸µç´Ù.
-	static	BOOL		Change			(char *folder);										//	Æú´õ¸¦ ÀÌµ¿ÇÑ´Ù.
+	static	BOOL		Delete			(char *delDir);				//	í´ë”ì˜ í™”ì¼ì„ ë¹„ë¡¯í•œ ëª¨ë“ ê±¸ ì§€ì›èŠ©.(ì§€ï¿½ÂEÂEì—†ëŠ” ê±°ï¿½ÂEì†ì„±ì„ ë°”ê¿”ì„œ ì§€ì›èŠ©.)
+	static	BOOL		Create			(char *folder,BOOL changeFolder=FALSE);				//	í´ë”ë¥¼ ë§Œë“ ë‹¤.
+	static	BOOL		Change			(char *folder);										//	í´ë”ë¥¼ ì´ë™í•œë‹¤.
 
-	static	BOOL		getFolders		(char *root,cSTRINGS *folders);		//	Æú´õµéÀ» ¾ò¾E¿Â´Ù.
-	static	cSTRINGS*	GetFolders		(char *root);		//	Æú´õµéÀ» ¾ò¾E¿Â´Ù.
-	static	cSTRINGS*	GetFiles		(char *ext="*.*",char *root=NULL,BOOL includeFolder=FALSE,WORD sort=dSORT_BY_EXT);//	È­ÀÏµéÀ» ¾ò¾E¿Â´Ù.
-	static	cSTRINGS*	GetFiles		(WORD sort);																//	È­ÀÏµéÀ» ¾ò¾E¿Â´Ù.
+	static	BOOL		getFolders		(char *root,cSTRINGS *folders);		//	í´ë”ë“¤ì„ ì–»ï¿½ÂEì˜¨ë‹¤.
+	static	cSTRINGS*	GetFolders		(char *root);		//	í´ë”ë“¤ì„ ì–»ï¿½ÂEì˜¨ë‹¤.
+	static	cSTRINGS*	GetFiles		(char *ext="*.*",char *root=NULL,BOOL includeFolder=FALSE,WORD sort=dSORT_BY_EXT);//	í™”ì¼ë“¤ì„ ì–»ï¿½ÂEì˜¨ë‹¤.
+	static	cSTRINGS*	GetFiles		(WORD sort);																//	í™”ì¼ë“¤ì„ ì–»ï¿½ÂEì˜¨ë‹¤.
 
-	static	DWORD		GetFileCount	(char *ext="*.*",char *folder=NULL,BOOL includeFolder=FALSE,BOOL includeSub=FALSE);	//	Æú´õ¾È¿¡ È­ÀÏÀÇ ¼E	
-	static	DWORD		GetFolderCount	(char *folder=NULL);										//	Æú´õÀÇ ¼E	
-	static	DWORD		GetFolderSize	(char *ext="*.*",char *root=NULL,BOOL includeSub=FALSE);	//	Æú´õ¾È¿¡ È­ÀÏµéÀÇ »çÀÌÁE
+	static	DWORD		GetFileCount	(char *ext="*.*",char *folder=NULL,BOOL includeFolder=FALSE,BOOL includeSub=FALSE);	//	í´ë”ì•ˆì— í™”ì¼ì˜ ï¿½ÂE	
+	static	DWORD		GetFolderCount	(char *folder=NULL);										//	í´ë”ì˜ ï¿½ÂE	
+	static	DWORD		GetFolderSize	(char *ext="*.*",char *root=NULL,BOOL includeSub=FALSE);	//	í´ë”ì•ˆì— í™”ì¼ë“¤ì˜ ì‚¬ì´ï¿½ÂE
 	static	int	_cdecl	Compare			(const void *a, const void *b);
-	static	char		*Tree(HWND hwnd,BOOL change,char *title,char *folder=NULL,char *dest=NULL);	//	Æú´õÆ®¸® ½©
+	static	char		*Tree(HWND hwnd,BOOL change,char *title,char *folder=NULL,char *dest=NULL);	//	í´ë”íŠ¸ë¦¬ ì‰˜
 };
 
-//	¾ĞÃEÈ­ÀÏ º´ÇÕ °EÃ..
+//	ì••ï¿½ÂEí™”ì¼ ë³‘í•© ï¿½ÂEï¿½..
 #define	dMAX_MERGE_FILE	2046
 
 class cMERGEINFO
@@ -498,7 +498,7 @@ public:
 	DWORD	Size;
 };
 
-class	cNUX		//	¶óÆ¾¾ûÓÎ È£µÎ¶ó´Â ¶E»ç¿EÃ cNUX.cpp¸¦ ¸µÅ©ÇØ¾ß ÇÑ´Ù. 
+class	cNUX		//	ë¼í‹´ì—‰è¸ í˜¸ë‘ë¼ëŠ” ï¿½ÂEì‚¬ï¿½ÂEï¿½ cNUX.cppë¥¼ ë§í¬í•´ì•¼ í•œë‹¤. 
 {
 public:
 	cFILE				File;
@@ -508,7 +508,7 @@ public:
 						cNUX();
 						~cNUX();
 
-	BOOL				Load(char *fn);		//	¿¬´Ù.
+	BOOL				Load(char *fn);		//	ì—°ë‹¤.
 	BOOL				Close();
 
 	cFILE*				Open(char *fn);
@@ -524,19 +524,19 @@ public:
 	static	int	_cdecl	Compare_Name( const void *a, const void *b);
 
 	static	DWORD		TotalSize,FileSize,FileCount,ProcessRate,ProcessSize,FileRate;
-	static	char		CurrentFile[128];		//	ÇöÀE¾ĞÃàÇÏ°EÀÖ´Â È­ÀÏ È¤Àº ¾ĞÃàÀ» Ç®°EÀÖ´Â È­ÀÏ
-	static	char		ArcName[128];			//	¾ĞÃEÈ­ÀÏ
+	static	char		CurrentFile[128];		//	í˜„ï¿½ÂEì••ì¶•í•˜ï¿½ÂEìˆëŠ” í™”ì¼ í˜¹ì€ ì••ì¶•ì„ í’€ï¿½ÂEìˆëŠ” í™”ì¼
+	static	char		ArcName[128];			//	ì••ï¿½ÂEí™”ì¼
 	static	BOOL		s_bIsMerge,s_bIsMergeFolder;
 
-	static	BOOL		PressCreate(char *fn,BOOL _bIsMerge=FALSE);															//	»õ·Î¿E¾ĞÃàÈ­ÀÏ »ı¼º
+	static	BOOL		PressCreate(char *fn,BOOL _bIsMerge=FALSE);															//	ìƒˆë¡œï¿½ÂEì••ì¶•í™”ì¼ ìƒì„±
 	static	BOOL		PressAppend(char *fn,BOOL _bIsMerge=FALSE);
-	static	BOOL		PressFile(char *fn);															//	È­ÀÏ Ãß°¡
-	static	void		PressAllFile();																	//	ÇöÀEÆú´õ¿¡ ¸ğµEÈ­ÀÏÀ» Ãß°¡ÇÑ´Ù.
-	static	BOOL		PressFolder(char *fn,BOOL includeCurrent=FALSE,BOOL includeSubFolder=FALSE);	//	Æú´õ¾È¿¡ ¸ğµEÈ­ÀÏÀ» Ãß°¡
-	static	DWORD		PressClose();																	//	¾ĞÃàÈ­ÀÏ ´İ±E	
-	static	void		Stop();																			//	ÀÛ¾÷À» ÁßÁöÇÑ´Ù.
-	static	BOOL		PressExtract(char *fn,char *destFolder,cSTRINGS *files=NULL);					//	¾ĞÃàÈ­ÀÏ Ç®±E
-	//	ºE¾ĞÃEÇEE8Byte(È­ÀÏ ¼ö¿Í ÇEEÀ§Ä¡)
+	static	BOOL		PressFile(char *fn);															//	í™”ì¼ ì¶”ê°€
+	static	void		PressAllFile();																	//	í˜„ï¿½ÂEí´ë”ì— ëª¨ï¿½ÂEí™”ì¼ì„ ì¶”ê°€í•œë‹¤.
+	static	BOOL		PressFolder(char *fn,BOOL includeCurrent=FALSE,BOOL includeSubFolder=FALSE);	//	í´ë”ì•ˆì— ëª¨ï¿½ÂEí™”ì¼ì„ ì¶”ê°€
+	static	DWORD		PressClose();																	//	ì••ì¶•í™”ì¼ ë‹«ï¿½ÂE	
+	static	void		Stop();																			//	ì‘ì—…ì„ ì¤‘ì§€í•œë‹¤.
+	static	BOOL		PressExtract(char *fn,char *destFolder,cSTRINGS *files=NULL);					//	ì••ì¶•í™”ì¼ í’€ï¿½ÂE
+	//	ï¿½ÂEì••ï¿½ÂEï¿½ÂEÂE8Byte(í™”ì¼ ìˆ˜ì™€ ï¿½ÂEÂEìœ„ì¹˜)
 	static	BOOL		MergeCreate(char *fn);														
 	static	BOOL		MergeAppend(char *fn);
 	static	BOOL		MergeFile(char *fn);
@@ -569,7 +569,7 @@ public:
 
 class	CLogManager
 {
-	BOOL				m_bIsStandAlone;	//	½ÃÀÛ Æú´E¹«½Ã
+	BOOL				m_bIsStandAlone;	//	ì‹œì‘ í´ï¿½ÂEë¬´ì‹œ
 	int					getLogFile(char *_lpstrFileName);
 	char				*m_lpstrLogFile;
 public:
@@ -633,7 +633,7 @@ public:
 };
 
 //////////////////////////////////////////////////////////////////////////////////
-//	class	cTIMER	:	Å¸ÀÌ¸Ó Ã³¸®
+//	class	cTIMER	:	íƒ€ì´ë¨¸ ì²˜ë¦¬
 //////////////////////////////////////////////////////////////////////////////////
 
 #pragma comment(lib,"winmm.lib")
@@ -667,7 +667,7 @@ public:
 	int				getDayOfWeek();
 	
 	int				getGapDay(CTimeInfo *_lpTime);
-	int				getMinuteValue(int _iCorrectYear=2000);	//	=2000À» ³Ö°E½ÍÁö¸¸... ÀÌÁ¦ ¿Í¼­ ³ÖÀ¸¸E¹«½¼ »ç°úÌ¡ ÅÍÁúÁE¸ô¶E¾È ³Ö´Â´Ù.
+	int				getMinuteValue(int _iCorrectYear=2000);	//	=2000ì„ ë„£ï¿½ÂEì‹¶ì§€ë§Œ... ì´ì œ ì™€ì„œ ë„£ìœ¼ï¿½ÂEë¬´ìŠ¨ ì‚¬ê³¼ç¼ í„°ì§ˆï¿½ÂEëª°ï¿½ÂEì•ˆ ë„£ëŠ”ë‹¤.
 	int				getDayValue(int _iCorrectYear=2000);
 
 	inline	int		getSecondValue(int _iCorrectYear=2000)
@@ -683,14 +683,14 @@ public:
 
 class cTIMER
 {
-	static	int			s_iTps;			//	tps ÃÊ´E¸ûÕøÀÌ³ª Æ¢´Â°¡!!??
+	static	int			s_iTps;			//	tps ì´ˆï¿½ÂEë«ˆç¤«ì´ë‚˜ íŠ€ëŠ”ê°€!!??
 	static	LONGLONG	s_llTps;
-	static	int			s_iFps,s_iFrameCounter,s_iLastTime;	//	FPS ÃøÁ¤À» À§ÇÑ ¼öÄ¡
+	static	int			s_iFps,s_iFrameCounter,s_iLastTime;	//	FPS ì¸¡ì •ì„ ìœ„í•œ ìˆ˜ì¹˜
 
-	int					m_iTick;		//	ÀÌ¸§ ±×´EÎ.. Frame Per Second
-	int					m_iOldTime;		//	ÇÁ·¹ÀÓ ½ºÅ°ÇÎÀ» À§ÇÑ.. ½Ã°£..
+	int					m_iTick;		//	ì´ë¦„ ê·¸ï¿½ÂEï¿½.. Frame Per Second
+	int					m_iOldTime;		//	í”„ë ˆì„ ìŠ¤í‚¤í•‘ì„ ìœ„í•œ.. ì‹œê°„..
 	int					m_iOverTick;
-	int					m_iSkipCount;	//	ÇÁ·¹ÀÓ ½ºÅµÇÑ È½¼E
+	int					m_iSkipCount;	//	í”„ë ˆì„ ìŠ¤í‚µí•œ íšŸï¿½ÂE
 	int					m_iOverTime;
 
 	int					m_iTimerStartTime;
@@ -721,7 +721,7 @@ public:
 		m_iOverTime	=	0;
 	}
 
-	BOOL				setFPS(int fps);	//	ÃÊ´E¸ûãÁ·¹ÀÓÀ¸·Î µ¹¸±±ûÛE?
+	BOOL				setFPS(int fps);	//	ì´ˆï¿½ÂEë«ˆæ™‚ë ˆì„ìœ¼ë¡œ ëŒë¦´ê¹©ï¿½ÂE?
 	BOOL				isSkipFrame();
 	void				resetFrameSkip();
 	BOOL				syncFrame();
@@ -739,8 +739,8 @@ public:
 
 		QueryPerformanceCounter( &time );
 
-		return (int)(time.LowPart>>2);	//	32ºñÆ® Ç®·Î ¹ŞÀ¸¸E°è»EÏ±EÂ¯³ª´Ï±E. 30ºñÆ®·Î ¹Ù²Û´Ù..
-										//	»çÀÎµEÇÃ·¡±â°¡ ¾ûŞ¼±¸ ÀúÂ¼±¸.. ±Ã½Ã··..
+		return (int)(time.LowPart>>2);	//	32ë¹„íŠ¸ í’€ë¡œ ë°›ìœ¼ï¿½ÂEê³„ï¿½ÂEæ­ÂEì§±ë‚˜ë‹ˆï¿½ÂE. 30ë¹„íŠ¸ë¡œ ë°”ê¾¼ë‹¤..
+										//	ì‚¬ì¸ï¿½ÂEí”Œë˜ê¸°ê°€ ì—‰æ°·êµ¬ ì €ì©Œêµ¬.. ê¶ì‹œë ..
 	}
 	static	inline	int	GetFPS(){return s_iFps;}
 	static	int			UpdateFPS();
@@ -748,7 +748,7 @@ public:
 
 //////////////////////////////////////////////////////////////////////////////////
 
-//	class	cMCU	:	¸Ş¸ğ¸® °E®
+//	class	cMCU	:	ë©”ëª¨ë¦¬ ï¿½ÂEï¿½
 
 //////////////////////////////////////////////////////////////////////////////////
 extern	DWORD	GetTotalMemory();
@@ -788,7 +788,7 @@ public:
 };
 
 //////////////////////////////////////////////////////////////////////////////////
-//	class	cRANDOM	:	¿¹ÃE°¡´ÉÇÑ ³­¼E¸¸µé±E//////////////////////////////////////////////////////////////////////////////////
+//	class	cRANDOM	:	ì˜ˆï¿½ÂEê°€ëŠ¥í•œ ë‚œï¿½ÂEë§Œë“¤ï¿½ÂE//////////////////////////////////////////////////////////////////////////////////
 class	cRANDOM
 {
 private:
@@ -817,10 +817,10 @@ public:
 
 
 //////////////////////////////////////////////////////////////////////////////////
-//	class	cDen	:	¼Ò±¼-_-
+//	class	cDen	:	ì†Œêµ´-_-
 //////////////////////////////////////////////////////////////////////////////////
 template <class T>
-class	cDen	//	½Ã¸®¾óÀÌ 16ºñÆ®´Ù.
+class	cDen	//	ì‹œë¦¬ì–¼ì´ 16ë¹„íŠ¸ë‹¤.
 {
 	T					*m_pList;
 	T					*m_lpList;
@@ -843,7 +843,7 @@ public:
 							close();
 						}
 
-	void				init(int _iCount,BOOL _bIsOrdering=FALSE)//ÃÊ±â¼³Á¤
+	void				init(int _iCount,BOOL _bIsOrdering=FALSE)//ì´ˆê¸°ì„¤ì •
 	{
 		close();
 
@@ -861,7 +861,7 @@ public:
 		reset();
 	}
 
-	void				init(T *_lpList,int _iCount,BOOL _bIsOrdering=FALSE)//ÃÊ±â¼³Á¤
+	void				init(T *_lpList,int _iCount,BOOL _bIsOrdering=FALSE)//ì´ˆê¸°ì„¤ì •
 	{
 		close();
 
@@ -878,7 +878,7 @@ public:
 		reset();
 	}
 
-	inline	void		reset()//¸®¼Â
+	inline	void		reset()//ë¦¬ì…‹
 	{
 		m_iCount		=	0;
 		m_iRookie		=	0;
@@ -891,7 +891,7 @@ public:
 			}
 	}
 
-	void				close()//´İ±E
+	void				close()//ë‹«ï¿½ÂE
 	{
 		reset();
 		
@@ -901,7 +901,7 @@ public:
 		m_lpList		=	NULL;
 	}
 
-	inline	T*			get(int _iSerial)//_iIndex¹øÂ° ¸â¹E¸®ÅÏ
+	inline	T*			get(int _iSerial)//_iIndexë²ˆì§¸ ë©¤ï¿½ÂEë¦¬í„´
 	{
 		if	(_iSerial						>=	m_iLimitCount	)
 			return	NULL;
@@ -910,20 +910,20 @@ public:
 
 		return	&m_lpList[_iSerial];
 	}
-	inline	T*			getByOrdering(int _iIndex)	//	¼øÂ÷ÀûÀ¸·Î ¸ğµç°É °Ë»öÇÒ¶§ »ç¿E
+	inline	T*			getByOrdering(int _iIndex)	//	ìˆœì°¨ì ìœ¼ë¡œ ëª¨ë“ ê±¸ ê²€ìƒ‰í• ë•Œ ì‚¬ï¿½ÂE
 	{
 		if (_iIndex	>=	m_iCount	||	_iIndex	<	0)
 			return	NULL;
 
 		return	&m_lpList[m_pOrderingBuffer[_iIndex]];
 	}
-	inline	T*			notCheckedget(int _iIndex)	//_iIndex¹øÂ° ¸â¹E¸®ÅÏ
+	inline	T*			notCheckedget(int _iIndex)	//_iIndexë²ˆì§¸ ë©¤ï¿½ÂEë¦¬í„´
 	{
 		return	&m_lpList[_iIndex];
 	}
-	inline	T*			getList()			{return	m_lpList;}//¸®½ºÆ® ÀÚÃ¼¸¦ ¸®ÅÏ
-	inline	int			getCount()			{return	m_iCount;}//ÇöÀEÄ«¿ûâ®
-	inline	int			getMaxCount()		{return	m_iLimitCount;}//ÃÖ´EÀÎ¿ø¼E
+	inline	T*			getList()			{return	m_lpList;}//ë¦¬ìŠ¤íŠ¸ ìì²´ë¥¼ ë¦¬í„´
+	inline	int			getCount()			{return	m_iCount;}//í˜„ï¿½ÂEì¹´ì›ç¸
+	inline	int			getMaxCount()		{return	m_iLimitCount;}//ìµœï¿½ÂEì¸ì›ï¿½ÂE
 	inline	BOOL		isFull()
 	{
 		if (getCount() == getMaxCount())
@@ -931,7 +931,7 @@ public:
 
 		return	FALSE;
 	}
-	int					add(T* _lpData)//¸â¹EÃß°¡
+	int					add(T* _lpData)//ë©¤ï¿½ÂEì¶”ê°€
 	{
 		if (m_iCount	>=	m_iLimitCount)
 			return	0xffff;
@@ -957,7 +957,7 @@ public:
 		return	iIndex;
 	}
 
-	inline	T*			getRookie(int *_lpSerial)//·çÅ°
+	inline	T*			getRookie(int *_lpSerial)//ë£¨í‚¤
 	{
 		if	(m_iCount	>=	m_iLimitCount)
 			return	NULL;
@@ -967,7 +967,7 @@ public:
 		return	&m_lpList[m_iRookie];
 	}
 
-	inline	int			getRookieSerial()//·çÅ° ½Ã¸®¾E¸®ÅÏ
+	inline	int			getRookieSerial()//ë£¨í‚¤ ì‹œë¦¬ï¿½ÂEë¦¬í„´
 	{
 		if	(m_iCount	>=	m_iLimitCount)
 			return	0xffff;
@@ -975,7 +975,7 @@ public:
 		return	m_iRookie;
 	}
 
-	inline	void		increaseCount()//Ä«¿ûâ® Áõ°¡
+	inline	void		increaseCount()//ì¹´ì›ç¸ ì¦ê°€
 	{
 		if	(m_lpList[m_iRookie].m_wSerial	==	0xffff)
 			return;
@@ -994,7 +994,7 @@ public:
 			}
 	}
 
-	BOOL				remove(int _iIndex)//¸â¹EÁ¦°Å
+	BOOL				remove(int _iIndex)//ë©¤ï¿½ÂEì œê±°
 	{
 		if	(_iIndex	<	0	||	_iIndex	>=	m_iLimitCount	||	m_lpList	==	NULL	||	m_lpList[_iIndex].m_wSerial	==	0xffff)
 			return	FALSE;
@@ -1017,7 +1017,7 @@ public:
 		return	TRUE;
 	}
 
-	BOOL				replace(int _iSerial,T *_lpData)	//Æ¯Á¤ ÀÎµ¦½º¿¡ ¸â¹EÃß°¡ÇÏ°Å³ª µ¤¾E¾²±E
+	BOOL				replace(int _iSerial,T *_lpData)	//íŠ¹ì • ì¸ë±ìŠ¤ì— ë©¤ï¿½ÂEì¶”ê°€í•˜ê±°ë‚˜ ë®ï¿½ÂEì“°ï¿½ÂE
 	{
 		BOOL	bIsExist	=	FALSE;
 
@@ -1046,7 +1046,7 @@ public:
 		return	TRUE;
 	}
 
-	BOOL				insert(int _iSerial,T *_lpData)//Æ¯Á¤ ÀÎµ¦½º¿¡ ¸â¹EÃß°¡
+	BOOL				insert(int _iSerial,T *_lpData)//íŠ¹ì • ì¸ë±ìŠ¤ì— ë©¤ï¿½ÂEì¶”ê°€
 	{
 		if	(m_lpList[_iSerial].m_wSerial	!=	0xffff)
 			return	FALSE;
@@ -1107,13 +1107,13 @@ public:
 
 //////////////////////////////////////////////////////////////////////////////////
 
-//	class	cTHREAD	:	¾²·¹µE
+//	class	cTHREAD	:	ì“°ë ˆï¿½ÂE
 //////////////////////////////////////////////////////////////////////////////////
 class cTHREAD
 {
 public:
-	HANDLE		ThreadHandle;	// ½º·¹µEÇÚµE
-	DWORD		ThreadAddr;     // ½º·¹µEÁÖ¼Ò
+	HANDLE		ThreadHandle;	// ìŠ¤ë ˆï¿½ÂEí•¸ï¿½ÂE
+	DWORD		ThreadAddr;     // ìŠ¤ë ˆï¿½ÂEì£¼ì†Œ
 
 				cTHREAD();
 				~cTHREAD();
@@ -1123,7 +1123,7 @@ public:
 
 };
 
-#define	mCS(cs)	CCriticalSection c_s(&cs)	//	Å©¸®Æ¼ÄÃ ¼½¼Ç ½ÃÀÛ
+#define	mCS(cs)	CCriticalSection c_s(&cs)	//	í¬ë¦¬í‹°ì»¬ ì„¹ì…˜ ì‹œì‘
 
 class	CCriticalSection
 {
@@ -1170,25 +1170,25 @@ GetHashCode(char* _lpString)
 
 //////////////////////////////////////////////////////////////////////////////////
 
-//	µğ¹ö±EEÄÚµåµE Á» ÁöÀúºĞ ÇØµµ ¸Å¿EÁß¿äÇÏ´Ï ÂEÆ¶E --;;
+//	ë””ë²„ï¿½ÂEÂEì½”ë“œï¿½ÂE ì¢€ ì§€ì €ë¶„ í•´ë„ ë§¤ï¿½ÂEì¤‘ìš”í•˜ë‹ˆ ï¿½ÂEí‹‹ÂE --;;
 
 //////////////////////////////////////////////////////////////////////////////////
-#define	dCHECK_PTR_HEAD			0x12345678					//	Æ÷ÀÎÅÍ¸¦ Ã¼Å©ÇÑ´Ù. ÇEE
-#define	dCHECK_PTR_TAIL			0x87654321					//	Æ÷ÀÎÅÍ¸¦ Ã¼Å©ÇÑ´Ù. ¸¶¹«¸®
-#define	dCHECK_MCU_HEAD			dCHECK_PTR_TAIL				//	MCUÀÇ Æ÷ÀÎÅÍ¸¦ Ã¼Å©ÇÑ´Ù. ÇEE
-#define	dCHECK_MCU_TAIL			dCHECK_PTR_HEAD				//	MCUÀÇ Æ÷ÀÎÅÍ¸¦ Ã¼Å©ÇÑ´Ù. ¸¶¹«¸®
-#define	dPTR_STRING_SIZE		64							//	Æ÷ÀÎÅÍ ÀÌ¸§ »çÀÌÁE
-#ifdef dDEBUG_MODE			//	µğ¹ö±E¸ğµå³Ä?
-#define	dCHECK_POINTER_SIZE		(64+12)						//	Æ÷ÀÎÅÍ ÀÌ¸§ »çÀÌÁE
-#define	TEST(err,method)	if (err) method;			//	errÀÌ Ã¼Å© µÇ¸Emethod¸¦ ½ÇÇE
-#define	CRY(err,message)	if (err) ERRMSG(message);		//	errÀÌ Ã¼Å© µÇ¸Emethod¸¦ ½ÇÇE
+#define	dCHECK_PTR_HEAD			0x12345678					//	í¬ì¸í„°ë¥¼ ì²´í¬í•œë‹¤. ï¿½ÂEÂE
+#define	dCHECK_PTR_TAIL			0x87654321					//	í¬ì¸í„°ë¥¼ ì²´í¬í•œë‹¤. ë§ˆë¬´ë¦¬
+#define	dCHECK_MCU_HEAD			dCHECK_PTR_TAIL				//	MCUì˜ í¬ì¸í„°ë¥¼ ì²´í¬í•œë‹¤. ï¿½ÂEÂE
+#define	dCHECK_MCU_TAIL			dCHECK_PTR_HEAD				//	MCUì˜ í¬ì¸í„°ë¥¼ ì²´í¬í•œë‹¤. ë§ˆë¬´ë¦¬
+#define	dPTR_STRING_SIZE		64							//	í¬ì¸í„° ì´ë¦„ ì‚¬ì´ï¿½ÂE
+#ifdef dDEBUG_MODE			//	ë””ë²„ï¿½ÂEëª¨ë“œëƒ?
+#define	dCHECK_POINTER_SIZE		(64+12)						//	í¬ì¸í„° ì´ë¦„ ì‚¬ì´ï¿½ÂE
+#define	TEST(err,method)	if (err) method;			//	errì´ ì²´í¬ ë˜ï¿½ÂEmethodë¥¼ ì‹¤ï¿½ÂE
+#define	CRY(err,message)	if (err) ERRMSG(message);		//	errì´ ì²´í¬ ë˜ï¿½ÂEmethodë¥¼ ì‹¤ï¿½ÂE
 #define	EXPEL(err)			if (err) goto LABEL_EXILE;
 
-//	¸Ş¸ğ¸®¸¦ ¼³Á¤ ¸ÅÅ©·Î. type ÇEnumbers °¹¼Emcu cMCU Æ÷ÀÎÅÍ NULLÀÌ¸E±×³É ¸Ş¸ğ¸®¿¡ ¼³Á¤ÇÑ´Ù. name µğ¹ö±EEÆ÷ÀÎÅÍ ÀÌ¸§
+//	ë©”ëª¨ë¦¬ë¥¼ ì„¤ì • ë§¤í¬ë¡œ. type ï¿½ÂEnumbers ê°¯ï¿½ÂEmcu cMCU í¬ì¸í„° NULLì´ï¿½ÂEê·¸ëƒ¥ ë©”ëª¨ë¦¬ì— ì„¤ì •í•œë‹¤. name ë””ë²„ï¿½ÂEÂEí¬ì¸í„° ì´ë¦„
 
 #define	New(type,numbers,mcu,name)		(type *)__new((numbers)*sizeof(type),mcu,name)
 
-//	¸Ş¸ğ¸®¸¦ ÇØÁ¦ ¸ÅÅ©·Î. ÀÏ´Ü ÀÖ´ÂÁE?) È®ÀÎÇÏ°EÀÖÀ¸¸EÃ¼Å©ÇÑ ´ÙÀ½¿¡ ÇØÁ¦ÇÏ°EÆ÷ÀÎÅÍ¸¦ ÃÊ±âÈ­ ½ÃÅ²´Ù.
+//	ë©”ëª¨ë¦¬ë¥¼ í•´ì œ ë§¤í¬ë¡œ. ì¼ë‹¨ ìˆëŠ”ï¿½ÂE?) í™•ì¸í•˜ï¿½ÂEìˆìœ¼ï¿½ÂEì²´í¬í•œ ë‹¤ìŒì— í•´ì œí•˜ï¿½ÂEí¬ì¸í„°ë¥¼ ì´ˆê¸°í™” ì‹œí‚¨ë‹¤.
 template <typename T>
 void Free(T ptr)
 {
@@ -1200,7 +1200,7 @@ void Free(T ptr)
 	}
 }
 
-//	¸Ş¸ğ¸®¸¦ ¼³Á¤ ÇÔ¼E type ÇEnumbers °¹¼Emcu cMCU Æ÷ÀÎÅÍ NULLÀÌ¸E±×³É ¸Ş¸ğ¸®¿¡ ¼³Á¤ÇÑ´Ù. name µğ¹ö±EEÆ÷ÀÎÅÍ ÀÌ¸§
+//	ë©”ëª¨ë¦¬ë¥¼ ì„¤ì • í•¨ï¿½ÂE type ï¿½ÂEnumbers ê°¯ï¿½ÂEmcu cMCU í¬ì¸í„° NULLì´ï¿½ÂEê·¸ëƒ¥ ë©”ëª¨ë¦¬ì— ì„¤ì •í•œë‹¤. name ë””ë²„ï¿½ÂEÂEí¬ì¸í„° ì´ë¦„
 inline void*  __new(unsigned int size,cMCU *mcu,char *name)
 {	if (mcu)
 	{	void	*ptr	=	mcu->alloc(size,name);
@@ -1210,25 +1210,25 @@ inline void*  __new(unsigned int size,cMCU *mcu,char *name)
 
 	char	*ptr	=	(char *)malloc(size+4+4+4+dPTR_STRING_SIZE);	//	size + head(4) + size(4) + str(64) + tail(4)
 
-	*(unsigned int *)(ptr							)	=	dCHECK_PTR_HEAD;			//	ÇEE	
-	*(unsigned int *)(ptr+4							)	=	(size+8+dPTR_STRING_SIZE);	//	²¿¸® À§Ä¡
-	*(unsigned int *)(ptr+8+dPTR_STRING_SIZE+size	)	=	dCHECK_PTR_TAIL;			//	²¿¸®
-	strncpy((char *)(ptr+8),name,dPTR_STRING_SIZE-1);									//	ÀÌ¸§
+	*(unsigned int *)(ptr							)	=	dCHECK_PTR_HEAD;			//	ï¿½ÂEÂE	
+	*(unsigned int *)(ptr+4							)	=	(size+8+dPTR_STRING_SIZE);	//	ê¼¬ë¦¬ ìœ„ì¹˜
+	*(unsigned int *)(ptr+8+dPTR_STRING_SIZE+size	)	=	dCHECK_PTR_TAIL;			//	ê¼¬ë¦¬
+	strncpy((char *)(ptr+8),name,dPTR_STRING_SIZE-1);									//	ì´ë¦„
 
 	ptr	+=	(dPTR_STRING_SIZE+8);
 
 	return ptr;
 };
 
-//	¸Ş¸ğ¸®¸¦ Ã¼Å© ÇÔ¼E ¸Ş¸ğ¸®¸¦ ÇØÁ¦ ÇÏ±EÀE¡ pÀÇ ¾ÕµÚ¸¦ °Ë»çÇØ ±úÁöÁE¾Ê¾Ò´ÂÁEÈ®ÀÎÇÑ´Ù.
+//	ë©”ëª¨ë¦¬ë¥¼ ì²´í¬ í•¨ï¿½ÂE ë©”ëª¨ë¦¬ë¥¼ í•´ì œ í•˜ï¿½ÂEï¿½ÂEï¿½ pì˜ ì•ë’¤ë¥¼ ê²€ì‚¬í•´ ê¹¨ì§€ï¿½ÂEì•Šì•˜ëŠ”ï¿½ÂEí™•ì¸í•œë‹¤.
 inline void _checkPtr(char *p)
 {	unsigned int	head,tail,size;
 
 	char *ptr	=	p-(dPTR_STRING_SIZE+8);
 
-	head		=	*(DWORD *)(ptr		);		//	ÇEE	
-	size		=	*(DWORD *)(ptr+4	);		//	ÇEE	
-	tail		=	*(DWORD *)(ptr+size	);		//	ÇEE
+	head		=	*(DWORD *)(ptr		);		//	ï¿½ÂEÂE	
+	size		=	*(DWORD *)(ptr+4	);		//	ï¿½ÂEÂE	
+	tail		=	*(DWORD *)(ptr+size	);		//	ï¿½ÂEÂE
 	if (head	!= dCHECK_PTR_HEAD)
 	{	if (head	== dCHECK_MCU_HEAD)
 				ERRMSG(_ms("Error!! pointer %s are cMCU's Client!!",ptr+8));
@@ -1238,15 +1238,15 @@ inline void _checkPtr(char *p)
 	if (tail	!= dCHECK_PTR_TAIL)	ERRMSG(_ms("Error!! pointer %s's TAIL offset damaged!!",ptr+8));
 };
 
-#else	//	#ifdef dDEBUG_MODE	µğ¹ö±E¸ğµå°¡ ¾Æ´Ï´Ù.
-#define	dCHECK_POINTER_SIZE		0						//	Æ÷ÀÎÅÍ ÀÌ¸§ »çÀÌÁE
-//	¿¡·¯Ã¼Å© ¾ÈÇÑ´Ù.
+#else	//	#ifdef dDEBUG_MODE	ë””ë²„ï¿½ÂEëª¨ë“œê°€ ì•„ë‹ˆë‹¤.
+#define	dCHECK_POINTER_SIZE		0						//	í¬ì¸í„° ì´ë¦„ ì‚¬ì´ï¿½ÂE
+//	ì—ëŸ¬ì²´í¬ ì•ˆí•œë‹¤.
 #define	TEST(a,b)				(void(0))
 #define	CRY(err,message)		(void(0))
 #define	EXPEL(err)				(void(0))
 
 
-//	¸Ş¸ğ¸® ÇÒ´E¸ÅÅ©·Î... mcu À¯´ÖÀÌ ÀÖ´Ù¸E±× ³ÑÇÑÅ× ¼³Á¤ÇÏ°E¾Æ´Ï¸E.. °Á ÇÑ´Ù.
+//	ë©”ëª¨ë¦¬ í• ï¿½ÂEë§¤í¬ë¡œ... mcu ìœ ë‹›ì´ ìˆë‹¤ï¿½ÂEê·¸ ë„˜í•œí…Œ ì„¤ì •í•˜ï¿½ÂEì•„ë‹ˆï¿½ÂE.. ê± í•œë‹¤.
 #define	New(type,numbers,mcu,c)	(type *)__new((numbers)*sizeof(type),mcu)
 inline void*  __new(unsigned int size,cMCU *mcu)
 {	void*	ptr;
@@ -1262,7 +1262,7 @@ inline void*  __new(unsigned int size,cMCU *mcu)
 	return ptr;
 }
 
-//	¸Ş¸ğ¸® ÇØÁ¦ ¸ÅÅ©·Î... ÀÌ ¸ŞÅ©·Î°¡ ÂE¶ÇÑ ¸ÅÅ©·ÎÀÎÁEÈ®ÀÎÇÑ´Ù.
+//	ë©”ëª¨ë¦¬ í•´ì œ ë§¤í¬ë¡œ... ì´ ë©”í¬ë¡œê°€ ï¿½ÂEë˜ï¿½ ë§¤í¬ë¡œì¸ï¿½ÂEí™•ì¸í•œë‹¤.
 #define	Free(ptr)											\
 if (ptr)													\
 {	if (*(DWORD*)((char*)(ptr)-4)	==	dCHECK_PTR_TAIL)	\

@@ -87,7 +87,7 @@ cBreedingRecordBookDefine::buildByPetInfo(cPetDefine *_lpPetInfo,int _iAvatarInd
 	memcpy(this,_lpPetInfo,sizeof(cPetAndBook_common));
 
 	m_bf10Level					=	_lpPetInfo->m_bf10Level;
-	m_bf11TamerLevel			=	_iLevel;	//	¡÷¿Œ ∑π∫ß/10
+	m_bf11TamerLevel			=	_iLevel;	//	Ï£ºÏù∏ Î†àÎ≤®/10
 	m_bf4TamerSlot				=	_iAvatarIndex;
 	m_bf7Spare					=	0;
 	

@@ -21,7 +21,7 @@ public:
 		m_strHddName[0] = NULL;
 	}
 
-	void reflash();	//	ÇöÀç HDD¿¡ ´ëÇÑ Á¤º¸¸¦ °»½ÅÇÑ´Ù.
+	void reflash();	//	í˜„ìž¬ HDDì— ëŒ€í•œ ì •ë³´ë¥¼ ê°±ì‹ í•œë‹¤.
 };
 
 class cMEMORYINFO
@@ -35,14 +35,14 @@ public:
 	{
 		m_lTotalSize = 0;
 	}
-	void reflash();	//	ÇöÀç Memory¿¡ ´ëÇÑ Á¤º¸¸¦ °»½ÅÇÑ´Ù.
+	void reflash();	//	í˜„ìž¬ Memoryì— ëŒ€í•œ ì •ë³´ë¥¼ ê°±ì‹ í•œë‹¤.
 };
 
-#define dCPU_USAGE_LIMIT		70//CPU°¡ 70%ÀÌ»óÀ» dCPU_USAGE_LIMIT_COUNTµ¿¾È Áö¼ÓÀûÀ¸·Î »ç¿ëÇÏ°í ÀÖ´Ù¸é °æ°í.
-#define dCPU_USAGE_LIMIT_COUNT	30//ÃÊ ÀÌ»ó À¯ÁöµÈ´Ù¸é
-#define dCPU_USAGE_TEST_COUNT	10//10È¸ÀÇ Æò±ÕÀ» ³½´Ù.
+#define dCPU_USAGE_LIMIT		70//CPUê°€ 70%ì´ìƒì„ dCPU_USAGE_LIMIT_COUNTë™ì•ˆ ì§€ì†ì ìœ¼ë¡œ ì‚¬ìš©í•˜ê³  ìžˆë‹¤ë©´ ê²½ê³ .
+#define dCPU_USAGE_LIMIT_COUNT	30//ì´ˆ ì´ìƒ ìœ ì§€ëœë‹¤ë©´
+#define dCPU_USAGE_TEST_COUNT	10//10íšŒì˜ í‰ê· ì„ ë‚¸ë‹¤.
 
-#define dMEMORY_USAGE_LIMIT		80	//	¹°¸® ¸Þ¸ð¸®ÀÇ 80%ÀÌ»óÀ» »ç¿ëÇÑ´Ù¸é °æ°í.
+#define dMEMORY_USAGE_LIMIT		80	//	ë¬¼ë¦¬ ë©”ëª¨ë¦¬ì˜ 80%ì´ìƒì„ ì‚¬ìš©í•œë‹¤ë©´ ê²½ê³ .
 
 #define dHDD_FREESIZE_LIMIT		500	//	MB
 
@@ -53,7 +53,7 @@ public:
 	int m_iCPUPhysicalCount;
 	int	m_iCPUCoreCount;
 	int	m_iTotalUsage;
-	int m_iCountOfLimitUsage;	//	ÀÌ Ä«¿îÅÍ°¡ ¾ó¸¶ ÀÌ»ó À¯ÁöµÈ´Ù¸é ¹®Á¦°¡ µÇ´Â °Å°ÚÁö.
+	int m_iCountOfLimitUsage;	//	ì´ ì¹´ìš´í„°ê°€ ì–¼ë§ˆ ì´ìƒ ìœ ì§€ëœë‹¤ë©´ ë¬¸ì œê°€ ë˜ëŠ” ê±°ê² ì§€.
 	TCHAR szCPUType[32];
 
 	std::deque<int>		m_dqCpuUsage;
@@ -64,15 +64,15 @@ public:
 		m_iTotalUsage = 0;
 	}
 	int getCPUUsage();
-	void reflash();	//	ÇöÀç CPUÀÇ »ç¿ë·®À» °»½ÅÇÑ´Ù.
+	void reflash();	//	í˜„ìž¬ CPUì˜ ì‚¬ìš©ëŸ‰ì„ ê°±ì‹ í•œë‹¤.
 };
 
 typedef enum
 {
 	eHW_WARNING_NOTHING,
-	eHW_WARNING_OVER_CPU_USAGE,	//	CPU°¡ ÀÏÁ¤ »ç¿ë·®À» Áö¼ÓÀûÀ¸·Î ³Ñ¾î¼­°í ÀÖ´Ù.
-	eHW_WARNING_OVER_MEMORY_USAGE,//¸Þ¸ð¸® »ç¿ë·®ÀÌ ÀÏÁ¤ ±âÁØÄ¡¸¦ ³Ñ¾î¼¹´Ù. leak ÀÎ°¡¸¦ ÀÇ½ÉÇØº¸ÀÚ. È¤Àº ¾û¶×ÇÑ ÇÁ·Î¼¼½º°¡ µ¹°í ÀÖ´Â °Ç°¡?
-	eHW_WARNING_HAVENOT_FREESIZE,	//	HDD¿¡ ºó°ø°£ÀÌ ¾ø´Ù. Á¶Ãë¸¦ ÃëÇÏÀÚ.
+	eHW_WARNING_OVER_CPU_USAGE,	//	CPUê°€ ì¼ì • ì‚¬ìš©ëŸ‰ì„ ì§€ì†ì ìœ¼ë¡œ ë„˜ì–´ì„œê³  ìžˆë‹¤.
+	eHW_WARNING_OVER_MEMORY_USAGE,//ë©”ëª¨ë¦¬ ì‚¬ìš©ëŸ‰ì´ ì¼ì • ê¸°ì¤€ì¹˜ë¥¼ ë„˜ì–´ì„°ë‹¤. leak ì¸ê°€ë¥¼ ì˜ì‹¬í•´ë³´ìž. í˜¹ì€ ì—‰ëš±í•œ í”„ë¡œì„¸ìŠ¤ê°€ ëŒê³  ìžˆëŠ” ê±´ê°€?
+	eHW_WARNING_HAVENOT_FREESIZE,	//	HDDì— ë¹ˆê³µê°„ì´ ì—†ë‹¤. ì¡°ì·¨ë¥¼ ì·¨í•˜ìž.
 
 }eHW_WARNING;
 
@@ -88,17 +88,17 @@ public:
 	cHardwareInfo(void);
 	~cHardwareInfo(void);
 
-	//	½Ç½Ã°£À¸·Î °Ë»çÇÏ±â
-	int getCPUUsage();	//	sleep »ç¿ë. ÁÖÀÇÇÒ °Í!!
-	void getCPUDetailInfo(cCPUINFO * _info);	//	sleep »ç¿ë. ÁÖÀÇÇÒ °Í!!
-	cCPUINFO* getCPUDetailInfo() { return &m_cCPUInfo; }	//	sleep »ç¿ë. ÁÖÀÇÇÒ °Í!!
+	//	ì‹¤ì‹œê°„ìœ¼ë¡œ ê²€ì‚¬í•˜ê¸°
+	int getCPUUsage();	//	sleep ì‚¬ìš©. ì£¼ì˜í•  ê²ƒ!!
+	void getCPUDetailInfo(cCPUINFO * _info);	//	sleep ì‚¬ìš©. ì£¼ì˜í•  ê²ƒ!!
+	cCPUINFO* getCPUDetailInfo() { return &m_cCPUInfo; }	//	sleep ì‚¬ìš©. ì£¼ì˜í•  ê²ƒ!!
 	void getMemoryInfo(cMEMORYINFO * _info);
 	cMEMORYINFO* getMemoryInfo() { return &m_cMemoryInfo; }
 
 	std::deque<cHDDINFO> * getHDDInfoAll();
 	cHDDINFO * getHDDInfo(int _idx);
 
-	void reflash();	//	¼öµ¿À¸·Î Á¤º¸¸¦ °»½ÅÇÏµµ·Ï ÇÑ´Ù.
-	int	 checkHW();	//	±âÁØÁ¡À» ³Ñ¾î¼± HW°¡ ÀÖ´ÂÁö¸¦ È®ÀÎÇÑ´Ù.
-//	void reflashThread();//ÇÑ°³ÀÇ Thread¸¦ ÀÌ¿ëÇØ¼­ Á¤º¸¸¦ °»½ÅÇÏµµ·Ï ÇÏ¸ç, ÇÑ°³ ÀÌ»óÀÌ ¸¸µé¾î Áú ¼ö´Â ¾ø´Ù. ±ÍÂú´Ù. -- ³ªÁß¿¡ ÇÏÀÚ.
+	void reflash();	//	ìˆ˜ë™ìœ¼ë¡œ ì •ë³´ë¥¼ ê°±ì‹ í•˜ë„ë¡ í•œë‹¤.
+	int	 checkHW();	//	ê¸°ì¤€ì ì„ ë„˜ì–´ì„  HWê°€ ìžˆëŠ”ì§€ë¥¼ í™•ì¸í•œë‹¤.
+//	void reflashThread();//í•œê°œì˜ Threadë¥¼ ì´ìš©í•´ì„œ ì •ë³´ë¥¼ ê°±ì‹ í•˜ë„ë¡ í•˜ë©°, í•œê°œ ì´ìƒì´ ë§Œë“¤ì–´ ì§ˆ ìˆ˜ëŠ” ì—†ë‹¤. ê·€ì°®ë‹¤. -- ë‚˜ì¤‘ì— í•˜ìž.
 };

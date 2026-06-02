@@ -1,0 +1,435 @@
+[181308] Open addr  [0] = 25.1.80.156
+
+
+[181308] START WorkerThread[2] ...
+
+[181308] START WorkerThread[0] ...
+
+[181308] START WorkerThread[1] ...
+
+[181308] START AcceptLoop ...
+
+[181310] ERROR : connect [53621,25.1.80.156] Error 10061
+
+
+[181310] Fail Connect World !!
+
+
+[181313] Error InitSocket 
+
+
+[181407] Open addr  [0] = 25.1.80.156
+
+
+[181407] START WorkerThread[0] ...
+
+[181407] START WorkerThread[2] ...
+
+[181407] START WorkerThread[1] ...
+
+[181407] START AcceptLoop ...
+
+[181409] ERROR : connect [53621,25.1.80.156] Error 10061
+
+
+[181409] Fail Connect World !!
+
+
+[181410] Error InitSocket 
+
+
+[181413] Open addr  [0] = 25.1.80.156
+
+
+[181413] START WorkerThread[0] ...
+
+[181413] START AcceptLoop ...
+
+[181413] START WorkerThread[1] ...
+
+[181413] START WorkerThread[2] ...
+
+[181415] ERROR : connect [53621,25.1.80.156] Error 10061
+
+
+[181415] Fail Connect World !!
+
+
+[181420] Error InitSocket 
+
+
+[182603] Open addr  [0] = 25.1.80.156
+
+
+[182603] START WorkerThread[0] ...
+
+[182603] START WorkerThread[2] ...
+
+[182603] START AcceptLoop ...
+
+[182603] START WorkerThread[1] ...
+
+[182605] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182605] START AdditionThread ...
+
+[182605] [type01] map count = 581 
+
+
+[182605] START BCControlThread ...
+
+[182605] START WorldCtlThread ...
+
+[182605]  Request the list of provision ranking
+
+[182605] Send Ip = 25.1.80.156
+
+[182605] 
+ Start Game Server ... day : 20260601 - time : 182605 
+
+
+[182605]  Received provision ranking
+
+[182616] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182625] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182635] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182645] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182655] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182705] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182714] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182724] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182734] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182744] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182754] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182804] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182813] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182823] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182833] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182843] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182853] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182903] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182912] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182922] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182932] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182942] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[182952] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183001] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183011] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183021] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183031] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183041] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183051] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183100] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183110] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183120] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183202] Open addr  [0] = 25.1.80.156
+
+
+[183202] START WorkerThread[0] ...
+
+[183202] START WorkerThread[2] ...
+
+[183202] START AcceptLoop ...
+
+[183202] START WorkerThread[1] ...
+
+[183204] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183204] [type01] map count = 581 
+
+
+[183204] Send Ip = 25.1.80.156
+
+[183204] START BCControlThread ...
+
+[183204] START WorldCtlThread ...
+
+[183204] 
+ Start Game Server ... day : 20260601 - time : 183204 
+
+
+[183204] START AdditionThread ...
+
+[183204]  Request the list of provision ranking
+
+[183204]  Received provision ranking
+
+[183214] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183224] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183234] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183244] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183254] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183304] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183313] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183323] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183333] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183343] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183353] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183402] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183412] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183422] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183432] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183442] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183452] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183501] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[183509] RECONNECT : [25.1.80.156] [56621]
+
+[184406] Open addr  [0] = 25.1.80.156
+
+
+[184406] Fail bind !! - 10048
+
+[184407] Error InitSocket 
+
+
+[185933] Open addr  [0] = 25.1.80.156
+
+
+[185933] START WorkerThread[0] ...
+
+[185933] START WorkerThread[2] ...
+
+[185933] START WorkerThread[1] ...
+
+[185933] START AcceptLoop ...
+
+[185933] BCTHREAD START : [25.1.80.156] [56621]
+
+[185933] START AdditionThread ...
+
+[185933] [type01] map count = 581 
+
+
+[185933] START WorldCtlThread ...
+
+[185933] Send Ip = 25.1.80.156
+
+[185933] 
+ Start Game Server ... day : 20260601 - time : 185933 
+
+
+[185933] START BCControlThread ...
+
+[185933]  Request the list of provision ranking
+
+[185933]  Received provision ranking
+
+[190119] Open addr  [0] = 25.1.80.156
+
+
+[190119] Fail bind !! - 10048
+
+[190201] Error InitSocket 
+
+
+[190456] Open addr  [0] = 25.1.80.156
+
+
+[190456] Fail bind !! - 10048
+
+[190637] Open addr  [0] = 25.1.80.156
+
+
+[190637] START WorkerThread[0] ...
+
+[190637] START WorkerThread[2] ...
+
+[190637] START AcceptLoop ...
+
+[190637] START WorkerThread[1] ...
+
+[190637] BCTHREAD START : [25.1.80.156] [56621]
+
+[190637] [type01] map count = 581 
+
+
+[190637] START AdditionThread ...
+
+[190637] Send Ip = 25.1.80.156
+
+[190637] START BCControlThread ...
+
+[190637] START WorldCtlThread ...
+
+[190637] 
+ Start Game Server ... day : 20260601 - time : 190637 
+
+
+[190637]  Request the list of provision ranking
+
+[190637]  Received provision ranking
+
+[192319] ERROR acceptUserCount[0] =-1 
+
+[211047]  [omizu1 (Ç®êÖwiz)] is waste. state[1] 
+
+[221439] ERROR acceptUserCount[0] =-1 
+
+[224258] Open addr  [0] = 25.1.80.156
+
+
+[224258] START WorkerThread[0] ...
+
+[224258] START WorkerThread[1] ...
+
+[224258] START WorkerThread[2] ...
+
+[224258] START AcceptLoop ...
+
+[224258] BCTHREAD START : [25.1.80.156] [56621]
+
+[224258] [type01] map count = 581 
+
+
+[224258] START AdditionThread ...
+
+[224258] Send Ip = 25.1.80.156
+
+[224258] 
+ Start Game Server ... day : 20260601 - time : 224258 
+
+
+[224258]  Request the list of provision ranking
+
+[224258] START BCControlThread ...
+
+[224258] START WorldCtlThread ...
+
+[224258]  Received provision ranking
+
+[230940] Open addr  [0] = 25.1.80.156
+
+
+[230940] START WorkerThread[1] ...
+
+[230940] START WorkerThread[0] ...
+
+[230940] START WorkerThread[2] ...
+
+[230940] START AcceptLoop ...
+
+[230940] BCTHREAD START : [25.1.80.156] [56621]
+
+[230940] START AdditionThread ...
+
+[230940] [type01] map count = 581 
+
+
+[230940] START WorldCtlThread ...
+
+[230940] Send Ip = 25.1.80.156
+
+[230940]  Request the list of provision ranking
+
+[230940] 
+ Start Game Server ... day : 20260601 - time : 230940 
+
+
+[230940] START BCControlThread ...
+
+[230940]  Received provision ranking
+
+[234222]  [omizu1 (Ç®Ç›Ç∏)] is waste. state[1] 
+

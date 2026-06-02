@@ -206,7 +206,7 @@ cServerStatus::getError(BOOL isFirst)
 			strcpy(info.Param2_char512,(_bstr_t)v_bufferdata);
 			VariantClear(&v_bufferdata);
 
-			for(int l=0; l<m_listSSError.size(); l++)	//	°°Àº ÀÎµ¦½º°¡ Á¸ÀçÇÏ¸é Ãë¼Ò..
+			for(int l=0; l<m_listSSError.size(); l++)	//	ê°™ì€ ì¸ë±ìŠ¤ê°€ ì¡´ìž¬í•˜ë©´ ì·¨ì†Œ..
 			{
 				if( info == m_listSSError.at(l) )
 					break;

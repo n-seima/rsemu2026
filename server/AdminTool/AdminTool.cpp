@@ -269,7 +269,10 @@ BOOL CAdminToolApp::InitInstance()
 	//  of your final executable, you should remove from the following
 	//  the specific initialization routines you do not need.
 
-	GetCurrentDirectory(1024,strCurPath);
+	GetModuleFileName(NULL,strCurPath,sizeof(strCurPath));
+	char *pSlash = strrchr(strCurPath,'\\');
+	if(pSlash)
+		*pSlash = 0;
 
 	initMessage();
 
@@ -314,14 +317,14 @@ BOOL CAdminToolApp::InitInstance()
 	strcpy(strLoginDBPw,"redstone");
 	g_iDBPort = 50505;
 #elif _FOR_JAPAN
-	strcpy(strAvatarDBCId,"redstone");
-	strcpy(strAvatarDBCPw,"qnfrdmsqhtjr");
-	strcpy(strAccountDBCId,"redstone");
-	strcpy(strAccountDBCPw,"qnfrdmsqhtjr");
+	strcpy(strAvatarDBCId,"RedMaster");
+	strcpy(strAvatarDBCPw,"CJFVKSRNDL");
+	strcpy(strAccountDBCId,"RedMaster");
+	strcpy(strAccountDBCPw,"CJFVKSRNDL");
 	strcpy(strLogFtpId,"redstone");
 	strcpy(strLogFtpPw,"qnfrdmsqhtjr");
-	strcpy(strLoginDBId,"redstone");
-	strcpy(strLoginDBPw,"qnfrdmsqhtjr");
+	strcpy(strLoginDBId,"RedMaster");
+	strcpy(strLoginDBPw,"CJFVKSRNDL");
 	g_iDBPort = 50605;
 #elif _FOR_USA
 	strcpy(strAvatarDBCId,"redstone");
@@ -435,13 +438,11 @@ BOOL CAdminToolApp::InitInstance()
 
 	l_pAdminToolDlg	=	new CAdminToolDlg();
 
-	nResponse		=	l_pAdminToolDlg->DoModal();
-
 	if	(nResponse	==	IDOK	&&	extLevel	>=	eAL_ONLY_SEARCH)
 	{
 		m_pMainWnd	= l_pAdminToolDlg;
 
-		int nResponse = l_pAdminToolDlg->DoModal();
+		nResponse = l_pAdminToolDlg->DoModal();
 
 		if	(nResponse == IDCANCEL)
 		{

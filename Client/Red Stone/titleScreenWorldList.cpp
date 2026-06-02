@@ -154,15 +154,10 @@ cGAME_TITLE::DrawWorldList()
 			if	(j	==	s_iFocusServer)
 				iImage	+=	3;
 
-			int	iFirstNumber	=	iWorldCount/10;
-			int	iSecondNumber	=	iWorldCount%10;
-
 			pos.x	=	iX+(iWorldCount%iCoulums)*iBarWidth;
 			pos.y	=	iY+(iWorldCount/iCoulums)*iBarHeight;
 
 			g_sprInterface2.put3PieceBar(pos.x,pos.y,iImage,iPutBarWidth);
-			g_sprInterface2.Put(pos.x+1,pos.y+10,eSWLI_ZERO+iFirstNumber);
-			g_sprInterface2.Put(pos.x+7,pos.y+10,eSWLI_ZERO+iSecondNumber);
 
 			if	(s_aServerList[j].m_wType	==	eSERVER_TYPE_TEST)
 				g_sprInterface2.Put(pos.x+iPutBarWidth-36,pos.y+5,eSWLI_TEST_SERVER);
@@ -171,13 +166,10 @@ cGAME_TITLE::DrawWorldList()
 
 			s_text.pushShadowStatus(FALSE);
 
-			if	(bIsInnerOpen)
-				s_text.put(pos.x+18,pos.y+5,dwColor,"IO_%s",s_aServerList[j].m_strName);
-			else
 			if	(iServerType	==	eSERVER_TYPE_GVG)
-				s_text.put(pos.x+18,pos.y+5,dwColor,"%s[G.V.G]",s_aServerList[j].m_strName);
+				s_text.put(pos.x+8,pos.y+5,dwColor,"%s[G.V.G]",s_aServerList[j].m_strName);
 			else
-				s_text.put(pos.x+18,pos.y+5,dwColor,s_aServerList[j].m_strName);
+				s_text.put(pos.x+8,pos.y+5,dwColor,s_aServerList[j].m_strName);
 			s_text.popShadowStatus();
 
 			iWorldCount++;

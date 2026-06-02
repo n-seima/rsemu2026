@@ -21,7 +21,28 @@
 #include "duel.h"
 #include "book_MonsterDictionary.h"
 
-WORD	l_aReferenceScreen[1024*768];
+WORD	*l_lpReferenceScreen		=	NULL;
+int		l_iReferenceScreenSize	=	0;
+
+WORD *
+GetReferenceScreen()
+{
+	int	iScreenSize	=	cDRAW::WIDTH*cDRAW::HEIGHT;
+
+	if	(iScreenSize	<=	0)
+		iScreenSize	=	800*600;
+
+	if	(l_iReferenceScreenSize	<	iScreenSize)
+	{
+		if	(l_lpReferenceScreen)
+			delete [] l_lpReferenceScreen;
+
+		l_lpReferenceScreen		=	new WORD [iScreenSize];
+		l_iReferenceScreenSize	=	iScreenSize;
+	}
+
+	return	l_lpReferenceScreen;
+}
 
 enum
 {
@@ -424,7 +445,7 @@ CGamePlay::DrawNormalGameScreen()
 			
 			cDRAW::SetClippginArea(posHero.x-150,posHero.y-75,posHero.x+150,posHero.y+75);
 			
-			lpScreen		=	l_aReferenceScreen;
+			lpScreen		=	GetReferenceScreen();
 			
 		}
 //		else if(g_map.m_bf1IsNight)
@@ -508,7 +529,7 @@ CGamePlay::DrawNormalGameScreen()
 			
 			//g_sprInterface2.Put(100 , 200, eBLIND_STATUS_REFERENCE_IMAGE_SMALL);
 			
-			g_sprInterface2.putReferenceImage(posHero.x,posHero.y,iImage,l_aReferenceScreen);			
+			g_sprInterface2.putReferenceImage(posHero.x,posHero.y,iImage,GetReferenceScreen());			
 			//g_lpHero->m_wIsAddPaint = FALSE;
 		}
 // 		else if(g_map.m_bf1IsNight)

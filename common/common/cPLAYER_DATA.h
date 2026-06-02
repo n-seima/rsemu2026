@@ -29,7 +29,7 @@ class	cITEM;
 
 #define	dDEFAULT_ITEM_SLOT_COUNT	30
 //
-//	¾×ÅÍ µ¥ÀÌÅÍ(¼­¹ö¿¡ ÀúÀåÇÒ¶§ ÀÌ µ¥ÀÌÅÍ¸¦ ÀúÀåÇÑ´Ù.)
+//	ì•¡í„° ë°ì´í„°(ì„œë²„ì— ì €ì¥í• ë•Œ ì´ ë°ì´í„°ë¥¼ ì €ì¥í•œë‹¤.)
 class	cPLAYER_DATA	:	public CPlayerSaveDataForServerDefine
 {
 public:
@@ -39,7 +39,7 @@ public:
 		int	iInventorySize	=	dDEFAULT_ITEM_SLOT_COUNT;
 
 		for (int j=0;j<dMAX_PLAYER_TITLE_COUNT;j++)
-			if (m_aTitle[j].m_bTitle == 2)	//	Áü²Û
+			if (m_aTitle[j].m_bTitle == 2)	//	ì§ê¾¼
 				iInventorySize	=	c_aItemCount[m_aTitle[j].m_bLevel-1];
 
 		return	iInventorySize;
@@ -90,12 +90,12 @@ public:
 
 extern	cPLAYER_DATA	g_aPlayerDefaultJobData[dPLAYER_JOB_COUNT];
 extern	BOOL			LoadDefaultPlayerData(char *fn);
-extern	DWORD			g_aExpTable[1000];
+extern	DWORD			g_aExpTable[2000];
 
 #define dEQUIP_WEAPON			0
 #define dEQUIP_WEAPON_2			17
 #define dEQUIP_SHIELD_BULLET	1
-#define	dEQUIP_ARMOR			2			//	°©¿Ê
+#define	dEQUIP_ARMOR			2			//	ê°‘ì˜·
 
 #define	dOWN_ITEM_COUNT								42
 #define	dEQUIPMENT_PART_COUNT						23

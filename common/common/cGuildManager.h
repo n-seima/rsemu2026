@@ -21,7 +21,7 @@ class cGuild : public CGuildAdvanceInfo
 {
 public:
 	WORD				wSerial;
-	WORD				wPre;		//	0xffff - ÃÊ±â»óÅÂ , 1 - ÀÓ½Ã µî·ÏµÈ »óÅÂ. 0 - Á¤½Äµî·ÏµÈ »óÅÂ
+	WORD				wPre;		//	0xffff - ì´ˆê¸°ìƒíƒœ , 1 - ì„ì‹œ ë“±ë¡ëœ ìƒíƒœ. 0 - ì •ì‹ë“±ë¡ëœ ìƒíƒœ
 	DWORD				dwUpdateTime;
 	DWORD				dwHashValue;
 
@@ -41,12 +41,12 @@ public:
 	
 	int					getCheckSum();
 	void				updateGuildInfo();
-	int					increaseGuildExp(DWORD _dwExp);			//	±æµå °æÇèÄ¡¸¦ Áõ°¡ ½ÃÅ°°í Áõ°¡ÇÑ ·¹º§À» ¹İÈ¯ÇÑ´Ù.
-	BOOL				makeLevel(int _iLevel);	//	·¹º§ º¯°æ
+	int					increaseGuildExp(DWORD _dwExp);			//	ê¸¸ë“œ ê²½í—˜ì¹˜ë¥¼ ì¦ê°€ ì‹œí‚¤ê³  ì¦ê°€í•œ ë ˆë²¨ì„ ë°˜í™˜í•œë‹¤.
+	BOOL				makeLevel(int _iLevel);	//	ë ˆë²¨ ë³€ê²½
 	int					increaseGuildSkillLevel(int _iSkill,CGuildSkillInfo *_lpSkillInfo);
 	int					getCurrentGuildPointSum();
 	
-	//	±æµå ½ºÅ³·¹º§ Áõ°¡ ½ÃÅ°°í °á°ú¸¦ ¸®ÅÏ, Áõ°¡ÇÑ ½ºÅ³¿¡ ´ëÇÑ Á¤º¸´Â _lpSkillInfo¿¡ ´ã´Â´Ù.
+	//	ê¸¸ë“œ ìŠ¤í‚¬ë ˆë²¨ ì¦ê°€ ì‹œí‚¤ê³  ê²°ê³¼ë¥¼ ë¦¬í„´, ì¦ê°€í•œ ìŠ¤í‚¬ì— ëŒ€í•œ ì •ë³´ëŠ” _lpSkillInfoì— ë‹´ëŠ”ë‹¤.
 	WORD				Add(CGuildMan * _p);
 	void				Del(char *);
 	void				Del(WORD _serial);
@@ -67,30 +67,30 @@ public:
 
 	void				captureGuildHall(int _iHallLevel,int _iHallSlot);
 
-	inline void			writeNotice(WORD _wType,char *_strNotice)		//	°øÁö»çÇ× ¾²±â
+	inline void			writeNotice(WORD _wType,char *_strNotice)		//	ê³µì§€ì‚¬í•­ ì“°ê¸°
 	{
 		m_wNoticeType = _wType;
 		strcpy(m_strNotice,_strNotice);
 	}
 
-	//	°è±Ş ÀÌµ¿ : ±æµå ÀÌ¸§ , ±æµå¿ø ÀÌ¸§ , ÀÌµ¿ÇÒ °è±Ş
+	//	ê³„ê¸‰ ì´ë™ : ê¸¸ë“œ ì´ë¦„ , ê¸¸ë“œì› ì´ë¦„ , ì´ë™í•  ê³„ê¸‰
 	int				moveClass(char *ava_name, WORD c);
-	//	¸¶½ºÅÍ ¹°·ÁÁÖ±â : »õ·Î¿î ¸¶½ºÅÍµÉ À¯ÀúÀÌ¸§ (±âÁ¸ ¸¶½ºÅÍ´Â °è±ŞÀÌµ¿-> ¿ø·Î)
+	//	ë§ˆìŠ¤í„° ë¬¼ë ¤ì£¼ê¸° : ìƒˆë¡œìš´ ë§ˆìŠ¤í„°ë  ìœ ì €ì´ë¦„ (ê¸°ì¡´ ë§ˆìŠ¤í„°ëŠ” ê³„ê¸‰ì´ë™-> ì›ë¡œ)
 	int				moveMaster(char *ava_name);
-	//	±æµå ÀÎº¥Åä¸® »ç¿ë(³Ö±â , ²¨³»±â)
-//	int				useInven(int type , ¾ÆÀÌÅÛ Á¤º¸ );
-	//	±æµå ÀÎº¥Åä¸® °ø°£ ´Ã¸®±â
+	//	ê¸¸ë“œ ì¸ë²¤í† ë¦¬ ì‚¬ìš©(ë„£ê¸° , êº¼ë‚´ê¸°)
+//	int				useInven(int type , ì•„ì´í…œ ì •ë³´ );
+	//	ê¸¸ë“œ ì¸ë²¤í† ë¦¬ ê³µê°„ ëŠ˜ë¦¬ê¸°
 	int				addInven();
-	//	Á¢¼ÓÁßÀÎ ±æµå¿øµé¿¡°Ô ±æµå Á¤º¸ º¸³»±â
-	//				Ã¼ÆÃ ¸Ş¼¼Áö º¸³»±â
+	//	ì ‘ì†ì¤‘ì¸ ê¸¸ë“œì›ë“¤ì—ê²Œ ê¸¸ë“œ ì •ë³´ ë³´ë‚´ê¸°
+	//				ì²´íŒ… ë©”ì„¸ì§€ ë³´ë‚´ê¸°
 
-	//	±æµå °æÇèÄ¡ ´õÇÏ±â , ·¹º§ Ã³¸® , ½ºÅ³ Æ÷ÀÎÆ® ºÎ¿© 
+	//	ê¸¸ë“œ ê²½í—˜ì¹˜ ë”í•˜ê¸° , ë ˆë²¨ ì²˜ë¦¬ , ìŠ¤í‚¬ í¬ì¸íŠ¸ ë¶€ì—¬ 
 	int				addExp(int e);
-	//	Æ÷ÀÎÅÍ »ç¿ëÇÏ±â
-//	int				usePoint(»ç¿ëÇÏ·Á´Â °÷ );
-	//	±âºÎ±İ ³»±â
+	//	í¬ì¸í„° ì‚¬ìš©í•˜ê¸°
+//	int				usePoint(ì‚¬ìš©í•˜ë ¤ëŠ” ê³³ );
+	//	ê¸°ë¶€ê¸ˆ ë‚´ê¸°
 	int				sendGift(int g);
-	//	±âºÎ±İ »ç¿ë
+	//	ê¸°ë¶€ê¸ˆ ì‚¬ìš©
 	int				useGift(int g);
 
 	int				getPetLevel(int _iExp);
@@ -105,7 +105,7 @@ private:
 public:
 	cGuildManager();
 	virtual				 ~cGuildManager();
-	static cGuildManager &GetInstance();	//	Ç×»ó µ¿ÀÏÇÑ ÀÎ½ºÅÏ½º¸¦ ÁØ´Ù.
+	static cGuildManager &GetInstance();	//	í•­ìƒ ë™ì¼í•œ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì¤€ë‹¤.
 
 	cGuild				m_stack[dGUILD_MAX_COUNT];
 	WORD				m_wNext,m_wCount;
@@ -119,37 +119,37 @@ public:
 	}
 	void				GetNextEmpty();
 	WORD				Add(cGuild * _p);
-	CGuildMan		*	GetGuildManPnt(char * _strName);	//	ÁÖ¾îÁø ÀÌ¸§ÀÇ Ä³¸¯ÅÍ°¡ ±æµå¿¡ °¡ÀÔµÇ¾ú´Ù¸é Æ÷ÀÎÅÍ¸¦ µ¹·ÁÁØ´Ù.
-	cGuild			*	GetGuildPnt(char *);		//	±æµå ÀÌ¸§À¸·Î Ã£¾Æº»´Ù. 
-	cGuild			*	GetGuildPnt(WORD);			//	¿ùµå¿¡ µî·ÏµÈ ÀÎµ¦½º·Î Ã£¾Æº»´Ù.
-	cGuild			*	GetGuildPntBySerial(WORD);	//	°íÀ¯ ½Ã¸®¾ó·Î Ã£¾Æº»´Ù.
-	void				Del(char *);				//	±æµå »èÁ¦
-	WORD				GetBlankGuildSerial();		//	ºñ¾îÀÖ´Â °íÀ¯ ½Ã¸®¾óÀ» Ã£¾Æº»´Ù. 
+	CGuildMan		*	GetGuildManPnt(char * _strName);	//	ì£¼ì–´ì§„ ì´ë¦„ì˜ ìºë¦­í„°ê°€ ê¸¸ë“œì— ê°€ì…ë˜ì—ˆë‹¤ë©´ í¬ì¸í„°ë¥¼ ëŒë ¤ì¤€ë‹¤.
+	cGuild			*	GetGuildPnt(char *);		//	ê¸¸ë“œ ì´ë¦„ìœ¼ë¡œ ì°¾ì•„ë³¸ë‹¤. 
+	cGuild			*	GetGuildPnt(WORD);			//	ì›”ë“œì— ë“±ë¡ëœ ì¸ë±ìŠ¤ë¡œ ì°¾ì•„ë³¸ë‹¤.
+	cGuild			*	GetGuildPntBySerial(WORD);	//	ê³ ìœ  ì‹œë¦¬ì–¼ë¡œ ì°¾ì•„ë³¸ë‹¤.
+	void				Del(char *);				//	ê¸¸ë“œ ì‚­ì œ
+	WORD				GetBlankGuildSerial();		//	ë¹„ì–´ìˆëŠ” ê³ ìœ  ì‹œë¦¬ì–¼ì„ ì°¾ì•„ë³¸ë‹¤. 
 
-	void				buildHallInfoByGuild();					//	±æµå Á¤º¸·Î ±æµå È¦ Á¤º¸ ¼¼ÆÃ
-	void				checkHallInfoByGuild();					//	±æµå È¦ Á¤º¸¿¡ ¹®Á¦°¡ ¾ø³ª È®ÀÎÇÑ´Ù.
-	void				buildGuildHallInfoByHall();				//	±æµå È¦ Á¤º¸·Î ±æµåÀÇ È¦ Á¤º¸¸¦ ¼¼ÆÃ
-	void				buildGuildHallInfoByEndGuildProlog(BOOL _bIsOnlyTestGuild = FALSE);	//	ÇÁ·Ñ·Î±×°¡ ³¡³µ´Ù.
+	void				buildHallInfoByGuild();					//	ê¸¸ë“œ ì •ë³´ë¡œ ê¸¸ë“œ í™€ ì •ë³´ ì„¸íŒ…
+	void				checkHallInfoByGuild();					//	ê¸¸ë“œ í™€ ì •ë³´ì— ë¬¸ì œê°€ ì—†ë‚˜ í™•ì¸í•œë‹¤.
+	void				buildGuildHallInfoByHall();				//	ê¸¸ë“œ í™€ ì •ë³´ë¡œ ê¸¸ë“œì˜ í™€ ì •ë³´ë¥¼ ì„¸íŒ…
+	void				buildGuildHallInfoByEndGuildProlog(BOOL _bIsOnlyTestGuild = FALSE);	//	í”„ë¡¤ë¡œê·¸ê°€ ëë‚¬ë‹¤.
 
-	int					getBattleFieldByHall(int _iHallLevel,int _iHallSlot);	//	ÀüÅõ ÇÊµå ½Ã¸®¾ó ¸®ÅÏ
-	int					getInvalidHallCount(int _iHallLevel);	//	ºñ¾î ÀÖ´Â ±æµå È¦ ¼ö Ã¼Å©
-	void				resetGuildHallInfo();					//	±æµå È¦ Á¤º¸ ÃÊ±âÈ­
-	void				setInvadeGuild(int _iHallLevel,int _iOrder,int _iGuild);	//	°ø¼ºÀü ÇÒ ±æµå ¼³Á¤
-	void				resetInvadeGuildInfo();	//	°ø¼ºÀü ÇÒ ±æµå Á¤º¸ ÃÊ±âÈ­
+	int					getBattleFieldByHall(int _iHallLevel,int _iHallSlot);	//	ì „íˆ¬ í•„ë“œ ì‹œë¦¬ì–¼ ë¦¬í„´
+	int					getInvalidHallCount(int _iHallLevel);	//	ë¹„ì–´ ìˆëŠ” ê¸¸ë“œ í™€ ìˆ˜ ì²´í¬
+	void				resetGuildHallInfo();					//	ê¸¸ë“œ í™€ ì •ë³´ ì´ˆê¸°í™”
+	void				setInvadeGuild(int _iHallLevel,int _iOrder,int _iGuild);	//	ê³µì„±ì „ í•  ê¸¸ë“œ ì„¤ì •
+	void				resetInvadeGuildInfo();	//	ê³µì„±ì „ í•  ê¸¸ë“œ ì •ë³´ ì´ˆê¸°í™”
 	void				decreasePetAndGuardianExp();
-	void				rebuildHallInfoByRemoveGuild(int _iGuild);	//	_iGuild°¡ Á¦°Å µÇ¾î _iHallLevel·¹º§ È¦ÀÇ ¼ø¼­¸¦ Á¤¸® ÇÑ´Ù.
+	void				rebuildHallInfoByRemoveGuild(int _iGuild);	//	_iGuildê°€ ì œê±° ë˜ì–´ _iHallLevelë ˆë²¨ í™€ì˜ ìˆœì„œë¥¼ ì •ë¦¬ í•œë‹¤.
 
-	void				captureGuildHall(int _iHallLevel,int _iHallSlot);	//	°ø¼º ¼º°ø
-	void				defenseGuildHall(int _iHallLevel,int _iHallSlot);	//	¼ö¼º ¼º°ø
+	void				captureGuildHall(int _iHallLevel,int _iHallSlot);	//	ê³µì„± ì„±ê³µ
+	void				defenseGuildHall(int _iHallLevel,int _iHallSlot);	//	ìˆ˜ì„± ì„±ê³µ
 
 	void				increasePetExp(int _iGuild,int _iPetType,int _iExp);
-	void				changePetExp(int _iGuild,int _iPetType,int _iExp); //  Æê°æÇèÄ¡ º¯°æ
+	void				changePetExp(int _iGuild,int _iPetType,int _iExp); //  í«ê²½í—˜ì¹˜ ë³€ê²½
 	void				toggleGuildHallOpenStatus(int _iGuild);
 	void				activeGuildMasterGrace(int _iGuild);
-	void				resetGuildHonorPoint();	//	±æµå ÇÁ·Ñ·Î±× Æ÷ÀÎÆ® ÃÊ±âÈ­
+	void				resetGuildHonorPoint();	//	ê¸¸ë“œ í”„ë¡¤ë¡œê·¸ í¬ì¸íŠ¸ ì´ˆê¸°í™”
 
 	void				setGuildHonorPoint(int _iGuild,int _iPoint);
-	void				resetGuildPrologPoint();	//	±æµå ÇÁ·Ñ·Î±× Æ÷ÀÎÆ® ÃÊ±âÈ­
+	void				resetGuildPrologPoint();	//	ê¸¸ë“œ í”„ë¡¤ë¡œê·¸ í¬ì¸íŠ¸ ì´ˆê¸°í™”
 	void				changeGuildHallLevel(int _iGuild,int _iHallLevel);
 	void				changeGuildVillageInfo(int _iGuild,WORD _wValue1 ,WORD _wValue2 , WORD _wValue3 , WORD _wValue4 , 
 									  WORD _wValue5 , WORD _wValue6, WORD _wValue7);
@@ -160,12 +160,12 @@ public:
 	void				setGuildPrologPoint(int _iGuild,int _iPoint);
 
 	void				endGuildProlog();
-	void				rentGuildPet(int _iGuild,int _iPetType,int _iMember);	//	±æµå Æê ´ë¿©
-	void				retrievalRentedGuildPet(int _iGuild,int _iMember);		//	±æµå Æê È¸¼ö
-	int					getGuildHallFieldSerial(int _iHallLevel,int _iHallSlot,int _iHallShape);	//	±æµå È¦ ÇÊµå ½Ã¸®¾ó ±¸ÇÏ±â
+	void				rentGuildPet(int _iGuild,int _iPetType,int _iMember);	//	ê¸¸ë“œ í« ëŒ€ì—¬
+	void				retrievalRentedGuildPet(int _iGuild,int _iMember);		//	ê¸¸ë“œ í« íšŒìˆ˜
+	int					getGuildHallFieldSerial(int _iHallLevel,int _iHallSlot,int _iHallShape);	//	ê¸¸ë“œ í™€ í•„ë“œ ì‹œë¦¬ì–¼ êµ¬í•˜ê¸°
 
-	cGuildHallInfo*		getHallByGuild(cGuild *_lpGuild);	//	±æµå È¦ Á¤º¸ ¸®ÅÏ
-	DWORD				getGuildHallCheckSum();	//	±æµåÈ¦ Á¤º¸ Ã¼Å©¼¶
+	cGuildHallInfo*		getHallByGuild(cGuild *_lpGuild);	//	ê¸¸ë“œ í™€ ì •ë³´ ë¦¬í„´
+	DWORD				getGuildHallCheckSum();	//	ê¸¸ë“œí™€ ì •ë³´ ì²´í¬ì„¬
 };
 
 extern	cGuild	*GetGuild(int _iIndex);

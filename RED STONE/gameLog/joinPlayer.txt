@@ -1,0 +1,7 @@
+17:26.06.01 19.39.16
+[26년 06월 01일 19시 39분 16초] cJoinPlayerManager::operate - 참가 실패!![9][usi1111/�˂������]
+[26년 06월 01일 19시 39분 40초] cJoinPlayerManager::operate - 참가 실패!![10][usi1111/�˂������]
+[26년 06월 01일 20시 39분 17초] cJoinPlayerManager::operate - 참가 실패!![26][toa16/�Ƃ�]
+[26년 06월 01일 20시 39분 34초] cJoinPlayerManager::operate - 참가 실패!![27][toa16/�Ƃ�]
+[26년 06월 01일 20시 39분 54초] cJoinPlayerManager::operate - 참가 실패!![28][toa16/�Ƃ�]
+[26년 06월 01일 20시 40분 06초] cJoinPlayerManager::operate - 참가 실패!![29][toa16/�Ƃ�]

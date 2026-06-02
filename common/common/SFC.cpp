@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////////
 
-//	SFC		-	Sonaki Foundation Class (I'm Hate MFC... ½ÇÀº ¹«¼­¿ö ÇÑ´Ù. -.-;;
+//	SFC		-	Sonaki Foundation Class (I'm Hate MFC... ì‹¤ì€ ë¬´ì„œì›Œ í•œë‹¤. -.-;;
 
 ///////////////////////////////////////////////////////////////////////////////////
 
@@ -18,17 +18,17 @@
 
 #define	dLOGMODE	1
 
-static	char	tempStr[1024];				//	cSTRING	Å¬·¡½º¸¦ À§ÇÑ ÅÛÇÃ¸´ ½ºÆ®¸µ..
-char			g_strLogFolder[1024];		//	ÇÁ·Î±×·¥ ½ÇÇà Æú´õ
+static	char	tempStr[1024];				//	cSTRING	í´ë˜ìŠ¤ë¥¼ ìœ„í•œ í…œí”Œë¦¿ ìŠ¤íŠ¸ë§..
+char			g_strLogFolder[1024];		//	í”„ë¡œê·¸ë¨ ì‹¤í–‰ í´ë”
 static	char	ReportFile[1024];
 static	char	l_strLogFile[1024];
 static	int		ErrorCount		=	0;
 
 BOOL			bRUNAPPLICATION	=	TRUE;
 BOOL			bACTIVEAPP		=	TRUE;
-int				g_iFrameCounter	=	0;			//	ÇÁ·¹ÀÓ Ä«¿îÆ®
+int				g_iFrameCounter	=	0;			//	í”„ë ˆì„ ì¹´ìš´íŠ¸
 int				g_iScreenWidth	=	0;
-int				g_iScreenHeight	=	0;			//	È­¸é »çÀÌÁî
+int				g_iScreenHeight	=	0;			//	í™”ë©´ ì‚¬ì´ì¦ˆ
 
 class cSFC
 {
@@ -87,19 +87,19 @@ GetLastDay(int _iYear,int _iMonth)
 
 	const	int	aiLastDay[13] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-	if	(_iMonth	!=	2)	//	2¿ùÀÌ ¾Æ´Ï¸é À±´Ş °Ë»ç°¡ ÇÊ¿ä ¾ø´Ù
+	if	(_iMonth	!=	2)	//	2ì›”ì´ ì•„ë‹ˆë©´ ìœ¤ë‹¬ ê²€ì‚¬ê°€ í•„ìš” ì—†ë‹¤
 		return	aiLastDay[_iMonth];
 
 	if	(_iYear%4 != 0)
-		return	28;	//	2¿ù ÀÌ¶óµµ 4·Î ³ª´² ¶³¾îÁöÁö ¾ÊÀ¸¸é À±´ŞÀÌ ¾Æ´Ï´Ù.
+		return	28;	//	2ì›” ì´ë¼ë„ 4ë¡œ ë‚˜ëˆ  ë–¨ì–´ì§€ì§€ ì•Šìœ¼ë©´ ìœ¤ë‹¬ì´ ì•„ë‹ˆë‹¤.
 
 	if	(_iYear%400 == 0)
-		return	29;	//	400À¸·Î ³ª´²¶³¾îÁö´Â 2¿ùÀÌ¸é À±´ŞÀÌ´Ù.
+		return	29;	//	400ìœ¼ë¡œ ë‚˜ëˆ ë–¨ì–´ì§€ëŠ” 2ì›”ì´ë©´ ìœ¤ë‹¬ì´ë‹¤.
 
 	if	(_iYear%100 == 0)
-		return	28;	//	400À¸·Î ³ª´² ¶³¾îÁöÁö ¾ÊÀ¸¸é¼­ 100À¸·Î ³ª´² ¶³¾îÁö´Â 2¿ùÀÌ¸é À±´ŞÀÌ´Ù.
+		return	28;	//	400ìœ¼ë¡œ ë‚˜ëˆ  ë–¨ì–´ì§€ì§€ ì•Šìœ¼ë©´ì„œ 100ìœ¼ë¡œ ë‚˜ëˆ  ë–¨ì–´ì§€ëŠ” 2ì›”ì´ë©´ ìœ¤ë‹¬ì´ë‹¤.
 
-	return	29;	//	4·Î ³ª´² ¶³¾îÁö¸é¼­ 100À¸·Î ³ª´² ¶³¾îÁöÁö ¾Ê´Â 2¿öÀÌ¸é À±´ŞÀÌ´Ù.
+	return	29;	//	4ë¡œ ë‚˜ëˆ  ë–¨ì–´ì§€ë©´ì„œ 100ìœ¼ë¡œ ë‚˜ëˆ  ë–¨ì–´ì§€ì§€ ì•ŠëŠ” 2ì›Œì´ë©´ ìœ¤ë‹¬ì´ë‹¤.
 }
 
 int
@@ -151,7 +151,7 @@ random(int range)
 
 #define	dLARGE_RAND_VALUE	0x8000
 
-int	largeRandom(int range)//	·£´ıÇÔ¼ö
+int	largeRandom(int range)//	ëœë¤í•¨ìˆ˜
 {
 	int	iValue;
 
@@ -194,12 +194,12 @@ SafeRange(int value,int minValue,int maxValue)
 }
 
 inline void	
-RotateValue(int &value,int maxValue)				//	Å©±â¸¦ Ã¼Å©ÇØ¼­ Å©¸é 0À¸·Î..
+RotateValue(int &value,int maxValue)				//	í¬ê¸°ë¥¼ ì²´í¬í•´ì„œ í¬ë©´ 0ìœ¼ë¡œ..
 {	if (value > maxValue) value = 0;
 }
 
 inline void
-ClipValue(int &value,int minValue,int maxValue)		//	Å©±â¸¦ Ã¼Å©ÇØ¼­ ÀÚ¸¥´Ù.
+ClipValue(int &value,int minValue,int maxValue)		//	í¬ê¸°ë¥¼ ì²´í¬í•´ì„œ ìë¥¸ë‹¤.
 {	if (value<minValue)	{value = minValue;	return;	}
 	if (value>maxValue)	{value = maxValue;	return;	}
 }
@@ -261,7 +261,7 @@ EXIT(char *headmsg,char *mainmsg,...)
 ///////////////////////////////////////////////////////////////////////////////////
 
 //	class cPOINT
-//		:	ÂÀÀ» ´Ù·é´Ù.
+//		:	ì©œì„ ë‹¤ë£¬ë‹¤.
 
 ///////////////////////////////////////////////////////////////////////////////////
 
@@ -317,8 +317,8 @@ cPOINT::Match(int a,int b)
 
 /*
 	class cRECT		
-		:	rect	½ºÆ®·°ÃÄÀÇ È®ÀåÆÇÀÌ´Ù. 
-			¹Ú½º°ãÄ§,¿µ¿ªÈ®ÀÎ,ÁÂÇ¥±³Á¤µîÀ» ¾Ë¾Æ¼­ Ã³¸®ÇØÁØ´Ù.
+		:	rect	ìŠ¤íŠ¸ëŸ­ì³ì˜ í™•ì¥íŒì´ë‹¤. 
+			ë°•ìŠ¤ê²¹ì¹¨,ì˜ì—­í™•ì¸,ì¢Œí‘œêµì •ë“±ì„ ì•Œì•„ì„œ ì²˜ë¦¬í•´ì¤€ë‹¤.
 */
 
 void
@@ -470,7 +470,7 @@ cRECT::operator=(const cRECT &src)
 	return src;
 }
 
-//	cRECT Å¬·¡½ºÀÇ shortÇü ¹öÁ¯
+//	cRECT í´ë˜ìŠ¤ì˜ shortí˜• ë²„ì ¼
 
 void
 cRECTS::Set(short a1,short b1,short a2,short b2)
@@ -519,7 +519,7 @@ cRECTS::operator=(const cRECTS &src)
 ///////////////////////////////////////////////////////////////////////////////////
 
 //	class cSTRING
-//		:	¹®ÀÚ¿­À» ´Ù·é´Ù.
+//		:	ë¬¸ìì—´ì„ ë‹¤ë£¬ë‹¤.
 
 ///////////////////////////////////////////////////////////////////////////////////
 
@@ -851,7 +851,7 @@ cSTRING::Minus(char *src,char *minus)
 }
 
 /*********************************************************************************
-		¹®Àåµé(´õºí ¸µÅ©µå ¸®½ºÆ®´Ù.)
+		ë¬¸ì¥ë“¤(ë”ë¸” ë§í¬ë“œ ë¦¬ìŠ¤íŠ¸ë‹¤.)
 *********************************************************************************/
 
 int _cdecl	
@@ -865,7 +865,7 @@ cSTRINGS::cSTRINGS(int limit)
 	CurString		=	0;
 	maxString		=	limit;
 	pHEAD			=	NULL;
-	pTAIL			=	NULL;			//	Ã³À½°ú ¸¶Áö¸·
+	pTAIL			=	NULL;			//	ì²˜ìŒê³¼ ë§ˆì§€ë§‰
 }
 
 cSTRINGS::~cSTRINGS()
@@ -1037,7 +1037,7 @@ cSTRINGS::GetIndex(char *str)
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-//	cFILE	È­ÀÏ Á¦¾î Å¬·¹½º..
+//	cFILE	í™”ì¼ ì œì–´ í´ë ˆìŠ¤..
 
 ///////////////////////////////////////////////////////////////////////////////////
 
@@ -1195,7 +1195,7 @@ cFILE::Write(void *buffer,DWORD size,DWORD itemSize)
 }
 
 //
-//	½ºÆ®¸µ ¾²±â
+//	ìŠ¤íŠ¸ë§ ì“°ê¸°
 BOOL
 cFILE::writeString(char *_lpstrString)
 {
@@ -1342,7 +1342,7 @@ cFILE::Burn(char *fn,char *buff,DWORD size)
 	return TRUE;
 }
 
-//	Á¤Àû ¸â¹ö
+//	ì •ì  ë©¤ë²„
 DWORD
 cFILE::Size(char *fn)
 {	FILE *tfp;
@@ -1416,7 +1416,7 @@ cFILE::LoadBox(char *fname,char *filter,char *defaultExt,char *folder,char *titl
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-//	µğ·ºÅä¸® Á¦¾î Å¬·¹½º..
+//	ë””ë ‰í† ë¦¬ ì œì–´ í´ë ˆìŠ¤..
 
 ///////////////////////////////////////////////////////////////////////////////////
 static	char	tempFolder[512];
@@ -1431,7 +1431,7 @@ int CALLBACK	BrowseCallbackProc(HWND hwnd,UINT uMsg,LPARAM lp, LPARAM pData)
 		{	if (GetCurrentDirectory(255,szDir)) 
 				SendMessage(hwnd,BFFM_SETSELECTION,TRUE,(LPARAM)szDir);
 			if (tempStr[0])
-				SetWindowText(GetDlgItem(hwnd,0x3744),tempStr);		//	¿¡µğÆ® ¹Ú½º
+				SetWindowText(GetDlgItem(hwnd,0x3744),tempStr);		//	ì—ë””íŠ¸ ë°•ìŠ¤
 
 			int WIDTH	=	GetSystemMetrics(SM_CXSCREEN);
 			int HEIGHT	=	GetSystemMetrics(SM_CYSCREEN);
@@ -1452,11 +1452,11 @@ int CALLBACK	BrowseCallbackProc(HWND hwnd,UINT uMsg,LPARAM lp, LPARAM pData)
 					if (szDir[size-1] == '\\')	szDir[size-1]	=	NULL;
 
 					SendMessage(hwnd,BFFM_SETSTATUSTEXT,0,(LPARAM)_ms("%s\\%s",szDir,destFolder));
-					SetWindowText(GetDlgItem(hwnd,0x3744),_ms("%s\\%s",szDir,destFolder));		//	¿¡µğÆ® ¹Ú½º
+					SetWindowText(GetDlgItem(hwnd,0x3744),_ms("%s\\%s",szDir,destFolder));		//	ì—ë””íŠ¸ ë°•ìŠ¤
 				}
 				else
 				{	SendMessage(hwnd,BFFM_SETSTATUSTEXT,0,(LPARAM)szDir);
-					SetWindowText(GetDlgItem(hwnd,0x3744),szDir);		//	¿¡µğÆ® ¹Ú½º
+					SetWindowText(GetDlgItem(hwnd,0x3744),szDir);		//	ì—ë””íŠ¸ ë°•ìŠ¤
 				}
 			}
 			break;
@@ -1510,7 +1510,7 @@ cFOLDER::Tree(HWND hwnd,BOOL change,char *title,char *folder,char *dest)
 		strcpy(tempStr,folder);
 	}
 
-	GetCurrentDirectory(sizeof(curDir),curDir);			//	ÇöÀç Æú´õ È¤ÀÎ
+	GetCurrentDirectory(sizeof(curDir),curDir);			//	í˜„ì¬ í´ë” í˜¹ì¸
 
 	BROWSEINFO		binfo;
 	LPITEMIDLIST	pidl;
@@ -1546,8 +1546,8 @@ cFOLDER::Tree(HWND hwnd,BOOL change,char *title,char *folder,char *dest)
 }
 
 BOOL
-cFOLDER::Delete(char *delDir)			//	È­ÀÏÀ» Æ÷ÇÔÇÑ Æú´õ¸¦ Áö¿î´Ù.
-{	char dirName[ 256];									// Àç±Í È£ÃâÀ» »ç¿ëÇÑ´Ù.
+cFOLDER::Delete(char *delDir)			//	í™”ì¼ì„ í¬í•¨í•œ í´ë”ë¥¼ ì§€ìš´ë‹¤.
+{	char dirName[ 256];									// ì¬ê·€ í˜¸ì¶œì„ ì‚¬ìš©í•œë‹¤.
 
 	GetCurrentDirectory( 256, dirName);
 
@@ -1586,8 +1586,8 @@ cFOLDER::Delete(char *delDir)			//	È­ÀÏÀ» Æ÷ÇÔÇÑ Æú´õ¸¦ Áö¿î´Ù.
 }
 
 BOOL
-cFOLDER::getFolders(char *folder,cSTRINGS *folders)			//	È­ÀÏÀ» Æ÷ÇÔÇÑ Æú´õ¸¦ Áö¿î´Ù.
-{	char dirName[ 256];									// Àç±Í È£ÃâÀ» »ç¿ëÇÑ´Ù.
+cFOLDER::getFolders(char *folder,cSTRINGS *folders)			//	í™”ì¼ì„ í¬í•¨í•œ í´ë”ë¥¼ ì§€ìš´ë‹¤.
+{	char dirName[ 256];									// ì¬ê·€ í˜¸ì¶œì„ ì‚¬ìš©í•œë‹¤.
 
 	GetCurrentDirectory( 256, dirName);
 
@@ -1618,7 +1618,7 @@ cFOLDER::getFolders(char *folder,cSTRINGS *folders)			//	È­ÀÏÀ» Æ÷ÇÔÇÑ Æú´õ¸¦ Áö
 }
 
 cSTRINGS*
-cFOLDER::GetFolders(char *folder)			//	È­ÀÏÀ» Æ÷ÇÔÇÑ Æú´õ¸¦ Áö¿î´Ù.
+cFOLDER::GetFolders(char *folder)			//	í™”ì¼ì„ í¬í•¨í•œ í´ë”ë¥¼ ì§€ìš´ë‹¤.
 {	cSTRINGS	*folders;
 
 	folders	=	new cSTRINGS();
@@ -1630,7 +1630,7 @@ cFOLDER::GetFolders(char *folder)			//	È­ÀÏÀ» Æ÷ÇÔÇÑ Æú´õ¸¦ Áö¿î´Ù.
 	return folders;
 }
 
-BOOL	//	Æú´õ¸¦ ¸¸µç´Ù. 
+BOOL	//	í´ë”ë¥¼ ë§Œë“ ë‹¤. 
 cFOLDER::Create(char *folder,BOOL changeFolder)
 {
 	int	pos	=	0,count	=	0;
@@ -1676,7 +1676,7 @@ cFOLDER::Create(char *folder,BOOL changeFolder)
 	return TRUE;
 }
 
-BOOL	//	Æú´õ¸¦ ÀÌµ¿ÇÑ´Ù.
+BOOL	//	í´ë”ë¥¼ ì´ë™í•œë‹¤.
 cFOLDER::Change(char *folder)
 {	int	pos	=	0,count	=	0;
 
@@ -1711,7 +1711,7 @@ cFOLDER::GetFiles(char *ext,char *folder,BOOL includeFolder,WORD sort)
 	if (folder)
 		if (!SetCurrentDirectory(folder)) return NULL;
 
-	if (SortTerm == dSORT_NOT)	//	¼ÒÆ®ÇÒ ÇÊ¿ä°¡ ¾øÀ½ °Á µ¹¸°´Ù.
+	if (SortTerm == dSORT_NOT)	//	ì†ŒíŠ¸í•  í•„ìš”ê°€ ì—†ìŒ ê± ëŒë¦°ë‹¤.
 	{	files	=	new cSTRINGS();
 
 		hFind	=	FindFirstFile(ext,&fd);
@@ -1921,7 +1921,7 @@ cFOLDER::GetFolderSize(char *ext,char *folder,BOOL includeSub)
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-//							º´ÇÕµÈ È­ÀÏÀ» °ü¸®ÇÑ´Ù.
+//							ë³‘í•©ëœ í™”ì¼ì„ ê´€ë¦¬í•œë‹¤.
 
 ///////////////////////////////////////////////////////////////////////////////////
 
@@ -1943,33 +1943,33 @@ cNUX::Compare_Name( const void *a, const void *b)
 BOOL
 cNUX::Load(char *fn)
 {	if (!File.Open(fn,"rb"))
-	{	MessageBox(GetActiveWindow(),_ms("'%s' È­ÀÏÀ» Ã£¿ï ¼ö ¾ø½À´Ï´Ù.",fn),"Error!! in cNUX::Open",MB_ICONERROR|MB_TOPMOST);
+	{	MessageBox(GetActiveWindow(),_ms("'%s' í™”ì¼ì„ ì°¾ìš¸ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.",fn),"Error!! in cNUX::Open",MB_ICONERROR|MB_TOPMOST);
 		return FALSE;
 	}
 
 	DWORD	temp;
 
 	File.Seek(-4,SEEK_END);
-	File.Read(&temp,4);								//	ÇÕÃÄÁø È­ÀÏÀÎ°¡?
+	File.Read(&temp,4);								//	í•©ì³ì§„ í™”ì¼ì¸ê°€?
 
-	if (temp	!=	0xefefefef)						//	¾Æ´Ï´Ù.
+	if (temp	!=	0xefefefef)						//	ì•„ë‹ˆë‹¤.
 	{	File.Close();
-		MessageBox(GetActiveWindow(),_ms("'%s'È­ÀÏÀÇ Çü½ÄÀ» ¾Ë ¼ö ¾ø½À´Ï´Ù.",fn),"Error!! in cNUX::Open",MB_ICONERROR|MB_TOPMOST);
+		MessageBox(GetActiveWindow(),_ms("'%s'í™”ì¼ì˜ í˜•ì‹ì„ ì•Œ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.",fn),"Error!! in cNUX::Open",MB_ICONERROR|MB_TOPMOST);
 		return FALSE;
 	}
 
-	File.Seek(-8,SEEK_END);							//	È­ÀÏÀÇ Çì´õ À§Ä¡
-	File.Read(&AppendPos,4);						//	¸¦ ÀĞ´Â´Ù.
-	File.Seek(AppendPos,SEEK_SET);					//	È­ÀÏÀÇ Çì´õ À§Ä¡
-	File.Read(&Count,4);							//	È­ÀÏ ¼ö
+	File.Seek(-8,SEEK_END);							//	í™”ì¼ì˜ í—¤ë” ìœ„ì¹˜
+	File.Read(&AppendPos,4);						//	ë¥¼ ì½ëŠ”ë‹¤.
+	File.Seek(AppendPos,SEEK_SET);					//	í™”ì¼ì˜ í—¤ë” ìœ„ì¹˜
+	File.Read(&Count,4);							//	í™”ì¼ ìˆ˜
 
 	Free(INDEX);
 	INDEX	=	New(cMERGEINFO,Count,NULL,_ms("merge file[%s] info",fn));
 
-	File.Read(&temp,4);								//	ÇÕÃÄÁø È­ÀÏÀÇ »çÀÌÁî(¿©±â¼± º°·ç ¾µµ¥°¡..
-	File.Read(&temp,4);								//	È­ÀÏ Á¤º¸ÀÇ À§Ä¡
-	File.Seek(temp,SEEK_SET);						//	È­ÀÏÀÇ Á¤º¸°¡ ÀÖ´Â °÷À¸·Î
-	File.Read(INDEX,Count*sizeof(cMERGEINFO));		//	È­ÀÏ Á¤º¸¸¦ ÀĞ¾î¿Â´Ù.
+	File.Read(&temp,4);								//	í•©ì³ì§„ í™”ì¼ì˜ ì‚¬ì´ì¦ˆ(ì—¬ê¸°ì„  ë³„ë£¨ ì“¸ë°ê°€..
+	File.Read(&temp,4);								//	í™”ì¼ ì •ë³´ì˜ ìœ„ì¹˜
+	File.Seek(temp,SEEK_SET);						//	í™”ì¼ì˜ ì •ë³´ê°€ ìˆëŠ” ê³³ìœ¼ë¡œ
+	File.Read(INDEX,Count*sizeof(cMERGEINFO));		//	í™”ì¼ ì •ë³´ë¥¼ ì½ì–´ì˜¨ë‹¤.
 
 	return TRUE;
 }
@@ -2045,7 +2045,7 @@ cNUX::Export(char *fn)
 
 
 ///////////////////////////////////////////////////////////////////////////////////
-//	·Î±× È­ÀÏ °ü·Ã
+//	ë¡œê·¸ í™”ì¼ ê´€ë ¨
 ///////////////////////////////////////////////////////////////////////////////////
 
 CLogManager	g_log;
@@ -2121,13 +2121,13 @@ CLogFile::init(char *_lpstrFileName,char *_lpstrLogFolder,BOOL _bIsStandAloneFol
 		m_file.writeString(strSaveTime);
 	}
 
-	InitializeCriticalSection(&m_csLogFile);	//	Å©¸®Æ¼ÄÃ ¼½¼Ç ÃÊ±âÈ­
+	InitializeCriticalSection(&m_csLogFile);	//	í¬ë¦¬í‹°ì»¬ ì„¹ì…˜ ì´ˆê¸°í™”
 }
 
 void
 CLogFile::close()
 {
-	DeleteCriticalSection(&m_csLogFile);	//	Å©¸®Æ¼ÄÃ ¼½¼Ç »èÁ¦
+	DeleteCriticalSection(&m_csLogFile);	//	í¬ë¦¬í‹°ì»¬ ì„¹ì…˜ ì‚­ì œ
 	m_file.Close();
 }
 
@@ -2244,7 +2244,7 @@ CLogManager::add(char *_lpstrFileName)
 }
 
 //
-//	·Î±× ±â·Ï
+//	ë¡œê·¸ ê¸°ë¡
 int		_cdecl
 CLogManager::writeLog(char *_lpstrFileName,char *_lpstrMsg,...)
 {
@@ -2296,7 +2296,7 @@ CLogManager::writeLogWithoutTime(char *_lpstrFileName,char *_lpstrMsg,...)
 }
 
 //
-//	·Î±× ±â·Ï
+//	ë¡œê·¸ ê¸°ë¡
 int		_cdecl
 CLogManager::writeLog2(char *_lpstrFileName,char *_lpstrMsg,...)
 {
@@ -2323,7 +2323,7 @@ CLogManager::writeLog2(char *_lpstrFileName,char *_lpstrMsg,...)
 }
 
 //
-//	·Î±× ±â·Ï
+//	ë¡œê·¸ ê¸°ë¡
 void	_cdecl
 CLogManager::writeLog(int _iFileIndex,char *_lpstrMsg,...)
 {
@@ -2340,7 +2340,7 @@ CLogManager::writeLog(int _iFileIndex,char *_lpstrMsg,...)
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-//	cMSG Å¬·¡½º ¸Ş½ÃÁöÃ¢À» ¶ç¿î´Ù.
+//	cMSG í´ë˜ìŠ¤ ë©”ì‹œì§€ì°½ì„ ë„ìš´ë‹¤.
 
 ///////////////////////////////////////////////////////////////////////////////////
 
@@ -2372,11 +2372,11 @@ Errored()
 char	cMSG::s_strLogFile[1024];
 
 //
-//	¸Ş½ÃÁö ÃÊ±âÈ­
+//	ë©”ì‹œì§€ ì´ˆê¸°í™”
 void
 cMSG::Init()
 {
-	InitializeCriticalSection(&s_csLogFile);	//	Å©¸®Æ¼ÄÃ ¼½¼Ç ÃÊ±âÈ­
+	InitializeCriticalSection(&s_csLogFile);	//	í¬ë¦¬í‹°ì»¬ ì„¹ì…˜ ì´ˆê¸°í™”
 
 	hDEBUGWND	=	FindWindow("DEBUGWINDOW","Debug Window");
 
@@ -2389,7 +2389,7 @@ cMSG::Init()
 	int	iMonth	=	(tmTime->tm_mon+1);
 	int	iDay	=	(tmTime->tm_mday);
 	
-	sprintf(s_strLogFile,"log - %d³â %.2d¿ù %.2dÀÏ %.2d½Ã %.2dºĞ %.2dÃÊ.txt",iYear,iMonth,iDay,tmTime->tm_hour,tmTime->tm_min,tmTime->tm_sec);
+	sprintf(s_strLogFile,"log - %dë…„ %.2dì›” %.2dì¼ %.2dì‹œ %.2dë¶„ %.2dì´ˆ.txt",iYear,iMonth,iDay,tmTime->tm_hour,tmTime->tm_min,tmTime->tm_sec);
 }	//	cMSG::Init()
 
 void
@@ -2403,7 +2403,7 @@ cMSG::Close()
 {
 	s_fileLog.Close();
 
-	DeleteCriticalSection(&s_csLogFile);	//	Å©¸®Æ¼ÄÃ ¼½¼Ç ÃÊ±âÈ­
+	DeleteCriticalSection(&s_csLogFile);	//	í¬ë¦¬í‹°ì»¬ ì„¹ì…˜ ì´ˆê¸°í™”
 }
 
 void
@@ -2934,7 +2934,7 @@ cMSG::DXERROR(HRESULT hErr)
 
 //----------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------
-//	class	CTimeInfo	:	½Ã°£ ¾ò¾î¿À±â
+//	class	CTimeInfo	:	ì‹œê°„ ì–»ì–´ì˜¤ê¸°
 //----------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------
 
@@ -2965,7 +2965,7 @@ CTimeInfo::update()
 }
 
 //
-//	½Ã°£ Áõ°¡
+//	ì‹œê°„ ì¦ê°€
 int
 CTimeInfo::getGapDay(CTimeInfo *_lpTime)
 {
@@ -3015,7 +3015,7 @@ CTimeInfo::getGapDay(CTimeInfo *_lpTime)
 }
 
 //
-//	½Ã°£ Áõ°¡
+//	ì‹œê°„ ì¦ê°€
 void
 CTimeInfo::increaseDay(int _iDay)
 {
@@ -3044,7 +3044,7 @@ CTimeInfo::increaseDay(int _iDay)
 }
 
 //
-//	½Ã°£ Áõ°¡
+//	ì‹œê°„ ì¦ê°€
 void
 CTimeInfo::decreaseDay(int _iDay)
 {
@@ -3074,7 +3074,7 @@ CTimeInfo::decreaseDay(int _iDay)
 }
 
 //
-//	½Ã°£ Áõ°¡
+//	ì‹œê°„ ì¦ê°€
 void
 CTimeInfo::increaseHour(int _iHour)
 {
@@ -3102,7 +3102,7 @@ CTimeInfo::increaseHour(int _iHour)
 }
 
 //
-//	½Ã°£ Áõ°¡
+//	ì‹œê°„ ì¦ê°€
 void
 CTimeInfo::decreaseHour(int _iHour)
 {
@@ -3130,7 +3130,7 @@ CTimeInfo::decreaseHour(int _iHour)
 }
 
 //
-//	½Ã°£ Áõ°¡
+//	ì‹œê°„ ì¦ê°€
 void
 CTimeInfo::increaseMinute(int _iMinute)
 {
@@ -3158,7 +3158,7 @@ CTimeInfo::increaseMinute(int _iMinute)
 }
 
 //
-//	½Ã°£ Áõ°¡
+//	ì‹œê°„ ì¦ê°€
 void
 CTimeInfo::decreaseMinute(int _iMinute)
 {
@@ -3244,17 +3244,17 @@ CTimeInfo::getTime(BOOL _bIsYear,BOOL _bIsMonth,BOOL _bIsDay,BOOL _bIsHour,BOOL 
 	s_strText[0]	=	0;
 
 	if	(_bIsYear)
-		strcat(s_strText,_ms("%.2d³â ",m_wYear%100));
+		strcat(s_strText,_ms("%.2dë…„ ",m_wYear%100));
 	if	(_bIsMonth)
-		strcat(s_strText,_ms("%.2d¿ù ",m_wMonth));
+		strcat(s_strText,_ms("%.2dì›” ",m_wMonth));
 	if	(_bIsDay)
-		strcat(s_strText,_ms("%.2dÀÏ ",m_wDay));
+		strcat(s_strText,_ms("%.2dì¼ ",m_wDay));
 	if	(_bIsHour)
-		strcat(s_strText,_ms("%.2d½Ã ",m_wHour));
+		strcat(s_strText,_ms("%.2dì‹œ ",m_wHour));
 	if	(_bIsMinute)
-		strcat(s_strText,_ms("%.2dºĞ ",m_wMinute));
+		strcat(s_strText,_ms("%.2dë¶„ ",m_wMinute));
 	if	(_bIsSecond)
-		strcat(s_strText,_ms("%.2dÃÊ",m_wSecond));
+		strcat(s_strText,_ms("%.2dì´ˆ",m_wSecond));
 
 	int	iLength	=	strlen(s_strText);
 
@@ -3274,17 +3274,17 @@ CTimeInfo::GetTime(BOOL _bIsYear,BOOL _bIsMonth,BOOL _bIsDay,BOOL _bIsHour,BOOL 
 	s_strText[0]	=	0;
 
 	if	(_bIsYear)
-		strcat(s_strText,_ms("%.2d³â ",currentTime.m_wYear%100));
+		strcat(s_strText,_ms("%.2dë…„ ",currentTime.m_wYear%100));
 	if	(_bIsMonth)
-		strcat(s_strText,_ms("%.2d¿ù ",currentTime.m_wMonth));
+		strcat(s_strText,_ms("%.2dì›” ",currentTime.m_wMonth));
 	if	(_bIsDay)
-		strcat(s_strText,_ms("%.2dÀÏ ",currentTime.m_wDay));
+		strcat(s_strText,_ms("%.2dì¼ ",currentTime.m_wDay));
 	if	(_bIsHour)
-		strcat(s_strText,_ms("%.2d½Ã ",currentTime.m_wHour));
+		strcat(s_strText,_ms("%.2dì‹œ ",currentTime.m_wHour));
 	if	(_bIsMinute)
-		strcat(s_strText,_ms("%.2dºĞ ",currentTime.m_wMinute));
+		strcat(s_strText,_ms("%.2dë¶„ ",currentTime.m_wMinute));
 	if	(_bIsSecond)
-		strcat(s_strText,_ms("%.2dÃÊ",currentTime.m_wSecond));
+		strcat(s_strText,_ms("%.2dì´ˆ",currentTime.m_wSecond));
 
 	int	iLength	=	strlen(s_strText);
 
@@ -3303,7 +3303,7 @@ CTimeInfo::GetTimeForLog()
 
 	s_strText[0]	=	0;
 
-	sprintf(s_strText,"[%.2d³â %.2d¿ù %.2dÀÏ %.2d½Ã %.2dºĞ %.2dÃÊ] ",
+	sprintf(s_strText,"[%.2dë…„ %.2dì›” %.2dì¼ %.2dì‹œ %.2dë¶„ %.2dì´ˆ] ",
 			currentTime.m_wYear%100,currentTime.m_wMonth,currentTime.m_wDay,currentTime.m_wHour,currentTime.m_wMinute,currentTime.m_wSecond);
 
 	return	s_strText;
@@ -3550,14 +3550,14 @@ CTimeInfo::getMinuteValue(int _iCorrectYear)
 
 //----------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------
-//	class	cTIMER	:	Å¸ÀÌ¸Ó °ü·Ã Ã³¸®
+//	class	cTIMER	:	íƒ€ì´ë¨¸ ê´€ë ¨ ì²˜ë¦¬
 //----------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------
 
-int			cTIMER::s_iTps			=	0;			//	tps ÃÊ´ç ¸î¹øÀÌ³ª Æ¢´Â°¡!!??
+int			cTIMER::s_iTps			=	0;			//	tps ì´ˆë‹¹ ëª‡ë²ˆì´ë‚˜ íŠ€ëŠ”ê°€!!??
 int			cTIMER::s_iFps			=	0;
 int			cTIMER::s_iFrameCounter	=	0;
-int			cTIMER::s_iLastTime		=	0;	//	FPS ÃøÁ¤À» À§ÇÑ ¼öÄ¡
+int			cTIMER::s_iLastTime		=	0;	//	FPS ì¸¡ì •ì„ ìœ„í•œ ìˆ˜ì¹˜
 LONGLONG	cTIMER::s_llTps;
 
 cTIMER	templateTimer;
@@ -3587,14 +3587,14 @@ cTIMER::cTIMER()
 	m_iTick			=	0;	
 	m_llTick		=	0;
 	m_iOverTick		=	0;
-	m_iSkipCount	=	0;	//	ÇÁ·¹ÀÓ ½ºÅµÇÑ È½¼ö.
+	m_iSkipCount	=	0;	//	í”„ë ˆì„ ìŠ¤í‚µí•œ íšŸìˆ˜.
 	m_iTimerStartTime=	0;
 	m_iOverTime		=	0;
 	m_llOverTime	=	0;
 }
 
 //
-//	ÇÁ·¹ÀÓ ½ºÅµ ¼³Á¤
+//	í”„ë ˆì„ ìŠ¤í‚µ ì„¤ì •
 BOOL
 cTIMER::setFPS(int _iFps)
 {
@@ -3618,7 +3618,7 @@ cTIMER::setFPS(int _iFps)
 }	//	cTIMER::setFPS(int _iFps)
 
 //
-//	 ÇÁ·¹ÀÓ½ºÅµ ÃÊ±âÈ­
+//	 í”„ë ˆì„ìŠ¤í‚µ ì´ˆê¸°í™”
 void
 cTIMER::resetFrameSkip()
 {
@@ -3634,7 +3634,7 @@ cTIMER::resetFrameSkip()
 }	//	cTIMER::resetFrameSkip()
 
 //
-//	ÀÌ¹ø ÇÁ·¹ÀÓ ½ºÅµÇÒ±î?
+//	ì´ë²ˆ í”„ë ˆì„ ìŠ¤í‚µí• ê¹Œ?
 BOOL 
 cTIMER::isSkipFrame()
 {
@@ -3649,7 +3649,7 @@ cTIMER::isSkipFrame()
 
 	m_iOverTick		=	iTimeGab - m_iTick + m_iOverTick;
 
-	if	(m_iOverTick < 0 )	//	±â´Ù¸°´Ù.
+	if	(m_iOverTick < 0 )	//	ê¸°ë‹¤ë¦°ë‹¤.
 	{
 		while(m_iOverTick < 0 )
 		{
@@ -3672,7 +3672,7 @@ cTIMER::isSkipFrame()
 
 	m_iSkipCount++;
 
-	if	(m_iSkipCount	>	8)		//	ÃÖ´ë 8ÇÁ·¹ÀÓ¸¸ ½ºÅµÇÑ´Ù.
+	if	(m_iSkipCount	>	8)		//	ìµœëŒ€ 8í”„ë ˆì„ë§Œ ìŠ¤í‚µí•œë‹¤.
 	{	
 		m_iOldTime		=	iNewTime;
 		m_iOverTick		=	0;
@@ -3687,7 +3687,7 @@ cTIMER::isSkipFrame()
 }	//	cTIMER::isSkipFrame()
 
 //
-//	FPSÃøÁ¤
+//	FPSì¸¡ì •
 int
 cTIMER::UpdateFPS()
 {
@@ -3712,7 +3712,7 @@ cTIMER::UpdateFPS()
 }	//	cTIMER::updateFPS()
 
 //
-//	ÇÁ·¹ÀÓ ½ºÅµ
+//	í”„ë ˆì„ ìŠ¤í‚µ
 BOOL 
 cTIMER::syncFrame()
 {	
@@ -3796,7 +3796,7 @@ cTIMER::syncFrame()
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-//	class	cMCU	:	¸Ş¸ğ¸® °ü¸® (Memory Control Unit)
+//	class	cMCU	:	ë©”ëª¨ë¦¬ ê´€ë¦¬ (Memory Control Unit)
 
 ///////////////////////////////////////////////////////////////////////////////////
 
@@ -3898,9 +3898,9 @@ cMCU::check(DWORD address)
 
 	char *ptr	=	m_pMemory+address;
 	
-	head		=	*(DWORD *)(ptr		);		//	Çì´õ
-	size		=	*(DWORD *)(ptr+4	);		//	Çì´õ
-	tail		=	*(DWORD *)(ptr+size	);		//	Çì´õ
+	head		=	*(DWORD *)(ptr		);		//	í—¤ë”
+	size		=	*(DWORD *)(ptr+4	);		//	í—¤ë”
+	tail		=	*(DWORD *)(ptr+size	);		//	í—¤ë”
 
 	if (head	!= dCHECK_MCU_HEAD)
 		ERRMSG(_ms("MCU %s's follow pointer HEAD offset damaged!!",m_strName),ptr+8);
@@ -3935,7 +3935,7 @@ cMCU::alloc(DWORD size,char *name)
 	*(DWORD *)(ptr)			=	dCHECK_MCU_HEAD;
 	*(DWORD *)(ptr+4)		=	size-4;
 	*(DWORD *)(ptr+size-4)	=	dCHECK_MCU_TAIL;
-	strncpy(ptr+8,name,dPTR_STRING_SIZE-1);										//	ÀÌ¸§
+	strncpy(ptr+8,name,dPTR_STRING_SIZE-1);										//	ì´ë¦„
 
 	m_dwPointer	+=	size;
 
@@ -3980,7 +3980,7 @@ cMCU::alloc(DWORD size)
 		return NULL;
 	}
 
-	size	+=	4;		//	MCU¿¡¼­ ÇÒ´ç ¹ŞÀº Æ÷ÀÎÅÍ¶ó´Â ³«ÀÎÂïÀ» °ø°£.
+	size	+=	4;		//	MCUì—ì„œ í• ë‹¹ ë°›ì€ í¬ì¸í„°ë¼ëŠ” ë‚™ì¸ì°ì„ ê³µê°„.
 
 	if (size		%dMEMORY_ALLIGN	!=0)	size		+=	(dMEMORY_ALLIGN-(size		%dMEMORY_ALLIGN));
 	if (m_dwPointer	%dMEMORY_ALLIGN	!=0)	m_dwPointer	+=	(dMEMORY_ALLIGN-(m_dwPointer%dMEMORY_ALLIGN));
@@ -4058,13 +4058,13 @@ GetAvailMemory()
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-//	class	cTHREAD	:	¾²·¹µå °ü¸®
+//	class	cTHREAD	:	ì“°ë ˆë“œ ê´€ë¦¬
 
 ///////////////////////////////////////////////////////////////////////////////////
 
 cTHREAD::cTHREAD()
-{	ThreadHandle	=	0; // ½º·¹µå ÇÚµé
-	ThreadAddr		=	0;          // ½º·¹µå ÁÖ¼Ò
+{	ThreadHandle	=	0; // ìŠ¤ë ˆë“œ í•¸ë“¤
+	ThreadAddr		=	0;          // ìŠ¤ë ˆë“œ ì£¼ì†Œ
 }
 
 cTHREAD::~cTHREAD()
@@ -4112,7 +4112,7 @@ BOOL	StrStr(char *_lpstrText,char *_lpstrWord)
 	return	FALSE;
 }
 //
-//	ID¿Í ÆĞ½º¿öµå Ã¼Å©
+//	IDì™€ íŒ¨ìŠ¤ì›Œë“œ ì²´í¬
 BOOL
 CheckName(char *_strName,int _iNameLimit)
 {
@@ -4128,13 +4128,13 @@ CheckName(char *_strName,int _iNameLimit)
 	if (STRICMP(_strName,"dummy!!")==0	)	return	FALSE;
 	if (strName[0]				==	' '	)	return	FALSE;
 	if (strName[iNameLength-1]	==	' '	)	return	FALSE;
-	if (strstr(_strName,"¡¡")			)	return	FALSE;
+	if (strstr(_strName,"ã€€")			)	return	FALSE;
 
 #ifdef	_FOR_KOREA
-	if (strstr(_strName,"¢Ï")			)	return	FALSE;
-	if (strstr(_strName,"¢Î")			)	return	FALSE;
-	if (StrStr(_strName,"°ü¸®ÀÚ")		)	return	FALSE;
-	if (StrStr(_strName,"¿î¿µÀÚ")		)	return	FALSE;
+	if (strstr(_strName,"â˜")			)	return	FALSE;
+	if (strstr(_strName,"â˜")			)	return	FALSE;
+	if (StrStr(_strName,"ê´€ë¦¬ì")		)	return	FALSE;
+	if (StrStr(_strName,"ìš´ì˜ì")		)	return	FALSE;
 #endif
 	
 	for (i=0;i<iNameLength;i++)
@@ -4143,7 +4143,7 @@ CheckName(char *_strName,int _iNameLimit)
 		{
 
 #ifdef	_FOR_KOREA
-			if(_strName[i] == -55)	// ÇÑ±Û 2¹ÙÀÌÆ® Áß .. Ã¹¹øÂ° ¹ÙÀÌÆ®°¡ -55 Ãâ·ÂÇÒ¶§ °ø¹éÀÌ º¸ÀÎ´Ù....
+			if(_strName[i] == -55)	// í•œê¸€ 2ë°”ì´íŠ¸ ì¤‘ .. ì²«ë²ˆì§¸ ë°”ì´íŠ¸ê°€ -55 ì¶œë ¥í• ë•Œ ê³µë°±ì´ ë³´ì¸ë‹¤....
 				return FALSE;
 #endif
 			i++;

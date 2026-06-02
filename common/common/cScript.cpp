@@ -20,7 +20,7 @@ cScript::~cScript()
 
 int cScript::Read(char	*filename)
 {
-	//	ÃÊ±âÈ­ 
+	//	ì´ˆê¸°í™” 
 	memset(scp,0,sizeof(SCP)*dMAXSCPSIZE);
 	if( (fp = fopen( filename, "r" )) == NULL )
 	{
@@ -67,21 +67,21 @@ BOOL	cScript::parseLine(char *line,int size)
 	int		parse		=	0;
 	int		cnt			=	0;
 	int		count		=	0;
-	char	tmp[dMAXNAMESIZE];			//	ÀÓ½Ã ÀúÀå °ø°£.
+	char	tmp[dMAXNAMESIZE];			//	ì„ì‹œ ì €ì¥ ê³µê°„.
 	tmp[0]				=	0;
 	BOOL	isTXT		=	FALSE;
 	BOOL	isData		=	FALSE;
-	//	ÀÌ¸§...
+	//	ì´ë¦„...
 	memset(tmp,0,dMAXNAMESIZE);
 	for(count=0;count<size; count++)
 	{
-		//	Áö³ªÃÄ¾ß ÇÒ °Íµé 
+		//	ì§€ë‚˜ì³ì•¼ í•  ê²ƒë“¤ 
 		if(!isTXT && line[count]==' ' || line[count]==9 || line[count]==13)
 		{
 			continue;
 		}
 
-		//	Æ¯¼ö ±âÈ£µé
+		//	íŠ¹ìˆ˜ ê¸°í˜¸ë“¤
 		if(!isTXT && line[count]=='/')
 		{
 			if( line[count-1]=='/')
@@ -126,7 +126,7 @@ BOOL	cScript::parseLine(char *line,int size)
 			tmp[cnt++] = '\n';
 		}else if(line[count]=='\"')
 		{
-			//	ÅØ½ºÆ®¿¡ ¾È³Ö¾î ¹ö¸°´Ù.
+			//	í…ìŠ¤íŠ¸ì— ì•ˆë„£ì–´ ë²„ë¦°ë‹¤.
 		}
 		else
 			tmp[cnt++] = line[count];
@@ -171,7 +171,7 @@ int		cScript::getDataCount(char *name)
 }
 
 /****************************************************************
-	µ¿ÀûÇÒ´ç °¡´ÉÇÑ Script ÀĞ±â
+	ë™ì í• ë‹¹ ê°€ëŠ¥í•œ Script ì½ê¸°
 ****************************************************************/
 
 cDynamicScript::cDynamicScript()
@@ -191,7 +191,7 @@ cDynamicScript::~cDynamicScript()
 int cDynamicScript::Read(char	*filename,int _MAX)
 {
 	MAX = _MAX+4;
-	//	ÃÊ±âÈ­ 
+	//	ì´ˆê¸°í™” 
 	if(scp)
 	{
 		delete [] scp;
@@ -244,21 +244,21 @@ BOOL	cDynamicScript::parseLine(char *line,int size)
 	int		parse		=	0;
 	int		cnt			=	0;
 	int		count		=	0;
-	char	tmp[dMAXNAMESIZE];			//	ÀÓ½Ã ÀúÀå °ø°£.
+	char	tmp[dMAXNAMESIZE];			//	ì„ì‹œ ì €ì¥ ê³µê°„.
 	tmp[0]				=	0;
 	BOOL	isTXT		=	FALSE;
 	BOOL	isData		=	FALSE;
-	//	ÀÌ¸§...
+	//	ì´ë¦„...
 	memset(tmp,0,dMAXNAMESIZE);
 	for(count=0;count<size; count++)
 	{
-		//	Áö³ªÃÄ¾ß ÇÒ °Íµé 
+		//	ì§€ë‚˜ì³ì•¼ í•  ê²ƒë“¤ 
 		if(!isTXT && line[count]==' ' || line[count]==9 || line[count]==13)
 		{
 			continue;
 		}
 
-		//	Æ¯¼ö ±âÈ£µé
+		//	íŠ¹ìˆ˜ ê¸°í˜¸ë“¤
 		if(!isTXT && line[count]=='/')
 		{
 			if( line[count-1]=='/')
@@ -303,7 +303,7 @@ BOOL	cDynamicScript::parseLine(char *line,int size)
 			tmp[cnt++] = '\n';
 		}else if(line[count]=='\"')
 		{
-			//	ÅØ½ºÆ®¿¡ ¾È³Ö¾î ¹ö¸°´Ù.
+			//	í…ìŠ¤íŠ¸ì— ì•ˆë„£ì–´ ë²„ë¦°ë‹¤.
 		}
 		else
 			tmp[cnt++] = line[count];

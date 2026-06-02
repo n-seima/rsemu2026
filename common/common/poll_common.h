@@ -12,9 +12,9 @@ class	cPollAnswerInfo_common
 {
 public:
 	char	m_strPollAnswer[dPOLL_ANSWER_LENGTH];
-	int		m_iPollPoint;	//	Á÷¾÷ 32°³
-	int		m_aiPollPointWithJob[32];	//	Á÷¾÷ 32°³
-	int		m_aiPollPointWithLevel[40];	//	50 ·¹º§ ´ÜÀ§
+	int		m_iPollPoint;	//	ì§ì—… 32ê°œ
+	int		m_aiPollPointWithJob[32];	//	ì§ì—… 32ê°œ
+	int		m_aiPollPointWithLevel[40];	//	50 ë ˆë²¨ ë‹¨ìœ„
 };
 
 class	cPollInfo_common

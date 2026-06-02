@@ -486,7 +486,7 @@ CItemManager::generateTreasureMap(cItem *_lpItem)
 	_lpItem->m_wBaseItem=	m_wTreasureMap;
 	_lpItem->m_dwSerial	=	largeRandom(0x7fffffff)+2;
 
-	_lpItem->m_year		=	g_currentTime.m_wYear-2000;
+	_lpItem->m_year		=	EncodeItemExpireYear(g_currentTime.m_wYear);
 	_lpItem->m_month	=	g_currentTime.m_wMonth;
 	_lpItem->m_day		=	g_currentTime.m_wDay;
 	_lpItem->m_hour		=	g_currentTime.m_wHour;
@@ -691,7 +691,7 @@ CItemManager::generateItemByCustomItem(cItem *_lpItem,CCustomItem *_lpCustomItem
 
 	if	(_lpCustomItem->m_bf20TermOfValidate)
 	{
-		_lpItem->m_year		=	g_currentTime.m_wYear-2000;
+		_lpItem->m_year		=	EncodeItemExpireYear(g_currentTime.m_wYear);
 		_lpItem->m_month	=	g_currentTime.m_wMonth;
 		_lpItem->m_day		=	g_currentTime.m_wDay;
 		_lpItem->m_hour		=	g_currentTime.m_wHour;

@@ -2,7 +2,7 @@
 #define	_classKARMA_DEFINE_H
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//	Æ®¸®°Åµé
+//	íŠ¸ë¦¬ê±°ë“¤
 //////////////////////////////////////////////////////////////////////////////////////////
 
 //
@@ -17,138 +17,138 @@ enum
 
 enum
 {
-//	ÇÃ·¹ÀÌ¾î ÀÚ½Å°ú °ü·ÃµÈ »çÇ×
+//	í”Œë ˆì´ì–´ ìžì‹ ê³¼ ê´€ë ¨ëœ ì‚¬í•­
 	eTRIGGER_ABOUT_PLAYER		=	0					,
-	eTRIGGER_LEVEL_CHECK								,//	·¹º§ÀÌ [spin]0[1,1000]~[spin]1[1,1000]ÀÌ´Ù.
-	eTRIGGER_IS_GUILD_MEMBER							,//	±æµå¿¡ [guild_member]
-	eTRIGGER_OWN_ITEM									,//	[item]0ÀÇ º¸À¯ °¹¼ö°¡ [spin]1[0,255]°³ [equal]2
-	eTRIGGER_OWN_SPECIAL_ITEM							,//	[item]0ÀÇ º¸À¯ °¹¼ö°¡ [spin]1[0,255]°³ [equal]2
-	eTRIGGER_EQUIP_ITEM									,//	[item]0À» [item_equip]
-	eTRIGGER_OWN_GOLD									,//	º¸À¯ÇÑ ±Ý¾×ÀÌ [number]0[0,2147483647]°ñµå [equal]1
-	eTRIGGER_SKILL_LEVEL								,//	½ºÅ³ [skill]0ÀÇ ·¹º§ÀÌ [spin]1[0,50] [equal]2
-	eTRIGGER_TITLE_LEVEL								,//	ÄªÈ£ [title]0ÀÇ ·¹º§ÀÌ [spin]1[0,10] [equal]2
-	eTRIGGER_CHECK_JOB									,//	Á÷¾÷ [hero_job]0À» [hero_job_own]
-	eTRIGGER_CHECK_JOB_LEVEL							,//	Á÷¾÷·¹º§ÀÌ [spin]0[1,3] [equal]1
-	eTRIGGER_CHECK_ALLIGNMENT							,//	¼ºÇâÀÌ [allignment]0ÀÌ´Ù.
-	eTRIGGER_CHECK_PLAY_TIME							,//	ÇÃ·¹ÀÌ ½Ã°£ÀÌ [number]0[0,2147483647]½Ã°£ [equal]1
-	eTRIGGER_CHECK_BASIC_POWER							,//	[power]0°¡ [spin]1[1,10000] [equal]2
-	eTRIGGER_CHECK_GUILD_TITLE							,//	±æµå¾È¿¡¼­ÀÇ Á÷À§°¡ [guild_title]0 ÀÌ´Ù.
-	eTRIGGER_OWN_QUEST_ITEM								,//	[quest_item]0ÀÇ º¸À¯ °¹¼ö°¡ [spin]1[0,255]°³ [equal]2
-	eTRIGGER_REMAIN_ITEM_SLOT_COUNT						,//	³²Àº ¾ÆÀÌÅÛ ½½·ÔÀÇ ¼ö°¡ [spin]1[0,255]°³ [equal]2
-	eTRIGGER_MASTER_SKILL_COUNT							,//	¸¶½ºÅÍÇÑ ½ºÅ³ÀÇ ¼ö°¡ [spin]0[0,52]°³ [equal]1
-	eTRIGGER_CHECK_OPERATOR								,//	¿î¿µÀÚ³Ä? 
-	eTRIGGER_CHECK_BOOK_COMPLETE_PERCENTAGE				,//	Ã¥ ¿Ï¼ºµµ Ã¼Å©
-	eTRIGGER_CHECK_EXIST_BOOK							,//	Ã¥ º¸À¯ À¯/¹« Ã¼Å©
-	eTRIGGER_CHECK_BOOK_PAGE							,//	Ã¥ ÆäÀÌÁö Ã¼Å©
-	eTRIGGER_CHECK_OWN_ADD_BOOK_PAGE_ITEM				,//	Ã¥ ÆäÀÌÁö Ãß°¡ ¾ÆÀÌÅÛÀÌ ÀÖ´ÂÁö Ã¼Å©
-	eTRIGGER_CHECK_CURRENT_STATUS						,//	ÇöÀç »óÅÂ
-	eTRIGGER_IS_RANK_IN_GUILD							,//	±æµå ¾È¿¡¼­ Á÷±Þ
+	eTRIGGER_LEVEL_CHECK								,//	ë ˆë²¨ì´ [spin]0[1,1000]~[spin]1[1,1000]ì´ë‹¤.
+	eTRIGGER_IS_GUILD_MEMBER							,//	ê¸¸ë“œì— [guild_member]
+	eTRIGGER_OWN_ITEM									,//	[item]0ì˜ ë³´ìœ  ê°¯ìˆ˜ê°€ [spin]1[0,255]ê°œ [equal]2
+	eTRIGGER_OWN_SPECIAL_ITEM							,//	[item]0ì˜ ë³´ìœ  ê°¯ìˆ˜ê°€ [spin]1[0,255]ê°œ [equal]2
+	eTRIGGER_EQUIP_ITEM									,//	[item]0ì„ [item_equip]
+	eTRIGGER_OWN_GOLD									,//	ë³´ìœ í•œ ê¸ˆì•¡ì´ [number]0[0,2147483647]ê³¨ë“œ [equal]1
+	eTRIGGER_SKILL_LEVEL								,//	ìŠ¤í‚¬ [skill]0ì˜ ë ˆë²¨ì´ [spin]1[0,50] [equal]2
+	eTRIGGER_TITLE_LEVEL								,//	ì¹­í˜¸ [title]0ì˜ ë ˆë²¨ì´ [spin]1[0,10] [equal]2
+	eTRIGGER_CHECK_JOB									,//	ì§ì—… [hero_job]0ì„ [hero_job_own]
+	eTRIGGER_CHECK_JOB_LEVEL							,//	ì§ì—…ë ˆë²¨ì´ [spin]0[1,3] [equal]1
+	eTRIGGER_CHECK_ALLIGNMENT							,//	ì„±í–¥ì´ [allignment]0ì´ë‹¤.
+	eTRIGGER_CHECK_PLAY_TIME							,//	í”Œë ˆì´ ì‹œê°„ì´ [number]0[0,2147483647]ì‹œê°„ [equal]1
+	eTRIGGER_CHECK_BASIC_POWER							,//	[power]0ê°€ [spin]1[1,10000] [equal]2
+	eTRIGGER_CHECK_GUILD_TITLE							,//	ê¸¸ë“œì•ˆì—ì„œì˜ ì§ìœ„ê°€ [guild_title]0 ì´ë‹¤.
+	eTRIGGER_OWN_QUEST_ITEM								,//	[quest_item]0ì˜ ë³´ìœ  ê°¯ìˆ˜ê°€ [spin]1[0,255]ê°œ [equal]2
+	eTRIGGER_REMAIN_ITEM_SLOT_COUNT						,//	ë‚¨ì€ ì•„ì´í…œ ìŠ¬ë¡¯ì˜ ìˆ˜ê°€ [spin]1[0,255]ê°œ [equal]2
+	eTRIGGER_MASTER_SKILL_COUNT							,//	ë§ˆìŠ¤í„°í•œ ìŠ¤í‚¬ì˜ ìˆ˜ê°€ [spin]0[0,52]ê°œ [equal]1
+	eTRIGGER_CHECK_OPERATOR								,//	ìš´ì˜ìžëƒ? 
+	eTRIGGER_CHECK_BOOK_COMPLETE_PERCENTAGE				,//	ì±… ì™„ì„±ë„ ì²´í¬
+	eTRIGGER_CHECK_EXIST_BOOK							,//	ì±… ë³´ìœ  ìœ /ë¬´ ì²´í¬
+	eTRIGGER_CHECK_BOOK_PAGE							,//	ì±… íŽ˜ì´ì§€ ì²´í¬
+	eTRIGGER_CHECK_OWN_ADD_BOOK_PAGE_ITEM				,//	ì±… íŽ˜ì´ì§€ ì¶”ê°€ ì•„ì´í…œì´ ìžˆëŠ”ì§€ ì²´í¬
+	eTRIGGER_CHECK_CURRENT_STATUS						,//	í˜„ìž¬ ìƒíƒœ
+	eTRIGGER_IS_RANK_IN_GUILD							,//	ê¸¸ë“œ ì•ˆì—ì„œ ì§ê¸‰
 
-	eTRIGGER_CHECK_SEX									,//	¼ºº° Ã¼Å©
-	eTRIGGER_CHECK_ATTENDANCE							,//	Ãâ¼® Ã¼Å©
-	eTRIGGER_CHECK_ATTR									,//	¼ºÇâ Ã¼Å©
-	eTRIGGER_CHECK_CAN_RECEIVE_CH5REWARD_TITLE_BONUS	,//	CH5ÀÇ ÄªÈ£ º¸³Ê½º¸¦ ¹ÞÀ» ¼ö ÀÖ´Ù.
-	eTRIGGER_CHECK_CH5_HEAVEN_BONUS_COUNT				,//	CH5ÀÇ Ãµ»ó°è º¸³Ê½º ¹ÞÀº È¸¼ö
-	eTRIGGER_CHECK_ENABLE_INCREASE_BONUS_GUILD_POINT	,//	º¸³Ê½º ±æµå Æ÷ÀÎÆ® Áõ°¡ °¡´É
-	eTRIGGER_CHECK_ENABLE_INCREASE_GUILD_STATUE_LEVEL	,//	±æµå ¼®»ó ·¹º§ Áõ°¡ °¡´É
+	eTRIGGER_CHECK_SEX									,//	ì„±ë³„ ì²´í¬
+	eTRIGGER_CHECK_ATTENDANCE							,//	ì¶œì„ ì²´í¬
+	eTRIGGER_CHECK_ATTR									,//	ì„±í–¥ ì²´í¬
+	eTRIGGER_CHECK_CAN_RECEIVE_CH5REWARD_TITLE_BONUS	,//	CH5ì˜ ì¹­í˜¸ ë³´ë„ˆìŠ¤ë¥¼ ë°›ì„ ìˆ˜ ìžˆë‹¤.
+	eTRIGGER_CHECK_CH5_HEAVEN_BONUS_COUNT				,//	CH5ì˜ ì²œìƒê³„ ë³´ë„ˆìŠ¤ ë°›ì€ íšŒìˆ˜
+	eTRIGGER_CHECK_ENABLE_INCREASE_BONUS_GUILD_POINT	,//	ë³´ë„ˆìŠ¤ ê¸¸ë“œ í¬ì¸íŠ¸ ì¦ê°€ ê°€ëŠ¥
+	eTRIGGER_CHECK_ENABLE_INCREASE_GUILD_STATUE_LEVEL	,//	ê¸¸ë“œ ì„ìƒ ë ˆë²¨ ì¦ê°€ ê°€ëŠ¥
 	eTRIGGER_CHECK_GUILD_SKILL_BONUS_PENELTY			,//	
 	eTRIGGER_CHECK_SAME_LEVEL_OVER_LEVEL_EQUIP_AMULET	,//	
 	eTRIGGER_CHECK_SAME_LEVEL_INCREASE_HP_AMULET		,//	
 	eTRIGGER_CHECK_SAME_LEVEL_INCREASE_CP_AMULET		,//	
 
 	eTRIGGER_CHECK_ITEM_TIME_STAMP						,	//	
-	eTRIGGER_CHECK_ADD_ABLE_PET							,	//	Æê Ãß°¡ Ã¼Å©
-	eTRIGGER_CHECK_ITEM_BOOLEAN_OPTION					,	//	¾ÆÀÌÅÛ¿¡ ¼³Á¤µÇ¾î ÀÖ´Â ºÒ¸° ¿É¼Ç Ã¼Å©
-	eTRIGGER_CHECK_GUILD_ROEN_GOOD_WILL_CHECK			,	//	·Î¿£ÀÇ È£°¨µµ Ã¼Å©
-	eTRIGGER_CHECK_REBIRTH_COUNT						,	//	Àü»ý È½¼ö Ã¼Å©
-	eTRIGGER_CHECK_ACTIVE_PET_COUNT						,	//	ÇöÀç ÆêÀÇ ¼ö Ã¼Å©
-	eTRIGGER_CHECK_PLAYER_ACTION						,	//	ÇöÀç ÇÃ·¹ÀÌ¾î Çàµ¿ÀÌ [action]0 Áß [ida_anida]1
-	eTRIGGER_CHECK_SECRET_DUNGEON_PLAY_COUNT			,	//	ºñ¹Ð´øÀü È½¼ö Ã¼Å©
-//	¼Ò¼ÓµÈ ÆÄÆ¼¿Í °ü·ÃµÈ »çÇ×
+	eTRIGGER_CHECK_ADD_ABLE_PET							,	//	íŽ« ì¶”ê°€ ì²´í¬
+	eTRIGGER_CHECK_ITEM_BOOLEAN_OPTION					,	//	ì•„ì´í…œì— ì„¤ì •ë˜ì–´ ìžˆëŠ” ë¶ˆë¦° ì˜µì…˜ ì²´í¬
+	eTRIGGER_CHECK_GUILD_ROEN_GOOD_WILL_CHECK			,	//	ë¡œì—”ì˜ í˜¸ê°ë„ ì²´í¬
+	eTRIGGER_CHECK_REBIRTH_COUNT						,	//	ì „ìƒ íšŸìˆ˜ ì²´í¬
+	eTRIGGER_CHECK_ACTIVE_PET_COUNT						,	//	í˜„ìž¬ íŽ«ì˜ ìˆ˜ ì²´í¬
+	eTRIGGER_CHECK_PLAYER_ACTION						,	//	í˜„ìž¬ í”Œë ˆì´ì–´ í–‰ë™ì´ [action]0 ì¤‘ [ida_anida]1
+	eTRIGGER_CHECK_SECRET_DUNGEON_PLAY_COUNT			,	//	ë¹„ë°€ë˜ì „ íšŸìˆ˜ ì²´í¬
+//	ì†Œì†ëœ íŒŒí‹°ì™€ ê´€ë ¨ëœ ì‚¬í•­
 	eTRIGGER_ABOUT_PARTY		=	100					,
-	eTRIGGER_PARTY_MEMBER_COUNT							,//	ÆÄÆ¼¿øÀÌ [spin]0[1,8]¸í [equal]1
-	eTRIGGER_CHECK_PARTY_MEMBER_LEVEL					,//	ÆÄÆ¼¿øÀÇ ·¹º§ÀÌ [spin]0[1,1000]~[spin]1[1,1000]ÀÌ´Ù.
-	eTRIGGER_ALL_PARTY_MEMBER_IN_GUILD					,//	¸ðµç ÆÄÆ¼¿øÀÌ ±æµå¿¡ [guild_member]
-	eTRIGGER_IN_GUILD_MEMBER_EXIST_IN_PARTY				,//	±æµå¿¡ ¼Ò¼ÓÇØ ÀÖ´Â ÆÄÆ¼¿øÀÌ [party_guild_member_exist]
-	eTRIGGER_ALL_PARTY_MEMBER_IN_SAME_GUILD				,//	¸ðµç ÆÄÆ¼¿øÀÌ [all_party_member_in_same_guild]
-	eTRIGGER_ALL_PARTY_MEMBER_OWN_SPECIFIC_ITEM			,//	¸ðµç ÆÄÆ¼¿øÀÌ [item]0À» [spin]1[0,255]°³ ÀÌ»ó º¸À¯ÇÏ°í ÀÖ´Ù.
-	eTRIGGER_ALL_PARTY_MEMBER_NOT_OWN_SPECIFIC_ITEM		,//	¸ðµç ÆÄÆ¼¿øÀÌ [item]0À» º¸À¯ÇÏ°í ÀÖÁö ¾Ê´Ù.
-	eTRIGGER_OWN_SPECIFIC_ITEM_MEMBER_EXIST_IN_PARTY	,//	[item]0À» [spin]1[1,255]°³ ÀÌ»ó º¸À¯ÇÑ ÆÄÆ¼¿øÀÌ [specific_item_own_member_exist]
-	eTRIGGER_GOLD_SUM_OF_PARTY							,//	ÆÄÆ¼¿øÀÇ ¼ÒÁö ±Ý¾× ÇÕÀÌ [number]0[1,2147483647]°ñµå [equal]1
-	eTRIGGER_CHECK_GOLD_IN_PARTY_MEMBER					,//	[number]0[1,2147483647]°ñµå ÀÌ»ó ¼ÒÁöÇÏ°í ÀÖ´Â ÆÄÆ¼¿øÀÌ [exist]
-	eTRIGGER_CHECK_GOLD_IN_ALL_PARTY_MEMBER				,//	¸ðµç ÆÄÆ¼¿øÀÌ [number]0[1,2147483647]°ñµå ÀÌ»ó ¼ÒÁöÇÏ°í ÀÖ´Ù.
-	eTRIGGER_CHECK_SKILL_IN_PARTY_MEMBER				,//	·¹º§ [spin]0[0,50]ÀÌ»óÀÇ [skill]1ÀÌ ÀÖ´Â ÆÄÆ¼¿øÀÌ [exist]
-	eTRIGGER_ALL_PARTY_MEMBER_LEARNED_SSPECIFIC_SKILL	,//	¸ðµç ÆÄÆ¼¿øÀÌ ·¹º§ [spin]0[0,50]ÀÌ»óÀÇ [skill]1À» ÀÍÈ÷°í ÀÖ´Ù.
-	eTRIGGER_CHECK_TITLE_IN_PARTY_MEMBER				,//	ÄªÈ£ [title]0À» º¸À¯ÇÑ ÆÄÆ¼¿øÀÌ [exist]
-	eTRIGGER_OWNED_TITLE_BY_ALL_PATY_MEMBER				,//	¸ðµç ÆÄÆ¼¿øÀÌ ÄªÈ£ [title]0À» [own]
-	eTRIGGER_CHECK_JOB_IN_PARTY							,//	Á÷¾÷ÀÌ [hero_job]0ÀÎ ÆÄÆ¼¿øÀÌ [exist]
-	eTRIGGER_CHECK_ALL_PARTY_MEMBER_JOB					,//	¸ðµç ÆÄÆ¼¿øÀÇ Á÷¾÷ÀÌ [player_job]ÀÌ´Ù.
-	eTRIGGER_CHECK_JOB_LEVEL_IN_ALL_PARTY_MEMBER		,//	¸ðµç ÆÄÆ¼¿øÀÇ Á÷¾÷·¹º§ÀÌ [spin]0[1,3]ÀÌ´Ù.
-	eTRIGGER_CHECK_ALLIGNMENT_IN_PARTY_MEMBER			,//	¼ºÇâÀÌ [allignment]0ÀÎ ÆÄÆ¼¿øÀÌ [exist]
-	eTRIGGER_CHECK_ALLIGNMENT_IN_ALL_PARTY_MEMBER		,//	¸ðµç ÆÄÆ¼¿øÀÇ ¼ºÇâÀÌ [allignment]0ÀÌ´Ù.
-	eTRIGGER_CHECK_BASKC_POWER_IN_PARTY_MEMBER			,//	[power]0°¡ [spin]1[1,10000]ÀÌ»óÀÎ ÆÄÆ¼¿øÀÌ [exist]
-	eTRIGGER_CHECK_BASKC_POWER_IN_ALL_PARTY_MEMBER		,//	¸ðµç ÆÄÆ¼¿øÀÇ [power]0°¡ [spin]1[1,10000] [equal]2
-	eTRIGGER_CHECK_PARTY_MEMBER_LOCATION				,//	¸ðµç ÆÄÆ¼¿øÀÌ [guild_member_location]
-	eTRIGGER_IS_PARTY_LEADER							,//	[ÆÄÆ¼ ¸®´õÀÌ´Ù.]
-	eTRIGGER_HAVE_MASTER_SKILL_PARTY_MEMBER				,//	½ºÅ³À» ¸¶½ºÅÍÇÑ ¼ö°¡ [spin]0[0,60]°³ ÀÌ»óÀÎ ÆÄÆ¼ ¸â¹öÀÇ ¼ö°¡ [spin]1[0,8]¸í [equal]2
-	eTRIGGERCHECK_ALL_PARTY_MEMBERS_MASTER_SKILL_COUNT	,//	¸ðµç ÆÄÆ¼¿øÀÌ [spin]0[0,60]°³ [only_equal]1ÀÇ ½ºÅ³À» ¸¶½ºÅÍ Çß´Ù.
+	eTRIGGER_PARTY_MEMBER_COUNT							,//	íŒŒí‹°ì›ì´ [spin]0[1,8]ëª… [equal]1
+	eTRIGGER_CHECK_PARTY_MEMBER_LEVEL					,//	íŒŒí‹°ì›ì˜ ë ˆë²¨ì´ [spin]0[1,1000]~[spin]1[1,1000]ì´ë‹¤.
+	eTRIGGER_ALL_PARTY_MEMBER_IN_GUILD					,//	ëª¨ë“  íŒŒí‹°ì›ì´ ê¸¸ë“œì— [guild_member]
+	eTRIGGER_IN_GUILD_MEMBER_EXIST_IN_PARTY				,//	ê¸¸ë“œì— ì†Œì†í•´ ìžˆëŠ” íŒŒí‹°ì›ì´ [party_guild_member_exist]
+	eTRIGGER_ALL_PARTY_MEMBER_IN_SAME_GUILD				,//	ëª¨ë“  íŒŒí‹°ì›ì´ [all_party_member_in_same_guild]
+	eTRIGGER_ALL_PARTY_MEMBER_OWN_SPECIFIC_ITEM			,//	ëª¨ë“  íŒŒí‹°ì›ì´ [item]0ì„ [spin]1[0,255]ê°œ ì´ìƒ ë³´ìœ í•˜ê³  ìžˆë‹¤.
+	eTRIGGER_ALL_PARTY_MEMBER_NOT_OWN_SPECIFIC_ITEM		,//	ëª¨ë“  íŒŒí‹°ì›ì´ [item]0ì„ ë³´ìœ í•˜ê³  ìžˆì§€ ì•Šë‹¤.
+	eTRIGGER_OWN_SPECIFIC_ITEM_MEMBER_EXIST_IN_PARTY	,//	[item]0ì„ [spin]1[1,255]ê°œ ì´ìƒ ë³´ìœ í•œ íŒŒí‹°ì›ì´ [specific_item_own_member_exist]
+	eTRIGGER_GOLD_SUM_OF_PARTY							,//	íŒŒí‹°ì›ì˜ ì†Œì§€ ê¸ˆì•¡ í•©ì´ [number]0[1,2147483647]ê³¨ë“œ [equal]1
+	eTRIGGER_CHECK_GOLD_IN_PARTY_MEMBER					,//	[number]0[1,2147483647]ê³¨ë“œ ì´ìƒ ì†Œì§€í•˜ê³  ìžˆëŠ” íŒŒí‹°ì›ì´ [exist]
+	eTRIGGER_CHECK_GOLD_IN_ALL_PARTY_MEMBER				,//	ëª¨ë“  íŒŒí‹°ì›ì´ [number]0[1,2147483647]ê³¨ë“œ ì´ìƒ ì†Œì§€í•˜ê³  ìžˆë‹¤.
+	eTRIGGER_CHECK_SKILL_IN_PARTY_MEMBER				,//	ë ˆë²¨ [spin]0[0,50]ì´ìƒì˜ [skill]1ì´ ìžˆëŠ” íŒŒí‹°ì›ì´ [exist]
+	eTRIGGER_ALL_PARTY_MEMBER_LEARNED_SSPECIFIC_SKILL	,//	ëª¨ë“  íŒŒí‹°ì›ì´ ë ˆë²¨ [spin]0[0,50]ì´ìƒì˜ [skill]1ì„ ìµížˆê³  ìžˆë‹¤.
+	eTRIGGER_CHECK_TITLE_IN_PARTY_MEMBER				,//	ì¹­í˜¸ [title]0ì„ ë³´ìœ í•œ íŒŒí‹°ì›ì´ [exist]
+	eTRIGGER_OWNED_TITLE_BY_ALL_PATY_MEMBER				,//	ëª¨ë“  íŒŒí‹°ì›ì´ ì¹­í˜¸ [title]0ì„ [own]
+	eTRIGGER_CHECK_JOB_IN_PARTY							,//	ì§ì—…ì´ [hero_job]0ì¸ íŒŒí‹°ì›ì´ [exist]
+	eTRIGGER_CHECK_ALL_PARTY_MEMBER_JOB					,//	ëª¨ë“  íŒŒí‹°ì›ì˜ ì§ì—…ì´ [player_job]ì´ë‹¤.
+	eTRIGGER_CHECK_JOB_LEVEL_IN_ALL_PARTY_MEMBER		,//	ëª¨ë“  íŒŒí‹°ì›ì˜ ì§ì—…ë ˆë²¨ì´ [spin]0[1,3]ì´ë‹¤.
+	eTRIGGER_CHECK_ALLIGNMENT_IN_PARTY_MEMBER			,//	ì„±í–¥ì´ [allignment]0ì¸ íŒŒí‹°ì›ì´ [exist]
+	eTRIGGER_CHECK_ALLIGNMENT_IN_ALL_PARTY_MEMBER		,//	ëª¨ë“  íŒŒí‹°ì›ì˜ ì„±í–¥ì´ [allignment]0ì´ë‹¤.
+	eTRIGGER_CHECK_BASKC_POWER_IN_PARTY_MEMBER			,//	[power]0ê°€ [spin]1[1,10000]ì´ìƒì¸ íŒŒí‹°ì›ì´ [exist]
+	eTRIGGER_CHECK_BASKC_POWER_IN_ALL_PARTY_MEMBER		,//	ëª¨ë“  íŒŒí‹°ì›ì˜ [power]0ê°€ [spin]1[1,10000] [equal]2
+	eTRIGGER_CHECK_PARTY_MEMBER_LOCATION				,//	ëª¨ë“  íŒŒí‹°ì›ì´ [guild_member_location]
+	eTRIGGER_IS_PARTY_LEADER							,//	[íŒŒí‹° ë¦¬ë”ì´ë‹¤.]
+	eTRIGGER_HAVE_MASTER_SKILL_PARTY_MEMBER				,//	ìŠ¤í‚¬ì„ ë§ˆìŠ¤í„°í•œ ìˆ˜ê°€ [spin]0[0,60]ê°œ ì´ìƒì¸ íŒŒí‹° ë©¤ë²„ì˜ ìˆ˜ê°€ [spin]1[0,8]ëª… [equal]2
+	eTRIGGERCHECK_ALL_PARTY_MEMBERS_MASTER_SKILL_COUNT	,//	ëª¨ë“  íŒŒí‹°ì›ì´ [spin]0[0,60]ê°œ [only_equal]1ì˜ ìŠ¤í‚¬ì„ ë§ˆìŠ¤í„° í–ˆë‹¤.
 	eTRIGGER_CHECK_ALL_PARTY_MEMBERS_LIFE				,
 
-	eTRIGGER_CHECK_MEMBER_SEX							,//	¸â¹öÀÇ ¼ºº° Ã¼Å©
-	eTRIGGER_CHECK_LEVEL_RANGE							,//	ÃÖ°í ·¹º§°ú ÃÖÀú ·¹º§ÀÇ Â÷ÀÌ
+	eTRIGGER_CHECK_MEMBER_SEX							,//	ë©¤ë²„ì˜ ì„±ë³„ ì²´í¬
+	eTRIGGER_CHECK_LEVEL_RANGE							,//	ìµœê³  ë ˆë²¨ê³¼ ìµœì € ë ˆë²¨ì˜ ì°¨ì´
 
 
-	eTRIGGER_CHECK_DUEL_RANKING							,//	°áÅõ ·©Å· Ã¼Å©
-	eTRIGGER_CHECK_HAVE_GRACE							,// ÀºÃÑ º¸À¯ ¿©ºÎ Ã¼Å©.
-	eTRIGGER_CHECK_IS_BLIND_NEW							,// ¿µ±¸ ºí¶óÀÎµå »óÅÂÀÌ´Ù.
+	eTRIGGER_CHECK_DUEL_RANKING							,//	ê²°íˆ¬ ëž­í‚¹ ì²´í¬
+	eTRIGGER_CHECK_HAVE_GRACE							,// ì€ì´ ë³´ìœ  ì—¬ë¶€ ì²´í¬.
+	eTRIGGER_CHECK_IS_BLIND_NEW							,// ì˜êµ¬ ë¸”ë¼ì¸ë“œ ìƒíƒœì´ë‹¤.
 
-	eTRIGGER_PARTY_MEMBER_COUNT_IN_CURRENT_FIELD		,	// ÇöÀç ÇÊµå ÆÄÆ¼¿ø ¼ö 
+	eTRIGGER_PARTY_MEMBER_COUNT_IN_CURRENT_FIELD		,	// í˜„ìž¬ í•„ë“œ íŒŒí‹°ì› ìˆ˜ 
 
-//	¼Ò¼Ó ±æµå¿Í °ü·ÃµÈ »çÇ×
+//	ì†Œì† ê¸¸ë“œì™€ ê´€ë ¨ëœ ì‚¬í•­
 	eTRIGGER_ABOUT_GUILD		=	200					,
-	eTRIGGER_CHECK_ATTACED_GUILD_LEVEL					,//	¼Ò¼Ó ±æµåÀÇ ·¹º§ÀÌ [spin]0[1,10000] [equal]1
-	eTRIGGER_CHECK_MEMBER_COUNT_IN_ATTACED_GUILD		,//	¼Ò¼Ó ±æµåÀÇ ±æµå¿ø ¼ö°¡ [spin]0[1,10000] [equal]1
-	eTRIGGER_CHECK_SUB_GUILD_MASTER_COUNT_IN_ATTACED_GUILD,//	¼Ò¼Ó ±æµåÀÇ ¼­ºê ¸¶½ºÅÍÀÇ ¼ö°¡ [spin]0[1,10000] [equal]1
-	eTRIGGER_CHECK_ELDER_MEMEBER_COUNT_IN_ATTACED_GUILD	,//	¼Ò¼Ó ±æµåÀÇ ¿ø·Î ±æµå¿øÀÇ ¼ö°¡ [spin]0[1,10000] [equal]1
-	eTRIGGER_CHECK_OWN_GUILD_ITEM						,//	¼Ò¼Ó ±æµå¿¡¼­ [guild_item]0À» [item_own]
-	eTRIGGER_CHECK_GOLD_OF_ATTACED_GUILD				,//	¼Ò¼Ó ±æµå¿¡ º¸À¯ ±Ý¾×ÀÌ [number]0[1,2147483647]°ñµå [equal]1
-	eTRIGGER_CHECK_GENERATE_TIME_OF_ATTACED_GUILD		,//	¼Ò¼Ó ±æµå°¡ ¸¸µé¾îÁøÈÄ °æ°úÇÑ ½Ã°£ÀÌ [number]0[1,2147483647]ÀÏ [equal]1
-	eTRIGGER_CHECK_RANKING_OF_ATTACED_GUILD				,//	¼Ò¼Ó ±æµåÀÇ ·©Å·ÀÌ [spin]0[1,10000] [equal]1
-	eTRIGGER_CHECK_GUILD_MASTER_LEVEL					,//	±æµå ¸¶½ºÅÍÀÇ ·¹º§ÀÌ [spin]0[1,10000] [equal]1
-	eTRIGGER_CHECK_GUILD_MASTER_JOB						,//	±æµå ¸¶½ºÅÍÀÇ Á÷¾÷ÀÌ [hero_job]0ÀÌ´Ù.
-	eTRIGGER_CHECK_GUILD_MASTER_JOB_LEVEL				,//	±æµå ¸¶½ºÅÍÀÇ Á÷¾÷·¹º§ÀÌ [spin]0[1,3] [equal]1
-	eTRIGGER_CHECK_GUILD_MASTER_ALLIGNMENT				,//	±æµå ¸¶½ºÅÍÀÇ ¼ºÇâÀÌ [allignment]0 ÀÌ´Ù.
-	eTRIGGER_CHECK_GUILD_MASTER_BASIC_POWER				,//	±æµå ¸¶½ºÅÍÀÇ [power]0ÀÌ [spin]1[1,10000] [equal]2
-	eTRIGGER_CHECK_GUILD_STATUE_SKILL_LEVEL				,//	±æµå ¼®»ó ½ºÅ³ ·¹º§ Ã¼Å©
-	eTRIGGER_CHECK_GUILD_PLACE_OF_RELATED				,//	±æµå ¿¬°íÁö Ã¼Å©
-	eTRIGGER_CHECK_IS_OWN_GUILD_HALL					,//	ÀÌ°Ô ¿ì¸® ±æµåÈ¦ÀÌ³Ä?
-	eTRIGGER_CHECK_GUILD_HALL_LEVEL						,//	±æµåÈ¦À» ¼ÒÀ¯ÇÏ°í ÀÖ³Ä?
+	eTRIGGER_CHECK_ATTACED_GUILD_LEVEL					,//	ì†Œì† ê¸¸ë“œì˜ ë ˆë²¨ì´ [spin]0[1,10000] [equal]1
+	eTRIGGER_CHECK_MEMBER_COUNT_IN_ATTACED_GUILD		,//	ì†Œì† ê¸¸ë“œì˜ ê¸¸ë“œì› ìˆ˜ê°€ [spin]0[1,10000] [equal]1
+	eTRIGGER_CHECK_SUB_GUILD_MASTER_COUNT_IN_ATTACED_GUILD,//	ì†Œì† ê¸¸ë“œì˜ ì„œë¸Œ ë§ˆìŠ¤í„°ì˜ ìˆ˜ê°€ [spin]0[1,10000] [equal]1
+	eTRIGGER_CHECK_ELDER_MEMEBER_COUNT_IN_ATTACED_GUILD	,//	ì†Œì† ê¸¸ë“œì˜ ì›ë¡œ ê¸¸ë“œì›ì˜ ìˆ˜ê°€ [spin]0[1,10000] [equal]1
+	eTRIGGER_CHECK_OWN_GUILD_ITEM						,//	ì†Œì† ê¸¸ë“œì—ì„œ [guild_item]0ì„ [item_own]
+	eTRIGGER_CHECK_GOLD_OF_ATTACED_GUILD				,//	ì†Œì† ê¸¸ë“œì— ë³´ìœ  ê¸ˆì•¡ì´ [number]0[1,2147483647]ê³¨ë“œ [equal]1
+	eTRIGGER_CHECK_GENERATE_TIME_OF_ATTACED_GUILD		,//	ì†Œì† ê¸¸ë“œê°€ ë§Œë“¤ì–´ì§„í›„ ê²½ê³¼í•œ ì‹œê°„ì´ [number]0[1,2147483647]ì¼ [equal]1
+	eTRIGGER_CHECK_RANKING_OF_ATTACED_GUILD				,//	ì†Œì† ê¸¸ë“œì˜ ëž­í‚¹ì´ [spin]0[1,10000] [equal]1
+	eTRIGGER_CHECK_GUILD_MASTER_LEVEL					,//	ê¸¸ë“œ ë§ˆìŠ¤í„°ì˜ ë ˆë²¨ì´ [spin]0[1,10000] [equal]1
+	eTRIGGER_CHECK_GUILD_MASTER_JOB						,//	ê¸¸ë“œ ë§ˆìŠ¤í„°ì˜ ì§ì—…ì´ [hero_job]0ì´ë‹¤.
+	eTRIGGER_CHECK_GUILD_MASTER_JOB_LEVEL				,//	ê¸¸ë“œ ë§ˆìŠ¤í„°ì˜ ì§ì—…ë ˆë²¨ì´ [spin]0[1,3] [equal]1
+	eTRIGGER_CHECK_GUILD_MASTER_ALLIGNMENT				,//	ê¸¸ë“œ ë§ˆìŠ¤í„°ì˜ ì„±í–¥ì´ [allignment]0 ì´ë‹¤.
+	eTRIGGER_CHECK_GUILD_MASTER_BASIC_POWER				,//	ê¸¸ë“œ ë§ˆìŠ¤í„°ì˜ [power]0ì´ [spin]1[1,10000] [equal]2
+	eTRIGGER_CHECK_GUILD_STATUE_SKILL_LEVEL				,//	ê¸¸ë“œ ì„ìƒ ìŠ¤í‚¬ ë ˆë²¨ ì²´í¬
+	eTRIGGER_CHECK_GUILD_PLACE_OF_RELATED				,//	ê¸¸ë“œ ì—°ê³ ì§€ ì²´í¬
+	eTRIGGER_CHECK_IS_OWN_GUILD_HALL					,//	ì´ê²Œ ìš°ë¦¬ ê¸¸ë“œí™€ì´ëƒ?
+	eTRIGGER_CHECK_GUILD_HALL_LEVEL						,//	ê¸¸ë“œí™€ì„ ì†Œìœ í•˜ê³  ìžˆëƒ?
 
-//	Äù½ºÆ®¿Í °ü·ÃµÈ »çÇ×
+//	í€˜ìŠ¤íŠ¸ì™€ ê´€ë ¨ëœ ì‚¬í•­
 	eTRIGGER_ABOUT_QUEST		=	300					,
-	eTRIGGER_CHECK_COMPLETE_QUEST						,//	Äù½ºÆ® [string]À» [quest_complete]
-	eTRIGGER_CHECK_OWN_QUEST							,//	Äù½ºÆ® [string]À» [quest_own]
-	eTRIGGER_CHECK_PROCESS_QUEST_COUNT					,//	ÁøÇàÁßÀÎ Äù½ºÆ®ÀÇ ¼ö
-	eTRIGGER_CHECK_QUEST_PROCESS_LEVEL					,// Äù½ºÆ® ÁøÇà »óÅÂ"					,
-	eTRIGGER_CHECK_QUEST_VALUE							,// Äù½ºÆ® ¼öÄ¡"						,
-	eTRIGGER_CHECK_OWN_ARBEIT							,// ¾Æ¸£¹ÙÀÌÆ® ÁøÇà ¿©ºÎ"				,
-	eTRIGGER_CHECK_ARBEIT_PROCESS_LEVEL					,// ¾Æ¸£¹ÙÀÌÆ® ÁøÇà »óÅÂ"				,
-	eTRIGGER_CHECK_ARBEIT_VALUE							,// ¾Æ¸£¹ÙÀÌÆ® ¼öÄ¡"					,
-	eTRIGGER_REMAIN_PROCESS_QUEST_SLOT					,//	»õ·Î¿î Äù½ºÆ®¸¦ Ãß°¡ ½ÃÅ³ ¼ö [exist]0
-	eTRIGGER_CHECK_COMPLETE_ARBEIT						,//	Äù½ºÆ® [string]À» [quest_complete]
-	eTRIGGER_CHECK_QUEST_COMPLETE_CHECKER				,//	Äù½ºÆ®¸¦ ¿Ï·á »óÅÂ·Î Ã¼Å©ÇÑ´Ù.
-	eTRIGGER_CHECK_ARBEIT_COMPLETE_CHECKER				,//	Äù½ºÆ®¸¦ ¿Ï·á »óÅÂ·Î Ã¼Å©ÇÑ´Ù.
-	eTRIGGER_CHECK_ENABLE_QUEST							,//	Äù½ºÆ®¸¦ ½ÃÀÛ ÇÒ ¼ö ÀÖ´Â »óÅÂ´Ù.
-	eTRIGGER_CHECK_ENABLE_ARBEIT						,//	¾Æ¸£¹ÙÀÌÆ®¸¦ ½ÃÀÛ ÇÒ ¼ö ÀÖ´Â »óÅÂ´Ù.
-	eTRIGGER_CHECK_PLAYER_JOB_BY_QUEST					,//	Á÷¾÷ Ã¼Å©
-	eTRIGGER_CHECK_PLAYER_JOB_BY_ARBEIT					,//	Á÷¾÷ Ã¼Å©
-	eTRIGGER_CHECK_QUEST_COUNTDOWN_CHECKER				,//	Äù½ºÆ® Ä«¿îÆ®´Ù¿î Å¸ÀÌ¸Ó°¡ ¿Ï·á µÇ¾ú´ÂÁö Ã¼Å©
+	eTRIGGER_CHECK_COMPLETE_QUEST						,//	í€˜ìŠ¤íŠ¸ [string]ì„ [quest_complete]
+	eTRIGGER_CHECK_OWN_QUEST							,//	í€˜ìŠ¤íŠ¸ [string]ì„ [quest_own]
+	eTRIGGER_CHECK_PROCESS_QUEST_COUNT					,//	ì§„í–‰ì¤‘ì¸ í€˜ìŠ¤íŠ¸ì˜ ìˆ˜
+	eTRIGGER_CHECK_QUEST_PROCESS_LEVEL					,// í€˜ìŠ¤íŠ¸ ì§„í–‰ ìƒíƒœ"					,
+	eTRIGGER_CHECK_QUEST_VALUE							,// í€˜ìŠ¤íŠ¸ ìˆ˜ì¹˜"						,
+	eTRIGGER_CHECK_OWN_ARBEIT							,// ì•„ë¥´ë°”ì´íŠ¸ ì§„í–‰ ì—¬ë¶€"				,
+	eTRIGGER_CHECK_ARBEIT_PROCESS_LEVEL					,// ì•„ë¥´ë°”ì´íŠ¸ ì§„í–‰ ìƒíƒœ"				,
+	eTRIGGER_CHECK_ARBEIT_VALUE							,// ì•„ë¥´ë°”ì´íŠ¸ ìˆ˜ì¹˜"					,
+	eTRIGGER_REMAIN_PROCESS_QUEST_SLOT					,//	ìƒˆë¡œìš´ í€˜ìŠ¤íŠ¸ë¥¼ ì¶”ê°€ ì‹œí‚¬ ìˆ˜ [exist]0
+	eTRIGGER_CHECK_COMPLETE_ARBEIT						,//	í€˜ìŠ¤íŠ¸ [string]ì„ [quest_complete]
+	eTRIGGER_CHECK_QUEST_COMPLETE_CHECKER				,//	í€˜ìŠ¤íŠ¸ë¥¼ ì™„ë£Œ ìƒíƒœë¡œ ì²´í¬í•œë‹¤.
+	eTRIGGER_CHECK_ARBEIT_COMPLETE_CHECKER				,//	í€˜ìŠ¤íŠ¸ë¥¼ ì™„ë£Œ ìƒíƒœë¡œ ì²´í¬í•œë‹¤.
+	eTRIGGER_CHECK_ENABLE_QUEST							,//	í€˜ìŠ¤íŠ¸ë¥¼ ì‹œìž‘ í•  ìˆ˜ ìžˆëŠ” ìƒíƒœë‹¤.
+	eTRIGGER_CHECK_ENABLE_ARBEIT						,//	ì•„ë¥´ë°”ì´íŠ¸ë¥¼ ì‹œìž‘ í•  ìˆ˜ ìžˆëŠ” ìƒíƒœë‹¤.
+	eTRIGGER_CHECK_PLAYER_JOB_BY_QUEST					,//	ì§ì—… ì²´í¬
+	eTRIGGER_CHECK_PLAYER_JOB_BY_ARBEIT					,//	ì§ì—… ì²´í¬
+	eTRIGGER_CHECK_QUEST_COUNTDOWN_CHECKER				,//	í€˜ìŠ¤íŠ¸ ì¹´ìš´íŠ¸ë‹¤ìš´ íƒ€ì´ë¨¸ê°€ ì™„ë£Œ ë˜ì—ˆëŠ”ì§€ ì²´í¬
 	eTRIGGER_CHECK_ARBEIT_COUNTDOWN_CHECKER				,//
-	eTRIGGER_CHECK_JOIN_FIELD							,//	ÇÊµå Á¢¼Ó Á÷ÈÄ
-	eTRIGGER_CHECK_MAIN_QUEST_VALUE						,//	¸ÞÀÎ Äù½ºÆ® ¼öÄ¡ xÀÇ °ªÀÌ y [ÀÌ´Ù/ÀÌ»óÀÌ´Ù/ÀÌÇÏÀÌ´Ù]
-	eTRIGGER_CHECK_MAIN_QUEST_SWITCH					,//	 ¸ÞÀÎ Äù½ºÆ® ½ºÀ§Ä¡ x ¹øÀÌ ÄÑÁ® [ÀÖ´Ù/²¨Á® ÀÖ´Ù.]
+	eTRIGGER_CHECK_JOIN_FIELD							,//	í•„ë“œ ì ‘ì† ì§í›„
+	eTRIGGER_CHECK_MAIN_QUEST_VALUE						,//	ë©”ì¸ í€˜ìŠ¤íŠ¸ ìˆ˜ì¹˜ xì˜ ê°’ì´ y [ì´ë‹¤/ì´ìƒì´ë‹¤/ì´í•˜ì´ë‹¤]
+	eTRIGGER_CHECK_MAIN_QUEST_SWITCH					,//	 ë©”ì¸ í€˜ìŠ¤íŠ¸ ìŠ¤ìœ„ì¹˜ x ë²ˆì´ ì¼œì ¸ [ìžˆë‹¤/êº¼ì ¸ ìžˆë‹¤.]
 
-//	±âÅ¸
+//	ê¸°íƒ€
 	eTRIGGER_ABOUT_ETC			=	400					,
 	eTRIGGER_CHECK_OX_QUIZ_START_TIME					,	
 	eTRIGGER_CHECK_TIME									,	
@@ -157,136 +157,136 @@ enum
 	eTRIGGER_CHECK_GUIDE								,	
 	eTRIGGER_CHECK_COUNTDOWN_TIMER						,
 	eTRIGGER_CHECK_WORD_QUIZ_START_TIME					,	
-	eTRIGGER_CHECK_IS_FULL_GUILD						,	//	´õ ÀÌ»ó ±æµå ¸¸µé ¼ö ¾ø´Ù.
-	eTRIGGER_CHECK_IS_TEST_SERVER						,	//	Å×¼·ÀÌ´Ù.
-	eTRIGGER_CHECK_BLOCK_TO_OBJECT_MACRO				,	//	¿ÀºêÁ§Æ® ¸ÅÅ©·Î ¹æÁö
-	eTRIGGER_CHECK_CHANCE								,	//	È®·ü Ã¼Å©
-	eTRIGGER_CHECK_LOCAL								,	//	±¹°¡ Ã¼Å©
+	eTRIGGER_CHECK_IS_FULL_GUILD						,	//	ë” ì´ìƒ ê¸¸ë“œ ë§Œë“¤ ìˆ˜ ì—†ë‹¤.
+	eTRIGGER_CHECK_IS_TEST_SERVER						,	//	í…Œì„­ì´ë‹¤.
+	eTRIGGER_CHECK_BLOCK_TO_OBJECT_MACRO				,	//	ì˜¤ë¸Œì íŠ¸ ë§¤í¬ë¡œ ë°©ì§€
+	eTRIGGER_CHECK_CHANCE								,	//	í™•ë¥  ì²´í¬
+	eTRIGGER_CHECK_LOCAL								,	//	êµ­ê°€ ì²´í¬
 	eTRIGGER_CHECK_EVENT_VALUE							,	
-	eTRIGGER_CHECK_EVENT_TIME							,	//	ÀÌº¥Æ® ½Ã°£ Ã¼Å©
-	eTRIGGER_CHECK_CHANCE2								,	//	[spin]1[0,50000] / 50000 È®·ü Ã¼Å©
+	eTRIGGER_CHECK_EVENT_TIME							,	//	ì´ë²¤íŠ¸ ì‹œê°„ ì²´í¬
+	eTRIGGER_CHECK_CHANCE2								,	//	[spin]1[0,50000] / 50000 í™•ë¥  ì²´í¬
 
-//	¸ó½ºÅÍ AI¸¦ À§ÇÑ »çÇ×
+//	ëª¬ìŠ¤í„° AIë¥¼ ìœ„í•œ ì‚¬í•­
 	eTRIGGER_ABOUT_MONSTER		=	500					,
-	eTRIGGER_CHECK_ENEMY_COUNT_IN_RANGE					,//	ÁÖº¯ x ÇÈ¼¿ ³»ÀÇ ÇÃ·¹ÀÌ¾îÀÇ ¼ö°¡ x¸í ÀÌ»ó/ÀÌÇÏÀÌ´Ù.
-	eTRIGGER_CHECK_HP_PERCENTAGE						,//	ÀÚ½ÅÀÇ hp°¡ x% ÀÌ»ó/ÀÌÇÏÀÌ´Ù.
-	eTRIGGER_CHECK_DUNGEON_FLAG							,//	´øÀü ÇÃ·¹±× y°¡ x ÀÌ»ó/ÀÌÇÏÀÌ´Ù.
+	eTRIGGER_CHECK_ENEMY_COUNT_IN_RANGE					,//	ì£¼ë³€ x í”½ì…€ ë‚´ì˜ í”Œë ˆì´ì–´ì˜ ìˆ˜ê°€ xëª… ì´ìƒ/ì´í•˜ì´ë‹¤.
+	eTRIGGER_CHECK_HP_PERCENTAGE						,//	ìžì‹ ì˜ hpê°€ x% ì´ìƒ/ì´í•˜ì´ë‹¤.
+	eTRIGGER_CHECK_DUNGEON_FLAG							,//	ë˜ì „ í”Œë ˆê·¸ yê°€ x ì´ìƒ/ì´í•˜ì´ë‹¤.
 	
-	eTRIGGER_CHECK_PLAY_TIME_IN_THIS_DUNGEON			,//	ÇöÀç ÆÄÆ¼°¡ ÀÌ ´øÀü¿¡ µé¾î¿ÂÁö xºÐ ÀÌ»ó/ÀÌÇÏÀÌ´Ù.
-	eTRIGGER_CHECK_ARRIVE_AREA							,//	¿µ¿ª x¿¡ µµÂø Çß´Ù.
-	eTRIGGER_CHECK_TARGET_USE_BELT_ITEM					,//	Å¸°ÙÀÌ º§Æ® ¾ÆÀÌÅÛÀ» »ç¿ëÇß´Ù.(ÇöÀç ÀüÅõÁßÀÎ Å¸°Ù)
-	eTRIGGER_CHECK_TARGET_FLEE							,//	Å¸°ÙÀÌ xÃÊ ÀÌ»ó ÀÚ½Å¿¡°Ô °ø°Ý ¹Þ°í ÀÖÁö ¾Ê´Ù.(ÇöÀç ÀüÅõÁßÀÎ Å¸°Ù)
-	eTRIGGER_CHECK_USE_SKILL							,//	Æ¯Á¤ ½ºÅ³À» »ç¿ëÇß´Ù.
-	eTRIGGER_CHECK_CLICKED_AREA							,//	Æ¯Á¤ ¿µ¿ªÀ» Å¬¸¯Çß´Ù.
+	eTRIGGER_CHECK_PLAY_TIME_IN_THIS_DUNGEON			,//	í˜„ìž¬ íŒŒí‹°ê°€ ì´ ë˜ì „ì— ë“¤ì–´ì˜¨ì§€ xë¶„ ì´ìƒ/ì´í•˜ì´ë‹¤.
+	eTRIGGER_CHECK_ARRIVE_AREA							,//	ì˜ì—­ xì— ë„ì°© í–ˆë‹¤.
+	eTRIGGER_CHECK_TARGET_USE_BELT_ITEM					,//	íƒ€ê²Ÿì´ ë²¨íŠ¸ ì•„ì´í…œì„ ì‚¬ìš©í–ˆë‹¤.(í˜„ìž¬ ì „íˆ¬ì¤‘ì¸ íƒ€ê²Ÿ)
+	eTRIGGER_CHECK_TARGET_FLEE							,//	íƒ€ê²Ÿì´ xì´ˆ ì´ìƒ ìžì‹ ì—ê²Œ ê³µê²© ë°›ê³  ìžˆì§€ ì•Šë‹¤.(í˜„ìž¬ ì „íˆ¬ì¤‘ì¸ íƒ€ê²Ÿ)
+	eTRIGGER_CHECK_USE_SKILL							,//	íŠ¹ì • ìŠ¤í‚¬ì„ ì‚¬ìš©í–ˆë‹¤.
+	eTRIGGER_CHECK_CLICKED_AREA							,//	íŠ¹ì • ì˜ì—­ì„ í´ë¦­í–ˆë‹¤.
 
-	eTRIGGER_CHECK_MONSTER_LEVEL						,//	¸ó½ºÅÍ ·¹º§ Ã¼Å©
-	eTRIGGER_CHECK_MONSTER_EVENT_VALUE					,//	ÀÌº¥Æ® ¸ó½ºÅÍ Ã¼Å©
+	eTRIGGER_CHECK_MONSTER_LEVEL						,//	ëª¬ìŠ¤í„° ë ˆë²¨ ì²´í¬
+	eTRIGGER_CHECK_MONSTER_EVENT_VALUE					,//	ì´ë²¤íŠ¸ ëª¬ìŠ¤í„° ì²´í¬
 
-	eTRIGGER_CHECK_FIELD_VALUE							,//	ÇÊµå ¼öÄ¡ Ã¼Å©
-	eTRIGGER_SEASON_VALIABLE							,// ½ÃÁð º¯¼ö Ã¼Å©
-	eTRIGGER_CHECK_TIME3								,// ½Ã°£ Ã¼Å©3
-	eTRIGGER_CHECK_TIME4								,// ½Ã°£ Ã¼Å©4	
-	eTRIGGER_CHECK_PRIZE_PLAYER							,// ÀÌº¥Æ® ¸ñ·Ï¿¡¼­ ÀÖ´ÂÁö¸¦ Ã¼Å©.
+	eTRIGGER_CHECK_FIELD_VALUE							,//	í•„ë“œ ìˆ˜ì¹˜ ì²´í¬
+	eTRIGGER_SEASON_VALIABLE							,// ì‹œì¦Œ ë³€ìˆ˜ ì²´í¬
+	eTRIGGER_CHECK_TIME3								,// ì‹œê°„ ì²´í¬3
+	eTRIGGER_CHECK_TIME4								,// ì‹œê°„ ì²´í¬4	
+	eTRIGGER_CHECK_PRIZE_PLAYER							,// ì´ë²¤íŠ¸ ëª©ë¡ì—ì„œ ìžˆëŠ”ì§€ë¥¼ ì²´í¬.
 
-	eTRIGGER_CHECK_WORLD_VALUE							,//	¿ùµå ¼öÄ¡ Ã¼Å©
-	eTRIGGER_CHECK_WEEKDAY								,//	¿äÀÏ Ã¼Å©.
-	eTRIGGER_CHECK_MINUTE								,	// ºÐ(Æ÷ÇÔ)~ºÐ(Æ÷ÇÔ) »çÀÌÀÌ´Ù. Ã¼Å©..
-	eTRIGGER_CHECK_TILESET								,	// Å¸ÀÏ¼Â
-	eTRIGGER_CHECK_TRANSFORMATION_MONSTER				,	// º¯½ÅÁßÀÌ´Ù.
-	eTRIGGER_CHECK_EVENT_COUNT_THE_HOURS				,	// ÀÌº¥Æ® ³²Àº ½Ã°£ Ã¼Å©
-	eTRIGGER_CHECK_EVENT_TIME_BEFORE_AFTER				,	//	ÀÌº¥Æ® ½Ã°£ ÀüÈÄ Ã¼Å©
-};	//	Æ®¸®°Åµé
+	eTRIGGER_CHECK_WORLD_VALUE							,//	ì›”ë“œ ìˆ˜ì¹˜ ì²´í¬
+	eTRIGGER_CHECK_WEEKDAY								,//	ìš”ì¼ ì²´í¬.
+	eTRIGGER_CHECK_MINUTE								,	// ë¶„(í¬í•¨)~ë¶„(í¬í•¨) ì‚¬ì´ì´ë‹¤. ì²´í¬..
+	eTRIGGER_CHECK_TILESET								,	// íƒ€ì¼ì…‹
+	eTRIGGER_CHECK_TRANSFORMATION_MONSTER				,	// ë³€ì‹ ì¤‘ì´ë‹¤.
+	eTRIGGER_CHECK_EVENT_COUNT_THE_HOURS				,	// ì´ë²¤íŠ¸ ë‚¨ì€ ì‹œê°„ ì²´í¬
+	eTRIGGER_CHECK_EVENT_TIME_BEFORE_AFTER				,	//	ì´ë²¤íŠ¸ ì‹œê°„ ì „í›„ ì²´í¬
+};	//	íŠ¸ë¦¬ê±°ë“¤
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//	¹ÝÀÀµé
+//	ë°˜ì‘ë“¤
 //////////////////////////////////////////////////////////////////////////////////////////
 enum
 {
-	eREACTION_SELECT_DIALOG								,//	´ëÈ­ ¼±ÅÃ
-	eREACTION_END_DIALOG								,//	´ëÈ­ Á¾·á
-	eREACTION_SHOP										,//	»óÁ¡
-	eREACTION_OPEN_BANK									,//	ÀºÇà ¿­¾î!!
-	eREACTION_MAKE_GUILD								,//	±æµå ¸¸µé¾î
-	eREACTION_BREAK_KARMA								,//	Ä«¸£¸¶ Á¤Áö!!
-	eREACTION_CALL_MAGIC_CARPET							,//	¸¶¹ýÀÇ ¾çÅºÀÚ ¼ÒÈ¯
-	eREACTION_OPEN_GUILD_BATTLE_SCHEDULER				,//	±æµåÀü ½ºÄ³Áì ¿­±â
-	eREACTION_OPEN_GUILD_MARK_COMPOSER					,//	±æµå ¸¶Å© Á¶ÇÕ ÀÎÅÍÆäÀÌ½º ¿­±â
-	eREACTION_OPEN_REPAIR_ITEM_WINDOW					,//	¾ÆÀÌÅÛ ¼ö¸®Ã¢ ¿­±â
-	eREACTION_OPEN_JUDGE_OF_ITEM_WINDOW					,//	¾ÆÀÌÅÛ °¨º°Ã¢ ¿ÀÇÂ
-	eREACTION_OPEN_MERGE_ITEM_PIECE_WINDOW				,//	¾ÆÀÌÅÛ Á¶°¢ ÇÕÃ¼Ã¢ ¿ÀÇÂ
-	eREACTION_MOVE_TO_SECRET_DUNGEON					,//	ÀÎ½ºÅÏ½º ´øÁ¯À¸·Î ÀÌµ¿
-	eREACTION_SET_COUNTDOWN_TIMER						,//	Ä«¿îÆ® Å¸ÀÌ¸Ó ¼³Á¤
-	eREACTION_COMPLETE_SECRET_DUNGEON					,//	ºñ¹Ð ´øÀü Á¾·á
-	eREACTION_SET_GUILD_HALL_LEVEL						,//	1 ·¹º§ ±æµå È¦ ºÎ¿©
-	eREACTION_MOVE_TO_GUILD_HALL						,//	±æµå È¦·Î ÀÌµ¿
-	eREACTION_INCREASE_GUILD_STATUE_SKILL_LEVEL			,//	±æµå ¼®»ó ½ºÅ³ ·¹º§ Áõ°¡
-	eREACTION_OPEN_GUILD_INVENTORY						,//	±æµå ¾Æ¾ÆÅÛ Ã¢ ¿­±â
-	eREACTION_ADD_GUILD_PLACE_OF_RELATED				,//	±æµå ¿¬°íÁö Ãß°¡ Á¦°Å
-	eREACTION_CHANGE_GUILD_HALL_SHAPE					,//	±æµå È¦ ¸ð¾ç º¯°æ
-	eREACTION_TRY_GUILD_POINT_BATTLE					,//	±æµå Æ÷ÀÎÆ® Àü µµÀü
-	eREACTION_GIVE_GUILD_HONOR_POINT					,//	±æµå ¸í¿¹ Æ÷ÀÎÆ® ÁÖ±â
-	eREACTION_END_GUILD_POINT_BATTLE_AND_RECORD_GUILD_HONOR_POINT	,//	±æµå ¸í¿¹ Æ÷ÀÎÆ® ÁÖ±â
-	eREACTION_BEGIN_SIEGE_WARFARE_OF_GUILD				,//	±æµå °ø¼ºÀü ½ÃÀÛ
-	eREACTION_FEED_GUILD_PET_AND_GUARDIAN				,//	±æµå Æê,°¡µð¾ð »çÀ°
-	eREACTION_OPEN_GUILD_SHOP							,//	±æµå »óÁ¡ ¿­±â
-	eREACTION_OPEN_RELATED_PLACE_LIST_OF_GUILD			,//	±æµå ¿¬°íÁö ¸®½ºÆ® ¿­±â
-	eREACTION_OPEN_GUILD_HONOR_POINT_WINDOW				,//	±æµå ¸í¿¹ Æ÷ÀÎÆ® º¸±â
+	eREACTION_SELECT_DIALOG								,//	ëŒ€í™” ì„ íƒ
+	eREACTION_END_DIALOG								,//	ëŒ€í™” ì¢…ë£Œ
+	eREACTION_SHOP										,//	ìƒì 
+	eREACTION_OPEN_BANK									,//	ì€í–‰ ì—´ì–´!!
+	eREACTION_MAKE_GUILD								,//	ê¸¸ë“œ ë§Œë“¤ì–´
+	eREACTION_BREAK_KARMA								,//	ì¹´ë¥´ë§ˆ ì •ì§€!!
+	eREACTION_CALL_MAGIC_CARPET							,//	ë§ˆë²•ì˜ ì–‘íƒ„ìž ì†Œí™˜
+	eREACTION_OPEN_GUILD_BATTLE_SCHEDULER				,//	ê¸¸ë“œì „ ìŠ¤ìºì¥´ ì—´ê¸°
+	eREACTION_OPEN_GUILD_MARK_COMPOSER					,//	ê¸¸ë“œ ë§ˆí¬ ì¡°í•© ì¸í„°íŽ˜ì´ìŠ¤ ì—´ê¸°
+	eREACTION_OPEN_REPAIR_ITEM_WINDOW					,//	ì•„ì´í…œ ìˆ˜ë¦¬ì°½ ì—´ê¸°
+	eREACTION_OPEN_JUDGE_OF_ITEM_WINDOW					,//	ì•„ì´í…œ ê°ë³„ì°½ ì˜¤í”ˆ
+	eREACTION_OPEN_MERGE_ITEM_PIECE_WINDOW				,//	ì•„ì´í…œ ì¡°ê° í•©ì²´ì°½ ì˜¤í”ˆ
+	eREACTION_MOVE_TO_SECRET_DUNGEON					,//	ì¸ìŠ¤í„´ìŠ¤ ë˜ì ¼ìœ¼ë¡œ ì´ë™
+	eREACTION_SET_COUNTDOWN_TIMER						,//	ì¹´ìš´íŠ¸ íƒ€ì´ë¨¸ ì„¤ì •
+	eREACTION_COMPLETE_SECRET_DUNGEON					,//	ë¹„ë°€ ë˜ì „ ì¢…ë£Œ
+	eREACTION_SET_GUILD_HALL_LEVEL						,//	1 ë ˆë²¨ ê¸¸ë“œ í™€ ë¶€ì—¬
+	eREACTION_MOVE_TO_GUILD_HALL						,//	ê¸¸ë“œ í™€ë¡œ ì´ë™
+	eREACTION_INCREASE_GUILD_STATUE_SKILL_LEVEL			,//	ê¸¸ë“œ ì„ìƒ ìŠ¤í‚¬ ë ˆë²¨ ì¦ê°€
+	eREACTION_OPEN_GUILD_INVENTORY						,//	ê¸¸ë“œ ì•„ì•„í…œ ì°½ ì—´ê¸°
+	eREACTION_ADD_GUILD_PLACE_OF_RELATED				,//	ê¸¸ë“œ ì—°ê³ ì§€ ì¶”ê°€ ì œê±°
+	eREACTION_CHANGE_GUILD_HALL_SHAPE					,//	ê¸¸ë“œ í™€ ëª¨ì–‘ ë³€ê²½
+	eREACTION_TRY_GUILD_POINT_BATTLE					,//	ê¸¸ë“œ í¬ì¸íŠ¸ ì „ ë„ì „
+	eREACTION_GIVE_GUILD_HONOR_POINT					,//	ê¸¸ë“œ ëª…ì˜ˆ í¬ì¸íŠ¸ ì£¼ê¸°
+	eREACTION_END_GUILD_POINT_BATTLE_AND_RECORD_GUILD_HONOR_POINT	,//	ê¸¸ë“œ ëª…ì˜ˆ í¬ì¸íŠ¸ ì£¼ê¸°
+	eREACTION_BEGIN_SIEGE_WARFARE_OF_GUILD				,//	ê¸¸ë“œ ê³µì„±ì „ ì‹œìž‘
+	eREACTION_FEED_GUILD_PET_AND_GUARDIAN				,//	ê¸¸ë“œ íŽ«,ê°€ë””ì–¸ ì‚¬ìœ¡
+	eREACTION_OPEN_GUILD_SHOP							,//	ê¸¸ë“œ ìƒì  ì—´ê¸°
+	eREACTION_OPEN_RELATED_PLACE_LIST_OF_GUILD			,//	ê¸¸ë“œ ì—°ê³ ì§€ ë¦¬ìŠ¤íŠ¸ ì—´ê¸°
+	eREACTION_OPEN_GUILD_HONOR_POINT_WINDOW				,//	ê¸¸ë“œ ëª…ì˜ˆ í¬ì¸íŠ¸ ë³´ê¸°
 
-	eREACTION_EVENT_VALUE					,//	ÀÌº¥Æ® ¼öÄ¡
-	eREACTION_OPEN_RELAY_STATION			,//	¾ÆÀÌÅÛ Áß°è»ó ¿ÀÇÂ
+	eREACTION_EVENT_VALUE					,//	ì´ë²¤íŠ¸ ìˆ˜ì¹˜
+	eREACTION_OPEN_RELAY_STATION			,//	ì•„ì´í…œ ì¤‘ê³„ìƒ ì˜¤í”ˆ
 
-	eREACTION_DUEL_INTERFACE				,//	°áÅõÀå ÀÎÅÍÆäÀÌ½º
+	eREACTION_DUEL_INTERFACE				,//	ê²°íˆ¬ìž¥ ì¸í„°íŽ˜ì´ìŠ¤
 	eREACTION_JUMP_KARMA					,
 	eREACTION_LAUNCH_RANDOM_KARMA			,
-	eREACTION_SETTING_ROEN_GOODWILL			,// ·Î¿£ÀÇ È£°¨µµ... ±æµå »óÁ¡ °ü·Ã.
-	eREACTION_ENTER_GUILD_DUNGEN			,// ·Î¿£ÀÇ È£°¨µµ... ±æµå »óÁ¡ °ü·Ã.
-	eREACTION_OPEN_DISJOINTING_WINDOW		,//	¾ÆÅÛ ºÐÇØ Ã¢À» ¿¬´Ù.
+	eREACTION_SETTING_ROEN_GOODWILL			,// ë¡œì—”ì˜ í˜¸ê°ë„... ê¸¸ë“œ ìƒì  ê´€ë ¨.
+	eREACTION_ENTER_GUILD_DUNGEN			,// ë¡œì—”ì˜ í˜¸ê°ë„... ê¸¸ë“œ ìƒì  ê´€ë ¨.
+	eREACTION_OPEN_DISJOINTING_WINDOW		,//	ì•„í…œ ë¶„í•´ ì°½ì„ ì—°ë‹¤.
 	eREACTION_LAUNCH_RANDOM_REACTION		,
-	eREACTION_OPEN_INTERFACE				,	//	ÀÎÅÍÆäÀÌ½ºÃ¢À» ¿¬´Ù
-	eREACTION_OPEN_FAST_PORTAL_WINDOW		,	//	ÆÐ½ºÆ® Æ÷Å» Ã¢À» ¿¬´Ù
-//	Äù½ºÆ® °ü·Ã
+	eREACTION_OPEN_INTERFACE				,	//	ì¸í„°íŽ˜ì´ìŠ¤ì°½ì„ ì—°ë‹¤
+	eREACTION_OPEN_FAST_PORTAL_WINDOW		,	//	íŒ¨ìŠ¤íŠ¸ í¬íƒˆ ì°½ì„ ì—°ë‹¤
+//	í€˜ìŠ¤íŠ¸ ê´€ë ¨
 	eREACTION_ABOUT_QUEST		=	100					,
-	eREACTION_SET_QUEST_START							,//	Äù½ºÆ® ½ÃÀÛ »óÅÂ·Î ¸¸µç´Ù.
-	eREACTION_SET_QUEST_COMPLETE						,//	Äù½ºÆ®¸¦ ¿Ï·áÇÑ´Ù.
-	eREACTION_SET_QUEST_PROCESS_LEVEL					,//	Äù½ºÆ® »óÅÂ¸¦ ¼³Á¤ÇÑ´Ù.
-	eREACTION_CREATE_CHARACTER							,//	Ä³¸¯ÅÍ »ý¼º
-	eREACTION_REMOVE_CHARACTER							,//	Ä³¸¯ÅÍ Á¦°Å
-	eREACTION_MOVE_FIELD								,//	ÇÊµå ÀÌµ¿
-	eREACTION_CHANGE_BATTLE_INCLINATION					,//	ÀüÅõ ¼ºÇâ ¼³Á¤
+	eREACTION_SET_QUEST_START							,//	í€˜ìŠ¤íŠ¸ ì‹œìž‘ ìƒíƒœë¡œ ë§Œë“ ë‹¤.
+	eREACTION_SET_QUEST_COMPLETE						,//	í€˜ìŠ¤íŠ¸ë¥¼ ì™„ë£Œí•œë‹¤.
+	eREACTION_SET_QUEST_PROCESS_LEVEL					,//	í€˜ìŠ¤íŠ¸ ìƒíƒœë¥¼ ì„¤ì •í•œë‹¤.
+	eREACTION_CREATE_CHARACTER							,//	ìºë¦­í„° ìƒì„±
+	eREACTION_REMOVE_CHARACTER							,//	ìºë¦­í„° ì œê±°
+	eREACTION_MOVE_FIELD								,//	í•„ë“œ ì´ë™
+	eREACTION_CHANGE_BATTLE_INCLINATION					,//	ì „íˆ¬ ì„±í–¥ ì„¤ì •
 	eREACTION_SYSTEM_NOTICE								,
-	eREACTION_SET_QUEST_VALUE							,//Äù½ºÆ® °ü·Ã ¼öÄ¡ ¼³Á¤"		
-	eREACTION_CONTROL_QUEST_VALUE						,//Äù½ºÆ® ¼öÄ¡ Áõ°¡/°¨¼Ò"		
-	eREACTION_SET_ARBEIT_START							,//¾Æ¸£¹ÙÀÌÆ® ½ÃÀÛ"				
-	eREACTION_SET_ARBEIT_PROCESS_LEVEL					,//¾Æ¸£¹ÙÀÌÆ® »óÅÂ º¯°æ"		
-	eREACTION_SET_ARBEIT_VALUE							,//¾Æ¸£¹ÙÀÌÆ® °ü·Ã ¼öÄ¡ ¼³Á¤"	
-	eREACTION_CONTROL_ARBEIT_VALUE						,//¾Æ¸£¹ÙÀÌÆ® ¼öÄ¡ Áõ°¡/°¨¼Ò"	
-	eREACTION_CANCEL_QUEST								,//Äù½ºÆ® Ãë¼Ò
-	eREACTION_CANCEL_ARBEIT								,//¾Æ¸£¹ÙÀÌÆ® Ãë¼Ò
-	eREACTION_GET_EXPERIENCE							,//°æÇèÄ¡ ¾ò±â
-	eREACTION_RECOVER_DEATH_PENELTY						,//Á×À½ Æä³ÎÆ¼ Ä¡·á
-	eREACTION_SET_ARBEIT_COMPLETE						,//	Äù½ºÆ®¸¦ ¿Ï·áÇÑ´Ù.
-	eREACTION_CHECK_QUEST_COMPLETE_CHECKER				,//	Äù½ºÆ®¸¦ ¿Ï·á »óÅÂ·Î Ã¼Å©ÇÑ´Ù.
-	eREACTION_CHECK_ARBEIT_COMPLETE_CHECKER				,//	¾Æ¸£¹ÙÀÌÆ®¸¦ ¿Ï·á »óÅÂ·Î Ã¼Å©ÇÑ´Ù.
-	eREACTION_GET_EXPERIENCE_PERCENTAGE					,//	°æÇèÄ¡ ¾ò±â
+	eREACTION_SET_QUEST_VALUE							,//í€˜ìŠ¤íŠ¸ ê´€ë ¨ ìˆ˜ì¹˜ ì„¤ì •"		
+	eREACTION_CONTROL_QUEST_VALUE						,//í€˜ìŠ¤íŠ¸ ìˆ˜ì¹˜ ì¦ê°€/ê°ì†Œ"		
+	eREACTION_SET_ARBEIT_START							,//ì•„ë¥´ë°”ì´íŠ¸ ì‹œìž‘"				
+	eREACTION_SET_ARBEIT_PROCESS_LEVEL					,//ì•„ë¥´ë°”ì´íŠ¸ ìƒíƒœ ë³€ê²½"		
+	eREACTION_SET_ARBEIT_VALUE							,//ì•„ë¥´ë°”ì´íŠ¸ ê´€ë ¨ ìˆ˜ì¹˜ ì„¤ì •"	
+	eREACTION_CONTROL_ARBEIT_VALUE						,//ì•„ë¥´ë°”ì´íŠ¸ ìˆ˜ì¹˜ ì¦ê°€/ê°ì†Œ"	
+	eREACTION_CANCEL_QUEST								,//í€˜ìŠ¤íŠ¸ ì·¨ì†Œ
+	eREACTION_CANCEL_ARBEIT								,//ì•„ë¥´ë°”ì´íŠ¸ ì·¨ì†Œ
+	eREACTION_GET_EXPERIENCE							,//ê²½í—˜ì¹˜ ì–»ê¸°
+	eREACTION_RECOVER_DEATH_PENELTY						,//ì£½ìŒ íŽ˜ë„í‹° ì¹˜ë£Œ
+	eREACTION_SET_ARBEIT_COMPLETE						,//	í€˜ìŠ¤íŠ¸ë¥¼ ì™„ë£Œí•œë‹¤.
+	eREACTION_CHECK_QUEST_COMPLETE_CHECKER				,//	í€˜ìŠ¤íŠ¸ë¥¼ ì™„ë£Œ ìƒíƒœë¡œ ì²´í¬í•œë‹¤.
+	eREACTION_CHECK_ARBEIT_COMPLETE_CHECKER				,//	ì•„ë¥´ë°”ì´íŠ¸ë¥¼ ì™„ë£Œ ìƒíƒœë¡œ ì²´í¬í•œë‹¤.
+	eREACTION_GET_EXPERIENCE_PERCENTAGE					,//	ê²½í—˜ì¹˜ ì–»ê¸°
 	eREACTION_SET_QUEST_COUNTDOWN_TIMER					,
 	eREACTION_SET_ARBEIT_COUNTDOWN_TIMER				,
-	eREACTION_SET_CHAPTER								,	//	Ã©ÅÍ x ½ÃÀÛ/Á¾·á
-	eREACTION_SET_MAIN_QUEST_VALUE						,	//	¸ÞÀÎ Äù½ºÆ® ¼öÄ¡ x ÀÇ °ªÀ» y [·Î ¼³Á¤ÇÑ´Ù/Áõ°¡ ½ÃÅ²´Ù/°¨¼Ò ½ÃÅ²´Ù.]
-	eREACTION_SET_MAIN_QUEST_SWITCH						,	//	¸ÞÀÎ Äù½ºÆ® ½ºÀ§Ä¡ x ¹øÀ» [ÄÒ´Ù/²ö´Ù]
-	eREACTION_RESET_MAIN_QUEST_VALUE					,	//	¸ÞÀÎ Äù½ºÆ® ¼öÄ¡¸¦ ¸ðµÎ ÃÊ±âÈ­ ½ÃÅ²´Ù.(0ÀÌµÈ´Ù.)
-	eREACTION_RESET_MAIN_SWITCH							,	//	¸ÞÀÎ Äù½ºÆ® ½ºÀ§Ä¡¸¦ ¸ðµÎ ÃÊ±âÈ­ ½ÃÅ²´Ù.(¸ðµÎoff°¡ µÈ´Ù.)
-	eREACTION_DISPLAY_MAIN_QUEST_EPILOG					,	//	¸ÞÀÎ Äù½ºÆ® ¿¡ÇÊ·Î±× Ãâ·Â
-	eREACTION_EXTEND_SECRET_DUNGEON_UPKEEP_TIME			,	//	ºñ¹Ð´øÁ¯ ÇÃ·¹ÀÌ Å¸ÀÓ ¿¬Àå
+	eREACTION_SET_CHAPTER								,	//	ì±•í„° x ì‹œìž‘/ì¢…ë£Œ
+	eREACTION_SET_MAIN_QUEST_VALUE						,	//	ë©”ì¸ í€˜ìŠ¤íŠ¸ ìˆ˜ì¹˜ x ì˜ ê°’ì„ y [ë¡œ ì„¤ì •í•œë‹¤/ì¦ê°€ ì‹œí‚¨ë‹¤/ê°ì†Œ ì‹œí‚¨ë‹¤.]
+	eREACTION_SET_MAIN_QUEST_SWITCH						,	//	ë©”ì¸ í€˜ìŠ¤íŠ¸ ìŠ¤ìœ„ì¹˜ x ë²ˆì„ [ì¼ ë‹¤/ëˆë‹¤]
+	eREACTION_RESET_MAIN_QUEST_VALUE					,	//	ë©”ì¸ í€˜ìŠ¤íŠ¸ ìˆ˜ì¹˜ë¥¼ ëª¨ë‘ ì´ˆê¸°í™” ì‹œí‚¨ë‹¤.(0ì´ëœë‹¤.)
+	eREACTION_RESET_MAIN_SWITCH							,	//	ë©”ì¸ í€˜ìŠ¤íŠ¸ ìŠ¤ìœ„ì¹˜ë¥¼ ëª¨ë‘ ì´ˆê¸°í™” ì‹œí‚¨ë‹¤.(ëª¨ë‘offê°€ ëœë‹¤.)
+	eREACTION_DISPLAY_MAIN_QUEST_EPILOG					,	//	ë©”ì¸ í€˜ìŠ¤íŠ¸ ì—í•„ë¡œê·¸ ì¶œë ¥
+	eREACTION_EXTEND_SECRET_DUNGEON_UPKEEP_TIME			,	//	ë¹„ë°€ë˜ì ¼ í”Œë ˆì´ íƒ€ìž„ ì—°ìž¥
 	eREACTION_PLAY_PATTERN,
 	eREACTION_PLAY_BOSS_EVENT,
 	
-	eREACTION_RECEIVE_HEAVEN_REWARD,						//	Ãµ»ó°è º¸»ó
-	eREACTION_RECEIVE_HELL_REWARD,							//	ÁöÇÏ°è º¸»ó
-	eREACTION_RECEIVE_RED_DEVIL_REWARD,						//	ºÓÀº ¾Ç¸¶ º¸»ó
+	eREACTION_RECEIVE_HEAVEN_REWARD,						//	ì²œìƒê³„ ë³´ìƒ
+	eREACTION_RECEIVE_HELL_REWARD,							//	ì§€í•˜ê³„ ë³´ìƒ
+	eREACTION_RECEIVE_RED_DEVIL_REWARD,						//	ë¶‰ì€ ì•…ë§ˆ ë³´ìƒ
 
-	eREACTION_GET_EXPERIENCE2							,	//	°æÇèÄ¡ È¹µæ2
-	eREACTION_FIX_FIELD_RESISTANCE						,	//	ÇÊµå ÀúÇ× º¯°æ
-	eREACTION_SCREEN_EFFECT								,	//	È­¸é È¿°ú
+	eREACTION_GET_EXPERIENCE2							,	//	ê²½í—˜ì¹˜ íšë“2
+	eREACTION_FIX_FIELD_RESISTANCE						,	//	í•„ë“œ ì €í•­ ë³€ê²½
+	eREACTION_SCREEN_EFFECT								,	//	í™”ë©´ íš¨ê³¼
 
 
 	eREACTION_ABOUT_ITEM		=	200					,
@@ -294,100 +294,100 @@ enum
 	eREACTION_ADD_ITEM									,	
 	eREACTION_ADD_SPECIAL_ITEM							,	
 	eREACTION_DROP_GOLD									,
-	eREACTION_DROP_ITEM									,//	¾ÆÀÌÅÛ ¶³±¸±â
-	eREACTION_DROP_SPECIAL_ITEM							,//	Æ¯¼ö ¾ÆÀÌÅÛ ¶³±¸±â
-	eREACTION_ADD_SPECIFIC_ITEM							,//	Æ¯Á¤ ¾ÆÀÌÅÛ Ãß°¡
-	eREACTION_DROP_SPECIFIC_ITEM						,//	Æ¯Á¤ ¾ÆÀÌÅÛ ¶³¾î¶ß¸®±â
-	eREACTION_ADD_QUEST_ITEM							,//	Äù½ºÆ® ¾ÆÀÌÅÛ Ãß°¡	
-	eREACTION_DROP_QUEST_ITEM							,//	Äù½ºÆ® ¾ÆÀÌÅÛ ¶³±¸±â
-	eREACTION_MOVE_AREA									,//	¿µ¿ª ÀÌµ¿
-	eREACTION_SELECT_OX_RESULT							,//	OX ÄûÁî °á°ú ¼±ÅÃ
-	eREACTION_ADD_SET_ELEMENT_ITEM						,//	¼¼Æ® ±¸¼º ¾ÆÀÌÅÛ Ãß°¡
-	eREACTION_ADD_ITEM_PIECE							,//	¾ÆÀÌÅÛ Á¶°¢ Ãß°¡
-	eREACTION_CREATE_BOOK								,//	Ã¥ ¾ÆÀÌÅÛ »ý¼º
-	eREACTION_CREATE_ADD_CATEGORY_TO_BOOK_ITEM			,//	Ã¥ ¾ÆÀÌÅÛ¿¡ Ä«Å×°í¸® Ãß°¡ ¾ÆÀÌÅÛ »ý¼º
-	eREACTION_CREATE_ADD_PAGE_TO_BOOK_ITEM				,//	Ã¥ ¾ÆÀÌÅÛ¿¡ ÆäÀÌÁö Ãß°¡ ¾ÆÀÌÅÛ »ý¼º
-	eREACTION_CREATE_ADD_RANDOM_CATEGORY_TO_BOOK_ITEM	,//	Ã¥¿¡ ·£´ýÇÑ Ä«Å×°í¸®¸¦ Ãß°¡ÇÏ´Â ¾ÆÀÌÅÛ »ý¼º
-	eREACTION_CREATE_ADD_RANDOM_PAGE_TO_BOOK_ITEM		,//	Ã¥¿¡ ·£´ýÇÑ ÆäÀÌÁö¸¦ Ãß°¡ÇÏ´Â ¾ÆÀÌÅÛ »ý¼º
-	eREACTION_WRITE_PAGE								,//	Ã¥¿¡ ÆäÀÌÁö¸¦ ¾²°Å³ª Áö¿î´Ù.
+	eREACTION_DROP_ITEM									,//	ì•„ì´í…œ ë–¨êµ¬ê¸°
+	eREACTION_DROP_SPECIAL_ITEM							,//	íŠ¹ìˆ˜ ì•„ì´í…œ ë–¨êµ¬ê¸°
+	eREACTION_ADD_SPECIFIC_ITEM							,//	íŠ¹ì • ì•„ì´í…œ ì¶”ê°€
+	eREACTION_DROP_SPECIFIC_ITEM						,//	íŠ¹ì • ì•„ì´í…œ ë–¨ì–´ëœ¨ë¦¬ê¸°
+	eREACTION_ADD_QUEST_ITEM							,//	í€˜ìŠ¤íŠ¸ ì•„ì´í…œ ì¶”ê°€	
+	eREACTION_DROP_QUEST_ITEM							,//	í€˜ìŠ¤íŠ¸ ì•„ì´í…œ ë–¨êµ¬ê¸°
+	eREACTION_MOVE_AREA									,//	ì˜ì—­ ì´ë™
+	eREACTION_SELECT_OX_RESULT							,//	OX í€´ì¦ˆ ê²°ê³¼ ì„ íƒ
+	eREACTION_ADD_SET_ELEMENT_ITEM						,//	ì„¸íŠ¸ êµ¬ì„± ì•„ì´í…œ ì¶”ê°€
+	eREACTION_ADD_ITEM_PIECE							,//	ì•„ì´í…œ ì¡°ê° ì¶”ê°€
+	eREACTION_CREATE_BOOK								,//	ì±… ì•„ì´í…œ ìƒì„±
+	eREACTION_CREATE_ADD_CATEGORY_TO_BOOK_ITEM			,//	ì±… ì•„ì´í…œì— ì¹´í…Œê³ ë¦¬ ì¶”ê°€ ì•„ì´í…œ ìƒì„±
+	eREACTION_CREATE_ADD_PAGE_TO_BOOK_ITEM				,//	ì±… ì•„ì´í…œì— íŽ˜ì´ì§€ ì¶”ê°€ ì•„ì´í…œ ìƒì„±
+	eREACTION_CREATE_ADD_RANDOM_CATEGORY_TO_BOOK_ITEM	,//	ì±…ì— ëžœë¤í•œ ì¹´í…Œê³ ë¦¬ë¥¼ ì¶”ê°€í•˜ëŠ” ì•„ì´í…œ ìƒì„±
+	eREACTION_CREATE_ADD_RANDOM_PAGE_TO_BOOK_ITEM		,//	ì±…ì— ëžœë¤í•œ íŽ˜ì´ì§€ë¥¼ ì¶”ê°€í•˜ëŠ” ì•„ì´í…œ ìƒì„±
+	eREACTION_WRITE_PAGE								,//	ì±…ì— íŽ˜ì´ì§€ë¥¼ ì“°ê±°ë‚˜ ì§€ìš´ë‹¤.
 	eREACTION_EXTEND_ITEM_VALIDATE_TIME_TO_NEXT			,
-	eREACTION_EXPLOSION_EVENT_BALLOON					,//	ÀÌº¥Æ® Ç³¼±À» ÅÍ¶ß¸°´Ù.
-	eREACTION_TIME_STAMP								,//	Å¸ÀÓ ½ºÅÆÇÁ
-	eREACTION_GIVE_RED_STONE_PIECE						,//	ºÓÀº º¸¼® Á¶°¢ ÁÖ±â
-	eREACTION_UNOWNED_DROP_ITEM_WITH_OPTION				,// ÁÖÀÎÀÌ ¾ø´Â ¾ÆÀÌÅÛ µå·Ó(¿É¼Ç)
+	eREACTION_EXPLOSION_EVENT_BALLOON					,//	ì´ë²¤íŠ¸ í’ì„ ì„ í„°ëœ¨ë¦°ë‹¤.
+	eREACTION_TIME_STAMP								,//	íƒ€ìž„ ìŠ¤íƒ¬í”„
+	eREACTION_GIVE_RED_STONE_PIECE						,//	ë¶‰ì€ ë³´ì„ ì¡°ê° ì£¼ê¸°
+	eREACTION_UNOWNED_DROP_ITEM_WITH_OPTION				,// ì£¼ì¸ì´ ì—†ëŠ” ì•„ì´í…œ ë“œë¡­(ì˜µì…˜)
 
 	eREACTION_ABOUT_CHARACTER	=	300					,
 	eREACTION_SHOUT										,
-	eREACTION_TALK										,	//	´ëÈ­
-	eREACTION_RECOVER_HP								,	//	Ã¼·Â ¼³Á¤
-	eREACTION_CARGE_CP									,	//	CP Ã¤¿öÁÖ±â
-	eREACTION_DAMAGE									,	//	Ã¼·Â ¼³Á¤
-	eREACTION_GET_TITLE									,	//	Å¸ÀÌÆ² ¾ò±â
-	eREACTION_REDISTRIBUTE_SKILL						,	//	½ºÅ³ ÀçºÐ¹è
-	eREACTION_REDISTRIBUTE_STATE						,	//	½ºÅÈ ÀçºÐ¹è
-	eREACTION_RESET_PET_NAME							,	//	Æê ÀÌ¸§ Áö¿ì±â
+	eREACTION_TALK										,	//	ëŒ€í™”
+	eREACTION_RECOVER_HP								,	//	ì²´ë ¥ ì„¤ì •
+	eREACTION_CARGE_CP									,	//	CP ì±„ì›Œì£¼ê¸°
+	eREACTION_DAMAGE									,	//	ì²´ë ¥ ì„¤ì •
+	eREACTION_GET_TITLE									,	//	íƒ€ì´í‹€ ì–»ê¸°
+	eREACTION_REDISTRIBUTE_SKILL						,	//	ìŠ¤í‚¬ ìž¬ë¶„ë°°
+	eREACTION_REDISTRIBUTE_STATE						,	//	ìŠ¤íƒ¯ ìž¬ë¶„ë°°
+	eREACTION_RESET_PET_NAME							,	//	íŽ« ì´ë¦„ ì§€ìš°ê¸°
 	eREACTION_TALK2										,
 	eREACTION_CHANGE_SIGHT_RANGE						,
-	eREACTION_ADD_PET									,	//	Æê Ãß°¡
-	eREACTION_RESET_ACTOR_IN_DUEL_SERVER				,	//	Ä³¸¯ÅÍ ÃÊ±âÈ­
-	eREACTION_GET_GRACE									,	//	ÀºÃÑ ºÎ¿©
-	eREACTION_STATE_CHANGE								,	//	»óÅÂ ÀÌ»ó ºÎ¿©
-	eREACTION_STATE_BLIND_EFFECT						,	//	¾ÏÀü ºÎ¿©
-	eREACTION_REBIRTH									,	//	Àü»ý ½ÃÅ²´Ù.
-	eREACTION_DISPELL									,	//	¸ðµç ¹öÇÁ ÇØÁ¦
-	eREACTION_RELEASE_TRANSFORMATION					,	//	¸ó½ºÅÍ º¯½Å ÇØÁ¦
-	eREACTION_INCREASE_INSTANT_EXPERIENCE,	//	ÀÏ½ÃÀû °æÇèÄ¡ Áõ°¡
+	eREACTION_ADD_PET									,	//	íŽ« ì¶”ê°€
+	eREACTION_RESET_ACTOR_IN_DUEL_SERVER				,	//	ìºë¦­í„° ì´ˆê¸°í™”
+	eREACTION_GET_GRACE									,	//	ì€ì´ ë¶€ì—¬
+	eREACTION_STATE_CHANGE								,	//	ìƒíƒœ ì´ìƒ ë¶€ì—¬
+	eREACTION_STATE_BLIND_EFFECT						,	//	ì•”ì „ ë¶€ì—¬
+	eREACTION_REBIRTH									,	//	ì „ìƒ ì‹œí‚¨ë‹¤.
+	eREACTION_DISPELL									,	//	ëª¨ë“  ë²„í”„ í•´ì œ
+	eREACTION_RELEASE_TRANSFORMATION					,	//	ëª¬ìŠ¤í„° ë³€ì‹  í•´ì œ
+	eREACTION_INCREASE_INSTANT_EXPERIENCE,	//	ì¼ì‹œì  ê²½í—˜ì¹˜ ì¦ê°€
 	
-	eREACTION_ABOUT_MONSTER		=	400					,	//	¸ó½ºÅÍ AI °ü·Ã	
-	eREACTION_USE_ABILITY				,//	¸ó½ºÅÍ ½ºÅ³ xxx¸¦ »ç¿ëÀ» ½Ãµµ ÇÑ´Ù. <- Á¶°Ç¿¡ ¸ÂÁö ¾Ê´Â´Ù¸é ½ÇÆÐ
-	eREACTION_TRANS_JOB					,//	¸ó½ºÅÍ xxx·Î º¯½Å ÇÑ´Ù.
-	eREACTION_CONTROL_DUNGEON_FLAG		,//	´øÀü ÇÃ·¹±×¸¦ x¸¸Å­ ´õÇÑ´Ù/»«´Ù, x·Î ÇÑ´Ù.
-	eREACTION_DELAY						,//	ÇöÀç ÀÌ ½ºÅ©¸³Æ®¸¦ ´Ù½Ã ½Ãµµ ÇÏ´Âµ¥ xxxÃÊ ¸¸Å­ µô·¹ÀÌ¸¦ ÁØ´Ù.
-	eREACTION_MOVE_TO					,//	¿µ¿ª x·Î ÀÌµ¿/°ø°Ý/¼øÂû ÇÑ´Ù.
-	eREACTION_SET_ARCA_DOOR_TRAP_STATUS	,//	¿µ¿ª xÀÇ »óÀÚ/¹®/ÇÔÁ¤ »óÅÂ ¼³Á¤.
-	eREACTION_REGEN_MONSTER				,//	¿µ¿ª x¿¡ ¸ó½ºÅÍµéÀ» ¸®Á¨ ½ÃÅ²´Ù.
-	eREACTION_REGEN_TRAP				,//	ÇÔÁ¤ µ¥ÀÌÅÍ 1À» x¿µ¿ª¿¡ ¸®Á¨ ½ÃÅ²´Ù.
-	eREACTION_CHANGE_TARGET_BY_RANDOM	,//	ÇöÀçÀÇ °ø°Ý Å¸°ÙÀ» ÇØÀçÇÏ°í ½Ã¾ß ³»ÀÇ ·»´ýÇÑ ÇÑ¸íÀ» °ø°Ý Å¸°ÙÀ¸·Î ¼³Á¤ÇÑ µÚ xÃÊ µ¿¾È ÇØ´ç Å¸°ÙÀ» À¯Áö ÇÑ´Ù.
-	eREACTION_CHANGE_AI_TYPE			,//	AI Å¸ÀÔÀ» Àç¼³Á¤ ÇÑ´Ù.
-	eREACTION_RELEASE_WRONG_STATUS		,//	°¢Á¾ »óÅÂÀÌ»óÀ» ÇØÁ¦ÇÑ´Ù.
-	eREACTION_CONTROL_INVINCIBLE_STATUS	,//	¹«ÀûÀ» ¼³Á¤/ÇØÁ¦ÇÑ´Ù.
-	eREACTION_CHANGE_DIRECT				,//	¹æÇâ ¹Ù²Ù±â
-	eREACTION_BEGIN_EVENT				,//	ÀÌº¥Æ® ÁßÀ¸·Î ¼³Á¤
-	eREACTION_OCCUR_SKILL_EFFECT		,//	Æ¯Á¤ Áö¿ª¿¡ ½ºÅ³ ¹ßµ¿
-	eREACTION_MOVE_FOCUS				,//	Æ÷Ä¿½º ÀÌµ¿
-	eREACTION_SHAKE_SCREEN				,//	È­¸é Èçµé±â
-	eREACTION_PLAY_SOUND				,//	È¿°úÀ½ Ãâ·Â
-	eREACTION_STRESS_MINIMAP			,//	¹Ì´Ï¸Ê Æ¯Á¤ Áö¿ª °­Á¶
-	eREACTION_SET_GUIDE					,//	°¡ÀÌµå ¼³Á¤
-	eREACTION_TRACE_GUIDE				,//	°¡ÀÌµå µû¶ó°¡±â
-	eREACTION_FOCUS_ON_CHARACTER		,//	Ä³¸¯ÅÍ¿¡°Ô Æ÷Ä¿½º ¸ÂÃã
+	eREACTION_ABOUT_MONSTER		=	400					,	//	ëª¬ìŠ¤í„° AI ê´€ë ¨	
+	eREACTION_USE_ABILITY				,//	ëª¬ìŠ¤í„° ìŠ¤í‚¬ xxxë¥¼ ì‚¬ìš©ì„ ì‹œë„ í•œë‹¤. <- ì¡°ê±´ì— ë§žì§€ ì•ŠëŠ”ë‹¤ë©´ ì‹¤íŒ¨
+	eREACTION_TRANS_JOB					,//	ëª¬ìŠ¤í„° xxxë¡œ ë³€ì‹  í•œë‹¤.
+	eREACTION_CONTROL_DUNGEON_FLAG		,//	ë˜ì „ í”Œë ˆê·¸ë¥¼ xë§Œí¼ ë”í•œë‹¤/ëº€ë‹¤, xë¡œ í•œë‹¤.
+	eREACTION_DELAY						,//	í˜„ìž¬ ì´ ìŠ¤í¬ë¦½íŠ¸ë¥¼ ë‹¤ì‹œ ì‹œë„ í•˜ëŠ”ë° xxxì´ˆ ë§Œí¼ ë”œë ˆì´ë¥¼ ì¤€ë‹¤.
+	eREACTION_MOVE_TO					,//	ì˜ì—­ xë¡œ ì´ë™/ê³µê²©/ìˆœì°° í•œë‹¤.
+	eREACTION_SET_ARCA_DOOR_TRAP_STATUS	,//	ì˜ì—­ xì˜ ìƒìž/ë¬¸/í•¨ì • ìƒíƒœ ì„¤ì •.
+	eREACTION_REGEN_MONSTER				,//	ì˜ì—­ xì— ëª¬ìŠ¤í„°ë“¤ì„ ë¦¬ì   ì‹œí‚¨ë‹¤.
+	eREACTION_REGEN_TRAP				,//	í•¨ì • ë°ì´í„° 1ì„ xì˜ì—­ì— ë¦¬ì   ì‹œí‚¨ë‹¤.
+	eREACTION_CHANGE_TARGET_BY_RANDOM	,//	í˜„ìž¬ì˜ ê³µê²© íƒ€ê²Ÿì„ í•´ìž¬í•˜ê³  ì‹œì•¼ ë‚´ì˜ ë Œë¤í•œ í•œëª…ì„ ê³µê²© íƒ€ê²Ÿìœ¼ë¡œ ì„¤ì •í•œ ë’¤ xì´ˆ ë™ì•ˆ í•´ë‹¹ íƒ€ê²Ÿì„ ìœ ì§€ í•œë‹¤.
+	eREACTION_CHANGE_AI_TYPE			,//	AI íƒ€ìž…ì„ ìž¬ì„¤ì • í•œë‹¤.
+	eREACTION_RELEASE_WRONG_STATUS		,//	ê°ì¢… ìƒíƒœì´ìƒì„ í•´ì œí•œë‹¤.
+	eREACTION_CONTROL_INVINCIBLE_STATUS	,//	ë¬´ì ì„ ì„¤ì •/í•´ì œí•œë‹¤.
+	eREACTION_CHANGE_DIRECT				,//	ë°©í–¥ ë°”ê¾¸ê¸°
+	eREACTION_BEGIN_EVENT				,//	ì´ë²¤íŠ¸ ì¤‘ìœ¼ë¡œ ì„¤ì •
+	eREACTION_OCCUR_SKILL_EFFECT		,//	íŠ¹ì • ì§€ì—­ì— ìŠ¤í‚¬ ë°œë™
+	eREACTION_MOVE_FOCUS				,//	í¬ì»¤ìŠ¤ ì´ë™
+	eREACTION_SHAKE_SCREEN				,//	í™”ë©´ í”ë“¤ê¸°
+	eREACTION_PLAY_SOUND				,//	íš¨ê³¼ìŒ ì¶œë ¥
+	eREACTION_STRESS_MINIMAP			,//	ë¯¸ë‹ˆë§µ íŠ¹ì • ì§€ì—­ ê°•ì¡°
+	eREACTION_SET_GUIDE					,//	ê°€ì´ë“œ ì„¤ì •
+	eREACTION_TRACE_GUIDE				,//	ê°€ì´ë“œ ë”°ë¼ê°€ê¸°
+	eREACTION_FOCUS_ON_CHARACTER		,//	ìºë¦­í„°ì—ê²Œ í¬ì»¤ìŠ¤ ë§žì¶¤
 	eREACTION_NPC_ACTION				,
-	eREACTION_SET_DOOR_ENABLE_DISABLE	,//	¿µ¿ª xÀÇ ¹® »óÅÂ ¼³Á¤.
-	eREACTION_SHAKE_SCREEN_AXIS_PLAYER	,//	ÇÃ·¹ÀÌ¾î Áß½É ÁöÁø
-	eREACTION_CHANGE_NAME				,//	¸ó½ºÅÍ ÀÌ¸§ º¯°æ
-	eREACTION_SET_EVENT_MONSTER_VALUE	,//	ÀÌº¥Æ® ¸ó½ºÅÍ·Î ¼³Á¤
+	eREACTION_SET_DOOR_ENABLE_DISABLE	,//	ì˜ì—­ xì˜ ë¬¸ ìƒíƒœ ì„¤ì •.
+	eREACTION_SHAKE_SCREEN_AXIS_PLAYER	,//	í”Œë ˆì´ì–´ ì¤‘ì‹¬ ì§€ì§„
+	eREACTION_CHANGE_NAME				,//	ëª¬ìŠ¤í„° ì´ë¦„ ë³€ê²½
+	eREACTION_SET_EVENT_MONSTER_VALUE	,//	ì´ë²¤íŠ¸ ëª¬ìŠ¤í„°ë¡œ ì„¤ì •
 
 	eREACTION_SET_SCREEN_EVENT			,
-	eREACTION_CONTROL_FIELD_VALUE		,//	ÇÊµå ¼öÄ¡ ¼³Á¤
-	eREACTION_CONTROL_WORLD_VALUE		,//	¿ùµå ¼öÄ¡ ¼³Á¤	
+	eREACTION_CONTROL_FIELD_VALUE		,//	í•„ë“œ ìˆ˜ì¹˜ ì„¤ì •
+	eREACTION_CONTROL_WORLD_VALUE		,//	ì›”ë“œ ìˆ˜ì¹˜ ì„¤ì •	
 	
-	eREACTION_TARGET_RESET				,//	Å¸ÄÏÆÃ ¸®¼Â
-	eREACTION_CASTING_MAGIC				,//	¸¶¹ýÀ» ÄÉ½ºÆÃ
-	eREACTION_USE_MONSTER_ABILITY				,	// ¸ó½ºÅÍ ½ºÅ³ »ç¿ë ~!	09.08.14
-	eREACTION_BUY_GOLD_BAR				,	// ±Ý±« Ãß°¡..		09.08.19
-	eREACTION_UPGRADE_SHOP				,	// °­È­Ã¢À» ¿¬´Ù.  09.08.25
-	eREACTION_FIELD_WEATHER				, // ±âÈÄº¯È­			09.10.06
-	eREACTION_ADD_SET_ITEM_RANDOM		, // ¼¼Æ®¾ÆÀÌÅÛ ·£´ý Áö±Þ 
-	eREACTION_ADD_ITEM_WITH_OPTION		,	// ¾ÆÀÌÅÛÃß°¡(¿É¼Ç)
-	eREACTION_DROP_ITEM_WITH_OPTION		,	// ¾ÆÀÌÅÛµå·Ó(¿É¼Ç)
-	eREACTION_JOIN_GUILD_SECRET_DUNGEONS_WITH_PARTY,	// ÆÄÆ¼¿øÀÌ ÀÖ´Â ±æµåºñ´øÀÔÀå.
-	eREACTION_FIRE_WORK,					//	  Æ¯Á¤ ÁÂÇ¥¿¡ ºÒ²É³îÀÌ ÀÌÆÑÆ®¸¦ »Ñ¸°´Ù.
-	eREACTION_DRAW_IMAGE,		//		È­¸é¿¡ ÀÌ¹ÌÁö ±×¸®±â ~ 
-	eREACTION_OFF_DRAWING_IMAGE,		//		È­¸é¿¡ ±×¸° ÀÌ¹ÌÁö ²ô±â~ 
+	eREACTION_TARGET_RESET				,//	íƒ€ì¼“íŒ… ë¦¬ì…‹
+	eREACTION_CASTING_MAGIC				,//	ë§ˆë²•ì„ ì¼€ìŠ¤íŒ…
+	eREACTION_USE_MONSTER_ABILITY				,	// ëª¬ìŠ¤í„° ìŠ¤í‚¬ ì‚¬ìš© ~!	09.08.14
+	eREACTION_BUY_GOLD_BAR				,	// ê¸ˆê´´ ì¶”ê°€..		09.08.19
+	eREACTION_UPGRADE_SHOP				,	// ê°•í™”ì°½ì„ ì—°ë‹¤.  09.08.25
+	eREACTION_FIELD_WEATHER				, // ê¸°í›„ë³€í™”			09.10.06
+	eREACTION_ADD_SET_ITEM_RANDOM		, // ì„¸íŠ¸ì•„ì´í…œ ëžœë¤ ì§€ê¸‰ 
+	eREACTION_ADD_ITEM_WITH_OPTION		,	// ì•„ì´í…œì¶”ê°€(ì˜µì…˜)
+	eREACTION_DROP_ITEM_WITH_OPTION		,	// ì•„ì´í…œë“œë¡­(ì˜µì…˜)
+	eREACTION_JOIN_GUILD_SECRET_DUNGEONS_WITH_PARTY,	// íŒŒí‹°ì›ì´ ìžˆëŠ” ê¸¸ë“œë¹„ë˜ìž…ìž¥.
+	eREACTION_FIRE_WORK,					//	  íŠ¹ì • ì¢Œí‘œì— ë¶ˆê½ƒë†€ì´ ì´íŒ©íŠ¸ë¥¼ ë¿Œë¦°ë‹¤.
+	eREACTION_DRAW_IMAGE,		//		í™”ë©´ì— ì´ë¯¸ì§€ ê·¸ë¦¬ê¸° ~ 
+	eREACTION_OFF_DRAWING_IMAGE,		//		í™”ë©´ì— ê·¸ë¦° ì´ë¯¸ì§€ ë„ê¸°~ 
 
 };
 
-//	{"±×³É","±Ý±«","Äù½ºÆ®","end"},								//	eKARMA_KW_ADD_GOLD_REASON
+//	{"ê·¸ëƒ¥","ê¸ˆê´´","í€˜ìŠ¤íŠ¸","end"},								//	eKARMA_KW_ADD_GOLD_REASON
 
 enum
 {

@@ -1,0 +1,413 @@
+Open addr  = 25.1.80.156
+
+ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR ReallySend :[WORLD]  size 6, type 1000(LT 1000) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR ReallySend :[AVATAR DBC]  size 3664, type 4432(LT 4432) ,ERROR 10054
+------------------QUIT SOCKET THREAD ---------------------
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [52611,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+
+ERROR : connect [53621,127.0.0.1] Error 10061
+

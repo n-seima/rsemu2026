@@ -1,0 +1,243 @@
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+
+  
+ Error: -2146824584 
+ Msg: Unknown error 0x800A0E78 
+ Description: オブジェクトが閉じている場合は、操作は許可されません。 Line: 270  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\AdminTool\cADO_ADMIN_FOR_EVENT.cpp ADODB.Recordset 
+
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+LOSE CONNECTION : world server : 0 , 25.1.80.156
+------------------QUIT SOCKET THREAD ---------------------
+
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+LOSE CONNECTION : world server : 0 , 25.1.80.156
+------------------QUIT SOCKET THREAD ---------------------
+
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+LOSE CONNECTION : world server : 0 , 25.1.80.156
+------------------QUIT SOCKET THREAD ---------------------
+
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu1], level[6]
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+[omizu1(お水wiz)]'s level reset to level [999].
+[omizu1(お水wiz)]'s level reset to level [999].
+[omizu1(お水wiz)]'s level reset to level [999].
+[omizu1(お水wiz)]'s level reset to level [999].
+[omizu1(お水wiz)]'s level reset to level [999].
+[omizu1(お水wiz)]'s level reset to level [999].
+[omizu1(お水wiz)]'s Ability data is initial.
+SAVE : [ADMINISTRATOR:rakuen] ID[omizu1] AVATAR NAME [お水wiz]!!
+SAVE : [ADMINISTRATOR:rakuen] ID[omizu1] AVATAR NAME [お水wiz]!!
+[omizu1(お水wiz)]'s skill data is initial.
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu1], level[6]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu1], level[6]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu1], level[6]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu1], level[6]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu1], level[6]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu1], level[6]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu1], level[6]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu1], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu1], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu1], level[5]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+[rakuen] [omizu1:お水wiz] remove item from inventory : ぼやけた巻物 [616:14250283] [1,50] [10,32] [65535:255,255] [65535:255,255] [65535:255,255] 60
+[rakuen] [omizu1:お水wiz] remove item from inventory : 聡明の闘士バッジ 4級[A] [3667:340975393] [1,0] [77,0] [65535:255,255] [65535:255,255] [65535:255,255] 60
+[rakuen] [omizu1:お水wiz] remove item from inventory : 装備＋100バッジ [4691:6] [1,50] [100,0] [65535:255,255] [65535:255,255] [65535:255,255] 1786918204
+[rakuen] [omizu1:お水wiz] remove item from inventory : 装備初心者バッジ [681:13] [1,50] [10,0] [65535:255,255] [65535:255,255] [65535:255,255] -289592004
+[rakuen] [omizu1:お水wiz] add item to inventory : (R) [RED STONE ULT] [RED STONE ULT] イフリィト紋章のブローチXLS [1280:91347881] [1,10] [120,8] [632:7,0] [632:7,0] [65535:0,0] 60
+[rakuen] [omizu1:お水wiz] add item to inventory : (R) broken[RED STONE ULT] [RED STONE ULT] [RED STONE ULT] イフリィト紋章のブローチXLS [1280:1035239141] [1,10] [120,8] [632:7,0] [632:7,0] [632:7,0] 65535
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+[rakuen] [omizu1:お水wiz] remove item from inventory : 聡明の闘士バッジ 4級[A] [3667:340975393] [1,0] [77,0] [65535:255,255] [65535:255,255] [65535:255,255] 60
+[rakuen] [omizu1:お水wiz] remove item from inventory : 装備初心者バッジ [681:13] [1,50] [10,0] [65535:255,255] [65535:255,255] [65535:255,255] -289592004
+[rakuen] [omizu1:お水wiz] remove item from inventory : 装備＋100バッジ [4691:6] [1,50] [100,0] [65535:255,255] [65535:255,255] [65535:255,255] 1786918204
+[rakuen] [omizu1:お水wiz] remove item from inventory : 牙 [185:5] [1,0] [4,30] [65535:255,255] [65535:255,255] [65535:255,255] 60
+[rakuen] [omizu1:お水wiz] remove item from inventory : 巨竜の角 [2986:3] [0,10] [5,40] [65535:255,255] [65535:255,255] [65535:255,255] 60
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+[rakuen] [omizu1:お水wiz] remove item from inventory : 聡明の闘士バッジ 4級[A] [3667:340975393] [1,0] [77,0] [65535:255,255] [65535:255,255] [65535:255,255] 60
+[rakuen] [omizu1:お水wiz] remove item from inventory : 装備＋100バッジ [4691:6] [1,50] [100,0] [65535:255,255] [65535:255,255] [65535:255,255] 1786918204
+[rakuen] [omizu1:お水wiz] remove item from inventory : 装備初心者バッジ [681:13] [1,50] [10,0] [65535:255,255] [65535:255,255] [65535:255,255] -289592004
+[rakuen] [omizu1:お水wiz] remove item from inventory : 巨竜の角 [2986:3] [0,10] [5,40] [65535:255,255] [65535:255,255] [65535:255,255] 60
+[rakuen] [omizu1:お水wiz] remove item from inventory : 牙 [185:5] [1,0] [4,30] [65535:255,255] [65535:255,255] [65535:255,255] 60
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+LOSE CONNECTION : world server : 0 , 25.1.80.156
+------------------QUIT SOCKET THREAD ---------------------
+
+------------------QUIT SOCKET THREAD ---------------------
+
+LOSE CONNECTION : world server : 0 , 25.1.80.156
+try connect to world server : 0 , 25.1.80.156
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+SAVE : [ADMINISTRATOR:rakuen] ID[pengg101] AVATAR NAME [Rockhopper]!!
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+SAVE : [ADMINISTRATOR:rakuen] ID[pengg101] AVATAR NAME [Rockhopper]!!
+SAVE : [ADMINISTRATOR:rakuen] ID[pengg101] AVATAR NAME [Rockhopper]!!
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+[omizu1(お水wiz)]'s level reset to level [500].
+SAVE : [ADMINISTRATOR:rakuen] ID[omizu1] AVATAR NAME [お水wiz]!!
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+SAVE : [ADMINISTRATOR:rakuen] ID[omizu1] AVATAR NAME [お水wiz]!!
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+[pengg101(Rockhopper)]'s level reset to level [200].
+SAVE : [ADMINISTRATOR:rakuen] ID[pengg101] AVATAR NAME [Rockhopper]!!
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+ uncompress error 2
+[omizu1(お水wiz)]'s level reset to level [999].
+SAVE : [ADMINISTRATOR:rakuen] ID[omizu1] AVATAR NAME [お水wiz]!!
+[omizu1(お水wiz)]'s level reset to level [999].
+SAVE : [ADMINISTRATOR:rakuen] ID[omizu1] AVATAR NAME [お水wiz]!!
+LOSE CONNECTION : world server : 0 , 25.1.80.156
+------------------QUIT SOCKET THREAD ---------------------
+
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+ ip [127.0.0.1] , id [RedMaster], pw [CJFVKSRNDL], name [RedStone_Avatar_Source]
+[omizu2(お水教)]'s level reset to level [900].
+SAVE : [ADMINISTRATOR:rakuen] ID[omizu2] AVATAR NAME [お水教]!!
+------------------QUIT SOCKET THREAD ---------------------
+
+LOSE CONNECTION : world server : 0 , 25.1.80.156
+g_DBAccount [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_ID_SOURCE] 
+g_DBSrvInfo [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[REDSTONE_INFO] 
+g_DBAdmin [CHECK!!] DB [127.0.0.1] , id[RedMaster], pw[CJFVKSRNDL] ,NAME[ADMINTOOL_LOGIN] 
+try connect to world server : 0 , 25.1.80.156
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [omizu2], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [お水教], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [お水教], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [お水教], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [お水教], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [お水教], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [お水教], level[5]
+Change Operator Level : admin id[rakuen], server [LocalWorld], avatar name [お水教], level[5]

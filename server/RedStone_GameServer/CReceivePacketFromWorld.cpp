@@ -748,7 +748,7 @@ cGAME::operateCarrotShopInfo(WORLDtoSERVERS_CARROT_SHOP_INFO *_lpPacket)
 {
 	if	(_lpPacket->wStatus	==	2)
 	{
-		g_carrotShopInfo.m_wCategoryCount					=	_lpPacket->wCount;
+		g_carrotShopInfo.m_wCategoryCount					=	min(_lpPacket->wCount,dMAX_CARROT_SHOP_CATEGORY_COUNT);
 		g_carrotShopInfo.m_bIsCompleteReceiveCarrotShopInfo	=	TRUE;
 
 		g_carrotShopInfo.buildCheckSum();

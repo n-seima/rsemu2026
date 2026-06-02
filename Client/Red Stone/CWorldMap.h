@@ -14,6 +14,45 @@
 #define	dMAX_WM_MAX_ROAD_NODE_COUNT			10
 #define	dMAX_WM_NODE_COUNT					1024
 #define dWM_BASIC_WINDOW_WIDTH					225
+#define	dWM_BASE_WIDTH						800
+#define	dWM_BASE_HEIGHT						600
+
+inline	int
+GetWorldMapScaleRate()
+{
+	int	iRateX	=	(g_iScreenWidth*100)/dWM_BASE_WIDTH;
+	int	iRateY	=	(g_iScreenHeight*100)/dWM_BASE_HEIGHT;
+
+	return	iRateX < iRateY ? iRateX : iRateY;
+}
+
+inline	int
+GetWorldMapOffsetX()
+{
+	int	iRate	=	GetWorldMapScaleRate();
+
+	return	(g_iScreenWidth-((dWM_BASE_WIDTH*iRate)/100))/2;
+}
+
+inline	int
+GetWorldMapOffsetY()
+{
+	int	iRate	=	GetWorldMapScaleRate();
+
+	return	(g_iScreenHeight-((dWM_BASE_HEIGHT*iRate)/100))/2;
+}
+
+inline	int
+GetWorldMapX(int _iX)
+{
+	return	GetWorldMapOffsetX()+((_iX*GetWorldMapScaleRate())/100);
+}
+
+inline	int
+GetWorldMapY(int _iY)
+{
+	return	GetWorldMapOffsetY()+((_iY*GetWorldMapScaleRate())/100);
+}
 
 enum
 {
@@ -108,6 +147,9 @@ public:
 
 	void	addNode(int _iField)
 	{
+		if (m_wNodeCount	>=	dMAX_WM_NODE_COUNT)
+			return;
+
 		m_awNodeList[m_wNodeCount++]	=	_iField;
 	}
 

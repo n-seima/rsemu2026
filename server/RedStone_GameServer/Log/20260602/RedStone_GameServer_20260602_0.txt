@@ -1,0 +1,4135 @@
+[000607] Open addr  [0] = 25.1.80.156
+
+
+[000607] START WorkerThread[0] ...
+
+[000607] START AcceptLoop ...
+
+[000607] START WorkerThread[2] ...
+
+[000607] START WorkerThread[1] ...
+
+[000607] BCTHREAD START : [25.1.80.156] [56621]
+
+[000607] [type01] map count = 581 
+
+
+[000607]  Request the list of provision ranking
+
+[000607] Send Ip = 25.1.80.156
+
+[000607] START BCControlThread ...
+
+[000607] START WorldCtlThread ...
+
+[000607] 
+ Start Game Server ... day : 20260602 - time : 607 
+
+
+[000607] START AdditionThread ...
+
+[000607]  Received provision ranking
+
+[000742] Open addr  [0] = 25.1.80.156
+
+
+[000742] Fail bind !! - 10048
+
+[000756] Error InitSocket 
+
+
+[000830] Open addr  [0] = 25.1.80.156
+
+
+[000830] START WorkerThread[0] ...
+
+[000830] START WorkerThread[2] ...
+
+[000830] START WorkerThread[1] ...
+
+[000830] START AcceptLoop ...
+
+[000830] BCTHREAD START : [25.1.80.156] [56621]
+
+[000830] START AdditionThread ...
+
+[000830] [type01] map count = 581 
+
+
+[000830] START BCControlThread ...
+
+[000830] Send Ip = 25.1.80.156
+
+[000830] START WorldCtlThread ...
+
+[000830] 
+ Start Game Server ... day : 20260602 - time : 830 
+
+
+[000830]  Request the list of provision ranking
+
+[000830]  Received provision ranking
+
+[005405] Open addr  [0] = 25.1.80.156
+
+
+[005405] START WorkerThread[0] ...
+
+[005405] START AcceptLoop ...
+
+[005405] START WorkerThread[1] ...
+
+[005405] START WorkerThread[2] ...
+
+[005405] BCTHREAD START : [25.1.80.156] [56621]
+
+[005405] [type01] map count = 581 
+
+
+[005405] START AdditionThread ...
+
+[005405] Send Ip = 25.1.80.156
+
+[005405] START BCControlThread ...
+
+[005405] 
+ Start Game Server ... day : 20260602 - time : 5405 
+
+
+[005405] START WorldCtlThread ...
+
+[005405]  Request the list of provision ranking
+
+[005405]  Received provision ranking
+
+[011442] Open addr  [0] = 25.1.80.156
+
+
+[011442] START WorkerThread[0] ...
+
+[011442] START WorkerThread[1] ...
+
+[011442] START AcceptLoop ...
+
+[011442] START WorkerThread[2] ...
+
+[011442] BCTHREAD START : [25.1.80.156] [56621]
+
+[011442] START AdditionThread ...
+
+[011442]  Request the list of provision ranking
+
+[011442] [type01] map count = 581 
+
+
+[011442] START BCControlThread ...
+
+[011442] START WorldCtlThread ...
+
+[011442] Send Ip = 25.1.80.156
+
+[011442] 
+ Start Game Server ... day : 20260602 - time : 11442 
+
+
+[011442]  Received provision ranking
+
+[070011]  Request the list of provision ranking
+
+[070011]  Received provision ranking
+
+[081543] Open addr  [0] = 25.1.80.156
+
+
+[081543] START WorkerThread[0] ...
+
+[081543] START WorkerThread[2] ...
+
+[081543] START WorkerThread[1] ...
+
+[081543] START AcceptLoop ...
+
+[081543] BCTHREAD START : [25.1.80.156] [56621]
+
+[081543] START AdditionThread ...
+
+[081543] START WorldCtlThread ...
+
+[081543] [type01] map count = 581 
+
+
+[081543] START BCControlThread ...
+
+[081543] Send Ip = 25.1.80.156
+
+[081543]  Request the list of provision ranking
+
+[081543] 
+ Start Game Server ... day : 20260602 - time : 81543 
+
+
+[081543]  Received provision ranking
+
+[081631] Open addr  [0] = 25.1.80.156
+
+
+[081631] START WorkerThread[0] ...
+
+[081631] START WorkerThread[1] ...
+
+[081631] START WorkerThread[2] ...
+
+[081631] START AcceptLoop ...
+
+[081631] BCTHREAD START : [25.1.80.156] [56621]
+
+[081631] START AdditionThread ...
+
+[081631] START BCControlThread ...
+
+[081631] [type01] map count = 581 
+
+
+[081631]  Request the list of provision ranking
+
+[081631] Send Ip = 25.1.80.156
+
+[081631] 
+ Start Game Server ... day : 20260602 - time : 81631 
+
+
+[081631] START WorldCtlThread ...
+
+[081631]  Received provision ranking
+
+[084205] Open addr  [0] = 25.1.80.156
+
+
+[084205] START WorkerThread[1] ...
+
+[084205] START WorkerThread[2] ...
+
+[084205] START AcceptLoop ...
+
+[084205] START WorkerThread[0] ...
+
+[084206] BCTHREAD START : [25.1.80.156] [56621]
+
+[084206] [type01] map count = 581 
+
+
+[084206] START AdditionThread ...
+
+[084206] Send Ip = 25.1.80.156
+
+[084206] START BCControlThread ...
+
+[084206] 
+ Start Game Server ... day : 20260602 - time : 84206 
+
+
+[084206]  Request the list of provision ranking
+
+[084206] START WorldCtlThread ...
+
+[084206]  Received provision ranking
+
+[085010] Open addr  [0] = 25.1.80.156
+
+
+[085010] START WorkerThread[1] ...
+
+[085010] START WorkerThread[2] ...
+
+[085010] START AcceptLoop ...
+
+[085010] START WorkerThread[0] ...
+
+[085010] BCTHREAD START : [25.1.80.156] [56621]
+
+[085010] [type01] map count = 581 
+
+
+[085010] START AdditionThread ...
+
+[085010] START BCControlThread ...
+
+[085010] Send Ip = 25.1.80.156
+
+[085010] 
+ Start Game Server ... day : 20260602 - time : 85010 
+
+
+[085010] START WorldCtlThread ...
+
+[085010]  Request the list of provision ranking
+
+[085010]  Received provision ranking
+
+[090133] Open addr  [0] = 25.1.80.156
+
+
+[090133] START WorkerThread[0] ...
+
+[090133] START AcceptLoop ...
+
+[090133] START WorkerThread[1] ...
+
+[090133] START WorkerThread[2] ...
+
+[090133] BCTHREAD START : [25.1.80.156] [56621]
+
+[090133] [type01] map count = 581 
+
+
+[090133] START AdditionThread ...
+
+[090133] START BCControlThread ...
+
+[090133] Send Ip = 25.1.80.156
+
+[090133]  Request the list of provision ranking
+
+[090133] 
+ Start Game Server ... day : 20260602 - time : 90133 
+
+
+[090133] START WorldCtlThread ...
+
+[090133]  Received provision ranking
+
+[090941] Open addr  [0] = 25.1.80.156
+
+
+[090941] START WorkerThread[1] ...
+
+[090941] START WorkerThread[0] ...
+
+[090941] START WorkerThread[2] ...
+
+[090941] START AcceptLoop ...
+
+[090944] ERROR : connect [52611,25.1.80.156] Error 10061
+
+
+[090944] Fail Connect DBC !!
+
+
+[090945] Error InitSocket 
+
+
+[091009] Open addr  [0] = 25.1.80.156
+
+
+[091009] START WorkerThread[0] ...
+
+[091009] START WorkerThread[1] ...
+
+[091009] START AcceptLoop ...
+
+[091009] START WorkerThread[2] ...
+
+[091009] BCTHREAD START : [25.1.80.156] [56621]
+
+[091009] [type01] map count = 581 
+
+
+[091009] START BCControlThread ...
+
+[091009] Send Ip = 25.1.80.156
+
+[091009] START WorldCtlThread ...
+
+[091009] START AdditionThread ...
+
+[091009]  Request the list of provision ranking
+
+[091009] 
+ Start Game Server ... day : 20260602 - time : 91009 
+
+
+[091009]  Received provision ranking
+
+[091703] Open addr  [0] = 25.1.80.156
+
+
+[091703] START WorkerThread[0] ...
+
+[091703] START WorkerThread[1] ...
+
+[091703] START AcceptLoop ...
+
+[091703] START WorkerThread[2] ...
+
+[091703] BCTHREAD START : [25.1.80.156] [56621]
+
+[091703] [type01] map count = 581 
+
+
+[091703] START WorldCtlThread ...
+
+[091703] Send Ip = 25.1.80.156
+
+[091703] START AdditionThread ...
+
+[091703]  Request the list of provision ranking
+
+[091703] 
+ Start Game Server ... day : 20260602 - time : 91703 
+
+
+[091703] START BCControlThread ...
+
+[091703]  Received provision ranking
+
+[092030] Open addr  [0] = 25.1.80.156
+
+
+[092030] START WorkerThread[0] ...
+
+[092030] START WorkerThread[1] ...
+
+[092030] START AcceptLoop ...
+
+[092030] START WorkerThread[2] ...
+
+[092030] BCTHREAD START : [25.1.80.156] [56621]
+
+[092030] [type01] map count = 581 
+
+
+[092030] START AdditionThread ...
+
+[092030] START WorldCtlThread ...
+
+[092030] START BCControlThread ...
+
+[092030] Send Ip = 25.1.80.156
+
+[092030] 
+ Start Game Server ... day : 20260602 - time : 92030 
+
+
+[092030]  Request the list of provision ranking
+
+[092030]  Received provision ranking
+
+[092044] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092044] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092046] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092046] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092046] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092046] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092046] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092046] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092046] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092046] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092046] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092046] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092046] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092046] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092046] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092046] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092047] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092047] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092047] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092047] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092047] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092047] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092047] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092047] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092047] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092047] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092049] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092049] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092049] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092049] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092050] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092050] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092053] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092053] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092053] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092053] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092053] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092053] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092054] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092054] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092054] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092054] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092054] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092054] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092126] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092126] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092626] Open addr  [0] = 25.1.80.156
+
+
+[092626] START WorkerThread[0] ...
+
+[092626] START WorkerThread[2] ...
+
+[092626] START AcceptLoop ...
+
+[092626] START WorkerThread[1] ...
+
+[092626] BCTHREAD START : [25.1.80.156] [56621]
+
+[092626] [type01] map count = 581 
+
+
+[092626]  Request the list of provision ranking
+
+[092626] START BCControlThread ...
+
+[092626] START AdditionThread ...
+
+[092626] Send Ip = 25.1.80.156
+
+[092626] 
+ Start Game Server ... day : 20260602 - time : 92626 
+
+
+[092626] START WorldCtlThread ...
+
+[092626]  Received provision ranking
+
+[092747] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092747] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092817] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092817] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092817] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092817] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[092818] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[092818] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[093959] Open addr  [0] = 25.1.80.156
+
+
+[093959] START WorkerThread[0] ...
+
+[093959] START WorkerThread[1] ...
+
+[093959] START AcceptLoop ...
+
+[093959] START WorkerThread[2] ...
+
+[093959] BCTHREAD START : [25.1.80.156] [56621]
+
+[093959] START BCControlThread ...
+
+[093959]  Request the list of provision ranking
+
+[093959] [type01] map count = 581 
+
+
+[093959] START AdditionThread ...
+
+[093959] START WorldCtlThread ...
+
+[093959] Send Ip = 25.1.80.156
+
+[093959] 
+ Start Game Server ... day : 20260602 - time : 93959 
+
+
+[093959]  Received provision ranking
+
+[094026] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[094026] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[094026] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[094036] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[094036] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[094036] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[094042] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[094042] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[094042] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[094150] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[094150] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[094150] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[094433] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[094433] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[094433] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[102034] Open addr  [0] = 25.1.80.156
+
+
+[102034] START WorkerThread[0] ...
+
+[102034] START WorkerThread[2] ...
+
+[102034] START AcceptLoop ...
+
+[102034] START WorkerThread[1] ...
+
+[102034] BCTHREAD START : [25.1.80.156] [56621]
+
+[102034] START AdditionThread ...
+
+[102034] START WorldCtlThread ...
+
+[102034] [type01] map count = 581 
+
+
+[102034]  Request the list of provision ranking
+
+[102034] START BCControlThread ...
+
+[102034] Send Ip = 25.1.80.156
+
+[102034] 
+ Start Game Server ... day : 20260602 - time : 102034 
+
+
+[102034]  Received provision ranking
+
+[102054] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[102054] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[102054] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[102058] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] public[0] zoneSerial[2603] sent[1]
+
+[102058] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] result[4] remain[0]
+
+[102102] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] public[0] zoneSerial[2603] sent[1]
+
+[102102] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] result[4] remain[0]
+
+[102404] Open addr  [0] = 25.1.80.156
+
+
+[102404] START WorkerThread[0] ...
+
+[102404] START WorkerThread[1] ...
+
+[102404] START AcceptLoop ...
+
+[102404] START WorkerThread[2] ...
+
+[102404] BCTHREAD START : [25.1.80.156] [56621]
+
+[102404] START AdditionThread ...
+
+[102404] START BCControlThread ...
+
+[102404] START WorldCtlThread ...
+
+[102404] [type01] map count = 581 
+
+
+[102404]  Request the list of provision ranking
+
+[102404] Send Ip = 25.1.80.156
+
+[102404] 
+ Start Game Server ... day : 20260602 - time : 102404 
+
+
+[102404]  Received provision ranking
+
+[102416] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[102416] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[102416] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[102420] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] public[0] zoneSerial[2603] sent[1]
+
+[102420] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] result[4] remain[0]
+
+[102425] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] public[0] zoneSerial[2603] sent[1]
+
+[102425] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] result[4] remain[0]
+
+[102644] Open addr  [0] = 25.1.80.156
+
+
+[102644] START WorkerThread[0] ...
+
+[102644] START AcceptLoop ...
+
+[102644] START WorkerThread[2] ...
+
+[102644] START WorkerThread[1] ...
+
+[102644] BCTHREAD START : [25.1.80.156] [56621]
+
+[102644] [type01] map count = 581 
+
+
+[102644]  Request the list of provision ranking
+
+[102644] Send Ip = 25.1.80.156
+
+[102644] START AdditionThread ...
+
+[102644] START WorldCtlThread ...
+
+[102644] START BCControlThread ...
+
+[102644] 
+ Start Game Server ... day : 20260602 - time : 102644 
+
+
+[102644]  Received provision ranking
+
+[102713] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[102713] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[102713] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[102718] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] public[0] zoneSerial[2603] sent[1]
+
+[102718] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] result[0] remain[9999]
+
+[102729] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[102729] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[102729] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[102844] Open addr  [0] = 25.1.80.156
+
+
+[102844] START WorkerThread[1] ...
+
+[102844] START WorkerThread[2] ...
+
+[102844] START AcceptLoop ...
+
+[102844] START WorkerThread[0] ...
+
+[102844] BCTHREAD START : [25.1.80.156] [56621]
+
+[102844] START AdditionThread ...
+
+[102844] [type01] map count = 581 
+
+
+[102844]  Request the list of provision ranking
+
+[102844] Send Ip = 25.1.80.156
+
+[102844] START WorldCtlThread ...
+
+[102844] 
+ Start Game Server ... day : 20260602 - time : 102844 
+
+
+[102844] START BCControlThread ...
+
+[102844]  Received provision ranking
+
+[102907] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[102907] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[102908] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[102918] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] public[0] zoneSerial[2603] sent[1]
+
+[102918] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] result[0] remain[9999]
+
+[103012] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[338] count[1] price[1000] public[0] zoneSerial[2603] sent[1]
+
+[103012] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[338] count[1] price[1000] result[0] remain[9999]
+
+[103026] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[103026] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[103026] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[103119] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[103119] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[103119] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[103213] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[103213] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[103213] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[103218] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] public[0] zoneSerial[2603] sent[1]
+
+[103218] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[512] count[10] price[300] result[0] remain[9999]
+
+[104005] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[104005] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[104005] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[104017] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[104017] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[104017] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[104020] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[463] count[1] price[500] public[1] zoneSerial[2603] sent[1]
+
+[104020] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[463] count[1] price[500] result[0] remain[9999]
+
+[104027] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[104027] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[104027] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[104117] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[104117] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[104117] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[104124] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[104124] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104132] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[104132] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[104132] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[104158] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[104158] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[104158] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[104245] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[104245] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[104245] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[104304] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[104304] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[104304] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[104312] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[104312] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[104312] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[104314] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[104314] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[104315] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[104328] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[104328] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[104328] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[104330] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[104330] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[104330] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[104345] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[104345] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[104354] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[104354] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[104354] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[104356] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[104356] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[104357] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[104357] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[104514] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[104514] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[104515] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[104527] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[104527] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[104527] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[104651] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[104651] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[104651] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[104743] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[104743] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[104743] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[104750] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[104750] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[104822] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[104822] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[104822] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[104825] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] public[0] zoneSerial[2603] sent[1]
+
+[104825] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[104841] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[104841] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[104841] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[104943] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[104943] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104944] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[104944] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104945] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[104945] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104946] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[104947] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104947] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[104947] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104948] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[104949] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104949] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[104949] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104950] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[104950] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[104951] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[104951] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105006] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[105006] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[105006] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[105011] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105011] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105012] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105012] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105014] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105014] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105014] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105014] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105015] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105015] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105016] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105016] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105024] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[105024] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[105024] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[105035] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105035] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105036] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105036] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105037] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105037] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105037] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105037] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105038] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105038] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105039] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105039] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105041] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105041] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105043] [CARROT] send use id[pengg101] name[Rockhopper] item[460] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[105043] [CARROT] use result id[pengg101] name[Rockhopper] item[460] count[1] price[300] result[0] remain[9999]
+
+[105139] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[105139] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[105139] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[105206] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105207] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105208] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105208] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105209] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105210] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105210] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105210] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105240] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[105240] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[105240] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[105243] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[105243] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[105300] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[105300] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[105300] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[105351] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[105351] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[105351] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[105358] [CARROT] send use id[pengg101] name[Rockhopper] item[417] count[1] price[500] public[1] zoneSerial[2604] sent[1]
+
+[105358] [CARROT] use result id[pengg101] name[Rockhopper] item[417] count[1] price[500] result[0] remain[9999]
+
+[105406] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[105406] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[105406] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[105408] [CARROT] send use id[pengg101] name[Rockhopper] item[463] count[1] price[500] public[1] zoneSerial[2604] sent[1]
+
+[105408] [CARROT] use result id[pengg101] name[Rockhopper] item[463] count[1] price[500] result[0] remain[9999]
+
+[105410] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[105410] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[105410] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[105412] [CARROT] send use id[pengg101] name[Rockhopper] item[3] count[1] price[500] public[1] zoneSerial[2604] sent[1]
+
+[105412] [CARROT] use result id[pengg101] name[Rockhopper] item[3] count[1] price[500] result[0] remain[9999]
+
+[105836] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[105836] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[105836] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[105843] [CARROT] send use id[pengg101] name[Rockhopper] item[415] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[105844] [CARROT] use result id[pengg101] name[Rockhopper] item[415] count[1] price[300] result[0] remain[9999]
+
+[105906] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[105906] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[105907] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[105911] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105911] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105912] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105912] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105913] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105913] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105914] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105914] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105916] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105916] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105916] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105916] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[105918] [CARROT] send use id[pengg101] name[Rockhopper] item[335] count[1] price[150] public[0] zoneSerial[2604] sent[1]
+
+[105918] [CARROT] use result id[pengg101] name[Rockhopper] item[335] count[1] price[150] result[0] remain[9999]
+
+[110000] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[110000] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110001] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110018] [CARROT] send use id[pengg101] name[Rockhopper] item[528] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110018] [CARROT] use result id[pengg101] name[Rockhopper] item[528] count[1] price[300] result[0] remain[9999]
+
+[110038] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[110038] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110038] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110050] [CARROT] send use id[pengg101] name[Rockhopper] item[512] count[10] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110050] [CARROT] use result id[pengg101] name[Rockhopper] item[512] count[10] price[300] result[0] remain[9999]
+
+[110159] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[110159] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110159] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110222] [CARROT] send use id[pengg101] name[Rockhopper] item[247] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110222] [CARROT] use result id[pengg101] name[Rockhopper] item[247] count[1] price[300] result[0] remain[9999]
+
+[110228] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[110228] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110228] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110231] [CARROT] send use id[pengg101] name[Rockhopper] item[248] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110231] [CARROT] use result id[pengg101] name[Rockhopper] item[248] count[1] price[300] result[0] remain[9999]
+
+[110233] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[110233] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110234] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110236] [CARROT] send use id[pengg101] name[Rockhopper] item[249] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110236] [CARROT] use result id[pengg101] name[Rockhopper] item[249] count[1] price[300] result[0] remain[9999]
+
+[110239] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[110239] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110239] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110242] [CARROT] send use id[pengg101] name[Rockhopper] item[407] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110242] [CARROT] use result id[pengg101] name[Rockhopper] item[407] count[1] price[300] result[0] remain[9999]
+
+[110243] [CARROT] send use id[pengg101] name[Rockhopper] item[405] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110243] [CARROT] use result id[pengg101] name[Rockhopper] item[405] count[1] price[300] result[0] remain[9999]
+
+[110245] [CARROT] send use id[pengg101] name[Rockhopper] item[403] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110245] [CARROT] use result id[pengg101] name[Rockhopper] item[403] count[1] price[300] result[0] remain[9999]
+
+[110246] [CARROT] send use id[pengg101] name[Rockhopper] item[401] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110246] [CARROT] use result id[pengg101] name[Rockhopper] item[401] count[1] price[300] result[0] remain[9999]
+
+[110248] [CARROT] send use id[pengg101] name[Rockhopper] item[399] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110248] [CARROT] use result id[pengg101] name[Rockhopper] item[399] count[1] price[300] result[0] remain[9999]
+
+[110255] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[110255] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110255] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110258] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110258] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[110324] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[110324] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[110324] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110327] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110327] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[110346] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[110346] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[110346] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110348] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110348] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[110359] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[110359] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[110400] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110402] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[300] public[0] zoneSerial[2604] sent[1]
+
+[110402] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[300] result[0] remain[9999]
+
+[110432] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2619] ip[25.10.8.62]
+
+[110432] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[110433] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110447] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2619] ip[25.10.8.62]
+
+[110447] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110447] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110709] [CARROT] send use id[pengg101] name[Rockhopper] item[463] count[1] price[500] public[1] zoneSerial[2619] sent[1]
+
+[110710] [CARROT] use result id[pengg101] name[Rockhopper] item[463] count[1] price[500] result[0] remain[9999]
+
+[110714] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2619] ip[25.10.8.62]
+
+[110714] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110714] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110716] [CARROT] send use id[pengg101] name[Rockhopper] item[463] count[1] price[500] public[1] zoneSerial[2619] sent[1]
+
+[110716] [CARROT] use result id[pengg101] name[Rockhopper] item[463] count[1] price[500] result[0] remain[9999]
+
+[110727] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2619] ip[25.10.8.62]
+
+[110727] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110727] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110750] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2619] ip[25.10.8.62]
+
+[110750] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110750] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110756] [CARROT] send use id[pengg101] name[Rockhopper] item[453] count[1] price[300] public[0] zoneSerial[2619] sent[1]
+
+[110756] [CARROT] use result id[pengg101] name[Rockhopper] item[453] count[1] price[300] result[0] remain[9999]
+
+[110823] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2619] ip[25.10.8.62]
+
+[110823] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110823] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[110852] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2619] ip[25.10.8.62]
+
+[110852] [CARROT] open request id[pengg101] name[Rockhopper] cached[9999] dbRequest[1]
+
+[110852] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[111140] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[111140] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[111140] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[111144] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] public[0] zoneSerial[2603] sent[1]
+
+[111144] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[111350] Open addr  [0] = 25.1.80.156
+
+
+[111350] START WorkerThread[0] ...
+
+[111350] START WorkerThread[2] ...
+
+[111350] START AcceptLoop ...
+
+[111350] START WorkerThread[1] ...
+
+[111350] BCTHREAD START : [25.1.80.156] [56621]
+
+[111350] [type01] map count = 581 
+
+
+[111350] START AdditionThread ...
+
+[111350] START BCControlThread ...
+
+[111350] START WorldCtlThread ...
+
+[111350] Send Ip = 25.1.80.156
+
+[111350]  Request the list of provision ranking
+
+[111350] 
+ Start Game Server ... day : 20260602 - time : 111350 
+
+
+[111350]  Received provision ranking
+
+[111411] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[111411] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[111412] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[111441] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[111441] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[111441] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[111447] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[337] count[1] price[300] public[0] zoneSerial[2603] sent[1]
+
+[111447] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[337] count[1] price[300] result[0] remain[9999]
+
+[111521] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[111521] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[111521] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[111524] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] public[0] zoneSerial[2603] sent[1]
+
+[111524] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[111527] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[111527] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[111527] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[111530] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] public[0] zoneSerial[2603] sent[1]
+
+[111530] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[111532] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] public[0] zoneSerial[2603] sent[1]
+
+[111532] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[111533] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] public[0] zoneSerial[2603] sent[1]
+
+[111533] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] result[0] remain[9999]
+
+[112138] Open addr  [0] = 25.1.80.156
+
+
+[112138] START WorkerThread[0] ...
+
+[112138] START AcceptLoop ...
+
+[112138] START WorkerThread[2] ...
+
+[112138] START WorkerThread[1] ...
+
+[112138] BCTHREAD START : [25.1.80.156] [56621]
+
+[112138] START AdditionThread ...
+
+[112138] [type01] map count = 581 
+
+
+[112138]  Request the list of provision ranking
+
+[112138] START BCControlThread ...
+
+[112138] START WorldCtlThread ...
+
+[112138] Send Ip = 25.1.80.156
+
+[112138] 
+ Start Game Server ... day : 20260602 - time : 112138 
+
+
+[112138]  Received provision ranking
+
+[112440] Open addr  [0] = 25.1.80.156
+
+
+[112440] START WorkerThread[0] ...
+
+[112440] START WorkerThread[1] ...
+
+[112440] START WorkerThread[2] ...
+
+[112440] START AcceptLoop ...
+
+[112440] BCTHREAD START : [25.1.80.156] [56621]
+
+[112440] START AdditionThread ...
+
+[112440] START WorldCtlThread ...
+
+[112440] [type01] map count = 581 
+
+
+[112440]  Request the list of provision ranking
+
+[112440] Send Ip = 25.1.80.156
+
+[112440] 
+ Start Game Server ... day : 20260602 - time : 112440 
+
+
+[112440] START BCControlThread ...
+
+[112440]  Received provision ranking
+
+[112507] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[112507] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[112507] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[112508] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[112508] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[112508] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[112513] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] public[0] zoneSerial[2603] sent[1]
+
+[112514] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[300] result[0] remain[9699]
+
+[112642] ERROR ReallySend :[WORLD SERVER]  size 74, type 8323(LT 8323) ,ERROR 10054
+
+[112642] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[112642] ERROR : error occured!! in connet with WORLD
+
+[112643]  Send log Data ... Wait a sec.. !!
+
+[112643] ERROR ReallySend :[LOG SERVER]  size 424, type 10(LT 0) ,ERROR 10054
+
+[112643] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[112644]  Close Game Wait a sec.. !!
+
+[112645] ERROR : connect [59641,25.1.80.156] Error 10061
+
+
+[112645] Fail Connect g_socketLog !!
+
+
+[112645] ERROR ReallySend :[WORLD SERVER]  size 106, type 8018(LT 8323) ,ERROR 10038
+
+[112645] ERROR ReallySend :[WORLD SERVER]  size 106, type 8018(LT 8323) ,ERROR 10038
+
+[112645] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[112645] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[112646] End Game Server ... 
+
+[113442] Open addr  [0] = 25.1.80.156
+
+
+[113442] START WorkerThread[0] ...
+
+[113442] START WorkerThread[1] ...
+
+[113442] START AcceptLoop ...
+
+[113442] START WorkerThread[2] ...
+
+[113442] BCTHREAD START : [25.1.80.156] [56621]
+
+[113442] START AdditionThread ...
+
+[113442] [type01] map count = 581 
+
+
+[113442] Send Ip = 25.1.80.156
+
+[113442] 
+ Start Game Server ... day : 20260602 - time : 113442 
+
+
+[113442] START WorldCtlThread ...
+
+[113442] START BCControlThread ...
+
+[113442]  Request the list of provision ranking
+
+[113442]  Received provision ranking
+
+[113520] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[113520] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[113520] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9699]
+
+[113610] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2605] ip[25.31.188.64]
+
+[113610] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[-1] dbRequest[1]
+
+[113610] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[113629] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[113629] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9699] dbRequest[1]
+
+[113629] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9699]
+
+[113630] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2605] ip[25.31.188.64]
+
+[113630] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[113630] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[113644] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2605] ip[25.31.188.64]
+
+[113644] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[113645] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[113648] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[113648] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9699] dbRequest[1]
+
+[113648] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9699]
+
+[113658] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[113658] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[113658] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9999]
+
+[113701] [CARROT] send use id[pengg101] name[Rockhopper] item[512] count[10] price[300] public[0] zoneSerial[2604] sent[1]
+
+[113701] [CARROT] use result id[pengg101] name[Rockhopper] item[512] count[10] price[300] result[0] remain[9699]
+
+[113722] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[113722] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9699] dbRequest[1]
+
+[113723] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9699]
+
+[113729] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[417] count[1] price[500] public[1] zoneSerial[2603] sent[1]
+
+[113729] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[417] count[1] price[500] result[0] remain[9199]
+
+[113739] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[113739] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9199] dbRequest[1]
+
+[113739] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9199]
+
+[113742] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2605] ip[25.31.188.64]
+
+[113742] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[113742] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[113742] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[463] count[1] price[500] public[1] zoneSerial[2603] sent[1]
+
+[113742] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[463] count[1] price[500] result[0] remain[8699]
+
+[113745] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[113745] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8699] dbRequest[1]
+
+[113745] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8699]
+
+[113748] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[3] count[1] price[500] public[1] zoneSerial[2603] sent[1]
+
+[113748] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[3] count[1] price[500] result[0] remain[8199]
+
+[114021] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2605] ip[25.31.188.64]
+
+[114021] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114021] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114037] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[114037] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[114037] [CARROT] get count result id[pengg101] name[Rockhopper] result[3] count[0]
+
+[114058] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[114058] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8199] dbRequest[1]
+
+[114058] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[114103] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2605] ip[25.31.188.64]
+
+[114103] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114104] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114210] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[114210] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[114210] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[114436] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2605] ip[25.31.188.64]
+
+[114436] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114436] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114523] Open addr  [0] = 25.1.80.156
+
+
+[114523] START WorkerThread[2] ...
+
+[114523] START AcceptLoop ...
+
+[114523] START WorkerThread[0] ...
+
+[114523] START WorkerThread[1] ...
+
+[114523] BCTHREAD START : [25.1.80.156] [56621]
+
+[114523] START AdditionThread ...
+
+[114523] START BCControlThread ...
+
+[114523] [type01] map count = 581 
+
+
+[114523]  Request the list of provision ranking
+
+[114523] Send Ip = 25.1.80.156
+
+[114523] START WorldCtlThread ...
+
+[114523] 
+ Start Game Server ... day : 20260602 - time : 114523 
+
+
+[114523]  Received provision ranking
+
+[114535] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[114535] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[114536] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[114553] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[114553] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[-1] dbRequest[1]
+
+[114553] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114649] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[114649] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114649] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114711] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[114711] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114712] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114807] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[114807] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114807] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114817] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[114817] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8199] dbRequest[1]
+
+[114817] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[114827] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[114827] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114827] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114829] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[114829] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8199] dbRequest[1]
+
+[114829] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[114848] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[114848] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8199] dbRequest[1]
+
+[114848] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[114853] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[114853] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114853] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114858] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2605] ip[25.10.8.62]
+
+[114858] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[114858] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9699]
+
+[114903] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[114903] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114903] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114912] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[114912] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8199] dbRequest[1]
+
+[114912] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[114919] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[114919] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8199] dbRequest[1]
+
+[114919] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[114920] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[114920] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114920] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114928] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2605] ip[25.10.8.62]
+
+[114928] [CARROT] open request id[pengg101] name[Rockhopper] cached[9699] dbRequest[1]
+
+[114929] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9699]
+
+[114929] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[114929] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114929] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114932] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[114932] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8199] dbRequest[1]
+
+[114933] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[114939] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2605] sent[1]
+
+[114939] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9698]
+
+[114947] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[114947] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[114948] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[114951] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2605] ip[25.10.8.62]
+
+[114951] [CARROT] open request id[pengg101] name[Rockhopper] cached[9698] dbRequest[1]
+
+[114951] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9698]
+
+[115001] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[115001] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[115001] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[115023] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[115023] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[115023] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[115024] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[115024] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8199] dbRequest[1]
+
+[115024] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[115031] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[115031] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8199] dbRequest[1]
+
+[115031] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[115039] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[115039] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[115039] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[115048] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[115048] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8199] dbRequest[1]
+
+[115048] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8199]
+
+[115051] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[115051] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8198]
+
+[115052] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[115052] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[115052] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[115054] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[115054] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8198] dbRequest[1]
+
+[115054] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8198]
+
+[115057] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[115057] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8197]
+
+[115058] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[115058] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8196]
+
+[115059] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[115059] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8195]
+
+[115152] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[115152] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8195] dbRequest[1]
+
+[115153] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8195]
+
+[115156] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[115156] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8194]
+
+[115157] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[115157] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8193]
+
+[115158] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[115158] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8192]
+
+[115159] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[115159] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8191]
+
+[115200] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[115200] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8190]
+
+[115202] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[115202] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8189]
+
+[115206] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[115206] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[115206] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[115254] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[115254] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[115254] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8189]
+
+[115300] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[115300] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8188]
+
+[115304] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[115304] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8188] dbRequest[1]
+
+[115304] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8188]
+
+[115400] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2605] ip[25.10.8.62]
+
+[115400] [CARROT] open request id[pengg101] name[Rockhopper] cached[9698] dbRequest[1]
+
+[115401] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9698]
+
+[115435] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2605] sent[1]
+
+[115435] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9697]
+
+[115437] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2603] ip[25.31.188.64]
+
+[115437] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[9999] dbRequest[1]
+
+[115438] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[121903] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[121903] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8188] dbRequest[1]
+
+[121903] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8188]
+
+[121908] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121908] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8187]
+
+[121909] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121909] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8186]
+
+[121911] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121911] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8185]
+
+[121911] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121912] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8184]
+
+[121912] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121912] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8183]
+
+[121914] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121914] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8182]
+
+[121915] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121915] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8181]
+
+[121916] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121916] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8180]
+
+[121917] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121917] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8179]
+
+[121917] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121918] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8178]
+
+[121919] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121919] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8177]
+
+[121920] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121920] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8176]
+
+[121921] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121921] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8175]
+
+[121922] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121922] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8174]
+
+[121923] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121923] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8173]
+
+[121924] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121924] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8172]
+
+[121926] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121926] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8171]
+
+[121927] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121927] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8170]
+
+[121928] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121928] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8169]
+
+[121929] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121929] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8168]
+
+[121931] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121931] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8167]
+
+[121932] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121932] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8166]
+
+[121933] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121933] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8165]
+
+[121934] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121934] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8164]
+
+[121935] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121935] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8163]
+
+[121936] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121936] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8162]
+
+[121936] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121937] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8161]
+
+[121937] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121938] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8160]
+
+[121939] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121939] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8159]
+
+[121940] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121940] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8158]
+
+[121940] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121941] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8157]
+
+[121942] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121942] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8156]
+
+[121943] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121943] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8155]
+
+[121945] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121945] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8154]
+
+[121946] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121946] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8153]
+
+[121947] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[121947] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[246] count[1] price[1] result[0] remain[8152]
+
+[122052] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2604] ip[25.1.80.156]
+
+[122052] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[8152] dbRequest[1]
+
+[122052] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8152]
+
+[122627] Open addr  [0] = 25.1.80.156
+
+
+[122627] START WorkerThread[0] ...
+
+[122627] START WorkerThread[2] ...
+
+[122627] START WorkerThread[1] ...
+
+[122627] START AcceptLoop ...
+
+[122627] BCTHREAD START : [25.1.80.156] [56621]
+
+[122627] [type01] map count = 581 
+
+
+[122627] START AdditionThread ...
+
+[122627] Send Ip = 25.1.80.156
+
+[122627] START BCControlThread ...
+
+[122627] 
+ Start Game Server ... day : 20260602 - time : 122627 
+
+
+[122627] START WorldCtlThread ...
+
+[122627]  Request the list of provision ranking
+
+[122627]  Received provision ranking
+
+[122750] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[122750] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[122750] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9697]
+
+[122801] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[122801] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[122801] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[8152]
+
+[122822] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[122822] [CARROT] open request id[pengg101] name[Rockhopper] cached[9697] dbRequest[1]
+
+[122822] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9697]
+
+[122841] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[417] count[1] price[500] public[1] zoneSerial[2603] sent[1]
+
+[122841] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[417] count[1] price[500] result[0] remain[7652]
+
+[122853] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[122853] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[7652] dbRequest[1]
+
+[122853] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[7652]
+
+[122857] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[417] count[1] price[500] public[1] zoneSerial[2603] sent[1]
+
+[122857] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[417] count[1] price[500] result[0] remain[7152]
+
+[122902] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[122902] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[7152] dbRequest[1]
+
+[122902] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[7152]
+
+[122905] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[417] count[1] price[500] public[1] zoneSerial[2603] sent[1]
+
+[122905] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[417] count[1] price[500] result[0] remain[6652]
+
+[123030] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[123030] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[123030] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9697]
+
+[123132] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[123132] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[123132] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[6652]
+
+[123142] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[415] count[1] price[300] public[0] zoneSerial[2603] sent[1]
+
+[123142] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[415] count[1] price[300] result[0] remain[6352]
+
+[123155] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[123155] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[6352] dbRequest[1]
+
+[123155] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[6352]
+
+[123159] [CARROT] send use id[omizu1] name[Ç®êÖwiz] item[415] count[1] price[300] public[0] zoneSerial[2603] sent[1]
+
+[123159] [CARROT] use result id[omizu1] name[Ç®êÖwiz] item[415] count[1] price[300] result[0] remain[6052]
+
+[123405] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[123405] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[6052] dbRequest[1]
+
+[123405] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[16051]
+
+[123408] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[123408] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[16051] dbRequest[1]
+
+[123408] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[16051]
+
+[123417] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[123417] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[16051] dbRequest[1]
+
+[123417] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[123443] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[123443] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[123443] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9697]
+
+[123449] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123449] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9998]
+
+[123450] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123450] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9997]
+
+[123450] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123451] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9996]
+
+[123452] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123452] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9995]
+
+[123453] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123453] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9994]
+
+[123457] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[123457] [CARROT] open request id[pengg101] name[Rockhopper] cached[9994] dbRequest[1]
+
+[123457] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9994]
+
+[123458] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[123458] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[123458] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[123501] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123501] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9993]
+
+[123503] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123503] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9992]
+
+[123504] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123505] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9991]
+
+[123506] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123506] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9990]
+
+[123509] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[123509] [CARROT] open request id[pengg101] name[Rockhopper] cached[9990] dbRequest[1]
+
+[123509] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9990]
+
+[123511] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123511] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9989]
+
+[123512] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123512] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9988]
+
+[123513] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123513] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9987]
+
+[123514] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123514] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9986]
+
+[123518] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[123518] [CARROT] open request id[pengg101] name[Rockhopper] cached[9986] dbRequest[1]
+
+[123518] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9986]
+
+[123522] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123522] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9985]
+
+[123523] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123523] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9984]
+
+[123524] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123524] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9983]
+
+[123525] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123525] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9982]
+
+[123525] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123526] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9981]
+
+[123529] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[123529] [CARROT] open request id[pengg101] name[Rockhopper] cached[9981] dbRequest[1]
+
+[123529] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9981]
+
+[123533] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123533] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9980]
+
+[123534] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123534] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9979]
+
+[123535] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123535] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9978]
+
+[123536] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123536] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9977]
+
+[123539] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[123539] [CARROT] open request id[pengg101] name[Rockhopper] cached[9977] dbRequest[1]
+
+[123539] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9977]
+
+[123542] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123542] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9976]
+
+[123542] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123542] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9975]
+
+[123543] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123543] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9974]
+
+[123544] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123544] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9973]
+
+[123545] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123545] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9972]
+
+[123549] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[123549] [CARROT] open request id[pengg101] name[Rockhopper] cached[9972] dbRequest[1]
+
+[123550] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9972]
+
+[123552] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123552] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9971]
+
+[123553] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123553] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9970]
+
+[123554] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123554] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9969]
+
+[123555] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123555] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9968]
+
+[123555] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123555] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9967]
+
+[123559] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[123559] [CARROT] open request id[pengg101] name[Rockhopper] cached[9967] dbRequest[1]
+
+[123559] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9967]
+
+[123608] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[123608] [CARROT] open request id[pengg101] name[Rockhopper] cached[9967] dbRequest[1]
+
+[123608] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9967]
+
+[123611] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123611] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9966]
+
+[123611] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123611] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9965]
+
+[123612] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123612] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9964]
+
+[123613] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123614] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9963]
+
+[123615] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123615] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9962]
+
+[123622] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[123622] [CARROT] open request id[pengg101] name[Rockhopper] cached[9962] dbRequest[1]
+
+[123622] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9962]
+
+[123625] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123625] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9961]
+
+[123625] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123625] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9960]
+
+[123626] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123626] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9959]
+
+[123627] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[123627] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9958]
+
+[123822] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[123822] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[9999] dbRequest[1]
+
+[123822] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[124025] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[124025] [CARROT] open request id[pengg101] name[Rockhopper] cached[9958] dbRequest[1]
+
+[124025] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9958]
+
+[124151] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[124151] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[124151] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9958]
+
+[124326] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2604] ip[25.10.8.62]
+
+[124326] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[124326] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9958]
+
+[124338] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[124338] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9957]
+
+[124339] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[124339] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9956]
+
+[124340] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[124340] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9955]
+
+[124341] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[124341] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9954]
+
+[124342] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2604] sent[1]
+
+[124342] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9953]
+
+[124414] [CARROT] send get count id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] zoneSerial[2606] ip[25.31.188.64]
+
+[124414] [CARROT] open request id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] cached[-1] dbRequest[1]
+
+[124414] [CARROT] get count result id[usi1111] name[Ç†ÇÒÇøÇ·ÇÒwiz] result[0] count[9999]
+
+[125252] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2767] ip[25.10.8.62]
+
+[125252] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[125252] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9953]
+
+[125255] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125255] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9952]
+
+[125256] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125256] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9951]
+
+[125257] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125257] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9950]
+
+[125258] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125258] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9949]
+
+[125259] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125259] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9948]
+
+[125308] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2767] ip[25.10.8.62]
+
+[125308] [CARROT] open request id[pengg101] name[Rockhopper] cached[9948] dbRequest[1]
+
+[125309] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9948]
+
+[125311] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125312] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9947]
+
+[125312] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125313] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9946]
+
+[125313] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125313] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9945]
+
+[125314] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125314] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9944]
+
+[125314] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125315] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9943]
+
+[125335] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2767] ip[25.10.8.62]
+
+[125335] [CARROT] open request id[pengg101] name[Rockhopper] cached[9943] dbRequest[1]
+
+[125336] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9943]
+
+[125341] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125341] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9942]
+
+[125342] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125342] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9941]
+
+[125344] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125344] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9940]
+
+[125345] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2767] sent[1]
+
+[125345] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9939]
+
+[125507] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2709] ip[25.10.8.62]
+
+[125507] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[125507] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9939]
+
+[125521] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2709] ip[25.10.8.62]
+
+[125521] [CARROT] open request id[pengg101] name[Rockhopper] cached[9939] dbRequest[1]
+
+[125521] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9939]
+
+[125524] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125524] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9938]
+
+[125524] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125524] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9937]
+
+[125525] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125525] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9936]
+
+[125526] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125526] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9935]
+
+[125527] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125527] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9934]
+
+[125527] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125527] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9933]
+
+[125528] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125528] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9932]
+
+[125529] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125529] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9931]
+
+[125530] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125530] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9930]
+
+[125531] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125531] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9929]
+
+[125531] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125531] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9928]
+
+[125532] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125532] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9927]
+
+[125533] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125533] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9926]
+
+[125542] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2709] ip[25.10.8.62]
+
+[125542] [CARROT] open request id[pengg101] name[Rockhopper] cached[9926] dbRequest[1]
+
+[125543] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9926]
+
+[125547] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125547] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9925]
+
+[125548] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125548] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9924]
+
+[125549] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125549] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9923]
+
+[125549] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125550] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9922]
+
+[125550] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125550] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9921]
+
+[125551] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125551] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9920]
+
+[125552] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125552] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9919]
+
+[125552] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125552] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9918]
+
+[125553] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125553] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9917]
+
+[125554] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125554] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9916]
+
+[125555] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125555] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9915]
+
+[125556] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125556] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9914]
+
+[125557] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[2709] sent[1]
+
+[125557] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9913]
+
+[130805] ERROR acceptUserCount[0] =-1 
+
+[132849] ERROR acceptUserCount[0] =-1 
+
+[134022] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[2603] ip[25.1.80.156]
+
+[134022] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[134022] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[134111] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2605] ip[25.10.8.62]
+
+[134111] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[134111] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9913]
+
+[134120] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[2605] ip[25.10.8.62]
+
+[134120] [CARROT] open request id[pengg101] name[Rockhopper] cached[9913] dbRequest[1]
+
+[134120] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9913]
+
+[134631] Open addr  [0] = 25.1.80.156
+
+
+[134631] START WorkerThread[0] ...
+
+[134631] START WorkerThread[1] ...
+
+[134631] START WorkerThread[2] ...
+
+[134631] START AcceptLoop ...
+
+[134631] BCTHREAD START : [25.1.80.156] [56621]
+
+[134631] [type01] map count = 581 
+
+
+[134631] START BCControlThread ...
+
+[134631] START WorldCtlThread ...
+
+[134631] Send Ip = 25.1.80.156
+
+[134631]  Request the list of provision ranking
+
+[134631] 
+ Start Game Server ... day : 20260602 - time : 134631 
+
+
+[134631] START AdditionThread ...
+
+[134631]  Received provision ranking
+
+[134710] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3214] ip[25.1.80.156]
+
+[134710] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[134710] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[134740] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3214] ip[25.1.80.156]
+
+[134740] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[134740] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[134744] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3213] ip[25.10.8.62]
+
+[134744] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[134744] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9913]
+
+[134748] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3213] ip[25.10.8.62]
+
+[134748] [CARROT] open request id[pengg101] name[Rockhopper] cached[9913] dbRequest[1]
+
+[134748] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9913]
+
+[135342] Open addr  [0] = 25.1.80.156
+
+
+[135342] START WorkerThread[0] ...
+
+[135342] START WorkerThread[2] ...
+
+[135342] START AcceptLoop ...
+
+[135342] START WorkerThread[1] ...
+
+[135342] BCTHREAD START : [25.1.80.156] [56621]
+
+[135342] START AdditionThread ...
+
+[135342] [type01] map count = 581 
+
+
+[135342] START BCControlThread ...
+
+[135342] Send Ip = 25.1.80.156
+
+[135342]  Request the list of provision ranking
+
+[135342] START WorldCtlThread ...
+
+[135342] 
+ Start Game Server ... day : 20260602 - time : 135342 
+
+
+[135342]  Received provision ranking
+
+[135540] Open addr  [0] = 25.1.80.156
+
+
+[135540] START AcceptLoop ...
+
+[135540] START WorkerThread[2] ...
+
+[135540] START WorkerThread[0] ...
+
+[135540] START WorkerThread[1] ...
+
+[135540] BCTHREAD START : [25.1.80.156] [56621]
+
+[135540] START AdditionThread ...
+
+[135540] [type01] map count = 581 
+
+
+[135540] START BCControlThread ...
+
+[135540] START WorldCtlThread ...
+
+[135540] Send Ip = 25.1.80.156
+
+[135540]  Request the list of provision ranking
+
+[135540] 
+ Start Game Server ... day : 20260602 - time : 135540 
+
+
+[135540]  Received provision ranking
+
+[135608] Open addr  [0] = 25.1.80.156
+
+
+[135608] START WorkerThread[0] ...
+
+[135608] START WorkerThread[1] ...
+
+[135608] START WorkerThread[2] ...
+
+[135608] START AcceptLoop ...
+
+[135608] BCTHREAD START : [25.1.80.156] [56621]
+
+[135608] START AdditionThread ...
+
+[135608] [type01] map count = 581 
+
+
+[135608] START BCControlThread ...
+
+[135608] START WorldCtlThread ...
+
+[135608]  Request the list of provision ranking
+
+[135608] Send Ip = 25.1.80.156
+
+[135608] 
+ Start Game Server ... day : 20260602 - time : 135608 
+
+
+[135608]  Received provision ranking
+
+[135750] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3257] ip[25.1.80.156]
+
+[135750] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[135750] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[140055] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140055] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[140055] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9913]
+
+[140153] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140153] [CARROT] open request id[pengg101] name[Rockhopper] cached[9913] dbRequest[1]
+
+[140153] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9913]
+
+[140200] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140200] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9912]
+
+[140201] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140201] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9911]
+
+[140202] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140202] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9910]
+
+[140203] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140203] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9909]
+
+[140219] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140219] [CARROT] open request id[pengg101] name[Rockhopper] cached[9909] dbRequest[1]
+
+[140219] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9909]
+
+[140222] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140222] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9908]
+
+[140223] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140223] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9907]
+
+[140223] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140223] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9906]
+
+[140224] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140224] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9905]
+
+[140224] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140224] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9904]
+
+[140226] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140226] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9903]
+
+[140227] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140227] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9902]
+
+[140232] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140232] [CARROT] open request id[pengg101] name[Rockhopper] cached[9902] dbRequest[1]
+
+[140232] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9902]
+
+[140234] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140235] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9901]
+
+[140235] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140235] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9900]
+
+[140237] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140237] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9899]
+
+[140238] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140238] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9898]
+
+[140239] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140239] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9897]
+
+[140240] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140240] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9896]
+
+[140240] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140240] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9895]
+
+[140245] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140245] [CARROT] open request id[pengg101] name[Rockhopper] cached[9895] dbRequest[1]
+
+[140245] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9895]
+
+[140248] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140248] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9894]
+
+[140248] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140248] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9893]
+
+[140250] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140250] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9892]
+
+[140250] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140250] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9891]
+
+[140251] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140251] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9890]
+
+[140252] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140252] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9889]
+
+[140253] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140253] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9888]
+
+[140259] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140259] [CARROT] open request id[pengg101] name[Rockhopper] cached[9888] dbRequest[1]
+
+[140259] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9888]
+
+[140301] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140301] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9887]
+
+[140302] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140302] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9886]
+
+[140303] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140304] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9885]
+
+[140305] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140305] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9884]
+
+[140307] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140307] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9883]
+
+[140308] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140308] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9882]
+
+[140309] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140309] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9881]
+
+[140315] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140315] [CARROT] open request id[pengg101] name[Rockhopper] cached[9881] dbRequest[1]
+
+[140315] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9881]
+
+[140317] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140317] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9880]
+
+[140319] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140319] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9879]
+
+[140320] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140320] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9878]
+
+[140321] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140321] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9877]
+
+[140323] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140323] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9876]
+
+[140324] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140324] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9875]
+
+[140325] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140325] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9874]
+
+[140330] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140330] [CARROT] open request id[pengg101] name[Rockhopper] cached[9874] dbRequest[1]
+
+[140330] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9874]
+
+[140332] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140332] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9873]
+
+[140333] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140333] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9872]
+
+[140333] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140333] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9871]
+
+[140334] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140334] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9870]
+
+[140334] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140334] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9869]
+
+[140335] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140335] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9868]
+
+[140336] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140336] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9867]
+
+[140342] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140342] [CARROT] open request id[pengg101] name[Rockhopper] cached[9867] dbRequest[1]
+
+[140342] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9867]
+
+[140344] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140344] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9866]
+
+[140345] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140345] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9865]
+
+[140346] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140346] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9864]
+
+[140346] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140346] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9863]
+
+[140347] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140348] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9862]
+
+[140349] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140349] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9861]
+
+[140354] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140354] [CARROT] open request id[pengg101] name[Rockhopper] cached[9861] dbRequest[1]
+
+[140354] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9861]
+
+[140356] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140356] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9860]
+
+[140358] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140358] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9859]
+
+[140358] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140358] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9858]
+
+[140400] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140400] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9857]
+
+[140400] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140400] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9856]
+
+[140402] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140402] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9855]
+
+[140407] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140407] [CARROT] open request id[pengg101] name[Rockhopper] cached[9855] dbRequest[1]
+
+[140407] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9855]
+
+[140409] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140409] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9854]
+
+[140410] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140410] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9853]
+
+[140411] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140411] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9852]
+
+[140412] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140412] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9851]
+
+[140412] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140412] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9850]
+
+[140414] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140414] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9849]
+
+[140418] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140418] [CARROT] open request id[pengg101] name[Rockhopper] cached[9849] dbRequest[1]
+
+[140418] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9849]
+
+[140420] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140420] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9848]
+
+[140421] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140421] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9847]
+
+[140422] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140422] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9846]
+
+[140423] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140423] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9845]
+
+[140423] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140423] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9844]
+
+[140424] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140424] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9843]
+
+[140431] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140431] [CARROT] open request id[pengg101] name[Rockhopper] cached[9843] dbRequest[1]
+
+[140431] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9843]
+
+[140433] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140433] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9842]
+
+[140434] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140434] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9841]
+
+[140435] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140435] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9840]
+
+[140436] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140436] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9839]
+
+[140437] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140437] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9838]
+
+[140437] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140438] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9837]
+
+[140439] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140439] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9836]
+
+[140444] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140444] [CARROT] open request id[pengg101] name[Rockhopper] cached[9836] dbRequest[1]
+
+[140444] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9836]
+
+[140447] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140447] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9835]
+
+[140448] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140448] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9834]
+
+[140449] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140449] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9833]
+
+[140450] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140450] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9832]
+
+[140450] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140450] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9831]
+
+[140451] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140451] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9830]
+
+[140452] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140452] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9829]
+
+[140459] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140459] [CARROT] open request id[pengg101] name[Rockhopper] cached[9829] dbRequest[1]
+
+[140459] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9829]
+
+[140501] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140502] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9828]
+
+[140503] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140503] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9827]
+
+[140504] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140504] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9826]
+
+[140504] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140504] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9825]
+
+[140506] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140506] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9824]
+
+[140506] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140506] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9823]
+
+[140507] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140507] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9822]
+
+[140512] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3214] ip[25.10.8.62]
+
+[140512] [CARROT] open request id[pengg101] name[Rockhopper] cached[9822] dbRequest[1]
+
+[140512] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9822]
+
+[140514] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140514] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9821]
+
+[140515] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140515] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9820]
+
+[140516] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140516] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9819]
+
+[140518] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140519] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9818]
+
+[140519] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140520] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9817]
+
+[140520] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140520] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9816]
+
+[140521] [CARROT] send use id[pengg101] name[Rockhopper] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[140521] [CARROT] use result id[pengg101] name[Rockhopper] item[246] count[1] price[1] result[0] remain[9815]
+
+[141426] Open addr  [0] = 25.1.80.156
+
+
+[141426] START WorkerThread[0] ...
+
+[141426] START WorkerThread[2] ...
+
+[141426] START WorkerThread[1] ...
+
+[141426] START AcceptLoop ...
+
+[141426] BCTHREAD START : [25.1.80.156] [56621]
+
+[141426] START BCControlThread ...
+
+[141426] START AdditionThread ...
+
+[141426]  Request the list of provision ranking
+
+[141426] START WorldCtlThread ...
+
+[141426] [type01] map count = 581 
+
+
+[141426] Send Ip = 25.1.80.156
+
+[141426] 
+ Start Game Server ... day : 20260602 - time : 141426 
+
+
+[141426]  Received provision ranking
+
+[141447] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3213] ip[25.1.80.156]
+
+[141447] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[141447] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[141536] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3224] ip[25.1.80.156]
+
+[141536] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[141536] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[141619] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3321] ip[25.1.80.156]
+
+[141619] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[141619] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[141737] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3219] ip[25.10.8.62]
+
+[141737] [CARROT] open request id[pengg101] name[Rockhopper] cached[-1] dbRequest[1]
+
+[141738] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9815]
+
+[141919] [CARROT] send get count id[omizu1] name[Ç®Ç›Ç∏] zoneSerial[3213] ip[25.1.80.156]
+
+[141919] [CARROT] open request id[omizu1] name[Ç®Ç›Ç∏] cached[-1] dbRequest[1]
+
+[141919] [CARROT] get count result id[omizu1] name[Ç®Ç›Ç∏] result[0] count[9999]
+
+[141928] [CARROT] send get count id[pengg101] name[Rockhopper] zoneSerial[3219] ip[25.10.8.62]
+
+[141928] [CARROT] open request id[pengg101] name[Rockhopper] cached[9815] dbRequest[1]
+
+[141928] [CARROT] get count result id[pengg101] name[Rockhopper] result[0] count[9815]
+
+[142202] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3219] ip[25.1.80.156]
+
+[142202] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[142203] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[142343] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3213] ip[25.1.80.156]
+
+[142343] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[142344] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[142520] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3222] ip[25.1.80.156]
+
+[142520] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[142520] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[142844] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3227] ip[25.1.80.156]
+
+[142844] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[142844] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[143142] [CARROT] send get count id[pengg101] name[Humboldt] zoneSerial[3217] ip[25.10.8.62]
+
+[143142] [CARROT] open request id[pengg101] name[Humboldt] cached[-1] dbRequest[1]
+
+[143142] [CARROT] get count result id[pengg101] name[Humboldt] result[0] count[9815]
+
+[143148] [CARROT] send use id[pengg101] name[Humboldt] item[335] count[1] price[10] public[0] zoneSerial[3217] sent[1]
+
+[143148] [CARROT] use result id[pengg101] name[Humboldt] item[335] count[1] price[10] result[0] remain[9805]
+
+[143149] [CARROT] send use id[pengg101] name[Humboldt] item[335] count[1] price[10] public[0] zoneSerial[3217] sent[1]
+
+[143149] [CARROT] use result id[pengg101] name[Humboldt] item[335] count[1] price[10] result[0] remain[9795]
+
+[143153] [CARROT] send use id[pengg101] name[Humboldt] item[528] count[1] price[300] public[0] zoneSerial[3217] sent[1]
+
+[143153] [CARROT] use result id[pengg101] name[Humboldt] item[528] count[1] price[300] result[0] remain[9495]
+
+[143154] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143154] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9494]
+
+[143155] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143155] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9493]
+
+[143156] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143156] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9492]
+
+[143157] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143157] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9491]
+
+[143157] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143158] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9490]
+
+[143159] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143159] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9489]
+
+[143200] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143200] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9488]
+
+[143201] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143201] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9487]
+
+[143202] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143202] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9486]
+
+[143203] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143203] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9485]
+
+[143204] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143204] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9484]
+
+[143205] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143205] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9483]
+
+[143206] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143206] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9482]
+
+[143206] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143206] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9481]
+
+[143207] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143207] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9480]
+
+[143208] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3217] sent[1]
+
+[143208] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9479]
+
+[143512] [CARROT] send get count id[pengg101] name[Humboldt] zoneSerial[3214] ip[25.10.8.62]
+
+[143512] [CARROT] open request id[pengg101] name[Humboldt] cached[-1] dbRequest[1]
+
+[143512] [CARROT] get count result id[pengg101] name[Humboldt] result[0] count[9479]
+
+[143523] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143523] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9478]
+
+[143524] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143524] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9477]
+
+[143525] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143525] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9476]
+
+[143525] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143525] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9475]
+
+[143526] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143526] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9474]
+
+[143527] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143527] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9473]
+
+[143528] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143528] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9472]
+
+[143529] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143529] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9471]
+
+[143530] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143530] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9470]
+
+[143531] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143531] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9469]
+
+[143532] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143532] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9468]
+
+[143533] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143533] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9467]
+
+[143534] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143534] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9466]
+
+[143535] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143535] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9465]
+
+[143536] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143536] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9464]
+
+[143536] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143536] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9463]
+
+[143537] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143537] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9462]
+
+[143538] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143538] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9461]
+
+[143539] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143539] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9460]
+
+[143539] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143539] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9459]
+
+[143540] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143540] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9458]
+
+[143541] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143541] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9457]
+
+[143542] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143542] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9456]
+
+[143543] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143543] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9455]
+
+[143543] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143543] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9454]
+
+[143544] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143544] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9453]
+
+[143617] [CARROT] send get count id[pengg101] name[Humboldt] zoneSerial[3214] ip[25.10.8.62]
+
+[143617] [CARROT] open request id[pengg101] name[Humboldt] cached[9453] dbRequest[1]
+
+[143617] [CARROT] get count result id[pengg101] name[Humboldt] result[0] count[9453]
+
+[143623] [CARROT] send get count id[pengg101] name[Humboldt] zoneSerial[3214] ip[25.10.8.62]
+
+[143623] [CARROT] open request id[pengg101] name[Humboldt] cached[9453] dbRequest[1]
+
+[143623] [CARROT] get count result id[pengg101] name[Humboldt] result[0] count[9453]
+
+[143626] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143626] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9452]
+
+[143627] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143627] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9451]
+
+[143627] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143627] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9450]
+
+[143628] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143628] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9449]
+
+[143629] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143629] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9448]
+
+[143630] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143630] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9447]
+
+[143631] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143631] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9446]
+
+[143631] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143632] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9445]
+
+[143632] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143632] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9444]
+
+[143633] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143633] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9443]
+
+[143634] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143634] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9442]
+
+[143634] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143634] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9441]
+
+[143635] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143635] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9440]
+
+[143636] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143636] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9439]
+
+[143636] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143636] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9438]
+
+[143637] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143637] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9437]
+
+[143638] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143638] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9436]
+
+[143639] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143639] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9435]
+
+[143641] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143641] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9434]
+
+[143642] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143642] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9433]
+
+[143643] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143643] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9432]
+
+[143644] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143644] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9431]
+
+[143645] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143645] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9430]
+
+[143647] [CARROT] send use id[pengg101] name[Humboldt] item[246] count[1] price[1] public[0] zoneSerial[3214] sent[1]
+
+[143647] [CARROT] use result id[pengg101] name[Humboldt] item[246] count[1] price[1] result[0] remain[9429]
+
+[144104] [CARROT] send get count id[pengg101] name[Humboldt] zoneSerial[3214] ip[25.10.8.62]
+
+[144104] [CARROT] open request id[pengg101] name[Humboldt] cached[-1] dbRequest[1]
+
+[144104] [CARROT] get count result id[pengg101] name[Humboldt] result[0] count[9429]
+
+[144116] [CARROT] send get count id[pengg101] name[Humboldt] zoneSerial[3214] ip[25.10.8.62]
+
+[144116] [CARROT] open request id[pengg101] name[Humboldt] cached[9429] dbRequest[1]
+
+[144116] [CARROT] get count result id[pengg101] name[Humboldt] result[0] count[9429]
+
+[144359] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3332] ip[25.1.80.156]
+
+[144359] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[144400] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[144543] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3425] ip[25.1.80.156]
+
+[144543] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[144543] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[145748] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3216] ip[25.1.80.156]
+
+[145748] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[145748] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[153033] Open addr  [0] = 25.1.80.156
+
+
+[153033] START WorkerThread[0] ...
+
+[153033] START WorkerThread[1] ...
+
+[153033] START AcceptLoop ...
+
+[153033] START WorkerThread[2] ...
+
+[153033] BCTHREAD START : [25.1.80.156] [56621]
+
+[153033] [type01] map count = 581 
+
+
+[153033] START AdditionThread ...
+
+[153033] START BCControlThread ...
+
+[153033] Send Ip = 25.1.80.156
+
+[153033] START WorldCtlThread ...
+
+[153033] 
+ Start Game Server ... day : 20260602 - time : 153033 
+
+
+[153033]  Request the list of provision ranking
+
+[153033]  Received provision ranking
+
+[153053] [CARROT] send get count id[omizu1] name[Ç®êÖwiz] zoneSerial[3213] ip[25.1.80.156]
+
+[153053] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[-1] dbRequest[1]
+
+[153053] [CARROT] get count result id[omizu1] name[Ç®êÖwiz] result[0] count[9999]
+
+[190827] Open addr  [0] = 25.1.80.156
+
+
+[190827] START WorkerThread[0] ...
+
+[190827] START WorkerThread[2] ...
+
+[190827] START AcceptLoop ...
+
+[190827] START WorkerThread[1] ...
+
+[190829] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[190829] [type01] map count = 835 
+
+
+[190829] START BCControlThread ...
+
+[190829] Send Ip = 25.1.80.156
+
+[190829] START WorldCtlThread ...
+
+[190829] 
+ Start Game Server ... day : 20260602 - time : 190829 
+
+
+[190829] START AdditionThread ...
+
+[190829]  Request the list of provision ranking
+
+[190829]  Received provision ranking
+
+[190839] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[190849] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[190859] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[190909] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[190919] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[190929] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[190938] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[190948] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[190958] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191008] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191018] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191028] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191037] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191047] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191057] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191107] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191117] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191127] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191136] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191146] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191156] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191206] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191216] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191226] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191235] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191245] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191255] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191305] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191315] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191325] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191335] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191344] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[191352] RECONNECT : [25.1.80.156] [56621]
+
+[191432] Open addr  [0] = 25.1.80.156
+
+
+[191432] START WorkerThread[0] ...
+
+[191432] START WorkerThread[2] ...
+
+[191432] START WorkerThread[1] ...
+
+[191432] START AcceptLoop ...
+
+[191432] BCTHREAD START : [25.1.80.156] [56621]
+
+[191432] [type01] map count = 835 
+
+
+[191432] START AdditionThread ...
+
+[191432] Send Ip = 25.1.80.156
+
+[191432] START WorldCtlThread ...
+
+[191432] 
+ Start Game Server ... day : 20260602 - time : 191432 
+
+
+[191432] START BCControlThread ...
+
+[191432]  Request the list of provision ranking
+
+[191432]  Received provision ranking
+
+[192809]  [omizu1 (Ç®êÖwiz)] is waste. state[1] 
+
+[192809] ERROR acceptUserCount[0] =-1 
+
+[193508] [CARROT] open request id[pengg101] name[Rockhopper] cached[0] dbRequest[0]
+
+[193949] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[0] dbRequest[0]
+
+[194827] [CARROT] open request id[pengg101] name[Rockhopper] cached[0] dbRequest[0]
+
+[194840] [CARROT] open request id[pengg101] name[Rockhopper] cached[0] dbRequest[0]
+
+[194947] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[0] dbRequest[0]
+
+[195359] Open addr  [0] = 25.1.80.156
+
+
+[195359] START WorkerThread[0] ...
+
+[195359] START WorkerThread[1] ...
+
+[195359] START WorkerThread[2] ...
+
+[195359] START AcceptLoop ...
+
+[195359] BCTHREAD START : [25.1.80.156] [56621]
+
+[195359] [type01] map count = 835 
+
+
+[195359] START AdditionThread ...
+
+[195359] START BCControlThread ...
+
+[195359] Send Ip = 25.1.80.156
+
+[195359] START WorldCtlThread ...
+
+[195359] 
+ Start Game Server ... day : 20260602 - time : 195359 
+
+
+[195359]  Request the list of provision ranking
+
+[195359]  Received provision ranking
+
+[195406] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[0] dbRequest[0]
+
+[195934] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[0] dbRequest[0]
+
+[200621] Open addr  [0] = 25.1.80.156
+
+
+[200621] START AcceptLoop ...
+
+[200621] START WorkerThread[0] ...
+
+[200621] START WorkerThread[2] ...
+
+[200621] START WorkerThread[1] ...
+
+[200621] BCTHREAD START : [25.1.80.156] [56621]
+
+[200621] START AdditionThread ...
+
+[200621] [type01] map count = 835 
+
+
+[200621] START BCControlThread ...
+
+[200621] Send Ip = 25.1.80.156
+
+[200621] START WorldCtlThread ...
+
+[200621] 
+ Start Game Server ... day : 20260602 - time : 200621 
+
+
+[200621]  Request the list of provision ranking
+
+[200621]  Received provision ranking
+
+[200638] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[0] dbRequest[0]
+
+[200654] [CARROT] open request id[pengg101] name[Rockhopper] cached[0] dbRequest[0]
+
+[201258] [CARROT] open request id[omizu1] name[Ç®êÖwiz] cached[0] dbRequest[0]
+
+[201324] [CARROT] open request id[pengg101] name[Rockhopper] cached[0] dbRequest[0]
+
+[202641] [CARROT] open request id[pengg101] name[Emperor] cached[0] dbRequest[0]
+
+[204605] [CARROT] open request id[pengg101] name[Emperor] cached[0] dbRequest[0]
+
+[204610] [CARROT] send use id[pengg101] name[Emperor] item[246] count[1] price[1] public[0] zoneSerial[3603] sent[1]
+
+[204610] [CARROT] use result id[pengg101] name[Emperor] item[246] count[1] price[1] result[0] remain[9428]
+
+[204621] [CARROT] open request id[pengg101] name[Emperor] cached[9428] dbRequest[0]
+
+[205109] [CARROT] open request id[pengg101] name[Emperor] cached[9428] dbRequest[0]
+

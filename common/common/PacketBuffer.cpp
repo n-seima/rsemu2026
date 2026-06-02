@@ -42,10 +42,10 @@ int	CPacketBuffer::ReSize(int _iLength)
 	
 	char * tmp = new char[oldLength];
 	if(!tmp)
-		return 0;	//	È¤½Ã ÀÖÀ»Áöµµ ¸ğ¸¦ µ¥ÀÌÅÍ°¡ ¼Õ½ÇµÇ¹Ç·Î ¹«È¿ 
+		return 0;	//	í˜¹ì‹œ ìˆì„ì§€ë„ ëª¨ë¥¼ ë°ì´í„°ê°€ ì†ì‹¤ë˜ë¯€ë¡œ ë¬´íš¨ 
 	if(m_pBuffer)
 	{
-		if(_iLength < m_iLength)	//	È¤½Ã ÀÖÀ»Áöµµ ¸ğ¸¦ µ¥ÀÌÅÍ°¡ ¼Õ½ÇµÇ¹Ç·Î ¹«È¿ 
+		if(_iLength < m_iLength)	//	í˜¹ì‹œ ìˆì„ì§€ë„ ëª¨ë¥¼ ë°ì´í„°ê°€ ì†ì‹¤ë˜ë¯€ë¡œ ë¬´íš¨ 
 			return 0;
 
 		if((m_iCurPos + m_iCurLength) >= oldLength)

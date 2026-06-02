@@ -17,16 +17,16 @@ typedef union
 {
 	struct 
 	{
-		DWORD	year		:	6;	//	¿¬
-		DWORD	month		:	4;	//	¿ù
-		DWORD	day			:	5;	//	ÀÏ
-		DWORD	hour		:	5;	//	½Ã
-		DWORD	minute		:	6;	//	ºĞ
-		DWORD	second		:	6;	//	ÃÊ
+		DWORD	year		:	6;	//	ì—°
+		DWORD	month		:	4;	//	ì›”
+		DWORD	day			:	5;	//	ì¼
+		DWORD	hour		:	5;	//	ì‹œ
+		DWORD	minute		:	6;	//	ë¶„
+		DWORD	second		:	6;	//	ì´ˆ
 	};
 
 	DWORD	m_dwValue;
-}	cpUTime;	//	±âÁ¸ÀÇ UTime°ú ¿Ïº®ÇÏ°Ô µ¿ÀÏÇÏ´Ù. ´ÜÁö, include ÇÏ´Â ÆÄÀÏÀ» ¾ø¾Ö±â À§ÇÔ.
+}	cpUTime;	//	ê¸°ì¡´ì˜ UTimeê³¼ ì™„ë²½í•˜ê²Œ ë™ì¼í•˜ë‹¤. ë‹¨ì§€, include í•˜ëŠ” íŒŒì¼ì„ ì—†ì• ê¸° ìœ„í•¨.
 
 struct	CM_COMPRESS;
 
@@ -46,52 +46,52 @@ public:
 	};
 
 	////////////////////////////////////////////////////////////////////
-	//	unicode °ü·Ã
-	static char m_pStrChar[1024];		//	°£´ÜÇÑ ÅØ½ºÆ® º¯¿ª¿ë
-	static wchar_t m_pStrWChar[1024];	//	°£´ÜÇÑ ÅØ½ºÆ® º¯¿ª¿ë
+	//	unicode ê´€ë ¨
+	static char m_pStrChar[1024];		//	ê°„ë‹¨í•œ í…ìŠ¤íŠ¸ ë³€ì—­ìš©
+	static wchar_t m_pStrWChar[1024];	//	ê°„ë‹¨í•œ í…ìŠ¤íŠ¸ ë³€ì—­ìš©
 	//	return value 
-	//	0 : Àß¸øµÈ µ¥ÀÌÅÍ°¡ ÀÔ·ÂµÇ°Å³ª, ÁÖ¾îÁø Æ÷ÀÎÅÍ°¡ Àß¸øµÇ¾ú´Ù.
-	//	>0 : º¯È¯µÈ »çÀÌÁî°¡ Àü´ŞµÈ´Ù.
+	//	0 : ì˜ëª»ëœ ë°ì´í„°ê°€ ì…ë ¥ë˜ê±°ë‚˜, ì£¼ì–´ì§„ í¬ì¸í„°ê°€ ì˜ëª»ë˜ì—ˆë‹¤.
+	//	>0 : ë³€í™˜ëœ ì‚¬ì´ì¦ˆê°€ ì „ë‹¬ëœë‹¤.
 	static const char * UnicodeToAscii(const wchar_t * _lpStr1,int opt = CP_ACP);
 	static const wchar_t * AsciiToUnicode(const char * _lpStr1,int opt = CP_ACP);
 	static int UnicodeToAscii(const wchar_t * _lpStr1,char * _lpStr2, int _size =0,int opt = CP_ACP);
 	static int AsciiToUnicode(char * _lpStr1,wchar_t * _lpStr2, int _size =0,int opt = CP_ACP);
-	//	unicode °ü·Ã
+	//	unicode ê´€ë ¨
 	////////////////////////////////////////////////////////////////////
 
 	//////////////////////////////////////////////////////////////////////////
-	//	IP °ü·Ã
-	static std::vector<std::string>	getIPFilterList(std::vector<std::string>& _filteringList);	//	ÁÖ¾îÁø Á¤º¸¸¦ Á¦¿ÜÇÑ IP¸®½ºÆ®¸¦ ³Ñ±ä´Ù.
+	//	IP ê´€ë ¨
+	static std::vector<std::string>	getIPFilterList(std::vector<std::string>& _filteringList);	//	ì£¼ì–´ì§„ ì •ë³´ë¥¼ ì œì™¸í•œ IPë¦¬ìŠ¤íŠ¸ë¥¼ ë„˜ê¸´ë‹¤.
 	static std::string getMyIp();
 	static std::string getMacAddressByAdapter(std::string _ipaddress);
 	//
 	//////////////////////////////////////////////////////////////////////////
 
 
-	static int	GetTime();//intÇüÀÇ YYYYMMDD
-	static int	GetNextTime();//intÇüÀÇ YYYYMMDD
-	static int	GetPrevTime();//intÇüÀÇ YYYYMMDD
-	static int	GetNextTime(int _istandardDate);//intÇüÀÇ YYYYMMDD
-	static int	GetPrevTime(int _istandardDate);//intÇüÀÇ YYYYMMDD
-	static int	GetMin();//intÇüÀÇ MIN
-	static int	GetHour();//intÇüÀÇ HOUR
-	static int	GetYear();//intÇüÀÇ YEAR , + 1900 ÇÊ¿äÇÏ¸é Á÷Á¢ ÇÒ °Í !!
-	static int	GetMonth();//intÇüÀÇ Month
-	static int	GetDay();//	intÇüÀÇ Day
-	static int	GetWeekDay();		//	 0 ~ 6 : 0 -> ÀÏ¿äÀÏ
+	static int	GetTime();//intí˜•ì˜ YYYYMMDD
+	static int	GetNextTime();//intí˜•ì˜ YYYYMMDD
+	static int	GetPrevTime();//intí˜•ì˜ YYYYMMDD
+	static int	GetNextTime(int _istandardDate);//intí˜•ì˜ YYYYMMDD
+	static int	GetPrevTime(int _istandardDate);//intí˜•ì˜ YYYYMMDD
+	static int	GetMin();//intí˜•ì˜ MIN
+	static int	GetHour();//intí˜•ì˜ HOUR
+	static int	GetYear();//intí˜•ì˜ YEAR , + 1900 í•„ìš”í•˜ë©´ ì§ì ‘ í•  ê²ƒ !!
+	static int	GetMonth();//intí˜•ì˜ Month
+	static int	GetDay();//	intí˜•ì˜ Day
+	static int	GetWeekDay();		//	 0 ~ 6 : 0 -> ì¼ìš”ì¼
 	static int	GetSec();
-	static int	GetTimes();			//	½Ã°£ + ºĞ + ÃÊ 
-	static void GetUTime(cpUTime *_pUTime,DWORD _sec =0);//ÇöÀç¸¦ UTime¿¡ ´ã¾Æ¼­ ¿Ã·Áº¸³½´Ù.
+	static int	GetTimes();			//	ì‹œê°„ + ë¶„ + ì´ˆ 
+	static void GetUTime(cpUTime *_pUTime,DWORD _sec =0);//í˜„ì¬ë¥¼ UTimeì— ë‹´ì•„ì„œ ì˜¬ë ¤ë³´ë‚¸ë‹¤.
 	static void GetMSSQLDBDateNTime(char * _date);//	yyyy-mm-dd hh:mm:ss
 	static void GetMSSQLDBDateNTime(char * _date, cpUTime *_pUTime);//	yyyy-mm-dd hh:mm:ss
-	static void getTimeToUTime(char *_pstrDate,cpUTime *_pUTime);//DB¿¡¼­ ¾ò¾î¿Â ³¯Â¥¸¦ UTimeÀ¸·Î º¯°æÇÑ´Ù.
+	static void getTimeToUTime(char *_pstrDate,cpUTime *_pUTime);//DBì—ì„œ ì–»ì–´ì˜¨ ë‚ ì§œë¥¼ UTimeìœ¼ë¡œ ë³€ê²½í•œë‹¤.
 
-	static int	CalcDayOnToday(int _yy,int _mm, int _dd/*, int _iReturnType = eDATECHECK_MIN*/);	//	¿À´Ã°ú ¸çÄ¥ Â÷ÀÌÀÏ±î?
-	static int	CalcTermToday(cpUTime _pUTime,int _iReturnType = eDATECHECK_MIN);	//	¿À´Ã°ú ¸çÄ¥ Â÷ÀÌÀÏ±î?
-	static unsigned int	CalcTermOfDayToDay(cpUTime _pPrevUTime, cpUTime _pUTime, int _iReturnType = eDATECHECK_MIN);//µÎ ³¯Â¥ÀÇ ½Ã°£Â÷¸¦ °è»êÇÑ´Ù.
+	static int	CalcDayOnToday(int _yy,int _mm, int _dd/*, int _iReturnType = eDATECHECK_MIN*/);	//	ì˜¤ëŠ˜ê³¼ ë©°ì¹  ì°¨ì´ì¼ê¹Œ?
+	static int	CalcTermToday(cpUTime _pUTime,int _iReturnType = eDATECHECK_MIN);	//	ì˜¤ëŠ˜ê³¼ ë©°ì¹  ì°¨ì´ì¼ê¹Œ?
+	static unsigned int	CalcTermOfDayToDay(cpUTime _pPrevUTime, cpUTime _pUTime, int _iReturnType = eDATECHECK_MIN);//ë‘ ë‚ ì§œì˜ ì‹œê°„ì°¨ë¥¼ ê³„ì‚°í•œë‹¤.
 	static int	CalcMin(int _a,int _b,int _isPlus, int * _Hour, int * _Week);
 	static int	CalcHour(int _a,int _b,int _isPlus, int * _Week);
-	static int	GetWeekDayOfaday(int _yy, int _mm, int _dd);	//	 0 ~ 6 : 0 -> ÀÏ¿äÀÏ
+	static int	GetWeekDayOfaday(int _yy, int _mm, int _dd);	//	 0 ~ 6 : 0 -> ì¼ìš”ì¼
 	static unsigned long GetHashCode(BYTE* _lpString);
 #ifdef	__USE_ZLIB
 	static WORD MakeCompressPacket(CM_COMPRESS *_lpCompPacket,void *_lpPacket,int _iPacketSize);

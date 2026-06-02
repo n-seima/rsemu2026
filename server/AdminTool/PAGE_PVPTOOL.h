@@ -56,7 +56,8 @@ protected:
 	//{{AFX_MSG(CPAGE_PVPTOOL)
 	virtual BOOL OnInitDialog();
 
-	afx_msg void OnClearWCGList(BOOL _bIsByAdd=FALSE);
+	void clearWCGList(BOOL _bIsByAdd=FALSE);
+	afx_msg void OnClearWCGList();
 	afx_msg void OnAddTeamList();
 	afx_msg void OnGetWCGList();
 

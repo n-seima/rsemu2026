@@ -1,0 +1,254 @@
+[222525] Open addr  [0] = 25.1.80.156,55661
+
+
+[222525] Start WorkerThread[0]...
+
+[222525] Start WorkerThread[6]...
+
+[222525] Start WorkerThread[7]...
+
+[222525] Start WorkerThread[2]...
+
+[222525] Start WorkerThread[4]...
+
+[222525] Start WorkerThread[5]...
+
+[222525] Start WorkerThread[3]...
+
+[222525] Start WorkerThread[1]...
+
+[222525] Start AcceptLoop ...
+
+[222525] Start Login Server ... day : 20260531 - time : 222525 
+
+
+[222525] START USERDBCtlThread
+
+[222525] START AdditionThread ...
+
+[222607] START connect world sock name = [LocalWorld(1)]
+
+[223023] LIL : id[omizu1] , login time [222919] , SPType [0X8002, 222919] , RPType [0X8702, 222919]
+
+[223023] Uncompotable User ... omizu1, why[Read = 0]
+
+[223212] LIL : id[toa16] , login time [223204] , SPType [0X8002, 223204] , RPType [0X8702, 223204]
+
+[223212] Uncompotable User ... toa16, why[Read = 0]
+
+[223344] LIL : id[toa16] , login time [223249] , SPType [0X8002, 223249] , RPType [0X8702, 223249]
+
+[223344] Uncompotable User ... toa16, why[Read = 0]
+
+[223452] LIL : id[omizu1] , login time [223104] , SPType [0X8002, 223104] , RPType [0X8702, 223104]
+
+[223452] Uncompotable User ... omizu1, why[Read = 0]
+
+[223627] LIL : id[omizu1] , login time [223455] , SPType [0X8002, 223455] , RPType [0X8702, 223455]
+
+[223627] Uncompotable User ... omizu1, why[Read = 0]
+
+[223642] LIL : id[omizu1] , login time [223630] , SPType [0X8002, 223630] , RPType [0X8702, 223630]
+
+[223642] Uncompotable User ... omizu1, why[Read = 0]
+
+[223742] LIL : id[omizu1] , login time [223647] , SPType [0X8002, 223647] , RPType [0X8702, 223647]
+
+[223742] Uncompotable User ... omizu1, why[Read = 0]
+
+[223901] Open addr  [0] = 25.1.80.156,55661
+
+
+[223901] Start WorkerThread[0]...
+
+[223901] Start WorkerThread[5]...
+
+[223901] Start WorkerThread[6]...
+
+[223901] Start WorkerThread[1]...
+
+[223901] Start WorkerThread[2]...
+
+[223901] Start WorkerThread[7]...
+
+[223901] Start WorkerThread[4]...
+
+[223901] Start WorkerThread[3]...
+
+[223901] Start AcceptLoop ...
+
+[223901] Start Login Server ... day : 20260531 - time : 223901 
+
+
+[223901] START USERDBCtlThread
+
+[223902] START AdditionThread ...
+
+[223926] START connect world sock name = [お水サーバー(1)]
+
+[223930] [omizu1] world [お水サーバ�]∏¶ √¿ª ºEæΩ¿œ.
+
+[223930] LIL : id[omizu1] , login time [223930] , SPType [0X1401, 223930] , RPType [0X1501, 223930]
+
+[223930] Uncompotable User ... omizu1, why[Error in dUL_RESULT_LOGIN2]
+
+[223930] SERROR : getqueue... user==NULL || !user->GetIsUsed() , dwIOCPKey = 0
+
+[223940] [omizu1] world [お水サーバ�]∏¶ √¿ª ºEæΩ¿œ.
+
+[223940] LIL : id[omizu1] , login time [223940] , SPType [0X1401, 223940] , RPType [0X1501, 223940]
+
+[223940] Uncompotable User ... omizu1, why[Error in dUL_RESULT_LOGIN2]
+
+[223940] SERROR : getqueue... user==NULL || !user->GetIsUsed() , dwIOCPKey = 0
+
+[224349] Open addr  [0] = 25.1.80.156,55661
+
+
+[224349] Start WorkerThread[2]...
+
+[224349] Start WorkerThread[5]...
+
+[224349] Start WorkerThread[0]...
+
+[224349] Start WorkerThread[4]...
+
+[224349] Start WorkerThread[1]...
+
+[224349] Start WorkerThread[6]...
+
+[224349] Start WorkerThread[3]...
+
+[224349] Start WorkerThread[7]...
+
+[224349] Start AcceptLoop ...
+
+[224349] Start Login Server ... day : 20260531 - time : 224349 
+
+
+[224349] START USERDBCtlThread
+
+[224349] START AdditionThread ...
+
+[224425] START connect world sock name = [お水サーバー(1)]
+
+[224433] [omizu1] world [お水サーバ�]∏¶ √¿ª ºEæΩ¿œ.
+
+[224433] LIL : id[omizu1] , login time [224433] , SPType [0X1401, 224433] , RPType [0X1501, 224433]
+
+[224433] Uncompotable User ... omizu1, why[Error in dUL_RESULT_LOGIN2]
+
+[224433] SERROR : getqueue... user==NULL || !user->GetIsUsed() , dwIOCPKey = 1
+
+[224512] [toa16] world [お水サーバ�]∏¶ √¿ª ºEæΩ¿œ.
+
+[224512] LIL : id[toa16] , login time [224512] , SPType [0X1401, 224512] , RPType [0X1501, 224512]
+
+[224512] Uncompotable User ... toa16, why[Error in dUL_RESULT_LOGIN2]
+
+[224512] SERROR : getqueue... user==NULL || !user->GetIsUsed() , dwIOCPKey = 0
+
+[224523] [toa16] world [お水サーバ�]∏¶ √¿ª ºEæΩ¿œ.
+
+[224523] LIL : id[toa16] , login time [224523] , SPType [0X1401, 224523] , RPType [0X1501, 224523]
+
+[224523] Uncompotable User ... toa16, why[Error in dUL_RESULT_LOGIN2]
+
+[224523] SERROR : getqueue... user==NULL || !user->GetIsUsed() , dwIOCPKey = 0
+
+[224607] [toa16] world [お水サーバ�]∏¶ √¿ª ºEæΩ¿œ.
+
+[224607] LIL : id[toa16] , login time [224607] , SPType [0X1401, 224607] , RPType [0X1501, 224607]
+
+[224607] Uncompotable User ... toa16, why[Error in dUL_RESULT_LOGIN2]
+
+[224607] SERROR : getqueue... user==NULL || !user->GetIsUsed() , dwIOCPKey = 1
+
+[224949] Open addr  [0] = 25.1.80.156,55661
+
+
+[224949] Start WorkerThread[0]...
+
+[224949] Start WorkerThread[6]...
+
+[224949] Start WorkerThread[5]...
+
+[224949] Start WorkerThread[7]...
+
+[224949] Start WorkerThread[4]...
+
+[224949] Start WorkerThread[2]...
+
+[224949] Start WorkerThread[3]...
+
+[224949] Start WorkerThread[1]...
+
+[224949] Start AcceptLoop ...
+
+[224949] START USERDBCtlThread
+
+[224949] Start Login Server ... day : 20260531 - time : 224949 
+
+
+[224950] START AdditionThread ...
+
+[225040] START connect world sock name = [�����T�[�o�[(1)]
+
+[225105] LIL : id[omizu1] , login time [225048] , SPType [0X8002, 225048] , RPType [0X8702, 225048]
+
+[225105] Uncompotable User ... omizu1, why[Read = 0]
+
+[225200] LIL : id[toa16] , login time [225155] , SPType [0X8002, 225155] , RPType [0X8702, 225155]
+
+[225200] Uncompotable User ... toa16, why[Read = 0]
+
+[231138] Open addr  [0] = 25.1.80.156,55661
+
+
+[231138] Start WorkerThread[2]...
+
+[231138] Start WorkerThread[0]...
+
+[231138] Start WorkerThread[6]...
+
+[231138] Start WorkerThread[5]...
+
+[231138] Start WorkerThread[3]...
+
+[231138] Start WorkerThread[7]...
+
+[231138] Start WorkerThread[1]...
+
+[231138] Start WorkerThread[4]...
+
+[231138] Start AcceptLoop ...
+
+[231138] Start Login Server ... day : 20260531 - time : 231138 
+
+
+[231138] START USERDBCtlThread
+
+[231138] START AdditionThread ...
+
+[231202] START connect world sock name = [�����T�[�o�[(1)]
+
+[231217] LIL : id[omizu1] , login time [231216] , SPType [0X8002, 231216] , RPType [0X8702, 231216]
+
+[231217] Uncompotable User ... omizu1, why[Read = 0]
+
+[231229] LIL : id[omizu1] , login time [231220] , SPType [0X8002, 231220] , RPType [0X8702, 231220]
+
+[231229] Uncompotable User ... omizu1, why[Read = 0]
+
+[231837] LIL : id[omizu1] , login time [231833] , SPType [0X8002, 231833] , RPType [0X8702, 231833]
+
+[231837] Uncompotable User ... omizu1, why[Read = 0]
+
+[231916] LIL : id[omizu1] , login time [231840] , SPType [0X8002, 231840] , RPType [0X8702, 231840]
+
+[231916] Uncompotable User ... omizu1, why[Read = 0]
+
+[232231] LIL : id[omizu1] , login time [231919] , SPType [0X8002, 231919] , RPType [0X8702, 231919]
+
+[232231] Uncompotable User ... omizu1, why[Read = 0]
+

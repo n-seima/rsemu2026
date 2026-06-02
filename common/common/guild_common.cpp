@@ -52,22 +52,22 @@ CGuildBaseInfo::reset()
 	m_wDrawCount					=	0;
 	m_wCancelCount					=	0;
 	m_wRelatedPlaceCount			=	c_iMinCountForRelatedPlaceOfGuiild;
-	m_iHonorPoint					=	0;					//	¸úØº Æ÷ÀÎÆ®
+	m_iHonorPoint					=	0;					//	ë«„æ›¼ í¬ì¸íŠ¸
 
 	m_wSetGuildTaxExpSettingDay		=	0;
 	m_wGuildInventorySize			=	dDEFAULT_GUILD_INVENTORY_SIZE;
 	m_timeBeginGuildMaster.m_dwValue=	0;
 
-	m_llGuildGold					=	0;					//	±æµE¼ÒÀ¯ ±İ¾×
+	m_llGuildGold					=	0;					//	ê¸¸ï¿½ÂEì†Œìœ  ê¸ˆì•¡
 	m_wBattle_VCC					=	0;
 	m_wBattle_VC					=	0;
 	m_wBattle_DC					=	0;
-	m_wBattle_CC					=	0;	//	¿¬½Â,½Â,ÆĞ,Äµ½½
+	m_wBattle_CC					=	0;	//	ì—°ìŠ¹,ìŠ¹,íŒ¨,ìº”ìŠ¬
 
-	memset(m_aiWithdrawGoldLimitPerDay,0,sizeof(m_aiWithdrawGoldLimitPerDay));			//	Á÷À§º° ÇÏ·ç¿¡ ²¨³¾ ¼EÀÖ´Â °ñµEÁ¦ÇÑ
-	memset(m_aWithdrawItemCountPerDay,0,sizeof(m_aWithdrawItemCountPerDay));			//	Á÷À§º° ÇÏ·ç¿¡ ²¨³¾ ¼EÀÖ´Â °ñµEÁ¦ÇÑ
-	memset(m_abInventorySize,0,sizeof(m_abInventorySize));			//	Á÷À§º° ÇÏ·ç¿¡ ²¨³¾ ¼EÀÖ´Â °ñµEÁ¦ÇÑ
-	memset(m_awGuildInventoryManagerVillage,0xff,sizeof(m_awGuildInventoryManagerVillage));			//	Á÷À§º° ÇÏ·ç¿¡ ²¨³¾ ¼EÀÖ´Â °ñµEÁ¦ÇÑ
+	memset(m_aiWithdrawGoldLimitPerDay,0,sizeof(m_aiWithdrawGoldLimitPerDay));			//	ì§ìœ„ë³„ í•˜ë£¨ì— êº¼ë‚¼ ï¿½ÂEìˆëŠ” ê³¨ï¿½ÂEì œí•œ
+	memset(m_aWithdrawItemCountPerDay,0,sizeof(m_aWithdrawItemCountPerDay));			//	ì§ìœ„ë³„ í•˜ë£¨ì— êº¼ë‚¼ ï¿½ÂEìˆëŠ” ê³¨ï¿½ÂEì œí•œ
+	memset(m_abInventorySize,0,sizeof(m_abInventorySize));			//	ì§ìœ„ë³„ í•˜ë£¨ì— êº¼ë‚¼ ï¿½ÂEìˆëŠ” ê³¨ï¿½ÂEì œí•œ
+	memset(m_awGuildInventoryManagerVillage,0xff,sizeof(m_awGuildInventoryManagerVillage));			//	ì§ìœ„ë³„ í•˜ë£¨ì— êº¼ë‚¼ ï¿½ÂEìˆëŠ” ê³¨ï¿½ÂEì œí•œ
 
 	m_guildMarkInfo.reset();
 
@@ -98,7 +98,7 @@ CGuildAdvanceInfo::reset()
 }
 
 BOOL
-CGuildAdvanceInfo::storeItem(int _iSlot,CItemDefine *_lpItem)	//	¾ÆÀÌÅÛ º¸°E
+CGuildAdvanceInfo::storeItem(int _iSlot,CItemDefine *_lpItem)	//	ì•„ì´í…œ ë³´ï¿½ÂE
 {
 	if	(m_aInventory[_iSlot].m_wBaseItem	!=	0xffff)
 		return	FALSE;
@@ -109,7 +109,7 @@ CGuildAdvanceInfo::storeItem(int _iSlot,CItemDefine *_lpItem)	//	¾ÆÀÌÅÛ º¸°E
 }
 
 BOOL
-CGuildAdvanceInfo::removeItem(int _iSlot,CItemDefine *_lpItem)	//	¾ÆÀÌÅÛ Á¦°Å
+CGuildAdvanceInfo::removeItem(int _iSlot,CItemDefine *_lpItem)	//	ì•„ì´í…œ ì œê±°
 {
 	if	(m_aInventory[_iSlot].m_wBaseItem	!=	_lpItem->m_wBaseItem)
 		return	FALSE;
@@ -122,7 +122,7 @@ CGuildAdvanceInfo::removeItem(int _iSlot,CItemDefine *_lpItem)	//	¾ÆÀÌÅÛ Á¦°Å
 }
 
 BOOL
-CGuildAdvanceInfo::storeGold(int _iGold)	//	°ñµEº¸°E
+CGuildAdvanceInfo::storeGold(int _iGold)	//	ê³¨ï¿½ÂEë³´ï¿½ÂE
 {
 	m_llGuildGold	+=	_iGold;
 
@@ -130,7 +130,7 @@ CGuildAdvanceInfo::storeGold(int _iGold)	//	°ñµEº¸°E
 }
 
 BOOL
-CGuildAdvanceInfo::removeGold(int _iGold)	//	°ñµEÁ¦°Å
+CGuildAdvanceInfo::removeGold(int _iGold)	//	ê³¨ï¿½ÂEì œê±°
 {
 	if	(m_llGuildGold	<	_iGold)
 		return	FALSE;
@@ -140,7 +140,7 @@ CGuildAdvanceInfo::removeGold(int _iGold)	//	°ñµEÁ¦°Å
 	return	TRUE;
 }
 
-//	¿¬°úİEÃß°¡
+//	ì—°ê³¼ï¿½ÂEì¶”ê°€
 BOOL
 CGuildAdvanceInfo::addRelatedPlace(int _iField,int _iPrice)
 {
@@ -189,7 +189,7 @@ CGuildAdvanceInfo::getRelatedPlaceCount()
 	return	dMAX_GUILD_VILLAGE_COUNT;
 }
 
-//	°¡ÁE¼EÀÖ´Â ¿¬°úİE°³¼E
+//	ê°€ï¿½ÂEï¿½ÂEìˆëŠ” ì—°ê³¼ï¿½ÂEê°œï¿½ÂE
 int
 CGuildAdvanceInfo::getMaxRelatedPlaceCount()
 {
@@ -197,7 +197,7 @@ CGuildAdvanceInfo::getMaxRelatedPlaceCount()
 }
 
 
-//	¿¬°úİEÁ¦°Å
+//	ì—°ê³¼ï¿½ÂEì œê±°
 BOOL
 CGuildAdvanceInfo::removeRelatedPlace(int _iField)
 {
@@ -220,9 +220,9 @@ CGuildAdvanceInfo::removeRelatedPlace(int _iField)
 	return	FALSE;
 }
 
-//JBC	¿ûÛµÀÚ Ä¿¸àµEÃß°¡ °EÃ 08-09-25
+//JBC	ì›æ»‚ì ì»¤ë©˜ï¿½ÂEì¶”ê°€ ï¿½ÂEï¿½ 08-09-25
 int
-CGuildAdvanceInfo::GetItemPlace(WORD _wBaseItem,DWORD _dwSerial)	//	¾ÆÀÌÅÛ À§Ä¡ Á¶»E
+CGuildAdvanceInfo::GetItemPlace(WORD _wBaseItem,DWORD _dwSerial)	//	ì•„ì´í…œ ìœ„ì¹˜ ì¡°ï¿½ÂE
 {
 	for (int i =0  ; i < c_iGuildInventorySize ; i++)
 	{
@@ -237,7 +237,7 @@ CGuildAdvanceInfo::GetItemPlace(WORD _wBaseItem,DWORD _dwSerial)	//	¾ÆÀÌÅÛ À§Ä¡ 
 }
 
 BOOL
-CGuildAdvanceInfo::changeItemPlace(int _iSlot1,int _iSlot2)	//	¾ÆÀÌÅÛ À§Ä¡ º¯°E
+CGuildAdvanceInfo::changeItemPlace(int _iSlot1,int _iSlot2)	//	ì•„ì´í…œ ìœ„ì¹˜ ë³€ï¿½ÂE
 {
 	CItemDefine	item;
 
@@ -280,37 +280,37 @@ CGuildAdvanceInfo::getCheckSum()
 {
 	int	iCheckSum	=	0,i;
 
-	iCheckSum	+=	m_wSetGuildTaxExpSettingDay;								//	¸¶Áö¸·À¸·Î ±æµE°æÇèÄ¡¿¡ °EÃ ¼¼ÆÃÀ» ¹Ù²Û³¯(µ¿ÀÏÇÑ ¿E³¯·Î ¼³Á¤µÇ¾EÀÖ´Ù¸Eº¯°EºÒ°¡´É.)
-//	iCheckSum	+=	m_wGuildInventorySize;										//	±æµEÀÎº¥Åä¸® »çÀÌÁE	
-//	iCheckSum	+=	m_wLevel;								//	±æµE·¹º§
-//	iCheckSum	+=	m_dwExp;								//	±æµE°æÇèÄ¡
-	iCheckSum	+=	m_iVictoryPoint;						//	±æµE½ÂÁ¡
+	iCheckSum	+=	m_wSetGuildTaxExpSettingDay;								//	ë§ˆì§€ë§‰ìœ¼ë¡œ ê¸¸ï¿½ÂEê²½í—˜ì¹˜ì— ï¿½ÂEï¿½ ì„¸íŒ…ì„ ë°”ê¾¼ë‚ (ë™ì¼í•œ ï¿½ÂEë‚ ë¡œ ì„¤ì •ë˜ï¿½ÂEìˆë‹¤ï¿½ÂEë³€ï¿½ÂEë¶ˆê°€ëŠ¥.)
+//	iCheckSum	+=	m_wGuildInventorySize;										//	ê¸¸ï¿½ÂEì¸ë²¤í† ë¦¬ ì‚¬ì´ï¿½ÂE	
+//	iCheckSum	+=	m_wLevel;								//	ê¸¸ï¿½ÂEë ˆë²¨
+//	iCheckSum	+=	m_dwExp;								//	ê¸¸ï¿½ÂEê²½í—˜ì¹˜
+	iCheckSum	+=	m_iVictoryPoint;						//	ê¸¸ï¿½ÂEìŠ¹ì 
 	iCheckSum	+=	m_wVictoryContinue;
 	iCheckSum	+=	m_wVictoryCount;
 	iCheckSum	+=	m_wDefeatCount;
 	iCheckSum	+=	m_wDrawCount;
 	iCheckSum	+=	m_wCancelCount;
 
-	iCheckSum	+=	(int)m_llGuildGold;								//	±æµE¼ÒÀ¯ ±İ¾×
-	iCheckSum	+=	m_wHallLevel;							//	±æµåÈ¦ ·¹º§
+	iCheckSum	+=	(int)m_llGuildGold;								//	ê¸¸ï¿½ÂEì†Œìœ  ê¸ˆì•¡
+	iCheckSum	+=	m_wHallLevel;							//	ê¸¸ë“œí™€ ë ˆë²¨
 //	iCheckSum	+=	m_wMaxMember;
-	iCheckSum	+=	m_wMemberCount;			//	ÃÖ´E±æµå¿E¼EÇöÀE±æµå¿E¼E//	iCheckSum	+=	m_wMaxSubMaster;
-	iCheckSum	+=	m_wSubMasterCount;		//	ÃÖ´E¼­ºE±æ¸¶ ¼EÇöÀE¼­ºE±æ¸¶ ¼E//	iCheckSum	+=	m_wMaxCongressMan;
-	iCheckSum	+=	m_wCongressManCount;	//	ÃÖ´E±æµEÀÇ¿E¼EÇöÀE¼­±æµEÀÇ¿E¼E	iCheckSum	+=	m_wIsGetGuildExp;
-	iCheckSum	+=	m_wExpTaxRate;			//	±æµE°æÇèÄ¡¸¦ °ÈÀ»°ÍÀÎ°¡? ±æµE°æÇèÄ¡ ¼¼À²-_-
+	iCheckSum	+=	m_wMemberCount;			//	ìµœï¿½ÂEê¸¸ë“œï¿½ÂEï¿½ÂEí˜„ï¿½ÂEê¸¸ë“œï¿½ÂEï¿½ÂE//	iCheckSum	+=	m_wMaxSubMaster;
+	iCheckSum	+=	m_wSubMasterCount;		//	ìµœï¿½ÂEì„œï¿½ÂEê¸¸ë§ˆ ï¿½ÂEí˜„ï¿½ÂEì„œï¿½ÂEê¸¸ë§ˆ ï¿½ÂE//	iCheckSum	+=	m_wMaxCongressMan;
+	iCheckSum	+=	m_wCongressManCount;	//	ìµœï¿½ÂEê¸¸ï¿½ÂEì˜ï¿½ÂEï¿½ÂEí˜„ï¿½ÂEì„œê¸¸ï¿½ÂEì˜ï¿½ÂEï¿½ÂE	iCheckSum	+=	m_wIsGetGuildExp;
+	iCheckSum	+=	m_wExpTaxRate;			//	ê¸¸ï¿½ÂEê²½í—˜ì¹˜ë¥¼ ê±·ì„ê²ƒì¸ê°€? ê¸¸ï¿½ÂEê²½í—˜ì¹˜ ì„¸ìœ¨-_-
 	iCheckSum	+=	m_wGuildPoint;
 	iCheckSum	+=	m_bf1SubMasterEnableBanish;
 	iCheckSum	+=	m_bf1IsPermitVisitor;
 	iCheckSum	+=	m_iHonorPoint;
 	iCheckSum	+=	m_bf2TryGuildPointBattleCountPerWeek;
-	iCheckSum	+=	m_bf5ThisWeekGuildBattleCount;	//	ÁÖ´E±æµåÀEÈ½¼EÁ¦ÇÑ
-	iCheckSum	+=	m_bf3ThisDayGuildBattleCount;	//	ÀÏ´E±æµåÀEÈ½¼EÁ¦ÇÑ
+	iCheckSum	+=	m_bf5ThisWeekGuildBattleCount;	//	ì£¼ï¿½ÂEê¸¸ë“œï¿½ÂEíšŸï¿½ÂEì œí•œ
+	iCheckSum	+=	m_bf3ThisDayGuildBattleCount;	//	ì¼ï¿½ÂEê¸¸ë“œï¿½ÂEíšŸï¿½ÂEì œí•œ
 	iCheckSum	+=	m_bf1IsUseGuildMasterGrace;
 
 	for (i=0;i<dMAX_GUILD_SKILL_COUNT;i++)
 		iCheckSum	+=	m_abGuildSkill[i];
 
-	iCheckSum	+=	GetHashCode(m_strName);			//	±æµEÀÌ¸§
+	iCheckSum	+=	GetHashCode(m_strName);			//	ê¸¸ï¿½ÂEì´ë¦„
 
 	return	iCheckSum;
 }
@@ -354,8 +354,8 @@ CGuildAdvanceInfo::getSaveData_Binary(CGuildSaveInfoForBinary * _lpData)
 	_lpData->m_wExpTaxRate = m_wExpTaxRate;
 	memcpy(_lpData->m_awGuildVillage,m_awGuildVillage,sizeof(WORD)*dMAX_GUILD_VILLAGE_COUNT);
 	_lpData->m_bf1SubMasterEnableBanish = m_bf1SubMasterEnableBanish;
-	_lpData->m_bf1IsPermitVisitor		=	m_bf1IsPermitVisitor;	//	±æµåÈ¦¿¡ µé¾ûÛÀ´Â°É Çã¿EÔ.
-	_lpData->m_bf2TryGuildPointBattleCountPerWeek	=	m_bf2TryGuildPointBattleCountPerWeek;	//	ÀÌ¹EÁÖ¿¡ ±æµEÆ÷ÀÎÆ®ÀE¡ µµÀEÑ È½¼E	_lpData->m_bf1IsTestSiegeWarfareGuild=	m_bf1IsTestSiegeWarfareGuild;	//	ÀÌ¹EÁÖ¿¡ ±æµEÆ÷ÀÎÆ®ÀE¡ µµÀEÑ È½¼E	_lpData->m_bf1IsTwinkle				=	m_bf1IsTwinkle;	//	ÀÌ¹EÁÖ¿¡ ±æµEÆ÷ÀÎÆ®ÀE¡ µµÀEÑ È½¼E
+	_lpData->m_bf1IsPermitVisitor		=	m_bf1IsPermitVisitor;	//	ê¸¸ë“œí™€ì— ë“¤ì—‰é‚¦ëŠ”ê±¸ í—ˆï¿½ÂEï¿½.
+	_lpData->m_bf2TryGuildPointBattleCountPerWeek	=	m_bf2TryGuildPointBattleCountPerWeek;	//	ì´ï¿½ÂEì£¼ì— ê¸¸ï¿½ÂEí¬ì¸íŠ¸ï¿½ÂEï¿½ ë„ï¿½ÂEï¿½ íšŸï¿½ÂE	_lpData->m_bf1IsTestSiegeWarfareGuild=	m_bf1IsTestSiegeWarfareGuild;	//	ì´ï¿½ÂEì£¼ì— ê¸¸ï¿½ÂEí¬ì¸íŠ¸ï¿½ÂEï¿½ ë„ï¿½ÂEï¿½ íšŸï¿½ÂE	_lpData->m_bf1IsTwinkle				=	m_bf1IsTwinkle;	//	ì´ï¿½ÂEì£¼ì— ê¸¸ï¿½ÂEí¬ì¸íŠ¸ï¿½ÂEï¿½ ë„ï¿½ÂEï¿½ íšŸï¿½ÂE
 	_lpData->m_bf3GuildGoodwillForRoen	=	m_bf3GuildGoodwillForRoen;
 	//_lpData->m_bf3GuildDungeonPlayTime=	m_bf3GuildDungeonPlayTime;
 	_lpData->m_bf1IsUseGuildMasterGrace	=	m_bf1IsUseGuildMasterGrace;
@@ -364,8 +364,8 @@ CGuildAdvanceInfo::getSaveData_Binary(CGuildSaveInfoForBinary * _lpData)
 	_lpData->m_bf4LastGVGBattleMonth	=	m_bf4LastGVGBattleMonth;
 	_lpData->m_bf5LastGVGBattleDay		=	m_bf5LastGVGBattleDay;
 
-	_lpData->m_bf5ThisWeekGuildBattleCount	=	m_bf5ThisWeekGuildBattleCount;	//	ÁÖ´E±æµåÀEÈ½¼EÁ¦ÇÑ
-	_lpData->m_bf3ThisDayGuildBattleCount	=	m_bf3ThisDayGuildBattleCount;	//	ÀÏ´E±æµåÀEÈ½¼EÁ¦ÇÑ
+	_lpData->m_bf5ThisWeekGuildBattleCount	=	m_bf5ThisWeekGuildBattleCount;	//	ì£¼ï¿½ÂEê¸¸ë“œï¿½ÂEíšŸï¿½ÂEì œí•œ
+	_lpData->m_bf3ThisDayGuildBattleCount	=	m_bf3ThisDayGuildBattleCount;	//	ì¼ï¿½ÂEê¸¸ë“œï¿½ÂEíšŸï¿½ÂEì œí•œ
 
 	_lpData->m_bf6BonusGuildPoint			=	m_bf6BonusGuildPoint;
 	_lpData->m_bf6PeneltyBonusGuildPoint	=	m_bf6PeneltyBonusGuildPoint;
@@ -493,8 +493,8 @@ CGuildAdvanceInfo::setSaveData_Binary(CGuildSaveInfoForBinary * _lpData)
 	m_bf6LastGVGBattleYear		= _lpData->m_bf6LastGVGBattleYear;
 	m_bf4LastGVGBattleMonth		= _lpData->m_bf4LastGVGBattleMonth;
 	m_bf5LastGVGBattleDay		= _lpData->m_bf5LastGVGBattleDay;
-	m_bf5ThisWeekGuildBattleCount=	_lpData->m_bf5ThisWeekGuildBattleCount;	//	ÁÖ´E±æµåÀEÈ½¼EÁ¦ÇÑ
-	m_bf3ThisDayGuildBattleCount=	_lpData->m_bf3ThisDayGuildBattleCount;	//	ÀÏ´E±æµåÀEÈ½¼EÁ¦ÇÑ
+	m_bf5ThisWeekGuildBattleCount=	_lpData->m_bf5ThisWeekGuildBattleCount;	//	ì£¼ï¿½ÂEê¸¸ë“œï¿½ÂEíšŸï¿½ÂEì œí•œ
+	m_bf3ThisDayGuildBattleCount=	_lpData->m_bf3ThisDayGuildBattleCount;	//	ì¼ï¿½ÂEê¸¸ë“œï¿½ÂEíšŸï¿½ÂEì œí•œ
 
 	if(TimeInfo.wYear == 2009 && TimeInfo.wMonth == 4 && TimeInfo.wDay == 29 && TimeInfo.wHour <= 19)
 	{
@@ -505,8 +505,8 @@ CGuildAdvanceInfo::setSaveData_Binary(CGuildSaveInfoForBinary * _lpData)
 	memcpy(m_awGuildVillage,_lpData->m_awGuildVillage,sizeof(WORD)*dMAX_GUILD_VILLAGE_COUNT);
 
 	m_bf1SubMasterEnableBanish = _lpData->m_bf1SubMasterEnableBanish;
-	m_bf1IsPermitVisitor					= _lpData->m_bf1IsPermitVisitor;	//	±æµåÈ¦¿¡ µé¾ûÛÀ´Â°É Çã¿EÔ.
-	m_bf2TryGuildPointBattleCountPerWeek	= _lpData->m_bf2TryGuildPointBattleCountPerWeek;	//	ÀÌ¹EÁÖ¿¡ ±æµEÆ÷ÀÎÆ®ÀE¡ µµÀEÑ È½¼E	m_bf1IsTestSiegeWarfareGuild			= _lpData->m_bf1IsTestSiegeWarfareGuild;	//	ÀÌ¹EÁÖ¿¡ ±æµEÆ÷ÀÎÆ®ÀE¡ µµÀEÑ È½¼E	m_bf1IsTwinkle							= _lpData->m_bf1IsTwinkle;	//	ÀÌ¹EÁÖ¿¡ ±æµEÆ÷ÀÎÆ®ÀE¡ µµÀEÑ È½¼E
+	m_bf1IsPermitVisitor					= _lpData->m_bf1IsPermitVisitor;	//	ê¸¸ë“œí™€ì— ë“¤ì—‰é‚¦ëŠ”ê±¸ í—ˆï¿½ÂEï¿½.
+	m_bf2TryGuildPointBattleCountPerWeek	= _lpData->m_bf2TryGuildPointBattleCountPerWeek;	//	ì´ï¿½ÂEì£¼ì— ê¸¸ï¿½ÂEí¬ì¸íŠ¸ï¿½ÂEï¿½ ë„ï¿½ÂEï¿½ íšŸï¿½ÂE	m_bf1IsTestSiegeWarfareGuild			= _lpData->m_bf1IsTestSiegeWarfareGuild;	//	ì´ï¿½ÂEì£¼ì— ê¸¸ï¿½ÂEí¬ì¸íŠ¸ï¿½ÂEï¿½ ë„ï¿½ÂEï¿½ íšŸï¿½ÂE	m_bf1IsTwinkle							= _lpData->m_bf1IsTwinkle;	//	ì´ï¿½ÂEì£¼ì— ê¸¸ï¿½ÂEí¬ì¸íŠ¸ï¿½ÂEï¿½ ë„ï¿½ÂEï¿½ íšŸï¿½ÂE
 
 	m_wRelatedPlaceCount = _lpData->m_wRelatedPlaceCount;
 	memcpy(m_wFightGuild,_lpData->m_wFightGuild,sizeof(WORD)*dMAX_FIGHT_ATWEEK);
@@ -517,7 +517,7 @@ CGuildAdvanceInfo::setSaveData_Binary(CGuildSaveInfoForBinary * _lpData)
 	m_wGuildInventorySize = _lpData->m_wGuildInventorySize;
 	m_timeBeginGuildMaster.m_dwValue = _lpData->m_timeBeginGuildMaster.m_dwValue;
 	m_timeLastConnectedMasterTime.m_dwValue = _lpData->m_timeLastConnectedMasterTime.m_dwValue;
-	//	ÃÊ±â°ª..
+	//	ì´ˆê¸°ê°’..
 	m_wMemberCount		= 0;
 	m_wSubMasterCount	= 0;
 	m_wCongressManCount = 0;
@@ -589,32 +589,32 @@ CGuildAdvanceInfo::setSaveData_Structure(CGuildSaveInfoStructure * _lpData)
 // {
 // 	reset();
 // 	
-// 	memcpy(m_strName,_lpOldData->m_strName,sizeof(m_strName));	//	±æµEÀÌ¸§
+// 	memcpy(m_strName,_lpOldData->m_strName,sizeof(m_strName));	//	ê¸¸ï¿½ÂEì´ë¦„
 // 	
-// 	m_wSerial			=	_lpOldData->m_wSerial;					//	±æµE°úÜ¯ ½Ã¸®¾E// 	m_wLevel			=	_lpOldData->m_wLevel;				//	±æµE·¹º§
-// 	m_dwExp				=	_lpOldData->m_dwExp;				//	±æµE°æÇèÄ¡
-// 	m_iVictoryPoint		=	_lpOldData->m_iVictoryPoint;		//	±æµE½ÂÁ¡
+// 	m_wSerial			=	_lpOldData->m_wSerial;					//	ê¸¸ï¿½ÂEê³¼é¼ˆ ì‹œë¦¬ï¿½ÂE// 	m_wLevel			=	_lpOldData->m_wLevel;				//	ê¸¸ï¿½ÂEë ˆë²¨
+// 	m_dwExp				=	_lpOldData->m_dwExp;				//	ê¸¸ï¿½ÂEê²½í—˜ì¹˜
+// 	m_iVictoryPoint		=	_lpOldData->m_iVictoryPoint;		//	ê¸¸ï¿½ÂEìŠ¹ì 
 // 	m_wVictoryContinue	=	_lpOldData->m_wVictoryContinue;
 // 	m_wVictoryCount		=	_lpOldData->m_wVictoryCount;
 // 	m_wDefeatCount		=	_lpOldData->m_wDefeatCount;
 // 	m_wDrawCount		=	_lpOldData->m_wDrawCount;
 // 	m_wCancelCount		=	_lpOldData->m_wCancelCount;
 // 
-// 	//	±æµåÈ¦·¹º§À» Á¤ÇÏ´Âµ¥ °E©. 15ÀÏ¿¡ ÇÑ¹ø¾¿ Á¤¸®µÈ´Ù.
-// 	m_wHallLevel		=	_lpOldData->m_wHallLevel;							//	±æµåÈ¦ ·¹º§
+// 	//	ê¸¸ë“œí™€ë ˆë²¨ì„ ì •í•˜ëŠ”ë° ï¿½ÂEï¿½. 15ì¼ì— í•œë²ˆì”© ì •ë¦¬ëœë‹¤.
+// 	m_wHallLevel		=	_lpOldData->m_wHallLevel;							//	ê¸¸ë“œí™€ ë ˆë²¨
 // 	m_wMaxMember		=	_lpOldData->m_wMaxMember;
-// 	m_wMemberCount		=	_lpOldData->m_wMemberCount;			//	ÃÖ´E±æµå¿E¼EÇöÀE±æµå¿E¼E// 	m_wMaxSubMaster		=	_lpOldData->m_wMaxSubMaster;
-// 	m_wSubMasterCount	=	_lpOldData->m_wSubMasterCount;		//	ÃÖ´E¼­ºE±æ¸¶ ¼EÇöÀE¼­ºE±æ¸¶ ¼E// 	m_wMaxCongressMan	=	_lpOldData->m_wMaxCongressMan;
-// 	m_wCongressManCount	=	_lpOldData->m_wCongressManCount;	//	ÃÖ´E±æµEÀÇ¿E¼EÇöÀE¼­±æµEÀÇ¿E¼E// 	m_wIsGetGuildExp	=	_lpOldData->m_wIsGetGuildExp;
-// 	m_wExpTaxRate		=	_lpOldData->m_wExpTaxRate;			//	±æµE°æÇèÄ¡¸¦ °ÈÀ»°ÍÀÎ°¡? ±æµE°æÇèÄ¡ ¼¼À²-_-
+// 	m_wMemberCount		=	_lpOldData->m_wMemberCount;			//	ìµœï¿½ÂEê¸¸ë“œï¿½ÂEï¿½ÂEí˜„ï¿½ÂEê¸¸ë“œï¿½ÂEï¿½ÂE// 	m_wMaxSubMaster		=	_lpOldData->m_wMaxSubMaster;
+// 	m_wSubMasterCount	=	_lpOldData->m_wSubMasterCount;		//	ìµœï¿½ÂEì„œï¿½ÂEê¸¸ë§ˆ ï¿½ÂEí˜„ï¿½ÂEì„œï¿½ÂEê¸¸ë§ˆ ï¿½ÂE// 	m_wMaxCongressMan	=	_lpOldData->m_wMaxCongressMan;
+// 	m_wCongressManCount	=	_lpOldData->m_wCongressManCount;	//	ìµœï¿½ÂEê¸¸ï¿½ÂEì˜ï¿½ÂEï¿½ÂEí˜„ï¿½ÂEì„œê¸¸ï¿½ÂEì˜ï¿½ÂEï¿½ÂE// 	m_wIsGetGuildExp	=	_lpOldData->m_wIsGetGuildExp;
+// 	m_wExpTaxRate		=	_lpOldData->m_wExpTaxRate;			//	ê¸¸ï¿½ÂEê²½í—˜ì¹˜ë¥¼ ê±·ì„ê²ƒì¸ê°€? ê¸¸ï¿½ÂEê²½í—˜ì¹˜ ì„¸ìœ¨-_-
 // 	m_wGuildPoint		=	_lpOldData->m_wGuildPoint;
 // 	m_bf1IsTestSiegeWarfareGuild	=	FALSE;
-// 	m_bf1IsTwinkle		=	FALSE;	//	ÀÌ¹EÁÖ¿¡ ±æµEÆ÷ÀÎÆ®ÀE¡ µµÀEÑ È½¼E
+// 	m_bf1IsTwinkle		=	FALSE;	//	ì´ï¿½ÂEì£¼ì— ê¸¸ï¿½ÂEí¬ì¸íŠ¸ï¿½ÂEï¿½ ë„ï¿½ÂEï¿½ íšŸï¿½ÂE
 // 
-// 	memset(m_aiWithdrawGoldLimitPerDay,0,sizeof(m_aiWithdrawGoldLimitPerDay));			//	Á÷À§º° ÇÏ·ç¿¡ ²¨³¾ ¼EÀÖ´Â °ñµEÁ¦ÇÑ
-// 	memset(m_aWithdrawItemCountPerDay,0,sizeof(m_aWithdrawItemCountPerDay));			//	Á÷À§º° ÇÏ·ç¿¡ ²¨³¾ ¼EÀÖ´Â °ñµEÁ¦ÇÑ
-// 	m_bChangeInventorySettingAdmin;			//	ÀÎº¥Åä¸® ¼¼ÆÃ º¯°E°¡´ÉÇÑ µûÍŞ
-// 	memset(m_abInventorySize,0,sizeof(m_abInventorySize));	//	±æµEÃ¢°EºĞÁ¡ÀÌ ÀÖ´Â ¸¶¿E// 	memset(m_awGuildInventoryManagerVillage,0xff,sizeof(m_awGuildInventoryManagerVillage));	//	±æµEÃ¢°EºĞÁ¡ÀÌ ÀÖ´Â ¸¶¿E// 	
+// 	memset(m_aiWithdrawGoldLimitPerDay,0,sizeof(m_aiWithdrawGoldLimitPerDay));			//	ì§ìœ„ë³„ í•˜ë£¨ì— êº¼ë‚¼ ï¿½ÂEìˆëŠ” ê³¨ï¿½ÂEì œí•œ
+// 	memset(m_aWithdrawItemCountPerDay,0,sizeof(m_aWithdrawItemCountPerDay));			//	ì§ìœ„ë³„ í•˜ë£¨ì— êº¼ë‚¼ ï¿½ÂEìˆëŠ” ê³¨ï¿½ÂEì œí•œ
+// 	m_bChangeInventorySettingAdmin;			//	ì¸ë²¤í† ë¦¬ ì„¸íŒ… ë³€ï¿½ÂEê°€ëŠ¥í•œ ë”°å¤
+// 	memset(m_abInventorySize,0,sizeof(m_abInventorySize));	//	ê¸¸ï¿½ÂEì°½ï¿½ÂEë¶„ì ì´ ìˆëŠ” ë§ˆï¿½ÂE// 	memset(m_awGuildInventoryManagerVillage,0xff,sizeof(m_awGuildInventoryManagerVillage));	//	ê¸¸ï¿½ÂEì°½ï¿½ÂEë¶„ì ì´ ìˆëŠ” ë§ˆï¿½ÂE// 	
 // 	memcpy(&m_guildMarkInfo,&_lpOldData->m_guildMarkInfo,sizeof(m_guildMarkInfo));
 // 	memcpy(m_strNotice,_lpOldData->m_strNotice,sizeof(m_strNotice));
 // 	memcpy(m_strMasterName,_lpOldData->m_strMasterName,sizeof(m_strMasterName));
@@ -647,15 +647,15 @@ CGuildAdvanceInfo::setSaveData_Structure(CGuildSaveInfoStructure * _lpData)
 // 	m_wSetGuildTaxExpSettingDay	=	_lpOldData->m_wSetGuildTaxExpSettingDay;
 // 	m_wGuildInventorySize		=	_lpOldData->m_wGuildInventorySize;
 // 
-// 	m_wGuildHallShape			=	0;				//	±æµåÈ¦ ¸ğ¾ç[Ãß°¡µÊ]
-// 	m_wGuildInventorySize		=	0;			//	±æµEÀÎº¥Åä¸® »çÀÌÁûwÀÌÀEE°°À½]
-// 	m_llGuildGold				=	0;					//	±æµE¼ÒÀ¯ ±İ¾×[Ãß°¡µÊ]
+// 	m_wGuildHallShape			=	0;				//	ê¸¸ë“œí™€ ëª¨ì–‘[ì¶”ê°€ë¨]
+// 	m_wGuildInventorySize		=	0;			//	ê¸¸ï¿½ÂEì¸ë²¤í† ë¦¬ ì‚¬ì´ì§Šwì´ï¿½ÂEÂEê°™ìŒ]
+// 	m_llGuildGold				=	0;					//	ê¸¸ï¿½ÂEì†Œìœ  ê¸ˆì•¡[ì¶”ê°€ë¨]
 // 	m_iHonorPoint				=	0;
 // 
 // 	m_wBattle_VCC				=	0;
 // 	m_wBattle_VC				=	0;
 // 	m_wBattle_DC				=	0;
-// 	m_wBattle_CC				=	0;	//	¿¬½Â,½Â,ÆĞ,Äµ½½[Ãß°¡µÊ]
+// 	m_wBattle_CC				=	0;	//	ì—°ìŠ¹,ìŠ¹,íŒ¨,ìº”ìŠ¬[ì¶”ê°€ë¨]
 // 	m_wGuildHallShape			=	0xffff;
 // 	m_bf2TryGuildPointBattleCountPerWeek	=	0;
 // 	m_bf1IsPermitVisitor					=	TRUE;
@@ -670,9 +670,9 @@ CGuildAdvanceInfo::setSaveData_Structure(CGuildSaveInfoStructure * _lpData)
 // 	memset(m_aAllienceGuild,0xff,sizeof(WORD)*dMAX_ALLIENCE_GUILD_COUNT);
 // 	memset(m_aEnemyGuild,0xff,sizeof(WORD)*dMAX_ENEMY_GUILD_COUNT);
 // 
-// 	memset(m_awGuildBank,0xff,sizeof(m_awGuildBank));	//	±æµEÀºÇà[Ãß°¡µÊ]
-// 	memcpy(&m_timeLastConnectedMasterTime,&_lpOldData->m_timeLastConnectedMasterTime,sizeof(m_timeLastConnectedMasterTime));			//	±æµE¸¶½ºÅÍ ÃEÓ ½Ã°£
-// 	memcpy(&m_timeBeginGuildMaster,&_lpOldData->m_timeBeginGuildMaster,sizeof(m_timeBeginGuildMaster));			//	±æµE¸¶½ºÅÍ ÃEÓ ½Ã°£
+// 	memset(m_awGuildBank,0xff,sizeof(m_awGuildBank));	//	ê¸¸ï¿½ÂEì€í–‰[ì¶”ê°€ë¨]
+// 	memcpy(&m_timeLastConnectedMasterTime,&_lpOldData->m_timeLastConnectedMasterTime,sizeof(m_timeLastConnectedMasterTime));			//	ê¸¸ï¿½ÂEë§ˆìŠ¤í„° ï¿½ÂEï¿½ ì‹œê°„
+// 	memcpy(&m_timeBeginGuildMaster,&_lpOldData->m_timeBeginGuildMaster,sizeof(m_timeBeginGuildMaster));			//	ê¸¸ï¿½ÂEë§ˆìŠ¤í„° ï¿½ÂEï¿½ ì‹œê°„
 // }
 
 CGuildBattleInfoForMember::CGuildBattleInfoForMember()

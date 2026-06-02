@@ -1,0 +1,201 @@
+[223749] Start WorkerThread[0]...
+
+[223749] Start WorkerThread[2]...
+
+[223749] Start WorkerThread[1]...
+
+[223749] Start WorkerThread[5]...
+
+[223749] Start WorkerThread[6]...
+
+[223749] Start WorkerThread[4]...
+
+[223749] Start WorkerThread[3]...
+
+[223749] Start WorkerThread[7]...
+
+[223749] Start USERDBCtlThread ... 
+
+[223749] g_MaxUserCount = 2000
+
+[223749] Start AcceptLoop ...
+
+[223749] Start WORLD Server ... day  - Not Ready 
+
+[223749] Start DBCtlThread ... 
+
+[223749] Start AdditionThread ... 
+
+[223753]  isReady = 1 
+
+[223753]  Request Guild Infomation of Sql DB ... 
+
+[223753]  Recv Guild Info ....  Complete ............
+
+[223753]  isReady = 2 
+
+[223940] Start WorkerThread[0]...
+
+[223940] Start WorkerThread[6]...
+
+[223940] Start WorkerThread[2]...
+
+[223940] Start WorkerThread[1]...
+
+[223940] Start WorkerThread[5]...
+
+[223940] Start WorkerThread[3]...
+
+[223940] Start WorkerThread[4]...
+
+[223940] Start WorkerThread[7]...
+
+[223940] Start USERDBCtlThread ... 
+
+[223940] Start AcceptLoop ...
+
+[223940] g_MaxUserCount = 2000
+
+[223940] Start WORLD Server ... day  - Not Ready 
+
+[223940] Start DBCtlThread ... 
+
+[223941] Start AdditionThread ... 
+
+[223944]  isReady = 1 
+
+[223944]  Request Guild Infomation of Sql DB ... 
+
+[223944]  Recv Guild Info ....  Complete ............
+
+[223944]  isReady = 2 
+
+[231534] Fail bind !!
+
+
+[231534] Error InitSocket 
+
+
+[231554] Fail bind !!
+
+
+[231554] Error InitSocket 
+
+
+[231616] Start WorkerThread[0]...
+
+[231616] Start WorkerThread[5]...
+
+[231616] Start WorkerThread[3]...
+
+[231616] Start WorkerThread[7]...
+
+[231616] Start WorkerThread[2]...
+
+[231616] Start WorkerThread[1]...
+
+[231616] Start WorkerThread[4]...
+
+[231616] Start WorkerThread[6]...
+
+[231616] Start USERDBCtlThread ... 
+
+[231616] g_MaxUserCount = 2000
+
+[231616] Start AcceptLoop ...
+
+[231616] Start WORLD Server ... day  - Not Ready 
+
+[231616] Start DBCtlThread ... 
+
+[231616] Start AdditionThread ... 
+
+[231620]  isReady = 1 
+
+[231620]  Request Guild Infomation of Sql DB ... 
+
+[231620]  Recv Guild Info ....  Complete ............
+
+[231620]  isReady = 2 
+
+[005046] Connected Server's IP Address is [127.0.0.1] 
+
+
+[005048]  Send sendAppointmentQuizEventInfo... 
+
+[005048]  This user is game server. isReconnect[0] 
+
+
+[005048] Success SendGameServerInitDataThread
+
+[005048]  Try CONNECT to ACCOUNT DB : LocalWorld , 127.0.0.1 , idx 0
+
+[005048]  isReady = 3 
+
+[005048]  Let Start World Server...............!! 
+
+[005048] Connected Server's IP Address is [127.0.0.1] 
+
+
+[005048]  This user is not game server
+
+[005227] SEND ERROR ... ERROR 10054
+
+[005227] ===========>>>>>>>>>>		Dis User : 0 [SEND ERROR]
+
+[005227] GAME SERVER QUIT [type01]!!
+
+[005227] (type01)0 is exit
+
+
+[005227] ===========>>>>>>>>>>		Dis User : 0 [read byte = 0]
+
+[005436] Connected Server's IP Address is [127.0.0.1] 
+
+
+[005438]  Send sendAppointmentQuizEventInfo... 
+
+[005438]  This user is game server. isReconnect[0] 
+
+
+[005438] Success SendGameServerInitDataThread
+
+[005632] SEND ERROR ... ERROR 10054
+
+[005632] ===========>>>>>>>>>>		Dis User : 2 [SEND ERROR]
+
+[005632] GAME SERVER QUIT [type01]!!
+
+[005632] (type01)2 is exit
+
+
+[005632] ===========>>>>>>>>>>		Dis User : 2 [read byte = 0]
+
+[005635] Connected Server's IP Address is [127.0.0.1] 
+
+
+[005637]  Send sendAppointmentQuizEventInfo... 
+
+[005637]  This user is game server. isReconnect[0] 
+
+
+[005637] Success SendGameServerInitDataThread
+
+[005716] ===========>>>>>>>>>>		Dis User : 1 [read byte = 0]
+
+[005716] GAME SERVER QUIT [#login]!!
+
+[005716] (#login)1 is exit
+
+
+[005718] SEND ERROR ... ERROR 10054
+
+[005718] ===========>>>>>>>>>>		Dis User : 3 [SEND ERROR]
+
+[005718] GAME SERVER QUIT [type01]!!
+
+[005718] (type01)3 is exit
+
+
+[005718] ===========>>>>>>>>>>		Dis User : 3 [read byte = 0]
+

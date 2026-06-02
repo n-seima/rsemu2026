@@ -1,0 +1,168 @@
+[113423] Open addr  [0] = 25.1.80.156,55661
+
+
+[113423] Start WorkerThread[0]...
+
+[113423] Start WorkerThread[2]...
+
+[113423] Start WorkerThread[3]...
+
+[113423] Start WorkerThread[4]...
+
+[113423] Start WorkerThread[5]...
+
+[113423] Start WorkerThread[6]...
+
+[113423] Start WorkerThread[1]...
+
+[113423] Start WorkerThread[7]...
+
+[113423] Start AcceptLoop ...
+
+[113423] Start Login Server ... day : 20260602 - time : 113423 
+
+
+[113423] START USERDBCtlThread
+
+[113423] START AdditionThread ...
+
+[113442] START connect world sock name = [お水サーバー(1)]
+
+[122521] LIL : id[pengg101] , login time [122442] , SPType [0X8002, 122442] , RPType [0X8702, 122442]
+
+[122521] Uncompotable User ... pengg101, why[Read = 0]
+
+[124809] LIL : id[omizu1] , login time [124808] , SPType [0X1401, 124808] , RPType [0X0, 0]
+
+[124809] Uncompotable User ... omizu1, why[Read = 0]
+
+[125225] LIL : id[omizu1] , login time [125223] , SPType [0X1401, 125223] , RPType [0X0, 0]
+
+[125225] Uncompotable User ... omizu1, why[Read = 0]
+
+[125234] LIL : id[omizu1] , login time [125226] , SPType [0X1401, 125226] , RPType [0X0, 0]
+
+[125234] Uncompotable User ... omizu1, why[Read = 0]
+
+[132859] LIL : id[omizu1] , login time [132858] , SPType [0X1401, 132858] , RPType [0X0, 0]
+
+[132859] Uncompotable User ... omizu1, why[Read = 0]
+
+[133040] LIL : id[omizu1] , login time [133039] , SPType [0X1401, 133039] , RPType [0X0, 0]
+
+[133040] Uncompotable User ... omizu1, why[Read = 0]
+
+[135142] LIL : id[pengg101] , login time [135137] , SPType [0X8002, 135137] , RPType [0X8702, 135137]
+
+[135142] Uncompotable User ... pengg101, why[Read = 0]
+
+[135157] LIL : id[pengg101] , login time [135149] , SPType [0X8002, 135149] , RPType [0X8702, 135149]
+
+[135157] Uncompotable User ... pengg101, why[Read = 0]
+
+[135228] LIL : id[pengg101] , login time [135201] , SPType [0X8002, 135201] , RPType [0X8702, 135201]
+
+[135228] Uncompotable User ... pengg101, why[Read = 0]
+
+[135411] LIL : id[pengg101] , login time [135231] , SPType [0X8002, 135231] , RPType [0X8702, 135232]
+
+[135411] Uncompotable User ... pengg101, why[Read = 0]
+
+[135424] LIL : id[pengg101] , login time [135413] , SPType [0X8002, 135413] , RPType [0X8702, 135413]
+
+[135424] Uncompotable User ... pengg101, why[Read = 0]
+
+[135457] LIL : id[pengg101] , login time [135452] , SPType [0X8002, 135452] , RPType [0X8702, 135452]
+
+[135457] Uncompotable User ... pengg101, why[Read = 0]
+
+[141407] LIL : id[pengg101] , login time [141406] , SPType [0X8002, 141406] , RPType [0X8702, 141406]
+
+[141407] Uncompotable User ... pengg101, why[Read = 0]
+
+[141417] LIL : id[pengg101] , login time [141414] , SPType [0X8002, 141414] , RPType [0X8702, 141414]
+
+[141417] Uncompotable User ... pengg101, why[Read = 0]
+
+[142708] LIL : id[omizu1] , login time [142628] , SPType [0X8002, 142629] , RPType [0X8702, 142629]
+
+[142708] Uncompotable User ... omizu1, why[Read = 0]
+
+[152848] LIL : id[pengg101] , login time [152846] , SPType [0X8002, 152846] , RPType [0X8702, 152846]
+
+[152848] Uncompotable User ... pengg101, why[Read = 0]
+
+[153047] LIL : id[omizu1] , login time [153018] , SPType [0X8002, 153018] , RPType [0X8702, 153018]
+
+[153047] Uncompotable User ... omizu1, why[Read = 0]
+
+[153249] Open addr  [0] = 25.1.80.156,55661
+
+
+[153249] Start WorkerThread[0]...
+
+[153249] Start WorkerThread[3]...
+
+[153249] Start WorkerThread[6]...
+
+[153249] Start WorkerThread[7]...
+
+[153249] Start WorkerThread[1]...
+
+[153249] Start WorkerThread[5]...
+
+[153249] Start WorkerThread[2]...
+
+[153249] Start WorkerThread[4]...
+
+[153249] Start AcceptLoop ...
+
+[153249] Start Login Server ... day : 20260602 - time : 153249 
+
+
+[153249] START USERDBCtlThread
+
+[153250] START AdditionThread ...
+
+[185017] Open addr  [0] = 25.1.80.156,55661
+
+
+[185017] Start WorkerThread[0]...
+
+[185017] Start WorkerThread[6]...
+
+[185017] Start WorkerThread[5]...
+
+[185017] Start WorkerThread[4]...
+
+[185017] Start WorkerThread[3]...
+
+[185017] Start WorkerThread[1]...
+
+[185017] Start WorkerThread[7]...
+
+[185017] Start WorkerThread[2]...
+
+[185017] Start AcceptLoop ...
+
+[185017] Start Login Server ... day : 20260602 - time : 185017 
+
+
+[185017] START USERDBCtlThread
+
+[185018] START AdditionThread ...
+
+[190829] START connect world sock name = [お水サーバー(1)]
+
+[192420] LIL : id[omizu1] , login time [192419] , SPType [0X1401, 192419] , RPType [0X0, 0]
+
+[192420] Uncompotable User ... omizu1, why[Read = 0]
+
+[192729] LIL : id[pengg101] , login time [192645] , SPType [0X8002, 192645] , RPType [0X8702, 192646]
+
+[192729] Uncompotable User ... pengg101, why[Read = 0]
+
+[193836] LIL : id[omizu1] , login time [193835] , SPType [0X1401, 193835] , RPType [0X0, 0]
+
+[193836] Uncompotable User ... omizu1, why[Read = 0]
+

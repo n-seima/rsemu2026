@@ -73,12 +73,12 @@ class	cAreaBaseInfo
 public:
 	WORD			m_wSerial;
 	int				x1,y1,x2,y2;
-	WORD			m_wKind;			//	¿µ¿ª ºĞ·ù
+	WORD			m_wKind;			//	ì˜ì—­ ë¶„ë¥˜
 	WORD			m_wValue;			//	open?close? / direct? / string size /
 	BYTE			m_bGate;
 	BYTE			m_gateDirect: 3;
 	BYTE			m_gateShape	: 5;
-	WORD			m_wMoveGate;//	ÀÔ±¸,Ãâ±¸
+	WORD			m_wMoveGate;//	ì…êµ¬,ì¶œêµ¬
 
 	inline	void*	getBasePoint()	{return	(void *)&m_wSerial;}
 };
@@ -88,15 +88,15 @@ class	cAreaToolBaseData
 public:
 	WORD			m_wSerial;
 	int				x1,y1,x2,y2;
-	WORD			m_wKind;			//	¿µ¿ª ºĞ·ù
+	WORD			m_wKind;			//	ì˜ì—­ ë¶„ë¥˜
 	WORD			m_wValue;			//	open?close? / direct? / string size /
 	BYTE			m_bGate;
 	BYTE			m_gateDirect: 3;
 	BYTE			m_gateShape	: 5;
-	WORD			m_wMoveGate;//	ÀÔ±¸,Ãâ±¸
+	WORD			m_wMoveGate;//	ì…êµ¬,ì¶œêµ¬
 	char			m_strName[dSIZEOF_AREA_NAME];
-	WORD			m_bf15LinkObject : 15;	//	ÀÌ ¿µ¿ª°ú ¸µÅ©µÈ ¿ÀºêÁ§Æ®
-	WORD			m_bf1IsTestPortal: 1;	//	Å×½ºÆ®ÁßÀÎ ¿µ¿ªÀÌ´Ù.
+	WORD			m_bf15LinkObject : 15;	//	ì´ ì˜ì—­ê³¼ ë§í¬ëœ ì˜¤ë¸Œì íŠ¸
+	WORD			m_bf1IsTestPortal: 1;	//	í…ŒìŠ¤íŠ¸ì¤‘ì¸ ì˜ì—­ì´ë‹¤.
 };
 
 class	cAreaTrapDefine
@@ -134,25 +134,25 @@ public:
 class	cAreaDoorDefine
 {
 public:
-	WORD			m_wRegenPeriod;		//	»ı¼º ºóµµ (ºĞ)	40	40	ÇØ´ç ½Ã°¢ ¸¶´Ù ºñ¹Ğ ¹®ÀÌ »ı¼ºµÉÁö °áÁ¤ÇÑ´Ù.	
-	WORD			m_wUpkeepPeriod;	//	Áö¼Ó ½Ã°£ (ºĞ)	30	30	½Ã°£ÀÌ Áö³ª¸é »ç¶óÁø´Ù.	ÀÌ¹Ì ÆÄÆ¼¿¡ Á¾¼ÓµÈ ºñ¹Ğ ¹®ÀÌ ÀÖÀ» °æ¿ì ºñ¹Ğ ¹®ÀÇ Á¸Àç ¿©ºÎ¿Í´Â »ó°ü¾øÀÌ ÇØ´ç ÆÄÆ¼¿¡°Ô´Â Å½Áö Çß´ø À§Ä¡¿¡ Ç¥½ÃµÇ°í ´Ù¸¥ »ç¶÷µéÀº º¼ ¼ö ¾ø´Ù.
-	WORD			m_wGenChance;		//	»ı¼º È®·ü ¼³Á¤ (%)	1	100	ºñ¹Ğ ¹®ÀÌ °¢°¢ »ı¼ºµÉ È®·ü	
+	WORD			m_wRegenPeriod;		//	ìƒì„± ë¹ˆë„ (ë¶„)	40	40	í•´ë‹¹ ì‹œê° ë§ˆë‹¤ ë¹„ë°€ ë¬¸ì´ ìƒì„±ë ì§€ ê²°ì •í•œë‹¤.	
+	WORD			m_wUpkeepPeriod;	//	ì§€ì† ì‹œê°„ (ë¶„)	30	30	ì‹œê°„ì´ ì§€ë‚˜ë©´ ì‚¬ë¼ì§„ë‹¤.	ì´ë¯¸ íŒŒí‹°ì— ì¢…ì†ëœ ë¹„ë°€ ë¬¸ì´ ìˆì„ ê²½ìš° ë¹„ë°€ ë¬¸ì˜ ì¡´ì¬ ì—¬ë¶€ì™€ëŠ” ìƒê´€ì—†ì´ í•´ë‹¹ íŒŒí‹°ì—ê²ŒëŠ” íƒì§€ í–ˆë˜ ìœ„ì¹˜ì— í‘œì‹œë˜ê³  ë‹¤ë¥¸ ì‚¬ëŒë“¤ì€ ë³¼ ìˆ˜ ì—†ë‹¤.
+	WORD			m_wGenChance;		//	ìƒì„± í™•ë¥  ì„¤ì • (%)	1	100	ë¹„ë°€ ë¬¸ì´ ê°ê° ìƒì„±ë  í™•ë¥ 	
 
-	int				m_iDurability;	//	º¸À¯ HP
-	int				m_iDefense;		//	¹°¸®/¿ø¼Ò ÀúÇ×Ä¡
-	WORD			m_wDestroyMinimumLevel;		//	ÆÄ±« °¡´É ÃÖ¼Ò ·¹º§
+	int				m_iDurability;	//	ë³´ìœ  HP
+	int				m_iDefense;		//	ë¬¼ë¦¬/ì›ì†Œ ì €í•­ì¹˜
+	WORD			m_wDestroyMinimumLevel;		//	íŒŒê´´ ê°€ëŠ¥ ìµœì†Œ ë ˆë²¨
 
-	BYTE			m_bSecretLevel;		//	ºñ¹Ğ ·¹º§
-	BYTE			m_bUnlockLevel;	//	ÀÚ¹°¼è ÇØÃ¼ ·¹º§
-	WORD			m_wUpkeepDismantlingTime;	//	ÇØÃ¼ »óÅÂ Áö¼Ó ½Ã°£
-	WORD			m_bf1IsDestroyable	:	1;	//	ÆÄ±« °¡´É ¿©ºÎ
+	BYTE			m_bSecretLevel;		//	ë¹„ë°€ ë ˆë²¨
+	BYTE			m_bUnlockLevel;	//	ìë¬¼ì‡  í•´ì²´ ë ˆë²¨
+	WORD			m_wUpkeepDismantlingTime;	//	í•´ì²´ ìƒíƒœ ì§€ì† ì‹œê°„
+	WORD			m_bf1IsDestroyable	:	1;	//	íŒŒê´´ ê°€ëŠ¥ ì—¬ë¶€
 
 	WORD			m_wTrapLevel,m_wTrapTarget;
-	BYTE			m_bDetectTrapLevel,m_bDisarmTrapLevel;	//	ÇÔÁ¤ Å½Áö ·¹º§,ÇÔÁ¤ ÇØÃ¼ ·¹º§
+	BYTE			m_bDetectTrapLevel,m_bDisarmTrapLevel;	//	í•¨ì • íƒì§€ ë ˆë²¨,í•¨ì • í•´ì²´ ë ˆë²¨
 	WORD			m_wTrapSkill1,m_wTrapSkill2;
 	WORD			m_wTrapSkill1ActiveChance,m_wTrapSkill2ActiveChance;
 	WORD			m_wLinkSecretDungeon;
-	BYTE			m_bDefensePercent;					// 09.08.13  ¹°¸®/¸¶¹ı ÀúÇ×·Â %
+	BYTE			m_bDefensePercent;					// 09.08.13  ë¬¼ë¦¬/ë§ˆë²• ì €í•­ë ¥ %
 
 	inline	void*	getSaveDataPoint()	{return	(void*)&m_wRegenPeriod;}
 };

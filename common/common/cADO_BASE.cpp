@@ -38,30 +38,30 @@ cADO_BASE::getTimeToUTime(char *_lpstrDate,UTime *_lpUTime)
 	{
 		char	strTime[8];
 		int idx = 0;
-		memcpy(strTime,_lpstrDate+idx,4);		//	ø¨
+		memcpy(strTime,_lpstrDate+idx,4);		//	Ïó∞
 		strTime[4]	=	0;
 		iYear		=	atoi(strTime);
 		
 		idx += 5;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	ø˘
+		memcpy(strTime,_lpstrDate+idx,2);	//	Ïõî
 		strTime[2]	=	0;
 		iMonth		=	atoi(strTime);
 
 		idx += 3;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	¿œ
+		memcpy(strTime,_lpstrDate+idx,2);	//	Ïùº
 		strTime[2]	=	0;
 		iDay		=	atoi(strTime);
 
 		idx += 3;
 
 		int addHour = 0;
-		if(strncmp(_lpstrDate+idx,"ø¿¿¸",4)==0)
+		if(strncmp(_lpstrDate+idx,"Ïò§Ï†Ñ",4)==0)
 		{
 			idx += 4;
 		}else
-		if(strncmp(_lpstrDate+idx,"ø¿»ƒ",4)==0)
+		if(strncmp(_lpstrDate+idx,"Ïò§ÌõÑ",4)==0)
 		{
 			addHour = 1;
 			idx += 4;
@@ -72,10 +72,10 @@ cADO_BASE::getTimeToUTime(char *_lpstrDate,UTime *_lpUTime)
 
 		if(_lpstrDate[idx+2]==':')
 		{
-			memcpy(strTime,_lpstrDate+idx,2);	//	Ω√
+			memcpy(strTime,_lpstrDate+idx,2);	//	Ïãú
 			idx -= 1;
 		}else{
-			memcpy(strTime,_lpstrDate+idx+1,2);	//	Ω√
+			memcpy(strTime,_lpstrDate+idx+1,2);	//	Ïãú
 		}
 		strTime[2]	=	0;
 		iHour		=	atoi(strTime);
@@ -94,13 +94,13 @@ cADO_BASE::getTimeToUTime(char *_lpstrDate,UTime *_lpUTime)
 
 		idx += 4;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	∫–
+		memcpy(strTime,_lpstrDate+idx,2);	//	Î∂Ñ
 		strTime[2]	=	0;
 		iMinute		=	atoi(strTime);
 
 		idx += 3;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	∫–
+		memcpy(strTime,_lpstrDate+idx,2);	//	Î∂Ñ
 		strTime[2]	= 0;
 		iSec		=	atoi(strTime);
 	}
@@ -109,34 +109,34 @@ cADO_BASE::getTimeToUTime(char *_lpstrDate,UTime *_lpUTime)
 		char	strTime[8];
 		int idx = 0;
 
-		if(_checkTimeFormat.find("ø¿¿¸")!=std::string::npos  || _checkTimeFormat.find("ø¿»ƒ")!=std::string::npos)
+		if(_checkTimeFormat.find("Ïò§Ï†Ñ")!=std::string::npos  || _checkTimeFormat.find("Ïò§ÌõÑ")!=std::string::npos)
 		{
 			char	strTime[8];
 			int idx = 0;
-			memcpy(strTime,_lpstrDate+idx,4);		//	ø¨
+			memcpy(strTime,_lpstrDate+idx,4);		//	Ïó∞
 			strTime[4]	=	0;
 			iYear		=	atoi(strTime);
 			
 			idx += 5;
 			
-			memcpy(strTime,_lpstrDate+idx,2);	//	ø˘
+			memcpy(strTime,_lpstrDate+idx,2);	//	Ïõî
 			strTime[2]	=	0;
 			iMonth		=	atoi(strTime);
 			
 			idx += 3;
 			
-			memcpy(strTime,_lpstrDate+idx,2);	//	¿œ
+			memcpy(strTime,_lpstrDate+idx,2);	//	Ïùº
 			strTime[2]	=	0;
 			iDay		=	atoi(strTime);
 			
 			idx += 3;
 			
 			int addHour = 0;
-			if(strncmp(_lpstrDate+idx,"ø¿¿¸",4)==0)
+			if(strncmp(_lpstrDate+idx,"Ïò§Ï†Ñ",4)==0)
 			{
 				idx += 4;
 			}else
-			if(strncmp(_lpstrDate+idx,"ø¿»ƒ",4)==0)
+			if(strncmp(_lpstrDate+idx,"Ïò§ÌõÑ",4)==0)
 			{
 				addHour = 1;
 				idx += 4;
@@ -147,10 +147,10 @@ cADO_BASE::getTimeToUTime(char *_lpstrDate,UTime *_lpUTime)
 			
 			if(_lpstrDate[idx+2]==':')
 			{
-				memcpy(strTime,_lpstrDate+idx,2);	//	Ω√
+				memcpy(strTime,_lpstrDate+idx,2);	//	Ïãú
 				idx -= 1;
 			}else{
-				memcpy(strTime,_lpstrDate+idx+1,2);	//	Ω√
+				memcpy(strTime,_lpstrDate+idx+1,2);	//	Ïãú
 			}
 			strTime[2]	=	0;
 			iHour		=	atoi(strTime);
@@ -169,19 +169,19 @@ cADO_BASE::getTimeToUTime(char *_lpstrDate,UTime *_lpUTime)
 			
 			idx += 4;
 			
-			memcpy(strTime,_lpstrDate+idx,2);	//	∫–
+			memcpy(strTime,_lpstrDate+idx,2);	//	Î∂Ñ
 			strTime[2]	=	0;
 			iMinute		=	atoi(strTime);
 			
 			idx += 3;
 			
-			memcpy(strTime,_lpstrDate+idx,2);	//	∫–
+			memcpy(strTime,_lpstrDate+idx,2);	//	Î∂Ñ
 			strTime[2]	= 0;
 			iSec		=	atoi(strTime);
 		}
 		else
 		{
-			memcpy(strTime,_lpstrDate+idx,2);	//	ø˘
+			memcpy(strTime,_lpstrDate+idx,2);	//	Ïõî
 			strTime[2]	=	0;
 			if(strTime[1] == '/')
 			{
@@ -194,7 +194,7 @@ cADO_BASE::getTimeToUTime(char *_lpstrDate,UTime *_lpUTime)
 				idx += 3;
 			}
 			
-			memcpy(strTime,_lpstrDate+idx,2);	//	¿œ
+			memcpy(strTime,_lpstrDate+idx,2);	//	Ïùº
 			strTime[2]	=	0;
 			if(strTime[1] == '/')
 			{
@@ -207,30 +207,30 @@ cADO_BASE::getTimeToUTime(char *_lpstrDate,UTime *_lpUTime)
 				idx += 3;
 			}
 			
-			memcpy(strTime,_lpstrDate+idx,4);		//	ø¨
+			memcpy(strTime,_lpstrDate+idx,4);		//	Ïó∞
 			strTime[4]	=	0;
 			iYear		=	atoi(strTime);
 			idx += 5;
 			
-			//	eng¥¬ mm-dd-yyyy hh:mm:ss AM/PM«¸≈¬ 
+			//	engÎäî mm-dd-yyyy hh:mm:ss AM/PMÌòïÌÉú 
 			if(_lpstrDate[idx+1]==':')
 			{
-				memcpy(strTime,_lpstrDate+idx,1);	//	Ω√
+				memcpy(strTime,_lpstrDate+idx,1);	//	Ïãú
 				idx -= 1;
 				strTime[1]	=	0;
 			}else
-				memcpy(strTime,_lpstrDate+idx,2);	//	Ω√
+				memcpy(strTime,_lpstrDate+idx,2);	//	Ïãú
 			strTime[2]	=	0;
 			iHour		=	atoi(strTime);
 			idx += 3;
 			
-			memcpy(strTime,_lpstrDate+idx,2);	//	∫–
+			memcpy(strTime,_lpstrDate+idx,2);	//	Î∂Ñ
 			strTime[2]	=	0;
 			iMinute		=	atoi(strTime);
 			
 			idx += 3;
 			
-			memcpy(strTime,_lpstrDate+idx,2);	//	√ 
+			memcpy(strTime,_lpstrDate+idx,2);	//	Ï¥à
 			strTime[2]	= 0;
 			iSec		=	atoi(strTime);
 			
@@ -254,49 +254,49 @@ cADO_BASE::getTimeToUTime(char *_lpstrDate,UTime *_lpUTime)
 	{
 		char	strTime[8];
 		int idx = 0;
-		memcpy(strTime,_lpstrDate+idx,4);		//	ø¨
+		memcpy(strTime,_lpstrDate+idx,4);		//	Ïó∞
 		strTime[4]	=	0;
 		iYear		=	atoi(strTime);
 		
 		idx += 5;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	ø˘
+		memcpy(strTime,_lpstrDate+idx,2);	//	Ïõî
 		strTime[2]	=	0;
 		iMonth		=	atoi(strTime);
 
 		idx += 3;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	¿œ
+		memcpy(strTime,_lpstrDate+idx,2);	//	Ïùº
 		strTime[2]	=	0;
 		iDay		=	atoi(strTime);
 
 		idx += 3;
 
-		//	¿œ∫ª¿∫ yyyy-mm-dd hh:mm:ss«¸≈¬ 
+		//	ÏùºÎ≥∏ÏùÄ yyyy-mm-dd hh:mm:ssÌòïÌÉú 
 		if(_lpstrDate[idx+1]==':')
 		{
-			memcpy(strTime,_lpstrDate+idx,1);	//	Ω√
+			memcpy(strTime,_lpstrDate+idx,1);	//	Ïãú
 			idx -= 1;
 			strTime[1]	=	0;
 		}else
-			memcpy(strTime,_lpstrDate+idx,2);	//	Ω√
+			memcpy(strTime,_lpstrDate+idx,2);	//	Ïãú
 		strTime[2]	=	0;
 		iHour		=	atoi(strTime);
 		idx += 3;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	∫–
+		memcpy(strTime,_lpstrDate+idx,2);	//	Î∂Ñ
 		strTime[2]	=	0;
 		iMinute		=	atoi(strTime);
 
 		idx += 3;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	∫–
+		memcpy(strTime,_lpstrDate+idx,2);	//	Î∂Ñ
 		strTime[2]	= 0;
 		iSec		=	atoi(strTime);
 
 		idx += 3;
 
-		memcpy(strTime,_lpstrDate+idx,2);	//	∫–
+		memcpy(strTime,_lpstrDate+idx,2);	//	Î∂Ñ
 		strTime[2]	= 0;
 		if( strncmp(strTime, "AM", 2) ==0 && iHour == 12)
 		{
@@ -322,7 +322,7 @@ cADO_BASE::getTimeToUTime(char *_lpstrDate,UTime *_lpUTime)
 	}
 }
 
-_ConnectionPtr		cADO_BASE::GetConnection()	//	ø¨∞·µ«æÓ ¿÷¿∏≥™ ªÁøÎ¡ﬂ¿Ã¡ˆ æ ¿∫ ∞Õ¿ª ∫∏≥ª¡ÿ¥Ÿ.
+_ConnectionPtr		cADO_BASE::GetConnection()	//	Ïó∞Í≤∞ÎêòÏñ¥ ÏûàÏúºÎÇò ÏÇ¨Ïö©Ï§ëÏù¥ÏßÄ ÏïäÏùÄ Í≤ÉÏùÑ Î≥¥ÎÇ¥Ï§ÄÎã§.
 {
 	try
 	{
@@ -368,10 +368,12 @@ BOOL	cADO_BASE::reConnect()
 		for(int i = 0;i< iMaxCount ;i++)
 		{
 			pConnection[i].CreateInstance("ADODB.Connection");
+			pConnection[i]->PutConnectionTimeout(3);
+			pConnection[i]->PutCommandTimeout(5);
 			hr = pConnection[i]->Open(strProvider,L"",L"",-1);
 			if(FAILED(hr))
 			{
-				_log("reConnection Ω«∆– \n");
+				_log("reConnection Ïã§Ìå® \n");
 				return FALSE;
 			}
 		}
@@ -399,16 +401,18 @@ BOOL	cADO_BASE::Connect(char *ip,char *id,char *pw,char *db,int count)
 	try
 	{
 		HRESULT hr	=	CoInitialize(0);
-		sprintf(mainPro,"PROVIDER=SQLOLEDB;SERVER=%s;UID=%s;PWD=%s;DATABASE=%s;Network Address=%s,%d;Network Library=DBMSSOCN",strDBIp,strDBId,pw,strDBDb,strDBIp,dDATABASEPORT);
+		sprintf(mainPro,"PROVIDER=SQLOLEDB;SERVER=%s;UID=%s;PWD=%s;DATABASE=%s;Network Address=%s,%d;Network Library=DBMSSOCN;Connect Timeout=3",strDBIp,strDBId,pw,strDBDb,strDBIp,dDATABASEPORT);
 //		_log(" check DB Connection infomation : [%s]",mainPro);
 		_bstr_t		strProvider(mainPro);
 		for(int i = 0;i< iMaxCount ;i++)
 		{
 			pConnection[i].CreateInstance("ADODB.Connection");
+			pConnection[i]->PutConnectionTimeout(3);
+			pConnection[i]->PutCommandTimeout(5);
 			hr = pConnection[i]->Open(strProvider,L"",L"",-1);
 			if(FAILED(hr))
 			{
-				_log("Fisrt Connection Ω«∆– \n");
+				_log("Fisrt Connection Ïã§Ìå® \n");
 				return FALSE;
 			}
 		}
@@ -457,19 +461,19 @@ void	cADO_BASE::dmpCOMerr( _com_error &e, int line, char *file, bool traceOnly)
 		_log("\n %s %s \n",(char *) bs, (char *) bstrSource);
 	}
 	catch(...)	{}
-	if(e.Error() == -2147024882)	//	¿˙¿Âº“∞° ∫Œ¡∑«œµ•.. -_-;
+	if(e.Error() == -2147024882)	//	Ï†ÄÏû•ÏÜåÍ∞Ä Î∂ÄÏ°±ÌïòÎç∞.. -_-;
 	{
 	}
 	if(e.Error()==-2146825023 || e.Error()==-2147467259)
 	{
 		EnterCriticalSection(&csConnectionPool);
-		iErrorCount++;	//	ø¨º”¿˚¿Œ ø°∑Ø¿œ∞ÊøÏ..
+		iErrorCount++;	//	Ïó∞ÏÜçÏ†ÅÏù∏ ÏóêÎü¨ÏùºÍ≤ΩÏö∞..
 		if(iErrorCount>1)
 			iErrorProblem = 1;
 		if(iErrorCount >dERROR_COUNT)
 		{
-			_log(" error count %d , ¡¢º”¿Ã ≤˜æÓ¡¯ ∞…∑Œ ∞£¡÷«œ∞Ì, ªı∑”∞‘ ø¨∞·«ÿº≠ ªÁøÎ«—¥Ÿ. ",iErrorCount);
-			//	¡¢º”¿Ã ≤˜æÓ¡¯ ∞…∑Œ ∞£¡÷«œ∞Ì, ªı∑”∞‘ ø¨∞·«ÿº≠ ªÁøÎ«—¥Ÿ.
+			_log(" error count %d , Ï†ëÏÜçÏù¥ ÎÅäÏñ¥ÏßÑ Í±∏Î°ú Í∞ÑÏ£ºÌïòÍ≥†, ÏÉàÎ°≠Í≤å Ïó∞Í≤∞Ìï¥ÏÑú ÏÇ¨Ïö©ÌïúÎã§. ",iErrorCount);
+			//	Ï†ëÏÜçÏù¥ ÎÅäÏñ¥ÏßÑ Í±∏Î°ú Í∞ÑÏ£ºÌïòÍ≥†, ÏÉàÎ°≠Í≤å Ïó∞Í≤∞Ìï¥ÏÑú ÏÇ¨Ïö©ÌïúÎã§.
 			reConnect();
 			iErrorCount = 0;
 		}
@@ -546,7 +550,7 @@ int		cADO_BASE::VariantToBlob(VARIANT & varChunk,void * pData)	//	blob -> data
 	return lBytesCopied;
 }
 
-BOOL	__cdecl cADO_BASE::sqlExecute(char *str,...)	//∞°¥…«œ∏È ¿Ã∞…∑Œ ªÁøÎ«œ¡ˆ ∏ª∞Ì SP∏¶ ªÁøÎ«ÿ∂Û.
+BOOL	__cdecl cADO_BASE::sqlExecute(char *str,...)	//Í∞ÄÎä•ÌïòÎ©¥ Ïù¥Í±∏Î°ú ÏÇ¨Ïö©ÌïòÏßÄ ÎßêÍ≥† SPÎ•º ÏÇ¨Ïö©Ìï¥Îùº.
 {
 	_CommandPtr	pCmd				= NULL;
 	char		str_Query[1024];

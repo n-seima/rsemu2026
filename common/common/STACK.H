@@ -3,17 +3,17 @@
 
 #include <process.h>
 
-//	T¿¡ »ç¿ëÇÒ '±×°Í'Àº close(), copy(T *), wSerialÀ» Áö¿øÇØ¾ß ÇÑ´Ù.
+//	Tì— ì‚¬ìš©í•  'ê·¸ê²ƒ'ì€ close(), copy(T *), wSerialì„ ì§€ì›í•´ì•¼ í•œë‹¤.
 
 template <class T>
 class	cSTACK
 {
 protected:
 	T					*m_pStack;
-	WORD				m_wMax;		//	ÃÖ´ë °¡Áú¼ö ÀÖ´Â °¹¼ö
-	WORD				m_wLast;	//	¸¶Áö¸·À¸·Î Ãß°¡µÈ ¹øÈ£
-	WORD				m_wNext;	//	´ÙÀ½¿¡ Ãß°¡µÉ ¹øÈ£ 
-	WORD				m_wCount;	//	¸î°³°¡ »ç¿ëÁßÀÏ±î?
+	WORD				m_wMax;		//	ìµœëŒ€ ê°€ì§ˆìˆ˜ ìˆëŠ” ê°¯ìˆ˜
+	WORD				m_wLast;	//	ë§ˆì§€ë§‰ìœ¼ë¡œ ì¶”ê°€ëœ ë²ˆí˜¸
+	WORD				m_wNext;	//	ë‹¤ìŒì— ì¶”ê°€ë  ë²ˆí˜¸ 
+	WORD				m_wCount;	//	ëª‡ê°œê°€ ì‚¬ìš©ì¤‘ì¼ê¹Œ?
 	CRITICAL_SECTION	cs;
 		
 public:
@@ -70,13 +70,13 @@ public:
 	{
 		EnterCriticalSection(&cs);
 		if(m_wCount>=m_wMax || m_wNext==0xffff){	LeaveCriticalSection(&cs);	return 0xffff;	}
-		//	class  T¿¡ Ãß°¡ ÀÛ¾÷À» ÇÑ´Ù.
+		//	class  Tì— ì¶”ê°€ ì‘ì—…ì„ í•œë‹¤.
 		WORD	wStart = 0; 
 		m_pStack[m_wNext].copy(_lpData);
 		m_pStack[m_wNext].wSerial = wStart = m_wNext;
 		m_wCount++;	//if(m_wCount> m_iMax){	}
 		m_wNext = 0xffff;
-		//	´ÙÀ½ next¸¦ Ã£´Â´Ù.
+		//	ë‹¤ìŒ nextë¥¼ ì°¾ëŠ”ë‹¤.
 		WORD	l_iCount = 0;
 		for(l_iCount = wStart+1;l_iCount<m_wMax;l_iCount++)
 			if(m_pStack[l_iCount].wSerial >= 0xffff){	m_wNext = l_iCount;		break;	}

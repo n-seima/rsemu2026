@@ -4,7 +4,7 @@ cSKILL			g_aSkill[dMAX_SKILL];
 DWORD			g_aSkilExpTable[5]=	{0,1,5,20,45};
 
 //
-//	½ΊΕ³ ΖχΐΞΖ®?
+//	μ¤ν‚¬ ν¬μΈνΈ?
 int
 cABILITY::getSkillPoint()
 {

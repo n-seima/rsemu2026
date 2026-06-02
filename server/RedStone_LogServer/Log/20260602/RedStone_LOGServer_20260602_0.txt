@@ -1,0 +1,91 @@
+[113144] Fail bind !!
+
+
+[113144] Error InitSocket 
+
+
+[113204] Fail bind !!
+
+
+[113204] Error InitSocket 
+
+
+[113205] Fail bind !!
+
+
+[113205] Error InitSocket 
+
+
+[113259] Fail bind !!
+
+
+[113259] Error InitSocket 
+
+
+[113301] Fail bind !!
+
+
+[113301] Error InitSocket 
+
+
+[113328] Start LOG Server ... day : 20260602 - time : 113328 
+
+
+[113328] START WorkerThread[0] ...
+
+[113328] START WorkerThread[2] ...
+
+[113328] START WorkerThread[3] ...
+
+[113328] START WorkerThread[5] ...
+
+[113328] START WorkerThread[4] ...
+
+[113328] START WorkerThread[7] ...
+
+[113328] START WorkerThread[6] ...
+
+[113328] START WorkerThread[1] ...
+
+[113328] End RecvThread... 
+
+[113328] START PressThread ...
+
+[113328] START AdditionThread ...
+
+[113713] START - Make new log
+
+[113713] path : D:/LOG/ÇÁ¶õµ¨
+
+[113713] m_strLogFileName = D:/LOG/ÇÁ¶õµ¨\20260602.log
+
+[113713] - found old file
+
+[113713] - attatch log with exist file [D:/LOG/ÇÁ¶õµ¨\20260602.log]
+
+[113713] END - Make New Log
+
+[114511] ()1 is Exit. - 645830223
+
+
+[122345] ()1 is Exit. - 645830223
+
+
+[134536] ()1 is Exit. - 645830223
+
+
+[135131] ()1 is Exit. - 645830223
+
+
+[135342] ()1 is Exit. - 645830223
+
+
+[135601] ()1 is Exit. - 645830223
+
+
+[141400] ()1 is Exit. - 645830223
+
+
+[152837] ()1 is Exit. - 645830223
+
+

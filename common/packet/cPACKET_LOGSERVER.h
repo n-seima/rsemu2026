@@ -39,19 +39,19 @@ typedef struct
 class	cMSG_BASE_TYPE_FORLOG
 {
 public:
-	WORD	wSize,				//	ÆÐÅ¶ »çÀÌÁî
-			wType;				//	ÆÐÅ¶ Å¸ÀÔ
+	WORD	wSize,				//	íŒ¨í‚· ì‚¬ì´ì¦ˆ
+			wType;				//	íŒ¨í‚· íƒ€ìž…
 	inline	void	set(WORD size,WORD type)	{wSize	=	size,wType	=	type;}
 };
 
 #define dLOG_PACKAGE					0x10
 
-#define dLOG_BEGIN						0x1c		//	·Î±× ½ÃÀÛ
-#define dLOG_ERROR						0x1c		//	±æµåÀü °ü·Ã ·Î±×
-#define dLOG_GUILD_WORK					0x1d		//	±æµå °ü·Ã ·Î±×
-#define dLOG_SYSTEM						0x1e		//	½Ã½ºÅÛ ·Î±×
-#define dLOG_PET_WORK					0x1f		//	Æê °ü·Ã ·Î±×
-#define dLOG_GUILD_BATTLE_WORK			0x20		//	±æµåÀü °ü·Ã ·Î±×
+#define dLOG_BEGIN						0x1c		//	ë¡œê·¸ ì‹œìž‘
+#define dLOG_ERROR						0x1c		//	ê¸¸ë“œì „ ê´€ë ¨ ë¡œê·¸
+#define dLOG_GUILD_WORK					0x1d		//	ê¸¸ë“œ ê´€ë ¨ ë¡œê·¸
+#define dLOG_SYSTEM						0x1e		//	ì‹œìŠ¤í…œ ë¡œê·¸
+#define dLOG_PET_WORK					0x1f		//	íŽ« ê´€ë ¨ ë¡œê·¸
+#define dLOG_GUILD_BATTLE_WORK			0x20		//	ê¸¸ë“œì „ ê´€ë ¨ ë¡œê·¸
 #define dLOG_ITEM_DROP					0x21		//	87
 #define dLOG_ITEM_PICK					0x22		//	87
 #define dLOG_ITEM_SELL					0x23		//	87
@@ -86,7 +86,7 @@ struct	LOG_FROMTOOLLOG
 	cMSG_BASE_TYPE_FORLOG	base;
 
 	WORD	wServerIndex;
-	char	binData[dPACKAGE_MAXSIZE];	//	ÀÌ°÷¿¡ ±â·ÏÇÒ µ¥ÀÌÅÍ¸¦ ´ã¾Æ¼­ º¸³»¼¼¿ä. ÇÏ³ª¾¿ ~ ¾Æ·¡ ÆÐÅ¶°ú ¸ð¾çÀÌ µ¿ÀÏÇØ¾ß ÇÕ´Ï´Ù.
+	char	binData[dPACKAGE_MAXSIZE];	//	ì´ê³³ì— ê¸°ë¡í•  ë°ì´í„°ë¥¼ ë‹´ì•„ì„œ ë³´ë‚´ì„¸ìš”. í•˜ë‚˜ì”© ~ ì•„ëž˜ íŒ¨í‚·ê³¼ ëª¨ì–‘ì´ ë™ì¼í•´ì•¼ í•©ë‹ˆë‹¤.
 };
 
 //	FROM TOOLLOG SERVER
@@ -101,11 +101,11 @@ struct	LOG_PACKAGE
 
 enum
 {
-	ePW_ADD,	//	Ãß°¡
-	ePW_REMOVE,	//	Á¦°Å
-	ePW_SEAL,	//	ºÀÀÎ
-	ePW_UNSEAL,	//	ºÀÀÎ ÇØÁ¦
-	ePW_LEVEL_UP,	//	ºÀÀÎ ÇØÁ¦
+	ePW_ADD,	//	ì¶”ê°€
+	ePW_REMOVE,	//	ì œê±°
+	ePW_SEAL,	//	ë´‰ì¸
+	ePW_UNSEAL,	//	ë´‰ì¸ í•´ì œ
+	ePW_LEVEL_UP,	//	ë´‰ì¸ í•´ì œ
 };
 
 struct	LOG_PET_WORK
@@ -125,7 +125,7 @@ struct	LOG_PET_WORK
 
 enum
 {
-	eERROR_LOG_QUEST_EXP_SERIAL_RECEIVE	=	1,	//	LOG_ERROR_QUEST_EXP_SERIAL_RECEIVE	Äù½ºÆ® °æÇèÄ¡ º¸»ó ¿¬¼ÓÀ¸·Î È¹µæ
+	eERROR_LOG_QUEST_EXP_SERIAL_RECEIVE	=	1,	//	LOG_ERROR_QUEST_EXP_SERIAL_RECEIVE	í€˜ìŠ¤íŠ¸ ê²½í—˜ì¹˜ ë³´ìƒ ì—°ì†ìœ¼ë¡œ íšë“
 };
 
 struct	LOG_ERROR_BASE
@@ -377,7 +377,7 @@ struct	LOG_S_OPERATOR_CHAT_LOG
 	char		strTarget[dNAME_LENGTH];
 
 	WORD		bf10ChatMethod	:	10;
-	WORD		bf1IsListen		:	1;	//	µè´Â°Å´Ù.
+	WORD		bf1IsListen		:	1;	//	ë“£ëŠ”ê±°ë‹¤.
 	
 	char		strText[128];
 };
@@ -398,7 +398,7 @@ struct	LOG_S_REMOVE_A_PLACE_RELATED_OF_GUILD
 };
 
 struct	LOG_S_BUY_ITEM
-{		// ¸¶Áö¸· ¼öÁ¤ÀÏ : 09.10.27
+{		// ë§ˆì§€ë§‰ ìˆ˜ì •ì¼ : 09.10.27
 	cMSG_BASE_TYPE_FORLOG	base;
 
 	tsLogTime	logTime;
@@ -413,7 +413,7 @@ struct	LOG_S_BUY_ITEM
 	DWORD		dwBuyPrice;
 	WORD		wCount;
 	WORD		wBuyMethod;
-	WORD		wTokenItem;		// ÅäÅ«¾ÆÀÌÅÛ.
+	WORD		wTokenItem;		// í† í°ì•„ì´í…œ.
 };
 
 struct	LOG_S_RECORD_GUILD_HONOR_POINT
@@ -487,7 +487,7 @@ enum
 	eBUY_ITEM_IN_PIGEON_SHOP,
 	eBUY_ITEM_IN_GUILD_SHOP,
 	eBUY_ITEM_IN_BANK_GOLDBAR,
-	eBUY_ITEM_IN_BADGE_OF_TRADER_SHOP,		// °Å·¡»óÀÎÀÇ ¹èÁö »óÁ¡
+	eBUY_ITEM_IN_BADGE_OF_TRADER_SHOP,		// ê±°ëž˜ìƒì¸ì˜ ë°°ì§€ ìƒì 
 
 };
 
@@ -522,12 +522,12 @@ enum
 	eSLT_OPERATOR_CHAT_LOG,
 	eSLT_REMOVE_A_PLACE_RELATED_OF_GUILD,
 
-	eSLT_CREATE_MINI_PET	,		//	¹Ì´ÏÆê »ý¼º
-	eSLT_REMOVE_MINI_PET	,		//	¹Ì´ÏÆê Á¦°Å
-	eSLT_EXTEND_MINI_PET_TIME	,		//	¹Ì´ÏÆê Á¦°Å
-	eSLT_SEAL_MINI_PET	,		//	¹Ì´ÏÆê Á¦°Å
-	eSLT_UNSEAL_MINI_PET	,		//	¹Ì´ÏÆê Á¦°Å
-	eSLT_MINI_PET_FEED_ITEM,		//	¹Ì´ÏÆê Á¦°Å
+	eSLT_CREATE_MINI_PET	,		//	ë¯¸ë‹ˆíŽ« ìƒì„±
+	eSLT_REMOVE_MINI_PET	,		//	ë¯¸ë‹ˆíŽ« ì œê±°
+	eSLT_EXTEND_MINI_PET_TIME	,		//	ë¯¸ë‹ˆíŽ« ì œê±°
+	eSLT_SEAL_MINI_PET	,		//	ë¯¸ë‹ˆíŽ« ì œê±°
+	eSLT_UNSEAL_MINI_PET	,		//	ë¯¸ë‹ˆíŽ« ì œê±°
+	eSLT_MINI_PET_FEED_ITEM,		//	ë¯¸ë‹ˆíŽ« ì œê±°
 	eSLT_BUY_ITEM,
 	eSLT_RECORD_GUILD_HONOR_POINT,
 
@@ -537,8 +537,8 @@ enum
 	eSLT_REBIRTH,
 	eSLT_MIX_MINIPET,
 	eSLT_RESTRAINT_MINIPET,
-	eSLT_DIVIDE_ITEM,		// ½ºÅÃ ³ª´©±â..
-	eSLT_TRANS_AVATAR_TO_GVG_SERVER,		// GVG¼­¹ö·Î ¾Æ¹ÙÅ¸ Àü¼Û
+	eSLT_DIVIDE_ITEM,		// ìŠ¤íƒ ë‚˜ëˆ„ê¸°..
+	eSLT_TRANS_AVATAR_TO_GVG_SERVER,		// GVGì„œë²„ë¡œ ì•„ë°”íƒ€ ì „ì†¡
 	eSLT_USE_LEADERS_BELL	,		// Leader's Bell Log
 	eSLT_WARNING_QUEST_EXP_SERIAL_RECEIVE,
 };
@@ -569,10 +569,10 @@ struct	LOG_S_DIVIDE_ITEM
 	char		strIP[dIP_LENGTH];
 	WORD		wWork;
 	////////////////////////////////////////////////////////////
-	CItemDefine				cTargetItem;				// ³ª´«¾ÆÀÌÅÛ
-	WORD					wBeforDragCount;			// ³ª´­¾ÆÀÌÅÛ ¿ø·¡ °³¼ö.
-	WORD					wAfterDragCount;			// ³ª´©°í ³²Àº ¾ÆÀÌÅÛ °³¼ö
-	WORD					wFocusCount;				// ³ª´« ¾ÆÀÌÅÛ °³¼ö.
+	CItemDefine				cTargetItem;				// ë‚˜ëˆˆì•„ì´í…œ
+	WORD					wBeforDragCount;			// ë‚˜ëˆŒì•„ì´í…œ ì›ëž˜ ê°œìˆ˜.
+	WORD					wAfterDragCount;			// ë‚˜ëˆ„ê³  ë‚¨ì€ ì•„ì´í…œ ê°œìˆ˜
+	WORD					wFocusCount;				// ë‚˜ëˆˆ ì•„ì´í…œ ê°œìˆ˜.
 };
 
 struct	LOG_S_TRNAS_AVATAR
@@ -606,33 +606,33 @@ struct	LOG_SYSTEM
 
 enum
 {
-	eGBW_BOOKING,	//	¿¹¾à
-	eGBW_CANCEL,	//	Ãë¼Ò
-	eGBW_ENGAGE,	//	°áÁ¤µÊ
-	eGBW_RESULT,	//	±æµåÀü °á°ú
+	eGBW_BOOKING,	//	ì˜ˆì•½
+	eGBW_CANCEL,	//	ì·¨ì†Œ
+	eGBW_ENGAGE,	//	ê²°ì •ë¨
+	eGBW_RESULT,	//	ê¸¸ë“œì „ ê²°ê³¼
 	
-	eGBW_JOIN,		//	±æµå °¡ÀÔ
-	eGBW_LEAVE,		//	±æµå Å»Åð
+	eGBW_JOIN,		//	ê¸¸ë“œ ê°€ìž…
+	eGBW_LEAVE,		//	ê¸¸ë“œ íƒˆí‡´
 
-	eGBW_KILL,		//	±æµåÀüÁß »ó´ë ±æµå¿øÀ» Á×¿´´Ù.
-	eGBW_BEGIN,		//	±æµåÀü ½ÃÀÛ
+	eGBW_KILL,		//	ê¸¸ë“œì „ì¤‘ ìƒëŒ€ ê¸¸ë“œì›ì„ ì£½ì˜€ë‹¤.
+	eGBW_BEGIN,		//	ê¸¸ë“œì „ ì‹œìž‘
 	eGBW_PRE_RESULT,
 	eGBW_ERROR_IN_KILL,
 	eGBW_ERROR_IN_CHECK_RESULT,
-	eGBW_EXTERMINATE,	//	Àü¸ê ½ÃÄ×´Ù.
-	eGBW_NEW_KILL,		//	±æµåÀüÁß »ó´ë ±æµå¿øÀ» Á×¿´´Ù.
+	eGBW_EXTERMINATE,	//	ì „ë©¸ ì‹œì¼°ë‹¤.
+	eGBW_NEW_KILL,		//	ê¸¸ë“œì „ì¤‘ ìƒëŒ€ ê¸¸ë“œì›ì„ ì£½ì˜€ë‹¤.
 
-	eGW_GUILD_DUNGEON_PLAY,		//	±æµåÀüÁß »ó´ë ±æµå¿øÀ» Á×¿´´Ù.
-	eGW_ACTIVE_GUILD_MASTER_GRACE,		//	±æµåÀüÁß »ó´ë ±æµå¿øÀ» Á×¿´´Ù.
-	eGW_ACTIVE_GUILD_ROEN_GOOD_WILL,		//	±æµå ·Î¿£ÀÇ È£°¨µµ Á¤º¸
+	eGW_GUILD_DUNGEON_PLAY,		//	ê¸¸ë“œì „ì¤‘ ìƒëŒ€ ê¸¸ë“œì›ì„ ì£½ì˜€ë‹¤.
+	eGW_ACTIVE_GUILD_MASTER_GRACE,		//	ê¸¸ë“œì „ì¤‘ ìƒëŒ€ ê¸¸ë“œì›ì„ ì£½ì˜€ë‹¤.
+	eGW_ACTIVE_GUILD_ROEN_GOOD_WILL,		//	ê¸¸ë“œ ë¡œì—”ì˜ í˜¸ê°ë„ ì •ë³´
 
-	eGW_TRANS_GUILD_TO_GVG_SERVER,		// ±æµå GVG ¼­¹ö¿¡ Àü¼Û
-	eGW_DELETE_GUILD,					//	±æµå »èÁ¦
-	eGW_CHANGE_GUILD_RANK,					//	±æµå ·©Å©º¯°æ
+	eGW_TRANS_GUILD_TO_GVG_SERVER,		// ê¸¸ë“œ GVG ì„œë²„ì— ì „ì†¡
+	eGW_DELETE_GUILD,					//	ê¸¸ë“œ ì‚­ì œ
+	eGW_CHANGE_GUILD_RANK,					//	ê¸¸ë“œ ëž­í¬ë³€ê²½
 
 };
 
-struct	LOG_GUILD_BATTLE_WORK	//	±æµåÀü °ü·Ã ·Î±×
+struct	LOG_GUILD_BATTLE_WORK	//	ê¸¸ë“œì „ ê´€ë ¨ ë¡œê·¸
 {
 	cMSG_BASE_TYPE_FORLOG	base;
 
@@ -644,7 +644,7 @@ struct	LOG_GUILD_BATTLE_WORK	//	±æµåÀü °ü·Ã ·Î±×
 
 	BYTE		bTimeOrder,bFieldOrder;
 	BYTE		bResult;
-	BYTE		bGuild1VictoryPoint,bGuild2VictoryPoint;	//	ÀÌ±ä ±æµå ½ÂÁ¡
+	BYTE		bGuild1VictoryPoint,bGuild2VictoryPoint;	//	ì´ê¸´ ê¸¸ë“œ ìŠ¹ì 
 
 	char		strKiller[dNAME_LENGTH];
 	char		strTarget[dNAME_LENGTH];
@@ -660,7 +660,7 @@ public:
 	
 };
 
-struct	LOG_GUILD_BATTLE_BEGIN_WORK	//	±æµåÀü °ü·Ã ·Î±×
+struct	LOG_GUILD_BATTLE_BEGIN_WORK	//	ê¸¸ë“œì „ ê´€ë ¨ ë¡œê·¸
 {
 	cMSG_BASE_TYPE_FORLOG	base;
 
@@ -673,7 +673,7 @@ struct	LOG_GUILD_BATTLE_BEGIN_WORK	//	±æµåÀü °ü·Ã ·Î±×
 	cBeginGuildBattleInfo	m_aInfo[2];
 };
 
-struct	LOG_GUILD_BATTLE_WORK_KILL	//	±æµåÀü °ü·Ã ·Î±×
+struct	LOG_GUILD_BATTLE_WORK_KILL	//	ê¸¸ë“œì „ ê´€ë ¨ ë¡œê·¸
 {
 	cMSG_BASE_TYPE_FORLOG	base;
 
@@ -685,10 +685,10 @@ struct	LOG_GUILD_BATTLE_WORK_KILL	//	±æµåÀü °ü·Ã ·Î±×
 	char		strKiller[dNAME_LENGTH];
 	char		strTarget[dNAME_LENGTH];
 
-	WORD		wAddKP,wKP1,wKP2,wKillerTeam;	//	ÀÌ±ä ±æµå ½ÂÁ¡
+	WORD		wAddKP,wKP1,wKP2,wKillerTeam;	//	ì´ê¸´ ê¸¸ë“œ ìŠ¹ì 
 };
 
-struct	LOG_GUILD_BATTLE_WORK_KILL2	//	±æµåÀü °ü·Ã ·Î±×
+struct	LOG_GUILD_BATTLE_WORK_KILL2	//	ê¸¸ë“œì „ ê´€ë ¨ ë¡œê·¸
 {
 	cMSG_BASE_TYPE_FORLOG	base;
 
@@ -702,11 +702,11 @@ struct	LOG_GUILD_BATTLE_WORK_KILL2	//	±æµåÀü °ü·Ã ·Î±×
 
 	DWORD		bf10AddKP		:	10;
 	DWORD		bf10KP1			:	10;
-	DWORD		bf10KP2			:	10;	//	ÀÌ±ä ±æµå ½ÂÁ¡
+	DWORD		bf10KP2			:	10;	//	ì´ê¸´ ê¸¸ë“œ ìŠ¹ì 
 	DWORD		bf2KillerTeam	:	2;
 };
 
-struct	LOG_GUILD_BATTLE_WORK_KILL3	//	±æµåÀü °ü·Ã ·Î±×
+struct	LOG_GUILD_BATTLE_WORK_KILL3	//	ê¸¸ë“œì „ ê´€ë ¨ ë¡œê·¸
 {
 	cMSG_BASE_TYPE_FORLOG	base;
 
@@ -723,7 +723,7 @@ struct	LOG_GUILD_BATTLE_WORK_KILL3	//	±æµåÀü °ü·Ã ·Î±×
 	WORD		bf2KillerTeam	:	2;
 };
 
-struct	LOG_GUILD_BATTLE_WORK_RESULT	//	±æµåÀü °ü·Ã ·Î±×
+struct	LOG_GUILD_BATTLE_WORK_RESULT	//	ê¸¸ë“œì „ ê´€ë ¨ ë¡œê·¸
 {
 	cMSG_BASE_TYPE_FORLOG	base;
 
@@ -813,8 +813,8 @@ struct	LOG_S_RECORD_GUILD_ROEN_GOOD_WILL : public LOG_GUILD_WORK
 };
 
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­	ITEM LOG
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒ	ITEM LOG
 struct	LOG_ITEM_DROP
 {
 	cMSG_BASE_TYPE_FORLOG	base;
@@ -827,7 +827,7 @@ struct	LOG_ITEM_DROP
 	WORD		wFieldUniqueIndex;
 	
 	CItemDefine	cItem;
-	WORD		wMethod;	//	0Àº ±×³É ,1Àº Äù½ºÆ®
+	WORD		wMethod;	//	0ì€ ê·¸ëƒ¥ ,1ì€ í€˜ìŠ¤íŠ¸
 };
 
 enum
@@ -855,7 +855,7 @@ struct	LOG_ITEM_PICK
 	
 	CItemDefine				cItem;
 
-	WORD					bf6Method	:	6;	//	0Àº ±×³É ÁÞÀº°Å,1Àº Äù½ºÆ®¸¦ ÅëÇØ ¾òÀº°Å
+	WORD					bf6Method	:	6;	//	0ì€ ê·¸ëƒ¥ ì¤ì€ê±°,1ì€ í€˜ìŠ¤íŠ¸ë¥¼ í†µí•´ ì–»ì€ê±°
 	WORD					bf1IsIncludeGuildInfo	:	1;
 	WORD					bf1IsOperator			:	1;
 	WORD					:	0;
@@ -902,7 +902,7 @@ enum
 	eCIM_BLOCK_LIGHT_POCKET,
 	eCIM_CH5_ITEM_COPY,
 	eCIM_WITHDRAW_FROM_GUILD_INVENTORY2,
-	eCIM_CUT_PREFIX,		// Á¢µÎ»ç Àß¶ó³»±â 
+	eCIM_CUT_PREFIX,		// ì ‘ë‘ì‚¬ ìž˜ë¼ë‚´ê¸° 
 };
 
 struct	LOG_CREATE_ITEM
@@ -965,31 +965,31 @@ struct	LOG_DOUBLE_ITEM
 //	Enchant Item Work
 enum
 {
-	eEIW_SUCCESS,					//	¼º°ø
-	eEIW_BROKEN,					//	ºÎ½¤Áü
-	eEIW_DESTROY,					//	ÆÄ±«µÊ
-	eEIW_REPAIR_BROKEN,				//	ºÎ¼­Áø »óÅÂ ¼ö¸®
-	eEIW_REPAIR_CURSE,				//	ÀúÁÖ ¼ö¸®
-	eEIW_REPAIR_CAN_NOT_ATTACH_PREFIX_STATUS,	//	Á¢µÎ»ç¸¦ ºÙÀÏ ¼ö ¾ø´Â »óÅÂ ¼ö¸®
-	eEIW_REPAIR_AND_REMOVE_PREFIX,	//	¼ö¸®´Â ÇßÁö¸¸ Á¢µÎ»ç°¡ »ç¶óÁü
+	eEIW_SUCCESS,					//	ì„±ê³µ
+	eEIW_BROKEN,					//	ë¶€ìˆ´ì§
+	eEIW_DESTROY,					//	íŒŒê´´ë¨
+	eEIW_REPAIR_BROKEN,				//	ë¶€ì„œì§„ ìƒíƒœ ìˆ˜ë¦¬
+	eEIW_REPAIR_CURSE,				//	ì €ì£¼ ìˆ˜ë¦¬
+	eEIW_REPAIR_CAN_NOT_ATTACH_PREFIX_STATUS,	//	ì ‘ë‘ì‚¬ë¥¼ ë¶™ì¼ ìˆ˜ ì—†ëŠ” ìƒíƒœ ìˆ˜ë¦¬
+	eEIW_REPAIR_AND_REMOVE_PREFIX,	//	ìˆ˜ë¦¬ëŠ” í–ˆì§€ë§Œ ì ‘ë‘ì‚¬ê°€ ì‚¬ë¼ì§
 
-	eEIW_RENEW_TERM,				//	±â°£ ¿¬ÀåÇß´Ù.
-	eEIW_REPAIR_DX_ITEM,			//	DX ¾ÆÀÌÅÛ ¼ö¸®
-	eEIW_REMOVE_PREFIX,				//	Á¢µÎ»ç Á¦°Å
-	eEIW_MERGE_ITEM,				//	¾ÆÀÌÅÛ ÇÕÃ¼
-	eEIW_JUDGE_ITEM,				//	¾ÆÀÌÅÛ ÆÇº°
-	eEIW_RELEASE_REVERSION,			//	±Í¼Ó Ç®±â
-	eEIW_BROKEN_BY_CH5_REWARD,		//	Ã©ÅÍ 5 º¸»óÀ¸·Î »Ç°³Áü
-	eEIW_SEAL_SPHERE_OF_DAWN	,	//	»õº®ÀÇ ºÀÀÎ±¸·Î ÀÎÇØ ¾ÆÀÌÅÛ º¯ÇÔ
-	eEIW_UPGRADE_ETERNAL_ITEM,			// ÀÌÅÍ³Î ¾ÆÀÌÅÛ °­È­.		09.09.04
-	eEIW_SUCCESS_COPY_PREFIX,				// Á¢µÎ»ç º¹»ç ¼º°ø
-	eEIW_FAILED_COPY_PREFIX,				// Á¢µÎ»ç º¹»ç ½ÇÆÐ
-	eEIW_SUCCESS_ATTACH_PREFIX,				// Á¢µÎ»ç ºÙÀÌ±â ¼º°ø
-	eEIW_FAILED_ATTACH_PREFIX,				// Á¢µÎ»ç ºÙÀÌ±â ½ÇÆÐ 
-	eEIW_SUCCESS_INCREASE_CARVING_LEVEL,	// °¢ÀÎ ·¹º§Áõ°¡ ¼º°ø
-	eEIW_FAILED_INCREASE_CARVING_LEVEL,	// °¢ÀÎ ·¹º§Áõ°¡ ½ÇÆÐ
-	eEIW_SUCCESS_SET_CARVING_LEVEL,	// °¢ÀÎ ·¹º§¼³Á¤ ¼º°ø
-	eEIW_FAILED_SET_CARVING_LEVEL,	// °¢ÀÎ ·¹º§¼³Á¤ ½ÇÆÐ
+	eEIW_RENEW_TERM,				//	ê¸°ê°„ ì—°ìž¥í–ˆë‹¤.
+	eEIW_REPAIR_DX_ITEM,			//	DX ì•„ì´í…œ ìˆ˜ë¦¬
+	eEIW_REMOVE_PREFIX,				//	ì ‘ë‘ì‚¬ ì œê±°
+	eEIW_MERGE_ITEM,				//	ì•„ì´í…œ í•©ì²´
+	eEIW_JUDGE_ITEM,				//	ì•„ì´í…œ íŒë³„
+	eEIW_RELEASE_REVERSION,			//	ê·€ì† í’€ê¸°
+	eEIW_BROKEN_BY_CH5_REWARD,		//	ì±•í„° 5 ë³´ìƒìœ¼ë¡œ ë½€ê°œì§
+	eEIW_SEAL_SPHERE_OF_DAWN	,	//	ìƒˆë²½ì˜ ë´‰ì¸êµ¬ë¡œ ì¸í•´ ì•„ì´í…œ ë³€í•¨
+	eEIW_UPGRADE_ETERNAL_ITEM,			// ì´í„°ë„ ì•„ì´í…œ ê°•í™”.		09.09.04
+	eEIW_SUCCESS_COPY_PREFIX,				// ì ‘ë‘ì‚¬ ë³µì‚¬ ì„±ê³µ
+	eEIW_FAILED_COPY_PREFIX,				// ì ‘ë‘ì‚¬ ë³µì‚¬ ì‹¤íŒ¨
+	eEIW_SUCCESS_ATTACH_PREFIX,				// ì ‘ë‘ì‚¬ ë¶™ì´ê¸° ì„±ê³µ
+	eEIW_FAILED_ATTACH_PREFIX,				// ì ‘ë‘ì‚¬ ë¶™ì´ê¸° ì‹¤íŒ¨ 
+	eEIW_SUCCESS_INCREASE_CARVING_LEVEL,	// ê°ì¸ ë ˆë²¨ì¦ê°€ ì„±ê³µ
+	eEIW_FAILED_INCREASE_CARVING_LEVEL,	// ê°ì¸ ë ˆë²¨ì¦ê°€ ì‹¤íŒ¨
+	eEIW_SUCCESS_SET_CARVING_LEVEL,	// ê°ì¸ ë ˆë²¨ì„¤ì • ì„±ê³µ
+	eEIW_FAILED_SET_CARVING_LEVEL,	// ê°ì¸ ë ˆë²¨ì„¤ì • ì‹¤íŒ¨
 
 };
 
@@ -1003,7 +1003,7 @@ struct	LOG_ENCHANT_ITEM
 	char					strIP[dIP_LENGTH];
 	WORD					wFieldUniqueIndex;
 
-	CItemDefine				cItem;	//	ÀÛ¾÷ÈÄ °á°ú(´Ü, eEIW_DESTROY ÀÇ °æ¿ì´Â ¿øº» ¾ÆÀÌÅÛ Á¤º¸ÀÌ´Ù.)
+	CItemDefine				cItem;	//	ìž‘ì—…í›„ ê²°ê³¼(ë‹¨, eEIW_DESTROY ì˜ ê²½ìš°ëŠ” ì›ë³¸ ì•„ì´í…œ ì •ë³´ì´ë‹¤.)
 
 	WORD					wWork;
 	WORD					wRenewTerm;
@@ -1019,17 +1019,17 @@ struct	LOG_UPGRADE_ETERNAL_ITEM		// 09.09.01
 	char					strIP[dIP_LENGTH];
 	WORD					wFieldUniqueIndex;
 
-	CItemDefine				cTargetItem;				// °­È­ÇÒ ¾ÆÀÌÅÛ
+	CItemDefine				cTargetItem;				// ê°•í™”í•  ì•„ì´í…œ
 	
 	WORD					wWork;
-	WORD					wUpgradeItemSerial;				//  °­È­ ÈÄ  ¾ÆÀÌÅÛ
-	DWORD					dwGold;							// Àç·á ±Ý..
-	WORD					wStoneOfMesteryCount : 5;			// ½Åºñ¼®
-	WORD					wTantillessCount	 : 5;				// ÅºÆ¿¸®½º
-	WORD					wCrystalCount		 : 5;					// °áÁ¤¼®
+	WORD					wUpgradeItemSerial;				//  ê°•í™” í›„  ì•„ì´í…œ
+	DWORD					dwGold;							// ìž¬ë£Œ ê¸ˆ..
+	WORD					wStoneOfMesteryCount : 5;			// ì‹ ë¹„ì„
+	WORD					wTantillessCount	 : 5;				// íƒ„í‹¸ë¦¬ìŠ¤
+	WORD					wCrystalCount		 : 5;					// ê²°ì •ì„
 	WORD					:0;
-	WORD					wUpgradeMaterialsItemSerial;			// ÀÏ¹Ý°­È­Á¦ ½Ã¸®¾ó
-	WORD					wUpgradePremiumMaterialsItemSerial;		// ÇÁ¸®¹Ì¾ö¾ÆÀÌÅÛ °­È­Á¦ ½Ã¸®¾ó
+	WORD					wUpgradeMaterialsItemSerial;			// ì¼ë°˜ê°•í™”ì œ ì‹œë¦¬ì–¼
+	WORD					wUpgradePremiumMaterialsItemSerial;		// í”„ë¦¬ë¯¸ì—„ì•„ì´í…œ ê°•í™”ì œ ì‹œë¦¬ì–¼
 
 };
 struct	LOG_CARVE_ITEM		//
@@ -1042,14 +1042,14 @@ struct	LOG_CARVE_ITEM		//
 	char					strIP[dIP_LENGTH];
 	WORD					wFieldUniqueIndex;
 
-	CItemDefine				cTargetItem;				// °­È­ÇÒ ¾ÆÀÌÅÛ
+	CItemDefine				cTargetItem;				// ê°•í™”í•  ì•„ì´í…œ
 	
 	WORD					wWork;
-	WORD					wUseItem;								//	 »ç¿ëÇÑ ¾ÆÀÌÅÛ
-	WORD					bf8BeforCarvingLevel : 8;				//  °­È­ Àü  ·¹º§
-	WORD					bf8AfterCarvingLevel : 8;				//  °­È­ ÈÄ  ·¹º§
-	DWORD					dwGold;							// Àç·á ±Ý..
-	WORD					bf5CrystalCount		 : 5;		// °áÁ¤¼®
+	WORD					wUseItem;								//	 ì‚¬ìš©í•œ ì•„ì´í…œ
+	WORD					bf8BeforCarvingLevel : 8;				//  ê°•í™” ì „  ë ˆë²¨
+	WORD					bf8AfterCarvingLevel : 8;				//  ê°•í™” í›„  ë ˆë²¨
+	DWORD					dwGold;							// ìž¬ë£Œ ê¸ˆ..
+	WORD					bf5CrystalCount		 : 5;		// ê²°ì •ì„
 	WORD					:0;
 
 };
@@ -1079,19 +1079,19 @@ struct	LOG_PITCHMAN_SHOP_TRADE			// 09.08.21
 //	Event Work
 enum
 {
-	eEW_OXQUIZ_WINNER		,	//	OX ÄûÁî ½ÂÀÚ ¸®½ºÆ®
-	eEW_OXQUIZ_COMER_LIST	,	//	OX ÄûÁî Âü°¡ÀÚ ¸®½ºÆ®
-	eEW_OXQUIZ_LOSER_LIST	,	//	OX ÄûÁî Å»¶ôÀÚ ¸®½ºÆ®
-	eEW_OXQUIZ_QUESTION		,	//	OX ÄûÁî ¹®Á¦
+	eEW_OXQUIZ_WINNER		,	//	OX í€´ì¦ˆ ìŠ¹ìž ë¦¬ìŠ¤íŠ¸
+	eEW_OXQUIZ_COMER_LIST	,	//	OX í€´ì¦ˆ ì°¸ê°€ìž ë¦¬ìŠ¤íŠ¸
+	eEW_OXQUIZ_LOSER_LIST	,	//	OX í€´ì¦ˆ íƒˆë½ìž ë¦¬ìŠ¤íŠ¸
+	eEW_OXQUIZ_QUESTION		,	//	OX í€´ì¦ˆ ë¬¸ì œ
 
-	eEW_WORDQUIZ_WINNER		,	//	³¹¸» ÄûÁî ½ÂÀÚ ¸®½ºÆ®
-	eEW_WORDQUIZ_COMER_LIST	,	//	³¹¸» ÄûÁî Âü°¡ÀÚ ¸®½ºÆ®
-	eEW_WORDQUIZ_LOSER_LIST	,	//	³¹¸» ÄûÁî Å»¶ôÀÚ ¸®½ºÆ®
-	eEW_WORDQUIZ_QUESTION	,	//	³¹¸» ÄûÁî ¹®Á¦
+	eEW_WORDQUIZ_WINNER		,	//	ë‚±ë§ í€´ì¦ˆ ìŠ¹ìž ë¦¬ìŠ¤íŠ¸
+	eEW_WORDQUIZ_COMER_LIST	,	//	ë‚±ë§ í€´ì¦ˆ ì°¸ê°€ìž ë¦¬ìŠ¤íŠ¸
+	eEW_WORDQUIZ_LOSER_LIST	,	//	ë‚±ë§ í€´ì¦ˆ íƒˆë½ìž ë¦¬ìŠ¤íŠ¸
+	eEW_WORDQUIZ_QUESTION	,	//	ë‚±ë§ í€´ì¦ˆ ë¬¸ì œ
 };
 
 //
-//	·Î±× ÆÐÅ¶À» À§ÇÑ OX ÄûÁî Áú¹® 
+//	ë¡œê·¸ íŒ¨í‚·ì„ ìœ„í•œ OX í€´ì¦ˆ ì§ˆë¬¸ 
 class	COXQuizQuesionForLogPacket
 {
 public:
@@ -1135,30 +1135,30 @@ struct	OLD_LOG_EVENT
 //	Remove Item Work
 enum
 {
-	eRI_DESTROY,	//	ºÎ¼ø°Å´Ù.
-	eRI_QUEST,		//	Äù½ºÆ®¿¡ ÀÇÇÑ°Å
-	eRI_OX_QUIZ,	//	Ox ÄûÁî¿¡¼­
-	eRI_RECOVER_DEATH_PENELTY,		//	Äù½ºÆ®¿¡ ÀÇÇÑ°Å
-	eRI_UNSEAL_BREEDING_RECORD_BOOK,		//	Äù½ºÆ®¿¡ ÀÇÇÑ°Å
-	eRI_GUILD_BATTLE_ITEM_BY_NOT_GUILD_BATTLE_FIELD	,	//	±æµåÀü ÇÊµå°¡ ¾Æ´Ï¶ó¼­ ±æµåÀü ¾ÆÀÌÅÛ Á¦°Å Çß´Ù.
-	eRI_REPAIR_ITEM_CAHRGE,	//	¾ÆÀÌÅÛ ¼ö¸®ÇÏ¸é¼­ µ·ÀÌ ³ª°¨
-	eRI_REVISE_INCORRECT_PREFIX,	//	Àß¸øµÈ Á¢µÎ»ç ¼ö¸®
-	eRI_LOTTERY,	//	º¹±Ç ²Î~
-	eRI_BY_MOVE_FIELD,	//	º¹±Ç ²Î~
-	eRI_BY_USE_BOTTOMLESS_BOX,	//	¹Ù´Ú ¾ø´Â »óÀÚ »ç¿ë
-	eRI_BY_KARMA,	//	¹Ù´Ú ¾ø´Â »óÀÚ »ç¿ë
-	eRI_BY_STORE_GUILD,	//	±æµå ÀÎº¥¿¡ º¸°ü
-	eRI_BY_FEED_TO_GUILD_PET,	//	±æµå ÀÎº¥¿¡ º¸°ü
-	eRI_BY_ADD_RELATED_PLACE,	//	±æµå ¿¬°íÁö Ãß°¡
-	eRI_BY_SEAL_MINIPET,	//	±æµå ¿¬°íÁö Ãß°¡
-	eRI_BY_UNSEAL_MINIPET,	//	±æµå ¿¬°íÁö Ãß°¡
-	eRI_BY_USE_POLISHER,	//	±æµå ¿¬°íÁö Ãß°¡
-	eRI_BY_FEED_TO_MINIPET,	//	±æµå ÀÎº¥¿¡ º¸°ü
-	eRI_BY_USE_AWAKEN_ITEM,	//	°¢¼º ¾ÆÀÌÅÛ »ç¿ë.
-	eRI_BY_DISJOINTING_ITEM,	//	°¢¼º ¾ÆÀÌÅÛ »ç¿ë.
-	eRI_BY_TOKEN,	//	ÅäÅ«À¸·Î »ç¿ë
-	eRI_BY_ETERNAL,	//	ÀÌÅÍ³Î¶§¸Þ
-	eRI_BY_PITCHMANSHOP,	//	³ëÁ¡»ó¿¡¼­
+	eRI_DESTROY,	//	ë¶€ìˆœê±°ë‹¤.
+	eRI_QUEST,		//	í€˜ìŠ¤íŠ¸ì— ì˜í•œê±°
+	eRI_OX_QUIZ,	//	Ox í€´ì¦ˆì—ì„œ
+	eRI_RECOVER_DEATH_PENELTY,		//	í€˜ìŠ¤íŠ¸ì— ì˜í•œê±°
+	eRI_UNSEAL_BREEDING_RECORD_BOOK,		//	í€˜ìŠ¤íŠ¸ì— ì˜í•œê±°
+	eRI_GUILD_BATTLE_ITEM_BY_NOT_GUILD_BATTLE_FIELD	,	//	ê¸¸ë“œì „ í•„ë“œê°€ ì•„ë‹ˆë¼ì„œ ê¸¸ë“œì „ ì•„ì´í…œ ì œê±° í–ˆë‹¤.
+	eRI_REPAIR_ITEM_CAHRGE,	//	ì•„ì´í…œ ìˆ˜ë¦¬í•˜ë©´ì„œ ëˆì´ ë‚˜ê°
+	eRI_REVISE_INCORRECT_PREFIX,	//	ìž˜ëª»ëœ ì ‘ë‘ì‚¬ ìˆ˜ë¦¬
+	eRI_LOTTERY,	//	ë³µê¶Œ ê½~
+	eRI_BY_MOVE_FIELD,	//	ë³µê¶Œ ê½~
+	eRI_BY_USE_BOTTOMLESS_BOX,	//	ë°”ë‹¥ ì—†ëŠ” ìƒìž ì‚¬ìš©
+	eRI_BY_KARMA,	//	ë°”ë‹¥ ì—†ëŠ” ìƒìž ì‚¬ìš©
+	eRI_BY_STORE_GUILD,	//	ê¸¸ë“œ ì¸ë²¤ì— ë³´ê´€
+	eRI_BY_FEED_TO_GUILD_PET,	//	ê¸¸ë“œ ì¸ë²¤ì— ë³´ê´€
+	eRI_BY_ADD_RELATED_PLACE,	//	ê¸¸ë“œ ì—°ê³ ì§€ ì¶”ê°€
+	eRI_BY_SEAL_MINIPET,	//	ê¸¸ë“œ ì—°ê³ ì§€ ì¶”ê°€
+	eRI_BY_UNSEAL_MINIPET,	//	ê¸¸ë“œ ì—°ê³ ì§€ ì¶”ê°€
+	eRI_BY_USE_POLISHER,	//	ê¸¸ë“œ ì—°ê³ ì§€ ì¶”ê°€
+	eRI_BY_FEED_TO_MINIPET,	//	ê¸¸ë“œ ì¸ë²¤ì— ë³´ê´€
+	eRI_BY_USE_AWAKEN_ITEM,	//	ê°ì„± ì•„ì´í…œ ì‚¬ìš©.
+	eRI_BY_DISJOINTING_ITEM,	//	ê°ì„± ì•„ì´í…œ ì‚¬ìš©.
+	eRI_BY_TOKEN,	//	í† í°ìœ¼ë¡œ ì‚¬ìš©
+	eRI_BY_ETERNAL,	//	ì´í„°ë„ë•Œë©”
+	eRI_BY_PITCHMANSHOP,	//	ë…¸ì ìƒì—ì„œ
 };
 
 struct	LOG_ITEM_DEL
@@ -1172,13 +1172,13 @@ struct	LOG_ITEM_DEL
 	WORD		wFieldUniqueIndex;
 	CItemDefine	cItem;
 
-	WORD		bf6Method				:	6;	//	0Àº ±×³É ,1Àº Äù½ºÆ®
-	WORD		bf1IsIncludeGuildInfo	:	1;	//	·Î±×¿¡ ±æµå Á¤º¸°¡ Æ÷ÇÔµÇ¾î ÀÖ´Ù.
-	WORD		bf8Spare				:	8;	//	·Î±×¿¡ ±æµå Á¤º¸°¡ Æ÷ÇÔµÇ¾î ÀÖ´Ù.
+	WORD		bf6Method				:	6;	//	0ì€ ê·¸ëƒ¥ ,1ì€ í€˜ìŠ¤íŠ¸
+	WORD		bf1IsIncludeGuildInfo	:	1;	//	ë¡œê·¸ì— ê¸¸ë“œ ì •ë³´ê°€ í¬í•¨ë˜ì–´ ìžˆë‹¤.
+	WORD		bf8Spare				:	8;	//	ë¡œê·¸ì— ê¸¸ë“œ ì •ë³´ê°€ í¬í•¨ë˜ì–´ ìžˆë‹¤.
 	WORD		bf1IsOperator			:	1;
-	int			iCharge;	//	¾ÆÀÌÅÛ ¼ö¸® ºñ¿ë
+	int			iCharge;	//	ì•„ì´í…œ ìˆ˜ë¦¬ ë¹„ìš©
 
-//	090716 Ãß°¡
+//	090716 ì¶”ê°€
 	char		strGuildName[dGUILD_NAME_LENGTH];
 };
 
@@ -1282,12 +1282,12 @@ struct	LOG_ITEM_CREATE_PREMIUM_ITEM
 	WORD					wCarrotPrice;
 };
 
-//¦­	ITEM LOG
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒ	ITEM LOG
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­	AVATAR LOG
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒ	AVATAR LOG
 struct	LOG_AVA_CREATE
 {
 	cMSG_BASE_TYPE_FORLOG	base;
@@ -1342,8 +1342,8 @@ struct	LOG_AVA_SAVE_LOG
 	char	strIdAndName[dID_LENGTH+dNAME_LENGTH];
 };
 
-//¦­	AVATAR LOG
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒ	AVATAR LOG
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 union	ALL_LOGMSG
 {
@@ -1384,21 +1384,21 @@ union	ALL_LOGMSG
 
 class cLOG_QUE
 {
-	ALL_LOGMSG	m_aPacket[dMAX_MSG_COUNT];		//	ÆÐÅ¶µé..
-	int			m_iFirstQue,m_iLastQue,m_iCurrentQue,m_iCount,m_iCounter;		//	Ã¹¹øÂ°,¸¶Áö¸· ÆÐÅ¶, ½×¿© ÀÖ´ÂÆÐÅ¶ ¼ö
+	ALL_LOGMSG	m_aPacket[dMAX_MSG_COUNT];		//	íŒ¨í‚·ë“¤..
+	int			m_iFirstQue,m_iLastQue,m_iCurrentQue,m_iCount,m_iCounter;		//	ì²«ë²ˆì§¸,ë§ˆì§€ë§‰ íŒ¨í‚·, ìŒ“ì—¬ ìžˆëŠ”íŒ¨í‚· ìˆ˜
 	CRITICAL_SECTION	cs;
 
 public:
 	DWORD		m_dwTotalPacketSize;
 					cLOG_QUE()	{	InitializeCriticalSection(&cs);reset();	}
 					virtual ~cLOG_QUE()	{	DeleteCriticalSection(&cs);	}
-	void			reset();									//	ÃÊ±âÈ­
+	void			reset();									//	ì´ˆê¸°í™”
 	inline	int		getCount(){return	m_iCount;}
-	BOOL			addPacket(ALL_LOGMSG *_lpPacket);				//	ÆÐÅ¶ Ãß°¡
-	BOOL			isReceivedPacket(int _iPacket);				//	¹ÞÀº ÆÐÅ¶ÀÌ³Ä?
-	ALL_LOGMSG	*	popPacket();								//	Å¥¿¡¼­ ÆÐÅ¶À» »©³½´Ù.
+	BOOL			addPacket(ALL_LOGMSG *_lpPacket);				//	íŒ¨í‚· ì¶”ê°€
+	BOOL			isReceivedPacket(int _iPacket);				//	ë°›ì€ íŒ¨í‚·ì´ëƒ?
+	ALL_LOGMSG	*	popPacket();								//	íì—ì„œ íŒ¨í‚·ì„ ë¹¼ë‚¸ë‹¤.
 
-	ALL_LOGMSG	*	getOne();									//	Å¥¿¡¼­ ÆÐÅ¶ ÇÏ³ª¸¦ ¾ò¾î³½´Ù.
+	ALL_LOGMSG	*	getOne();									//	íì—ì„œ íŒ¨í‚· í•˜ë‚˜ë¥¼ ì–»ì–´ë‚¸ë‹¤.
 	void			setFront()
 	{	
 		m_iCounter		=	m_iCount;

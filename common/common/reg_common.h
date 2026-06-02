@@ -19,30 +19,30 @@ extern	char*		g_alpszServerVersionRegName[dSERVER_TYPE_COUNT];
 extern	BOOL		ReadServerEXENameWithRegistry(int _iServerType,char *_lpstrBuffer,int _iBufferSize);
 extern	BOOL		ReadServerPathWithRegistry(int _iServerType,char *_lpstrBuffer,int _iBufferSize);
 
-extern	BOOL		WriteServerInfoToRegistry(int _iServerType,char *_lpstrName);	//	¼­¹ö Á¤º¸ ¸ğµÎ ÀúÀå
-extern	int			ReadServerVersionInRegistry(int _iServerType);	//	Æ¯Á¤ ¼­¹öÀÇ ¹öÁ¯ Á¤º¸ ÀĞ±â
-extern	void		ReadAllServerVersionInRegistry();		//	¸ğµç ¼­¹öÀÇ ¹öÁ¯ Á¤º¸ ÀĞ±â
+extern	BOOL		WriteServerInfoToRegistry(int _iServerType,char *_lpstrName);	//	ì„œë²„ ì •ë³´ ëª¨ë‘ ì €ì¥
+extern	int			ReadServerVersionInRegistry(int _iServerType);	//	íŠ¹ì • ì„œë²„ì˜ ë²„ì ¼ ì •ë³´ ì½ê¸°
+extern	void		ReadAllServerVersionInRegistry();		//	ëª¨ë“  ì„œë²„ì˜ ë²„ì ¼ ì •ë³´ ì½ê¸°
 
-extern	BOOL		WriteServerNameToRegistry(int _iServerType,char *_lpstrName);		//	¼­¹ö ÀÌ¸§ ÀúÀå
-extern	BOOL		ReadServerNameWithRegistry(int _iServerType,char *_lpstrName,int _iBufferSize);	//	¼­¹ö ÀÌ¸§ ÀĞ±â
+extern	BOOL		WriteServerNameToRegistry(int _iServerType,char *_lpstrName);		//	ì„œë²„ ì´ë¦„ ì €ì¥
+extern	BOOL		ReadServerNameWithRegistry(int _iServerType,char *_lpstrName,int _iBufferSize);	//	ì„œë²„ ì´ë¦„ ì½ê¸°
 
-extern	BOOL		WriteServerStatusToRegistry(int _iServerType,int _iStatus);	//	¼­¹ö »óÅÂ ÀúÀå
-extern	int			ReadServerStatusWithRegistry(int _iServerType);				//	¼­¹ö »óÅÂ ÀĞ±â
+extern	BOOL		WriteServerStatusToRegistry(int _iServerType,int _iStatus);	//	ì„œë²„ ìƒíƒœ ì €ì¥
+extern	int			ReadServerStatusWithRegistry(int _iServerType);				//	ì„œë²„ ìƒíƒœ ì½ê¸°
 
-extern	BOOL		WriteWorldServerIPToRegistry(int _iServerType,char *_lpstrIP);	//	¿ùµå ¾ÆÀÌÇÇ ÀúÀå
-extern	BOOL		ReadWorldServerIPWithRegistry(int _iServerType,char *_lpstrName,int _iBufferSize);	//	¿ùµå ¾ÆÀÌÇÇ ÀĞ±â
+extern	BOOL		WriteWorldServerIPToRegistry(int _iServerType,char *_lpstrIP);	//	ì›”ë“œ ì•„ì´í”¼ ì €ì¥
+extern	BOOL		ReadWorldServerIPWithRegistry(int _iServerType,char *_lpstrName,int _iBufferSize);	//	ì›”ë“œ ì•„ì´í”¼ ì½ê¸°
 
-extern	BOOL		WriteWorldServerIndexToRegistry(int _iServerType,int _iIndex);	//	¿ùµå ÀÎµ¦½º ÀúÀå
-extern	int			ReadWorldServerIndexWithRegistry(int _iServerType);	//	¿ùµå ÀÎµ¦½º ÀĞ±â
+extern	BOOL		WriteWorldServerIndexToRegistry(int _iServerType,int _iIndex);	//	ì›”ë“œ ì¸ë±ìŠ¤ ì €ì¥
+extern	int			ReadWorldServerIndexWithRegistry(int _iServerType);	//	ì›”ë“œ ì¸ë±ìŠ¤ ì½ê¸°
 
-extern	BOOL		WriteGameServerIndexToRegistry(int _iServerType,int _iIndex);	//	°ÔÀÓ ¼­¹ö ÀÎµ¦½º ÀúÀå
-extern	int			ReadGameServerIndexWithRegistry(int _iServerType);	//	°ÔÀÓ ¼­¹ö ÀÎµ¦½º ÀĞ±â
+extern	BOOL		WriteGameServerIndexToRegistry(int _iServerType,int _iIndex);	//	ê²Œì„ ì„œë²„ ì¸ë±ìŠ¤ ì €ì¥
+extern	int			ReadGameServerIndexWithRegistry(int _iServerType);	//	ê²Œì„ ì„œë²„ ì¸ë±ìŠ¤ ì½ê¸°
 
-extern	BOOL		WriteLifeSignToRegistry(int _iServerType,DWORD _dwSign);	//	¶óÀÌÇÁ »çÀÎ ±â·Ï
-extern	int			ReadLifeSignWithRegistry(int _iServerType);	//	¶óÀÌÇÁ »çÀÎ ÀĞ±â
+extern	BOOL		WriteLifeSignToRegistry(int _iServerType,DWORD _dwSign);	//	ë¼ì´í”„ ì‚¬ì¸ ê¸°ë¡
+extern	int			ReadLifeSignWithRegistry(int _iServerType);	//	ë¼ì´í”„ ì‚¬ì¸ ì½ê¸°
 
-extern	BOOL		WriteAgentSignToRegistry(int _iServerType,DWORD _dwSign);	//	¿¡ÀÌÀüÆ® »çÀÎ ±â·Ï
-extern	int			ReadAgentSignWithRegistry(int _iServerType);	//	¿¡ÀÌÀüÆ® »çÀÎ ÀĞ±â
+extern	BOOL		WriteAgentSignToRegistry(int _iServerType,DWORD _dwSign);	//	ì—ì´ì „íŠ¸ ì‚¬ì¸ ê¸°ë¡
+extern	int			ReadAgentSignWithRegistry(int _iServerType);	//	ì—ì´ì „íŠ¸ ì‚¬ì¸ ì½ê¸°
 
 enum
 {

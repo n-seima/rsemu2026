@@ -32,7 +32,7 @@ public:
 class	CSaveImageIndexData
 {
 public:
-	int		m_iEffectCount;		//	ÀÌÆåÆ® ¼ö
+	int		m_iEffectCount;		//	ì´í™íŠ¸ ìˆ˜
 
 	WORD	m_wImagePlayerEnterance;
 	WORD	m_wImageMonsterEnterance;
@@ -121,43 +121,43 @@ public:
 	WORD	m_wSetOffFirecrackerImage;
 	WORD	m_awFirecrackerImage[10];
 	WORD	m_wShutInMagicBox;
-	WORD	m_wSnowImage;		// ´«ÀÌ¹ÌÁö.
-	WORD	m_wEI_SC_Soul_Consensus;		// ±³°¨ ½ÃÀü
-	WORD	m_wEI_SC_Soul_WindmilSlash;	//	Ç³Â÷º£±â
-	WORD	m_wEI_SC_Soul_BindingWords;	// ¾ğ¾î±¸¼Ó
-	WORD	m_wEI_SC_Soul_Blaze;		// ¼Ò¿ïºí·¹ÀÌÁî
-	WORD	m_wEI_SC_Soul_TyphoonSlash;	// ´ëÈ¸Àüº£±â
-	WORD	m_wEI_SC_Soul_Snatcher;		// ¼Ò¿ï½º³»ÃÄ
-	WORD	m_wEI_SS_Soul_Blaze;		// ¼Ò¿ïºí·¹ÀÌÁî 
-	WORD	m_wEI_SA_Soul_StrikeSlash;	// ³»·Áº£±â
+	WORD	m_wSnowImage;		// ëˆˆì´ë¯¸ì§€.
+	WORD	m_wEI_SC_Soul_Consensus;		// êµê° ì‹œì „
+	WORD	m_wEI_SC_Soul_WindmilSlash;	//	í’ì°¨ë² ê¸°
+	WORD	m_wEI_SC_Soul_BindingWords;	// ì–¸ì–´êµ¬ì†
+	WORD	m_wEI_SC_Soul_Blaze;		// ì†Œìš¸ë¸”ë ˆì´ì¦ˆ
+	WORD	m_wEI_SC_Soul_TyphoonSlash;	// ëŒ€íšŒì „ë² ê¸°
+	WORD	m_wEI_SC_Soul_Snatcher;		// ì†Œìš¸ìŠ¤ë‚´ì³
+	WORD	m_wEI_SS_Soul_Blaze;		// ì†Œìš¸ë¸”ë ˆì´ì¦ˆ 
+	WORD	m_wEI_SA_Soul_StrikeSlash;	// ë‚´ë ¤ë² ê¸°
 
-	WORD	m_wEI_SS_Soul_CruelSoul;		// ÀÜÈ¤ÇÑ ¿µÈ¥
+	WORD	m_wEI_SS_Soul_CruelSoul;		// ì”í˜¹í•œ ì˜í˜¼
 
-	WORD	m_wEI_SH_Soul_Binding;				// ±¸¼Ó·ù È÷Æ®
-	WORD	m_wEI_SS_Soul_Release;				// ÇØ¹æ
-	WORD	m_wEI_SC_Soul_Casting;				// Ä³½ºÆÃ
-	WORD	m_wEI_SS_Soul_Consensus;		// ±³°¨ »óÅÂ 
-	WORD	m_wEI_SS_Soul_InterruptingWeapon	;	// ¹«±âÇØÁ¦
-	WORD	m_wEI_SC_Soul_Release;				// ÇØ¹æ	Ä³½ºÆÃ..
-	WORD	m_wEI_SS_Soul_BindingWords;	// ¾ğ¾î±¸¼Ó
-	WORD	m_wEI_SS_Soul_NotUseReaction;	// ¸®¾×¼Ç ½ºÅ³ »ç¿ë ±İÁö
-	WORD	m_wEI_SS_Cham_Bear	;	// Åõ±â»óÅÂ - °õ
-	WORD	m_wEI_SS_Cham_Bull	;	// Åõ±â»óÅÂ - ¼Ò
-	WORD	m_wEI_SS_Cham_Hawk	;	// Åõ±â»óÅÂ - µ¶¼ö¸®
-	WORD	m_wEI_SS_Cham_Snake	;	// Åõ±â»óÅÂ - ¹ì
-	WORD	m_wEI_SS_Cham_Puma	;	// Åõ±â»óÅÂ - Çª¸¶
-	WORD	m_wEI_Hit_Hard_Blow	;	//	°­Å¸ È÷Æ®
-	WORD	m_wEI_Hit_FightingSpirit	;	// ÅõÁö È÷Æ®
-	WORD	m_wEI_SS_Hard_Blow	;	//	°­Å¸ È¿°ú
-	WORD	m_wEI_Hit_Ignore_Block;	// ºí·°¹«½Ã
-	WORD	m_wEI_WhiteBit;			//	È­ÀÌÆ®ºñÆ®
-	WORD	m_wEI_RedBit;			//	·¹µåºñÆ®
-	WORD	m_wEI_GleamTant;			//	ºûÀÇÀå¸·
-	WORD	m_wEI_PowerOfVitalization;			//	È°¼ºÈ­ÀÇ ±Ç´É
-	WORD	m_wHitBleedingEffect;				//	ÃâÇ÷
-	WORD	m_wHitElectricShockEffect;		//	°¨ÀüÈ¿°ú
-	WORD	m_wEI_MakeTypeUndead;				//	¾ğµ¥µåÈ­
-	WORD	m_wEI_ElectricShock;				//	°¨Àü
+	WORD	m_wEI_SH_Soul_Binding;				// êµ¬ì†ë¥˜ íˆíŠ¸
+	WORD	m_wEI_SS_Soul_Release;				// í•´ë°©
+	WORD	m_wEI_SC_Soul_Casting;				// ìºìŠ¤íŒ…
+	WORD	m_wEI_SS_Soul_Consensus;		// êµê° ìƒíƒœ 
+	WORD	m_wEI_SS_Soul_InterruptingWeapon	;	// ë¬´ê¸°í•´ì œ
+	WORD	m_wEI_SC_Soul_Release;				// í•´ë°©	ìºìŠ¤íŒ…..
+	WORD	m_wEI_SS_Soul_BindingWords;	// ì–¸ì–´êµ¬ì†
+	WORD	m_wEI_SS_Soul_NotUseReaction;	// ë¦¬ì•¡ì…˜ ìŠ¤í‚¬ ì‚¬ìš© ê¸ˆì§€
+	WORD	m_wEI_SS_Cham_Bear	;	// íˆ¬ê¸°ìƒíƒœ - ê³°
+	WORD	m_wEI_SS_Cham_Bull	;	// íˆ¬ê¸°ìƒíƒœ - ì†Œ
+	WORD	m_wEI_SS_Cham_Hawk	;	// íˆ¬ê¸°ìƒíƒœ - ë…ìˆ˜ë¦¬
+	WORD	m_wEI_SS_Cham_Snake	;	// íˆ¬ê¸°ìƒíƒœ - ë±€
+	WORD	m_wEI_SS_Cham_Puma	;	// íˆ¬ê¸°ìƒíƒœ - í‘¸ë§ˆ
+	WORD	m_wEI_Hit_Hard_Blow	;	//	ê°•íƒ€ íˆíŠ¸
+	WORD	m_wEI_Hit_FightingSpirit	;	// íˆ¬ì§€ íˆíŠ¸
+	WORD	m_wEI_SS_Hard_Blow	;	//	ê°•íƒ€ íš¨ê³¼
+	WORD	m_wEI_Hit_Ignore_Block;	// ë¸”ëŸ­ë¬´ì‹œ
+	WORD	m_wEI_WhiteBit;			//	í™”ì´íŠ¸ë¹„íŠ¸
+	WORD	m_wEI_RedBit;			//	ë ˆë“œë¹„íŠ¸
+	WORD	m_wEI_GleamTant;			//	ë¹›ì˜ì¥ë§‰
+	WORD	m_wEI_PowerOfVitalization;			//	í™œì„±í™”ì˜ ê¶ŒëŠ¥
+	WORD	m_wHitBleedingEffect;				//	ì¶œí˜ˆ
+	WORD	m_wHitElectricShockEffect;		//	ê°ì „íš¨ê³¼
+	WORD	m_wEI_MakeTypeUndead;				//	ì–¸ë°ë“œí™”
+	WORD	m_wEI_ElectricShock;				//	ê°ì „
 	BYTE	m_abImageOutputMethod[dEFFECT_IMAGE_DATA_COUNT];
 };
 

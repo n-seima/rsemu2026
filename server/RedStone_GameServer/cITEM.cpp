@@ -1052,36 +1052,25 @@ cItem::increaseMinute(int _iMinute)
 	if	(isSpecialItem())
 		return;
 
-	for (int iTime=0;iTime<_iMinute;iTime++)
-	{
-		m_minute++;
+	CTimeInfo	timeInfo;
 
-		if (m_minute	>=	60)
-		{
-			m_minute	=	0;
-			m_hour++;
+	timeInfo.reset();
+	timeInfo.m_wYear	=	(WORD)DecodeItemExpireFullYear(m_year,g_currentTime.m_wYear);
+	if	(timeInfo.m_wYear == 0)
+		timeInfo.m_wYear	=	g_currentTime.m_wYear;
 
-			if (m_hour	>=	24)
-			{
-				m_hour	=	0;
-				
-				int	iLastDay=	GetLastDay(m_year,m_month);
+	timeInfo.m_wMonth	=	m_month ? (WORD)m_month : g_currentTime.m_wMonth;
+	timeInfo.m_wDay		=	m_day ? (WORD)m_day : g_currentTime.m_wDay;
+	timeInfo.m_wHour	=	(WORD)m_hour;
+	timeInfo.m_wMinute	=	(WORD)m_minute;
 
-				if (m_day+1	>	(DWORD)iLastDay)
-				{
-					m_day	=	1;
-					m_month++;
+	timeInfo.increaseMinute(_iMinute);
 
-					if (m_month	>	12)
-					{
-						m_month	=	1;
-						m_year++;
-					}
-				}
-				else	m_day++;
-			}
-		}
-	}
+	m_year		=	EncodeItemExpireYear(timeInfo.m_wYear);
+	m_month		=	timeInfo.m_wMonth;
+	m_day		=	timeInfo.m_wDay;
+	m_hour		=	timeInfo.m_wHour;
+	m_minute	=	timeInfo.m_wMinute;
 }
 
 //
@@ -1453,7 +1442,7 @@ cItem::isExpiredItem()
 		}
 
 		iCurrentTimeValue	=	iYear*100000000	+iMonth*1000000	+iDay*10000	+iHour*100	+iMinute;
-		iExpireTimeValue	=	m_year*100000000+m_month*1000000+m_day*10000+m_hour*100	+m_minute;
+		iExpireTimeValue	=	DecodeItemExpireYearOffset(m_year,g_currentTime.m_wYear)*100000000+m_month*1000000+m_day*10000+m_hour*100	+m_minute;
 
 		if	(iExpireTimeValue != 0 && iCurrentTimeValue > iExpireTimeValue)
 			return TRUE;

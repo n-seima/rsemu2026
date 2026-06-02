@@ -1,0 +1,10 @@
+IP = 127.0.0.1;
+SAVEINTERVAL = 10;
+LOGIP = 127.0.0.1;
+LOGPORT = 59641;
+WEBIP = 127.0.0.1;
+PURCHASE_DB = redgem;
+STAT_INFO = 127.0.0.1 | sa | password | RedStone;
+MAIN_TEST = 1;
+TESTSERVER = 1;
+END;

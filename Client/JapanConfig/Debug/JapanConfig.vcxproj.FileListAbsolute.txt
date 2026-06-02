@@ -1,0 +1,3 @@
+C:\Users\seima\Desktop\rs_emu_sourcecode-main\Client\JapanConfig\Debug\JapanConfig.vcxproj.CopyComplete
+C:\Users\seima\Desktop\rs_emu_sourcecode-main\Client\JapanConfig\Debug\JapanConfig.exe
+C:\Users\seima\Desktop\rs_emu_sourcecode-main\Client\JapanConfig\Debug\z.dll

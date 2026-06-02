@@ -2,6 +2,43 @@
 #include <WINDOWSX.H>
 #include "cMAIN.H"						// 09.11.30 추가
 
+static const char s_strUntranslated[] = "\226\242\226\174\226\363";
+
+static BOOL
+IsBrokenListText(char *str)
+{
+	if (!str) return FALSE;
+
+	int		len		=	strlen(str);
+	int		wideLen	=	MultiByteToWideChar(932,MB_ERR_INVALID_CHARS,str,len,NULL,0);
+	int		i,broken	=	0;
+
+	if (wideLen <= 0) return FALSE;
+
+	WCHAR	*pWide	=	new WCHAR[wideLen];
+	if (!pWide) return FALSE;
+
+	MultiByteToWideChar(932,MB_ERR_INVALID_CHARS,str,len,pWide,wideLen);
+
+	for (i=0;i<wideLen;i++)
+	{
+		WCHAR	ch	=	pWide[i];
+
+		if (ch == 0xfffd || (ch >= 0x00a0 && ch <= 0x00ff) || (ch >= 0xe000 && ch <= 0xf8ff))
+			broken++;
+	}
+
+	delete[] pWide;
+
+	return	(broken >= 2);
+}
+
+static char *
+GetListDisplayText(char *str)
+{
+	return	IsBrokenListText(str) ? (char *)s_strUntranslated : str;
+}
+
 /********************     Sonaki Foundation Class	************************************
 
 	class cWND
@@ -1005,7 +1042,7 @@ cCOMBOBOX::GetCount()
 
 int
 cCOMBOBOX::Add(char *str)
-{	return SendMessage(hWND, CB_ADDSTRING, 0,( LPARAM )str);
+{	return SendMessage(hWND, CB_ADDSTRING, 0,( LPARAM )GetListDisplayText(str));
 }
 
 int
@@ -1140,7 +1177,7 @@ cCOMBOBOX::GetString(int index)
 
 int 
 cCOMBOBOX::Add(HWND hwnd,char *str)
-{	return SendMessage(hwnd, CB_ADDSTRING, 0,( LPARAM )str);
+{	return SendMessage(hwnd, CB_ADDSTRING, 0,( LPARAM )GetListDisplayText(str));
 }
 
 int 
@@ -1673,7 +1710,7 @@ cLISTBOX::Reset()
 
 int
 cLISTBOX::Add(char *str)
-{	return	SendMessage(hWND, LB_ADDSTRING, 0,(LPARAM)str);
+{	return	SendMessage(hWND, LB_ADDSTRING, 0,(LPARAM)GetListDisplayText(str));
 }
 
 int
@@ -1765,7 +1802,7 @@ cLISTBOX::Reset(HWND hwnd)
 
 int
 cLISTBOX::Add(HWND hwnd,char *str)
-{	return	SendMessage(hwnd, LB_ADDSTRING, 0,(LPARAM)str);
+{	return	SendMessage(hwnd, LB_ADDSTRING, 0,(LPARAM)GetListDisplayText(str));
 }
 
 int

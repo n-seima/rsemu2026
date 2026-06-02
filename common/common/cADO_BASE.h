@@ -17,9 +17,9 @@
 #define dSQL_DELETE(a,b)		sqlExecute("DELETE FROM %s WHERE %s",a,b)
 #define dSQL_UPDATE(a,b,c)		sqlExecute("UPDATE %s SET %s WHERE %s",a,b,c)
 
-#define dSP_SUCCESS						0	//¼º°øÀûÀÎ ½ÇÇà
-#define dSP_FAIL						-1	//½ÇÇà ÀÚÃ¼ÀÇ ¹®Á¦ 
-#define dSP_ERROR						-2	//SP ³»ºÎÀÇ ¿¡·¯´Ù.
+#define dSP_SUCCESS						0	//ì„±ê³µì ì¸ ì‹¤í–‰
+#define dSP_FAIL						-1	//ì‹¤í–‰ ìì²´ì˜ ë¬¸ì œ 
+#define dSP_ERROR						-2	//SP ë‚´ë¶€ì˜ ì—ëŸ¬ë‹¤.
 
 #define dMAX_DB_CONNECTION				20
 
@@ -40,18 +40,18 @@ typedef struct InitOle {
 
 
 /*
-adStateClosed					±âº»°ª. °³Ã¼°¡ ´İÇô ÀÖÀ½À» ³ªÅ¸³À´Ï´Ù. 
-adStateOpen						°³Ã¼°¡ ¿­·Á ÀÖÀ½À» ³ªÅ¸³À´Ï´Ù. 
-adStateConnecting Recordset		°³Ã¼°¡ ¿¬°á ÁßÀÓÀ» ³ªÅ¸³À´Ï´Ù. 
-adStateExecuting Recordset		°³Ã¼°¡ ¸í·ÉÀ» ½ÇÇàÇÏ´Â ÁßÀÓÀ» ³ªÅ¸³À´Ï´Ù. 
-adStateFetching Recordset		°³Ã¼ÀÇ ÇàÀ» °¡Á®¿À´Â ÁßÀÓÀ» ³ªÅ¸³À´Ï´Ù. 
+adStateClosed					ê¸°ë³¸ê°’. ê°œì²´ê°€ ë‹«í˜€ ìˆìŒì„ ë‚˜íƒ€ëƒ…ë‹ˆë‹¤. 
+adStateOpen						ê°œì²´ê°€ ì—´ë ¤ ìˆìŒì„ ë‚˜íƒ€ëƒ…ë‹ˆë‹¤. 
+adStateConnecting Recordset		ê°œì²´ê°€ ì—°ê²° ì¤‘ì„ì„ ë‚˜íƒ€ëƒ…ë‹ˆë‹¤. 
+adStateExecuting Recordset		ê°œì²´ê°€ ëª…ë ¹ì„ ì‹¤í–‰í•˜ëŠ” ì¤‘ì„ì„ ë‚˜íƒ€ëƒ…ë‹ˆë‹¤. 
+adStateFetching Recordset		ê°œì²´ì˜ í–‰ì„ ê°€ì ¸ì˜¤ëŠ” ì¤‘ì„ì„ ë‚˜íƒ€ëƒ…ë‹ˆë‹¤. 
 
-  conntion->GetState()·Î ¾ò¾î¿À¸ç
-À­ ÇÃ·¡±×µéÀº Áßº¹ °¡´É 
+  conntion->GetState()ë¡œ ì–»ì–´ì˜¤ë©°
+ìœ— í”Œë˜ê·¸ë“¤ì€ ì¤‘ë³µ ê°€ëŠ¥ 
 */
 
 #define dDBCONNECT_COUNT		dMAX_DB_CONNECTION
-#define dERROR_COUNT			5		//	5°³ ÀÌ»ó ¿¬¼ÓÀ¸·Î ¿¡·¯³ª¸é ´Ù½Ã ÄÁ³ØÆ® ÇØ¼­ »ç¿ëÇØ¶ó.
+#define dERROR_COUNT			5		//	5ê°œ ì´ìƒ ì—°ì†ìœ¼ë¡œ ì—ëŸ¬ë‚˜ë©´ ë‹¤ì‹œ ì»¨ë„¥íŠ¸ í•´ì„œ ì‚¬ìš©í•´ë¼.
 
 class	cADO_BASE
 {
@@ -61,7 +61,7 @@ public:
 
 	DWORD	dwErrorTime;
 	int		iErrorCount;
-	int		iConnectIndex;		//	dDBCONNECT_COUNT / 3 -> 3ÀÇ ¹è¼ö·Î¸¸ Ã³¸®ÇØ¶ó. ÇÑ¹ø¿¡ 3°³¾¿..
+	int		iConnectIndex;		//	dDBCONNECT_COUNT / 3 -> 3ì˜ ë°°ìˆ˜ë¡œë§Œ ì²˜ë¦¬í•´ë¼. í•œë²ˆì— 3ê°œì”©..
 	int		iErrorProblem;
 	char	mainPro[1024];
 	char	pro[1024];
@@ -71,7 +71,7 @@ public:
 	char 	strDBDb[64];
 
 	_ConnectionPtr		pConnection[dDBCONNECT_COUNT];
-	_ConnectionPtr		GetConnection();	//	¿¬°áµÇ¾î ÀÖÀ¸³ª »ç¿ëÁßÀÌÁö ¾ÊÀº °ÍÀ» º¸³»ÁØ´Ù.
+	_ConnectionPtr		GetConnection();	//	ì—°ê²°ë˜ì–´ ìˆìœ¼ë‚˜ ì‚¬ìš©ì¤‘ì´ì§€ ì•Šì€ ê²ƒì„ ë³´ë‚´ì¤€ë‹¤.
 	CRITICAL_SECTION	csConnectionPool;
 	HANDLE				hThread;
 	BOOL				continueThread;
@@ -86,7 +86,7 @@ public:
 	void	Close();
 
 //	for execute sql	
-	BOOL	__cdecl sqlExecute(char *str,...);	//°¡´ÉÇÏ¸é ÀÌ°É·Î »ç¿ëÇÏÁö ¸»°í SP¸¦ »ç¿ëÇØ¶ó.
+	BOOL	__cdecl sqlExecute(char *str,...);	//ê°€ëŠ¥í•˜ë©´ ì´ê±¸ë¡œ ì‚¬ìš©í•˜ì§€ ë§ê³  SPë¥¼ ì‚¬ìš©í•´ë¼.
 //	BOOL	_sqlChangeSkillData();
 //	void	_sqlResetJob();
 //	void	spSaveAva(cP_PLAYER_DATA * pData);

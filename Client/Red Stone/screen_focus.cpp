@@ -1,4 +1,5 @@
 #include	"screen_focus.h"
+#include	<mmsystem.h>
 
 void
 cScreenFocus::reset()

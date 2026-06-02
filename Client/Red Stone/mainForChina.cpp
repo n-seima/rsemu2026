@@ -155,6 +155,9 @@ cMAIN::InitForChina(HINSTANCE hInst)
 
 	CGamePlay::LoadConfigData();
 
+	width	=	g_iScreenWidth;
+	height	=	g_iScreenHeight;
+
 #ifndef	_DEBUG
 	if	(g_config.m_bf1IsWindowMode)
 		s_isFullScreen	=	FALSE;

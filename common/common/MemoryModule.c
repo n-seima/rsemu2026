@@ -33,7 +33,7 @@
 #include <stdio.h>
 #endif
 
-// VisualStudio 2008 ¿¡´Â define ÀÌ ¾ÈµÇ¾îÀÖ´Ù
+// VisualStudio 2008 ì—ëŠ” define ì´ ì•ˆë˜ì–´ìˆë‹¤
 #ifndef IMAGE_SIZEOF_BASE_RELOCATION
 	#define IMAGE_SIZEOF_BASE_RELOCATION         8
 #endif

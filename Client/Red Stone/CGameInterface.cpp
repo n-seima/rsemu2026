@@ -312,7 +312,15 @@ CGamePlay::LoadConfigData()
 		return;
 	}
 
-	fileConfig.Read(&g_config,sizeof(g_config));
+	{
+		CGameOption	defaultConfig;
+		DWORD		dwReadSize	=	fileConfig.Length < sizeof(g_config) ? fileConfig.Length : sizeof(g_config);
+
+		g_config	=	defaultConfig;
+
+		if	(dwReadSize	>	0)
+			fileConfig.Read(&g_config,dwReadSize);
+	}
 
 	fileConfig.Close();
 
@@ -323,6 +331,14 @@ CGamePlay::LoadConfigData()
 
 	if	(g_config.m_dwConfigVersion	<	eCFV_ADD_WINDOW_MODE)
 		g_config.m_bf1IsWindowMode	=	FALSE;
+
+	if	(iVersion	<	eCFV_ADD_RESOLUTION_MODE)
+		SetGameResolutionMode(g_config,g_config.m_bf1IsUse1024X768 ? eGAME_RESOLUTION_1024X768 : eGAME_RESOLUTION_800X600);
+	else
+	if	(iVersion	<	eCFV_ADD_VARIABLE_RESOLUTION)
+		SetGameResolutionMode(g_config,GetGameResolutionMode(g_config));
+	else
+		SetGameResolutionSize(g_config,g_config.m_wScreenWidth,g_config.m_wScreenHeight);
 
 	if	(iVersion	<	eCFV_ADD_MUSIC_ON)
 	{
@@ -376,17 +392,7 @@ CGamePlay::LoadConfigData()
 	s_iSelectAvatar			=	g_config.m_iSelectAvatar;
 
 	{
-		if	(g_config.m_bf1IsUse1024X768)
-		{
-			g_iScreenWidth	=	1024;
-		//	g_iScreenWidth	=	1366;
-			g_iScreenHeight	=	768;
-		}
-		else
-		{
-			g_iScreenWidth	=	800;
-			g_iScreenHeight	=	600;
-		}
+		GetGameResolutionSize(g_config,g_iScreenWidth,g_iScreenHeight);
 
 		g_iCorrectBI_X	=	g_iScreenWidth-800;
 		g_iCorrectBI_Y	=	g_iScreenHeight-600;

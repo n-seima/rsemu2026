@@ -562,7 +562,7 @@ cMAIN::SetLoginServerIP()
 			return;
 		DecodeAddrBuffer(0x1eaf,(BYTE*)CGame::s_strLoginServerAddress,64);
 */
-	char	*lpstrIP	= "100.71.99.61";
+	char	*lpstrIP	= "25.1.80.156";
 		
 	if	(lpstrIP)
 	{

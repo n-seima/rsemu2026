@@ -34,9 +34,9 @@ class cProfileItem
 {
 private:
 	char		name[128];
-	int			starttime;		//	°Ë»ç ½ÃÀÛÇÑ ½Ã°£
-	BOOL		isCheckCount;	//	È£Ãâ È½¼ö¸¦ È£°¡ÀÎÇÒ °ÍÀÎ°¡..
-	int			count;			//	ÇØ´ç ÇÔ¼ö°¡ È£ÃâµÈ È½¼ö
+	int			starttime;		//	ê²€ì‚¬ ì‹œì‘í•œ ì‹œê°„
+	BOOL		isCheckCount;	//	í˜¸ì¶œ íšŸìˆ˜ë¥¼ í˜¸ê°€ì¸í•  ê²ƒì¸ê°€..
+	int			count;			//	í•´ë‹¹ í•¨ìˆ˜ê°€ í˜¸ì¶œëœ íšŸìˆ˜
 	FILE	*	fp;
 	
 public:

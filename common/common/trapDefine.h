@@ -12,37 +12,37 @@
 //	Trap Target
 enum
 {
-	eTT_TARGET,		//	Å¸°Ù¸¸ °ø°Ý
-	eTT_RANGE,		//	¹üÀ§ ÇÔÁ¤
+	eTT_TARGET,		//	íƒ€ê²Ÿë§Œ ê³µê²©
+	eTT_RANGE,		//	ë²”ìœ„ í•¨ì •
 };
 
 enum
 {
-	eTSE_FIRE_DAMAGE	,	//	ºÒ´ë¹ÌÁö
-	eTSE_WATER_DAMAGE	,	//	¹°´ë¹ÌÁö;
-	eTSE_EARTH_DAMAGE	,	//	´ëÁö´ë¹ÌÁö;
-	eTSE_WIND_DAMAGE	,	//	¹Ù¶÷´ë¹ÌÁö;
-	eTSE_LIGHT_DAMAGE	,	//	ºû´ë¹ÌÁö;
-	eTSE_DARK_DAMAGE	,	//	¾îµÒ´ë¹ÌÁö;
-	eTSE_PHYSICAL_DAMAGE	,	//	¹°¸®´ë¹ÌÁö;
-	eTSE_DAMAGE_SKILL_BORDER,	//	¹°¸®´ë¹ÌÁö;
-	eTSE_BLIND		,	//	Àå´Ô;
-	eTSE_CLOD		,	//	¾óÀ½°áÁ¤;
-	eTSE_FREEZE	,	//	¾óÀ½;
-	eTSE_NIGHTMARE	,	//	¾Ç¸ù
-	eTSE_PARALYSIS	,	//	Àü½Å¸¶ºñ
-	eTSE_SLEEP	,	//	Àá;
-	eTSE_STUN	,	//	¸¶ºñ;
-	eTSE_CONFUSE	,	//	È¥¶õ;
-	eTSE_DECLINE_ATTACK_POWER,	//	°ø°Ý·ÂÀúÇÏ;
-	eTSE_DECLINE_DEFENSIVE_POWER,	//	¹æ¾î·ÂÀúÇÏ;
-	eTSE_DECLINE_HIT_CHANCE	,	//	¸íÁß·üÀúÇÏ;
-	eTSE_DECLINE_DODGE_CHANCE	,	//	È¸ÇÇÀ²ÀúÇÏ;
-	eTSE_DECLINE_ATTACK_SPEED	,	//	°ø°Ý¼ÓµµÀúÇÏ;
-	eTSE_DECLINE_MOVE_SPEED	,	//	ÀÌµ¿¼ÓµµÀúÇÏ;
-	eTSE_DECLINE_CONCENTRATION	,	//	ÁýÁß·Â°¨¼Ò;
-	eTSE_DECLINE_MAGIC_RESISTANCE	,	//	¼Ó¼ºÀúÇ×·ÂÀúÇÏ;
-	eTSE_WEAKNING_RESISTANCE	,	//	ÀúÇ×·Â¾àÈ­;
+	eTSE_FIRE_DAMAGE	,	//	ë¶ˆëŒ€ë¯¸ì§€
+	eTSE_WATER_DAMAGE	,	//	ë¬¼ëŒ€ë¯¸ì§€;
+	eTSE_EARTH_DAMAGE	,	//	ëŒ€ì§€ëŒ€ë¯¸ì§€;
+	eTSE_WIND_DAMAGE	,	//	ë°”ëžŒëŒ€ë¯¸ì§€;
+	eTSE_LIGHT_DAMAGE	,	//	ë¹›ëŒ€ë¯¸ì§€;
+	eTSE_DARK_DAMAGE	,	//	ì–´ë‘ ëŒ€ë¯¸ì§€;
+	eTSE_PHYSICAL_DAMAGE	,	//	ë¬¼ë¦¬ëŒ€ë¯¸ì§€;
+	eTSE_DAMAGE_SKILL_BORDER,	//	ë¬¼ë¦¬ëŒ€ë¯¸ì§€;
+	eTSE_BLIND		,	//	ìž¥ë‹˜;
+	eTSE_CLOD		,	//	ì–¼ìŒê²°ì •;
+	eTSE_FREEZE	,	//	ì–¼ìŒ;
+	eTSE_NIGHTMARE	,	//	ì•…ëª½
+	eTSE_PARALYSIS	,	//	ì „ì‹ ë§ˆë¹„
+	eTSE_SLEEP	,	//	ìž ;
+	eTSE_STUN	,	//	ë§ˆë¹„;
+	eTSE_CONFUSE	,	//	í˜¼ëž€;
+	eTSE_DECLINE_ATTACK_POWER,	//	ê³µê²©ë ¥ì €í•˜;
+	eTSE_DECLINE_DEFENSIVE_POWER,	//	ë°©ì–´ë ¥ì €í•˜;
+	eTSE_DECLINE_HIT_CHANCE	,	//	ëª…ì¤‘ë¥ ì €í•˜;
+	eTSE_DECLINE_DODGE_CHANCE	,	//	íšŒí”¼ìœ¨ì €í•˜;
+	eTSE_DECLINE_ATTACK_SPEED	,	//	ê³µê²©ì†ë„ì €í•˜;
+	eTSE_DECLINE_MOVE_SPEED	,	//	ì´ë™ì†ë„ì €í•˜;
+	eTSE_DECLINE_CONCENTRATION	,	//	ì§‘ì¤‘ë ¥ê°ì†Œ;
+	eTSE_DECLINE_MAGIC_RESISTANCE	,	//	ì†ì„±ì €í•­ë ¥ì €í•˜;
+	eTSE_WEAKNING_RESISTANCE	,	//	ì €í•­ë ¥ì•½í™”;
 };
 
 #define	dMAX_TRAP_SKILL			100

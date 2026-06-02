@@ -1,0 +1,689 @@
+[181249] Success DB Connecting ... 
+
+
+[181249] Open Server addr = 25.1.80.156
+
+
+[181249] Start WorkerThread[0] ...
+
+[181249] Start WorkerThread[1] ...
+
+[181249] Start WorkerThread[2] ...
+
+[181249] Start WorkerThread[4] ...
+
+[181249] Start WorkerThread[3] ...
+
+[181249] Start WorkerThread[5] ...
+
+[181249] Start WorkerThread[6] ...
+
+[181249] Start WorkerThread[7] ...
+
+[181249] Start EventMngThread ...
+
+[181250] Start AdditionThread ...
+
+[181251]  Carrot Shop Item Count at First = 3
+
+[181251] Start USER DB Cache Server ... day : 20260601 - time : 181251 
+
+
+[181301] Add User  = 1 , 127.0.0.1 
+
+
+[181301] Connect Server : [#login] [25.1.80.156] 0 0 idx 65535
+
+
+[181321] Add User  = 2 , 127.0.0.1 
+
+
+[181321]  SendCarrotShop to user []
+
+[181321]  Send CarrotShop Info : count 3 (3)
+
+[181323] ()1 is Exit!!
+
+
+[181333] Add User  = 2 , 127.0.0.1 
+
+
+[181333]  SendCarrotShop to user []
+
+[181333]  Send CarrotShop Info : count 3 (3)
+
+[181335] ()1 is Exit!!
+
+
+[181429] Add User  = 2 , 127.0.0.1 
+
+
+[181429]  SendCarrotShop to user []
+
+[181429]  Send CarrotShop Info : count 3 (3)
+
+[181431] ()1 is Exit!!
+
+
+[181431] (#login)0 is Exit!!
+
+
+[181541] Success DB Connecting ... 
+
+
+[181541] Open Server addr = 25.1.80.156
+
+
+[181541] Start WorkerThread[0] ...
+
+[181541] Start WorkerThread[1] ...
+
+[181541] Start WorkerThread[5] ...
+
+[181541] Start WorkerThread[4] ...
+
+[181541] Start WorkerThread[6] ...
+
+[181541] Start WorkerThread[7] ...
+
+[181541] Start WorkerThread[2] ...
+
+[181541] Start WorkerThread[3] ...
+
+[181541] Start EventMngThread ...
+
+[181542] Start AdditionThread ...
+
+[181542]  Carrot Shop Item Count at First = 3
+
+[181542] Start USER DB Cache Server ... day : 20260601 - time : 181542 
+
+
+[181553] Add User  = 1 , 127.0.0.1 
+
+
+[181553] Connect Server : [#login] [25.1.80.156] 0 0 idx 65535
+
+
+[182556] Add User  = 2 , 127.0.0.1 
+
+
+[182556]  SendCarrotShop to user []
+
+[182556]  Send CarrotShop Info : count 3 (3)
+
+[182605] Connect Server : [お水サーバー] [127.0.0.1] 2 0 idx 0
+
+
+[182605]  Add Server : お水サーバー , 127.0.0.1, 1 
+
+[182615] login strResult = 6 
+
+
+[183603] login strResult = 6 
+
+
+[190101] login strResult = 6 
+
+
+[190646] login strResult = 6 
+
+
+[192140] login strResult = 6 
+
+
+[192216] login strResult = 6 
+
+
+[192227] login strResult = 6 
+
+
+[192234] login strResult = 6 
+
+
+[192344] login strResult = 6 
+
+
+[192410] login strResult = 6 
+
+
+[192426] login strResult = 6 
+
+
+[192525] login strResult = 6 
+
+
+[192923]  GetPvPData : [usi1111] 
+
+[192947]  GetPvPData : [omizu1] 
+
+[193858] login strResult = 2 
+
+
+[193900] login strResult = 2 
+
+
+[193902] login strResult = 6 
+
+
+[193936] login strResult = 6 
+
+
+[193955] login strResult = 6 
+
+
+[194006]  GetPvPData : [usi1111] 
+
+[194031] login strResult = 6 
+
+
+[194049] login strResult = 6 
+
+
+[194134]  Login Error : [-4] 
+[194134] login strResult = 1 
+
+
+[194144] login strResult = 6 
+
+
+[194226] login strResult = 6 
+
+
+[194357] login strResult = 6 
+
+
+[194409] login strResult = 6 
+
+
+[195906]  GetPvPData : [pengg101] 
+
+[195910] login strResult = 6 
+
+
+[195928] login strResult = 6 
+
+
+[195941] login strResult = 6 
+
+
+[200914] login strResult = 6 
+
+
+[200943] login strResult = 6 
+
+
+[200953] login strResult = 6 
+
+
+[201026] login strResult = 6 
+
+
+[203703] login strResult = 6 
+
+
+[203909]  Login Error : [-2] 
+[203909] login strResult = 1 
+
+
+[203912] login strResult = 2 
+
+
+[203913] login strResult = 2 
+
+
+[203915] login strResult = 6 
+
+
+[203931] login strResult = 6 
+
+
+[203951] login strResult = 6 
+
+
+[204002] login strResult = 6 
+
+
+[204016] login strResult = 6 
+
+
+[204030] login strResult = 6 
+
+
+[204046] login strResult = 6 
+
+
+[204626]  GetPvPData : [toa16] 
+
+[210559] login strResult = 6 
+
+
+[212303] login strResult = 6 
+
+
+[213750]  GetPvPData : [toa16] 
+
+[214657] login strResult = 6 
+
+
+[214708] login strResult = 6 
+
+
+[220218] login strResult = 6 
+
+
+[220246] login strResult = 6 
+
+
+[220330] login strResult = 6 
+
+
+[220345] login strResult = 6 
+
+
+[221041]  GetPvPData : [pengg101] 
+
+[221454]  Login Error : [-2] 
+[221454] login strResult = 1 
+
+
+[221458] login strResult = 6 
+
+
+[221609]  GetPvPData : [pengg101] 
+
+[221857] login strResult = 6 
+
+
+[221947]  GetPvPData : [toa16] 
+
+[224304] login strResult = 6 
+
+
+[224455] login strResult = 6 
+
+
+[224502] login strResult = 6 
+
+
+[224504] login strResult = 6 
+
+
+[224757]  GetPvPData : [omizu1] 
+
+[224801]  GetPvPData : [toa16] 
+
+[225422]  GetPvPData : [usi1111] 
+
+[230048]  GetPvPData : [pengg101] 
+
+[230300] login strResult = 6 
+
+
+[230308]  GetPvPData : [usi1111] 
+
+[230356] login strResult = 6 
+
+
+[230359] login strResult = 6 
+
+
+[230411] login strResult = 6 
+
+
+[230423] login strResult = 6 
+
+
+[230439] login strResult = 6 
+
+
+[230513] login strResult = 6 
+
+
+[230535] login strResult = 6 
+
+
+[230558]  GetPvPData : [usi1111] 
+
+[230659] login strResult = 6 
+
+
+[230903] login strResult = 6 
+
+
+[230939] login strResult = 6 
+
+
+[230945] login strResult = 6 
+
+
+[231000] login strResult = 6 
+
+
+[231011] login strResult = 6 
+
+
+[231125]  GetPvPData : [usi1111] 
+
+[231241]  GetPvPData : [pengg101] 
+
+[231654] login strResult = 6 
+
+
+[231739] login strResult = 6 
+
+
+[231817] login strResult = 6 
+
+
+[231843] login strResult = 6 
+
+
+[231904] login strResult = 6 
+
+
+[231923] login strResult = 6 
+
+
+[231937] login strResult = 6 
+
+
+[231948] login strResult = 6 
+
+
+[231958] login strResult = 6 
+
+
+[232012] login strResult = 6 
+
+
+[233535]  GetPvPData : [pengg101] 
+
+[234325] login strResult = 6 
+
+
+[235559] login strResult = 6 
+
+
+[000247] login strResult = 6 
+
+
+[000837] login strResult = 6 
+
+
+[000939] login strResult = 6 
+
+
+[001343] login strResult = 6 
+
+
+[001430]  GetPvPData : [kai444] 
+
+[002039]  GetPvPData : [pengg101] 
+
+[002053] login strResult = 6 
+
+
+[002155]  GetPvPData : [usi1111] 
+
+[003105]  SendCarrotShop to user [127.0.0.1]
+
+[003105]  Send CarrotShop Info : count 3 (3)
+
+[003135]  SendCarrotShop to user [127.0.0.1]
+
+[003135]  Send CarrotShop Info : count 3 (3)
+
+[003432]  SendCarrotShop to user [127.0.0.1]
+
+[003432]  Send CarrotShop Info : count 3 (3)
+
+[004946] login strResult = 6 
+
+
+[005454]  SendCarrotShop to user [127.0.0.1]
+
+[005454]  Send CarrotShop Info : count 4 (4)
+
+[005459]  SendCarrotShop to user [127.0.0.1]
+
+[005459]  Send CarrotShop Info : count 4 (4)
+
+[005533] login strResult = 6 
+
+
+[005602] login strResult = 6 
+
+
+[005610] login strResult = 6 
+
+
+[005831] login strResult = 6 
+
+
+[010252] login strResult = 6 
+
+
+[010254] login strResult = 6 
+
+
+[010509]  GetPvPData : [kai444] 
+
+[011153]  GetPvPData : [pengg101] 
+
+[011427] login strResult = 6 
+
+
+[011430] login strResult = 6 
+
+
+[011558] login strResult = 6 
+
+
+[011626] login strResult = 6 
+
+
+[012517] login strResult = 6 
+
+
+[012543]  GetPvPData : [omizu1] 
+
+[012904] login strResult = 6 
+
+
+[021718] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: 要求された名前、または序数に対応する項目がコレクションで見つかりません。 Line: 390  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_USER_DBServer\cADO_USER.cpp ADODB.Parameters 
+
+
+[061213] login strResult = 6 
+
+
+[061349] login strResult = 6 
+
+
+[061600] login strResult = 6 
+
+
+[061623] login strResult = 6 
+
+
+[061923]  GetPvPData : [toa16] 
+
+[062613] login strResult = 6 
+
+
+[063011]  GetPvPData : [toa16] 
+
+[063213] login strResult = 6 
+
+
+[063214] login strResult = 6 
+
+
+[063348] login strResult = 6 
+
+
+[063850]  GetPvPData : [toa16] 
+
+[064154] login strResult = 6 
+
+
+[064210]  GetPvPData : [usi1111] 
+
+[064431] login strResult = 6 
+
+
+[064841]  GetPvPData : [usi1111] 
+
+[065946] login strResult = 6 
+
+
+[070001] login strResult = 6 
+
+
+[070019] login strResult = 6 
+
+
+[070047] login strResult = 6 
+
+
+[081702]  Login Error : [-2] 
+[081702] login strResult = 1 
+
+
+[081707] login strResult = 6 
+
+
+[082545] login strResult = 6 
+
+
+[082552] login strResult = 6 
+
+
+[082845] login strResult = 6 
+
+
+[083615] login strResult = 6 
+
+
+[085022] login strResult = 6 
+
+
+[091022] login strResult = 6 
+
+
+[091723] login strResult = 6 
+
+
+[091812] login strResult = 6 
+
+
+[092041] login strResult = 6 
+
+
+[092123] login strResult = 6 
+
+
+[092739]  Login Error : [-2] 
+[092739] login strResult = 1 
+
+
+[092742] login strResult = 6 
+
+
+[094023] login strResult = 6 
+
+
+[094408]  GetPvPData : [omizu1] 
+
+[102043] login strResult = 6 
+
+
+[102410] login strResult = 6 
+
+
+[102710] login strResult = 6 
+
+
+[102724] login strResult = 6 
+
+
+[102806]  GetPvPData : [pengg101] 
+
+[102840] login strResult = 6 
+
+
+[103104] login strResult = 6 
+
+
+[103106] 
+  
+ Error: -2146825023 
+ Msg: Unknown error 0x800A0CC1 
+ Description: 要求された名前、または序数に対応する項目がコレクションで見つかりません。 Line: 156  File C:\Users\seima\Desktop\rs_emu_sourcecode-main\server\RedStone_USER_DBServer\cADO_COMMAND.cpp ADODB.Parameters 
+
+
+[103222]  GetPvPData : [pengg101] 
+
+[103313] login strResult = 6 
+
+
+[103543] login strResult = 6 
+
+
+[103903]  GetPvPData : [pengg101] 
+
+[104413] login strResult = 6 
+
+
+[104429] login strResult = 6 
+
+
+[104450] login strResult = 6 
+
+
+[104820] login strResult = 6 
+
+
+[105321]  GetPvPData : [pengg101] 
+
+[105330] login strResult = 6 
+
+
+[105913] login strResult = 6 
+
+
+[110237]  GetPvPData : [pengg101] 
+
+[110317] login strResult = 6 
+
+
+[110337] login strResult = 6 
+
+
+[110355] login strResult = 6 
+
+
+[110410] login strResult = 6 
+
+
+[110800] login strResult = 6 
+
+
+[110837]  GetPvPData : [pengg101] 
+
+[110925] login strResult = 6 
+
+
+[111353] login strResult = 6 
+
+
+[112452] login strResult = 6 
+
+
+[112504] login strResult = 6 
+
+

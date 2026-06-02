@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Convertor|Win32">
@@ -76,6 +76,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">
     <OutDir>.\Mangchi___Win32_forJapan\</OutDir>
     <IntDir>.\Mangchi___Win32_forJapan\</IntDir>
+    <TargetName>MangchiForJapan</TargetName>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Convertor|Win32'">
@@ -97,15 +98,16 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
       <MinimalRebuild>true</MinimalRebuild>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_FOR_KOREA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../common/packet;../../common/common;../../dx81sdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_FOR_KOREA;POINTER_64=__ptr64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
       <BrowseInformation>true</BrowseInformation>
       <PrecompiledHeaderOutputFile>.\Debug\Mangchi.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>.\Debug\</ObjectFileName>
       <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalOptions>/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -126,9 +128,12 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
-      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <OutputFile>../../../../Red Stone dev Client/Mangchi.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../dx81sdk;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">
@@ -140,14 +145,14 @@
       <Optimization>MaxSpeed</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>../../common/packet;../../common/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../common/packet;../../common/common;../../dx81sdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;POINTER_64=__ptr64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Mangchi___Win32_forJapan\</AssemblerListingLocation>
       <BrowseInformation>true</BrowseInformation>
       <PrecompiledHeaderOutputFile>.\Mangchi___Win32_forJapan\Mangchi.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>.\Mangchi___Win32_forJapan\</ObjectFileName>
       <ProgramDataBaseFileName>.\Mangchi___Win32_forJapan\</ProgramDataBaseFileName>
-      <AdditionalOptions> /l </AdditionalOptions>
+      <AdditionalOptions>/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -169,10 +174,13 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
-      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <OutputFile>../Red Stone dev Client/MangchiForJapan.exe</OutputFile>
+      <OutputFile>.\Mangchi___Win32_forJapan\MangchiForJapan.exe</OutputFile>
       <AdditionalDependencies>comctl32.lib;winmm.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../dx81sdk;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Convertor|Win32'">
@@ -234,6 +242,7 @@
       <PrecompiledHeaderOutputFile>.\Release\Mangchi.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>.\Release\</ObjectFileName>
       <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalOptions>/source-charset:utf-8 /execution-charset:.949 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -256,478 +265,479 @@
       <SubSystem>Windows</SubSystem>
       <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <OutputFile>../../../../Red Stone dev Client/Mangchi.exe</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalDependencies>comctl32.lib;winmm.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\common\common\commonDefine.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="..\..\common\common\eventDefine.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="arca.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="book.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="book_category.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="book_info.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="book_page.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="c16BITSPRITE.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="c8BITSPRITE.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cACTOR.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cAREA.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cBARMENU.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CBGPlay.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cBMP.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cBODY.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cBUILDING.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cCHARACTER.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cCompareBox.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cDECODER.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CDecodeUniqueItemData.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CDialog.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cDIB.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cDRAW.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cHelpWindow.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cIMAGE.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CImageData.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cITEM.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cITEM_EFFECT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cITEM_PREFIX.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cITEM_PREFIX_EFFECT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cJOB.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cKARMA.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cKARMA_ADD.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cKARMA_REACTION.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cKARMA_TEXT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cKARMA_TRIGGER.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cKARMA_WND.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cLISTCONTROL.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CLoadTextCode.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CLocalize.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMAIN.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMAP.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CMapExportText.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMAPWND.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMAP_BUILDING.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMAP_OBJECT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMemoWindow.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMESSAGE.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMW_AREA.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMW_BUILDING.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMW_CHARACTER.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMW_COPYORCUT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMW_EDIT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMW_OBJECT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cMW_TILE.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cOBJECT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="command.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="compareText.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CPattn.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CPattnCtrl.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CPattnCtrlCliff.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cPCX.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cPROJECT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cQUEST.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetCharacterEventData.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetCharacterEventTree.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetCustomItem.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetCustomItemList.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetDialog.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetDialogContainer.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetDialogKarma.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetDialogList.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetDialogMonster.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSetDialogNpcData.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetDialogSelectSpeech.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetDialogSpeech.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetQuest.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetShop.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetShopItem.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CSetShopList.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_ABILITY.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_AREA.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_AREA_EDIT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_BASIC_ITEM.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_CHARACTER.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_FIELD_CHARACTER.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_FONT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_ITEM_PREFIX.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_JOB.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_JOB_LIST.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_MAP.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_PROJECT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_SELECT_JOB.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSET_VALUE.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CShop.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cSKILL.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cTEXT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cTGA.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="CTitle.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cTOOLWND.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cTOOLWND_AREA.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cTOOLWND_BUILDING.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cTOOLWND_CHARACTER.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cTOOLWND_OBJECT.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cTOOLWND_TILE.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cTRANS.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cVALUE.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="cWINDOW.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="debug.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="exportMapInfo.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="exportText.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="exportTool.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="foceSyncText.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="itemPackList.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="LNK_Common\error_code.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="LNK_Common\exceptionhandler.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="LNK_Common\file.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="LNK_Common\lnk_util.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="LNK_Common\memory_pool.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="LNK_Common\memory_pool_normal.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="LNK_Common\memory_pool_safe.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="LNK_Common\safeMemory.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="LNK_Common\safeMemoryForDebug.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="LNK_Common\Timer.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="mainQuest.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="mainQuestChapterInfo.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="makeArca.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="makeItemPiece.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="makePieceItem.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="makeSecretDungeon.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="makeSecretDungeonFloor.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="makeSetItem.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="MANGCHI.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="MinimapWindow.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="modifyText.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="partrolRoad_mw.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="patrolRoad.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="pattern.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="pieceItem.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="road_tool_wnd.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="secretDungeon.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="setArca.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="setBook.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="setItem.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="setMainQuest.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="setMakeItem.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="setPieceItem.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="setSecretDungeon.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="setSetItem.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="set_character_pattern.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="SFC.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="SoundEffect.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="svn.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="trapSkill.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="URdoBuffer.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'"> /l   /l </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='forJapan|Win32'">/Zc:forScope- /source-charset:utf-8 /execution-charset:.949 /l %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

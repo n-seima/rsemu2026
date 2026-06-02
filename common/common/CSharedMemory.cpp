@@ -19,11 +19,11 @@ CSharedMemory::create(char *_lpstrName,DWORD _dwBufferSize)
 
 	sprintf(strName,"SMMap_%s",_lpstrName);	//	Shared Memory Map
 
-	m_hMemMap	=	::CreateFileMapping(INVALID_HANDLE_VALUE,	// ÆÄÀÏ ¸ÊÀÇ ÇÚµé, ÃÊ±â¿¡ INVALID_HANDLE_VALUE¸¦ ¼³Á¤ÇÑ´Ù.
-										NULL,					// º¸¾È ¼Ó¼º
-										PAGE_READWRITE,			// Á¢±Ù ¼Ó¼º
-										0,						// 64ºñÆ® ¾îµå·¹½º¸¦ »ç¿ëÇÑ´Ù. »óÀ§ 32ºñÆ® - ¸Þ¸ð¸®ÀÇ Å©±â
-										_dwBufferSize,			// ÇÏÀ§ 32ºñÆ® - ¿©±â¼±LPBYTE Å¸ÀÔ.
+	m_hMemMap	=	::CreateFileMapping(INVALID_HANDLE_VALUE,	// íŒŒì¼ ë§µì˜ í•¸ë“¤, ì´ˆê¸°ì— INVALID_HANDLE_VALUEë¥¼ ì„¤ì •í•œë‹¤.
+										NULL,					// ë³´ì•ˆ ì†ì„±
+										PAGE_READWRITE,			// ì ‘ê·¼ ì†ì„±
+										0,						// 64ë¹„íŠ¸ ì–´ë“œë ˆìŠ¤ë¥¼ ì‚¬ìš©í•œë‹¤. ìƒìœ„ 32ë¹„íŠ¸ - ë©”ëª¨ë¦¬ì˜ í¬ê¸°
+										_dwBufferSize,			// í•˜ìœ„ 32ë¹„íŠ¸ - ì—¬ê¸°ì„ LPBYTE íƒ€ìž….
 										strName
 										);
 

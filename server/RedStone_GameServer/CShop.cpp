@@ -72,7 +72,7 @@ CShop::getSellItemInfo(int _iIndex,cItem *_lpItem)
 		int	iUpkeepTime		=	m_pGenerateItemInfo[_iIndex].m_bf15UpkeepHour;
 		iUpkeepTime			=	iUpkeepTime*60;
 
-		_lpItem->m_year		=	g_currentTime.m_wYear-2000;
+		_lpItem->m_year		=	EncodeItemExpireYear(g_currentTime.m_wYear);
 		_lpItem->m_month	=	g_currentTime.m_wMonth;
 		_lpItem->m_day		=	g_currentTime.m_wDay;
 		_lpItem->m_hour		=	g_currentTime.m_wHour;

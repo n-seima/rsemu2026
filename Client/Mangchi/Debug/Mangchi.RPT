@@ -1,0 +1,64 @@
+//========================================================================================================
+Application Begin Time          2026/ 5/28 22:59: 6
+Exception Handler Activate Time 2026/ 5/28 22:59:14
+
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0013B8AF 01:000BA8AF C:\Users\seima\Desktop\rs_emu_sourcecode-main\Client\Mangchi\Debug\Mangchi.exe
+
+Registers:
+EAX:00000004
+EBX:0CB6EF80
+ECX:00000004
+EDX:0C7F0000
+ESI:0752D2D0
+EDI:0CB6ECF8
+CS:EIP:0023:0013B8AF
+SS:ESP:002B:0CB6EBF4  EBP:0CB6EC18
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Call stack:
+Address   Frame
+0013B8AF  0CB6EC18  std::deque<int,std::allocator<int> >::_Orphan_off+8F
+0013BEEF  0CB6EC48  std::deque<int,std::allocator<int> >::pop_back+BF
+0013B9CC  0CB6EC74  std::deque<int,std::allocator<int> >::_Tidy+6C
+0013BBE6  0CB6EC80  std::deque<int,std::allocator<int> >::clear+16
+001D5B7B  0CB6ECF8  URdoBuffer::deleteFixedObjectBuffer+DB
+001D598E  0CB6ED04  URdoBuffer::deleteBuffer+1E
+000E689B  0CB6ED20  cMAIN::Exit+8B
+000E823B  0CB6EE50  cMAIN::WndProc+27B
+75659773  0CB6EE7C  Ordinal2713+7A3
+7564892D  0CB6EF78  MsgWaitForMultipleObjectsEx+7CD
+756483D0  0CB6EFE4  MsgWaitForMultipleObjectsEx+270
+75653679  0CB6F020  SystemParametersInfoW+2C9
+777AB586  0CB6F0D0  KiUserCallbackDispatcher+36
+756D3F37  0CB6F0EC  Ordinal2523+647
+724FCD5B  0CB6F110  GetThemeAppProperties+BB
+724F8997  0CB6F194  Ordinal43+24B7
+7252DB68  0CB6F1A8  Ordinal115+38
+756D4B57  0CB6F1F0  CreateWindowExA+C7
+000E8276  0CB6F330  cMAIN::WndProc+2B6
+75659773  0CB6F35C  Ordinal2713+7A3
+7564892D  0CB6F458  MsgWaitForMultipleObjectsEx+7CD
+756483D0  0CB6F4C4  MsgWaitForMultipleObjectsEx+270
+75653679  0CB6F500  SystemParametersInfoW+2C9
+777AB586  0CB6F5B0  KiUserCallbackDispatcher+36
+756D3F37  0CB6F5CC  Ordinal2523+647
+724FCD5B  0CB6F5F8  GetThemeAppProperties+BB
+724F8997  0CB6F67C  Ordinal43+24B7
+7252DB68  0CB6F690  Ordinal115+38
+756D4B57  0CB6F6D8  CreateWindowExA+C7
+000E8276  0CB6F818  cMAIN::WndProc+2B6
+75659773  0CB6F844  Ordinal2713+7A3
+7564892D  0CB6F940  MsgWaitForMultipleObjectsEx+7CD
+756478FA  0CB6F9C0  DispatchMessageW+4AA
+756D4BB1  0CB6F9CC  DispatchMessageA+11
+001B36BA  0CB6FA0C  WinMain+12A
+001E99ED  0CB6FA2C  invoke_main+2D
+001E98F7  0CB6FA88  __scrt_common_main_seh+157
+001E979D  0CB6FA90  __scrt_common_main+D
+001E9A58  0CB6FA98  WinMainCRTStartup+8
+76425D49  0CB6FAA8  BaseThreadInitThunk+19
+7779D83B  0CB6FB00  RtlInitializeExceptionChain+6B
+7779D7C1  0CB6FB10  RtlGetAppContainerNamedObjectPath+231
+

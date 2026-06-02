@@ -1,11 +1,11 @@
 /*************************************************************************************************
 	CActor.H
 
-	Red Stone Ä³¸¯ÅÍ °ü¸® Å¬·¡½º
+	Red Stone ìºë¦­í„° ê´€ë¦¬ í´ë˜ìŠ¤
 
-	ÀÛ¼º  ³¯Â¥ : 2000.12.24(... ±×·¡!! Å©¸®½º¸¶½º ÀÌºê´Ù!! Å©¸®½º¸¶½Ã ÀÌºê¿¡ ÀÏÇÏ°í ÀÖ´Ù!! ¶µ³Ä? Å©Èæ...
-	ÀÛ  ¼º  ÀÚ : ÀÌ¿µÂù
-	°³      ¿ä : ¸ğµç Ä³¸¯ÅÍ,¸ó½ºÅÍ,NPCÀÇ ±âº»ÀÌ µÇ´Â Å¬·¡½º´Ù. ´ç±Ù ¹«Àğ°Ô Áß¿äÇÏ´Ù.
+	ì‘ì„±  ë‚ ì§œ : 2000.12.24(... ê·¸ë˜!! í¬ë¦¬ìŠ¤ë§ˆìŠ¤ ì´ë¸Œë‹¤!! í¬ë¦¬ìŠ¤ë§ˆì‹œ ì´ë¸Œì— ì¼í•˜ê³  ìˆë‹¤!! ë–«ëƒ? í¬í‘...
+	ì‘  ì„±  ì : ì´ì˜ì°¬
+	ê°œ      ìš” : ëª¨ë“  ìºë¦­í„°,ëª¬ìŠ¤í„°,NPCì˜ ê¸°ë³¸ì´ ë˜ëŠ” í´ë˜ìŠ¤ë‹¤. ë‹¹ê·¼ ë¬´ìŸˆê²Œ ì¤‘ìš”í•˜ë‹¤.
 
 *************************************************************************************************/
 
@@ -48,7 +48,7 @@ enum
 	eSIS_REMOVED,
 };
 
-#define	dLOOP_INFINITY								3	//	¹«ÇÑ ·çÇÁ.. -o-
+#define	dLOOP_INFINITY								3	//	ë¬´í•œ ë£¨í”„.. -o-
 
 #define	dWAIT_ACTOR_INFO_PERIOD						dSYNC_FPS
 
@@ -57,25 +57,25 @@ enum
 #define	dFORECAST_VISIBLE_ACTOR_WIDTH				600
 #define	dFORECAST_VISIBLE_ACTOR_HEIGHT				400
 
-#define	dBLOCKER_PUT_DISTANCE					40	//	ºí·°Ä¿ Ãâ·Â °Å¸®
+#define	dBLOCKER_PUT_DISTANCE					40	//	ë¸”ëŸ­ì»¤ ì¶œë ¥ ê±°ë¦¬
 
 #define	dALIVE_DUMMY							0xfffe
 #define	dDISAPEAR_DUMMY							dSYNC_FPS
 
-#define	dEVENT_RANGE_WITH_MERCHANT				300		//	»óÀÎ°ú ÀÌº¥Æ® °¡´É °Å¸®(ÀÌ¸¦ Å×¸é ´ëÈ­³ª ¹°Ç° ±¸ÀÔ)
-#define	dEVENT_RANGE_WITH_NPC					100		//	NPC¿Í ÀÌº¥Æ® °¡´É °Å¸®(ÀÌ¸¦ Å×¸é ´ëÈ­³ª ¹°Ç° ±¸ÀÔ)
+#define	dEVENT_RANGE_WITH_MERCHANT				300		//	ìƒì¸ê³¼ ì´ë²¤íŠ¸ ê°€ëŠ¥ ê±°ë¦¬(ì´ë¥¼ í…Œë©´ ëŒ€í™”ë‚˜ ë¬¼í’ˆ êµ¬ì…)
+#define	dEVENT_RANGE_WITH_NPC					100		//	NPCì™€ ì´ë²¤íŠ¸ ê°€ëŠ¥ ê±°ë¦¬(ì´ë¥¼ í…Œë©´ ëŒ€í™”ë‚˜ ë¬¼í’ˆ êµ¬ì…)
 #define	dRESET_RANGE_BY_MOVE_PACKET				(200*200)
 #define	dREFIT_RANGE_BY_MOVE_PACKET				(50*50)
-#define	dMINIMUM_HIT_RATE						5		//	ÃÖ¼Ò ¸íÁß·ü
-#define	dMAXIMUM_HIT_RATE						95		//	ÃÖ°í ¸íÁß·ü
+#define	dMINIMUM_HIT_RATE						5		//	ìµœì†Œ ëª…ì¤‘ë¥ 
+#define	dMAXIMUM_HIT_RATE						95		//	ìµœê³  ëª…ì¤‘ë¥ 
 
-#define	dPERIOD_OF_ASK_ACTOR_INFO_WHEN_FOCUS	(dSYNC_FPS*2)	//	Æ÷Ä¿½ºÀÏ¶§ ¾×ÅÍ Á¤º¸ ¿äÃ»ÇÏ´Â ÁÖ±â
-#define	dREMAIN_CORPSE_TIME						(dSYNC_FPS*5)	//	5ÃÊ
-#define	dREMAIN_CORPSE_TIME_FOR_SUMMON_BEAST	(dSYNC_FPS*28)	//	5ÃÊ
+#define	dPERIOD_OF_ASK_ACTOR_INFO_WHEN_FOCUS	(dSYNC_FPS*2)	//	í¬ì»¤ìŠ¤ì¼ë•Œ ì•¡í„° ì •ë³´ ìš”ì²­í•˜ëŠ” ì£¼ê¸°
+#define	dREMAIN_CORPSE_TIME						(dSYNC_FPS*5)	//	5ì´ˆ
+#define	dREMAIN_CORPSE_TIME_FOR_SUMMON_BEAST	(dSYNC_FPS*28)	//	5ì´ˆ
 #define	dSEND_MISPLACED_ACTOR_LIST_PERIOD		(dSYNC_FPS/2)
  
-#define	dRANGE_OF_CORRECT_ACTOR_POSITION		256		//	16ÇÈ¼ĞÁ¤µµ Â÷ÀÌ.
-#define	dRANGE_OF_RESET_ACTOR_POSITION			1024	//	Å¸ÀÏ ÇÏ³ª Á¤µµ Â÷ÀÌ³­´Ù.
+#define	dRANGE_OF_CORRECT_ACTOR_POSITION		256		//	16í”½ì…¸ì •ë„ ì°¨ì´.
+#define	dRANGE_OF_RESET_ACTOR_POSITION			1024	//	íƒ€ì¼ í•˜ë‚˜ ì •ë„ ì°¨ì´ë‚œë‹¤.
 #define	dMAX_PATH								40
 #define	dMAX_LINK_MONSTER_COUNT					46
 
@@ -84,20 +84,20 @@ enum
 #define	dSTATUS_AI								2
 #define	dSTATUS_ARRANGE							3
 
-#define	dMAX_ENEMY								128		//	ÃÖ´ë Àû Ä³¸¯ÅÍ ¼ö
-#define	dMAX_OWNER								128		//	ÃÖ´ë ÇÃ·¹ÀÌ¾î Ä³¸¯ÅÍ ¼ö
+#define	dMAX_ENEMY								128		//	ìµœëŒ€ ì  ìºë¦­í„° ìˆ˜
+#define	dMAX_OWNER								128		//	ìµœëŒ€ í”Œë ˆì´ì–´ ìºë¦­í„° ìˆ˜
 #define	dHIT_EFFECT_COUNT						5
 
-#define	dMAX_CHARACTER							128		//	ÃÖ´ë Ä³¸¯ÅÍ ¼ö(¸ó½ºÅÍ Æ÷ÇÔ)
-#define	dMAX_PET								8		//	ÃÖ´ë ¼ÒÈ¯¼ö ¼ö(µ¥¸®°í ´Ù´Ï´Â ¾Öµé)
+#define	dMAX_CHARACTER							128		//	ìµœëŒ€ ìºë¦­í„° ìˆ˜(ëª¬ìŠ¤í„° í¬í•¨)
+#define	dMAX_PET								8		//	ìµœëŒ€ ì†Œí™˜ìˆ˜ ìˆ˜(ë°ë¦¬ê³  ë‹¤ë‹ˆëŠ” ì• ë“¤)
 #define	dMAX_PLAYER								8
 #define	dMAX_ACTOR								2048
 
-#define	dTEAM_PLAYER							0		//	ÇÃ·¹ÀÌ¾î
+#define	dTEAM_PLAYER							0		//	í”Œë ˆì´ì–´
 #define	dTEAM_NPC								1		//	NPC
-#define	dTEAM_MONSTER							2		//	¸ó½ºÅÍ
+#define	dTEAM_MONSTER							2		//	ëª¬ìŠ¤í„°
 
-//GGG ÀÌÆåÆ® Å¸ÀÔ		//ºñÆ® ¸¶½ºÅ©·Î ¾´´Ù.
+//GGG ì´í™íŠ¸ íƒ€ì…		//ë¹„íŠ¸ ë§ˆìŠ¤í¬ë¡œ ì“´ë‹¤.
 #define dGGG_EFFECT_PLAYTYPE_NONE				0x0000
 #define dGGG_EFFECT_PLAYTYPE_POINT_UP			0x0001
 #define dGGG_EFFECT_PLAYTYPE_HIT				0x0002
@@ -116,13 +116,13 @@ enum{
 };
 
 enum{
-	eINCRECE_VALUE1_ACITECHANCE,	//¹ßµ¿ È®·ü. * 100 
-		eINCRECE_VALUE1,				//È¿°ú ¼öÄ¡ * 100 
-		eINCRECE_VALUE1_EFFECT,			//È¿°ú EX>ºÒ : µ¥¹ÌÁö ºñ·Ê Ãß°¡ °ø°İ
-		eINCRECE_VALUE2_ACITECHANCE,	//¹ßµ¿ È®·ü. * 100 
-		eINCRECE_VALUE2,				//È¿°ú ¼öÄ¡  * 100
-		eINCRECE_VALUE2_EFFECT,			//È¿°ú
-		eINCRECE_VALUE_ETC,				//±âÅ¸ µîµî È¿°ú...
+	eINCRECE_VALUE1_ACITECHANCE,	//ë°œë™ í™•ë¥ . * 100 
+		eINCRECE_VALUE1,				//íš¨ê³¼ ìˆ˜ì¹˜ * 100 
+		eINCRECE_VALUE1_EFFECT,			//íš¨ê³¼ EX>ë¶ˆ : ë°ë¯¸ì§€ ë¹„ë¡€ ì¶”ê°€ ê³µê²©
+		eINCRECE_VALUE2_ACITECHANCE,	//ë°œë™ í™•ë¥ . * 100 
+		eINCRECE_VALUE2,				//íš¨ê³¼ ìˆ˜ì¹˜  * 100
+		eINCRECE_VALUE2_EFFECT,			//íš¨ê³¼
+		eINCRECE_VALUE_ETC,				//ê¸°íƒ€ ë“±ë“± íš¨ê³¼...
 		eINCRECE_END
 };
 
@@ -162,18 +162,18 @@ enum
 
 #define	dLOCK_ON_LOCATE				0x7fff
 
-#define	dMONSTER_GRADE_UNDERING		0	//	ÃÖÇÏÀ§ ½ºÅ³Àº... ÇÏ³ª ¹Û¿¡ ¾ø°í.. ÇÏ´Â Áşµµ ´Ü¼øÇÏ´Ù.
-#define	dMONSTER_GRADE_THROWER		1	//	±âº»ÀûÀ¸·Î ±ÙÁ¢ °ø°İ ½ºÅ³ÀÌ ÇÏ³ª ÀÖ°í, Àå°Å¸® °ø°İ ½ºÅ³ÀÌ ÀÖ´Ù.
-#define	dMONSTER_GRADE_MAGIC_USER	2	//	±âº»ÀûÀ¸·Î ±ÙÁ¢ °ø°İ ½ºÅ³ÀÌ ÇÏ³ª ÀÖ°í, ¸¶¹ıÀÌ ¸î°³ ÀÖ´Ù.
-#define	dMONSTER_GRADE_MIDDLE_BOSS	3	//	Áß°£ º¸½º.. ´Ù..
-#define	dMONSTER_GRADE_BOSS			4	//	º¸½º±ŞÀÌ´Ù.
+#define	dMONSTER_GRADE_UNDERING		0	//	ìµœí•˜ìœ„ ìŠ¤í‚¬ì€... í•˜ë‚˜ ë°–ì— ì—†ê³ .. í•˜ëŠ” ì§“ë„ ë‹¨ìˆœí•˜ë‹¤.
+#define	dMONSTER_GRADE_THROWER		1	//	ê¸°ë³¸ì ìœ¼ë¡œ ê·¼ì ‘ ê³µê²© ìŠ¤í‚¬ì´ í•˜ë‚˜ ìˆê³ , ì¥ê±°ë¦¬ ê³µê²© ìŠ¤í‚¬ì´ ìˆë‹¤.
+#define	dMONSTER_GRADE_MAGIC_USER	2	//	ê¸°ë³¸ì ìœ¼ë¡œ ê·¼ì ‘ ê³µê²© ìŠ¤í‚¬ì´ í•˜ë‚˜ ìˆê³ , ë§ˆë²•ì´ ëª‡ê°œ ìˆë‹¤.
+#define	dMONSTER_GRADE_MIDDLE_BOSS	3	//	ì¤‘ê°„ ë³´ìŠ¤.. ë‹¤..
+#define	dMONSTER_GRADE_BOSS			4	//	ë³´ìŠ¤ê¸‰ì´ë‹¤.
 
 
-#define	dPLAYER_UPDATE_TIME			8	//	1ÃÊ¿¡ 4¹ø
-#define	dMONSTER_UPDATE_TIME		16	//	1ÃÊ¿¡ 2¹ø
+#define	dPLAYER_UPDATE_TIME			8	//	1ì´ˆì— 4ë²ˆ
+#define	dMONSTER_UPDATE_TIME		16	//	1ì´ˆì— 2ë²ˆ
 
-#define	dDEATH_REALLY	1	//	ÁøÂ¥·Î Á×¾ú¾î -_-;;
-#define	dDEATH_FAINTING	2	//	±âÀıÇÑ°Å´Ù.
+#define	dDEATH_REALLY	1	//	ì§„ì§œë¡œ ì£½ì—ˆì–´ -_-;;
+#define	dDEATH_FAINTING	2	//	ê¸°ì ˆí•œê±°ë‹¤.
 
 #define	dHIT_EFFECT_COUNT_ON_CHARACTER	20
 
@@ -196,7 +196,7 @@ public:
 		m_wColorizeEffect	=	0xffff;
 	}
 
-	void			copy(cItem *_lpItem,int _iItemKind=0xffff)	//	_iItemKind 0 ¹«±â ,1 ¹æÆĞ , 2 °©¿Ê
+	void			copy(cItem *_lpItem,int _iItemKind=0xffff)	//	_iItemKind 0 ë¬´ê¸° ,1 ë°©íŒ¨ , 2 ê°‘ì˜·
 	{
 		reset();
 
@@ -213,13 +213,13 @@ public:
 class	cACTOR_COMMON_DATA
 {
 public:
-	WORD			m_wSerial;						//	¾×ÅÍ ½½·Ô
-	char			m_strName[dNAME_LENGTH];		//	ÀÌ¸§
-	WORD			m_wTeam,m_wActorKind;			//	ÆÀ
-	WORD			m_wJob;							//	Á÷¾÷
-	WORD			m_wLevel;						//	·¹º§
+	WORD			m_wSerial;						//	ì•¡í„° ìŠ¬ë¡¯
+	char			m_strName[dNAME_LENGTH];		//	ì´ë¦„
+	WORD			m_wTeam,m_wActorKind;			//	íŒ€
+	WORD			m_wJob;							//	ì§ì—…
+	WORD			m_wLevel;						//	ë ˆë²¨
 
-	CActorSimpleArmorInfo	m_itemWeapon,m_itemShield,m_itemArmor;		//	ÀåºñÇÏ°í ÀÖ´Â ¹«±â,ÀåºñÇÏ°í ÀÖ´Â ¹æÆĞ
+	CActorSimpleArmorInfo	m_itemWeapon,m_itemShield,m_itemArmor;		//	ì¥ë¹„í•˜ê³  ìˆëŠ” ë¬´ê¸°,ì¥ë¹„í•˜ê³  ìˆëŠ” ë°©íŒ¨
 };
 
 class	CAfterImageInfo
@@ -239,7 +239,7 @@ enum
 	eSSWS_WAIT_MINIMUM_ACTOR_INFO,
 	eSSWS_WAIT_VERY_SIMPLE_ACTOR_INFO,
 
-	eSSWS_WANT_SYNC,	//	¹Ù·Î ½ÌÅ© ½ÃÅ°±æ ¿øÇÑ´Ù.
+	eSSWS_WANT_SYNC,	//	ë°”ë¡œ ì‹±í¬ ì‹œí‚¤ê¸¸ ì›í•œë‹¤.
 	eSSWS_VALID_ACTOR,
 	eSSWS_OUT_OF_SIGHT,
 };
@@ -248,40 +248,40 @@ enum
 //	Rush Status
 enum
 {
-	eRS_NONE,		//	·¯½¬ÇÏ°í ÀÖÁö ¾Ê´Ù.
-	eRS_READY,		//	°Á ·¯½¬ÇÑ´Ù.
-	eRS_READY_FOR_WHIRL_RUNNING_TYPE_RUSH,		//	°Á ·¯½¬ÇÑ´Ù.
-	eRS_WAIT_TRIGGER,		//	°Á ·¯½¬ÇÑ´Ù.
+	eRS_NONE,		//	ëŸ¬ì‰¬í•˜ê³  ìˆì§€ ì•Šë‹¤.
+	eRS_READY,		//	ê± ëŸ¬ì‰¬í•œë‹¤.
+	eRS_READY_FOR_WHIRL_RUNNING_TYPE_RUSH,		//	ê± ëŸ¬ì‰¬í•œë‹¤.
+	eRS_WAIT_TRIGGER,		//	ê± ëŸ¬ì‰¬í•œë‹¤.
 	eRS_RUSH,
 	eRS_WHIRL_RUNNING_TYPE_RUSH,
-	eRS_ROLLING_LOG,//	µ¥±¼µ¥±¼ Åë³ª¹«
-	eRS_SPIN,		//	»æ±Û »æ±Û µ¹¸é¼­ ·¯½¬ÇÑ´Ù.
-	eRS_FINISH,		//	¸¶¹«¸® µ¿ÀÛ ÁßÀÌ´Ù.
-	eRS_JUMP,		//	Á¡ÇÁ..
-	eRS_JUMP_RUSH,		// Á¡ÇÁ ·¯½¬ ÀÌ´Ù.
-	eRS_JUMP_RUSH_READY,// Á¡ÇÁ·¯½¬ ÁØºñ..
+	eRS_ROLLING_LOG,//	ë°êµ´ë°êµ´ í†µë‚˜ë¬´
+	eRS_SPIN,		//	ì‚¥ê¸€ ì‚¥ê¸€ ëŒë©´ì„œ ëŸ¬ì‰¬í•œë‹¤.
+	eRS_FINISH,		//	ë§ˆë¬´ë¦¬ ë™ì‘ ì¤‘ì´ë‹¤.
+	eRS_JUMP,		//	ì í”„..
+	eRS_JUMP_RUSH,		// ì í”„ ëŸ¬ì‰¬ ì´ë‹¤.
+	eRS_JUMP_RUSH_READY,// ì í”„ëŸ¬ì‰¬ ì¤€ë¹„..
 
 };
 //
 //	Jump Status
 enum
 {
-	eJS_NONE,		//	Á¡ÇÁÇÏ°í ÀÖÁö ¾Ê´Ù.
-	eJS_READY,		//	ÁØºñ
-	eJS_WAIT_TRIGGER,	//	Æ®¸®°Å ±â´Ù¸²
-	eJS_JUMP,		//	Á¡ÇÁ!!
-	eJS_FINISH		//	Á¡ÇÁ µ¿ÀÛ ÁßÀÌ´Ù.
+	eJS_NONE,		//	ì í”„í•˜ê³  ìˆì§€ ì•Šë‹¤.
+	eJS_READY,		//	ì¤€ë¹„
+	eJS_WAIT_TRIGGER,	//	íŠ¸ë¦¬ê±° ê¸°ë‹¤ë¦¼
+	eJS_JUMP,		//	ì í”„!!
+	eJS_FINISH		//	ì í”„ ë™ì‘ ì¤‘ì´ë‹¤.
 };
 
 //
 //	Special Action Skill
 enum
 {
-	eSAS_NONE,				//	·¯½¬ÇÏ°í ÀÖÁö ¾Ê´Ù.
-	eSAS_SCIMATAR_CUTTING,	//	°Á ·¯½¬ÇÑ´Ù.
-	eSAS_RUSH,				//	°Á ·¯½¬ÇÑ´Ù.
-	eSAS_JUMP,				//	Á¡ÇÁ
-	eSAS_BOUNCING_LINEAR,	//	¹Ù¿î½Ì ¸®´Ï¾î
+	eSAS_NONE,				//	ëŸ¬ì‰¬í•˜ê³  ìˆì§€ ì•Šë‹¤.
+	eSAS_SCIMATAR_CUTTING,	//	ê± ëŸ¬ì‰¬í•œë‹¤.
+	eSAS_RUSH,				//	ê± ëŸ¬ì‰¬í•œë‹¤.
+	eSAS_JUMP,				//	ì í”„
+	eSAS_BOUNCING_LINEAR,	//	ë°”ìš´ì‹± ë¦¬ë‹ˆì–´
 	eSAS_BIG_BULLET,
 };
 
@@ -348,7 +348,7 @@ class	CBitInfoManager
 {
 public:
 
-	CBitInfo	m_bitInfo[dMAX_BIT_STICK_ACTOR];				// ºñÆ® Á¤º¸
+	CBitInfo	m_bitInfo[dMAX_BIT_STICK_ACTOR];				// ë¹„íŠ¸ ì •ë³´
 	int			m_iCount;
 
 	void	reset()
@@ -462,58 +462,58 @@ public:
 	WORD			m_wIsWarningMessage;
 	BOOL			m_bIsTransOther;
 	WORD			m_wIsReceivedBasicData;
-	WORD			m_wIsFixedActor;			//	À§Ä¡°¡ °íÁ¤µÈ Ä³¸¯ÅÍ
-	WORD			m_wIsHideShield;			//	¹æÆĞ°¡ ¾Èº¸ÀÌ´Â »óÅÂ
+	WORD			m_wIsFixedActor;			//	ìœ„ì¹˜ê°€ ê³ ì •ëœ ìºë¦­í„°
+	WORD			m_wIsHideShield;			//	ë°©íŒ¨ê°€ ì•ˆë³´ì´ëŠ” ìƒíƒœ
 	WORD			m_wHorizonScale,m_wVerticalScale;
 
 ////////////////////////////////////////////////////////////
-//	¼­¹ö¿Í ½ÌÅ© °ü·Ã
+//	ì„œë²„ì™€ ì‹±í¬ ê´€ë ¨
 ////////////////////////////////////////////////////////////
 	WORD			m_wOldSyncStatusWithServer,m_wSyncStatusWithServer;
-	WORD			m_wWaitActorInfoTime;		//	Àç ¿äÃ»±îÁö ³²Àº ½Ã°£
+	WORD			m_wWaitActorInfoTime;		//	ì¬ ìš”ì²­ê¹Œì§€ ë‚¨ì€ ì‹œê°„
 
 ////////////////////////////////////////////////////////////
-//	±âº» Á¤º¸
+//	ê¸°ë³¸ ì •ë³´
 ////////////////////////////////////////////////////////////
 	int				m_iFirstAidHP;
 	int				m_iHP,m_iMaxHP;				//	HP
-	WORD			m_wRealTeam;				//	ÁøÂ¥ ÆÀ(À¯È¤À» ´çÇß´ø ¾îÂ·´ø..)
-	char			m_isRunning;				//	¶Ù´Â ÁßÀÌ´Ù.
-	char			m_isSkillControl;			//	±â¼úÂÊ¿¡¼­ Ä³¸¯ÅÍÀÇ ¿òÁ÷ÀÓÀ» ÄÁÆ®·ÑÇÏ´Â »óÅÂ
-	WORD			m_wBody,m_wBodyVariation;		//	¸ö¶×¾Æ¸®
-	WORD			m_wTrueJob;					//	¸ö¶×¾Æ¸®
+	WORD			m_wRealTeam;				//	ì§„ì§œ íŒ€(ìœ í˜¹ì„ ë‹¹í–ˆë˜ ì–´ì¨Œë˜..)
+	char			m_isRunning;				//	ë›°ëŠ” ì¤‘ì´ë‹¤.
+	char			m_isSkillControl;			//	ê¸°ìˆ ìª½ì—ì„œ ìºë¦­í„°ì˜ ì›€ì§ì„ì„ ì»¨íŠ¸ë¡¤í•˜ëŠ” ìƒíƒœ
+	WORD			m_wBody,m_wBodyVariation;		//	ëª¸ëš±ì•„ë¦¬
+	WORD			m_wTrueJob;					//	ëª¸ëš±ì•„ë¦¬
 	WORD			m_wGuildSerial;
 
-//	Á×À½¿¡ °ü·ÃµÈ »óÅÂ
-	WORD			m_wCorpseTime;				//	ÀÏÁ¤ ½Ã°£ÀÌ Áö³ª¸é ½ÃÃ¼°¡ »ç¶óÁø´Ù.
+//	ì£½ìŒì— ê´€ë ¨ëœ ìƒíƒœ
+	WORD			m_wCorpseTime;				//	ì¼ì • ì‹œê°„ì´ ì§€ë‚˜ë©´ ì‹œì²´ê°€ ì‚¬ë¼ì§„ë‹¤.
 	WORD			m_wWhiteFadeStep;
 	WORD			m_wFadeInStep;
 	WORD			m_wNpcActorSerial;
 
 ////////////////////////////////////////////////////////////
-//	Æê °ü·Ã Á¤º¸
+//	í« ê´€ë ¨ ì •ë³´
 ////////////////////////////////////////////////////////////
 	WORD			m_wGuildPetType,m_wMiniPetType,m_wMiniPetType2;
-	WORD			m_wIsPet,m_wIsRideTamer,m_wIsReleaseSummonBeast;					//	ÆêÀÌ´Ù.
+	WORD			m_wIsPet,m_wIsRideTamer,m_wIsReleaseSummonBeast;					//	í«ì´ë‹¤.
 	WORD			m_wTamer,m_wCommand;
 	WORD			m_wPetWaitCommand;
 	WORD			m_wRideDog;
 	char			m_strTamerName[dNAME_LENGTH];
 	CPos			m_posPet,m_posPet2;
 ////////////////////////////////////////////////////////////
-//	º¯½Å Á¤º¸
+//	ë³€ì‹  ì •ë³´
 ////////////////////////////////////////////////////////////
-	CActorSimpleArmorInfo	m_itemTransformationWeapon,m_itemTransformationShield,m_itemTransformationArmor;		//	ÀåºñÇÏ°í ÀÖ´Â ¹«±â,ÀåºñÇÏ°í ÀÖ´Â ¹æÆĞ
-	WORD			m_wTransformationJob;		//	º¯½ÅÇÒ Á÷¾÷
+	CActorSimpleArmorInfo	m_itemTransformationWeapon,m_itemTransformationShield,m_itemTransformationArmor;		//	ì¥ë¹„í•˜ê³  ìˆëŠ” ë¬´ê¸°,ì¥ë¹„í•˜ê³  ìˆëŠ” ë°©íŒ¨
+	WORD			m_wTransformationJob;		//	ë³€ì‹ í•  ì§ì—…
 	WORD			m_wRollingLogImage;
 
 
 ////////////////////////////////////////////////////////////
-//	¿©·¯°¡Áö »óÅÂ
+//	ì—¬ëŸ¬ê°€ì§€ ìƒíƒœ
 ////////////////////////////////////////////////////////////
-	short			m_sConfuseTime;				//	È¥¶õ »óÅÂ
+	short			m_sConfuseTime;				//	í˜¼ë€ ìƒíƒœ
 	WORD			m_wIsDontHitAction;
-	WORD			m_wMagicCarpetType;		//	¸ÅÁ÷ Ä«Æê ¶óÀÌ´õ
+	WORD			m_wMagicCarpetType;		//	ë§¤ì§ ì¹´í« ë¼ì´ë”
 	WORD			m_wDuelBuffType;
 	WORD			m_wGGGBuffType;
 	WORD			m_wPitchmanShopSerial;
@@ -525,177 +525,177 @@ public:
 	DWORD			m_bf1IsQuizEventWinner	:	1;
 	DWORD			m_bf1IsHide				:	1;
 	DWORD			m_bf1IsPlayShutInMagicBoxAnm	:	1;
-	DWORD			m_bf1IsTalker			:	1;	//	´ëÈ­ NPC?
-	DWORD			m_bf1IsCopyActor		:	1;	//	º¹Á¦ Ä³¸¯
-	DWORD			m_bf1IsMarionette		:	1;	//	¸¶¸®¿À³×¶ß
+	DWORD			m_bf1IsTalker			:	1;	//	ëŒ€í™” NPC?
+	DWORD			m_bf1IsCopyActor		:	1;	//	ë³µì œ ìºë¦­
+	DWORD			m_bf1IsMarionette		:	1;	//	ë§ˆë¦¬ì˜¤ë„¤ëœ¨
 	DWORD			m_bf1IsBoss				:	1;
-	DWORD			m_bf3HitGGGType			:	3;	//	¶§¸° ¿¢ÅÍÀÇ GGG
-	DWORD			m_bf1IsGGGPointHit		:	1;	//	½ºÅ³¾÷ ÀÌÆåÆ® .	EffectÃâ·Â¿ë.
-	DWORD			m_bf1IsGGGNormalHit		:	1;	//	ÀüÅõ ¹öÇÁ Å¸°İ½Ã .	EffectÃâ·Â¿ë.
-	DWORD			m_bf1IsGGGHitBy			:	1;	//	ÀüÅõ ¹öÇÁ ÇÇ°İ½Ã .	EffectÃâ·Â¿ë.
-	DWORD			m_bf1IsSoundOfLedersBellsLeader	:	1;	//	ÀÎµµÀÚÀÇ Á¾¼Ò¸® ¿ï¸° »ç¶÷
-	DWORD			m_bf1IsHideName			:	1;	//	ÀÌ¸§ ¼û±â±â
-	DWORD			m_bf4RebirthCount				:	4;	//	Àü»ı È½¼ö
+	DWORD			m_bf3HitGGGType			:	3;	//	ë•Œë¦° ì—‘í„°ì˜ GGG
+	DWORD			m_bf1IsGGGPointHit		:	1;	//	ìŠ¤í‚¬ì—… ì´í™íŠ¸ .	Effectì¶œë ¥ìš©.
+	DWORD			m_bf1IsGGGNormalHit		:	1;	//	ì „íˆ¬ ë²„í”„ íƒ€ê²©ì‹œ .	Effectì¶œë ¥ìš©.
+	DWORD			m_bf1IsGGGHitBy			:	1;	//	ì „íˆ¬ ë²„í”„ í”¼ê²©ì‹œ .	Effectì¶œë ¥ìš©.
+	DWORD			m_bf1IsSoundOfLedersBellsLeader	:	1;	//	ì¸ë„ìì˜ ì¢…ì†Œë¦¬ ìš¸ë¦° ì‚¬ëŒ
+	DWORD			m_bf1IsHideName			:	1;	//	ì´ë¦„ ìˆ¨ê¸°ê¸°
+	DWORD			m_bf4RebirthCount				:	4;	//	ì „ìƒ íšŸìˆ˜
 
 ////////////////////////////////////////////////////////////
-//	ºñÆ®Á¤º¸
+//	ë¹„íŠ¸ì •ë³´
 ////////////////////////////////////////////////////////////
 	CBitInfoManager		m_bitInfoManager;
 
 ////////////////////////////////////////////////////////////
-//	±âÅ¸Á¤º¸
+//	ê¸°íƒ€ì •ë³´
 ////////////////////////////////////////////////////////////
 
-//	°ÔÀÓ ³»ºÎ Ä³¸¯ÅÍ »óÅÂ
-	BOOL			m_isDontUpdate;				//	update¸¦ ÇÏÁö ¾Ê´Â´Ù.
-	BOOL			m_isExclusiveAction;		//	µ¶Á¡Àû Çàµ¿(´Ù¸¥ Çàµ¿ÀÌ³ª ÀÌµ¿µîÀ» ÇÒ ¼ö ¾ø´Ù.)
-	char			m_isCasting;				//	Ä³½ºÆÃ ÁßÀÌ´Ù.
-	WORD			m_wBlockingRigidityTime;		//	¹æ¾î½Ã °æÁ÷ ½Ã°£
-	int				m_iPostureOfDefense;		//	¹æ¾î »óÅÂ. ³ª ±âÅ¸µîµî..
+//	ê²Œì„ ë‚´ë¶€ ìºë¦­í„° ìƒíƒœ
+	BOOL			m_isDontUpdate;				//	updateë¥¼ í•˜ì§€ ì•ŠëŠ”ë‹¤.
+	BOOL			m_isExclusiveAction;		//	ë…ì ì  í–‰ë™(ë‹¤ë¥¸ í–‰ë™ì´ë‚˜ ì´ë™ë“±ì„ í•  ìˆ˜ ì—†ë‹¤.)
+	char			m_isCasting;				//	ìºìŠ¤íŒ… ì¤‘ì´ë‹¤.
+	WORD			m_wBlockingRigidityTime;		//	ë°©ì–´ì‹œ ê²½ì§ ì‹œê°„
+	int				m_iPostureOfDefense;		//	ë°©ì–´ ìƒíƒœ. ë‚˜ ê¸°íƒ€ë“±ë“±..
 	WORD			m_wIsAddPaint,m_wIsPutName;
 
 ///////////////////////////////////////////////////////////////
-//	Ãâ·Â °ü·Ã
+//	ì¶œë ¥ ê´€ë ¨
 ///////////////////////////////////////////////////////////////
 	WORD			m_wParallelBunshineCount,m_wParallelBunshineAngleGap;
 	CAfterImageInfo	m_aAfterImageList[dAFTER_IMAGE_COUNT];
-	WORD			m_wAfterImageDelayPeriod;	//	Ä³¸¯ÅÍ ÀÜ»ó µô·¹ÀÌ °£°İ.
-	WORD			m_wAfterImageDelayCounter;	//	Ä³¸¯ÅÍ ÀÜ»ó µô·¹ÀÌ °£°İ.
+	WORD			m_wAfterImageDelayPeriod;	//	ìºë¦­í„° ì”ìƒ ë”œë ˆì´ ê°„ê²©.
+	WORD			m_wAfterImageDelayCounter;	//	ìºë¦­í„° ì”ìƒ ë”œë ˆì´ ê°„ê²©.
 	char			m_cAfterImageStatus;
-	char			m_cAfterImageCount;			//	Ä³¸¯ÅÍ ÀÜ»ó ¼ö
-	char			m_cAfterImageDepth;			//	Ä³¸¯ÅÍ ÀÜ»ó ¼ö
-	char			m_cAfterImageDisappearSpeed;//	Ä³¸¯ÅÍ ÀÜ»óÀÌ »ç¶óÁö´Â ¼Óµµ
+	char			m_cAfterImageCount;			//	ìºë¦­í„° ì”ìƒ ìˆ˜
+	char			m_cAfterImageDepth;			//	ìºë¦­í„° ì”ìƒ ìˆ˜
+	char			m_cAfterImageDisappearSpeed;//	ìºë¦­í„° ì”ìƒì´ ì‚¬ë¼ì§€ëŠ” ì†ë„
 
-	char			m_isPutDust;				//	¸ÕÁö¸¦ »Ñ·ÁÁÖ´Â »óÅÂ
-	char			m_cParallelCount,m_cParallelAnm;	//	ºĞ½ÅÀÇ ¼ö,ºĞ½ÅÀÇ ¿¡´Ï¸ŞÀÌ¼Ç
+	char			m_isPutDust;				//	ë¨¼ì§€ë¥¼ ë¿Œë ¤ì£¼ëŠ” ìƒíƒœ
+	char			m_cParallelCount,m_cParallelAnm;	//	ë¶„ì‹ ì˜ ìˆ˜,ë¶„ì‹ ì˜ ì—ë‹ˆë©”ì´ì…˜
 
-	WORD			m_aHitEffect[dHIT_EFFECT_COUNT_ON_CHARACTER];			//	Å¸°İ È¿°ú
+	WORD			m_aHitEffect[dHIT_EFFECT_COUNT_ON_CHARACTER];			//	íƒ€ê²© íš¨ê³¼
 	WORD			m_wAuraImage;
 	LONGLONG		m_dwEnchantedMask;
 	uEnchantedImage	m_enchantedImage;
 	WORD			m_wTheOtherSelfCount;
 	WORD			m_wRevealTime;
-	WORD			m_wDoppelgangerCount;		// ºĞ½Å °³¼ö...
+	WORD			m_wDoppelgangerCount;		// ë¶„ì‹  ê°œìˆ˜...
 /////////////////////////////////////////////////////////////////////////////
-//	Ä³¸¯ÅÍ ¾×¼Ç/¿¡´Ï¸ŞÀÌ¼Ç °ü·Ã
+//	ìºë¦­í„° ì•¡ì…˜/ì—ë‹ˆë©”ì´ì…˜ ê´€ë ¨
 /////////////////////////////////////////////////////////////////////////////
 	WORD			m_wChargeImage,m_wChargeFrameCounter;
 	BYTE			m_bChargeAnm,m_bChargeFrame;
-	char			m_isTriggerFrame,m_isDamageFrame;		//	Æ®¸®°Å ÇÁ·¹ÀÓÀÌ´Ù. ´ë¹ÌÁö ÇÁ·¹ÀÓÀÌ´Ù.
-	int				m_iFPS;									//	ÇöÀç ¿¡´Ï¸ŞÀÌ¼ÇÀÇ FPS¿Í PPS
-	int				m_iDirectCount,m_iFrameCount;			//	ÇöÀç ¿¡´Ï¸ŞÀÌ¼ÇÀÇ ¹æÇâ¼ö
-	WORD			m_wPltIndex;							//	ÆÓ·¹Æ®
-	WORD			m_wLoopState;							//	ÇöÀç ¾×¼ÇÀÌ ·çÇÁ´Ù.
-	WORD			m_wRemainReplayCount;					//	ÇöÀç ¾×¼Ç¿¡´Ï¸ŞÀÌ¼ÇÀÇ ³²Àº ¹İº¹ ¼öÄ¡.
-	int				m_iAnm,m_iDirect,m_iAngle,m_iFrame,m_iFrameCounter;	//	¾×¼Ç,¹æÇâ,ÇÁ·¹ÀÓ,FrameCounter
-	int				m_iMiniPetFPS,m_iMiniPetAnm,m_iMiniPetFrame,m_iMiniPetFrameCount,m_iMiniPetFrameCounter;	//	¾×¼Ç,¹æÇâ,ÇÁ·¹ÀÓ,FrameCounter
-	int				m_iMiniPetFPS2,m_iMiniPetAnm2,m_iMiniPetFrame2,m_iMiniPetFrameCount2,m_iMiniPetFrameCounter2;	//	¾×¼Ç,¹æÇâ,ÇÁ·¹ÀÓ,FrameCounter
+	char			m_isTriggerFrame,m_isDamageFrame;		//	íŠ¸ë¦¬ê±° í”„ë ˆì„ì´ë‹¤. ëŒ€ë¯¸ì§€ í”„ë ˆì„ì´ë‹¤.
+	int				m_iFPS;									//	í˜„ì¬ ì—ë‹ˆë©”ì´ì…˜ì˜ FPSì™€ PPS
+	int				m_iDirectCount,m_iFrameCount;			//	í˜„ì¬ ì—ë‹ˆë©”ì´ì…˜ì˜ ë°©í–¥ìˆ˜
+	WORD			m_wPltIndex;							//	íŒ°ë ˆíŠ¸
+	WORD			m_wLoopState;							//	í˜„ì¬ ì•¡ì…˜ì´ ë£¨í”„ë‹¤.
+	WORD			m_wRemainReplayCount;					//	í˜„ì¬ ì•¡ì…˜ì—ë‹ˆë©”ì´ì…˜ì˜ ë‚¨ì€ ë°˜ë³µ ìˆ˜ì¹˜.
+	int				m_iAnm,m_iDirect,m_iAngle,m_iFrame,m_iFrameCounter;	//	ì•¡ì…˜,ë°©í–¥,í”„ë ˆì„,FrameCounter
+	int				m_iMiniPetFPS,m_iMiniPetAnm,m_iMiniPetFrame,m_iMiniPetFrameCount,m_iMiniPetFrameCounter;	//	ì•¡ì…˜,ë°©í–¥,í”„ë ˆì„,FrameCounter
+	int				m_iMiniPetFPS2,m_iMiniPetAnm2,m_iMiniPetFrame2,m_iMiniPetFrameCount2,m_iMiniPetFrameCounter2;	//	ì•¡ì…˜,ë°©í–¥,í”„ë ˆì„,FrameCounter
 
 	WORD			m_wBookingDirect;
-	WORD			m_wOverlapAnm,m_wOverlapAnm2;			//	¿À¹ö·¦µÇ´Â ¿¡´Ï¸ŞÀÌ¼Ç
-	int				m_iViewAngle;							//	´«¿¡ º¸ÀÌ´Â °¢µµ
-	WORD			m_wStopDirect;							//	Á¤ÁöÇØ ÀÖ´Â ¹æÇâ
-	char			m_isActionFinished;						//	¹æ±İ ¾×¼ÇÀÌ ³¡³µ´Ù.
-	WORD			m_wActionSpeed;							//	¾×¼Ç ¼Óµµ 100%±âÁØ
+	WORD			m_wOverlapAnm,m_wOverlapAnm2;			//	ì˜¤ë²„ë©ë˜ëŠ” ì—ë‹ˆë©”ì´ì…˜
+	int				m_iViewAngle;							//	ëˆˆì— ë³´ì´ëŠ” ê°ë„
+	WORD			m_wStopDirect;							//	ì •ì§€í•´ ìˆëŠ” ë°©í–¥
+	char			m_isActionFinished;						//	ë°©ê¸ˆ ì•¡ì…˜ì´ ëë‚¬ë‹¤.
+	WORD			m_wActionSpeed;							//	ì•¡ì…˜ ì†ë„ 100%ê¸°ì¤€
 
 /////////////////////////////////////////////////////////////////////////////
-//	¿À¿ì¼¶ Æ÷Æ®¸®½º¸¦ À§ÇÑ Á¤º¸
+//	ì˜¤ìš°ì„¬ í¬íŠ¸ë¦¬ìŠ¤ë¥¼ ìœ„í•œ ì •ë³´
 /////////////////////////////////////////////////////////////////////////////
 	WORD			m_wAwesomeFortressAction;
 	CActroAnmInfo	m_awesomeFortressActionInfo;
 
 /////////////////////////////////////////////////////////////////////////////
-//	ºĞ½Å ¿¬Å¸ Á¤º¸
+//	ë¶„ì‹  ì—°íƒ€ ì •ë³´
 /////////////////////////////////////////////////////////////////////////////
 	WORD			m_wContinuousHitOfDoppelgangerAction[dAFTER_IMAGE_COUNT];
 	CActroAnmInfo	m_continuousHitOfDoppelgangerActionInfo[dAFTER_IMAGE_COUNT];
 /////////////////////////////////////////////////////////////////////////////
-//	À§Ä¡ Á¤º¸/±æÃ£±â Á¤º¸
+//	ìœ„ì¹˜ ì •ë³´/ê¸¸ì°¾ê¸° ì •ë³´
 /////////////////////////////////////////////////////////////////////////////
-	c4POINT			m_pos,m_posDest;					//	ÇöÀç À§Ä¡,¸ñÇ¥À§Ä¡,Å¸ÀÏ´ÜÀ§ À§Ä¡(¸Ê Å¸ÀÏ ¸»°í.. ¸Ê Á¤º¸Å¸ÀÏ)
-	CPos			m_posTarget,m_aPath[dSYNC_FPS];			//	ÇÁ·¹ÀÓ ¼ö ¸¸Å­ ¸ÂÃç ÁØ´Ù.
-	int				m_iPathIndex;						//	ÇöÀç ÀÌµ¿ ÀÎµ¦½º
-	int				m_iPPS;								//	ÀÌµ¿ ¼Óµµ
-	WORD			m_wMoveSpeed;						//	ÀÌµ¿ ¼Óµµ 100%±âÁØ
+	c4POINT			m_pos,m_posDest;					//	í˜„ì¬ ìœ„ì¹˜,ëª©í‘œìœ„ì¹˜,íƒ€ì¼ë‹¨ìœ„ ìœ„ì¹˜(ë§µ íƒ€ì¼ ë§ê³ .. ë§µ ì •ë³´íƒ€ì¼)
+	CPos			m_posTarget,m_aPath[dSYNC_FPS];			//	í”„ë ˆì„ ìˆ˜ ë§Œí¼ ë§ì¶° ì¤€ë‹¤.
+	int				m_iPathIndex;						//	í˜„ì¬ ì´ë™ ì¸ë±ìŠ¤
+	int				m_iPPS;								//	ì´ë™ ì†ë„
+	WORD			m_wMoveSpeed;						//	ì´ë™ ì†ë„ 100%ê¸°ì¤€
 
-	BOOL			m_isMove;							//	ÇöÀç ÀÌµ¿ÁßÀÌ´Ù.
-	BOOL			m_isFindStopPosition;				//	Á¤ÁöÇÒ °÷À» Ã£¾Æ Çì¸Ş´Â-o-ÁßÀÌ´Ù.
-	BOOL			m_isBlockedWay;						//	¸·Èù±æÀÌ¶ó´Ï±î!!
+	BOOL			m_isMove;							//	í˜„ì¬ ì´ë™ì¤‘ì´ë‹¤.
+	BOOL			m_isFindStopPosition;				//	ì •ì§€í•  ê³³ì„ ì°¾ì•„ í—¤ë©”ëŠ”-o-ì¤‘ì´ë‹¤.
+	BOOL			m_isBlockedWay;						//	ë§‰íŒê¸¸ì´ë¼ë‹ˆê¹Œ!!
 
 /////////////////////////////////////////////////////////////////////////////
-//	½ºÅ³ °ü·Ã
+//	ìŠ¤í‚¬ ê´€ë ¨
 /////////////////////////////////////////////////////////////////////////////
 	cATTACK_INFO	m_attackInfo;
 	cAbility		m_abilityUse,m_abilityRush;
-	WORD			m_wUseSkill;						//	ÇöÀç »ç¿ëÁßÀÎ ±â¼ú Skill Manager index
-	char			m_isInvincibleSkill;				//	Áö±İ »ç¿ëÇÏ´Â ±â¼úÀÌ »ç¿ëÇÏ´Âµ¿¾È ¹«ÀûÀÌ µÇ´Â ±â¼úÀÌ´Ù.
-	WORD			m_wIsFreezeAtTriggerFrame;			//	Æ®¸®°Å ÇÁ·¹ÀÓ¿¡¼­ °íÁ¤µÈ´Ù.
+	WORD			m_wUseSkill;						//	í˜„ì¬ ì‚¬ìš©ì¤‘ì¸ ê¸°ìˆ  Skill Manager index
+	char			m_isInvincibleSkill;				//	ì§€ê¸ˆ ì‚¬ìš©í•˜ëŠ” ê¸°ìˆ ì´ ì‚¬ìš©í•˜ëŠ”ë™ì•ˆ ë¬´ì ì´ ë˜ëŠ” ê¸°ìˆ ì´ë‹¤.
+	WORD			m_wIsFreezeAtTriggerFrame;			//	íŠ¸ë¦¬ê±° í”„ë ˆì„ì—ì„œ ê³ ì •ëœë‹¤.
 	WORD			m_wTargetMark;
 
-//	¿¬¼Ó Å¸°İ °ø°İ
+//	ì—°ì† íƒ€ê²© ê³µê²©
 	BYTE			m_isGetCPByContinuousHitFirstAttack,m_bContinuousHitCounter;
 	BYTE			m_bIllusionAttackFrame;
 
-//	¸ö ÁÖÀ§¿¡ ¿É¼Ç
+//	ëª¸ ì£¼ìœ„ì— ì˜µì…˜
 	WORD			m_wIsCastBlocker,m_wBlockerAngle,m_wBlockerShape,m_wSpearBlockerShape,m_wBlockerRigidityTime;	//	
-	WORD			m_wShakeTime;						//	¸öÀÌ Èçµé°Å·Á!!
-	//	ºí·ÏÄ¿ - Ä³½ºÅÍ(m_wBlockerCaster - ÀÚ±âÀÚ½Å,m_wBlockerTime),¼öÇıÀÚ(m_wBlockerCaster - Ä³½ºÅÍ)
-	WORD			m_wMachineSkill,m_wMachineAngle,m_wMachineFrame;	//	¸Ó½®~~
-	WORD			m_wIntervalShooter;								//	ÀÎÅÍ¹ú ½´ÅÍ
-//	Á¡ÇÁ
-	WORD			m_wJumpTargetRange;									//	Å¸°Ù°úÀÇ °Å¸®
+	WORD			m_wShakeTime;						//	ëª¸ì´ í”ë“¤ê±°ë ¤!!
+	//	ë¸”ë¡ì»¤ - ìºìŠ¤í„°(m_wBlockerCaster - ìê¸°ìì‹ ,m_wBlockerTime),ìˆ˜í˜œì(m_wBlockerCaster - ìºìŠ¤í„°)
+	WORD			m_wMachineSkill,m_wMachineAngle,m_wMachineFrame;	//	ë¨¸ì‰°~~
+	WORD			m_wIntervalShooter;								//	ì¸í„°ë²Œ ìŠˆí„°
+//	ì í”„
+	WORD			m_wJumpTargetRange;									//	íƒ€ê²Ÿê³¼ì˜ ê±°ë¦¬
 	WORD			m_wJumpHeight;
 	WORD			m_wJumpMaxRange;
 
 	short			m_sLevitateHeight;
 
-//	Æ¯¼öÇÑ ¾×¼ÇÀÌ ÀÖ´Â ½ºÅ³ »ç¿ëÁß
+//	íŠ¹ìˆ˜í•œ ì•¡ì…˜ì´ ìˆëŠ” ìŠ¤í‚¬ ì‚¬ìš©ì¤‘
 	WORD			m_wUseSpecialActionSkill;
-//	·¯½¬
-	WORD			m_wRushStatus;							//	·¯½¬? ÁßÀÌ´Ù.
+//	ëŸ¬ì‰¬
+	WORD			m_wRushStatus;							//	ëŸ¬ì‰¬? ì¤‘ì´ë‹¤.
 	WORD			m_wWaitRushTriggerTime;
 	WORD			m_wRushResult;
-	BOOL			m_bIsJumpRush;							//	Á¡ÇÁ ·¯½¬ ÀÎ°¡?!
-	WORD			m_wRushAcceleration;					// ·¯½¬ °¡¼Óµµ
-	int				m_iHeightJumpRush;						//	Á¡ÇÁ·¯½¬ ³ôÀÌ
-	WORD			m_wIncreaseHeightJumpRush;				//	Á¡ÇÁÁõ°¡°ª
-	DWORD			m_dwRushFrameCounter;					//  ·¯½¬ ÇÁ·¹ÀÓ Ä«¿îÅÍ....
-	WORD			m_wJumpRushLastActionFrame;				//	Á¡ÇÁ·¯½¬ ÃÖÁ¾¾×¼ÇÇÁ·¹ÀÓ
+	BOOL			m_bIsJumpRush;							//	ì í”„ ëŸ¬ì‰¬ ì¸ê°€?!
+	WORD			m_wRushAcceleration;					// ëŸ¬ì‰¬ ê°€ì†ë„
+	int				m_iHeightJumpRush;						//	ì í”„ëŸ¬ì‰¬ ë†’ì´
+	WORD			m_wIncreaseHeightJumpRush;				//	ì í”„ì¦ê°€ê°’
+	DWORD			m_dwRushFrameCounter;					//  ëŸ¬ì‰¬ í”„ë ˆì„ ì¹´ìš´í„°....
+	WORD			m_wJumpRushLastActionFrame;				//	ì í”„ëŸ¬ì‰¬ ìµœì¢…ì•¡ì…˜í”„ë ˆì„
 	int				m_iJumpRushRange;	
-//	Á¡ÇÁ
-	WORD			m_wJumpStatus;							//	·¯½¬? ÁßÀÌ´Ù.
+//	ì í”„
+	WORD			m_wJumpStatus;							//	ëŸ¬ì‰¬? ì¤‘ì´ë‹¤.
 	WORD			m_wJumpResult;
 	WORD			m_wJumpMaxRangeSave;					//JBC  08-07-31
 	BOOL			m_bIsJumpAttack;
-	BOOL			m_bIsEffectJump;				//	°øÁßÁ¡ÇÁ ÀÌÆÑÆ®ÀÎ°¡?
-	WORD			m_wEffectJumpSpeed;					//	°øÁß Á¡ÇÁ¼Óµµ
-	WORD			m_wIncreaseHeightEffectJump;					//	°øÁß Á¡ÇÁ Áõ°¡ ³ôÀÌ
-	int				m_iHeightEffectJump;			//		°øÁßÁ¡ÇÁ ³ôÀÌ.
-	WORD			m_wJumpFrameCount;				//	Á¡ÇÁÇÁ·¹ÀÓ
-//	¾ğ´ö ½ºÅ³
-	WORD			m_wHillSkill;						//	¾ğ´ö
-	int				m_iHillHP;							//	Ã¼·Â... -_-
+	BOOL			m_bIsEffectJump;				//	ê³µì¤‘ì í”„ ì´íŒ©íŠ¸ì¸ê°€?
+	WORD			m_wEffectJumpSpeed;					//	ê³µì¤‘ ì í”„ì†ë„
+	WORD			m_wIncreaseHeightEffectJump;					//	ê³µì¤‘ ì í”„ ì¦ê°€ ë†’ì´
+	int				m_iHeightEffectJump;			//		ê³µì¤‘ì í”„ ë†’ì´.
+	WORD			m_wJumpFrameCount;				//	ì í”„í”„ë ˆì„
+//	ì–¸ë• ìŠ¤í‚¬
+	WORD			m_wHillSkill;						//	ì–¸ë•
+	int				m_iHillHP;							//	ì²´ë ¥... -_-
 
-//	µğ½ºÇÃ·¡ÀÌ½º¸ÕÆ®
-	WORD			m_wLordActor,m_wSlaveActor;			//	´Á´ëÀÎ°£ÀÇ µğ½ºÇÃ·¹ÀÌ½º¸ÕÆ®¿¡¼­ ÁÖÀÎ
-	WORD			m_wIsFeignDeath;					//	Á×ÀºÃ´..?
+//	ë””ìŠ¤í”Œë˜ì´ìŠ¤ë¨¼íŠ¸
+	WORD			m_wLordActor,m_wSlaveActor;			//	ëŠ‘ëŒ€ì¸ê°„ì˜ ë””ìŠ¤í”Œë ˆì´ìŠ¤ë¨¼íŠ¸ì—ì„œ ì£¼ì¸
+	WORD			m_wIsFeignDeath;					//	ì£½ì€ì²™..?
 	CPos			m_posFeignDeath;
 
-//	¹ÙÀÌÆ® ÇàÀ×
+//	ë°”ì´íŠ¸ í–‰ì‰
 	WORD			m_wBiteTarget,m_wBiter;
 
-//	±âÅ¸
+//	ê¸°íƒ€
 	WORD			m_wDummyStatus;
-	WORD			m_wOperatorLevel;					//	ÀÌ»ç¶÷ ¿î¿µÀÚ ·¹º§
+	WORD			m_wOperatorLevel;					//	ì´ì‚¬ëŒ ìš´ì˜ì ë ˆë²¨
 	WORD			m_wIsEventMob;
 	WORD			m_wSageBookColor;
 
-//	Á·¼â ½ºÅ³
+//	ì¡±ì‡„ ìŠ¤í‚¬
 	WORD			m_wShakleSkill,m_wShakleShakeTime;
 	WORD			m_wShakleAnm,m_wShakleFrameCounter,m_wShakleFrame;
 	WORD			m_bf1IsFreezeShakle	:	1;
 
-//  ºĞ½Å °ø°İ (ºÎ°¡È¿°ú)
+//  ë¶„ì‹  ê³µê²© (ë¶€ê°€íš¨ê³¼)
 
 	WORD			m_wAttackDoppelgangerCount		;
 	int				m_iAttackDoppelgangerDamage		;
@@ -707,14 +707,14 @@ public:
 	the_fallowing_motion	m_flying_bow;
 
 	cChanedDamageInfoStack	m_chainedDamage;
-	cATTACK_INFO	m_attackInfoCHOD;		// ºĞ½Å¿¬Å¸°ø°İ °ø°İÁ¤º¸
-	WORD			m_wItemEffect;			//	¾ÆÀÌÅÛÀ¸·Î ÀÎÇØ ¾òÀº ÀÌÆÑÆ® È¿°ú
+	cATTACK_INFO	m_attackInfoCHOD;		// ë¶„ì‹ ì—°íƒ€ê³µê²© ê³µê²©ì •ë³´
+	WORD			m_wItemEffect;			//	ì•„ì´í…œìœ¼ë¡œ ì¸í•´ ì–»ì€ ì´íŒ©íŠ¸ íš¨ê³¼
 	inline	void	reset()
 	{
 		memset(this,0,sizeof(cACTOR_DATA));
 
 		m_itemWeapon.reset();
-		m_itemShield.reset();	//	ÀåºñÇÏ°í ÀÖ´Â ¹«±â,ÀåºñÇÏ°í ÀÖ´Â ¹æÆĞ
+		m_itemShield.reset();	//	ì¥ë¹„í•˜ê³  ìˆëŠ” ë¬´ê¸°,ì¥ë¹„í•˜ê³  ìˆëŠ” ë°©íŒ¨
 		m_itemArmor.reset();
 		m_awesomeFortressActionInfo.reset();
 		for(int i=0;i<dAFTER_IMAGE_COUNT;++i)
@@ -724,7 +724,7 @@ public:
 
 		m_wNpcActorSerial		=	0xffff;
 		m_wSageBookColor		=	0;
-		m_wSerial				=	0xffff;	//	¾×ÅÍ ½½·Ô
+		m_wSerial				=	0xffff;	//	ì•¡í„° ìŠ¬ë¡¯
 		m_wTamer				=	0xffff;
 		m_wRideDog				=	0xffff;
 		m_wAwesomeFortressAction=	0xffff;
@@ -782,20 +782,20 @@ public:
 		return	FALSE;
 	}
 
-	//JBC ÀÌµ¿Áß µµÂøÁ¡ XÇ¥½Ã 08-06-30
+	//JBC ì´ë™ì¤‘ ë„ì°©ì  Xí‘œì‹œ 08-06-30
 	inline void		DrawCross(int _iX , int _iY)
 	{
 		cDRAW::Line(0xffff, _iX - 10 , _iY - 10, _iX + 10, _iY + 10);
 		cDRAW::Line(0xffff, _iX - 10 , _iY + 10, _iX + 10, _iY - 10);
 	}
 
-	BOOL			isIncorrectName();	//	Àß¸øµÈ ÀÌ¸§
-	BOOL			set(int x,int y){return	TRUE;};//¸Ê¿¡¼­ ·ÎµùÇÑ Ä³¸¯ÅÍ µ¥ÀÌÅÍ¸¦ ¼¼ÆÃÇÑ´Ù.
-	void			setDataByHero(CHero *_lpPlayer);//¿µ¿õµ¥ÀÌÅÍ·Î µ¥ÀÌÅÍ ¼³Á¤
-	BOOL			setDataByAvatar(cAVATAR_INFO *_lpAvatar);//¾Æ¹ÙÅ¸ Á¤º¸·Î ¾×ÅÍ µ¥ÀÌÅÍ ¼³Á¤.. -_-a
+	BOOL			isIncorrectName();	//	ì˜ëª»ëœ ì´ë¦„
+	BOOL			set(int x,int y){return	TRUE;};//ë§µì—ì„œ ë¡œë”©í•œ ìºë¦­í„° ë°ì´í„°ë¥¼ ì„¸íŒ…í•œë‹¤.
+	void			setDataByHero(CHero *_lpPlayer);//ì˜ì›…ë°ì´í„°ë¡œ ë°ì´í„° ì„¤ì •
+	BOOL			setDataByAvatar(cAVATAR_INFO *_lpAvatar);//ì•„ë°”íƒ€ ì •ë³´ë¡œ ì•¡í„° ë°ì´í„° ì„¤ì •.. -_-a
 
 	void			changeMinipetType(int _iType1,int _iType2);
-	void			buildByMinimumActorInfo(CMinimumActorInfo*);//³­ÀÔÇÑ ÇÃ·¹ÀÌ¾î/¸ó½ºÅÍ
+	void			buildByMinimumActorInfo(CMinimumActorInfo*);//ë‚œì…í•œ í”Œë ˆì´ì–´/ëª¬ìŠ¤í„°
 	void			buildBySimplePlayerInfo(CSimplePlayerInfo *_lpInfo);
 	void			buildByVerySimplePlayerInfo(CVerySimplePlayerInfo *_lpInfo,BOOL _bIsAskActorInfoResult);
 	void			buildBySimpleMonsterInfo(CSimpleMonsterInfo *_lpInfo);
@@ -803,12 +803,12 @@ public:
 	void			buildBySimpleNpcInfo(CSimpleNpcInfo *_lpInfo);
 	void			buildByVerySimpleNpcInfo(CVerySimpleNpcInfo *_lpInfo,BOOL _bIsAskActorInfoResult);
 
-	void			reset();									//	¸ğµç µ¥ÀÌÅÍ¸¦ ÃÊ±âÈ­ ÇÑ´Ù.
+	void			reset();									//	ëª¨ë“  ë°ì´í„°ë¥¼ ì´ˆê¸°í™” í•œë‹¤.
 	BOOL			resetForOutOfSightActor();
 	BOOL			remove();
 
 	void			setReservedAction();
-	void			blockingAction(CActor *_lpAttacker,int _iRigidityTime);	//	ºí·°Å· ¾×¼Ç ÃëÇÏ±â
+	void			blockingAction(CActor *_lpAttacker,int _iRigidityTime);	//	ë¸”ëŸ­í‚¹ ì•¡ì…˜ ì·¨í•˜ê¸°
 	void			hitAction();
 	
 	void			setAnm(int anm,BOOL _bIsForeced=FALSE);
@@ -817,18 +817,18 @@ public:
 	void			changeShakleAnm(int anm);
 	void			setDirect(int _iDirect,BOOL _bIsIgnoreStunStatus=FALSE);
 	void			bookingDirect(int _iDirect);
-	void			setFpsByWeaponSpeed(int _iCorrectSpeed=100);	//	¹«±â ¼Óµµ¿¡ ¸ÂÃç¼­ ¼Óµµ¸¦ º¸Á¤ÇÑ´Ù.
-	void			setFpsByTPA(int _iTPA,int _iCorrectSpeed=100);	//	TPA(Time Per Action)¿¡ ¸ÂÃç¼­ FPS¸¦ ¼³Á¤ÇÑ´Ù.
+	void			setFpsByWeaponSpeed(int _iCorrectSpeed=100);	//	ë¬´ê¸° ì†ë„ì— ë§ì¶°ì„œ ì†ë„ë¥¼ ë³´ì •í•œë‹¤.
+	void			setFpsByTPA(int _iTPA,int _iCorrectSpeed=100);	//	TPA(Time Per Action)ì— ë§ì¶°ì„œ FPSë¥¼ ì„¤ì •í•œë‹¤.
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//	º¸Á¤
+//	ë³´ì •
 //////////////////////////////////////////////////////////////////////////////////////////
 	void			resetCorrectDataByAidMagic();
-	void			resetAllCorrectData();	//	Ä³¸¯ÅÍÀÇ ¸ğµç º¸Á¤ µ¥ÀÌÅÍ¸¦ ÃÊ±âÈ­ ÇÑ´Ù.
+	void			resetAllCorrectData();	//	ìºë¦­í„°ì˜ ëª¨ë“  ë³´ì • ë°ì´í„°ë¥¼ ì´ˆê¸°í™” í•œë‹¤.
 
 	void			updateStatusData();
-	void			computePowerData();		//	Ä³¸¯ÅÍÀÇ º¸Á¤ µ¥ÀÌÅÍ¸¦ °è»êÇÑ´Ù.
-	void			reduceHP(int _iDamage,BOOL _bIsCheckSync = TRUE,cAbility *_lpAbility = NULL);	//	Ã¼·Â ÁÙ¾îµê
+	void			computePowerData();		//	ìºë¦­í„°ì˜ ë³´ì • ë°ì´í„°ë¥¼ ê³„ì‚°í•œë‹¤.
+	void			reduceHP(int _iDamage,BOOL _bIsCheckSync = TRUE,cAbility *_lpAbility = NULL);	//	ì²´ë ¥ ì¤„ì–´ë“¦
 
 	inline	void	changeSyncWithServerStatus(int _iStatus)
 	{
@@ -842,9 +842,9 @@ public:
 
 		return FALSE;
 	}
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­ÀÌÆåÆ® Ã³¸®
-//¦­CActorEffect.cpp
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒì´í™íŠ¸ ì²˜ë¦¬
+//â”ƒCActorEffect.cpp
 	void			addHitEffect(int _iDx,int _iDy,int _iEffect,int _iDirect=0,int _iAnm=0xffff,int _iShakeValue=0 , BOOL _isHalfFaram = FALSE);
 	void			addSkillHitEffect(int _iEffect);
 	void			addEffect(int _iEffectOutputPos,int _iImage,int _iAnm=0xffff,int _iXScale=100,int _iYScale=100);
@@ -854,8 +854,8 @@ public:
 	void			addHitInfo(int _iInfo,int _iEffectOutputPos=eHEOP_HIT_ZONE);
 	void			getHitPointCorrectPos(int _iPoint,CPos *_lpPos);
 
-	void			addSkillEffect(int _iSkill,int _iImage=0xffff);	//	½ºÅ³ È¿°ú ¹ß»ı
-	void			addAuraImage(int _iSkill);	//	¿À¶ó ÀÌÆåÆ® ¹ß»ç!!-_-?
+	void			addSkillEffect(int _iSkill,int _iImage=0xffff);	//	ìŠ¤í‚¬ íš¨ê³¼ ë°œìƒ
+	void			addAuraImage(int _iSkill);	//	ì˜¤ë¼ ì´í™íŠ¸ ë°œì‚¬!!-_-?
 	void			attatchLevelUpEffect();
 	void			attatchSkillLevelUpEffect();
 
@@ -864,30 +864,30 @@ public:
 	void			resetChargeEffect();
 	void			cancelChargeEffect();
 	void			changeSageBookColor(int _iBookColor);
-//¦­CActorEffect.cpp
-//¦­ÀÌÆåÆ® Ã³¸®
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒCActorEffect.cpp
+//â”ƒì´í™íŠ¸ ì²˜ë¦¬
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­ÀÌº¥Æ® Ã³¸®
-//¦­CActorEvent.cpp
-	void			talk(char *_lpText,int _iTime=dDEFAULT_BALOON_TALK_TIME);	//	¸»ÇÏ±â
-	void			warning(char *_lpText,int _iTime=dDEFAULT_BALOON_WARNING_TIME);	//	¸»ÇÏ±â
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒì´ë²¤íŠ¸ ì²˜ë¦¬
+//â”ƒCActorEvent.cpp
+	void			talk(char *_lpText,int _iTime=dDEFAULT_BALOON_TALK_TIME);	//	ë§í•˜ê¸°
+	void			warning(char *_lpText,int _iTime=dDEFAULT_BALOON_WARNING_TIME);	//	ë§í•˜ê¸°
 	
-//¦­CActorEvent.cpp
-//¦­ÀÌº¥Æ® Ã³¸®
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒCActorEvent.cpp
+//â”ƒì´ë²¤íŠ¸ ì²˜ë¦¬
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­Ãâ·Â
-//¦­cACTOR_PUT.cpp
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒì¶œë ¥
+//â”ƒcACTOR_PUT.cpp
 
 
-	void			makeHealEffect(int _iSkill,int _iHealPoint);	//	Èú È¿°ú Ãß°¡
-	void			makeAbsorbDamageEffect(int _iHealPoint);	//	´ë¹ÌÁö Èí¼ö È¿°ú Ãß°¡
-	inline void		setPalette();				//	Ä³¸¯ÅÍÀÇ ÆÈ·¹Æ® ¼³Á¤
-	inline void		setWeaponPalette();			//	¹«±âÀÇ ÆÈ·¹Æ® ¼³Á¤
-	inline void		setShieldPalette();			//	¹æÆĞÀÇ ÆÈ·¹Æ® ¼³Á¤
+	void			makeHealEffect(int _iSkill,int _iHealPoint);	//	í íš¨ê³¼ ì¶”ê°€
+	void			makeAbsorbDamageEffect(int _iHealPoint);	//	ëŒ€ë¯¸ì§€ í¡ìˆ˜ íš¨ê³¼ ì¶”ê°€
+	inline void		setPalette();				//	ìºë¦­í„°ì˜ íŒ”ë ˆíŠ¸ ì„¤ì •
+	inline void		setWeaponPalette();			//	ë¬´ê¸°ì˜ íŒ”ë ˆíŠ¸ ì„¤ì •
+	inline void		setShieldPalette();			//	ë°©íŒ¨ì˜ íŒ”ë ˆíŠ¸ ì„¤ì •
 
 	void			setSageBookPalette();
 
@@ -910,13 +910,13 @@ public:
 	inline void		putBackShieldHB(int x,int y, int _iDirect,WORD _wAnm);
 	inline void		putFrontShieldHB(int x,int y, int _iDirect,WORD _wAnm);
 
-	inline void		putEquipmentBack(int x,int y, int _iDirect,WORD _wAnm);	//	Àåºñ¸¦ Ä³¸¯ÅÍ º¸´Ù µÚ¿¡ Âï´Â´Ù.(ºÏ
-	inline void		putEquipmentFront(int x,int y, int _iDirect,WORD _wAnm);	//	Àåºñ¸¦ Ä³¸¯ÅÍ º¸´Ù ¾Õ¿¡ Âï´Â´Ù.(³²
+	inline void		putEquipmentBack(int x,int y, int _iDirect,WORD _wAnm);	//	ì¥ë¹„ë¥¼ ìºë¦­í„° ë³´ë‹¤ ë’¤ì— ì°ëŠ”ë‹¤.(ë¶
+	inline void		putEquipmentFront(int x,int y, int _iDirect,WORD _wAnm);	//	ì¥ë¹„ë¥¼ ìºë¦­í„° ë³´ë‹¤ ì•ì— ì°ëŠ”ë‹¤.(ë‚¨
 
 	inline void		putBlockerShadow(int x,int y);
-	inline void		putShadow(int x,int y);			//	±×¸²ÀÚ.
-	inline void		putAfterImage(BOOL front);		//	ÀÜ»óÀ» Âï´Â´Ù.
-	inline void		putOverLap(int x,int y);		//	¿À¹ö·¦ ÀÌ¹ÌÁö¸¦ Âï¾îÁØ´Ù.
+	inline void		putShadow(int x,int y);			//	ê·¸ë¦¼ì.
+	inline void		putAfterImage(BOOL front);		//	ì”ìƒì„ ì°ëŠ”ë‹¤.
+	inline void		putOverLap(int x,int y);		//	ì˜¤ë²„ë© ì´ë¯¸ì§€ë¥¼ ì°ì–´ì¤€ë‹¤.
 
 	inline void		putActorSimpleInfo(int x,int y);
 	inline void		putBackAdditionalEffect(int _iX,int _iY);
@@ -932,27 +932,27 @@ public:
 	void			putCounter(int _iImage,int _iTime,int _iX,int _iY);
 
 
-	inline BOOL		putDummy();							//	È­¸é¿¡ ´õ¹Ì¸¦ Âï¾îÁØ´Ù.
+	inline BOOL		putDummy();							//	í™”ë©´ì— ë”ë¯¸ë¥¼ ì°ì–´ì¤€ë‹¤.
 	inline void		putBlocker(int x,int y,BOOL front);
 	inline void		putMachine(int x,int y);
 	inline void		putDebugInfo1(int x,int y);
 	inline void		putDebugInfo2(int x,int y);
-	inline void		putName(int x,int y,BOOL _bIsOnlyGauge=FALSE);//ÀÌ¸§ Ãâ·Â
+	inline void		putName(int x,int y,BOOL _bIsOnlyGauge=FALSE);//ì´ë¦„ ì¶œë ¥
 
-	void			putBody(int _iX,int _iY);//	Âï±â
-	inline void		putBodyHalf(int _iX,int _iY,int _iFrame, int _iDirect);//¹İÅõ¸íÀ¸·Î Âï±â
-	inline void		putGGGBuffType(int _iX,int _iY);//ÀºÃÑ ÀÌÆåÆ®¸¦ Ãâ·Â ÇØÁØ´Ù..
-	void			put();//È­¸é¿¡ Âï¾îÁØ´Ù.
+	void			putBody(int _iX,int _iY);//	ì°ê¸°
+	inline void		putBodyHalf(int _iX,int _iY,int _iFrame, int _iDirect);//ë°˜íˆ¬ëª…ìœ¼ë¡œ ì°ê¸°
+	inline void		putGGGBuffType(int _iX,int _iY);//ì€ì´ ì´í™íŠ¸ë¥¼ ì¶œë ¥ í•´ì¤€ë‹¤..
+	void			put();//í™”ë©´ì— ì°ì–´ì¤€ë‹¤.
 	void			putShakle(int _iX,int _iY);
 	void			putTheOtherSelf(int _iX,int _iY,BOOL _bIsFront);
 	void			putFeignDeath();
 	void			putHill(int _iX,int _iY);
-	void			putForModel(int _iX,int _iY,BOOL _bIsFocus);//	¸ğµ¨À» À§ÇÑ Ãâ·Â?
-	void			putBottomImage();	//	¹Ù´Ú¿¡ ±ò¸®´Â ÀÌ¹ÌÁö Ãâ·Â
-	void			putCastImage(int x,int y);	//	¹Ù´Ú¿¡ ±ò¸®´Â ÀÌ¹ÌÁö Ãâ·Â
-	void			putDialog(int _iX,int _iY);	//	Ç³¼±´ëÈ­ Ãâ·Â
+	void			putForModel(int _iX,int _iY,BOOL _bIsFocus);//	ëª¨ë¸ì„ ìœ„í•œ ì¶œë ¥?
+	void			putBottomImage();	//	ë°”ë‹¥ì— ê¹”ë¦¬ëŠ” ì´ë¯¸ì§€ ì¶œë ¥
+	void			putCastImage(int x,int y);	//	ë°”ë‹¥ì— ê¹”ë¦¬ëŠ” ì´ë¯¸ì§€ ì¶œë ¥
+	void			putDialog(int _iX,int _iY);	//	í’ì„ ëŒ€í™” ì¶œë ¥
 
-	void			addPaint();															//	È­¸é¿¡ Âï¾îÁØ´Ù.
+	void			addPaint();															//	í™”ë©´ì— ì°ì–´ì¤€ë‹¤.
 	void			drawPetMark();
 
 	inline	void	setExclusiveAction(BOOL _isSetting)		{m_isExclusiveAction	=	_isSetting;}
@@ -961,26 +961,26 @@ public:
 	inline	void	setPostureOfDefense(int _iPosture)		{m_iPostureOfDefense	=	_iPosture;}
 	inline	int		getPostureOfDefense()					{return m_iPostureOfDefense;}
 
-	inline void		putBodyEffect(int _iX,int _iY,int _iFrame, int _iDirect, int _iEffect, int _iAnm = 0xffff, BOOL _bIsUseEnchantedMask = TRUE);// ¸öÅëÀÇ ÀÌÆÑÆ®È¿°ú
-	void			putBit(int _iX,int _iY);//	ºñÆ®Âï±â
-//¦­cACTOR_PUT.cpp
-//¦­Ãâ·Â
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+	inline void		putBodyEffect(int _iX,int _iY,int _iFrame, int _iDirect, int _iEffect, int _iAnm = 0xffff, BOOL _bIsUseEnchantedMask = TRUE);// ëª¸í†µì˜ ì´íŒ©íŠ¸íš¨ê³¼
+	void			putBit(int _iX,int _iY);//	ë¹„íŠ¸ì°ê¸°
+//â”ƒcACTOR_PUT.cpp
+//â”ƒì¶œë ¥
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­¾×ÅÍ Á¤º¸
-//¦­CActorInfo.cpp
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒì•¡í„° ì •ë³´
+//â”ƒCActorInfo.cpp
 	inline	BOOL	isDummy()	{if (m_wDummyStatus == 0xffff) return FALSE;return TRUE;}
 	BOOL			isInvisivle();
 	BOOL			isBlur();
 	char*			getName();
 
-	CActiveSkill*	getActiveSkill();	//	ÇöÀç »ç¿ëÁßÀÎ ½ºÅ³
-	BOOL			isCastAbleSkill(cAbility *_lpAbility,BOOL _bIsCheck=FALSE);	//	ÀÌ ½ºÅ³ÀÌ ÀÌ³à¼®ÇÑÅ× »ç¿ë °¡´ÉÇÑ ½ºÅ³ÀÌ³Ä?
-	BOOL			isInAttackRange(int _iX,int _iY,int _iRange);//	»çÁ¤°Å¸® ¾È?
-	BOOL			isPartyMember();	//	ÀÌ³à¼® ¿ï ÆÄÆ¼ ¸â¹ö³Ä?
-	BOOL			isPartyLeader();	//	ÀÌ³à¼® ¿ï ÆÄÆ¼ ¸®´õ³Ä?
-	BOOL			isUnionPartyLeader();	//	ÀÌ³à¼® ¿ï ÆÄÆ¼ ¸®´õ³Ä?
+	CActiveSkill*	getActiveSkill();	//	í˜„ì¬ ì‚¬ìš©ì¤‘ì¸ ìŠ¤í‚¬
+	BOOL			isCastAbleSkill(cAbility *_lpAbility,BOOL _bIsCheck=FALSE);	//	ì´ ìŠ¤í‚¬ì´ ì´ë…€ì„í•œí…Œ ì‚¬ìš© ê°€ëŠ¥í•œ ìŠ¤í‚¬ì´ëƒ?
+	BOOL			isInAttackRange(int _iX,int _iY,int _iRange);//	ì‚¬ì •ê±°ë¦¬ ì•ˆ?
+	BOOL			isPartyMember();	//	ì´ë…€ì„ ìš¸ íŒŒí‹° ë©¤ë²„ëƒ?
+	BOOL			isPartyLeader();	//	ì´ë…€ì„ ìš¸ íŒŒí‹° ë¦¬ë”ëƒ?
+	BOOL			isUnionPartyLeader();	//	ì´ë…€ì„ ìš¸ íŒŒí‹° ë¦¬ë”ëƒ?
 	BOOL			isControlMonster();
 	BOOL			isFocusActor();
 	BOOL			isEngageTarget();
@@ -1256,21 +1256,21 @@ public:
 	inline	BOOL			isAnimal()	{if (getKind()	==	eJT_ANIMAL)	return	TRUE;return	FALSE;}
 	inline	BOOL			isHolyBeast(){if (getKind()==	eJT_HOLY_BEAST)return	TRUE;return	FALSE;}
 
-//¦­CActorInfo.cpp
-//¦­¾×ÅÍ Á¤º¸
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒCActorInfo.cpp
+//â”ƒì•¡í„° ì •ë³´
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//	Á¤º¸ ±¸ÇÔ
+//	ì •ë³´ êµ¬í•¨
 //////////////////////////////////////////////////////////////////////////////////////////
-	BOOL			isPickAbleItem(int _iFieldItem);		//	ÇÊµå¿¡ ¶³¾îÁø ¾ÆÀÌÅÛÀÌ Áö±İ ÁŞÀ» ¼ö ÀÖ´Â ¾ÆÀÌÅÛÀÌ³Ä?
-	int				getAttackPower(int _iAddSkillDamagePercentage,int _iAddSkillDamage);	//	°ø°İ·ÂÀ» ±¸ÇÑ´Ù.
-	int				getDefensivePower();													//	¹æ¾î·ÂÀ» ±¸ÇÑ´Ù.
+	BOOL			isPickAbleItem(int _iFieldItem);		//	í•„ë“œì— ë–¨ì–´ì§„ ì•„ì´í…œì´ ì§€ê¸ˆ ì¤ì„ ìˆ˜ ìˆëŠ” ì•„ì´í…œì´ëƒ?
+	int				getAttackPower(int _iAddSkillDamagePercentage,int _iAddSkillDamage);	//	ê³µê²©ë ¥ì„ êµ¬í•œë‹¤.
+	int				getDefensivePower();													//	ë°©ì–´ë ¥ì„ êµ¬í•œë‹¤.
 
 	inline	void	setShakeTime(int _iTime)	{m_wShakeTime	=	max(_iTime,m_wShakeTime);}
 
-	inline	BOOL	isDeath()	{if (m_wCorpseTime)	return	TRUE;return	FALSE;}				//	Á×¾ú³Ä?
-	inline	BOOL	isCorpse()	//	½ÃÃ¼³Ä? (¾²·¯Áö´Â ÁßÀÌ ¾Æ´Ï°í ¹Ù´Ú¿¡ ¾²·¯Á® ÀÖ´Ù.
+	inline	BOOL	isDeath()	{if (m_wCorpseTime)	return	TRUE;return	FALSE;}				//	ì£½ì—ˆëƒ?
+	inline	BOOL	isCorpse()	//	ì‹œì²´ëƒ? (ì“°ëŸ¬ì§€ëŠ” ì¤‘ì´ ì•„ë‹ˆê³  ë°”ë‹¥ì— ì“°ëŸ¬ì ¸ ìˆë‹¤.
 	{
 		if (m_wCorpseTime == 0)	
 			return	FALSE;
@@ -1279,12 +1279,12 @@ public:
 			return	TRUE;
 
 		return	FALSE;
-	}										//	Á×¾ú³Ä?
-	inline	int		isOurForce(int _iTeam){if(m_wTeam==_iTeam) return TRUE;return FALSE;} //	_iTeamÀÌ ¾Æ±ºÀÌ³Ä?
-	inline	BOOL	isSitdown()		{if (m_iAnm	==	dACT_SITDOWN)	return	TRUE;return	FALSE;}	//	¾É¾Æ ÀÖ³Ä?
-	inline	BOOL	isOwnTeam()		{if (m_wTeam == g_hero.m_wTeam)	return	TRUE;return	FALSE;}//	°°Àº ÆÀÀÌ´Ù.
-	inline	BOOL	isMonster()		{if (m_wActorKind	==	eAK_MONSTER	)	return	TRUE;return	FALSE;}	//	ÇÃ·¹ÀÌ¾î ÆíÀÌ´Ù.(¸ó½ºÅÍ°¡ ¾Æ´Ï´Ù -_-)
-	inline	BOOL	isPlayer()		{if (m_wActorKind	==	eAK_PLAYER	)	return	TRUE;return	FALSE;}	//	¿µ¿õÀÌ´Ù.
+	}										//	ì£½ì—ˆëƒ?
+	inline	int		isOurForce(int _iTeam){if(m_wTeam==_iTeam) return TRUE;return FALSE;} //	_iTeamì´ ì•„êµ°ì´ëƒ?
+	inline	BOOL	isSitdown()		{if (m_iAnm	==	dACT_SITDOWN)	return	TRUE;return	FALSE;}	//	ì•‰ì•„ ìˆëƒ?
+	inline	BOOL	isOwnTeam()		{if (m_wTeam == g_hero.m_wTeam)	return	TRUE;return	FALSE;}//	ê°™ì€ íŒ€ì´ë‹¤.
+	inline	BOOL	isMonster()		{if (m_wActorKind	==	eAK_MONSTER	)	return	TRUE;return	FALSE;}	//	í”Œë ˆì´ì–´ í¸ì´ë‹¤.(ëª¬ìŠ¤í„°ê°€ ì•„ë‹ˆë‹¤ -_-)
+	inline	BOOL	isPlayer()		{if (m_wActorKind	==	eAK_PLAYER	)	return	TRUE;return	FALSE;}	//	ì˜ì›…ì´ë‹¤.
 	inline	BOOL	isHero()		{if (m_wSerial		==	g_hero.m_iSerial)	return	TRUE;return	FALSE;}
 	inline	BOOL	isSlave()		{if (m_wLordActor	==	g_hero.m_iSerial)	return	TRUE;return	FALSE;}
 	inline	BOOL	isNpc()			{if (m_wActorKind	==	eAK_NPC	||	m_wActorKind	>	eAK_MONSTER)	return	TRUE;return	FALSE;}
@@ -1293,48 +1293,48 @@ public:
 	inline	BOOL	isPet()			{return	m_wIsPet;}
 	inline	BOOL	isSummonBeast()	{if (m_wJob	>=	dJOB_KELBY_1 && m_wJob	<=	dJOB_HEDGER_3)return	TRUE;return	FALSE;}
 
-	inline	int		getAnotherJob();											//	¼¼ÄÁµå Á÷¾÷À» ±¸ÇÑ´Ù.
+	inline	int		getAnotherJob();											//	ì„¸ì»¨ë“œ ì§ì—…ì„ êµ¬í•œë‹¤.
 	cANM*			getBody();
-	inline	cRECT*	getSelectBox()	{return	&getBody()->m_rectSelect;}		//	¼±ÅÃ ¹Ú½º¸¦ ±¸ÇÑ´Ù.
-	inline	cRECT*	getCrashBox()	{return	&getBody()->m_rectCrash;}		//	Å©·¡½¬ ¹Ú½º¸¦ ±¸ÇÑ´Ù.
-	BOOL			isFocus(int _iX,int _iY);	//	Æ÷Ä¿½º³Ä?
+	inline	cRECT*	getSelectBox()	{return	&getBody()->m_rectSelect;}		//	ì„ íƒ ë°•ìŠ¤ë¥¼ êµ¬í•œë‹¤.
+	inline	cRECT*	getCrashBox()	{return	&getBody()->m_rectCrash;}		//	í¬ë˜ì‰¬ ë°•ìŠ¤ë¥¼ êµ¬í•œë‹¤.
+	BOOL			isFocus(int _iX,int _iY);	//	í¬ì»¤ìŠ¤ëƒ?
 
-	int				getViewEnemy();												//	½Ã¾ß¿¡ º¸ÀÌ´Â ÀûÀ» Ã£´Â¤¤´Ù.
-	int				getDirect(int x1,int y1,int x2,int y2,BOOL setAngle);		//	¹æÇâÀ» ±¸ÇÑ´Ù.
+	int				getViewEnemy();												//	ì‹œì•¼ì— ë³´ì´ëŠ” ì ì„ ì°¾ëŠ”ã„´ë‹¤.
+	int				getDirect(int x1,int y1,int x2,int y2,BOOL setAngle);		//	ë°©í–¥ì„ êµ¬í•œë‹¤.
 	int				getDirect(int x,int y,BOOL setAngle);
 	int				getDirect(int angle,BOOL setAngle);
 
-	inline	int		getRange(CActor *_lpActor);				//	actor ¿ÍÀÇ °Å¸®¸¦ ±¸ÇÑ´Ù.
-	inline	int		getRange(CActor *_lpActor,int _iAdd);	//	actor ¿ÍÀÇ °Å¸®¸¦ ±¸ÇÑ´Ù.
+	inline	int		getRange(CActor *_lpActor);				//	actor ì™€ì˜ ê±°ë¦¬ë¥¼ êµ¬í•œë‹¤.
+	inline	int		getRange(CActor *_lpActor,int _iAdd);	//	actor ì™€ì˜ ê±°ë¦¬ë¥¼ êµ¬í•œë‹¤.
 	BOOL			isTouchAbleTarget(CActor *_lpActor,int _iRange,int _iMinRange=0);
-	BOOL			isTouchAblePos(int _iX,int _iY,int _iRange);	//	Ãæµ¹ ¹Ú½º¸¦ °í·ÁÇØ¼­ _iX,_iY±îÁö°¡ _iRange ¾È¿¡ ÀÖ´ÂÁö Ã¼Å©ÇÑ´Ù.
+	BOOL			isTouchAblePos(int _iX,int _iY,int _iRange);	//	ì¶©ëŒ ë°•ìŠ¤ë¥¼ ê³ ë ¤í•´ì„œ _iX,_iYê¹Œì§€ê°€ _iRange ì•ˆì— ìˆëŠ”ì§€ ì²´í¬í•œë‹¤.
 
-	inline	int		getCrashActor(c4POINT *pos);			//	pos¿¡¼­ Ãæµ¹ÀÌ ÀÏ¾î³ª´Â Ä³¸¯ÅÍ ±¸ÇÔ
+	inline	int		getCrashActor(c4POINT *pos);			//	posì—ì„œ ì¶©ëŒì´ ì¼ì–´ë‚˜ëŠ” ìºë¦­í„° êµ¬í•¨
 
-	inline	BOOL	isApproach(int index);					//	´ÙÀ½ ÇÁ·¹ÀÓ¿¡¼­ indexÄ³¸¯ÅÍ¿Í °¡±î¿öÁø´Ù. 
-	BOOL			isViewActor(int serial,int *range);		//	½Ã¾ß ¾È¿¡ ÀÖ´Â ³à¼®ÀÌ³Ä?
+	inline	BOOL	isApproach(int index);					//	ë‹¤ìŒ í”„ë ˆì„ì—ì„œ indexìºë¦­í„°ì™€ ê°€ê¹Œì›Œì§„ë‹¤. 
+	BOOL			isViewActor(int serial,int *range);		//	ì‹œì•¼ ì•ˆì— ìˆëŠ” ë…€ì„ì´ëƒ?
 
-	void			getReleasePos(CPos *pos,int _iAnm=-1,int _iDirect=-1);				//	¾×¼Ç ÇÁ·¹ÀÓ¿¡¼­ ¸¶¹ıÀÌ³ª ±âÅ¸ ÀÌÆåÆ® ¸±¸®Áî Æ÷ÀÎÆ® ±¸ÇÔ
+	void			getReleasePos(CPos *pos,int _iAnm=-1,int _iDirect=-1);				//	ì•¡ì…˜ í”„ë ˆì„ì—ì„œ ë§ˆë²•ì´ë‚˜ ê¸°íƒ€ ì´í™íŠ¸ ë¦´ë¦¬ì¦ˆ í¬ì¸íŠ¸ êµ¬í•¨
 
 	inline	int		getTargetHitHeight(){return	-getBody()->m_rectCrash.y1-getBody()->m_rectCrash.getHeight()/2;}
-	void			getHitPoint(CPos *_lpPos);			//	Å¸°İ Æ÷ÀÎÆ®.. ¹Ì»çÀÏ Á¾·ù°¡ ³¯¾Æ°¥¶§ Å¸°ÙÀ¸·Î Àâ¾Æ¾ßÇÒ ºÎºĞ
+	void			getHitPoint(CPos *_lpPos);			//	íƒ€ê²© í¬ì¸íŠ¸.. ë¯¸ì‚¬ì¼ ì¢…ë¥˜ê°€ ë‚ ì•„ê°ˆë•Œ íƒ€ê²Ÿìœ¼ë¡œ ì¡ì•„ì•¼í•  ë¶€ë¶„
 
-	inline	BOOL	isDamageFrame()		{return m_isDamageFrame;	}		//	µ©Áã ÇÁ·¹ÀÓ?
-	inline	BOOL	isTriggerFrame()	{return m_isTriggerFrame;	}		//	Æ®¸®°Å ÇÁ·½??
+	inline	BOOL	isDamageFrame()		{return m_isDamageFrame;	}		//	ë€ì¥ í”„ë ˆì„?
+	inline	BOOL	isTriggerFrame()	{return m_isTriggerFrame;	}		//	íŠ¸ë¦¬ê±° í”„ë ˜??
 
 
-	inline	BOOL	isVisibleShield();						//	¹æÆĞ°¡ º¸ÀÌ³Ä?
-	inline	BOOL	isVisibleWeapon();						//	¹«±â¸¦ ÀåºñÇÏ°í ÀÖ³Ä?
-	BOOL			isEquippedShield();						//	¹æÆĞ¸¦ ÀåºñÇÏ°í ÀÖ³Ä?
-	BOOL			isEquippedWeapon();						//	¹«±â¸¦ ÀåºñÇÏ°í ÀÖ³Ä?
-	BOOL			isEquippedSpareWeapon();				//	¿©ºĞÀÇ ¹«±â¸¦ ÀåºñÇÏ°í ÀÖ³Ä?
+	inline	BOOL	isVisibleShield();						//	ë°©íŒ¨ê°€ ë³´ì´ëƒ?
+	inline	BOOL	isVisibleWeapon();						//	ë¬´ê¸°ë¥¼ ì¥ë¹„í•˜ê³  ìˆëƒ?
+	BOOL			isEquippedShield();						//	ë°©íŒ¨ë¥¼ ì¥ë¹„í•˜ê³  ìˆëƒ?
+	BOOL			isEquippedWeapon();						//	ë¬´ê¸°ë¥¼ ì¥ë¹„í•˜ê³  ìˆëƒ?
+	BOOL			isEquippedSpareWeapon();				//	ì—¬ë¶„ì˜ ë¬´ê¸°ë¥¼ ì¥ë¹„í•˜ê³  ìˆëƒ?
 
-	int				findSuitableAbility(int target,int range);	//	targetÀ» range¿¡¼­ °ø°İÇÏ±â¿¡ ÀûÇÕÇÑ ½ºÅ³À» Ã£ÀÚ.
+	int				findSuitableAbility(int target,int range);	//	targetì„ rangeì—ì„œ ê³µê²©í•˜ê¸°ì— ì í•©í•œ ìŠ¤í‚¬ì„ ì°¾ì.
 
-	int				getTarget(int count,int *lpShots,int range);	//	range¾È¿¡ count°³ÀÇ ÀûÀ» Ã£¾Æ¼­ ¸®ÅÏÇÑ´Ù.
-	inline	CActor	*getTarget();								//	ÇöÀç °ø°İÇÏ°í ÀÖ´Â ÀûÀ» ±¸ÇÔ
+	int				getTarget(int count,int *lpShots,int range);	//	rangeì•ˆì— countê°œì˜ ì ì„ ì°¾ì•„ì„œ ë¦¬í„´í•œë‹¤.
+	inline	CActor	*getTarget();								//	í˜„ì¬ ê³µê²©í•˜ê³  ìˆëŠ” ì ì„ êµ¬í•¨
 
-//	Ä³¸¯ÅÍ ¿¡´Ï¸ŞÀÌ¼Ç Á¤º¸
+//	ìºë¦­í„° ì—ë‹ˆë©”ì´ì…˜ ì •ë³´
 	inline	int		getTriggerFrame(int _iAnm)	{return	getBody()->getTriggerFrame(_iAnm);}
 	inline	int		getDamageFrame(int _iAnm)	{return	getBody()->getDamageFrame(_iAnm);}
 
@@ -1350,33 +1350,33 @@ public:
 	inline	int		getLoopEndFrame()		{return	getBody()->m_pAnmData[m_iAnm].m_iLoopEnd;}
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//	ÀÌµ¿ °ü·Ã 
+//	ì´ë™ ê´€ë ¨ 
 //////////////////////////////////////////////////////////////////////////////////////////
 	BOOL			moveUpdate();
 
-	BOOL			makePath(int x,int y);// x,y±îÁö ±æÀ» ¸¸µç´Ù.
-	BOOL			findOtherWay(int x,int y);//makePath·Î ±æÀ» Ã£°í, ¸·ÇûÀ»¶§ ÀÌ³ÑÀ¸·Î ÇÑ¹ø´õ Ã£´Â´Ù.. x,y±îÁö ±æÀ» ¸¸µç´Ù.
-	void			getNextPos(c4POINT *pos);//	´ÙÀ½ ÇÁ·¹ÀÓ¿¡¼­ÀÇ Ä³¸¯ÅÍ À§Ä¡ Á¤º¸
-	BOOL			moveTo(int x,int y,BOOL _isFindAnyWay,BOOL _isFindStopPosition,BOOL _bIsThrust=FALSE);//ÀÌµ¿
-	inline	BOOL	moveDestPos(){return	moveTo(m_posDest.x,m_posDest.y,TRUE,FALSE);}//	¸ñÇ¥ À§Ä¡·Î ÀÌµ¿
-	void			setDestPos(int _iX,int _iY);//¸ñÀûÁö À§Ä¡
-	void			makeAfterImage(CPos *pos,int anm,int direct,int frame,int angle,int pps,BOOL reverse=FALSE,BOOL dust=FALSE);	//	ÀÜ»óÀÇ À§Ä¡¸¦ ¼³Á¤ÇÑ´Ù.
+	BOOL			makePath(int x,int y);// x,yê¹Œì§€ ê¸¸ì„ ë§Œë“ ë‹¤.
+	BOOL			findOtherWay(int x,int y);//makePathë¡œ ê¸¸ì„ ì°¾ê³ , ë§‰í˜”ì„ë•Œ ì´ë„˜ìœ¼ë¡œ í•œë²ˆë” ì°¾ëŠ”ë‹¤.. x,yê¹Œì§€ ê¸¸ì„ ë§Œë“ ë‹¤.
+	void			getNextPos(c4POINT *pos);//	ë‹¤ìŒ í”„ë ˆì„ì—ì„œì˜ ìºë¦­í„° ìœ„ì¹˜ ì •ë³´
+	BOOL			moveTo(int x,int y,BOOL _isFindAnyWay,BOOL _isFindStopPosition,BOOL _bIsThrust=FALSE);//ì´ë™
+	inline	BOOL	moveDestPos(){return	moveTo(m_posDest.x,m_posDest.y,TRUE,FALSE);}//	ëª©í‘œ ìœ„ì¹˜ë¡œ ì´ë™
+	void			setDestPos(int _iX,int _iY);//ëª©ì ì§€ ìœ„ì¹˜
+	void			makeAfterImage(CPos *pos,int anm,int direct,int frame,int angle,int pps,BOOL reverse=FALSE,BOOL dust=FALSE);	//	ì”ìƒì˜ ìœ„ì¹˜ë¥¼ ì„¤ì •í•œë‹¤.
 
-	BOOL			traceActor(int actor,BOOL _isFindDetailPath=FALSE);		//	Æ¯Á¤ Ä³¸¯ÅÍ¿¡°Ô ÀÌµ¿(±æÃ£±â¸¦ ÇÑ´Ù.
+	BOOL			traceActor(int actor,BOOL _isFindDetailPath=FALSE);		//	íŠ¹ì • ìºë¦­í„°ì—ê²Œ ì´ë™(ê¸¸ì°¾ê¸°ë¥¼ í•œë‹¤.
 	void			stop(BOOL _bIsCancelUsedSkill=TRUE);
-	void			stopAction();//¾×¼ÇÃë¼Ò
-	inline	void	stop(int _iX,int _iY)//_iX,_iY¿¡ Á¤Áö
+	void			stopAction();//ì•¡ì…˜ì·¨ì†Œ
+	inline	void	stop(int _iX,int _iY)//_iX,_iYì— ì •ì§€
 	{
 		setPos(_iX,_iY);
 		stop();
 	}
 	void			stopMove();
 
-	//	À§Ä¡ º¸Á¤ °ü·Ã
-	CPos*			findMovablePos();				//	ÇöÀç À§Ä¡¿¡¼­ ´ÙÀ½ Å¸ÀÏÀÇ Áß½ÉÀ¸·Î ÀÌµ¿ ÇÒ ¼ö ¾øÀ»¶§, ´ÙÀ½ Å¸ÀÏ¿¡¼­
-													//	ÀÌµ¿ °¡´ÉÇÑ ÁöÁ¡À» Ã£¾Æ ÁØ´Ù.
-	BOOL			findBestPos(int *x,int *y);		//	ÀÌµ¿ ÇÒ ¼ö ¾ø´Â Áö¿ªÀ» ¼±ÅÃÇßÀ»¶§ ÁÖº¯¿¡ ÀÌµ¿ °¡´ÉÇÑ ¿µ¿ªÀ» Ã£´Â´Ù.
-	BOOL			findBestPos(c4POINT *lpPos);	//	ÇØ´ç À§Ä¡¸¦ °Ë»çÇÏ°í Ãæµ¹ÀÌ »ı±â¸é Àû´çÇÑ À§Ä¡¸¦ Ã£¾Æ ÁØ´Ù.
+	//	ìœ„ì¹˜ ë³´ì • ê´€ë ¨
+	CPos*			findMovablePos();				//	í˜„ì¬ ìœ„ì¹˜ì—ì„œ ë‹¤ìŒ íƒ€ì¼ì˜ ì¤‘ì‹¬ìœ¼ë¡œ ì´ë™ í•  ìˆ˜ ì—†ì„ë•Œ, ë‹¤ìŒ íƒ€ì¼ì—ì„œ
+													//	ì´ë™ ê°€ëŠ¥í•œ ì§€ì ì„ ì°¾ì•„ ì¤€ë‹¤.
+	BOOL			findBestPos(int *x,int *y);		//	ì´ë™ í•  ìˆ˜ ì—†ëŠ” ì§€ì—­ì„ ì„ íƒí–ˆì„ë•Œ ì£¼ë³€ì— ì´ë™ ê°€ëŠ¥í•œ ì˜ì—­ì„ ì°¾ëŠ”ë‹¤.
+	BOOL			findBestPos(c4POINT *lpPos);	//	í•´ë‹¹ ìœ„ì¹˜ë¥¼ ê²€ì‚¬í•˜ê³  ì¶©ëŒì´ ìƒê¸°ë©´ ì ë‹¹í•œ ìœ„ì¹˜ë¥¼ ì°¾ì•„ ì¤€ë‹¤.
 	void			secureArea();
 	void			setPos(int x,int y);
 
@@ -1394,22 +1394,22 @@ public:
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//	µ¥ÀÌÅÍ ¼³Á¤
+//	ë°ì´í„° ì„¤ì •
 //////////////////////////////////////////////////////////////////////////////////////////
 
-//	¾îºô·¯Æ¼ °ü·Ã
-	inline	BOOL		reduceCorpseTime();							//	½ÃÃ¼-_-·Î ³²¾Æ ÀÖ´Â ½Ã°£ÁÙÀÓ
+//	ì–´ë¹ŒëŸ¬í‹° ê´€ë ¨
+	inline	BOOL		reduceCorpseTime();							//	ì‹œì²´-_-ë¡œ ë‚¨ì•„ ìˆëŠ” ì‹œê°„ì¤„ì„
 
-	inline	void		setStopDirect(int _iDirect)	{m_wStopDirect	=	_iDirect;}	//	Á¤Áö½ÃÀÇ ¹æÇâ ¼³Á¤
+	inline	void		setStopDirect(int _iDirect)	{m_wStopDirect	=	_iDirect;}	//	ì •ì§€ì‹œì˜ ë°©í–¥ ì„¤ì •
 
 	inline	void		setBlockingRigidityTime(int	_iTime)	{	m_wBlockingRigidityTime	=	_iTime;	}
 	inline	int			getBlockingRigidityTime()			{	return	m_wBlockingRigidityTime;		}
-	inline	BOOL		updateBlockingRigidityTime();	//	ºí·°Å· °æÁ÷ ½Ã°£ ¾÷µ¥ÀÌÆ®
+	inline	BOOL		updateBlockingRigidityTime();	//	ë¸”ëŸ­í‚¹ ê²½ì§ ì‹œê°„ ì—…ë°ì´íŠ¸
 	inline	void		operateGGGEffectByHit(CActor* _lpTarget)
 	{
 		int		iEffect = 0 ;
 		
-		//ÀºÃÑ ÀüÅõ ¹öÇÁ ÇÇ°İ ÀÌÆåÆ®.				//¹İ»çÇÑ ¾Ö°¡ ÀÌÆåÆ®¸¦ »Ñ¸°´Ù.
+		//ì€ì´ ì „íˆ¬ ë²„í”„ í”¼ê²© ì´í™íŠ¸.				//ë°˜ì‚¬í•œ ì• ê°€ ì´í™íŠ¸ë¥¼ ë¿Œë¦°ë‹¤.
 		if (m_bf1IsGGGHitBy)
 		{
 			m_bf1IsGGGHitBy = FALSE;
@@ -1438,7 +1438,7 @@ public:
 	{
 		int		iEffect = 0 ;
 		
-		//ÀºÃÑ ÀüÅõ ¹öÇÁ Å¸°İ ÀÌÆåÆ®.
+		//ì€ì´ ì „íˆ¬ ë²„í”„ íƒ€ê²© ì´í™íŠ¸.
 		if (m_bf1IsGGGNormalHit)
 		{
 			m_bf1IsGGGNormalHit = FALSE;
@@ -1467,7 +1467,7 @@ public:
 	{
 		int		iEffect = 0 ;
 
-		//ÀüÅõ ½ºÅ³ ¹öÇÁ ½ºÅ³Æ÷ÀÎÆ® ½Ã°£ÀÌ ÀÖÀ»¶§ ¹öÇÁ.
+		//ì „íˆ¬ ìŠ¤í‚¬ ë²„í”„ ìŠ¤í‚¬í¬ì¸íŠ¸ ì‹œê°„ì´ ìˆì„ë•Œ ë²„í”„.
 		if (m_bf1IsGGGPointHit)
 		{
 			m_bf1IsGGGPointHit = FALSE;
@@ -1492,7 +1492,7 @@ public:
 		if (iEffect)
 			_lpTarget->addHitEffect(0,0,iEffect);
 	}
-	inline	void		operateBookedHit();	//	¿¹¾àµÈ È÷Æ®
+	inline	void		operateBookedHit();	//	ì˜ˆì•½ëœ íˆíŠ¸
 
 	inline	void		setActionFinish(BOOL _isSetting)	{	m_isActionFinished	=	_isSetting;	}
 	inline	BOOL		isActionFinished()					{	return	m_isActionFinished;			}
@@ -1501,18 +1501,18 @@ public:
 	inline	BOOL		isInvincibleSkill()					{	return	m_isInvincibleSkill;}
 
 
-//	ÀÜ»ó È¿°ú
+//	ì”ìƒ íš¨ê³¼
 	void				afterImageOn(int _iEffect=0xffff,int _iCount=dAFTER_IMAGE_COUNT,int _iDepth=20,int _iReduce=2,int _iDelayPeriod=0);
-	inline	void		afterImageOff()	{m_cAfterImageStatus		=	dFADE_AFTER_IMAGE;}	//	ÀÜ»ó È¿°ú¸¦ ²ö´Ù.
+	inline	void		afterImageOff()	{m_cAfterImageStatus		=	dFADE_AFTER_IMAGE;}	//	ì”ìƒ íš¨ê³¼ë¥¼ ëˆë‹¤.
 
 	void				addAfterImage(int _iSlot,CPos *_lpPos,int _iAnm,int _iDirect,int _iFrame,int _iAlphaDepth);
-	void				resetAfterImage();													//	ÀÜ»óÈ¿°ú ÃÊ±âÈ­
-	void				updateAfterImage();													//	ÀÜ»óÈ¿°ú ¾÷µ¥ÀÌÆ®
+	void				resetAfterImage();													//	ì”ìƒíš¨ê³¼ ì´ˆê¸°í™”
+	void				updateAfterImage();													//	ì”ìƒíš¨ê³¼ ì—…ë°ì´íŠ¸
 
 	inline	void		increaseFrame()	{m_iFrame++;if (m_iFrame >= m_iFrameCount)	m_iFrame=0;}
 
-	BOOL				updateDummy();															//	µ¥ÀÌÅÍ °»½Å
-	BOOL				update();															//	µ¥ÀÌÅÍ °»½Å
+	BOOL				updateDummy();															//	ë°ì´í„° ê°±ì‹ 
+	BOOL				update();															//	ë°ì´í„° ê°±ì‹ 
 	void				syncAppearance();
 
 	BOOL				updateFrame();
@@ -1521,118 +1521,118 @@ public:
 	void				updateShakleFrame();
 
 	void				setLastFrame();
-	inline void			updateChargeEffect();	//	ÃæÀüÈ¿°ú ¾÷µ¥ÀÌÆ®
+	inline void			updateChargeEffect();	//	ì¶©ì „íš¨ê³¼ ì—…ë°ì´íŠ¸
 	inline int			syncInfoWithServer();
-	void				addToAskInfoActorList();		//	¾×ÅÍ Á¤º¸ ¿äÃ»
-	void				addToObscurityActorList();	//	¸Å¿ì °£´ÜÇÑ Ä³¸¯ÅÍ Á¤º¸¸¦ ¾ò±âÀ§ÇÑ ¸®½ºÆ®¿¡ Ãß°¡
-	void				addToMisplacedActorList();			//	¾×ÅÍ Á¤º¸ ¿äÃ»
-	BOOL				updateForModel();					//	¸ğµ¨À» À§ÇÑ ¾÷µ¥ÀÌÆ®
+	void				addToAskInfoActorList();		//	ì•¡í„° ì •ë³´ ìš”ì²­
+	void				addToObscurityActorList();	//	ë§¤ìš° ê°„ë‹¨í•œ ìºë¦­í„° ì •ë³´ë¥¼ ì–»ê¸°ìœ„í•œ ë¦¬ìŠ¤íŠ¸ì— ì¶”ê°€
+	void				addToMisplacedActorList();			//	ì•¡í„° ì •ë³´ ìš”ì²­
+	BOOL				updateForModel();					//	ëª¨ë¸ì„ ìœ„í•œ ì—…ë°ì´íŠ¸
 	void				updateActionStatus();
 	inline	void		updateLoopingAction();
-	void				operateDoppellgangerAttack();		// ºĞ½Å°ø°İ ºÎ°¡È¿°ú
+	void				operateDoppellgangerAttack();		// ë¶„ì‹ ê³µê²© ë¶€ê°€íš¨ê³¼
 
-	void				updateEffect();					//	Å¸°İ È¿°ú °»½Å
-	inline	BOOL		isCanNotAttack();				//	°ø°İÇÒ ¼ö ¾ø´Â Å¸°ÙÀÌ´Ù.
+	void				updateEffect();					//	íƒ€ê²© íš¨ê³¼ ê°±ì‹ 
+	inline	BOOL		isCanNotAttack();				//	ê³µê²©í•  ìˆ˜ ì—†ëŠ” íƒ€ê²Ÿì´ë‹¤.
 	inline	BOOL		isUsedPos(int mx,int my)
 	{
 		if (g_map.m_aBlockInfo[mx+my*g_map.m_iWidth])
 			return	TRUE;
 		return	FALSE;
-	}	//	mx,my¿¡ ¹º°¡°¡ ÀÖ´Ù.
-	inline	int			checkBlockedWay(int mx,int my);		//	mx,my¿¡¼­ ¹º°¡¿Í Ãæµ¹À» ÀÏÀ¸Å²´Ù.
-	inline	BOOL		isBlockedWay(int _iMx,int _iMy,int _iDestMx,int _iDestMy);		//	mx,my¿¡¼­ ¹º°¡¿Í Ãæµ¹À» ÀÏÀ¸Å²´Ù.
+	}	//	mx,myì— ë­”ê°€ê°€ ìˆë‹¤.
+	inline	int			checkBlockedWay(int mx,int my);		//	mx,myì—ì„œ ë­”ê°€ì™€ ì¶©ëŒì„ ì¼ìœ¼í‚¨ë‹¤.
+	inline	BOOL		isBlockedWay(int _iMx,int _iMy,int _iDestMx,int _iDestMy);		//	mx,myì—ì„œ ë­”ê°€ì™€ ì¶©ëŒì„ ì¼ìœ¼í‚¨ë‹¤.
 	inline	BOOL		isBlockedLine(int _iX1,int _iY1,int _iX2,int _iY2);
 
-	inline	BOOL		isBlocked(int _iMx,int _iMy)			//	¸·Èù Áö¿ª?
+	inline	BOOL		isBlocked(int _iMx,int _iMy)			//	ë§‰íŒ ì§€ì—­?
 	{
 		if (g_map.m_aBlockInfo[_iMx+_iMy*g_map.m_iWidth])
 			return	TRUE;
 
 		return	FALSE;
 	}
-	inline	BOOL	isMoveAblePos(int mx,int my);	//	Ä³¸¯ÅÍÀÇ ¸öÅë »çÀÌÁî¿¡ ¸ÂÃç ¹Ù´Ú¿¡ Ã¼Å©
+	inline	BOOL	isMoveAblePos(int mx,int my);	//	ìºë¦­í„°ì˜ ëª¸í†µ ì‚¬ì´ì¦ˆì— ë§ì¶° ë°”ë‹¥ì— ì²´í¬
 
 
 	void			addBit(WORD _wSerialInField, DWORD	_dwNameHashCode);
 	void			updateBit();
 	void			removeBit(WORD _wSerialInField, DWORD	_dwNameHashCode, int _iCount);
 //////////////////////////////////////////////////////////////////////////////////////////
-//	½ºÅ³ Á¦¾î - ½ºÅ³ÀÌ Ä³¸¯ÅÍÀÇ ¿òÁ÷ÀÓÀ» Á¦¾î ÇÑ´Ù.
+//	ìŠ¤í‚¬ ì œì–´ - ìŠ¤í‚¬ì´ ìºë¦­í„°ì˜ ì›€ì§ì„ì„ ì œì–´ í•œë‹¤.
 //////////////////////////////////////////////////////////////////////////////////////////
 
-//	Á¡ÇÁ °ü·Ã  ÄÚµå´Â cSKILL_JUMP ¿¡ µé¾î°¡ ÀÖ´Ù. 
-	void			jump();		//	Á¡ÇÁ½Ã¿¡ °øÅëÀûÀ¸·Î ¾÷µ¥ÀÌÆ® µÅ¾ß ÇÒ°Íµé
+//	ì í”„ ê´€ë ¨  ì½”ë“œëŠ” cSKILL_JUMP ì— ë“¤ì–´ê°€ ìˆë‹¤. 
+	void			jump();		//	ì í”„ì‹œì— ê³µí†µì ìœ¼ë¡œ ì—…ë°ì´íŠ¸ ë¼ì•¼ í• ê²ƒë“¤
 	void			jumpFly();
 
-//	·¯½¬ °ü·Ã  ÄÚµå´Â cSKILL_RUSH ¿¡ µé¾î°¡ ÀÖ´Ù. 
-	BOOL			rush(int _iX,int _iY,cAbility *_lpAbility,WORD _wResult,int _iFrame);													//	Àå¾Ö¹° ´Ù ¹«½ÃÇÏ°í ·¯½¬!!
-	BOOL			rushCrash(c4POINT *end,c4POINT *returnPos);					//	·¯½¬ÇÏ¸é¼­ Ãæµ¹ÇÑ´Ù
-	BOOL			rushCrash(CPos *begin,CPos *end,c4POINT *returnPos);	//	·¯½¬ÇÏ¸é¼­ °É¸®´Â³Ñ ÆÒ´Ù. --;;
-	BOOL			makeRushLine(int x,int y);								//	·¯½¬·Î ÀÌµ¿ÇÒ ±æÀ» ´Û¾Æ ³õ´Â´Ù.
+//	ëŸ¬ì‰¬ ê´€ë ¨  ì½”ë“œëŠ” cSKILL_RUSH ì— ë“¤ì–´ê°€ ìˆë‹¤. 
+	BOOL			rush(int _iX,int _iY,cAbility *_lpAbility,WORD _wResult,int _iFrame);													//	ì¥ì• ë¬¼ ë‹¤ ë¬´ì‹œí•˜ê³  ëŸ¬ì‰¬!!
+	BOOL			rushCrash(c4POINT *end,c4POINT *returnPos);					//	ëŸ¬ì‰¬í•˜ë©´ì„œ ì¶©ëŒí•œë‹¤
+	BOOL			rushCrash(CPos *begin,CPos *end,c4POINT *returnPos);	//	ëŸ¬ì‰¬í•˜ë©´ì„œ ê±¸ë¦¬ëŠ”ë„˜ íŒ¬ë‹¤. --;;
+	BOOL			makeRushLine(int x,int y);								//	ëŸ¬ì‰¬ë¡œ ì´ë™í•  ê¸¸ì„ ë‹¦ì•„ ë†“ëŠ”ë‹¤.
 	void			makeRushLine();
-	void			getNextRushPos(c4POINT *pos);							//	·¯½¬½Ã¿¡ ´ÙÀ½ ÇÁ·¹ÀÓ¿¡¼­ÀÇ Ä³¸¯ÅÍ À§Ä¡ Á¤º¸
-	int				rushCrashCheck(c4POINT *pos,c4POINT *returnPos);		//	·¯½¬Áß¿¡ Ãæµ¹ Ä³¸¯ÅÍ Ã¼Å©
-	int				findRushVictim();										//	¹Ù¿î½Ì ¸®´Ï¾î¿¡¼­ ´ÙÀ½ Èñ»ıÀÚ(?)¸¦ Ã£´Â´Ù.
+	void			getNextRushPos(c4POINT *pos);							//	ëŸ¬ì‰¬ì‹œì— ë‹¤ìŒ í”„ë ˆì„ì—ì„œì˜ ìºë¦­í„° ìœ„ì¹˜ ì •ë³´
+	int				rushCrashCheck(c4POINT *pos,c4POINT *returnPos);		//	ëŸ¬ì‰¬ì¤‘ì— ì¶©ëŒ ìºë¦­í„° ì²´í¬
+	int				findRushVictim();										//	ë°”ìš´ì‹± ë¦¬ë‹ˆì–´ì—ì„œ ë‹¤ìŒ í¬ìƒì(?)ë¥¼ ì°¾ëŠ”ë‹¤.
 
-//	¶ó¿îµù ½ºÅ³(ºù±Û ºù±Û µµ´Â..) °ü·Ã ÄÚµå´Â cSKILL_ROUND¿¡ µé¾î°¡ ÀÖ´Ù.
+//	ë¼ìš´ë”© ìŠ¤í‚¬(ë¹™ê¸€ ë¹™ê¸€ ë„ëŠ”..) ê´€ë ¨ ì½”ë“œëŠ” cSKILL_ROUNDì— ë“¤ì–´ê°€ ìˆë‹¤.
 //	BOOL			skillControlRounding(cSM *lpSm);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//	... ¹¹¶ó°í ºĞ·ù ÇØ¾ß ÇÏ³ª.. -_-a
+//	... ë­ë¼ê³  ë¶„ë¥˜ í•´ì•¼ í•˜ë‚˜.. -_-a
 //////////////////////////////////////////////////////////////////////////////////////////
-	void			kill(BOOL _isRemoveOurforce	=	FALSE,BOOL _bIsReleaseSummon=FALSE);			//	Á×¾ú´Ù. Á×¾î¼­ »ç¶óÁü
-	void			targetDeath();	//	Å¸°ÙÀÌ Á×¾ú´Ù.
-	void			targetRemove();	//	Å¸°ÙÀÌ Á¦°Å µÇ¾ú´Ù.
+	void			kill(BOOL _isRemoveOurforce	=	FALSE,BOOL _bIsReleaseSummon=FALSE);			//	ì£½ì—ˆë‹¤. ì£½ì–´ì„œ ì‚¬ë¼ì§
+	void			targetDeath();	//	íƒ€ê²Ÿì´ ì£½ì—ˆë‹¤.
+	void			targetRemove();	//	íƒ€ê²Ÿì´ ì œê±° ë˜ì—ˆë‹¤.
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//	Çàµ¿ °ü·Ã 
+//	í–‰ë™ ê´€ë ¨ 
 //////////////////////////////////////////////////////////////////////////////////////////
-	void			action(int _iX,int _iY,int _iAction,int _iAngle=0xffff);	//	µ¿ÀÛÀ» ÃëÇÑ´Ù.
+	void			action(int _iX,int _iY,int _iAction,int _iAngle=0xffff);	//	ë™ì‘ì„ ì·¨í•œë‹¤.
 	void			miniPetAction(int _iLocate);
-	void			sitDown(int _iX,int _iY,BOOL _isSitDown);//	¾ÉÀÚ
+	void			sitDown(int _iX,int _iY,BOOL _isSitDown);//	ì•‰ì
 
-	void			randomDirect();												//	ÀÓÀÇÀÇ ¹æÇâÀ¸·Î ¹Ù²Û´Ù.
-	void			readyTransformation(SG_TRANSFORMATION *_lpPacket);	//	º¯½ÅÁØºñ
-	void			transformation();	//	º¯½Å
+	void			randomDirect();												//	ì„ì˜ì˜ ë°©í–¥ìœ¼ë¡œ ë°”ê¾¼ë‹¤.
+	void			readyTransformation(SG_TRANSFORMATION *_lpPacket);	//	ë³€ì‹ ì¤€ë¹„
+	void			transformation();	//	ë³€ì‹ 
 	BOOL			checkEquipmentShape();
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//	Å¸°İ °ü·Ã
+//	íƒ€ê²© ê´€ë ¨
 //////////////////////////////////////////////////////////////////////////////////////////
 
 	void			strikeBasicAttackDamageToObject();
 	void			strikeBasicAttackDamage();
-	void			strike(CActor *_lpTarget,cAbility *_lpAbility,CHitInfo *lpHitInfo,int _iDirect=0,BOOL _isGetCP=TRUE,BOOL _bIsPlayHitSound=TRUE);//	¿¹¾àµÈ ´ë¹ÌÁö¸¦ ÀÔÈù´Ù.
-	void			strikeDamage(CActor *_lpTarget,cAbility *_lpAbility,int _iDamage);	//	_iDamage ¸ÔÀÓ
+	void			strike(CActor *_lpTarget,cAbility *_lpAbility,CHitInfo *lpHitInfo,int _iDirect=0,BOOL _isGetCP=TRUE,BOOL _bIsPlayHitSound=TRUE);//	ì˜ˆì•½ëœ ëŒ€ë¯¸ì§€ë¥¼ ì…íŒë‹¤.
+	void			strikeDamage(CActor *_lpTarget,cAbility *_lpAbility,int _iDamage);	//	_iDamage ë¨¹ì„
 	void			updateChainedDamage(cChanedDamageInfo	*_lpInfo);
 	void			updateChainedDamage();
 	BOOL			defense(CActor	*lpAttacker,cAbility *lpAbility);
-	int				getFreeHitIndex();																	//	ºñ¾î ÀÖ´Â hit index¸¦ ±¸ÇÑ´Ù.
-	void			hitDummy(CActor	*lpAttacker,cAbility *abil,int _iDirect=0);							//	¸Â¾Ò´Ù.
-	void			hit(CActor	*lpAttacker,cAbility *_lpAbility,CHitInfo *_lpHitInfo,int _iDirect=0,BOOL _bIsPlaySound=TRUE,BOOL _bIsMirrorTower=FALSE);//	¸Â¾Ò´Ù.
+	int				getFreeHitIndex();																	//	ë¹„ì–´ ìˆëŠ” hit indexë¥¼ êµ¬í•œë‹¤.
+	void			hitDummy(CActor	*lpAttacker,cAbility *abil,int _iDirect=0);							//	ë§ì•˜ë‹¤.
+	void			hit(CActor	*lpAttacker,cAbility *_lpAbility,CHitInfo *_lpHitInfo,int _iDirect=0,BOOL _bIsPlaySound=TRUE,BOOL _bIsMirrorTower=FALSE);//	ë§ì•˜ë‹¤.
 	void			hitChainedDamage(int _iSkill,int _iShotCount,int _iMissCount,int _iGap,BOOL _bIsAttackToShakle,
 									int _iPhysicalDamage,int _iMagicDamage,int _iMinPhysicalDamage,int _iMinMagicDamage,
 									int _iCriticalCount,int _iDoubleCriticalCount,int _iInstanceKillCount,
 									int _iBlockingCount,int _iNoActionBlockCount,int _iDancingBlockCount,int _iCaster, int _iHardBlowCount);
 
 	void			hitMultipleDamage(CHitInfo *_lpHitInfo,int _iCount,int _iSkill,BOOL _bIsDamageSum);
-	void			hitThornDamage(CActor *_lpAttacker,int _iDamage,int _iRemainCP, BOOL _isDisplayMagicDamage = FALSE);//	°¡½Ã¿¡ Âñ·È´Ù.
+	void			hitThornDamage(CActor *_lpAttacker,int _iDamage,int _iRemainCP, BOOL _isDisplayMagicDamage = FALSE);//	ê°€ì‹œì— ì°”ë ¸ë‹¤.
 	
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//	ÀÌµ¿ °ü·Ã 
+//	ì´ë™ ê´€ë ¨ 
 //////////////////////////////////////////////////////////////////////////////////////////
 	void			thrust(int _iX,int _iY,int _iSkill,BOOL _bIsBlocked, BOOL _bIsChangeTargetDirect = FALSE);
-	void			chaseActor(int serial);								//	Æ¯Á¤ Ä³¸¯ÅÍ¸¦ µû¶ó °¨
+	void			chaseActor(int serial);								//	íŠ¹ì • ìºë¦­í„°ë¥¼ ë”°ë¼ ê°
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­½ºÅ³ °ü·Ã
-//¦­CActorSkill.cpp
-	void			floatMachine(int _iWeapon);				//	¸Ó½Å ¶ç¿ì±â
-	void			releasMachine();						//	¸Ó½Å Á¦°Å
-	void			receiveAidMagic(int _iSkill,int _iType,int _iValue);	//	º¸Á¶ ¸¶¹ı Ä³½ºÆÃ
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒìŠ¤í‚¬ ê´€ë ¨
+//â”ƒCActorSkill.cpp
+	void			floatMachine(int _iWeapon);				//	ë¨¸ì‹  ë„ìš°ê¸°
+	void			releasMachine();						//	ë¨¸ì‹  ì œê±°
+	void			receiveAidMagic(int _iSkill,int _iType,int _iValue);	//	ë³´ì¡° ë§ˆë²• ìºìŠ¤íŒ…
 	BOOL			updateRushSkill();
 	BOOL			updateScimitarCuttingSkill();
 	BOOL			updateJumpSkill();
@@ -1641,87 +1641,87 @@ public:
 	BOOL			updateBigBullet();
 	BOOL			jump(int _iX,int _iY,int _iSkill);
 
-	void			operateSkillEffectForCaster(cAbility *_lpAbility);	//	½ºÅ³ ±âÅ¸ Á¤º¸ Àû¿ë
-	void			operateSkillEffectForTarget(cAbility *_lpAbility);	//	½ºÅ³ ±âÅ¸ Á¤º¸ Àû¿ë
+	void			operateSkillEffectForCaster(cAbility *_lpAbility);	//	ìŠ¤í‚¬ ê¸°íƒ€ ì •ë³´ ì ìš©
+	void			operateSkillEffectForTarget(cAbility *_lpAbility);	//	ìŠ¤í‚¬ ê¸°íƒ€ ì •ë³´ ì ìš©
 	void			castIcyStalagmite(SG_ICY_STALAGMITE	*_lpPacket);
 	void			releaseStalagmite();
 	void			shutInMagicBox();
 	void			crushMagicBox(BOOL _bIsDeath);
-//¦­CActorSkill.cpp
-//¦­½ºÅ³ °ü·Ã
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒCActorSkill.cpp
+//â”ƒìŠ¤í‚¬ ê´€ë ¨
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­»óÅÂÀÌ»ó°ü·Ã
-//¦­CActorWrongStatus.cpp
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒìƒíƒœì´ìƒê´€ë ¨
+//â”ƒCActorWrongStatus.cpp
 	void			revive();
-	void			cure(int _iSkill,int _iHealPoint);	//	Èú
-	void			absorbDamage(int _iHealPoint);	//	Èú
+	void			cure(int _iSkill,int _iHealPoint);	//	í
+	void			absorbDamage(int _iHealPoint);	//	í
 	
 	void			cureStrangeStatus();
 	void			cureDeclinePowerStatus();
 	void			cureCurseStatus();
 	void			cureWrongStatus();
-//¦­CActorWrongStatus.cpp
-//¦­»óÅÂÀÌ»ó°ü·Ã
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒCActorWrongStatus.cpp
+//â”ƒìƒíƒœì´ìƒê´€ë ¨
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­»óÅÂÀÌ»ó°ü·Ã
-//¦­CActorStatus.cpp
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒìƒíƒœì´ìƒê´€ë ¨
+//â”ƒCActorStatus.cpp
 	void			operateRecoverHP();
 	void			increaseHP(int _iHP);
-//¦­CActorStatus.cpp
-//¦­»óÅÂÀÌ»ó°ü·Ã
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒCActorStatus.cpp
+//â”ƒìƒíƒœì´ìƒê´€ë ¨
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­¾×¼Ç °ü·Ã
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒì•¡ì…˜ ê´€ë ¨
 	BOOL			attackToObject(int _iTarget,int _iTargetType,cAbility *_lpAbility);
-	BOOL			attackToActor(CActor *_lpTarget,cAbility *_lpAbility,int _iRange);	//	Æ¯Á¤ Ä³¸¯ÅÍ¸¦ °ø°İ(Ã£¾Æ°¡¼­ ¶§¸°´Ù.)
+	BOOL			attackToActor(CActor *_lpTarget,cAbility *_lpAbility,int _iRange);	//	íŠ¹ì • ìºë¦­í„°ë¥¼ ê³µê²©(ì°¾ì•„ê°€ì„œ ë•Œë¦°ë‹¤.)
 	BOOL			attackToGroup(CActor *_lpTarget,cAbility *_lpAbility,int _iRange,WORD *_lpwGroup,int _iTargetCount,int _iContinuousShotCount,int _iCriticalCount,int _iMissCount,int _iDoubleCriticalCount, int _iHardBlowCount);
-	BOOL			attackToActorByContinuousAttack(SG_CONTINUOUS_HIT_BY_VALUE	*_lpPacket);	//	¿¬¼Ó°ø°İ ½ºÅ³·Î °ø°İ!!
-	BOOL			landMarkerAttack(SG_LAND_MARKER *_lpPacket);	//	·£µå ¸¶Ä¿ °ø°İ
-	BOOL			castIntervalShooter(SG_CAST_INTERVAL_SHOOTER *_lpPacket);	//	ÀÎÅÍ¹ú ½´ÅÍ
-	BOOL			attackToActorByBunshine(SG_BUNSHINE_ATTACK *_lpPacket);	//	¿¬¼Ó°ø°İ ½ºÅ³·Î °ø°İ!!
-	BOOL			attackToActorByScimitarCutting(SG_SCIMITAR_CUTTING *_lpPacket);	//	¿¬¼Ó°ø°İ ½ºÅ³·Î °ø°İ!!
-	BOOL			operateAwesomeFortressAttack(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	¿À¿ì¼¶ Æ÷Æ®¸®½º
-	BOOL			operateChainLightningSkill(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	Ã¼ÀÎ ¶óÀÌÆ®´×
-	BOOL			operateBouncingLinear(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	¹Ù¿î½Ì ¸®´Ï¾î
-	BOOL			operateBigBullet(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	°Å´ë ÅºÈ¯
-	BOOL			operateWideAreaDamage(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	±¤¿ª ´ë¹ÌÁö
-	BOOL			operateBouncingMissileSkill(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	¹Ù¿î½Ì¹Ì»çÀÏ½ºÅ³
-	BOOL			operateWideMissileSkill(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	¹üÀ§¹Ì»çÀÏ½ºÅ³	
+	BOOL			attackToActorByContinuousAttack(SG_CONTINUOUS_HIT_BY_VALUE	*_lpPacket);	//	ì—°ì†ê³µê²© ìŠ¤í‚¬ë¡œ ê³µê²©!!
+	BOOL			landMarkerAttack(SG_LAND_MARKER *_lpPacket);	//	ëœë“œ ë§ˆì»¤ ê³µê²©
+	BOOL			castIntervalShooter(SG_CAST_INTERVAL_SHOOTER *_lpPacket);	//	ì¸í„°ë²Œ ìŠˆí„°
+	BOOL			attackToActorByBunshine(SG_BUNSHINE_ATTACK *_lpPacket);	//	ì—°ì†ê³µê²© ìŠ¤í‚¬ë¡œ ê³µê²©!!
+	BOOL			attackToActorByScimitarCutting(SG_SCIMITAR_CUTTING *_lpPacket);	//	ì—°ì†ê³µê²© ìŠ¤í‚¬ë¡œ ê³µê²©!!
+	BOOL			operateAwesomeFortressAttack(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	ì˜¤ìš°ì„¬ í¬íŠ¸ë¦¬ìŠ¤
+	BOOL			operateChainLightningSkill(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	ì²´ì¸ ë¼ì´íŠ¸ë‹
+	BOOL			operateBouncingLinear(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	ë°”ìš´ì‹± ë¦¬ë‹ˆì–´
+	BOOL			operateBigBullet(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	ê±°ëŒ€ íƒ„í™˜
+	BOOL			operateWideAreaDamage(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	ê´‘ì—­ ëŒ€ë¯¸ì§€
+	BOOL			operateBouncingMissileSkill(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	ë°”ìš´ì‹±ë¯¸ì‚¬ì¼ìŠ¤í‚¬
+	BOOL			operateWideMissileSkill(SG_WIDE_AREA_DAMAGE *_lpPacket);	//	ë²”ìœ„ë¯¸ì‚¬ì¼ìŠ¤í‚¬	
 	
 	void			setContinuousAttackDamage(DWORD _dwPhysicalDamage,DWORD _dwMagicDamage,int _iCount,int _iMissCount,int _iCriticalCount,int _iDoubleCriticalCount,BOOL _bIsAttackToShakle,
 												int _iMinPhysicalDamage,int _iMinMagicDamage,int _iBlockingCount,int _iDancingBlockingCount,int _iNoActionBlockingCount,CHitInfo *_lpHitInfoList=NULL, int _iHardBlowCount = 0);
-	BOOL			attackToGround(int _iX,int _iY,cAbility *_lpAbility,int _iRange);			//	Æ¯Á¤ Àå¼Ò·Î ÀÌµ¿ÇÏ¸é¼­ ½Ã¾ß¿¡ µé¾î¿À´Â Àû °ø°İ
-	BOOL			quickAction(cAbility *_lpAbility);	//	Äü ¾×¼ÇÀ» »ç¿ëÇÑ´Ù.
+	BOOL			attackToGround(int _iX,int _iY,cAbility *_lpAbility,int _iRange);			//	íŠ¹ì • ì¥ì†Œë¡œ ì´ë™í•˜ë©´ì„œ ì‹œì•¼ì— ë“¤ì–´ì˜¤ëŠ” ì  ê³µê²©
+	BOOL			quickAction(cAbility *_lpAbility);	//	í€µ ì•¡ì…˜ì„ ì‚¬ìš©í•œë‹¤.
 	BOOL			reserveAttack(int target,int ability);
 
-	void			dodgeAction(CActor *_lpTarget,int _iSpentCP,int _iDodgeAbility);	//	È¸ÇÇ ¾×¼Ç
+	void			dodgeAction(CActor *_lpTarget,int _iSpentCP,int _iDodgeAbility);	//	íšŒí”¼ ì•¡ì…˜
 
 	inline	void	bookingAction(int action);
 	inline	void	changeAction(int anm,int booking);
 
 
-	BOOL			operateContinuousHitOfDoppelgangerAttack(SG_ACTION_TO_GROUP *_lpPacket);	//	ºĞ½Å¿¬¼Ó°ø°İ
-//¦­¾×¼Ç °ü·Ã
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+	BOOL			operateContinuousHitOfDoppelgangerAttack(SG_ACTION_TO_GROUP *_lpPacket);	//	ë¶„ì‹ ì—°ì†ê³µê²©
+//â”ƒì•¡ì…˜ ê´€ë ¨
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­¼­¹ö¿¡¼­ ¹ŞÀº ÆĞÅ¶ Ã³¸®
-	void			operateMovePacket(SG_MOVE *_lpMovePacket);//	ÀÌµ¿À» ÇÑ´Ù.
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒì„œë²„ì—ì„œ ë°›ì€ íŒ¨í‚· ì²˜ë¦¬
+	void			operateMovePacket(SG_MOVE *_lpMovePacket);//	ì´ë™ì„ í•œë‹¤.
 	void			operateStopPacket(SG_STOP *_lpStopPacket);	
 	void			operateThrustPacket(SG_THRUST *_lpPacket);	
-	void			operateMoveResult(SG_MOVE_RESULT *_lpMovePacket);//	ÀÌµ¿°á°ú¸¦ Ã³¸®ÇÑ´Ù.
-//¦­¼­¹ö¿¡¼­ ¹ŞÀº ÆĞÅ¶ Ã³¸®
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+	void			operateMoveResult(SG_MOVE_RESULT *_lpMovePacket);//	ì´ë™ê²°ê³¼ë¥¼ ì²˜ë¦¬í•œë‹¤.
+//â”ƒì„œë²„ì—ì„œ ë°›ì€ íŒ¨í‚· ì²˜ë¦¬
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 };
 
 extern	CActor			*g_lpHero;
 extern	CActor			*g_lpControlActor;
-extern	CActor			g_aActor[dMAX_ACTOR];		//	¾×ÅÍµé..
+extern	CActor			g_aActor[dMAX_ACTOR];		//	ì•¡í„°ë“¤..
 extern	BOOL			g_bObserverMode;
 
 class	CActorManager	:	public CGamePlay
@@ -1731,22 +1731,22 @@ public:
 	CPos			m_posGroundFocus,m_posStress;
 	WORD			m_wFocusActor;
 	cRECT			m_rectScreen;
-	int				m_iActorCount,m_aActorList[dMAX_ACTOR];	//	Ä³¸¯ÅÍ ¸®½ºÆ®,Ä³¸¯ÅÍ ¼ö
-	int				m_iLastAskActorInfoTime;	//	¸¶Áö¸·À¸·Î ¾×ÅÍ Á¤º¸¸¦ ¿äÃ»ÇÑ ½Ã°£.
-	CPos			m_posScreenDelta,m_posFocus;	//	È­¸é°ú ¿µ¿õÀÇ À§Ä¡ Â÷ÀÌ
-	int				m_iScreenFollowTime;//	È­¸éÀÌ ¿µ¿õÀ» ¦i±â ½ÃÀÛÇÑ ½Ã°£..
+	int				m_iActorCount,m_aActorList[dMAX_ACTOR];	//	ìºë¦­í„° ë¦¬ìŠ¤íŠ¸,ìºë¦­í„° ìˆ˜
+	int				m_iLastAskActorInfoTime;	//	ë§ˆì§€ë§‰ìœ¼ë¡œ ì•¡í„° ì •ë³´ë¥¼ ìš”ì²­í•œ ì‹œê°„.
+	CPos			m_posScreenDelta,m_posFocus;	//	í™”ë©´ê³¼ ì˜ì›…ì˜ ìœ„ì¹˜ ì°¨ì´
+	int				m_iScreenFollowTime;//	í™”ë©´ì´ ì˜ì›…ì„ ï¿½iê¸° ì‹œì‘í•œ ì‹œê°„..
 	int				m_iTraceTarget,m_iBookedTarget;
 	int				m_iIsHideTimathFeelerTime;
 
 	CDetectingEvilTargetInfo	m_aDetetingActorList[dMAX_DETECTING_EVIL_TARGET_COUNT];
-	int				m_iDetectingActorCount,m_iDetectingActorTime;//	È­¸éÀÌ ¿µ¿õÀ» ¦i±â ½ÃÀÛÇÑ ½Ã°£..
+	int				m_iDetectingActorCount,m_iDetectingActorTime;//	í™”ë©´ì´ ì˜ì›…ì„ ï¿½iê¸° ì‹œì‘í•œ ì‹œê°„..
 	char			m_astrDenyCommunityActor[256][dNAME_LENGTH];
 	int				m_iDenyCommunityActorCount,m_iSmoothScrollTime;
 	
 	WORD			m_wObscurityActorCount,m_wWaitObscurityActorInfoResultTime,m_aObscurityActorList[dMAX_REQUEST_ACTOR_DATA_COUNT];
 	WORD			m_wAskInfoActorCount,m_wWaitAskActorInfoResultTime,m_aAskInfoActorList[dMAX_REQUEST_ACTOR_DATA_COUNT];
-	WORD			m_wMisplacedActorCount,m_wWaitMisplacedActorResultTime,m_aMisplacedActorList[dMAX_MISPLACED_ACTOR_COUNT];//¼­¹ö¿¡¼­ ÀÌº¥Æ® ¹ß»ıÇß´Ù°í Çß´Âµ¥.. ½ÇÁ¦·Î ¾ø´Â Ä³¸¯
-	WORD			m_wAskActorEnchantEffectInfoCount,m_wAskActorEnchantEffectInfoResultTime,m_awAskActorEnchantEffectInfoList[dMAX_MISPLACED_ACTOR_COUNT][2];//¼­¹ö¿¡¼­ ÀÌº¥Æ® ¹ß»ıÇß´Ù°í Çß´Âµ¥.. ½ÇÁ¦·Î ¾ø´Â Ä³¸¯
+	WORD			m_wMisplacedActorCount,m_wWaitMisplacedActorResultTime,m_aMisplacedActorList[dMAX_MISPLACED_ACTOR_COUNT];//ì„œë²„ì—ì„œ ì´ë²¤íŠ¸ ë°œìƒí–ˆë‹¤ê³  í–ˆëŠ”ë°.. ì‹¤ì œë¡œ ì—†ëŠ” ìºë¦­
+	WORD			m_wAskActorEnchantEffectInfoCount,m_wAskActorEnchantEffectInfoResultTime,m_awAskActorEnchantEffectInfoList[dMAX_MISPLACED_ACTOR_COUNT][2];//ì„œë²„ì—ì„œ ì´ë²¤íŠ¸ ë°œìƒí–ˆë‹¤ê³  í–ˆëŠ”ë°.. ì‹¤ì œë¡œ ì—†ëŠ” ìºë¦­
 
 	WORD			m_wCurrentIndex;
 
@@ -1754,24 +1754,24 @@ public:
 	WORD			m_wOXQuizLoserCountInServer,m_wOXQuizSurvivorCountInServer;
 	WORD			m_wOXQuizWinnerCount,m_wOXQuizBattleCount;
 
-	WORD			m_wTalker;//¼­¹ö¿¡¼­ ÀÌº¥Æ® ¹ß»ıÇß´Ù°í Çß´Âµ¥.. ½ÇÁ¦·Î ¾ø´Â Ä³¸¯
+	WORD			m_wTalker;//ì„œë²„ì—ì„œ ì´ë²¤íŠ¸ ë°œìƒí–ˆë‹¤ê³  í–ˆëŠ”ë°.. ì‹¤ì œë¡œ ì—†ëŠ” ìºë¦­
 
 					CActorManager();
 
-	void			init();									//	ÃÖÃÊÀÇ ÃÊ±âÈ­
-	void			reset();								//	¸®¼Â
-	void			close();								//	Å¬·ÎÁî
+	void			init();									//	ìµœì´ˆì˜ ì´ˆê¸°í™”
+	void			reset();								//	ë¦¬ì…‹
+	void			close();								//	í´ë¡œì¦ˆ
 	void			update();
-	void			setFocus();								//	¼±ÅÃµÈ Ä³¸¯ÅÍ¿¡ Æ÷Ä¿½º¸¦ ¸ÂÃá´Ù.
+	void			setFocus();								//	ì„ íƒëœ ìºë¦­í„°ì— í¬ì»¤ìŠ¤ë¥¼ ë§ì¶˜ë‹¤.
 	void			getFocusPos(CPos *_lpPos);
 	void			setGroundFocus(int _iX,int _iY,int _iTime);
 	BOOL			MoveObserverPos();
 	void			setCharacterFocus(int _iActor);
 	void			releaseKarmaFocus();
 
-	//JBC			¿ÉÁ®¹ö ¸ğµå¸¦ À§ÇÑ º¯¼ö& ÇÔ¼ö 08-07-15
+	//JBC			ì˜µì ¸ë²„ ëª¨ë“œë¥¼ ìœ„í•œ ë³€ìˆ˜& í•¨ìˆ˜ 08-07-15
 	CPos			m_posObserber;
-	int				m_iObserberTime , m_iObserberWaitTime;		//Ä«¸£¸¶¿¡ÀÇÇÑ ¿ÉÁ®¹ö ¸ğµåÀÇ ½ºÇÇµå¿Í ½Ã°£.
+	int				m_iObserberTime , m_iObserberWaitTime;		//ì¹´ë¥´ë§ˆì—ì˜í•œ ì˜µì ¸ë²„ ëª¨ë“œì˜ ìŠ¤í”¼ë“œì™€ ì‹œê°„.
 	float			m_fObserberRemainX , m_fObserberRemainY , m_fObserberSpeedX , m_fObserberSpeedY;
 	void			ChangeObserverMode(BOOL _isByKarma = FALSE , int _iX = 0 , int _iY = 0, int _iTime = 0, int _iTimeForWait = 0);
 	void			OperateObserverKeyboard();
@@ -1782,18 +1782,18 @@ public:
 	inline CPos		GetObserverPos()	{return m_posObserber;}
 	void			setObserverMode();
 
-	void			setHero(CHero *_lpPlayer);//ÇÃ·¹ÀÌ¾î µ¥ÀÌÅÍ ¼³Á¤
-	void			rebuildActorList();						//	¾×ÅÍ ¸®½ºÆ® ¾÷µ¥ÀÌÆ®
-	void			findFocusActor();						//	¸¶¿ì½º°¡ °¡¸£Å°°í ÀÖ´Â³ÑÀ» Ã£¾Æ¶ó!!
-	void			findFocusCorpse();						//	¸¶¿ì½º°¡ °¡¸£Å°°í ÀÖ´Â... ½ÃÃ¼¸¦-o- Ã£¾Æ¶ó!!
-	int				getViewActors(cINDEX *_lpIndexes,cRECT *_lpRectViewport);//_lpRectViewport¾È¿¡ º¸ÀÌ´Â ³Ñµé
-	BOOL			addToAskInfoActorList(int _iActorSerial);		//	Àß¸øµÈ ¾×ÅÍ µ¥ÀÌÅÍ ¸®½ºÆ® Ãß°¡
-	BOOL			addObscurityActor(int _iActorSerial);		//	¸Å¿ì °£´ÜÇÑ Ä³¸¯ÅÍ Á¤º¸¸¦ ¾ò±âÀ§ÇÑ ¸®½ºÆ®¿¡ Ãß°¡
-	BOOL			addMisplacedActor(int _iActorSerial);//	À§Ä¡ ¾÷µ¥ÀÌÆ®°¡ ÇÊ¿äÇÑ ¾×ÅÍµé
+	void			setHero(CHero *_lpPlayer);//í”Œë ˆì´ì–´ ë°ì´í„° ì„¤ì •
+	void			rebuildActorList();						//	ì•¡í„° ë¦¬ìŠ¤íŠ¸ ì—…ë°ì´íŠ¸
+	void			findFocusActor();						//	ë§ˆìš°ìŠ¤ê°€ ê°€ë¥´í‚¤ê³  ìˆëŠ”ë„˜ì„ ì°¾ì•„ë¼!!
+	void			findFocusCorpse();						//	ë§ˆìš°ìŠ¤ê°€ ê°€ë¥´í‚¤ê³  ìˆëŠ”... ì‹œì²´ë¥¼-o- ì°¾ì•„ë¼!!
+	int				getViewActors(cINDEX *_lpIndexes,cRECT *_lpRectViewport);//_lpRectViewportì•ˆì— ë³´ì´ëŠ” ë„˜ë“¤
+	BOOL			addToAskInfoActorList(int _iActorSerial);		//	ì˜ëª»ëœ ì•¡í„° ë°ì´í„° ë¦¬ìŠ¤íŠ¸ ì¶”ê°€
+	BOOL			addObscurityActor(int _iActorSerial);		//	ë§¤ìš° ê°„ë‹¨í•œ ìºë¦­í„° ì •ë³´ë¥¼ ì–»ê¸°ìœ„í•œ ë¦¬ìŠ¤íŠ¸ì— ì¶”ê°€
+	BOOL			addMisplacedActor(int _iActorSerial);//	ìœ„ì¹˜ ì—…ë°ì´íŠ¸ê°€ í•„ìš”í•œ ì•¡í„°ë“¤
 	BOOL			addAskActorEnchantEffectInfo(int _iActorSerial,int _iWork);
-	void			sendAskInfoActorList();					//	¼­¹ö¿¡ Àß¸øµÈ ¾×ÅÍ µ¥ÀÌÅÍÀÇ ±³Á¤À» ¿ä±¸ÇÑ´Ù.
+	void			sendAskInfoActorList();					//	ì„œë²„ì— ì˜ëª»ëœ ì•¡í„° ë°ì´í„°ì˜ êµì •ì„ ìš”êµ¬í•œë‹¤.
 	void			sendObscurityActorList();
-	void			sendMisplacedActorList();				//	À§Ä¡°¡ ¸ÂÁö ¾Ê´Â ¾×ÅÍ ¸®½ºÆ®
+	void			sendMisplacedActorList();				//	ìœ„ì¹˜ê°€ ë§ì§€ ì•ŠëŠ” ì•¡í„° ë¦¬ìŠ¤íŠ¸
 	void			sendAskActorEnchantInfoList();
 
 	char*			getNextPlayerName();
@@ -1807,8 +1807,8 @@ public:
 
 	BOOL			checkDeathStatus(CActor *_lpActor);		//	
 	CActor*			getActorByName(char *_lpstrName);
-	inline	CActor*	getActor(int _iSerial){return &g_aActor[_iSerial];}	//	°Á  ¸®ÅÏ
-	inline	CActor*	getTestedActor(int _iSerial,BOOL _bIsAddValidActorList=TRUE)	//	ÀÌ°ÍÀú°Í È®ÀÎÇÑÈÄ ¸®ÅÏ
+	inline	CActor*	getActor(int _iSerial){return &g_aActor[_iSerial];}	//	ê±  ë¦¬í„´
+	inline	CActor*	getTestedActor(int _iSerial,BOOL _bIsAddValidActorList=TRUE)	//	ì´ê²ƒì €ê²ƒ í™•ì¸í•œí›„ ë¦¬í„´
 	{
 		if (_iSerial < 0 || _iSerial >= dMAX_ACTOR)	return NULL;
 
@@ -1822,17 +1822,17 @@ public:
 		return	&g_aActor[_iSerial];
 	}	//	CActorManager::getTestedActor(int _iSerial)
 
-	void			killActor(int _iSerial,BOOL _bIsInstanceKill,int _iDeathPeneltyTime,BOOL _bIsReleaseSummon);//Á×¿©!!
-	void			removeActor(int _iSerial,BOOL _bIsHide=FALSE);//Ä³¸¯ÅÍ Á¦°Å
-	void			resetActor(int _iSerial);//	Ä³¸¯ÅÍ ÃÊ±âÈ­
-	void			resetQuizEventStatus();//	Ä³¸¯ÅÍ ÃÊ±âÈ­
-	void			reviveOXQuizLoser();	//	OX ÄûÁî ÆĞÀÚºÎÈ°
+	void			killActor(int _iSerial,BOOL _bIsInstanceKill,int _iDeathPeneltyTime,BOOL _bIsReleaseSummon);//ì£½ì—¬!!
+	void			removeActor(int _iSerial,BOOL _bIsHide=FALSE);//ìºë¦­í„° ì œê±°
+	void			resetActor(int _iSerial);//	ìºë¦­í„° ì´ˆê¸°í™”
+	void			resetQuizEventStatus();//	ìºë¦­í„° ì´ˆê¸°í™”
+	void			reviveOXQuizLoser();	//	OX í€´ì¦ˆ íŒ¨ìë¶€í™œ
 	void			receiveOXQuizWinnerList(WORD *_lpwWinnerList,int _iCount);
 
-	BOOL			joinActor(CSimplePlayerInfo *_lpActor,BOOL _bIsDummy=FALSE,BOOL _bIsCopy=FALSE);//ÇÃ·¹ÀÌ¾î Âü°¡
+	BOOL			joinActor(CSimplePlayerInfo *_lpActor,BOOL _bIsDummy=FALSE,BOOL _bIsCopy=FALSE);//í”Œë ˆì´ì–´ ì°¸ê°€
 	BOOL			joinMonster(CSimpleMonsterInfo *_lpSimpleActorInfo,BOOL _bIsDummy=FALSE,BOOL _bIsCopy=FALSE);
 
-	BOOL			receiveMinimumActorInfoList(SG_MINIMUM_ACTOR_INFO_LIST *_lpPacketSgExistActor);//±âÁ¸¿¡ ¾×ÅÍµéÀ» Ãß°¡ÇÑ´Ù.
+	BOOL			receiveMinimumActorInfoList(SG_MINIMUM_ACTOR_INFO_LIST *_lpPacketSgExistActor);//ê¸°ì¡´ì— ì•¡í„°ë“¤ì„ ì¶”ê°€í•œë‹¤.
 
 	BOOL			receiveSimpleActorInfoList(SG_SIMPLE_ACTOR_INFO_LIST *_lpPacket);
 	BOOL			receiveVerySimpleActorInfoList(SG_VERY_SIMPLE_ACTOR_INFO_LIST	*_lpPacket);
@@ -1840,9 +1840,9 @@ public:
 	BOOL			receiveSimpleActorInfo(SG_SIMPLE_ACTOR_INFO *_lpPacket);
 	BOOL			receiveVerySimpleActorInfo(SG_VERY_SIMPLE_ACTOR_INFO *_lpPacket);
 
-	BOOL			receiveOperatorList(SG_OPERATOR_LIST *_lpPacket);	//	¿î¿µÀÚ ¸®½ºÆ® ¹ŞÀ½
-	BOOL			operateReceivedRefitActorPostionPacket(SG_REFIT_ACTORS_POSITION *_lpPacket);//	¾×ÅÍµéÀÇ À§Ä¡¸¦ Àç¼³Á¤ ÇÑ´Ù.
-	BOOL			operateReceivedOuterActorPostionPacket(SG_OUTER_ACTORS_POS_UPDATE *_lpPacket);//	¾×ÅÍµéÀÇ À§Ä¡¸¦ Àç¼³Á¤ ÇÑ´Ù.
+	BOOL			receiveOperatorList(SG_OPERATOR_LIST *_lpPacket);	//	ìš´ì˜ì ë¦¬ìŠ¤íŠ¸ ë°›ìŒ
+	BOOL			operateReceivedRefitActorPostionPacket(SG_REFIT_ACTORS_POSITION *_lpPacket);//	ì•¡í„°ë“¤ì˜ ìœ„ì¹˜ë¥¼ ì¬ì„¤ì • í•œë‹¤.
+	BOOL			operateReceivedOuterActorPostionPacket(SG_OUTER_ACTORS_POS_UPDATE *_lpPacket);//	ì•¡í„°ë“¤ì˜ ìœ„ì¹˜ë¥¼ ì¬ì„¤ì • í•œë‹¤.
 
 	BOOL			updateInpdev();
 
@@ -1854,18 +1854,18 @@ public:
 
 	inline	BOOL	updateMove();
 
-	void			attatchItemUseEffect(int _iWho,cItem *_lpItem);	//	_iWho¿¡°Ô _lpItem »ç¿ë
-	void			changeAppearance(int _iSerial,SG_CHANGE_APPEARANCE *_lpPacket);	//	¿Ü°üÀÌ º¯Çß´Ù.
-	void			drawDeathActors(cRECT *_lpRectViewport);	//	Á×Àº ³ÑµéÀ» ±×·ÁÁØ´Ù.
+	void			attatchItemUseEffect(int _iWho,cItem *_lpItem);	//	_iWhoì—ê²Œ _lpItem ì‚¬ìš©
+	void			changeAppearance(int _iSerial,SG_CHANGE_APPEARANCE *_lpPacket);	//	ì™¸ê´€ì´ ë³€í–ˆë‹¤.
+	void			drawDeathActors(cRECT *_lpRectViewport);	//	ì£½ì€ ë„˜ë“¤ì„ ê·¸ë ¤ì¤€ë‹¤.
 	
-	inline	void	put(int _iSerial){g_aActor[_iSerial].put();}//	Ä³¸¯ÅÍ¸¦ Âï´Â´Ù.
+	inline	void	put(int _iSerial){g_aActor[_iSerial].put();}//	ìºë¦­í„°ë¥¼ ì°ëŠ”ë‹¤.
 	inline	void	putDummy(int _iSerial){g_aActor[_iSerial].putDummy();}
 	inline	void	addPaint(int _iSerial){g_aActor[_iSerial].addPaint();}
 };
 
-extern	CActorManager	g_am;						//	¾×ÅÍ ¸Ş´ÏÁ®
-extern	BOOL			g_isSmoothFocusing;			//	ÁÖÀÎ°ø¿¡ Æ÷Ä¿½º¸¦ ¸ÂÃâ¶§ ½º¹«½º~ ÇÏ°Ô ¸ÂÃá´Ù.
-extern	BOOL			g_isHeroFocusOn;			//	Æ÷Ä¿½º ¸ÂÃß±â on
+extern	CActorManager	g_am;						//	ì•¡í„° ë©”ë‹ˆì ¸
+extern	BOOL			g_isSmoothFocusing;			//	ì£¼ì¸ê³µì— í¬ì»¤ìŠ¤ë¥¼ ë§ì¶œë•Œ ìŠ¤ë¬´ìŠ¤~ í•˜ê²Œ ë§ì¶˜ë‹¤.
+extern	BOOL			g_isHeroFocusOn;			//	í¬ì»¤ìŠ¤ ë§ì¶”ê¸° on
 
 
 #include	"CActorInline.h"

@@ -3,16 +3,16 @@
 char	*g_CT_Text[]=
 {
 #ifdef _FOR_KOREA
-	"·Î±×ÀÎ ¼­¹ö ´Ý±â/¿­±â",	//	eCOMMANDTYPE_LOGINSERVER
-	"·Î±×ÀÎ ¼­¹ö ¹öÁ¯ ¼öÁ¤ÇÏ±â",//	eCOMMONDTYPE_CHANGE_VERSION
-	"·Î±×ÀÎ ¼­¹ö ÃÖ´ë ¼ö¿ë ÀÎ¿ø¼ö º¯°æ",//	eCOMMANDTYPE_CHANGE_MAXUSER
+	"ë¡œê·¸ì¸ ì„œë²„ ë‹«ê¸°/ì—´ê¸°",	//	eCOMMANDTYPE_LOGINSERVER
+	"ë¡œê·¸ì¸ ì„œë²„ ë²„ì ¼ ìˆ˜ì •í•˜ê¸°",//	eCOMMONDTYPE_CHANGE_VERSION
+	"ë¡œê·¸ì¸ ì„œë²„ ìµœëŒ€ ìˆ˜ìš© ì¸ì›ìˆ˜ ë³€ê²½",//	eCOMMANDTYPE_CHANGE_MAXUSER
 
-	"°øÁöÇÏ±â",					//	eCOMMANDTYPE_NOTICE
-	"Ãß¹æÇÏ±â",					//	eCOMMANDTYPE_BANISH
-	"À¯Àúµé ¹æ¼Û¿ë ¸Þ¼¼Áö",		//	eCOMMANDTYPE_BROADCAST_MSG
+	"ê³µì§€í•˜ê¸°",					//	eCOMMANDTYPE_NOTICE
+	"ì¶”ë°©í•˜ê¸°",					//	eCOMMANDTYPE_BANISH
+	"ìœ ì €ë“¤ ë°©ì†¡ìš© ë©”ì„¸ì§€",		//	eCOMMANDTYPE_BROADCAST_MSG
 
-	"Á¤±âÁ¡°Ë º¯°æ",		//eCOMMONTYPE_CLOSEWORLD
-	"Ä³¸¯ÅÍ¸í º¯°æ",		//eCOMMONTYPE_RENAME_AVATAR
+	"ì •ê¸°ì ê²€ ë³€ê²½",		//eCOMMONTYPE_CLOSEWORLD
+	"ìºë¦­í„°ëª… ë³€ê²½",		//eCOMMONTYPE_RENAME_AVATAR
 #else
 	"LOGIN SERVER CLOSE/OPEN",
 	"LOGIN SERVER CHANGING VERSION",

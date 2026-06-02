@@ -2,73 +2,73 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{6e08bf3c-81c0-4b28-a2c1-68e4b15cafb7}</UniqueIdentifier>
+      <UniqueIdentifier>{a916a8df-56b8-4016-9bdb-de7cb3b4a175}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{f4390a70-640a-4112-bfab-159c84d15556}</UniqueIdentifier>
+      <UniqueIdentifier>{f3580230-c355-4920-8b18-330879886e2c}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
     <Filter Include="Resource Files">
-      <UniqueIdentifier>{b6f71c4d-3552-4e55-8946-20452da44ead}</UniqueIdentifier>
+      <UniqueIdentifier>{478d1cb8-0e8c-40d0-a70a-fb0b64786a9b}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
     <Filter Include="Add Code">
-      <UniqueIdentifier>{f7f5011d-b05f-42b3-80a4-cb48b0ca2ba6}</UniqueIdentifier>
+      <UniqueIdentifier>{91f58593-ef47-44ba-b126-1d1c7b111c68}</UniqueIdentifier>
     </Filter>
     <Filter Include="Add Code\Item Pack List">
-      <UniqueIdentifier>{be3c4504-459c-4d58-9211-6f0194f5478f}</UniqueIdentifier>
+      <UniqueIdentifier>{d6c3e4d7-519d-42ae-acc3-8b341ceac869}</UniqueIdentifier>
     </Filter>
     <Filter Include="Add Code\Carrot Shop">
-      <UniqueIdentifier>{fc140e99-250f-4750-94c2-cdf2e97cea74}</UniqueIdentifier>
+      <UniqueIdentifier>{2fa70ce3-429a-4a45-9be5-aab3eedda0f2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Add Code\quest">
-      <UniqueIdentifier>{a7a63056-0066-414d-b1f1-b67f7eda8c08}</UniqueIdentifier>
+      <UniqueIdentifier>{8c592258-ee15-4591-98cf-51f22417339d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Add Code\Event Manager">
-      <UniqueIdentifier>{69617f20-3330-4ecd-bc38-cb352a9fa20e}</UniqueIdentifier>
+      <UniqueIdentifier>{c15107f2-8c56-4733-a245-3a458bd1604b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Add Code\Base">
-      <UniqueIdentifier>{293378d8-e044-4aee-b362-324939132526}</UniqueIdentifier>
+      <UniqueIdentifier>{f35df719-7192-403e-9b90-bb998f5bb51d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Add Code\server tool">
-      <UniqueIdentifier>{4cd3f61b-93a2-4c6f-8601-7170e7e3cfcb}</UniqueIdentifier>
+      <UniqueIdentifier>{8f74bb2d-d0df-463e-888d-c97684ea7019}</UniqueIdentifier>
     </Filter>
     <Filter Include="Add Code\Inventory">
-      <UniqueIdentifier>{4d1506f7-b78f-4758-8c4d-600dab89c123}</UniqueIdentifier>
+      <UniqueIdentifier>{5e73a753-4a25-45b8-9a7d-d2780d61b991}</UniqueIdentifier>
     </Filter>
     <Filter Include="Add Code\ftp class">
-      <UniqueIdentifier>{90a08885-8a9c-4b09-b43e-8226910844c6}</UniqueIdentifier>
+      <UniqueIdentifier>{c6259ae4-1657-4bc5-9670-e9973978418f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Add Code\Guild">
-      <UniqueIdentifier>{5c9037f7-e535-4688-b9ef-232a8cc21e41}</UniqueIdentifier>
+      <UniqueIdentifier>{969308a8-6110-4c8b-83fb-9ae2700148bf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Add Code\ｹﾌｴﾏﾆ・ｸｮｽｺﾆｮ">
-      <UniqueIdentifier>{1b58ef44-e72b-4f26-a29f-577319460f3e}</UniqueIdentifier>
+    <Filter Include="Add Code\固聪脐 府胶飘">
+      <UniqueIdentifier>{5d490202-74ca-4f15-9e14-c1c2486dce65}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Add Code\ﾆ・ｸｮｽｺﾆｮ">
-      <UniqueIdentifier>{0fa2188a-2fe3-4d17-a597-0d571e5922d8}</UniqueIdentifier>
+    <Filter Include="Add Code\脐 府胶飘">
+      <UniqueIdentifier>{2e620ace-2a8c-4a4f-84ef-fbc02c282b1f}</UniqueIdentifier>
     </Filter>
     <Filter Include="resource">
-      <UniqueIdentifier>{c7056530-d82d-4d8e-b37f-f06cd31af981}</UniqueIdentifier>
+      <UniqueIdentifier>{7e523968-f3f5-4bc3-8d2e-83c2a10af37b}</UniqueIdentifier>
     </Filter>
     <Filter Include="lib">
-      <UniqueIdentifier>{a1d8819b-00d2-49f4-9fce-40ab07ccf257}</UniqueIdentifier>
+      <UniqueIdentifier>{6b72b5c0-99a4-4946-a4cc-752b23113cfa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ﾆﾐﾅｶ">
-      <UniqueIdentifier>{130fb884-5231-410c-a9ba-e8e638e1aef3}</UniqueIdentifier>
+    <Filter Include="菩哦">
+      <UniqueIdentifier>{8ffa277b-77b6-49dc-b93a-c56b0790905b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ｾﾆﾀﾌﾅﾛ">
-      <UniqueIdentifier>{5d279bfc-0fe5-4557-a76a-a6cad0730397}</UniqueIdentifier>
+    <Filter Include="酒捞袍">
+      <UniqueIdentifier>{f1e965f5-82f2-4439-8f52-6f8a693b5cbd}</UniqueIdentifier>
     </Filter>
     <Filter Include="common">
-      <UniqueIdentifier>{5bb8cf9d-adb6-4d6c-9ffa-7167faa889b8}</UniqueIdentifier>
+      <UniqueIdentifier>{5f424e7b-4a75-4d31-beae-5d37b5fa9084}</UniqueIdentifier>
     </Filter>
     <Filter Include="DLL">
-      <UniqueIdentifier>{c49f4aae-d203-4b92-a88d-f9b6c3b5a8e0}</UniqueIdentifier>
+      <UniqueIdentifier>{2d27a65f-63b8-4c62-ba84-f10d63e99494}</UniqueIdentifier>
     </Filter>
     <Filter Include="Searching Avatar DB">
-      <UniqueIdentifier>{3a60a629-7b65-4b7d-9878-d09b5c4411b0}</UniqueIdentifier>
+      <UniqueIdentifier>{fb352022-3add-46ae-a0d7-907c66fb2a55}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +186,39 @@
     <ClCompile Include="WorldScore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="book.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CCharacterData.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterInfo.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CMessage.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\common\cPetDefine.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="CTitle.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpCalc.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="IPCurrentStatus.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="playerData.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="RenewItemExpireDate.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
+    <ClCompile Include="skill.cpp">
+      <Filter>Add Code</Filter>
+    </ClCompile>
     <ClCompile Include="ItemPackList.cpp">
       <Filter>Add Code\Item Pack List</Filter>
     </ClCompile>
@@ -259,49 +292,16 @@
       <Filter>Add Code\Guild</Filter>
     </ClCompile>
     <ClCompile Include="cMiniPetList.cpp">
-      <Filter>Add Code\ｹﾌｴﾏﾆ・ｸｮｽｺﾆｮ</Filter>
+      <Filter>Add Code\固聪脐 府胶飘</Filter>
     </ClCompile>
     <ClCompile Include="cPetList.cpp">
-      <Filter>Add Code\ﾆ・ｸｮｽｺﾆｮ</Filter>
-    </ClCompile>
-    <ClCompile Include="book.cpp">
-      <Filter>Add Code</Filter>
-    </ClCompile>
-    <ClCompile Include="CCharacterData.cpp">
-      <Filter>Add Code</Filter>
-    </ClCompile>
-    <ClCompile Include="CharacterInfo.cpp">
-      <Filter>Add Code</Filter>
-    </ClCompile>
-    <ClCompile Include="CMessage.cpp">
-      <Filter>Add Code</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\common\common\cPetDefine.cpp">
-      <Filter>Add Code</Filter>
-    </ClCompile>
-    <ClCompile Include="CTitle.cpp">
-      <Filter>Add Code</Filter>
-    </ClCompile>
-    <ClCompile Include="ExpCalc.cpp">
-      <Filter>Add Code</Filter>
-    </ClCompile>
-    <ClCompile Include="IPCurrentStatus.cpp">
-      <Filter>Add Code</Filter>
-    </ClCompile>
-    <ClCompile Include="playerData.cpp">
-      <Filter>Add Code</Filter>
-    </ClCompile>
-    <ClCompile Include="RenewItemExpireDate.cpp">
-      <Filter>Add Code</Filter>
-    </ClCompile>
-    <ClCompile Include="skill.cpp">
-      <Filter>Add Code</Filter>
+      <Filter>Add Code\脐 府胶飘</Filter>
     </ClCompile>
     <ClCompile Include="cITEM.cpp">
-      <Filter>ｾﾆﾀﾌﾅﾛ</Filter>
+      <Filter>酒捞袍</Filter>
     </ClCompile>
     <ClCompile Include="cMakeItem.cpp">
-      <Filter>ｾﾆﾀﾌﾅﾛ</Filter>
+      <Filter>酒捞袍</Filter>
     </ClCompile>
     <ClCompile Include="..\..\common\common\commonDefine.cpp">
       <Filter>common</Filter>
@@ -404,6 +404,9 @@
     <ClInclude Include="StdAfx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="TentativeGuildManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -418,6 +421,27 @@
     </ClInclude>
     <ClInclude Include="zlib.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterInfo.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CTitle.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpCalc.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="IPCurrentStatus.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="RenewItemExpireDate.h">
+      <Filter>Add Code</Filter>
+    </ClInclude>
+    <ClInclude Include="skill.h">
+      <Filter>Add Code</Filter>
     </ClInclude>
     <ClInclude Include="ItemPackList.h">
       <Filter>Add Code\Item Pack List</Filter>
@@ -477,70 +501,49 @@
       <Filter>Add Code\Guild</Filter>
     </ClInclude>
     <ClInclude Include="cMiniPetList.h">
-      <Filter>Add Code\ｹﾌｴﾏﾆ・ｸｮｽｺﾆｮ</Filter>
+      <Filter>Add Code\固聪脐 府胶飘</Filter>
     </ClInclude>
     <ClInclude Include="cPetList.h">
-      <Filter>Add Code\ﾆ・ｸｮｽｺﾆｮ</Filter>
-    </ClInclude>
-    <ClInclude Include="book.h">
-      <Filter>Add Code</Filter>
-    </ClInclude>
-    <ClInclude Include="CharacterInfo.h">
-      <Filter>Add Code</Filter>
-    </ClInclude>
-    <ClInclude Include="CTitle.h">
-      <Filter>Add Code</Filter>
-    </ClInclude>
-    <ClInclude Include="ExpCalc.h">
-      <Filter>Add Code</Filter>
-    </ClInclude>
-    <ClInclude Include="IPCurrentStatus.h">
-      <Filter>Add Code</Filter>
-    </ClInclude>
-    <ClInclude Include="RenewItemExpireDate.h">
-      <Filter>Add Code</Filter>
-    </ClInclude>
-    <ClInclude Include="skill.h">
-      <Filter>Add Code</Filter>
+      <Filter>Add Code\脐 府胶飘</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
       <Filter>resource</Filter>
     </ClInclude>
     <ClInclude Include="..\..\common\packet\cPACKET_BASE.h">
-      <Filter>ﾆﾐﾅｶ</Filter>
+      <Filter>菩哦</Filter>
     </ClInclude>
     <ClInclude Include="..\..\common\packet\cPACKET_CONTROLSERVER.h">
-      <Filter>ﾆﾐﾅｶ</Filter>
+      <Filter>菩哦</Filter>
     </ClInclude>
     <ClInclude Include="..\..\common\packet\cPACKET_DBSERVER.h">
-      <Filter>ﾆﾐﾅｶ</Filter>
+      <Filter>菩哦</Filter>
     </ClInclude>
     <ClInclude Include="..\..\common\packet\cPACKET_GAMESERVER.h">
-      <Filter>ﾆﾐﾅｶ</Filter>
+      <Filter>菩哦</Filter>
     </ClInclude>
     <ClInclude Include="..\..\common\packet\cPACKET_LOGINSERVER.h">
-      <Filter>ﾆﾐﾅｶ</Filter>
+      <Filter>菩哦</Filter>
     </ClInclude>
     <ClInclude Include="..\..\common\packet\cPACKET_LOGSERVER.h">
-      <Filter>ﾆﾐﾅｶ</Filter>
+      <Filter>菩哦</Filter>
     </ClInclude>
     <ClInclude Include="..\..\common\packet\cPACKET_TOOLLOGSERVER.h">
-      <Filter>ﾆﾐﾅｶ</Filter>
+      <Filter>菩哦</Filter>
     </ClInclude>
     <ClInclude Include="..\..\common\packet\cPACKET_USERDBSERVER.h">
-      <Filter>ﾆﾐﾅｶ</Filter>
+      <Filter>菩哦</Filter>
     </ClInclude>
     <ClInclude Include="..\..\common\packet\cPACKET_WORLDSERVER.h">
-      <Filter>ﾆﾐﾅｶ</Filter>
+      <Filter>菩哦</Filter>
     </ClInclude>
     <ClInclude Include="cITEM.h">
-      <Filter>ｾﾆﾀﾌﾅﾛ</Filter>
+      <Filter>酒捞袍</Filter>
     </ClInclude>
     <ClInclude Include="cITEM_PREFIX.h">
-      <Filter>ｾﾆﾀﾌﾅﾛ</Filter>
+      <Filter>酒捞袍</Filter>
     </ClInclude>
     <ClInclude Include="cMakeItem.h">
-      <Filter>ｾﾆﾀﾌﾅﾛ</Filter>
+      <Filter>酒捞袍</Filter>
     </ClInclude>
     <ClInclude Include="LinkedList.h">
       <Filter>common</Filter>
@@ -581,9 +584,9 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="zdll.lib">
-      <Filter>lib</Filter>
-    </Library>
+    <None Include="res\AdminTool.rc2">
+      <Filter>resource</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="controltext.txt" />
@@ -594,8 +597,8 @@
     <Text Include="..\ServerDownList.txt" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="res\AdminTool.rc2">
-      <Filter>resource</Filter>
+    <CustomBuild Include="zdll.lib">
+      <Filter>lib</Filter>
     </CustomBuild>
     <CustomBuild Include="zlib1.dll">
       <Filter>DLL</Filter>

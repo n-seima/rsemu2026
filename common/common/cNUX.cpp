@@ -48,10 +48,10 @@ BOOL	bStop						=	FALSE;
 
 DWORD	inFileSize					=	0;
 DWORD	ISFOLDER					=	0xfefefefe;
-DWORD	appendPos					=	0;					//	Append ÇÒ¶§ÀÇ µ¥ÀÌÅÍ À§Ä¡(È­ÀÏ¼ö¿Í Çì´õÀÇ À§Ä¡°¡ µé¾î°£ À§Ä¡´Ù.)
-DWORD	ISMERGEFILE					=	0xefefefef;			//	MergeÈ­ÀÏÀÌ´Ù.
-DWORD	ISPRESSFILE					=	0xfefefefe;			//	PressÈ­ÀÏÀÌ´Ù.
-DWORD	ISMERGEFOLDER				=	0xfefe1111;			//	Æú´õ¸¦ MergeÇÑ È­ÀÏÀÌ´Ù.
+DWORD	appendPos					=	0;					//	Append í• ë•Œì˜ ë°ì´í„° ìœ„ì¹˜(í™”ì¼ìˆ˜ì™€ í—¤ë”ì˜ ìœ„ì¹˜ê°€ ë“¤ì–´ê°„ ìœ„ì¹˜ë‹¤.)
+DWORD	ISMERGEFILE					=	0xefefefef;			//	Mergeí™”ì¼ì´ë‹¤.
+DWORD	ISPRESSFILE					=	0xfefefefe;			//	Pressí™”ì¼ì´ë‹¤.
+DWORD	ISMERGEFOLDER				=	0xfefe1111;			//	í´ë”ë¥¼ Mergeí•œ í™”ì¼ì´ë‹¤.
 BOOL	bAPPEND						=	FALSE;
 const	DWORD	BLOCKSIZE			=	1024*1024*4;
 
@@ -165,7 +165,7 @@ static char read_header(void)
 {	headersize = (BYTE) fgetc(arcFile);
 
 	if (headersize == 0) return 0;					//	end of archive
-	if (headersize == 1)							//	Æú´õ¸¦ »ı¼ºÇØ¾ß ÇÑ´Ù.
+	if (headersize == 1)							//	í´ë”ë¥¼ ìƒì„±í•´ì•¼ í•œë‹¤.
 	{	unsigned int isfolder;
 		BYTE	size;
 		
@@ -1113,9 +1113,9 @@ int make_tree(int nparm, WORD freqparm[],
 
 
 /****************************************************************
-		³»°¡ Ãß°¡ÇÑ ³Ñµé
+		ë‚´ê°€ ì¶”ê°€í•œ ë„˜ë“¤
 ****************************************************************/
-void pressFolder(char *fn)	//	Æú´õ Ãß°¡ (Çì´õ¿¡ ¾´´Ù.)
+void pressFolder(char *fn)	//	í´ë” ì¶”ê°€ (í—¤ë”ì— ì“´ë‹¤.)
 {	if (bStop) return;
 
 	BYTE stringsize = 1;
@@ -1210,8 +1210,8 @@ cNUX::PressClose()
 	if (bStop)	stop();
 	else
 	{	fputc(0, outFile);		/* end of archive */
-		fwrite(&appendPos	,sizeof(DWORD  ),1,outFile);	//	È­ÀÏÀÇ ½ÃÀÛÀ§Ä¡
-		fwrite(&ISPRESSFILE	,sizeof(DWORD  ),1,outFile);	//	È­ÀÏÀÇ ½ÃÀÛÀ§Ä¡
+		fwrite(&appendPos	,sizeof(DWORD  ),1,outFile);	//	í™”ì¼ì˜ ì‹œì‘ìœ„ì¹˜
+		fwrite(&ISPRESSFILE	,sizeof(DWORD  ),1,outFile);	//	í™”ì¼ì˜ ì‹œì‘ìœ„ì¹˜
 
 		FileSize	=	ftell(outFile);
 
@@ -1398,7 +1398,7 @@ cNUX::PressFolder(char *fn,BOOL includeCurrent,BOOL includeSubFolder)
 
 	if (includeSubFolder)	strs	=	cFOLDER::GetFolders(fn);
 	else
-	{	if (includeCurrent) pressFolder(_exportFileName(fn));	//	¼­ºêµğ·ºÅä¸®´Â Ãß°¡ ¾ÈÇÏ°í µğ·ºÅä¸® ÀÌ¸§¸¸..
+	{	if (includeCurrent) pressFolder(_exportFileName(fn));	//	ì„œë¸Œë””ë ‰í† ë¦¬ëŠ” ì¶”ê°€ ì•ˆí•˜ê³  ë””ë ‰í† ë¦¬ ì´ë¦„ë§Œ..
 
 		PressAllFile();
 
@@ -1448,7 +1448,7 @@ cNUX::PressFolder(char *fn,BOOL includeCurrent,BOOL includeSubFolder)
 
 BOOL
 cNUX::PressExtract(char *fn,char *destFolder,cSTRINGS *files)
-{	if (arcFile) return printf("Error!! in cNUX::PressExtract","Achive File Aleady Opened!!",fn);	//	È­ÀÏÀ» Ã£À» ¼ö ¾ø´Ù.
+{	if (arcFile) return printf("Error!! in cNUX::PressExtract","Achive File Aleady Opened!!",fn);	//	í™”ì¼ì„ ì°¾ì„ ìˆ˜ ì—†ë‹¤.
 
 	bStop		=	FALSE;
 	bSTOP		=	FALSE;
@@ -1459,7 +1459,7 @@ cNUX::PressExtract(char *fn,char *destFolder,cSTRINGS *files)
 	FileCount	=	0;
 	FileRate	=	0;
 
-//	ÃÊ±âÈ­
+//	ì´ˆê¸°í™”
 	char	curFolder[512];
 	GetCurrentDirectory(512,curFolder);
 
@@ -1469,7 +1469,7 @@ cNUX::PressExtract(char *fn,char *destFolder,cSTRINGS *files)
 
 	if (!arcFile)
 	{
-		return printf("Error!! in cNUX::PressExtract","'%s' File not Open",fn);	//	È­ÀÏÀ» Ã£À» ¼ö ¾ø´Ù.
+		return printf("Error!! in cNUX::PressExtract","'%s' File not Open",fn);	//	í™”ì¼ì„ ì°¾ì„ ìˆ˜ ì—†ë‹¤.
 	}
 
 	DWORD	ispress;
@@ -1484,7 +1484,7 @@ cNUX::PressExtract(char *fn,char *destFolder,cSTRINGS *files)
 
 		if (ispress==ISMERGEFILE || ispress==ISMERGEFOLDER)	return MergeExtract(fn,destFolder,files);
 
-		return	printf("Error!! in cNUX::PressExtract","'%s' File not NUX file",fn);	//	È­ÀÏÀ» Ã£À» ¼ö ¾ø´Ù.
+		return	printf("Error!! in cNUX::PressExtract","'%s' File not NUX file",fn);	//	í™”ì¼ì„ ì°¾ì„ ìˆ˜ ì—†ë‹¤.
 	}
 
 	fseek(arcFile,-8,SEEK_END);
@@ -1503,7 +1503,7 @@ cNUX::PressExtract(char *fn,char *destFolder,cSTRINGS *files)
 
 	if (crctable[0]!=0)	make_crctable();
 
-//	¾ĞÃà Ç®±â ½ÃÀÛ
+//	ì••ì¶• í’€ê¸° ì‹œì‘
 
 	int		n, method;
 	WORD	ext_headersize;
@@ -1671,7 +1671,7 @@ cNUX::Stop()
 }
 
 /***************************************************************************************
-	¾ĞÃàÇÏÁö ¾Ê°í °Á ÇÕÄ¡±â.
+	ì••ì¶•í•˜ì§€ ì•Šê³  ê± í•©ì¹˜ê¸°.
 ***************************************************************************************/
 
 cMERGEINFO		Info[dMAX_MERGE_FILE];
@@ -1762,9 +1762,9 @@ cNUX::MergeClose()
 	else				fwrite(&ISMERGEFILE		,sizeof(DWORD  ),1,outFile);
 
 	fseek(outFile,appendPos,SEEK_SET);
-	fwrite(&FileCount	,4,1,outFile);		//	È­ÀÏ ¼ö
-	fwrite(&TotalSize	,4,1,outFile);		//	ÀüÃ¼ µ¥ÀÌÅÍ »çÀÌÁî
-	fwrite(&loc			,4,1,outFile);		//	Çì´õ À§Ä¡
+	fwrite(&FileCount	,4,1,outFile);		//	í™”ì¼ ìˆ˜
+	fwrite(&TotalSize	,4,1,outFile);		//	ì „ì²´ ë°ì´í„° ì‚¬ì´ì¦ˆ
+	fwrite(&loc			,4,1,outFile);		//	í—¤ë” ìœ„ì¹˜
 	fclose(outFile);
 
 	outFile	=	NULL;
@@ -1822,7 +1822,7 @@ cNUX::MergeFolder(char *fn,BOOL includeCurrent,BOOL includeSubFolder)
 
 	if (includeSubFolder)	strs	=	cFOLDER::GetFolders(fn);
 	else
-	{	if (includeCurrent) mergeFolder(_exportFileName(fn));	//	¼­ºêµğ·ºÅä¸®´Â Ãß°¡ ¾ÈÇÏ°í µğ·ºÅä¸® ÀÌ¸§¸¸..
+	{	if (includeCurrent) mergeFolder(_exportFileName(fn));	//	ì„œë¸Œë””ë ‰í† ë¦¬ëŠ” ì¶”ê°€ ì•ˆí•˜ê³  ë””ë ‰í† ë¦¬ ì´ë¦„ë§Œ..
 
 		MergeAllFile();
 
@@ -1917,7 +1917,7 @@ cNUX::MergeFile(char *fn)
 
 BOOL
 cNUX::MergeExtract(char *fn,char *destFolder,cSTRINGS *files)
-{	if (arcFile) return printf("Error!! in cNUX::MergeExtract","Achive File Aleady Opened!!",fn);	//	ÀÌ¹Ì ¿­·Á ÀÖ´Ù.
+{	if (arcFile) return printf("Error!! in cNUX::MergeExtract","Achive File Aleady Opened!!",fn);	//	ì´ë¯¸ ì—´ë ¤ ìˆë‹¤.
 
 	ProcessRate	=	0;
 	ProcessSize	=	0;
@@ -1926,14 +1926,14 @@ cNUX::MergeExtract(char *fn,char *destFolder,cSTRINGS *files)
 	FileCount	=	0;
 	FileRate	=	0;
 
-//	ÃÊ±âÈ­
+//	ì´ˆê¸°í™”
 	GetCurrentDirectory(512,processFolder);
 
 	strcpy(ArcName,fn);
 
 	arcFile = fopen(fn, "rb");
 
-	if (!arcFile) return printf("Error!! in cNUX::MergeExtract","'%s' File Not Open",fn);			//	È­ÀÏÀ» Ã£À» ¼ö ¾ø´Ù.
+	if (!arcFile) return printf("Error!! in cNUX::MergeExtract","'%s' File Not Open",fn);			//	í™”ì¼ì„ ì°¾ì„ ìˆ˜ ì—†ë‹¤.
 
 	DWORD	Locate	,i	,j;
 	DWORD	ismerge;
@@ -1945,7 +1945,7 @@ cNUX::MergeExtract(char *fn,char *destFolder,cSTRINGS *files)
 	{	fclose(arcFile);
 		arcFile	=	NULL;
 		if (ismerge==ISPRESSFILE)	return PressExtract(fn,destFolder);
-		return	printf("Error!! in cNUX::MergeExtract","'%s' File Not Merge File!!",fn);			//	ÇÕÃÄÁø È­ÀÏÀÌ ¾Æ´Ï´Ù.
+		return	printf("Error!! in cNUX::MergeExtract","'%s' File Not Merge File!!",fn);			//	í•©ì³ì§„ í™”ì¼ì´ ì•„ë‹ˆë‹¤.
 	}
 
 	if (destFolder)
@@ -1953,13 +1953,13 @@ cNUX::MergeExtract(char *fn,char *destFolder,cSTRINGS *files)
 			if (!cFOLDER::Create(destFolder,TRUE)) 
 				return printf("Error!! in cNUX::MergeExtract","Don't Create \"%s\" Folder",destFolder);
 
-	fseek(arcFile	,-8,SEEK_END);			//	È­ÀÏÀÇ Çì´õ À§Ä¡
-	fread(&appendPos,4,1,arcFile);			//	¸¦ ÀĞ´Â´Ù.
+	fseek(arcFile	,-8,SEEK_END);			//	í™”ì¼ì˜ í—¤ë” ìœ„ì¹˜
+	fread(&appendPos,4,1,arcFile);			//	ë¥¼ ì½ëŠ”ë‹¤.
 
-	fseek(arcFile	,appendPos,SEEK_SET);	//	Çì´õ·Î °£´Ù.
-	fread(&FileCount,4,1,arcFile);			//	È­ÀÏ ¼ö
-	fread(&TotalSize,4,1,arcFile);			//	È­ÀÏ ¼ö
-	fread(&Locate	,4,1,arcFile);			//	È­ÀÏ Á¤º¸ À§Ä¡
+	fseek(arcFile	,appendPos,SEEK_SET);	//	í—¤ë”ë¡œ ê°„ë‹¤.
+	fread(&FileCount,4,1,arcFile);			//	í™”ì¼ ìˆ˜
+	fread(&TotalSize,4,1,arcFile);			//	í™”ì¼ ìˆ˜
+	fread(&Locate	,4,1,arcFile);			//	í™”ì¼ ì •ë³´ ìœ„ì¹˜
 
 	fseek(arcFile,Locate,SEEK_SET);
 

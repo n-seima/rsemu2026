@@ -1,18 +1,17 @@
 SERVER_NAME	=	ChanTestServer;
-WORLDIP = 58.150.56.164;
-WORLDPORT = 59227;
-DBCACHEIP = 58.150.56.170;
-DBCACHEPORT = 50128;
-LOGIP = 58.150.56.170;
-LOGPORT = 53102;
-BROADCASTIP = 58.150.56.170;
+WORLDIP = 25.1.80.156;
+WORLDPORT = 53621;
+SEND_TO_WORLDSRVIP = 25.1.80.156;
+DBCACHEIP = 25.1.80.156;
+DBCACHEPORT = 52611;
+LOGIP = 25.1.80.156;
+LOGPORT = 59641;
+BROADCASTIP = 25.1.80.156;
 
 WCG_MAIL_SERVERIP = "211.189.66.49";
 WCG_MAIL_TITLE ="[KR] [Red Stone] Game-Result<WCG@logickorea.co.kr>"; // 메일 타이틀
-WCG_MAIL_SENDER = "WCG@logickorea.co.kr"; // 메일을 보내는 사람 메일 주소
-WCG_MAIL_SUBJECT = "[KR] [Red Stone] Game-Result"; // 메일 제목
-WCG_RECIPIENT = "rs_result@worldcybergame.com"; // 받을 사람
-WCG_CCRECIPIENT = nemo@logickorea.co.kr | goodboys@icm2k.com; // 참조 메일 리스트
+WCG_MAIL_SENDER = "WCG@logickorea.co.kr"; // 메일을 보내는 사턿E메일 주소
+WCG_MAIL_SUBJECT = "[KR] [Red Stone] Game-Result"; // 메일 제툈EWCG_RECIPIENT = "rs_result@worldcybergame.com"; // 받을 사턿EWCG_CCRECIPIENT = nemo@logickorea.co.kr | goodboys@icm2k.com; // 혖E?메일 리스트
 
 
 ignore_ss = true;
@@ -28,9 +27,11 @@ ignore_ss = true;
 
 //ignore_ss	=	true;
 max_actor_count		5000
+experience_factor	25
+item_factor		50
 server_index		0
-server_info_file	"testonly.gsd"
-//server_info_file	"duel.gsd";
+server_info_file "type01.gsd"
+//server_info_file "type01.gsd";
 //test_server;
 real_price;
 
@@ -47,6 +48,6 @@ real_price;
 
 //stress_test_server;
 //	server_index 중요합니다. 서버의 물리적인 순서를 나타냅니다. 0,1,2,3,4,5....
-//	server_info_file 역시 중요합니다. type02는 서버 두대짜리. type03은 세대짜리... type01어쩌구
+//	server_info_file 역시 중요합니다. type02는 서퉩E두큱EⅨ? type03은 세큱EⅨ?.. type01엉氷구
 
 END;

@@ -12,9 +12,9 @@ public:
 	WORD							m_wPremiunItemIndex;
 
 	WORD							m_bf8ItemCount : 8;
-	WORD							m_bf1IsTestItem	: 1;		//	test ╬фюлеш
-	WORD							m_bf1IsHotItem : 1;			//	╫е╠т ╬фюлеш
-	WORD							m_bf1IsRecommandItem : 1;	//	цъц╣ ╬фюлеш
+	WORD							m_bf1IsTestItem	: 1;		//	test Л∙└Л²╢М┘°
+	WORD							m_bf1IsHotItem : 1;			//	Л▀═Й╥° Л∙└Л²╢М┘°
+	WORD							m_bf1IsRecommandItem : 1;	//	Л╤■Л╡° Л∙└Л²╢М┘°
 	WORD							:	5;
 
 	WORD							m_wCarrotCount;
@@ -41,9 +41,9 @@ public:
 class	cCarrotShopCategoryInfo2
 {
 public:
-	WORD							m_bf1IsTestCategory	:	1;	//	ев╫╨ф╝ д╚ев╟Зт╝(юл╟г ев╪╥©║╪╜╦╦ ╨╦юн╢ы.)
-	WORD							m_bf1IsHotCategory	:	1;	//	╫е╠т ╬фюлеш д╚ев╟Зт╝
-	WORD							m_bf1IsRecommandCategory	:	1;	//	цъц╣ ╬фюлеш д╚ев╟Зт╝
+	WORD							m_bf1IsTestCategory	:	1;	//	М┘▄Л┼╓М┼╦ Л╧╢М┘▄ЙЁ╪ХЁ╜(Л²╢Й╠╢ М┘▄Л└╜Л≈░Л└°К╖▄ КЁ╢Л²╦К▀╓.)
+	WORD							m_bf1IsHotCategory	:	1;	//	Л▀═Й╥° Л∙└Л²╢М┘° Л╧╢М┘▄ЙЁ╪ХЁ╜
+	WORD							m_bf1IsRecommandCategory	:	1;	//	Л╤■Л╡° Л∙└Л²╢М┘° Л╧╢М┘▄ЙЁ╪ХЁ╜
 	WORD							:	13;
 	WORD							m_awSpareBuffer[2];
 };

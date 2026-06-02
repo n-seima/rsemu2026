@@ -6,27 +6,27 @@ class	cNpcData_common
 {
 public:
 	int					m_iSerial;
-	char				m_strName[28];						//	Á÷¾÷ ÀÌ¸§1
-	BYTE				m_abBodyShape[4];					//	¸ó½ºÅÍ ¹Ùµð ½¦ÀÔ
+	char				m_strName[28];						//	ì§ì—… ì´ë¦„1
+	BYTE				m_abBodyShape[4];					//	ëª¬ìŠ¤í„° ë°”ë”” ì‰ìž…
 
-	WORD				m_wBody;							//	¸öÅë
-	WORD				m_wVariation;						//	¸öÅë
-	WORD				m_wPalette;							//	µÎ°³ÀÇ ¸öÅë¿¡ ÆÈ·¹Æ® ³Ñ¹ö
+	WORD				m_wBody;							//	ëª¸í†µ
+	WORD				m_wVariation;						//	ëª¸í†µ
+	WORD				m_wPalette;							//	ë‘ê°œì˜ ëª¸í†µì— íŒ”ë ˆíŠ¸ ë„˜ë²„
 	WORD				m_bf1IsEnableTameMonster	:	1;
 	WORD				m_bf15TameResistanceValue	:	15;
-	WORD				m_wBattleInclination;				//	ÀüÅõ ÆÐÅÏ
-	WORD				m_bf4AttackPart				:	4;	//	°ø°ÝºÎÀ§
-	WORD				m_bf1IsZinBoss				:	1;	//	ÁøÂ¥ º¸½º
-	WORD				m_bf1IsGuildGuardian		:	1;	//	±æµå °¡µð¾ðÀÌ´Ù.
-	WORD				m_bf1IsReviseIntCalc			:	1;	//	Áö´É Àû¿ë °ø½Ä Á¤»óÈ­
-	WORD				m_bf3RequireRebirthCountForTame	:	3;	//	Á¶·ÃÀ» À§ÇØ ÇÊ¿äÇÑ Àü»ý È½¼ö
+	WORD				m_wBattleInclination;				//	ì „íˆ¬ íŒ¨í„´
+	WORD				m_bf4AttackPart				:	4;	//	ê³µê²©ë¶€ìœ„
+	WORD				m_bf1IsZinBoss				:	1;	//	ì§„ì§œ ë³´ìŠ¤
+	WORD				m_bf1IsGuildGuardian		:	1;	//	ê¸¸ë“œ ê°€ë””ì–¸ì´ë‹¤.
+	WORD				m_bf1IsReviseIntCalc			:	1;	//	ì§€ëŠ¥ ì ìš© ê³µì‹ ì •ìƒí™”
+	WORD				m_bf3RequireRebirthCountForTame	:	3;	//	ì¡°ë ¨ì„ ìœ„í•´ í•„ìš”í•œ ì „ìƒ íšŸìˆ˜
 	
 	
-	WORD				m_wType;							//	¿µ¿õ,NPC,¸ó½ºÅÍ
+	WORD				m_wType;							//	ì˜ì›…,NPC,ëª¬ìŠ¤í„°
 	
-	//	 ¸ó½ºÅÍ¸¦ À§ÇØ -_-Ãß°¡µÇ´Â µ¥ÀÌÅÍµé..
-	WORD				m_wKind;							//	ºÐ·ù(¾ðµ¥µå,ÀÎ°£..)
-	WORD				m_wBasicPowerLevelFactor;			//	·¹º§¿¡ µû¸¥ ´É·ÂÄ¡ Áõ°¡
+	//	 ëª¬ìŠ¤í„°ë¥¼ ìœ„í•´ -_-ì¶”ê°€ë˜ëŠ” ë°ì´í„°ë“¤..
+	WORD				m_wKind;							//	ë¶„ë¥˜(ì–¸ë°ë“œ,ì¸ê°„..)
+	WORD				m_wBasicPowerLevelFactor;			//	ë ˆë²¨ì— ë”°ë¥¸ ëŠ¥ë ¥ì¹˜ ì¦ê°€
 	WORD				m_wMinDamageLevelFactor,m_wMaxDamageLevelFactor,m_wDefensePowerLevelFactor;
 	WORD				m_wMoveSpeed,m_wAttackSpeed;
 	WORD				m_wCriticalShot,m_wCrushBlow;
@@ -34,21 +34,21 @@ public:
 	WORD				m_wBlocking;
 	WORD				m_wLimitLevel;
 	WORD				m_wAllignment;
-	WORD				m_wMonsterLevel;					//	¸ó½ºÅÍ µî±Þ
+	WORD				m_wMonsterLevel;					//	ëª¬ìŠ¤í„° ë“±ê¸‰
 	short				m_sCriticalResistance,m_sCrushResistance;
 
-	//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-	//¦­»ç¸ÁÈÄ µ¥ÀÌÅÍ
-	DWORD				m_dwDeathExp;						//	Á×¾úÀ»¶§ ÁÖ´Â °æÇèÄ¡
-	WORD				m_wGold;							//	°¡Áö°í ÀÖ´Â µ·
-	WORD				m_wGoldPerLevel;					//	°¡Áö°í ÀÖ´Â µ·(·¹º§¿¡ µû¸¥ Áõ°¡·®)
-	WORD				m_wMoneyDroppingRate;				//	µ·ÀÌ ¶³±ÅÁú È®·ü
-	cDroppingItem		m_aDroppingItem[dDROPPING_ITEM_COUNT];	//	Á×¾úÀ»¶§ ÁÖ´Â ¾ÆÀÌÅÛµÑ
-	//¦­»ç¸ÁÈÄ µ¥ÀÌÅÍ
-	//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+	//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+	//â”ƒì‚¬ë§í›„ ë°ì´í„°
+	DWORD				m_dwDeathExp;						//	ì£½ì—ˆì„ë•Œ ì£¼ëŠ” ê²½í—˜ì¹˜
+	WORD				m_wGold;							//	ê°€ì§€ê³  ìžˆëŠ” ëˆ
+	WORD				m_wGoldPerLevel;					//	ê°€ì§€ê³  ìžˆëŠ” ëˆ(ë ˆë²¨ì— ë”°ë¥¸ ì¦ê°€ëŸ‰)
+	WORD				m_wMoneyDroppingRate;				//	ëˆì´ ë–¨ê¶ˆì§ˆ í™•ë¥ 
+	cDroppingItem		m_aDroppingItem[dDROPPING_ITEM_COUNT];	//	ì£½ì—ˆì„ë•Œ ì£¼ëŠ” ì•„ì´í…œë‘˜
+	//â”ƒì‚¬ë§í›„ ë°ì´í„°
+	//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 	
-	CAbilityDefine		m_aAbility[dMAX_MONSTER_ABILITY_COUNT];					//	½ºÅ³
-	WORD				m_aLevelForAddSkillLevel[dMAX_MONSTER_ABILITY_COUNT];	//	½ºÅ³
+	CAbilityDefine		m_aAbility[dMAX_MONSTER_ABILITY_COUNT];					//	ìŠ¤í‚¬
+	WORD				m_aLevelForAddSkillLevel[dMAX_MONSTER_ABILITY_COUNT];	//	ìŠ¤í‚¬
 };
 
 

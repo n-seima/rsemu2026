@@ -26,6 +26,12 @@ cWorldMapFieldInfo::buildNode()
 	{
 		cWM_roadInfo	*lpInfo	=	&m_aRoadList[i];
 
+		if (lpInfo->m_wBeginIndex	>=	dMAX_WM_NODE_COUNT	||
+			lpInfo->m_wEndIndex		>=	dMAX_WM_NODE_COUNT	||
+			lpInfo->m_wBeginIndex	>=	m_iFieldInfoCount	||
+			lpInfo->m_wEndIndex		>=	m_iFieldInfoCount)
+			continue;
+
 		m_aNodeList[lpInfo->m_wBeginIndex].addNode(lpInfo->m_wEndIndex);
 		m_aNodeList[lpInfo->m_wEndIndex].addNode(lpInfo->m_wBeginIndex);
 	}
@@ -66,6 +72,14 @@ cWorldMapFieldInfo::getShortestNode(int _iBegin,int _iEnd,cWM_road *_lpRoad,cWM_
 {
 	int	i;
 
+	if (!_lpRoad || !_lpResultRoad)
+		return;
+	if (_iBegin	<	0	||	_iBegin	>=	dMAX_WM_NODE_COUNT	||
+		_iEnd	<	0	||	_iEnd	>=	dMAX_WM_NODE_COUNT)
+		return;
+	if (_iBegin	>=	m_iFieldInfoCount	||	_iEnd	>=	m_iFieldInfoCount)
+		return;
+
 	_lpRoad->addNode(_iBegin);
 
 	for (i=0;i<m_aNodeList[_iBegin].m_wNodeCount;i++)
@@ -103,6 +117,10 @@ cWorldMapFieldInfo::makePathTo(int _iEnd)
 
 	m_resultPath.m_wNodeCount	=	0;
 
+	if (m_iCurrentFieldIndex	<	0	||	m_iCurrentFieldIndex	>=	m_iFieldInfoCount	||
+		_iEnd				<	0	||	_iEnd				>=	m_iFieldInfoCount)
+		return	FALSE;
+
 	getShortestNode(m_iCurrentFieldIndex,_iEnd,&road,&m_resultPath);
 
 	return	TRUE;
@@ -126,6 +144,9 @@ cWorldMapFieldInfo::readData()
 	m_iSelectFieldSerial		=	-1;
 	m_resultPath.m_wNodeCount	=	0;
 
+	for (i=0;i<dMAX_WM_NODE_COUNT;i++)
+		m_aNodeList[i].reset();
+
 	if	(!decoder.Upload("data/interface/game/wm_field.csv",NULL))
 		return	FALSE;
 
@@ -144,33 +165,18 @@ cWorldMapFieldInfo::readData()
 			strcpy(info.m_strFileHeader,lpstrHeader);
 		
 		iCount				=	decoder.getCSVNumberList(aiList,&bIsEnd);
-		info.m_rectFrame.set(aiList[0],aiList[1],aiList[2]-2,aiList[3]-2);
-
-		if (g_iScreenWidth != 800)
-		{
-			int iRate = (int)(g_iScreenWidth*100)/800;
-			info.m_rectFrame.x1 = (info.m_rectFrame.x1*iRate)/100;
-			info.m_rectFrame.y1 = (info.m_rectFrame.y1*iRate)/100;
-			info.m_rectFrame.x2 = (info.m_rectFrame.x2*iRate)/100;
-			info.m_rectFrame.y2 = (info.m_rectFrame.y2*iRate)/100;
-		}
+		info.m_rectFrame.set(GetWorldMapX(aiList[0]),GetWorldMapY(aiList[1]),GetWorldMapX(aiList[2]-2),GetWorldMapY(aiList[3]-2));
 
 		iCount				=	decoder.getCSVNumberList(aiList,&bIsEnd);
 
-		info.m_wLinkDungeonCount	=	iCount;
+		info.m_wLinkDungeonCount	=	min(iCount,dMAX_LINK_DUNGEON_COUNT);
 
-		for (i=0;i<iCount;i++)
+		for (i=0;i<info.m_wLinkDungeonCount;i++)
 			info.m_awLinkDungeon[i]	=	aiList[i];
 
 		info.m_wIsNew		=	decoder.getCSVNumber(&bIsEnd);
 		iCount				=	decoder.getCSVNumberList(aiList,&bIsEnd);
-		info.m_posFlagPos.Set(aiList[0],aiList[1]);
-		if (g_iScreenWidth != 800)
-		{
-			int iRate = (int)(g_iScreenWidth*100)/800;
-			info.m_posFlagPos.x = (info.m_posFlagPos.x*iRate)/100;
-			info.m_posFlagPos.y = (info.m_posFlagPos.y*iRate)/100;
-		}
+		info.m_posFlagPos.Set(GetWorldMapX(aiList[0]),GetWorldMapY(aiList[1]));
 		info.m_wVillageShape=	decoder.getCSVNumber(&bIsEnd);
 		iCount				=	decoder.getCSVNumberList(aiList,&bIsEnd);
 		info.m_wLowLevel	=	aiList[0];
@@ -179,8 +185,11 @@ cWorldMapFieldInfo::readData()
 		if (bIsEnd	==	TRUE)
 			break;
 
-		memcpy(&m_aFieldList[m_iFieldInfoCount],&info,sizeof(info));
-		m_iFieldInfoCount++;
+		if (m_iFieldInfoCount	<	dMAX_MAIN_FIELD_COUNT)
+		{
+			memcpy(&m_aFieldList[m_iFieldInfoCount],&info,sizeof(info));
+			m_iFieldInfoCount++;
+		}
 	}
 
 	if (!decoder.Upload("data/interface/game/wm_dungeon.csv",NULL))
@@ -194,9 +203,9 @@ cWorldMapFieldInfo::readData()
 
 		dungeonInfo.m_wSerial		=	decoder.getCSVNumber(&bIsEnd);
 		iCount						=	decoder.getCSVNumberList(aiList,&bIsEnd);
-		dungeonInfo.m_wDungeonCount	=	iCount;
+		dungeonInfo.m_wDungeonCount	=	min(iCount,dMAX_WM_MAX_DUNGEON_COUNT);
 
-		for (i=0;i<iCount;i++)
+		for (i=0;i<dungeonInfo.m_wDungeonCount;i++)
 			dungeonInfo.m_awDungeonList[i]	=	aiList[i];
 
 		iCount						=	decoder.getCSVNumberList(aiList,&bIsEnd);
@@ -207,8 +216,11 @@ cWorldMapFieldInfo::readData()
 		if (bIsEnd	==	TRUE)
 			break;
 
-		memcpy(&m_aDungeonList[m_iDungeonInfoCount],&dungeonInfo,sizeof(dungeonInfo));
-		m_iDungeonInfoCount++;
+		if (m_iDungeonInfoCount	<	dMAX_DUNGEON_INFO_COUNT)
+		{
+			memcpy(&m_aDungeonList[m_iDungeonInfoCount],&dungeonInfo,sizeof(dungeonInfo));
+			m_iDungeonInfoCount++;
+		}
 	}
 
 	if (!decoder.Upload("data/interface/game/wm_road.csv",NULL))
@@ -226,25 +238,24 @@ cWorldMapFieldInfo::readData()
 		roadInfo.m_wRoadLength		=	decoder.getCSVNumber(&bIsEnd);
 		iCount						=	decoder.getCSVNumberList(aiList,&bIsEnd);
 
-		for (i=0;i<iCount/2;i++)
+		int	iRoadPointCount	=	min(iCount/2,dMAX_WM_ROAD_POINT_COUNT);
+
+		for (i=0;i<iRoadPointCount;i++)
 		{
-			roadInfo.m_aposRoadPoint[i].x	=	aiList[i*2	];
-			roadInfo.m_aposRoadPoint[i].y	=	aiList[i*2+1];
-			if (g_iScreenWidth != 800)
-			{
-				int iRate = (int)(g_iScreenWidth*100)/800;
-				roadInfo.m_aposRoadPoint[i].x = (roadInfo.m_aposRoadPoint[i].x*iRate)/100;
-				roadInfo.m_aposRoadPoint[i].y = (roadInfo.m_aposRoadPoint[i].y*iRate)/100;
-			}
+			roadInfo.m_aposRoadPoint[i].x	=	GetWorldMapX(aiList[i*2	]);
+			roadInfo.m_aposRoadPoint[i].y	=	GetWorldMapY(aiList[i*2+1]);
 		}
 
-		roadInfo.m_wRoadPointCount	=	iCount/2;
+		roadInfo.m_wRoadPointCount	=	iRoadPointCount;
 
 		if (bIsEnd	==	TRUE)
 			break;
 
-		memcpy(&m_aRoadList[m_iRoadInfoCount],&roadInfo,sizeof(roadInfo));
-		m_iRoadInfoCount++;
+		if (m_iRoadInfoCount	<	dMAX_ROAD_INFO_COUNT)
+		{
+			memcpy(&m_aRoadList[m_iRoadInfoCount],&roadInfo,sizeof(roadInfo));
+			m_iRoadInfoCount++;
+		}
 	}
 
 	buildNode();
@@ -317,6 +328,8 @@ cWorldMapFieldInfo::drawFieldFrame(int _iMode)
 
 		if (g_gwWorldMap.m_vtiQFIndexList[i] == -1)
 			continue;
+		if (g_gwWorldMap.m_vtiQFIndexList[i] < 0 || g_gwWorldMap.m_vtiQFIndexList[i] >= m_iFieldInfoCount)
+			continue;
 
 		cWM_mainFieldInfo	*lpFieldInfo	=	&m_aFieldList[g_gwWorldMap.m_vtiQFIndexList[i]];
 		memcpy(&rect,&lpFieldInfo->m_rectFrame,sizeof(cRECT));
@@ -379,11 +392,17 @@ cWorldMapFieldInfo::getSurfaceField(int _iField)
 {
 	int	i;
 
+	if (_iField	<	0	||	_iField	>=	dMAX_MAP_COUNT)
+		return	-1;
+
 	for (i=0;i<m_iFieldInfoCount;i++)
 		if (m_aFieldList[i].m_wFieldSerial	==	_iField	||	isLinkedDungeon(i,_iField))
 			return	i;
 
 	char	strFileName[64];
+
+	if (strlen(g_aMapSimpleInfo[_iField].m_strFileName)	<	8)
+		return	-1;
 
 	strncpy(strFileName,g_aMapSimpleInfo[_iField].m_strFileName+5,3);
 
@@ -427,6 +446,14 @@ cWorldMapFieldInfo::setCurrentField(int _iCurrentField)
 				m_iCurrentFieldIndex	=	i;
 	}
 
+	if (m_iCurrentFieldIndex	==	-1)
+	{
+		if	(m_iFieldInfoCount	<=	0)
+			return;
+
+		m_iCurrentFieldIndex	=	0;
+	}
+
 	m_iSelectFieldIndex	=	m_iCurrentFieldIndex;
 	m_iSurfaceField		=	m_aFieldList[m_iCurrentFieldIndex].m_wFieldSerial;
 }
@@ -438,15 +465,27 @@ cWorldMapFieldInfo::setCurrentField(int _iCurrentField)
 BOOL
 cWorldMapFieldInfo::isLinkedDungeon(int _iFieldIndex,int _iDungeonSerial)
 {
+	if (_iFieldIndex	<	0	||	_iFieldIndex	>=	m_iFieldInfoCount	||
+		_iFieldIndex	>=	dMAX_MAIN_FIELD_COUNT)
+		return	FALSE;
+
 	cWM_mainFieldInfo	*lpInfo	=	&m_aFieldList[_iFieldIndex];
 
-	for (int i=0;i<lpInfo->m_wLinkDungeonCount;i++)
+	int	iLinkDungeonCount	=	min(lpInfo->m_wLinkDungeonCount,dMAX_LINK_DUNGEON_COUNT);
+
+	for (int i=0;i<iLinkDungeonCount;i++)
 	{
 		int	iDungeonIndex			=	lpInfo->m_awLinkDungeon[i];
 
+		if (iDungeonIndex	<	0	||	iDungeonIndex	>=	m_iDungeonInfoCount	||
+			iDungeonIndex	>=	dMAX_DUNGEON_INFO_COUNT)
+			continue;
+
 		cWM_dungeonInfo	*lpDungeon	=	&m_aDungeonList[iDungeonIndex];
 
-		for  (int j=0;j<lpDungeon->m_wDungeonCount;j++)
+		int	iDungeonCount	=	min(lpDungeon->m_wDungeonCount,dMAX_WM_MAX_DUNGEON_COUNT);
+
+		for  (int j=0;j<iDungeonCount;j++)
 			if (lpDungeon->m_awDungeonList[j]	==	_iDungeonSerial)
 				return	TRUE;
 	}

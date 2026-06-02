@@ -1915,25 +1915,36 @@ CGamePlay::DrawBottomInterface()
 		if	(g_hero.m_iExperience > 0)
 		{
 			LONGLONG	llExp	=	g_hero.getExpForLevelUp();
-			LONGLONG	llWidth	=	iGaugeWidth;
-			llWidth				=	llWidth*g_hero.getCurrentLevelExp()/llExp;
+			if (llExp	>	0)
+			{
+				LONGLONG	llWidth	=	iGaugeWidth;
+				llWidth				=	llWidth*g_hero.getCurrentLevelExp()/llExp;
 
-			g_sprGameBottomInterface.putClipedImage(328+g_iCorrectBI_X,537+g_iCorrectBI_Y,eBII_EXP_GAUGE,llWidth,100);
+				g_sprGameBottomInterface.putClipedImage(328+g_iCorrectBI_X,537+g_iCorrectBI_Y,eBII_EXP_GAUGE,llWidth,100);
 
 //	스킬 포인트 EXP 게이지
-			LONGLONG	llCurrentLevelMaxSkillPoint	=	min(g_hero.m_iLevel+1,100);
-			LONGLONG	llCurrentSkillPoint			=	llCurrentLevelMaxSkillPoint*g_hero.m_iExperience/llExp;
-			LONGLONG	llNextSkillPoint			=	llCurrentSkillPoint+1;
+				LONGLONG	llCurrentLevelMaxSkillPoint	=	min(g_hero.m_iLevel+1,100);
+				if (llCurrentLevelMaxSkillPoint	>	0)
+				{
 
-			LONGLONG	llDestExp					=	llNextSkillPoint*llExp/llCurrentLevelMaxSkillPoint;
-			LONGLONG	llBaseExp					=	llCurrentSkillPoint*llExp/llCurrentLevelMaxSkillPoint;
-			LONGLONG	llExpGap					=	llDestExp-llBaseExp;
-			LONGLONG	llCurrentExp				=	g_hero.m_iExperience-llBaseExp;
+					LONGLONG	llCurrentSkillPoint			=	llCurrentLevelMaxSkillPoint*g_hero.m_iExperience/llExp;
+					LONGLONG	llNextSkillPoint			=	llCurrentSkillPoint+1;
 
-			llWidth	=	iGaugeWidth*llCurrentExp/llExpGap;
-			llWidth	=	min(llWidth,iGaugeWidth);
+					LONGLONG	llDestExp					=	llNextSkillPoint*llExp/llCurrentLevelMaxSkillPoint;
+					LONGLONG	llBaseExp					=	llCurrentSkillPoint*llExp/llCurrentLevelMaxSkillPoint;
+					LONGLONG	llExpGap					=	llDestExp-llBaseExp;
+					LONGLONG	llCurrentExp				=	g_hero.m_iExperience-llBaseExp;
 
-			g_sprGameBottomInterface.putClipedImage(406+iGaugeWidth-llWidth+g_iCorrectBI_X,537+g_iCorrectBI_Y,eBII_SKILL_EXP_GAUGE,llWidth,100);
+					if (llExpGap	>	0)
+					{
+
+						llWidth	=	iGaugeWidth*llCurrentExp/llExpGap;
+						llWidth	=	min(llWidth,iGaugeWidth);
+
+						g_sprGameBottomInterface.putClipedImage(406+iGaugeWidth-llWidth+g_iCorrectBI_X,537+g_iCorrectBI_Y,eBII_SKILL_EXP_GAUGE,llWidth,100);
+					}
+				}
+			}
 		}
 	}	//	EXP바 그리기
 

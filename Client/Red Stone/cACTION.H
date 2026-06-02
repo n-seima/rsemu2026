@@ -9,40 +9,40 @@
 #define	dMINIPET_ACT_SUMMON		3
 #define	dMINIPET_ACT_RELEASE	4
 
-//	°øÅë ¿¡´Ï¸ŞÀÌ¼Ç ºĞ·ù
-#define	dACT_WALK				0		//	°È´Â´Ù.
-#define	dACT_RUN				1		//	¶Ú´Ù.
-#define	dACT_READY				2		//	Á¤Áö(ÀüÅõÁß)
-#define	dACT_HIT				3		//	¸Â¾Ò´Ù.
-#define	dACT_CHANGE1			4		//	¹«±â ¹Ù²Ş
-#define	dACT_CHANGE2			5		//	¹«±â ¹Ù²Ş
-#define	dACT_DEAD				6		//	Á×À½
-#define	dACT_SITDOWN			7		//	¾É±â
-#define	dACT_ACTION_1			8		//	¾×¼Ç 1
-#define	dACT_ACTION_2			9		//	¾×¼Ç 2
-#define	dACT_ACTION_3			10		//	¾×¼Ç 3
-#define	dACT_ACTION_4			11		//	¾×¼Ç 4
-#define	dACT_ACTION_5			12		//	¾×¼Ç 5
-#define	dACT_ACTION_6			13		//	¾×¼Ç 6
-#define	dACT_ACTION_7			14		//	¾×¼Ç 7
-#define	dACT_ACTION_8			15		//	¾×¼Ç 8
-#define	dACT_ACTION_9			16		//	¾×¼Ç 9
-#define	dACT_ACTION_10			17		//	¾×¼Ç 10
-#define	dACT_ACTION_11			18		//	¾×¼Ç 11
-#define	dACT_ACTION_12			19		//	¾×¼Ç 12
-#define	dACT_ACTION_13			20		//	¾×¼Ç 13
-#define	dACT_ACTION_14			21		//	¾×¼Ç 14
-#define	dACT_ACTION_15			22		//	¾×¼Ç 15
-#define	dACT_ACTION_16			23		//	¾×¼Ç 16
+//	ê³µí†µ ì—ë‹ˆë©”ì´ì…˜ ë¶„ë¥˜
+#define	dACT_WALK				0		//	ê±·ëŠ”ë‹¤.
+#define	dACT_RUN				1		//	ë›´ë‹¤.
+#define	dACT_READY				2		//	ì •ì§€(ì „íˆ¬ì¤‘)
+#define	dACT_HIT				3		//	ë§ì•˜ë‹¤.
+#define	dACT_CHANGE1			4		//	ë¬´ê¸° ë°”ê¿ˆ
+#define	dACT_CHANGE2			5		//	ë¬´ê¸° ë°”ê¿ˆ
+#define	dACT_DEAD				6		//	ì£½ìŒ
+#define	dACT_SITDOWN			7		//	ì•‰ê¸°
+#define	dACT_ACTION_1			8		//	ì•¡ì…˜ 1
+#define	dACT_ACTION_2			9		//	ì•¡ì…˜ 2
+#define	dACT_ACTION_3			10		//	ì•¡ì…˜ 3
+#define	dACT_ACTION_4			11		//	ì•¡ì…˜ 4
+#define	dACT_ACTION_5			12		//	ì•¡ì…˜ 5
+#define	dACT_ACTION_6			13		//	ì•¡ì…˜ 6
+#define	dACT_ACTION_7			14		//	ì•¡ì…˜ 7
+#define	dACT_ACTION_8			15		//	ì•¡ì…˜ 8
+#define	dACT_ACTION_9			16		//	ì•¡ì…˜ 9
+#define	dACT_ACTION_10			17		//	ì•¡ì…˜ 10
+#define	dACT_ACTION_11			18		//	ì•¡ì…˜ 11
+#define	dACT_ACTION_12			19		//	ì•¡ì…˜ 12
+#define	dACT_ACTION_13			20		//	ì•¡ì…˜ 13
+#define	dACT_ACTION_14			21		//	ì•¡ì…˜ 14
+#define	dACT_ACTION_15			22		//	ì•¡ì…˜ 15
+#define	dACT_ACTION_16			23		//	ì•¡ì…˜ 16
 
-#define	dACT_RIDE_DOG_MOVE		12		//	°³Å¸°í ÀÌµ¿
-#define	dACT_RIDE_DOG_READY		13		//	°³Å¸°í Á¤Áö
-#define	dACT_RIDE_DOG_ATTACK	14		//	°³Å¸°í °ø°İ
+#define	dACT_RIDE_DOG_MOVE		12		//	ê°œíƒ€ê³  ì´ë™
+#define	dACT_RIDE_DOG_READY		13		//	ê°œíƒ€ê³  ì •ì§€
+#define	dACT_RIDE_DOG_ATTACK	14		//	ê°œíƒ€ê³  ê³µê²©
 
-#define	dACT_MONSTER_BLOCKING	16		//	¾×¼Ç 9
+#define	dACT_MONSTER_BLOCKING	16		//	ì•¡ì…˜ 9
 
-#define	dACT_RIDE_DOG_ACTION_COUNT		3	//	°³Å¸°í ÇÏ´Â ¾×¼Ç ¼ö
-#define	dACT_PRINCE_JUMPPING_SKIPPING	18	//	°³Å¸°í ÇÏ´Â ¾×¼Ç ¼ö
+#define	dACT_RIDE_DOG_ACTION_COUNT		3	//	ê°œíƒ€ê³  í•˜ëŠ” ì•¡ì…˜ ìˆ˜
+#define	dACT_PRINCE_JUMPPING_SKIPPING	18	//	ê°œíƒ€ê³  í•˜ëŠ” ì•¡ì…˜ ìˆ˜
 
 
 const	int	ct_aBlockingAction[16]	=
@@ -57,8 +57,8 @@ const	int	ct_aBlockingAction[16]	=
 	dACT_HIT,dACT_HIT,
 };
 
-#define	dACT_DEFAULT_ATTACK		100		//	±âº» °ø°İ ¾×¼Ç
-#define	dACT_DEFAULT_MAGIC		101		//	±âº» ¸¶¹ı ¾×¼Ç
+#define	dACT_DEFAULT_ATTACK		100		//	ê¸°ë³¸ ê³µê²© ì•¡ì…˜
+#define	dACT_DEFAULT_MAGIC		101		//	ê¸°ë³¸ ë§ˆë²• ì•¡ì…˜
 
 #define	dACT_BLOCKER			19
 

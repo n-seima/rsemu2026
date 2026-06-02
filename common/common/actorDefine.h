@@ -51,7 +51,7 @@
 #define	dCRITICAL_DAMAGE_FACTOR					2
 #define	dDOUBLE_CRITICAL_DAMAGE_FACTOR			4
 #define	dHARD_BLOW_DAMAGE_FACTOR				3
-#define dPET_LOYALTY_MAX						2000	// 09.09.22 Ãæ¼ºµµ ÃÖ´ëÄ¡.
+#define dPET_LOYALTY_MAX						2000	// 09.09.22 ì¶©ì„±ë„ ìµœëŒ€ì¹˜.
 class	cEnchantedMagicInfoForUpkeep
 {
 public:
@@ -65,13 +65,13 @@ public:
 };
 
 //
-//	°¡Àå ±âº»ÀûÀÎ ½ºÅ¸ÀÏ
+//	ê°€ìž¥ ê¸°ë³¸ì ì¸ ìŠ¤íƒ€ì¼
 class	cACTOR_FACTOR_TYPE1_FOR_UPKEEP
 {
 public:
-	short	m_sCorrectValue;//	ÀÏ½ÃÀûÀ¸·Î ´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	WORD	m_wTime;		//	À¯Áö ½Ã°£
-	WORD	m_bf1IsCanNotApplySameEffect	:	1;	//1	Áßº¹ºÒ°¡.
+	short	m_sCorrectValue;//	ì¼ì‹œì ìœ¼ë¡œ ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	WORD	m_wTime;		//	ìœ ì§€ ì‹œê°„
+	WORD	m_bf1IsCanNotApplySameEffect	:	1;	//1	ì¤‘ë³µë¶ˆê°€.
 	WORD	:0;
 };
 
@@ -79,12 +79,12 @@ public:
 class	cACTOR_FACTOR_TYPE1
 {
 public:
-	short			m_sValue;		//	ÀåºñÇÑ »óÅÂ¿¡¼­ÀÇ ¼öÄ¡
+	short			m_sValue;		//	ìž¥ë¹„í•œ ìƒíƒœì—ì„œì˜ ìˆ˜ì¹˜
 	short			m_sFixValue;
 
-	short			m_sCorrectValue;//	ÀÏ½ÃÀûÀ¸·Î ´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	WORD			m_wTime;		//	À¯Áö ½Ã°£
-	WORD			m_bf1IsCanNotApplySameEffect	:	1;	//1	Áßº¹ºÒ°¡.
+	short			m_sCorrectValue;//	ì¼ì‹œì ìœ¼ë¡œ ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	WORD			m_wTime;		//	ìœ ì§€ ì‹œê°„
+	WORD			m_bf1IsCanNotApplySameEffect	:	1;	//1	ì¤‘ë³µë¶ˆê°€.
 	WORD			:0;
 	void			setUpkeepInfo(cACTOR_FACTOR_TYPE1_FOR_UPKEEP *_lpInfo);
 	void			getUpkeepInfo(cACTOR_FACTOR_TYPE1_FOR_UPKEEP *_lpInfo);
@@ -92,14 +92,14 @@ public:
 	inline	BOOL	isWrong()
 	{
 		if (m_sCorrectValue				<	0)
-			return	TRUE;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
+			return	TRUE;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
 		
 		return	FALSE;
 	}
 
 	inline	BOOL	isGood()
 	{
-		if (m_sCorrectValue				>	0)	return	TRUE;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
+		if (m_sCorrectValue				>	0)	return	TRUE;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
 
 		return	FALSE;
 	}
@@ -132,7 +132,7 @@ public:
 		}
 	}
 
-	inline	BOOL	decreaseTime()	//	½Ã°£ ÁÙ¿©~~
+	inline	BOOL	decreaseTime()	//	ì‹œê°„ ì¤„ì—¬~~
 	{
 		if (m_wTime	==	0)	return FALSE;
 
@@ -155,14 +155,14 @@ public:
 
 	inline	void	resetAidData()
 	{
-		m_sCorrectValue	=	0;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		m_wTime			=	0;	//	À¯Áö ½Ã°£
+		m_sCorrectValue	=	0;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		m_wTime			=	0;	//	ìœ ì§€ ì‹œê°„
 		m_bf1IsCanNotApplySameEffect	=	FALSE;
 	}
 
-	inline	void	resetEquipmentValue()	//	ÀåºñÇÑ »óÅÂ¿¡¼­ÀÇ ¼öÄ¡ ÃÊ±âÈ­
+	inline	void	resetEquipmentValue()	//	ìž¥ë¹„í•œ ìƒíƒœì—ì„œì˜ ìˆ˜ì¹˜ ì´ˆê¸°í™”
 	{
-		m_sValue		=	0;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
+		m_sValue		=	0;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
 		m_sFixValue		=	0x7fff;
 	}
 
@@ -254,12 +254,12 @@ public:
 class	cACTOR_FACTOR_TYPE2_FOR_UPKEEP
 {
 public:
-	short			m_sCorrectValue;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	short			m_sCorrectPercentageValue;			//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
-	WORD			m_wTimeForCorrectValue;				//	ÃÊ
-	WORD			m_wTimeForCorrectPercentageValue;	//	ÃÊ
-	WORD			m_bf1IsCanNotApplySameEffect		:	1;	//1	Áßº¹ºÒ°¡.	
-	WORD			m_bf1IsCanNotApplySameEffectPercent	:	1;	//2	Áßº¹ºÒ°¡.
+	short			m_sCorrectValue;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	short			m_sCorrectPercentageValue;			//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
+	WORD			m_wTimeForCorrectValue;				//	ì´ˆ
+	WORD			m_wTimeForCorrectPercentageValue;	//	ì´ˆ
+	WORD			m_bf1IsCanNotApplySameEffect		:	1;	//1	ì¤‘ë³µë¶ˆê°€.	
+	WORD			m_bf1IsCanNotApplySameEffectPercent	:	1;	//2	ì¤‘ë³µë¶ˆê°€.
 	WORD			:0;
 };	
 
@@ -268,33 +268,33 @@ public:
 class	cACTOR_FACTOR_TYPE2
 {
 public:
-	int				m_iValue;							//	ÀåºñÇÑ »óÅÂ¿¡¼­ÀÇ ¼öÄ¡
+	int				m_iValue;							//	ìž¥ë¹„í•œ ìƒíƒœì—ì„œì˜ ìˆ˜ì¹˜
 
-	short			m_sCorrectValueByPrefix;			//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	short			m_sCorrectPercentageValueByPrefix;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
+	short			m_sCorrectValueByPrefix;			//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	short			m_sCorrectPercentageValueByPrefix;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
 
-	short			m_sCorrectValue;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	short			m_sCorrectPercentageValue;			//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
-	WORD			m_wTimeForCorrectValue;				//	ÃÊ
-	WORD			m_wTimeForCorrectPercentageValue;	//	ÃÊ
-	WORD			m_bf1IsCanNotApplySameEffect		:	1;	//1	Áßº¹ºÒ°¡.	
-	WORD			m_bf1IsCanNotApplySameEffectPercent	:	1;	//2	Áßº¹ºÒ°¡.
+	short			m_sCorrectValue;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	short			m_sCorrectPercentageValue;			//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
+	WORD			m_wTimeForCorrectValue;				//	ì´ˆ
+	WORD			m_wTimeForCorrectPercentageValue;	//	ì´ˆ
+	WORD			m_bf1IsCanNotApplySameEffect		:	1;	//1	ì¤‘ë³µë¶ˆê°€.	
+	WORD			m_bf1IsCanNotApplySameEffectPercent	:	1;	//2	ì¤‘ë³µë¶ˆê°€.
 	WORD			:0;
 	void			setUpkeepInfo(cACTOR_FACTOR_TYPE2_FOR_UPKEEP *_lpInfo);
 	void			getUpkeepInfo(cACTOR_FACTOR_TYPE2_FOR_UPKEEP *_lpInfo);
 
 	inline	BOOL	isWrong()
 	{
-		if (m_sCorrectValue				<	0)	return	TRUE;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		if (m_sCorrectPercentageValue	<	0)	return	TRUE;			//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
+		if (m_sCorrectValue				<	0)	return	TRUE;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		if (m_sCorrectPercentageValue	<	0)	return	TRUE;			//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
 
 		return	FALSE;
 	}
 
 	inline	BOOL	isGood()
 	{
-		if (m_sCorrectValue				>	0)	return	TRUE;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		if (m_sCorrectPercentageValue	>	0)	return	TRUE;			//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
+		if (m_sCorrectValue				>	0)	return	TRUE;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		if (m_sCorrectPercentageValue	>	0)	return	TRUE;			//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
 
 		return	FALSE;
 	}
@@ -346,7 +346,7 @@ public:
 	inline	int		getCorrectValue()			{return	m_sCorrectValueByPrefix+m_sCorrectValue;}
 	inline	int		getCorrectPercentageValue()	{return	m_sCorrectPercentageValueByPrefix+m_sCorrectPercentageValue;}
 
-	inline	BOOL	decreaseTime()	//	½Ã°£ ÁÙ¿©~~
+	inline	BOOL	decreaseTime()	//	ì‹œê°„ ì¤„ì—¬~~
 	{
 		if (m_wTimeForCorrectValue)
 		{
@@ -375,15 +375,15 @@ public:
 
 	inline	void	resetAidData()
 	{
-		m_sCorrectValue						=	0;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		m_sCorrectPercentageValue			=	0;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		m_wTimeForCorrectValue				=	0;		//	À¯Áö ½Ã°£
-		m_wTimeForCorrectPercentageValue	=	0;		//	À¯Áö ½Ã°£
-		m_bf1IsCanNotApplySameEffect		=	FALSE;	//	Áßº¹ºÒ°¡
-		m_bf1IsCanNotApplySameEffectPercent	=	FALSE;	//	Áßº¹ºÒ°¡
+		m_sCorrectValue						=	0;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		m_sCorrectPercentageValue			=	0;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		m_wTimeForCorrectValue				=	0;		//	ìœ ì§€ ì‹œê°„
+		m_wTimeForCorrectPercentageValue	=	0;		//	ìœ ì§€ ì‹œê°„
+		m_bf1IsCanNotApplySameEffect		=	FALSE;	//	ì¤‘ë³µë¶ˆê°€
+		m_bf1IsCanNotApplySameEffectPercent	=	FALSE;	//	ì¤‘ë³µë¶ˆê°€
 	}
 
-	inline	void	resetPrefixData()	//	Á¢µÎ»ç¿¡ ÀÇÇØ º¸Á¤µÇ´Â ¼öÄ¡¸¸ ÃÊ±âÈ­
+	inline	void	resetPrefixData()	//	ì ‘ë‘ì‚¬ì— ì˜í•´ ë³´ì •ë˜ëŠ” ìˆ˜ì¹˜ë§Œ ì´ˆê¸°í™”
 	{
 		m_sCorrectValueByPrefix			=	0;
 		m_sCorrectPercentageValueByPrefix=	0;
@@ -501,16 +501,16 @@ public:
 class	cACTOR_FACTOR_TYPE3_FOR_UPKEEP
 {
 public:
-	short			m_sCorrectValue;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	short			m_sCorrectPercentageValue;			//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
-	WORD			m_wTimeForCorrectValue;				//	ÃÊ
-	WORD			m_wTimeForCorrectPercentageValue;	//	ÃÊ
+	short			m_sCorrectValue;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	short			m_sCorrectPercentageValue;			//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
+	WORD			m_wTimeForCorrectValue;				//	ì´ˆ
+	WORD			m_wTimeForCorrectPercentageValue;	//	ì´ˆ
 	short			m_sCorrectPercentageValueForPetCommand;
-	WORD			m_wTimeForCorrectPercentageValueForPetCommand;	//	ÃÊ
+	WORD			m_wTimeForCorrectPercentageValueForPetCommand;	//	ì´ˆ
 
-	WORD			m_bf1IsCanNotApplySameEffect			:1	;	//1	Áßº¹ºÒ°¡
-	WORD			m_bf1IsCanNotApplySameEffectPercent		:1	;	//2	Áßº¹ºÒ°¡
-	WORD			m_bf1IsCanNotApplySameEffectPetCommand	:1	;	//3	Áßº¹ºÒ°¡
+	WORD			m_bf1IsCanNotApplySameEffect			:1	;	//1	ì¤‘ë³µë¶ˆê°€
+	WORD			m_bf1IsCanNotApplySameEffectPercent		:1	;	//2	ì¤‘ë³µë¶ˆê°€
+	WORD			m_bf1IsCanNotApplySameEffectPetCommand	:1	;	//3	ì¤‘ë³µë¶ˆê°€
 	WORD			:0;
 };
 
@@ -519,17 +519,17 @@ public:
 class	cACTOR_FACTOR_TYPE3
 {
 public:
-	short			m_sCorrectValueByPrefix;			//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	short			m_sCorrectPercentageValueByPrefix;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
-	short			m_sCorrectValue;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	short			m_sCorrectPercentageValue;			//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
-	WORD			m_wTimeForCorrectValue;				//	ÃÊ
-	WORD			m_wTimeForCorrectPercentageValue;	//	ÃÊ
+	short			m_sCorrectValueByPrefix;			//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	short			m_sCorrectPercentageValueByPrefix;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
+	short			m_sCorrectValue;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	short			m_sCorrectPercentageValue;			//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
+	WORD			m_wTimeForCorrectValue;				//	ì´ˆ
+	WORD			m_wTimeForCorrectPercentageValue;	//	ì´ˆ
 	short			m_sCorrectPercentageValueForPetCommand;
-	WORD			m_wTimeForCorrectPercentageValueForPetCommand;	//	ÃÊ
-	WORD			m_bf1IsCanNotApplySameEffect			:1	;	//1	Áßº¹ºÒ°¡
-	WORD			m_bf1IsCanNotApplySameEffectPercent		:1	;	//2	Áßº¹ºÒ°¡
-	WORD			m_bf1IsCanNotApplySameEffectPetCommand	:1	;	//3	Áßº¹ºÒ°¡
+	WORD			m_wTimeForCorrectPercentageValueForPetCommand;	//	ì´ˆ
+	WORD			m_bf1IsCanNotApplySameEffect			:1	;	//1	ì¤‘ë³µë¶ˆê°€
+	WORD			m_bf1IsCanNotApplySameEffectPercent		:1	;	//2	ì¤‘ë³µë¶ˆê°€
+	WORD			m_bf1IsCanNotApplySameEffectPetCommand	:1	;	//3	ì¤‘ë³µë¶ˆê°€
 	WORD			:0;
 	void			setUpkeepInfo(cACTOR_FACTOR_TYPE3_FOR_UPKEEP *_lpInfo);
 	void			getUpkeepInfo(cACTOR_FACTOR_TYPE3_FOR_UPKEEP *_lpInfo);
@@ -539,17 +539,17 @@ public:
 
 	inline	BOOL	isWrong()
 	{
-		if (m_sCorrectValue				<	0)	return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		if (m_sCorrectPercentageValue	<	0)	return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
-		if (m_sCorrectPercentageValueForPetCommand<	0)	return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
+		if (m_sCorrectValue				<	0)	return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		if (m_sCorrectPercentageValue	<	0)	return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
+		if (m_sCorrectPercentageValueForPetCommand<	0)	return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
 		
 		return	FALSE;
 	}
 	inline	BOOL	isGood()
 	{
-		if (m_sCorrectValue				>	0)	return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		if (m_sCorrectPercentageValue	>	0)	return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
-		if (m_sCorrectPercentageValueForPetCommand>	0)	return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
+		if (m_sCorrectValue				>	0)	return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		if (m_sCorrectPercentageValue	>	0)	return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
+		if (m_sCorrectPercentageValueForPetCommand>	0)	return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
 
 		return	FALSE;
 	}
@@ -569,7 +569,7 @@ public:
 		if (m_sCorrectPercentageValueForPetCommand	<	0)
 		{
 			m_sCorrectPercentageValueForPetCommand			=	0;
-			m_wTimeForCorrectPercentageValueForPetCommand	=	0;	//	ÃÊ
+			m_wTimeForCorrectPercentageValueForPetCommand	=	0;	//	ì´ˆ
 		}
 	}
 
@@ -611,11 +611,11 @@ public:
 		if (m_sCorrectPercentageValueForPetCommand	>	0)
 		{
 			m_sCorrectPercentageValueForPetCommand			=	0;
-			m_wTimeForCorrectPercentageValueForPetCommand	=	0;	//	ÃÊ
+			m_wTimeForCorrectPercentageValueForPetCommand	=	0;	//	ì´ˆ
 		}
 	}
 
-	inline	BOOL	decreaseTime()	//	½Ã°£ ÁÙ¿©~~
+	inline	BOOL	decreaseTime()	//	ì‹œê°„ ì¤„ì—¬~~
 	{
 		if (m_wTimeForCorrectValue)
 		{
@@ -657,18 +657,18 @@ public:
 
 	inline	void	resetAidData()
 	{
-		m_sCorrectValue					=	0;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		m_sCorrectPercentageValue		=	0;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		m_wTimeForCorrectValue			=	0;		//	À¯Áö ½Ã°£
-		m_wTimeForCorrectPercentageValue=	0;		//	À¯Áö ½Ã°£
+		m_sCorrectValue					=	0;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		m_sCorrectPercentageValue		=	0;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		m_wTimeForCorrectValue			=	0;		//	ìœ ì§€ ì‹œê°„
+		m_wTimeForCorrectPercentageValue=	0;		//	ìœ ì§€ ì‹œê°„
 		m_sCorrectPercentageValueForPetCommand			=	0;
-		m_wTimeForCorrectPercentageValueForPetCommand	=	0;	//	ÃÊ
+		m_wTimeForCorrectPercentageValueForPetCommand	=	0;	//	ì´ˆ
 		m_bf1IsCanNotApplySameEffect					=	FALSE;
 		m_bf1IsCanNotApplySameEffectPercent				=	FALSE;
 		m_bf1IsCanNotApplySameEffectPetCommand			=	FALSE;
 	}
 
-	inline	void	resetPrefixData()	//	Á¢µÎ»ç¿¡ ÀÇÇØ º¸Á¤µÇ´Â ¼öÄ¡¸¸ ÃÊ±âÈ­
+	inline	void	resetPrefixData()	//	ì ‘ë‘ì‚¬ì— ì˜í•´ ë³´ì •ë˜ëŠ” ìˆ˜ì¹˜ë§Œ ì´ˆê¸°í™”
 	{
 		m_sCorrectValueByPrefix			=	0;
 		m_sCorrectPercentageValueByPrefix=	0;
@@ -843,17 +843,17 @@ public:
 class	cACTOR_FACTOR_TYPE4_FOR_UPKEEP
 {
 public:
-	short			m_sCorrectValue;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	short			m_sCorrectPercentageValue;			//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
-	WORD			m_wTimeForCorrectValue;				//	ÃÊ
-	WORD			m_wTimeForCorrectPercentageValue;	//	ÃÊ
+	short			m_sCorrectValue;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	short			m_sCorrectPercentageValue;			//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
+	WORD			m_wTimeForCorrectValue;				//	ì´ˆ
+	WORD			m_wTimeForCorrectPercentageValue;	//	ì´ˆ
 
 	short			m_sCorrectPercentageValueForPetCommand;
-	WORD			m_wTimeForCorrectPercentageValueForPetCommand;	//	ÃÊ
+	WORD			m_wTimeForCorrectPercentageValueForPetCommand;	//	ì´ˆ
 
-	WORD			m_bf1IsCanNotApplySameEffect			:1	;	//1	Áßº¹ºÒ°¡
-	WORD			m_bf1IsCanNotApplySameEffectPercent		:1	;	//2	Áßº¹ºÒ°¡
-	WORD			m_bf1IsCanNotApplySameEffectPetCommand	:1	;	//3	Áßº¹ºÒ°¡
+	WORD			m_bf1IsCanNotApplySameEffect			:1	;	//1	ì¤‘ë³µë¶ˆê°€
+	WORD			m_bf1IsCanNotApplySameEffectPercent		:1	;	//2	ì¤‘ë³µë¶ˆê°€
+	WORD			m_bf1IsCanNotApplySameEffectPetCommand	:1	;	//3	ì¤‘ë³µë¶ˆê°€
 	WORD			:0;
 };
 
@@ -862,20 +862,20 @@ public:
 class	cACTOR_FACTOR_TYPE4
 {
 public:
-	int				m_iValue;							//	ÀåºñÇÑ »óÅÂ¿¡¼­ÀÇ ¼öÄ¡
+	int				m_iValue;							//	ìž¥ë¹„í•œ ìƒíƒœì—ì„œì˜ ìˆ˜ì¹˜
 
-	short			m_sCorrectValueByPrefix;				//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	short			m_sCorrectPercentageValueByPrefix;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
-	short			m_sCorrectValue;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	short			m_sCorrectPercentageValue;			//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
-	WORD			m_wTimeForCorrectValue;				//	ÃÊ
-	WORD			m_wTimeForCorrectPercentageValue;	//	ÃÊ
+	short			m_sCorrectValueByPrefix;				//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	short			m_sCorrectPercentageValueByPrefix;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
+	short			m_sCorrectValue;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	short			m_sCorrectPercentageValue;			//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
+	WORD			m_wTimeForCorrectValue;				//	ì´ˆ
+	WORD			m_wTimeForCorrectPercentageValue;	//	ì´ˆ
 
 	short			m_sCorrectPercentageValueForPetCommand;
-	WORD			m_wTimeForCorrectPercentageValueForPetCommand;	//	ÃÊ
-	WORD			m_bf1IsCanNotApplySameEffect			:1	;	//1	Áßº¹ºÒ°¡
-	WORD			m_bf1IsCanNotApplySameEffectPercent		:1	;	//2	Áßº¹ºÒ°¡
-	WORD			m_bf1IsCanNotApplySameEffectPetCommand	:1	;	//3	Áßº¹ºÒ°¡
+	WORD			m_wTimeForCorrectPercentageValueForPetCommand;	//	ì´ˆ
+	WORD			m_bf1IsCanNotApplySameEffect			:1	;	//1	ì¤‘ë³µë¶ˆê°€
+	WORD			m_bf1IsCanNotApplySameEffectPercent		:1	;	//2	ì¤‘ë³µë¶ˆê°€
+	WORD			m_bf1IsCanNotApplySameEffectPetCommand	:1	;	//3	ì¤‘ë³µë¶ˆê°€
 	WORD			:0;
 
 	void			setUpkeepInfo(cACTOR_FACTOR_TYPE4_FOR_UPKEEP *_lpInfo);
@@ -884,11 +884,11 @@ public:
 	inline	BOOL	isWrong()
 	{
 		if (m_wTimeForCorrectValue	&&	m_sCorrectValue				<	0)
-			return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
+			return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
 		if (m_wTimeForCorrectPercentageValue	&&	m_sCorrectPercentageValue	<	0)
-			return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
+			return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
 		if (m_wTimeForCorrectPercentageValueForPetCommand	&&	m_sCorrectPercentageValueForPetCommand	<	0)
-			return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
+			return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
 
 		return	FALSE;
 	}
@@ -896,11 +896,11 @@ public:
 	inline	BOOL	isGood()
 	{
 		if (m_wTimeForCorrectValue	&&	m_sCorrectValue				>	0)
-			return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
+			return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
 		if (m_wTimeForCorrectPercentageValue	&&	m_sCorrectPercentageValue	>	0)
-			return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
+			return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
 		if (m_wTimeForCorrectPercentageValueForPetCommand	&&	m_sCorrectPercentageValueForPetCommand	>	0)
-			return	TRUE;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡(ÆÛ¼¾Æ¼Áö)
+			return	TRUE;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜(í¼ì„¼í‹°ì§€)
 
 		return	FALSE;
 	}
@@ -950,11 +950,11 @@ public:
 		if (m_sCorrectPercentageValueForPetCommand	>	0)
 		{
 			m_sCorrectPercentageValueForPetCommand			=	0;
-			m_wTimeForCorrectPercentageValueForPetCommand	=	0;	//	ÃÊ
+			m_wTimeForCorrectPercentageValueForPetCommand	=	0;	//	ì´ˆ
 		}
 	}
 
-	inline	BOOL	decreaseTime()	//	½Ã°£ ÁÙ¿©~~
+	inline	BOOL	decreaseTime()	//	ì‹œê°„ ì¤„ì—¬~~
 	{
 		if (m_wTimeForCorrectValue)
 		{
@@ -997,18 +997,18 @@ public:
 
 	inline	void	resetAidData()
 	{
-		m_sCorrectValue					=	0;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		m_sCorrectPercentageValue		=	0;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		m_wTimeForCorrectValue			=	0;	//	À¯Áö ½Ã°£
-		m_wTimeForCorrectPercentageValue=	0;	//	À¯Áö ½Ã°£
+		m_sCorrectValue					=	0;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		m_sCorrectPercentageValue		=	0;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		m_wTimeForCorrectValue			=	0;	//	ìœ ì§€ ì‹œê°„
+		m_wTimeForCorrectPercentageValue=	0;	//	ìœ ì§€ ì‹œê°„
 		m_sCorrectPercentageValueForPetCommand			=	0;
-		m_wTimeForCorrectPercentageValueForPetCommand	=	0;	//	ÃÊ
+		m_wTimeForCorrectPercentageValueForPetCommand	=	0;	//	ì´ˆ
 		m_bf1IsCanNotApplySameEffect					=	FALSE;
 		m_bf1IsCanNotApplySameEffectPercent				=	FALSE;
 		m_bf1IsCanNotApplySameEffectPetCommand			=	FALSE;
 	}
 
-	inline	void	resetPrefixData()	//	Á¢µÎ»ç¿¡ ÀÇÇØ º¸Á¤µÇ´Â ¼öÄ¡¸¸ ÃÊ±âÈ­
+	inline	void	resetPrefixData()	//	ì ‘ë‘ì‚¬ì— ì˜í•´ ë³´ì •ë˜ëŠ” ìˆ˜ì¹˜ë§Œ ì´ˆê¸°í™”
 	{
 		m_sCorrectValueByPrefix			=	0;
 		m_sCorrectPercentageValueByPrefix=	0;
@@ -1174,20 +1174,20 @@ public:
 class	cACTOR_FACTOR_TYPE5_FOR_UPKEEP
 {
 public:
-	short			m_sCorrectValue;//	ÀÏ½ÃÀûÀ¸·Î ´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
+	short			m_sCorrectValue;//	ì¼ì‹œì ìœ¼ë¡œ ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
 	short			m_sRange;
-	WORD			m_wTime;		//	À¯Áö ½Ã°£
-	WORD			m_bf1IsCanNotApplySameEffect	:	1;	//	1	Áßº¹ºÒ°¡
+	WORD			m_wTime;		//	ìœ ì§€ ì‹œê°„
+	WORD			m_bf1IsCanNotApplySameEffect	:	1;	//	1	ì¤‘ë³µë¶ˆê°€
 	WORD			:0;
 };
 
-class	cACTOR_FACTOR_TYPE5	//	µðÆúÆ® ¼öÄ¡°¡ 0ÀÌ´Ù.
+class	cACTOR_FACTOR_TYPE5	//	ë””í´íŠ¸ ìˆ˜ì¹˜ê°€ 0ì´ë‹¤.
 {
 public:
-	short			m_sCorrectValue;//	ÀÏ½ÃÀûÀ¸·Î ´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
+	short			m_sCorrectValue;//	ì¼ì‹œì ìœ¼ë¡œ ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
 	short			m_sRange;
-	WORD			m_wTime;		//	À¯Áö ½Ã°£
-	WORD			m_bf1IsCanNotApplySameEffect	:	1;	//	1	Áßº¹ºÒ°¡
+	WORD			m_wTime;		//	ìœ ì§€ ì‹œê°„
+	WORD			m_bf1IsCanNotApplySameEffect	:	1;	//	1	ì¤‘ë³µë¶ˆê°€
 	WORD			:0;
 
 	void			setUpkeepInfo(cACTOR_FACTOR_TYPE5_FOR_UPKEEP *_lpInfo);
@@ -1196,7 +1196,7 @@ public:
 	inline	BOOL	isWrong()
 	{
 		if (m_sCorrectValue				<	0)
-			return	TRUE;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
+			return	TRUE;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
 
 		return	FALSE;
 	}
@@ -1204,7 +1204,7 @@ public:
 	inline	BOOL	isGood()
 	{
 		if (m_sCorrectValue				>	0)
-			return	TRUE;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
+			return	TRUE;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
 
 		return	FALSE;
 	}
@@ -1239,7 +1239,7 @@ public:
 		}
 	}
 
-	inline	BOOL	decreaseTime()	//	½Ã°£ ÁÙ¿©~~
+	inline	BOOL	decreaseTime()	//	ì‹œê°„ ì¤„ì—¬~~
 	{
 		if (m_wTime	==	0)	return FALSE;
 
@@ -1257,8 +1257,8 @@ public:
 
 	inline	void	resetAidData()
 	{
-		m_sCorrectValue	=	0;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		m_wTime			=	0;	//	À¯Áö ½Ã°£
+		m_sCorrectValue	=	0;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		m_wTime			=	0;	//	ìœ ì§€ ì‹œê°„
 		m_sRange		=	0;
 		m_bf1IsCanNotApplySameEffect	=	FALSE;
 	}
@@ -1337,21 +1337,21 @@ public:
 	WORD				m_wGGGDefenceCoolTime;
 };
 
-class	cACTOR_FACTOR_TYPE6_FOR_UPKEEP	//	µðÆúÆ® ¼öÄ¡°¡ 0ÀÌ´Ù.
+class	cACTOR_FACTOR_TYPE6_FOR_UPKEEP	//	ë””í´íŠ¸ ìˆ˜ì¹˜ê°€ 0ì´ë‹¤.
 {
 public:
-	short			m_sCorrectValue;//	ÀÏ½ÃÀûÀ¸·Î ´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	WORD			m_wTime;		//	À¯Áö ½Ã°£
-	WORD			m_bf1IsCanNotApplySameEffect	:	1;	//	1	Áßº¹ºÒ°¡
+	short			m_sCorrectValue;//	ì¼ì‹œì ìœ¼ë¡œ ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	WORD			m_wTime;		//	ìœ ì§€ ì‹œê°„
+	WORD			m_bf1IsCanNotApplySameEffect	:	1;	//	1	ì¤‘ë³µë¶ˆê°€
 	WORD			:0;
 };
 
-class	cACTOR_FACTOR_TYPE6	//	µðÆúÆ® ¼öÄ¡°¡ 0ÀÌ´Ù.
+class	cACTOR_FACTOR_TYPE6	//	ë””í´íŠ¸ ìˆ˜ì¹˜ê°€ 0ì´ë‹¤.
 {
 public:
-	short			m_sCorrectValue;//	ÀÏ½ÃÀûÀ¸·Î ´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-	WORD			m_wTime;		//	À¯Áö ½Ã°£
-	WORD			m_bf1IsCanNotApplySameEffect	:	1;	//	1	Áßº¹ºÒ°¡
+	short			m_sCorrectValue;//	ì¼ì‹œì ìœ¼ë¡œ ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+	WORD			m_wTime;		//	ìœ ì§€ ì‹œê°„
+	WORD			m_bf1IsCanNotApplySameEffect	:	1;	//	1	ì¤‘ë³µë¶ˆê°€
 	WORD			:0;
 
 	void			setUpkeepInfo(cACTOR_FACTOR_TYPE6_FOR_UPKEEP *_lpInfo);
@@ -1360,7 +1360,7 @@ public:
 	inline	BOOL	isWrong()
 	{
 		if (m_sCorrectValue				<	0)
-			return	TRUE;					//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
+			return	TRUE;					//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
 
 		return	FALSE;
 	}
@@ -1393,7 +1393,7 @@ public:
 		}
 	}
 
-	inline	BOOL	decreaseTime()	//	½Ã°£ ÁÙ¿©~~
+	inline	BOOL	decreaseTime()	//	ì‹œê°„ ì¤„ì—¬~~
 	{
 		if (m_wTime	==	0)
 			return FALSE;
@@ -1412,8 +1412,8 @@ public:
 
 	inline	void	resetAidData()
 	{
-		m_sCorrectValue	=	0;	//	´õÇÏ°Å³ª »©¾ß ÇÏ´Â ¼öÄ¡
-		m_wTime			=	0;	//	À¯Áö ½Ã°£
+		m_sCorrectValue	=	0;	//	ë”í•˜ê±°ë‚˜ ë¹¼ì•¼ í•˜ëŠ” ìˆ˜ì¹˜
+		m_wTime			=	0;	//	ìœ ì§€ ì‹œê°„
 		m_bf1IsCanNotApplySameEffect	=	FALSE;
 	}
 
@@ -1481,85 +1481,85 @@ public:
 class	cActorStatusUpkeep
 {
 public:
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­Æ¯¼ö ´É·Â
-	short							m_sInvisivilityTime;			//	ÀÎºñÀúºô·¯Æ¼½Ã°£(-ÀÌ¸é Àåºñ¿¡ ºÙ¾î ÀÖ´Â°Å´Ù.)
-	short							m_sFloatTime;					//	°øÁßºÎ¾ç ½Ã°£(-ÀÌ¸é Àåºñ¿¡ ºÙ¾î ÀÖ´Â°Å´Ù.)
-	short							m_sBlurTime;					//	Èå¸´ÇÑ »óÅÂ ½Ã°£(-ÀÌ¸é Àåºñ¿¡ ºÙ¾î ÀÖ´Â°Å´Ù.)
-	short							m_sNonTargetTime;				//	Å¸°Ù¿¡¼­ Á¦¿ÜµÊ(-1ÀÌ¸é Àåºñ¿¡ ºÙ¾î ÀÖ´Â °ÍÀÓ)
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒíŠ¹ìˆ˜ ëŠ¥ë ¥
+	short							m_sInvisivilityTime;			//	ì¸ë¹„ì €ë¹ŒëŸ¬í‹°ì‹œê°„(-ì´ë©´ ìž¥ë¹„ì— ë¶™ì–´ ìžˆëŠ”ê±°ë‹¤.)
+	short							m_sFloatTime;					//	ê³µì¤‘ë¶€ì–‘ ì‹œê°„(-ì´ë©´ ìž¥ë¹„ì— ë¶™ì–´ ìžˆëŠ”ê±°ë‹¤.)
+	short							m_sBlurTime;					//	íë¦¿í•œ ìƒíƒœ ì‹œê°„(-ì´ë©´ ìž¥ë¹„ì— ë¶™ì–´ ìžˆëŠ”ê±°ë‹¤.)
+	short							m_sNonTargetTime;				//	íƒ€ê²Ÿì—ì„œ ì œì™¸ë¨(-1ì´ë©´ ìž¥ë¹„ì— ë¶™ì–´ ìžˆëŠ” ê²ƒìž„)
 
-	WORD							m_wReversalPowerTime;			//	Áö½Ä <-> Èû, ÁöÇý <-> ¹ÎÃ¸¼º º¯È¯ ½Ã°£
-	WORD							m_wMaintainMaxCPTime;			//	ÀÌ ½Ã°£µ¿¾È CP°¡ max·Î À¯ÁöµÈ´Ù.
-	WORD							m_wMaintainMaxWeponDamageTime;	//	ÀÌ ½Ã°£µ¿¾È ¹«±âÀÇ µ¥¹ÌÁö°¡ Ç×»ó max°¡ ³ª¿Â´Ù.
-	int								m_iFirstAidHP;					//	ÀÀ±ÞÃ³Ä¡ÇÑ HP
-	WORD							m_wFirstAidTime;				//	ÀÀ±ÞÃ³Ä¡ÇÑ ½Ã°£
+	WORD							m_wReversalPowerTime;			//	ì§€ì‹ <-> íž˜, ì§€í˜œ <-> ë¯¼ì²©ì„± ë³€í™˜ ì‹œê°„
+	WORD							m_wMaintainMaxCPTime;			//	ì´ ì‹œê°„ë™ì•ˆ CPê°€ maxë¡œ ìœ ì§€ëœë‹¤.
+	WORD							m_wMaintainMaxWeponDamageTime;	//	ì´ ì‹œê°„ë™ì•ˆ ë¬´ê¸°ì˜ ë°ë¯¸ì§€ê°€ í•­ìƒ maxê°€ ë‚˜ì˜¨ë‹¤.
+	int								m_iFirstAidHP;					//	ì‘ê¸‰ì²˜ì¹˜í•œ HP
+	WORD							m_wFirstAidTime;				//	ì‘ê¸‰ì²˜ì¹˜í•œ ì‹œê°„
 	WORD							m_wBeastBerserkerTime;
-	WORD							m_wInvincibleTime;				//	¹«Àû ½Ã°£
+	WORD							m_wInvincibleTime;				//	ë¬´ì  ì‹œê°„
 	WORD							m_wSealRunningTime;
 	WORD							m_wSealActionTime;
 	WORD							m_wUnsealAction;
 	WORD							m_wJumppingSkippingTime;
 	WORD							m_wRabbitTime;
-//¦­Æ¯¼ö ´É·Â
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒíŠ¹ìˆ˜ ëŠ¥ë ¥
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­´É·ÂÄ¡
-	cACTOR_FACTOR_TYPE3_FOR_UPKEEP	m_attackPower;					//	°ø°Ý·Â
-	cACTOR_FACTOR_TYPE4_FOR_UPKEEP	m_defensePower;					//	¹æ¾î·Â
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒëŠ¥ë ¥ì¹˜
+	cACTOR_FACTOR_TYPE3_FOR_UPKEEP	m_attackPower;					//	ê³µê²©ë ¥
+	cACTOR_FACTOR_TYPE4_FOR_UPKEEP	m_defensePower;					//	ë°©ì–´ë ¥
 
-	cACTOR_FACTOR_TYPE2_FOR_UPKEEP	m_maxHP;						//	ÃÖ´ë HP
-	cACTOR_FACTOR_TYPE2_FOR_UPKEEP	m_maxCP;						//	ÃÖ´ë CP
+	cACTOR_FACTOR_TYPE2_FOR_UPKEEP	m_maxHP;						//	ìµœëŒ€ HP
+	cACTOR_FACTOR_TYPE2_FOR_UPKEEP	m_maxCP;						//	ìµœëŒ€ CP
 
 	cACTOR_FACTOR_TYPE2_FOR_UPKEEP	m_weaponPower;
 	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_armorPower;
 
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_level;						//	·¹º§
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_strength;						//	Èû 
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_agility;						//	¹ÎÃ¸¼º
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_constitution;					//	°Ç°­
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_intelligence;					//	Áö½Ä
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_wisdom;						//	ÁöÇý
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_charisma;						//	Ä«¸®½º¸¶
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_luck;							//	¿î
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_level;						//	ë ˆë²¨
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_strength;						//	íž˜ 
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_agility;						//	ë¯¼ì²©ì„±
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_constitution;					//	ê±´ê°•
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_intelligence;					//	ì§€ì‹
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_wisdom;						//	ì§€í˜œ
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_charisma;						//	ì¹´ë¦¬ìŠ¤ë§ˆ
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_luck;							//	ìš´
 
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_actionSpeed;					//	¾×¼Ç ¼Óµµ º¸Á¤
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_moveSpeed;					//	ÀÌµ¿ ¼Óµµ º¸Á¤
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_regenHPPerSecond;				//	Ã¼·Â È¸º¹
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_actionSpeed;					//	ì•¡ì…˜ ì†ë„ ë³´ì •
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_moveSpeed;					//	ì´ë™ ì†ë„ ë³´ì •
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_regenHPPerSecond;				//	ì²´ë ¥ íšŒë³µ
 
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_hitChance;					//	¸íÁß·ü º¸Á¤
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_dodgeChance;					//	È¸ÇÇ º¸Á¤
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_hitChance;					//	ëª…ì¤‘ë¥  ë³´ì •
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_dodgeChance;					//	íšŒí”¼ ë³´ì •
 	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_concentration;
 	cACTOR_FACTOR_TYPE6_FOR_UPKEEP	m_concentrationByStellarPeer;
-//¦­´É·ÂÄ¡
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒëŠ¥ë ¥ì¹˜
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­´É·ÂÄ¡ ÀúÇÏ
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒëŠ¥ë ¥ì¹˜ ì €í•˜
 	WORD							m_wReduceAllResistanceToHalfTime;
-//¦­´É·ÂÄ¡ ÀúÇÏ
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”ƒëŠ¥ë ¥ì¹˜ ì €í•˜
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­»óÅÂ ÀÌ»ó
-	WORD							m_wBlindTime;						//	Àå´Ô »óÅÂ ³²Àº ½Ã°£
-	short							m_wPoisonTime;						//	ÃÊ´ç µ¥¹ÌÁö/10 , Áßµ¶ »óÅÂ ³²Àº ½Ã°£
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒìƒíƒœ ì´ìƒ
+	WORD							m_wBlindTime;						//	ìž¥ë‹˜ ìƒíƒœ ë‚¨ì€ ì‹œê°„
+	short							m_wPoisonTime;						//	ì´ˆë‹¹ ë°ë¯¸ì§€/10 , ì¤‘ë… ìƒíƒœ ë‚¨ì€ ì‹œê°„
 	int								m_iPoisonDamagePerSec;
-	WORD							m_wColdTime;						//	ÄÝµå »óÅÂ ³²Àº ½Ã°£
-	WORD							m_wConfuseTime;						//	È¥¶õ »óÅÂ ³²Àº ½Ã°£
-//¦­»óÅÂ ÀÌ»ó
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+	WORD							m_wColdTime;						//	ì½œë“œ ìƒíƒœ ë‚¨ì€ ì‹œê°„
+	WORD							m_wConfuseTime;						//	í˜¼ëž€ ìƒíƒœ ë‚¨ì€ ì‹œê°„
+//â”ƒìƒíƒœ ì´ìƒ
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­ÀúÁÖ
-	WORD							m_wFalloffMoraleTime;			//	»ç±â ÀúÇÏ »óÅÂ ³²Àº ½Ã°£
-	WORD							m_wTargetedTime;				//	Å¸°Ù ¼³Á¤ »óÅÂ ³²Àº ½Ã°£
-	WORD							m_wBreakedArmorTime;			//	°©¿Ê ÆÄ±« »óÅÂ ³²Àº ½Ã°£
-	WORD							m_wBreakedWeaponTime;			//	¹«±â ÆÄ±« »óÅÂ ³²Àº ½Ã°£
-	WORD							m_wSimpletonTime;				//	¹Ùº¸-_- »óÅÂ ³²Àº ½Ã°£
-	WORD							m_wBerserkTime;					//	¹ö¼­Å© »óÅÂ ³²Àº ½Ã°£
-//¦­ÀúÁÖ
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒì €ì£¼
+	WORD							m_wFalloffMoraleTime;			//	ì‚¬ê¸° ì €í•˜ ìƒíƒœ ë‚¨ì€ ì‹œê°„
+	WORD							m_wTargetedTime;				//	íƒ€ê²Ÿ ì„¤ì • ìƒíƒœ ë‚¨ì€ ì‹œê°„
+	WORD							m_wBreakedArmorTime;			//	ê°‘ì˜· íŒŒê´´ ìƒíƒœ ë‚¨ì€ ì‹œê°„
+	WORD							m_wBreakedWeaponTime;			//	ë¬´ê¸° íŒŒê´´ ìƒíƒœ ë‚¨ì€ ì‹œê°„
+	WORD							m_wSimpletonTime;				//	ë°”ë³´-_- ìƒíƒœ ë‚¨ì€ ì‹œê°„
+	WORD							m_wBerserkTime;					//	ë²„ì„œí¬ ìƒíƒœ ë‚¨ì€ ì‹œê°„
+//â”ƒì €ì£¼
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 	cACTOR_FACTOR_TYPE5_FOR_UPKEEP	m_addFireDamage;
 	cACTOR_FACTOR_TYPE5_FOR_UPKEEP	m_addWaterDamage;
 	cACTOR_FACTOR_TYPE5_FOR_UPKEEP	m_addWindDamage;
@@ -1567,28 +1567,28 @@ public:
 	cACTOR_FACTOR_TYPE5_FOR_UPKEEP	m_addDarkDamage;
 	cACTOR_FACTOR_TYPE5_FOR_UPKEEP	m_addEarthDamage;
 
-//¦­°ø°ÝÀÌ ¼º°øÇÏ¸é ºÎ°¡ÀûÀ¸·Î µé¾î°¡´Â È¿°ú
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­°¢Á¾ ÀúÇ×
+//â”ƒê³µê²©ì´ ì„±ê³µí•˜ë©´ ë¶€ê°€ì ìœ¼ë¡œ ë“¤ì–´ê°€ëŠ” íš¨ê³¼
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒê°ì¢… ì €í•­
 	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_stunResistance;
 	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_strangeStatusResistance;
 	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_curseResistance;
 	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_declinePowerResistance;
 
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_fireResistance;				//	ºÒ²É ÀúÇ×
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_waterResistance;				//	¹° ÀúÇ×
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_windResistance;				//	¹Ù¶÷ ÀúÇ×
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_earthResistance;				//	´ëÁö ÀúÇ×
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_lightResistance;				//	ºû ÀúÇ×
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_darkResistance;				//	¾îµÒ ÀúÇ×
-	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_allMagicResistance;			//	¸ðµç ¸¶¹ý ÀúÇ×
-//¦­º¸Á¤µÈ ¸¶¹ý ÀúÇ×
-//¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_fireResistance;				//	ë¶ˆê½ƒ ì €í•­
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_waterResistance;				//	ë¬¼ ì €í•­
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_windResistance;				//	ë°”ëžŒ ì €í•­
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_earthResistance;				//	ëŒ€ì§€ ì €í•­
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_lightResistance;				//	ë¹› ì €í•­
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_darkResistance;				//	ì–´ë‘  ì €í•­
+	cACTOR_FACTOR_TYPE1_FOR_UPKEEP	m_allMagicResistance;			//	ëª¨ë“  ë§ˆë²• ì €í•­
+//â”ƒë³´ì •ëœ ë§ˆë²• ì €í•­
+//â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
-//¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬
-//¦­±âÅ¸
-	WORD							m_wCurseAmplificationTime;		//	ÀúÁÖ ÁõÆø »óÅÂ
+//â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+//â”ƒê¸°íƒ€
+	WORD							m_wCurseAmplificationTime;		//	ì €ì£¼ ì¦í­ ìƒíƒœ
 
 	cEnchantedMagicInfoForUpkeep	m_aEnchantMagic[dMAX_ENCHANTED_MAGIC_COUNT_FOR_UPKEEP];
 

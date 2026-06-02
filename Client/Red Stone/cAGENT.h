@@ -40,7 +40,8 @@ class	CActor;	//	¿EEº±æE
 class cQUE_PACKET
 {
 	SERVER_PACKETS		m_aPacket[dMAX_PACKET_QUE_COUNT];		//	∂E.
-	int					m_iFirstQue,m_iLastQue,m_iCount;		//	√ππ∞,∏∂¡∏∑ ∂, Ωø ¿÷∂ ºE	CRITICAL_SECTION	m_csOperateQue;
+	int					m_iFirstQue,m_iLastQue,m_iCount;
+	CRITICAL_SECTION	m_csOperateQue;
 
 public:
 						cQUE_PACKET();
@@ -79,10 +80,53 @@ public:
 class	cPACKET_HANDLER	:	public CGame
 {
 public:
+	// Recovered declarations from CAgentReceive*.cpp.
+	static	void				ChangeStatePower(SERVER_PACKETS *_lpPacket);
+	static	void				IncreaseAbilityLevel(SERVER_PACKETS *_lpPacket);
+	static	void				LevelUpOther(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveAskJoinGuild(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveAskRemoveFriendResult(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveChangeGuildExpTax(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveChangeGuildNotice(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveChangeGuildSchedule(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveChangePitchmanShopItemPlace(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveChangeRankInGuild(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveChangeSpecialSkillField(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveDeathPeneltySecond(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveGuardianPost(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveGuildBattleInfo(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveGuildBattleKillNotice(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveGuildWorkMessage(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveHitAction(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveHitThornDamage(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveMoveFailedMessage(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveMoveFieldNow(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveOpenGuildScheduler(SERVER_PACKETS *_lpPacket);
+	static	void				ReceivePartyInfo(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveRegistMessage(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveReplyForAddFriend(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveResultOfSearchItemInRelayStation(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveRevive(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveSetReactionStatus(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveSimpleHit(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveStrikeMultiMissile(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveUpdateGuildLevel(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveWithdrawGoldToTheBank(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveWithdrawItemToTheBank(SERVER_PACKETS *_lpPacket);
+	static	void				SetMoveAbility(SERVER_PACKETS *_lpPacket);
+	static	void				SitdownResult(SERVER_PACKETS *_lpPacket);
+	static	void				UseSkillResult(SERVER_PACKETS *_lpPacket);
+	static	void				WideAidAttackResult(SERVER_PACKETS *_lpPacket);
+
 //¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨
-//¶≠∑Œ±¿Œ º≠πE	static	void				ResultLogin(SERVER_PACKETS *_lpPacket);//∑Œ±¿Œ ∞·∞E	static	void				ResultLoginOTP(SERVER_PACKETS *_lpPacket);//OTP∑Œ±¿Œ ∞·∞E	static	void				ServerList(SERVER_PACKETS *_lpPacket);//º≠π∏ÆΩ∫Æ∏¶ π.
+	static	void				ResultLogin(SERVER_PACKETS *_lpPacket);
+	static	void				ResultLoginOTP(SERVER_PACKETS *_lpPacket);
+	static	void				ServerList(SERVER_PACKETS *_lpPacket);
 	static	void				AvatarList(SERVER_PACKETS *_lpPacket);//æπ∏∏ÆΩ∫Æ∏¶ π.
-	static	void				ResultCreateAvatar(SERVER_PACKETS *_lpPacket);// æπ∏ ª˝º∫ ∞·∞E	static	void				ResultRemoveAvatar(SERVER_PACKETS *_lpPacket);// æπ∏ ¡¶∞ ∞·∞E	static	void				ReceiveSelectAvatarResult(SERVER_PACKETS *_lpPacket);// æπ∏ ¡¶∞ ∞·∞E	static	void				ResultOfCopyAvatar(SERVER_PACKETS *_lpPacket);// æπ∏ ∫πªE∞·∞E//¶≠∑Œ±¿Œ º≠πE//¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨
+	static	void				ResultCreateAvatar(SERVER_PACKETS *_lpPacket);
+	static	void				ResultRemoveAvatar(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveSelectAvatarResult(SERVER_PACKETS *_lpPacket);
+	static	void				ResultOfCopyAvatar(SERVER_PACKETS *_lpPacket);
 	static	void				ReceiveSSLAuthenticationCode(SERVER_PACKETS *_lpPacket);// SSL ¿Œ¡E∂ π¿Ω
 
 //¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨
@@ -187,8 +231,11 @@ public:
 
 //¶Æ¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨
 //¶≠CAgentReceivePkacet.cpp
-//¶≠∞‘¿” º≠πE	static	void				Disconnect(SERVER_PACKETS *_lpPacket);//Ω∫¡≥Æ ∏Ω√¡E	static	void				ResultJoin(SERVER_PACKETS *_lpPacket);//∞‘¿” E° ∞·∞E	static	void				ReceiveFailedToJoin(SERVER_PACKETS *_lpPacket);//∞‘¿” E° Ω
-	static	void				ResultGameConnect(SERVER_PACKETS *_lpPacket);//∞‘¿” ø¨∞E∞·∞E	static	void				ReceiveBCSInfo(SERVER_PACKETS *_lpPacket);//∫EŒE≥Ω∫Æ º≠πE¡§∫∏
+	static	void				Disconnect(SERVER_PACKETS *_lpPacket);
+	static	void				ResultJoin(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveFailedToJoin(SERVER_PACKETS *_lpPacket);
+	static	void				ResultGameConnect(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveBCSInfo(SERVER_PACKETS *_lpPacket);
 	static	void				ReceivePlayerInfo(SERVER_PACKETS *_lpPacket);//¡÷¿Œ∞E¡§∫∏
 	static	void				ReceiveSuccessToJoinGame(SERVER_PACKETS *_lpPacket);//¡÷¿Œ∞E¡§∫∏
 	static	void				ReceiveEnterToTherSecretDungeon(SERVER_PACKETS *_lpPacket);//∫π ¡Ø ¿‘¿E
@@ -284,7 +331,10 @@ public:
 	static	void				ReceiveSetShimmeringShield(SERVER_PACKETS *_lpPacket);//Ω√∏”∏ ΩEº≥¡§
 	static	void				ReceiveReleaseShimmeringShield(SERVER_PACKETS *_lpPacket);//Ω√∏”∏ ΩE¡¶
 	static	void				ReceiveCureActor(SERVER_PACKETS *_lpPacket);//°∑E
-	static	void				ReceiveFloatMachineMessage(SERVER_PACKETS *_lpPacket);	//	∏”Ω ∂øEE	static	void				ReceiveReleaseMachineMessage(SERVER_PACKETS *_lpPacket);	//	∏”Ω Ææ˚÷±E	static	void				ReceiveShootMachineMessage(SERVER_PACKETS *_lpPacket);	//	∏”Ω¿ πª¿œ πªE	static	void				ReceiveTailChaser(SERVER_PACKETS *_lpPacket);	//	¿œ √º¿º≠
+	static	void				ReceiveFloatMachineMessage(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveReleaseMachineMessage(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveShootMachineMessage(SERVER_PACKETS *_lpPacket);
+	static	void				ReceiveTailChaser(SERVER_PACKETS *_lpPacket);
 	static	void				ReceiveTurnOnPassiveSkill(SERVER_PACKETS *_lpPacket);	//	Ω√∫EΩ∫≥ ø
 	static	void				ReceiveDisplacement(SERVER_PACKETS *_lpPacket);	//	Ω∫√∑π¿Ω∫∏’Æ
 	static	void				ReceiveMiss(SERVER_PACKETS *_lpPacket);	//	Ω∫√∑π¿Ω∫∏’Æ
@@ -489,6 +539,7 @@ public:
 	static	void				ReceiveControlMonster(SERVER_PACKETS *_lpPacket);//
 	static	void				ReceiveOccurEffect(SERVER_PACKETS *_lpPacket);//
 //¶≠∞‘¿” º≠πE//¶±¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨¶¨
+
 };	//	class	cLOGIN_SERVER_PACKET_HANDLER	:	public CAgent
 
 #define	dPACKET_BUFFER_SIZE		0xffff

@@ -2446,6 +2446,7 @@ CGamePlay::OperateEtcWork(SG_ETC_WORK *_lpPacket)
 			iCarrot			+=	_lpPacket->aiValue[1];
 			
 			g_gwCarrotShop.m_iRemainCarrotCount	=	iCarrot;
+			g_gwCarrotShop.m_wWaitOpenResultTime	=	0;
 			g_gwCarrotShop.open();
 			break;
 		}

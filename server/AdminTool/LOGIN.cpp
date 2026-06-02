@@ -66,7 +66,7 @@ void CLOGIN::OnOK()
 	}
 	else
 	{
-		g_bIsRequireSendToolLog	=	TRUE;
+		g_bIsRequireSendToolLog	=	(g_iToolLogPort > 0 && g_strToolLogIP[0] && stricmp(g_strToolLogIP,"0") != 0 && stricmp(g_strToolLogIP,"none") != 0);
 		
 #ifdef _FOR_CHINA		
 		g_lWhereisServer = eCOUNTRY_CHINA;

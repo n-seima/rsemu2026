@@ -40,6 +40,68 @@ enum
 		eCSWI_TITLE		=	67,
 		eCSWI_FIRST_BAR	=	72,
 };
+
+static int
+clampCarrotCategoryCount(int _iCount)
+{
+	if	(_iCount < 0)
+		return	0;
+	if	(_iCount > dMAX_CARROT_SHOP_CATEGORY_COUNT)
+		return	dMAX_CARROT_SHOP_CATEGORY_COUNT;
+
+	return	_iCount;
+}
+
+static int
+clampCarrotItemCount(int _iCount)
+{
+	if	(_iCount < 0)
+		return	0;
+	if	(_iCount > dMAX_CARROT_SHOP_ITEM_COUNT)
+		return	dMAX_CARROT_SHOP_ITEM_COUNT;
+
+	return	_iCount;
+}
+
+static int
+clampCarrotSearchItemCount(int _iCount)
+{
+	const int iMaxSearchItemCount = dMAX_CARROT_SHOP_ITEM_COUNT/2;
+
+	if	(_iCount < 0)
+		return	0;
+	if	(_iCount > iMaxSearchItemCount)
+		return	iMaxSearchItemCount;
+
+	return	_iCount;
+}
+
+static BOOL
+isValidCarrotCategoryIndex(int _iCategory)
+{
+	return	_iCategory >= 0 && _iCategory < clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount);
+}
+
+static BOOL
+isValidCarrotItemIndex(cCarrotShopCategoryInfoDefine *_lpCategory,int _iItem)
+{
+	if	(!_lpCategory)
+		return	FALSE;
+
+	return	_iItem >= 0 && _iItem < clampCarrotItemCount(_lpCategory->m_wItemCount);
+}
+
+static cCarrotShopCategoryInfoDefine*
+getCarrotCategoryBySecIndex(int _iSelectSecCategory)
+{
+	int	iCategory	=	_iSelectSecCategory-2;
+
+	if	(!isValidCarrotCategoryIndex(iCategory))
+		return	NULL;
+
+	return	&g_carrotShop.m_aData[iCategory];
+}
+
 void
 cCarrotShopInfo::reset()
 {
@@ -50,11 +112,14 @@ cCarrotShopInfo::reset()
 int
 cCarrotShopInfo::getCategoryItemCount(int _iCategory)
 {
+	if	(!isValidCarrotCategoryIndex(_iCategory))
+		return	0;
+
 	cCarrotShopCategoryInfoDefine	*lpCategory	=	&m_aData[_iCategory];
 	
 	int	iCount	=	0;
 	
-	for (int i=0;i<lpCategory->m_wItemCount;i++)
+	for (int i=0;i<clampCarrotItemCount(lpCategory->m_wItemCount);i++)
 	{
 		if	(lpCategory->m_aItemList[i].m_bf1IsTestItem && g_bIsTestServer == FALSE)
 			continue;
@@ -68,12 +133,19 @@ cCarrotShopInfo::getCategoryItemCount(int _iCategory)
 void
 cCarrotShopInfo::updateInfo(int _iCategory,cCarrotShopCategoryInfo1 *_lpData,cCarrotShopCategoryInfo2 *_lpCategoryInfo)
 {
+	if	(_iCategory < 0 || _iCategory >= dMAX_CARROT_SHOP_CATEGORY_COUNT || !_lpData)
+		return;
+
 	cCarrotShopCategoryInfoDefine	*lpCategory	=	&m_aData[_iCategory];
-	
-	memcpy(lpCategory,_lpData,sizeof(cCarrotShopCategoryInfo1));
-	memcpy(lpCategory->getCategoryInfo(),_lpCategoryInfo,sizeof(cCarrotShopCategoryInfo2));
-	
-	memset(lpCategory->m_aItemList+lpCategory->m_wItemCount,0,sizeof(cCarrotShopItemDefine)*(dMAX_CARROT_SHOP_ITEM_COUNT-lpCategory->m_wItemCount));
+
+	memset(lpCategory,0,sizeof(cCarrotShopCategoryInfoDefine));
+
+	lpCategory->m_wItemCount	=	clampCarrotItemCount(_lpData->m_wItemCount);
+	memcpy(lpCategory->m_strName,_lpData->m_strName,sizeof(lpCategory->m_strName));
+	memcpy(lpCategory->m_aItemList,_lpData->m_aItemList,sizeof(cCarrotShopItemDefine)*lpCategory->m_wItemCount);
+
+	if	(_lpCategoryInfo)
+		memcpy(lpCategory->getCategoryInfo(),_lpCategoryInfo,sizeof(cCarrotShopCategoryInfo2));
 }
 
 void
@@ -87,30 +159,41 @@ cCarrotShopInfo::load()
 	file.Read(this,sizeof(cCarrotShopInfo));
 
 	file.Close();
+
+	m_wCategoryCount	=	clampCarrotCategoryCount(m_wCategoryCount);
+	for	(int i=0;i<m_wCategoryCount;i++)
+		m_aData[i].m_wItemCount	=	clampCarrotItemCount(m_aData[i].m_wItemCount);
 // insu add
 #ifndef _DEBUG
   	if (!g_bIsTestServer)
   	{
-		for(int i=0 ; i<g_carrotShop.m_wCategoryCount ; i++)
+		for(int i=0 ; i<m_wCategoryCount ; )
 		{
-			cCarrotShopCategoryInfoDefine	*lpCategory	=	&g_carrotShop.m_aData[i];
+			cCarrotShopCategoryInfoDefine	*lpCategory	=	&m_aData[i];
 			if (lpCategory->m_bf1IsTestCategory)
 			{
 				m_wCategoryCount--;
-				for(int j=i ; j<=g_carrotShop.m_wCategoryCount ; j++)
-					g_carrotShop.m_aData[j] = g_carrotShop.m_aData[j+1];
+				for(int j=i ; j<m_wCategoryCount ; j++)
+					m_aData[j] = m_aData[j+1];
+				memset(&m_aData[m_wCategoryCount],0,sizeof(m_aData[m_wCategoryCount]));
+				continue;
 			}
 
-			for (int j=0 ; j<lpCategory->m_wItemCount ; j++)
+			for (int j=0 ; j<lpCategory->m_wItemCount ; )
 			{
 				if (lpCategory->m_aItemList[j].m_bf1IsTestItem)
 				{
 					lpCategory->m_wItemCount--;
-					for (int k=j ; k<=lpCategory->m_wItemCount ; k++)
+					for (int k=j ; k<lpCategory->m_wItemCount ; k++)
 						lpCategory->m_aItemList[k] = lpCategory->m_aItemList[k+1];
-					j--;
+					memset(&lpCategory->m_aItemList[lpCategory->m_wItemCount],0,sizeof(lpCategory->m_aItemList[lpCategory->m_wItemCount]));
+					continue;
 				}
+
+				j++;
 			}
+
+			i++;
 		}
   	}
 #endif
@@ -158,30 +241,44 @@ cCarrotShopInfo::save()
 void
 cCarrotShop::open()
 {	
+	g_config.b_bIsNewCarrotShop = FALSE;
+
+	m_wWaitOpenResultTime	=	0;
+	g_carrotShop.m_wCategoryCount	=	clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount);
+	for	(int i=0;i<g_carrotShop.m_wCategoryCount;i++)
+		g_carrotShop.m_aData[i].m_wItemCount	=	clampCarrotItemCount(g_carrotShop.m_aData[i].m_wItemCount);
+
 #ifndef _DEBUG	
 	// 테스트 카테고리를 삭제한다.
 	if (!g_bIsTestServer)
 	{
-		for(int i=0 ; i<g_carrotShop.m_wCategoryCount ; i++)
+		for(int i=0 ; i<g_carrotShop.m_wCategoryCount ; )
 		{
 			cCarrotShopCategoryInfoDefine	*lpCategory	=	&g_carrotShop.m_aData[i];			
 			if (lpCategory->m_bf1IsTestCategory)
 			{
 				g_carrotShop.m_wCategoryCount--;
-				for(int j=i ; j<=g_carrotShop.m_wCategoryCount ; j++)
+				for(int j=i ; j<g_carrotShop.m_wCategoryCount ; j++)
 					g_carrotShop.m_aData[j] = g_carrotShop.m_aData[j+1];
+				memset(&g_carrotShop.m_aData[g_carrotShop.m_wCategoryCount],0,sizeof(g_carrotShop.m_aData[g_carrotShop.m_wCategoryCount]));
+				continue;
 			}
 			// 테스트 아이템 삭제
-			for (int j=0 ; j<lpCategory->m_wItemCount ; j++)
+			for (int j=0 ; j<lpCategory->m_wItemCount ; )
 			{
 				if (lpCategory->m_aItemList[j].m_bf1IsTestItem)
 				{
 					lpCategory->m_wItemCount--;
-					for (int k=j ; k<=lpCategory->m_wItemCount ; k++)
+					for (int k=j ; k<lpCategory->m_wItemCount ; k++)
 						lpCategory->m_aItemList[k] = lpCategory->m_aItemList[k+1];
-					j--;
+					memset(&lpCategory->m_aItemList[lpCategory->m_wItemCount],0,sizeof(lpCategory->m_aItemList[lpCategory->m_wItemCount]));
+					continue;
 				}
+
+				j++;
 			}
+
+			i++;
 		}
 	}	
 #endif
@@ -205,11 +302,7 @@ cCarrotShop::open()
 	s_lpGold						 =	&g_hero.m_iGold;
 	s_iPopupInterface				 =	ePIW_CARROT_SHOP;
 
-	if(!g_config.b_bIsNewCarrotShop)
-		openOld();
-	
-	if(g_config.b_bIsNewCarrotShop)
-		openNew();
+	openOld();
 }
 
 
@@ -258,13 +351,13 @@ cCarrotShop::getAllCategoryItemCount(BOOL _bNew)
 	cCarrotShopCategoryInfoDefine	*lpCategory;
 	int iResult = 0;
 
-	for (int i=0 ; i<g_carrotShop.m_wCategoryCount ; i++)
+	for (int i=0 ; i<clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount) ; i++)
 	{
 		lpCategory	=	&g_carrotShop.m_aData[i];
 
 		if (_bNew)
 		{
-			for(int j=0 ; j< lpCategory->m_wItemCount ; j++)
+			for(int j=0 ; j<clampCarrotItemCount(lpCategory->m_wItemCount) ; j++)
 			{
 				if(lpCategory->m_aItemList[j].m_bf1IsHotItem)
 					iResult++;
@@ -272,7 +365,7 @@ cCarrotShop::getAllCategoryItemCount(BOOL _bNew)
 		}
 
 		if (!_bNew)
-			iResult	+=	lpCategory->m_wItemCount;
+			iResult	+=	clampCarrotItemCount(lpCategory->m_wItemCount);
 	}
 
 	return iResult;
@@ -299,9 +392,10 @@ cCarrotShop::InitScrollBar()
 	
 	// 스크롤바가 화면에 위치할 좌표관련 설정
 	int itempY=0;
-	if(g_carrotShop.m_wCategoryCount > 0 && g_carrotShop.m_wCategoryCount < dSHOP_SECCATE_1LINE_CATENUM) 
+	int iCategoryCount = clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount);
+	if(iCategoryCount > 0 && iCategoryCount < dSHOP_SECCATE_1LINE_CATENUM)
 		itempY = iPutPosY+110-(g_sprInterface2.getSpriteHeight(eCARROT_SECSBTN1NORMAL) + dSHOP_DIVIDELINE_YMARGIN*2);
-	else if(g_carrotShop.m_wCategoryCount > dSHOP_SECCATE_1LINE_CATENUM && g_carrotShop.m_wCategoryCount < dSHOP_SECCATE_1LINE_CATENUM*2+4)
+	else if(iCategoryCount > dSHOP_SECCATE_1LINE_CATENUM && iCategoryCount < dSHOP_SECCATE_1LINE_CATENUM*2+4)
 		itempY = iPutPosY+110;
 	else
 		itempY = iPutPosY+110+(g_sprInterface2.getSpriteHeight(eCARROT_SECSBTN1NORMAL) + dSHOP_DIVIDELINE_YMARGIN*2);
@@ -323,6 +417,7 @@ cCarrotShop::InitScrollBar()
 void
 cCarrotShop::close()
 {
+	m_wWaitOpenResultTime	=	0;
 	ClearSearch(false, true, false, true);
 	m_inputSearch.close();
 	
@@ -353,15 +448,11 @@ cCarrotShop::isOpened()
 void
 cCarrotShop::openNew()
 {
-	cCarrotShopCategoryInfoDefine	*lpCategory;
-	cItem 							item;
 	m_iTopCategoryCnt		= 4;		// 최상위 카테고리수 4
 	
 	m_iSelectTopCategory	= 0;	// .. 초기값은 아이템구매 카테고리로 ..
-	m_iSelectSecCategory	= 0;
-	
-	m_iSelectSecCategory	= 0;
-	m_iFocusSecCategory		= 0;
+	m_iSelectSecCategory	= clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount) > 0 ? 2 : 0;
+	m_iFocusSecCategory		= 0xffff;
 	
 	m_iWishListCount		= 0;
 	m_iTotalPayCarrot		= 0;
@@ -378,9 +469,6 @@ cCarrotShop::openNew()
 	iPutPosX				= (g_iScreenWidth/2) - (m_iWindowWidth/2);
 	iPutPosY				= ((g_iScreenHeight-g_sprGameBottomInterface.getSpriteHeight(0))/2) - (m_iWindowHeight/2);
 	
-	int iRandomHotItem 		= random(m_iNewItemCount);
-	int iCnt 				= 0;
-	
 	// 윈도우 영역좌표 설정.. 마우스입력을 막을 좌표
 	s_rectInterfaceSize.set(iPutPosX, iPutPosY, iPutPosX+m_iWindowWidth, iPutPosY+m_iWindowHeight);
 	
@@ -396,39 +484,13 @@ cCarrotShop::openNew()
 	
 	m_inputSearch.setColor(BLACK, WHITE);	// (글자색상, 바탕색상)
 	
-	strcpy(m_strRecommendItemName, dMSG_CARROTSHOP_RECOMMENDSEARCH);
-	for( int i=0 ; i<g_carrotShop.m_wCategoryCount ; i++)
-	{
-		BOOL bbreak = FALSE;
-		lpCategory	=	&g_carrotShop.m_aData[i];
-		for(int j=0 ; j< lpCategory->m_wItemCount ; j++)
-		{
-			if(lpCategory->m_aItemList[j].m_bf1IsHotItem)
-			{
-				if(iCnt == iRandomHotItem)
-				{
-					CCustomItem	*lpCustomItem	=	g_premiumItem.getItem(lpCategory->m_aItemList[j].m_wPremiunItemIndex);
-					if(!lpCustomItem->generateItem(&item))
-						return;
-					cBasicItem *lpBaseItem = item.getBasicItem();
-
-					memset(m_strRecommendItemName, '\0', dITEM_NAME_LENGTH);
-					strcpy(m_strRecommendItemName, dMSG_CARROTSHOP_RECOMMENDSEARCH);
-
-					strcat(m_strRecommendItemName, lpBaseItem->m_strName);
-					m_inputSearch.setStr(0, m_strRecommendItemName);
-					bbreak = TRUE;
-					break;
-				}
-				else
-					iCnt++;
-			}
-		}
-		if (bbreak)
-			break;
-	}
+	memset(m_strRecommendItemName, 0, sizeof(m_strRecommendItemName));
+	memset(m_strSearchValue, 0, sizeof(m_strSearchValue));
+	memset(m_strPreSearchValue, 0, sizeof(m_strPreSearchValue));
+	m_inputSearch.setStr(0, "");
 	
 	InitScrollBar();
+	ScrollBarSet();
 		
 	memset(m_aCategoryInfo,0,sizeof(m_aCategoryInfo));	
 }
@@ -597,20 +659,7 @@ cCarrotShop::update()
 		{
 			if (s_rectTooltip.isIn(s_posMouse.x,s_posMouse.y))
 			{
-				s_rectTooltip.add(dITEM_SHAPE_HEIGHT+8,8);
-				
-				cItem	item;
-				
-				if	(g_premiumItem.generateItem(lpCategory->m_aItemList[m_iFocusItem].m_wPremiunItemIndex,&item))
-				{
-// 					item.m_bCount=	lpCategory->m_aItemList[m_iFocusItem].m_bf8ItemCount;
-					
-					char	*strComment	=	item.getItemTooltip(-1,-1,TRUE);
-					
-					strComment			=	g_hero.getAfterEquipInfo(strComment,&item);
-					
-					s_ttCommon.popupTip(&s_rectTooltip,-1,-1,&s_text,WHITE,strComment,eTFM_NONE);
-				}
+				// Avoid generating premium items while merely hovering the shop list.
 			}
 		}
 		
@@ -637,54 +686,12 @@ cCarrotShop::update()
 						break;
 					}
 					
-					cItem		item;
-					CCustomItem	*lpCustomItem	=	g_premiumItem.getItem(lpCategory->m_aItemList[m_iSelectItem].m_wPremiunItemIndex);
-					
-					if	(!lpCustomItem)
-						break;
-					
-					if	(!lpCustomItem->generateItem(&item))
-						break;
-					cBasicItem*	lpBasicItem	=	item.getBasicItem();
-					if(!lpBasicItem)
-						break;
-					
-					if(lpBasicItem->m_attr.isBadge)
-					{
-						int iBedgeCount	=	g_hero.getBadgeCountInInventory() ;
-						if(iBedgeCount >= dLIMIT_BADGE_ITEM_COUNT_IN_INVENTORY)
-						{
-							g_msgBox.cPopup("",dMSG_CAN_HAVE_BEDGE_UNTIL_THREE,dMSG_OK);
-							break;
-						}
-					}
-					if (lpBasicItem->m_attr.isCanNotOwnSameItem)
-					{
-						if (g_hero.getItemByBaseItemIndex(item.m_wBaseItem, TRUE))
-						{
-							g_msgBox.cPopup("",dMSG_CAN_NOT_OWN_SAME_ITEM,dMSG_OK);
-							break;
-						}
-					}
-// 					item.m_bCount=	lpCategory->m_aItemList[m_iSelectItem].m_bf8ItemCount;
-					
 					int		iPrice	=	lpCategory->m_aItemList[m_iSelectItem].m_wCarrotCount;
 					char	strText[512];
+					char	strItemName[64];
 
-					sprintf(strText,dMSG_DO_YOU_WANT_BUY_FOLLOW_CARROT_SHOP_ITEM_FORM,item.getName(),item.m_bCount,iPrice,"");
-
-					switch(g_iCarrotShopType)
-					{
-						case	eCarrotShop_AllItemToInventory	:
-							if	(item.isLimitTermItem())
-								sprintf(strText,dMSG_DO_YOU_WANT_BUY_FOLLOW_CARROT_SHOP_ITEM_FORM,item.getName(),item.m_bCount,iPrice,dCARROT_SHOP_ITEM_TERM_WARNING);
-							break;
-
-						case	eCarrotShop_IDPublicItemToCart	:
-							if	(lpBasicItem->m_wIsIDPublicItem	==	FALSE	&&	item.isLimitTermItem())
-								sprintf(strText,dMSG_DO_YOU_WANT_BUY_FOLLOW_CARROT_SHOP_ITEM_FORM,item.getName(),item.m_bCount,iPrice,dCARROT_SHOP_ITEM_TERM_WARNING);
-							break;
-					}
+					sprintf(strItemName,"Premium %u",(unsigned)lpCategory->m_aItemList[m_iSelectItem].m_wPremiunItemIndex);
+					sprintf(strText,dMSG_DO_YOU_WANT_BUY_FOLLOW_CARROT_SHOP_ITEM_FORM,strItemName,1,iPrice,"");
 
 					m_iBuyItem		=	m_iSelectItem;
 					m_iBuyCategory	=	m_iCurrentCategory;
@@ -747,7 +754,7 @@ cCarrotShop::updateNew()
 	{
 		m_iSelectSecCategory = m_iFocusSecCategory;
 		
-		lpCategory	=	&g_carrotShop.m_aData[m_iSelectSecCategory];
+		lpCategory	=	getCarrotCategoryBySecIndex(m_iSelectSecCategory);
 		
 		ScrollBarSet();
 		
@@ -835,7 +842,10 @@ cCarrotShop::updateNew()
 			m_iFocusItemBoxIndex	=	GetItemBoxIndex(m_iNewItemCount);
 		if (m_iSelectSecCategory > 1)
 		{
-			lpCategory				=	&g_carrotShop.m_aData[m_iSelectSecCategory-2];
+			lpCategory				=	getCarrotCategoryBySecIndex(m_iSelectSecCategory);
+			if	(!lpCategory)
+				return;
+
 			m_iFocusItemBoxIndex	=	GetItemBoxIndex(lpCategory->m_wItemCount);
 		}
 	}
@@ -849,7 +859,7 @@ void
 cCarrotShop::updateItemTooltip(int _iSelectSecCategory)
 {
 	cCarrotShopCategoryInfoDefine* lpCategory = NULL;
-	int iResult = 0;
+	int iResult = 0xffff;
 	int iCount	= 0;
 	
 	if (_iSelectSecCategory == 0)
@@ -864,7 +874,10 @@ cCarrotShop::updateItemTooltip(int _iSelectSecCategory)
 	}
 	if (_iSelectSecCategory > 1)
 	{
-		lpCategory	=	&g_carrotShop.m_aData[m_iSelectSecCategory-2];
+		lpCategory	=	getCarrotCategoryBySecIndex(m_iSelectSecCategory);
+		if	(!lpCategory)
+			return;
+
 		iResult = GetClickBuyBntIndex(lpCategory->m_wItemCount);
 	}
 	
@@ -881,10 +894,10 @@ cCarrotShop::updateItemTooltip(int _iSelectSecCategory)
 			{
 				int icnt = 0;
 				bool bBreak = false;
-				for(int i=0; i<g_carrotShop.m_wCategoryCount ; i++)
+				for(int i=0; i<clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount) ; i++)
 				{
 					lpCategory	=	&g_carrotShop.m_aData[i];
-					for(int j=0; j<g_carrotShop.m_aData[i].m_wItemCount ; j++)
+					for(int j=0; j<clampCarrotItemCount(g_carrotShop.m_aData[i].m_wItemCount) ; j++)
 					{
 						if(iResult == icnt)
 						{
@@ -903,7 +916,7 @@ cCarrotShop::updateItemTooltip(int _iSelectSecCategory)
 			}
 			if (_iSelectSecCategory > 1)
 			{
-				if(iResult != 0xffff)
+				if(iResult != 0xffff && isValidCarrotItemIndex(lpCategory,iResult))
 				{
 					int iX = m_aToolTipPos[iResult].x1;
 					int iY = m_aToolTipPos[iResult].y2;
@@ -924,8 +937,8 @@ cCarrotShop::updateItemTooltip(int _iSelectSecCategory)
 void
 cCarrotShop::updateBuyBtnEvent(int _iSelectSecCategory)
 {
-	cCarrotShopCategoryInfoDefine*	lpCategory = &g_carrotShop.m_aData[_iSelectSecCategory];
-	int iResult = 0;
+	cCarrotShopCategoryInfoDefine*	lpCategory = NULL;
+	int iResult = 0xffff;
 	int iCount	= 0;
 
 	if (_iSelectSecCategory == 0)
@@ -940,9 +953,14 @@ cCarrotShop::updateBuyBtnEvent(int _iSelectSecCategory)
 	}
 	if (_iSelectSecCategory > 1)
 	{
-		lpCategory	=	&g_carrotShop.m_aData[m_iSelectSecCategory-2];
+		lpCategory	=	getCarrotCategoryBySecIndex(_iSelectSecCategory);
+		if	(!lpCategory)
+			return;
 		iResult = GetClickBuyBntIndex(lpCategory->m_wItemCount);
 	}
+
+	if	(iResult == 0xffff)
+		return;
 
 	if(m_aBuyBtnPos[iResult].isIn(s_posMouse.x,s_posMouse.y))
 	{
@@ -952,10 +970,10 @@ cCarrotShop::updateBuyBtnEvent(int _iSelectSecCategory)
 			{
 				int icnt = 0;
 				bool bBreak = false;
-				for(int i=0; i<g_carrotShop.m_wCategoryCount ; i++)
+				for(int i=0; i<clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount) ; i++)
 				{
 					lpCategory	=	&g_carrotShop.m_aData[i];
-					for(int j=0; j<g_carrotShop.m_aData[i].m_wItemCount ; j++)
+					for(int j=0; j<clampCarrotItemCount(g_carrotShop.m_aData[i].m_wItemCount) ; j++)
 					{
 						if(iResult == icnt)
 						{
@@ -971,7 +989,10 @@ cCarrotShop::updateBuyBtnEvent(int _iSelectSecCategory)
 			}
 			if (_iSelectSecCategory > 1)
 			{
-				lpCategory	=	&g_carrotShop.m_aData[m_iSelectSecCategory-2];
+				lpCategory	=	getCarrotCategoryBySecIndex(m_iSelectSecCategory);
+				if	(!lpCategory)
+					return;
+
 				if(iResult != 0xffff)
 					BuyBtnEvent(lpCategory, m_iSelectSecCategory-2, iResult);
 			}
@@ -982,18 +1003,31 @@ cCarrotShop::updateBuyBtnEvent(int _iSelectSecCategory)
 			{
 				if(m_aBuyBtnPos[0].isIn(s_posMouse.x,s_posMouse.y))
 				{
-					lpCategory = &g_carrotShop.m_aData[m_aiSearchCateIndex[0]];				
+					if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[0]))
+						return;
+
+					lpCategory = &g_carrotShop.m_aData[m_aiSearchCateIndex[0]];
+					if	(!isValidCarrotItemIndex(lpCategory,m_aiSearchItemIndex[0]))
+						return;
+
 					BuyBtnEvent(lpCategory, m_aiSearchCateIndex[0], m_aiSearchItemIndex[0]);
 				}
 			}
 			if(m_iReturnState == 2)
 			{
-				for(int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<m_iSearchCount ; i++)
+				int	iSearchCount	=	clampCarrotSearchItemCount(m_iSearchCount);
+				for(int i=max(m_sbScrollBar.m_iCurrentPos*iOneLineItemNum,0) ; i<iSearchCount ; i++)
 				{
 					if(m_aBuyBtnPos[i].isIn(s_posMouse.x,s_posMouse.y))
 					{
 						m_iSelectSearchBoxItem = i;		// insu add
+						if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[i]))
+							return;
+
 						lpCategory = &g_carrotShop.m_aData[m_aiSearchCateIndex[i]];				
+						if	(!isValidCarrotItemIndex(lpCategory,m_aiSearchItemIndex[i]))
+							return;
+
 						BuyBtnEvent(lpCategory, m_aiSearchCateIndex[i], m_aiSearchItemIndex[i]);
 						break;
 					}							
@@ -1001,9 +1035,16 @@ cCarrotShop::updateBuyBtnEvent(int _iSelectSecCategory)
 			}
 			if(m_iReturnState == 3)
 			{
-				if(m_aBuyBtnPos[m_iSelectSearchBoxItem].isIn(s_posMouse.x,s_posMouse.y))
+				if(m_iSelectSearchBoxItem >= 0 && m_iSelectSearchBoxItem < clampCarrotSearchItemCount(m_iSearchCount) &&
+					m_aBuyBtnPos[m_iSelectSearchBoxItem].isIn(s_posMouse.x,s_posMouse.y))
 				{
+					if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[m_iSelectSearchBoxItem]))
+						return;
+
 					lpCategory = &g_carrotShop.m_aData[m_aiSearchCateIndex[m_iSelectSearchBoxItem]];				
+					if	(!isValidCarrotItemIndex(lpCategory,m_aiSearchItemIndex[m_iSelectSearchBoxItem]))
+						return;
+
 					BuyBtnEvent(lpCategory, m_aiSearchCateIndex[m_iSelectSearchBoxItem], m_aiSearchItemIndex[m_iSelectSearchBoxItem]);
 				}
 			}
@@ -1018,7 +1059,7 @@ cCarrotShop::updateBuyBtnEvent(int _iSelectSecCategory)
 void
 cCarrotShop::updatePresentBtnEvent(int _iSelectSecCategory)
 {
-	cCarrotShopCategoryInfoDefine*	lpCategory = &g_carrotShop.m_aData[_iSelectSecCategory];
+	cCarrotShopCategoryInfoDefine*	lpCategory = NULL;
 	int iResult = 0xffff;
 	if (_iSelectSecCategory == 0)	// 전체
 		iResult=GetClickPresentBntIndex(m_iTotalItemCount);
@@ -1026,9 +1067,15 @@ cCarrotShop::updatePresentBtnEvent(int _iSelectSecCategory)
 		iResult=GetClickPresentBntIndex(m_iNewItemCount);
 	if (_iSelectSecCategory > 1)	// 나머지 카테고리
 	{
-		lpCategory	=	&g_carrotShop.m_aData[m_iSelectSecCategory-2];
+		lpCategory	=	getCarrotCategoryBySecIndex(m_iSelectSecCategory);
+		if	(!lpCategory)
+			return;
+
 		iResult		=	GetClickPresentBntIndex(lpCategory->m_wItemCount);
 	}
+
+	if	(iResult == 0xffff)
+		return;
 	
 	if( m_bSelectSearchBoxItem == true) // 검색결과 있다.
 	{				
@@ -1041,14 +1088,15 @@ cCarrotShop::updatePresentBtnEvent(int _iSelectSecCategory)
 		} 
 		if(m_iReturnState == 2)
 		{
-			if(iResult < m_iSearchCount && m_aPresentBtnPos[iResult].isIn(s_posMouse.x,s_posMouse.y))
+			if(iResult < clampCarrotSearchItemCount(m_iSearchCount) && m_aPresentBtnPos[iResult].isIn(s_posMouse.x,s_posMouse.y))
 			{
 				g_msgBox.cPopup("", dMSG_READY, dMSG_OK);
 			}
 		}
 		if(m_iReturnState == 3)
 		{
-			if(m_aPresentBtnPos[m_iSelectSearchBoxItem].isIn(s_posMouse.x,s_posMouse.y))
+			if(m_iSelectSearchBoxItem >= 0 && m_iSelectSearchBoxItem < clampCarrotSearchItemCount(m_iSearchCount) &&
+				m_aPresentBtnPos[m_iSelectSearchBoxItem].isIn(s_posMouse.x,s_posMouse.y))
 			{
 				g_msgBox.cPopup("", dMSG_READY, dMSG_OK);
 			}
@@ -1069,7 +1117,7 @@ cCarrotShop::updatePresentBtnEvent(int _iSelectSecCategory)
 void
 cCarrotShop::updateWishListBtnEvent(int _iSelectSecCategory)
 {
-	cCarrotShopCategoryInfoDefine*	lpCategory = &g_carrotShop.m_aData[_iSelectSecCategory];
+	cCarrotShopCategoryInfoDefine*	lpCategory = NULL;
 	int iResult = 0xffff;
 
 	if (m_iSelectSecCategory == 0)
@@ -1078,7 +1126,10 @@ cCarrotShop::updateWishListBtnEvent(int _iSelectSecCategory)
 		iResult		=	GetClickWishBntIndex(m_iNewItemCount);
 	if (m_iSelectSecCategory > 1)
 	{
-		lpCategory	=	&g_carrotShop.m_aData[m_iSelectSecCategory-2];
+		lpCategory	=	getCarrotCategoryBySecIndex(m_iSelectSecCategory);
+		if	(!lpCategory)
+			return;
+
 		iResult		=	GetClickWishBntIndex(lpCategory->m_wItemCount);
 	}
 
@@ -1100,8 +1151,14 @@ cCarrotShop::updateWishListBtnEvent(int _iSelectSecCategory)
 		
 		if (m_iSelectSecCategory > 1)
 		{
-			lpCategory			=	&g_carrotShop.m_aData[m_iSelectSecCategory-2];
+			lpCategory			=	getCarrotCategoryBySecIndex(m_iSelectSecCategory);
+			if	(!lpCategory || !isValidCarrotItemIndex(lpCategory,iResult))
+				return;
+
 			lpCustomItem		=	g_premiumItem.getItem(lpCategory->m_aItemList[iResult].m_wPremiunItemIndex);
+			if	(!lpCustomItem)
+				return;
+
 			f8ItemCount			=	lpCustomItem->m_bCount;
 // 			f8ItemCount			=	lpCategory->m_aItemList[iResult].m_bf8ItemCount;
 			m_iTotalPayCarrot	+=	lpCategory->m_aItemList[iResult].m_wCarrotCount;
@@ -1109,14 +1166,17 @@ cCarrotShop::updateWishListBtnEvent(int _iSelectSecCategory)
 		}
 		if (m_iSelectSecCategory <= 1)
 		{			
-			for(int i=0; i<g_carrotShop.m_wCategoryCount ; i++)
+			for(int i=0; i<clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount) ; i++)
 			{
 				lpCategory	=	&g_carrotShop.m_aData[i];
-				for(int j=0; j<g_carrotShop.m_aData[i].m_wItemCount ; j++)
+				for(int j=0; j<clampCarrotItemCount(g_carrotShop.m_aData[i].m_wItemCount) ; j++)
 				{
 					if(iResult == icnt)
 					{
 						lpCustomItem = g_premiumItem.getItem(lpCategory->m_aItemList[j].m_wPremiunItemIndex);
+						if	(!lpCustomItem)
+							return;
+
 						f8ItemCount = lpCustomItem->m_bCount;
 // 						f8ItemCount = lpCategory->m_aItemList[j].m_bf8ItemCount;
 						m_iTotalPayCarrot += lpCategory->m_aItemList[j].m_wCarrotCount;
@@ -1155,7 +1215,9 @@ cCarrotShop::updateWishListBtnEvent(int _iSelectSecCategory)
 			bCorrect	= TRUE;
 			iIndex		= iResult;
 		}		
-		if(m_iReturnState == 3 && m_aWishBtnPos[m_iSelectSearchBoxItem].isIn(s_posMouse.x,s_posMouse.y))
+		if(m_iReturnState == 3 &&
+			m_iSelectSearchBoxItem >= 0 && m_iSelectSearchBoxItem < clampCarrotSearchItemCount(m_iSearchCount) &&
+			m_aWishBtnPos[m_iSelectSearchBoxItem].isIn(s_posMouse.x,s_posMouse.y))
 		{
 			bCorrect	= TRUE;
 			iIndex		= m_iSelectSearchBoxItem;
@@ -1163,7 +1225,15 @@ cCarrotShop::updateWishListBtnEvent(int _iSelectSecCategory)
 					
 		if (bCorrect)
 		{
+			if	(iIndex < 0 || iIndex >= clampCarrotSearchItemCount(m_iSearchCount))
+				return;
+			if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[iIndex]))
+				return;
+
 			lpCategory = &g_carrotShop.m_aData[m_aiSearchCateIndex[iIndex]];
+			if	(!isValidCarrotItemIndex(lpCategory,m_aiSearchItemIndex[iIndex]))
+				return;
+
 			CCustomItem *lpCustomItem = g_premiumItem.getItem(lpCategory->m_aItemList[m_aiSearchItemIndex[iIndex]].m_wPremiunItemIndex);
 				
 			if(!lpCustomItem)
@@ -1596,20 +1666,6 @@ cCarrotShop::draw_Original()
 		
 		iAvailLineCount++;
 		
-		cItem	item;
-		
-		CCustomItem	*lpCustomItem	=	g_premiumItem.getItem(lpCategory->m_aItemList[i].m_wPremiunItemIndex);
-		
-		if	(!lpCustomItem)
-			continue;
-		
-		if	(!lpCustomItem->generateItem(&item))
-			continue;
-		
-		cBasicItem	*lpBaseItem	=	item.getBasicItem();
-		
-// 		item.m_bCount=	lpCategory->m_aItemList[i].m_bf8ItemCount;
-		
 		int	iPutX	=	iX+10;
 		int	iPutY	=	iY+iPutCount*dSHOP_ITEM_HEIGHT;
 		
@@ -1620,16 +1676,10 @@ cCarrotShop::draw_Original()
 		}
 		
 		g_sprInterface.Put(iPutX+3,iPutY+4,eIWI_ITEM_SLOT_FRAME);
-		PutItem(&item,iPutX+3,iPutY+4,TRUE);
 		
 		char	strItemName[128];
 		
-		//		strcpy(strItemName,lpBaseItem->m_strName);
-#ifdef	_DEBUG
-		sprintf(strItemName,"[%2d] <c:LTGREEN>%s<n>",i,lpBaseItem->m_strName);
-#else
-		strcpy(strItemName,lpBaseItem->m_strName);
-#endif
+		sprintf(strItemName,"[%2d] Premium %u",i,(unsigned)lpCategory->m_aItemList[i].m_wPremiunItemIndex);
 		int		iTextWidth	=	(iPutX+245-6)-(iPutX-2)-4-40;
 		
 		if (s_text.getLineCount(iTextWidth,strItemName)	>=	2)
@@ -1744,7 +1794,7 @@ cCarrotShop::DrawToolTip(int _iPutPosX, int _iPutPosY, int _iItemIndex)
 void
 cCarrotShop::ScrollBarSet()
 {
-	cCarrotShopCategoryInfoDefine	*lpCategory = &g_carrotShop.m_aData[m_iSelectSecCategory];
+	cCarrotShopCategoryInfoDefine	*lpCategory = NULL;
 	int iScrollValue = (m_iTotalItemCount%iOneLineItemNum)? m_iTotalItemCount/iOneLineItemNum+1 : m_iTotalItemCount/iOneLineItemNum;
 	
 	if(m_iSelectSecCategory == 0)	// 전체 카테고리 일때 
@@ -1758,16 +1808,24 @@ cCarrotShop::ScrollBarSet()
 	}
 	else	// 나머지 카테고리일때 
 	{
-		lpCategory	=	&g_carrotShop.m_aData[m_iSelectSecCategory-2];
+		lpCategory	=	getCarrotCategoryBySecIndex(m_iSelectSecCategory);
+		if	(!lpCategory)
+		{
+			m_sbScrollBar.setSize(0, 0);
+			m_sbScrollBar.setPos(0);
+			return;
+		}
 		
-		if(lpCategory->m_wItemCount <= iOneLineItemNum*iLineNum)
+		int	iItemCount	=	clampCarrotItemCount(lpCategory->m_wItemCount);
+
+		if(iItemCount <= iOneLineItemNum*iLineNum)
 		{
 			m_sbScrollBar.setSize(0, 0);
 		}
 		else
 		{
-			int iScrollLineNum = lpCategory->m_wItemCount/iOneLineItemNum;
-			if (lpCategory->m_wItemCount%iOneLineItemNum >  0)
+			int iScrollLineNum = iItemCount/iOneLineItemNum;
+			if (iItemCount%iOneLineItemNum >  0)
 				iScrollLineNum++;
 			//iScrollLineNum -= iLineNum;
 			m_sbScrollBar.setSize(iScrollLineNum, 4);
@@ -1783,12 +1841,15 @@ void
 cCarrotShop::DrawResultToolTip()
 {
 	int iResult = GetToolTipIndex(m_iTotalItemCount);
-	cCarrotShopCategoryInfoDefine	*lpCategory;
+	cCarrotShopCategoryInfoDefine	*lpCategory = NULL;
 	
 	if(m_iReturnState == 1)
 	{
+		if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[0]))
+			return;
+
 		lpCategory = &g_carrotShop.m_aData[m_aiSearchCateIndex[0]];
-		if(m_aToolTipPos[0].isIn(s_posMouse.x,s_posMouse.y))
+		if(isValidCarrotItemIndex(lpCategory,m_aiSearchItemIndex[0]) && m_aToolTipPos[0].isIn(s_posMouse.x,s_posMouse.y))
 		{
 			DrawToolTip(	m_aToolTipPos[0].x1, 
 				m_aToolTipPos[0].y1,
@@ -1797,9 +1858,13 @@ cCarrotShop::DrawResultToolTip()
 	}
 	if(m_iReturnState == 2)
 	{
-		if(iResult < m_iSearchCount)
+		if(iResult != 0xffff && iResult < clampCarrotSearchItemCount(m_iSearchCount) &&
+			isValidCarrotCategoryIndex(m_aiSearchCateIndex[iResult]))
 		{
 			lpCategory = &g_carrotShop.m_aData[m_aiSearchCateIndex[iResult]];
+			if	(!isValidCarrotItemIndex(lpCategory,m_aiSearchItemIndex[iResult]))
+				return;
+
 			//if(m_aToolTipPos[iResult].isIn(s_posMouse.x,s_posMouse.y))
 			{
 				DrawToolTip(	m_aToolTipPos[iResult].x1, 
@@ -1810,8 +1875,14 @@ cCarrotShop::DrawResultToolTip()
 	}
 	if(m_iReturnState == 3)
 	{
+		if	(m_iSelectSearchBoxItem < 0 || m_iSelectSearchBoxItem >= clampCarrotSearchItemCount(m_iSearchCount))
+			return;
+		if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[m_iSelectSearchBoxItem]))
+			return;
+
 		lpCategory = &g_carrotShop.m_aData[m_aiSearchCateIndex[m_iSelectSearchBoxItem]];
-		if(m_aToolTipPos[m_iSelectSearchBoxItem].isIn(s_posMouse.x,s_posMouse.y))
+		if(isValidCarrotItemIndex(lpCategory,m_aiSearchItemIndex[m_iSelectSearchBoxItem]) &&
+			m_aToolTipPos[m_iSelectSearchBoxItem].isIn(s_posMouse.x,s_posMouse.y))
 		{
 			DrawToolTip(	m_aToolTipPos[m_iSelectSearchBoxItem].x1, 
 				m_aToolTipPos[m_iSelectSearchBoxItem].y1,
@@ -1923,9 +1994,12 @@ cCarrotShop::DrawTopCategory()
 int
 cCarrotShop::GetItemBoxIndex(int _iItemCount)
 {
+	int	iBegin	=	max(m_sbScrollBar.m_iCurrentPos*iOneLineItemNum,0);
+	int	iEnd	=	clampCarrotItemCount(_iItemCount);
+
 	if(m_bSelectSearchBoxItem == false)
 	{
-		for(int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<_iItemCount ; i++)
+		for(int i=iBegin ; i<iEnd ; i++)
 		{
 			if (m_aItemBoxPos[i].isIn(s_posMouse.x, s_posMouse.y))
 				return i;
@@ -1933,7 +2007,9 @@ cCarrotShop::GetItemBoxIndex(int _iItemCount)
 	}
 	else
 	{
-		for (int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<_iItemCount ; i++)
+		iEnd	=	clampCarrotSearchItemCount(_iItemCount);
+
+		for (int i=iBegin ; i<iEnd ; i++)
 		{
 			if (m_aItemBoxPos[i].isIn(s_posMouse.x, s_posMouse.y))
 				return i;
@@ -2003,7 +2079,8 @@ cCarrotShop::DrawItemBuyCategory()
 	DrawCategoryBtn(&m_aSecCategoryPos[1], 1, dMSG_CARROTSHOP_CATEGORY_HOT, iPutPosX, iPutPosY, eCARROT_SECSBTN_CLICK, eCARROT_SECSBTN_UP, eCARROT_SECSBTN1NORMAL);
 	
 	// 나머지 카테고리
-	for(int i=0 ; i<g_carrotShop.m_wCategoryCount ; i++)
+	int	iCategoryCount	=	clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount);
+	for(int i=0 ; i<iCategoryCount ; i++)
 	{
 		cCarrotShopCategoryInfoDefine	*lpCategory	=	&g_carrotShop.m_aData[i];
 		
@@ -2055,10 +2132,17 @@ cCarrotShop::DrawAllItem()	// 전체카테고리 출력
 	
 	if(m_bSelectSearchBoxItem == true && m_iReturnState == 1)	// 결과값 한개인 경우
 	{
+		if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[0]))
+			return;
+
+		cCarrotShopCategoryInfoDefine	*lpSearchCategory	=	&g_carrotShop.m_aData[m_aiSearchCateIndex[0]];
+		if	(!isValidCarrotItemIndex(lpSearchCategory,m_aiSearchItemIndex[0]))
+			return;
+
 		DrawItem(	&m_aSearchItem[0], 
 			m_aiSearchCateIndex[0], m_aiSearchItemIndex[0], 
 			iPutPosX, itempPutPosY, 
-			g_carrotShop.m_aData[m_aiSearchCateIndex[0]].m_aItemList[m_aiSearchItemIndex[0]].m_bf1IsHotItem,
+			lpSearchCategory->m_aItemList[m_aiSearchItemIndex[0]].m_bf1IsHotItem,
 			&m_aBuyBtnPos[0], 
 			&m_aPresentBtnPos[0], 
 			&m_aWishBtnPos[0],
@@ -2072,7 +2156,8 @@ cCarrotShop::DrawAllItem()	// 전체카테고리 출력
 		//if(m_sbScrollBar.m_iCurrentPos > 0)
 		//	itempPutPosY -= (g_sprInterface2.getSpriteHeight(eCARROT_ITEMWND_BORDER)+iLargeBoxYMargin);
 		
-		for(int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<m_iSearchCount ; i++)
+		int	iSearchCount	=	clampCarrotSearchItemCount(m_iSearchCount);
+		for(int i=max(m_sbScrollBar.m_iCurrentPos*iOneLineItemNum,0) ; i<iSearchCount ; i++)
 		{
 			if(i%iOneLineItemNum == 0 && i != m_sbScrollBar.m_iCurrentPos*iOneLineItemNum)	// 한줄에 표시될 개수를 넘어가면 출력좌표를 다시 설정해준다.
 			{
@@ -2083,10 +2168,17 @@ cCarrotShop::DrawAllItem()	// 전체카테고리 출력
 			if(i > m_sbScrollBar.m_iCurrentPos*iOneLineItemNum + iOneLineItemNum*iLineNum-1) // 한 페이지를 넘어가면 그만 찍어준다.
 				return;
 			
+			if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[i]))
+				continue;
+
+			cCarrotShopCategoryInfoDefine	*lpSearchCategory	=	&g_carrotShop.m_aData[m_aiSearchCateIndex[i]];
+			if	(!isValidCarrotItemIndex(lpSearchCategory,m_aiSearchItemIndex[i]))
+				continue;
+
 			DrawItem(	&m_aSearchItem[i], 
 				m_aiSearchCateIndex[i], m_aiSearchItemIndex[i], 
 				iPutPosX, itempPutPosY, 
-				g_carrotShop.m_aData[m_aiSearchCateIndex[i]].m_aItemList[m_aiSearchItemIndex[i]].m_bf1IsHotItem,
+				lpSearchCategory->m_aItemList[m_aiSearchItemIndex[i]].m_bf1IsHotItem,
 				&m_aBuyBtnPos[i], 
 				&m_aPresentBtnPos[i], 
 				&m_aWishBtnPos[i],
@@ -2098,10 +2190,19 @@ cCarrotShop::DrawAllItem()	// 전체카테고리 출력
 	
 	if(m_bSelectSearchBoxItem == true && m_iReturnState == 3)	// 검색결과가 여러개 무엇인가 선택하고 리턴키. 하나만 출력해주면 된다.
 	{
+		if	(m_iSelectSearchBoxItem < 0 || m_iSelectSearchBoxItem >= clampCarrotSearchItemCount(m_iSearchCount))
+			return;
+		if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[m_iSelectSearchBoxItem]))
+			return;
+
+		cCarrotShopCategoryInfoDefine	*lpSearchCategory	=	&g_carrotShop.m_aData[m_aiSearchCateIndex[m_iSelectSearchBoxItem]];
+		if	(!isValidCarrotItemIndex(lpSearchCategory,m_aiSearchItemIndex[m_iSelectSearchBoxItem]))
+			return;
+
 		DrawItem(	&m_aSearchItem[m_iSelectSearchBoxItem], 
 			m_aiSearchCateIndex[m_iSelectSearchBoxItem], m_aiSearchItemIndex[m_iSelectSearchBoxItem], 
 			iPutPosX, itempPutPosY, 
-			g_carrotShop.m_aData[m_aiSearchCateIndex[m_iSelectSearchBoxItem]].m_aItemList[m_aiSearchItemIndex[m_iSelectSearchBoxItem]].m_bf1IsHotItem,
+			lpSearchCategory->m_aItemList[m_aiSearchItemIndex[m_iSelectSearchBoxItem]].m_bf1IsHotItem,
 			&m_aBuyBtnPos[m_iSelectSearchBoxItem], 
 			&m_aPresentBtnPos[m_iSelectSearchBoxItem], 
 			&m_aWishBtnPos[m_iSelectSearchBoxItem],
@@ -2111,10 +2212,10 @@ cCarrotShop::DrawAllItem()	// 전체카테고리 출력
 	// 검색결과가 없을때
 	// 일단 신규 아이템부터 출력해주고 .. 
 	int iItemCount = 0;	// 스크롤바에 따라 찍어주는 아이템이 다르기 때문에 아이템갯수가 필요하다.
-	for(int i=0 ; i<g_carrotShop.m_wCategoryCount ; i++)
+	for(int i=0 ; i<clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount) ; i++)
 	{		
 		cCarrotShopCategoryInfoDefine	*lpCategory	=	&g_carrotShop.m_aData[i];
-		for(int j=0; j<lpCategory->m_wItemCount ; j++)
+		for(int j=0; j<clampCarrotItemCount(lpCategory->m_wItemCount) ; j++)
 		{
 			if(lpCategory->m_aItemList[j].m_bf1IsHotItem) // 신규아이템이다!
 			{
@@ -2129,10 +2230,10 @@ cCarrotShop::DrawAllItem()	// 전체카테고리 출력
 				CCustomItem *lpCustomItem = g_premiumItem.getItem(lpCategory->m_aItemList[j].m_wPremiunItemIndex);
 				
 				if(!lpCustomItem)
-					return; // continue;
+					continue;
 				
 				if(!lpCustomItem->generateItem(&item))
-					return; // continue;
+					continue;
 				
 				if(iPutItemCount%iOneLineItemNum == 0 && iPutItemCount != 0)	// 한줄에 표시될 개수를 넘어가면 출력좌표를 다시 설정해준다.
 				{
@@ -2160,11 +2261,11 @@ cCarrotShop::DrawAllItem()	// 전체카테고리 출력
 		return;
 
 	// 나머지 아이템 출력 시작 ..
-	for( i=0 ; i<g_carrotShop.m_wCategoryCount ; i++)
+	for( i=0 ; i<clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount) ; i++)
 	{
 		cCarrotShopCategoryInfoDefine	*lpCategory	=	&g_carrotShop.m_aData[i];
 		
-		for(int j=0; j<lpCategory->m_wItemCount ; j++)
+		for(int j=0; j<clampCarrotItemCount(lpCategory->m_wItemCount) ; j++)
 		{
 			if(!lpCategory->m_aItemList[j].m_bf1IsHotItem) // 신규아이템이 아니다!
 			{
@@ -2179,10 +2280,10 @@ cCarrotShop::DrawAllItem()	// 전체카테고리 출력
 				CCustomItem *lpCustomItem = g_premiumItem.getItem(lpCategory->m_aItemList[j].m_wPremiunItemIndex);
 				
 				if(!lpCustomItem)
-					return;
+					continue;
 				
 				if(!lpCustomItem->generateItem(&item))
-					return;
+					continue;
 				
 				if(iPutItemCount%iOneLineItemNum == 0 && iPutItemCount != 0)	// 한줄에 표시될 개수를 넘어가면 출력좌표를 다시 설정해준다.
 				{
@@ -2224,14 +2325,24 @@ cCarrotShop::DrawAllItem()	// 전체카테고리 출력
 void
 cCarrotShop::DrawItem(cItem* _Item, int _iCategoryIndex, int _ItemListIndex, int _iPutPosX, int _iPutPosY, bool _bHot, cRECT* _BuyBtnPos, cRECT* _PresentBtnPos, cRECT* _WishBtnPos, cRECT* _ToolTipPos, cRECT* _ItemBoxPos)
 {
+	if	(!_Item || !_BuyBtnPos || !_PresentBtnPos || !_WishBtnPos || !_ToolTipPos || !_ItemBoxPos)
+		return;
+	if	(!isValidCarrotCategoryIndex(_iCategoryIndex))
+		return;
+
 	cCarrotShopCategoryInfoDefine	*lpCategory	=	&g_carrotShop.m_aData[_iCategoryIndex];
+	if	(!isValidCarrotItemIndex(lpCategory,_ItemListIndex))
+		return;
 	
 	cBasicItem *lpBaseItem = _Item->getBasicItem();
+	if	(!lpBaseItem)
+		return;
 	
 // 	_Item->m_bCount = lpCategory->m_aItemList[_ItemListIndex].m_bf8ItemCount;
 	
 	_ItemBoxPos->set(_iPutPosX+1, _iPutPosY+1, _iPutPosX+g_sprInterface2.getSpriteWidth(eCARROT_ITEMWND_BORDER)-2, _iPutPosY+g_sprInterface2.getSpriteHeight(eCARROT_ITEMWND_BORDER)-2);
-	if (_iPutPosX+1 == m_aItemBoxPos[m_iFocusItemBoxIndex].x1 && _iPutPosY+1 == m_aItemBoxPos[m_iFocusItemBoxIndex].y1)
+	if (m_iFocusItemBoxIndex >= 0 && m_iFocusItemBoxIndex < dMAX_CARROT_SHOP_ITEM_COUNT &&
+		_iPutPosX+1 == m_aItemBoxPos[m_iFocusItemBoxIndex].x1 && _iPutPosY+1 == m_aItemBoxPos[m_iFocusItemBoxIndex].y1)
 		cDRAW::Fill(_LTBLUE, _iPutPosX+1, _iPutPosY+1, _iPutPosX+g_sprInterface2.getSpriteWidth(eCARROT_ITEMWND_BORDER)-2, _iPutPosY+g_sprInterface2.getSpriteHeight(eCARROT_ITEMWND_BORDER)-2);	
 
 	g_sprInterface2.Put(_iPutPosX, _iPutPosY, eCARROT_ITEMWND_BORDER);			// 큰 박스
@@ -2322,7 +2433,9 @@ cCarrotShop::DrawItemList()
 	if(m_bSelectSearchBoxItem == false)		// 검색결과 없다.
 	{
 		// 스크롤에 따라 해당 카테고리 아이템 리스트를 출력한다.
-		cCarrotShopCategoryInfoDefine	*lpCategory	=	&g_carrotShop.m_aData[m_iSelectSecCategory-2];
+		cCarrotShopCategoryInfoDefine	*lpCategory	=	getCarrotCategoryBySecIndex(m_iSelectSecCategory);
+		if	(!lpCategory)
+			return;
 		
 		// 스크롤바를 출력해주고 
 		m_sbScrollBar.draw();
@@ -2334,16 +2447,17 @@ cCarrotShop::DrawItemList()
 		int itempPutPosY = iPutPosY;	// y좌표가 아이템갯수에 따라 유동적으로 변하기때문에 임시로 하나 생성한다.
 		
 		// 아이템리스트를 출력해준다.
-		for(int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<lpCategory->m_wItemCount ; i++)
+		int	iItemCount	=	clampCarrotItemCount(lpCategory->m_wItemCount);
+		for(int i=max(m_sbScrollBar.m_iCurrentPos*iOneLineItemNum,0) ; i<iItemCount ; i++)
 		{		
 			cItem item;
 			CCustomItem *lpCustomItem = g_premiumItem.getItem(lpCategory->m_aItemList[i].m_wPremiunItemIndex);
 			
 			if(!lpCustomItem)
-				return;
+				continue;
 			
 			if(!lpCustomItem->generateItem(&item))
-				return;
+				continue;
 			
 			if(i+1 > (iOneLineItemNum*iLineNum) + (m_sbScrollBar.m_iCurrentPos*iOneLineItemNum))
 				break;
@@ -2364,15 +2478,22 @@ cCarrotShop::DrawItemList()
 	}
 	else		// 검색결과 있다.
 	{
-		cCarrotShopCategoryInfoDefine	*lpCategory	=	&g_carrotShop.m_aData[m_iSelectSecCategory-2];
+		cCarrotShopCategoryInfoDefine	*lpCategory	=	getCarrotCategoryBySecIndex(m_iSelectSecCategory);
 		int itempPutPosY = iPutPosY;
 		
 		if(m_bSelectSearchBoxItem == true && m_iReturnState == 1)	// 결과값 한개인 경우
 		{
+			if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[0]))
+				return;
+
+			lpCategory	=	&g_carrotShop.m_aData[m_aiSearchCateIndex[0]];
+			if	(!isValidCarrotItemIndex(lpCategory,m_aiSearchItemIndex[0]))
+				return;
+
 			DrawItem(	&m_aSearchItem[0], 
 				m_aiSearchCateIndex[0], m_aiSearchItemIndex[0], 
 				iPutPosX, itempPutPosY,
-				g_carrotShop.m_aData[m_aiSearchCateIndex[0]].m_aItemList[m_aiSearchItemIndex[0]].m_bf1IsHotItem,
+				lpCategory->m_aItemList[m_aiSearchItemIndex[0]].m_bf1IsHotItem,
 				&m_aBuyBtnPos[0], 
 				&m_aPresentBtnPos[0], 
 				&m_aWishBtnPos[0],
@@ -2383,7 +2504,8 @@ cCarrotShop::DrawItemList()
 		
 		if(m_bSelectSearchBoxItem == true && m_iReturnState == 2)	// 검색결과가 여러개 선택안하고 바로 리턴키 
 		{		
-			for(int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<m_iSearchCount ; i++)
+			int	iSearchCount	=	clampCarrotSearchItemCount(m_iSearchCount);
+			for(int i=max(m_sbScrollBar.m_iCurrentPos*iOneLineItemNum,0) ; i<iSearchCount ; i++)
 			{
 				if(i%iOneLineItemNum == 0 && i != 0)	// 한줄에 표시될 개수를 넘어가면 출력좌표를 다시 설정해준다.
 				{
@@ -2394,10 +2516,17 @@ cCarrotShop::DrawItemList()
 				if(i > m_sbScrollBar.m_iCurrentPos*iOneLineItemNum + iOneLineItemNum*iLineNum-1) // 한 페이지를 넘어가면 그만 찍어준다.
 					return;
 				
+				if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[i]))
+					continue;
+
+				lpCategory	=	&g_carrotShop.m_aData[m_aiSearchCateIndex[i]];
+				if	(!isValidCarrotItemIndex(lpCategory,m_aiSearchItemIndex[i]))
+					continue;
+
 				DrawItem(	&m_aSearchItem[i], 
 					m_aiSearchCateIndex[i], m_aiSearchItemIndex[i], 
 					iPutPosX, itempPutPosY, 
-					g_carrotShop.m_aData[m_aiSearchCateIndex[i]].m_aItemList[m_aiSearchItemIndex[i]].m_bf1IsHotItem,
+					lpCategory->m_aItemList[m_aiSearchItemIndex[i]].m_bf1IsHotItem,
 					&m_aBuyBtnPos[i], 
 					&m_aPresentBtnPos[i], 
 					&m_aWishBtnPos[i],
@@ -2410,10 +2539,19 @@ cCarrotShop::DrawItemList()
 		
 		if(m_bSelectSearchBoxItem == true && m_iReturnState == 3)	// 검색결과가 여러개 무엇인가 선택하고 리턴키. 하나만 출력해주면 된다.
 		{
+			if	(m_iSelectSearchBoxItem < 0 || m_iSelectSearchBoxItem >= clampCarrotSearchItemCount(m_iSearchCount))
+				return;
+			if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[m_iSelectSearchBoxItem]))
+				return;
+
+			lpCategory	=	&g_carrotShop.m_aData[m_aiSearchCateIndex[m_iSelectSearchBoxItem]];
+			if	(!isValidCarrotItemIndex(lpCategory,m_aiSearchItemIndex[m_iSelectSearchBoxItem]))
+				return;
+
 			DrawItem(	&m_aSearchItem[m_iSelectSearchBoxItem],
 				m_aiSearchCateIndex[m_iSelectSearchBoxItem], m_aiSearchItemIndex[m_iSelectSearchBoxItem], 
 				iPutPosX, itempPutPosY, 
-				g_carrotShop.m_aData[m_aiSearchCateIndex[m_iSelectSearchBoxItem]].m_aItemList[m_aiSearchItemIndex[m_iSelectSearchBoxItem]].m_bf1IsHotItem,
+				lpCategory->m_aItemList[m_aiSearchItemIndex[m_iSelectSearchBoxItem]].m_bf1IsHotItem,
 				&m_aBuyBtnPos[m_iSelectSearchBoxItem], 
 				&m_aPresentBtnPos[m_iSelectSearchBoxItem], 
 				&m_aWishBtnPos[m_iSelectSearchBoxItem],
@@ -2529,22 +2667,29 @@ cCarrotShop::SearchAutoComplete()
 {
 	int iIndex = 0;
 	m_iSearchCount = 0;
+	const int iMaxSearchItemCount = dMAX_CARROT_SHOP_ITEM_COUNT/2;
 	
 	if (m_iSelectSecCategory == 0 || m_iSelectSecCategory == 1)	// 전체 카테고리 || 신규 카테고리
 	{
-		for(int i=0; i<g_carrotShop.m_wCategoryCount ; i++)
+		for(int i=0; i<clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount) ; i++)
 		{
-			for(int j=0; j<g_carrotShop.m_aData[i].m_wItemCount ; j++)
+			for(int j=0; j<clampCarrotItemCount(g_carrotShop.m_aData[i].m_wItemCount) ; j++)
 			{
+				if	(m_iSearchCount >= iMaxSearchItemCount || iIndex >= iMaxSearchItemCount)
+					return;
+
 				CCustomItem *lpCustomItem = g_premiumItem.getItem(g_carrotShop.m_aData[i].m_aItemList[j].m_wPremiunItemIndex);	// 아이템인덱스를 받아온다.
 				
 				if(!lpCustomItem)
-					return;
+					continue;
 				
 				if(!lpCustomItem->generateItem(&m_aSearchItem[m_iSearchCount]))
-					return;
+					continue;
 				
 				cBasicItem *lpBaseItem = m_aSearchItem[m_iSearchCount].getBasicItem();	// 해당 아이템의 정보를 받아서 
+				if	(!lpBaseItem)
+					continue;
+
 				Str_toupper(m_strSearchValue);
 				if(m_iSelectSecCategory == 0 && strstr(lpBaseItem->m_strName, m_strSearchValue))	// 해당 문자열이 있다면 m_iSearchCount를 증가시킨다.
 				{
@@ -2566,17 +2711,27 @@ cCarrotShop::SearchAutoComplete()
 	}
 	else
 	{
-		for(int i=0; i<g_carrotShop.m_aData[m_iSelectSecCategory-2].m_wItemCount ; i++)
+		cCarrotShopCategoryInfoDefine	*lpCategory	=	getCarrotCategoryBySecIndex(m_iSelectSecCategory);
+		if	(!lpCategory)
+			return;
+
+		for(int i=0; i<clampCarrotItemCount(lpCategory->m_wItemCount) ; i++)
 		{			
-			CCustomItem *lpCustomItem = g_premiumItem.getItem(g_carrotShop.m_aData[m_iSelectSecCategory-2].m_aItemList[i].m_wPremiunItemIndex);	// 아이템인덱스를 받아온다.
+			if	(m_iSearchCount >= iMaxSearchItemCount || iIndex >= iMaxSearchItemCount)
+				return;
+
+			CCustomItem *lpCustomItem = g_premiumItem.getItem(lpCategory->m_aItemList[i].m_wPremiunItemIndex);	// 아이템인덱스를 받아온다.
 			
 			if(!lpCustomItem)
-				return;
+				continue;
 			
 			if(!lpCustomItem->generateItem(&m_aSearchItem[m_iSearchCount]))
-				return;
+				continue;
 			
 			cBasicItem *lpBaseItem = m_aSearchItem[m_iSearchCount].getBasicItem();	// 해당 아이템의 정보를 받아서 
+			if	(!lpBaseItem)
+				continue;
+
 			Str_toupper(m_strSearchValue);
 			if(strstr(lpBaseItem->m_strName, m_strSearchValue))	// 해당 문자열이 있다면 m_iSearchCount를 증가시킨다.
 			{
@@ -2637,9 +2792,15 @@ cCarrotShop::DrawSearchResult()
 		
 		// 검색된 결과를 출력해준다.
 		int iPosX=0;
-		for(i=m_sbSearchScrollBar.m_iCurrentPos; i<m_iSearchCount ; i++)
+		for(i=max(m_sbSearchScrollBar.m_iCurrentPos,0); i<clampCarrotSearchItemCount(m_iSearchCount) ; i++)
 		{
+			if	(iPosX >= CARROT_SEARCHRESULT_SHOWCOUNT)
+				break;
+
 			cBasicItem *lpBaseItem = m_aSearchItem[i].getBasicItem();
+			if	(!lpBaseItem)
+				continue;
+
 			// 마우스 포인터 위치에 따라 이걸 선택하고 있다 라는 포인트를 줘야 한다. eCARROT_SEARCHBOX_SELECT			
 			m_SelectSearchResultBox[iPosX].set(	itempPosX,
 				itempPoxY+(iPosX*17), 
@@ -2708,6 +2869,9 @@ cCarrotShop::WishBuyBtnEvent()
 bool
 cCarrotShop::BuyBtnEvent(cCarrotShopCategoryInfoDefine* _lpCategory, int _iCateIndex, int _iItemIndex)
 {
+	if	(!isValidCarrotCategoryIndex(_iCateIndex) || !isValidCarrotItemIndex(_lpCategory,_iItemIndex))
+		return	false;
+
 	if(m_wIsWaitResult)
 	{
 		if (!g_msgBox.isPoped())
@@ -2743,8 +2907,11 @@ cCarrotShop::BuyBtnEvent(cCarrotShopCategoryInfoDefine* _lpCategory, int _iCateI
 			break;
 
 		case	eCarrotShop_IDPublicItemToCart	:
-			if	(item.getBasicItem()->m_wIsIDPublicItem	==	FALSE	&&	item.isLimitTermItem())
-				sprintf(strText,dMSG_DO_YOU_WANT_BUY_FOLLOW_CARROT_SHOP_ITEM_FORM,item.getName(),item.m_bCount,iPrice,dCARROT_SHOP_ITEM_TERM_WARNING);
+			{
+				cBasicItem	*lpBasicItem	=	item.getBasicItem();
+				if	(lpBasicItem && lpBasicItem->m_wIsIDPublicItem == FALSE && item.isLimitTermItem())
+					sprintf(strText,dMSG_DO_YOU_WANT_BUY_FOLLOW_CARROT_SHOP_ITEM_FORM,item.getName(),item.m_bCount,iPrice,dCARROT_SHOP_ITEM_TERM_WARNING);
+			}
 			break;
 	}
 	
@@ -2755,6 +2922,15 @@ cCarrotShop::BuyBtnEvent(cCarrotShopCategoryInfoDefine* _lpCategory, int _iCateI
 	}
 	else
 	{
+		if	(m_iSelectSearchBoxItem < 0 || m_iSelectSearchBoxItem >= clampCarrotSearchItemCount(m_iSearchCount))
+			return	false;
+		if	(!isValidCarrotCategoryIndex(m_aiSearchCateIndex[m_iSelectSearchBoxItem]))
+			return	false;
+
+		cCarrotShopCategoryInfoDefine	*lpSearchCategory	=	&g_carrotShop.m_aData[m_aiSearchCateIndex[m_iSelectSearchBoxItem]];
+		if	(!isValidCarrotItemIndex(lpSearchCategory,m_aiSearchItemIndex[m_iSelectSearchBoxItem]))
+			return	false;
+
 		m_iBuyItem		=	m_aiSearchItemIndex[m_iSelectSearchBoxItem];
 		m_iBuyCategory	=	m_aiSearchCateIndex[m_iSelectSearchBoxItem];
 	}
@@ -2783,7 +2959,9 @@ cCarrotShop::GetFocusTopCategory()
 int
 cCarrotShop::GetFocusSecCategory()
 {
-	for	(int i=0;i<g_carrotShop.m_wCategoryCount+2;i++)	// 전체, 신규 카테고리는 포함되어 있는 것이 아니므로 추가.
+	int	iCategoryButtonCount	=	clampCarrotCategoryCount(g_carrotShop.m_wCategoryCount)+2;
+
+	for	(int i=0;i<iCategoryButtonCount;i++)	// 전체, 신규 카테고리는 포함되어 있는 것이 아니므로 추가.
 	{
 		if	(m_aSecCategoryPos[i].isIn(s_posMouse.x,s_posMouse.y))
 			return	i;
@@ -2795,9 +2973,12 @@ cCarrotShop::GetFocusSecCategory()
 int
 cCarrotShop::GetClickBuyBntIndex(int _iItemCount)
 {
+	int	iBegin	=	max(m_sbScrollBar.m_iCurrentPos*iOneLineItemNum,0);
+	int	iEnd	=	m_bSelectSearchBoxItem ? clampCarrotSearchItemCount(_iItemCount) : clampCarrotItemCount(_iItemCount);
+
 	if(m_bSelectSearchBoxItem == false)
 	{
-		for (int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<_iItemCount ; i++)
+		for (int i=iBegin ; i<iEnd ; i++)
 		{
 			if (m_aBuyBtnPos[i].isIn(s_posMouse.x, s_posMouse.y))
 				return i;
@@ -2805,7 +2986,7 @@ cCarrotShop::GetClickBuyBntIndex(int _iItemCount)
 	}
 	else
 	{
-		for (int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<_iItemCount ; i++)
+		for (int i=iBegin ; i<iEnd ; i++)
 		{
 			if (m_aBuyBtnPos[i].isIn(s_posMouse.x, s_posMouse.y))
 				return i;
@@ -2817,9 +2998,12 @@ cCarrotShop::GetClickBuyBntIndex(int _iItemCount)
 int
 cCarrotShop::GetClickPresentBntIndex(int _iItemCount)
 {
+	int	iBegin	=	max(m_sbScrollBar.m_iCurrentPos*iOneLineItemNum,0);
+	int	iEnd	=	m_bSelectSearchBoxItem ? clampCarrotSearchItemCount(_iItemCount) : clampCarrotItemCount(_iItemCount);
+
 	if(m_bSelectSearchBoxItem == false)
 	{
-		for (int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<_iItemCount ; i++)
+		for (int i=iBegin ; i<iEnd ; i++)
 		{
 			if (m_aPresentBtnPos[i].isIn(s_posMouse.x, s_posMouse.y))
 				return i;
@@ -2827,7 +3011,7 @@ cCarrotShop::GetClickPresentBntIndex(int _iItemCount)
 	}
 	else
 	{
-		for (int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<_iItemCount ; i++)
+		for (int i=iBegin ; i<iEnd ; i++)
 		{
 			if (m_aPresentBtnPos[i].isIn(s_posMouse.x, s_posMouse.y))
 				return i;
@@ -2839,9 +3023,12 @@ cCarrotShop::GetClickPresentBntIndex(int _iItemCount)
 int
 cCarrotShop::GetClickWishBntIndex(int _iItemCount)
 {
+	int	iBegin	=	max(m_sbScrollBar.m_iCurrentPos*iOneLineItemNum,0);
+	int	iEnd	=	m_bSelectSearchBoxItem ? clampCarrotSearchItemCount(_iItemCount) : clampCarrotItemCount(_iItemCount);
+
 	if(m_bSelectSearchBoxItem == false)
 	{
-		for (int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<_iItemCount ; i++)
+		for (int i=iBegin ; i<iEnd ; i++)
 		{
 			if (m_aWishBtnPos[i].isIn(s_posMouse.x, s_posMouse.y))
 				return i;
@@ -2849,7 +3036,7 @@ cCarrotShop::GetClickWishBntIndex(int _iItemCount)
 	}
 	else
 	{
-		for (int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<_iItemCount ; i++)
+		for (int i=iBegin ; i<iEnd ; i++)
 		{
 			if (m_aWishBtnPos[i].isIn(s_posMouse.x, s_posMouse.y))
 				return i;
@@ -2861,9 +3048,12 @@ cCarrotShop::GetClickWishBntIndex(int _iItemCount)
 int
 cCarrotShop::GetToolTipIndex(int _iItemCount)
 {
+	int	iBegin	=	max(m_sbScrollBar.m_iCurrentPos*iOneLineItemNum,0);
+	int	iEnd	=	m_bSelectSearchBoxItem ? clampCarrotSearchItemCount(_iItemCount) : clampCarrotItemCount(_iItemCount);
+
 	if(m_bSelectSearchBoxItem == false)
 	{
-		for(int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<_iItemCount ; i++)
+		for(int i=iBegin ; i<iEnd ; i++)
 		{
 			if(m_aToolTipPos[i].isIn(s_posMouse.x, s_posMouse.y))
 				return i;
@@ -2871,7 +3061,7 @@ cCarrotShop::GetToolTipIndex(int _iItemCount)
 	}
 	else
 	{
-		for (int i=m_sbScrollBar.m_iCurrentPos*iOneLineItemNum ; i<_iItemCount ; i++)
+		for (int i=iBegin ; i<iEnd ; i++)
 		{
 			if (m_aToolTipPos[i].isIn(s_posMouse.x, s_posMouse.y))
 				return i;

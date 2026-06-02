@@ -136,7 +136,7 @@ cItemPackList::getItem(cItem *_lpResultItem,int _iPackSerial,int _iItem,int _iPr
 		else
 		if	(lpBasicItem->m_attr.isExtraItem	&&	lpBasicItem->isChargeExtraItem() == FALSE)
 		{
-			_lpResultItem->m_year	=	g_currentTime.m_wYear-2000;
+			_lpResultItem->m_year	=	EncodeItemExpireYear(g_currentTime.m_wYear);
 			_lpResultItem->m_month	=	g_currentTime.m_wMonth;
 			_lpResultItem->m_day	=	g_currentTime.m_wDay;
 			_lpResultItem->m_hour	=	g_currentTime.m_wHour;
@@ -260,7 +260,7 @@ cItemPackList::getRandomItem(int _iPackSerial,BOOL _bIsTest)
 		else
 		if	(lpBasicItem->m_attr.isExtraItem	&&	lpBasicItem->isChargeExtraItem() == FALSE)
 		{
-			lpItem->m_year		=	g_currentTime.m_wYear-2000;
+			lpItem->m_year		=	EncodeItemExpireYear(g_currentTime.m_wYear);
 			lpItem->m_month		=	g_currentTime.m_wMonth;
 			lpItem->m_day		=	g_currentTime.m_wDay;
 			lpItem->m_hour		=	g_currentTime.m_wHour;

@@ -2,7 +2,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-//	�������� ��Ŷ �⺻ ������ �׻� Ȯ���� ..
+//	쓰기전에 패킷 기본 사이즈 항상 확인을 ..
 #include <process.h>
 #include "cSOCKET.h"
 #include "stdio.h"
@@ -68,7 +68,7 @@ BOOL	cSOCKET::init(int port, char *addr, char *_strName, WORD basepacketsize,BOO
 		kill();
 		return	FALSE;
 	}
-	int timeout =1;	//	��ø�� ����� ���Ͽ��� �����ð� ���� ����
+	int timeout =1;	//	중첩된 입출력 소켓에서 블럭시간 설정 가능
 	setsockopt(sock,SOL_SOCKET,SO_RCVTIMEO,(char *)&timeout,sizeof(int));
 	int buf=dSOCK_MAXBUFFER_SIZE;
 	if(SOCKET_ERROR ==setsockopt(sock,SOL_SOCKET ,SO_SNDBUF,(const char*)&buf,sizeof(buf)))
@@ -126,7 +126,7 @@ BOOL	cSOCKET::init(int port, char *addr, char *_strName, WORD basepacketsize,BOO
 		}
 	}else
 	{
-		_log(" send thread �ȵ���.");
+		_log(" send thread 안돌림.");
 	}
 	wBaseSize = basepacketsize;
 #ifdef	_DEBUG
@@ -278,7 +278,7 @@ SEND_RETURN:
 			return FALSE;
 		}
 		_wSize -= iSendSize;
-		_log("�ޡޡޡޡ� socket loop  �ޡޡޡޡ�(sendsize : %d, size : %d - %d)\n",_wSendAllSize,_wSize,iSendSize);
+		_log("◇◇◇◇◇ socket loop  ◇◇◇◇◇(sendsize : %d, size : %d - %d)\n",_wSendAllSize,_wSize,iSendSize);
 		goto SEND_RETURN;
 	}
 	return TRUE;
@@ -326,7 +326,7 @@ void IOThread(void *tmp)
 				{	
 					soc->isLoopRecv = FALSE;
 					soc->isSendLoopRecv = FALSE;
-//					_log("�ޡޡޡޡ� �Ѥ�+ in socket thread �ޡޡޡ�\n");
+//					_log("◇◇◇◇◇ ㅡㅡ+ in socket thread ◇◇◇◇\n");
 					break;
 				}
 				if(isLoopContinuously && !soc->rPacketBuf->AddData(buf,len))

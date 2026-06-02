@@ -111,12 +111,12 @@ struct SSLSESSION {
 // 
 // Parameters : 
 //		struct SSLSESSION *sock 
-//					[IN/OUT]¼¼¼Ç Á¤º¸¸¦ ÀúÀåÇÏ´Â SSLSESSION. 
-//					ÀÌ ÇÔ¼ö¸¦ ¼öÇàÇÑ ÈÄ¿¡´Â ÀÚ½ÅÀÇ ³­¼ö¿Í master secret, ÀÚ½ÅÀÇ sequence¹øÈ£°¡ ÀúÀåµÈ´Ù
+//					[IN/OUT]ì„¸ì…˜ ì •ë³´ë¥¼ ì €ìž¥í•˜ëŠ” SSLSESSION. 
+//					ì´ í•¨ìˆ˜ë¥¼ ìˆ˜í–‰í•œ í›„ì—ëŠ” ìžì‹ ì˜ ë‚œìˆ˜ì™€ master secret, ìžì‹ ì˜ sequenceë²ˆí˜¸ê°€ ì €ìž¥ëœë‹¤
 //		char *msg 
-//					[OUT]ÇÔ¼ö¸¦ ÅëÇØ »ý¼ºµÈ ¸Þ½ÃÁö¸¦ ÀúÀåÇÒ °ø°£À¸·Î 36¹ÙÀÌÆ® ÀÌ»ó ÇÒ´çµÇ¾î¾ß ÇÑ´Ù.
+//					[OUT]í•¨ìˆ˜ë¥¼ í†µí•´ ìƒì„±ëœ ë©”ì‹œì§€ë¥¼ ì €ìž¥í•  ê³µê°„ìœ¼ë¡œ 36ë°”ì´íŠ¸ ì´ìƒ í• ë‹¹ë˜ì–´ì•¼ í•œë‹¤.
 //		int alloclen
-//					[IN] msg¿¡ ÇÒ´çµÈ ±æÀÌ
+//					[IN] msgì— í• ë‹¹ëœ ê¸¸ì´
 //
 //	Return values :
 //		general case : 
@@ -140,18 +140,18 @@ EXPORT int gen_handshake(struct SSLSESSION *sock, char *msg, int alloclen);
 //
 //	Parameters :
 //		struct SSLSESSION *sock 
-//					[IN/OUT] ¼¼¼Ç Á¤º¸¸¦ ÀúÀåÇÏ´Â SSLSESSION
+//					[IN/OUT] ì„¸ì…˜ ì •ë³´ë¥¼ ì €ìž¥í•˜ëŠ” SSLSESSION
 //		char *msg
-//					[IN]»ó´ë¹æÀ¸·ÎºÎÅÍ Àü¼Û¹ÞÀº ¸Þ½ÃÁö
+//					[IN]ìƒëŒ€ë°©ìœ¼ë¡œë¶€í„° ì „ì†¡ë°›ì€ ë©”ì‹œì§€
 //		int msglen
-//					[IN] msgÀÇ ±æÀÌ. 36¹ÙÀÌÆ®¿©¾ß ÇÑ´Ù
+//					[IN] msgì˜ ê¸¸ì´. 36ë°”ì´íŠ¸ì—¬ì•¼ í•œë‹¤
 //	Return Values :
 //		general case : 	
 //					0. It means that Handshake is performed.
 //		SSL_REMOTE_HANDSHAKE_ERROR : 
-//					¸Þ½ÃÁöÀÇ ±æÀÌ°¡ ÀÏÄ¡ÇÏÁö ¾Ê´Â °æ¿ì
+//					ë©”ì‹œì§€ì˜ ê¸¸ì´ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠëŠ” ê²½ìš°
 //		SSL_MAC_VERIFY_FAIL :
-//					¼­¹ö·ÎºÎÅÍ ¹ÞÀº ³­¼öÀÇ MACÀÌ ÀÏÄ¡ÇÏÁö ¾Ê´Â °æ¿ì
+//					ì„œë²„ë¡œë¶€í„° ë°›ì€ ë‚œìˆ˜ì˜ MACì´ ì¼ì¹˜í•˜ì§€ ì•ŠëŠ” ê²½ìš°
 
 EXPORT int process_handshake(struct SSLSESSION *sock, char *msg, int msglen);
 
@@ -169,28 +169,28 @@ EXPORT int process_handshake(struct SSLSESSION *sock, char *msg, int msglen);
 //
 //	Parameters :
 //		struct SSLSESSION *sock
-//					[IN, OUT] ÇöÀç ¿¬°áµÇ¾î ÀÖ´Â SSLSESSION
+//					[IN, OUT] í˜„ìž¬ ì—°ê²°ë˜ì–´ ìžˆëŠ” SSLSESSION
 //		char *encdata
-//					[OUT] ¾ÏÈ£È­µÈ ¸Þ½ÃÁö¸¦ ÀúÀåÇÒ °ø°£. ¾ÏÈ£È­µÈ ¸Þ½ÃÁö¿¡´Â ÆÐµù°ú 
-//					MACÀÌ Ãß°¡µÇ°í Çì´õ°¡ Ãß°¡µÇ±â ¶§¹®¿¡, ÃÖ¼ÒÇÑ ¸Þ½ÃÁö ±æÀÌ+41¹ÙÀÌÆ®°¡ ÇÒ´çµÇ¾î¾ß ÇÑ´Ù.
+//					[OUT] ì•”í˜¸í™”ëœ ë©”ì‹œì§€ë¥¼ ì €ìž¥í•  ê³µê°„. ì•”í˜¸í™”ëœ ë©”ì‹œì§€ì—ëŠ” íŒ¨ë”©ê³¼ 
+//					MACì´ ì¶”ê°€ë˜ê³  í—¤ë”ê°€ ì¶”ê°€ë˜ê¸° ë•Œë¬¸ì—, ìµœì†Œí•œ ë©”ì‹œì§€ ê¸¸ì´+41ë°”ì´íŠ¸ê°€ í• ë‹¹ë˜ì–´ì•¼ í•œë‹¤.
 //		const char *buf
-//					[IN] ¾ÏÈ£È­ÇÒ ¸Þ½ÃÁö°¡ ÀúÀåµÇ¾î ÀÖ´Â °ø°£
+//					[IN] ì•”í˜¸í™”í•  ë©”ì‹œì§€ê°€ ì €ìž¥ë˜ì–´ ìžˆëŠ” ê³µê°„
 //		int alloclen
-//					[IN] encdata ÆÄ¶ó¹ÌÅÍ¿¡ ÇÒ´çµÈ °ø°£ÀÇ Å©±â
+//					[IN] encdata íŒŒë¼ë¯¸í„°ì— í• ë‹¹ëœ ê³µê°„ì˜ í¬ê¸°
 //		int len
-//					[IN] ¾ÏÈ£È­ÇÒ ¸Þ½ÃÁöÀÇ ±æÀÌ
+//					[IN] ì•”í˜¸í™”í•  ë©”ì‹œì§€ì˜ ê¸¸ì´
 //		int flag
-//					[IN] À§ ¼³¸í ÂüÁ¶
+//					[IN] ìœ„ ì„¤ëª… ì°¸ì¡°
 //
 //	Return values :
 //		general case :
 //					Length of encrypted message
 //		SSL_MAC_CREATE_FAIL
-//					¸Þ½ÃÁöÀÇ MAC »ý¼º¿¡ ½ÇÆÐ
+//					ë©”ì‹œì§€ì˜ MAC ìƒì„±ì— ì‹¤íŒ¨
 //		SSL_BUF_SMALL 
-//					¾ÏÈ£È­µÈ ¸Þ½ÃÁö¸¦ ÀúÀåÇÏ±â¿¡´Â ÇÒ´çµÈ encdata°¡ ³Ê¹« ÀÛÀº °æ¿ì
+//					ì•”í˜¸í™”ëœ ë©”ì‹œì§€ë¥¼ ì €ìž¥í•˜ê¸°ì—ëŠ” í• ë‹¹ëœ encdataê°€ ë„ˆë¬´ ìž‘ì€ ê²½ìš°
 //		SSL_ENCRYPT_FAIL 
-//					¾ÏÈ£È­¿¡ ½ÇÆÐ
+//					ì•”í˜¸í™”ì— ì‹¤íŒ¨
 
 EXPORT int encrypt_msg(struct SSLSESSION *sock, char *encdata, const char *buf, int alloclen, int len, int flag);
 
@@ -209,16 +209,16 @@ EXPORT int encrypt_msg(struct SSLSESSION *sock, char *encdata, const char *buf, 
 //
 //	Parameters :
 //		struct SSLSESSION *sock
-//					[IN, OUT] ÇöÀç ¿¬°áµÇ¾î ÀÖ´Â SSLSESSION
+//					[IN, OUT] í˜„ìž¬ ì—°ê²°ë˜ì–´ ìžˆëŠ” SSLSESSION
 //		char *buf
-//					[OUT] ½ÇÁ¦ ¸Þ½ÃÁö¸¦ ÀúÀåÇÒ °ø°£. ÃÖ¼ÒÇÑ ¾ÏÈ£È­µÈ ¸Þ½ÃÁö-25¹ÙÀÌÆ®°¡ ÇÒ´çµÇ¾î¾ß ÇÑ´Ù
+//					[OUT] ì‹¤ì œ ë©”ì‹œì§€ë¥¼ ì €ìž¥í•  ê³µê°„. ìµœì†Œí•œ ì•”í˜¸í™”ëœ ë©”ì‹œì§€-25ë°”ì´íŠ¸ê°€ í• ë‹¹ë˜ì–´ì•¼ í•œë‹¤
 //
 //		char *encdata
-//					[IN] ¾ÏÈ£È­µÈ ¸Þ½ÃÁö°¡ ÀúÀåµÇ¾î ÀÖ´Â °ø°£
+//					[IN] ì•”í˜¸í™”ëœ ë©”ì‹œì§€ê°€ ì €ìž¥ë˜ì–´ ìžˆëŠ” ê³µê°„
 //		int buflen
-//					[IN] buf ÆÄ¶ó¹ÌÅÍ¿¡ ÇÒ´çµÈ °ø°£ÀÇ Å©±â
+//					[IN] buf íŒŒë¼ë¯¸í„°ì— í• ë‹¹ëœ ê³µê°„ì˜ í¬ê¸°
 //		int encdatalen
-//					[IN] ¾ÏÈ£È­µÈ ¸Þ½ÃÁöÀÇ ±æÀÌ
+//					[IN] ì•”í˜¸í™”ëœ ë©”ì‹œì§€ì˜ ê¸¸ì´
 //		int flag
 //					[IN] sequence number check flag (TRUE = check)
 //
@@ -226,19 +226,19 @@ EXPORT int encrypt_msg(struct SSLSESSION *sock, char *encdata, const char *buf, 
 //		general case :
 //					Length of decrypted message
 //		SSL_INVALID_SEQUENCE : 
-//					»ó´ë¹æÀÇ sequence¹øÈ£°¡ ¸ÂÁö ¾ÊÀ½
+//					ìƒëŒ€ë°©ì˜ sequenceë²ˆí˜¸ê°€ ë§žì§€ ì•ŠìŒ
 //		SSL_RECV_FAIL : 
-//					¾ÏÈ£È­µÈ ¸Þ½ÃÁöÀÇ ±æÀÌ°¡ ¸ÂÁö ¾ÊÀº °æ¿ì ¹ß»ýÇÑ´Ù.
+//					ì•”í˜¸í™”ëœ ë©”ì‹œì§€ì˜ ê¸¸ì´ê°€ ë§žì§€ ì•Šì€ ê²½ìš° ë°œìƒí•œë‹¤.
 //		SSL_DECRYPT_FAIL : 
-//					º¹È£È­¿¡ ½ÇÆÐ
+//					ë³µí˜¸í™”ì— ì‹¤íŒ¨
 //		SSL_PADDING_NOTEXIST : 
-//					º¹È£È­µÈ ¸Þ½ÃÁö¿¡¼­ ÆÐµù Ã£±â ½ÇÆÐ. Àß¸øµÈ Å°¸¦ º¹È£È­¿¡ »ç¿ëÇßÀ» °¡´É¼ºÀÌ ³ô´Ù.
+//					ë³µí˜¸í™”ëœ ë©”ì‹œì§€ì—ì„œ íŒ¨ë”© ì°¾ê¸° ì‹¤íŒ¨. ìž˜ëª»ëœ í‚¤ë¥¼ ë³µí˜¸í™”ì— ì‚¬ìš©í–ˆì„ ê°€ëŠ¥ì„±ì´ ë†’ë‹¤.
 //		SSL_BUF_SMALL : 
-//					º¹È£È­µÈ ¸Þ½ÃÁö¸¦ ÀúÀåÇÏ±â¿¡´Â ÇÒ´çµÈ buf°¡ ³Ê¹« ÀÛÀº °æ¿ì
+//					ë³µí˜¸í™”ëœ ë©”ì‹œì§€ë¥¼ ì €ìž¥í•˜ê¸°ì—ëŠ” í• ë‹¹ëœ bufê°€ ë„ˆë¬´ ìž‘ì€ ê²½ìš°
 //		SSL_MAC_CREATE_FAIL : 
-//					MACÈ®ÀÎÀ» À§ÇÑ MAC »ý¼º¿¡ ½ÇÆÐ
+//					MACí™•ì¸ì„ ìœ„í•œ MAC ìƒì„±ì— ì‹¤íŒ¨
 //		SSL_MAC_VERIFY_FAIL : 
-//					¸Þ½ÃÁöÀÇ MACÀÌ ÀÏÄ¡ÇÏÁö ¾ÊÀ½
+//					ë©”ì‹œì§€ì˜ MACì´ ì¼ì¹˜í•˜ì§€ ì•ŠìŒ
 
 EXPORT int decrypt_msg(struct SSLSESSION *sock, char *buf, char *encdata, int buflen, int encdatalen, int flag);
 

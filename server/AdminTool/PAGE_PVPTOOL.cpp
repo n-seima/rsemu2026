@@ -74,7 +74,12 @@ BOOL CPAGE_PVPTOOL::OnInitDialog()
 	              // EXCEPTION: OCX Property Pages should return FALSE
 }
 
-void CPAGE_PVPTOOL::OnClearWCGList(BOOL _bIsByAdd)
+void CPAGE_PVPTOOL::OnClearWCGList()
+{
+	clearWCGList(FALSE);
+}
+
+void CPAGE_PVPTOOL::clearWCGList(BOOL _bIsByAdd)
 {
 	if	(!CheckOperatorLevel(eAL_SYSTEM_OPERATER))
 		return;
@@ -115,7 +120,7 @@ void CPAGE_PVPTOOL::OnAddTeamList()
 		return;
 	}
 
-	OnClearWCGList(TRUE);
+	clearWCGList(TRUE);
 
 	cDECODER	decoder;
 

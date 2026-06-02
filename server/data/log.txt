@@ -1,0 +1,26 @@
+//========================================================================================================
+Application Begin Time 2026/ 5/30 22:49:58
+Current Time           2026/ 5/30 22:50: 5
+
+[version 0.0540] [date:Sat May 23 22:41:58 2026] [rev:1216]
+************* Application Started at [22:49:58] ************* 
+
+Total Memory : 1024.000000MB
+Avail Memory : 1024.000000MB
+Error in CDecoder::Upload - can not find 'config.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_china.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_japan.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_usa.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_korea.txt' file
+Error in CDecoder::Upload - can not find 'data/login server list_thai.txt' file
+winsock initialized
+dUSE_MCU
+s_sprLoadImage.Load
+winsock closed
+
+Total Memory : 1024.000000MB
+Avail Memory : 1024.000000MB
+
+************* Application Closed  at [22:50:05] ************* 
+
+//========================================================================================================

@@ -920,7 +920,13 @@ cAbility::getEE_ToolTip(cSTRING *_lpString,CSkillExtraEffect *_lpEffect,CSkillEx
 			break;
 		}
 
-		case	eSKILL_EE_FIRE_DAMAGE				:	//	�Ҵ�E���E		case	eSKILL_EE_WATER_DAMAGE				:	//	����E���E		case	eSKILL_EE_WIND_DAMAGE				:	//	�ٶ�E��E���E		case	eSKILL_EE_EARTH_DAMAGE				:	//	��E�E��E���E		case	eSKILL_EE_LIGHT_DAMAGE				:	//	��E��E���E		case	eSKILL_EE_DARK_DAMAGE				:	//	���� ��E���E		{
+		case	eSKILL_EE_FIRE_DAMAGE				:
+		case	eSKILL_EE_WATER_DAMAGE				:
+		case	eSKILL_EE_WIND_DAMAGE				:
+		case	eSKILL_EE_EARTH_DAMAGE				:
+		case	eSKILL_EE_LIGHT_DAMAGE				:
+		case	eSKILL_EE_DARK_DAMAGE				:
+		{
 			int	iDamage				=	(_lpEffect->m_aiValue[0]+_lpEffect->m_aiValue[1]*m_wLevel);
 			int	iReduceResistance	=	(_lpEffect->m_aiValue[4]+_lpEffect->m_aiValue[5]*m_wLevel)/100;
 			int	iAttr				=	_lpEE->m_wEffect-eSKILL_EE_FIRE_DAMAGE;
@@ -1344,7 +1350,8 @@ cAbility::getEE_ToolTip(cSTRING *_lpString,CSkillExtraEffect *_lpEffect,CSkillEx
 			break;
 			}
 		case eSKILL_EE_DRAIN_CP			:
-			{		// CP��؁E				int	iDrainCP			=	(_lpEffect->m_aiValue[0]+_lpEffect->m_aiValue[1]*m_wLevel);
+			{
+				int	iDrainCP			=	(_lpEffect->m_aiValue[0]+_lpEffect->m_aiValue[1]*m_wLevel);
 				float	fIntForDamage	=	g_hero.getCorrectIntelligenceFactorForMagicDamage();
 				iDrainCP			+=	(int)(iDrainCP*g_hero.getIntelligence()/4*fIntForDamage);	
 				g_hero.correctValueEffectDuelServer(&iDrainCP , lpSkill);
@@ -1357,7 +1364,8 @@ cAbility::getEE_ToolTip(cSTRING *_lpString,CSkillExtraEffect *_lpEffect,CSkillEx
 			break;
 			}
 		case	eSKILL_EE_RAGE_SOUL		:
-			{	// ���� �г�E				int iRageSoulChance		=	(_lpEffect->m_aiValue[3] + _lpEffect->m_aiValue[4]*m_wLevel)/100;
+			{
+				int iRageSoulChance		=	(_lpEffect->m_aiValue[3] + _lpEffect->m_aiValue[4]*m_wLevel)/100;
 				float	fRageSoul			=	_lpEffect->m_aiValue[0] + _lpEffect->m_aiValue[1]*m_wLevel;
 				float	fRageSoulMinDamage = 0;
 				float	fRageSoulMaxDamage = 0;
@@ -1449,7 +1457,8 @@ cAbility::getEE_ToolTip(cSTRING *_lpString,CSkillExtraEffect *_lpEffect,CSkillEx
 				
 			}
 		case	eSKILL_EE_ADD_BIT		:
-			{//��Ʈ ��E				iActiveChance += g_hero.getValuePassiveSkill(eSKILL_PEE_ADD_BIT_CHANCE)/100;
+			{
+				iActiveChance += g_hero.getValuePassiveSkill(eSKILL_PEE_ADD_BIT_CHANCE)/100;
 				s_strTooltip.Add(dMSG_EE_FORM_ADD_BIT,iActiveChance );
 				break;
 			}

@@ -10,7 +10,7 @@
 
 
 //////////////////////////////////////////////////////////
-//	cScript : Text Script - °¢ È¯°æ¼³Á¤µîµîÀÇ È­ÀÏÀ» ÀĞ¾î¿Ã¶§ »ç¿ë
+//	cScript : Text Script - ê° í™˜ê²½ì„¤ì •ë“±ë“±ì˜ í™”ì¼ì„ ì½ì–´ì˜¬ë•Œ ì‚¬ìš©
 //////////////////////////////////////////////////////////
 
 #define dMAXSCPSIZE		100
@@ -19,7 +19,7 @@
 #define dDATAPARSECHAR	'|'
 #define dDATAENDCHAR	';'
 #define dCOMMENTS		"//"
-#define	dNOTFILE		-1	//	ÆÄÀÏÀ» Ã£À»¼ö°¡ ¾ø´Ù.
+#define	dNOTFILE		-1	//	íŒŒì¼ì„ ì°¾ì„ìˆ˜ê°€ ì—†ë‹¤.
 #define dENDMESSAGE		"END"
 
 class SCP{
@@ -37,9 +37,9 @@ class cScript
 {
 public:
 	FILE	*fp;
-	char	_readline[512];		//	ÇÑÁÙ ÀĞ¾îµé¿©¼­ µ¹·ÁÁÙ...
+	char	_readline[512];		//	í•œì¤„ ì½ì–´ë“¤ì—¬ì„œ ëŒë ¤ì¤„...
 	SCP		scp[dMAXSCPSIZE];
-	int		totcount;			//	ÀĞ¾îµéÀÎ ÃÑ µ¥ÀÌÅ¸ Á¾·ùÀÇ ¼ö
+	int		totcount;			//	ì½ì–´ë“¤ì¸ ì´ ë°ì´íƒ€ ì¢…ë¥˜ì˜ ìˆ˜
 	int		scpcount;
 	int		running;
 
@@ -47,7 +47,7 @@ public:
 	virtual ~cScript();
 
 	int	Read(char	*filename);
-	char*	getData(char *name,int count=1);	//	ÇØ´ç °ªÀ» °¡Á®¿Â´Ù.
+	char*	getData(char *name,int count=1);	//	í•´ë‹¹ ê°’ì„ ê°€ì ¸ì˜¨ë‹¤.
 	int		getDataCount(char *name);
 
 private:
@@ -62,9 +62,9 @@ class cDynamicScript
 {
 public:
 	FILE	*fp;
-	char	_readline[512];		//	ÇÑÁÙ ÀĞ¾îµé¿©¼­ µ¹·ÁÁÙ...
+	char	_readline[512];		//	í•œì¤„ ì½ì–´ë“¤ì—¬ì„œ ëŒë ¤ì¤„...
 	SCP		* scp;
-	int		totcount;			//	ÀĞ¾îµéÀÎ ÃÑ µ¥ÀÌÅ¸ Á¾·ùÀÇ ¼ö
+	int		totcount;			//	ì½ì–´ë“¤ì¸ ì´ ë°ì´íƒ€ ì¢…ë¥˜ì˜ ìˆ˜
 	int		scpcount;
 	int		running;
 	int		MAX;
@@ -73,7 +73,7 @@ public:
 	virtual ~cDynamicScript();
 
 	int	Read(char	*filename,int _MAX);
-	char*	getData(char *name,int count=1);	//	ÇØ´ç °ªÀ» °¡Á®¿Â´Ù.
+	char*	getData(char *name,int count=1);	//	í•´ë‹¹ ê°’ì„ ê°€ì ¸ì˜¨ë‹¤.
 	int		getDataCount(char *name);
 private:
 	BOOL	readLine(FILE *f);

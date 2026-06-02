@@ -380,7 +380,7 @@ int CHttpBlockingSocket::ReadHttpResponse(char* pch, int nSize, int nSecs)
    }
    do
    { // now pass the rest of the data directly to the caller
-      nBytesToRead = std::_cpp_min(static_cast<int>(nSizeRecv), nSize - nBytesRead);
+      nBytesToRead = std::min(static_cast<int>(nSizeRecv), nSize - nBytesRead);
       nBytesThisTime = Receive(pch, nBytesToRead, nSecs);
       if( nBytesThisTime<=0 )
          break; // sender closed the socket

@@ -1,0 +1,982 @@
+[181321] Start WorkerThread[0]...
+
+[181321] Start WorkerThread[3]...
+
+[181321] Start WorkerThread[4]...
+
+[181321] Start WorkerThread[5]...
+
+[181321] Start WorkerThread[2]...
+
+[181321] Start WorkerThread[6]...
+
+[181321] Start WorkerThread[7]...
+
+[181321] Start WorkerThread[1]...
+
+[181321] Start USERDBCtlThread ... 
+
+[181323] ERROR : connect [52611,127.0.0.1] Error 10061
+
+
+[181323] Fail Connect db !!
+
+
+[181323] Error InitSocket 
+
+
+[181333] Start WorkerThread[4]...
+
+[181333] Start WorkerThread[2]...
+
+[181333] Start WorkerThread[3]...
+
+[181333] Start WorkerThread[0]...
+
+[181333] Start WorkerThread[1]...
+
+[181333] Start WorkerThread[5]...
+
+[181333] Start WorkerThread[7]...
+
+[181333] Start WorkerThread[6]...
+
+[181333] Start USERDBCtlThread ... 
+
+[181335] ERROR : connect [52611,127.0.0.1] Error 10061
+
+
+[181335] Fail Connect db !!
+
+
+[181335] Error InitSocket 
+
+
+[181429] Start WorkerThread[0]...
+
+[181429] Start WorkerThread[1]...
+
+[181429] Start WorkerThread[3]...
+
+[181429] Start WorkerThread[4]...
+
+[181429] Start WorkerThread[5]...
+
+[181429] Start WorkerThread[2]...
+
+[181429] Start WorkerThread[6]...
+
+[181429] Start WorkerThread[7]...
+
+[181429] Start USERDBCtlThread ... 
+
+[181429] g_MaxUserCount = 4000
+
+[181429] Start WORLD Server ... day  - Not Ready 
+
+[181429] Start AcceptLoop ...
+
+[181429] Start DBCtlThread ... 
+
+[181429] Start AdditionThread ... 
+
+[182556] Start WorkerThread[0]...
+
+[182556] Start WorkerThread[5]...
+
+[182556] Start WorkerThread[7]...
+
+[182556] Start WorkerThread[2]...
+
+[182556] Start WorkerThread[4]...
+
+[182556] Start WorkerThread[6]...
+
+[182556] Start WorkerThread[1]...
+
+[182556] Start WorkerThread[3]...
+
+[182556] Start USERDBCtlThread ... 
+
+[182556] g_MaxUserCount = 4000
+
+[182556] Start WORLD Server ... day  - Not Ready 
+
+[182556] Start AcceptLoop ...
+
+[182556] Start DBCtlThread ... 
+
+[182556] Start AdditionThread ... 
+
+[182600]  isReady = 1 
+
+[182600]  Request Guild Infomation of Sql DB ... 
+
+[182600]  Recv Guild Info ....  Complete ............
+
+[182600]  isReady = 2 
+
+[182603] Connected Server's IP Address is [25.1.80.156] 
+
+
+[182605]  Send sendAppointmentQuizEventInfo... 
+
+[182605]  This user is game server. isReconnect[0] 
+
+
+[182605] Success SendGameServerInitDataThread
+
+[182605]  Try CONNECT to ACCOUNT DB : お水サーバー , 127.0.0.1 , idx 0
+
+[182605]  isReady = 3 
+
+[182605]  Let Start World Server...............!! 
+
+[182605] Connected Server's IP Address is [127.0.0.1] 
+
+
+[182605]  This user is not game server
+
+[183121] SEND ERROR ... ERROR 10054
+
+[183121] ===========>>>>>>>>>>		Dis User : 0 [SEND ERROR]
+
+[183121] GAME SERVER QUIT [type01]!!
+
+[183121] (type01)0 is exit
+
+
+[183121] ===========>>>>>>>>>>		Dis User : 0 [read byte = 0]
+
+[183202] Connected Server's IP Address is [25.1.80.156] 
+
+
+[183204]  Send sendAppointmentQuizEventInfo... 
+
+[183204]  This user is game server. isReconnect[0] 
+
+
+[183204] Success SendGameServerInitDataThread
+
+[183504] Connected Server's IP Address is [127.0.0.1] 
+
+
+[185910] SEND ERROR ... ERROR 10054
+
+[185910] ===========>>>>>>>>>>		Dis User : 2 [SEND ERROR]
+
+[185910] GAME SERVER QUIT [type01]!!
+
+[185910] (type01)2 is exit
+
+
+[185910] ===========>>>>>>>>>>		Dis User : 2 [read byte = 0]
+
+[185933] Connected Server's IP Address is [25.1.80.156] 
+
+
+[185933]  Send sendAppointmentQuizEventInfo... 
+
+[185933]  This user is game server. isReconnect[0] 
+
+
+[185933] Success SendGameServerInitDataThread
+
+[190631] SEND ERROR ... ERROR 10054
+
+[190631] ===========>>>>>>>>>>		Dis User : 4 [SEND ERROR]
+
+[190631] GAME SERVER QUIT [type01]!!
+
+[190631] (type01)4 is exit
+
+
+[190631] ===========>>>>>>>>>>		Dis User : 4 [read byte = 0]
+
+[190637] Connected Server's IP Address is [25.1.80.156] 
+
+
+[190637]  Send sendAppointmentQuizEventInfo... 
+
+[190637]  This user is game server. isReconnect[0] 
+
+
+[190637] Success SendGameServerInitDataThread
+
+[224114] SEND ERROR ... ERROR 10054
+
+[224114] ===========>>>>>>>>>>		Dis User : 5 [SEND ERROR]
+
+[224114] GAME SERVER QUIT [type01]!!
+
+[224114] (type01)5 is exit
+
+
+[224114] ===========>>>>>>>>>>		Dis User : 5 [read byte = 0]
+
+[224258] Connected Server's IP Address is [25.1.80.156] 
+
+
+[224258]  Send sendAppointmentQuizEventInfo... 
+
+[224258]  This user is game server. isReconnect[0] 
+
+
+[224258] Success SendGameServerInitDataThread
+
+[230928] SEND ERROR ... ERROR 10054
+
+[230928] ===========>>>>>>>>>>		Dis User : 6 [SEND ERROR]
+
+[230928] GAME SERVER QUIT [type01]!!
+
+[230928] (type01)6 is exit
+
+
+[230928] ===========>>>>>>>>>>		Dis User : 6 [read byte = 0]
+
+[230940] Connected Server's IP Address is [25.1.80.156] 
+
+
+[230940]  Send sendAppointmentQuizEventInfo... 
+
+[230940]  This user is game server. isReconnect[0] 
+
+
+[230940] Success SendGameServerInitDataThread
+
+[232314] Connected Server's IP Address is [25.1.80.156] 
+
+
+[232314] ===========>>>>>>>>>>		Dis User : 8 [read byte = 0]
+
+[232314] GAME SERVER QUIT []!!
+
+[232314] ()8 is exit
+
+
+[232403] Connected Server's IP Address is [127.0.0.1] 
+
+
+[232403] ===========>>>>>>>>>>		Dis User : 9 [read byte = 0]
+
+[232403] GAME SERVER QUIT []!!
+
+[232403] ()9 is exit
+
+
+[232404] Connected Server's IP Address is [25.1.80.156] 
+
+
+[232404] ===========>>>>>>>>>>		Dis User : 10 [read byte = 0]
+
+[232404] GAME SERVER QUIT []!!
+
+[232404] ()10 is exit
+
+
+[232505] Connected Server's IP Address is [25.1.80.156] 
+
+
+[232505]  This user is not game server
+
+[232507] ===========>>>>>>>>>>		Dis User : 11 [read byte = 0]
+
+[232507] GAME SERVER QUIT [#admin]!!
+
+[232507] (#admin)11 is exit
+
+
+[235548] SEND ERROR ... ERROR 10054
+
+[235548] ===========>>>>>>>>>>		Dis User : 7 [SEND ERROR]
+
+[235548] GAME SERVER QUIT [type01]!!
+
+[235548] (type01)7 is exit
+
+
+[235548] ===========>>>>>>>>>>		Dis User : 7 [read byte = 0]
+
+[235625] Connected Server's IP Address is [25.1.80.156] 
+
+
+[235625]  This user is not game server
+
+[235627] ===========>>>>>>>>>>		Dis User : 12 [read byte = 0]
+
+[235627] GAME SERVER QUIT [#admin]!!
+
+[235627] (#admin)12 is exit
+
+
+[000607] Connected Server's IP Address is [25.1.80.156] 
+
+
+[000607]  Send sendAppointmentQuizEventInfo... 
+
+[000607]  This user is game server. isReconnect[0] 
+
+
+[000607] Success SendGameServerInitDataThread
+
+[000821] SEND ERROR ... ERROR 10054
+
+[000821] ===========>>>>>>>>>>		Dis User : 13 [SEND ERROR]
+
+[000821] GAME SERVER QUIT [type01]!!
+
+[000821] (type01)13 is exit
+
+
+[000821] ===========>>>>>>>>>>		Dis User : 13 [read byte = 0]
+
+[000830] Connected Server's IP Address is [25.1.80.156] 
+
+
+[000830]  Send sendAppointmentQuizEventInfo... 
+
+[000830]  This user is game server. isReconnect[0] 
+
+
+[000830] Success SendGameServerInitDataThread
+
+[001853] Connected Server's IP Address is [25.1.80.156] 
+
+
+[001853]  This user is not game server
+
+[001855] ===========>>>>>>>>>>		Dis User : 15 [read byte = 0]
+
+[001855] GAME SERVER QUIT [#admin]!!
+
+[001855] (#admin)15 is exit
+
+
+[002029] Connected Server's IP Address is [127.0.0.1] 
+
+
+[002029] ===========>>>>>>>>>>		Dis User : 16 [read byte = 0]
+
+[002029] GAME SERVER QUIT []!!
+
+[002029] ()16 is exit
+
+
+[002030] Connected Server's IP Address is [25.1.80.156] 
+
+
+[002030] ===========>>>>>>>>>>		Dis User : 17 [read byte = 0]
+
+[002030] GAME SERVER QUIT []!!
+
+[002030] ()17 is exit
+
+
+[002844] Connected Server's IP Address is [25.1.80.156] 
+
+
+[002844]  This user is not game server
+
+[004645] SEND ERROR ... ERROR 10054
+
+[004645] ===========>>>>>>>>>>		Dis User : 14 [SEND ERROR]
+
+[004645] GAME SERVER QUIT [type01]!!
+
+[004645] (type01)14 is exit
+
+
+[004645] ===========>>>>>>>>>>		Dis User : 14 [read byte = 0]
+
+[004705] ===========>>>>>>>>>>		Dis User : 18 [read byte = 0]
+
+[004705] GAME SERVER QUIT [#admin]!!
+
+[004705] (#admin)18 is exit
+
+
+[004722] Connected Server's IP Address is [25.1.80.156] 
+
+
+[004722]  This user is not game server
+
+[005405] Connected Server's IP Address is [25.1.80.156] 
+
+
+[005405]  Send sendAppointmentQuizEventInfo... 
+
+[005405]  This user is game server. isReconnect[0] 
+
+
+[005405] Success SendGameServerInitDataThread
+
+[011423] SEND ERROR ... ERROR 10054
+
+[011423] ===========>>>>>>>>>>		Dis User : 20 [SEND ERROR]
+
+[011423] GAME SERVER QUIT [type01]!!
+
+[011423] (type01)20 is exit
+
+
+[011423] ===========>>>>>>>>>>		Dis User : 20 [read byte = 0]
+
+[011442] Connected Server's IP Address is [25.1.80.156] 
+
+
+[011442]  Send sendAppointmentQuizEventInfo... 
+
+[011442]  This user is game server. isReconnect[0] 
+
+
+[011442] Success SendGameServerInitDataThread
+
+[081534] SEND ERROR ... ERROR 10054
+
+[081534] ===========>>>>>>>>>>		Dis User : 21 [SEND ERROR]
+
+[081534] GAME SERVER QUIT [type01]!!
+
+[081534] (type01)21 is exit
+
+
+[081534] ===========>>>>>>>>>>		Dis User : 21 [read byte = 0]
+
+[081543] Connected Server's IP Address is [25.1.80.156] 
+
+
+[081543]  Send sendAppointmentQuizEventInfo... 
+
+[081543]  This user is game server. isReconnect[0] 
+
+
+[081543] Success SendGameServerInitDataThread
+
+[081620] SEND ERROR ... ERROR 10054
+
+[081620] ===========>>>>>>>>>>		Dis User : 22 [SEND ERROR]
+
+[081620] GAME SERVER QUIT [type01]!!
+
+[081620] (type01)22 is exit
+
+
+[081620] ===========>>>>>>>>>>		Dis User : 22 [read byte = 0]
+
+[081631] Connected Server's IP Address is [25.1.80.156] 
+
+
+[081631]  Send sendAppointmentQuizEventInfo... 
+
+[081631]  This user is game server. isReconnect[0] 
+
+
+[081631] Success SendGameServerInitDataThread
+
+[083329] ===========>>>>>>>>>>		Dis User : 19 [read byte = 0]
+
+[083329] GAME SERVER QUIT [#admin]!!
+
+[083329] (#admin)19 is exit
+
+
+[084200] SEND ERROR ... ERROR 10054
+
+[084200] ===========>>>>>>>>>>		Dis User : 23 [SEND ERROR]
+
+[084200] GAME SERVER QUIT [type01]!!
+
+[084200] (type01)23 is exit
+
+
+[084200] ===========>>>>>>>>>>		Dis User : 23 [read byte = 0]
+
+[084205] Connected Server's IP Address is [25.1.80.156] 
+
+
+[084206]  Send sendAppointmentQuizEventInfo... 
+
+[084206]  This user is game server. isReconnect[0] 
+
+
+[084206] Success SendGameServerInitDataThread
+
+[084958] SEND ERROR ... ERROR 10054
+
+[084958] ===========>>>>>>>>>>		Dis User : 24 [SEND ERROR]
+
+[084958] GAME SERVER QUIT [type01]!!
+
+[084958] (type01)24 is exit
+
+
+[084958] ===========>>>>>>>>>>		Dis User : 24 [read byte = 0]
+
+[085010] Connected Server's IP Address is [25.1.80.156] 
+
+
+[085010]  Send sendAppointmentQuizEventInfo... 
+
+[085010]  This user is game server. isReconnect[0] 
+
+
+[085010] Success SendGameServerInitDataThread
+
+[090123] SEND ERROR ... ERROR 10054
+
+[090123] ===========>>>>>>>>>>		Dis User : 25 [SEND ERROR]
+
+[090123] GAME SERVER QUIT [type01]!!
+
+[090123] (type01)25 is exit
+
+
+[090123] ===========>>>>>>>>>>		Dis User : 25 [read byte = 0]
+
+[090130] ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 4551) ,ERROR 10054
+
+[090130] END DBCtlThread ... 
+
+[090130] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[090133] Connected Server's IP Address is [25.1.80.156] 
+
+
+[090133]  Send sendAppointmentQuizEventInfo... 
+
+[090133]  This user is game server. isReconnect[0] 
+
+
+[090133] Success SendGameServerInitDataThread
+
+[090145] RECONNECT : [127.0.0.1] [52611]
+
+[090145] Start DBCtlThread ... 
+
+[090431] SEND ERROR ... ERROR 10054
+
+[090431] ===========>>>>>>>>>>		Dis User : 26 [SEND ERROR]
+
+[090431] GAME SERVER QUIT [type01]!!
+
+[090431] (type01)26 is exit
+
+
+[090431] ===========>>>>>>>>>>		Dis User : 26 [read byte = 0]
+
+[090445] ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 4551) ,ERROR 10054
+
+[090445] END DBCtlThread ... 
+
+[090445] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[090500] RECONNECT : [127.0.0.1] [52611]
+
+[090500] Start DBCtlThread ... 
+
+[090941] Connected Server's IP Address is [25.1.80.156] 
+
+
+[090945] ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 4551) ,ERROR 10054
+
+[090945] END DBCtlThread ... 
+
+[090945] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[090945] ===========>>>>>>>>>>		Dis User : 27 [read byte = 0]
+
+[090945] GAME SERVER QUIT []!!
+
+[090945] ()27 is exit
+
+
+[091002] ERROR : connect [52611,127.0.0.1] Error 10061
+
+
+[091002] RECONNECT : Fail Connect AVATAR db !!
+
+
+[091009] Connected Server's IP Address is [25.1.80.156] 
+
+
+[091009]  Send sendAppointmentQuizEventInfo... 
+
+[091009]  This user is game server. isReconnect[0] 
+
+
+[091009] Success SendGameServerInitDataThread
+
+[091015] RECONNECT : [127.0.0.1] [52611]
+
+[091015] Start DBCtlThread ... 
+
+[091658] SEND ERROR ... ERROR 10054
+
+[091658] ===========>>>>>>>>>>		Dis User : 28 [SEND ERROR]
+
+[091658] GAME SERVER QUIT [type01]!!
+
+[091658] (type01)28 is exit
+
+
+[091658] ===========>>>>>>>>>>		Dis User : 28 [read byte = 0]
+
+[091703] Connected Server's IP Address is [25.1.80.156] 
+
+
+[091703]  Send sendAppointmentQuizEventInfo... 
+
+[091703]  This user is game server. isReconnect[0] 
+
+
+[091703] Success SendGameServerInitDataThread
+
+[092024] SEND ERROR ... ERROR 10054
+
+[092024] ===========>>>>>>>>>>		Dis User : 29 [SEND ERROR]
+
+[092024] GAME SERVER QUIT [type01]!!
+
+[092024] (type01)29 is exit
+
+
+[092024] ===========>>>>>>>>>>		Dis User : 29 [read byte = 0]
+
+[092030] Connected Server's IP Address is [25.1.80.156] 
+
+
+[092030]  Send sendAppointmentQuizEventInfo... 
+
+[092030]  This user is game server. isReconnect[0] 
+
+
+[092030] Success SendGameServerInitDataThread
+
+[092621] SEND ERROR ... ERROR 10054
+
+[092621] ===========>>>>>>>>>>		Dis User : 30 [SEND ERROR]
+
+[092621] GAME SERVER QUIT [type01]!!
+
+[092621] (type01)30 is exit
+
+
+[092621] ===========>>>>>>>>>>		Dis User : 30 [read byte = 0]
+
+[092626] Connected Server's IP Address is [25.1.80.156] 
+
+
+[092626]  Send sendAppointmentQuizEventInfo... 
+
+[092626]  This user is game server. isReconnect[0] 
+
+
+[092626] Success SendGameServerInitDataThread
+
+[093951] SEND ERROR ... ERROR 10054
+
+[093951] ===========>>>>>>>>>>		Dis User : 31 [SEND ERROR]
+
+[093951] GAME SERVER QUIT [type01]!!
+
+[093951] (type01)31 is exit
+
+
+[093951] ===========>>>>>>>>>>		Dis User : 31 [read byte = 0]
+
+[093951] ERROR ReallySend :[AVATAR DBC]  size 24, type 4317(LT 4551) ,ERROR 10054
+
+[093951] END DBCtlThread ... 
+
+[093951] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[093959] Connected Server's IP Address is [25.1.80.156] 
+
+
+[093959]  Send sendAppointmentQuizEventInfo... 
+
+[093959]  This user is game server. isReconnect[0] 
+
+
+[093959] Success SendGameServerInitDataThread
+
+[094000] RECONNECT : [127.0.0.1] [52611]
+
+[094000] Start DBCtlThread ... 
+
+[102026] SEND ERROR ... ERROR 10054
+
+[102026] ===========>>>>>>>>>>		Dis User : 0 [SEND ERROR]
+
+[102026] GAME SERVER QUIT [type01]!!
+
+[102026] (type01)0 is exit
+
+
+[102026] ===========>>>>>>>>>>		Dis User : 0 [read byte = 0]
+
+[102026] ERROR ReallySend :[AVATAR DBC]  size 24, type 4317(LT 4551) ,ERROR 10054
+
+[102026] END DBCtlThread ... 
+
+[102026] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[102032] ERROR : connect [52611,127.0.0.1] Error 10061
+
+
+[102032] RECONNECT : Fail Connect AVATAR db !!
+
+
+[102034] Connected Server's IP Address is [25.1.80.156] 
+
+
+[102034]  Send sendAppointmentQuizEventInfo... 
+
+[102034]  This user is game server. isReconnect[0] 
+
+
+[102034] Success SendGameServerInitDataThread
+
+[102045] RECONNECT : [127.0.0.1] [52611]
+
+[102045] Start DBCtlThread ... 
+
+[102355] SEND ERROR ... ERROR 10054
+
+[102355] ===========>>>>>>>>>>		Dis User : 2 [SEND ERROR]
+
+[102355] GAME SERVER QUIT [type01]!!
+
+[102355] (type01)2 is exit
+
+
+[102355] ===========>>>>>>>>>>		Dis User : 2 [read byte = 0]
+
+[102355] ERROR ReallySend :[AVATAR DBC]  size 24, type 4317(LT 4551) ,ERROR 10054
+
+[102355] END DBCtlThread ... 
+
+[102355] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[102402] RECONNECT : [127.0.0.1] [52611]
+
+[102402] Start DBCtlThread ... 
+
+[102404] Connected Server's IP Address is [25.1.80.156] 
+
+
+[102404]  Send sendAppointmentQuizEventInfo... 
+
+[102404]  This user is game server. isReconnect[0] 
+
+
+[102404] Success SendGameServerInitDataThread
+
+[102635] SEND ERROR ... ERROR 10054
+
+[102635] ===========>>>>>>>>>>		Dis User : 4 [SEND ERROR]
+
+[102635] GAME SERVER QUIT [type01]!!
+
+[102635] (type01)4 is exit
+
+
+[102635] ===========>>>>>>>>>>		Dis User : 4 [read byte = 0]
+
+[102635] ERROR ReallySend :[AVATAR DBC]  size 24, type 4317(LT 4551) ,ERROR 10054
+
+[102635] END DBCtlThread ... 
+
+[102635] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[102644] Connected Server's IP Address is [25.1.80.156] 
+
+
+[102644]  Send sendAppointmentQuizEventInfo... 
+
+[102644]  This user is game server. isReconnect[0] 
+
+
+[102644] Success SendGameServerInitDataThread
+
+[102645] RECONNECT : [127.0.0.1] [52611]
+
+[102645] Start DBCtlThread ... 
+
+[102834] SEND ERROR ... ERROR 10054
+
+[102834] ===========>>>>>>>>>>		Dis User : 5 [SEND ERROR]
+
+[102834] GAME SERVER QUIT [type01]!!
+
+[102834] (type01)5 is exit
+
+
+[102834] ===========>>>>>>>>>>		Dis User : 5 [read byte = 0]
+
+[102834] ERROR ReallySend :[AVATAR DBC]  size 24, type 4317(LT 4551) ,ERROR 10054
+
+[102834] END DBCtlThread ... 
+
+[102834] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[102844] Connected Server's IP Address is [25.1.80.156] 
+
+
+[102844]  Send sendAppointmentQuizEventInfo... 
+
+[102844]  This user is game server. isReconnect[0] 
+
+
+[102844] Success SendGameServerInitDataThread
+
+[102845] RECONNECT : [127.0.0.1] [52611]
+
+[102845] Start DBCtlThread ... 
+
+[104141] Connected Server's IP Address is [25.1.80.156] 
+
+
+[104141]  This user is not game server
+
+[104350] ===========>>>>>>>>>>		Dis User : 7 [read byte = 0]
+
+[104350] GAME SERVER QUIT [#admin]!!
+
+[104350] (#admin)7 is exit
+
+
+[104402] Connected Server's IP Address is [25.1.80.156] 
+
+
+[104402]  This user is not game server
+
+[104753] ===========>>>>>>>>>>		Dis User : 8 [read byte = 0]
+
+[104753] GAME SERVER QUIT [#admin]!!
+
+[104753] (#admin)8 is exit
+
+
+[104905] Connected Server's IP Address is [25.1.80.156] 
+
+
+[104905]  This user is not game server
+
+[111056] ===========>>>>>>>>>>		Dis User : 9 [read byte = 0]
+
+[111056] GAME SERVER QUIT [#admin]!!
+
+[111056] (#admin)9 is exit
+
+
+[111103] Connected Server's IP Address is [25.1.80.156] 
+
+
+[111103]  This user is not game server
+
+[111330] SEND ERROR ... ERROR 10054
+
+[111330] ===========>>>>>>>>>>		Dis User : 6 [SEND ERROR]
+
+[111330] GAME SERVER QUIT [type01]!!
+
+[111330] (type01)6 is exit
+
+
+[111330] ===========>>>>>>>>>>		Dis User : 6 [read byte = 0]
+
+[111345] ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 4317) ,ERROR 10054
+
+[111345] END DBCtlThread ... 
+
+[111345] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[111350] Connected Server's IP Address is [25.1.80.156] 
+
+
+[111350]  Send sendAppointmentQuizEventInfo... 
+
+[111350]  This user is game server. isReconnect[0] 
+
+
+[111350] Success SendGameServerInitDataThread
+
+[111400] RECONNECT : [127.0.0.1] [52611]
+
+[111400] Start DBCtlThread ... 
+
+[112131] SEND ERROR ... ERROR 10054
+
+[112131] ===========>>>>>>>>>>		Dis User : 11 [SEND ERROR]
+
+[112131] GAME SERVER QUIT [type01]!!
+
+[112131] (type01)11 is exit
+
+
+[112131] ===========>>>>>>>>>>		Dis User : 11 [read byte = 0]
+
+[112131] ERROR ReallySend :[AVATAR DBC]  size 24, type 4317(LT 4551) ,ERROR 10054
+
+[112131] END DBCtlThread ... 
+
+[112131] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[112138] Connected Server's IP Address is [25.1.80.156] 
+
+
+[112138]  Send sendAppointmentQuizEventInfo... 
+
+[112138]  This user is game server. isReconnect[0] 
+
+
+[112138] Success SendGameServerInitDataThread
+
+[112145] RECONNECT : [127.0.0.1] [52611]
+
+[112145] Start DBCtlThread ... 
+
+[112432] SEND ERROR ... ERROR 10054
+
+[112432] ===========>>>>>>>>>>		Dis User : 12 [SEND ERROR]
+
+[112432] GAME SERVER QUIT [type01]!!
+
+[112432] (type01)12 is exit
+
+
+[112432] ===========>>>>>>>>>>		Dis User : 12 [read byte = 0]
+
+[112440] Connected Server's IP Address is [25.1.80.156] 
+
+
+[112440]  Send sendAppointmentQuizEventInfo... 
+
+[112440]  This user is game server. isReconnect[0] 
+
+
+[112440] Success SendGameServerInitDataThread
+
+[112445] ERROR ReallySend :[AVATAR DBC]  size 6, type 1000(LT 4551) ,ERROR 10054
+
+[112445] END DBCtlThread ... 
+
+[112445] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[112500] RECONNECT : [127.0.0.1] [52611]
+
+[112500] Start DBCtlThread ... 
+

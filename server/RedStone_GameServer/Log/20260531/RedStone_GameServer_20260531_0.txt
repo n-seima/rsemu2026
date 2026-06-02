@@ -1,0 +1,1110 @@
+[005046] Open addr  [0] = 25.1.80.156
+
+
+[005046] START WorkerThread[2] ...
+
+[005046] START WorkerThread[0] ...
+
+[005046] START AcceptLoop ...
+
+[005046] START WorkerThread[1] ...
+
+[005048] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005048] [type01] map count = 835 
+
+
+[005048] START BCControlThread ...
+
+[005048] Send Ip = 25.1.80.156
+
+[005048] START WorldCtlThread ...
+
+[005048] START AdditionThread ...
+
+[005048] 
+ Start Game Server ... day : 20260531 - time : 5048 
+
+
+[005048]  Request the list of provision ranking
+
+[005048]  Received provision ranking
+
+[005058] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005108] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005118] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005128] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005138] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005147] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005157] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005207] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005217] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005227] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005436] Open addr  [0] = 127.0.0.1
+
+
+[005436] START WorkerThread[0] ...
+
+[005436] START WorkerThread[2] ...
+
+[005436] START WorkerThread[1] ...
+
+[005436] START AcceptLoop ...
+
+[005438] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005438] START BCControlThread ...
+
+[005438] START AdditionThread ...
+
+[005438] [type01] map count = 835 
+
+
+[005438] START WorldCtlThread ...
+
+[005438] Send Ip = 127.0.0.1
+
+[005438] 
+ Start Game Server ... day : 20260531 - time : 5438 
+
+
+[005438]  Request the list of provision ranking
+
+[005438]  Received provision ranking
+
+[005448] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005458] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005508] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005518] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005527] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005537] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005547] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005557] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005607] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005616] Open addr  [0] = 127.0.0.1
+
+
+[005616] Fail bind !! - 10048
+
+[005616] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005621] Error InitSocket 
+
+
+[005626] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005635] Open addr  [0] = 127.0.0.1
+
+
+[005635] START WorkerThread[0] ...
+
+[005635] START AcceptLoop ...
+
+[005635] START WorkerThread[2] ...
+
+[005635] START WorkerThread[1] ...
+
+[005637] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005637] [type01] map count = 835 
+
+
+[005637] START AdditionThread ...
+
+[005637] Send Ip = 127.0.0.1
+
+[005637] START BCControlThread ...
+
+[005637] START WorldCtlThread ...
+
+[005637] 
+ Start Game Server ... day : 20260531 - time : 5637 
+
+
+[005637]  Request the list of provision ranking
+
+[005637]  Received provision ranking
+
+[005648] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005657] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005707] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[005717] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222604] Open addr  [0] = 127.0.0.1
+
+
+[222604] START WorkerThread[0] ...
+
+[222604] START WorkerThread[1] ...
+
+[222604] START AcceptLoop ...
+
+[222604] START WorkerThread[2] ...
+
+[222606] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222606] [type01] map count = 835 
+
+
+[222606] START AdditionThread ...
+
+[222606] START BCControlThread ...
+
+[222606] Send Ip = 127.0.0.1
+
+[222606] 
+ Start Game Server ... day : 20260531 - time : 222606 
+
+
+[222606] START WorldCtlThread ...
+
+[222607]  Request the list of provision ranking
+
+[222607]  Received provision ranking
+
+[222617] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222627] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222636] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222646] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222656] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222706] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222716] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222726] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222735] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222745] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222755] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222805] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222815] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222824] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222834] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222844] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222854] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222904] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222914] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222923] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222933] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222943] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[222953] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223003] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223013] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223022] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223032] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223042] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223052] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223102] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223111] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223121] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223131] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223141] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223151] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223201] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223210] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223220] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223230] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223240] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223250] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223300] ERROR : connect [56621,127.0.0.1] Error 10061
+
+
+[223446] Open addr  [0] = 25.1.80.156
+
+
+[223446] START WorkerThread[0] ...
+
+[223446] START AcceptLoop ...
+
+[223446] START WorkerThread[1] ...
+
+[223446] START WorkerThread[2] ...
+
+[223448] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223448] [type01] map count = 835 
+
+
+[223448] START BCControlThread ...
+
+[223448] START AdditionThread ...
+
+[223448] Send Ip = 25.1.80.156
+
+[223448] START WorldCtlThread ...
+
+[223448] 
+ Start Game Server ... day : 20260531 - time : 223448 
+
+
+[223448]  Request the list of provision ranking
+
+[223448]  Received provision ranking
+
+[223458] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223508] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223518] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223528] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223538] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223547] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223557] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223607] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223617] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223627] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223636] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223646] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223656] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223706] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223716] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223726] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223735] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223745] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223755] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223924] Open addr  [0] = 25.1.80.156
+
+
+[223924] START WorkerThread[0] ...
+
+[223924] START WorkerThread[2] ...
+
+[223924] START WorkerThread[1] ...
+
+[223924] START AcceptLoop ...
+
+[223926] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223926] [type01] map count = 835 
+
+
+[223926] START BCControlThread ...
+
+[223926] START AdditionThread ...
+
+[223926] START WorldCtlThread ...
+
+[223926] Send Ip = 25.1.80.156
+
+[223926] 
+ Start Game Server ... day : 20260531 - time : 223926 
+
+
+[223926]  Request the list of provision ranking
+
+[223926]  Received provision ranking
+
+[223936] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223946] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[223948] ERROR ReallySend :[WORLD SERVER]  size 74, type 8323(LT 8323) ,ERROR 10054
+
+[223948] ERROR : error occured!! in connet with WORLD
+
+[223948] ------------------QUIT SOCKET THREAD ---------------------
+
+
+[224423] Open addr  [0] = 25.1.80.156
+
+
+[224423] START WorkerThread[0] ...
+
+[224423] START WorkerThread[1] ...
+
+[224423] START AcceptLoop ...
+
+[224423] START WorkerThread[2] ...
+
+[224425] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[224425] [type01] map count = 835 
+
+
+[224425] START BCControlThread ...
+
+[224425] Send Ip = 25.1.80.156
+
+[224425] START AdditionThread ...
+
+[224425] START WorldCtlThread ...
+
+[224425] 
+ Start Game Server ... day : 20260531 - time : 224425 
+
+
+[224425]  Request the list of provision ranking
+
+[224425]  Received provision ranking
+
+[224435] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[224445] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[224455] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[224505] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225037] Open addr  [0] = 25.1.80.156
+
+
+[225037] START WorkerThread[0] ...
+
+[225037] START AcceptLoop ...
+
+[225037] START WorkerThread[2] ...
+
+[225037] START WorkerThread[1] ...
+
+[225040] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225040] [type01] map count = 835 
+
+
+[225040] Send Ip = 25.1.80.156
+
+[225040] START BCControlThread ...
+
+[225040] 
+ Start Game Server ... day : 20260531 - time : 225040 
+
+
+[225040] START AdditionThread ...
+
+[225040] START WorldCtlThread ...
+
+[225040]  Request the list of provision ranking
+
+[225040]  Received provision ranking
+
+[225050] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225100] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225109] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225119] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225129] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225139] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225149] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225159] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225208] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225218] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225228] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225238] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225248] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225258] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225307] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225317] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225327] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225337] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225347] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225356] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225406] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225416] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225426] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225436] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225446] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225455] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225505] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225515] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225525] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225535] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225545] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225554] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225604] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225614] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225624] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225634] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225644] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225653] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225703] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225713] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225723] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225733] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225743] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225752] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225802] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225812] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225822] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225832] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225841] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225851] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225901] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225911] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225921] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225931] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225940] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[225950] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230000] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230010] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230020] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230030] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230039] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230049] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230059] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230109] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230119] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230129] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230138] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230148] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230158] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230208] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230218] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230228] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230237] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230247] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230257] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230307] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230317] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230326] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230336] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230346] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230356] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230406] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230416] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230425] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230435] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230445] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230455] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230505] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230515] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230524] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230534] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230544] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230554] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230604] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230613] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230623] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230633] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230643] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230653] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230703] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230712] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230722] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230732] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230742] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230752] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230802] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230811] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230821] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230831] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230841] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230851] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230901] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230910] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230920] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230930] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230940] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[230950] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231000] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231009] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231019] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231200] Open addr  [0] = 25.1.80.156
+
+
+[231200] START WorkerThread[2] ...
+
+[231200] START WorkerThread[1] ...
+
+[231200] START WorkerThread[0] ...
+
+[231200] START AcceptLoop ...
+
+[231202] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231202] [type01] map count = 835 
+
+
+[231202] Send Ip = 25.1.80.156
+
+[231202] START AdditionThread ...
+
+[231202] 
+ Start Game Server ... day : 20260531 - time : 231202 
+
+
+[231202] START BCControlThread ...
+
+[231202] START WorldCtlThread ...
+
+[231202]  Request the list of provision ranking
+
+[231202]  Received provision ranking
+
+[231212] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231222] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231232] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231242] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231251] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231301] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231311] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231321] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231331] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231341] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231350] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231400] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231410] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231420] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231430] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231440] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231449] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231459] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231509] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231519] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231529] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231538] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231548] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231558] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231608] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231618] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231628] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231637] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231647] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231657] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231707] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231717] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231727] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231736] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231746] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231756] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231806] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231816] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231826] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231909] Open addr  [0] = 25.1.80.156
+
+
+[231909] START WorkerThread[0] ...
+
+[231909] START WorkerThread[2] ...
+
+[231909] START WorkerThread[1] ...
+
+[231909] START AcceptLoop ...
+
+[231911] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231911] [type01] map count = 835 
+
+
+[231911] START AdditionThread ...
+
+[231911] Send Ip = 25.1.80.156
+
+[231911] START BCControlThread ...
+
+[231911] 
+ Start Game Server ... day : 20260531 - time : 231911 
+
+
+[231911] START WorldCtlThread ...
+
+[231911]  Request the list of provision ranking
+
+[231911]  Received provision ranking
+
+[231922] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231931] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231941] ERROR : connect [56621,25.1.80.156] Error 10061
+
+
+[231951] ERROR : connect [56621,25.1.80.156] Error 10061
+
+

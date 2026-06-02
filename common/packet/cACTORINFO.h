@@ -3,47 +3,47 @@
 
 #include "cPACKET_BASE.h"
 
-#define	dEQUIP_WEAPON				0			//	¹«±â 1
-#define	dEQUIP_ARMOR				1			//	°©¿Ê
-#define	dEQUIP_GLOVE				2			//	Àå°©
-#define	dEQUIP_HELM					3			//	Çï¸ä Á¾·ù
-#define	dEQUIP_EARING				4			//	±Í°Å¸®
-#define	dEQUIP_NECKLACE				5			//	¸ñ°ÉÀÌ
-#define	dEQUIP_BELT					6			//	º§Æ®
-#define	dEQUIP_SHOES				7			//	½Å¹ß
-#define	dEQUIP_RING1				8			//	¹İÁö
-#define	dEQUIP_RING2				9			//	¹İÁö
-#define	dEQUIP_RING3				10			//	¹İÁö
-#define	dEQUIP_RING4				11			//	¹İÁö
-#define	dEQUIP_RING5				12			//	¹İÁö
-#define	dEQUIP_RING6				13			//	¹İÁö
-#define	dEQUIP_RING7				14			//	¹İÁö
-#define	dEQUIP_RING8				15			//	¹İÁö
-#define	dEQUIP_WEAPON_2				16		//	¹«±â 1
-#define	dEQUIP_ARMOR_2				17			//	°©¿Ê
-#define	dEQUIP_GLOVE_2				18			//	Àå°©
-#define	dEQUIP_HELM_2				19			//	Çï¸ä Á¾·ù
-#define	dEQUIP_EARING_2				20			//	±Í°Å¸®
-#define	dEQUIP_NECKLACE_2			21			//	¸ñ°ÉÀÌ
-#define	dEQUIP_BELT_2				22			//	º§Æ®
-#define	dEQUIP_SHOES_2				23			//	½Å¹ß
-#define	dEQUIP_RING1_2				24			//	¹İÁö
-#define	dEQUIP_RING2_2				25			//	¹İÁö
-#define	dEQUIP_RING3_2				26			//	¹İÁö
-#define	dEQUIP_RING4_2				26			//	¹İÁö
-#define	dEQUIP_RING5_2				27			//	¹İÁö
-#define	dEQUIP_RING6_2				28			//	¹İÁö
-#define	dEQUIP_RING7_2				30			//	¹İÁö
-#define	dEQUIP_RING8_2				31			//	¹İÁö
-#define	dEQUIP_SHIELD				32			//	¹æÆĞ/ÅºÈ¯
-#define	dEQUIP_BELT_SLOT1			33			//	º§Æ® ½½·Ô 1
-#define	dEQUIP_BELT_SLOT2			34			//	º§Æ® ½½·Ô 2
-#define	dEQUIP_BELT_SLOT3			35			//	º§Æ® ½½·Ô 3
-#define	dEQUIP_BELT_SLOT4			36			//	º§Æ® ½½·Ô 4
-#define	dEQUIP_BELT_SLOT5			37			//	º§Æ® ½½·Ô 5
+#define	dEQUIP_WEAPON				0			//	ë¬´ê¸° 1
+#define	dEQUIP_ARMOR				1			//	ê°‘ì˜·
+#define	dEQUIP_GLOVE				2			//	ì¥ê°‘
+#define	dEQUIP_HELM					3			//	í—¬ë©§ ì¢…ë¥˜
+#define	dEQUIP_EARING				4			//	ê·€ê±°ë¦¬
+#define	dEQUIP_NECKLACE				5			//	ëª©ê±¸ì´
+#define	dEQUIP_BELT					6			//	ë²¨íŠ¸
+#define	dEQUIP_SHOES				7			//	ì‹ ë°œ
+#define	dEQUIP_RING1				8			//	ë°˜ì§€
+#define	dEQUIP_RING2				9			//	ë°˜ì§€
+#define	dEQUIP_RING3				10			//	ë°˜ì§€
+#define	dEQUIP_RING4				11			//	ë°˜ì§€
+#define	dEQUIP_RING5				12			//	ë°˜ì§€
+#define	dEQUIP_RING6				13			//	ë°˜ì§€
+#define	dEQUIP_RING7				14			//	ë°˜ì§€
+#define	dEQUIP_RING8				15			//	ë°˜ì§€
+#define	dEQUIP_WEAPON_2				16		//	ë¬´ê¸° 1
+#define	dEQUIP_ARMOR_2				17			//	ê°‘ì˜·
+#define	dEQUIP_GLOVE_2				18			//	ì¥ê°‘
+#define	dEQUIP_HELM_2				19			//	í—¬ë©§ ì¢…ë¥˜
+#define	dEQUIP_EARING_2				20			//	ê·€ê±°ë¦¬
+#define	dEQUIP_NECKLACE_2			21			//	ëª©ê±¸ì´
+#define	dEQUIP_BELT_2				22			//	ë²¨íŠ¸
+#define	dEQUIP_SHOES_2				23			//	ì‹ ë°œ
+#define	dEQUIP_RING1_2				24			//	ë°˜ì§€
+#define	dEQUIP_RING2_2				25			//	ë°˜ì§€
+#define	dEQUIP_RING3_2				26			//	ë°˜ì§€
+#define	dEQUIP_RING4_2				26			//	ë°˜ì§€
+#define	dEQUIP_RING5_2				27			//	ë°˜ì§€
+#define	dEQUIP_RING6_2				28			//	ë°˜ì§€
+#define	dEQUIP_RING7_2				30			//	ë°˜ì§€
+#define	dEQUIP_RING8_2				31			//	ë°˜ì§€
+#define	dEQUIP_SHIELD				32			//	ë°©íŒ¨/íƒ„í™˜
+#define	dEQUIP_BELT_SLOT1			33			//	ë²¨íŠ¸ ìŠ¬ë¡¯ 1
+#define	dEQUIP_BELT_SLOT2			34			//	ë²¨íŠ¸ ìŠ¬ë¡¯ 2
+#define	dEQUIP_BELT_SLOT3			35			//	ë²¨íŠ¸ ìŠ¬ë¡¯ 3
+#define	dEQUIP_BELT_SLOT4			36			//	ë²¨íŠ¸ ìŠ¬ë¡¯ 4
+#define	dEQUIP_BELT_SLOT5			37			//	ë²¨íŠ¸ ìŠ¬ë¡¯ 5
 
-#define	dMAX_AVATAR				4			//	¾ÆÀÌµğ ÇÏ³ª´ç °¡Áú ¼ö ÀÖ´Â ¾Æ¹ÙÅ¸ÀÇ ¼ö
-#define dAVATAR_EMPTY			"EMPTY"		//	H ºñ¾îÀÖ´Â ¾Æ¹ÙÅ¸ °ø°£
+#define	dMAX_AVATAR				4			//	ì•„ì´ë”” í•˜ë‚˜ë‹¹ ê°€ì§ˆ ìˆ˜ ìˆëŠ” ì•„ë°”íƒ€ì˜ ìˆ˜
+#define dAVATAR_EMPTY			"EMPTY"		//	H ë¹„ì–´ìˆëŠ” ì•„ë°”íƒ€ ê³µê°„
 
 #define	dEQUIPMENT_PART_COUNT	38
 #define	dOWN_ITEM_COUNT			40
@@ -52,11 +52,11 @@
 typedef class	_cAVATAR_INFO
 {
 public:
-	char					m_strName[dNAME_LENGTH];		//	H ÀÌ¸§ - EMPTY - ´ë¼Ò¹®ÀÚ ±¸ºĞ ¾ø±¸
-	WORD					m_wJob;				//	Á÷¾÷
-	WORD					m_wLevel;			//	·¹º§
-	WORD					m_aEquip[2][3];		//	H Àåºñ ÇÏ°í ÀÖ´Â °©¿Ê, ¹«±â , ¹æÆĞ
-	WORD					m_wLastVillage;		//	¸¶Áö¸·¿¡ ·Î±× ¾Æ¿ôÇÑ ¸¶À» - ¼­¹ö¿¡¼­ ÁØ´Ù.
+	char					m_strName[dNAME_LENGTH];		//	H ì´ë¦„ - EMPTY - ëŒ€ì†Œë¬¸ì êµ¬ë¶„ ì—†êµ¬
+	WORD					m_wJob;				//	ì§ì—…
+	WORD					m_wLevel;			//	ë ˆë²¨
+	WORD					m_aEquip[2][3];		//	H ì¥ë¹„ í•˜ê³  ìˆëŠ” ê°‘ì˜·, ë¬´ê¸° , ë°©íŒ¨
+	WORD					m_wLastVillage;		//	ë§ˆì§€ë§‰ì— ë¡œê·¸ ì•„ì›ƒí•œ ë§ˆì„ - ì„œë²„ì—ì„œ ì¤€ë‹¤.
 
 	void					init(char *_strName,int _iCharacter)
 	{
@@ -69,117 +69,117 @@ public:
 }cAVATAR_INFO;	//	class	cAVATAR_INFO
 
 //////////////////////////////////////////////////////////////
-//	¾Æ¹ÙÅ¸ Á¤º¸ ¹Ş±â
+//	ì•„ë°”íƒ€ ì •ë³´ ë°›ê¸°
 //////////////////////////////////////////////////////////////
 
-//	¼­¹ö¿¡ ÀúÀåµÈ Á÷¾÷ÀÇ ±âº» µ¥ÀÌÅÍ
+//	ì„œë²„ì— ì €ì¥ëœ ì§ì—…ì˜ ê¸°ë³¸ ë°ì´í„°
 typedef class	_cAVATAR_BASIC_DATA
 {
 public:
-	int				m_iLevel;							//	·¹º§
-	DWORD			m_dwExperience;						//	°æÇèÄ¡
+	int				m_iLevel;							//	ë ˆë²¨
+	DWORD			m_dwExperience;						//	ê²½í—˜ì¹˜
 
-	int				m_iHP;								//	ÇöÀç Ã¼·Â			10.00	10,000.00  
-	int				m_iMaxHP;							//	ÃÖ´ë Ã¼·Â			10.00	10,000.00  
-	WORD			m_wCorrectHP;						//	Ã¼·Â º¸Á¤(ÃÖ´ë Ã¼·Â °è»ê½Ä¿¡¼­ »ç¿ë)
-	int				m_iCP;								//	ÇöÀç   ÆÄ¿ö °ÔÀÌÁö   1.00	 5,000.00  
-	int				m_iMaxCP;							//	¸Æ½Ã¸Ø ÆÄ¿ö °ÔÀÌÁö	10.00	10,000.00  
-	WORD			m_wCorrectCP;						//	CPº¸Á¤(ÃÖ´ë CP °è»ê½Ä¿¡¼­ »ç¿ë)
+	int				m_iHP;								//	í˜„ì¬ ì²´ë ¥			10.00	10,000.00  
+	int				m_iMaxHP;							//	ìµœëŒ€ ì²´ë ¥			10.00	10,000.00  
+	WORD			m_wCorrectHP;						//	ì²´ë ¥ ë³´ì •(ìµœëŒ€ ì²´ë ¥ ê³„ì‚°ì‹ì—ì„œ ì‚¬ìš©)
+	int				m_iCP;								//	í˜„ì¬   íŒŒì›Œ ê²Œì´ì§€   1.00	 5,000.00  
+	int				m_iMaxCP;							//	ë§¥ì‹œë©ˆ íŒŒì›Œ ê²Œì´ì§€	10.00	10,000.00  
+	WORD			m_wCorrectCP;						//	CPë³´ì •(ìµœëŒ€ CP ê³„ì‚°ì‹ì—ì„œ ì‚¬ìš©)
 
-	short			m_sStrength;						//	Èû			5 1,000
-	short			m_sAgility;							//	¹ÎÃ¸¼º		5 1,000
-	short			m_sConstitution;					//	°Ç°­		5 1,000
-	short			m_sWisdom;							//	ÁöÇı		5 1,000
-	short			m_sIntelligence;					//	Áö½Ä		5 1,000
-	short			m_sCharisma;						//	Ä«¸®½º¸¶	5 1,000
-	short			m_sLuck;							//	¿î			5 1,000
-	short			m_sSight;							//	½Ã¾ß
+	short			m_sStrength;						//	í˜			5 1,000
+	short			m_sAgility;							//	ë¯¼ì²©ì„±		5 1,000
+	short			m_sConstitution;					//	ê±´ê°•		5 1,000
+	short			m_sWisdom;							//	ì§€í˜œ		5 1,000
+	short			m_sIntelligence;					//	ì§€ì‹		5 1,000
+	short			m_sCharisma;						//	ì¹´ë¦¬ìŠ¤ë§ˆ	5 1,000
+	short			m_sLuck;							//	ìš´			5 1,000
+	short			m_sSight;							//	ì‹œì•¼
 
-	short			m_sMinDamage;						//	ÃÖ¼Ò µ¥¹ÌÁö
-	short			m_sMaxDamage;						//	ÃÖ´ë µ¥¹ÌÁö
-	short			m_sDefensivePower;					//	¹æ¾î·Â
+	short			m_sMinDamage;						//	ìµœì†Œ ë°ë¯¸ì§€
+	short			m_sMaxDamage;						//	ìµœëŒ€ ë°ë¯¸ì§€
+	short			m_sDefensivePower;					//	ë°©ì–´ë ¥
 
-	short			m_sAllignment;						//	¼ºÇâ -100.00~100.00(absoulte evil,evil,neutral,good,absoulte good)
+	short			m_sAllignment;						//	ì„±í–¥ -100.00~100.00(absoulte evil,evil,neutral,good,absoulte good)
 
-	short			m_sFireResistance;					//	ºÒ ÀúÇ×·Â 0% 100.00%  
-	short			m_sWaterResistance;					//	¹° ÀúÇ×·Â 0% 100.00%  
-	short			m_sWindResistance;					//	¹Ù¶÷ ÀúÇ×·Â 0% 100.00%  
-	short			m_sEarthResistance;					//	´ëÁö ÀúÇ×·Â 0% 100.00%  
-	short			m_sLightResistance;					//	ºû ÀúÇ×·Â 0% 100.00%
-	short			m_sDarkResistance;					//	¾îµÒ ÀúÇ×·Â 0% 100.00%
+	short			m_sFireResistance;					//	ë¶ˆ ì €í•­ë ¥ 0% 100.00%  
+	short			m_sWaterResistance;					//	ë¬¼ ì €í•­ë ¥ 0% 100.00%  
+	short			m_sWindResistance;					//	ë°”ëŒ ì €í•­ë ¥ 0% 100.00%  
+	short			m_sEarthResistance;					//	ëŒ€ì§€ ì €í•­ë ¥ 0% 100.00%  
+	short			m_sLightResistance;					//	ë¹› ì €í•­ë ¥ 0% 100.00%
+	short			m_sDarkResistance;					//	ì–´ë‘  ì €í•­ë ¥ 0% 100.00%
 
-	short			m_sBlindResistance;					//	Àå´Ô ÀúÇ×
-	short			m_sPoisonResistance;				//	Áßµ¶ ÀúÇ×
-	short			m_sSleepResistance;					//	Àá ÀúÇ×
-	short			m_sColdResistance;					//	Äİµå ÀúÇ×
-	short			m_sFreezeResistance;				//	ÇÁ¸®Áî ÀúÇ×
-	short			m_sStunResistance;					//	°æÁ÷ ÀúÇ×
-	short			m_sStoneResistance;					//	¼®È­ ÀúÇ×
-	short			m_sConfuseResistance;				//	È¥¶õ ÀúÇ×
-	short			m_sCharmingResistance;				//	Ã­¹Ö ÀúÇ×
+	short			m_sBlindResistance;					//	ì¥ë‹˜ ì €í•­
+	short			m_sPoisonResistance;				//	ì¤‘ë… ì €í•­
+	short			m_sSleepResistance;					//	ì  ì €í•­
+	short			m_sColdResistance;					//	ì½œë“œ ì €í•­
+	short			m_sFreezeResistance;				//	í”„ë¦¬ì¦ˆ ì €í•­
+	short			m_sStunResistance;					//	ê²½ì§ ì €í•­
+	short			m_sStoneResistance;					//	ì„í™” ì €í•­
+	short			m_sConfuseResistance;				//	í˜¼ë€ ì €í•­
+	short			m_sCharmingResistance;				//	ì± ë° ì €í•­
 
-	short			m_sBadStatusResistance;				//	»óÅÂ ÀÌ»ó°ø°İ¿¡ ´ëÇÑ ÀúÇ× 0% 100.00%
-	short			m_sDeclinePowerResistance;			//	´É·ÂÄ¡ ÀúÇÏ°è¿¡ ´ëÇÑ ÀúÇ× 0% 100.00%
-	short			m_sCurseResistance;					//	ÀúÁÖ¿¡ ´ëÇÑ ÀúÇ× 0% 100.00%
-	short			m_sAllStatusResistance;				//	ÀüÃ¼ ÀúÇ× 0% 100.00%
+	short			m_sBadStatusResistance;				//	ìƒíƒœ ì´ìƒê³µê²©ì— ëŒ€í•œ ì €í•­ 0% 100.00%
+	short			m_sDeclinePowerResistance;			//	ëŠ¥ë ¥ì¹˜ ì €í•˜ê³„ì— ëŒ€í•œ ì €í•­ 0% 100.00%
+	short			m_sCurseResistance;					//	ì €ì£¼ì— ëŒ€í•œ ì €í•­ 0% 100.00%
+	short			m_sAllStatusResistance;				//	ì „ì²´ ì €í•­ 0% 100.00%
 }cAVATAR_BASIC_DATA;	//	class	cAVATAR_BASIC_DATA
 
 //
-//	¼­¹ö¿¡ ÀúÀåµÈ ¾îºô·¯Æ¼ µ¥ÀÌÅÍ
+//	ì„œë²„ì— ì €ì¥ëœ ì–´ë¹ŒëŸ¬í‹° ë°ì´í„°
 typedef class	_cABILITY_SERVER_DATA
 {
 public:
-	WORD					m_wSkill;	//	º£ÀÌ½º ½ºÅ³
-	WORD					m_wLevel;	//	½ºÅ³ ·¹º§
-	DWORD					m_dwExp;	//	½ºÅ³ °æÇèÄ¡
+	WORD					m_wSkill;	//	ë² ì´ìŠ¤ ìŠ¤í‚¬
+	WORD					m_wLevel;	//	ìŠ¤í‚¬ ë ˆë²¨
+	DWORD					m_dwExp;	//	ìŠ¤í‚¬ ê²½í—˜ì¹˜
 }cABILITY_SERVER_DATA;	//	class	cABILITY_SERVER_DATA
 
 //
-//	¼­¹ö¿¡ ÀúÀåµÈ ¾ÆÀÌÅÛ µ¥ÀÌÅÍ
+//	ì„œë²„ì— ì €ì¥ëœ ì•„ì´í…œ ë°ì´í„°
 typedef class	_cITEM_SERVER_DATA
 {
 public:
-	WORD					m_wBaseItem;				//	¾ÆÀÌÅÛ ÀÎµ¦½º
-	BYTE					m_bCount;					//	¼ıÀÚ
-	BYTE					m_bDurability;				//	³»±¸·Â
-	BYTE					m_isSealed;					//	ºÀÀÎ µÇ¾î ÀÖ´Ù.
+	WORD					m_wBaseItem;				//	ì•„ì´í…œ ì¸ë±ìŠ¤
+	BYTE					m_bCount;					//	ìˆ«ì
+	BYTE					m_bDurability;				//	ë‚´êµ¬ë ¥
+	BYTE					m_isSealed;					//	ë´‰ì¸ ë˜ì–´ ìˆë‹¤.
 	BYTE					m_bUpgradeCount;
-	WORD					m_aAddEffect[3];			//	Ãß°¡ È¿°ú 3°³ È¿°ú
+	WORD					m_aAddEffect[3];			//	ì¶”ê°€ íš¨ê³¼ 3ê°œ íš¨ê³¼
 }cITEM_SERVER_DATA;	//	cITEM_SERVER_DATA
 
-//	°ÔÀÓ¿¡ Âü°¡ ÇßÀ»¶§ ¼­¹ö·Î ºÎÅÍ ¹Ş´Â °ÔÀÓ Á¤º¸
+//	ê²Œì„ì— ì°¸ê°€ í–ˆì„ë•Œ ì„œë²„ë¡œ ë¶€í„° ë°›ëŠ” ê²Œì„ ì •ë³´
 typedef struct	_SMSG_AVATAR_DATA
 {
 	cMSG_BASE_TYPE			base;
 
-	WORD					wSerial;						//	ÀÚ½ÅÀÇ ½Ã¸®¾ó
-	char					strName[dNAME_LENGTH];			//	ÀÌ¸§
-	WORD					wTeam;							//	ÆÀ
-	WORD					wCharacter;						//	Ä³¸¯ÅÍ ¹øÈ£
-	WORD					wJob;							//	ÇöÀç Á÷¾÷(Á÷¾÷ÀÌ µÑÀÌ´Ï±î.. -_-)
-	WORD					wXPos,wYPos;					//	ÀÚ½ÅÀÇ À§Ä¡ - »ó´ë¹æ¿¡°Ô ³Ñ°ÜÁØ´Ù. ÀúÀåX
+	WORD					wSerial;						//	ìì‹ ì˜ ì‹œë¦¬ì–¼
+	char					strName[dNAME_LENGTH];			//	ì´ë¦„
+	WORD					wTeam;							//	íŒ€
+	WORD					wCharacter;						//	ìºë¦­í„° ë²ˆí˜¸
+	WORD					wJob;							//	í˜„ì¬ ì§ì—…(ì§ì—…ì´ ë‘˜ì´ë‹ˆê¹Œ.. -_-)
+	WORD					wXPos,wYPos;					//	ìì‹ ì˜ ìœ„ì¹˜ - ìƒëŒ€ë°©ì—ê²Œ ë„˜ê²¨ì¤€ë‹¤. ì €ì¥X
 	cAVATAR_BASIC_DATA		basicData;
-	cABILITY_SERVER_DATA	aAbility[dABILITY_COUNT];		//	¾îºô·¯Æ¼
-	cITEM_SERVER_DATA		aItems[dOWN_ITEM_COUNT];		//	°¡Áö°í ÀÖ´Â ¾ÆÀÌÅÛµé
-	cITEM_SERVER_DATA		aEquip[dEQUIPMENT_PART_COUNT];	//	Âø¿ëÇÏ°í ÀÖ´Â Àåºñµé
+	cABILITY_SERVER_DATA	aAbility[dABILITY_COUNT];		//	ì–´ë¹ŒëŸ¬í‹°
+	cITEM_SERVER_DATA		aItems[dOWN_ITEM_COUNT];		//	ê°€ì§€ê³  ìˆëŠ” ì•„ì´í…œë“¤
+	cITEM_SERVER_DATA		aEquip[dEQUIPMENT_PART_COUNT];	//	ì°©ìš©í•˜ê³  ìˆëŠ” ì¥ë¹„ë“¤
 }SMSG_AVATAR_DATA;
 
-//	Ä³¸¯ÅÍ Á¤º¸,°ÔÀÓ¿¡ µé¾î°¡ÀÚ ¸¶ÀÚ È¤Àº Å¬¶óÀÌ¾ğÆ®¿¡¼­ ¿äÃ»ÇÒ¶§ ³¯·ÁÁØ´Ù.
+//	ìºë¦­í„° ì •ë³´,ê²Œì„ì— ë“¤ì–´ê°€ì ë§ˆì í˜¹ì€ í´ë¼ì´ì–¸íŠ¸ì—ì„œ ìš”ì²­í• ë•Œ ë‚ ë ¤ì¤€ë‹¤.
 typedef struct	_SMSG_ACTOR_INFO
 {
-	WORD					wSerial;			//	ÀÚ½ÅÀÇ ½Ã¸®¾ó
-	char					strName[32];		//	ÀÌ¸§
+	WORD					wSerial;			//	ìì‹ ì˜ ì‹œë¦¬ì–¼
+	char					strName[32];		//	ì´ë¦„
 
-	WORD					wLevel;				//	·¹º§
-	WORD					wHP,wMaxHP;			//	·¹º§
-	WORD					wTeam;				//	ÆÀ
-	WORD					wCharacter;			//	Ä³¸¯ÅÍ ¹øÈ£
-	WORD					wJob;				//	ÇöÀç Á÷¾÷
-	WORD					wXPos,wYPos;		//	À§Ä¡
+	WORD					wLevel;				//	ë ˆë²¨
+	WORD					wHP,wMaxHP;			//	ë ˆë²¨
+	WORD					wTeam;				//	íŒ€
+	WORD					wCharacter;			//	ìºë¦­í„° ë²ˆí˜¸
+	WORD					wJob;				//	í˜„ì¬ ì§ì—…
+	WORD					wXPos,wYPos;		//	ìœ„ì¹˜
 
-	cITEM_SERVER_DATA		itemWeapon,itemShield,itemArmor,itemBullet;	//	Âø¿ë Àåºñ
-	WORD					wActionSpeed,wMoveSpeed;	//	¾×¼Ç ¼Óµµ¿Í ÀÌµ¿ ¼Óµµ
-	WORD					wMoveToX,wMoveToY;			//	¿©±â·Î ÀÌµ¿ ÁßÀÌ´Ù.
+	cITEM_SERVER_DATA		itemWeapon,itemShield,itemArmor,itemBullet;	//	ì°©ìš© ì¥ë¹„
+	WORD					wActionSpeed,wMoveSpeed;	//	ì•¡ì…˜ ì†ë„ì™€ ì´ë™ ì†ë„
+	WORD					wMoveToX,wMoveToY;			//	ì—¬ê¸°ë¡œ ì´ë™ ì¤‘ì´ë‹¤.
 }SMSG_ACTOR_INFO;
 
 

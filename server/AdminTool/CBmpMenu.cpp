@@ -624,11 +624,11 @@ END_MESSAGE_MAP()
 /////////////////////////////////////////////////////////////////////////////
 // MenuToolBar message handlers
 
-void MenuToolBar::OnCustomDrawNotify(LPARAM lParam, LRESULT* pResult )
+void MenuToolBar::OnCustomDrawNotify(NMHDR* pNMHDR, LRESULT* pResult )
 {
-	LPNMTBCUSTOMDRAW lpNMCustomDraw = (LPNMTBCUSTOMDRAW) lParam;
+	LPNMTBCUSTOMDRAW lpNMCustomDraw = (LPNMTBCUSTOMDRAW)pNMHDR;
 
-	if(!lParam)
+	if(!pNMHDR)
 		return;
 
 	if(lpNMCustomDraw->nmcd.dwDrawStage == CDDS_PREPAINT)
@@ -931,13 +931,14 @@ void MenuToolBar::OnLButtonDown(UINT nFlags, CPoint point)
 	}
 }
 
-void MenuToolBar::OnPostLbuttonMsg(UINT nFlags, LPARAM lp)
+LRESULT MenuToolBar::OnPostLbuttonMsg(WPARAM wParam, LPARAM lp)
 {
+	UINT nFlags = (UINT)wParam;
 	//claculate the button index
 	CPoint point(LOWORD(lp), HIWORD(lp));
 
 	int nBtnIndex = GetToolBarCtrl().HitTest(&point);
-	if (nBtnIndex < 0)       return;
+	if (nBtnIndex < 0)       return 0;
 	TBBUTTON tbb;
 	GetToolBarCtrl().GetButton(nBtnIndex, &tbb);
 
@@ -946,12 +947,14 @@ void MenuToolBar::OnPostLbuttonMsg(UINT nFlags, LPARAM lp)
 	if(tbb.dwData && ((MENUITEMINFO*)(tbb.dwData))->hSubMenu)
 	{
 		((CBmpMenu*)GetParent())->SendMessage(WM_POPUPSUBMENU, lp, (MENU_SELECTFIRSTITEM & nFlags)?MENU_SELECTFIRSTITEM:0);
-		return;
+		return 0;
 	}
 
 	//If this is a valid button and no submenu then send wm_command message to owner and close all menus
 	((CBmpMenu*)GetParent())->m_pOwnerWnd->PostMessage(WM_COMMAND, MAKEWPARAM(tbb.idCommand, 0), 0);
 	((CBmpMenu*)GetParent())->DestroyRootMenu();
+
+	return 0;
 }
 
 
@@ -1271,4 +1274,3 @@ GetSysColorBitmap(HDC hDC, HBITMAP hSourceBitmap, BOOL bMono, BOOL bSelected)
 	return(hDestBitmap);
 
 }
-

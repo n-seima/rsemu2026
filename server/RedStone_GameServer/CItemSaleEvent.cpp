@@ -66,7 +66,7 @@ CItemSaleEvent::operateItemByItemSaleEvent(cItem *_lpItem)
 	if	(lpItemSaleInfo->m_wMethod	==	eSIM_SET)
 		_lpItem->m_dwSerial	=	lpItemSaleInfo->m_dwPrice*_lpItem->m_bCount;
 
-	_lpItem->m_year		=	m_tiEndTime.m_wYear;	//	유효기간
+	_lpItem->m_year		=	EncodeItemExpireYear(m_tiEndTime.m_wYear);	//	유효기간
 	_lpItem->m_month	=	m_tiEndTime.m_wMonth;
 	_lpItem->m_day		=	m_tiEndTime.m_wDay;
 	_lpItem->m_hour		=	m_tiEndTime.m_wHour;

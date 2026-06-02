@@ -2530,7 +2530,7 @@ cItem::_getItemTooltip(int _iPieceIndex,int _iPieceCount,BOOL _bIsWantAfterEquip
 			{
 				UTime	time;
 
-				time.year	=	m_year;
+				time.year	=	DecodeItemExpireYearOffset(m_year,CGamePlay::s_currentTime.m_wYear);
 				time.month	=	m_month;
 				time.day	=	m_day;
 				time.hour	=	m_hour;
@@ -2653,7 +2653,7 @@ cItem::_getItemTooltip(int _iPieceIndex,int _iPieceCount,BOOL _bIsWantAfterEquip
 // 				else
 				if	(iEffect	==	eIE_TIME_STAMP)
 				{
-					sprintf(strText,dMSG_YMDHM_FORM,m_year+2000,m_month,m_day,m_hour,m_minute);
+					sprintf(strText,dMSG_YMDHM_FORM,DecodeItemExpireFullYear(m_year,CGamePlay::s_currentTime.m_wYear),m_month,m_day,m_hour,m_minute);
 
 					strComment	=	strText;
 				}
@@ -3323,36 +3323,26 @@ cItem::increaseMinute(int _iMinute)
 	if	(getSpecialItem())
 		return;
 
-	for (int iTime=0;iTime<_iMinute;iTime++)
-	{
-		m_minute++;
+	CTimeInfo	timeInfo;
 
-		if (m_minute	>=	60)
-		{
-			m_minute	=	0;
-			m_hour++;
+	timeInfo.m_wYear	=	(WORD)DecodeItemExpireFullYear(m_year,CGamePlay::s_currentTime.m_wYear);
+	if	(timeInfo.m_wYear == 0)
+		timeInfo.m_wYear	=	CGamePlay::s_currentTime.m_wYear;
 
-			if (m_hour	>=	24)
-			{
-				m_hour	=	0;
-				
-				int	iLastDay=	GetLastDay(m_year,m_month);
+	timeInfo.m_wMonth	=	m_month ? (WORD)m_month : CGamePlay::s_currentTime.m_wMonth;
+	timeInfo.m_wDay		=	m_day ? (WORD)m_day : CGamePlay::s_currentTime.m_wDay;
+	timeInfo.m_wHour	=	(WORD)m_hour;
+	timeInfo.m_wMinute	=	(WORD)m_minute;
+	timeInfo.m_wSecond	=	0;
+	timeInfo.m_wWeekDay	=	0;
 
-				if (m_day+1	>	(DWORD)iLastDay)
-				{
-					m_day	=	1;
-					m_month++;
+	timeInfo.increaseMinute(_iMinute);
 
-					if (m_month	>	12)
-					{
-						m_month	=	1;
-						m_year++;
-					}
-				}
-				else	m_day++;
-			}
-		}
-	}
+	m_year		=	EncodeItemExpireYear(timeInfo.m_wYear);
+	m_month		=	timeInfo.m_wMonth;
+	m_day		=	timeInfo.m_wDay;
+	m_hour		=	timeInfo.m_wHour;
+	m_minute	=	timeInfo.m_wMinute;
 }
 
 BOOL
@@ -3696,7 +3686,13 @@ CCustomItem::generateItem(cItem *_lpItem)
 		return	TRUE;
 	}
 
+	if (m_wBaseItem >= dBASIC_ITEM_COUNT)
+		return	FALSE;
+
 	cBasicItem	*lpBasicItem	=	&g_aBasicItem[m_wBaseItem];
+
+	if (lpBasicItem->m_iSerial < 0 || lpBasicItem->m_iSerial >= dBASIC_ITEM_COUNT)
+		return	FALSE;
 
 	_lpItem->m_wBaseItem		=	m_wBaseItem;
 	_lpItem->m_bCount			=	m_bCount;
@@ -3717,6 +3713,8 @@ CCustomItem::generateItem(cItem *_lpItem)
 //	옵션 1
 		{
 			iReferenceIndex	=	lpBasicItem->m_aGenerateData[i].m_aValue[0];
+			if (iReferenceIndex < 0 || iReferenceIndex >= 2)
+				continue;
 			iMinValue		=	lpBasicItem->m_aValue[iReferenceIndex][0];
 			iMaxValue		=	lpBasicItem->m_aValue[iReferenceIndex][1];
 			iMaxValue		=	max(iMaxValue,iMinValue);
@@ -3729,6 +3727,8 @@ CCustomItem::generateItem(cItem *_lpItem)
 //	옵션 2
 		{
 			iReferenceIndex	=	lpBasicItem->m_aGenerateData[i].m_aValue[1];
+			if (iReferenceIndex < 0 || iReferenceIndex >= 2)
+				continue;
 			iMinValue		=	lpBasicItem->m_aValue[iReferenceIndex][0];
 			iMaxValue		=	lpBasicItem->m_aValue[iReferenceIndex][1];
 			iMaxValue		=	max(iMaxValue,iMinValue);
@@ -3754,6 +3754,8 @@ CCustomItem::generateItem(cItem *_lpItem)
 		int	iPrefix	=	m_aPrefix[i].m_wPrefix;
 
 		if (iPrefix	==	0xffff)	break;
+		if (iPrefix < 0 || iPrefix >= dMAX_ITEM_PREFIX_COUNT)
+			continue;
 
 		_lpItem->m_aPrefix[i].m_wPrefix		=	iPrefix;
 
@@ -3774,7 +3776,7 @@ CCustomItem::generateItem(cItem *_lpItem)
 
 	if	(m_bf20TermOfValidate)
 	{
-		_lpItem->m_year		=	CGamePlay::s_currentTime.m_wYear-2000;
+		_lpItem->m_year		=	EncodeItemExpireYear(CGamePlay::s_currentTime.m_wYear);
 		_lpItem->m_month	=	CGamePlay::s_currentTime.m_wMonth;
 		_lpItem->m_day		=	CGamePlay::s_currentTime.m_wDay;
 		_lpItem->m_hour		=	CGamePlay::s_currentTime.m_wHour;

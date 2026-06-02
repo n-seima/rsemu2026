@@ -1,0 +1,7 @@
+
+************* Application Started at [18:50:19] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error in cDECODER::Upload - can not find 'recoverRSC.txt' file
+Error in cDECODER::Upload - can not find 'recoverWValue.txt' file

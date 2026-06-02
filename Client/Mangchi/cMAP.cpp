@@ -29,6 +29,73 @@ CBlockedTileInfoBundle	g_aBlockedInfo[eTS_COUNT];
 
 int		l_iVersion		=	dCURRENT_MAP_VERSION;
 
+static void
+CopyStringField(char *dest,int destSize,const char *src)
+{
+	if (!src || !src[0]) return;
+
+	strncpy(dest,src,destSize-1);
+	dest[destSize-1]	=	NULL;
+	RemoveQuotationMark(dest);
+}
+
+static BOOL
+MakeOfficialMapPath(const char *srcPath,char *destPath,int destSize)
+{
+	char	*pSuffix	=	strstr((char *)srcPath,"Scenario\\Red Stone\\Map\\");
+
+	if (!pSuffix) return FALSE;
+
+	_snprintf(destPath,destSize-1,"C:\\Program Files (x86)\\GameON\\RED STONE\\Data\\%s",pSuffix);
+	destPath[destSize-1]	=	NULL;
+
+	return	(GetFileAttributes(destPath) != INVALID_FILE_ATTRIBUTES);
+}
+
+static void
+ApplyOfficialJapaneseNames(char *srcPath,cMAP *targetMap)
+{
+	char	officialPath[1024];
+
+	if (!MakeOfficialMapPath(srcPath,officialPath,sizeof(officialPath))) return;
+
+	int		versionBackup	=	l_iVersion;
+	cMAP	*pOfficialMap	=	new cMAP;
+
+	if (pOfficialMap && cMAP::Load(officialPath,0xffff,pOfficialMap))
+	{
+		CopyStringField(targetMap->m_strName,sizeof(targetMap->m_strName),pOfficialMap->m_strName);
+
+		for (int i=0;i<dMAX_ACTOR_COUNT;i++)
+		{
+			if (!targetMap->m_setActor.isAvail(i)) continue;
+			if (!pOfficialMap->m_setActor.isAvail(i)) continue;
+
+			CopyStringField(targetMap->m_setActor.m_aActor[i].m_strName,
+							sizeof(targetMap->m_setActor.m_aActor[i].m_strName),
+							pOfficialMap->m_setActor.m_aActor[i].m_strName);
+		}
+
+		for (int i=0;i<dMAX_AREA;i++)
+		{
+			if (!targetMap->m_pArea->IsAvail(i)) continue;
+			if (!pOfficialMap->m_pArea->IsAvail(i)) continue;
+
+			CopyStringField(targetMap->m_pArea->m_aArea[i].m_strName,
+							sizeof(targetMap->m_pArea->m_aArea[i].m_strName),
+							pOfficialMap->m_pArea->m_aArea[i].m_strName);
+
+			CopyStringField(targetMap->m_pArea->m_aArea[i].m_strMoveGateName,
+							sizeof(targetMap->m_pArea->m_aArea[i].m_strMoveGateName),
+							pOfficialMap->m_pArea->m_aArea[i].m_strMoveGateName);
+		}
+	}
+
+	pKILL(pOfficialMap);
+
+	l_iVersion	=	versionBackup;
+}
+
 cMAP::cMAP()
 {
 	m_pObjectMap	=	NULL;		//	오브젝트 혹은 건물
@@ -3300,6 +3367,9 @@ cMAP::Load(char *fn,int index, cMAP* lpMapDataLoad)
 	MSGOUT("Finish");
 // 마무리
 	{
+		if (!lpMapDataLoad)
+			ApplyOfficialJapaneseNames(fn,lpMap);
+
 		pKILL(pBuffer);				//	텍스트 데이터를 읽어들일 버퍼 해제
 
 		file.Close();

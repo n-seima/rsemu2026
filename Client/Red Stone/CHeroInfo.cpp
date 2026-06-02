@@ -60,6 +60,25 @@ DWORD	g_aExpTable[1000]=
 404723420,405745830,406769480,407794370,408820500,409847870,410876480,411906330,412937420,413969750,415003320,416058070,417114100,418171410,419230000,420289870,421351020,422413450,
 };
 
+static int
+getClientExpTableIndex(int _iLevel)
+{
+	const int iMaxIndex = sizeof(g_aExpTable)/sizeof(g_aExpTable[0])-1;
+
+	if	(_iLevel < 0)
+		return	0;
+	if	(_iLevel > iMaxIndex)
+		return	iMaxIndex;
+
+	return	_iLevel;
+}
+
+static DWORD
+getClientLevelupExperience(int _iLevel)
+{
+	return	g_aExpTable[getClientExpTableIndex(_iLevel)];
+}
+
 //
 //	레벨 설정
 void
@@ -74,7 +93,12 @@ CHero::setLevel(int _iLevel)
 DWORD
 CHero::getRemainExpForLevelUp()
 {
-	return	g_aExpTable[m_iLevel]	-	m_iExperience;
+	DWORD	dwLevelupExperience	=	getClientLevelupExperience(m_iLevel);
+
+	if	(dwLevelupExperience <= m_iExperience)
+		return	0;
+
+	return	dwLevelupExperience	-	m_iExperience;
 }
 
 //
@@ -82,7 +106,7 @@ CHero::getRemainExpForLevelUp()
 DWORD
 CHero::getExpForLevelUp()
 {
-	return	g_aExpTable[m_iLevel];
+	return	getClientLevelupExperience(m_iLevel);
 }
 
 //
@@ -511,15 +535,20 @@ int
 CHero::getSkillPointSumByLevel()
 {
 	int	iSkillPoint		=	0;
+	int	iLevel			=	max(m_iLevel,1);
 
-	for (int i=2;i<=m_iLevel;i++)
+	for (int i=2;i<=iLevel;i++)
 		iSkillPoint	+=	min(i,100);
 
-	DWORD	dwLevelupExperience		=	g_aExpTable[m_iLevel];
-	DWORD	dwNextSkillPoint		=	min(m_iLevel+1,100);
+	DWORD	dwLevelupExperience		=	getClientLevelupExperience(iLevel);
+	DWORD	dwNextSkillPoint		=	min(iLevel+1,100);
 	LONGLONG	llExp				=	m_iExperience;
 	llExp							*=	dwNextSkillPoint;
-	llExp							/=	dwLevelupExperience;
+
+	if	(dwLevelupExperience	!=	0)
+		llExp						/=	dwLevelupExperience;
+	else
+		llExp						=	0;
 
 	int		iCurrentLevelSkillPoint	=	(int)llExp;
 

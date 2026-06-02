@@ -1,0 +1,6 @@
+
+************* Application Started at [23:15:36] ************* 
+
+Total Memory : 2048.000000MB
+Avail Memory : 2048.000000MB
+Error Message - Can not read Account db connection info

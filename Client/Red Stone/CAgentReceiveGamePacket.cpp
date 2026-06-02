@@ -57,6 +57,14 @@ cPACKET_HANDLER::ResultGameConnect(SERVER_PACKETS *_lpPacket)
 	CGamePlay::s_serverTime.m_wHour		=	_lpPacket->mSG_RESULT_CONNECT.serverTime.hour;
 	CGamePlay::s_serverTime.m_wMinute	=	_lpPacket->mSG_RESULT_CONNECT.serverTime.minute;
 	CGamePlay::s_serverTime.m_wSecond	=	_lpPacket->mSG_RESULT_CONNECT.serverTime.second;
+
+	if	(CGamePlay::s_serverTime.m_wYear	<	2020	||
+		CGamePlay::s_serverTime.m_wMonth	<	1		||	CGamePlay::s_serverTime.m_wMonth	>	12	||
+		CGamePlay::s_serverTime.m_wDay		<	1		||	CGamePlay::s_serverTime.m_wDay		>	31	||
+		CGamePlay::s_serverTime.m_wHour		>	23		||
+		CGamePlay::s_serverTime.m_wMinute	>	59		||
+		CGamePlay::s_serverTime.m_wSecond	>	59)
+		CGamePlay::s_serverTime.update();
 	CGamePlay::s_dwReceiveServerTime	=	timeGetTime();
 
 	{

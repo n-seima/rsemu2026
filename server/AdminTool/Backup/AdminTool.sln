@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdminTool", "AdminTool.vcproj", "{50684CAB-9A2D-48DE-8786-23DBF53798D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DEBUG FOR CHINA|Win32 = DEBUG FOR CHINA|Win32
+		Debug FOR JAPAN|Win32 = Debug FOR JAPAN|Win32
+		Debug For JapanTest KR Inner|Win32 = Debug For JapanTest KR Inner|Win32
+		Debug|Win32 = Debug|Win32
+		forThai|Win32 = forThai|Win32
+		forUsa|Win32 = forUsa|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.DEBUG FOR CHINA|Win32.ActiveCfg = DEBUG FOR CHINA|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.DEBUG FOR CHINA|Win32.Build.0 = DEBUG FOR CHINA|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.Debug FOR JAPAN|Win32.ActiveCfg = Debug FOR JAPAN|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.Debug FOR JAPAN|Win32.Build.0 = Debug FOR JAPAN|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.Debug For JapanTest KR Inner|Win32.ActiveCfg = Debug For JapanTest KR Inner|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.Debug For JapanTest KR Inner|Win32.Build.0 = Debug For JapanTest KR Inner|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.Debug|Win32.Build.0 = Debug|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.forThai|Win32.ActiveCfg = forThai|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.forThai|Win32.Build.0 = forThai|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.forUsa|Win32.ActiveCfg = forUsa|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.forUsa|Win32.Build.0 = forUsa|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.Release|Win32.ActiveCfg = Release|Win32
+		{50684CAB-9A2D-48DE-8786-23DBF53798D9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

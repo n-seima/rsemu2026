@@ -1,0 +1,205 @@
+[220119] Success DB Connecting ... 
+
+
+[220119] Open Server addr = 25.1.80.156
+
+
+[220119] Start WorkerThread[0] ...
+
+[220119] Start WorkerThread[2] ...
+
+[220119] Start WorkerThread[7] ...
+
+[220119] Start WorkerThread[12] ...
+
+[220119] Start WorkerThread[1] ...
+
+[220119] Start WorkerThread[14] ...
+
+[220119] Start WorkerThread[6] ...
+
+[220119] Start WorkerThread[8] ...
+
+[220119] Start WorkerThread[29] ...
+
+[220119] Start WorkerThread[3] ...
+
+[220119] Start WorkerThread[22] ...
+
+[220119] Start WorkerThread[26] ...
+
+[220119] Start WorkerThread[15] ...
+
+[220119] Start WorkerThread[16] ...
+
+[220119] Start WorkerThread[17] ...
+
+[220119] Start WorkerThread[4] ...
+
+[220119] Start WorkerThread[20] ...
+
+[220119] Start WorkerThread[19] ...
+
+[220119] Start WorkerThread[18] ...
+
+[220119] Start WorkerThread[23] ...
+
+[220119] Start WorkerThread[9] ...
+
+[220119] Start WorkerThread[10] ...
+
+[220119] Start WorkerThread[21] ...
+
+[220119] Start WorkerThread[27] ...
+
+[220119] Start WorkerThread[31] ...
+
+[220119] Start WorkerThread[24] ...
+
+[220119] Start WorkerThread[30] ...
+
+[220119] Start WorkerThread[28] ...
+
+[220119] Start WorkerThread[11] ...
+
+[220119] Start WorkerThread[32] ...
+
+[220119] Start EventMngThread ...
+
+[220119] Start WorkerThread[5] ...
+
+[220119] Start WorkerThread[13] ...
+
+[220119] Start WorkerThread[25] ...
+
+[220120] Start AdditionThread ...
+
+[220120]  Carrot Shop Item Count at First = 3
+
+[220120] Start USER DB Cache Server ... day : 20260530 - time : 220120 
+
+
+[220727] Success DB Connecting ... 
+
+
+[220727] Open Server addr = 25.1.80.156
+
+
+[220727] Start WorkerThread[0] ...
+
+[220727] Start WorkerThread[3] ...
+
+[220727] Start WorkerThread[6] ...
+
+[220727] Start WorkerThread[7] ...
+
+[220727] Start WorkerThread[4] ...
+
+[220727] Start WorkerThread[5] ...
+
+[220727] Start WorkerThread[2] ...
+
+[220727] Start WorkerThread[1] ...
+
+[220727] Start EventMngThread ...
+
+[220728] Start AdditionThread ...
+
+[220728]  Carrot Shop Item Count at First = 3
+
+[220728] Start USER DB Cache Server ... day : 20260530 - time : 220728 
+
+
+[221555] Success DB Connecting ... 
+
+
+[221555] Fail bind !!
+
+
+[221555] Error InitSocket 
+
+
+[221629] Success DB Connecting ... 
+
+
+[221629] Open Server addr = 25.1.80.156
+
+
+[221629] Start WorkerThread[1] ...
+
+[221629] Start WorkerThread[0] ...
+
+[221629] Start WorkerThread[5] ...
+
+[221629] Start WorkerThread[6] ...
+
+[221629] Start WorkerThread[7] ...
+
+[221629] Start WorkerThread[4] ...
+
+[221629] Start WorkerThread[3] ...
+
+[221629] Start EventMngThread ...
+
+[221629] Start WorkerThread[2] ...
+
+[221629] Start AdditionThread ...
+
+[221630]  Carrot Shop Item Count at First = 3
+
+[221630] Start USER DB Cache Server ... day : 20260530 - time : 221630 
+
+
+[222012] Add User  = 1 , 127.0.0.1 
+
+
+[222012] Connect Server : [#login] [25.1.80.156] 0 0 idx 65535
+
+
+[222642] (#login)0 is Exit!!
+
+
+[222645] Add User  = 1 , 127.0.0.1 
+
+
+[222645] Connect Server : [#login] [25.1.80.156] 0 0 idx 65535
+
+
+[223749] Add User  = 2 , 127.0.0.1 
+
+
+[223749]  SendCarrotShop to user []
+
+[223749]  Send CarrotShop Info : count 3 (3)
+
+[223937] ()1 is Exit!!
+
+
+[223940] Add User  = 2 , 127.0.0.1 
+
+
+[223940]  SendCarrotShop to user []
+
+[223940]  Send CarrotShop Info : count 3 (3)
+
+[231611] ()1 is Exit!!
+
+
+[231616] Add User  = 2 , 127.0.0.1 
+
+
+[231616]  SendCarrotShop to user []
+
+[231616]  Send CarrotShop Info : count 3 (3)
+
+[005048] Connect Server : [LocalWorld] [127.0.0.1] 2 0 idx 0
+
+
+[005048]  Add Server : LocalWorld , 127.0.0.1, 1 
+
+[005716] (#login)0 is Exit!!
+
+
+[005719] (LocalWorld)1 is Exit!!
+
+
